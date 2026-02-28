@@ -1,0 +1,198 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LocationModal from '../../components/LocationModal.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SchemaMarkup from '../../components/SchemaMarkup.astro';
+import Icon from '../../components/Icon.astro';
+
+// Get all partners sorted by order
+const partners = (await getCollection('partners')).sort((a, b) => a.data.order - b.data.order);
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Partners' }
+];
+
+const pageSchema = {
+  "@type": "WebPage",
+  "name": "Partner With Attack A Crack",
+  "description": "Join our network of realtors, property managers, home inspectors, and contractors who trust Attack A Crack for foundation repairs.",
+  "url": "https://www.attackacrack.com/partners"
+};
+---
+
+<Layout
+  title="Foundation Repair Partners - Realtors, Inspectors, Contractors"
+  description="Partner with Attack A Crack for fast foundation repairs. Realtors, property managers, home inspectors, and contractors trust us throughout CT & MA."
+>
+	<SchemaMarkup schema={pageSchema} />
+	<LocationModal />
+	<Navbar currentPage="partners" />
+
+	<main class="pt-20 lg:pt-24">
+		<!-- Hero Section -->
+		<section class="py-20 lg:py-32 bg-aac-yellow relative overflow-hidden">
+			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-dark/5 skew-x-12 translate-x-1/2"></div>
+			<div class="max-w-7xl mx-auto px-6 relative z-10">
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-aac-dark/60 [&_a:hover]:text-aac-dark [&_span]:text-aac-dark [&_svg]:text-aac-dark/40" />
+
+				<div class="grid lg:grid-cols-2 gap-12 items-center">
+					<div>
+						<h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-8 leading-none text-aac-dark">
+							WE HELP <br />
+							<span class="text-aac-blue">PARTNERS.</span>
+						</h1>
+						<p class="text-xl text-aac-dark/70 max-w-2xl mb-12">
+							Fast foundation repairs for your clients. Guaranteed for life. We work with realtors, property managers, home inspectors, and contractors across Connecticut and Massachusetts.
+						</p>
+
+						<div class="flex flex-wrap gap-4">
+							<a href="tel:617-668-1677" class="bg-aac-dark text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+								<Icon name="Phone" size={16} />
+								Call 617-668-1677
+							</a>
+							<button class="open-modal bg-white text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark hover:bg-aac-dark hover:text-white transition-all inline-flex items-center gap-2">
+								<Icon name="MessageSquare" size={16} />
+								Let's Talk
+							</button>
+						</div>
+					</div>
+
+					<!-- Stats -->
+					<div class="hidden lg:grid grid-cols-2 gap-6">
+						<div class="bg-white p-8 rounded-2xl border-4 border-aac-dark shadow-[8px_8px_0px_0px_rgba(26,26,26,1)]">
+							<p class="text-5xl font-black text-aac-blue mb-2">24hr</p>
+							<p class="text-sm font-bold text-zinc-600">Quote Turnaround</p>
+						</div>
+						<div class="bg-white p-8 rounded-2xl border-4 border-aac-dark shadow-[8px_8px_0px_0px_rgba(26,26,26,1)]">
+							<p class="text-5xl font-black text-aac-blue mb-2">Life</p>
+							<p class="text-sm font-bold text-zinc-600">Transferable Warranty</p>
+						</div>
+						<div class="bg-white p-8 rounded-2xl border-4 border-aac-dark shadow-[8px_8px_0px_0px_rgba(26,26,26,1)]">
+							<p class="text-5xl font-black text-aac-blue mb-2">CT+MA</p>
+							<p class="text-sm font-bold text-zinc-600">Service Area</p>
+						</div>
+						<div class="bg-white p-8 rounded-2xl border-4 border-aac-dark shadow-[8px_8px_0px_0px_rgba(26,26,26,1)]">
+							<p class="text-5xl font-black text-aac-blue mb-2">240+</p>
+							<p class="text-sm font-bold text-zinc-600">5-Star Reviews</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Partner Types Grid -->
+		<section class="py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl lg:text-5xl font-black tracking-tighter text-aac-dark">
+						Who We Work With
+					</h2>
+					<p class="text-lg text-zinc-500 mt-4 max-w-2xl mx-auto">
+						Professionals across New England trust Attack A Crack as their foundation repair partner.
+					</p>
+				</div>
+
+				<div class="grid md:grid-cols-2 gap-8">
+					{partners.map((partner) => (
+						<a href={`/partners/${partner.id.replace(/\.md$/, '')}`} class="group p-8 rounded-[32px] border-4 border-aac-dark shadow-[8px_8px_0px_0px_rgba(26,26,26,1)] bg-white hover:shadow-[12px_12px_0px_0px_rgba(26,26,26,1)] hover:translate-y-[-4px] transition-all">
+							<div class="flex items-start gap-6">
+								<div class="w-16 h-16 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+									<Icon name={partner.data.icon || 'Users'} size={32} />
+								</div>
+								<div>
+									<h3 class="text-2xl font-black mb-3 group-hover:text-aac-blue transition-colors">
+										{partner.data.title}
+									</h3>
+									<p class="text-zinc-600 leading-relaxed mb-4">
+										{partner.data.excerpt}
+									</p>
+									<span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
+										Learn More <Icon name="ArrowRight" size={14} />
+									</span>
+								</div>
+							</div>
+						</a>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<!-- Why Partner Section -->
+		<section class="py-24 bg-zinc-50">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl font-black tracking-tighter text-aac-dark">
+						Why Partners Choose Us
+					</h2>
+				</div>
+
+				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<div class="text-center">
+						<div class="w-16 h-16 bg-aac-blue text-white rounded-2xl flex items-center justify-center mx-auto mb-6">
+							<Icon name="CheckCircle2" size={32} />
+						</div>
+						<h3 class="font-black text-lg mb-2">Fast Response</h3>
+						<p class="text-zinc-600 text-sm">Same-day assessments and 24-hour quotes for time-sensitive transactions.</p>
+					</div>
+					<div class="text-center">
+						<div class="w-16 h-16 bg-aac-blue text-white rounded-2xl flex items-center justify-center mx-auto mb-6">
+							<Icon name="ShieldCheck" size={32} />
+						</div>
+						<h3 class="font-black text-lg mb-2">Lifetime Warranty</h3>
+						<p class="text-zinc-600 text-sm">Transferable warranties that give your clients lasting confidence.</p>
+					</div>
+					<div class="text-center">
+						<div class="w-16 h-16 bg-aac-blue text-white rounded-2xl flex items-center justify-center mx-auto mb-6">
+							<Icon name="Info" size={32} />
+						</div>
+						<h3 class="font-black text-lg mb-2">Honest Assessments</h3>
+						<p class="text-zinc-600 text-sm">We tell it like it is. No upselling, no inflated repairs.</p>
+					</div>
+					<div class="text-center">
+						<div class="w-16 h-16 bg-aac-blue text-white rounded-2xl flex items-center justify-center mx-auto mb-6">
+							<Icon name="Hammer" size={32} />
+						</div>
+						<h3 class="font-black text-lg mb-2">Quality Work</h3>
+						<p class="text-zinc-600 text-sm">Professional repairs that satisfy inspectors and stand the test of time.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="py-24 bg-aac-dark text-white">
+			<div class="max-w-4xl mx-auto px-6 text-center">
+				<div class="bg-aac-blue/10 rounded-[48px] p-12 lg:p-16 relative overflow-hidden">
+					<div class="absolute top-0 left-0 w-full h-full bg-aac-blue/5 skew-y-6"></div>
+					<div class="relative z-10">
+						<h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-6">
+							Ready to <span class="text-aac-yellow">Partner?</span>
+						</h2>
+						<p class="text-xl text-zinc-400 mb-10">
+							Join our network of New England professionals who trust Attack A Crack for their foundation needs.
+						</p>
+						<div class="flex flex-col sm:flex-row gap-4 justify-center">
+							<a href="tel:617-668-1677" class="bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
+								<Icon name="Phone" size={20} />
+								617-668-1677
+							</a>
+							<button class="open-modal bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+								<Icon name="MessageSquare" size={20} />
+								Let's Talk
+							</button>
+						</div>
+						<p class="text-zinc-500 mt-8 text-sm">
+							<Icon name="MapPin" size={14} class="inline mr-1" />
+							Serving Connecticut and Massachusetts
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
