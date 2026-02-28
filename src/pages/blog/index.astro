@@ -1,0 +1,194 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LocationModal from '../../components/LocationModal.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Icon from '../../components/Icon.astro';
+
+// Get all published blog posts sorted by date
+const allPosts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+
+// Get featured posts
+const featuredPosts = allPosts.filter(post => post.data.featured);
+const regularPosts = allPosts.filter(post => !post.data.featured);
+
+// Get unique categories with counts
+const categories = allPosts.reduce((acc, post) => {
+  acc[post.data.category] = (acc[post.data.category] || 0) + 1;
+  return acc;
+}, {} as Record<string, number>);
+
+const categoryLabels: Record<string, string> = {
+  'guides': 'Guides',
+  'case-studies': 'Case Studies',
+  'cost-guides': 'Cost Guides',
+  'maintenance-tips': 'Maintenance Tips',
+  'news': 'News'
+};
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Blog' }
+];
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+}
+---
+
+<Layout title="Foundation Repair Blog" description="Expert insights, case studies, and maintenance tips to keep your foundation secure. Learn from New England's foundation repair specialists.">
+	<LocationModal />
+	<Navbar currentPage="blog" />
+
+	<main class="pt-20 lg:pt-24">
+		<!-- Hero Section -->
+		<section class="py-20 lg:py-32 bg-white border-b-4 border-zinc-100">
+			<div class="max-w-7xl mx-auto px-6">
+				<Breadcrumbs items={breadcrumbItems} class="mb-8" />
+				<div class="grid lg:grid-cols-2 gap-12 items-center">
+					<div>
+						<h1 class="text-6xl lg:text-8xl font-black tracking-tighter mb-8 leading-none">
+							THE <br />
+							<span class="text-aac-blue">BLOG.</span>
+						</h1>
+						<p class="text-xl text-zinc-500 max-w-lg">
+							Expert insights, case studies, and practical tips from New England's foundation repair specialists.
+						</p>
+					</div>
+					<div>
+						<!-- Category Filters -->
+						<div class="flex flex-wrap gap-3">
+							<a href="/blog" class="px-4 py-2 bg-aac-dark text-white rounded-full text-sm font-bold">
+								All Posts ({allPosts.length})
+							</a>
+							{Object.entries(categories).map(([cat, count]) => (
+								<a href={`/blog/category/${cat}`} class="px-4 py-2 bg-zinc-100 text-zinc-700 rounded-full text-sm font-bold hover:bg-aac-blue hover:text-white transition-colors">
+									{categoryLabels[cat]} ({count})
+								</a>
+							))}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Featured Posts -->
+		{featuredPosts.length > 0 && (
+			<section class="py-16 bg-aac-dark text-white">
+				<div class="max-w-7xl mx-auto px-6">
+					<div class="flex items-center gap-3 mb-12">
+						<Icon name="Star" size={24} class="text-aac-yellow" />
+						<h2 class="text-2xl font-black">Featured Articles</h2>
+					</div>
+					<div class="grid md:grid-cols-2 gap-8">
+						{featuredPosts.slice(0, 2).map((post) => (
+							<a href={`/blog/${post.id.replace(/\.md$/, '')}`} class="group block">
+								<div class="aspect-video rounded-2xl overflow-hidden mb-6 bg-zinc-800">
+									<img
+										src={post.data.heroImage || "https://picsum.photos/seed/" + post.id + "/800/450"}
+										alt={post.data.heroImageAlt || post.data.title}
+										class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+										referrerpolicy="no-referrer"
+									/>
+								</div>
+								<div class="flex items-center gap-4 mb-4">
+									<span class="text-[10px] font-black uppercase tracking-widest text-aac-yellow">
+										{categoryLabels[post.data.category]}
+									</span>
+									<span class="text-[10px] text-zinc-400">
+										{formatDate(post.data.publishDate)}
+									</span>
+								</div>
+								<h3 class="text-2xl font-black mb-3 group-hover:text-aac-yellow transition-colors">
+									{post.data.title}
+								</h3>
+								<p class="text-zinc-400 leading-relaxed">
+									{post.data.excerpt}
+								</p>
+							</a>
+						))}
+					</div>
+				</div>
+			</section>
+		)}
+
+		<!-- All Posts Grid -->
+		<section class="py-24 bg-zinc-50">
+			<div class="max-w-7xl mx-auto px-6">
+				{regularPosts.length > 0 && (
+					<>
+						<h2 class="text-3xl font-black mb-12">Latest Articles</h2>
+						<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+							{regularPosts.map((post) => (
+								<a href={`/blog/${post.id.replace(/\.md$/, '')}`} class="group bg-white rounded-[32px] overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all">
+									<div class="aspect-video overflow-hidden">
+										<img
+											src={post.data.heroImage || "https://picsum.photos/seed/" + post.id + "/600/400"}
+											alt={post.data.heroImageAlt || post.data.title}
+											class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+											referrerpolicy="no-referrer"
+										/>
+									</div>
+									<div class="p-8">
+										<div class="flex items-center gap-4 mb-4">
+											<span class="text-[10px] font-black uppercase tracking-widest text-aac-blue">
+												{categoryLabels[post.data.category]}
+											</span>
+											<span class="text-[10px] text-zinc-400 font-bold">
+												{formatDate(post.data.publishDate)}
+											</span>
+										</div>
+										<h3 class="text-xl font-black mb-3 leading-tight group-hover:text-aac-blue transition-colors">
+											{post.data.title}
+										</h3>
+										<p class="text-zinc-500 text-sm leading-relaxed mb-4 line-clamp-3">
+											{post.data.excerpt}
+										</p>
+										<span class="inline-flex items-center gap-2 text-aac-dark font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
+											Read Article <Icon name="ArrowRight" size={14} />
+										</span>
+									</div>
+								</a>
+							))}
+						</div>
+					</>
+				)}
+
+				{allPosts.length === 0 && (
+					<div class="text-center py-16">
+						<p class="text-zinc-500 text-lg">No blog posts yet. Check back soon!</p>
+					</div>
+				)}
+			</div>
+		</section>
+
+		<!-- Newsletter/CTA Section -->
+		<section class="py-16 bg-aac-yellow">
+			<div class="max-w-4xl mx-auto px-6 text-center">
+				<h2 class="text-3xl lg:text-4xl font-black text-aac-dark mb-6">
+					Have a Foundation Question?
+				</h2>
+				<p class="text-lg text-aac-dark/70 mb-8">
+					Get a free, no-pressure assessment from our experts. We'll give you honest answers about your foundation.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<button class="open-modal bg-aac-dark text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2">
+						<Icon name="MessageSquare" size={20} />
+						Text Us Photos
+					</button>
+					<a href="/services/free-foundation-consultations" class="bg-white text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
+						Free Consultation
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>

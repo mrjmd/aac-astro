@@ -1,0 +1,267 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LocationModal from '../../components/LocationModal.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SchemaMarkup from '../../components/SchemaMarkup.astro';
+import Icon from '../../components/Icon.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.id.replace(/\.md$/, '') },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+// Get related posts
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const relatedPosts = post.data.relatedPosts
+  ? allPosts.filter(p => post.data.relatedPosts?.includes(p.id.replace(/\.md$/, '')))
+  : allPosts
+      .filter(p => p.id !== post.id && p.data.category === post.data.category)
+      .slice(0, 3);
+
+const categoryLabels: Record<string, string> = {
+  'guides': 'Guides',
+  'case-studies': 'Case Studies',
+  'cost-guides': 'Cost Guides',
+  'maintenance-tips': 'Maintenance Tips',
+  'news': 'News'
+};
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Blog', href: '/blog' },
+  { label: categoryLabels[post.data.category], href: `/blog/category/${post.data.category}` },
+  { label: post.data.title }
+];
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+}
+
+// Calculate reading time (rough estimate: 200 words per minute)
+const wordCount = post.body?.split(/\s+/).length || 0;
+const readingTime = Math.ceil(wordCount / 200);
+
+// Article schema
+const articleSchema = {
+  "@type": "Article",
+  "headline": post.data.title,
+  "description": post.data.metaDescription,
+  "image": post.data.heroImage || "https://picsum.photos/seed/" + post.id + "/1200/630",
+  "datePublished": post.data.publishDate.toISOString(),
+  "dateModified": (post.data.updatedDate || post.data.publishDate).toISOString(),
+  "author": {
+    "@type": "Person",
+    "name": post.data.author,
+    "url": "https://www.attackacrack.com/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Attack A Crack Foundation Repair",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.attackacrack.com/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `https://www.attackacrack.com/blog/${post.id.replace(/\.md$/, '')}`
+  }
+};
+---
+
+<Layout
+  title={post.data.metaTitle || post.data.title}
+  description={post.data.metaDescription}
+>
+	<SchemaMarkup schema={articleSchema} />
+	<LocationModal />
+	<Navbar currentPage="blog" />
+
+	<main class="pt-20 lg:pt-24">
+		<!-- Hero Section -->
+		<section class="py-12 lg:py-20 bg-white border-b border-zinc-100">
+			<div class="max-w-4xl mx-auto px-6">
+				<Breadcrumbs items={breadcrumbItems} class="mb-8" />
+
+				<div class="flex items-center gap-4 mb-6">
+					<a href={`/blog/category/${post.data.category}`} class="text-[10px] font-black uppercase tracking-widest text-aac-blue bg-aac-blue/10 px-3 py-1 rounded-full hover:bg-aac-blue hover:text-white transition-colors">
+						{categoryLabels[post.data.category]}
+					</a>
+					<span class="text-sm text-zinc-400">
+						{formatDate(post.data.publishDate)}
+					</span>
+					<span class="text-sm text-zinc-400 flex items-center gap-1">
+						<Icon name="Clock" size={14} />
+						{readingTime} min read
+					</span>
+				</div>
+
+				<h1 class="text-4xl lg:text-6xl font-black tracking-tighter mb-6 leading-tight">
+					{post.data.title}
+				</h1>
+
+				<p class="text-xl text-zinc-500 mb-8">
+					{post.data.excerpt}
+				</p>
+
+				<div class="flex items-center gap-4">
+					<div class="w-12 h-12 bg-aac-blue rounded-full flex items-center justify-center text-white font-black">
+						{post.data.author.split(' ').map(n => n[0]).join('')}
+					</div>
+					<div>
+						<p class="font-bold text-aac-dark">{post.data.author}</p>
+						<p class="text-sm text-zinc-500">Attack A Crack Foundation Repair</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Hero Image -->
+		{post.data.heroImage && (
+			<section class="bg-zinc-100">
+				<div class="max-w-5xl mx-auto">
+					<img
+						src={post.data.heroImage}
+						alt={post.data.heroImageAlt || post.data.title}
+						class="w-full aspect-[2/1] object-cover"
+					/>
+				</div>
+			</section>
+		)}
+
+		<!-- Article Content -->
+		<section class="py-12 lg:py-20 bg-white">
+			<div class="max-w-3xl mx-auto px-6">
+				<article class="prose prose-lg prose-zinc max-w-none prose-headings:font-black prose-headings:tracking-tight prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-p:leading-relaxed prose-a:text-aac-blue prose-a:font-bold prose-a:no-underline hover:prose-a:underline prose-strong:text-aac-dark prose-ul:my-6 prose-li:my-2 prose-blockquote:border-l-4 prose-blockquote:border-aac-blue prose-blockquote:bg-aac-blue/5 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:not-italic prose-table:my-8">
+					<Content />
+				</article>
+
+				<!-- Tags -->
+				{post.data.tags && post.data.tags.length > 0 && (
+					<div class="mt-12 pt-8 border-t border-zinc-100">
+						<div class="flex flex-wrap items-center gap-3">
+							<span class="text-sm font-bold text-zinc-500">Tags:</span>
+							{post.data.tags.map((tag: string) => (
+								<span class="text-sm bg-zinc-100 text-zinc-700 px-3 py-1 rounded-full">
+									{tag}
+								</span>
+							))}
+						</div>
+					</div>
+				)}
+
+				<!-- Author Bio -->
+				<div class="mt-12 p-8 bg-zinc-50 rounded-2xl">
+					<div class="flex items-start gap-6">
+						<div class="w-16 h-16 bg-aac-blue rounded-full flex items-center justify-center text-white font-black text-xl shrink-0">
+							{post.data.author.split(' ').map(n => n[0]).join('')}
+						</div>
+						<div>
+							<p class="font-black text-lg mb-2">{post.data.author}</p>
+							<p class="text-zinc-600 leading-relaxed">
+								{post.data.author === "Luc Richard"
+									? "Founder of Attack A Crack with over 20 years of foundation repair experience in New England. Luc believes in honest assessments and standing behind every repair with a lifetime guarantee."
+									: "Managing Partner at Attack A Crack, leading Massachusetts operations. Matt brings technical expertise and a commitment to customer satisfaction to every project."}
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Related Posts -->
+		{relatedPosts.length > 0 && (
+			<section class="py-16 bg-zinc-50 border-t border-zinc-100">
+				<div class="max-w-7xl mx-auto px-6">
+					<h2 class="text-2xl font-black mb-8">Related Articles</h2>
+					<div class="grid md:grid-cols-3 gap-8">
+						{relatedPosts.slice(0, 3).map((related) => (
+							<a href={`/blog/${related.id.replace(/\.md$/, '')}`} class="group bg-white rounded-2xl overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all">
+								<div class="aspect-video overflow-hidden">
+									<img
+										src={related.data.heroImage || "https://picsum.photos/seed/" + related.id + "/600/400"}
+										alt={related.data.heroImageAlt || related.data.title}
+										class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+										referrerpolicy="no-referrer"
+									/>
+								</div>
+								<div class="p-6">
+									<span class="text-[10px] font-black uppercase tracking-widest text-aac-blue">
+										{categoryLabels[related.data.category]}
+									</span>
+									<h3 class="text-lg font-black mt-2 group-hover:text-aac-blue transition-colors line-clamp-2">
+										{related.data.title}
+									</h3>
+								</div>
+							</a>
+						))}
+					</div>
+				</div>
+			</section>
+		)}
+
+		<!-- CTA Section -->
+		<section class="py-16 bg-aac-dark text-white">
+			<div class="max-w-4xl mx-auto px-6 text-center">
+				<h2 class="text-3xl lg:text-4xl font-black tracking-tighter mb-6">
+					Have Questions About Your Foundation?
+				</h2>
+				<p class="text-lg text-zinc-400 mb-8">
+					Get a free consultation with our experts. We'll assess your situation and give you honest advice—no pressure, no salespeople.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<button class="open-modal bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
+						<Icon name="MessageSquare" size={20} />
+						Text Us Photos
+					</button>
+					<a href="tel:860-573-8760" class="bg-white/10 text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+						<Icon name="Phone" size={20} />
+						CT: 860-573-8760
+					</a>
+					<a href="tel:617-668-1677" class="bg-white/10 text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+						<Icon name="Phone" size={20} />
+						MA: 617-668-1677
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	/* Prose table styling */
+	.prose table {
+		width: 100%;
+		border-collapse: collapse;
+		border-radius: 0.5rem;
+		overflow: hidden;
+	}
+	.prose table th {
+		background-color: var(--color-aac-dark);
+		color: white;
+		text-align: left;
+		padding: 1rem;
+		font-weight: bold;
+	}
+	.prose table td {
+		padding: 1rem;
+		border-bottom: 1px solid rgb(244 244 245);
+	}
+	.prose table tr:last-child td {
+		border-bottom: none;
+	}
+</style>
