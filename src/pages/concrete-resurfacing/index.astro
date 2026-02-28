@@ -1,0 +1,281 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LocationModal from '../../components/LocationModal.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SchemaMarkup from '../../components/SchemaMarkup.astro';
+import Icon from '../../components/Icon.astro';
+
+// Get all resurfacing services sorted by order
+const services = (await getCollection('resurfacing')).sort((a, b) => a.data.order - b.data.order);
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Concrete Resurfacing' }
+];
+
+// Service schema for the hub page
+const servicesSchema = {
+  "@type": "ItemList",
+  "name": "Concrete Resurfacing Services",
+  "description": "Professional concrete resurfacing services available exclusively in Massachusetts",
+  "numberOfItems": services.length,
+  "itemListElement": services.map((service, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "item": {
+      "@type": "Service",
+      "name": service.data.title,
+      "description": service.data.excerpt,
+      "url": `https://www.attackacrack.com/concrete-resurfacing/${service.id.replace(/\.md$/, '')}`,
+      "provider": {
+        "@type": "HomeAndConstructionBusiness",
+        "name": "Attack A Crack"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Massachusetts"
+      }
+    }
+  }))
+};
+---
+
+<Layout
+  title="Concrete Resurfacing Services"
+  description="Professional concrete resurfacing for driveways, patios, pool decks, walkways, stairs, and garage floors. Massachusetts only. Call 617-668-1677."
+>
+	<SchemaMarkup schema={servicesSchema} />
+	<LocationModal />
+	<Navbar />
+
+	<main class="pt-20 lg:pt-24">
+		<!-- Hero Section -->
+		<section class="py-20 lg:py-32 bg-aac-blue text-white relative overflow-hidden">
+			<div class="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 translate-x-1/2"></div>
+			<div class="max-w-7xl mx-auto px-6 relative z-10">
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-white/60 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-white/40" />
+
+				<div class="grid lg:grid-cols-2 gap-12 items-center">
+					<div>
+						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-yellow text-aac-dark rounded-full text-[10px] font-black uppercase tracking-widest mb-6">
+							<Icon name="MapPin" size={14} /> Massachusetts Only
+						</div>
+						<h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-6 leading-none">
+							Concrete <span class="text-aac-yellow">Resurfacing</span>
+						</h1>
+						<p class="text-xl text-white/80 mb-8">
+							Transform worn, cracked concrete into beautiful, durable surfaces. Driveways, patios, pool decks, walkways, stairs, and garage floors—we make concrete look new again.
+						</p>
+
+						<div class="flex flex-wrap gap-4">
+							<a href="tel:617-668-1677" class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+								<Icon name="Phone" size={16} />
+								Call 617-668-1677
+							</a>
+							<button class="open-modal bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
+								<Icon name="MessageSquare" size={16} />
+								Get Free Quote
+							</button>
+						</div>
+					</div>
+
+					<div class="relative hidden lg:block">
+						<div class="aspect-square rounded-[32px] overflow-hidden border-4 border-white/20 bg-white/10">
+							<img
+								src="https://picsum.photos/seed/resurfacing-hero/800/800"
+								alt="Concrete resurfacing transformation"
+								class="w-full h-full object-cover"
+								referrerpolicy="no-referrer"
+							/>
+						</div>
+						<div class="absolute -bottom-6 -left-6 bg-aac-dark p-6 rounded-2xl shadow-xl text-white">
+							<div class="flex items-center gap-4">
+								<div class="w-16 h-16 bg-aac-blue rounded-xl flex items-center justify-center">
+									<Icon name="Wrench" size={32} />
+								</div>
+								<div>
+									<p class="text-3xl font-black">6</p>
+									<p class="text-sm text-zinc-400">Surface Types</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- MA Only Banner -->
+		<section class="py-6 bg-aac-yellow">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="flex flex-col md:flex-row items-center justify-center gap-4 text-center">
+					<Icon name="MapPin" size={24} class="text-aac-dark" />
+					<p class="font-black text-aac-dark">
+						Concrete resurfacing is available exclusively in Massachusetts. For foundation repair, we serve both MA and CT.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Services Grid -->
+		<section class="py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl lg:text-5xl font-black tracking-tighter text-aac-dark">
+						What We Resurface
+					</h2>
+					<p class="text-lg text-zinc-500 mt-4 max-w-2xl mx-auto">
+						From driveways to pool decks, we transform worn concrete into beautiful, durable surfaces.
+					</p>
+				</div>
+
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					{services.map((service) => (
+						<a href={`/concrete-resurfacing/${service.id.replace(/\.md$/, '')}`} class="group bg-zinc-50 rounded-[32px] overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all">
+							<div class="aspect-video bg-zinc-200 overflow-hidden">
+								<img
+									src={service.data.heroImage || `https://picsum.photos/seed/${service.id}/600/400`}
+									alt={service.data.title}
+									class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+									referrerpolicy="no-referrer"
+								/>
+							</div>
+							<div class="p-8">
+								<div class="w-12 h-12 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mb-4 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+									<Icon name={service.data.icon} size={24} />
+								</div>
+								<h3 class="text-2xl font-black mb-3 group-hover:text-aac-blue transition-colors">
+									{service.data.title}
+								</h3>
+								<p class="text-zinc-600 mb-6 leading-relaxed">
+									{service.data.excerpt}
+								</p>
+								<span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
+									Learn More <Icon name="ArrowRight" size={14} />
+								</span>
+							</div>
+						</a>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<!-- Benefits Section -->
+		<section class="py-24 bg-zinc-50">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="grid lg:grid-cols-2 gap-16 items-center">
+					<div>
+						<h2 class="text-4xl font-black tracking-tighter text-aac-dark mb-8">
+							Why Resurface Instead of Replace?
+						</h2>
+						<div class="space-y-6">
+							<div class="flex gap-4">
+								<div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center shrink-0">
+									<Icon name="CheckCircle2" size={24} />
+								</div>
+								<div>
+									<h3 class="font-black text-lg mb-1">Save 30-50% vs Replacement</h3>
+									<p class="text-zinc-600">Get a brand-new surface without the cost of demolition and re-pouring.</p>
+								</div>
+							</div>
+							<div class="flex gap-4">
+								<div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center shrink-0">
+									<Icon name="CheckCircle2" size={24} />
+								</div>
+								<div>
+									<h3 class="font-black text-lg mb-1">Faster Completion</h3>
+									<p class="text-zinc-600">Most projects complete in 2-4 days instead of weeks for replacement.</p>
+								</div>
+							</div>
+							<div class="flex gap-4">
+								<div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center shrink-0">
+									<Icon name="CheckCircle2" size={24} />
+								</div>
+								<div>
+									<h3 class="font-black text-lg mb-1">Design Options</h3>
+									<p class="text-zinc-600">Colors, patterns, and textures that plain concrete can't offer.</p>
+								</div>
+							</div>
+							<div class="flex gap-4">
+								<div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center shrink-0">
+									<Icon name="CheckCircle2" size={24} />
+								</div>
+								<div>
+									<h3 class="font-black text-lg mb-1">Long-Lasting Results</h3>
+									<p class="text-zinc-600">Our commercial-grade overlays last 15-25 years with proper care.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="aspect-[4/3] rounded-[32px] overflow-hidden border-8 border-white shadow-2xl">
+						<img
+							src="https://picsum.photos/seed/resurfacing-benefits/800/600"
+							alt="Before and after concrete resurfacing"
+							class="w-full h-full object-cover"
+							referrerpolicy="no-referrer"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Process Section -->
+		<section class="py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl font-black tracking-tighter text-aac-dark">
+						Our Resurfacing Process
+					</h2>
+				</div>
+
+				<div class="grid md:grid-cols-4 gap-8">
+					<div class="text-center">
+						<div class="w-16 h-16 bg-aac-blue text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black">1</div>
+						<h3 class="font-black text-lg mb-2">Preparation</h3>
+						<p class="text-zinc-600 text-sm">Clean, repair cracks, and profile the surface for optimal bonding.</p>
+					</div>
+					<div class="text-center">
+						<div class="w-16 h-16 bg-aac-blue text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black">2</div>
+						<h3 class="font-black text-lg mb-2">Base Coat</h3>
+						<p class="text-zinc-600 text-sm">Apply polymer-modified overlay that bonds permanently to existing concrete.</p>
+					</div>
+					<div class="text-center">
+						<div class="w-16 h-16 bg-aac-blue text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black">3</div>
+						<h3 class="font-black text-lg mb-2">Design</h3>
+						<p class="text-zinc-600 text-sm">Add color, patterns, and texture to create your desired look.</p>
+					</div>
+					<div class="text-center">
+						<div class="w-16 h-16 bg-aac-blue text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black">4</div>
+						<h3 class="font-black text-lg mb-2">Seal</h3>
+						<p class="text-zinc-600 text-sm">Protect your new surface with premium sealer for lasting beauty.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="py-24 bg-aac-dark text-white">
+			<div class="max-w-4xl mx-auto px-6 text-center">
+				<h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-6">
+					Ready to Transform Your <span class="text-aac-yellow">Concrete?</span>
+				</h2>
+				<p class="text-xl text-zinc-400 mb-10">
+					Get a free consultation and quote. We'll assess your concrete and show you the possibilities.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="tel:617-668-1677" class="bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white inline-flex items-center justify-center gap-3">
+						<Icon name="Phone" size={24} />
+						617-668-1677
+					</a>
+					<button class="open-modal bg-white/10 text-white px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-3">
+						<Icon name="MessageSquare" size={24} />
+						Get Free Quote
+					</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>

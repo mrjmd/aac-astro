@@ -1,0 +1,256 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LocationModal from '../../components/LocationModal.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SchemaMarkup from '../../components/SchemaMarkup.astro';
+import Icon from '../../components/Icon.astro';
+
+export async function getStaticPaths() {
+  const services = await getCollection('resurfacing');
+  return services.map((service) => ({
+    params: { slug: service.id.replace(/\.md$/, '') },
+    props: { service },
+  }));
+}
+
+const { service } = Astro.props;
+const { Content } = await render(service);
+
+// Get all resurfacing services for related section
+const allServices = await getCollection('resurfacing');
+const relatedServices = service.data.relatedServices
+  ? allServices.filter(s => service.data.relatedServices?.includes(s.id.replace(/\.md$/, '')))
+  : allServices.filter(s => s.id !== service.id).slice(0, 3);
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Concrete Resurfacing', href: '/concrete-resurfacing' },
+  { label: service.data.title }
+];
+
+// Service schema
+const serviceSchema = {
+  "@type": "Service",
+  "name": service.data.title,
+  "description": service.data.metaDescription,
+  "url": `https://www.attackacrack.com/concrete-resurfacing/${service.id.replace(/\.md$/, '')}`,
+  "provider": {
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Attack A Crack",
+    "telephone": "617-668-1677"
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Massachusetts"
+  },
+  "serviceType": "Concrete Resurfacing"
+};
+
+// FAQ schema if FAQs exist
+const faqSchema = service.data.faqs && service.data.faqs.length > 0 ? {
+  "@type": "FAQPage",
+  "mainEntity": service.data.faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+} : null;
+
+const schemas = faqSchema ? [serviceSchema, faqSchema] : [serviceSchema];
+---
+
+<Layout title={service.data.metaTitle} description={service.data.metaDescription}>
+	<SchemaMarkup schema={schemas} />
+	<LocationModal />
+	<Navbar />
+
+	<main class="pt-20 lg:pt-24">
+		<!-- Hero Section -->
+		<section class="py-16 lg:py-24 bg-aac-blue text-white relative overflow-hidden">
+			<div class="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 translate-x-1/2"></div>
+			<div class="max-w-7xl mx-auto px-6 relative z-10">
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-white/60 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-white/40" />
+
+				<div class="grid lg:grid-cols-2 gap-12 items-center">
+					<div>
+						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-yellow text-aac-dark rounded-full text-[10px] font-black uppercase tracking-widest mb-6">
+							<Icon name="MapPin" size={14} /> Massachusetts Only
+						</div>
+						<h1 class="text-4xl lg:text-6xl font-black tracking-tighter mb-6 leading-none">
+							{service.data.title}
+						</h1>
+						<p class="text-xl text-white/80 mb-8">
+							{service.data.excerpt}
+						</p>
+						<div class="flex flex-wrap gap-4">
+							<a href="tel:617-668-1677" class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+								<Icon name="Phone" size={16} />
+								Call 617-668-1677
+							</a>
+							<button class="open-modal bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
+								<Icon name="MessageSquare" size={16} />
+								Get Free Quote
+							</button>
+						</div>
+					</div>
+
+					<!-- Before/After Toggle -->
+					{(service.data.beforeImage || service.data.afterImage) && (
+						<div class="relative hidden lg:block">
+							<div class="aspect-[4/3] rounded-[32px] overflow-hidden border-4 border-white/20 shadow-2xl">
+								<div class="resurfacing-image-container relative w-full h-full">
+									<img
+										src={service.data.beforeImage || "https://picsum.photos/seed/before/800/600"}
+										data-before={service.data.beforeImage || "https://picsum.photos/seed/before/800/600"}
+										data-after={service.data.afterImage || "https://picsum.photos/seed/after/800/600"}
+										alt={`${service.data.title} - Before and After`}
+										class="resurfacing-hero-image w-full h-full object-cover transition-opacity duration-500"
+										referrerpolicy="no-referrer"
+									/>
+									<div class="status-badge absolute top-4 left-4 bg-aac-dark/80 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-lg border border-white/20">
+										Before
+									</div>
+								</div>
+							</div>
+							<button class="toggle-image absolute -bottom-4 left-1/2 -translate-x-1/2 bg-aac-dark text-white px-6 py-3 rounded-full font-black uppercase tracking-widest text-[10px] shadow-lg hover:bg-aac-dark/90 transition-all inline-flex items-center gap-2 border-4 border-white">
+								<Icon name="ArrowRight" size={14} />
+								See After
+							</button>
+						</div>
+					)}
+				</div>
+			</div>
+		</section>
+
+		<!-- Main Content -->
+		<section class="py-16 lg:py-24 bg-white">
+			<div class="max-w-4xl mx-auto px-6">
+				<article class="prose prose-lg prose-zinc max-w-none prose-headings:font-black prose-headings:tracking-tight prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-p:leading-relaxed prose-a:text-aac-blue prose-a:font-bold prose-a:no-underline hover:prose-a:underline prose-strong:text-aac-dark prose-ul:my-6 prose-li:my-2">
+					<Content />
+				</article>
+			</div>
+		</section>
+
+		<!-- FAQs Section -->
+		{service.data.faqs && service.data.faqs.length > 0 && (
+			<section class="py-16 lg:py-24 bg-zinc-50">
+				<div class="max-w-4xl mx-auto px-6">
+					<div class="text-center mb-12">
+						<h2 class="text-4xl font-black tracking-tighter text-aac-dark">
+							Frequently Asked Questions
+						</h2>
+					</div>
+
+					<div class="space-y-4">
+						{service.data.faqs.map((faq) => (
+							<details class="group bg-white rounded-2xl border-2 border-zinc-100 overflow-hidden">
+								<summary class="flex justify-between items-center p-6 cursor-pointer font-black text-lg hover:text-aac-blue transition-colors list-none">
+									{faq.question}
+									<span class="text-aac-blue shrink-0 ml-4 group-open:rotate-180 transition-transform">
+										<Icon name="ChevronRight" size={20} class="rotate-90" />
+									</span>
+								</summary>
+								<div class="px-6 pb-6 text-zinc-600 leading-relaxed">
+									{faq.answer}
+								</div>
+							</details>
+						))}
+					</div>
+				</div>
+			</section>
+		)}
+
+		<!-- Related Services -->
+		{relatedServices.length > 0 && (
+			<section class="py-16 lg:py-24 bg-white border-t border-zinc-100">
+				<div class="max-w-7xl mx-auto px-6">
+					<div class="text-center mb-12">
+						<h2 class="text-3xl font-black tracking-tighter text-aac-dark">
+							Other Resurfacing Services
+						</h2>
+					</div>
+
+					<div class="grid md:grid-cols-3 gap-8">
+						{relatedServices.map((related) => (
+							<a href={`/concrete-resurfacing/${related.id.replace(/\.md$/, '')}`} class="group bg-zinc-50 p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all">
+								<div class="w-12 h-12 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mb-4 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+									<Icon name={related.data.icon} size={24} />
+								</div>
+								<h3 class="text-xl font-black mb-2 group-hover:text-aac-blue transition-colors">
+									{related.data.title}
+								</h3>
+								<p class="text-zinc-600 text-sm line-clamp-2">
+									{related.data.excerpt}
+								</p>
+							</a>
+						))}
+					</div>
+				</div>
+			</section>
+		)}
+
+		<!-- CTA Section -->
+		<section class="py-16 lg:py-24 bg-aac-dark text-white">
+			<div class="max-w-4xl mx-auto px-6 text-center">
+				<h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-6">
+					Ready for Your <span class="text-aac-yellow">Free Quote?</span>
+				</h2>
+				<p class="text-xl text-zinc-400 mb-10">
+					Contact us for a free assessment. We'll evaluate your concrete and provide an honest quote.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="tel:617-668-1677" class="bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
+						<Icon name="Phone" size={20} />
+						617-668-1677
+					</a>
+					<button class="open-modal bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+						<Icon name="MessageSquare" size={20} />
+						Text Photos
+					</button>
+				</div>
+				<p class="text-zinc-500 mt-8 text-sm">
+					<Icon name="MapPin" size={14} class="inline mr-1" />
+					Concrete resurfacing available in Massachusetts only
+				</p>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<script>
+	// Before/After image toggle
+	document.querySelectorAll('.toggle-image').forEach(button => {
+		const container = button.closest('section')?.querySelector('.resurfacing-image-container');
+		if (!container) return;
+
+		const img = container.querySelector('.resurfacing-hero-image') as HTMLImageElement;
+		const badge = container.querySelector('.status-badge') as HTMLElement;
+		const beforeUrl = img.dataset.before;
+		const afterUrl = img.dataset.after;
+		let isAfter = false;
+
+		button.addEventListener('click', () => {
+			img.style.opacity = '0';
+			setTimeout(() => {
+				if (isAfter) {
+					if (beforeUrl) img.src = beforeUrl;
+					badge.textContent = 'Before';
+					button.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg> See After';
+				} else {
+					if (afterUrl) img.src = afterUrl;
+					badge.textContent = 'After';
+					button.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> See Before';
+				}
+				isAfter = !isAfter;
+				img.style.opacity = '1';
+			}, 300);
+		});
+	});
+</script>
