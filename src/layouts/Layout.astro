@@ -3,21 +3,31 @@ import '../styles/global.css';
 interface Props {
 	title: string;
 	description?: string;
+	image?: string;
+	canonicalURL?: string;
 }
 
-const { title, description = "Attack A Crack foundation repair, a trusted family-owned concrete foundation repair contractor, has served New England for 20+ years." } = Astro.props;
+const { 
+	title, 
+	description = "Attack A Crack foundation repair, a trusted family-owned concrete foundation repair contractor, has served New England for 20+ years.",
+	image = "https://picsum.photos/seed/aac-og/1200/630",
+	canonicalURL = Astro.url.href
+} = Astro.props;
 
 const CT_NUMBER = "860-573-8760";
+const MA_NUMBER = "617-668-1677";
 
 // JSON-LD Schema for Local Business
 const schema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "HomeAndConstructionBusiness",
   "name": "Attack A Crack Foundation Repair",
+  "alternateName": "Attack A Crack",
   "image": "https://picsum.photos/seed/aac-logo/200/200",
-  "@id": "",
+  "@id": "https://attackacrack.com/#organization",
   "url": "https://attackacrack.com",
   "telephone": CT_NUMBER,
+  "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Amston",
@@ -31,6 +41,16 @@ const schema = {
     "latitude": 41.6151,
     "longitude": -72.3484
   },
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Connecticut"
+    },
+    {
+      "@type": "State",
+      "name": "Massachusetts"
+    }
+  ],
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": [
@@ -59,6 +79,11 @@ const schema = {
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="canonical" href={canonicalURL} />
+		<meta name="geo.region" content="US-CT" />
+		<meta name="geo.placename" content="Amston" />
+		<meta name="geo.position" content="41.6151;-72.3484" />
+		<meta name="ICBM" content="41.6151, -72.3484" />
 		<title>{title} | Attack A Crack Foundation Repair</title>
 
 		<!-- Open Graph / Facebook -->
@@ -66,14 +91,14 @@ const schema = {
 		<meta property="og:url" content={Astro.url} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
-		<meta property="og:image" content="https://picsum.photos/seed/aac-og/1200/630" />
+		<meta property="og:image" content={image} />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:url" content={Astro.url} />
 		<meta property="twitter:title" content={title} />
 		<meta property="twitter:description" content={description} />
-		<meta property="twitter:image" content="https://picsum.photos/seed/aac-og/1200/630" />
+		<meta property="twitter:image" content={image} />
 
 		<!-- Schema.org -->
 		<script type="application/ld+json" set:html={JSON.stringify(schema)} />
