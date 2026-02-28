@@ -1,0 +1,63 @@
+{
+  "redirects": [
+    {
+      "source": "/wall-crack-repair",
+      "destination": "/services/wall-crack-repair",
+      "permanent": true
+    },
+    {
+      "source": "/leaky-bulkhead-repair",
+      "destination": "/services/leaky-bulkhead-repair",
+      "permanent": true
+    },
+    {
+      "source": "/sewer-well-conduit-line-repair",
+      "destination": "/services/sewer-well-conduit-line-repair",
+      "permanent": true
+    },
+    {
+      "source": "/foundation-crack-injection",
+      "destination": "/services/foundation-crack-injection",
+      "permanent": true
+    },
+    {
+      "source": "/carbon-fiber-stitches",
+      "destination": "/services/carbon-fiber-stitches",
+      "permanent": true
+    },
+    {
+      "source": "/free-foundation-consultations",
+      "destination": "/services/free-foundation-consultations",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/_astro/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    }
+  ]
+}
