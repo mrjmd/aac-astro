@@ -1,0 +1,182 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LocationModal from '../../components/LocationModal.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SchemaMarkup from '../../components/SchemaMarkup.astro';
+import Icon from '../../components/Icon.astro';
+
+// Get all services sorted by order
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Services' }
+];
+
+// Service schema for the hub page
+const servicesSchema = {
+  "@type": "ItemList",
+  "name": "Foundation Repair Services",
+  "description": "Specialized foundation repair solutions with lifetime guarantee in Connecticut and Massachusetts",
+  "numberOfItems": services.length,
+  "itemListElement": services.map((service, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "item": {
+      "@type": "Service",
+      "name": service.data.title,
+      "description": service.data.excerpt,
+      "url": `https://www.attackacrack.com/services/${service.id}`,
+      "provider": {
+        "@type": "HomeAndConstructionBusiness",
+        "name": "Attack A Crack Foundation Repair"
+      },
+      "areaServed": [
+        { "@type": "State", "name": "Connecticut" },
+        { "@type": "State", "name": "Massachusetts" }
+      ]
+    }
+  }))
+};
+---
+
+<Layout title="Foundation Repair Services" description="Specialized foundation repair solutions with a lifetime guarantee. We repair wall cracks, leaky bulkheads, utility lines, and more in CT & MA.">
+	<SchemaMarkup schema={servicesSchema} />
+	<LocationModal />
+	<Navbar currentPage="services" />
+
+	<main class="pt-20 lg:pt-24">
+		<!-- Hero Section -->
+		<section class="py-20 lg:py-32 bg-aac-dark text-white relative overflow-hidden">
+			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
+			<div class="max-w-7xl mx-auto px-6 relative z-10">
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-400 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-500" />
+				<h1 class="text-6xl lg:text-8xl font-black tracking-tighter mb-8 leading-none">
+					FOUNDATION <br />
+					<span class="text-aac-blue">REPAIR.</span>
+				</h1>
+				<p class="text-xl text-zinc-400 max-w-2xl mb-12">
+					Specialized foundation repair solutions with a lifetime guarantee. We don't just patch cracks; we solve the root cause with proven injection techniques.
+				</p>
+				<div class="flex flex-wrap gap-4">
+					<a href="tel:860-573-8760" class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+						<Icon name="Phone" size={16} />
+						Call CT: 860-573-8760
+					</a>
+					<a href="tel:617-668-1677" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
+						<Icon name="Phone" size={16} />
+						Call MA: 617-668-1677
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Services Grid -->
+		<section id="services" class="py-24 bg-zinc-50">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/10 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
+						<Icon name="Wrench" size={14} /> Our Services
+					</div>
+					<h2 class="text-4xl lg:text-5xl font-black tracking-tighter text-aac-dark">
+						Expert Foundation Solutions
+					</h2>
+				</div>
+
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					{services.map((service) => (
+						<a href={`/services/${service.id.replace(/\.md$/, '')}`} class="group bg-white p-8 rounded-[32px] border-2 border-zinc-100 hover:border-aac-blue transition-all shadow-sm hover:shadow-xl">
+							<div class="w-14 h-14 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center mb-6 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+								<Icon name={service.data.icon} size={28} />
+							</div>
+							<h3 class="text-2xl font-black mb-4 tracking-tight group-hover:text-aac-blue transition-colors">
+								{service.data.title}
+							</h3>
+							<p class="text-zinc-600 mb-6 leading-relaxed">
+								{service.data.excerpt}
+							</p>
+							<span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
+								Learn More <Icon name="ArrowRight" size={14} />
+							</span>
+						</a>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<!-- Proven Methods Section -->
+		<section class="py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="grid lg:grid-cols-2 gap-16 items-center">
+					<div>
+						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/10 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
+							<Icon name="ShieldCheck" size={14} /> Why Choose Us
+						</div>
+						<h2 class="text-4xl lg:text-5xl font-black text-aac-dark mb-8 tracking-tighter">
+							Proven Methods. <br />
+							<span class="text-aac-blue">Lifetime Guarantee.</span>
+						</h2>
+						<div class="space-y-8">
+							<div class="flex gap-6">
+								<div class="w-12 h-12 bg-aac-blue text-white rounded-xl flex items-center justify-center shrink-0 font-black">01</div>
+								<div>
+									<h3 class="text-xl font-black mb-2">Foundation Crack Injection</h3>
+									<p class="text-zinc-600">Our specialized urethane and epoxy injection process creates a permanent, flexible seal that moves with your foundation—guaranteed for life.</p>
+								</div>
+							</div>
+							<div class="flex gap-6">
+								<div class="w-12 h-12 bg-aac-blue text-white rounded-xl flex items-center justify-center shrink-0 font-black">02</div>
+								<div>
+									<h3 class="text-xl font-black mb-2">Carbon Fiber Reinforcement</h3>
+									<p class="text-zinc-600">For structural cracks, we use aerospace-grade carbon fiber stitches to reinforce the wall and prevent further movement.</p>
+								</div>
+							</div>
+							<div class="flex gap-6">
+								<div class="w-12 h-12 bg-aac-blue text-white rounded-xl flex items-center justify-center shrink-0 font-black">03</div>
+								<div>
+									<h3 class="text-xl font-black mb-2">No Salespeople, Just Experts</h3>
+									<p class="text-zinc-600">When you call Attack A Crack, you talk directly to the technicians who will do the work. Honest assessments, fair pricing.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="aspect-[4/3] rounded-[32px] overflow-hidden border-8 border-white shadow-2xl bg-zinc-200">
+						<img
+							src="https://picsum.photos/seed/method/800/600"
+							alt="Foundation repair technician performing injection repair"
+							class="w-full h-full object-cover"
+							referrerpolicy="no-referrer"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="py-24 bg-aac-dark text-white relative overflow-hidden">
+			<div class="absolute inset-0 bg-aac-blue/10"></div>
+			<div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+				<h2 class="text-4xl lg:text-6xl font-black tracking-tighter mb-8">
+					Free Foundation <span class="text-aac-yellow">Consultation</span>
+				</h2>
+				<p class="text-xl text-zinc-400 max-w-2xl mx-auto mb-12">
+					Not sure what's wrong with your foundation? We'll diagnose it for free. No pressure, no salespeople—just honest expert advice.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<button class="open-modal bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white inline-flex items-center justify-center gap-3">
+						<Icon name="MessageSquare" size={24} />
+						Text Us Photos
+					</button>
+					<a href="/services/free-foundation-consultations" class="bg-white/10 backdrop-blur-sm text-white px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-3">
+						<Icon name="Info" size={24} />
+						Learn More
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>

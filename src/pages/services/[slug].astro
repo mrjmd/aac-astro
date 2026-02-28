@@ -1,0 +1,290 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LocationModal from '../../components/LocationModal.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SchemaMarkup from '../../components/SchemaMarkup.astro';
+import Icon from '../../components/Icon.astro';
+
+export async function getStaticPaths() {
+  const services = await getCollection('services');
+  return services.map((service) => ({
+    params: { slug: service.id.replace(/\.md$/, '') },
+    props: { service },
+  }));
+}
+
+const { service } = Astro.props;
+const { Content } = await render(service);
+
+// Get all services for related services section
+const allServices = await getCollection('services');
+const relatedServices = service.data.relatedServices
+  ? allServices.filter(s => service.data.relatedServices?.includes(s.id))
+  : allServices.filter(s => s.id !== service.id).slice(0, 3);
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Services', href: '/services' },
+  { label: service.data.title }
+];
+
+// Service schema
+const serviceSchema = {
+  "@type": "Service",
+  "name": service.data.title,
+  "description": service.data.metaDescription,
+  "url": `https://www.attackacrack.com/services/${service.id.replace(/\.md$/, '')}`,
+  "provider": {
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Attack A Crack Foundation Repair",
+    "telephone": "860-573-8760",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Amston",
+      "addressRegion": "CT",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": [
+    { "@type": "State", "name": "Connecticut" },
+    { "@type": "State", "name": "Massachusetts" }
+  ],
+  "serviceType": "Foundation Repair",
+  "termsOfService": "Lifetime Guarantee"
+};
+
+// FAQ schema (if FAQs exist)
+const faqSchema = service.data.faqs && service.data.faqs.length > 0 ? {
+  "@type": "FAQPage",
+  "mainEntity": service.data.faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+} : null;
+
+const schemas = faqSchema ? [serviceSchema, faqSchema] : [serviceSchema];
+---
+
+<Layout title={service.data.metaTitle} description={service.data.metaDescription}>
+	<SchemaMarkup schema={schemas} />
+	<LocationModal />
+	<Navbar currentPage="services" />
+
+	<main class="pt-20 lg:pt-24">
+		<!-- Hero Section -->
+		<section class="py-16 lg:py-24 bg-aac-dark text-white relative overflow-hidden">
+			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
+			<div class="max-w-7xl mx-auto px-6 relative z-10">
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-400 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-500" />
+
+				<div class="grid lg:grid-cols-2 gap-12 items-center">
+					<div>
+						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/20 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/30">
+							<Icon name={service.data.icon} size={14} /> Foundation Repair Service
+						</div>
+						<h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-6 leading-none">
+							{service.data.title}
+						</h1>
+						<p class="text-xl text-zinc-400 mb-8">
+							{service.data.excerpt}
+						</p>
+						<div class="flex flex-wrap gap-4">
+							<button class="open-modal bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+								<Icon name="MessageSquare" size={16} />
+								Get Free Quote
+							</button>
+							<a href="tel:860-573-8760" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
+								<Icon name="Phone" size={16} />
+								Call Now
+							</a>
+						</div>
+					</div>
+
+					<!-- Before/After Toggle -->
+					{(service.data.beforeImage || service.data.afterImage) && (
+						<div class="relative">
+							<div class="aspect-[4/3] rounded-[32px] overflow-hidden border-4 border-white/20 shadow-2xl">
+								<div class="service-image-container relative w-full h-full">
+									<img
+										src={service.data.beforeImage || "https://picsum.photos/seed/before/800/600"}
+										data-before={service.data.beforeImage || "https://picsum.photos/seed/before/800/600"}
+										data-after={service.data.afterImage || "https://picsum.photos/seed/after/800/600"}
+										alt={`${service.data.title} - Before and After`}
+										class="service-hero-image w-full h-full object-cover transition-opacity duration-500"
+										referrerpolicy="no-referrer"
+									/>
+									<div class="status-badge absolute top-4 left-4 bg-aac-dark/80 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-lg border border-white/20">
+										The Problem
+									</div>
+								</div>
+							</div>
+							<button class="toggle-image absolute -bottom-4 left-1/2 -translate-x-1/2 bg-aac-blue text-white px-6 py-3 rounded-full font-black uppercase tracking-widest text-[10px] shadow-lg hover:bg-aac-blue/90 transition-all inline-flex items-center gap-2 border-4 border-white">
+								<Icon name="ArrowRight" size={14} />
+								See The Solution
+							</button>
+						</div>
+					)}
+				</div>
+			</div>
+		</section>
+
+		<!-- Main Content -->
+		<section class="py-16 lg:py-24 bg-white">
+			<div class="max-w-4xl mx-auto px-6">
+				<article class="prose prose-lg prose-zinc max-w-none prose-headings:font-black prose-headings:tracking-tight prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-p:leading-relaxed prose-a:text-aac-blue prose-a:font-bold prose-a:no-underline hover:prose-a:underline prose-strong:text-aac-dark prose-ul:my-6 prose-li:my-2 prose-table:my-8">
+					<Content />
+				</article>
+			</div>
+		</section>
+
+		<!-- FAQs Section -->
+		{service.data.faqs && service.data.faqs.length > 0 && (
+			<section class="py-16 lg:py-24 bg-zinc-50">
+				<div class="max-w-4xl mx-auto px-6">
+					<div class="text-center mb-12">
+						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/10 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
+							<Icon name="Info" size={14} /> Common Questions
+						</div>
+						<h2 class="text-4xl font-black tracking-tighter text-aac-dark">
+							Frequently Asked Questions
+						</h2>
+					</div>
+
+					<div class="space-y-4">
+						{service.data.faqs.map((faq, index) => (
+							<details class="group bg-white rounded-2xl border-2 border-zinc-100 overflow-hidden">
+								<summary class="flex justify-between items-center p-6 cursor-pointer font-black text-lg hover:text-aac-blue transition-colors list-none">
+									{faq.question}
+									<span class="text-aac-blue shrink-0 ml-4 group-open:rotate-180 transition-transform">
+										<Icon name="ChevronRight" size={20} class="rotate-90" />
+									</span>
+								</summary>
+								<div class="px-6 pb-6 text-zinc-600 leading-relaxed">
+									{faq.answer}
+								</div>
+							</details>
+						))}
+					</div>
+				</div>
+			</section>
+		)}
+
+		<!-- Related Services -->
+		{relatedServices.length > 0 && (
+			<section class="py-16 lg:py-24 bg-white border-t border-zinc-100">
+				<div class="max-w-7xl mx-auto px-6">
+					<div class="text-center mb-12">
+						<h2 class="text-3xl font-black tracking-tighter text-aac-dark">
+							Related Services
+						</h2>
+					</div>
+
+					<div class="grid md:grid-cols-3 gap-8">
+						{relatedServices.map((related) => (
+							<a href={`/services/${related.id.replace(/\.md$/, '')}`} class="group bg-zinc-50 p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all">
+								<div class="w-12 h-12 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mb-4 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+									<Icon name={related.data.icon} size={24} />
+								</div>
+								<h3 class="text-xl font-black mb-2 group-hover:text-aac-blue transition-colors">
+									{related.data.title}
+								</h3>
+								<p class="text-zinc-600 text-sm line-clamp-2">
+									{related.data.excerpt}
+								</p>
+							</a>
+						))}
+					</div>
+				</div>
+			</section>
+		)}
+
+		<!-- CTA Section -->
+		<section class="py-16 lg:py-24 bg-aac-dark text-white">
+			<div class="max-w-7xl mx-auto px-6 text-center">
+				<h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-6">
+					Ready to Fix Your <span class="text-aac-yellow">Foundation?</span>
+				</h2>
+				<p class="text-xl text-zinc-400 max-w-2xl mx-auto mb-10">
+					Get a free consultation with our experts. We'll assess your foundation and provide an honest quote—no pressure, no salespeople.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<button class="open-modal bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] border-2 border-aac-dark inline-flex items-center justify-center gap-2">
+						<Icon name="MessageSquare" size={20} />
+						Text Us Photos
+					</button>
+					<a href="tel:860-573-8760" class="bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+						<Icon name="Phone" size={20} />
+						CT: 860-573-8760
+					</a>
+					<a href="tel:617-668-1677" class="bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+						<Icon name="Phone" size={20} />
+						MA: 617-668-1677
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<script>
+	// Before/After image toggle
+	document.querySelectorAll('.toggle-image').forEach(button => {
+		const container = button.closest('section')?.querySelector('.service-image-container');
+		if (!container) return;
+
+		const img = container.querySelector('.service-hero-image') as HTMLImageElement;
+		const badge = container.querySelector('.status-badge') as HTMLElement;
+		const beforeUrl = img.dataset.before;
+		const afterUrl = img.dataset.after;
+		let isAfter = false;
+
+		button.addEventListener('click', () => {
+			img.style.opacity = '0';
+			setTimeout(() => {
+				if (isAfter) {
+					if (beforeUrl) img.src = beforeUrl;
+					badge.textContent = 'The Problem';
+					button.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg> See The Solution';
+				} else {
+					if (afterUrl) img.src = afterUrl;
+					badge.textContent = 'The Solution';
+					button.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> See The Problem';
+				}
+				isAfter = !isAfter;
+				img.style.opacity = '1';
+			}, 300);
+		});
+	});
+</script>
+
+<style>
+	/* Prose table styling */
+	.prose table {
+		width: 100%;
+		border-collapse: collapse;
+		border-radius: 0.5rem;
+		overflow: hidden;
+	}
+	.prose table th {
+		background-color: var(--color-aac-dark);
+		color: white;
+		text-align: left;
+		padding: 1rem;
+		font-weight: bold;
+	}
+	.prose table td {
+		padding: 1rem;
+		border-bottom: 1px solid rgb(244 244 245);
+	}
+	.prose table tr:last-child td {
+		border-bottom: none;
+	}
+</style>
