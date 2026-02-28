@@ -1,0 +1,356 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LocationModal from '../../components/LocationModal.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SchemaMarkup from '../../components/SchemaMarkup.astro';
+import Icon from '../../components/Icon.astro';
+
+export async function getStaticPaths() {
+  const locations = await getCollection('locations');
+  const maLocations = locations.filter(loc => loc.data.stateAbbr === 'MA');
+
+  return maLocations.map((location) => ({
+    params: { city: location.id.replace(/\.md$/, '').replace(/^massachusetts\//, '') },
+    props: { location },
+  }));
+}
+
+const { location } = Astro.props;
+const { Content } = await render(location);
+
+// Get services
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+
+// Get nearby city pages
+const allLocations = await getCollection('locations');
+const nearbyLocations = location.data.nearbyCities
+  ? allLocations.filter(loc =>
+      loc.data.stateAbbr === 'MA' &&
+      location.data.nearbyCities?.includes(loc.data.city)
+    )
+  : [];
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Massachusetts', href: '/massachusetts' },
+  { label: location.data.city }
+];
+
+// LocalBusiness schema for this city
+const citySchema = {
+  "@type": "HomeAndConstructionBusiness",
+  "name": `Attack A Crack Foundation Repair - ${location.data.city}, MA`,
+  "image": "https://www.attackacrack.com/images/logo.png",
+  "@id": `https://www.attackacrack.com/massachusetts/${location.id.replace(/\.md$/, '').replace(/^massachusetts\//, '')}#organization`,
+  "url": `https://www.attackacrack.com/massachusetts/${location.id.replace(/\.md$/, '').replace(/^massachusetts\//, '')}`,
+  "telephone": location.data.phoneNumber || "617-668-1677",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": location.data.city,
+    "addressRegion": "MA",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": location.data.city,
+    "containedInPlace": {
+      "@type": "State",
+      "name": "Massachusetts"
+    }
+  }
+};
+
+// FAQ schema if FAQs exist
+const faqSchema = location.data.faqs && location.data.faqs.length > 0 ? {
+  "@type": "FAQPage",
+  "mainEntity": location.data.faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+} : null;
+
+const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
+---
+
+<Layout
+  title={location.data.metaTitle}
+  description={location.data.metaDescription}
+>
+	<SchemaMarkup schema={schemas} />
+	<LocationModal />
+	<Navbar />
+
+	<main class="pt-20 lg:pt-24">
+		<!-- Hero Section -->
+		<section class="py-16 lg:py-24 bg-aac-dark text-white relative overflow-hidden">
+			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
+			<div class="max-w-7xl mx-auto px-6 relative z-10">
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-400 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-500" />
+
+				<div class="grid lg:grid-cols-2 gap-12 items-center">
+					<div>
+						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-yellow/20 text-aac-yellow rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-yellow/30">
+							<Icon name="MapPin" size={14} /> {location.data.city}, MA
+						</div>
+						<h1 class="text-4xl lg:text-6xl font-black tracking-tighter mb-6 leading-none">
+							Foundation Repair in <span class="text-aac-blue">{location.data.city}</span>, Massachusetts
+						</h1>
+
+						{location.data.population && (
+							<p class="text-lg text-zinc-400 mb-4">
+								Serving {location.data.population.toLocaleString()}+ {location.data.city} residents with expert foundation repair.
+							</p>
+						)}
+
+						<div class="flex flex-wrap gap-4 mb-8">
+							<div class="flex items-center gap-2 text-aac-yellow">
+								<Icon name="Star" size={18} />
+								<span class="font-bold text-sm">5-Star Reviews</span>
+							</div>
+							<div class="flex items-center gap-2 text-white">
+								<Icon name="ShieldCheck" size={18} />
+								<span class="font-bold text-sm">Lifetime Guarantee</span>
+							</div>
+							{location.data.servesResurfacing && (
+								<div class="flex items-center gap-2 text-aac-blue">
+									<Icon name="Wrench" size={18} />
+									<span class="font-bold text-sm">+ Resurfacing</span>
+								</div>
+							)}
+						</div>
+
+						<div class="flex flex-wrap gap-4">
+							<a href={`tel:${location.data.phoneNumber || '617-668-1677'}`} class="bg-aac-yellow text-aac-dark px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+								<Icon name="Phone" size={16} />
+								Call {location.data.phoneNumber || '617-668-1677'}
+							</a>
+							<button class="open-modal bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
+								<Icon name="MessageSquare" size={16} />
+								Text Us Photos
+							</button>
+						</div>
+					</div>
+
+					<div class="hidden lg:block">
+						<div class="aspect-[4/3] rounded-[32px] overflow-hidden border-4 border-white/20 bg-zinc-800">
+							<img
+								src={`https://picsum.photos/seed/${location.data.city.toLowerCase()}-ma/800/600`}
+								alt={`Foundation repair in ${location.data.city}, MA`}
+								class="w-full h-full object-cover"
+								referrerpolicy="no-referrer"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Resurfacing Banner (MA Only) -->
+		{location.data.servesResurfacing && (
+			<section class="py-6 bg-aac-blue text-white">
+				<div class="max-w-7xl mx-auto px-6">
+					<div class="flex flex-col md:flex-row items-center justify-between gap-4">
+						<div class="flex items-center gap-4">
+							<Icon name="Wrench" size={24} />
+							<p class="font-bold">
+								Concrete resurfacing also available in {location.data.city}!
+							</p>
+						</div>
+						<a href="/concrete-resurfacing" class="bg-white text-aac-blue px-4 py-2 rounded-lg font-black uppercase tracking-widest text-[10px] hover:bg-aac-yellow hover:text-aac-dark transition-colors inline-flex items-center gap-2">
+							Learn More <Icon name="ArrowRight" size={14} />
+						</a>
+					</div>
+				</div>
+			</section>
+		)}
+
+		<!-- City Info Section -->
+		{(location.data.neighborhoods || location.data.commonFoundationTypes) && (
+			<section class="py-16 bg-zinc-50">
+				<div class="max-w-7xl mx-auto px-6">
+					<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+						{location.data.neighborhoods && location.data.neighborhoods.length > 0 && (
+							<div class="bg-white p-8 rounded-2xl border-2 border-zinc-100">
+								<h3 class="font-black text-lg mb-4 flex items-center gap-2">
+									<Icon name="MapPin" size={20} class="text-aac-blue" />
+									Neighborhoods We Serve
+								</h3>
+								<ul class="space-y-2 text-zinc-600">
+									{location.data.neighborhoods.map(neighborhood => (
+										<li class="flex items-center gap-2">
+											<Icon name="CheckCircle2" size={14} class="text-green-500" />
+											{neighborhood}
+										</li>
+									))}
+								</ul>
+							</div>
+						)}
+
+						{location.data.commonFoundationTypes && location.data.commonFoundationTypes.length > 0 && (
+							<div class="bg-white p-8 rounded-2xl border-2 border-zinc-100">
+								<h3 class="font-black text-lg mb-4 flex items-center gap-2">
+									<Icon name="Hammer" size={20} class="text-aac-blue" />
+									Common Foundation Types
+								</h3>
+								<ul class="space-y-2 text-zinc-600">
+									{location.data.commonFoundationTypes.map(type => (
+										<li class="flex items-center gap-2">
+											<Icon name="CheckCircle2" size={14} class="text-green-500" />
+											{type}
+										</li>
+									))}
+								</ul>
+							</div>
+						)}
+
+						{location.data.averageHomeAge && (
+							<div class="bg-white p-8 rounded-2xl border-2 border-zinc-100">
+								<h3 class="font-black text-lg mb-4 flex items-center gap-2">
+									<Icon name="Clock" size={20} class="text-aac-blue" />
+									Local Insights
+								</h3>
+								<p class="text-zinc-600">
+									<strong>Average Home Age:</strong> {location.data.averageHomeAge}
+								</p>
+								{location.data.population && (
+									<p class="text-zinc-600 mt-2">
+										<strong>Population:</strong> {location.data.population.toLocaleString()}
+									</p>
+								)}
+							</div>
+						)}
+					</div>
+				</div>
+			</section>
+		)}
+
+		<!-- Main Content -->
+		<section class="py-16 bg-white">
+			<div class="max-w-4xl mx-auto px-6">
+				<article class="prose prose-lg prose-zinc max-w-none prose-headings:font-black prose-headings:tracking-tight prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-p:leading-relaxed prose-a:text-aac-blue prose-a:font-bold prose-a:no-underline hover:prose-a:underline prose-strong:text-aac-dark">
+					<Content />
+				</article>
+			</div>
+		</section>
+
+		<!-- Services in This City -->
+		<section class="py-16 bg-zinc-50">
+			<div class="max-w-7xl mx-auto px-6">
+				<h2 class="text-3xl font-black tracking-tighter text-aac-dark mb-8 text-center">
+					Services in {location.data.city}
+				</h2>
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+					{services.map((service) => (
+						<a href={`/services/${service.id.replace(/\.md$/, '')}`} class="group bg-white p-6 rounded-xl border-2 border-zinc-100 hover:border-aac-blue transition-all flex items-start gap-4">
+							<div class="w-12 h-12 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center shrink-0 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+								<Icon name={service.data.icon} size={24} />
+							</div>
+							<div>
+								<h3 class="font-black group-hover:text-aac-blue transition-colors">
+									{service.data.title}
+								</h3>
+								<p class="text-sm text-zinc-500 mt-1 line-clamp-2">
+									{service.data.excerpt}
+								</p>
+							</div>
+						</a>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQs -->
+		{location.data.faqs && location.data.faqs.length > 0 && (
+			<section class="py-16 bg-white">
+				<div class="max-w-4xl mx-auto px-6">
+					<h2 class="text-3xl font-black tracking-tighter text-aac-dark mb-8 text-center">
+						Foundation Repair FAQs for {location.data.city}
+					</h2>
+					<div class="space-y-4">
+						{location.data.faqs.map((faq) => (
+							<details class="group bg-zinc-50 rounded-xl overflow-hidden">
+								<summary class="flex justify-between items-center p-6 cursor-pointer font-bold hover:text-aac-blue transition-colors list-none">
+									{faq.question}
+									<Icon name="ChevronRight" size={20} class="text-aac-blue rotate-90 group-open:rotate-270 transition-transform" />
+								</summary>
+								<div class="px-6 pb-6 text-zinc-600">
+									{faq.answer}
+								</div>
+							</details>
+						))}
+					</div>
+				</div>
+			</section>
+		)}
+
+		<!-- Testimonial -->
+		{location.data.testimonial && (
+			<section class="py-16 bg-aac-blue text-white">
+				<div class="max-w-4xl mx-auto px-6 text-center">
+					<Icon name="Star" size={48} class="text-aac-yellow mx-auto mb-6" />
+					<blockquote class="text-2xl lg:text-3xl font-bold mb-6 leading-relaxed">
+						"{location.data.testimonial.quote}"
+					</blockquote>
+					<p class="font-black">
+						— {location.data.testimonial.author}
+						{location.data.testimonial.location && (
+							<span class="font-normal opacity-80">, {location.data.testimonial.location}</span>
+						)}
+					</p>
+				</div>
+			</section>
+		)}
+
+		<!-- Nearby Cities -->
+		{nearbyLocations.length > 0 && (
+			<section class="py-16 bg-zinc-50">
+				<div class="max-w-7xl mx-auto px-6">
+					<h2 class="text-2xl font-black tracking-tighter text-aac-dark mb-8">
+						We Also Serve Nearby Cities
+					</h2>
+					<div class="flex flex-wrap gap-4">
+						{nearbyLocations.map(nearby => (
+							<a
+								href={`/massachusetts/${nearby.id.replace(/\.md$/, '').replace(/^massachusetts\//, '')}`}
+								class="px-4 py-2 bg-white border-2 border-zinc-200 rounded-full font-bold text-zinc-700 hover:border-aac-blue hover:text-aac-blue transition-colors"
+							>
+								{nearby.data.city}, MA
+							</a>
+						))}
+					</div>
+				</div>
+			</section>
+		)}
+
+		<!-- CTA Section -->
+		<section class="py-16 bg-aac-dark text-white">
+			<div class="max-w-4xl mx-auto px-6 text-center">
+				<h2 class="text-3xl lg:text-4xl font-black tracking-tighter mb-6">
+					Need Foundation Repair in {location.data.city}?
+				</h2>
+				<p class="text-lg text-zinc-400 mb-8">
+					Get a free consultation from our local experts. We'll assess your foundation and provide an honest quote.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href={`tel:${location.data.phoneNumber || '617-668-1677'}`} class="bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
+						<Icon name="Phone" size={20} />
+						{location.data.phoneNumber || '617-668-1677'}
+					</a>
+					<button class="open-modal bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+						<Icon name="MessageSquare" size={20} />
+						Text Photos
+					</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
