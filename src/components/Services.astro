@@ -1,0 +1,129 @@
+---
+import Icon from './Icon.astro';
+
+const services = [
+  {
+    title: "Wall Cracks",
+    description: "Urethane injection, epoxy resin, and carbon fiber stitches to repair foundation cracks in basement walls and support beams.",
+    icon: "Hammer",
+    link: "/services",
+    beforeImg: "https://picsum.photos/seed/crack-before/600/400",
+    afterImg: "https://picsum.photos/seed/crack-after/600/400"
+  },
+  {
+    title: "Leaky Bulkheads",
+    description: "We remove the old gasket and inject between the foundation and precast bulkhead for a lifelong seal.",
+    icon: "Droplets",
+    link: "/services",
+    beforeImg: "https://picsum.photos/seed/bulkhead-before/600/400",
+    afterImg: "https://picsum.photos/seed/bulkhead-after/600/400"
+  },
+  {
+    title: "Utility Lines",
+    description: "Durable urethane resin fills gaps around sewer, well, and electrical conduit lines without excavation.",
+    icon: "ShieldCheck",
+    link: "/services",
+    beforeImg: "https://picsum.photos/seed/utility-before/600/400",
+    afterImg: "https://picsum.photos/seed/utility-after/600/400"
+  },
+  {
+    title: "Free Diagnosis",
+    description: "All diagnosis is free! We'll talk you through your options including DIY repair advice.",
+    icon: "Info",
+    link: "/services",
+    beforeImg: "https://picsum.photos/seed/diag-before/600/400",
+    afterImg: "https://picsum.photos/seed/diag-after/600/400"
+  }
+];
+---
+
+<section id="services" class="py-24 bg-aac-dark text-white relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+      <div class="max-w-2xl">
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/20 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/30">
+          <Icon name="Wrench" size={14} /> WHAT WE DO
+        </div>
+        <h2 class="text-4xl lg:text-6xl font-display font-black tracking-tighter leading-none">
+          Specialized Foundation <br />
+          <span class="text-aac-blue">Repair Solutions</span>
+        </h2>
+      </div>
+      <a href="/services" class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all">
+        VIEW ALL SOLUTIONS
+      </a>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {services.map((service) => (
+        <div class="service-card group bg-white/5 backdrop-blur-sm p-6 rounded-[32px] border border-white/10 hover:bg-white/10 transition-all flex flex-col h-full">
+          <div class="relative aspect-video rounded-2xl overflow-hidden mb-6 bg-zinc-800 border border-white/5">
+            <div class="image-container absolute inset-0">
+              <img 
+                src={service.beforeImg} 
+                data-before={service.beforeImg}
+                data-after={service.afterImg}
+                alt={service.title}
+                class="service-image w-full h-full object-cover transition-opacity duration-400"
+                referrerpolicy="no-referrer"
+              />
+              <div class="status-badge absolute top-3 left-3 bg-aac-dark/80 backdrop-blur-md text-white text-[8px] font-black uppercase tracking-widest px-2.5 py-1 rounded-lg border border-white/20">
+                THE PROBLEM
+              </div>
+            </div>
+            
+            <div class="absolute bottom-3 right-3 w-10 h-10 bg-aac-blue text-white rounded-xl flex items-center justify-center shadow-lg">
+              <Icon name={service.icon} size={20} />
+            </div>
+          </div>
+
+          <h3 class="text-xl font-black mb-4 tracking-tight">{service.title}</h3>
+          <p class="text-zinc-400 text-sm font-bold leading-relaxed mb-6 flex-grow">{service.description}</p>
+          <a href={service.link} class="inline-flex items-center gap-2 text-aac-yellow font-black uppercase tracking-widest text-[10px] hover:gap-4 transition-all">
+            LEARN MORE <Icon name="ArrowRight" size={14} />
+          </a>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.service-card').forEach(card => {
+    const img = card.querySelector('.service-image') as HTMLImageElement;
+    const badge = card.querySelector('.status-badge') as HTMLElement;
+    const beforeUrl = img.dataset.before;
+    const afterUrl = img.dataset.after;
+
+    function showAfter() {
+      img.style.opacity = '0';
+      setTimeout(() => {
+        if (afterUrl) img.src = afterUrl;
+        badge.textContent = 'The Solution';
+        img.style.opacity = '1';
+      }, 200);
+    }
+
+    function showBefore() {
+      img.style.opacity = '0';
+      setTimeout(() => {
+        if (beforeUrl) img.src = beforeUrl;
+        badge.textContent = 'THE PROBLEM';
+        img.style.opacity = '1';
+      }, 200);
+    }
+
+    card.addEventListener('mouseenter', showAfter);
+    card.addEventListener('mouseleave', showBefore);
+
+    // Mobile auto-toggle
+    if (window.innerWidth < 1024) {
+      let isAfter = false;
+      setInterval(() => {
+        if (isAfter) showBefore();
+        else showAfter();
+        isAfter = !isAfter;
+      }, 3000);
+    }
+  });
+</script>

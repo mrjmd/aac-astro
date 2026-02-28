@@ -1,0 +1,23 @@
+{
+  "name": "react-example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --port=3000 --host=0.0.0.0",
+    "build": "astro build",
+    "preview": "astro preview",
+    "clean": "rm -rf dist",
+    "lint": "astro check"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.1",
+    "astro": "^5.18.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.6",
+    "@types/node": "^22.14.0",
+    "tailwindcss": "^4.2.1",
+    "typescript": "~5.8.2"
+  }
+}

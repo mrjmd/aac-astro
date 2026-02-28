@@ -1,0 +1,88 @@
+---
+import Icon from './Icon.astro';
+
+const CT_NUMBER = "860-573-8760";
+const MA_NUMBER = "617-668-1677";
+---
+
+<div id="location-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-6 hidden">
+  <div id="modal-backdrop" class="absolute inset-0 bg-aac-dark/60 backdrop-blur-sm"></div>
+  <div class="relative bg-white rounded-3xl p-8 max-w-md w-full shadow-2xl border-4 border-aac-yellow transform scale-90 opacity-0 transition-all duration-300">
+    <button id="modal-close" class="absolute top-4 right-4 text-zinc-400 hover:text-zinc-900">
+      <Icon name="X" size={24} />
+    </button>
+    <div class="text-center mb-8">
+      <div class="w-16 h-16 bg-aac-yellow rounded-2xl flex items-center justify-center mx-auto mb-4">
+        <Icon name="MapPin" class="text-aac-dark" size={32} />
+      </div>
+      <h3 class="text-2xl font-bold text-aac-dark mb-2">Where are you located?</h3>
+      <p class="text-zinc-500 font-medium">We service New England only.</p>
+    </div>
+    <div class="grid gap-4">
+      <a href={`sms:${CT_NUMBER}`} class="flex items-center justify-between p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue hover:bg-aac-blue/5 transition-all group">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center font-black group-hover:bg-aac-blue group-hover:text-white transition-colors">CT</div>
+          <div class="text-left">
+            <p class="font-black text-aac-dark">Connecticut</p>
+            <p class="text-xs text-zinc-400 font-bold uppercase tracking-widest">Text Photos to {CT_NUMBER}</p>
+          </div>
+        </div>
+        <Icon name="MessageSquare" size={20} class="text-aac-blue" />
+      </a>
+      <a href={`sms:${MA_NUMBER}`} class="flex items-center justify-between p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue hover:bg-aac-blue/5 transition-all group">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center font-black group-hover:bg-aac-blue group-hover:text-white transition-colors">MA</div>
+          <div class="text-left">
+            <p class="font-black text-aac-dark">Massachusetts</p>
+            <p class="text-xs text-zinc-400 font-bold uppercase tracking-widest">Text Photos to {MA_NUMBER}</p>
+          </div>
+        </div>
+        <Icon name="MessageSquare" size={20} class="text-aac-blue" />
+      </a>
+      <a href={`sms:${MA_NUMBER}`} class="flex items-center justify-between p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue hover:bg-aac-blue/5 transition-all group">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-zinc-100 text-zinc-400 rounded-xl flex items-center justify-center font-black group-hover:bg-aac-blue group-hover:text-white transition-colors">NE</div>
+          <div class="text-left">
+            <p class="font-black text-aac-dark">Other New England</p>
+            <p class="text-xs text-zinc-400 font-bold uppercase tracking-widest">Routes to {MA_NUMBER}</p>
+          </div>
+        </div>
+        <Icon name="MessageSquare" size={20} class="text-zinc-300" />
+      </a>
+    </div>
+    <div class="mt-8 p-4 bg-zinc-50 rounded-2xl border-2 border-zinc-100 flex items-center gap-4">
+      <Icon name="Phone" size={20} class="text-aac-blue" />
+      <div class="text-left">
+        <p class="text-[10px] font-black uppercase tracking-widest text-zinc-400">Prefer to call?</p>
+        <p class="text-sm font-black text-aac-dark">Speak with an expert directly.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById('location-modal');
+  const backdrop = document.getElementById('modal-backdrop');
+  const closeBtn = document.getElementById('modal-close');
+  const content = modal.querySelector('.relative');
+
+  function openModal() {
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+      content.classList.remove('scale-90', 'opacity-0');
+      content.classList.add('scale-100', 'opacity-100');
+    }, 10);
+  }
+
+  function closeModal() {
+    content.classList.add('scale-90', 'opacity-0');
+    content.classList.remove('scale-100', 'opacity-100');
+    setTimeout(() => {
+      modal.classList.add('hidden');
+    }, 300);
+  }
+
+  window.addEventListener('open-location-modal', openModal);
+  backdrop.addEventListener('click', closeModal);
+  closeBtn.addEventListener('click', closeModal);
+</script>

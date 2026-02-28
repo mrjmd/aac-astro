@@ -1,0 +1,151 @@
+---
+import Icon from './Icon.astro';
+
+const CT_NUMBER = "860-573-8760";
+const MA_NUMBER = "617-668-1677";
+
+const navLinks = [
+  { name: 'Services', href: '/services' },
+  { name: 'About', href: '/about' },
+  { name: 'Blog', href: '/blog' },
+  { name: 'Partners', href: '/partners' },
+];
+
+const { currentPage = 'home' } = Astro.props;
+---
+
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white">
+  <!-- Top Bar -->
+  <div id="top-bar" class="bg-aac-blue text-white py-2 px-6 hidden md:block">
+    <div class="max-w-7xl mx-auto flex justify-between items-center text-[10px] font-black uppercase tracking-widest">
+      <div class="flex gap-8">
+        <a href={`tel:${CT_NUMBER}`} class="flex items-center gap-2 hover:text-aac-yellow transition-colors"><Icon name="MapPin" size={12} class="text-aac-yellow" /> CT: {CT_NUMBER}</a>
+        <a href={`tel:${MA_NUMBER}`} class="flex items-center gap-2 hover:text-aac-yellow transition-colors"><Icon name="MapPin" size={12} class="text-aac-yellow" /> MA: {MA_NUMBER}</a>
+      </div>
+      <div class="flex gap-8">
+        <span class="flex items-center gap-2 uppercase"><Icon name="ShieldCheck" size={12} class="text-aac-yellow" /> Lifetime Guarantee</span>
+        <span class="flex items-center gap-2 uppercase"><Icon name="Star" size={12} class="text-aac-yellow" /> 240+ CT Reviews</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-3 group">
+      <div class="w-11 h-11 bg-aac-blue rounded-xl flex items-center justify-center text-white font-black text-2xl shadow-[4px_4px_0px_0px_rgba(0,86,179,0.2)]">
+        A
+      </div>
+      <div class="flex flex-col">
+        <span class="font-display font-black text-lg tracking-tighter leading-none text-aac-dark">ATTACK A CRACK</span>
+        <span class="text-[7px] uppercase tracking-[0.2em] text-aac-blue font-bold mt-1">Foundation Repair</span>
+      </div>
+    </a>
+
+    <!-- Desktop Nav -->
+    <div class="hidden lg:flex items-center gap-8">
+      <div class="flex items-center gap-8">
+        {navLinks.map((link) => (
+          <a 
+            href={link.href} 
+            class={`text-[11px] font-black uppercase tracking-widest transition-colors ${currentPage === link.name.toLowerCase() ? 'text-aac-blue' : 'text-zinc-500 hover:text-aac-blue'}`}
+          >
+            {link.name}
+          </a>
+        ))}
+      </div>
+      
+      <button 
+        class="open-modal bg-aac-yellow text-aac-dark px-6 py-3.5 rounded-xl text-[11px] font-black uppercase tracking-widest hover:translate-y-[-2px] transition-all shadow-[6px_6px_0px_0px_rgba(26,26,26,1)] flex items-center gap-2 border-2 border-aac-dark"
+      >
+        <Icon name="MessageSquare" size={14} />
+        Text Photos
+        <Icon name="ArrowRight" size={14} />
+      </button>
+    </div>
+
+    <!-- Mobile Toggle -->
+    <button id="mobile-menu-toggle" class="lg:hidden text-aac-dark p-2">
+      <Icon name="Menu" size={28} />
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 top-0 bg-white z-[60] p-8 lg:hidden flex flex-col gap-6 translate-x-full transition-transform duration-300">
+    <div class="flex justify-end">
+      <button id="mobile-menu-close" class="text-aac-dark p-2">
+        <Icon name="X" size={28} />
+      </button>
+    </div>
+    <div class="grid gap-4">
+      {navLinks.map((link) => (
+        <a 
+          href={link.href} 
+          class={`text-2xl font-black border-b-4 pb-2 inline-block w-fit ${currentPage === link.name.toLowerCase() ? 'text-aac-blue border-aac-blue' : 'text-aac-dark border-aac-yellow'}`}
+        >
+          {link.name}
+        </a>
+      ))}
+    </div>
+    
+    <div class="mt-auto space-y-4">
+      <div class="p-4 bg-zinc-50 rounded-2xl border-2 border-zinc-100">
+        <p class="text-[10px] font-black uppercase tracking-widest text-zinc-400 mb-2">Call an Expert</p>
+        <div class="space-y-3">
+          <a href={`tel:${CT_NUMBER}`} class="flex items-center gap-3 font-black text-aac-dark">
+            <div class="w-8 h-8 bg-aac-blue text-white rounded-lg flex items-center justify-center text-xs">CT</div>
+            {CT_NUMBER}
+          </a>
+          <a href={`tel:${MA_NUMBER}`} class="flex items-center gap-3 font-black text-aac-dark">
+            <div class="w-8 h-8 bg-aac-blue text-white rounded-lg flex items-center justify-center text-xs">MA</div>
+            {MA_NUMBER}
+          </a>
+        </div>
+      </div>
+      <button 
+        class="open-modal w-full bg-aac-yellow text-aac-dark p-5 rounded-2xl font-black uppercase tracking-widest flex items-center justify-center gap-3 border-4 border-aac-dark shadow-xl"
+      >
+        <Icon name="MessageSquare" size={24} />
+        Text Photos for Quote
+      </button>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  const topBar = document.getElementById('top-bar');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileToggle = document.getElementById('mobile-menu-toggle');
+  const mobileClose = document.getElementById('mobile-menu-close');
+  const isHome = window.location.pathname === '/' || window.location.pathname === '/index.html';
+
+  function updateNavbar() {
+    const isScrolled = window.scrollY > 20;
+    if (isScrolled || !isHome) {
+      navbar.classList.add('bg-white', 'py-2');
+      navbar.classList.remove('bg-transparent', 'py-4');
+      if (topBar) topBar.classList.add('hidden');
+    } else {
+      navbar.classList.remove('bg-white', 'py-2');
+      navbar.classList.add('bg-transparent', 'py-4');
+      if (topBar) topBar.classList.remove('hidden');
+    }
+  }
+
+  window.addEventListener('scroll', updateNavbar);
+  updateNavbar();
+
+  mobileToggle.addEventListener('click', () => {
+    mobileMenu.classList.remove('translate-x-full');
+  });
+
+  mobileClose.addEventListener('click', () => {
+    mobileMenu.classList.add('translate-x-full');
+  });
+
+  // Handle modal opening
+  document.querySelectorAll('.open-modal').forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.dispatchEvent(new CustomEvent('open-location-modal'));
+    });
+  });
+</script>

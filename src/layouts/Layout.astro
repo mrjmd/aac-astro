@@ -1,0 +1,88 @@
+---
+import '../styles/global.css';
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Attack A Crack foundation repair, a trusted family-owned concrete foundation repair contractor, has served New England for 20+ years." } = Astro.props;
+
+const CT_NUMBER = "860-573-8760";
+
+// JSON-LD Schema for Local Business
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Attack A Crack Foundation Repair",
+  "image": "https://picsum.photos/seed/aac-logo/200/200",
+  "@id": "",
+  "url": "https://attackacrack.com",
+  "telephone": CT_NUMBER,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Amston",
+    "addressLocality": "Amston",
+    "addressRegion": "CT",
+    "postalCode": "06231",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 41.6151,
+    "longitude": -72.3484
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "sameAs": [
+    "https://www.facebook.com/attackacrack"
+  ]
+};
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | Attack A Crack Foundation Repair</title>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content="https://picsum.photos/seed/aac-og/1200/630" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={Astro.url} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content="https://picsum.photos/seed/aac-og/1200/630" />
+
+		<!-- Schema.org -->
+		<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+	</head>
+	<body class="bg-white text-aac-dark font-sans selection:bg-aac-yellow selection:text-aac-dark antialiased">
+		<slot />
+	</body>
+</html>

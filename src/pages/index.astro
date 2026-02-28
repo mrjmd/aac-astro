@@ -1,0 +1,133 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Team from '../components/Team.astro';
+import Services from '../components/Services.astro';
+import Footer from '../components/Footer.astro';
+import LocationModal from '../components/LocationModal.astro';
+import Icon from '../components/Icon.astro';
+
+const CT_NUMBER = "860-573-8760";
+const MA_NUMBER = "617-668-1677";
+---
+
+<Layout title="Foundation Crack Repair Made Simple">
+	<LocationModal />
+	<Navbar currentPage="home" />
+	
+	<main>
+		<Hero />
+		
+		<!-- Stats Bar -->
+		<div class="bg-aac-yellow border-y-8 border-aac-dark py-12">
+			<div class="max-w-7xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-12">
+				{[
+					{ label: "EXPERIENCE", val: "20+ Years" },
+					{ label: "GUARANTEE", val: "Lifetime" },
+					{ label: "REVIEWS", val: "240+ 5-Star" },
+					{ label: "DIAGNOSIS", val: "100% Free" }
+				].map((stat) => (
+					<div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+						<span class="text-[10px] font-black uppercase tracking-[0.2em] text-aac-dark/50 mb-2">{stat.label}</span>
+						<span class="text-2xl font-black text-aac-dark tracking-tighter">{stat.val}</span>
+					</div>
+				))}
+			</div>
+		</div>
+
+		<Team />
+		<Services />
+		
+		<!-- Testimonials -->
+		<section id="reviews" class="py-24 bg-white relative overflow-hidden">
+			<div class="max-w-[1600px] mx-auto px-6">
+				<div class="flex flex-col lg:flex-row gap-12 items-center">
+					<div class="lg:w-1/3 shrink-0">
+						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/10 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
+							<Icon name="MessageSquare" size={14} /> WHAT PEOPLE SAY
+						</div>
+						<h2 class="text-4xl lg:text-5xl font-display font-black text-aac-dark tracking-tighter leading-[0.9] mb-8">
+							Don't Just Take <br />
+							<span class="text-aac-blue">Our Word For It.</span>
+						</h2>
+						<div class="flex items-center gap-4">
+							<div class="flex items-center gap-1">
+								{[...Array(5)].map(() => <Icon name="Star" size={20} class="fill-aac-yellow text-aac-dark" />)}
+							</div>
+							<span class="font-black text-aac-dark text-sm">5.0 Rating on Google</span>
+						</div>
+					</div>
+					
+					<div class="grid md:grid-cols-2 gap-6 flex-grow">
+						{[
+							{
+								text: "I texted photos of my basement leak and had a quote in 10 minutes. They were professional, clean, and the leak is finally gone!",
+								author: "John D.",
+								loc: "QUINCY, MA"
+							},
+							{
+								text: "Luc was great. He explained exactly what was happening and didn't try to sell me things I didn't need. Highly recommend.",
+								author: "Sarah M.",
+								loc: "AMSTON, CT"
+							}
+						].map((rev) => (
+							<div class="bg-white p-6 rounded-[32px] border-4 border-aac-dark shadow-[8px_8px_0px_0px_rgba(26,26,26,0.05)] relative">
+								<div class="absolute -top-3 -left-3 w-8 h-8 bg-aac-yellow rounded-lg flex items-center justify-center border-2 border-aac-dark">
+									<Icon name="Star" size={16} class="fill-aac-dark" />
+								</div>
+								<p class="text-sm font-bold text-zinc-600 italic mb-4 leading-relaxed">"{rev.text}"</p>
+								<div>
+									<p class="font-black text-aac-dark uppercase tracking-widest text-xs">{rev.author}</p>
+									<p class="text-[9px] font-black uppercase tracking-widest text-zinc-400">{rev.loc}</p>
+								</div>
+							</div>
+						))}
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Final CTA -->
+		<section class="py-32 bg-aac-yellow relative overflow-hidden border-y-8 border-aac-dark">
+			<!-- Dot Pattern -->
+			<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, #1a1a1a 2px, transparent 2px); background-size: 40px 40px;"></div>
+			
+			<div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+				<h2 class="text-7xl lg:text-[140px] font-display font-black tracking-tighter text-aac-dark mb-12 leading-[0.8]">
+					FIX YOUR <br />
+					<span class="text-aac-blue">FOUNDATION</span> <br />
+					TODAY.
+				</h2>
+				<p class="text-xl font-bold text-aac-dark/70 mb-12 max-w-2xl mx-auto">
+					No salespeople. No pressure. Just honest experts ready to help you secure your home.
+				</p>
+				<div class="flex flex-col lg:flex-row items-center justify-center gap-8">
+					<button 
+						class="open-modal bg-aac-blue text-white px-12 py-6 rounded-[24px] font-black text-2xl uppercase tracking-widest hover:translate-y-[-6px] transition-all shadow-[12px_12px_0px_0px_rgba(26,26,26,1)] border-4 border-aac-dark flex items-center justify-center gap-4"
+					>
+						<Icon name="MessageSquare" size={32} />
+						TEXT PHOTOS
+					</button>
+					<div class="flex flex-col gap-3">
+						<a href={`tel:${CT_NUMBER}`} class="bg-white text-aac-dark px-8 py-3.5 rounded-xl font-black text-sm uppercase tracking-widest border-4 border-aac-dark hover:bg-zinc-50 transition-all flex items-center justify-between gap-8 min-w-[280px]">
+							<div class="flex items-center gap-3">
+								<Icon name="Phone" size={18} class="text-aac-blue" />
+								<span>CT: {CT_NUMBER}</span>
+							</div>
+							<Icon name="ArrowRight" size={16} />
+						</a>
+						<a href={`tel:${MA_NUMBER}`} class="bg-white text-aac-dark px-8 py-3.5 rounded-xl font-black text-sm uppercase tracking-widest border-4 border-aac-dark hover:bg-zinc-50 transition-all flex items-center justify-between gap-8 min-w-[280px]">
+							<div class="flex items-center gap-3">
+								<Icon name="Phone" size={18} class="text-aac-blue" />
+								<span>MA: {MA_NUMBER}</span>
+							</div>
+							<Icon name="ArrowRight" size={16} />
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>

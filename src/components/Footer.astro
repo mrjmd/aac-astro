@@ -1,0 +1,77 @@
+---
+import Icon from './Icon.astro';
+
+const CT_NUMBER = "860-573-8760";
+const MA_NUMBER = "617-668-1677";
+---
+
+<footer class="bg-white pt-24 pb-12 border-t border-zinc-100">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 mb-20">
+      <div class="lg:col-span-5">
+        <a href="/" class="flex items-center gap-3 mb-8 group">
+          <div class="w-10 h-10 bg-aac-blue rounded-lg flex items-center justify-center text-white font-black text-xl">
+            A
+          </div>
+          <div class="flex flex-col">
+            <span class="font-black text-lg tracking-tighter leading-none text-aac-dark">ATTACK A CRACK</span>
+            <span class="text-[7px] uppercase tracking-[0.2em] text-aac-blue font-bold mt-1">Foundation Repair</span>
+          </div>
+        </a>
+        <p class="text-zinc-500 text-sm font-bold leading-relaxed mb-8 max-w-sm">
+          New England's trusted family-owned foundation repair contractor for over 20 years.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href={`tel:${CT_NUMBER}`} class="bg-white text-aac-dark px-6 py-4 rounded-xl font-black text-[10px] uppercase tracking-widest border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(26,26,26,1)] hover:translate-y-[-2px] transition-all text-center flex-1 group">
+            <span class="text-aac-blue group-hover:text-aac-dark transition-colors">CONNECTICUT</span> {CT_NUMBER}
+          </a>
+          <a href={`tel:${MA_NUMBER}`} class="bg-white text-aac-dark px-6 py-4 rounded-xl font-black text-[10px] uppercase tracking-widest border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(26,26,26,1)] hover:translate-y-[-2px] transition-all text-center flex-1 group">
+            <span class="text-aac-blue group-hover:text-aac-dark transition-colors">MASSACHUSETTS</span> {MA_NUMBER}
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-3">
+        <h4 class="font-black text-aac-dark uppercase tracking-widest text-xs mb-8">Quick Links</h4>
+        <ul class="space-y-4">
+          {['Foundation Blog', 'Partnerships', 'Wall Crack Repair', 'Leaky Bulkheads', 'About Our Team'].map(link => (
+            <li>
+              <a href="/" class="text-zinc-400 hover:text-aac-blue font-bold text-sm transition-colors uppercase tracking-widest text-[10px]">{link}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="lg:col-span-4">
+        <h4 class="font-black text-aac-dark uppercase tracking-widest text-xs mb-8">Service Area</h4>
+        <div class="flex flex-col gap-6">
+          <div class="flex items-start gap-3">
+            <Icon name="MapPin" size={18} class="text-aac-blue shrink-0" />
+            <p class="text-zinc-500 text-sm font-bold leading-relaxed">
+              All of Connecticut (Amston, CT)
+            </p>
+          </div>
+          <div class="flex items-start gap-3">
+            <Icon name="MapPin" size={18} class="text-aac-blue shrink-0" />
+            <p class="text-zinc-500 text-sm font-bold leading-relaxed">
+              Massachusetts (Quincy Area)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-12 border-t border-zinc-100 flex flex-col md:flex-row justify-between items-center gap-8">
+      <p class="text-zinc-400 text-[10px] font-black uppercase tracking-widest">
+        © {new Date().getFullYear()} ATTACK A CRACK. ALL RIGHTS RESERVED.
+      </p>
+      <div class="flex items-center gap-8">
+        <a href="/" class="text-zinc-400 hover:text-aac-blue text-[10px] font-black uppercase tracking-widest transition-colors">Privacy Policy</a>
+        <a href="/" class="text-zinc-400 hover:text-aac-blue text-[10px] font-black uppercase tracking-widest transition-colors">Terms of Service</a>
+        <a href="https://maps.app.goo.gl/9sVxWhFWN68Q2Gq57" target="_blank" class="text-aac-blue hover:underline text-[10px] font-black uppercase tracking-widest transition-colors flex items-center gap-2">
+          CT Google Reviews <Icon name="ExternalLink" size={12} />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

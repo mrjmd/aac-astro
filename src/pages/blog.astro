@@ -1,0 +1,69 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import LocationModal from '../components/LocationModal.astro';
+import Icon from '../components/Icon.astro';
+
+const posts = [
+  {
+    title: "Vertical vs. Horizontal Foundation Cracks",
+    excerpt: "Learn when to hit the panic button and what each type of crack means for your home's structural integrity.",
+    date: "Feb 15, 2026",
+    img: "https://picsum.photos/seed/blog1/600/400"
+  },
+  {
+    title: "The 2026 Foundation Repair Cost Guide",
+    excerpt: "What MA & CT homeowners should expect when budgeting for foundation repairs this year.",
+    date: "Jan 28, 2026",
+    img: "https://picsum.photos/seed/blog2/600/400"
+  },
+  {
+    title: "Why Your Bulkhead Door Might Be Leaking",
+    excerpt: "Common causes of bulkhead leaks and how our specialized injection process fixes them for good.",
+    date: "Jan 10, 2026",
+    img: "https://picsum.photos/seed/blog3/600/400"
+  }
+];
+---
+
+<Layout title="Foundation Blog" description="Expert insights, case studies, and maintenance tips to keep your foundation secure.">
+	<LocationModal />
+	<Navbar currentPage="blog" />
+	
+	<main class="pt-20 lg:pt-24">
+		<section class="py-20 lg:py-32 bg-white border-b-4 border-zinc-100">
+			<div class="max-w-7xl mx-auto px-6">
+				<h1 class="text-6xl lg:text-8xl font-black tracking-tighter mb-8 leading-none">
+					THE <br />
+					<span class="text-aac-blue">BLOG.</span>
+				</h1>
+				<p class="text-xl text-zinc-500 max-w-2xl">
+					Expert insights, case studies, and maintenance tips to keep your foundation secure.
+				</p>
+			</div>
+		</section>
+		<section class="py-24 bg-zinc-50">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					{posts.map((post) => (
+						<div class="bg-white rounded-[32px] overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all group">
+							<div class="aspect-video overflow-hidden">
+								<img src={post.img} alt={post.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerpolicy="no-referrer" />
+							</div>
+							<div class="p-8">
+								<p class="text-[10px] font-black text-aac-blue uppercase tracking-widest mb-4">{post.date}</p>
+								<h3 class="text-2xl font-black mb-4 leading-tight group-hover:text-aac-blue transition-colors">{post.title}</h3>
+								<p class="text-zinc-500 text-sm leading-relaxed mb-6">{post.excerpt}</p>
+								<div class="inline-flex items-center gap-2 text-aac-dark font-black uppercase tracking-widest text-[10px] hover:gap-4 transition-all cursor-pointer">
+									Read Article <Icon name="ArrowRight" size={14} />
+								</div>
+							</div>
+						</div>
+					))}
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>

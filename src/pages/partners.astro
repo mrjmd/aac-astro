@@ -1,0 +1,59 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import LocationModal from '../components/LocationModal.astro';
+
+const partners = [
+  { title: "Realtors", desc: "Close deals faster with rapid quotes and lifetime-guaranteed repairs that satisfy inspectors." },
+  { title: "Property Managers", desc: "Protect your assets with permanent solutions that prevent recurring water damage." },
+  { title: "Home Inspectors", desc: "A reliable partner you can recommend for honest diagnosis and expert repair." },
+  { title: "Contractors", desc: "Sub out specialized foundation injection work to the experts you can trust." }
+];
+---
+
+<Layout title="Partnerships" description="We work with realtors, property managers, home inspectors, and contractors to provide fast foundation repairs.">
+	<LocationModal />
+	<Navbar currentPage="partners" />
+	
+	<main class="pt-20 lg:pt-24">
+		<section class="py-20 lg:py-32 bg-aac-yellow relative overflow-hidden">
+			<div class="max-w-7xl mx-auto px-6 relative z-10">
+				<h1 class="text-6xl lg:text-8xl font-black tracking-tighter mb-8 leading-none">
+					WE HELP <br />
+					<span class="text-aac-blue">PARTNERS.</span>
+				</h1>
+				<p class="text-xl text-aac-dark/70 max-w-2xl mb-12">
+					Fast foundation repairs for your clients. Guaranteed for life. We work with realtors, property managers, home inspectors, and contractors.
+				</p>
+			</div>
+		</section>
+		<section class="py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
+					{partners.map((p) => (
+						<div class="p-8 rounded-[32px] border-4 border-aac-dark shadow-[8px_8px_0px_0px_rgba(26,26,26,1)] bg-white">
+							<h3 class="text-2xl font-black mb-4">{p.title}</h3>
+							<p class="text-zinc-600 text-sm leading-relaxed">{p.desc}</p>
+						</div>
+					))}
+				</div>
+				<div class="bg-aac-dark text-white p-12 lg:p-24 rounded-[48px] text-center relative overflow-hidden">
+					<div class="absolute top-0 left-0 w-full h-full bg-aac-blue/10 skew-y-6"></div>
+					<div class="relative z-10">
+						<h2 class="text-4xl lg:text-6xl font-black mb-8">Ready to Partner?</h2>
+						<p class="text-xl text-zinc-400 max-w-2xl mx-auto mb-12">
+							Join our network of New England professionals who trust Attack A Crack for their foundation needs.
+						</p>
+						<button 
+							class="open-modal bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-xl uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white"
+						>
+							Let's Talk
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>

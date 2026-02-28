@@ -1,0 +1,58 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden bg-white">
+  <div class="max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-2 gap-12 items-center relative z-10">
+    <div class="text-left">
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-yellow text-aac-dark rounded-full text-[10px] font-black uppercase tracking-widest mb-8 border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(26,26,26,1)]">
+        <Icon name="ShieldCheck" size={14} /> Lifetime Guarantee
+      </div>
+      
+      <h1 class="text-5xl lg:text-8xl font-display font-black tracking-tighter text-aac-dark leading-[0.85] mb-8">
+        WE SEAL <br />
+        <span class="text-aac-blue">CRACKS</span> <br />
+        & SECURE <br />
+        YOUR HOME
+      </h1>
+      
+      <p class="text-lg font-bold text-zinc-500 max-w-md mb-12 leading-relaxed">
+        Talk directly to a <span class="text-aac-dark font-black border-b-4 border-aac-yellow">foundation expert</span> right now. We provide rapid, honest solutions with zero upselling.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row items-center gap-8">
+        <button 
+          class="open-modal bg-aac-yellow text-aac-dark px-10 py-6 rounded-2xl font-black text-xl uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(26,26,26,1)] border-4 border-aac-dark flex items-center justify-center gap-3 group"
+        >
+          <Icon name="MessageSquare" size={24} />
+          Text Photos
+          <Icon name="ArrowRight" size={24} class="group-hover:translate-x-2 transition-transform" />
+        </button>
+        
+        <div class="flex flex-col">
+          <div class="flex items-center gap-1 mb-1">
+            {[...Array(5)].map(() => <Icon name="Star" size={16} class="fill-aac-yellow text-aac-dark" />)}
+          </div>
+          <p class="text-[10px] font-black uppercase tracking-widest text-zinc-400">240+ Excellent CT Reviews</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="relative lg:rotate-2">
+      <div class="aspect-[4/3] rounded-[48px] overflow-hidden border-8 border-white shadow-[24px_24px_60px_-15px_rgba(0,0,0,0.1)] relative group">
+        <img 
+          src="https://picsum.photos/seed/hero-foundation/1200/900" 
+          alt="Foundation Repair" 
+          class="w-full h-full object-cover"
+          referrerpolicy="no-referrer"
+        />
+      </div>
+      
+      <!-- 15m Badge -->
+      <div class="absolute -top-8 -right-8 w-28 h-28 bg-aac-blue text-white rounded-3xl flex flex-col items-center justify-center text-center border-8 border-white shadow-2xl animate-pulse-soft">
+        <span class="text-3xl font-black leading-none">15m</span>
+        <span class="text-[8px] font-black uppercase tracking-widest mt-1">Response</span>
+      </div>
+    </div>
+  </div>
+</section>

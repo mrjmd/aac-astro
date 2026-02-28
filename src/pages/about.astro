@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Team from '../components/Team.astro';
+import Footer from '../components/Footer.astro';
+import LocationModal from '../components/LocationModal.astro';
+---
+
+<Layout title="About Our Team" description="Family-owned and operated for over 20 years. Meet the experts at Attack A Crack foundation repair.">
+	<LocationModal />
+	<Navbar currentPage="about" />
+	
+	<main class="pt-20 lg:pt-24">
+		<section class="py-20 lg:py-32 bg-zinc-50 relative overflow-hidden">
+			<div class="max-w-7xl mx-auto px-6 relative z-10">
+				<h1 class="text-6xl lg:text-8xl font-black tracking-tighter mb-8 leading-none">
+					ABOUT <br />
+					<span class="text-aac-blue">OUR TEAM.</span>
+				</h1>
+				<p class="text-xl text-zinc-600 max-w-2xl mb-12">
+					Family-owned and operated for over 20 years. We're not a franchise; we're your neighbors, dedicated to protecting your home.
+				</p>
+			</div>
+		</section>
+		<Team />
+		<section class="py-24 bg-aac-blue text-white">
+			<div class="max-w-7xl mx-auto px-6 text-center">
+				<h2 class="text-4xl font-black mb-8">The "No Salesperson" Promise</h2>
+				<p class="text-xl max-w-3xl mx-auto opacity-90 leading-relaxed">
+					When you contact us, you speak directly with an expert technician. We don't have a sales team trained to upsell you. We have experts trained to fix your foundation. If you can fix it yourself, we'll tell you how.
+				</p>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
