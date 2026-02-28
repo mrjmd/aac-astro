@@ -1,0 +1,309 @@
+# Decap CMS Configuration for Attack A Crack
+# Documentation: https://decapcms.org/docs/
+
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: 'content: Create {{collection}} "{{slug}}"'
+    update: 'content: Update {{collection}} "{{slug}}"'
+    delete: 'content: Delete {{collection}} "{{slug}}"'
+    uploadMedia: 'media: Upload "{{path}}"'
+    deleteMedia: 'media: Delete "{{path}}"'
+
+# When using the default proxy server (npm run dev), push changes to a branch for review
+local_backend: true
+
+# Media files stored in public/images
+media_folder: public/images/blog
+public_folder: /images/blog
+
+# Editorial workflow for draft/review/publish
+publish_mode: editorial_workflow
+
+# Site URL for preview
+site_url: https://www.attackacrack.com
+display_url: https://www.attackacrack.com
+logo_url: /logo.png
+
+# Collections
+collections:
+  # =============================================================================
+  # BLOG COLLECTION
+  # =============================================================================
+  - name: blog
+    label: Blog Posts
+    label_singular: Blog Post
+    folder: src/content/blog
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    editor:
+      preview: false
+    sortable_fields: ["publishDate", "title"]
+    view_filters:
+      - label: "Drafts"
+        field: draft
+        pattern: true
+      - label: "Published"
+        field: draft
+        pattern: false
+    view_groups:
+      - label: Category
+        field: category
+    summary: "{{title}} ({{category}}) - {{publishDate}}"
+    fields:
+      # Title - required, 30-80 chars
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        pattern:
+          - ".{30,80}"
+          - "Title must be 30-80 characters"
+        hint: "30-80 characters. Be descriptive and include key terms."
+
+      # Publish Date
+      - name: publishDate
+        label: Publish Date
+        widget: datetime
+        required: true
+        date_format: "YYYY-MM-DD"
+        time_format: false
+
+      # Author
+      - name: author
+        label: Author
+        widget: select
+        required: true
+        options:
+          - label: "Mike Johnson - Owner"
+            value: "Mike Johnson"
+          - label: "Chris Johnson - MA Operations"
+            value: "Chris Johnson"
+          - label: "Attack A Crack Team"
+            value: "Attack A Crack Team"
+
+      # Category
+      - name: category
+        label: Category
+        widget: select
+        required: true
+        options:
+          - label: "How-To Guides"
+            value: "guides"
+          - label: "Case Studies"
+            value: "case-studies"
+          - label: "Cost Guides"
+            value: "cost-guides"
+          - label: "Maintenance Tips"
+            value: "maintenance-tips"
+          - label: "News & Updates"
+            value: "news"
+        hint: "Choose the most appropriate category for this post."
+
+      # Meta Description - required, 120-160 chars
+      - name: metaDescription
+        label: Meta Description
+        widget: string
+        required: true
+        pattern:
+          - ".{120,160}"
+          - "Description must be 120-160 characters for SEO"
+        hint: "120-160 characters. This appears in search results."
+
+      # Excerpt - required, 100-200 chars
+      - name: excerpt
+        label: Excerpt
+        widget: text
+        required: true
+        pattern:
+          - ".{100,200}"
+          - "Excerpt must be 100-200 characters"
+        hint: "100-200 characters. Brief summary shown on blog listing pages."
+
+      # Hero Image
+      - name: heroImage
+        label: Hero Image
+        widget: image
+        required: true
+        allow_multiple: false
+        hint: "Main image for the post. Recommended: 1200x630px."
+
+      # Hero Image Alt Text
+      - name: heroImageAlt
+        label: Hero Image Alt Text
+        widget: string
+        required: true
+        pattern:
+          - ".{10,}"
+          - "Alt text must be at least 10 characters"
+        hint: "Describe the image for accessibility and SEO."
+
+      # Target Location (optional)
+      - name: targetLocation
+        label: Target Location
+        widget: select
+        required: false
+        options:
+          - label: "None (General)"
+            value: ""
+          - label: "Connecticut"
+            value: "CT"
+          - label: "Massachusetts"
+            value: "MA"
+          - label: "Boston Area"
+            value: "Boston"
+          - label: "Hartford Area"
+            value: "Hartford"
+        hint: "Optional: Target this post to a specific location for local SEO."
+
+      # Tags (optional)
+      - name: tags
+        label: Tags
+        widget: list
+        required: false
+        allow_add: true
+        hint: "Optional: Add relevant tags (e.g., 'basement', 'cracks', 'waterproofing')"
+
+      # Featured
+      - name: featured
+        label: Featured Post
+        widget: boolean
+        default: false
+        hint: "Featured posts appear prominently on the blog homepage."
+
+      # Draft
+      - name: draft
+        label: Draft
+        widget: boolean
+        default: true
+        hint: "Drafts are not published to the live site."
+
+      # Body Content
+      - name: body
+        label: Content
+        widget: markdown
+        required: true
+        buttons:
+          - bold
+          - italic
+          - link
+          - heading-two
+          - heading-three
+          - bulleted-list
+          - numbered-list
+          - quote
+        editor_components:
+          - image
+        hint: "Write your post content here. Minimum 800 characters recommended."
+
+  # =============================================================================
+  # TEAM COLLECTION
+  # =============================================================================
+  - name: team
+    label: Team Members
+    label_singular: Team Member
+    folder: src/content/team
+    create: true
+    slug: "{{name}}"
+    extension: md
+    format: yaml-frontmatter
+    editor:
+      preview: false
+    fields:
+      - name: name
+        label: Name
+        widget: string
+        required: true
+
+      - name: role
+        label: Role/Title
+        widget: string
+        required: true
+
+      - name: location
+        label: Location
+        widget: select
+        required: true
+        options:
+          - "Connecticut"
+          - "Massachusetts"
+          - "CT & MA"
+
+      - name: order
+        label: Display Order
+        widget: number
+        required: true
+        value_type: int
+        min: 1
+        hint: "Lower numbers appear first."
+
+      - name: image
+        label: Photo
+        widget: image
+        required: false
+        hint: "Optional: Team member photo."
+
+      - name: bio
+        label: Bio
+        widget: text
+        required: false
+        hint: "Brief biography."
+
+      - name: specialties
+        label: Specialties
+        widget: list
+        required: false
+        hint: "List of specialties (e.g., 'Wall crack repair', 'Bulkhead repair')"
+
+      - name: phone
+        label: Phone
+        widget: string
+        required: false
+
+      - name: body
+        label: Extended Bio
+        widget: markdown
+        required: false
+
+  # =============================================================================
+  # SETTINGS (for site-wide configuration)
+  # =============================================================================
+  - name: settings
+    label: Site Settings
+    files:
+      - name: general
+        label: General Settings
+        file: src/content/settings/general.json
+        fields:
+          - name: phone_ct
+            label: Connecticut Phone
+            widget: string
+            default: "860-573-8760"
+
+          - name: phone_ma
+            label: Massachusetts Phone
+            widget: string
+            default: "617-668-1677"
+
+          - name: email
+            label: Email
+            widget: string
+            default: "info@attackacrack.com"
+
+          - name: google_reviews_count
+            label: Google Reviews Count
+            widget: number
+            value_type: int
+            default: 240
+
+          - name: google_rating
+            label: Google Rating
+            widget: number
+            value_type: float
+            default: 4.9
+            step: 0.1
+            min: 1
+            max: 5
