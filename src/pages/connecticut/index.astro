@@ -1,0 +1,317 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LocationModal from '../../components/LocationModal.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SchemaMarkup from '../../components/SchemaMarkup.astro';
+import Icon from '../../components/Icon.astro';
+
+// Get all CT location pages
+const ctLocations = (await getCollection('locations'))
+  .filter(loc => loc.data.stateAbbr === 'CT')
+  .sort((a, b) => a.data.city.localeCompare(b.data.city));
+
+// Get services for listing
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Connecticut' }
+];
+
+// CT cities we serve (for display even before location pages exist)
+const ctCities = [
+  'Hartford', 'New Haven', 'Bridgeport', 'Stamford', 'Waterbury',
+  'Danbury', 'Norwalk', 'Greenwich', 'Fairfield', 'Westport',
+  'Middletown', 'Manchester', 'Bristol', 'New London', 'Norwich',
+  'Meriden', 'West Hartford', 'Glastonbury', 'East Hartford', 'Southington',
+  'Vernon', 'Torrington', 'Wallingford', 'Naugatuck', 'Groton',
+  'Cheshire', 'Shelton', 'Milford', 'Stratford', 'Enfield'
+];
+
+// CT regions
+const ctRegions = {
+  'Greater Hartford': ['Hartford', 'West Hartford', 'East Hartford', 'Manchester', 'Glastonbury', 'Vernon', 'Enfield'],
+  'New Haven County': ['New Haven', 'Meriden', 'Wallingford', 'Cheshire', 'Milford', 'Naugatuck'],
+  'Fairfield County': ['Bridgeport', 'Stamford', 'Norwalk', 'Danbury', 'Greenwich', 'Fairfield', 'Westport', 'Shelton', 'Stratford'],
+  'Eastern Connecticut': ['New London', 'Norwich', 'Groton'],
+  'Central Connecticut': ['Middletown', 'Bristol', 'Southington', 'Torrington']
+};
+
+// Testimonials
+const testimonials = [
+  {
+    quote: "Luc and his team were professional, on time, and the repair looks great. No more water in our basement after 5 years of dealing with that crack!",
+    author: "Michael T.",
+    location: "West Hartford, CT",
+    rating: 5
+  },
+  {
+    quote: "Finally fixed our bulkhead leak that two other companies couldn't solve. Attack A Crack's injection method actually works.",
+    author: "Jennifer S.",
+    location: "Glastonbury, CT",
+    rating: 5
+  },
+  {
+    quote: "Honest assessment, fair price, and lifetime guarantee. What more could you ask for?",
+    author: "David R.",
+    location: "Hartford, CT",
+    rating: 5
+  }
+];
+
+// LocalBusiness schema for CT
+const ctSchema = {
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Attack A Crack Foundation Repair - Connecticut",
+  "image": "https://www.attackacrack.com/images/logo.png",
+  "@id": "https://www.attackacrack.com/connecticut#organization",
+  "url": "https://www.attackacrack.com/connecticut",
+  "telephone": "860-573-8760",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Amston",
+    "addressRegion": "CT",
+    "postalCode": "06231",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 41.6151,
+    "longitude": -72.3484
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Connecticut"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "240",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "07:00",
+    "closes": "19:00"
+  }
+};
+---
+
+<Layout
+  title="Foundation Repair in Connecticut"
+  description="Expert foundation crack repair across Connecticut. Family-owned with 20+ years experience. 240+ 5-star reviews. Lifetime guarantee. Call 860-573-8760."
+>
+	<SchemaMarkup schema={ctSchema} />
+	<LocationModal />
+	<Navbar />
+
+	<main class="pt-20 lg:pt-24">
+		<!-- Hero Section -->
+		<section class="py-20 lg:py-32 bg-aac-dark text-white relative overflow-hidden">
+			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
+			<div class="max-w-7xl mx-auto px-6 relative z-10">
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-400 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-500" />
+
+				<div class="grid lg:grid-cols-2 gap-12 items-center">
+					<div>
+						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-yellow/20 text-aac-yellow rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-yellow/30">
+							<Icon name="MapPin" size={14} /> Connecticut
+						</div>
+						<h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-6 leading-none">
+							Foundation Repair in <span class="text-aac-blue">Connecticut</span>
+						</h1>
+						<p class="text-xl text-zinc-400 mb-8">
+							Family-owned foundation repair serving all of Connecticut for over 20 years. From Hartford to the shoreline, we fix foundation cracks with a lifetime guarantee.
+						</p>
+
+						<div class="flex flex-wrap gap-4 mb-8">
+							<div class="flex items-center gap-2 text-aac-yellow">
+								<Icon name="Star" size={20} />
+								<span class="font-bold">240+ 5-Star Reviews</span>
+							</div>
+							<div class="flex items-center gap-2 text-white">
+								<Icon name="ShieldCheck" size={20} />
+								<span class="font-bold">Lifetime Guarantee</span>
+							</div>
+						</div>
+
+						<div class="flex flex-wrap gap-4">
+							<a href="tel:860-573-8760" class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+								<Icon name="Phone" size={16} />
+								Call 860-573-8760
+							</a>
+							<button class="open-modal bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
+								<Icon name="MessageSquare" size={16} />
+								Text Us Photos
+							</button>
+						</div>
+					</div>
+
+					<div class="relative">
+						<div class="aspect-square rounded-[32px] overflow-hidden border-4 border-white/20 bg-zinc-800">
+							<img
+								src="https://picsum.photos/seed/ct-hero/800/800"
+								alt="Foundation repair in Connecticut"
+								class="w-full h-full object-cover"
+								referrerpolicy="no-referrer"
+							/>
+						</div>
+						<div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl">
+							<div class="flex items-center gap-4">
+								<div class="w-16 h-16 bg-aac-blue/10 rounded-xl flex items-center justify-center">
+									<Icon name="Clock" size={32} class="text-aac-blue" />
+								</div>
+								<div>
+									<p class="text-3xl font-black text-aac-dark">20+</p>
+									<p class="text-sm text-zinc-500 font-bold">Years in CT</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Services We Offer -->
+		<section class="py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl lg:text-5xl font-black tracking-tighter text-aac-dark">
+						Our Services in Connecticut
+					</h2>
+					<p class="text-lg text-zinc-500 mt-4 max-w-2xl mx-auto">
+						Expert foundation repair solutions for Connecticut homes and businesses.
+					</p>
+				</div>
+
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					{services.map((service) => (
+						<a href={`/services/${service.id.replace(/\.md$/, '')}`} class="group p-8 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all">
+							<div class="w-14 h-14 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mb-6 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+								<Icon name={service.data.icon} size={28} />
+							</div>
+							<h3 class="text-xl font-black mb-3 group-hover:text-aac-blue transition-colors">
+								{service.data.title}
+							</h3>
+							<p class="text-zinc-600 text-sm leading-relaxed">
+								{service.data.excerpt}
+							</p>
+						</a>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<!-- Areas We Serve -->
+		<section class="py-24 bg-zinc-50">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl font-black tracking-tighter text-aac-dark">
+						Areas We Serve in Connecticut
+					</h2>
+					<p class="text-lg text-zinc-500 mt-4">
+						We provide foundation repair services throughout Connecticut.
+					</p>
+				</div>
+
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					{Object.entries(ctRegions).map(([region, cities]) => (
+						<div class="bg-white p-8 rounded-2xl border-2 border-zinc-100">
+							<h3 class="text-xl font-black mb-6 text-aac-dark">{region}</h3>
+							<ul class="space-y-3">
+								{cities.map(city => {
+									const hasPage = ctLocations.some(loc => loc.data.city === city);
+									return hasPage ? (
+										<li>
+											<a href={`/connecticut/${city.toLowerCase().replace(/\s+/g, '-')}`} class="flex items-center gap-2 text-aac-blue hover:underline font-medium">
+												<Icon name="MapPin" size={14} />
+												{city}
+											</a>
+										</li>
+									) : (
+										<li class="flex items-center gap-2 text-zinc-600">
+											<Icon name="MapPin" size={14} class="text-zinc-400" />
+											{city}
+										</li>
+									);
+								})}
+							</ul>
+						</div>
+					))}
+				</div>
+
+				<p class="text-center text-zinc-500 mt-12">
+					Don't see your city? We serve all of Connecticut! <a href="tel:860-573-8760" class="text-aac-blue font-bold hover:underline">Call 860-573-8760</a>
+				</p>
+			</div>
+		</section>
+
+		<!-- Testimonials -->
+		<section class="py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-yellow/10 text-aac-dark rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-yellow">
+						<Icon name="Star" size={14} class="text-aac-yellow" /> 240+ 5-Star Reviews
+					</div>
+					<h2 class="text-4xl font-black tracking-tighter text-aac-dark">
+						What Connecticut Homeowners Say
+					</h2>
+				</div>
+
+				<div class="grid md:grid-cols-3 gap-8">
+					{testimonials.map(testimonial => (
+						<div class="bg-zinc-50 p-8 rounded-2xl">
+							<div class="flex gap-1 mb-4">
+								{[...Array(testimonial.rating)].map(() => (
+									<Icon name="Star" size={20} class="text-aac-yellow fill-aac-yellow" />
+								))}
+							</div>
+							<p class="text-zinc-700 mb-6 leading-relaxed italic">
+								"{testimonial.quote}"
+							</p>
+							<div>
+								<p class="font-bold text-aac-dark">{testimonial.author}</p>
+								<p class="text-sm text-zinc-500">{testimonial.location}</p>
+							</div>
+						</div>
+					))}
+				</div>
+
+				<div class="text-center mt-12">
+					<a href="https://www.google.com/search?q=attack+a+crack+foundation+repair+reviews" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-aac-blue font-bold hover:underline">
+						See all reviews on Google <Icon name="ExternalLink" size={16} />
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="py-24 bg-aac-dark text-white">
+			<div class="max-w-4xl mx-auto px-6 text-center">
+				<h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-6">
+					Get Your Free <span class="text-aac-yellow">CT Quote</span>
+				</h2>
+				<p class="text-xl text-zinc-400 mb-10">
+					Text us photos of your foundation concerns for a quick assessment, or schedule an in-person consultation—completely free.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="tel:860-573-8760" class="bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white inline-flex items-center justify-center gap-3">
+						<Icon name="Phone" size={24} />
+						860-573-8760
+					</a>
+					<button class="open-modal bg-white/10 text-white px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-3">
+						<Icon name="MessageSquare" size={24} />
+						Text Photos
+					</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>

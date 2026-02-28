@@ -1,0 +1,317 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LocationModal from '../../components/LocationModal.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SchemaMarkup from '../../components/SchemaMarkup.astro';
+import Icon from '../../components/Icon.astro';
+
+// Get all MA location pages
+const maLocations = (await getCollection('locations'))
+  .filter(loc => loc.data.stateAbbr === 'MA')
+  .sort((a, b) => a.data.city.localeCompare(b.data.city));
+
+// Get services for listing
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Massachusetts' }
+];
+
+// MA regions with cities
+const maRegions = {
+  'Metro Boston': ['Boston', 'Cambridge', 'Somerville', 'Newton', 'Brookline', 'Quincy', 'Braintree', 'Weymouth', 'Milton'],
+  'North Shore': ['Salem', 'Beverly', 'Gloucester', 'Peabody', 'Lynn', 'Haverhill', 'Lawrence'],
+  'South Shore': ['Plymouth', 'Brockton', 'Marshfield', 'Scituate', 'Hingham', 'Cohasset'],
+  'Metrowest': ['Framingham', 'Natick', 'Wellesley', 'Needham', 'Waltham', 'Lexington'],
+  'Greater Fall River': ['Fall River', 'New Bedford', 'Taunton', 'Somerset', 'Swansea'],
+  'Central Mass': ['Worcester', 'Fitchburg', 'Leominster', 'Marlborough', 'Shrewsbury']
+};
+
+// Testimonials
+const testimonials = [
+  {
+    quote: "Matt and his team fixed our basement crack in just a few hours. After years of water damage, we finally have a dry basement. Worth every penny!",
+    author: "Sarah L.",
+    location: "Quincy, MA",
+    rating: 5
+  },
+  {
+    quote: "The Attack A Crack team was honest about what we needed—and didn't try to upsell us on stuff we didn't need. Refreshing experience.",
+    author: "Robert M.",
+    location: "Newton, MA",
+    rating: 5
+  },
+  {
+    quote: "They came out the same day I called. Fixed three cracks and sealed our bulkhead. Haven't had a drop of water since.",
+    author: "Lisa K.",
+    location: "Plymouth, MA",
+    rating: 5
+  }
+];
+
+// LocalBusiness schema for MA
+const maSchema = {
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Attack A Crack Foundation Repair - Massachusetts",
+  "image": "https://www.attackacrack.com/images/logo.png",
+  "@id": "https://www.attackacrack.com/massachusetts#organization",
+  "url": "https://www.attackacrack.com/massachusetts",
+  "telephone": "617-668-1677",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "MA",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Massachusetts"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "85",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "07:00",
+    "closes": "19:00"
+  }
+};
+---
+
+<Layout
+  title="Foundation Repair in Massachusetts"
+  description="Expert foundation crack repair across Massachusetts. Family-owned with 20+ years experience. Concrete resurfacing available. Call 617-668-1677."
+>
+	<SchemaMarkup schema={maSchema} />
+	<LocationModal />
+	<Navbar />
+
+	<main class="pt-20 lg:pt-24">
+		<!-- Hero Section -->
+		<section class="py-20 lg:py-32 bg-aac-dark text-white relative overflow-hidden">
+			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
+			<div class="max-w-7xl mx-auto px-6 relative z-10">
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-400 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-500" />
+
+				<div class="grid lg:grid-cols-2 gap-12 items-center">
+					<div>
+						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-yellow/20 text-aac-yellow rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-yellow/30">
+							<Icon name="MapPin" size={14} /> Massachusetts
+						</div>
+						<h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-6 leading-none">
+							Foundation Repair in <span class="text-aac-blue">Massachusetts</span>
+						</h1>
+						<p class="text-xl text-zinc-400 mb-8">
+							Expert foundation repair from Boston to the Cape. We also offer concrete resurfacing services exclusively in Massachusetts—driveways, patios, pool decks, and more.
+						</p>
+
+						<div class="flex flex-wrap gap-4 mb-8">
+							<div class="flex items-center gap-2 text-aac-yellow">
+								<Icon name="Star" size={20} />
+								<span class="font-bold">5-Star Reviews</span>
+							</div>
+							<div class="flex items-center gap-2 text-white">
+								<Icon name="ShieldCheck" size={20} />
+								<span class="font-bold">Lifetime Guarantee</span>
+							</div>
+							<div class="flex items-center gap-2 text-aac-blue">
+								<Icon name="Wrench" size={20} />
+								<span class="font-bold">+ Resurfacing</span>
+							</div>
+						</div>
+
+						<div class="flex flex-wrap gap-4">
+							<a href="tel:617-668-1677" class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+								<Icon name="Phone" size={16} />
+								Call 617-668-1677
+							</a>
+							<button class="open-modal bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
+								<Icon name="MessageSquare" size={16} />
+								Text Us Photos
+							</button>
+						</div>
+					</div>
+
+					<div class="relative">
+						<div class="aspect-square rounded-[32px] overflow-hidden border-4 border-white/20 bg-zinc-800">
+							<img
+								src="https://picsum.photos/seed/ma-hero/800/800"
+								alt="Foundation repair in Massachusetts"
+								class="w-full h-full object-cover"
+								referrerpolicy="no-referrer"
+							/>
+						</div>
+						<div class="absolute -bottom-6 -right-6 bg-aac-blue p-6 rounded-2xl shadow-xl text-white">
+							<div class="flex items-center gap-4">
+								<Icon name="Wrench" size={32} />
+								<div>
+									<p class="text-lg font-black">MA Only</p>
+									<p class="text-sm opacity-80">Concrete Resurfacing</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- MA-Only Concrete Resurfacing Banner -->
+		<section class="py-8 bg-aac-blue text-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="flex flex-col md:flex-row items-center justify-between gap-6">
+					<div class="flex items-center gap-4">
+						<div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+							<Icon name="Wrench" size={24} />
+						</div>
+						<div>
+							<p class="font-black text-lg">Concrete Resurfacing - Massachusetts Only</p>
+							<p class="text-white/80">Driveways, patios, pool decks, walkways, stairs & garage floors</p>
+						</div>
+					</div>
+					<a href="/concrete-resurfacing" class="bg-white text-aac-blue px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] hover:bg-aac-yellow hover:text-aac-dark transition-colors inline-flex items-center gap-2">
+						Learn More <Icon name="ArrowRight" size={14} />
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Services We Offer -->
+		<section class="py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl lg:text-5xl font-black tracking-tighter text-aac-dark">
+						Foundation Repair Services
+					</h2>
+					<p class="text-lg text-zinc-500 mt-4 max-w-2xl mx-auto">
+						Complete foundation repair solutions for Massachusetts homes and businesses.
+					</p>
+				</div>
+
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					{services.map((service) => (
+						<a href={`/services/${service.id.replace(/\.md$/, '')}`} class="group p-8 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all">
+							<div class="w-14 h-14 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mb-6 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+								<Icon name={service.data.icon} size={28} />
+							</div>
+							<h3 class="text-xl font-black mb-3 group-hover:text-aac-blue transition-colors">
+								{service.data.title}
+							</h3>
+							<p class="text-zinc-600 text-sm leading-relaxed">
+								{service.data.excerpt}
+							</p>
+						</a>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<!-- Areas We Serve -->
+		<section class="py-24 bg-zinc-50">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl font-black tracking-tighter text-aac-dark">
+						Areas We Serve in Massachusetts
+					</h2>
+					<p class="text-lg text-zinc-500 mt-4">
+						Foundation repair and concrete resurfacing throughout Massachusetts.
+					</p>
+				</div>
+
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					{Object.entries(maRegions).map(([region, cities]) => (
+						<div class="bg-white p-8 rounded-2xl border-2 border-zinc-100">
+							<h3 class="text-xl font-black mb-6 text-aac-dark">{region}</h3>
+							<ul class="space-y-3">
+								{cities.map(city => {
+									const hasPage = maLocations.some(loc => loc.data.city === city);
+									return hasPage ? (
+										<li>
+											<a href={`/massachusetts/${city.toLowerCase().replace(/\s+/g, '-')}`} class="flex items-center gap-2 text-aac-blue hover:underline font-medium">
+												<Icon name="MapPin" size={14} />
+												{city}
+											</a>
+										</li>
+									) : (
+										<li class="flex items-center gap-2 text-zinc-600">
+											<Icon name="MapPin" size={14} class="text-zinc-400" />
+											{city}
+										</li>
+									);
+								})}
+							</ul>
+						</div>
+					))}
+				</div>
+
+				<p class="text-center text-zinc-500 mt-12">
+					Don't see your city? We serve all of Massachusetts! <a href="tel:617-668-1677" class="text-aac-blue font-bold hover:underline">Call 617-668-1677</a>
+				</p>
+			</div>
+		</section>
+
+		<!-- Testimonials -->
+		<section class="py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-yellow/10 text-aac-dark rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-yellow">
+						<Icon name="Star" size={14} class="text-aac-yellow" /> 5-Star Reviews
+					</div>
+					<h2 class="text-4xl font-black tracking-tighter text-aac-dark">
+						What Massachusetts Homeowners Say
+					</h2>
+				</div>
+
+				<div class="grid md:grid-cols-3 gap-8">
+					{testimonials.map(testimonial => (
+						<div class="bg-zinc-50 p-8 rounded-2xl">
+							<div class="flex gap-1 mb-4">
+								{[...Array(testimonial.rating)].map(() => (
+									<Icon name="Star" size={20} class="text-aac-yellow fill-aac-yellow" />
+								))}
+							</div>
+							<p class="text-zinc-700 mb-6 leading-relaxed italic">
+								"{testimonial.quote}"
+							</p>
+							<div>
+								<p class="font-bold text-aac-dark">{testimonial.author}</p>
+								<p class="text-sm text-zinc-500">{testimonial.location}</p>
+							</div>
+						</div>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="py-24 bg-aac-dark text-white">
+			<div class="max-w-4xl mx-auto px-6 text-center">
+				<h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-6">
+					Get Your Free <span class="text-aac-yellow">MA Quote</span>
+				</h2>
+				<p class="text-xl text-zinc-400 mb-10">
+					Foundation repair or concrete resurfacing—text us photos for a quick assessment, or schedule a free in-person consultation.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="tel:617-668-1677" class="bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white inline-flex items-center justify-center gap-3">
+						<Icon name="Phone" size={24} />
+						617-668-1677
+					</a>
+					<button class="open-modal bg-white/10 text-white px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-3">
+						<Icon name="MessageSquare" size={24} />
+						Text Photos
+					</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
