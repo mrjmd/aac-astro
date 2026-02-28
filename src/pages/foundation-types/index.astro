@@ -1,0 +1,206 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LocationModal from '../../components/LocationModal.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SchemaMarkup from '../../components/SchemaMarkup.astro';
+import Icon from '../../components/Icon.astro';
+
+const foundationTypes = await getCollection('foundation-types');
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Foundation Types' }
+];
+
+const pageSchema = {
+  "@type": "CollectionPage",
+  "name": "Foundation Types",
+  "description": "Educational guides about different foundation types common in New England homes",
+  "url": "https://www.attackacrack.com/foundation-types",
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": foundationTypes.length,
+    "itemListElement": foundationTypes.map((type, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "item": {
+        "@type": "Article",
+        "name": type.data.title,
+        "description": type.data.excerpt,
+        "url": `https://www.attackacrack.com/foundation-types/${type.id.replace(/\.md$/, '')}`
+      }
+    }))
+  }
+};
+---
+
+<Layout
+  title="Foundation Types Guide - CT & MA Foundation Experts"
+  description="Learn about fieldstone, cinderblock, and other foundation types common in New England. Expert guidance on repair and maintenance."
+>
+	<SchemaMarkup schema={pageSchema} />
+	<LocationModal />
+	<Navbar />
+
+	<main class="pt-20 lg:pt-24">
+		<!-- Hero Section -->
+		<section class="py-20 lg:py-32 bg-aac-blue text-white relative overflow-hidden">
+			<div class="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 translate-x-1/2"></div>
+			<div class="max-w-7xl mx-auto px-6 relative z-10">
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-white/60 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-white/40" />
+
+				<div class="max-w-3xl">
+					<div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 text-white rounded-full text-[10px] font-black uppercase tracking-widest mb-6">
+						<Icon name="Info" size={14} /> Educational Resources
+					</div>
+					<h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-6 leading-none">
+						Foundation <span class="text-aac-yellow">Types</span>
+					</h1>
+					<p class="text-xl text-white/80 mb-8">
+						New England homes feature many foundation types, each with unique characteristics and repair requirements. Learn about your foundation to make informed decisions about maintenance and repairs.
+					</p>
+
+					<div class="flex flex-wrap gap-4">
+						<a href="tel:617-668-1677" class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+							<Icon name="Phone" size={16} />
+							Call 617-668-1677
+						</a>
+						<button class="open-modal bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
+							<Icon name="MessageSquare" size={16} />
+							Get Free Assessment
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Foundation Types Grid -->
+		<section class="py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-4xl lg:text-5xl font-black tracking-tighter text-aac-dark">
+						Common Foundation Types
+					</h2>
+					<p class="text-lg text-zinc-500 mt-4 max-w-2xl mx-auto">
+						Select a foundation type to learn about its characteristics, common problems, and repair solutions.
+					</p>
+				</div>
+
+				<div class="grid md:grid-cols-2 gap-8">
+					{foundationTypes.map((type) => (
+						<a href={`/foundation-types/${type.id.replace(/\.md$/, '')}`} class="group bg-zinc-50 rounded-[32px] overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all">
+							<div class="aspect-video bg-zinc-200 overflow-hidden">
+								<img
+									src={type.data.heroImage || `https://picsum.photos/seed/${type.id}/600/400`}
+									alt={type.data.title}
+									class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+									referrerpolicy="no-referrer"
+								/>
+							</div>
+							<div class="p-8">
+								<h3 class="text-2xl font-black mb-3 group-hover:text-aac-blue transition-colors">
+									{type.data.title}
+								</h3>
+								<p class="text-zinc-600 mb-6 leading-relaxed">
+									{type.data.excerpt}
+								</p>
+
+								{type.data.commonProblems && (
+									<div class="mb-6">
+										<p class="text-sm font-bold text-zinc-500 mb-2">Common Issues:</p>
+										<div class="flex flex-wrap gap-2">
+											{type.data.commonProblems.slice(0, 3).map(problem => (
+												<span class="text-xs bg-zinc-200 text-zinc-600 px-3 py-1 rounded-full">
+													{problem.length > 30 ? problem.substring(0, 30) + '...' : problem}
+												</span>
+											))}
+										</div>
+									</div>
+								)}
+
+								<span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
+									Learn More <Icon name="ArrowRight" size={14} />
+								</span>
+							</div>
+						</a>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<!-- Additional Resources -->
+		<section class="py-16 lg:py-24 bg-zinc-50">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center mb-12">
+					<h2 class="text-3xl font-black tracking-tighter text-aac-dark">
+						Additional Resources
+					</h2>
+				</div>
+
+				<div class="grid md:grid-cols-3 gap-8">
+					<a href="/what-we-dont-do" class="group bg-white p-8 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all">
+						<div class="w-12 h-12 bg-zinc-100 text-zinc-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+							<Icon name="Info" size={24} />
+						</div>
+						<h3 class="text-xl font-black mb-2 group-hover:text-aac-blue transition-colors">
+							What We Don't Do
+						</h3>
+						<p class="text-zinc-600 text-sm">
+							Learn which services fall outside our scope and find the right specialists for your project.
+						</p>
+					</a>
+
+					<a href="/services" class="group bg-white p-8 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all">
+						<div class="w-12 h-12 bg-zinc-100 text-zinc-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+							<Icon name="Wrench" size={24} />
+						</div>
+						<h3 class="text-xl font-black mb-2 group-hover:text-aac-blue transition-colors">
+							Our Services
+						</h3>
+						<p class="text-zinc-600 text-sm">
+							View our foundation repair services available throughout Connecticut and Massachusetts.
+						</p>
+					</a>
+
+					<a href="/blog" class="group bg-white p-8 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all">
+						<div class="w-12 h-12 bg-zinc-100 text-zinc-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+							<Icon name="Hammer" size={24} />
+						</div>
+						<h3 class="text-xl font-black mb-2 group-hover:text-aac-blue transition-colors">
+							Blog & Guides
+						</h3>
+						<p class="text-zinc-600 text-sm">
+							Expert articles on foundation repair, maintenance tips, and cost guides.
+						</p>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="py-24 bg-aac-dark text-white">
+			<div class="max-w-4xl mx-auto px-6 text-center">
+				<h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-6">
+					Questions About Your <span class="text-aac-yellow">Foundation?</span>
+				</h2>
+				<p class="text-xl text-zinc-400 mb-10">
+					Get expert guidance with a free assessment. We'll identify your foundation type and discuss any concerns.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="tel:617-668-1677" class="bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white inline-flex items-center justify-center gap-3">
+						<Icon name="Phone" size={24} />
+						617-668-1677
+					</a>
+					<button class="open-modal bg-white/10 text-white px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-3">
+						<Icon name="MessageSquare" size={24} />
+						Get Free Assessment
+					</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>

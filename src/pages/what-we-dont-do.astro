@@ -1,0 +1,184 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import LocationModal from '../components/LocationModal.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import SchemaMarkup from '../components/SchemaMarkup.astro';
+import Icon from '../components/Icon.astro';
+
+// Get the "what-we-dont-do" resource
+const resources = await getCollection('resources');
+const resource = resources.find(r => r.id.replace(/\.md$/, '') === 'what-we-dont-do');
+
+if (!resource) {
+  return Astro.redirect('/404');
+}
+
+const { Content } = await render(resource);
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'What We Don\'t Do' }
+];
+
+const pageSchema = {
+  "@type": "WebPage",
+  "name": resource.data.title,
+  "description": resource.data.metaDescription,
+  "url": "https://www.attackacrack.com/what-we-dont-do",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Attack A Crack"
+  }
+};
+---
+
+<Layout title={resource.data.metaTitle} description={resource.data.metaDescription}>
+	<SchemaMarkup schema={pageSchema} />
+	<LocationModal />
+	<Navbar />
+
+	<main class="pt-20 lg:pt-24">
+		<!-- Hero Section -->
+		<section class="py-16 lg:py-24 bg-aac-blue text-white relative overflow-hidden">
+			<div class="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 translate-x-1/2"></div>
+			<div class="max-w-7xl mx-auto px-6 relative z-10">
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-white/60 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-white/40" />
+
+				<div class="max-w-3xl">
+					<div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 text-white rounded-full text-[10px] font-black uppercase tracking-widest mb-6">
+						<Icon name="Info" size={14} /> Honest Guidance
+					</div>
+					<h1 class="text-4xl lg:text-6xl font-black tracking-tighter mb-6 leading-none">
+						{resource.data.title}
+					</h1>
+					<p class="text-xl text-white/80 mb-8">
+						{resource.data.excerpt}
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- What We Do Summary -->
+		<section class="py-12 bg-green-50 border-b border-green-100">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="grid md:grid-cols-2 gap-8">
+					<div class="flex items-start gap-4">
+						<div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center shrink-0">
+							<Icon name="CheckCircle2" size={24} />
+						</div>
+						<div>
+							<h2 class="font-black text-lg text-aac-dark mb-2">Foundation Repair (CT & MA)</h2>
+							<p class="text-zinc-600">Wall crack injection, bulkhead repair, carbon fiber reinforcement, and foundation stabilization.</p>
+						</div>
+					</div>
+					<div class="flex items-start gap-4">
+						<div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center shrink-0">
+							<Icon name="CheckCircle2" size={24} />
+						</div>
+						<div>
+							<h2 class="font-black text-lg text-aac-dark mb-2">Concrete Resurfacing (MA Only)</h2>
+							<p class="text-zinc-600">Driveways, patios, pool decks, walkways, stairs, and garage floors.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Main Content -->
+		<section class="py-16 lg:py-24 bg-white">
+			<div class="max-w-4xl mx-auto px-6">
+				<article class="prose prose-lg prose-zinc max-w-none prose-headings:font-black prose-headings:tracking-tight prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-p:leading-relaxed prose-a:text-aac-blue prose-a:font-bold prose-a:no-underline hover:prose-a:underline prose-strong:text-aac-dark prose-ul:my-6 prose-li:my-2 prose-hr:border-zinc-200 prose-hr:my-12">
+					<Content />
+				</article>
+			</div>
+		</section>
+
+		<!-- Related Resources -->
+		<section class="py-16 lg:py-24 bg-zinc-50">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center mb-12">
+					<h2 class="text-3xl font-black tracking-tighter text-aac-dark">
+						What We Do Offer
+					</h2>
+				</div>
+
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<a href="/services" class="group bg-white p-8 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all">
+						<div class="w-12 h-12 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mb-4 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+							<Icon name="Wrench" size={24} />
+						</div>
+						<h3 class="text-xl font-black mb-2 group-hover:text-aac-blue transition-colors">
+							Foundation Repair
+						</h3>
+						<p class="text-zinc-600 text-sm mb-4">
+							Crack repair, bulkhead waterproofing, and structural stabilization in CT & MA.
+						</p>
+						<span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
+							View Services <Icon name="ArrowRight" size={14} />
+						</span>
+					</a>
+
+					<a href="/concrete-resurfacing" class="group bg-white p-8 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all">
+						<div class="w-12 h-12 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mb-4 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+							<Icon name="Hammer" size={24} />
+						</div>
+						<h3 class="text-xl font-black mb-2 group-hover:text-aac-blue transition-colors">
+							Concrete Resurfacing
+						</h3>
+						<p class="text-zinc-600 text-sm mb-4">
+							Transform driveways, patios, and pool decks. Massachusetts only.
+						</p>
+						<span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
+							View Services <Icon name="ArrowRight" size={14} />
+						</span>
+					</a>
+
+					<a href="/foundation-types" class="group bg-white p-8 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all">
+						<div class="w-12 h-12 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mb-4 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+							<Icon name="Info" size={24} />
+						</div>
+						<h3 class="text-xl font-black mb-2 group-hover:text-aac-blue transition-colors">
+							Foundation Types
+						</h3>
+						<p class="text-zinc-600 text-sm mb-4">
+							Learn about fieldstone, cinderblock, and other foundation types.
+						</p>
+						<span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
+							Learn More <Icon name="ArrowRight" size={14} />
+						</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="py-16 lg:py-24 bg-aac-dark text-white">
+			<div class="max-w-4xl mx-auto px-6 text-center">
+				<h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-6">
+					Not Sure If We Can <span class="text-aac-yellow">Help?</span>
+				</h2>
+				<p class="text-xl text-zinc-400 mb-10">
+					Call us and we'll give you an honest answer. If we can't help, we'll point you in the right direction.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="tel:617-668-1677" class="bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
+						<Icon name="Phone" size={20} />
+						617-668-1677
+					</a>
+					<button class="open-modal bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+						<Icon name="MessageSquare" size={20} />
+						Send a Message
+					</button>
+				</div>
+				<p class="text-zinc-500 mt-8 text-sm">
+					<Icon name="MapPin" size={14} class="inline mr-1" />
+					Foundation repair in CT & MA • Concrete resurfacing in MA only
+				</p>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>

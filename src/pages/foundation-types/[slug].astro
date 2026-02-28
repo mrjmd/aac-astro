@@ -1,0 +1,258 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LocationModal from '../../components/LocationModal.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SchemaMarkup from '../../components/SchemaMarkup.astro';
+import Icon from '../../components/Icon.astro';
+
+export async function getStaticPaths() {
+  const foundationTypes = await getCollection('foundation-types');
+  return foundationTypes.map((type) => ({
+    params: { slug: type.id.replace(/\.md$/, '') },
+    props: { type },
+  }));
+}
+
+const { type } = Astro.props;
+const { Content } = await render(type);
+
+// Get other foundation types for related section
+const allTypes = await getCollection('foundation-types');
+const otherTypes = allTypes.filter(t => t.id !== type.id);
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Foundation Types', href: '/foundation-types' },
+  { label: type.data.title }
+];
+
+// Article schema for educational content
+const articleSchema = {
+  "@type": "Article",
+  "headline": type.data.title,
+  "description": type.data.metaDescription,
+  "url": `https://www.attackacrack.com/foundation-types/${type.id.replace(/\.md$/, '')}`,
+  "author": {
+    "@type": "Organization",
+    "name": "Attack A Crack"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Attack A Crack",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.attackacrack.com/logo.png"
+    }
+  }
+};
+
+// FAQ schema if FAQs exist
+const faqSchema = type.data.faqs && type.data.faqs.length > 0 ? {
+  "@type": "FAQPage",
+  "mainEntity": type.data.faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+} : null;
+
+const schemas = faqSchema ? [articleSchema, faqSchema] : [articleSchema];
+---
+
+<Layout title={type.data.metaTitle} description={type.data.metaDescription}>
+	<SchemaMarkup schema={schemas} />
+	<LocationModal />
+	<Navbar />
+
+	<main class="pt-20 lg:pt-24">
+		<!-- Hero Section -->
+		<section class="py-16 lg:py-24 bg-aac-blue text-white relative overflow-hidden">
+			<div class="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 translate-x-1/2"></div>
+			<div class="max-w-7xl mx-auto px-6 relative z-10">
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-white/60 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-white/40" />
+
+				<div class="grid lg:grid-cols-2 gap-12 items-center">
+					<div>
+						<div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 text-white rounded-full text-[10px] font-black uppercase tracking-widest mb-6">
+							<Icon name="Info" size={14} /> Educational Guide
+						</div>
+						<h1 class="text-4xl lg:text-6xl font-black tracking-tighter mb-6 leading-none">
+							{type.data.title}
+						</h1>
+						<p class="text-xl text-white/80 mb-8">
+							{type.data.excerpt}
+						</p>
+						<div class="flex flex-wrap gap-4">
+							<a href="tel:617-668-1677" class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+								<Icon name="Phone" size={16} />
+								Call 617-668-1677
+							</a>
+							<button class="open-modal bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
+								<Icon name="MessageSquare" size={16} />
+								Get Free Assessment
+							</button>
+						</div>
+					</div>
+
+					<!-- Hero Image -->
+					<div class="relative hidden lg:block">
+						<div class="aspect-[4/3] rounded-[32px] overflow-hidden border-4 border-white/20 shadow-2xl">
+							<img
+								src={type.data.heroImage || "https://picsum.photos/seed/foundation/800/600"}
+								alt={type.data.title}
+								class="w-full h-full object-cover"
+								referrerpolicy="no-referrer"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Common Problems & Repair Methods Quick View -->
+		{(type.data.commonProblems || type.data.repairMethods) && (
+			<section class="py-12 bg-zinc-50 border-b border-zinc-100">
+				<div class="max-w-7xl mx-auto px-6">
+					<div class="grid md:grid-cols-2 gap-8">
+						{type.data.commonProblems && (
+							<div class="bg-white p-8 rounded-2xl border-2 border-zinc-100">
+								<div class="flex items-center gap-3 mb-6">
+									<div class="w-10 h-10 bg-red-100 text-red-600 rounded-xl flex items-center justify-center">
+										<Icon name="ShieldCheck" size={20} />
+									</div>
+									<h2 class="text-xl font-black">Common Problems</h2>
+								</div>
+								<ul class="space-y-3">
+									{type.data.commonProblems.map(problem => (
+										<li class="flex items-start gap-3 text-zinc-600">
+											<span class="w-2 h-2 bg-red-400 rounded-full mt-2 shrink-0"></span>
+											{problem}
+										</li>
+									))}
+								</ul>
+							</div>
+						)}
+						{type.data.repairMethods && (
+							<div class="bg-white p-8 rounded-2xl border-2 border-zinc-100">
+								<div class="flex items-center gap-3 mb-6">
+									<div class="w-10 h-10 bg-green-100 text-green-600 rounded-xl flex items-center justify-center">
+										<Icon name="Wrench" size={20} />
+									</div>
+									<h2 class="text-xl font-black">Repair Methods</h2>
+								</div>
+								<ul class="space-y-3">
+									{type.data.repairMethods.map(method => (
+										<li class="flex items-start gap-3 text-zinc-600">
+											<Icon name="CheckCircle2" size={18} class="text-green-500 mt-0.5 shrink-0" />
+											{method}
+										</li>
+									))}
+								</ul>
+							</div>
+						)}
+					</div>
+				</div>
+			</section>
+		)}
+
+		<!-- Main Content -->
+		<section class="py-16 lg:py-24 bg-white">
+			<div class="max-w-4xl mx-auto px-6">
+				<article class="prose prose-lg prose-zinc max-w-none prose-headings:font-black prose-headings:tracking-tight prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-p:leading-relaxed prose-a:text-aac-blue prose-a:font-bold prose-a:no-underline hover:prose-a:underline prose-strong:text-aac-dark prose-ul:my-6 prose-li:my-2 prose-table:border-collapse prose-th:bg-zinc-100 prose-th:p-3 prose-th:text-left prose-td:p-3 prose-td:border-t prose-td:border-zinc-200">
+					<Content />
+				</article>
+			</div>
+		</section>
+
+		<!-- FAQs Section -->
+		{type.data.faqs && type.data.faqs.length > 0 && (
+			<section class="py-16 lg:py-24 bg-zinc-50">
+				<div class="max-w-4xl mx-auto px-6">
+					<div class="text-center mb-12">
+						<h2 class="text-4xl font-black tracking-tighter text-aac-dark">
+							Frequently Asked Questions
+						</h2>
+					</div>
+
+					<div class="space-y-4">
+						{type.data.faqs.map((faq) => (
+							<details class="group bg-white rounded-2xl border-2 border-zinc-100 overflow-hidden">
+								<summary class="flex justify-between items-center p-6 cursor-pointer font-black text-lg hover:text-aac-blue transition-colors list-none">
+									{faq.question}
+									<span class="text-aac-blue shrink-0 ml-4 group-open:rotate-180 transition-transform">
+										<Icon name="ChevronRight" size={20} class="rotate-90" />
+									</span>
+								</summary>
+								<div class="px-6 pb-6 text-zinc-600 leading-relaxed">
+									{faq.answer}
+								</div>
+							</details>
+						))}
+					</div>
+				</div>
+			</section>
+		)}
+
+		<!-- Other Foundation Types -->
+		{otherTypes.length > 0 && (
+			<section class="py-16 lg:py-24 bg-white border-t border-zinc-100">
+				<div class="max-w-7xl mx-auto px-6">
+					<div class="text-center mb-12">
+						<h2 class="text-3xl font-black tracking-tighter text-aac-dark">
+							Other Foundation Types
+						</h2>
+					</div>
+
+					<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+						{otherTypes.map((other) => (
+							<a href={`/foundation-types/${other.id.replace(/\.md$/, '')}`} class="group bg-zinc-50 p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all">
+								<h3 class="text-xl font-black mb-2 group-hover:text-aac-blue transition-colors">
+									{other.data.title}
+								</h3>
+								<p class="text-zinc-600 text-sm line-clamp-2 mb-4">
+									{other.data.excerpt}
+								</p>
+								<span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
+									Learn More <Icon name="ArrowRight" size={14} />
+								</span>
+							</a>
+						))}
+					</div>
+				</div>
+			</section>
+		)}
+
+		<!-- CTA Section -->
+		<section class="py-16 lg:py-24 bg-aac-dark text-white">
+			<div class="max-w-4xl mx-auto px-6 text-center">
+				<h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-6">
+					Need Help With Your <span class="text-aac-yellow">Foundation?</span>
+				</h2>
+				<p class="text-xl text-zinc-400 mb-10">
+					Contact us for a free assessment. We'll evaluate your foundation and provide honest guidance.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="tel:617-668-1677" class="bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
+						<Icon name="Phone" size={20} />
+						617-668-1677
+					</a>
+					<button class="open-modal bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+						<Icon name="MessageSquare" size={20} />
+						Get Free Assessment
+					</button>
+				</div>
+				<p class="text-zinc-500 mt-8 text-sm">
+					<Icon name="MapPin" size={14} class="inline mr-1" />
+					Serving Connecticut and Massachusetts
+				</p>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
