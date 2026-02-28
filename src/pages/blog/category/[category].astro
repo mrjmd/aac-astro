@@ -16,11 +16,11 @@ const categoryLabels: Record<string, string> = {
 };
 
 const categoryDescriptions: Record<string, string> = {
-  'guides': 'In-depth guides to understanding and maintaining your foundation.',
-  'case-studies': 'Real-world examples of foundation repairs we\'ve completed.',
-  'cost-guides': 'Transparent information about foundation repair pricing.',
-  'maintenance-tips': 'Practical tips for keeping your foundation healthy.',
-  'news': 'Company updates and industry news.'
+  'guides': 'In-depth guides to understanding foundation problems, repair methods, and maintenance. Expert advice from CT and MA foundation repair specialists.',
+  'case-studies': 'Real foundation repair projects from Attack A Crack. See before and after photos, learn about repair methods used, and understand the results we deliver.',
+  'cost-guides': 'Transparent foundation repair pricing guides for CT and MA homeowners. Understand costs, factors affecting price, and how to budget for your repair project.',
+  'maintenance-tips': 'Practical foundation maintenance tips to prevent water damage, cracks, and structural issues. Protect your home investment with expert seasonal advice.',
+  'news': 'Company updates, industry news, and announcements from Attack A Crack Foundation Repair serving Connecticut and Massachusetts homeowners since 2004.'
 };
 
 export async function getStaticPaths() {
@@ -63,7 +63,7 @@ function formatDate(date: Date): string {
 ---
 
 <Layout
-  title={`${categoryLabels[category as string]} | Foundation Repair Blog`}
+  title={`${categoryLabels[category as string]} Blog Articles`}
   description={categoryDescriptions[category as string] || `${categoryLabels[category as string]} articles from Attack A Crack Foundation Repair.`}
 >
 	<LocationModal />
