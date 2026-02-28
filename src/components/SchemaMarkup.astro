@@ -1,0 +1,27 @@
+---
+/**
+ * SchemaMarkup Component
+ *
+ * Renders JSON-LD structured data for SEO.
+ * Supports multiple schema types: LocalBusiness, Service, Article, FAQPage, etc.
+ */
+
+interface Props {
+  schema: Record<string, unknown> | Record<string, unknown>[];
+}
+
+const { schema } = Astro.props;
+
+// Ensure schema has @context
+const processSchema = (s: Record<string, unknown>) => ({
+  "@context": "https://schema.org",
+  ...s,
+});
+
+const schemas = Array.isArray(schema) ? schema : [schema];
+const processedSchemas = schemas.map(processSchema);
+---
+
+{processedSchemas.map((s) => (
+  <script type="application/ld+json" set:html={JSON.stringify(s)} />
+))}

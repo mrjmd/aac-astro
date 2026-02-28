@@ -1,0 +1,133 @@
+{
+  "$ref": "#/definitions/locations",
+  "definitions": {
+    "locations": {
+      "type": "object",
+      "properties": {
+        "city": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string",
+          "enum": [
+            "Connecticut",
+            "Massachusetts"
+          ]
+        },
+        "stateAbbr": {
+          "type": "string",
+          "enum": [
+            "CT",
+            "MA"
+          ]
+        },
+        "metaTitle": {
+          "type": "string",
+          "minLength": 30,
+          "maxLength": 60
+        },
+        "metaDescription": {
+          "type": "string",
+          "minLength": 120,
+          "maxLength": 160
+        },
+        "region": {
+          "type": "string"
+        },
+        "population": {
+          "type": "number"
+        },
+        "averageHomeAge": {
+          "type": "string"
+        },
+        "commonFoundationTypes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "neighborhoods": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "localLandmarks": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "testimonial": {
+          "type": "object",
+          "properties": {
+            "quote": {
+              "type": "string"
+            },
+            "author": {
+              "type": "string"
+            },
+            "location": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "quote",
+            "author"
+          ],
+          "additionalProperties": false
+        },
+        "nearbyCities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "localKeywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "phoneNumber": {
+          "type": "string"
+        },
+        "faqs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "question": {
+                "type": "string"
+              },
+              "answer": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "question",
+              "answer"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "servesResurfacing": {
+          "type": "boolean",
+          "default": false
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "city",
+        "state",
+        "stateAbbr",
+        "metaTitle",
+        "metaDescription"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

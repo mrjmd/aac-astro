@@ -1,0 +1,56 @@
+---
+import Icon from './Icon.astro';
+
+interface BreadcrumbItem {
+  label: string;
+  href?: string;
+}
+
+interface Props {
+  items: BreadcrumbItem[];
+  class?: string;
+}
+
+const { items, class: className = '' } = Astro.props;
+
+// Generate JSON-LD BreadcrumbList schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": items.map((item, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "name": item.label,
+    ...(item.href && { "item": new URL(item.href, Astro.site).href })
+  }))
+};
+---
+
+<nav aria-label="Breadcrumb" class={`breadcrumbs ${className}`}>
+  <ol class="flex flex-wrap items-center gap-2 text-sm">
+    {items.map((item, index) => (
+      <li class="flex items-center gap-2">
+        {index > 0 && (
+          <Icon name="ChevronRight" size={14} class="text-zinc-400" />
+        )}
+        {item.href && index < items.length - 1 ? (
+          <a
+            href={item.href}
+            class="text-zinc-500 hover:text-aac-blue transition-colors font-medium"
+          >
+            {item.label}
+          </a>
+        ) : (
+          <span
+            class={index === items.length - 1 ? "text-aac-dark font-bold" : "text-zinc-500 font-medium"}
+            aria-current={index === items.length - 1 ? "page" : undefined}
+          >
+            {item.label}
+          </span>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>
+
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />

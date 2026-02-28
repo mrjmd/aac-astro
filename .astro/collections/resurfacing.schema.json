@@ -1,0 +1,88 @@
+{
+  "$ref": "#/definitions/resurfacing",
+  "definitions": {
+    "resurfacing": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "metaTitle": {
+          "type": "string",
+          "minLength": 30,
+          "maxLength": 60
+        },
+        "metaDescription": {
+          "type": "string",
+          "minLength": 120,
+          "maxLength": 160
+        },
+        "excerpt": {
+          "type": "string",
+          "minLength": 50,
+          "maxLength": 200
+        },
+        "icon": {
+          "type": "string",
+          "enum": [
+            "Hammer",
+            "Droplets",
+            "ShieldCheck",
+            "Wrench",
+            "CheckCircle2"
+          ]
+        },
+        "order": {
+          "type": "number",
+          "default": 0
+        },
+        "beforeImage": {
+          "type": "string"
+        },
+        "afterImage": {
+          "type": "string"
+        },
+        "heroImage": {
+          "type": "string"
+        },
+        "faqs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "question": {
+                "type": "string"
+              },
+              "answer": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "question",
+              "answer"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "relatedServices": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "metaTitle",
+        "metaDescription",
+        "excerpt",
+        "icon"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

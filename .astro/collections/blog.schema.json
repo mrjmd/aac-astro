@@ -1,0 +1,118 @@
+{
+  "$ref": "#/definitions/blog",
+  "definitions": {
+    "blog": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 30,
+          "maxLength": 80
+        },
+        "metaTitle": {
+          "type": "string",
+          "minLength": 30,
+          "maxLength": 60
+        },
+        "metaDescription": {
+          "type": "string",
+          "minLength": 120,
+          "maxLength": 160
+        },
+        "excerpt": {
+          "type": "string",
+          "minLength": 100,
+          "maxLength": 200
+        },
+        "publishDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "integer",
+              "format": "unix-time"
+            }
+          ]
+        },
+        "updatedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "integer",
+              "format": "unix-time"
+            }
+          ]
+        },
+        "author": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "guides",
+            "case-studies",
+            "cost-guides",
+            "maintenance-tips",
+            "news"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "heroImage": {
+          "type": "string"
+        },
+        "heroImageAlt": {
+          "type": "string",
+          "minLength": 10
+        },
+        "targetLocation": {
+          "type": "string"
+        },
+        "relatedPosts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "featured": {
+          "type": "boolean",
+          "default": false
+        },
+        "draft": {
+          "type": "boolean",
+          "default": false
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "metaDescription",
+        "excerpt",
+        "publishDate",
+        "author",
+        "category"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

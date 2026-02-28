@@ -1,0 +1,73 @@
+{
+  "$ref": "#/definitions/foundation-types",
+  "definitions": {
+    "foundation-types": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "metaTitle": {
+          "type": "string",
+          "minLength": 30,
+          "maxLength": 60
+        },
+        "metaDescription": {
+          "type": "string",
+          "minLength": 120,
+          "maxLength": 160
+        },
+        "excerpt": {
+          "type": "string",
+          "minLength": 50,
+          "maxLength": 200
+        },
+        "heroImage": {
+          "type": "string"
+        },
+        "commonProblems": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "repairMethods": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "faqs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "question": {
+                "type": "string"
+              },
+              "answer": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "question",
+              "answer"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "metaTitle",
+        "metaDescription",
+        "excerpt"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
