@@ -35,6 +35,9 @@ jobs:
       - name: Check SEO metadata
         run: npm run check:seo
 
+      - name: Check accessibility
+        run: npm run check:a11y
+
   lighthouse:
     runs-on: ubuntu-latest
     needs: build-and-validate

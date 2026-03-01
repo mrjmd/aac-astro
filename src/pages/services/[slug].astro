@@ -7,6 +7,7 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
+import { aggregateRatingSchema } from '../../utils/reviews';
 
 export async function getStaticPaths() {
   const services = await getCollection('services');
@@ -25,13 +26,40 @@ const relatedServices = service.data.relatedServices
   ? allServices.filter(s => service.data.relatedServices?.includes(s.id))
   : allServices.filter(s => s.id !== service.id).slice(0, 3);
 
+// Get locations for reverse linking (foundation repair serves both CT and MA)
+const allLocations = await getCollection('locations');
+const ctLocations = allLocations.filter(l => l.data.stateAbbr === 'CT').slice(0, 5);
+const maLocations = allLocations.filter(l => l.data.stateAbbr === 'MA').slice(0, 5);
+
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
   { label: 'Services', href: '/services' },
   { label: service.data.title }
 ];
 
-// Service schema
+// Build significantLink array
+const significantLinks = [
+  // Related services
+  ...relatedServices.map(s => `https://www.attackacrack.com/services/${s.id.replace(/\.md$/, '')}`),
+  // State hub pages
+  "https://www.attackacrack.com/connecticut",
+  "https://www.attackacrack.com/massachusetts",
+  // Sample city pages
+  ...ctLocations.slice(0, 3).map(l => `https://www.attackacrack.com/connecticut/${l.id.replace(/\.md$/, '').replace(/^connecticut\//, '')}`),
+  ...maLocations.slice(0, 3).map(l => `https://www.attackacrack.com/massachusetts/${l.id.replace(/\.md$/, '').replace(/^massachusetts\//, '')}`)
+];
+
+// Build mentions array
+const mentions = [
+  // Service type
+  { "@type": "Thing", "name": "Foundation Repair" },
+  { "@type": "Thing", "name": service.data.title },
+  // States served
+  { "@type": "Place", "name": "Connecticut" },
+  { "@type": "Place", "name": "Massachusetts" }
+];
+
+// Service schema with LLM-ready properties and AggregateRating
 const serviceSchema = {
   "@type": "Service",
   "name": service.data.title,
@@ -53,8 +81,29 @@ const serviceSchema = {
     { "@type": "State", "name": "Massachusetts" }
   ],
   "serviceType": "Foundation Repair",
-  "termsOfService": "Lifetime Guarantee"
+  "termsOfService": "Lifetime Guarantee",
+  // AggregateRating for rich results
+  "aggregateRating": aggregateRatingSchema,
+  // LLM-ready properties
+  "significantLink": significantLinks,
+  "mentions": mentions
 };
+
+// HowTo schema (if steps exist in frontmatter)
+const howToSchema = service.data.steps && service.data.steps.length > 0 ? {
+  "@type": "HowTo",
+  "name": `How to ${service.data.title}`,
+  "description": service.data.excerpt,
+  "step": service.data.steps.map((step, index) => ({
+    "@type": "HowToStep",
+    "position": index + 1,
+    "name": step.name,
+    "text": step.text
+  })),
+  "totalTime": "PT4H",
+  "supply": [],
+  "tool": []
+} : null;
 
 // FAQ schema (if FAQs exist)
 const faqSchema = service.data.faqs && service.data.faqs.length > 0 ? {
@@ -69,7 +118,8 @@ const faqSchema = service.data.faqs && service.data.faqs.length > 0 ? {
   }))
 } : null;
 
-const schemas = faqSchema ? [serviceSchema, faqSchema] : [serviceSchema];
+// Combine all schemas
+const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 ---
 
 <Layout title={service.data.metaTitle} description={service.data.metaDescription}>
@@ -204,6 +254,61 @@ const schemas = faqSchema ? [serviceSchema, faqSchema] : [serviceSchema];
 				</div>
 			</section>
 		)}
+
+		<!-- Service Areas Section -->
+		<section class="py-12 bg-zinc-50 border-t border-zinc-100">
+			<div class="max-w-7xl mx-auto px-6">
+				<h2 class="text-2xl font-black tracking-tighter text-aac-dark mb-6 text-center">
+					{service.data.title} Available In
+				</h2>
+				<div class="grid md:grid-cols-2 gap-8">
+					<!-- Connecticut -->
+					<div>
+						<h3 class="font-black text-lg mb-4 flex items-center gap-2">
+							<Icon name="MapPin" size={18} class="text-aac-blue" />
+							Connecticut
+						</h3>
+						<div class="flex flex-wrap gap-2">
+							{ctLocations.map(loc => (
+								<a
+									href={`/connecticut/${loc.id.replace(/\.md$/, '').replace(/^connecticut\//, '')}`}
+									class="px-3 py-1 bg-white border border-zinc-200 rounded-full text-sm hover:border-aac-blue hover:text-aac-blue transition-colors"
+								>
+									{loc.data.city}
+								</a>
+							))}
+							{allLocations.filter(l => l.data.stateAbbr === 'CT').length > 5 && (
+								<a href="/connecticut" class="px-3 py-1 bg-aac-blue/10 text-aac-blue rounded-full text-sm font-bold hover:bg-aac-blue hover:text-white transition-colors">
+									+{allLocations.filter(l => l.data.stateAbbr === 'CT').length - 5} more
+								</a>
+							)}
+						</div>
+					</div>
+					<!-- Massachusetts -->
+					<div>
+						<h3 class="font-black text-lg mb-4 flex items-center gap-2">
+							<Icon name="MapPin" size={18} class="text-aac-blue" />
+							Massachusetts
+						</h3>
+						<div class="flex flex-wrap gap-2">
+							{maLocations.map(loc => (
+								<a
+									href={`/massachusetts/${loc.id.replace(/\.md$/, '').replace(/^massachusetts\//, '')}`}
+									class="px-3 py-1 bg-white border border-zinc-200 rounded-full text-sm hover:border-aac-blue hover:text-aac-blue transition-colors"
+								>
+									{loc.data.city}
+								</a>
+							))}
+							{allLocations.filter(l => l.data.stateAbbr === 'MA').length > 5 && (
+								<a href="/massachusetts" class="px-3 py-1 bg-aac-blue/10 text-aac-blue rounded-full text-sm font-bold hover:bg-aac-blue hover:text-white transition-colors">
+									+{allLocations.filter(l => l.data.stateAbbr === 'MA').length - 5} more
+								</a>
+							)}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<!-- CTA Section -->
 		<section class="py-16 lg:py-24 bg-aac-dark text-white">

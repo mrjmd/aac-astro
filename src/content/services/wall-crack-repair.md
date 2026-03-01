@@ -20,6 +20,15 @@ faqs:
 relatedServices:
   - "foundation-crack-injection"
   - "carbon-fiber-stitches"
+steps:
+  - name: "Assessment"
+    text: "We start with a thorough evaluation of your crack, identifying whether it's a shrinkage crack, structural crack, or water-infiltration issue."
+  - name: "Preparation"
+    text: "We install injection ports along the length of the crack and seal the surface to contain the injection material."
+  - name: "Injection"
+    text: "Using specialized equipment, we inject either flexible urethane resin or structural epoxy deep into the crack, filling the entire void."
+  - name: "Curing and Cleanup"
+    text: "The injection material cures within hours. We remove the ports, clean up our work area, and leave your basement better than we found it."
 ---
 
 ## Foundation Wall Crack Repair That Lasts a Lifetime

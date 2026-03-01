@@ -27,6 +27,9 @@ const relatedPosts = post.data.relatedPosts
       .filter(p => p.id !== post.id && p.data.category === post.data.category)
       .slice(0, 3);
 
+// Get services for significantLink
+const services = await getCollection('services');
+
 const categoryLabels: Record<string, string> = {
   'guides': 'Guides',
   'case-studies': 'Case Studies',
@@ -54,7 +57,27 @@ function formatDate(date: Date): string {
 const wordCount = post.body?.split(/\s+/).length || 0;
 const readingTime = Math.ceil(wordCount / 200);
 
-// Article schema
+// Build significantLink array from related posts and services
+const significantLinks = [
+  // Related posts
+  ...relatedPosts.map(p => `https://www.attackacrack.com/blog/${p.id.replace(/\.md$/, '')}`),
+  // First 3 services as context
+  ...services.slice(0, 3).map(s => `https://www.attackacrack.com/services/${s.id.replace(/\.md$/, '')}`),
+  // Category page
+  `https://www.attackacrack.com/blog/category/${post.data.category}`
+];
+
+// Build mentions array from tags and category
+const mentions = [
+  // Category as a Thing
+  { "@type": "Thing", "name": categoryLabels[post.data.category] },
+  // Tags as Things
+  ...(post.data.tags || []).map(tag => ({ "@type": "Thing", "name": tag })),
+  // Target location if specified
+  ...(post.data.targetLocation ? [{ "@type": "Place", "name": post.data.targetLocation }] : [])
+];
+
+// Article schema with LLM-ready properties
 const articleSchema = {
   "@type": "Article",
   "headline": post.data.title,
@@ -78,7 +101,10 @@ const articleSchema = {
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": `https://www.attackacrack.com/blog/${post.id.replace(/\.md$/, '')}`
-  }
+  },
+  // LLM-ready properties for semantic understanding
+  "significantLink": significantLinks,
+  "mentions": mentions
 };
 ---
 

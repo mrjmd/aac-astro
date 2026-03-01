@@ -25,13 +25,37 @@ const relatedServices = service.data.relatedServices
   ? allServices.filter(s => service.data.relatedServices?.includes(s.id.replace(/\.md$/, '')))
   : allServices.filter(s => s.id !== service.id).slice(0, 3);
 
+// Get MA locations for reverse linking (resurfacing is MA-only)
+const allLocations = await getCollection('locations');
+const maLocations = allLocations.filter(l => l.data.stateAbbr === 'MA').slice(0, 8);
+
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
   { label: 'Concrete Resurfacing', href: '/concrete-resurfacing' },
   { label: service.data.title }
 ];
 
-// Service schema
+// Build significantLink array (MA-only for resurfacing)
+const significantLinks = [
+  // Related resurfacing services
+  ...relatedServices.map(s => `https://www.attackacrack.com/concrete-resurfacing/${s.id.replace(/\.md$/, '')}`),
+  // MA state hub and resurfacing hub
+  "https://www.attackacrack.com/massachusetts",
+  "https://www.attackacrack.com/concrete-resurfacing",
+  // Sample MA city pages
+  ...maLocations.slice(0, 4).map(l => `https://www.attackacrack.com/massachusetts/${l.id.replace(/\.md$/, '').replace(/^massachusetts\//, '')}`)
+];
+
+// Build mentions array
+const mentions = [
+  // Service type
+  { "@type": "Thing", "name": "Concrete Resurfacing" },
+  { "@type": "Thing", "name": service.data.title },
+  // State served (MA only)
+  { "@type": "Place", "name": "Massachusetts" }
+];
+
+// Service schema with LLM-ready properties
 const serviceSchema = {
   "@type": "Service",
   "name": service.data.title,
@@ -46,7 +70,10 @@ const serviceSchema = {
     "@type": "State",
     "name": "Massachusetts"
   },
-  "serviceType": "Concrete Resurfacing"
+  "serviceType": "Concrete Resurfacing",
+  // LLM-ready properties
+  "significantLink": significantLinks,
+  "mentions": mentions
 };
 
 // FAQ schema if FAQs exist
@@ -194,6 +221,34 @@ const schemas = faqSchema ? [serviceSchema, faqSchema] : [serviceSchema];
 				</div>
 			</section>
 		)}
+
+		<!-- Service Areas Section (MA Only) -->
+		<section class="py-12 bg-zinc-50 border-t border-zinc-100">
+			<div class="max-w-7xl mx-auto px-6">
+				<h2 class="text-2xl font-black tracking-tighter text-aac-dark mb-6 text-center">
+					{service.data.title} Available In Massachusetts
+				</h2>
+				<div class="flex flex-wrap justify-center gap-2">
+					{maLocations.map(loc => (
+						<a
+							href={`/massachusetts/${loc.id.replace(/\.md$/, '').replace(/^massachusetts\//, '')}`}
+							class="px-3 py-1 bg-white border border-zinc-200 rounded-full text-sm hover:border-aac-blue hover:text-aac-blue transition-colors"
+						>
+							{loc.data.city}
+						</a>
+					))}
+					{allLocations.filter(l => l.data.stateAbbr === 'MA').length > 8 && (
+						<a href="/massachusetts" class="px-3 py-1 bg-aac-blue/10 text-aac-blue rounded-full text-sm font-bold hover:bg-aac-blue hover:text-white transition-colors">
+							+{allLocations.filter(l => l.data.stateAbbr === 'MA').length - 8} more cities
+						</a>
+					)}
+				</div>
+				<p class="text-center text-sm text-zinc-500 mt-4">
+					<Icon name="MapPin" size={14} class="inline mr-1" />
+					Concrete resurfacing services available in Massachusetts only
+				</p>
+			</div>
+		</section>
 
 		<!-- CTA Section -->
 		<section class="py-16 lg:py-24 bg-aac-dark text-white">

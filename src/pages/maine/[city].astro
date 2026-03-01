@@ -7,14 +7,14 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
-import { reviewCount, rating, aggregateRatingSchema } from '../../utils/reviews';
+import { reviewCount, aggregateRatingSchema } from '../../utils/reviews';
 
 export async function getStaticPaths() {
   const locations = await getCollection('locations');
-  const ctLocations = locations.filter(loc => loc.data.stateAbbr === 'CT');
+  const meLocations = locations.filter(loc => loc.data.stateAbbr === 'ME');
 
-  return ctLocations.map((location) => ({
-    params: { city: location.id.replace(/\.md$/, '').replace(/^connecticut\//, '') },
+  return meLocations.map((location) => ({
+    params: { city: location.id.replace(/\.md$/, '').replace(/^maine\//, '') },
     props: { location },
   }));
 }
@@ -22,96 +22,80 @@ export async function getStaticPaths() {
 const { location } = Astro.props;
 const { Content } = await render(location);
 
-// Get services (foundation repair only for CT - no resurfacing)
+// Get services (foundation repair + resurfacing for ME)
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
-// Note: Resurfacing services are MA-only and are in a separate collection ('resurfacing')
+const resurfacingServices = await getCollection('resurfacing');
 
 // Get nearby city pages
 const allLocations = await getCollection('locations');
 const nearbyLocations = location.data.nearbyCities
   ? allLocations.filter(loc =>
-      loc.data.stateAbbr === 'CT' &&
+      loc.data.stateAbbr === 'ME' &&
       location.data.nearbyCities?.includes(loc.data.city)
     )
   : [];
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
-  { label: 'Connecticut', href: '/connecticut' },
+  { label: 'Maine', href: '/maine' },
   { label: location.data.city }
 ];
 
-// Build significantLink array
+// Build significantLink and mentions arrays
 const significantLinks = [
-  // Services available in CT
-  ...services.slice(0, 4).map(s => `https://www.attackacrack.com/services/${s.id.replace(/\.md$/, '')}`),
-  // Nearby cities
-  ...nearbyLocations.slice(0, 3).map(l => `https://www.attackacrack.com/connecticut/${l.id.replace(/\.md$/, '').replace(/^connecticut\//, '')}`),
-  // State hub
-  "https://www.attackacrack.com/connecticut"
+  ...services.slice(0, 3).map(s => `https://www.attackacrack.com/services/${s.id.replace(/\.md$/, '')}`),
+  ...resurfacingServices.slice(0, 2).map(s => `https://www.attackacrack.com/concrete-resurfacing/${s.id.replace(/\.md$/, '')}`),
+  ...nearbyLocations.slice(0, 3).map(l => `https://www.attackacrack.com/maine/${l.id.replace(/\.md$/, '').replace(/^maine\//, '')}`),
+  "https://www.attackacrack.com/maine",
+  "https://www.attackacrack.com/concrete-resurfacing"
 ];
 
-// Build mentions array
 const mentions = [
-  // City itself
-  { "@type": "Place", "name": `${location.data.city}, Connecticut` },
-  // Neighborhoods
+  { "@type": "Place", "name": `${location.data.city}, Maine` },
   ...(location.data.neighborhoods || []).map(n => ({ "@type": "Neighborhood", "name": n })),
-  // Local landmarks
   ...(location.data.localLandmarks || []).map(l => ({ "@type": "Landmark", "name": l })),
-  // Common foundation types
-  ...(location.data.commonFoundationTypes || []).map(f => ({ "@type": "Thing", "name": f }))
+  ...(location.data.commonFoundationTypes || []).map(f => ({ "@type": "Thing", "name": f })),
+  { "@type": "Thing", "name": "Concrete Resurfacing" }
 ];
 
-// LocalBusiness schema for this city with LLM-ready properties
+// LocalBusiness schema
 const citySchema = {
   "@type": "HomeAndConstructionBusiness",
-  "name": `Attack A Crack Foundation Repair - ${location.data.city}, CT`,
+  "name": `Attack A Crack Foundation Repair - ${location.data.city}, ME`,
   "image": "https://www.attackacrack.com/images/logo.png",
-  "@id": `https://www.attackacrack.com/connecticut/${location.id.replace(/\.md$/, '').replace(/^connecticut\//, '')}#organization`,
-  "url": `https://www.attackacrack.com/connecticut/${location.id.replace(/\.md$/, '').replace(/^connecticut\//, '')}`,
-  "telephone": location.data.phoneNumber || "860-573-8760",
+  "@id": `https://www.attackacrack.com/maine/${location.id.replace(/\.md$/, '').replace(/^maine\//, '')}#organization`,
+  "url": `https://www.attackacrack.com/maine/${location.id.replace(/\.md$/, '').replace(/^maine\//, '')}`,
+  "telephone": location.data.phoneNumber || "617-668-1677",
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": location.data.city,
-    "addressRegion": "CT",
+    "addressRegion": "ME",
     "addressCountry": "US"
   },
   "areaServed": {
     "@type": "City",
     "name": location.data.city,
-    "containedInPlace": {
-      "@type": "State",
-      "name": "Connecticut"
-    }
+    "containedInPlace": { "@type": "State", "name": "Maine" }
   },
   "aggregateRating": aggregateRatingSchema,
-  // LLM-ready properties
   "significantLink": significantLinks,
   "mentions": mentions
 };
 
-// FAQ schema if FAQs exist
 const faqSchema = location.data.faqs && location.data.faqs.length > 0 ? {
   "@type": "FAQPage",
   "mainEntity": location.data.faqs.map(faq => ({
     "@type": "Question",
     "name": faq.question,
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": faq.answer
-    }
+    "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
   }))
 } : null;
 
 const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 ---
 
-<Layout
-  title={location.data.metaTitle}
-  description={location.data.metaDescription}
->
+<Layout title={location.data.metaTitle} description={location.data.metaDescription}>
 	<SchemaMarkup schema={schemas} />
 	<LocationModal />
 	<Navbar />
@@ -126,10 +110,10 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 				<div class="grid lg:grid-cols-2 gap-12 items-center">
 					<div>
 						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-yellow/20 text-aac-yellow rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-yellow/30">
-							<Icon name="MapPin" size={14} /> {location.data.city}, CT
+							<Icon name="MapPin" size={14} /> {location.data.city}, ME
 						</div>
 						<h1 class="text-4xl lg:text-6xl font-black tracking-tighter mb-6 leading-none">
-							Foundation Repair in <span class="text-aac-blue">{location.data.city}</span>, Connecticut
+							Foundation Repair in <span class="text-aac-blue">{location.data.city}</span>, Maine
 						</h1>
 
 						{location.data.population && (
@@ -147,12 +131,16 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 								<Icon name="ShieldCheck" size={18} />
 								<span class="font-bold text-sm">Lifetime Guarantee</span>
 							</div>
+							<div class="flex items-center gap-2 text-aac-blue">
+								<Icon name="Wrench" size={18} />
+								<span class="font-bold text-sm">+ Resurfacing</span>
+							</div>
 						</div>
 
 						<div class="flex flex-wrap gap-4">
-							<a href={`tel:${location.data.phoneNumber || '860-573-8760'}`} class="bg-aac-yellow text-aac-dark px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+							<a href={`tel:${location.data.phoneNumber || '617-668-1677'}`} class="bg-aac-yellow text-aac-dark px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
 								<Icon name="Phone" size={16} />
-								Call {location.data.phoneNumber || '860-573-8760'}
+								Call {location.data.phoneNumber || '617-668-1677'}
 							</a>
 							<button class="open-modal bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
 								<Icon name="MessageSquare" size={16} />
@@ -164,13 +152,28 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 					<div class="hidden lg:block">
 						<div class="aspect-[4/3] rounded-[32px] overflow-hidden border-4 border-white/20 bg-zinc-800">
 							<img
-								src={`https://picsum.photos/seed/${location.data.city.toLowerCase()}/800/600`}
-								alt={`Foundation repair in ${location.data.city}, CT`}
+								src={`https://picsum.photos/seed/${location.data.city.toLowerCase()}-me/800/600`}
+								alt={`Foundation repair in ${location.data.city}, ME`}
 								class="w-full h-full object-cover"
 								referrerpolicy="no-referrer"
 							/>
 						</div>
 					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Resurfacing Banner -->
+		<section class="py-6 bg-aac-blue text-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="flex flex-col md:flex-row items-center justify-between gap-4">
+					<div class="flex items-center gap-4">
+						<Icon name="Wrench" size={24} />
+						<p class="font-bold">Concrete resurfacing also available in {location.data.city}!</p>
+					</div>
+					<a href="/concrete-resurfacing" class="bg-white text-aac-blue px-4 py-2 rounded-lg font-black uppercase tracking-widest text-[10px] hover:bg-aac-yellow hover:text-aac-dark transition-colors inline-flex items-center gap-2">
+						Learn More <Icon name="ArrowRight" size={14} />
+					</a>
 				</div>
 			</div>
 		</section>
@@ -220,13 +223,9 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 									<Icon name="Clock" size={20} class="text-aac-blue" />
 									Local Insights
 								</h3>
-								<p class="text-zinc-600">
-									<strong>Average Home Age:</strong> {location.data.averageHomeAge}
-								</p>
+								<p class="text-zinc-600"><strong>Average Home Age:</strong> {location.data.averageHomeAge}</p>
 								{location.data.population && (
-									<p class="text-zinc-600 mt-2">
-										<strong>Population:</strong> {location.data.population.toLocaleString()}
-									</p>
+									<p class="text-zinc-600 mt-2"><strong>Population:</strong> {location.data.population.toLocaleString()}</p>
 								)}
 							</div>
 						)}
@@ -244,12 +243,10 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 			</div>
 		</section>
 
-		<!-- Services in This City -->
+		<!-- Services -->
 		<section class="py-16 bg-zinc-50">
 			<div class="max-w-7xl mx-auto px-6">
-				<h2 class="text-3xl font-black tracking-tighter text-aac-dark mb-8 text-center">
-					Services in {location.data.city}
-				</h2>
+				<h2 class="text-3xl font-black tracking-tighter text-aac-dark mb-8 text-center">Services in {location.data.city}</h2>
 				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 					{services.map((service) => (
 						<a href={`/services/${service.id.replace(/\.md$/, '')}`} class="group bg-white p-6 rounded-xl border-2 border-zinc-100 hover:border-aac-blue transition-all flex items-start gap-4">
@@ -257,12 +254,8 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 								<Icon name={service.data.icon} size={24} />
 							</div>
 							<div>
-								<h3 class="font-black group-hover:text-aac-blue transition-colors">
-									{service.data.title}
-								</h3>
-								<p class="text-sm text-zinc-500 mt-1 line-clamp-2">
-									{service.data.excerpt}
-								</p>
+								<h3 class="font-black group-hover:text-aac-blue transition-colors">{service.data.title}</h3>
+								<p class="text-sm text-zinc-500 mt-1 line-clamp-2">{service.data.excerpt}</p>
 							</div>
 						</a>
 					))}
@@ -274,9 +267,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 		{location.data.faqs && location.data.faqs.length > 0 && (
 			<section class="py-16 bg-white">
 				<div class="max-w-4xl mx-auto px-6">
-					<h2 class="text-3xl font-black tracking-tighter text-aac-dark mb-8 text-center">
-						Foundation Repair FAQs for {location.data.city}
-					</h2>
+					<h2 class="text-3xl font-black tracking-tighter text-aac-dark mb-8 text-center">Foundation Repair FAQs for {location.data.city}</h2>
 					<div class="space-y-4">
 						{location.data.faqs.map((faq) => (
 							<details class="group bg-zinc-50 rounded-xl overflow-hidden">
@@ -284,30 +275,10 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 									{faq.question}
 									<Icon name="ChevronRight" size={20} class="text-aac-blue rotate-90 group-open:rotate-270 transition-transform" />
 								</summary>
-								<div class="px-6 pb-6 text-zinc-600">
-									{faq.answer}
-								</div>
+								<div class="px-6 pb-6 text-zinc-600">{faq.answer}</div>
 							</details>
 						))}
 					</div>
-				</div>
-			</section>
-		)}
-
-		<!-- Testimonial -->
-		{location.data.testimonial && (
-			<section class="py-16 bg-aac-blue text-white">
-				<div class="max-w-4xl mx-auto px-6 text-center">
-					<Icon name="Star" size={48} class="text-aac-yellow mx-auto mb-6" />
-					<blockquote class="text-2xl lg:text-3xl font-bold mb-6 leading-relaxed">
-						"{location.data.testimonial.quote}"
-					</blockquote>
-					<p class="font-black">
-						— {location.data.testimonial.author}
-						{location.data.testimonial.location && (
-							<span class="font-normal opacity-80">, {location.data.testimonial.location}</span>
-						)}
-					</p>
 				</div>
 			</section>
 		)}
@@ -316,16 +287,11 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 		{nearbyLocations.length > 0 && (
 			<section class="py-16 bg-zinc-50">
 				<div class="max-w-7xl mx-auto px-6">
-					<h2 class="text-2xl font-black tracking-tighter text-aac-dark mb-8">
-						We Also Serve Nearby Cities
-					</h2>
+					<h2 class="text-2xl font-black tracking-tighter text-aac-dark mb-8">We Also Serve Nearby Cities</h2>
 					<div class="flex flex-wrap gap-4">
 						{nearbyLocations.map(nearby => (
-							<a
-								href={`/connecticut/${nearby.id.replace(/\.md$/, '').replace(/^connecticut\//, '')}`}
-								class="px-4 py-2 bg-white border-2 border-zinc-200 rounded-full font-bold text-zinc-700 hover:border-aac-blue hover:text-aac-blue transition-colors"
-							>
-								{nearby.data.city}, CT
+							<a href={`/maine/${nearby.id.replace(/\.md$/, '').replace(/^maine\//, '')}`} class="px-4 py-2 bg-white border-2 border-zinc-200 rounded-full font-bold text-zinc-700 hover:border-aac-blue hover:text-aac-blue transition-colors">
+								{nearby.data.city}, ME
 							</a>
 						))}
 					</div>
@@ -333,19 +299,15 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 			</section>
 		)}
 
-		<!-- CTA Section -->
+		<!-- CTA -->
 		<section class="py-16 bg-aac-dark text-white">
 			<div class="max-w-4xl mx-auto px-6 text-center">
-				<h2 class="text-3xl lg:text-4xl font-black tracking-tighter mb-6">
-					Need Foundation Repair in {location.data.city}?
-				</h2>
-				<p class="text-lg text-zinc-400 mb-8">
-					Get a free consultation from our local experts. We'll assess your foundation and provide an honest quote.
-				</p>
+				<h2 class="text-3xl lg:text-4xl font-black tracking-tighter mb-6">Need Foundation Repair in {location.data.city}?</h2>
+				<p class="text-lg text-zinc-400 mb-8">Get a free consultation from our local experts.</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">
-					<a href={`tel:${location.data.phoneNumber || '860-573-8760'}`} class="bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
+					<a href={`tel:${location.data.phoneNumber || '617-668-1677'}`} class="bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
 						<Icon name="Phone" size={20} />
-						{location.data.phoneNumber || '860-573-8760'}
+						{location.data.phoneNumber || '617-668-1677'}
 					</a>
 					<button class="open-modal bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
 						<Icon name="MessageSquare" size={20} />

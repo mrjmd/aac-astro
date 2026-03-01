@@ -12,7 +12,9 @@
     "validate:schema": "node scripts/validate-schema.js",
     "check:images": "node scripts/check-images.js",
     "check:seo": "node scripts/check-seo.js",
-    "validate": "npm run build && npm run validate:schema && npm run check:images && npm run check:seo"
+    "check:a11y": "node scripts/check-a11y.js",
+    "validate:links": "node scripts/validate-links.js",
+    "validate": "npm run build && npm run validate:schema && npm run check:images && npm run check:seo && npm run check:a11y && npm run validate:links"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",
@@ -21,10 +23,12 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.6",
+    "axe-core": "^4.9.0",
     "@lhci/cli": "^0.13.0",
     "@types/node": "^22.14.0",
     "jsdom": "^24.0.0",
     "tailwindcss": "^4.2.1",
-    "typescript": "~5.8.2"
+    "typescript": "~5.8.2",
+    "yaml": "^2.4.0"
   }
 }

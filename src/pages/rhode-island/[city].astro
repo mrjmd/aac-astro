@@ -11,10 +11,10 @@ import { reviewCount, rating, aggregateRatingSchema } from '../../utils/reviews'
 
 export async function getStaticPaths() {
   const locations = await getCollection('locations');
-  const ctLocations = locations.filter(loc => loc.data.stateAbbr === 'CT');
+  const riLocations = locations.filter(loc => loc.data.stateAbbr === 'RI');
 
-  return ctLocations.map((location) => ({
-    params: { city: location.id.replace(/\.md$/, '').replace(/^connecticut\//, '') },
+  return riLocations.map((location) => ({
+    params: { city: location.id.replace(/\.md$/, '').replace(/^rhode-island\//, '') },
     props: { location },
   }));
 }
@@ -22,60 +22,60 @@ export async function getStaticPaths() {
 const { location } = Astro.props;
 const { Content } = await render(location);
 
-// Get services (foundation repair only for CT - no resurfacing)
+// Get services (foundation repair + resurfacing for RI)
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
-// Note: Resurfacing services are MA-only and are in a separate collection ('resurfacing')
+const resurfacingServices = await getCollection('resurfacing');
 
 // Get nearby city pages
 const allLocations = await getCollection('locations');
 const nearbyLocations = location.data.nearbyCities
   ? allLocations.filter(loc =>
-      loc.data.stateAbbr === 'CT' &&
+      loc.data.stateAbbr === 'RI' &&
       location.data.nearbyCities?.includes(loc.data.city)
     )
   : [];
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
-  { label: 'Connecticut', href: '/connecticut' },
+  { label: 'Rhode Island', href: '/rhode-island' },
   { label: location.data.city }
 ];
 
 // Build significantLink array
 const significantLinks = [
-  // Services available in CT
-  ...services.slice(0, 4).map(s => `https://www.attackacrack.com/services/${s.id.replace(/\.md$/, '')}`),
+  // Foundation repair services
+  ...services.slice(0, 3).map(s => `https://www.attackacrack.com/services/${s.id.replace(/\.md$/, '')}`),
+  // Resurfacing services (RI gets both)
+  ...resurfacingServices.slice(0, 2).map(s => `https://www.attackacrack.com/concrete-resurfacing/${s.id.replace(/\.md$/, '')}`),
   // Nearby cities
-  ...nearbyLocations.slice(0, 3).map(l => `https://www.attackacrack.com/connecticut/${l.id.replace(/\.md$/, '').replace(/^connecticut\//, '')}`),
+  ...nearbyLocations.slice(0, 3).map(l => `https://www.attackacrack.com/rhode-island/${l.id.replace(/\.md$/, '').replace(/^rhode-island\//, '')}`),
   // State hub
-  "https://www.attackacrack.com/connecticut"
+  "https://www.attackacrack.com/rhode-island",
+  "https://www.attackacrack.com/concrete-resurfacing"
 ];
 
 // Build mentions array
 const mentions = [
-  // City itself
-  { "@type": "Place", "name": `${location.data.city}, Connecticut` },
-  // Neighborhoods
+  { "@type": "Place", "name": `${location.data.city}, Rhode Island` },
   ...(location.data.neighborhoods || []).map(n => ({ "@type": "Neighborhood", "name": n })),
-  // Local landmarks
   ...(location.data.localLandmarks || []).map(l => ({ "@type": "Landmark", "name": l })),
-  // Common foundation types
-  ...(location.data.commonFoundationTypes || []).map(f => ({ "@type": "Thing", "name": f }))
+  ...(location.data.commonFoundationTypes || []).map(f => ({ "@type": "Thing", "name": f })),
+  { "@type": "Thing", "name": "Concrete Resurfacing" }
 ];
 
-// LocalBusiness schema for this city with LLM-ready properties
+// LocalBusiness schema with LLM-ready properties
 const citySchema = {
   "@type": "HomeAndConstructionBusiness",
-  "name": `Attack A Crack Foundation Repair - ${location.data.city}, CT`,
+  "name": `Attack A Crack Foundation Repair - ${location.data.city}, RI`,
   "image": "https://www.attackacrack.com/images/logo.png",
-  "@id": `https://www.attackacrack.com/connecticut/${location.id.replace(/\.md$/, '').replace(/^connecticut\//, '')}#organization`,
-  "url": `https://www.attackacrack.com/connecticut/${location.id.replace(/\.md$/, '').replace(/^connecticut\//, '')}`,
-  "telephone": location.data.phoneNumber || "860-573-8760",
+  "@id": `https://www.attackacrack.com/rhode-island/${location.id.replace(/\.md$/, '').replace(/^rhode-island\//, '')}#organization`,
+  "url": `https://www.attackacrack.com/rhode-island/${location.id.replace(/\.md$/, '').replace(/^rhode-island\//, '')}`,
+  "telephone": location.data.phoneNumber || "617-668-1677",
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": location.data.city,
-    "addressRegion": "CT",
+    "addressRegion": "RI",
     "addressCountry": "US"
   },
   "areaServed": {
@@ -83,11 +83,10 @@ const citySchema = {
     "name": location.data.city,
     "containedInPlace": {
       "@type": "State",
-      "name": "Connecticut"
+      "name": "Rhode Island"
     }
   },
   "aggregateRating": aggregateRatingSchema,
-  // LLM-ready properties
   "significantLink": significantLinks,
   "mentions": mentions
 };
@@ -126,10 +125,10 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 				<div class="grid lg:grid-cols-2 gap-12 items-center">
 					<div>
 						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-yellow/20 text-aac-yellow rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-yellow/30">
-							<Icon name="MapPin" size={14} /> {location.data.city}, CT
+							<Icon name="MapPin" size={14} /> {location.data.city}, RI
 						</div>
 						<h1 class="text-4xl lg:text-6xl font-black tracking-tighter mb-6 leading-none">
-							Foundation Repair in <span class="text-aac-blue">{location.data.city}</span>, Connecticut
+							Foundation Repair in <span class="text-aac-blue">{location.data.city}</span>, Rhode Island
 						</h1>
 
 						{location.data.population && (
@@ -147,12 +146,16 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 								<Icon name="ShieldCheck" size={18} />
 								<span class="font-bold text-sm">Lifetime Guarantee</span>
 							</div>
+							<div class="flex items-center gap-2 text-aac-blue">
+								<Icon name="Wrench" size={18} />
+								<span class="font-bold text-sm">+ Resurfacing</span>
+							</div>
 						</div>
 
 						<div class="flex flex-wrap gap-4">
-							<a href={`tel:${location.data.phoneNumber || '860-573-8760'}`} class="bg-aac-yellow text-aac-dark px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+							<a href={`tel:${location.data.phoneNumber || '617-668-1677'}`} class="bg-aac-yellow text-aac-dark px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
 								<Icon name="Phone" size={16} />
-								Call {location.data.phoneNumber || '860-573-8760'}
+								Call {location.data.phoneNumber || '617-668-1677'}
 							</a>
 							<button class="open-modal bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
 								<Icon name="MessageSquare" size={16} />
@@ -164,13 +167,30 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 					<div class="hidden lg:block">
 						<div class="aspect-[4/3] rounded-[32px] overflow-hidden border-4 border-white/20 bg-zinc-800">
 							<img
-								src={`https://picsum.photos/seed/${location.data.city.toLowerCase()}/800/600`}
-								alt={`Foundation repair in ${location.data.city}, CT`}
+								src={`https://picsum.photos/seed/${location.data.city.toLowerCase()}-ri/800/600`}
+								alt={`Foundation repair in ${location.data.city}, RI`}
 								class="w-full h-full object-cover"
 								referrerpolicy="no-referrer"
 							/>
 						</div>
 					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Resurfacing Banner (RI gets resurfacing) -->
+		<section class="py-6 bg-aac-blue text-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="flex flex-col md:flex-row items-center justify-between gap-4">
+					<div class="flex items-center gap-4">
+						<Icon name="Wrench" size={24} />
+						<p class="font-bold">
+							Concrete resurfacing also available in {location.data.city}!
+						</p>
+					</div>
+					<a href="/concrete-resurfacing" class="bg-white text-aac-blue px-4 py-2 rounded-lg font-black uppercase tracking-widest text-[10px] hover:bg-aac-yellow hover:text-aac-dark transition-colors inline-flex items-center gap-2">
+						Learn More <Icon name="ArrowRight" size={14} />
+					</a>
 				</div>
 			</div>
 		</section>
@@ -294,24 +314,6 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 			</section>
 		)}
 
-		<!-- Testimonial -->
-		{location.data.testimonial && (
-			<section class="py-16 bg-aac-blue text-white">
-				<div class="max-w-4xl mx-auto px-6 text-center">
-					<Icon name="Star" size={48} class="text-aac-yellow mx-auto mb-6" />
-					<blockquote class="text-2xl lg:text-3xl font-bold mb-6 leading-relaxed">
-						"{location.data.testimonial.quote}"
-					</blockquote>
-					<p class="font-black">
-						— {location.data.testimonial.author}
-						{location.data.testimonial.location && (
-							<span class="font-normal opacity-80">, {location.data.testimonial.location}</span>
-						)}
-					</p>
-				</div>
-			</section>
-		)}
-
 		<!-- Nearby Cities -->
 		{nearbyLocations.length > 0 && (
 			<section class="py-16 bg-zinc-50">
@@ -322,10 +324,10 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 					<div class="flex flex-wrap gap-4">
 						{nearbyLocations.map(nearby => (
 							<a
-								href={`/connecticut/${nearby.id.replace(/\.md$/, '').replace(/^connecticut\//, '')}`}
+								href={`/rhode-island/${nearby.id.replace(/\.md$/, '').replace(/^rhode-island\//, '')}`}
 								class="px-4 py-2 bg-white border-2 border-zinc-200 rounded-full font-bold text-zinc-700 hover:border-aac-blue hover:text-aac-blue transition-colors"
 							>
-								{nearby.data.city}, CT
+								{nearby.data.city}, RI
 							</a>
 						))}
 					</div>
@@ -343,9 +345,9 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 					Get a free consultation from our local experts. We'll assess your foundation and provide an honest quote.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">
-					<a href={`tel:${location.data.phoneNumber || '860-573-8760'}`} class="bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
+					<a href={`tel:${location.data.phoneNumber || '617-668-1677'}`} class="bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
 						<Icon name="Phone" size={20} />
-						{location.data.phoneNumber || '860-573-8760'}
+						{location.data.phoneNumber || '617-668-1677'}
 					</a>
 					<button class="open-modal bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
 						<Icon name="MessageSquare" size={20} />

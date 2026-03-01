@@ -23,13 +23,37 @@ const { Content } = await render(type);
 const allTypes = await getCollection('foundation-types');
 const otherTypes = allTypes.filter(t => t.id !== type.id);
 
+// Get services for significantLink
+const services = await getCollection('services');
+
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
   { label: 'Foundation Types', href: '/foundation-types' },
   { label: type.data.title }
 ];
 
-// Article schema for educational content
+// Build significantLink array from other foundation types and services
+const significantLinks = [
+  // Other foundation types
+  ...otherTypes.map(t => `https://www.attackacrack.com/foundation-types/${t.id.replace(/\.md$/, '')}`),
+  // Relevant services (wall crack repair is common to all foundation types)
+  ...services.slice(0, 4).map(s => `https://www.attackacrack.com/services/${s.id.replace(/\.md$/, '')}`),
+  // State hubs
+  "https://www.attackacrack.com/connecticut",
+  "https://www.attackacrack.com/massachusetts"
+];
+
+// Build mentions array from common problems and repair methods
+const mentions = [
+  // Common problems as Things
+  ...(type.data.commonProblems || []).map(problem => ({ "@type": "Thing", "name": problem })),
+  // Repair methods as Things
+  ...(type.data.repairMethods || []).map(method => ({ "@type": "Thing", "name": method })),
+  // Foundation type itself
+  { "@type": "Thing", "name": type.data.title }
+];
+
+// Article schema for educational content with LLM-ready properties
 const articleSchema = {
   "@type": "Article",
   "headline": type.data.title,
@@ -46,7 +70,10 @@ const articleSchema = {
       "@type": "ImageObject",
       "url": "https://www.attackacrack.com/logo.png"
     }
-  }
+  },
+  // LLM-ready properties for semantic understanding
+  "significantLink": significantLinks,
+  "mentions": mentions
 };
 
 // FAQ schema if FAQs exist

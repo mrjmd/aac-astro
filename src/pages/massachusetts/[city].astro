@@ -7,6 +7,7 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
+import { reviewCount, rating, aggregateRatingSchema } from '../../utils/reviews';
 
 export async function getStaticPaths() {
   const locations = await getCollection('locations');
@@ -39,7 +40,37 @@ const breadcrumbItems = [
   { label: location.data.city }
 ];
 
-// LocalBusiness schema for this city
+// Get resurfacing services for MA (MA gets both foundation repair + resurfacing)
+const resurfacingServices = await getCollection('resurfacing');
+
+// Build significantLink array
+const significantLinks = [
+  // Foundation repair services
+  ...services.slice(0, 3).map(s => `https://www.attackacrack.com/services/${s.id.replace(/\.md$/, '')}`),
+  // Resurfacing services (MA only)
+  ...resurfacingServices.slice(0, 2).map(s => `https://www.attackacrack.com/concrete-resurfacing/${s.id.replace(/\.md$/, '')}`),
+  // Nearby cities
+  ...nearbyLocations.slice(0, 3).map(l => `https://www.attackacrack.com/massachusetts/${l.id.replace(/\.md$/, '').replace(/^massachusetts\//, '')}`),
+  // State hub and resurfacing hub
+  "https://www.attackacrack.com/massachusetts",
+  "https://www.attackacrack.com/concrete-resurfacing"
+];
+
+// Build mentions array
+const mentions = [
+  // City itself
+  { "@type": "Place", "name": `${location.data.city}, Massachusetts` },
+  // Neighborhoods
+  ...(location.data.neighborhoods || []).map(n => ({ "@type": "Neighborhood", "name": n })),
+  // Local landmarks
+  ...(location.data.localLandmarks || []).map(l => ({ "@type": "Landmark", "name": l })),
+  // Common foundation types
+  ...(location.data.commonFoundationTypes || []).map(f => ({ "@type": "Thing", "name": f })),
+  // Concrete resurfacing (MA-specific)
+  { "@type": "Thing", "name": "Concrete Resurfacing" }
+];
+
+// LocalBusiness schema for this city with LLM-ready properties
 const citySchema = {
   "@type": "HomeAndConstructionBusiness",
   "name": `Attack A Crack Foundation Repair - ${location.data.city}, MA`,
@@ -61,7 +92,11 @@ const citySchema = {
       "@type": "State",
       "name": "Massachusetts"
     }
-  }
+  },
+  "aggregateRating": aggregateRatingSchema,
+  // LLM-ready properties
+  "significantLink": significantLinks,
+  "mentions": mentions
 };
 
 // FAQ schema if FAQs exist

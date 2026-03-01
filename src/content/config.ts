@@ -20,6 +20,11 @@ const servicesCollection = defineCollection({
       answer: z.string(),
     })).optional(),
     relatedServices: z.array(z.string()).optional(),
+    // HowTo schema support - optional repair steps
+    steps: z.array(z.object({
+      name: z.string(),
+      text: z.string(),
+    })).optional(),
   }),
 });
 
@@ -111,8 +116,8 @@ const locationsCollection = defineCollection({
   type: 'content',
   schema: z.object({
     city: z.string(),
-    state: z.enum(['Connecticut', 'Massachusetts']),
-    stateAbbr: z.enum(['CT', 'MA']),
+    state: z.enum(['Connecticut', 'Massachusetts', 'Rhode Island', 'New Hampshire', 'Maine']),
+    stateAbbr: z.enum(['CT', 'MA', 'RI', 'NH', 'ME']),
     metaTitle: z.string().min(30).max(60),
     metaDescription: z.string().min(120).max(160),
     region: z.string().optional(), // e.g., "Metro Boston", "North Shore"
