@@ -1,6 +1,6 @@
 ---
 title: "Driveway Resurfacing"
-metaTitle: "Concrete Driveway Resurfacing in Massachusetts"
+metaTitle: "Driveway Resurfacing | Attack A Crack"
 metaDescription: "Restore your concrete driveway with professional resurfacing. Fix cracks, stains, and wear. Custom colors available. MA only."
 excerpt: "Give your driveway a complete makeover without the cost of replacement. Repair damage, add color, and boost curb appeal with decorative resurfacing."
 icon: "Wrench"

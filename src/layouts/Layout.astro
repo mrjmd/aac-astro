@@ -19,6 +19,9 @@ const {
 const CT_NUMBER = "860-573-8760";
 const MA_NUMBER = "617-668-1677";
 
+// Build page title - don't append brand if already included
+const pageTitle = title.includes('Attack A Crack') ? title : `${title} | Attack A Crack`;
+
 // JSON-LD Schema for Local Business
 const schema = {
   "@context": "https://schema.org",
@@ -86,7 +89,7 @@ const schema = {
 		<meta name="geo.placename" content="Amston" />
 		<meta name="geo.position" content="41.6151;-72.3484" />
 		<meta name="ICBM" content="41.6151, -72.3484" />
-		<title>{title} | Attack A Crack</title>
+		<title>{pageTitle}</title>
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />

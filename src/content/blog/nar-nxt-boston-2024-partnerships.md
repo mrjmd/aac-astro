@@ -1,6 +1,6 @@
 ---
 title: "Building Game-Changing Partnerships at NAR NXT Boston"
-metaTitle: "NAR NXT Boston 2024 - Real Estate Partnership Insights"
+metaTitle: "NAR NXT Boston 2024 | Attack A Crack"
 metaDescription: "Attack A Crack attends NAR Conference in Boston to build partnerships with realtors. Learn how foundation repair supports real estate transactions."
 excerpt: "At NAR NXT Boston, we discussed how foundation repair partnerships help realtors close deals faster and give buyers confidence."
 publishDate: 2024-11-15

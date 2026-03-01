@@ -1,6 +1,6 @@
 ---
 title: "Essential Winter Home Maintenance Checklist"
-metaTitle: "Winter Home Maintenance Checklist for New England"
+metaTitle: "Winter Home Maintenance | Attack A Crack"
 metaDescription: "Prepare your home for winter with this essential maintenance checklist covering heating, plumbing, insulation, and foundation protection."
 excerpt: "Winter weather poses significant challenges to home integrity. Follow this comprehensive checklist to protect your home from cold weather damage."
 publishDate: 2024-09-30

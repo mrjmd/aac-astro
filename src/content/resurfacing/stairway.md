@@ -1,6 +1,6 @@
 ---
 title: "Stairway Resurfacing"
-metaTitle: "Concrete Stairway Resurfacing in Massachusetts"
+metaTitle: "Stairway Resurfacing | Attack A Crack"
 metaDescription: "Transform worn, cracked concrete stairs with professional resurfacing. Non-slip finish, custom colors. Massachusetts only. Get a free quote."
 excerpt: "Restore cracked, spalling, or worn concrete stairs with a durable decorative overlay. Non-slip finishes available for safety."
 icon: "Wrench"

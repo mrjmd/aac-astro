@@ -1,6 +1,6 @@
 ---
 title: "How to Check Your Foundation for Problems"
-metaTitle: "Foundation Problem Warning Signs and Inspection Guide"
+metaTitle: "Foundation Warning Signs | Attack A Crack"
 metaDescription: "Learn how to inspect your home's foundation for problems. Identify warning signs of foundation damage and know when to call a professional."
 excerpt: "Your home's foundation is the backbone of its structural integrity. Learn how to identify foundation damage and when to call for professional help."
 publishDate: 2024-10-07

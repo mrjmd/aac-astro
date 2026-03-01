@@ -1,6 +1,6 @@
 ---
 title: "Walkway Resurfacing"
-metaTitle: "Concrete Walkway Resurfacing in Massachusetts"
+metaTitle: "Walkway Resurfacing | Attack A Crack"
 metaDescription: "Revitalize cracked concrete walkways with decorative resurfacing. Multiple colors and patterns. Massachusetts only. Free estimate."
 excerpt: "Renew cracked, stained, or dated concrete walkways with a beautiful decorative overlay. Multiple colors, patterns, and textures available."
 icon: "Wrench"

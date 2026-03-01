@@ -1,6 +1,6 @@
 ---
 title: "Vertical vs. Horizontal Foundation Cracks: When to Worry"
-metaTitle: "Vertical vs Horizontal Foundation Cracks Guide"
+metaTitle: "Vertical vs Horizontal Cracks | Attack A Crack"
 metaDescription: "Learn the difference between vertical and horizontal foundation cracks, which ones are dangerous, and when you need professional repair."
 excerpt: "Not all foundation cracks are created equal. Learn which crack patterns indicate serious structural issues and which ones are normal settling you can ignore."
 publishDate: 2026-02-15

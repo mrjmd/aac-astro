@@ -1,6 +1,6 @@
 ---
 title: "Finished Basement Flooded in Shrewsbury"
-metaTitle: "Flooded Basement Repair Case Study - Shrewsbury MA"
+metaTitle: "Flooded Basement Case: Shrewsbury | Attack A Crack"
 metaDescription: "A Shrewsbury homeowner's finished basement flooded due to a hidden settling crack. Learn how we repaired it with a lifetime guarantee."
 excerpt: "A settling crack hidden behind wall paneling caused a finished basement to flood. See how we repaired the damage with our lifetime guarantee."
 publishDate: 2024-12-03

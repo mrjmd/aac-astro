@@ -1,6 +1,6 @@
 ---
 title: "Realtors"
-metaTitle: "Foundation Repair Partner for Realtors CT & MA"
+metaTitle: "Realtor Partner | Attack A Crack"
 metaDescription: "Partner with Attack A Crack for rapid foundation repair quotes and lifetime-guaranteed repairs that satisfy inspectors. Close deals faster."
 excerpt: "Close deals faster with rapid quotes and lifetime-guaranteed repairs that satisfy inspectors. Your reliable foundation repair partner in CT and MA."
 icon: "Users"

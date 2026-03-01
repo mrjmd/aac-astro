@@ -1,6 +1,6 @@
 ---
 title: "The Hidden Danger in MA and CT Homes: Crumbling Foundations"
-metaTitle: "Crumbling Foundation Crisis in Massachusetts and Connecticut"
+metaTitle: "Crumbling Foundations MA & CT | Attack A Crack"
 metaDescription: "Learn about the pyrrhotite crumbling foundation crisis affecting Massachusetts and Connecticut homes, warning signs, and what homeowners can do."
 excerpt: "Pyrrhotite contamination is causing foundations to crumble in Massachusetts and Connecticut. Learn the warning signs and how to protect your home."
 publishDate: 2024-12-06
