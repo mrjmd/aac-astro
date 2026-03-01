@@ -22,7 +22,7 @@ nearbyCities:
   - "Fall River"
   - "Plymouth"
   - "Brockton"
-  - "Providence"
+  - "Quincy"
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in New Bedford?"

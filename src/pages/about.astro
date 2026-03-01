@@ -4,31 +4,267 @@ import Navbar from '../components/Navbar.astro';
 import Team from '../components/Team.astro';
 import Footer from '../components/Footer.astro';
 import LocationModal from '../components/LocationModal.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import SchemaMarkup from '../components/SchemaMarkup.astro';
+import Icon from '../components/Icon.astro';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'About' }
+];
+
+// Organization schema
+const aboutSchema = {
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Attack A Crack Foundation Repair",
+  "foundingDate": "1990",
+  "description": "Family-owned foundation repair company serving Connecticut and Massachusetts for over 30 years.",
+  "telephone": "860-573-8760",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Amston",
+    "addressRegion": "CT",
+    "postalCode": "06231",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    { "@type": "State", "name": "Connecticut" },
+    { "@type": "State", "name": "Massachusetts" }
+  ],
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 5
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Luc Richard"
+  }
+};
 ---
 
 <Layout title="About Our Team" description="Meet the Attack A Crack team - family-owned foundation repair experts serving Connecticut and Massachusetts for over 20 years. No salespeople, just technicians.">
+	<SchemaMarkup schema={aboutSchema} />
 	<LocationModal />
 	<Navbar currentPage="about" />
-	
+
 	<main class="pt-20 lg:pt-24">
-		<section class="py-20 lg:py-32 bg-zinc-50 relative overflow-hidden">
+		<!-- Hero Section -->
+		<section class="py-20 lg:py-32 bg-aac-dark text-white relative overflow-hidden">
+			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
 			<div class="max-w-7xl mx-auto px-6 relative z-10">
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-400 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-500" />
 				<h1 class="text-6xl lg:text-8xl font-black tracking-tighter mb-8 leading-none">
 					ABOUT <br />
 					<span class="text-aac-blue">OUR TEAM.</span>
 				</h1>
-				<p class="text-xl text-zinc-600 max-w-2xl mb-12">
-					Family-owned and operated for over 20 years. We're not a franchise; we're your neighbors, dedicated to protecting your home.
+				<p class="text-xl text-zinc-400 max-w-2xl mb-8">
+					Family-owned and operated for over 30 years. We're not a franchise; we're your neighbors, dedicated to protecting your home.
+				</p>
+				<div class="flex flex-wrap gap-6">
+					<div class="flex items-center gap-3 text-white">
+						<div class="w-12 h-12 bg-aac-blue/20 rounded-xl flex items-center justify-center">
+							<Icon name="Clock" size={24} class="text-aac-blue" />
+						</div>
+						<div>
+							<p class="text-2xl font-black">30+</p>
+							<p class="text-sm text-zinc-400">Years Experience</p>
+						</div>
+					</div>
+					<div class="flex items-center gap-3 text-white">
+						<div class="w-12 h-12 bg-aac-yellow/20 rounded-xl flex items-center justify-center">
+							<Icon name="Star" size={24} class="text-aac-yellow" />
+						</div>
+						<div>
+							<p class="text-2xl font-black">240+</p>
+							<p class="text-sm text-zinc-400">5-Star Reviews</p>
+						</div>
+					</div>
+					<div class="flex items-center gap-3 text-white">
+						<div class="w-12 h-12 bg-aac-blue/20 rounded-xl flex items-center justify-center">
+							<Icon name="ShieldCheck" size={24} class="text-aac-blue" />
+						</div>
+						<div>
+							<p class="text-2xl font-black">Lifetime</p>
+							<p class="text-sm text-zinc-400">Guarantee</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Our Story Section -->
+		<section class="py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="grid lg:grid-cols-2 gap-16 items-center">
+					<div>
+						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/10 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
+							<Icon name="BookOpen" size={14} /> Our Story
+						</div>
+						<h2 class="text-4xl lg:text-5xl font-black text-aac-dark mb-8 tracking-tighter">
+							Building Legacies, <br />
+							<span class="text-aac-blue">One Foundation at a Time.</span>
+						</h2>
+						<div class="space-y-6 text-zinc-600 leading-relaxed">
+							<p>
+								Attack A Crack traces its roots to Luc Richard's early work with concrete at age 16, learning the trade under his father's foundation company. After 15 years of mastering techniques and understanding the science of concrete, Luc established his own waterproofing business.
+							</p>
+							<p>
+								Over the decades, the business evolved into specialized concrete and foundation crack repair services. What started as one man with a mission to do things right has grown into a respected name in foundation repair throughout New England.
+							</p>
+							<p>
+								<strong>In 2024, Attack A Crack expanded into Massachusetts</strong> with Managing Partner Matt Davis leading operations. This expansion brought our proven methods and lifetime guarantee to homeowners across the Bay State.
+							</p>
+						</div>
+					</div>
+					<div class="relative">
+						<div class="aspect-[4/3] rounded-[32px] overflow-hidden border-8 border-white shadow-2xl bg-zinc-200">
+							<img
+								src="https://picsum.photos/seed/story/800/600"
+								alt="Attack A Crack team at work"
+								class="w-full h-full object-cover"
+								referrerpolicy="no-referrer"
+							/>
+						</div>
+						<div class="absolute -bottom-8 -left-8 bg-aac-dark text-white p-6 rounded-2xl shadow-xl">
+							<p class="text-4xl font-black">1990</p>
+							<p class="text-sm text-zinc-400">Founded in CT</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Our Values Section -->
+		<section class="py-24 bg-zinc-50">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/10 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
+						<Icon name="Heart" size={14} /> Our Values
+					</div>
+					<h2 class="text-4xl lg:text-5xl font-black tracking-tighter text-aac-dark">
+						What We Stand For
+					</h2>
+				</div>
+
+				<div class="grid md:grid-cols-3 gap-8">
+					<!-- Honesty -->
+					<div class="bg-white p-8 rounded-[32px] border-2 border-zinc-100">
+						<div class="w-16 h-16 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center mb-6">
+							<Icon name="MessageCircle" size={32} />
+						</div>
+						<h3 class="text-2xl font-black mb-4 text-aac-dark">Honesty</h3>
+						<p class="text-zinc-600 leading-relaxed">
+							We provide honest, no-strings-attached advice for concrete repairs. If you can handle it yourself, we'll tell you how. We'd rather earn your trust than your money on a job you don't need.
+						</p>
+					</div>
+
+					<!-- Responsiveness -->
+					<div class="bg-white p-8 rounded-[32px] border-2 border-zinc-100">
+						<div class="w-16 h-16 bg-aac-yellow/10 text-aac-dark rounded-2xl flex items-center justify-center mb-6">
+							<Icon name="Zap" size={32} />
+						</div>
+						<h3 class="text-2xl font-black mb-4 text-aac-dark">Responsiveness</h3>
+						<p class="text-zinc-600 leading-relaxed">
+							We return calls and respond to texts within 15 minutes. When water is coming through your foundation, every minute matters. We understand the urgency and act accordingly.
+						</p>
+					</div>
+
+					<!-- Quality -->
+					<div class="bg-white p-8 rounded-[32px] border-2 border-zinc-100">
+						<div class="w-16 h-16 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center mb-6">
+							<Icon name="Award" size={32} />
+						</div>
+						<h3 class="text-2xl font-black mb-4 text-aac-dark">Quality</h3>
+						<p class="text-zinc-600 leading-relaxed">
+							Advanced understanding of concrete chemistry combined with modern injection methods. Every repair comes with a lifetime guarantee because we're confident in the work we do.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Team Section -->
+		<Team />
+
+		<!-- The "No Salesperson" Promise -->
+		<section class="py-24 bg-aac-blue text-white">
+			<div class="max-w-4xl mx-auto px-6 text-center">
+				<div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 text-white rounded-full text-[10px] font-black uppercase tracking-widest mb-8 border border-white/20">
+					<Icon name="UserCheck" size={14} /> Our Promise
+				</div>
+				<h2 class="text-4xl lg:text-5xl font-black mb-8 tracking-tighter">
+					The "No Salesperson" Promise
+				</h2>
+				<p class="text-xl opacity-90 leading-relaxed mb-8">
+					When you contact us, you speak directly with an expert technician. We don't have a sales team trained to upsell you. We have experts trained to fix your foundation. If you can fix it yourself, we'll tell you how.
+				</p>
+				<p class="text-lg opacity-75 italic">
+					"We don't just repair concrete; we build legacies—protecting homes and serving as part of a family tradition of excellence."
 				</p>
 			</div>
 		</section>
-		<Team />
-		<section class="py-24 bg-aac-blue text-white">
-			<div class="max-w-7xl mx-auto px-6 text-center">
-				<h2 class="text-4xl font-black mb-8">The "No Salesperson" Promise</h2>
-				<p class="text-xl max-w-3xl mx-auto opacity-90 leading-relaxed">
-					When you contact us, you speak directly with an expert technician. We don't have a sales team trained to upsell you. We have experts trained to fix your foundation. If you can fix it yourself, we'll tell you how.
+
+		<!-- E-E-A-T Section -->
+		<section class="py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl lg:text-4xl font-black tracking-tighter text-aac-dark">
+						Why Trust Attack A Crack?
+					</h2>
+				</div>
+
+				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<div class="text-center">
+						<div class="w-16 h-16 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center mx-auto mb-4">
+							<Icon name="GraduationCap" size={32} />
+						</div>
+						<h3 class="font-black text-lg mb-2">Experience</h3>
+						<p class="text-sm text-zinc-600">30+ years in concrete foundation science and repair</p>
+					</div>
+					<div class="text-center">
+						<div class="w-16 h-16 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center mx-auto mb-4">
+							<Icon name="Briefcase" size={32} />
+						</div>
+						<h3 class="font-black text-lg mb-2">Expertise</h3>
+						<p class="text-sm text-zinc-600">Specialized in injection techniques that other contractors can't match</p>
+					</div>
+					<div class="text-center">
+						<div class="w-16 h-16 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center mx-auto mb-4">
+							<Icon name="FileCheck" size={32} />
+						</div>
+						<h3 class="font-black text-lg mb-2">Authority</h3>
+						<p class="text-sm text-zinc-600">ASHI affiliate member, trusted by home inspectors and realtors</p>
+					</div>
+					<div class="text-center">
+						<div class="w-16 h-16 bg-aac-yellow/10 text-aac-dark rounded-2xl flex items-center justify-center mx-auto mb-4">
+							<Icon name="Star" size={32} />
+						</div>
+						<h3 class="font-black text-lg mb-2">Trust</h3>
+						<p class="text-sm text-zinc-600">240+ 5-star reviews and lifetime transferable warranty</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="py-24 bg-aac-dark text-white">
+			<div class="max-w-4xl mx-auto px-6 text-center">
+				<h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-6">
+					Meet the Team <span class="text-aac-yellow">In Person</span>
+				</h2>
+				<p class="text-xl text-zinc-400 mb-10">
+					Schedule a free consultation and see why homeowners across New England trust us with their foundations.
 				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="tel:860-573-8760" class="bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white inline-flex items-center justify-center gap-3">
+						<Icon name="Phone" size={24} />
+						CT: 860-573-8760
+					</a>
+					<a href="tel:617-668-1677" class="bg-white/10 text-white px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-3">
+						<Icon name="Phone" size={24} />
+						MA: 617-668-1677
+					</a>
+				</div>
 			</div>
 		</section>
 	</main>

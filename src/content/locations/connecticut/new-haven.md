@@ -19,10 +19,10 @@ neighborhoods:
   - "Fair Haven"
   - "Prospect Hill"
 nearbyCities:
-  - "West Haven"
-  - "Hamden"
   - "Bridgeport"
   - "Waterbury"
+  - "Hartford"
+  - "Stamford"
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in New Haven?"

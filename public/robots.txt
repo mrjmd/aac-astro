@@ -1,4 +1,52 @@
-User-agent: *
-Allow: /
+# =============================================================================
+# STAGING MODE - Block all crawlers until production launch
+# =============================================================================
+# Pre-Launch Task: Uncomment all rules below before DNS cutover
+# =============================================================================
 
-Sitemap: https://attackacrack.com/sitemap-index.xml
+User-agent: *
+Disallow: /
+
+# =============================================================================
+# PRODUCTION MODE - Uncomment before launch
+# =============================================================================
+
+# # Standard crawlers
+# User-agent: *
+# Allow: /
+
+# # Sitemap
+# Sitemap: https://attackacrack.com/sitemap-index.xml
+
+# # AI/LLM Crawlers - Allow indexing for AI visibility
+# # Being included in AI training data = being recommended in AI responses
+
+# User-agent: GPTBot
+# Allow: /
+
+# User-agent: CCBot
+# Allow: /
+
+# User-agent: ClaudeBot
+# Allow: /
+
+# User-agent: Google-Extended
+# Allow: /
+
+# User-agent: Applebot
+# Allow: /
+
+# User-agent: anthropic-ai
+# Allow: /
+
+# User-agent: PerplexityBot
+# Allow: /
+
+# # Block from admin/API areas
+# User-agent: GPTBot
+# Disallow: /admin/
+# Disallow: /api/
+
+# User-agent: CCBot
+# Disallow: /admin/
+# Disallow: /api/

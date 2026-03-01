@@ -1,0 +1,317 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LocationModal from '../../components/LocationModal.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SchemaMarkup from '../../components/SchemaMarkup.astro';
+import Icon from '../../components/Icon.astro';
+
+// Get all locations
+const allLocations = await getCollection('locations');
+
+// Count cities per state
+const stateCounts = {
+  CT: allLocations.filter(loc => loc.data.stateAbbr === 'CT').length,
+  MA: allLocations.filter(loc => loc.data.stateAbbr === 'MA').length,
+  RI: allLocations.filter(loc => loc.data.stateAbbr === 'RI').length,
+  NH: allLocations.filter(loc => loc.data.stateAbbr === 'NH').length,
+  ME: allLocations.filter(loc => loc.data.stateAbbr === 'ME').length
+};
+
+const states = [
+  {
+    name: 'Connecticut',
+    abbr: 'CT',
+    slug: 'connecticut',
+    phone: '860-573-8760',
+    description: 'Our home state. Family-owned foundation repair serving all of Connecticut for over 20 years.',
+    cities: stateCounts.CT,
+    highlight: true
+  },
+  {
+    name: 'Massachusetts',
+    abbr: 'MA',
+    slug: 'massachusetts',
+    phone: '617-668-1677',
+    description: 'Expert foundation repair throughout Massachusetts, from Boston to the Berkshires.',
+    cities: stateCounts.MA,
+    highlight: true
+  },
+  {
+    name: 'Rhode Island',
+    abbr: 'RI',
+    slug: 'rhode-island',
+    phone: '860-573-8760',
+    description: 'Foundation repair services for Rhode Island homeowners, from Providence to Newport.',
+    cities: stateCounts.RI,
+    highlight: false
+  },
+  {
+    name: 'New Hampshire',
+    abbr: 'NH',
+    slug: 'new-hampshire',
+    phone: '617-668-1677',
+    description: 'Serving southern New Hampshire with expert foundation crack repair and waterproofing.',
+    cities: stateCounts.NH,
+    highlight: false
+  },
+  {
+    name: 'Maine',
+    abbr: 'ME',
+    slug: 'maine',
+    phone: '617-668-1677',
+    description: 'Foundation repair for Maine homes, specializing in older foundations and coastal properties.',
+    cities: stateCounts.ME,
+    highlight: false
+  }
+];
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Areas We Serve' }
+];
+
+// Schema for service area
+const areaSchema = {
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Attack A Crack Foundation Repair",
+  "@id": "https://www.attackacrack.com/#organization",
+  "url": "https://www.attackacrack.com/areas-we-serve",
+  "telephone": "860-573-8760",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Amston",
+    "addressRegion": "CT",
+    "postalCode": "06231",
+    "addressCountry": "US"
+  },
+  "areaServed": states.map(state => ({
+    "@type": "State",
+    "name": state.name
+  }))
+};
+---
+
+<Layout
+  title="Areas We Serve - New England"
+  description="Expert foundation repair across New England: CT, MA, RI, NH, and ME. Family-owned with lifetime guarantee on all repairs."
+>
+  <SchemaMarkup schema={areaSchema} />
+  <LocationModal />
+  <Navbar currentPage="areas" />
+
+  <main class="pt-20 lg:pt-24">
+    <!-- Hero Section -->
+    <section class="py-20 lg:py-32 bg-aac-dark text-white relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-400 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-500" />
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/20 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/30">
+              <Icon name="MapPin" size={14} /> Service Areas
+            </div>
+            <h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-6 leading-none">
+              Serving <span class="text-aac-blue">New England</span>
+            </h1>
+            <p class="text-xl text-zinc-400 mb-8">
+              Family-owned foundation repair with over 20 years of experience. We serve Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine with a lifetime guarantee on all repairs.
+            </p>
+
+            <div class="flex flex-wrap gap-4 mb-8">
+              <div class="flex items-center gap-2 text-aac-yellow">
+                <Icon name="Star" size={20} />
+                <span class="font-bold">240+ 5-Star Reviews</span>
+              </div>
+              <div class="flex items-center gap-2 text-white">
+                <Icon name="ShieldCheck" size={20} />
+                <span class="font-bold">Lifetime Guarantee</span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-4">
+              <a href="tel:860-573-8760" class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+                <Icon name="Phone" size={16} />
+                CT: 860-573-8760
+              </a>
+              <a href="tel:617-668-1677" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
+                <Icon name="Phone" size={16} />
+                MA: 617-668-1677
+              </a>
+            </div>
+          </div>
+
+          <div class="relative hidden lg:block">
+            <div class="aspect-square rounded-[32px] overflow-hidden border-4 border-white/20 bg-zinc-800">
+              <img
+                src="https://picsum.photos/seed/new-england-map/800/800"
+                alt="New England service area map"
+                class="w-full h-full object-cover"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl">
+              <div class="flex items-center gap-4">
+                <div class="w-16 h-16 bg-aac-blue/10 rounded-xl flex items-center justify-center">
+                  <Icon name="MapPin" size={32} class="text-aac-blue" />
+                </div>
+                <div>
+                  <p class="text-3xl font-black text-aac-dark">5</p>
+                  <p class="text-sm text-zinc-500 font-bold">States Served</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- States Grid -->
+    <section class="py-24 bg-zinc-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-black tracking-tighter text-aac-dark">
+            Choose Your State
+          </h2>
+          <p class="text-lg text-zinc-500 mt-4 max-w-2xl mx-auto">
+            Click on your state to see the cities we serve and local contact information.
+          </p>
+        </div>
+
+        <!-- Primary States (CT & MA) -->
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+          {states.filter(s => s.highlight).map(state => (
+            <a href={`/${state.slug}`} class="group bg-white p-8 rounded-[32px] border-2 border-zinc-100 hover:border-aac-blue transition-all shadow-sm hover:shadow-xl relative overflow-hidden">
+              <div class="absolute top-0 right-0 w-32 h-32 bg-aac-blue/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+              <div class="relative">
+                <div class="flex items-start justify-between mb-6">
+                  <div class="w-16 h-16 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center group-hover:bg-aac-blue group-hover:text-white transition-colors">
+                    <span class="text-2xl font-black">{state.abbr}</span>
+                  </div>
+                  <div class="text-right">
+                    <p class="text-sm text-zinc-500">Cities Served</p>
+                    <p class="text-2xl font-black text-aac-dark">{state.cities}+</p>
+                  </div>
+                </div>
+                <h3 class="text-3xl font-black mb-3 tracking-tight group-hover:text-aac-blue transition-colors">
+                  {state.name}
+                </h3>
+                <p class="text-zinc-600 mb-6 leading-relaxed">
+                  {state.description}
+                </p>
+                <div class="flex items-center justify-between">
+                  <a href={`tel:${state.phone}`} class="text-aac-blue font-bold text-sm hover:underline flex items-center gap-2">
+                    <Icon name="Phone" size={16} /> {state.phone}
+                  </a>
+                  <span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
+                    View Cities <Icon name="ArrowRight" size={14} />
+                  </span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <!-- Secondary States (RI, NH, ME) -->
+        <div class="grid md:grid-cols-3 gap-8">
+          {states.filter(s => !s.highlight).map(state => (
+            <a href={`/${state.slug}`} class="group bg-white p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all shadow-sm hover:shadow-lg">
+              <div class="flex items-center gap-4 mb-4">
+                <div class="w-12 h-12 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center group-hover:bg-aac-blue group-hover:text-white transition-colors">
+                  <span class="text-lg font-black">{state.abbr}</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-black group-hover:text-aac-blue transition-colors">
+                    {state.name}
+                  </h3>
+                  <p class="text-sm text-zinc-500">{state.cities}+ cities</p>
+                </div>
+              </div>
+              <p class="text-zinc-600 text-sm mb-4 leading-relaxed">
+                {state.description}
+              </p>
+              <span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-3 transition-all">
+                View Cities <Icon name="ArrowRight" size={14} />
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/10 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
+              <Icon name="ShieldCheck" size={14} /> Why New England Trusts Us
+            </div>
+            <h2 class="text-4xl lg:text-5xl font-black text-aac-dark mb-8 tracking-tighter">
+              Local Expertise. <br />
+              <span class="text-aac-blue">Lifetime Guarantee.</span>
+            </h2>
+            <div class="space-y-8">
+              <div class="flex gap-6">
+                <div class="w-12 h-12 bg-aac-blue text-white rounded-xl flex items-center justify-center shrink-0 font-black">01</div>
+                <div>
+                  <h3 class="text-xl font-black mb-2">New England Foundation Experts</h3>
+                  <p class="text-zinc-600">We understand the unique challenges of New England foundations: freeze-thaw cycles, old stone foundations, and coastal moisture. Our methods are designed specifically for this region.</p>
+                </div>
+              </div>
+              <div class="flex gap-6">
+                <div class="w-12 h-12 bg-aac-blue text-white rounded-xl flex items-center justify-center shrink-0 font-black">02</div>
+                <div>
+                  <h3 class="text-xl font-black mb-2">Family-Owned, Not Corporate</h3>
+                  <p class="text-zinc-600">When you call us, you talk directly to the technicians who will do the work. No salespeople, no pressure tactics—just honest assessments and fair pricing.</p>
+                </div>
+              </div>
+              <div class="flex gap-6">
+                <div class="w-12 h-12 bg-aac-blue text-white rounded-xl flex items-center justify-center shrink-0 font-black">03</div>
+                <div>
+                  <h3 class="text-xl font-black mb-2">Lifetime Transferable Warranty</h3>
+                  <p class="text-zinc-600">Every repair comes with a lifetime guarantee that transfers to new homeowners. We stand behind our work because our injection methods are permanent.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="aspect-[4/3] rounded-[32px] overflow-hidden border-8 border-white shadow-2xl bg-zinc-200">
+            <img
+              src="https://picsum.photos/seed/ne-team/800/600"
+              alt="Attack A Crack foundation repair team"
+              class="w-full h-full object-cover"
+              referrerpolicy="no-referrer"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-aac-dark text-white relative overflow-hidden">
+      <div class="absolute inset-0 bg-aac-blue/10"></div>
+      <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+        <h2 class="text-4xl lg:text-6xl font-black tracking-tighter mb-6">
+          Free Foundation <span class="text-aac-yellow">Consultation</span>
+        </h2>
+        <p class="text-xl text-zinc-400 mb-10 max-w-2xl mx-auto">
+          Not sure what's wrong with your foundation? Text us photos for a free assessment, or schedule an in-person consultation—completely free, no obligation.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="open-modal bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white inline-flex items-center justify-center gap-3">
+            <Icon name="MessageSquare" size={24} />
+            Text Us Photos
+          </button>
+          <a href="/services/free-foundation-consultations" class="bg-white/10 backdrop-blur-sm text-white px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-3">
+            <Icon name="Info" size={24} />
+            Learn More
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

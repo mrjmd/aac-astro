@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import SpeedInsights from '@vercel/speed-insights/astro';
+
 interface Props {
 	title: string;
 	description?: string;
@@ -112,6 +114,7 @@ const schema = {
 	</head>
 	<body class="bg-white text-aac-dark font-sans selection:bg-aac-yellow selection:text-aac-dark antialiased">
 		<slot />
+		<SpeedInsights />
 
 		<!-- Redirect to admin after Netlify Identity login -->
 		<script is:inline>
