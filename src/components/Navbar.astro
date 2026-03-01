@@ -64,7 +64,7 @@ const { currentPage = 'home' } = Astro.props;
     </div>
 
     <!-- Mobile Toggle -->
-    <button id="mobile-menu-toggle" class="lg:hidden text-aac-dark p-2">
+    <button id="mobile-menu-toggle" class="lg:hidden text-aac-dark p-2" aria-label="Open menu">
       <Icon name="Menu" size={28} />
     </button>
   </div>
@@ -72,7 +72,7 @@ const { currentPage = 'home' } = Astro.props;
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="fixed inset-0 top-0 bg-white z-[60] p-8 lg:hidden flex flex-col gap-6 translate-x-full transition-transform duration-300">
     <div class="flex justify-end">
-      <button id="mobile-menu-close" class="text-aac-dark p-2">
+      <button id="mobile-menu-close" class="text-aac-dark p-2" aria-label="Close menu">
         <Icon name="X" size={28} />
       </button>
     </div>

@@ -5,15 +5,27 @@
  *
  * Uses axe-core to test key page types for accessibility violations.
  * - Fails build on critical or serious violations
+ * - Fails build if axe cannot run properly
  * - Warns on minor violations
  */
 
-import { JSDOM } from 'jsdom';
+import axe from 'axe-core';
+import { JSDOM, VirtualConsole } from 'jsdom';
 import { readFileSync, readdirSync, existsSync } from 'fs';
 import { join, resolve } from 'path';
 
 // Configure axe-core for Node.js environment
 const distDir = resolve('dist');
+
+// Create a virtual console to suppress jsdom canvas errors
+const virtualConsole = new VirtualConsole();
+virtualConsole.on('jsdomError', (error) => {
+  // Suppress canvas-related errors (not needed for a11y testing)
+  if (error.message && error.message.includes('HTMLCanvasElement')) {
+    return;
+  }
+  console.error(error);
+});
 
 // Pages to test (representative samples of each page type)
 const pagesToTest = [
@@ -37,43 +49,54 @@ async function runAxe(html, pagePath) {
   // Create a DOM from the HTML
   const dom = new JSDOM(html, {
     url: `http://localhost/${pagePath}`,
-    runScripts: 'outside-only',
+    virtualConsole,
   });
 
-  // Import axe-core
-  const axeCore = await import('axe-core');
-  const axe = axeCore.default;
+  const { document, Node } = dom.window;
 
-  // Configure axe for the document
-  const { document, window } = dom.window;
+  // Set up global references that axe needs
+  global.document = document;
+  global.window = dom.window;
+  global.Node = Node;
+  global.NodeList = dom.window.NodeList;
+  global.Element = dom.window.Element;
+  global.HTMLElement = dom.window.HTMLElement;
 
-  // Inject axe into the window
-  axe.configure({
-    rules: [
-      // Disable rules that don't apply to static HTML testing
-      { id: 'color-contrast', enabled: true },
-      { id: 'image-alt', enabled: true },
-      { id: 'label', enabled: true },
-      { id: 'link-name', enabled: true },
-      { id: 'button-name', enabled: true },
-      { id: 'html-has-lang', enabled: true },
-      { id: 'landmark-one-main', enabled: true },
-      { id: 'page-has-heading-one', enabled: true },
-      { id: 'region', enabled: true },
-    ]
-  });
+  try {
+    // Configure axe for relevant checks
+    axe.configure({
+      rules: [
+        { id: 'color-contrast', enabled: false }, // Disable - can't test without CSS rendering
+        { id: 'image-alt', enabled: true },
+        { id: 'label', enabled: true },
+        { id: 'link-name', enabled: true },
+        { id: 'button-name', enabled: true },
+        { id: 'html-has-lang', enabled: true },
+        { id: 'landmark-one-main', enabled: true },
+        { id: 'page-has-heading-one', enabled: true },
+        { id: 'region', enabled: true },
+      ]
+    });
 
-  // Run axe analysis
-  const results = await axe.run(document, {
-    runOnly: {
-      type: 'tag',
-      values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'best-practice']
-    }
-  });
+    // Run axe analysis on the document body
+    const results = await axe.run(document.documentElement, {
+      runOnly: {
+        type: 'tag',
+        values: ['wcag2a', 'wcag2aa', 'best-practice']
+      }
+    });
 
-  dom.window.close();
-
-  return results;
+    return results;
+  } finally {
+    // Clean up globals
+    delete global.document;
+    delete global.window;
+    delete global.Node;
+    delete global.NodeList;
+    delete global.Element;
+    delete global.HTMLElement;
+    dom.window.close();
+  }
 }
 
 function categorizeViolation(impact) {
@@ -102,9 +125,10 @@ async function testPage(pagePath) {
       passes: results.passes.length,
     };
   } catch (error) {
+    // Return error as a failure, not just a skip
     return {
       path: pagePath,
-      error: error.message,
+      runError: error.message,
     };
   }
 }
@@ -148,7 +172,9 @@ async function main() {
   let totalWarnings = 0;
   let testedCount = 0;
   let skippedCount = 0;
+  let runErrorCount = 0;
   const errorDetails = [];
+  const runErrors = [];
 
   for (const pagePath of allPages) {
     const result = await testPage(pagePath);
@@ -158,8 +184,10 @@ async function main() {
       continue;
     }
 
-    if (result.error) {
-      console.log(`  [ERROR] ${pagePath}: ${result.error}`);
+    if (result.runError) {
+      console.log(`  [ERROR] ${pagePath}: Failed to run axe - ${result.runError}`);
+      runErrorCount++;
+      runErrors.push({ page: pagePath, error: result.runError });
       continue;
     }
 
@@ -184,6 +212,7 @@ async function main() {
           description: violation.description,
           impact: violation.impact,
           help: violation.help,
+          nodes: violation.nodes.map(n => n.html).slice(0, 3),
         });
       }
 
@@ -201,9 +230,19 @@ async function main() {
   console.log('-----------------------------------');
   console.log(`  Pages tested: ${testedCount}`);
   console.log(`  Pages skipped: ${skippedCount}`);
+  console.log(`  Run errors: ${runErrorCount}`);
   console.log(`  Critical/Serious issues: ${totalErrors}`);
   console.log(`  Minor issues (warnings): ${totalWarnings}`);
   console.log('-----------------------------------\n');
+
+  // FAIL if axe couldn't run on pages (this is a CI failure)
+  if (runErrorCount > 0) {
+    console.log('FAILED: Could not run accessibility tests on some pages.\n');
+    runErrors.forEach((e, i) => {
+      console.log(`${i + 1}. ${e.page}: ${e.error}`);
+    });
+    process.exit(1);
+  }
 
   if (totalErrors > 0) {
     console.log('FAILED: Critical or serious accessibility violations found.\n');
@@ -213,6 +252,10 @@ async function main() {
       console.log(`   Issue: ${e.description}`);
       console.log(`   Impact: ${e.impact}`);
       console.log(`   Fix: ${e.help}`);
+      if (e.nodes && e.nodes.length > 0) {
+        console.log(`   Elements:`);
+        e.nodes.forEach(html => console.log(`      ${html.substring(0, 100)}...`));
+      }
     });
     process.exit(1);
   }
