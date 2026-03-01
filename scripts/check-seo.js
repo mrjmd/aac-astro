@@ -13,6 +13,11 @@ import { JSDOM } from 'jsdom';
 
 const DIST_DIR = 'dist';
 
+// Paths to exclude from SEO checks (not public-facing pages)
+const EXCLUDE_PATHS = [
+  'admin/',  // Decap CMS admin interface
+];
+
 // SEO constraints
 const TITLE_MIN = 30;
 const TITLE_MAX = 60;
@@ -175,6 +180,12 @@ function checkLinks(document, filePath) {
 async function validateFile(filePath) {
   const html = await readFile(filePath, 'utf-8');
   const relativePath = relative(DIST_DIR, filePath);
+
+  // Skip excluded paths
+  if (EXCLUDE_PATHS.some(excludePath => relativePath.startsWith(excludePath))) {
+    return;
+  }
+
   const dom = new JSDOM(html);
   const document = dom.window.document;
 
