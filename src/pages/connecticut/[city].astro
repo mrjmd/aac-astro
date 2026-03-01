@@ -182,10 +182,10 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 					<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 						{location.data.neighborhoods && location.data.neighborhoods.length > 0 && (
 							<div class="bg-white p-8 rounded-2xl border-2 border-zinc-100">
-								<h3 class="font-black text-lg mb-4 flex items-center gap-2">
+								<p class="font-black text-lg mb-4 flex items-center gap-2">
 									<Icon name="MapPin" size={20} class="text-aac-blue" />
 									Neighborhoods We Serve
-								</h3>
+								</p>
 								<ul class="space-y-2 text-zinc-600">
 									{location.data.neighborhoods.map(neighborhood => (
 										<li class="flex items-center gap-2">
@@ -199,10 +199,10 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 
 						{location.data.commonFoundationTypes && location.data.commonFoundationTypes.length > 0 && (
 							<div class="bg-white p-8 rounded-2xl border-2 border-zinc-100">
-								<h3 class="font-black text-lg mb-4 flex items-center gap-2">
+								<p class="font-black text-lg mb-4 flex items-center gap-2">
 									<Icon name="Hammer" size={20} class="text-aac-blue" />
 									Common Foundation Types
-								</h3>
+								</p>
 								<ul class="space-y-2 text-zinc-600">
 									{location.data.commonFoundationTypes.map(type => (
 										<li class="flex items-center gap-2">
@@ -216,10 +216,10 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 
 						{location.data.averageHomeAge && (
 							<div class="bg-white p-8 rounded-2xl border-2 border-zinc-100">
-								<h3 class="font-black text-lg mb-4 flex items-center gap-2">
+								<p class="font-black text-lg mb-4 flex items-center gap-2">
 									<Icon name="Clock" size={20} class="text-aac-blue" />
 									Local Insights
-								</h3>
+								</p>
 								<p class="text-zinc-600">
 									<strong>Average Home Age:</strong> {location.data.averageHomeAge}
 								</p>

@@ -5,7 +5,7 @@ const CT_NUMBER = "860-573-8760";
 const MA_NUMBER = "617-668-1677";
 ---
 
-<div id="location-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-6 hidden">
+<div id="location-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-6 hidden" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
   <div id="modal-backdrop" class="absolute inset-0 bg-aac-dark/60 backdrop-blur-sm"></div>
   <div class="relative bg-white rounded-3xl p-8 max-w-md w-full shadow-2xl border-4 border-aac-yellow transform scale-90 opacity-0 transition-all duration-300">
     <button id="modal-close" class="absolute top-4 right-4 text-zinc-400 hover:text-zinc-900" aria-label="Close modal">
@@ -15,7 +15,7 @@ const MA_NUMBER = "617-668-1677";
       <div class="w-16 h-16 bg-aac-yellow rounded-2xl flex items-center justify-center mx-auto mb-4">
         <Icon name="MapPin" class="text-aac-dark" size={32} />
       </div>
-      <h3 class="text-2xl font-bold text-aac-dark mb-2">Where are you located?</h3>
+      <p id="modal-title" class="text-2xl font-bold text-aac-dark mb-2">Where are you located?</p>
       <p class="text-zinc-500 font-medium">We service New England only.</p>
     </div>
     <div class="grid gap-4">
@@ -68,6 +68,7 @@ const MA_NUMBER = "617-668-1677";
 
   function openModal() {
     modal.classList.remove('hidden');
+    modal.setAttribute('aria-hidden', 'false');
     setTimeout(() => {
       content.classList.remove('scale-90', 'opacity-0');
       content.classList.add('scale-100', 'opacity-100');
@@ -79,6 +80,7 @@ const MA_NUMBER = "617-668-1677";
     content.classList.remove('scale-100', 'opacity-100');
     setTimeout(() => {
       modal.classList.add('hidden');
+      modal.setAttribute('aria-hidden', 'true');
     }, 300);
   }
 
