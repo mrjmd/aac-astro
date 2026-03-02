@@ -6,7 +6,7 @@ Attack A Crack Foundation Repair - Astro static site for a New England foundatio
 
 - **Framework:** Astro 5 with content collections
 - **Styling:** Tailwind CSS v4
-- **Hosting:** Vercel (auto-deploys on push to main)
+- **Hosting:** Vercel (deploys gated on CI passing via GitHub Actions)
 - **CI:** GitHub Actions (`.github/workflows/quality.yml`)
 - **Launch status:** NOT LAUNCHED. Site must not be crawled until production launch.
 
@@ -99,3 +99,31 @@ The `quality.yml` workflow runs the same checks on push/PR to main. All SEO/sche
 - Components: `src/components/`
 - Validation scripts: `scripts/`
 - All scripts are ES modules (project uses `"type": "module"`)
+
+## Visual Verification
+
+A Playwright-based screenshot tool exists for verifying CSS, layout, and image changes.
+
+### When to Use
+
+- Any CSS or layout change (spacing, sizing, positioning, colors)
+- Image-related changes (cropping, object-fit, new images)
+- Component visual changes
+- **Always verify visually before declaring a visual task complete**
+
+### How to Run
+
+```bash
+node scripts/screenshot.js /                     # Full homepage (viewport only)
+node scripts/screenshot.js / "#about"             # Specific section by CSS selector
+node scripts/screenshot.js /services --width=375  # Mobile width
+node scripts/screenshot.js / --full-page           # Full page screenshot
+```
+
+Output: `.claude/screenshots/screenshot.png` — read this file to verify the result.
+
+### Requirements
+
+- Requires Playwright chromium: `npx playwright install chromium` (one-time setup)
+- Requires a build (`dist/` directory); the script will build automatically if needed
+- NOT part of the validation pipeline or CI — purely a dev/verification tool

@@ -2,11 +2,11 @@
 import Icon from './Icon.astro';
 
 const team = [
-  { name: "Luc Richard", role: "Founder & Managing Partner", loc: "Connecticut", img: "https://picsum.photos/seed/luc/400/400" },
-  { name: "Matt Davis", role: "Managing Partner", loc: "Massachusetts", img: "https://picsum.photos/seed/matt/400/400" },
-  { name: "Edward Crowell", role: "Partnership Lead", loc: "Business Development", img: "https://picsum.photos/seed/edward/400/400" },
-  { name: "Justin La Fontaine", role: "Lead Technician", loc: "Field Expert", img: "https://picsum.photos/seed/justin/400/400" },
-  { name: "Mike Harrington", role: "Technician", loc: "Field Expert", img: "https://picsum.photos/seed/mike/400/400" }
+  { name: "Luc Richard", role: "Founder & Managing Partner", loc: "Connecticut", img: "/images/team/luc.png" },
+  { name: "Matt Davis", role: "Managing Partner", loc: "Massachusetts", img: "/images/team/matt.png" },
+  { name: "Edward Crowell", role: "Partnership Lead", loc: "Business Development", img: "/images/team/placeholder.svg" },
+  { name: "Justin La Fontaine", role: "Lead Technician", loc: "Field Expert", img: "/images/team/justin.png" },
+  { name: "Mike Harrington", role: "Technician", loc: "Field Expert", img: "/images/team/mike.png" }
 ];
 ---
 
@@ -40,7 +40,7 @@ const team = [
         {team.slice(0, 2).map((member) => (
           <div class="group bg-white p-4 rounded-3xl border-4 border-aac-dark shadow-[8px_8px_0px_0px_rgba(26,26,26,0.05)]">
             <div class="aspect-square rounded-2xl overflow-hidden mb-4">
-              <img src={member.img} alt={member.name} class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" referrerpolicy="no-referrer" />
+              <img src={member.img} alt={member.name} class="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500" referrerpolicy="no-referrer" />
             </div>
             <h3 class="font-bold text-aac-dark text-sm">{member.name}</h3>
             <p class="text-aac-blue text-[10px] font-bold uppercase tracking-widest mt-1">{member.role}</p>
@@ -53,7 +53,7 @@ const team = [
         {team.slice(2).map((member) => (
           <div class="group bg-white p-4 rounded-3xl border-4 border-aac-dark shadow-[8px_8px_0px_0px_rgba(26,26,26,0.05)]">
             <div class="aspect-square rounded-2xl overflow-hidden mb-4">
-              <img src={member.img} alt={member.name} class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" referrerpolicy="no-referrer" />
+              <img src={member.img} alt={member.name} class="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500" referrerpolicy="no-referrer" />
             </div>
             <h3 class="font-bold text-aac-dark text-sm">{member.name}</h3>
             <p class="text-aac-blue text-[10px] font-bold uppercase tracking-widest mt-1">{member.role}</p>
