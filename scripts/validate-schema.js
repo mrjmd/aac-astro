@@ -14,6 +14,8 @@ import { JSDOM } from 'jsdom';
 const DIST_DIR = 'dist';
 const REQUIRED_SCHEMAS = {
   // Page type patterns and their required schema types
+  // Hub/index pages use ItemList schemas, not individual page schemas
+  // so we only match paths with a slug (not just the directory index)
   'services/': ['Service'],
   'concrete-repair/': ['Service'],
   'connecticut/': ['LocalBusiness'],
@@ -22,6 +24,15 @@ const REQUIRED_SCHEMAS = {
   'partners/': ['WebPage'],
   'foundation-types/': ['Article'],
 };
+
+// Hub pages that use ItemList/collection schemas instead of individual page schemas
+const HUB_PAGES = [
+  'services/index.html',
+  'concrete-repair/index.html',
+  'blog/index.html',
+  'foundation-types/index.html',
+  'blog/category/',  // Blog category listing pages
+];
 
 // Required properties for each schema type
 const SCHEMA_REQUIREMENTS = {
@@ -34,7 +45,6 @@ const SCHEMA_REQUIREMENTS = {
 };
 
 let errors = [];
-let warnings = [];
 let pagesChecked = 0;
 let schemasFound = 0;
 
@@ -95,7 +105,7 @@ function validateSchema(schema, filePath) {
   if (requirements) {
     for (const prop of requirements) {
       if (!schema[prop]) {
-        warnings.push(`${filePath}: ${type} schema missing recommended property: ${prop}`);
+        errors.push(`${filePath}: ${type} schema missing required property: ${prop}`);
       }
     }
   }
@@ -129,19 +139,39 @@ function validateSchema(schema, filePath) {
       errors.push(`${filePath}: LocalBusiness missing telephone`);
     }
     if (!schema.address && !schema.areaServed) {
-      warnings.push(`${filePath}: LocalBusiness should have address or areaServed`);
+      errors.push(`${filePath}: LocalBusiness missing address or areaServed`);
     }
   }
 
   schemasFound++;
 }
 
+function isHubPage(relativePath) {
+  return HUB_PAGES.some(hub => {
+    if (hub.endsWith('/')) {
+      return relativePath.startsWith(hub);
+    }
+    return relativePath === hub;
+  });
+}
+
 function checkRequiredSchemas(schemas, filePath) {
   const relativePath = relative(DIST_DIR, filePath);
+
+  // Hub/index pages use ItemList schemas, not individual page schemas
+  if (isHubPage(relativePath)) {
+    return;
+  }
+
   const schemaTypes = schemas.map(s => s['@type']).filter(Boolean);
 
   for (const [pathPattern, requiredTypes] of Object.entries(REQUIRED_SCHEMAS)) {
     if (relativePath.includes(pathPattern)) {
+      // Skip index pages for this pattern (they're hub pages even if not in HUB_PAGES list)
+      if (relativePath.endsWith(`${pathPattern}index.html`)) {
+        continue;
+      }
+
       for (const requiredType of requiredTypes) {
         if (!schemaTypes.includes(requiredType)) {
           // Also check for related types (e.g., HomeAndConstructionBusiness extends LocalBusiness)
@@ -151,7 +181,7 @@ function checkRequiredSchemas(schemas, filePath) {
           );
 
           if (!hasRelated) {
-            warnings.push(`${relativePath}: Expected ${requiredType} schema but not found`);
+            errors.push(`${relativePath}: Expected ${requiredType} schema but not found`);
           }
         }
       }
@@ -165,14 +195,14 @@ async function validateFile(filePath) {
 
   const schemas = extractJsonLd(html);
 
-  if (schemas.length === 0) {
+  if (schemas.length === 0 && !isHubPage(relativePath)) {
     // Some pages may not need schemas (index, about, etc.)
     const requiresSchema = Object.keys(REQUIRED_SCHEMAS).some(pattern =>
       relativePath.includes(pattern)
     );
 
     if (requiresSchema) {
-      warnings.push(`${relativePath}: No JSON-LD schemas found`);
+      errors.push(`${relativePath}: No JSON-LD schemas found`);
     }
   }
 
@@ -197,12 +227,6 @@ async function main() {
     console.log(`📄 Pages checked: ${pagesChecked}`);
     console.log(`📊 Schemas found: ${schemasFound}`);
     console.log('');
-
-    if (warnings.length > 0) {
-      console.log(`⚠️  Warnings (${warnings.length}):`);
-      warnings.forEach(w => console.log(`   ${w}`));
-      console.log('');
-    }
 
     if (errors.length > 0) {
       console.log(`❌ Errors (${errors.length}):`);

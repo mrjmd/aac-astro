@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-aac-blue: #0056b3;
-  --color-aac-yellow: #ffcc00;
+  --color-aac-blue: #1e6fb8;
+  --color-aac-yellow: #f0c34b;
   --color-aac-dark: #1a1a1a;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Space Grotesk", sans-serif;
@@ -28,8 +28,8 @@
   }
 
   @keyframes pulse-soft {
-    0%, 100% { transform: scale(1) rotate(12deg); box-shadow: 0 0 0 0 rgba(0, 86, 179, 0.4); }
-    50% { transform: scale(1.1) rotate(12deg); box-shadow: 0 0 20px 10px rgba(0, 86, 179, 0); }
+    0%, 100% { transform: scale(1) rotate(12deg); box-shadow: 0 0 0 0 rgba(30, 111, 184, 0.4); }
+    50% { transform: scale(1.1) rotate(12deg); box-shadow: 0 0 20px 10px rgba(30, 111, 184, 0); }
   }
   .animate-pulse-soft {
     animation: pulse-soft 2s infinite cubic-bezier(0.4, 0, 0.6, 1);

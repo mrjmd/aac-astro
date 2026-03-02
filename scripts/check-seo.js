@@ -25,7 +25,6 @@ const DESCRIPTION_MIN = 120;
 const DESCRIPTION_MAX = 160;
 
 let errors = [];
-let warnings = [];
 let pagesChecked = 0;
 
 // Track duplicates
@@ -61,14 +60,14 @@ function checkTitle(title, filePath) {
   const length = title.length;
 
   if (length < TITLE_MIN) {
-    warnings.push(`${filePath}: Title too short (${length} chars, min ${TITLE_MIN}): "${title}"`);
+    errors.push(`${filePath}: Title too short (${length} chars, min ${TITLE_MIN}): "${title}"`);
   } else if (length > TITLE_MAX) {
-    warnings.push(`${filePath}: Title too long (${length} chars, max ${TITLE_MAX}): "${title.substring(0, 50)}..."`);
+    errors.push(`${filePath}: Title too long (${length} chars, max ${TITLE_MAX}): "${title.substring(0, 50)}..."`);
   }
 
   // Track for duplicates
   if (titles.has(title)) {
-    warnings.push(`${filePath}: Duplicate title with ${titles.get(title)}: "${title.substring(0, 50)}..."`);
+    errors.push(`${filePath}: Duplicate title with ${titles.get(title)}: "${title.substring(0, 50)}..."`);
   } else {
     titles.set(title, filePath);
   }
@@ -83,14 +82,14 @@ function checkDescription(description, filePath) {
   const length = description.length;
 
   if (length < DESCRIPTION_MIN) {
-    warnings.push(`${filePath}: Description too short (${length} chars, min ${DESCRIPTION_MIN})`);
+    errors.push(`${filePath}: Description too short (${length} chars, min ${DESCRIPTION_MIN})`);
   } else if (length > DESCRIPTION_MAX) {
-    warnings.push(`${filePath}: Description too long (${length} chars, max ${DESCRIPTION_MAX})`);
+    errors.push(`${filePath}: Description too long (${length} chars, max ${DESCRIPTION_MAX})`);
   }
 
   // Track for duplicates
   if (descriptions.has(description)) {
-    warnings.push(`${filePath}: Duplicate description with ${descriptions.get(description)}`);
+    errors.push(`${filePath}: Duplicate description with ${descriptions.get(description)}`);
   } else {
     descriptions.set(description, filePath);
   }
@@ -102,7 +101,7 @@ function checkHeadings(document, filePath) {
   if (h1s.length === 0) {
     errors.push(`${filePath}: Missing H1 tag`);
   } else if (h1s.length > 1) {
-    warnings.push(`${filePath}: Multiple H1 tags (${h1s.length})`);
+    errors.push(`${filePath}: Multiple H1 tags (${h1s.length})`);
   }
 
   // Check heading hierarchy
@@ -113,7 +112,7 @@ function checkHeadings(document, filePath) {
     const level = parseInt(heading.tagName[1]);
     if (level > lastLevel + 1 && lastLevel !== 0) {
       // Skip level (e.g., H1 -> H3)
-      warnings.push(`${filePath}: Skipped heading level (H${lastLevel} to H${level})`);
+      errors.push(`${filePath}: Skipped heading level (H${lastLevel} to H${level})`);
     }
     lastLevel = level;
   }
@@ -125,21 +124,21 @@ function checkOpenGraph(document, filePath) {
   const ogImage = document.querySelector('meta[property="og:image"]');
   const ogUrl = document.querySelector('meta[property="og:url"]');
 
-  if (!ogTitle) warnings.push(`${filePath}: Missing og:title`);
-  if (!ogDesc) warnings.push(`${filePath}: Missing og:description`);
-  if (!ogImage) warnings.push(`${filePath}: Missing og:image`);
-  if (!ogUrl) warnings.push(`${filePath}: Missing og:url`);
+  if (!ogTitle) errors.push(`${filePath}: Missing og:title`);
+  if (!ogDesc) errors.push(`${filePath}: Missing og:description`);
+  if (!ogImage) errors.push(`${filePath}: Missing og:image`);
+  if (!ogUrl) errors.push(`${filePath}: Missing og:url`);
 }
 
 function checkCanonical(document, filePath) {
   const canonical = document.querySelector('link[rel="canonical"]');
 
   if (!canonical) {
-    warnings.push(`${filePath}: Missing canonical URL`);
+    errors.push(`${filePath}: Missing canonical URL`);
   } else {
     const href = canonical.getAttribute('href');
     if (!href || !href.startsWith('https://')) {
-      warnings.push(`${filePath}: Canonical URL should be absolute HTTPS`);
+      errors.push(`${filePath}: Canonical URL should be absolute HTTPS`);
     }
   }
 }
@@ -151,7 +150,7 @@ function checkImages(document, filePath) {
     const alt = img.getAttribute('alt');
     if (!alt && alt !== '') {
       const src = img.getAttribute('src') || 'unknown';
-      warnings.push(`${filePath}: Image missing alt: ${src.substring(0, 40)}...`);
+      errors.push(`${filePath}: Image missing alt: ${src.substring(0, 40)}...`);
     }
   }
 }
@@ -164,7 +163,7 @@ function checkLinks(document, filePath) {
 
     // Check for empty hrefs
     if (!href || href === '#') {
-      warnings.push(`${filePath}: Link with empty or # href`);
+      errors.push(`${filePath}: Link with empty or # href`);
     }
 
     // External links should have rel="noopener"
@@ -217,17 +216,6 @@ async function main() {
 
     console.log(`📄 Pages checked: ${pagesChecked}`);
     console.log('');
-
-    if (warnings.length > 0) {
-      console.log(`⚠️  Warnings (${warnings.length}):`);
-      // Limit output to avoid overwhelming
-      const displayWarnings = warnings.slice(0, 20);
-      displayWarnings.forEach(w => console.log(`   ${w}`));
-      if (warnings.length > 20) {
-        console.log(`   ... and ${warnings.length - 20} more warnings`);
-      }
-      console.log('');
-    }
 
     if (errors.length > 0) {
       console.log(`❌ Errors (${errors.length}):`);

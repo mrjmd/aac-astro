@@ -1,6 +1,6 @@
 ---
 title: "Patio Repair & Resurfacing"
-metaTitle: "Concrete Patio Repair & Resurfacing | MA Only"
+metaTitle: "Concrete Patio Crack Repair | MA Only"
 metaDescription: "Repair cracked concrete patios in Massachusetts. Fix cracks and damage with decorative resurfacing—custom colors and patterns. Free consultation."
 excerpt: "Repair your worn concrete patio and transform it into a beautiful outdoor living space. Stamped patterns, custom colors, and durable finishes."
 icon: "Wrench"

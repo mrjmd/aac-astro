@@ -100,12 +100,8 @@ async function runAxe(html, pagePath) {
 }
 
 function categorizeViolation(impact) {
-  // critical and serious are blocking
-  // moderate and minor are warnings
-  if (impact === 'critical' || impact === 'serious') {
-    return 'error';
-  }
-  return 'warning';
+  // All accessibility violations are errors - no exceptions
+  return 'error';
 }
 
 async function testPage(pagePath) {
@@ -258,11 +254,6 @@ async function main() {
       }
     });
     process.exit(1);
-  }
-
-  if (totalWarnings > 0) {
-    console.log('PASSED with warnings: Minor accessibility issues found.\n');
-    process.exit(0);
   }
 
   console.log('PASSED: No accessibility violations found.\n');

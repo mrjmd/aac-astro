@@ -1,6 +1,6 @@
 ---
 title: "Concrete Step & Stair Repair"
-metaTitle: "Concrete Step Repair & Resurfacing | MA Only"
+metaTitle: "Concrete Step & Stair Repair | MA Only"
 metaDescription: "Professional concrete step and stair repair in Massachusetts. Fix cracked, spalling stairs with non-slip resurfacing. Custom colors. Free quote."
 excerpt: "Repair cracked, spalling, or worn concrete stairs with a durable decorative overlay. Non-slip finishes available for safety."
 icon: "Wrench"
