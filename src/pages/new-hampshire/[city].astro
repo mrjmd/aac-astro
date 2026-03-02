@@ -22,9 +22,9 @@ export async function getStaticPaths() {
 const { location } = Astro.props;
 const { Content } = await render(location);
 
-// Get services (foundation repair + resurfacing for NH)
+// Get services (foundation repair + concrete repair for NH)
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
-const resurfacingServices = await getCollection('resurfacing');
+const concreteRepairServices = await getCollection('concrete-repair');
 
 // Get nearby city pages
 const allLocations = await getCollection('locations');
@@ -44,10 +44,10 @@ const breadcrumbItems = [
 // Build significantLink and mentions arrays
 const significantLinks = [
   ...services.slice(0, 3).map(s => `https://www.attackacrack.com/services/${s.id.replace(/\.md$/, '')}`),
-  ...resurfacingServices.slice(0, 2).map(s => `https://www.attackacrack.com/concrete-resurfacing/${s.id.replace(/\.md$/, '')}`),
+  ...concreteRepairServices.slice(0, 2).map(s => `https://www.attackacrack.com/concrete-repair/${s.id.replace(/\.md$/, '')}`),
   ...nearbyLocations.slice(0, 3).map(l => `https://www.attackacrack.com/new-hampshire/${l.id.replace(/\.md$/, '').replace(/^new-hampshire\//, '')}`),
   "https://www.attackacrack.com/new-hampshire",
-  "https://www.attackacrack.com/concrete-resurfacing"
+  "https://www.attackacrack.com/concrete-repair"
 ];
 
 const mentions = [
@@ -55,7 +55,7 @@ const mentions = [
   ...(location.data.neighborhoods || []).map(n => ({ "@type": "Neighborhood", "name": n })),
   ...(location.data.localLandmarks || []).map(l => ({ "@type": "Landmark", "name": l })),
   ...(location.data.commonFoundationTypes || []).map(f => ({ "@type": "Thing", "name": f })),
-  { "@type": "Thing", "name": "Concrete Resurfacing" }
+  { "@type": "Thing", "name": "Concrete Repair" }
 ];
 
 // LocalBusiness schema
@@ -169,9 +169,9 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 				<div class="flex flex-col md:flex-row items-center justify-between gap-4">
 					<div class="flex items-center gap-4">
 						<Icon name="Wrench" size={24} />
-						<p class="font-bold">Concrete resurfacing also available in {location.data.city}!</p>
+						<p class="font-bold">Concrete repair & resurfacing also available in {location.data.city}!</p>
 					</div>
-					<a href="/concrete-resurfacing" class="bg-white text-aac-blue px-4 py-2 rounded-lg font-black uppercase tracking-widest text-[10px] hover:bg-aac-yellow hover:text-aac-dark transition-colors inline-flex items-center gap-2">
+					<a href="/concrete-repair" class="bg-white text-aac-blue px-4 py-2 rounded-lg font-black uppercase tracking-widest text-[10px] hover:bg-aac-yellow hover:text-aac-dark transition-colors inline-flex items-center gap-2">
 						Learn More <Icon name="ArrowRight" size={14} />
 					</a>
 				</div>

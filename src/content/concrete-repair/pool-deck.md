@@ -1,15 +1,15 @@
 ---
-title: "Pool Deck Resurfacing"
-metaTitle: "Pool Deck Resurfacing in Massachusetts"
-metaDescription: "Cool, slip-resistant pool deck surfaces that look beautiful. Repair cracks and stains with decorative concrete resurfacing. MA only."
-excerpt: "Create a beautiful, safe pool deck with cool-touch, slip-resistant resurfacing. Multiple colors and patterns to complement your outdoor space."
+title: "Pool Deck Repair & Resurfacing"
+metaTitle: "Concrete Pool Deck Repair & Resurfacing | MA"
+metaDescription: "Professional concrete pool deck repair in Massachusetts. Fix cracks, stains, and heat issues with slip-resistant, cool-touch resurfacing. Free quote."
+excerpt: "Repair cracked, stained pool decks with cool-touch, slip-resistant concrete overlays. Multiple colors and patterns to complement your outdoor space."
 icon: "Wrench"
 order: 5
-beforeImage: "/images/resurfacing/pool-deck-before.jpg"
-afterImage: "/images/resurfacing/pool-deck-after.jpg"
-heroImage: "/images/resurfacing/pool-deck-hero.jpg"
+beforeImage: "/images/concrete-repair/pool-deck-before.jpg"
+afterImage: "/images/concrete-repair/pool-deck-after.jpg"
+heroImage: "/images/concrete-repair/pool-deck-hero.jpg"
 faqs:
-  - question: "Is the resurfaced surface safe for bare feet?"
+  - question: "Is the repaired surface safe for bare feet?"
     answer: "Absolutely. We use cool-touch technologies that reduce surface temperature and slip-resistant textures that provide traction even when wet. Safety is paramount around pools."
   - question: "How does the surface handle pool chemicals?"
     answer: "Our sealers are formulated to resist chlorine, salt, and other pool chemicals. The surface won't discolor or deteriorate from normal pool water exposure."
@@ -20,21 +20,21 @@ relatedServices:
   - "walkway"
 ---
 
-## Pool Deck Resurfacing in Massachusetts
+## Concrete Pool Deck Repair in Massachusetts
 
-Your pool deck should be an inviting extension of your outdoor living space—not a cracked, stained eyesore that's too hot to walk on. Pool deck resurfacing transforms worn concrete into a beautiful, safe, and comfortable surface.
+Your pool deck should be an inviting extension of your outdoor living space—not a cracked, stained eyesore that's too hot to walk on. Our pool deck repair and resurfacing service transforms worn concrete into a beautiful, safe, and comfortable surface.
 
-### Pool Deck Challenges
+### Common Pool Deck Problems We Repair
 
-Pool decks face unique conditions:
-- **Constant moisture** from splashing and wet feet
-- **Chemical exposure** from chlorine and salt
-- **UV damage** from direct sun
-- **Temperature extremes** (hot surface, cold winters)
-- **Slip hazards** when wet
-- **High foot traffic** during pool season
+Pool decks face unique conditions that cause damage:
+- **Cracks and spalling** from freeze-thaw cycles and settling
+- **Chemical damage** from chlorine and salt exposure
+- **Surface deterioration** from UV and temperature extremes
+- **Slip hazards** on wet, worn concrete
+- **Heat buildup** making barefoot use impossible
+- **Staining** from years of pool use
 
-Standard concrete often fails to meet these demands. Resurfacing with specialized materials solves these problems.
+Standard concrete repair alone isn't enough—our overlay system fixes the damage and upgrades the surface.
 
 ### Critical Safety Features
 
@@ -67,10 +67,10 @@ Nobody wants rough concrete scratching their feet. Our textures strike the perfe
 - Inlaid patterns
 - Custom logos or designs
 
-### Our Pool Deck Process
+### Our Pool Deck Repair Process
 
 **Assessment**
-We evaluate your deck's condition, discuss your aesthetic preferences, and recommend the best approach.
+We evaluate your deck's condition, identify all cracks and damage, discuss your aesthetic preferences, and recommend the best repair approach.
 
 **Preparation**
 The deck is thoroughly cleaned, and all cracks and damage are repaired. Proper prep is crucial for pool decks that endure constant moisture.
@@ -98,12 +98,12 @@ For best results, we recommend:
 - Ensuring adequate drainage away from pool
 - Planning the project for dry weather
 
-### Massachusetts Pool Deck Experts
+### Massachusetts Pool Deck Repair Experts
 
-We've resurfaced pool decks throughout Massachusetts, from modest residential pools to large community facilities. Our team understands the unique requirements of pool surfaces.
+We've repaired and resurfaced pool decks throughout Massachusetts, from modest residential pools to large community facilities. Our team understands the unique requirements of pool surfaces.
 
 ### Get Your Pool Deck Quote
 
-Ready to transform your pool deck? Contact us for a free assessment:
+Ready to repair your pool deck? Contact us for a free assessment:
 
 **Massachusetts:** 617-668-1677

@@ -90,14 +90,14 @@ async function main() {
 
   // Load all collections
   const services = getCollectionFiles('services');
-  const resurfacing = getCollectionFiles('resurfacing');
+  const concreteRepair = getCollectionFiles('concrete-repair');
   const blog = getCollectionFiles('blog');
   const foundationTypes = getCollectionFiles('foundation-types');
   const locations = getNestedCollectionFiles('locations');
 
   // Create ID sets for quick lookup
   const serviceIds = new Set(services.map(s => s.id));
-  const resurfacingIds = new Set(resurfacing.map(s => s.id));
+  const concreteRepairIds = new Set(concreteRepair.map(s => s.id));
   const blogIds = new Set(blog.map(b => b.id));
   const locationCities = new Map(); // city name -> location id
 
@@ -109,7 +109,7 @@ async function main() {
 
   console.log('Collections loaded:');
   console.log(`  - Services: ${services.length}`);
-  console.log(`  - Resurfacing: ${resurfacing.length}`);
+  console.log(`  - Concrete Repair: ${concreteRepair.length}`);
   console.log(`  - Blog posts: ${blog.length}`);
   console.log(`  - Foundation types: ${foundationTypes.length}`);
   console.log(`  - Locations: ${locations.length}`);
@@ -120,7 +120,7 @@ async function main() {
 
   // Initialize all pages with 0 incoming links
   for (const s of services) incomingLinks.set(`services/${s.id}`, 0);
-  for (const s of resurfacing) incomingLinks.set(`resurfacing/${s.id}`, 0);
+  for (const s of concreteRepair) incomingLinks.set(`concrete-repair/${s.id}`, 0);
   for (const b of blog) incomingLinks.set(`blog/${b.id}`, 0);
   for (const f of foundationTypes) incomingLinks.set(`foundation-types/${f.id}`, 0);
   for (const l of locations) incomingLinks.set(`locations/${l.id}`, 0);
@@ -140,15 +140,15 @@ async function main() {
     }
   }
 
-  // Validate resurfacing - relatedServices
-  for (const service of resurfacing) {
+  // Validate concrete-repair - relatedServices
+  for (const service of concreteRepair) {
     const related = service.frontmatter?.relatedServices || [];
     for (const relatedId of related) {
-      if (!resurfacingIds.has(relatedId)) {
+      if (!concreteRepairIds.has(relatedId)) {
         console.log(`  [ERROR] ${service.id}: relatedService "${relatedId}" not found`);
         errors++;
       } else {
-        incomingLinks.set(`resurfacing/${relatedId}`, (incomingLinks.get(`resurfacing/${relatedId}`) || 0) + 1);
+        incomingLinks.set(`concrete-repair/${relatedId}`, (incomingLinks.get(`concrete-repair/${relatedId}`) || 0) + 1);
       }
     }
   }

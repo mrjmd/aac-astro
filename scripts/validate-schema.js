@@ -15,7 +15,7 @@ const DIST_DIR = 'dist';
 const REQUIRED_SCHEMAS = {
   // Page type patterns and their required schema types
   'services/': ['Service'],
-  'concrete-resurfacing/': ['Service'],
+  'concrete-repair/': ['Service'],
   'connecticut/': ['LocalBusiness'],
   'massachusetts/': ['LocalBusiness'],
   'blog/': ['Article'],

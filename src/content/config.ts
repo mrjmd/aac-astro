@@ -29,9 +29,9 @@ const servicesCollection = defineCollection({
 });
 
 // =============================================================================
-// RESURFACING COLLECTION - Concrete resurfacing (MA-ONLY)
+// CONCRETE REPAIR COLLECTION - Concrete repair & resurfacing (MA-ONLY)
 // =============================================================================
-const resurfacingCollection = defineCollection({
+const concreteRepairCollection = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
@@ -209,7 +209,7 @@ const partnersCollection = defineCollection({
 // =============================================================================
 export const collections = {
   services: servicesCollection,
-  resurfacing: resurfacingCollection,
+  'concrete-repair': concreteRepairCollection,
   'foundation-types': foundationTypesCollection,
   resources: resourcesCollection,
   blog: blogCollection,

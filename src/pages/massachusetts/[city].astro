@@ -40,20 +40,20 @@ const breadcrumbItems = [
   { label: location.data.city }
 ];
 
-// Get resurfacing services for MA (MA gets both foundation repair + resurfacing)
-const resurfacingServices = await getCollection('resurfacing');
+// Get concrete repair services for MA (MA gets both foundation repair + concrete repair)
+const concreteRepairServices = await getCollection('concrete-repair');
 
 // Build significantLink array
 const significantLinks = [
   // Foundation repair services
   ...services.slice(0, 3).map(s => `https://www.attackacrack.com/services/${s.id.replace(/\.md$/, '')}`),
-  // Resurfacing services (MA only)
-  ...resurfacingServices.slice(0, 2).map(s => `https://www.attackacrack.com/concrete-resurfacing/${s.id.replace(/\.md$/, '')}`),
+  // Concrete repair services (MA only)
+  ...concreteRepairServices.slice(0, 2).map(s => `https://www.attackacrack.com/concrete-repair/${s.id.replace(/\.md$/, '')}`),
   // Nearby cities
   ...nearbyLocations.slice(0, 3).map(l => `https://www.attackacrack.com/massachusetts/${l.id.replace(/\.md$/, '').replace(/^massachusetts\//, '')}`),
-  // State hub and resurfacing hub
+  // State hub and concrete repair hub
   "https://www.attackacrack.com/massachusetts",
-  "https://www.attackacrack.com/concrete-resurfacing"
+  "https://www.attackacrack.com/concrete-repair"
 ];
 
 // Build mentions array
@@ -66,8 +66,8 @@ const mentions = [
   ...(location.data.localLandmarks || []).map(l => ({ "@type": "Landmark", "name": l })),
   // Common foundation types
   ...(location.data.commonFoundationTypes || []).map(f => ({ "@type": "Thing", "name": f })),
-  // Concrete resurfacing (MA-specific)
-  { "@type": "Thing", "name": "Concrete Resurfacing" }
+  // Concrete repair (MA-specific)
+  { "@type": "Thing", "name": "Concrete Repair" }
 ];
 
 // LocalBusiness schema for this city with LLM-ready properties
@@ -196,10 +196,10 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 						<div class="flex items-center gap-4">
 							<Icon name="Wrench" size={24} />
 							<p class="font-bold">
-								Concrete resurfacing also available in {location.data.city}!
+								Concrete repair & resurfacing also available in {location.data.city}!
 							</p>
 						</div>
-						<a href="/concrete-resurfacing" class="bg-white text-aac-blue px-4 py-2 rounded-lg font-black uppercase tracking-widest text-[10px] hover:bg-aac-yellow hover:text-aac-dark transition-colors inline-flex items-center gap-2">
+						<a href="/concrete-repair" class="bg-white text-aac-blue px-4 py-2 rounded-lg font-black uppercase tracking-widest text-[10px] hover:bg-aac-yellow hover:text-aac-dark transition-colors inline-flex items-center gap-2">
 							Learn More <Icon name="ArrowRight" size={14} />
 						</a>
 					</div>

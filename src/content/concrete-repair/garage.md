@@ -1,28 +1,28 @@
 ---
-title: "Garage Floor Resurfacing"
-metaTitle: "Garage Floor Resurfacing in Massachusetts"
-metaDescription: "Transform your cracked, stained garage floor with professional concrete resurfacing. Epoxy and decorative options. Massachusetts only."
-excerpt: "Upgrade your garage floor from cracked and stained to showroom-quality. Choose from solid colors, decorative flakes, or metallic finishes."
+title: "Garage Floor Repair & Resurfacing"
+metaTitle: "Garage Floor Repair & Resurfacing | MA Only"
+metaDescription: "Repair your cracked, stained garage floor with professional concrete resurfacing. Epoxy and decorative options available. Massachusetts only."
+excerpt: "Repair your garage floor from cracked and stained to showroom-quality. Choose from solid colors, decorative flakes, or metallic finishes."
 icon: "Wrench"
 order: 4
-beforeImage: "/images/resurfacing/garage-before.jpg"
-afterImage: "/images/resurfacing/garage-after.jpg"
-heroImage: "/images/resurfacing/garage-hero.jpg"
+beforeImage: "/images/concrete-repair/garage-before.jpg"
+afterImage: "/images/concrete-repair/garage-after.jpg"
+heroImage: "/images/concrete-repair/garage-hero.jpg"
 faqs:
-  - question: "What's the difference between resurfacing and epoxy coating?"
-    answer: "Epoxy coatings are thin surface treatments that look great but may peel on damaged concrete. Our resurfacing system actually rebuilds the concrete surface before any coating, creating a permanent foundation for topcoats."
+  - question: "What's the difference between repair and epoxy coating?"
+    answer: "Epoxy coatings are thin surface treatments that look great but may peel on damaged concrete. Our repair system actually rebuilds the concrete surface before any coating, creating a permanent foundation for topcoats."
   - question: "Will the finish resist hot tire pickup?"
     answer: "Yes. We use polyaspartic topcoats that resist hot tire marks, a common problem with cheaper garage floor systems."
   - question: "Can you work around items in my garage?"
-    answer: "We need the floor completely clear for resurfacing. Most clients temporarily relocate vehicles and items for 3-4 days during the project."
+    answer: "We need the floor completely clear for the repair. Most clients temporarily relocate vehicles and items for 3-4 days during the project."
 relatedServices:
   - "driveway"
   - "patio"
 ---
 
-## Garage Floor Resurfacing in Massachusetts
+## Garage Floor Repair in Massachusetts
 
-Your garage floor endures chemical spills, road salt, hot tires, heavy impacts, and constant abuse. Over time, even quality concrete develops cracks, pits, and stains that make your garage look neglected. Resurfacing transforms your garage from eyesore to showpiece.
+Your garage floor endures chemical spills, road salt, hot tires, heavy impacts, and constant abuse. Over time, even quality concrete develops cracks, pits, and stains that make your garage look neglected. Our garage floor repair and resurfacing transforms your garage from eyesore to showpiece.
 
 ### The Problem with Garage Floors
 
@@ -42,7 +42,7 @@ Big-box store epoxy kits promise garage transformation, but they often fail beca
 - Products aren't formulated for garage conditions
 - Application by untrained DIYers compromises results
 
-Our professional resurfacing system addresses the concrete itself, creating a solid foundation for long-lasting finishes.
+Our professional repair system addresses the concrete itself, creating a solid foundation for long-lasting finishes.
 
 ### Finish Options
 
@@ -58,7 +58,7 @@ Three-dimensional, flowing patterns that make your garage floor a work of art. P
 **Quartz Broadcast**
 Industrial-grade finish with exceptional durability. Excellent for high-use garages and workshops.
 
-### Our Garage Floor Process
+### Our Garage Floor Repair Process
 
 **Day 1: Preparation**
 - Remove all items from garage
@@ -68,7 +68,7 @@ Industrial-grade finish with exceptional durability. Excellent for high-use gara
 
 **Day 2: Base Coat**
 - Apply moisture barrier if needed
-- Apply resurfacing base coat
+- Apply repair base coat
 - Allow initial cure
 
 **Day 3: Finish Coats**
@@ -98,11 +98,11 @@ Industrial-grade finish with exceptional durability. Excellent for high-use gara
 
 ### What About Cracks?
 
-Existing cracks are filled and repaired before resurfacing. Hairline cracks and minor surface damage are fully addressed. Severe structural cracks may show through over time—we'll assess and advise during your consultation.
+Existing cracks are filled and repaired before the overlay is applied. Hairline cracks and minor surface damage are fully addressed. Severe structural cracks may show through over time—we'll assess and advise during your consultation.
 
 ### Massachusetts Service
 
-Garage floor resurfacing is available throughout Massachusetts. We serve Greater Boston, South Shore, North Shore, and beyond.
+Garage floor repair is available throughout Massachusetts. We serve Greater Boston, South Shore, North Shore, and beyond.
 
 ### Transform Your Garage
 

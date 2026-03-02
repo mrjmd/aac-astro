@@ -1,30 +1,30 @@
 ---
-title: "Driveway Resurfacing"
-metaTitle: "Driveway Resurfacing | Attack A Crack"
-metaDescription: "Restore your concrete driveway with professional resurfacing. Fix cracks, stains, and wear. Custom colors available. MA only."
-excerpt: "Give your driveway a complete makeover without the cost of replacement. Repair damage, add color, and boost curb appeal with decorative resurfacing."
+title: "Driveway Crack Repair & Resurfacing"
+metaTitle: "Concrete Driveway Crack Repair & Resurfacing | MA"
+metaDescription: "Professional concrete driveway crack repair in Massachusetts. Fix cracks, stains, and wear with decorative resurfacing. Custom colors. Free quote."
+excerpt: "Repair driveway cracks and damage without the cost of full replacement. Fix damage, add color, and boost curb appeal with decorative resurfacing."
 icon: "Wrench"
 order: 3
-beforeImage: "/images/resurfacing/driveway-before.jpg"
-afterImage: "/images/resurfacing/driveway-after.jpg"
-heroImage: "/images/resurfacing/driveway-hero.jpg"
+beforeImage: "/images/concrete-repair/driveway-before.jpg"
+afterImage: "/images/concrete-repair/driveway-after.jpg"
+heroImage: "/images/concrete-repair/driveway-hero.jpg"
 faqs:
-  - question: "How much does driveway resurfacing cost compared to replacement?"
-    answer: "Resurfacing typically costs 30-50% less than removing and replacing your driveway. The exact savings depend on driveway size and condition."
-  - question: "Can you resurface a driveway with large cracks?"
+  - question: "How much does driveway repair cost compared to replacement?"
+    answer: "Concrete repair and resurfacing typically costs 30-50% less than removing and replacing your driveway. The exact savings depend on driveway size and condition."
+  - question: "Can you repair a driveway with large cracks?"
     answer: "We can address most cracks up to 1/4 inch wide. Larger structural cracks may telegraph through over time, but we use crack isolation membranes to minimize this. We'll assess your specific situation."
-  - question: "How soon can I drive on a resurfaced driveway?"
+  - question: "How soon can I drive on a repaired driveway?"
     answer: "Foot traffic is typically allowed within 24 hours. Vehicle traffic should wait 3-5 days for full cure, depending on weather conditions."
 relatedServices:
   - "garage"
   - "walkway"
 ---
 
-## Concrete Driveway Resurfacing in Massachusetts
+## Concrete Driveway Repair in Massachusetts
 
-Your driveway is one of the largest visible surfaces on your property. When it's covered in cracks, stains, and patches, it brings down your entire home's appearance. Driveway resurfacing restores beauty and function without the expense of complete replacement.
+Your driveway is one of the largest visible surfaces on your property. When it's covered in cracks, stains, and patches, it brings down your entire home's appearance. Driveway crack repair and resurfacing restores beauty and function without the expense of complete replacement.
 
-### Why Driveways Deteriorate
+### Why Driveways Crack and Deteriorate
 
 Massachusetts driveways face constant assault:
 - **Heavy vehicle loads** stress concrete daily
@@ -34,11 +34,11 @@ Massachusetts driveways face constant assault:
 - **UV exposure** fades and weakens the surface
 - **Age** simply takes its toll
 
-### The Resurfacing Solution
+### How We Repair Driveway Damage
 
-Our concrete overlay system creates a brand-new wearing surface over your existing driveway. The result looks like a freshly poured driveway—often better, thanks to decorative options original concrete doesn't offer.
+Our concrete overlay system repairs existing damage and creates a brand-new wearing surface over your existing driveway. The result looks like a freshly poured driveway—often better, thanks to decorative options original concrete doesn't offer.
 
-**What Resurfacing Fixes:**
+**What We Repair:**
 - Surface cracks and crazing
 - Spalling and flaking
 - Stains and discoloration
@@ -67,7 +67,7 @@ Transform your driveway's appearance with:
 - Light sand texture
 - Heavy slip-resistant
 
-### Our Driveway Resurfacing Process
+### Our Driveway Repair Process
 
 **1. Thorough Cleaning**
 We pressure wash and degrease your driveway to remove all contaminants that could interfere with bonding.
@@ -112,10 +112,10 @@ We'll recommend replacement when:
 
 ### Massachusetts Only
 
-Driveway resurfacing is available throughout Massachusetts. For driveway cracks that are actually foundation-related, we serve both MA and CT for structural repair.
+Concrete driveway repair and resurfacing is available throughout Massachusetts. For driveway cracks that are actually foundation-related, we serve both MA and CT for structural repair.
 
 ### Get Your Free Quote
 
-Ready to restore your driveway? Contact us for a free assessment and quote:
+Ready to repair your driveway? Contact us for a free assessment and quote:
 
 **Massachusetts:** 617-668-1677

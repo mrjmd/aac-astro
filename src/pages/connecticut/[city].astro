@@ -24,7 +24,7 @@ const { Content } = await render(location);
 
 // Get services (foundation repair only for CT - no resurfacing)
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
-// Note: Resurfacing services are MA-only and are in a separate collection ('resurfacing')
+// Note: Concrete repair services are MA-only and are in a separate collection ('concrete-repair')
 
 // Get nearby city pages
 const allLocations = await getCollection('locations');

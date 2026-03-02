@@ -1,28 +1,28 @@
 ---
-title: "Patio Resurfacing"
-metaTitle: "Concrete Patio Resurfacing in Massachusetts"
-metaDescription: "Transform your cracked patio into an outdoor oasis. Decorative concrete resurfacing with custom colors and patterns. Massachusetts only."
-excerpt: "Turn your worn concrete patio into a beautiful outdoor living space. Stamped patterns, custom colors, and durable finishes that last."
+title: "Patio Repair & Resurfacing"
+metaTitle: "Concrete Patio Repair & Resurfacing | MA Only"
+metaDescription: "Repair cracked concrete patios in Massachusetts. Fix cracks and damage with decorative resurfacing—custom colors and patterns. Free consultation."
+excerpt: "Repair your worn concrete patio and transform it into a beautiful outdoor living space. Stamped patterns, custom colors, and durable finishes."
 icon: "Wrench"
 order: 6
-beforeImage: "/images/resurfacing/patio-before.jpg"
-afterImage: "/images/resurfacing/patio-after.jpg"
-heroImage: "/images/resurfacing/patio-hero.jpg"
+beforeImage: "/images/concrete-repair/patio-before.jpg"
+afterImage: "/images/concrete-repair/patio-after.jpg"
+heroImage: "/images/concrete-repair/patio-hero.jpg"
 faqs:
   - question: "Can you make my concrete patio look like natural stone?"
     answer: "Absolutely. Our stamped overlay system can replicate the look of flagstone, slate, brick, cobblestone, and other natural materials at a fraction of the cost."
-  - question: "How does resurfacing hold up to outdoor furniture?"
+  - question: "How does the repaired surface hold up to outdoor furniture?"
     answer: "Very well. The surface is durable enough for furniture, grills, and normal patio use. We recommend felt pads on furniture legs to prevent scratching, just as you would on any quality surface."
   - question: "What about winter in Massachusetts?"
-    answer: "Our resurfacing systems are designed for New England's freeze-thaw cycles. Proper sealing protects against moisture penetration, and the overlay materials expand and contract with temperature changes."
+    answer: "Our repair systems are designed for New England's freeze-thaw cycles. Proper sealing protects against moisture penetration, and the overlay materials expand and contract with temperature changes."
 relatedServices:
   - "walkway"
   - "pool-deck"
 ---
 
-## Concrete Patio Resurfacing in Massachusetts
+## Concrete Patio Repair in Massachusetts
 
-Your patio should be an outdoor retreat—a place for relaxation, entertaining, and enjoying Massachusetts summers. When your concrete patio is cracked, stained, and ugly, it becomes a space you avoid rather than enjoy. Resurfacing transforms your patio into the outdoor living area you deserve.
+Your patio should be an outdoor retreat—a place for relaxation, entertaining, and enjoying Massachusetts summers. When your concrete patio is cracked, stained, and ugly, it becomes a space you avoid rather than enjoy. Our patio repair and resurfacing service transforms your patio into the outdoor living area you deserve.
 
 ### From Eyesore to Outdoor Oasis
 
@@ -32,11 +32,11 @@ Concrete patios deteriorate for many reasons:
 - **Stains accumulate** from grills, plants, and weather
 - **The original finish** was never very attractive anyway
 
-Resurfacing addresses all of these issues, giving you a beautiful new surface that actually enhances your outdoor space.
+Our repair process addresses all of these issues, giving you a beautiful new surface that actually enhances your outdoor space.
 
 ### Design Possibilities
 
-This is where patio resurfacing really shines. Unlike plain gray concrete, resurfacing offers virtually unlimited design options:
+This is where concrete repair really shines. Unlike plain gray concrete, our decorative overlays offer virtually unlimited design options:
 
 **Stamped Patterns**
 - **Flagstone** – Natural, organic shapes
@@ -58,7 +58,7 @@ This is where patio resurfacing really shines. Unlike plain gray concrete, resur
 - Custom patterns and logos
 - Transition details between areas
 
-### Our Patio Resurfacing Process
+### Our Patio Repair Process
 
 **Consultation**
 We visit your home, assess your existing patio, and discuss your vision. We'll show you samples and help you choose the perfect design.
@@ -77,7 +77,7 @@ Premium sealer protects your investment from stains, UV damage, and Massachusett
 
 ### Maintenance Made Easy
 
-Unlike other patio surfaces, resurfaced concrete is easy to maintain:
+Unlike other patio surfaces, repaired and resurfaced concrete is easy to maintain:
 - Sweep or blow off debris regularly
 - Rinse with garden hose as needed
 - Reseal every 2-3 years (we offer maintenance packages)
@@ -97,11 +97,11 @@ Unlike other patio surfaces, resurfaced concrete is easy to maintain:
 **Furniture:** 5-7 days
 **Full Cure:** 14 days
 
-### Massachusetts Patio Experts
+### Massachusetts Concrete Patio Experts
 
-We've transformed patios throughout Massachusetts—from small urban courtyards in Boston to expansive suburban entertaining spaces. Our team understands both the technical requirements and the design possibilities for New England outdoor living.
+We've repaired patios throughout Massachusetts—from small urban courtyards in Boston to expansive suburban entertaining spaces. Our team understands both the technical requirements and the design possibilities for New England outdoor living.
 
-### Ready to Transform Your Patio?
+### Ready to Repair Your Patio?
 
 Contact us for a free design consultation and quote:
 

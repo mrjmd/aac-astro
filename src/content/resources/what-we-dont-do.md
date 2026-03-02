@@ -2,7 +2,7 @@
 title: "Services We Don't Provide"
 metaTitle: "What We Don't Do - Attack A Crack Referrals"
 metaDescription: "Learn which foundation and concrete services we don't offer, and get guidance on finding the right specialist for your project."
-excerpt: "We specialize in foundation crack repair and concrete resurfacing. Here's what falls outside our scope—and who can help with those projects."
+excerpt: "We specialize in foundation crack repair and concrete repair. Here's what falls outside our scope—and who can help with those projects."
 heroImage: "/images/resources/what-we-dont-do-hero.jpg"
 ---
 
@@ -19,13 +19,13 @@ At Attack A Crack, we're specialists—not generalists. We do specific things ex
 - Foundation crack stabilization
 - Sewer, well, and conduit line penetration repair
 
-**Concrete Resurfacing (MA Only)**
-- Driveway resurfacing
-- Patio resurfacing
-- Pool deck resurfacing
-- Walkway resurfacing
-- Stairway resurfacing
-- Garage floor resurfacing
+**Concrete Repair & Resurfacing (MA Only)**
+- Driveway crack repair & resurfacing
+- Patio repair & resurfacing
+- Pool deck repair & resurfacing
+- Walkway repair & resurfacing
+- Stair & step repair
+- Garage floor repair & resurfacing
 
 ---
 
@@ -85,7 +85,7 @@ Search for "residential structural engineer" in your area. Many foundation probl
 - Concrete flatwork
 
 **Why we don't do it:**
-We resurface existing concrete—we don't pour new. New concrete work requires different equipment, crew specialization, and site preparation.
+We repair and resurface existing concrete—we don't pour new. New concrete work requires different equipment, crew specialization, and site preparation.
 
 **Who to call:**
 Contact concrete contractors who specialize in residential flatwork. For driveways and patios, look for contractors with experience in your specific project type.

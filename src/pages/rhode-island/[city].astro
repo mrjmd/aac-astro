@@ -22,9 +22,9 @@ export async function getStaticPaths() {
 const { location } = Astro.props;
 const { Content } = await render(location);
 
-// Get services (foundation repair + resurfacing for RI)
+// Get services (foundation repair + concrete repair for RI)
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
-const resurfacingServices = await getCollection('resurfacing');
+const concreteRepairServices = await getCollection('concrete-repair');
 
 // Get nearby city pages
 const allLocations = await getCollection('locations');
@@ -45,13 +45,13 @@ const breadcrumbItems = [
 const significantLinks = [
   // Foundation repair services
   ...services.slice(0, 3).map(s => `https://www.attackacrack.com/services/${s.id.replace(/\.md$/, '')}`),
-  // Resurfacing services (RI gets both)
-  ...resurfacingServices.slice(0, 2).map(s => `https://www.attackacrack.com/concrete-resurfacing/${s.id.replace(/\.md$/, '')}`),
+  // Concrete repair services (RI gets both)
+  ...concreteRepairServices.slice(0, 2).map(s => `https://www.attackacrack.com/concrete-repair/${s.id.replace(/\.md$/, '')}`),
   // Nearby cities
   ...nearbyLocations.slice(0, 3).map(l => `https://www.attackacrack.com/rhode-island/${l.id.replace(/\.md$/, '').replace(/^rhode-island\//, '')}`),
   // State hub
   "https://www.attackacrack.com/rhode-island",
-  "https://www.attackacrack.com/concrete-resurfacing"
+  "https://www.attackacrack.com/concrete-repair"
 ];
 
 // Build mentions array
@@ -178,17 +178,17 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 			</div>
 		</section>
 
-		<!-- Resurfacing Banner (RI gets resurfacing) -->
+		<!-- Concrete Repair Banner (RI gets concrete repair) -->
 		<section class="py-6 bg-aac-blue text-white">
 			<div class="max-w-7xl mx-auto px-6">
 				<div class="flex flex-col md:flex-row items-center justify-between gap-4">
 					<div class="flex items-center gap-4">
 						<Icon name="Wrench" size={24} />
 						<p class="font-bold">
-							Concrete resurfacing also available in {location.data.city}!
+							Concrete repair & resurfacing also available in {location.data.city}!
 						</p>
 					</div>
-					<a href="/concrete-resurfacing" class="bg-white text-aac-blue px-4 py-2 rounded-lg font-black uppercase tracking-widest text-[10px] hover:bg-aac-yellow hover:text-aac-dark transition-colors inline-flex items-center gap-2">
+					<a href="/concrete-repair" class="bg-white text-aac-blue px-4 py-2 rounded-lg font-black uppercase tracking-widest text-[10px] hover:bg-aac-yellow hover:text-aac-dark transition-colors inline-flex items-center gap-2">
 						Learn More <Icon name="ArrowRight" size={14} />
 					</a>
 				</div>

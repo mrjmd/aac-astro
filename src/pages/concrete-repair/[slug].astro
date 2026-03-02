@@ -9,7 +9,7 @@ import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
 
 export async function getStaticPaths() {
-  const services = await getCollection('resurfacing');
+  const services = await getCollection('concrete-repair');
   return services.map((service) => ({
     params: { slug: service.id.replace(/\.md$/, '') },
     props: { service },
@@ -19,29 +19,29 @@ export async function getStaticPaths() {
 const { service } = Astro.props;
 const { Content } = await render(service);
 
-// Get all resurfacing services for related section
-const allServices = await getCollection('resurfacing');
+// Get all concrete repair services for related section
+const allServices = await getCollection('concrete-repair');
 const relatedServices = service.data.relatedServices
   ? allServices.filter(s => service.data.relatedServices?.includes(s.id.replace(/\.md$/, '')))
   : allServices.filter(s => s.id !== service.id).slice(0, 3);
 
-// Get MA locations for reverse linking (resurfacing is MA-only)
+// Get MA locations for reverse linking (concrete repair is MA-only)
 const allLocations = await getCollection('locations');
 const maLocations = allLocations.filter(l => l.data.stateAbbr === 'MA').slice(0, 8);
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
-  { label: 'Concrete Resurfacing', href: '/concrete-resurfacing' },
+  { label: 'Concrete Repair', href: '/concrete-repair' },
   { label: service.data.title }
 ];
 
-// Build significantLink array (MA-only for resurfacing)
+// Build significantLink array (MA-only for concrete repair)
 const significantLinks = [
-  // Related resurfacing services
-  ...relatedServices.map(s => `https://www.attackacrack.com/concrete-resurfacing/${s.id.replace(/\.md$/, '')}`),
-  // MA state hub and resurfacing hub
+  // Related concrete repair services
+  ...relatedServices.map(s => `https://www.attackacrack.com/concrete-repair/${s.id.replace(/\.md$/, '')}`),
+  // MA state hub and concrete repair hub
   "https://www.attackacrack.com/massachusetts",
-  "https://www.attackacrack.com/concrete-resurfacing",
+  "https://www.attackacrack.com/concrete-repair",
   // Sample MA city pages
   ...maLocations.slice(0, 4).map(l => `https://www.attackacrack.com/massachusetts/${l.id.replace(/\.md$/, '').replace(/^massachusetts\//, '')}`)
 ];
@@ -49,7 +49,7 @@ const significantLinks = [
 // Build mentions array
 const mentions = [
   // Service type
-  { "@type": "Thing", "name": "Concrete Resurfacing" },
+  { "@type": "Thing", "name": "Concrete Repair" },
   { "@type": "Thing", "name": service.data.title },
   // State served (MA only)
   { "@type": "Place", "name": "Massachusetts" }
@@ -60,7 +60,7 @@ const serviceSchema = {
   "@type": "Service",
   "name": service.data.title,
   "description": service.data.metaDescription,
-  "url": `https://www.attackacrack.com/concrete-resurfacing/${service.id.replace(/\.md$/, '')}`,
+  "url": `https://www.attackacrack.com/concrete-repair/${service.id.replace(/\.md$/, '')}`,
   "provider": {
     "@type": "HomeAndConstructionBusiness",
     "name": "Attack A Crack",
@@ -70,7 +70,7 @@ const serviceSchema = {
     "@type": "State",
     "name": "Massachusetts"
   },
-  "serviceType": "Concrete Resurfacing",
+  "serviceType": "Concrete Repair",
   // LLM-ready properties
   "significantLink": significantLinks,
   "mentions": mentions
@@ -199,13 +199,13 @@ const schemas = faqSchema ? [serviceSchema, faqSchema] : [serviceSchema];
 				<div class="max-w-7xl mx-auto px-6">
 					<div class="text-center mb-12">
 						<h2 class="text-3xl font-black tracking-tighter text-aac-dark">
-							Other Resurfacing Services
+							Other Repair Services
 						</h2>
 					</div>
 
 					<div class="grid md:grid-cols-3 gap-8">
 						{relatedServices.map((related) => (
-							<a href={`/concrete-resurfacing/${related.id.replace(/\.md$/, '')}`} class="group bg-zinc-50 p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all">
+							<a href={`/concrete-repair/${related.id.replace(/\.md$/, '')}`} class="group bg-zinc-50 p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all">
 								<div class="w-12 h-12 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mb-4 group-hover:bg-aac-blue group-hover:text-white transition-colors">
 									<Icon name={related.data.icon} size={24} />
 								</div>
@@ -245,7 +245,7 @@ const schemas = faqSchema ? [serviceSchema, faqSchema] : [serviceSchema];
 				</div>
 				<p class="text-center text-sm text-zinc-500 mt-4">
 					<Icon name="MapPin" size={14} class="inline mr-1" />
-					Concrete resurfacing services available in Massachusetts only
+					Concrete repair services available in Massachusetts only
 				</p>
 			</div>
 		</section>
@@ -271,7 +271,7 @@ const schemas = faqSchema ? [serviceSchema, faqSchema] : [serviceSchema];
 				</div>
 				<p class="text-zinc-500 mt-8 text-sm">
 					<Icon name="MapPin" size={14} class="inline mr-1" />
-					Concrete resurfacing available in Massachusetts only
+					Concrete repair available in Massachusetts only
 				</p>
 			</div>
 		</section>
