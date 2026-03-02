@@ -129,6 +129,8 @@ A screenshot is **only valid** if you can clearly identify the specific elements
 - **Blank, white, or washed-out screenshot = FAILED.** Do not proceed. Investigate why the content isn't rendering (common cause: `[data-animate]` opacity, JS not firing, images not loading).
 - **Cannot see the specific element you changed = FAILED.** If you changed an image crop and the image isn't visible in the screenshot, that is not a pass.
 - **Never infer or assume what a screenshot shows.** If you can't clearly see it, say so. Describe exactly what you see, not what you expect to see.
+- **For image/cropping checks: describe each image individually.** State what is visible and what is cut off at each edge (top, bottom, left, right). Example: "Luc's photo: full head visible including hat, cropped at mid-chest" not "all heads look good." If any image is missing the top of someone's head, that's a failure even if `object-top` is set — the source image may be the problem.
+- **Check source images before declaring a CSS fix works.** Read the actual image file to confirm it contains the content you expect. `object-top` cannot show pixels that don't exist in the source.
 - **If verification fails, fix the screenshot tool or your approach first**, then re-verify. Do not move on to the next task.
 
 ### Requirements
