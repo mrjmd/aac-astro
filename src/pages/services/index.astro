@@ -53,7 +53,7 @@ const servicesSchema = {
 		<section class="py-20 lg:py-32 bg-aac-dark text-white relative overflow-hidden">
 			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
 			<div class="max-w-7xl mx-auto px-6 relative z-10">
-				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-400 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-500" />
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-400 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-400" />
 				<h1 class="text-6xl lg:text-8xl font-black tracking-tighter mb-8 leading-none">
 					FOUNDATION <br />
 					<span class="text-aac-blue">REPAIR.</span>
@@ -99,7 +99,7 @@ const servicesSchema = {
 								{service.data.excerpt}
 							</p>
 							<span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
-								Learn More <Icon name="ArrowRight" size={14} />
+								{service.data.title} Details <Icon name="ArrowRight" size={14} />
 							</span>
 						</a>
 					))}
@@ -222,7 +222,7 @@ const servicesSchema = {
 					</button>
 					<a href="/services/free-foundation-consultations" class="bg-white/10 backdrop-blur-sm text-white px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-3">
 						<Icon name="Info" size={24} />
-						Learn More
+						Free Consultation Info
 					</a>
 				</div>
 			</div>

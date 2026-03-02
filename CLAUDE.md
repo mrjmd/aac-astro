@@ -8,6 +8,16 @@ Attack A Crack Foundation Repair - Astro static site for a New England foundatio
 - **Styling:** Tailwind CSS v4
 - **Hosting:** Vercel (auto-deploys on push to main)
 - **CI:** GitHub Actions (`.github/workflows/quality.yml`)
+- **Launch status:** NOT LAUNCHED. Site must not be crawled until production launch.
+
+## Robots.txt / Crawling
+
+**The site is NOT live.** `robots.txt` blocks all crawlers (`Disallow: /`) until launch. This is intentional and must NOT be changed until the site is ready for production DNS cutover.
+
+- `public/robots.txt` — staging mode, blocks all crawling
+- `lighthouserc.cjs` — `is-crawlable` audit is set to `'off'` because of this
+- **Pre-launch tasks:** When launching, switch robots.txt to production mode AND remove the `is-crawlable: 'off'` line from lighthouserc.cjs
+- The `is-crawlable` Lighthouse skip is the **only** allowed SEO exception. Every other SEO check must pass at 100%.
 
 ## SEO is Sacrosanct
 
@@ -49,14 +59,6 @@ All SEO-related issues are hard failures. No warnings. No exceptions.
 
 - All axe-core violations are errors, including minor/moderate
 - Images must have alt attributes
-
-## Keyword Strategy
-
-**"Repair" is the primary term, not "resurfacing."** SEO research confirmed "repair" has 2-3x the search volume. Use "repair" as the lead term everywhere. "Resurfacing" can appear as a secondary/supporting term.
-
-- URL paths use `/concrete-repair/`, not `/concrete-resurfacing/`
-- Content collection is `concrete-repair`
-- Page titles lead with "repair"
 
 ## Validation Pipeline
 

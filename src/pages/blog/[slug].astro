@@ -126,10 +126,10 @@ const articleSchema = {
 					<a href={`/blog/category/${post.data.category}`} class="text-[10px] font-black uppercase tracking-widest text-aac-blue bg-aac-blue/10 px-3 py-1 rounded-full hover:bg-aac-blue hover:text-white transition-colors">
 						{categoryLabels[post.data.category]}
 					</a>
-					<span class="text-sm text-zinc-400">
+					<span class="text-sm text-zinc-500">
 						{formatDate(post.data.publishDate)}
 					</span>
-					<span class="text-sm text-zinc-400 flex items-center gap-1">
+					<span class="text-sm text-zinc-500 flex items-center gap-1">
 						<Icon name="Clock" size={14} />
 						{readingTime} min read
 					</span>

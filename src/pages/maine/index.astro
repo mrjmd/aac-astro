@@ -64,7 +64,7 @@ const meSchema = {
 		<section class="py-20 lg:py-32 bg-aac-dark text-white relative overflow-hidden">
 			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
 			<div class="max-w-7xl mx-auto px-6 relative z-10">
-				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-400 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-500" />
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-400 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-400" />
 
 				<div class="grid lg:grid-cols-2 gap-12 items-center">
 					<div>
@@ -138,11 +138,11 @@ const meSchema = {
 						</div>
 						<div>
 							<p class="font-black text-lg">Concrete Resurfacing Available</p>
-							<p class="text-white/80">Driveways, patios, pool decks, walkways, stairs & garage floors</p>
+							<p class="text-white">Driveways, patios, pool decks, walkways, stairs & garage floors</p>
 						</div>
 					</div>
 					<a href="/concrete-repair" class="bg-white text-aac-blue px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] hover:bg-aac-yellow hover:text-aac-dark transition-colors inline-flex items-center gap-2">
-						Learn More <Icon name="ArrowRight" size={14} />
+						Concrete Repair Services <Icon name="ArrowRight" size={14} />
 					</a>
 				</div>
 			</div>
@@ -206,7 +206,7 @@ const meSchema = {
 										</li>
 									) : (
 										<li class="flex items-center gap-2 text-zinc-600">
-											<Icon name="MapPin" size={14} class="text-zinc-400" />
+											<Icon name="MapPin" size={14} class="text-zinc-500" />
 											{city}
 										</li>
 									);
