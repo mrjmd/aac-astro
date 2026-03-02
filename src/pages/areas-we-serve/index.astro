@@ -7,6 +7,7 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
+import { reviewCount } from '../../utils/reviews';
 
 // Get all locations
 const allLocations = await getCollection('locations');
@@ -124,7 +125,7 @@ const areaSchema = {
             <div class="flex flex-wrap gap-4 mb-8">
               <div class="flex items-center gap-2 text-aac-yellow">
                 <Icon name="Star" size={20} />
-                <span class="font-bold">240+ 5-Star Reviews</span>
+                <span class="font-bold">{reviewCount}+ 5-Star Reviews</span>
               </div>
               <div class="flex items-center gap-2 text-white">
                 <Icon name="ShieldCheck" size={20} />

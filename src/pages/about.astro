@@ -7,6 +7,7 @@ import LocationModal from '../components/LocationModal.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SchemaMarkup from '../components/SchemaMarkup.astro';
 import Icon from '../components/Icon.astro';
+import { reviewCount } from '../utils/reviews';
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
@@ -75,7 +76,7 @@ const aboutSchema = {
 							<Icon name="Star" size={24} class="text-aac-yellow" />
 						</div>
 						<div>
-							<p class="text-2xl font-black">240+</p>
+							<p class="text-2xl font-black">{reviewCount}+</p>
 							<p class="text-sm text-zinc-400">5-Star Reviews</p>
 						</div>
 					</div>
@@ -240,7 +241,7 @@ const aboutSchema = {
 							<Icon name="Star" size={32} />
 						</div>
 						<h3 class="font-black text-lg mb-2">Trust</h3>
-						<p class="text-sm text-zinc-600">240+ 5-star reviews and lifetime transferable warranty</p>
+						<p class="text-sm text-zinc-600">{reviewCount}+ 5-star reviews and lifetime transferable warranty</p>
 					</div>
 				</div>
 			</div>

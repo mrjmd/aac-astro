@@ -3,7 +3,7 @@
  *
  * Single source of truth for review counts and ratings used in:
  * - AggregateRating schemas
- * - UI display ("240+ 5-Star Reviews")
+ * - UI display ("260+ 5-Star Reviews")
  *
  * To update: Edit src/content/settings/general.json
  */
@@ -17,6 +17,9 @@ export const rating = settings.google_rating;
 // Phone numbers
 export const phoneCT = settings.phone_ct;
 export const phoneMA = settings.phone_ma;
+
+// Google Reviews URLs
+export const googleReviewsUrlCT = settings.google_reviews_url_ct;
 
 // Formatted strings for UI
 export const reviewCountDisplay = `${reviewCount}+`;

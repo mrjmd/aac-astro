@@ -1,8 +1,9 @@
 ---
 import Icon from './Icon.astro';
+import { reviewCount, phoneCT, phoneMA } from '../utils/reviews';
 
-const CT_NUMBER = "860-573-8760";
-const MA_NUMBER = "617-668-1677";
+const CT_NUMBER = phoneCT;
+const MA_NUMBER = phoneMA;
 
 const navLinks = [
   { name: 'Services', href: '/services' },
@@ -25,16 +26,14 @@ const { currentPage = 'home' } = Astro.props;
       </div>
       <div class="flex gap-8">
         <span class="flex items-center gap-2 uppercase"><Icon name="ShieldCheck" size={12} class="text-aac-yellow" /> Lifetime Guarantee</span>
-        <span class="flex items-center gap-2 uppercase"><Icon name="Star" size={12} class="text-aac-yellow" /> 240+ CT Reviews</span>
+        <span class="flex items-center gap-2 uppercase"><Icon name="Star" size={12} class="text-aac-yellow" /> {reviewCount}+ CT Reviews</span>
       </div>
     </div>
   </div>
 
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
     <a href="/" class="flex items-center gap-3 group">
-      <div class="w-11 h-11 bg-aac-blue rounded-xl flex items-center justify-center text-white font-black text-2xl shadow-[4px_4px_0px_0px_rgba(30,111,184,0.2)]">
-        A
-      </div>
+      <img src="/images/logo.jpg" alt="Attack A Crack" class="w-11 h-11 rounded-xl object-cover shadow-[4px_4px_0px_0px_rgba(30,111,184,0.2)]" />
       <div class="flex flex-col">
         <span class="font-display font-black text-lg tracking-tighter leading-none text-aac-dark">ATTACK A CRACK</span>
         <span class="text-[9px] uppercase tracking-[0.2em] text-aac-blue font-bold mt-1">Foundation Repair</span>

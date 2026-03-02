@@ -7,6 +7,7 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
+import { reviewCount } from '../../utils/reviews';
 
 // Get all CT location pages
 const ctLocations = (await getCollection('locations'))
@@ -105,7 +106,7 @@ const ctSchema = {
 
 <Layout
   title="Foundation Repair in Connecticut"
-  description="Expert foundation crack repair across Connecticut. Family-owned with 20+ years experience. 240+ 5-star reviews. Lifetime guarantee. Call 860-573-8760."
+  description={`Expert foundation crack repair across Connecticut. Family-owned with 20+ years experience. ${reviewCount}+ 5-star reviews. Lifetime guarantee. Call 860-573-8760.`}
 >
 	<SchemaMarkup schema={ctSchema} />
 	<LocationModal />
@@ -133,7 +134,7 @@ const ctSchema = {
 						<div class="flex flex-wrap gap-4 mb-8">
 							<div class="flex items-center gap-2 text-aac-yellow">
 								<Icon name="Star" size={20} />
-								<span class="font-bold">240+ 5-Star Reviews</span>
+								<span class="font-bold">{reviewCount}+ 5-Star Reviews</span>
 							</div>
 							<div class="flex items-center gap-2 text-white">
 								<Icon name="ShieldCheck" size={20} />
@@ -257,7 +258,7 @@ const ctSchema = {
 			<div class="max-w-7xl mx-auto px-6">
 				<div class="text-center mb-16">
 					<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-yellow/10 text-aac-dark rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-yellow">
-						<Icon name="Star" size={14} class="text-aac-yellow" /> 240+ 5-Star Reviews
+						<Icon name="Star" size={14} class="text-aac-yellow" /> {reviewCount}+ 5-Star Reviews
 					</div>
 					<h2 class="text-4xl font-black tracking-tighter text-aac-dark">
 						What Connecticut Homeowners Say

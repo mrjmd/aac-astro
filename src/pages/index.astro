@@ -7,9 +7,10 @@ import Services from '../components/Services.astro';
 import Footer from '../components/Footer.astro';
 import LocationModal from '../components/LocationModal.astro';
 import Icon from '../components/Icon.astro';
+import { reviewCount, phoneCT, phoneMA, googleReviewsUrlCT } from '../utils/reviews';
 
-const CT_NUMBER = "860-573-8760";
-const MA_NUMBER = "617-668-1677";
+const CT_NUMBER = phoneCT;
+const MA_NUMBER = phoneMA;
 ---
 
 <Layout title="Foundation Crack Repair Made Simple">
@@ -20,12 +21,12 @@ const MA_NUMBER = "617-668-1677";
 		<Hero />
 		
 		<!-- Stats Bar -->
-		<div class="bg-aac-yellow border-y-8 border-aac-dark py-12">
+		<div data-animate class="bg-aac-yellow border-y-8 border-aac-dark py-12">
 			<div class="max-w-7xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-12">
 				{[
 					{ label: "EXPERIENCE", val: "20+ Years" },
 					{ label: "GUARANTEE", val: "Lifetime" },
-					{ label: "REVIEWS", val: "240+ 5-Star" },
+					{ label: "REVIEWS", val: `${reviewCount}+ 5-Star` },
 					{ label: "DIAGNOSIS", val: "100% Free" }
 				].map((stat) => (
 					<div class="flex flex-col items-center lg:items-start text-center lg:text-left">
@@ -40,22 +41,30 @@ const MA_NUMBER = "617-668-1677";
 		<Services />
 		
 		<!-- Testimonials -->
-		<section id="reviews" class="py-24 bg-white relative overflow-hidden">
-			<div class="max-w-[1600px] mx-auto px-6">
-				<div class="flex flex-col lg:flex-row gap-12 items-center">
-					<div class="lg:w-1/3 shrink-0">
-						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/10 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
+		<section id="reviews" data-animate class="py-24 bg-white relative overflow-hidden">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="grid lg:grid-cols-[1fr_2fr] gap-12 items-start">
+					<div>
+						<p class="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-400 mb-6">
 							<Icon name="MessageSquare" size={14} /> WHAT PEOPLE SAY
-						</div>
-						<h2 class="text-4xl lg:text-7xl font-display font-black text-aac-dark tracking-tighter leading-[0.9] mb-8">
+						</p>
+						<h2 class="text-4xl lg:text-5xl font-display font-black text-aac-dark tracking-tighter leading-[0.9] mb-8">
 							Don't Just Take <br />
 							<span class="text-aac-blue">Our Word For It.</span>
 						</h2>
-						<div class="flex items-center gap-4">
+						<div class="flex items-center gap-4 mb-6">
 							<div class="flex items-center gap-1">
 								{[...Array(5)].map(() => <Icon name="Star" size={20} class="fill-aac-yellow text-aac-dark" />)}
 							</div>
 							<span class="font-black text-aac-dark text-sm">5.0 Rating on Google</span>
+						</div>
+						<div class="flex flex-col gap-3">
+							<a href={googleReviewsUrlCT} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-aac-blue hover:text-aac-dark transition-colors">
+								Read All {reviewCount}+ CT Reviews <Icon name="ExternalLink" size={12} />
+							</a>
+							<a href="/massachusetts" class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-500 hover:text-aac-blue transition-colors">
+								View Massachusetts Reviews <Icon name="ArrowRight" size={12} />
+							</a>
 						</div>
 					</div>
 					
@@ -89,7 +98,7 @@ const MA_NUMBER = "617-668-1677";
 		</section>
 
 		<!-- Final CTA -->
-		<section class="py-32 bg-aac-yellow relative overflow-hidden border-y-8 border-aac-dark">
+		<section data-animate class="py-32 bg-aac-yellow relative overflow-hidden border-y-8 border-aac-dark">
 			<!-- Dot Pattern -->
 			<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle, #1a1a1a 2px, transparent 2px); background-size: 40px 40px;"></div>
 			
@@ -131,3 +140,18 @@ const MA_NUMBER = "617-668-1677";
 	</main>
 	<Footer />
 </Layout>
+
+<script>
+	const observer = new IntersectionObserver(
+		(entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('is-visible');
+					observer.unobserve(entry.target);
+				}
+			});
+		},
+		{ threshold: 0.1 }
+	);
+	document.querySelectorAll('[data-animate]').forEach((el) => observer.observe(el));
+</script>

@@ -34,4 +34,15 @@
   .animate-pulse-soft {
     animation: pulse-soft 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
   }
+
+  /* Scroll-triggered entrance animations */
+  [data-animate] {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  [data-animate].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

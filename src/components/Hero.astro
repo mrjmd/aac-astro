@@ -1,5 +1,6 @@
 ---
 import Icon from './Icon.astro';
+import { reviewCount } from '../utils/reviews';
 ---
 
 <section class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden bg-white">
@@ -33,21 +34,31 @@ import Icon from './Icon.astro';
           <div class="flex items-center gap-1 mb-1">
             {[...Array(5)].map(() => <Icon name="Star" size={16} class="fill-aac-yellow text-aac-dark" />)}
           </div>
-          <p class="text-[10px] font-black uppercase tracking-widest text-zinc-500">240+ Excellent CT Reviews</p>
+          <p class="text-[10px] font-black uppercase tracking-widest text-zinc-500">{reviewCount}+ Excellent CT Reviews</p>
         </div>
       </div>
     </div>
     
-    <div class="relative lg:rotate-2">
+    <div class="relative lg:-rotate-2">
       <div class="aspect-[4/3] rounded-[48px] overflow-hidden border-8 border-white shadow-[24px_24px_60px_-15px_rgba(0,0,0,0.1)] relative group">
-        <img 
-          src="https://picsum.photos/seed/hero-foundation/1200/900" 
-          alt="Foundation Repair" 
+        <img
+          src="https://picsum.photos/seed/hero-foundation/1200/900"
+          alt="Foundation Repair"
           class="w-full h-full object-cover"
           referrerpolicy="no-referrer"
         />
+        <!-- Bottom overlay -->
+        <div class="absolute bottom-0 left-0 right-0 bg-aac-dark/85 backdrop-blur-sm px-6 py-5 flex items-center gap-4">
+          <div class="w-8 h-8 bg-aac-yellow rounded-lg flex items-center justify-center shrink-0">
+            <Icon name="Star" size={16} class="fill-aac-dark text-aac-dark" />
+          </div>
+          <div>
+            <p class="text-white font-black text-sm uppercase tracking-widest">Expert Response</p>
+            <p class="text-white/70 text-xs font-bold mt-0.5">Get a professional assessment in minutes, not days.</p>
+          </div>
+        </div>
       </div>
-      
+
       <!-- 15m Badge -->
       <div class="absolute -top-8 -right-8 w-28 h-28 bg-aac-blue text-white rounded-3xl flex flex-col items-center justify-center text-center border-8 border-white shadow-2xl animate-pulse-soft">
         <span class="text-3xl font-black leading-none">15m</span>
