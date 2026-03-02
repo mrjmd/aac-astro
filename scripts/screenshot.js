@@ -78,6 +78,15 @@ async function main() {
     console.log(`Navigating to ${url}${selector ? ` (selector: ${selector})` : ''}...`);
     await page.goto(url, { waitUntil: 'networkidle' });
 
+    // Trigger scroll-based animations by making all [data-animate] elements visible
+    await page.evaluate(() => {
+      document.querySelectorAll('[data-animate]').forEach(el => {
+        el.classList.add('is-visible');
+      });
+    });
+    // Brief pause for transitions to complete
+    await page.waitForTimeout(700);
+
     if (selector) {
       const element = await page.$(selector);
       if (!element) {
