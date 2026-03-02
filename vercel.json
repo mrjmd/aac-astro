@@ -1,4 +1,7 @@
 {
+  "github": {
+    "enabled": false
+  },
   "redirects": [
     {
       "source": "/wall-crack-repair",
