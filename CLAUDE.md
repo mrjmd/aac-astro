@@ -122,6 +122,15 @@ node scripts/screenshot.js / --full-page           # Full page screenshot
 
 Output: `.claude/screenshots/screenshot.png` — read this file to verify the result.
 
+### Verification Rules
+
+A screenshot is **only valid** if you can clearly identify the specific elements you're checking. These are hard failures — same as SEO:
+
+- **Blank, white, or washed-out screenshot = FAILED.** Do not proceed. Investigate why the content isn't rendering (common cause: `[data-animate]` opacity, JS not firing, images not loading).
+- **Cannot see the specific element you changed = FAILED.** If you changed an image crop and the image isn't visible in the screenshot, that is not a pass.
+- **Never infer or assume what a screenshot shows.** If you can't clearly see it, say so. Describe exactly what you see, not what you expect to see.
+- **If verification fails, fix the screenshot tool or your approach first**, then re-verify. Do not move on to the next task.
+
 ### Requirements
 
 - Requires Playwright chromium: `npx playwright install chromium` (one-time setup)
