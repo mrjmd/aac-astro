@@ -12,7 +12,7 @@ faqs:
   - question: "Is the consultation really free?"
     answer: "Yes, 100% free. We don't charge for assessments, and there's no obligation to hire us. We believe in earning your business through expertise, not pressure tactics."
   - question: "How long does a consultation take?"
-    answer: "Photo assessments usually get a response within hours. We take the time to thoroughly review your photos and explain everything we see."
+    answer: "Photo assessments usually get a response within hours—often the same day you text us. In-person consultations typically take 30-45 minutes, during which we thoroughly evaluate your foundation, explain everything we find in plain language, and answer all your questions."
   - question: "Will you try to sell me services I don't need?"
     answer: "Absolutely not. We built our reputation on honesty. If your crack doesn't need repair, we'll tell you. If it's something you can DIY, we'll explain how."
   - question: "What should I send for a photo assessment?"

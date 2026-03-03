@@ -10,13 +10,15 @@ afterImage: "/images/services/injection-after.jpg"
 heroImage: "/images/services/injection-hero.jpg"
 faqs:
   - question: "What is foundation crack injection?"
-    answer: "Crack injection is the process of filling a foundation crack with specialized resin under pressure. The material fills the entire crack depth, from the interior surface to the exterior soil."
+    answer: "Crack injection is the process of filling a foundation crack with specialized resin under controlled pressure. The material penetrates the entire crack depth—typically 8 to 10 inches through the wall—from the interior surface to the exterior soil. This creates a complete seal that surface patches and hydraulic cement cannot achieve."
   - question: "How long does injected material last?"
-    answer: "Our injection materials are designed to last the lifetime of your home. That's why we back every repair with a lifetime guarantee."
+    answer: "Our injection materials are engineered to last the lifetime of your home. Flexible urethane won't degrade, dry out, or shrink over time, and structural epoxy creates bonds stronger than the original concrete. That's why we back every injection repair with a lifetime guarantee."
   - question: "Can you inject cracks in any weather?"
-    answer: "Yes. Our injection process works in any season and any weather condition. We can even inject into actively leaking cracks."
+    answer: "Yes. Our injection process works in any season and any weather condition, including below-freezing temperatures. We can even inject into actively leaking cracks—urethane actually reacts with water to accelerate its cure and expansion, making wet conditions ideal."
   - question: "What's the difference between urethane and epoxy injection?"
-    answer: "Urethane remains flexible and expands to fill voids—ideal for waterproofing. Epoxy creates a structural bond stronger than concrete—ideal for structural repairs."
+    answer: "Urethane remains flexible after curing and expands up to 20x its original volume to fill voids—ideal for waterproofing and cracks that may continue to move. Epoxy cures rigid and creates a structural bond stronger than the original concrete—ideal for load-bearing walls and structural repairs. We select the right material based on your specific crack."
+  - question: "Does crack injection work on cement foundations?"
+    answer: "Yes. Most homeowners say 'cement' when they mean 'concrete'—cement is actually just one ingredient in concrete. Our injection process works on all poured concrete foundations, which is what the vast majority of New England homes are built on. The resin bonds directly to the concrete matrix for a permanent seal."
 relatedServices:
   - "wall-crack-repair"
   - "carbon-fiber-stitches"
@@ -33,7 +35,7 @@ steps:
 
 ## Foundation Crack Injection: The Science of Permanent Repair
 
-Foundation crack injection is the gold standard for repairing poured concrete foundation cracks. Unlike surface sealers or patches, injection fills the entire crack from interior surface to exterior soil, creating a complete seal that lasts.
+Foundation crack injection is the gold standard for repairing poured concrete foundation cracks. Whether you call it cement crack repair or concrete crack repair, the science is the same: unlike surface sealers or patches, injection fills the entire crack from interior surface to exterior soil, creating a complete seal that lasts.
 
 ### How Crack Injection Works
 

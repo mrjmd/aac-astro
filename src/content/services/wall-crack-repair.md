@@ -16,7 +16,9 @@ faqs:
   - question: "Is wall crack repair messy?"
     answer: "No. Our injection process is clean and contained. We protect your floors and clean up completely before we leave."
   - question: "How much does wall crack repair cost in CT and MA?"
-    answer: "Costs vary based on crack length and complexity, but most repairs range from $800-$1,200 per crack. We provide free consultations and honest quotes."
+    answer: "Costs vary based on crack length and complexity, but most repairs range from $800-$1,200 per crack. Larger structural cracks requiring carbon fiber reinforcement may run higher. We provide free consultations and honest, itemized quotes with no hidden fees."
+  - question: "Is it cement or concrete — does it matter for repair?"
+    answer: "Most homeowners say 'cement' when they mean 'concrete.' Cement is an ingredient in concrete (like flour in bread). Your foundation is poured concrete, and our injection repairs work by bonding directly to the concrete matrix. Whether you search for cement crack repair or concrete crack repair, the fix is the same proven injection process."
 relatedServices:
   - "foundation-crack-injection"
   - "carbon-fiber-stitches"
@@ -70,6 +72,10 @@ The injection material cures within hours. We remove the ports, clean up our wor
 - Best for: Cracks requiring structural bonding
 - Benefits: Creates bond stronger than original concrete
 - Ideal for: Load-bearing cracks, structural repairs
+
+### Cement Foundation Crack Repair — Same Fix, Different Name
+
+Many homeowners search for "cement crack repair" or "cement foundation repair" when looking for help. While technically your foundation is made of concrete (cement is just one ingredient), the repair process is identical. Our urethane and epoxy injection methods bond directly to the concrete matrix, filling cracks completely regardless of what you call the material. If you've been searching for cement wall repair, you're in the right place.
 
 ### When to Repair Foundation Cracks
 
