@@ -262,14 +262,14 @@ Blog (Problem) → Service (Solution) → City (Local):
 
 ### Target: 80 cities total
 
-| State | Have | Target | Remaining |
-|-------|------|--------|-----------|
-| CT | 10 | 20 | 10 |
-| MA | 10 | 30 | 20 |
-| RI | 0 | 10 | 10 |
-| NH | 0 | 10 | 10 |
-| ME | 0 | 10 | 10 |
-| **Total** | **20** | **80** | **60** |
+| State | Have | Target | Status |
+|-------|------|--------|--------|
+| CT | 20 | 20 | DONE |
+| MA | 30 | 30 | DONE |
+| RI | 10 | 10 | DONE |
+| NH | 10 | 10 | DONE |
+| ME | 10 | 10 | DONE |
+| **Total** | **80** | **80** | **DONE** |
 
 ### Content Quality Requirements (per city)
 
@@ -284,10 +284,10 @@ Blog (Problem) → Service (Solution) → City (Local):
 
 - [x] Generate remaining 10 CT city pages (20 total CT)
 - [x] Generate 20 MA city pages (30 total MA)
-- [ ] Generate 10 RI city pages
-- [ ] Generate 10 NH city pages
-- [ ] Generate 10 ME city pages
-- [ ] Validate all new pages pass `npm run validate`
+- [x] Generate 10 RI city pages (Providence, Cranston, Warwick, Pawtucket, East Providence, Woonsocket, Newport, Coventry, Bristol, North Kingstown)
+- [x] Generate 10 NH city pages (Nashua, Manchester, Portsmouth, Dover, Rochester, Salem, Derry, Londonderry, Exeter, Hampton)
+- [x] Generate 10 ME city pages (Portland, South Portland, Scarborough, Westbrook, Gorham, Biddeford, Saco, Kennebunk, Kittery, York)
+- [x] Validate all new pages pass `npm run validate` (145 pages, 0 errors)
 - [ ] Run uniqueness check (Phase 9 script) against all city pages
 
 ---
