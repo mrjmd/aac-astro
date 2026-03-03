@@ -20,6 +20,9 @@ const team = [
         Talk Directly to <br />
         <span class="text-aac-blue">The Experts.</span>
       </h2>
+      <a href="/about" class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(26,26,26,0.05)] hover:translate-y-[-2px] transition-all inline-block mb-8">
+        MEET THE TEAM
+      </a>
       <p class="text-lg font-bold text-zinc-500 mb-12 leading-relaxed max-w-lg">
         When you call Attack A Crack, you're speaking directly with the people who understand foundation science. We focus on rapid response and honest diagnosis.
       </p>
@@ -42,7 +45,9 @@ const team = [
             <div class="aspect-square rounded-2xl overflow-hidden mb-4">
               <img src={member.img} alt={member.name} class="w-full h-full object-cover object-top md:grayscale md:group-hover:grayscale-0 transition-all duration-500" referrerpolicy="no-referrer" />
             </div>
-            <h3 class="font-bold text-aac-dark text-sm">{member.name}</h3>
+            <a href="/about" class="hover:text-aac-blue transition-colors">
+              <h3 class="font-bold text-aac-dark text-sm">{member.name}</h3>
+            </a>
             <p class="text-aac-blue text-[10px] font-bold uppercase tracking-widest mt-1">{member.role}</p>
             <p class="text-zinc-500 text-[9px] font-bold uppercase tracking-widest mt-1">{member.loc}</p>
           </div>
@@ -55,7 +60,9 @@ const team = [
             <div class="aspect-square rounded-2xl overflow-hidden mb-4">
               <img src={member.img} alt={member.name} class="w-full h-full object-cover object-top md:grayscale md:group-hover:grayscale-0 transition-all duration-500" referrerpolicy="no-referrer" />
             </div>
-            <h3 class="font-bold text-aac-dark text-sm">{member.name}</h3>
+            <a href="/about" class="hover:text-aac-blue transition-colors">
+              <h3 class="font-bold text-aac-dark text-sm">{member.name}</h3>
+            </a>
             <p class="text-aac-blue text-[10px] font-bold uppercase tracking-widest mt-1">{member.role}</p>
             <p class="text-zinc-500 text-[9px] font-bold uppercase tracking-widest mt-1">{member.loc}</p>
           </div>

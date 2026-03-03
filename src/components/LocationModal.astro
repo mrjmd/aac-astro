@@ -50,11 +50,29 @@ const MA_NUMBER = "617-668-1677";
         <Icon name="MessageSquare" size={20} class="text-zinc-300" />
       </a>
     </div>
-    <div class="mt-8 p-4 bg-zinc-50 rounded-2xl border-2 border-zinc-100 flex items-center gap-4">
-      <Icon name="Phone" size={20} class="text-aac-blue" />
-      <div class="text-left">
-        <p class="text-[10px] font-black uppercase tracking-widest text-zinc-500">Prefer to call?</p>
-        <p class="text-sm font-black text-aac-dark">Speak with an expert directly.</p>
+    <div class="mt-8 p-4 bg-zinc-50 rounded-2xl border-2 border-zinc-100">
+      <div class="flex items-center gap-4 mb-3">
+        <Icon name="Phone" size={20} class="text-aac-blue" />
+        <div class="text-left">
+          <p class="text-[10px] font-black uppercase tracking-widest text-zinc-500">Prefer to call?</p>
+          <p class="text-sm font-black text-aac-dark">Speak with an expert directly.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <a href={`tel:${CT_NUMBER}`} class="p-3 bg-white rounded-xl border-2 border-zinc-100 hover:border-aac-blue transition-all flex items-center justify-center gap-2 text-center">
+          <Icon name="Phone" size={16} class="text-aac-blue" />
+          <div>
+            <p class="text-[9px] font-black uppercase tracking-widest text-zinc-500">CT</p>
+            <p class="text-xs font-black text-aac-dark">{CT_NUMBER}</p>
+          </div>
+        </a>
+        <a href={`tel:${MA_NUMBER}`} class="p-3 bg-white rounded-xl border-2 border-zinc-100 hover:border-aac-blue transition-all flex items-center justify-center gap-2 text-center">
+          <Icon name="Phone" size={16} class="text-aac-blue" />
+          <div>
+            <p class="text-[9px] font-black uppercase tracking-widest text-zinc-500">MA</p>
+            <p class="text-xs font-black text-aac-dark">{MA_NUMBER}</p>
+          </div>
+        </a>
       </div>
     </div>
   </div>

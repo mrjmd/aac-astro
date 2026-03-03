@@ -20,6 +20,7 @@ export const phoneMA = settings.phone_ma;
 
 // Google Reviews URLs
 export const googleReviewsUrlCT = settings.google_reviews_url_ct;
+export const googleReviewsUrlMA = settings.google_reviews_url_ma;
 
 // Formatted strings for UI
 export const reviewCountDisplay = `${reviewCount}+`;

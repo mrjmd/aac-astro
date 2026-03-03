@@ -7,7 +7,7 @@ import Services from '../components/Services.astro';
 import Footer from '../components/Footer.astro';
 import LocationModal from '../components/LocationModal.astro';
 import Icon from '../components/Icon.astro';
-import { reviewCount, phoneCT, phoneMA, googleReviewsUrlCT } from '../utils/reviews';
+import { reviewCount, phoneCT, phoneMA, googleReviewsUrlCT, googleReviewsUrlMA } from '../utils/reviews';
 
 const CT_NUMBER = phoneCT;
 const MA_NUMBER = phoneMA;
@@ -60,10 +60,10 @@ const MA_NUMBER = phoneMA;
 						</div>
 						<div class="flex flex-col gap-3">
 							<a href={googleReviewsUrlCT} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-aac-blue hover:text-aac-dark transition-colors">
-								Read All {reviewCount}+ CT Reviews <Icon name="ExternalLink" size={12} />
+								Read All CT Reviews <Icon name="ExternalLink" size={12} />
 							</a>
-							<a href="/massachusetts" class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-500 hover:text-aac-blue transition-colors">
-								View Massachusetts Reviews <Icon name="ArrowRight" size={12} />
+							<a href={googleReviewsUrlMA} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-aac-blue hover:text-aac-dark transition-colors">
+								Read All MA Reviews <Icon name="ExternalLink" size={12} />
 							</a>
 						</div>
 					</div>
