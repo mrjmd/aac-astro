@@ -9,6 +9,7 @@ import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
 import { reviewCount, rating, aggregateRatingSchema } from '../../utils/reviews';
 import { getForLocation } from '../../utils/testimonials';
+import { crackRepairRange, bulkheadRange, carbonFiberRange, sewerConduitRange } from '../../utils/pricing';
 
 export async function getStaticPaths() {
   const locations = await getCollection('locations');
@@ -308,16 +309,66 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 			</div>
 		</section>
 
+		<!-- Pricing Section -->
+		<section class="py-16 bg-white">
+			<div class="max-w-4xl mx-auto px-6">
+				<h2 class="text-3xl font-black tracking-tighter text-aac-dark mb-8 text-center">
+					{location.data.city} Foundation Repair Costs
+				</h2>
+				<div class="grid sm:grid-cols-2 gap-4">
+					<div class="p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
+						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
+							<Icon name="Hammer" size={20} />
+						</div>
+						<div>
+							<p class="font-black text-aac-dark">Crack Repair</p>
+							<p class="text-aac-blue font-bold">{crackRepairRange} per crack</p>
+						</div>
+					</div>
+					<div class="p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
+						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
+							<Icon name="Droplets" size={20} />
+						</div>
+						<div>
+							<p class="font-black text-aac-dark">Bulkhead Repair</p>
+							<p class="text-aac-blue font-bold">{bulkheadRange}</p>
+						</div>
+					</div>
+					<div class="p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
+						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
+							<Icon name="ShieldCheck" size={20} />
+						</div>
+						<div>
+							<p class="font-black text-aac-dark">Carbon Fiber Stitches</p>
+							<p class="text-aac-blue font-bold">{carbonFiberRange} per stitch</p>
+						</div>
+					</div>
+					<div class="p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
+						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
+							<Icon name="Wrench" size={20} />
+						</div>
+						<div>
+							<p class="font-black text-aac-dark">Pipe/Conduit Sealing</p>
+							<p class="text-aac-blue font-bold">{sewerConduitRange}</p>
+						</div>
+					</div>
+				</div>
+				<p class="text-center text-sm text-zinc-500 mt-6">
+					All prices are estimates. <a href="/services/free-foundation-consultations" class="text-aac-blue font-bold hover:underline">Get a free quote</a> for your specific situation.
+				</p>
+			</div>
+		</section>
+
 		<!-- FAQs -->
 		{location.data.faqs && location.data.faqs.length > 0 && (
-			<section class="py-16 bg-white">
+			<section class="py-16 bg-zinc-50">
 				<div class="max-w-4xl mx-auto px-6">
 					<h2 class="text-3xl font-black tracking-tighter text-aac-dark mb-8 text-center">
 						Foundation Repair FAQs for {location.data.city}
 					</h2>
 					<div class="space-y-4">
 						{location.data.faqs.map((faq) => (
-							<details class="group bg-zinc-50 rounded-xl overflow-hidden">
+							<details class="group bg-white rounded-xl overflow-hidden">
 								<summary class="flex justify-between items-center p-6 cursor-pointer font-bold hover:text-aac-blue transition-colors list-none">
 									{faq.question}
 									<Icon name="ChevronRight" size={20} class="text-aac-blue rotate-90 group-open:rotate-270 transition-transform" />

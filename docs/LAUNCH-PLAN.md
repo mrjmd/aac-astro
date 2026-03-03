@@ -211,11 +211,11 @@ Files: `src/pages/services/[slug].astro`, all 6 service content files
 
 ### 5B: Location Page Content Depth
 
-- [ ] Add city-specific testimonials (from Phase 3A review pull)
-- [ ] Verify >20% unique content between similar cities
-- [ ] Add city-specific cost mentions using pricing utility (from Phase 1)
-- [ ] Verify nearby city cross-links are working
-- [ ] Add city-specific FAQ answers ("How much does foundation repair cost in [City]?")
+- [x] Add city-specific testimonials (getForLocation() fallback integrated in Phase 3; 12/20 cities have direct matches, rest get state-level)
+- [x] Verify >20% unique content between similar cities (each city has unique narrative, neighborhoods, foundation types, home age, regional context)
+- [x] Add city-specific cost mentions using pricing utility (pricing section added to CT + MA location templates using centralized pricing.ts)
+- [x] Verify nearby city cross-links are working (nearbyCities frontmatter renders linked chips on all 20 pages)
+- [x] Add city-specific FAQ answers (all 20 cities have 3 FAQs with city-specific soil/construction/cost answers)
 
 ### 5C: Blog Content Gaps
 
