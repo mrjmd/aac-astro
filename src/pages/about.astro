@@ -136,47 +136,48 @@ const aboutSchema = {
 		</section>
 
 		<!-- Our Values Section -->
-		<section class="py-24 bg-zinc-50">
-			<div class="max-w-7xl mx-auto px-6">
+		<section class="py-24 bg-aac-dark text-white relative overflow-hidden">
+			<div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.15),transparent_60%)]"></div>
+			<div class="max-w-7xl mx-auto px-6 relative z-10">
 				<div class="text-center mb-16">
-					<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/10 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
+					<div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 text-white rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-white/20">
 						<Icon name="Heart" size={14} /> Our Values
 					</div>
-					<h2 class="text-4xl lg:text-5xl font-black tracking-tighter text-aac-dark">
+					<h2 class="text-4xl lg:text-5xl font-black tracking-tighter">
 						What We Stand For
 					</h2>
 				</div>
 
 				<div class="grid md:grid-cols-3 gap-8">
 					<!-- Honesty -->
-					<div class="bg-white p-8 rounded-[32px] border-2 border-zinc-100">
-						<div class="w-16 h-16 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center mb-6">
+					<div class="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+						<div class="w-16 h-16 bg-aac-blue text-white rounded-2xl flex items-center justify-center mb-6">
 							<Icon name="MessageCircle" size={32} />
 						</div>
-						<h3 class="text-2xl font-black mb-4 text-aac-dark">Honesty</h3>
-						<p class="text-zinc-600 leading-relaxed">
-							We provide honest, no-strings-attached advice for concrete repairs. If you can handle it yourself, we'll tell you how. We'd rather earn your trust than your money on a job you don't need.
+						<h3 class="text-2xl font-black mb-4">Honesty First</h3>
+						<p class="text-zinc-400 leading-relaxed">
+							We provide honest, no-strings-attached advice. If you can handle it yourself, we'll tell you how. We'd rather earn your trust than your money on a job you don't need.
 						</p>
 					</div>
 
 					<!-- Responsiveness -->
-					<div class="bg-white p-8 rounded-[32px] border-2 border-zinc-100">
-						<div class="w-16 h-16 bg-aac-yellow/10 text-aac-dark rounded-2xl flex items-center justify-center mb-6">
+					<div class="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+						<div class="w-16 h-16 bg-aac-yellow text-aac-dark rounded-2xl flex items-center justify-center mb-6">
 							<Icon name="Zap" size={32} />
 						</div>
-						<h3 class="text-2xl font-black mb-4 text-aac-dark">Responsiveness</h3>
-						<p class="text-zinc-600 leading-relaxed">
-							We return calls and respond to texts within 15 minutes. When water is coming through your foundation, every minute matters. We understand the urgency and act accordingly.
+						<h3 class="text-2xl font-black mb-4">15-Minute Response</h3>
+						<p class="text-zinc-400 leading-relaxed">
+							We return calls and respond to texts within 15 minutes. When water is coming through your foundation, every minute matters. We treat your emergency like our own.
 						</p>
 					</div>
 
 					<!-- Quality -->
-					<div class="bg-white p-8 rounded-[32px] border-2 border-zinc-100">
-						<div class="w-16 h-16 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center mb-6">
+					<div class="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
+						<div class="w-16 h-16 bg-aac-blue text-white rounded-2xl flex items-center justify-center mb-6">
 							<Icon name="Award" size={32} />
 						</div>
-						<h3 class="text-2xl font-black mb-4 text-aac-dark">Quality</h3>
-						<p class="text-zinc-600 leading-relaxed">
+						<h3 class="text-2xl font-black mb-4">Lifetime Guarantee</h3>
+						<p class="text-zinc-400 leading-relaxed">
 							Advanced understanding of concrete chemistry combined with modern injection methods. Every repair comes with a lifetime guarantee because we're confident in the work we do.
 						</p>
 					</div>
@@ -206,42 +207,49 @@ const aboutSchema = {
 		</section>
 
 		<!-- E-E-A-T Section -->
-		<section class="py-24 bg-white">
+		<section class="py-24 bg-zinc-50">
 			<div class="max-w-7xl mx-auto px-6">
 				<div class="text-center mb-16">
 					<h2 class="text-3xl lg:text-4xl font-black tracking-tighter text-aac-dark">
 						Why Trust Attack A Crack?
 					</h2>
+					<p class="text-zinc-500 mt-4 max-w-2xl mx-auto">
+						We earn trust through decades of results, not sales pitches.
+					</p>
 				</div>
 
 				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-					<div class="text-center">
+					<div class="bg-white p-6 rounded-2xl border-2 border-zinc-100 text-center">
 						<div class="w-16 h-16 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center mx-auto mb-4">
 							<Icon name="GraduationCap" size={32} />
 						</div>
-						<h3 class="font-black text-lg mb-2">Experience</h3>
-						<p class="text-sm text-zinc-600">30+ years in concrete foundation science and repair</p>
+						<p class="text-3xl font-black text-aac-dark mb-1">30+</p>
+						<h3 class="font-black text-lg mb-2">Years Experience</h3>
+						<p class="text-sm text-zinc-600">Luc Richard started in concrete at age 16. Three decades of hands-on foundation work across New England.</p>
 					</div>
-					<div class="text-center">
+					<div class="bg-white p-6 rounded-2xl border-2 border-zinc-100 text-center">
 						<div class="w-16 h-16 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center mx-auto mb-4">
 							<Icon name="Briefcase" size={32} />
 						</div>
-						<h3 class="font-black text-lg mb-2">Expertise</h3>
-						<p class="text-sm text-zinc-600">Specialized in injection techniques that other contractors can't match</p>
+						<p class="text-3xl font-black text-aac-dark mb-1">5</p>
+						<h3 class="font-black text-lg mb-2">States Served</h3>
+						<p class="text-sm text-zinc-600">Specialized injection techniques for CT, MA, RI, NH, and ME. We understand New England's unique foundation challenges.</p>
 					</div>
-					<div class="text-center">
+					<div class="bg-white p-6 rounded-2xl border-2 border-zinc-100 text-center">
 						<div class="w-16 h-16 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center mx-auto mb-4">
 							<Icon name="FileCheck" size={32} />
 						</div>
-						<h3 class="font-black text-lg mb-2">Authority</h3>
-						<p class="text-sm text-zinc-600">ASHI affiliate member, trusted by home inspectors and realtors</p>
+						<p class="text-3xl font-black text-aac-dark mb-1">ASHI</p>
+						<h3 class="font-black text-lg mb-2">Affiliate Member</h3>
+						<p class="text-sm text-zinc-600">Trusted by home inspectors, realtors, and property managers. BNI chapter member. Active industry partner network.</p>
 					</div>
-					<div class="text-center">
+					<div class="bg-white p-6 rounded-2xl border-2 border-zinc-100 text-center">
 						<div class="w-16 h-16 bg-aac-yellow/10 text-aac-dark rounded-2xl flex items-center justify-center mx-auto mb-4">
 							<Icon name="Star" size={32} />
 						</div>
-						<h3 class="font-black text-lg mb-2">Trust</h3>
-						<p class="text-sm text-zinc-600">{reviewCount}+ 5-star reviews and lifetime transferable warranty</p>
+						<p class="text-3xl font-black text-aac-dark mb-1">{reviewCount}+</p>
+						<h3 class="font-black text-lg mb-2">5-Star Reviews</h3>
+						<p class="text-sm text-zinc-600">4.9-star average on Google. Lifetime transferable warranty on every repair. Real reviews from real homeowners.</p>
 					</div>
 				</div>
 			</div>

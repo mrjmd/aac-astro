@@ -102,10 +102,10 @@ Matt's principle: "Better for someone to expect they'll pay a little less than t
 
 Issues: huge white gap between state cards and "Why New England Trusts Us", placeholder images, RI/NH/ME show "0+ cities".
 
-- [ ] Fix white gap between sections (likely margin/padding or hidden empty element)
-- [ ] Change "0+ cities" to "Coming Soon" for states with no city pages yet
-- [ ] Tighten card layout for better visual density
-- [ ] Note placeholder images for Phase 8 (hero map, "Why Choose Us" photo)
+- [x] Fix white gap between sections (reduced section padding)
+- [x] Change "0+ cities" to "Expanding Soon" for states with no city pages yet
+- [x] Tighten card layout for better visual density (compact inline headers)
+- [x] Note placeholder images for Phase 8 (hero map, "Why Choose Us" photo)
 
 File: `src/pages/areas-we-serve/index.astro`
 
@@ -113,10 +113,10 @@ File: `src/pages/areas-we-serve/index.astro`
 
 Issues: "What We Stand For" section has too much white space, placeholder image, thin E-E-A-T section, no real customer quotes.
 
-- [ ] Add visual treatment to "What We Stand For" section (background, icons, or imagery)
-- [ ] Beef up E-E-A-T section with real stats (years experience, repairs completed, certifications, review count)
-- [ ] Add real customer testimonial section (from Phase 3 Google review pull)
-- [ ] Note placeholder image for Phase 8 (story section)
+- [x] Add visual treatment to "What We Stand For" section (dark bg with translucent cards)
+- [x] Beef up E-E-A-T section with real stats (30+ years, 5 states, ASHI, 260+ reviews)
+- [ ] Add real customer testimonial section (deferred to Phase 3)
+- [x] Note placeholder image for Phase 8 (story section)
 
 File: `src/pages/about.astro`
 
@@ -124,10 +124,10 @@ File: `src/pages/about.astro`
 
 Currently 14 posts on one page, no pagination.
 
-- [ ] Add pagination to `src/pages/blog/index.astro` (6 posts per page)
-- [ ] Add pagination to `src/pages/blog/category/[category].astro`
-- [ ] Use Astro's built-in `paginate()` with `getStaticPaths()`
-- [ ] Add prev/next navigation UI
+- [x] Add pagination to blog index (6 posts per page, `[...page].astro`)
+- [x] Add pagination to category pages (`[category]/[...page].astro`)
+- [x] Use Astro's built-in `paginate()` with `getStaticPaths()`
+- [x] Add prev/next navigation UI (`Pagination.astro` component)
 
 ---
 

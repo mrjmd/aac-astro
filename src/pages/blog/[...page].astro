@@ -1,49 +1,63 @@
 ---
+import type { GetStaticPaths } from 'astro';
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Pagination from '../../components/Pagination.astro';
 import Icon from '../../components/Icon.astro';
 
-// Get all published blog posts sorted by date
-const allPosts = (await getCollection('blog', ({ data }) => !data.draft))
-  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+export const getStaticPaths = (async ({ paginate }) => {
+	const allPosts = (await getCollection('blog', ({ data }) => !data.draft))
+		.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 
-// Get featured posts
-const featuredPosts = allPosts.filter(post => post.data.featured);
-const regularPosts = allPosts.filter(post => !post.data.featured);
+	const regularPosts = allPosts.filter(post => !post.data.featured);
+	const featuredPosts = allPosts.filter(post => post.data.featured);
 
-// Get unique categories with counts
-const categories = allPosts.reduce((acc, post) => {
-  acc[post.data.category] = (acc[post.data.category] || 0) + 1;
-  return acc;
-}, {} as Record<string, number>);
+	// Get categories from ALL posts (for filter buttons on every page)
+	const categories = allPosts.reduce((acc, post) => {
+		acc[post.data.category] = (acc[post.data.category] || 0) + 1;
+		return acc;
+	}, {} as Record<string, number>);
+
+	return paginate(regularPosts, {
+		pageSize: 6,
+		props: { featuredPosts, categories, totalPosts: allPosts.length }
+	});
+}) satisfies GetStaticPaths;
+
+const { page, featuredPosts, categories, totalPosts } = Astro.props;
 
 const categoryLabels: Record<string, string> = {
-  'guides': 'Guides',
-  'case-studies': 'Case Studies',
-  'cost-guides': 'Cost Guides',
-  'maintenance-tips': 'Maintenance Tips',
-  'news': 'News'
+	'guides': 'Guides',
+	'case-studies': 'Case Studies',
+	'cost-guides': 'Cost Guides',
+	'maintenance-tips': 'Maintenance Tips',
+	'news': 'News'
 };
 
 const breadcrumbItems = [
-  { label: 'Home', href: '/' },
-  { label: 'Blog' }
+	{ label: 'Home', href: '/' },
+	{ label: 'Blog' }
 ];
 
 function formatDate(date: Date): string {
-  return date.toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  });
+	return date.toLocaleDateString('en-US', {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric'
+	});
 }
+
+const isFirstPage = page.currentPage === 1;
+const titleSuffix = isFirstPage ? '' : ` - Page ${page.currentPage}`;
+const baseDescription = "Expert insights, case studies, and maintenance tips to keep your foundation secure. Learn from New England's foundation repair specialists.";
+const description = isFirstPage ? baseDescription : `Page ${page.currentPage} of our foundation repair blog. Expert insights, case studies, and practical tips from New England's trusted specialists.`;
 ---
 
-<Layout title="Foundation Repair Blog" description="Expert insights, case studies, and maintenance tips to keep your foundation secure. Learn from New England's foundation repair specialists.">
+<Layout title={`Foundation Repair Blog${titleSuffix}`} description={description}>
 	<LocationModal />
 	<Navbar currentPage="blog" />
 
@@ -66,7 +80,7 @@ function formatDate(date: Date): string {
 						<!-- Category Filters -->
 						<div class="flex flex-wrap gap-3">
 							<a href="/blog" class="px-4 py-2 bg-aac-dark text-white rounded-full text-sm font-bold">
-								All Posts ({allPosts.length})
+								All Posts ({totalPosts})
 							</a>
 							{Object.entries(categories).map(([cat, count]) => (
 								<a href={`/blog/category/${cat}`} class="px-4 py-2 bg-zinc-100 text-zinc-700 rounded-full text-sm font-bold hover:bg-aac-blue hover:text-white transition-colors">
@@ -79,8 +93,8 @@ function formatDate(date: Date): string {
 			</div>
 		</section>
 
-		<!-- Featured Posts -->
-		{featuredPosts.length > 0 && (
+		<!-- Featured Posts (page 1 only) -->
+		{isFirstPage && featuredPosts.length > 0 && (
 			<section class="py-16 bg-aac-dark text-white">
 				<div class="max-w-7xl mx-auto px-6">
 					<div class="flex items-center gap-3 mb-12">
@@ -122,11 +136,13 @@ function formatDate(date: Date): string {
 		<!-- All Posts Grid -->
 		<section class="py-24 bg-zinc-50">
 			<div class="max-w-7xl mx-auto px-6">
-				{regularPosts.length > 0 && (
+				{page.data.length > 0 && (
 					<>
-						<h2 class="text-3xl font-black mb-12">Latest Articles</h2>
+						<h2 class="text-3xl font-black mb-12">
+							{isFirstPage ? 'Latest Articles' : `Articles - Page ${page.currentPage}`}
+						</h2>
 						<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-							{regularPosts.map((post) => (
+							{page.data.map((post) => (
 								<a href={`/blog/${post.id.replace(/\.md$/, '')}`} class="group bg-white rounded-[32px] overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all">
 									<div class="aspect-video overflow-hidden">
 										<img
@@ -158,10 +174,18 @@ function formatDate(date: Date): string {
 								</a>
 							))}
 						</div>
+
+						<Pagination
+							currentPage={page.currentPage}
+							lastPage={page.lastPage}
+							prevUrl={page.url.prev}
+							nextUrl={page.url.next}
+							baseUrl="/blog"
+						/>
 					</>
 				)}
 
-				{allPosts.length === 0 && (
+				{totalPosts === 0 && (
 					<div class="text-center py-16">
 						<p class="text-zinc-500 text-lg">No blog posts yet. Check back soon!</p>
 					</div>

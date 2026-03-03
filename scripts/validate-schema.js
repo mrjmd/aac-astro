@@ -31,8 +31,11 @@ const HUB_PAGES = [
   'concrete-repair/index.html',
   'blog/index.html',
   'foundation-types/index.html',
-  'blog/category/',  // Blog category listing pages
+  'blog/category/',  // Blog category listing pages (including paginated)
 ];
+
+// Paginated listing pages (e.g., blog/2/index.html, blog/category/guides/2/index.html)
+const PAGINATED_PAGE_PATTERN = /^blog\/\d+\/index\.html$/;
 
 // Required properties for each schema type
 const SCHEMA_REQUIREMENTS = {
@@ -147,6 +150,7 @@ function validateSchema(schema, filePath) {
 }
 
 function isHubPage(relativePath) {
+  if (PAGINATED_PAGE_PATTERN.test(relativePath)) return true;
   return HUB_PAGES.some(hub => {
     if (hub.endsWith('/')) {
       return relativePath.startsWith(hub);

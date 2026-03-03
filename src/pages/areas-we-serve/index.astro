@@ -171,7 +171,7 @@ const areaSchema = {
     </section>
 
     <!-- States Grid -->
-    <section class="py-24 bg-zinc-50">
+    <section class="py-16 lg:py-24 bg-zinc-50">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-16">
           <h2 class="text-4xl lg:text-5xl font-black tracking-tighter text-aac-dark">
@@ -183,24 +183,23 @@ const areaSchema = {
         </div>
 
         <!-- Primary States (CT & MA) -->
-        <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
           {states.filter(s => s.highlight).map(state => (
-            <a href={`/${state.slug}`} class="group bg-white p-8 rounded-[32px] border-2 border-zinc-100 hover:border-aac-blue transition-all shadow-sm hover:shadow-xl relative overflow-hidden">
+            <a href={`/${state.slug}`} class="group bg-white p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all shadow-sm hover:shadow-xl relative overflow-hidden">
               <div class="absolute top-0 right-0 w-32 h-32 bg-aac-blue/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
               <div class="relative">
-                <div class="flex items-start justify-between mb-6">
-                  <div class="w-16 h-16 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center group-hover:bg-aac-blue group-hover:text-white transition-colors">
-                    <span class="text-2xl font-black">{state.abbr}</span>
+                <div class="flex items-center gap-4 mb-4">
+                  <div class="w-14 h-14 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center group-hover:bg-aac-blue group-hover:text-white transition-colors">
+                    <span class="text-xl font-black">{state.abbr}</span>
                   </div>
-                  <div class="text-right">
-                    <p class="text-sm text-zinc-500">Cities Served</p>
-                    <p class="text-2xl font-black text-aac-dark">{state.cities}+</p>
+                  <div>
+                    <h3 class="text-2xl font-black tracking-tight group-hover:text-aac-blue transition-colors">
+                      {state.name}
+                    </h3>
+                    <p class="text-sm text-zinc-500">{state.cities}+ cities served</p>
                   </div>
                 </div>
-                <h3 class="text-3xl font-black mb-3 tracking-tight group-hover:text-aac-blue transition-colors">
-                  {state.name}
-                </h3>
-                <p class="text-zinc-600 mb-6 leading-relaxed">
+                <p class="text-zinc-600 mb-4 leading-relaxed">
                   {state.description}
                 </p>
                 <div class="flex items-center justify-between">
@@ -217,7 +216,7 @@ const areaSchema = {
         </div>
 
         <!-- Secondary States (RI, NH, ME) -->
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-3 gap-6">
           {states.filter(s => !s.highlight).map(state => (
             <a href={`/${state.slug}`} class="group bg-white p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all shadow-sm hover:shadow-lg">
               <div class="flex items-center gap-4 mb-4">
@@ -228,7 +227,7 @@ const areaSchema = {
                   <h3 class="text-xl font-black group-hover:text-aac-blue transition-colors">
                     {state.name}
                   </h3>
-                  <p class="text-sm text-zinc-500">{state.cities}+ cities</p>
+                  <p class="text-sm text-zinc-500">{state.cities > 0 ? `${state.cities}+ cities` : 'Expanding Soon'}</p>
                 </div>
               </div>
               <p class="text-zinc-600 text-sm mb-4 leading-relaxed">
@@ -244,7 +243,7 @@ const areaSchema = {
     </section>
 
     <!-- Why Choose Us -->
-    <section class="py-24 bg-white">
+    <section class="py-16 lg:py-24 bg-white">
       <div class="max-w-7xl mx-auto px-6">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div>
