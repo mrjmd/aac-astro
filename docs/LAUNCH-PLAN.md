@@ -230,14 +230,14 @@ High-priority new posts:
 | Water in Basement After Rain | 480 | 11 |
 | Bulkhead Repair Cost Guide 2026 | 480 | 4 |
 
-- [ ] Write: Horizontal Foundation Cracks
-- [ ] Write: Signs of Foundation Problems
-- [ ] Write: Foundation Settling: When to Worry
-- [ ] Write: Basement Floor Cracks Leaking Water
-- [ ] Write: Water in Basement After Rain
-- [ ] Write: Bulkhead Repair Cost Guide 2026
-- [ ] Review/update existing: `foundation-repair-cost-guide-2026.md` (pricing — Phase 1)
-- [ ] Review/update existing: `vertical-vs-horizontal-foundation-cracks.md`
+- [x] Write: Horizontal Foundation Cracks
+- [x] Write: Signs of Foundation Problems
+- [x] Write: Foundation Settling: When to Worry
+- [x] Write: Basement Floor Cracks Leaking Water
+- [x] Write: Water in Basement After Rain
+- [x] Write: Bulkhead Repair Cost Guide 2026
+- [x] Review/update existing: `foundation-repair-cost-guide-2026.md` (pricing already correct from Phase 1)
+- [x] Review/update existing: `vertical-vs-horizontal-foundation-cracks.md` (comprehensive, no changes needed)
 
 ### 5D: Internal Linking Strategy
 
