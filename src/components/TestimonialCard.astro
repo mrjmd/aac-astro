@@ -1,0 +1,52 @@
+---
+import Icon from './Icon.astro';
+
+interface Props {
+  quote: string;
+  author: string;
+  location: string;
+  rating?: number;
+  variant?: 'light' | 'dark';
+  class?: string;
+}
+
+const { quote, author, location, rating = 5, variant = 'light', class: className } = Astro.props;
+
+const isLight = variant === 'light';
+---
+
+<div class:list={[
+  "p-6 rounded-[32px] relative",
+  isLight
+    ? "bg-white border-4 border-aac-dark shadow-[8px_8px_0px_0px_rgba(26,26,26,0.05)]"
+    : "bg-white/5 backdrop-blur-sm border border-white/10",
+  className
+]}>
+  <div class:list={[
+    "absolute -top-3 -left-3 w-8 h-8 rounded-lg flex items-center justify-center border-2",
+    isLight ? "bg-aac-yellow border-aac-dark" : "bg-aac-yellow border-aac-yellow"
+  ]}>
+    <Icon name="Star" size={16} class="fill-aac-dark" />
+  </div>
+  <div class="flex items-center gap-0.5 mb-3">
+    {[...Array(rating)].map(() => (
+      <Icon name="Star" size={14} class:list={[
+        isLight ? "fill-aac-yellow text-aac-dark" : "fill-aac-yellow text-aac-yellow"
+      ]} />
+    ))}
+  </div>
+  <p class:list={[
+    "text-sm font-bold italic mb-4 leading-relaxed",
+    isLight ? "text-zinc-600" : "text-zinc-300"
+  ]}>"{quote}"</p>
+  <div>
+    <p class:list={[
+      "font-black uppercase tracking-widest text-xs",
+      isLight ? "text-aac-dark" : "text-white"
+    ]}>{author}</p>
+    <p class:list={[
+      "text-[9px] font-black uppercase tracking-widest",
+      isLight ? "text-zinc-500" : "text-zinc-400"
+    ]}>{location}</p>
+  </div>
+</div>

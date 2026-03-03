@@ -7,7 +7,9 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
+import TestimonialCard from '../../components/TestimonialCard.astro';
 import { aggregateRatingSchema } from '../../utils/reviews';
+import { getByService } from '../../utils/testimonials';
 
 export async function getStaticPaths() {
   const services = await getCollection('services');
@@ -30,6 +32,10 @@ const relatedServices = service.data.relatedServices
 const allLocations = await getCollection('locations');
 const ctLocations = allLocations.filter(l => l.data.stateAbbr === 'CT').slice(0, 5);
 const maLocations = allLocations.filter(l => l.data.stateAbbr === 'MA').slice(0, 5);
+
+// Get service-specific testimonials
+const serviceSlug = service.id.replace(/\.md$/, '');
+const serviceTestimonials = getByService(serviceSlug, 2);
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
@@ -220,6 +226,32 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 									{faq.answer}
 								</div>
 							</details>
+						))}
+					</div>
+				</div>
+			</section>
+		)}
+
+		<!-- Customer Reviews -->
+		{serviceTestimonials.length > 0 && (
+			<section class="py-16 lg:py-24 bg-white border-t border-zinc-100">
+				<div class="max-w-4xl mx-auto px-6">
+					<div class="text-center mb-12">
+						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-yellow/10 text-aac-dark rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-yellow">
+							<Icon name="Star" size={14} class="text-aac-yellow" /> Customer Reviews
+						</div>
+						<h2 class="text-3xl font-black tracking-tighter text-aac-dark">
+							What Customers Say About This Service
+						</h2>
+					</div>
+					<div class="grid md:grid-cols-2 gap-6">
+						{serviceTestimonials.map(t => (
+							<TestimonialCard
+								quote={t.quote}
+								author={t.author}
+								location={t.location}
+								rating={t.rating}
+							/>
 						))}
 					</div>
 				</div>

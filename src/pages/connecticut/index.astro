@@ -7,7 +7,9 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
+import TestimonialCard from '../../components/TestimonialCard.astro';
 import { reviewCount } from '../../utils/reviews';
+import { getByState } from '../../utils/testimonials';
 
 // Get all CT location pages
 const ctLocations = (await getCollection('locations'))
@@ -41,27 +43,8 @@ const ctRegions = {
   'Central Connecticut': ['Middletown', 'Bristol', 'Southington', 'Torrington']
 };
 
-// Testimonials
-const testimonials = [
-  {
-    quote: "Luc and his team were professional, on time, and the repair looks great. No more water in our basement after 5 years of dealing with that crack!",
-    author: "Michael T.",
-    location: "West Hartford, CT",
-    rating: 5
-  },
-  {
-    quote: "Finally fixed our bulkhead leak that two other companies couldn't solve. Attack A Crack's injection method actually works.",
-    author: "Jennifer S.",
-    location: "Glastonbury, CT",
-    rating: 5
-  },
-  {
-    quote: "Honest assessment, fair price, and lifetime guarantee. What more could you ask for?",
-    author: "David R.",
-    location: "Hartford, CT",
-    rating: 5
-  }
-];
+// Testimonials from centralized data
+const testimonials = getByState('CT', 3);
 
 // LocalBusiness schema for CT
 const ctSchema = {
@@ -267,20 +250,12 @@ const ctSchema = {
 
 				<div class="grid md:grid-cols-3 gap-8">
 					{testimonials.map(testimonial => (
-						<div class="bg-zinc-50 p-8 rounded-2xl">
-							<div class="flex gap-1 mb-4">
-								{[...Array(testimonial.rating)].map(() => (
-									<Icon name="Star" size={20} class="text-aac-yellow fill-aac-yellow" />
-								))}
-							</div>
-							<p class="text-zinc-700 mb-6 leading-relaxed italic">
-								"{testimonial.quote}"
-							</p>
-							<div>
-								<p class="font-bold text-aac-dark">{testimonial.author}</p>
-								<p class="text-sm text-zinc-500">{testimonial.location}</p>
-							</div>
-						</div>
+						<TestimonialCard
+							quote={testimonial.quote}
+							author={testimonial.author}
+							location={testimonial.location}
+							rating={testimonial.rating}
+						/>
 					))}
 				</div>
 

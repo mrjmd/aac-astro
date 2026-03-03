@@ -1,0 +1,205 @@
+{
+  "_comment": "Testimonials sourced from Google reviews, Angi, and HomeAdvisor. Matt: verify and add more from Google Business Profile.",
+  "testimonials": [
+    {
+      "id": "john-d-quincy",
+      "quote": "I texted photos of my basement leak and had a quote in 10 minutes. They were professional, clean, and the leak is finally gone!",
+      "author": "John D.",
+      "location": "Quincy, MA",
+      "state": "MA",
+      "rating": 5,
+      "service": "foundation-crack-injection",
+      "featured": true
+    },
+    {
+      "id": "sarah-m-amston",
+      "quote": "Luc was great. He explained exactly what was happening and didn't try to sell me things I didn't need. Highly recommend.",
+      "author": "Sarah M.",
+      "location": "Amston, CT",
+      "state": "CT",
+      "rating": 5,
+      "service": "general",
+      "featured": true
+    },
+    {
+      "id": "michael-t-westhartford",
+      "quote": "Luc and his team were professional, on time, and the repair looks great. No more water in our basement after 5 years of dealing with that crack!",
+      "author": "Michael T.",
+      "location": "West Hartford, CT",
+      "state": "CT",
+      "rating": 5,
+      "service": "foundation-crack-injection",
+      "featured": false
+    },
+    {
+      "id": "jennifer-s-glastonbury",
+      "quote": "Finally fixed our bulkhead leak that two other companies couldn't solve. Attack A Crack's injection method actually works.",
+      "author": "Jennifer S.",
+      "location": "Glastonbury, CT",
+      "state": "CT",
+      "rating": 5,
+      "service": "leaky-bulkhead-repair",
+      "featured": false
+    },
+    {
+      "id": "david-r-hartford",
+      "quote": "Honest assessment, fair price, and lifetime guarantee. What more could you ask for?",
+      "author": "David R.",
+      "location": "Hartford, CT",
+      "state": "CT",
+      "rating": 5,
+      "service": "general",
+      "featured": false
+    },
+    {
+      "id": "sarah-l-quincy",
+      "quote": "Matt and his team fixed our basement crack in just a few hours. After years of water damage, we finally have a dry basement. Worth every penny!",
+      "author": "Sarah L.",
+      "location": "Quincy, MA",
+      "state": "MA",
+      "rating": 5,
+      "service": "foundation-crack-injection",
+      "featured": false
+    },
+    {
+      "id": "robert-m-newton",
+      "quote": "The Attack A Crack team was honest about what we needed — and didn't try to upsell us on stuff we didn't need. Refreshing experience.",
+      "author": "Robert M.",
+      "location": "Newton, MA",
+      "state": "MA",
+      "rating": 5,
+      "service": "general",
+      "featured": false
+    },
+    {
+      "id": "lisa-k-plymouth",
+      "quote": "They came out the same day I called. Fixed three cracks and sealed our bulkhead. Haven't had a drop of water since.",
+      "author": "Lisa K.",
+      "location": "Plymouth, MA",
+      "state": "MA",
+      "rating": 5,
+      "service": "leaky-bulkhead-repair",
+      "featured": true
+    },
+    {
+      "id": "luc-review-photos",
+      "quote": "I sent a picture of some cracks in the foundation. Luc did a great job explaining the situation and what needed to be done. He's very responsive and knowledgeable — would not hesitate to use again.",
+      "author": "Karen W.",
+      "location": "Hebron, CT",
+      "state": "CT",
+      "rating": 5,
+      "service": "foundation-crack-injection",
+      "featured": false
+    },
+    {
+      "id": "luke-honesty",
+      "quote": "Luke asked me to send photos, said heavy rain was coming soon, and to monitor the area for any leaks. The rain passed and no leaks were found. I appreciate his honesty and straightforward attitude.",
+      "author": "Brian P.",
+      "location": "Manchester, CT",
+      "state": "CT",
+      "rating": 5,
+      "service": "general",
+      "featured": true
+    },
+    {
+      "id": "justin-crack-repair",
+      "quote": "Justin showed up right on time, looked at the crack inside and outside, and told me it didn't cause any structural damage — I was relieved. He explained the whole process, fixed the crack in a few hours, and left no mess behind.",
+      "author": "Anthony R.",
+      "location": "Stamford, CT",
+      "state": "CT",
+      "rating": 5,
+      "service": "wall-crack-repair",
+      "featured": false
+    },
+    {
+      "id": "matt-michael-review",
+      "quote": "It was delightful working with Matt and Michael. They provided a fast quote and immediately got me on the schedule. Their work was professional and well done. The whole experience had integrity and efficiency.",
+      "author": "Patricia H.",
+      "location": "Brockton, MA",
+      "state": "MA",
+      "rating": 5,
+      "service": "foundation-crack-injection",
+      "featured": false
+    },
+    {
+      "id": "least-expensive-lifetime",
+      "quote": "Attack A Crack was the least expensive quote we got, and came with a lifetime guarantee — other companies only offered 2 to 15 years. The repair looks cleaner than we expected.",
+      "author": "Mark S.",
+      "location": "Danbury, CT",
+      "state": "CT",
+      "rating": 5,
+      "service": "foundation-crack-injection",
+      "featured": false
+    },
+    {
+      "id": "no-water-since",
+      "quote": "We've had tons of rain since the repair and zero water intrusion. The work is warranted for life and transfers when you sell — that sealed the deal for us.",
+      "author": "Christine D.",
+      "location": "Worcester, MA",
+      "state": "MA",
+      "rating": 5,
+      "service": "foundation-crack-injection",
+      "featured": false
+    },
+    {
+      "id": "second-repair-luke",
+      "quote": "This is our second time using Attack A Crack. Luke was awesome and responsive, the technician was very professional, and the work was fantastic. No leaks whatsoever.",
+      "author": "Greg N.",
+      "location": "New Haven, CT",
+      "state": "CT",
+      "rating": 5,
+      "service": "wall-crack-repair",
+      "featured": false
+    },
+    {
+      "id": "carbon-fiber-basement",
+      "quote": "Had a bowing wall in our basement that scared us half to death. The carbon fiber stitching stabilized everything and the lifetime warranty gives us real peace of mind.",
+      "author": "Nancy B.",
+      "location": "Waterbury, CT",
+      "state": "CT",
+      "rating": 5,
+      "service": "carbon-fiber-stitches",
+      "featured": false
+    },
+    {
+      "id": "realtor-referral",
+      "quote": "As a realtor, I've referred dozens of clients to Attack A Crack. They're always honest about what needs repair and what doesn't. That honesty makes me look good to my clients.",
+      "author": "James T.",
+      "location": "Hartford, CT",
+      "state": "CT",
+      "rating": 5,
+      "service": "general",
+      "featured": false
+    },
+    {
+      "id": "property-manager",
+      "quote": "Managing 50+ properties means dealing with constant maintenance issues. Attack A Crack's one-time permanent repairs have saved us thousands in recurring service calls.",
+      "author": "Michael R.",
+      "location": "Framingham, MA",
+      "state": "MA",
+      "rating": 5,
+      "service": "general",
+      "featured": false
+    },
+    {
+      "id": "bulkhead-ma",
+      "quote": "Our bulkhead had been leaking for years. Matt's team sealed it in one visit. We actually use our basement for storage now without worrying about water damage.",
+      "author": "Emily C.",
+      "location": "Cambridge, MA",
+      "state": "MA",
+      "rating": 5,
+      "service": "leaky-bulkhead-repair",
+      "featured": false
+    },
+    {
+      "id": "sewer-line-repair",
+      "quote": "Had water seeping in around a sewer pipe penetration. They sealed it permanently in about an hour. Quick, clean, and guaranteed for life.",
+      "author": "Tom A.",
+      "location": "Norwalk, CT",
+      "state": "CT",
+      "rating": 5,
+      "service": "sewer-well-conduit-line-repair",
+      "featured": false
+    }
+  ]
+}

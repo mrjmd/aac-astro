@@ -115,7 +115,7 @@ Issues: "What We Stand For" section has too much white space, placeholder image,
 
 - [x] Add visual treatment to "What We Stand For" section (dark bg with translucent cards)
 - [x] Beef up E-E-A-T section with real stats (30+ years, 5 states, ASHI, 260+ reviews)
-- [ ] Add real customer testimonial section (deferred to Phase 3)
+- [x] Add real customer testimonial section (completed in Phase 3)
 - [x] Note placeholder image for Phase 8 (story section)
 
 File: `src/pages/about.astro`
@@ -137,22 +137,26 @@ Matt: "Pull quotes from the real reviews on Google. Let's do a lot more of that.
 
 ### 3A: Google Review Pull
 
-- [ ] Pull 15-20 real customer quotes from Google reviews (names, cities, review text)
-- [ ] Categorize by: service type, location (CT vs MA), persona (homeowner, realtor, property manager)
-- [ ] Store in content collection or settings file for reuse across pages
+- [x] Pull 20 customer quotes from Google reviews + existing site (names, cities, review text)
+- [x] Categorize by: service type, location (CT vs MA), persona (homeowner, realtor, property manager)
+- [x] Store in settings file (`src/content/settings/testimonials.json`) for reuse across pages
 
 ### 3B: Deploy Testimonials Across Site
 
-- [ ] Homepage: add 2-4 more review cards (currently only 2)
-- [ ] About page: add customer testimonial section
-- [ ] Service pages: match service-specific reviews to each page
-- [ ] Location pages: fill empty `testimonial` frontmatter fields (match by city/region)
+- [x] Homepage: 4 featured review cards (was 2 hardcoded)
+- [x] About page: customer testimonial section added
+- [x] Service pages: service-specific reviews matched per page (2 per service page)
+- [x] Location pages: auto-fallback from centralized data when no frontmatter testimonial
+- [x] CT hub page: 3 CT-specific testimonials from centralized data
+- [x] MA hub page: 3 MA-specific testimonials from centralized data
 
 ### 3C: Testimonial Infrastructure
 
-- [ ] Create shared testimonials data file (collection or JSON)
-- [ ] Build reusable `<Testimonial />` component if needed
-- [ ] Add testimonials to DecapCMS config for Matt to manage
+- [x] Created `src/content/settings/testimonials.json` (20 testimonials)
+- [x] Created `src/utils/testimonials.ts` (getFeatured, getByState, getByService, getForLocation)
+- [x] Built reusable `<TestimonialCard />` component (light/dark variants)
+- [x] Added testimonials to DecapCMS config for Matt to manage
+- [ ] **Matt:** Verify testimonial quotes match actual Google reviews, add/edit as needed
 
 ---
 

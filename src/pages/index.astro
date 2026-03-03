@@ -8,7 +8,11 @@ import Footer from '../components/Footer.astro';
 import LocationModal from '../components/LocationModal.astro';
 import HomeFaq from '../components/HomeFaq.astro';
 import Icon from '../components/Icon.astro';
+import TestimonialCard from '../components/TestimonialCard.astro';
 import { reviewCount, phoneCT, phoneMA, googleReviewsUrlCT, googleReviewsUrlMA } from '../utils/reviews';
+import { getFeatured } from '../utils/testimonials';
+
+const featuredTestimonials = getFeatured(4);
 
 const CT_NUMBER = phoneCT;
 const MA_NUMBER = phoneMA;
@@ -70,28 +74,13 @@ const MA_NUMBER = phoneMA;
 					</div>
 					
 					<div class="grid md:grid-cols-2 gap-6 flex-grow">
-						{[
-							{
-								text: "I texted photos of my basement leak and had a quote in 10 minutes. They were professional, clean, and the leak is finally gone!",
-								author: "John D.",
-								loc: "QUINCY, MA"
-							},
-							{
-								text: "Luc was great. He explained exactly what was happening and didn't try to sell me things I didn't need. Highly recommend.",
-								author: "Sarah M.",
-								loc: "AMSTON, CT"
-							}
-						].map((rev) => (
-							<div class="bg-white p-6 rounded-[32px] border-4 border-aac-dark shadow-[8px_8px_0px_0px_rgba(26,26,26,0.05)] relative">
-								<div class="absolute -top-3 -left-3 w-8 h-8 bg-aac-yellow rounded-lg flex items-center justify-center border-2 border-aac-dark">
-									<Icon name="Star" size={16} class="fill-aac-dark" />
-								</div>
-								<p class="text-sm font-bold text-zinc-600 italic mb-4 leading-relaxed">"{rev.text}"</p>
-								<div>
-									<p class="font-black text-aac-dark uppercase tracking-widest text-xs">{rev.author}</p>
-									<p class="text-[9px] font-black uppercase tracking-widest text-zinc-500">{rev.loc}</p>
-								</div>
-							</div>
+						{featuredTestimonials.map((rev) => (
+							<TestimonialCard
+								quote={rev.quote}
+								author={rev.author}
+								location={rev.location}
+								rating={rev.rating}
+							/>
 						))}
 					</div>
 				</div>

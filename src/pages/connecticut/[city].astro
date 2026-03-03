@@ -8,6 +8,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
 import { reviewCount, rating, aggregateRatingSchema } from '../../utils/reviews';
+import { getForLocation } from '../../utils/testimonials';
 
 export async function getStaticPaths() {
   const locations = await getCollection('locations');
@@ -21,6 +22,11 @@ export async function getStaticPaths() {
 
 const { location } = Astro.props;
 const { Content } = await render(location);
+
+// Get testimonial: use frontmatter if available, otherwise fall back to centralized data
+const testimonial = location.data.testimonial
+  || getForLocation(location.data.city, 'CT', 1)[0]
+  || null;
 
 // Get services (foundation repair only for CT - no resurfacing)
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
@@ -295,17 +301,17 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 		)}
 
 		<!-- Testimonial -->
-		{location.data.testimonial && (
+		{testimonial && (
 			<section class="py-16 bg-aac-blue text-white">
 				<div class="max-w-4xl mx-auto px-6 text-center">
 					<Icon name="Star" size={48} class="text-aac-yellow mx-auto mb-6" />
 					<blockquote class="text-2xl lg:text-3xl font-bold mb-6 leading-relaxed">
-						"{location.data.testimonial.quote}"
+						"{testimonial.quote}"
 					</blockquote>
 					<p class="font-black">
-						— {location.data.testimonial.author}
-						{location.data.testimonial.location && (
-							<span class="font-normal text-white/90">, {location.data.testimonial.location}</span>
+						— {testimonial.author}
+						{testimonial.location && (
+							<span class="font-normal text-white/90">, {testimonial.location}</span>
 						)}
 					</p>
 				</div>

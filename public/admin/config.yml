@@ -371,3 +371,59 @@ collections:
             widget: number
             value_type: int
             default: 15000
+
+      - name: testimonials
+        label: Customer Testimonials
+        file: src/content/settings/testimonials.json
+        fields:
+          - name: testimonials
+            label: Testimonials
+            widget: list
+            summary: "{{fields.author}} — {{fields.location}}"
+            fields:
+              - name: id
+                label: ID
+                widget: string
+                hint: Unique identifier (e.g., john-d-quincy)
+
+              - name: quote
+                label: Quote
+                widget: text
+
+              - name: author
+                label: Author Name
+                widget: string
+
+              - name: location
+                label: Location
+                widget: string
+                hint: "City, ST (e.g., Quincy, MA)"
+
+              - name: state
+                label: State
+                widget: select
+                options: ["CT", "MA"]
+
+              - name: rating
+                label: Star Rating
+                widget: number
+                value_type: int
+                default: 5
+                min: 1
+                max: 5
+
+              - name: service
+                label: Service Type
+                widget: select
+                options:
+                  - { label: "General", value: "general" }
+                  - { label: "Foundation Crack Injection", value: "foundation-crack-injection" }
+                  - { label: "Wall Crack Repair", value: "wall-crack-repair" }
+                  - { label: "Leaky Bulkhead Repair", value: "leaky-bulkhead-repair" }
+                  - { label: "Carbon Fiber Stitches", value: "carbon-fiber-stitches" }
+                  - { label: "Sewer/Conduit Line Repair", value: "sewer-well-conduit-line-repair" }
+
+              - name: featured
+                label: Featured on Homepage
+                widget: boolean
+                default: false

@@ -7,7 +7,11 @@ import LocationModal from '../components/LocationModal.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SchemaMarkup from '../components/SchemaMarkup.astro';
 import Icon from '../components/Icon.astro';
+import TestimonialCard from '../components/TestimonialCard.astro';
 import { reviewCount } from '../utils/reviews';
+import { getFeatured } from '../utils/testimonials';
+
+const testimonials = getFeatured(4);
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
@@ -203,6 +207,31 @@ const aboutSchema = {
 				<p class="text-lg opacity-75 italic">
 					"We don't just repair concrete; we build legacies—protecting homes and serving as part of a family tradition of excellence."
 				</p>
+			</div>
+		</section>
+
+		<!-- Customer Testimonials -->
+		<section class="py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center mb-16">
+					<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-yellow/10 text-aac-dark rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-yellow">
+						<Icon name="MessageSquare" size={14} /> Real Reviews
+					</div>
+					<h2 class="text-4xl lg:text-5xl font-black tracking-tighter text-aac-dark">
+						What Our Customers Say
+					</h2>
+				</div>
+
+				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+					{testimonials.map(t => (
+						<TestimonialCard
+							quote={t.quote}
+							author={t.author}
+							location={t.location}
+							rating={t.rating}
+						/>
+					))}
+				</div>
 			</div>
 		</section>
 
