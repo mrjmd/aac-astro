@@ -1,0 +1,195 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LocationModal from '../../components/LocationModal.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SchemaMarkup from '../../components/SchemaMarkup.astro';
+import Icon from '../../components/Icon.astro';
+import { getAllPartners, getCategories } from '../../utils/trusted-partners';
+
+const partners = getAllPartners('MA');
+const categories = getCategories('MA');
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Massachusetts', href: '/massachusetts' },
+  { label: 'Trusted Partners' }
+];
+
+const pageSchema = {
+  "@type": "WebPage",
+  "name": "Massachusetts Trusted Partners | Attack A Crack",
+  "description": "Vetted professionals we personally trust and recommend to our customers throughout greater Boston and Massachusetts.",
+  "url": "https://www.attackacrack.com/massachusetts/trusted-partners",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Attack A Crack Foundation Repair"
+  }
+};
+---
+
+<Layout
+  title="MA Trusted Partners"
+  description="Vetted professionals we personally trust and recommend to our customers across Massachusetts. Home inspectors, attorneys, CPAs, and more."
+>
+  <SchemaMarkup schema={pageSchema} />
+  <LocationModal />
+  <Navbar />
+
+  <main class="pt-20 lg:pt-24">
+    <!-- Hero Section -->
+    <section class="py-20 lg:py-28 bg-aac-dark text-white relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-400 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-400" />
+
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/20 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/30">
+            <Icon name="Users" size={14} /> Massachusetts Network
+          </div>
+          <h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-6 leading-none">
+            Our Trusted <span class="text-aac-blue">Partners</span>
+          </h1>
+          <p class="text-xl text-zinc-400 mb-4">
+            After 20+ years of foundation repair work across greater Boston and Massachusetts, we've built an extensive network of professionals we trust and regularly refer our customers to.
+          </p>
+          <p class="text-lg text-zinc-500">
+            Every partner on this page has been personally vetted by our team. Many offer preferred pricing when you mention that <span class="text-aac-yellow font-bold">Attack A Crack sent you</span>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Directory Section -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col lg:flex-row gap-12">
+
+          <!-- Sidebar: Category Filter -->
+          <aside class="lg:w-64 shrink-0">
+            <div class="lg:sticky lg:top-28">
+              <h2 class="text-sm font-black uppercase tracking-widest text-zinc-400 mb-4">Filter by Category</h2>
+              <nav class="flex flex-wrap lg:flex-col gap-2" id="category-nav">
+                <button
+                  class="category-btn active px-4 py-2 rounded-xl text-sm font-bold text-left transition-all bg-aac-blue text-white"
+                  data-category="all"
+                >
+                  All Partners ({partners.length})
+                </button>
+                {categories.map(category => {
+                  const count = partners.filter(p => p.category === category).length;
+                  return (
+                    <button
+                      class="category-btn px-4 py-2 rounded-xl text-sm font-bold text-left transition-all bg-zinc-100 text-zinc-700 hover:bg-zinc-200"
+                      data-category={category}
+                    >
+                      {category} ({count})
+                    </button>
+                  );
+                })}
+              </nav>
+            </div>
+          </aside>
+
+          <!-- Partner Cards Grid -->
+          <div class="flex-1">
+            <div class="grid md:grid-cols-2 gap-8" id="partner-grid">
+              {partners.map(partner => (
+                <div
+                  class="partner-card group p-8 rounded-[32px] border-4 border-aac-dark shadow-[8px_8px_0px_0px_rgba(26,26,26,1)] bg-white hover:shadow-[12px_12px_0px_0px_rgba(26,26,26,1)] hover:translate-y-[-4px] transition-all"
+                  data-category={partner.category}
+                >
+                  <div class="flex items-start justify-between mb-4">
+                    <div>
+                      <h3 class="text-xl font-black text-aac-dark">{partner.name}</h3>
+                      <p class="text-sm font-bold text-aac-blue">{partner.company}</p>
+                    </div>
+                    <span class="inline-flex px-3 py-1 bg-zinc-100 text-zinc-600 rounded-full text-[10px] font-black uppercase tracking-widest shrink-0 ml-4">
+                      {partner.category}
+                    </span>
+                  </div>
+                  <p class="text-zinc-600 text-sm leading-relaxed mb-6">{partner.description}</p>
+                  <a
+                    href={partner.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] hover:gap-3 transition-all"
+                  >
+                    Visit Website <Icon name="ExternalLink" size={14} />
+                  </a>
+                </div>
+              ))}
+            </div>
+
+            <!-- Empty State (hidden by default) -->
+            <div id="empty-state" class="hidden text-center py-16">
+              <p class="text-zinc-400 text-lg">No partners found in this category.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-aac-dark text-white">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-6">
+          Know Someone Who <span class="text-aac-yellow">Belongs Here?</span>
+        </h2>
+        <p class="text-xl text-zinc-400 mb-10">
+          We're always looking to connect with great professionals who share our commitment to quality work and honest service.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:617-668-1677" class="bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white inline-flex items-center justify-center gap-3">
+            <Icon name="Phone" size={24} />
+            617-668-1677
+          </a>
+          <button class="open-modal bg-white/10 text-white px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-3">
+            <Icon name="MessageSquare" size={24} />
+            Get in Touch
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.category-btn');
+    const cards = document.querySelectorAll('.partner-card');
+    const emptyState = document.getElementById('empty-state');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const category = btn.getAttribute('data-category');
+
+        // Update active button
+        buttons.forEach(b => {
+          b.classList.remove('active', 'bg-aac-blue', 'text-white');
+          b.classList.add('bg-zinc-100', 'text-zinc-700', 'hover:bg-zinc-200');
+        });
+        btn.classList.add('active', 'bg-aac-blue', 'text-white');
+        btn.classList.remove('bg-zinc-100', 'text-zinc-700', 'hover:bg-zinc-200');
+
+        // Filter cards
+        let visibleCount = 0;
+        cards.forEach(card => {
+          if (category === 'all' || card.getAttribute('data-category') === category) {
+            (card as HTMLElement).style.display = '';
+            visibleCount++;
+          } else {
+            (card as HTMLElement).style.display = 'none';
+          }
+        });
+
+        // Toggle empty state
+        if (emptyState) {
+          emptyState.classList.toggle('hidden', visibleCount > 0);
+        }
+      });
+    });
+  });
+</script>

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "brian-oboyle",
+    "name": "Brian O'Boyle",
+    "company": "Five Stars Home Inspection, LLC",
+    "category": "Home Inspector",
+    "website": "https://www.fivestarshomeinspection.com/",
+    "description": "Thorough, detail-oriented home inspections throughout the greater Boston area. Brian catches what others miss.",
+    "state": "MA"
+  },
+  {
+    "id": "david-ekelund",
+    "name": "David Ekelund",
+    "company": "Crowley & Cummings, LLC",
+    "category": "Real Estate Law",
+    "website": "https://www.crowleycummings.com/",
+    "description": "Trusted real estate attorneys handling closings, title work, and property disputes across Massachusetts.",
+    "state": "MA"
+  },
+  {
+    "id": "david-mclaren",
+    "name": "David McLaren",
+    "company": "McLaren & Associates (AAFCPAs)",
+    "category": "CPA / Accounting",
+    "website": "https://www.aafcpa.com/",
+    "description": "Full-service accounting firm with decades of experience helping individuals and businesses with tax planning and advisory.",
+    "state": "MA"
+  },
+  {
+    "id": "eric-groft",
+    "name": "Eric Groft",
+    "company": "Two Row Studio",
+    "category": "Web Development",
+    "website": "https://www.tworowstudio.com/",
+    "description": "Creative web development and digital strategy for small businesses. Eric builds sites that actually generate leads.",
+    "state": "MA"
+  },
+  {
+    "id": "evan-schmidt",
+    "name": "Evan Schmidt",
+    "company": "Halide Photography",
+    "category": "Photography",
+    "website": "https://www.halidephoto.com/",
+    "description": "Professional photography for real estate, headshots, and events. Evan delivers polished work on tight timelines.",
+    "state": "MA"
+  },
+  {
+    "id": "jason-highland",
+    "name": "Jason Highland",
+    "company": "O'Connor & Highland Real Estate",
+    "category": "Residential Real Estate",
+    "website": "https://www.oconnorandhighland.com/",
+    "description": "Experienced residential real estate agents serving the greater Boston market. Jason knows the local market inside and out.",
+    "state": "MA"
+  }
+]

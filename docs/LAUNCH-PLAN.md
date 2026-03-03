@@ -182,14 +182,14 @@ Per page: unique value prop, service-specific benefits, referral program details
 - [x] Partners index grid auto-populates from collection (no update needed)
 - [ ] Brainstorm additional personas with Matt (waterproofing companies, basement finishing, real estate attorneys)
 
-### 4B: Preferred/Trusted Partners Page (NEW)
+### 4B: Trusted Partners Page
 
-Shell page for BNI chapter members and other recommended professionals. Content collection so it can grow over time.
+Massachusetts trusted partners directory at `/massachusetts/trusted-partners`. Data-driven from `src/content/settings/trusted-partners.json` with utility functions in `src/utils/trusted-partners.ts`. Sidebar category filtering, partner cards sorted by last name.
 
-- [ ] Create trusted partners content collection schema
-- [ ] Create shell page `src/pages/partners/trusted.astro` (or `/recommended`)
-- [ ] Add initial structure: intro text, empty partner grid, "coming soon" messaging
-- [ ] Add to partners index and navigation
+- [x] Create trusted partners data file (`src/content/settings/trusted-partners.json`) with 6 initial MA partners
+- [x] Create utility module (`src/utils/trusted-partners.ts`) with filtering/sorting helpers
+- [x] Create page at `src/pages/massachusetts/trusted-partners.astro` with hero, sidebar filter, card grid, CTA
+- [x] Add "Trusted Professional Network" banner to MA hub page linking to new page
 - [ ] Add to DecapCMS config for Matt to manage partner entries
 
 ---
