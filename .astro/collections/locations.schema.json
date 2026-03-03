@@ -11,14 +11,20 @@
           "type": "string",
           "enum": [
             "Connecticut",
-            "Massachusetts"
+            "Massachusetts",
+            "Rhode Island",
+            "New Hampshire",
+            "Maine"
           ]
         },
         "stateAbbr": {
           "type": "string",
           "enum": [
             "CT",
-            "MA"
+            "MA",
+            "RI",
+            "NH",
+            "ME"
           ]
         },
         "metaTitle": {

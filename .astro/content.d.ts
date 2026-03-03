@@ -172,6 +172,16 @@ declare module 'astro:content' {
   rendered?: RenderedContent;
   filePath?: string;
 }>;
+"concrete-repair": Record<string, {
+  id: string;
+  render(): Render[".md"];
+  slug: string;
+  body: string;
+  collection: "concrete-repair";
+  data: InferEntrySchema<"concrete-repair">;
+  rendered?: RenderedContent;
+  filePath?: string;
+}>;
 "faqs": Record<string, {
   id: string;
   render(): Render[".md"];
@@ -222,16 +232,6 @@ declare module 'astro:content' {
   rendered?: RenderedContent;
   filePath?: string;
 }>;
-"resurfacing": Record<string, {
-  id: string;
-  render(): Render[".md"];
-  slug: string;
-  body: string;
-  collection: "resurfacing";
-  data: InferEntrySchema<"resurfacing">;
-  rendered?: RenderedContent;
-  filePath?: string;
-}>;
 "services": Record<string, {
   id: string;
   render(): Render[".md"];
@@ -239,6 +239,14 @@ declare module 'astro:content' {
   body: string;
   collection: "services";
   data: InferEntrySchema<"services">;
+  rendered?: RenderedContent;
+  filePath?: string;
+}>;
+"settings": Record<string, {
+  id: string;
+  body?: string;
+  collection: "settings";
+  data: any;
   rendered?: RenderedContent;
   filePath?: string;
 }>;
