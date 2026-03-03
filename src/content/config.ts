@@ -104,6 +104,7 @@ const blogCollection = defineCollection({
     heroImageAlt: z.string().min(10).optional(),
     targetLocation: z.string().optional(), // CT, MA, or specific city
     relatedPosts: z.array(z.string()).optional(),
+    relatedServices: z.array(z.string()).optional(),
     featured: z.boolean().default(false),
     draft: z.boolean().default(false),
   }),

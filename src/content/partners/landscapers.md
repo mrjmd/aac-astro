@@ -40,16 +40,16 @@ Every property you work on has concrete. And New England's freeze-thaw cycles, t
 
 **Exterior Concrete (MA)**
 Our Massachusetts team specializes in repairing and resurfacing:
-- Cracked driveways
-- Deteriorating patios
+- [Cracked driveways](/concrete-repair/driveway)
+- [Deteriorating patios](/concrete-repair/patio)
 - Walkway damage
-- Pool deck repairs
+- [Pool deck repairs](/concrete-repair/pool-deck)
 - Garage floor cracks
 - Stairway repairs
 
 **Foundation Repairs (CT + MA)**
 Throughout Connecticut and Massachusetts, we handle:
-- Foundation wall crack injection
+- [Foundation wall crack injection](/services/foundation-crack-injection)
 - Basement floor crack repair
 - Bulkhead sealing
 - Pipe penetration sealing

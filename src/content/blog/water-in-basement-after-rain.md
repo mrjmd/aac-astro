@@ -8,6 +8,13 @@ author: "Luc Richard"
 category: "guides"
 tags: ["water in basement", "rain leaks", "foundation cracks", "bulkhead leaks", "basement waterproofing"]
 featured: false
+relatedPosts:
+  - "basement-floor-cracks-leaking"
+  - "bulkhead-leaking-causes-and-fixes"
+  - "basement-waterproofing-vs-foundation-repair"
+relatedServices:
+  - "foundation-crack-injection"
+  - "leaky-bulkhead-repair"
 ---
 
 It rained last night, and now there's water on your basement floor. Maybe it's a puddle in the corner, a wet streak down the wall, or a small river flowing in through your bulkhead stairs.

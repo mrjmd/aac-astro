@@ -10,6 +10,13 @@ tags: ["case study", "water intrusion", "Massachusetts", "polyurethane injection
 heroImage: "/images/blog/framingham-leak-hero.jpg"
 heroImageAlt: "Foundation crack repair in progress at Framingham home"
 featured: false
+relatedPosts:
+  - "finished-basement-flooded-shrewsbury"
+  - "leaky-bulkhead-wilmington-repair"
+  - "water-in-basement-after-rain"
+relatedServices:
+  - "foundation-crack-injection"
+  - "wall-crack-repair"
 ---
 
 A homeowner in Framingham, Massachusetts discovered moisture around a basement wall crack that had worsened dramatically. Melting snow transformed a minor concern into a serious problem, with water actively flowing through the foundation.
@@ -22,7 +29,7 @@ The answer is yes—and in fact, wet conditions can actually help ensure a bette
 
 ## The Solution
 
-Our team employed polyurethane injection technology, which functions effectively even in wet conditions. The moisture actually helps ensure complete material penetration, creating a permanent seal from within rather than relying on surface-level patches.
+Our team employed [polyurethane crack injection](/services/foundation-crack-injection) technology, which functions effectively even in wet conditions. The moisture actually helps ensure complete material penetration, creating a permanent seal from within rather than relying on surface-level patches.
 
 The process involved injecting high-quality polyurethane resin that expands upon contact with water, filling every crevice and establishing a watertight barrier. By project completion, the transformation was dramatic—a flooded, compromised basement became dry and secure.
 

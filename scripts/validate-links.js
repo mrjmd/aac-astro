@@ -153,7 +153,7 @@ async function main() {
     }
   }
 
-  // Validate blog - relatedPosts
+  // Validate blog - relatedPosts and relatedServices
   console.log('Validating blog references...');
   for (const post of blog) {
     const related = post.frontmatter?.relatedPosts || [];
@@ -163,6 +163,16 @@ async function main() {
         errors++;
       } else {
         incomingLinks.set(`blog/${relatedId}`, (incomingLinks.get(`blog/${relatedId}`) || 0) + 1);
+      }
+    }
+
+    const relatedSvc = post.frontmatter?.relatedServices || [];
+    for (const svcId of relatedSvc) {
+      if (!serviceIds.has(svcId)) {
+        console.log(`  [ERROR] ${post.id}: relatedService "${svcId}" not found`);
+        errors++;
+      } else {
+        incomingLinks.set(`services/${svcId}`, (incomingLinks.get(`services/${svcId}`) || 0) + 1);
       }
     }
   }

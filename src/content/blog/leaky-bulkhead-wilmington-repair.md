@@ -10,9 +10,15 @@ tags: ["bulkhead repair", "Massachusetts", "case study", "urethane injection"]
 heroImage: "/images/blog/bulkhead-repair-hero.jpg"
 heroImageAlt: "Bulkhead concrete repair in Wilmington"
 featured: false
+relatedPosts:
+  - "basement-leak-framingham-case-study"
+  - "finished-basement-flooded-shrewsbury"
+  - "bulkhead-leaking-causes-and-fixes"
+relatedServices:
+  - "leaky-bulkhead-repair"
 ---
 
-A Wilmington, Massachusetts homeowner faced water intrusion through a deteriorated gasket between her precast concrete bulkhead and foundation. Rather than replacing the entire structure, Attack A Crack performed an injection repair—a more cost-effective and durable solution.
+A Wilmington, Massachusetts homeowner faced water intrusion through a deteriorated gasket between her precast concrete bulkhead and foundation. Rather than replacing the entire structure, Attack A Crack performed a [bulkhead injection repair](/services/leaky-bulkhead-repair)—a more cost-effective and durable solution.
 
 ## The Problem
 

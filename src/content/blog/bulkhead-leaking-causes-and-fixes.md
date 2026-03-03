@@ -9,6 +9,13 @@ category: "guides"
 tags: ["bulkhead repair", "basement waterproofing", "water damage"]
 heroImage: "/images/blog/bulkhead-leak-hero.jpg"
 heroImageAlt: "Water leaking through bulkhead door connection"
+relatedPosts:
+  - "bulkhead-repair-cost-guide-2026"
+  - "water-in-basement-after-rain"
+  - "leaky-bulkhead-wilmington-repair"
+relatedServices:
+  - "leaky-bulkhead-repair"
+  - "foundation-crack-injection"
 ---
 
 If you have a bulkhead door in New England, you've probably dealt with water infiltration. That concrete stairwell leading to your basement is a water magnet during rain and snowmelt. But here's what most homeowners don't realize: the bulkhead door itself usually isn't the problem.
@@ -55,7 +62,7 @@ When water appears in your bulkhead, most people assume the door seal is bad. Th
 
 ## The Solution: Bulkhead Injection
 
-Our repair method addresses the root cause—the failed seal between bulkhead and foundation—from the inside out.
+Our [bulkhead leak repair](/services/leaky-bulkhead-repair) method addresses the root cause—the failed seal between bulkhead and foundation—from the inside out.
 
 ### How It Works
 

@@ -10,6 +10,14 @@ tags: ["foundation repair costs", "pricing", "budgeting", "Connecticut", "Massac
 heroImage: "/images/blog/cost-guide-hero.jpg"
 heroImageAlt: "Calculator and home repair estimate documents"
 featured: true
+relatedPosts:
+  - "bulkhead-repair-cost-guide-2026"
+  - "diy-vs-professional-foundation-repair"
+  - "signs-of-foundation-problems"
+relatedServices:
+  - "foundation-crack-injection"
+  - "wall-crack-repair"
+  - "carbon-fiber-stitches"
 ---
 
 "How much does foundation repair cost?" It's the first question every homeowner asks—and one of the hardest to answer without seeing your specific situation.
@@ -36,7 +44,7 @@ But we understand you need ballpark numbers to plan and budget. So here's an hon
 Not all foundation problems are equal:
 
 **Simple Crack Injection**
-The most affordable repair. We inject flexible urethane or structural epoxy to fill and seal the crack. Most homeowners pay $800-$1,200 per crack.
+The most affordable repair. We inject flexible urethane or structural epoxy to fill and seal the crack through our [foundation crack injection](/services/foundation-crack-injection) process. Most homeowners pay $800-$1,200 per crack.
 
 **Structural Reinforcement**
 If cracks indicate structural movement, carbon fiber stitches may be needed in addition to injection. This adds $200-$300 per stitch location.
@@ -99,7 +107,7 @@ One of the biggest cost factors is timing. Foundation problems that could be fix
 
 ### Step 1: Free Consultation
 
-We offer completely free assessments. Text us photos and we'll:
+We offer completely [free foundation consultations](/services/free-foundation-consultations). Text us photos and we'll:
 - Examine all visible foundation issues
 - Identify root causes
 - Explain repair options

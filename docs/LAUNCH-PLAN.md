@@ -200,10 +200,10 @@ Reference: `docs/SEO-STRATEGY-2026.md`
 
 ### 5A: Service Page Enhancements
 
-- [ ] Add HowTo schema to all 6 service pages
+- [x] Add HowTo schema to all 6 service pages (steps added to all 6 service content files)
 - [ ] Add "cement" keyword variations in H2s where natural ("cement foundation repair" — 2,400 vol, rank #15-17)
 - [ ] Expand FAQ answers — demonstrate expertise, not 2-sentence stubs
-- [ ] Add "Available in CT & MA" sections with city page links
+- [x] Add "Available in CT & MA" sections with city page links (already in template)
 - [ ] Add author/expert attribution
 - [ ] Note: real before/after photos deferred to Phase 8
 
@@ -243,18 +243,18 @@ High-priority new posts:
 
 Blog (Problem) → Service (Solution) → City (Local):
 
-- [ ] Add contextual links from blog posts to relevant service pages
-- [ ] Add "Common in [City]" links from service pages to city pages
-- [ ] Add "Related Articles" section at bottom of blog posts
-- [ ] Cross-link nearby cities on location pages
-- [ ] Link from partner pages to relevant services
-- [ ] Audit and fix orphan pages identified by `validate:links`
+- [x] Add contextual links from blog posts to relevant service pages (17 links across 14 posts + 6 new posts had links already)
+- [x] Add "Common in [City]" links from service pages to city pages (already in template)
+- [x] Add "Related Articles" section at bottom of blog posts (template auto-discovers, now also frontmatter-driven via relatedPosts)
+- [x] Cross-link nearby cities on location pages (already working via nearbyCities frontmatter)
+- [x] Link from partner pages to relevant services (2-4 links added per partner page, 8 pages)
+- [x] Audit and fix orphan pages: 26→2 (added relatedPosts/relatedServices to all 20 blog posts, updated validate-links.js for blog→service refs, fixed concrete repair cross-refs)
 
 ### 5E: Schema Additions
 
-- [ ] HowTo schema on all 6 service pages (covered in 5A)
-- [ ] Verify Article/BlogPosting schema on blog posts
-- [ ] Plan ImageObject schema for before/after photos (when real photos available)
+- [x] HowTo schema on all 6 service pages (steps added to all service content files)
+- [x] Verify Article/BlogPosting schema on blog posts (confirmed present on all 20 posts)
+- [ ] Plan ImageObject schema for before/after photos (deferred — when real photos available)
 
 ---
 

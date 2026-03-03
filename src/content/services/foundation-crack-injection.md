@@ -20,6 +20,15 @@ faqs:
 relatedServices:
   - "wall-crack-repair"
   - "carbon-fiber-stitches"
+steps:
+  - name: "Crack Inspection"
+    text: "We evaluate your foundation crack to determine its cause, whether it's active or dormant, and select the right injection material—flexible urethane for waterproofing or structural epoxy for strength."
+  - name: "Surface Prep & Port Installation"
+    text: "Injection ports are installed along the crack at regular intervals, and the surface is sealed with fast-setting epoxy paste to contain the injection material."
+  - name: "Low-Pressure Injection"
+    text: "Starting from the lowest port, we inject resin under controlled pressure, moving upward as each port fills to ensure the entire crack is sealed from interior to exterior soil."
+  - name: "Cure & Cleanup"
+    text: "The injection material cures within hours. We remove the ports, clean the surface, and confirm a complete seal—backed by our lifetime guarantee."
 ---
 
 ## Foundation Crack Injection: The Science of Permanent Repair

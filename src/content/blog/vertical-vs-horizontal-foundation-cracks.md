@@ -10,6 +10,14 @@ tags: ["foundation cracks", "structural damage", "basement repair"]
 heroImage: "/images/blog/crack-types-hero.jpg"
 heroImageAlt: "Close-up of different foundation crack patterns"
 featured: true
+relatedPosts:
+  - "horizontal-foundation-cracks"
+  - "signs-of-foundation-problems"
+  - "foundation-settling-when-to-worry"
+relatedServices:
+  - "wall-crack-repair"
+  - "carbon-fiber-stitches"
+  - "foundation-crack-injection"
 ---
 
 When you spot a crack in your foundation, your first instinct might be to panic. But here's the truth: not all foundation cracks are created equal, and understanding the difference could save you thousands of dollars—or prevent a serious structural failure.
@@ -126,10 +134,10 @@ Contact a foundation specialist if you notice:
 At Attack A Crack, we use proven injection techniques to permanently repair foundation cracks:
 
 **For Most Vertical Cracks:**
-Flexible polyurethane injection fills the entire crack from inside to outside. The material remains flexible, accommodating minor movement without re-cracking.
+[Flexible polyurethane injection](/services/foundation-crack-injection) fills the entire crack from inside to outside. The material remains flexible, accommodating minor movement without re-cracking.
 
 **For Structural Cracks:**
-Epoxy injection creates a bond stronger than the original concrete, plus carbon fiber stitches add reinforcement to prevent further movement.
+Epoxy injection creates a bond stronger than the original concrete, plus [carbon fiber stitches](/services/carbon-fiber-stitches) add reinforcement to prevent further movement.
 
 **For Bowing Walls:**
 Horizontal cracks with bowing require stabilization. We assess severity and recommend appropriate solutions, which may include carbon fiber straps or wall anchors.

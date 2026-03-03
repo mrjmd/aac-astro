@@ -10,6 +10,13 @@ tags: ["foundation inspection", "warning signs", "homeowner tips", "maintenance"
 heroImage: "/images/blog/foundation-check-hero.jpg"
 heroImageAlt: "Homeowner inspecting foundation for cracks"
 featured: true
+relatedPosts:
+  - "signs-of-foundation-problems"
+  - "10-essential-tips-worry-free-foundation"
+  - "foundation-settling-when-to-worry"
+relatedServices:
+  - "free-foundation-consultations"
+  - "foundation-crack-injection"
 ---
 
 Your home's foundation is the backbone of its structural integrity. If it's compromised, small issues can quickly turn into costly repairs. Here's how to check your foundation for problems.
@@ -57,7 +64,7 @@ Your home's foundation is the backbone of its structural integrity. If it's comp
 
 ## When to Call a Professional
 
-If you notice any of these warning signs, contact Attack A Crack for a free consultation. Addressing issues early can prevent costly foundation replacements.
+If you notice any of these warning signs, contact Attack A Crack for a [free foundation consultation](/services/free-foundation-consultations). Addressing issues early can prevent costly foundation replacements.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

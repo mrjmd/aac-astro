@@ -52,7 +52,7 @@ We don't inflate issues to maximize sales. If a crack is cosmetic, we'll say so.
 ### Common Real Estate Scenarios
 
 **Pre-Listing Repairs**
-Help your sellers address foundation issues before listing. A completed repair with warranty is far better than a disclosure of an unresolved problem.
+Help your sellers address foundation issues before listing. A completed [foundation crack injection](/services/foundation-crack-injection) with warranty is far better than a disclosure of an unresolved problem.
 
 **Buyer Inspection Findings**
 When inspectors flag foundation cracks, we provide rapid assessments and clear explanations. Often, issues look worse than they are—we'll give your buyers the facts.
@@ -70,7 +70,7 @@ Need repairs completed before closing? We'll work with your timeline and provide
 
 ### Get Started
 
-Add Attack A Crack to your trusted vendor list. When foundation questions arise, you'll have a reliable partner ready to help close the deal.
+Add Attack A Crack to your trusted vendor list. Schedule a [free foundation consultation](/services/free-foundation-consultations) and when foundation questions arise, you'll have a reliable partner ready to help close the deal.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

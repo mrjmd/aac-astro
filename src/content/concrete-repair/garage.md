@@ -18,6 +18,7 @@ faqs:
 relatedServices:
   - "driveway"
   - "patio"
+  - "stairway"
 ---
 
 ## Garage Floor Repair in Massachusetts

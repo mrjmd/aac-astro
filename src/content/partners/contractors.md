@@ -29,7 +29,7 @@ faqs:
 
 ## Foundation Specialists for General Contractors
 
-Foundation crack injection is specialized work requiring specific equipment, materials, and expertise. Instead of trying to handle it in-house, partner with specialists who do this work every day.
+Foundation crack injection is specialized work requiring specific equipment, materials, and expertise. Instead of trying to handle it in-house, partner with specialists who do [foundation crack injection](/services/foundation-crack-injection) every day.
 
 ### Why Contractors Sub to Us
 
@@ -52,7 +52,7 @@ When you sub work to us, your reputation is on the line. We understand that and 
 Before framing and drywall, foundation cracks need to be addressed. We fit into your schedule and get the foundation sealed before you proceed.
 
 **Renovation Projects**
-Renovating an older home often reveals foundation issues. We assess and repair so you can continue with confidence.
+Renovating an older home often reveals foundation issues, from [wall cracks](/services/wall-crack-repair) to water infiltration. We assess and repair so you can continue with confidence.
 
 **Real Estate Transactions**
 General contractors often coordinate repairs before closing. We work with your timeline to get deals done.
@@ -85,7 +85,7 @@ We work with your schedule:
 
 ### Join Our Contractor Network
 
-Let's establish a working relationship. When foundation issues come up on your projects, you'll have a reliable specialist to call.
+Let's establish a working relationship. Start with a [free foundation consultation](/services/free-foundation-consultations) and when foundation issues come up on your projects, you'll have a reliable specialist to call.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

@@ -9,6 +9,13 @@ category: "guides"
 tags: ["DIY repair", "foundation cracks", "when to call a professional"]
 heroImage: "/images/blog/diy-vs-pro-hero.jpg"
 heroImageAlt: "Homeowner examining a foundation crack"
+relatedPosts:
+  - "foundation-repair-cost-guide-2026"
+  - "basement-waterproofing-vs-foundation-repair"
+  - "10-essential-tips-worry-free-foundation"
+relatedServices:
+  - "foundation-crack-injection"
+  - "wall-crack-repair"
 ---
 
 Here's something most foundation repair companies won't tell you: **not every crack needs professional repair.** Some issues you can absolutely handle yourself, while others require expert intervention.
@@ -66,7 +73,7 @@ Small areas where the concrete surface is flaking or deteriorating.
 
 If water is coming through a crack—even occasionally—DIY surface treatments won't work. Here's why:
 
-Surface sealers only address the visible crack. Water entering your foundation travels through the entire wall thickness (8-10 inches of concrete). Professional injection fills the complete crack path from inside to outside.
+Surface sealers only address the visible crack. Water entering your foundation travels through the entire wall thickness (8-10 inches of concrete). [Professional crack injection](/services/foundation-crack-injection) fills the complete crack path from inside to outside.
 
 **DIY risk:** Surface sealing can trap water inside the wall, leading to freeze-thaw damage and larger cracks.
 

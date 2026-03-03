@@ -20,6 +20,17 @@ faqs:
 relatedServices:
   - "wall-crack-repair"
   - "foundation-crack-injection"
+steps:
+  - name: "Crack Assessment & Structural Evaluation"
+    text: "We evaluate the crack pattern, measure displacement, and determine whether the crack is structural, active, or both—so we choose the right reinforcement approach."
+  - name: "Surface Grinding & Preparation"
+    text: "We grind a shallow channel across the crack where each carbon fiber stitch will be installed, and clean the concrete surface for optimal bonding."
+  - name: "Carbon Fiber Application"
+    text: "Carbon fiber fabric is saturated with structural epoxy and embedded into the prepared channels, bonding permanently to the concrete on both sides of the crack."
+  - name: "Crack Injection"
+    text: "If the crack is leaking or has voids, we inject it with urethane or epoxy resin to seal and fill it completely before the stitches cure."
+  - name: "Cure & Final Inspection"
+    text: "Once cured, we inspect every stitch for proper bond, smooth the surface for a clean finish, and confirm the crack is fully stabilized."
 ---
 
 ## Carbon Fiber Foundation Repair: Maximum Strength, Minimal Intrusion

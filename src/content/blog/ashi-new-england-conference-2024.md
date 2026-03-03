@@ -10,6 +10,12 @@ tags: ["events", "home inspectors", "Massachusetts", "industry news"]
 heroImage: "/images/blog/ashi-conference-hero.jpg"
 heroImageAlt: "Attack A Crack at ASHI New England Conference"
 featured: false
+relatedPosts:
+  - "nar-nxt-boston-2024-partnerships"
+  - "how-to-check-your-foundation"
+  - "signs-of-foundation-problems"
+relatedServices:
+  - "free-foundation-consultations"
 ---
 
 Matt Davis attended the American Society of Home Inspectors (ASHI) New England Conference on September 9-10 in Springfield, Massachusetts. The event featured discussions ranging from broad market and political forces to the technical complexities of inspecting 18th and 19th-century homes to the science of moisture intrusion.
@@ -26,7 +32,7 @@ New state laws now prohibit removing home inspections from real estate transacti
 
 ### Attack A Crack's Response
 
-We remain neutral on the legislation while monitoring its impact. We offer free evaluations and photo-based assessments to complement formal inspections.
+We remain neutral on the legislation while monitoring its impact. We offer [free evaluations and photo-based assessments](/services/free-foundation-consultations) to complement formal inspections.
 
 Additionally, Attack A Crack became an ASHI New England affiliate member to strengthen relationships with home inspectors and industry professionals.
 

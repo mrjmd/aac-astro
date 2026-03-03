@@ -20,6 +20,15 @@ faqs:
 relatedServices:
   - "wall-crack-repair"
   - "foundation-crack-injection"
+steps:
+  - name: "Bulkhead Joint Assessment"
+    text: "We inspect the connection between your precast bulkhead and foundation wall, identifying where the seal has failed and how water is entering."
+  - name: "Surface Preparation"
+    text: "We remove deteriorated gasket material and clean the joint thoroughly so our injection bonds directly to the concrete."
+  - name: "Urethane Injection"
+    text: "Flexible urethane foam is injected into the bulkhead-to-foundation joint, expanding to fill every void and creating a waterproof seal that stays flexible as your home moves."
+  - name: "Seal Verification & Cleanup"
+    text: "We confirm the seal is complete, remove excess material, and clean up our work area. Your bulkhead is waterproof immediately."
 ---
 
 ## Bulkhead Door Leak Repair: A Permanent Solution

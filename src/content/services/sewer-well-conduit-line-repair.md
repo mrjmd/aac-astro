@@ -20,6 +20,15 @@ faqs:
 relatedServices:
   - "wall-crack-repair"
   - "foundation-crack-injection"
+steps:
+  - name: "Identify Leak Points"
+    text: "We locate every pipe, conduit, and utility line penetration in your foundation and identify which ones are leaking or at risk of failure."
+  - name: "Clean & Prep Around Pipe"
+    text: "We remove any deteriorated sealant or debris around the penetration and install injection ports to prepare for a complete seal."
+  - name: "Urethane Injection"
+    text: "Specialized flexible urethane is injected around the pipe penetration, flowing into every void and expanding to create a watertight bond between pipe and concrete."
+  - name: "Verify Seal & Cleanup"
+    text: "We confirm each penetration is fully sealed, remove excess material, and clean up. The repair is waterproof immediately and stays flexible for the life of your home."
 ---
 
 ## Utility Line Penetration Sealing

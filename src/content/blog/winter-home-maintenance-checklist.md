@@ -10,6 +10,13 @@ tags: ["winter maintenance", "seasonal tips", "home protection", "prevention"]
 heroImage: "/images/blog/winter-maintenance-hero.jpg"
 heroImageAlt: "Home prepared for winter weather"
 featured: false
+relatedPosts:
+  - "10-essential-tips-worry-free-foundation"
+  - "how-to-check-your-foundation"
+  - "signs-of-foundation-problems"
+relatedServices:
+  - "free-foundation-consultations"
+  - "foundation-crack-injection"
 ---
 
 Winter weather poses significant challenges to home integrity. This guide covers preparation strategies across heating, plumbing, insulation, exterior maintenance, and safety measures.
@@ -69,7 +76,7 @@ Structural protection involves:
 
 ## Foundation Protection
 
-Winter's freeze-thaw cycles can wreak havoc on your home's foundation, causing cracks and leaks. Attack A Crack offers free foundation repair consultations and inspections to address potential issues before they escalate into costly repairs.
+Winter's freeze-thaw cycles can wreak havoc on your home's foundation, causing cracks and leaks. Attack A Crack offers [free foundation repair consultations](/services/free-foundation-consultations) and inspections to address potential issues before they escalate into costly repairs.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

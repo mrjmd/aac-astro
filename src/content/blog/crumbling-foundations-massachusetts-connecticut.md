@@ -10,6 +10,13 @@ tags: ["crumbling foundations", "pyrrhotite", "Massachusetts", "Connecticut"]
 heroImage: "/images/blog/crumbling-foundation-hero.jpg"
 heroImageAlt: "Crumbling concrete foundation showing deterioration"
 featured: false
+relatedPosts:
+  - "signs-of-foundation-problems"
+  - "foundation-settling-when-to-worry"
+  - "diy-vs-professional-foundation-repair"
+relatedServices:
+  - "wall-crack-repair"
+  - "foundation-crack-injection"
 ---
 
 This article addresses the crumbling foundation crisis affecting Massachusetts and Connecticut homeowners, caused by pyrrhotite contamination in concrete foundations.
@@ -32,6 +39,8 @@ Homeowners should monitor for:
 - **Rust-colored stains** or white powder on surfaces
 - **Visible flaking**, bowing, or crumbling
 - **Damage on home exteriors** or under basement drywall
+
+If you notice cracking or bowing before full deterioration sets in, [professional wall crack repair](/services/wall-crack-repair) can help stabilize the damage and prevent further water infiltration.
 
 ## How Attack A Crack Can Help
 

@@ -9,6 +9,13 @@ category: "guides"
 tags: ["basement waterproofing", "foundation repair", "water infiltration"]
 heroImage: "/images/blog/waterproofing-vs-repair-hero.jpg"
 heroImageAlt: "Basement with water infiltration issues"
+relatedPosts:
+  - "water-in-basement-after-rain"
+  - "basement-floor-cracks-leaking"
+  - "diy-vs-professional-foundation-repair"
+relatedServices:
+  - "foundation-crack-injection"
+  - "wall-crack-repair"
 ---
 
 When water appears in your basement, companies are eager to sell you comprehensive waterproofing systems—interior drains, sump pumps, vapor barriers, and more. These systems can cost $10,000 to $30,000 or more.
@@ -19,7 +26,7 @@ But here's what the waterproofing industry doesn't want you to know: **many base
 
 ### Foundation Crack Repair
 
-**What it is:** Sealing the specific points where water enters your foundation using injection techniques.
+**What it is:** Sealing the specific points where water enters your foundation using [injection techniques](/services/foundation-crack-injection).
 
 **Best for:**
 - Water entering through visible cracks in walls

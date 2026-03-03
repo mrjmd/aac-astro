@@ -8,6 +8,12 @@ author: "Matt Davis"
 category: "cost-guides"
 tags: ["bulkhead repair cost", "bulkhead sealing", "cellar door repair", "pricing"]
 featured: false
+relatedPosts:
+  - "foundation-repair-cost-guide-2026"
+  - "bulkhead-leaking-causes-and-fixes"
+  - "leaky-bulkhead-wilmington-repair"
+relatedServices:
+  - "leaky-bulkhead-repair"
 ---
 
 If your bulkhead (cellar door) leaks every time it rains, you're wondering what it'll cost to fix. The answer depends on what kind of repair you need, and the right repair might be less expensive than you think.

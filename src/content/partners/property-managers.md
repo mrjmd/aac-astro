@@ -44,7 +44,7 @@ This cycle costs you money in:
 
 ### Our Approach: Fix It Once, Fix It Right
 
-We don't do temporary patches. Our injection repairs fill foundation cracks completely, creating a permanent seal that lasts the lifetime of the building. One repair. One cost. Done.
+We don't do temporary patches. Our [foundation crack injection](/services/foundation-crack-injection) fills cracks completely, creating a permanent seal that lasts the lifetime of the building. One repair. One cost. Done.
 
 ### Property Management Services
 
@@ -67,7 +67,7 @@ Every repair comes with complete documentation:
 ### Common Property Management Scenarios
 
 **Recurring Basement Water**
-The most common call we get from property managers. Water comes in during rain, tenants complain, temporary fixes fail. Our injection method solves this permanently.
+The most common call we get from property managers. Water comes in during rain, tenants complain, temporary fixes fail. Our injection method solves this permanently. We also address [leaky bulkheads](/services/leaky-bulkhead-repair) that let water pour in during storms.
 
 **Pre-Purchase Inspection Issues**
 Adding a property to your portfolio? We provide honest assessments of foundation condition and repair costs.
@@ -88,7 +88,7 @@ Need documentation for insurance purposes? We provide detailed reports of damage
 
 ### Start Protecting Your Portfolio
 
-Let's discuss your property management needs. We'll create a plan that fits your portfolio and budget.
+Let's discuss your property management needs. Start with a [free foundation consultation](/services/free-foundation-consultations) and we'll create a plan that fits your portfolio and budget.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

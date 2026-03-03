@@ -10,6 +10,13 @@ tags: ["case study", "settling crack", "water intrusion", "Massachusetts"]
 heroImage: "/images/blog/shrewsbury-basement-hero.jpg"
 heroImageAlt: "Basement crack repair in Shrewsbury home"
 featured: false
+relatedPosts:
+  - "basement-leak-framingham-case-study"
+  - "leaky-bulkhead-wilmington-repair"
+  - "basement-floor-cracks-leaking"
+relatedServices:
+  - "foundation-crack-injection"
+  - "wall-crack-repair"
 ---
 
 A homeowner in Shrewsbury discovered their finished basement had flooded due to water intrusion through a settling crack concealed behind wall paneling. The damage required extensive cleanup and repairs, but the underlying cause—a significant structural crack—had gone undetected until it began leaking.
@@ -20,7 +27,7 @@ Our team inspected the property and determined the crack posed no structural ris
 
 ## The Solution
 
-The repair employed our proprietary crack repair method. The homeowner appreciated our reasonable pricing and lifetime guarantee—if the repaired crack ever leaked again, they wouldn't pay a penny for repairs.
+The repair employed our [foundation crack injection](/services/foundation-crack-injection) method. The homeowner appreciated our reasonable pricing and lifetime guarantee—if the repaired crack ever leaked again, they wouldn't pay a penny for repairs.
 
 ## Peace of Mind
 

@@ -10,6 +10,13 @@ tags: ["events", "real estate", "Massachusetts", "partnerships"]
 heroImage: "/images/blog/nar-nxt-hero.jpg"
 heroImageAlt: "Attack A Crack team at NAR NXT conference"
 featured: false
+relatedPosts:
+  - "ashi-new-england-conference-2024"
+  - "10-essential-tips-worry-free-foundation"
+  - "signs-of-foundation-problems"
+relatedServices:
+  - "free-foundation-consultations"
+  - "sewer-well-conduit-line-repair"
 ---
 
 Attack A Crack partners Luc Richard and Matt Davis attended the NAR Conference in Boston. We were excited about connecting with realtors—these partnerships naturally extend our work and create smoother transactions for everyone involved.
@@ -22,7 +29,7 @@ During lunch with a local realtor, we shared insights about foundation repair's 
 
 ## The Foundation Repair Connection
 
-Foundation issues frequently emerge during home inspections, potentially causing delays and buyer stress. We explained how Attack A Crack's responsive repair process maintains transaction momentum by addressing concerns promptly and professionally.
+Foundation issues frequently emerge during home inspections, potentially causing delays and buyer stress. We explained how Attack A Crack's responsive repair process maintains transaction momentum by addressing concerns promptly and professionally. Our [free foundation consultations](/services/free-foundation-consultations) give buyers and sellers quick answers without slowing down the deal.
 
 ## The Lifetime Guarantee Advantage
 

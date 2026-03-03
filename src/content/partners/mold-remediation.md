@@ -34,7 +34,7 @@ You know better than anyone — mold remediation without addressing the moisture
 ### Why Mold Companies Partner With Us
 
 **We Fix What Causes Your Callbacks**
-The #1 reason mold returns after remediation is ongoing moisture. Foundation cracks are one of the most common — and most fixable — sources of basement moisture. By referring your clients to us, you help them solve the complete problem.
+The #1 reason mold returns after remediation is ongoing moisture. Foundation cracks are one of the most common — and most fixable — sources of basement moisture. Our [foundation crack injection](/services/foundation-crack-injection) seals cracks permanently, and by referring your clients to us, you help them solve the complete problem.
 
 **The Problem-Solution Chain**
 Here's what we see repeatedly:
@@ -51,7 +51,7 @@ Here's what we see repeatedly:
 ### How We Work Together
 
 **During Remediation**
-If you discover foundation cracks during your work, refer the homeowner to us. We can often schedule our repair to coordinate with your timeline.
+If you discover foundation cracks during your work, refer the homeowner to us. We handle everything from [wall crack repair](/services/wall-crack-repair) to full basement sealing, and we can often schedule our repair to coordinate with your timeline.
 
 **After Remediation**
 If mold was removed but the water source wasn't addressed, your clients are at risk. We provide the permanent fix that protects your work.

@@ -8,6 +8,13 @@ author: "Matt Davis"
 category: "guides"
 tags: ["basement floor cracks", "water leaking", "hydrostatic pressure", "foundation repair"]
 featured: false
+relatedPosts:
+  - "water-in-basement-after-rain"
+  - "basement-waterproofing-vs-foundation-repair"
+  - "signs-of-foundation-problems"
+relatedServices:
+  - "foundation-crack-injection"
+  - "wall-crack-repair"
 ---
 
 You walk downstairs and there it is: water seeping through a crack in your basement floor. It might be a thin trickle or a slow, persistent weep. Either way, you need to understand what's happening before you fix it.

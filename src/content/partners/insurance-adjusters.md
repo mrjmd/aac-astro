@@ -50,10 +50,10 @@ Most foundation crack repairs are completed in a single visit, typically in 2-4 
 ### Common Insurance Scenarios We Handle
 
 **Water Intrusion Through Foundation Cracks**
-The most common claim we see. Cracks in poured concrete or block foundations allow water into the basement. Our injection method seals cracks permanently from the interior — no excavation needed.
+The most common claim we see. Cracks in poured concrete or block foundations allow water into the basement. Our [foundation crack injection](/services/foundation-crack-injection) method seals cracks permanently from the interior — no excavation needed.
 
 **Storm Damage Follow-Up**
-Heavy rain events often reveal existing foundation vulnerabilities. We can assess whether damage is storm-related or pre-existing, and provide clear documentation either way.
+Heavy rain events often reveal existing foundation vulnerabilities. For structural concerns, we offer [carbon fiber reinforcement](/services/carbon-fiber-stitches) in addition to crack injection. We assess whether damage is storm-related or pre-existing and provide clear documentation either way.
 
 **Pre-Sale Inspection Findings**
 When a home sale triggers an inspection that reveals foundation issues, we provide rapid assessment and repair to keep the transaction on track.

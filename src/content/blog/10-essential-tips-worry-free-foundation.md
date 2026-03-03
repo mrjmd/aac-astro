@@ -10,13 +10,20 @@ tags: ["foundation maintenance", "prevention", "homeowner tips", "drainage"]
 heroImage: "/images/blog/foundation-tips-hero.jpg"
 heroImageAlt: "Foundation maintenance and inspection"
 featured: false
+relatedPosts:
+  - "how-to-check-your-foundation"
+  - "signs-of-foundation-problems"
+  - "winter-home-maintenance-checklist"
+relatedServices:
+  - "free-foundation-consultations"
+  - "foundation-crack-injection"
 ---
 
 A strong foundation is key to maintaining your home's stability and value. Preventive upkeep helps avoid expensive repairs and structural damage over time.
 
 ## 1. Fix Minor Cracks Early
 
-Address hairline fractures in concrete by cleaning and filling them with epoxy or concrete repair products. This prevents water seepage and further deterioration.
+Address hairline fractures in concrete by cleaning and filling them with epoxy or concrete repair products. For cracks that are leaking or wider than a hairline, [professional crack injection](/services/foundation-crack-injection) prevents water seepage and further deterioration.
 
 ## 2. Maintain Consistent Moisture Levels
 
@@ -56,7 +63,7 @@ Look for mold, mildew, or moisture in basements, crawl spaces, and around founda
 
 ## Get a Professional Assessment
 
-Attack A Crack offers free consultations to evaluate your foundation's condition. Routine maintenance and early detection prevent minor issues from becoming costly structural repairs.
+Attack A Crack offers [free foundation consultations](/services/free-foundation-consultations) to evaluate your foundation's condition. Routine maintenance and early detection prevent minor issues from becoming costly structural repairs.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

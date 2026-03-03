@@ -48,13 +48,13 @@ When you spot a foundation issue on a job:
 ### What We Fix That You'll See
 
 **Foundation Wall Cracks**
-Vertical, horizontal, and diagonal cracks in poured concrete or block walls. These are the most common source of basement water intrusion.
+Vertical, horizontal, and diagonal cracks in poured concrete or block walls. Our [foundation crack injection](/services/foundation-crack-injection) is the most effective way to seal these permanently.
 
 **Pipe Penetration Leaks**
-Where sewer lines, water mains, or conduit pass through the foundation wall. These gaps are often the source of the "mystery leak" near utility areas.
+Where sewer lines, water mains, or conduit pass through the foundation wall. Our [sewer, well, and conduit line repair](/services/sewer-well-conduit-line-repair) service permanently seals these gaps that are often the source of the "mystery leak" near utility areas.
 
 **Bulkhead Leaks**
-Precast concrete bulkheads (cellar doors) are notorious for leaking. We seal the joint between the bulkhead and the foundation permanently.
+Precast concrete bulkheads (cellar doors) are notorious for leaking. Our [leaky bulkhead repair](/services/leaky-bulkhead-repair) service seals the joint between the bulkhead and the foundation permanently.
 
 **Floor Cracks**
 Cracks in basement slabs that allow water to seep up from below, especially during heavy rain or snowmelt.

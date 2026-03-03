@@ -58,13 +58,13 @@ We treat your clients with the same professionalism you do:
 ### Common Inspection Findings We Address
 
 **Vertical Shrinkage Cracks**
-The most common finding. These hairline cracks often don't need repair, but we'll assess and give honest guidance.
+The most common finding. These hairline cracks often don't need repair, but when they do, [foundation crack injection](/services/foundation-crack-injection) provides a permanent seal.
 
 **Diagonal Corner Cracks**
 Can indicate settling or structural stress. We determine the cause and recommend appropriate action.
 
 **Horizontal Cracks**
-A more serious finding. We assess severity and provide options from monitoring to reinforcement.
+A more serious finding. We assess severity and provide options from monitoring to [carbon fiber reinforcement](/services/carbon-fiber-stitches).
 
 **Water Infiltration Evidence**
 Stains, efflorescence, or active leaks. We identify entry points and provide permanent solutions.
@@ -75,7 +75,7 @@ Failed DIY or previous professional repairs. We assess what went wrong and how t
 ### What Your Clients Can Expect
 
 **Free Consultation**
-No charge for assessments. Clients get honest information without financial pressure.
+We offer a [free foundation consultation](/services/free-foundation-consultations) with no obligation. Clients get honest information without financial pressure.
 
 **Clear Communication**
 We explain our findings in plain language. No scare tactics, no technical jargon—just clear information.

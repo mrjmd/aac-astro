@@ -20,6 +20,15 @@ faqs:
 relatedServices:
   - "wall-crack-repair"
   - "foundation-crack-injection"
+steps:
+  - name: "Contact Us"
+    text: "Call, text, or send us photos of your foundation concern. Most homeowners start by texting photos—it's the fastest way to get expert eyes on your problem."
+  - name: "Expert Review"
+    text: "One of our technicians reviews your photos or information, evaluating crack patterns, signs of water infiltration, and any evidence of structural movement."
+  - name: "On-Site Assessment"
+    text: "If needed, we schedule an in-person visit where a technician examines your foundation hands-on and answers all your questions."
+  - name: "Written Quote & Recommendations"
+    text: "You receive a clear, itemized quote with honest repair recommendations—or we tell you it's a DIY fix or doesn't need repair at all."
 ---
 
 ## Free Foundation Consultations: Honest Answers, No Pressure
