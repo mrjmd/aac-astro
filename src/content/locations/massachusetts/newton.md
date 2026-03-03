@@ -26,7 +26,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Newton?"
-    answer: "Foundation repair in Newton typically costs between $600 and $3,000 for crack injection. Newton's larger homes and varied foundation types can affect project scope. We provide free estimates for properties throughout Newton's 13 villages."
+    answer: "Foundation repair in Newton typically costs between $800 and $1,200 for crack injection. Newton's larger homes and varied foundation types can affect project scope. We provide free estimates for properties throughout Newton's 13 villages."
   - question: "Why do Newton homes experience basement water problems?"
     answer: "Newton's rolling terrain and mature landscaping often direct water toward foundations. Many homes feature older drainage systems that have deteriorated or were never adequate for modern waterproofing standards. The city's clay-heavy soils compound these issues."
   - question: "Do you service all Newton villages?"

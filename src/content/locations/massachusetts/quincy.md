@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Quincy?"
-    answer: "Foundation repair in Quincy typically costs between $500 and $2,500 for crack injection. Homes near the waterfront in areas like Squantum or Houghs Neck may have additional moisture concerns that could affect repair scope. We offer free estimates for all Quincy homeowners."
+    answer: "Foundation repair in Quincy typically costs between $800 and $1,200 for crack injection. Homes near the waterfront in areas like Squantum or Houghs Neck may have additional moisture concerns that could affect repair scope. We offer free estimates for all Quincy homeowners."
   - question: "Why are basement leaks common in Quincy?"
     answer: "Quincy's coastal location and granite bedrock create unique drainage challenges. Water can't easily percolate through the underlying rock, leading to increased hydrostatic pressure against foundations. Additionally, many Quincy homes were built during the post-war boom with concrete that's now showing its age."
   - question: "Do you service the Quincy waterfront areas?"

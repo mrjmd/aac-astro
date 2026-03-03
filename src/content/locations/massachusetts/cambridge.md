@@ -26,7 +26,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Cambridge?"
-    answer: "Foundation repair in Cambridge typically costs between $600 and $3,500 for crack injection, depending on foundation type and condition. Cambridge's predominantly historic housing stock often requires specialized techniques that reflect in pricing. Free estimates available."
+    answer: "Foundation repair in Cambridge typically costs between $800 and $1,200 for crack injection, depending on foundation type and condition. Cambridge's predominantly historic housing stock often requires specialized techniques that reflect in pricing. Free estimates available."
   - question: "Do you work on Victorian homes in Cambridge?"
     answer: "Absolutely. Cambridge's Victorian homes—from the mansions of Brattle Street to the worker housing of East Cambridge—are our specialty. We use techniques specifically designed for the fieldstone, brick, and rubble foundations common in these historic properties."
   - question: "Why are Cambridge basements so prone to water problems?"

@@ -1,288 +1,453 @@
 # Attack A Crack: Launch Plan
 
+> **Canonical task tracker.** Work through phases in order, checking off items as committed. New sessions: read this file first to find the next unchecked item.
+
 ## Overview
 
-**Current State:** Sessions 0-3 complete, validation passing, 60+ pages built.
-**Goal:** Production-ready launch with comprehensive content, proper linking, and all quality gates passing.
+**Current State:** Sessions 0-3 complete, 70+ pages built, CI/CD passing, validation pipeline enforced.
+**Goal:** Production-ready launch with accurate content, comprehensive local coverage, and all quality gates passing.
 **Deployment:** https://aac-website-theta.vercel.app/
 
 ### User Decisions (Confirmed)
+
 - Navigation: Simple hub links (not dropdowns)
-- Team pages: Keep hardcoded only, remove content files
+- Team pages: Hardcoded only (no content files)
 - City count for launch: 80 cities (20 CT, 30 MA, 10 each RI/NH/ME)
 - Content scope: Services, FAQ, blog posts, About page story/values, Partners with testimonials
+- "Repair" not "resurfacing" — 2-3x search volume advantage
 
 ---
 
-## CI/CD Pipeline Status ✅ COMPLETE
+## Sessions 0-3: COMPLETE (Historical Record)
 
-All CI/CD infrastructure from MIGRATION-PLAN.md Phase 9-10 is implemented:
+<details>
+<summary>Click to expand completed sessions</summary>
 
-### Automated Quality Gates (`.github/workflows/quality.yml`)
-- ✅ Build validation
-- ✅ JSON-LD schema validation (`npm run validate:schema`)
-- ✅ Image optimization checks (`npm run check:images`)
-- ✅ SEO metadata checks (`npm run check:seo`)
-- ✅ Accessibility checks (`npm run check:a11y`)
-- ✅ Link validation (`npm run validate:links`)
-- ✅ Lighthouse CI with thresholds (95% a11y, 95% SEO required)
-
-### Validation Scripts (`scripts/`)
-- ✅ `validate-schema.js` - JSON-LD validation
-- ✅ `check-images.js` - Image optimization
-- ✅ `check-seo.js` - Meta tag validation
-- ✅ `check-a11y.js` - Accessibility checks
-- ✅ `validate-links.js` - Broken link detection
-
-### Decap CMS (`public/admin/`)
-- ✅ `index.html` - CMS loader
-- ✅ `config.yml` - Blog collection schema with required fields
-
-### Vercel Configuration
-- ✅ `vercel.json` - 301 redirects from old URLs
-- ✅ `lighthouserc.js` - Lighthouse thresholds
-- ✅ Cache headers configured
-
-### Remaining Manual Setup (Matt)
-- [ ] Add GitHub secrets: VERCEL_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID
-- [ ] Configure GitHub OAuth for Decap CMS (editor authentication)
-
----
-
-## Session 0: Immediate Technical Tasks ✅ COMPLETE
+### Session 0: Immediate Technical Tasks
 
 - [x] Block robots.txt to prevent staging indexing
 - [x] Install @vercel/speed-insights
 - [x] Add SpeedInsights component to Layout.astro
-- [x] Create this LAUNCH-PLAN.md document
+- [x] Create LAUNCH-PLAN.md document
 
----
+### Session 1: Documentation & Quick Fixes
 
-## Session 1: Documentation & Quick Fixes ✅ COMPLETE
+- [x] Archive legacy docs (SEO.md, KEYWORD-STRATEGY.md, MIGRATION-PLAN.md, REMAINING-TASKS.md, SEO-ENHANCEMENT-PLAN.md)
+- [x] Fix all footer links (blog, partnerships, services, about, state hubs)
+- [x] Remove team content files (keep hardcoded on About page)
+- [x] Create Areas We Serve hub page with all 5 state links
 
-### Documentation Consolidation
-- [x] Create `docs/archive/` directory
-- [x] Move `docs/SEO.md` to archive
-- [x] Move `docs/KEYWORD-STRATEGY.md` to archive
-- [x] Move `docs/MIGRATION-PLAN.md` to archive
-- [x] Move `docs/REMAINING-TASKS.md` to archive
-- [x] Move `docs/SEO-ENHANCEMENT-PLAN.md` to archive
+### Session 2: Navigation & Linking
 
-**Active docs after consolidation:**
-1. `LAUNCH-PLAN.md` - This master checklist
-2. `SEO-STRATEGY-2026.md` - Reference strategy document
-
-### Fix Footer Links
-- [x] Update "Foundation Blog" → /blog
-- [x] Update "Partnerships" → /partners
-- [x] Update "Wall Crack Repair" → /services/wall-crack-repair
-- [x] Update "Leaky Bulkheads" → /services/leaky-bulkhead-repair
-- [x] Update "About Our Team" → /about
-- [x] Add state hub links to footer
-
-### Remove Team Content Files
-- [x] Delete `src/content/team/*.md` files
-- [x] Verify team display remains hardcoded on About page
-
-### Create Areas We Serve Hub
-- [x] Create `src/pages/areas-we-serve/index.astro`
-- [x] Add all 5 state links (CT, MA, RI, NH, ME)
-- [x] Add service area description
-- [x] Link to city pages
-
----
-
-## Session 2: Navigation & Linking ✅ COMPLETE
-
-### Navbar Updates
 - [x] Add "Areas" link to navbar
-- [x] Link to `/areas-we-serve` hub page
+- [x] Enhance Services hub (Foundation Types + Concrete Repair sections)
+- [x] Fix orphan pages (foundation types, concrete repair, state hubs linked)
 
-### Services Hub Enhancement
-- [x] Add Foundation Types section link
-- [x] Add Concrete Resurfacing section link
-- [x] Ensure all service categories visible
+### Session 3: Content Migration
 
-### Fix Orphan Pages
-- [x] Foundation Types pages linked from services
-- [x] Concrete Resurfacing pages linked from services
-- [x] State hubs linked from footer
-- [ ] Cross-link service pages to locations (Session 6)
+- [x] Migrate 9 blog posts from current attackacrack.com
+- [x] Enhance About page (Our Story, Values, E-E-A-T signals)
+- [x] Review partner pages and testimonials
+- [x] FAQ content on service and location pages
 
----
+### Additional Completed Work
 
-## Session 3: Content Migration ✅ COMPLETE
+- [x] Resurfacing → Repair rewrite (all content)
+- [x] SEO enforcement pipeline (all checks are hard failures)
+- [x] Homepage FAQ section with FAQPage schema
+- [x] Homepage internal links and CTAs
+- [x] Service image replacements with proper cropping
 
-### Blog Posts from Current Site
-- [x] Audit existing blog content on attackacrack.com
-- [x] Migrate 9 blog posts:
-  - 10-essential-tips-worry-free-foundation.md
-  - ashi-new-england-conference-2024.md
-  - basement-leak-framingham-case-study.md
-  - crumbling-foundations-massachusetts-connecticut.md
-  - finished-basement-flooded-shrewsbury.md
-  - how-to-check-your-foundation.md
-  - leaky-bulkhead-wilmington-repair.md
-  - nar-nxt-boston-2024-partnerships.md
-  - winter-home-maintenance-checklist.md
-- [x] Ensure proper frontmatter (title, date, category)
-
-### About Page Enhancement
-- [x] Add "Our Story" section content
-- [x] Add "Our Values" section content
-- [x] Add company history/timeline
-- [x] Add E-E-A-T signals (experience, credentials)
-
-### Partners & Testimonials
-- [x] Review existing partner pages (4 partner pages exist)
-- [x] Testimonials included on partner pages
-
-### FAQ Content
-- [x] FAQ content exists on service and location pages
+</details>
 
 ---
 
-## Session 4-5: City Page Generation
+## Phase 1: Price Correction Sweep
 
-### Target: 80 Cities Total
+**Priority: URGENT — do first. Inaccurate pricing erodes trust.**
 
-| State | Target | Current | Remaining |
-|-------|--------|---------|-----------|
-| CT (eastern 2/3) | 20 | 9 | 11 |
-| MA | 30 | 0 | 30 |
-| RI | 10 | 0 | 10 |
-| NH | 10 | 0 | 10 |
-| ME | 10 | 0 | 10 |
+Matt's principle: "Better for someone to expect they'll pay a little less than the quote they get."
 
-### Content Requirements Per City
-- Unique title, meta description
-- Neighborhoods (3-5)
-- Local landmarks (2-3)
-- Common foundation types
-- Average home age
-- Local challenges paragraph
-- nearbyCities references (5 cities)
+### Correct Pricing Ranges
 
-### Session 4 Tasks
-- [ ] Generate remaining 11 CT city pages
-- [ ] Generate 30 MA city pages
-- [ ] Validate schema and linking
+| Service | Wrong (on site now) | Correct |
+|---------|-------------------|---------|
+| Single crack injection | $300-$800 | **$800-$1,200** |
+| Wall crack repair | $300-$800 | **$800-$1,200** |
+| Bulkhead sealing | $400-$1,000 | **$1,800-$2,500** |
+| Carbon fiber stitches | $800-$1,500/stitch | **$200-$300/stitch** |
+| Sewer/conduit line | (unspecified) | **$650-$900** |
+| Multi-crack jobs | $600-$1,800 for 2-3 | **"Significant multi-crack discounts available"** |
+| Full wall stabilization | $5,000-$15,000 | **Review with Matt** |
 
-### Session 5 Tasks
+### Tasks
+
+- [x] Create pricing utility (`src/utils/pricing.ts`) as single source of truth
+- [x] Create pricing settings file (`src/content/settings/pricing.json`)
+- [x] Add pricing section to DecapCMS config (`public/admin/config.yml`)
+- [x] Fix homepage FAQ pricing — `src/components/HomeFaq.astro` FAQ #3 ("$400-$800" → $800-$1,200)
+- [x] Fix blog: `foundation-repair-cost-guide-2026.md` — full rewrite of cost table
+- [x] Fix blog: `basement-waterproofing-vs-foundation-repair.md` — "$300-$2,500" range
+- [x] Fix blog: `bulkhead-leaking-causes-and-fixes.md` — "$2,000-$5,000" bulkhead figure
+- [x] Fix service page: `wall-crack-repair.md` — "$300-$800 per crack"
+- [x] Fix all 10 CT location pages (all say "$500-$1,500"): bridgeport, danbury, greenwich, hartford, manchester, new-haven, norwalk, stamford, waterbury, west-hartford
+- [x] Fix all 10 MA location pages (low-end ranges starting $450-$600): boston, brockton, cambridge, fall-river, framingham, new-bedford, newton, plymouth, quincy, worcester
+- [x] Verify sweep complete: `grep -r '\$[0-9]' src/content/ src/components/` — no stale prices remain
+
+---
+
+## Phase 2: Page-Level Fixes
+
+### 2A: Areas We Serve — Fix Layout
+
+Issues: huge white gap between state cards and "Why New England Trusts Us", placeholder images, RI/NH/ME show "0+ cities".
+
+- [ ] Fix white gap between sections (likely margin/padding or hidden empty element)
+- [ ] Change "0+ cities" to "Coming Soon" for states with no city pages yet
+- [ ] Tighten card layout for better visual density
+- [ ] Note placeholder images for Phase 8 (hero map, "Why Choose Us" photo)
+
+File: `src/pages/areas-we-serve/index.astro`
+
+### 2B: About Page — Fill Gaps
+
+Issues: "What We Stand For" section has too much white space, placeholder image, thin E-E-A-T section, no real customer quotes.
+
+- [ ] Add visual treatment to "What We Stand For" section (background, icons, or imagery)
+- [ ] Beef up E-E-A-T section with real stats (years experience, repairs completed, certifications, review count)
+- [ ] Add real customer testimonial section (from Phase 3 Google review pull)
+- [ ] Note placeholder image for Phase 8 (story section)
+
+File: `src/pages/about.astro`
+
+### 2C: Blog — Add Pagination
+
+Currently 14 posts on one page, no pagination.
+
+- [ ] Add pagination to `src/pages/blog/index.astro` (6 posts per page)
+- [ ] Add pagination to `src/pages/blog/category/[category].astro`
+- [ ] Use Astro's built-in `paginate()` with `getStaticPaths()`
+- [ ] Add prev/next navigation UI
+
+---
+
+## Phase 3: Testimonials & Social Proof
+
+Matt: "Pull quotes from the real reviews on Google. Let's do a lot more of that."
+
+### 3A: Google Review Pull
+
+- [ ] Pull 15-20 real customer quotes from Google reviews (names, cities, review text)
+- [ ] Categorize by: service type, location (CT vs MA), persona (homeowner, realtor, property manager)
+- [ ] Store in content collection or settings file for reuse across pages
+
+### 3B: Deploy Testimonials Across Site
+
+- [ ] Homepage: add 2-4 more review cards (currently only 2)
+- [ ] About page: add customer testimonial section
+- [ ] Service pages: match service-specific reviews to each page
+- [ ] Location pages: fill empty `testimonial` frontmatter fields (match by city/region)
+
+### 3C: Testimonial Infrastructure
+
+- [ ] Create shared testimonials data file (collection or JSON)
+- [ ] Build reusable `<Testimonial />` component if needed
+- [ ] Add testimonials to DecapCMS config for Matt to manage
+
+---
+
+## Phase 4: Partners Expansion
+
+### 4A: New Partner Type Pages
+
+Current: Realtors, Property Managers, Home Inspectors, Contractors.
+
+| New Persona | Why They Refer |
+|-------------|---------------|
+| Insurance Adjusters | Encounter foundation claims regularly |
+| Mold Remediation | Water intrusion from cracks causes mold — fix the source |
+| Plumbers | Working in basements, see cracks/leaks constantly |
+| Landscapers | Encounter concrete problems (walkways, patios, driveways, pool decks) |
+
+Per page: unique value prop, service-specific benefits, referral program details, testimonial, FAQ with schema, volume/partner discount mention.
+
+- [ ] Create `src/content/partners/insurance-adjusters.md`
+- [ ] Create `src/content/partners/mold-remediation.md`
+- [ ] Create `src/content/partners/plumbers.md`
+- [ ] Create `src/content/partners/landscapers.md`
+- [ ] Update partners index grid (`src/pages/partners/index.astro`)
+- [ ] Brainstorm additional personas with Matt (waterproofing companies, basement finishing, real estate attorneys)
+
+### 4B: Preferred/Trusted Partners Page (NEW)
+
+Shell page for BNI chapter members and other recommended professionals. Content collection so it can grow over time.
+
+- [ ] Create trusted partners content collection schema
+- [ ] Create shell page `src/pages/partners/trusted.astro` (or `/recommended`)
+- [ ] Add initial structure: intro text, empty partner grid, "coming soon" messaging
+- [ ] Add to partners index and navigation
+- [ ] Add to DecapCMS config for Matt to manage partner entries
+
+---
+
+## Phase 5: SEO Strategy Integration
+
+Reference: `docs/SEO-STRATEGY-2026.md`
+
+### 5A: Service Page Enhancements
+
+- [ ] Add HowTo schema to all 6 service pages
+- [ ] Add "cement" keyword variations in H2s where natural ("cement foundation repair" — 2,400 vol, rank #15-17)
+- [ ] Expand FAQ answers — demonstrate expertise, not 2-sentence stubs
+- [ ] Add "Available in CT & MA" sections with city page links
+- [ ] Add author/expert attribution
+- [ ] Note: real before/after photos deferred to Phase 8
+
+Files: `src/pages/services/[slug].astro`, all 6 service content files
+
+### 5B: Location Page Content Depth
+
+- [ ] Add city-specific testimonials (from Phase 3A review pull)
+- [ ] Verify >20% unique content between similar cities
+- [ ] Add city-specific cost mentions using pricing utility (from Phase 1)
+- [ ] Verify nearby city cross-links are working
+- [ ] Add city-specific FAQ answers ("How much does foundation repair cost in [City]?")
+
+### 5C: Blog Content Gaps
+
+High-priority new posts:
+
+| Topic | Volume | KD |
+|-------|--------|-----|
+| Horizontal Foundation Cracks: Causes & Solutions | 3,600 | 9 |
+| Signs of Foundation Problems | 4,400 | 21 |
+| Foundation Settling: When to Worry | 4,400 | 12 |
+| Basement Floor Cracks Leaking Water | 210 | 6 |
+| Water in Basement After Rain | 480 | 11 |
+| Bulkhead Repair Cost Guide 2026 | 480 | 4 |
+
+- [ ] Write: Horizontal Foundation Cracks
+- [ ] Write: Signs of Foundation Problems
+- [ ] Write: Foundation Settling: When to Worry
+- [ ] Write: Basement Floor Cracks Leaking Water
+- [ ] Write: Water in Basement After Rain
+- [ ] Write: Bulkhead Repair Cost Guide 2026
+- [ ] Review/update existing: `foundation-repair-cost-guide-2026.md` (pricing — Phase 1)
+- [ ] Review/update existing: `vertical-vs-horizontal-foundation-cracks.md`
+
+### 5D: Internal Linking Strategy
+
+Blog (Problem) → Service (Solution) → City (Local):
+
+- [ ] Add contextual links from blog posts to relevant service pages
+- [ ] Add "Common in [City]" links from service pages to city pages
+- [ ] Add "Related Articles" section at bottom of blog posts
+- [ ] Cross-link nearby cities on location pages
+- [ ] Link from partner pages to relevant services
+- [ ] Audit and fix orphan pages identified by `validate:links`
+
+### 5E: Schema Additions
+
+- [ ] HowTo schema on all 6 service pages (covered in 5A)
+- [ ] Verify Article/BlogPosting schema on blog posts
+- [ ] Plan ImageObject schema for before/after photos (when real photos available)
+
+---
+
+## Phase 6: City Page Generation
+
+### Target: 80 cities total
+
+| State | Have | Target | Remaining |
+|-------|------|--------|-----------|
+| CT | 10 | 20 | 10 |
+| MA | 10 | 30 | 20 |
+| RI | 0 | 10 | 10 |
+| NH | 0 | 10 | 10 |
+| ME | 0 | 10 | 10 |
+| **Total** | **20** | **80** | **60** |
+
+### Content Quality Requirements (per city)
+
+- Unique narrative (neighborhoods, soil conditions, home age, local challenges)
+- Correct pricing from pricing utility (Phase 1)
+- 3 unique FAQs with city-specific answers
+- Real testimonial if available (from Phase 3A)
+- nearbyCities cross-links
+- Unique meta title and description (validated by `check:seo`)
+
+### Tasks
+
+- [ ] Generate remaining 10 CT city pages
+- [ ] Generate 20 MA city pages
 - [ ] Generate 10 RI city pages
 - [ ] Generate 10 NH city pages
 - [ ] Generate 10 ME city pages
+- [ ] Validate all new pages pass `npm run validate`
+- [ ] Run uniqueness check (Phase 9 script) against all city pages
 
 ---
 
-## Session 6: Service Page Enhancements
+## Phase 7: Performance Deep Dive
 
-### HowTo Schema
-- [ ] Add HowTo schema to wall-crack-repair
-- [ ] Add HowTo schema to foundation-crack-injection
-- [ ] Add HowTo schema to leaky-bulkhead-repair
-- [ ] Add HowTo schema to carbon-fiber-stitches
-- [ ] Add HowTo schema to sewer-well-conduit-repair
+Matt: "We need to do a deep dive of performance for each section and really ensure all the best practices and our Lighthouse scores are rocking everywhere."
 
-### Location Links
-- [ ] Add "Available in" section to each service page
-- [ ] Link to relevant state hubs
-- [ ] Link to major cities for each service
+### Lighthouse Audit — Every Page Type
 
-### Content Enhancement
-- [ ] Add cement keyword variations where appropriate
-- [ ] Expand FAQ content on service pages
+Run full Lighthouse on representative pages:
+
+- [ ] Homepage
+- [ ] Service page (e.g., foundation-crack-injection)
+- [ ] Location page (e.g., connecticut/hartford)
+- [ ] Blog post
+- [ ] Blog index
+- [ ] About page
+- [ ] Areas We Serve
+- [ ] Partners page
+
+### Console Error Audit
+
+- [ ] Check browser console on every page type above — zero errors allowed
+- [ ] Document and resolve every issue found
+
+### Core Web Vitals Targets
+
+- LCP < 2.5s
+- CLS < 0.1
+- INP < 200ms
+
+### Performance Checklist
+
+- [ ] Image optimization (proper sizing, formats, lazy loading)
+- [ ] Font loading strategy (preload critical fonts)
+- [ ] CSS bundle size review (Tailwind purge working)
+- [ ] JS bundle analysis (minimal JS on static pages)
+- [ ] Check for CLS from `[data-animate]` elements (opacity transitions)
+- [ ] Verify cache headers from Vercel
+- [ ] Server response time check
 
 ---
 
-## Session 7: Pre-Launch Validation
+## Phase 8: Imagery Replacement
 
-### Automated Validation
-- [ ] `npm run build` passes
+**Blocked on Matt providing real photos.**
+
+### Placeholder Images Requiring Real Assets
+
+| Location | Current | Needed |
+|----------|---------|--------|
+| OG default | picsum | Branded OG image (1200x630) |
+| About page story | picsum | Team/job site photo |
+| Areas We Serve hero | picsum | New England service area map |
+| Areas We Serve "Why Us" | picsum | Team on job site |
+| CT hub hero | picsum | Connecticut landscape/job |
+| MA hub hero | picsum | Massachusetts landscape/job |
+| RI hub hero | picsum | Rhode Island landscape/job |
+| NH hub hero | picsum | New Hampshire landscape/job |
+| ME hub hero | picsum | Maine landscape/job |
+| City pages (20) | picsum | Local/regional photos |
+| Blog posts | picsum | Post-specific images |
+| Team (Edward) | placeholder.svg | Real headshot |
+
+### Pre-Launch Image Tasks
+
+- [ ] Replace all placeholder images as Matt provides assets
+- [ ] Remove picsum.photos whitelist from `check-images.js` (make placeholders a build error)
+- [ ] Optimize all new images (proper sizing, WebP/AVIF where supported)
+- [ ] Verify all images have meaningful alt text
+
+---
+
+## Phase 9: Validation & CI Hardening
+
+### 9A: Uniqueness Validation Script
+
+Matt: "I definitely want to add a validate uniqueness script to flag >80% content similarity between city pages."
+
+- [ ] Create `scripts/validate-uniqueness.js` — compare text content of city pages
+- [ ] Flag any pair with >80% similarity as an error
+- [ ] Add `npm run validate:uniqueness` to `package.json`
+- [ ] Add to CI pipeline (`quality.yml`)
+- [ ] Add to `npm run validate` chain
+
+### 9B: Lighthouse Warnings → Hard Failures
+
+Matt: "In the CI they are currently just set as warnings, but before we launch those warnings need to be fully resolved."
+
+- [ ] Audit all current Lighthouse warnings across page types
+- [ ] Resolve every warning
+- [ ] Update `lighthouserc.cjs` to make warnings into errors
+- [ ] Verify CI fails on any Lighthouse regression
+
+### 9C: Full Validation Sweep
+
+- [ ] `npm run build` passes clean
 - [ ] `npm run validate:schema` passes
-- [ ] `npm run check:images` passes
+- [ ] `npm run check:images` passes (no placeholders)
 - [ ] `npm run check:seo` passes
 - [ ] `npm run check:a11y` passes
 - [ ] `npm run validate:links` passes
-
-### Fix Any Issues
-- [ ] Resolve build errors
-- [ ] Fix broken links
-- [ ] Fix accessibility issues
-- [ ] Fix SEO issues
+- [ ] `npm run validate:uniqueness` passes
+- [ ] Lighthouse CI passes with error-level thresholds
 
 ---
 
-## Manual Tasks (Matt)
+## Phase 10: Pre-Launch Checklist
 
-### Critical Blockers
-- [ ] Replace placeholder images (~50 images needed)
-  - [ ] 2 branded OG images
-  - [ ] 1 hero photo
-  - [ ] 8 homepage before/after photos
-  - [ ] 5 team headshots
-  - [ ] ~12 service page before/after photos
-  - [ ] ~8 resurfacing photos
-  - [ ] ~4 foundation type photos
-  - [ ] 5 state hero images
-  - [ ] ~5 blog post images
+### Automated Validation
 
-### Vercel Setup
-- [ ] Verify Vercel project exists
-- [ ] Get VERCEL_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID
-- [ ] Add as GitHub repository secrets
-- [ ] Test deployment pipeline
-
-### Monitoring Setup
-- [ ] Set up uptime monitoring (Better Stack, Pingdom)
-- [ ] Configure error tracking (Sentry)
-- [ ] Set up Google Search Console
-- [ ] Set up Google Analytics 4
-
-### Visual Design Review
-- [ ] Review all page templates for consistency
-- [ ] Check mobile responsiveness
-- [ ] Verify color scheme consistency
-- [ ] Check typography hierarchy
-- [ ] Ensure CTA buttons are prominent
-
-### Contact Info Verification
-- [ ] CT Office: 23 Elsmere Road, Amston, CT 06231, (860) 573-8760
-- [ ] MA Office: 30 Randlett St #2, Quincy, MA 02169, (617) 668-1677
-- [ ] Verify "240+ Google reviews" claim is current
-
----
-
-## Pre-Launch Checklist
+- [ ] Full `npm run validate` pass
+- [ ] Lighthouse: Performance 90+, Accessibility 95+, SEO 95+
+- [ ] No placeholder images remain
+- [ ] All pricing claims verified correct
+- [ ] Uniqueness validation passes
 
 ### Manual QA
+
 - [ ] All navigation links work
 - [ ] All footer links work
 - [ ] Contact forms submit correctly
-- [ ] Phone numbers are correct
-- [ ] Addresses are correct
+- [ ] Phone numbers correct: CT (860) 573-8760, MA (617) 668-1677
+- [ ] Addresses correct: CT 23 Elsmere Road, Amston, CT 06231; MA 30 Randlett St #2, Quincy, MA 02169
+- [ ] "240+ Google reviews" claim is current
 - [ ] Images load on all pages
-- [ ] Mobile responsive on iPhone, Android
-- [ ] Page speed acceptable (Lighthouse 90+)
+- [ ] Mobile responsive (iPhone, Android)
 - [ ] Schema validates in Google Rich Results Test
-- [ ] Robots.txt accessible
-- [ ] Sitemap accessible
-- [ ] Favicon displays
+- [ ] Favicon displays correctly
 
 ### DNS Cutover
-- [ ] **Uncomment robots.txt** (re-enable indexing)
+
+- [ ] Switch `public/robots.txt` to allow crawling
+- [ ] Remove `is-crawlable: 'off'` from `lighthouserc.cjs`
 - [ ] Backup current site
 - [ ] Point attackacrack.com DNS to Vercel
 - [ ] Verify SSL certificate
-- [ ] Test all redirects work
+- [ ] Test all redirects work (`vercel.json`)
 - [ ] Submit sitemap to Google Search Console
 - [ ] Monitor for 404 errors
+
+---
+
+## Matt's Action Items (Blocking)
+
+These require Matt's input before Claude can proceed:
+
+- [ ] **Provide real photos** for 17+ placeholder locations (Phase 8)
+- [ ] **Confirm full wall stabilization pricing** ($5,000-$15,000 — still correct?) (Phase 1)
+- [ ] **Provide partner testimonials** for new persona types (Phase 4)
+- [ ] **Finalize new partner persona list** (insurance adjusters, mold, plumbers, landscapers + others?) (Phase 4)
+- [ ] **Name the trusted partners page** (Preferred Partners? Trusted Partners? Recommended?) (Phase 4B)
+- [ ] **Set up GitHub OAuth** for DecapCMS editor authentication
+- [ ] **Add Vercel secrets** to GitHub (VERCEL_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID)
+- [ ] **Set up monitoring:** Google Search Console, GA4, uptime monitoring, error tracking
+- [ ] **Verify "240+ Google reviews" claim** is still accurate
 
 ---
 
 ## Post-Launch Tasks
 
 ### Week 1
+
 - [ ] Monitor Google Search Console for errors
 - [ ] Monitor uptime alerts
 - [ ] Fix any 404s from old URLs
@@ -290,6 +455,7 @@ All CI/CD infrastructure from MIGRATION-PLAN.md Phase 9-10 is implemented:
 - [ ] Begin GBP optimization
 
 ### Month 1
+
 - [ ] Publish 2-4 blog posts (per content calendar)
 - [ ] Add 20+ more city pages
 - [ ] Begin review acquisition campaign
@@ -297,17 +463,20 @@ All CI/CD infrastructure from MIGRATION-PLAN.md Phase 9-10 is implemented:
 
 ---
 
-## Blog Content Priority
+## Blog Content Priority (Reference)
 
 ### Tier 1: High Volume, Low Difficulty
+
 | Topic | Volume | KD | Status |
 |-------|--------|-----|--------|
-| Foundation Repair Cost Guide 2026 | 8,100 | 12 | Draft exists |
+| Foundation Repair Cost Guide 2026 | 8,100 | 12 | Exists — needs pricing rewrite |
 | Horizontal vs Vertical Foundation Cracks | 3,600 | 9 | Needed |
 | Signs of Foundation Problems | 4,400 | 21 | Needed |
 | Bulkhead Repair Cost Guide | 480 | 4 | Needed |
+| Foundation Settling: When to Worry | 4,400 | 12 | Needed |
 
 ### Tier 2: Problem-Aware Content
+
 | Topic | Volume | KD |
 |-------|--------|-----|
 | Water in Basement After Rain | 480 | 11 |
@@ -315,6 +484,7 @@ All CI/CD infrastructure from MIGRATION-PLAN.md Phase 9-10 is implemented:
 | What Causes Concrete to Crack | 720 | 15 |
 
 ### Tier 3: Consumer Language Content
+
 | Topic | Target Keywords |
 |-------|-----------------|
 | Cement vs Concrete: What Homeowners Need to Know | cement repair terms |
@@ -323,20 +493,7 @@ All CI/CD infrastructure from MIGRATION-PLAN.md Phase 9-10 is implemented:
 
 ---
 
-## Success Criteria
-
-Launch ready when:
-1. All validation scripts pass (`npm run validate`)
-2. No placeholder images remain
-3. All navigation links work
-4. Minimum 80 city pages published (20 CT, 30 MA, 10 each RI/NH/ME)
-5. Lighthouse scores: Performance 90+, Accessibility 95+, SEO 95+
-6. All redirects from old site configured
-7. Vercel deployment working
-8. Monitoring in place
-
----
-
 ## Reference Documents
 
-- `docs/SEO-STRATEGY-2026.md` - Detailed SEO execution strategy
+- `docs/SEO-STRATEGY-2026.md` — Detailed SEO execution strategy (17 parts)
+- `CLAUDE.md` — Project rules and validation requirements

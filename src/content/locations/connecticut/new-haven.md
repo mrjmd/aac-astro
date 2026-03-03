@@ -26,7 +26,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in New Haven?"
-    answer: "Foundation crack repair in New Haven typically costs $500-$1,500 per crack. Older homes in areas like East Rock and Wooster Square may require specialized approaches for fieldstone foundations, which we assess during our free consultation."
+    answer: "Foundation crack repair in New Haven typically costs $800-$1,200 per crack. Older homes in areas like East Rock and Wooster Square may require specialized approaches for fieldstone foundations, which we assess during our free consultation."
   - question: "What causes foundation problems in New Haven's historic homes?"
     answer: "New Haven's location along Long Island Sound means high water tables and coastal clay soils that shift seasonally. Historic homes in neighborhoods like Wooster Square were built with fieldstone or brownstone foundations that require specialized repair techniques different from modern concrete."
   - question: "Can you repair foundations in historic New Haven homes?"

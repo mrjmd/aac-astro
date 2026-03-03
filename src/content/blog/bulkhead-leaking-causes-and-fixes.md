@@ -51,7 +51,7 @@ When water appears in your bulkhead, most people assume the door seal is bad. Th
 
 **The idea:** The door must be the problem, so replace it with a new one.
 
-**Why it fails:** If the leak is at the bulkhead-to-foundation joint, a new door won't help. You'll spend $2,000-$5,000 on a new bulkhead and still have the same leak.
+**Why it fails:** If the leak is at the bulkhead-to-foundation joint, a new door won't help. You'll spend thousands on a new bulkhead and still have the same leak.
 
 ## The Solution: Bulkhead Injection
 

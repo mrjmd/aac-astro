@@ -12,11 +12,11 @@ faqs:
   - question: "Is the consultation really free?"
     answer: "Yes, 100% free. We don't charge for assessments, and there's no obligation to hire us. We believe in earning your business through expertise, not pressure tactics."
   - question: "How long does a consultation take?"
-    answer: "Most consultations take 30-45 minutes. We take the time to thoroughly assess your foundation and explain everything we find."
+    answer: "Photo assessments usually get a response within hours. We take the time to thoroughly review your photos and explain everything we see."
   - question: "Will you try to sell me services I don't need?"
     answer: "Absolutely not. We built our reputation on honesty. If your crack doesn't need repair, we'll tell you. If it's something you can DIY, we'll explain how."
-  - question: "What should I prepare before the consultation?"
-    answer: "Just ensure we can access your basement or foundation. It helps if you can point out any specific concerns or cracks you've noticed."
+  - question: "What should I send for a photo assessment?"
+    answer: "Take clear, well-lit photos of any cracks or concerns. Include a close-up and a wider shot showing the full wall or area. A ruler or coin next to the crack helps us gauge width."
 relatedServices:
   - "wall-crack-repair"
   - "foundation-crack-injection"
@@ -26,10 +26,16 @@ relatedServices:
 
 At Attack A Crack, we believe you deserve to understand what's happening with your foundation before you spend a dime. That's why every consultation is completely free, and we'll never pressure you into services you don't need.
 
+### How It Works: Text Us Photos
+
+The fastest way to get expert eyes on your foundation is to **text us photos**. The overwhelming majority of our assessments are done this way — you send us clear photos of your cracks or concerns, and one of our experts reviews them and gets back to you with an honest diagnosis.
+
+Most foundation issues can be accurately diagnosed from good photos alone. No scheduling, no waiting around for someone to show up, no awkward sales pitch in your basement.
+
 ### What Makes Our Consultations Different
 
 **No Salespeople**
-When you call Attack A Crack, you're talking to the actual experts who do the work. We don't employ commission-based sales staff whose job is to close deals. You get honest information from people who care about doing the right thing.
+When you contact Attack A Crack, you're talking to the actual experts who do the work. We don't employ commission-based sales staff whose job is to close deals. You get honest information from people who care about doing the right thing.
 
 **We'll Tell You the Truth**
 Some cracks don't need professional repair. If your issue is cosmetic or something you can handle yourself, we'll tell you—and we'll explain exactly how to do it. Our reputation is built on honesty, not maximizing sales.
@@ -39,19 +45,18 @@ The foundation repair industry has a reputation for scare tactics. We take the o
 
 ### What Happens During a Consultation
 
-**1. Initial Conversation**
-We start by listening. Tell us what you've noticed, what concerns you have, and any history you know about the issue. Your observations are valuable information.
+**1. Send Us Photos**
+Text us clear photos of your cracks or concerns. Include a close-up and a wider shot showing the surrounding area. A ruler or coin next to the crack helps us gauge width.
 
-**2. Thorough Assessment**
-We examine your foundation carefully, looking at:
+**2. Expert Review**
+One of our experts reviews your photos, looking at:
 - Crack patterns and characteristics
 - Signs of water infiltration
 - Evidence of structural movement
-- Related issues you may not have noticed
 - Previous repairs and their condition
 
 **3. Clear Explanation**
-We explain exactly what we found in plain language:
+We explain exactly what we see in plain language:
 - What's causing the problem
 - How serious it is (or isn't)
 - What could happen if left unaddressed
@@ -66,6 +71,10 @@ Based on our assessment, we'll recommend a course of action. This might be:
 
 **5. Transparent Quote**
 If professional repair is warranted, we provide a clear, itemized quote with no hidden fees. We explain exactly what we'll do and why it costs what it does.
+
+### In-Person Consultations
+
+For situations that need hands-on evaluation, our Massachusetts branch offers in-person consultations. Contact us and we'll let you know if an on-site visit would be helpful for your situation.
 
 ### Things We'll Always Tell You
 
@@ -97,11 +106,11 @@ Sometimes the best approach is monitoring. We'll tell you exactly what to look f
 **"This Needs Repair"**
 When professional repair is genuinely needed, we explain why and provide a clear path forward.
 
-### Schedule Your Free Consultation
+### Get Your Free Assessment
 
-Ready for honest answers about your foundation? Contact us to schedule your free consultation:
+Ready for honest answers about your foundation? Text us photos of your concerns:
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677
 
-Or text us photos of your concerns—we can often give you preliminary guidance before even visiting.
+Most homeowners get expert guidance the same day — no appointment needed.

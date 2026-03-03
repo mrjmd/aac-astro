@@ -27,7 +27,7 @@ But here's what the waterproofing industry doesn't want you to know: **many base
 - Water around pipe penetrations
 - Single or multiple entry points you can identify
 
-**Typical cost:** $300-$2,500 depending on number of cracks
+**Typical cost:** $800-$1,200 per crack (significant multi-crack discounts available)
 
 ### Basement Waterproofing Systems
 
@@ -106,19 +106,17 @@ We've examined thousands of wet basements. We can quickly assess whether your pr
 
 When waterproofing is truly needed, we'll refer you to reputable waterproofers—companies we trust to treat you fairly.
 
-## Case Study: The $300 Fix vs. $12,000 Quote
+## Case Study: The Targeted Fix vs. $12,000 Quote
 
 A homeowner in Hartford contacted us after getting a $12,000 quote from a waterproofing company. They were told they needed interior drains, a sump pump system, and vapor barriers.
 
 **What we found:** Two vertical cracks in the foundation wall, actively leaking during rain.
 
-**What we did:** Injected both cracks with flexible urethane.
+**What we did:** Injected both cracks with flexible urethane — with a multi-crack discount.
 
-**Total cost:** $650
+**Result:** No water infiltration in the 18 months since repair — at a fraction of the $12,000 waterproofing quote.
 
-**Result:** No water infiltration in the 18 months since repair.
-
-This homeowner almost spent $12,000 on a system they didn't need. A simple $650 repair solved their problem completely.
+This homeowner almost spent $12,000 on a system they didn't need. Targeted crack repair solved their problem completely.
 
 ## When to Get a Second Opinion
 

@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Waterbury?"
-    answer: "Foundation crack repair in Waterbury ranges from $500-$1,500 per crack. Waterbury's hilly terrain can affect foundation conditions, but most repairs are straightforward and completed in a single visit. We provide free assessments to give you an accurate quote."
+    answer: "Foundation crack repair in Waterbury ranges from $800-$1,200 per crack. Waterbury's hilly terrain can affect foundation conditions, but most repairs are straightforward and completed in a single visit. We provide free assessments to give you an accurate quote."
   - question: "Does Waterbury's terrain affect foundation problems?"
     answer: "Yes, Waterbury's location in the Naugatuck Valley creates varied drainage conditions. Hillside homes in areas like Overlook may experience different water pressure than valley-floor homes. Our technicians assess your specific situation to recommend the most effective repair approach."
   - question: "Can you repair foundations built on Waterbury's rocky soil?"

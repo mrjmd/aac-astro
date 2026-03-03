@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Bridgeport?"
-    answer: "Foundation crack repair in Bridgeport typically costs $500-$1,500 per crack. Many Bridgeport homes have older foundations that may have multiple cracks—we provide honest assessments and can prioritize repairs based on severity and your budget."
+    answer: "Foundation crack repair in Bridgeport typically costs $800-$1,200 per crack. Many Bridgeport homes have older foundations that may have multiple cracks—we provide honest assessments and can prioritize repairs based on severity and your budget."
   - question: "Are older Bridgeport homes more prone to foundation issues?"
     answer: "Yes, many Bridgeport neighborhoods feature homes built in the early-to-mid 1900s with construction methods of that era. These foundations have endured decades of Connecticut weather and soil movement. The good news is that most cracks are repairable without major structural work."
   - question: "Do you offer payment plans for Bridgeport residents?"

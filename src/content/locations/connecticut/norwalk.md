@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Norwalk?"
-    answer: "Foundation crack repair in Norwalk ranges from $500-$1,500 per crack depending on the foundation type and crack severity. Norwalk's mix of coastal and inland neighborhoods means varied conditions—we assess each property individually during our free consultation."
+    answer: "Foundation crack repair in Norwalk ranges from $800-$1,200 per crack depending on the foundation type and crack severity. Norwalk's mix of coastal and inland neighborhoods means varied conditions—we assess each property individually during our free consultation."
   - question: "Do coastal Norwalk homes need different foundation repairs?"
     answer: "Homes in coastal areas like Rowayton and East Norwalk do experience higher groundwater levels and more moisture exposure. Our waterproofing injection methods are particularly effective in these conditions, creating a permanent barrier against water infiltration."
   - question: "Can foundation cracks affect my Norwalk home's resale value?"

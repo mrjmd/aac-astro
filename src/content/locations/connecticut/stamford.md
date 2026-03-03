@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Stamford?"
-    answer: "Foundation crack repair in Stamford ranges from $500-$1,500 per crack depending on severity and foundation type. North Stamford's hillside homes and Shippan's waterfront properties each have unique considerations we address during our free assessment."
+    answer: "Foundation crack repair in Stamford ranges from $800-$1,200 per crack depending on severity and foundation type. North Stamford's hillside homes and Shippan's waterfront properties each have unique considerations we address during our free assessment."
   - question: "Why are foundation cracks common in Stamford homes?"
     answer: "Stamford's varied terrain—from rocky northern hills to coastal southern areas—creates different soil conditions throughout the city. North Stamford homes often deal with bedrock and drainage issues, while homes near the sound contend with high water tables and clay soils."
   - question: "Do you serve both residential and commercial properties in Stamford?"

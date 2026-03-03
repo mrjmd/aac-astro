@@ -1,6 +1,7 @@
 ---
 import Icon from './Icon.astro';
 import SchemaMarkup from './SchemaMarkup.astro';
+import { crackRepairRange } from '../utils/pricing';
 
 const faqs = [
 	{
@@ -13,11 +14,11 @@ const faqs = [
 	},
 	{
 		question: "How much does foundation crack repair cost?",
-		answer: `Foundation crack repair typically costs between $400 and $800 per crack, depending on the length, location, and severity. That's significantly less than exterior excavation methods, which can run $3,000–$10,000+. We provide <a href="/services/free-foundation-consultations" class="text-aac-blue hover:underline font-semibold">free on-site inspections</a> with a written quote — no obligation, no pressure, no salespeople.`
+		answer: `Foundation crack repair typically costs between ${crackRepairRange} per crack, depending on the length, location, and severity. That's significantly less than exterior excavation methods, which can run $3,000–$10,000+. <a href="/services/free-foundation-consultations" class="text-aac-blue hover:underline font-semibold">Text us photos</a> for a free assessment with a written quote — no obligation, no pressure, no salespeople.`
 	},
 	{
 		question: "Do you offer free foundation inspections?",
-		answer: `Yes — every <a href="/services/free-foundation-consultations" class="text-aac-blue hover:underline font-semibold">foundation inspection</a> is 100% free with no obligation. One of our owners will personally come to your home, assess the cracks, explain exactly what's happening, and give you an honest recommendation. You can also text us photos for a quick remote assessment before scheduling an in-person visit.`
+		answer: `Yes — every <a href="/services/free-foundation-consultations" class="text-aac-blue hover:underline font-semibold">foundation assessment</a> is 100% free with no obligation. Text us photos of your cracks and one of our experts will review them, explain exactly what's happening, and give you an honest recommendation. Most issues can be diagnosed from photos alone. In-person consultations are also available in Massachusetts.`
 	},
 	{
 		question: "What areas in Connecticut and Massachusetts do you serve?",

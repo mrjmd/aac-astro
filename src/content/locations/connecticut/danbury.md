@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Danbury?"
-    answer: "Foundation crack repair in Danbury typically costs $500-$1,500 per crack. Many Danbury homes were built during the 1960s-80s building boom with poured concrete foundations that respond very well to our injection repair methods."
+    answer: "Foundation crack repair in Danbury typically costs $800-$1,200 per crack. Many Danbury homes were built during the 1960s-80s building boom with poured concrete foundations that respond very well to our injection repair methods."
   - question: "Are lakeside homes near Candlewood Lake at higher risk for foundation issues?"
     answer: "Properties near Candlewood Lake and other water features do experience higher groundwater levels that increase hydrostatic pressure on foundations. We see many homeowners from these areas who notice basement moisture before visible cracks appear—early intervention prevents larger problems."
   - question: "How quickly can you repair a foundation crack in Danbury?"

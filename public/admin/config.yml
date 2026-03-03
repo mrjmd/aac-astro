@@ -307,3 +307,67 @@ collections:
             step: 0.1
             min: 1
             max: 5
+
+      - name: pricing
+        label: Pricing Ranges
+        file: src/content/settings/pricing.json
+        fields:
+          - name: crack_repair_min
+            label: Crack Repair Min ($)
+            widget: number
+            value_type: int
+            default: 800
+
+          - name: crack_repair_max
+            label: Crack Repair Max ($)
+            widget: number
+            value_type: int
+            default: 1200
+
+          - name: bulkhead_min
+            label: Bulkhead Sealing Min ($)
+            widget: number
+            value_type: int
+            default: 1800
+
+          - name: bulkhead_max
+            label: Bulkhead Sealing Max ($)
+            widget: number
+            value_type: int
+            default: 2500
+
+          - name: carbon_fiber_min
+            label: Carbon Fiber Per Stitch Min ($)
+            widget: number
+            value_type: int
+            default: 200
+
+          - name: carbon_fiber_max
+            label: Carbon Fiber Per Stitch Max ($)
+            widget: number
+            value_type: int
+            default: 300
+
+          - name: sewer_conduit_min
+            label: Sewer/Conduit Line Min ($)
+            widget: number
+            value_type: int
+            default: 650
+
+          - name: sewer_conduit_max
+            label: Sewer/Conduit Line Max ($)
+            widget: number
+            value_type: int
+            default: 900
+
+          - name: wall_stabilization_min
+            label: Wall Stabilization Min ($)
+            widget: number
+            value_type: int
+            default: 5000
+
+          - name: wall_stabilization_max
+            label: Wall Stabilization Max ($)
+            widget: number
+            value_type: int
+            default: 15000

@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Framingham?"
-    answer: "Foundation repair in Framingham typically costs between $450 and $2,400 for crack injection. Framingham's mix of post-war concrete foundations and older fieldstone construction means repair approaches vary by neighborhood. We offer free estimates for all properties."
+    answer: "Foundation repair in Framingham typically costs between $800 and $1,200 for crack injection. Framingham's mix of post-war concrete foundations and older fieldstone construction means repair approaches vary by neighborhood. We offer free estimates for all properties."
   - question: "Why do Framingham basements leak?"
     answer: "Framingham's location along the Sudbury River watershed creates high water table conditions in many areas. Combined with the city's clay and glacial till soils—which don't drain well—hydrostatic pressure against foundations is common. Post-war homes are also reaching the age where original concrete begins to crack."
   - question: "Do you work in Framingham's historic areas?"

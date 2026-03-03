@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Hartford?"
-    answer: "Foundation crack repair in Hartford typically ranges from $500-$1,500 per crack depending on severity and access. Most Hartford homes have poured concrete or older fieldstone foundations that respond well to injection repair. We provide free consultations and transparent pricing."
+    answer: "Foundation crack repair in Hartford typically ranges from $800-$1,200 per crack depending on severity and access. Most Hartford homes have poured concrete or older fieldstone foundations that respond well to injection repair. We provide free consultations and transparent pricing."
   - question: "Why do Hartford homes have so many foundation cracks?"
     answer: "Hartford's clay-heavy soil expands and contracts significantly with seasonal moisture changes. Combined with the age of many homes in areas like the West End and Asylum Hill, this creates ideal conditions for foundation cracking. The freeze-thaw cycles in our Connecticut winters accelerate these issues."
   - question: "Do you offer warranties on Hartford foundation repairs?"

@@ -1,0 +1,12 @@
+{
+  "crack_repair_min": 800,
+  "crack_repair_max": 1200,
+  "bulkhead_min": 1800,
+  "bulkhead_max": 2500,
+  "carbon_fiber_min": 200,
+  "carbon_fiber_max": 300,
+  "sewer_conduit_min": 650,
+  "sewer_conduit_max": 900,
+  "wall_stabilization_min": 5000,
+  "wall_stabilization_max": 15000
+}

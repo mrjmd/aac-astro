@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Greenwich?"
-    answer: "Foundation crack repair in Greenwich typically ranges from $500-$1,500 per crack. Greenwich's diverse housing—from waterfront estates to Backcountry retreats—means each property has unique conditions. We provide detailed assessments to ensure appropriate solutions."
+    answer: "Foundation crack repair in Greenwich typically ranges from $800-$1,200 per crack. Greenwich's diverse housing—from waterfront estates to Backcountry retreats—means each property has unique conditions. We provide detailed assessments to ensure appropriate solutions."
   - question: "Do you work with historic Greenwich homes?"
     answer: "Yes, we have extensive experience with older construction throughout Greenwich's established neighborhoods. Stone and brick foundations common in historic homes require specialized techniques that we've refined over our 20+ years in business."
   - question: "How do you protect landscaping during foundation repair?"

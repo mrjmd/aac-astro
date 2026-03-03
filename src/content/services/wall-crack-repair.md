@@ -16,7 +16,7 @@ faqs:
   - question: "Is wall crack repair messy?"
     answer: "No. Our injection process is clean and contained. We protect your floors and clean up completely before we leave."
   - question: "How much does wall crack repair cost in CT and MA?"
-    answer: "Costs vary based on crack length and complexity, but most repairs range from $300-$800 per crack. We provide free consultations and honest quotes."
+    answer: "Costs vary based on crack length and complexity, but most repairs range from $800-$1,200 per crack. We provide free consultations and honest quotes."
 relatedServices:
   - "foundation-crack-injection"
   - "carbon-fiber-stitches"

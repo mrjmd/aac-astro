@@ -20,11 +20,11 @@ But we understand you need ballpark numbers to plan and budget. So here's an hon
 
 | Repair Type | Typical Range | Average |
 |------------|---------------|---------|
-| Single crack injection | $300 - $800 | $500 |
-| Multiple crack repair | $800 - $2,500 | $1,500 |
-| Bulkhead sealing | $400 - $1,000 | $650 |
-| Utility line sealing | $200 - $500 each | $350 |
-| Carbon fiber reinforcement | $800 - $1,500 per stitch | $1,100 |
+| Single crack injection | $800 - $1,200 | $1,000 |
+| Multiple crack repair (2-3) | Significant multi-crack discounts | Custom quote |
+| Bulkhead sealing | $1,800 - $2,500 | $2,100 |
+| Utility line sealing | $650 - $900 each | $775 |
+| Carbon fiber reinforcement | $200 - $300 per stitch | $250 |
 | Full wall stabilization | $5,000 - $15,000 | $9,000 |
 
 **Note:** These are 2026 estimates for the CT/MA market. Your actual costs may vary based on factors we'll discuss below.
@@ -36,10 +36,10 @@ But we understand you need ballpark numbers to plan and budget. So here's an hon
 Not all foundation problems are equal:
 
 **Simple Crack Injection**
-The most affordable repair. We inject flexible urethane or structural epoxy to fill and seal the crack. Most homeowners pay $300-$800 per crack.
+The most affordable repair. We inject flexible urethane or structural epoxy to fill and seal the crack. Most homeowners pay $800-$1,200 per crack.
 
 **Structural Reinforcement**
-If cracks indicate structural movement, carbon fiber stitches may be needed in addition to injection. This adds $800-$1,500 per stitch location.
+If cracks indicate structural movement, carbon fiber stitches may be needed in addition to injection. This adds $200-$300 per stitch location.
 
 **Wall Stabilization**
 Severely bowed or moving walls require more extensive solutions like wall anchors or steel beams. These projects typically range from $5,000-$15,000+.
@@ -48,9 +48,9 @@ Severely bowed or moving walls require more extensive solutions like wall anchor
 
 Multiple cracks are common, and the per-crack cost often decreases when we're repairing several in one visit:
 
-- **1 crack**: $300-$800
-- **2-3 cracks**: $600-$1,800 (slight per-crack discount)
-- **4+ cracks**: Custom quote (significant per-crack discount)
+- **1 crack**: $800-$1,200
+- **2-3 cracks**: Significant multi-crack discounts available
+- **4+ cracks**: Custom quote — we work with you on pricing
 
 ### 3. Crack Characteristics
 
@@ -85,7 +85,7 @@ While Attack A Crack serves all of CT and MA, some geographic factors affect pri
 
 ## The Hidden Cost: Waiting Too Long
 
-One of the biggest cost factors is timing. Foundation problems that could be fixed for $500 today might cost $5,000+ next year if they worsen.
+One of the biggest cost factors is timing. Foundation problems that could be fixed for $1,000 today might cost $5,000+ next year if they worsen.
 
 **Why Problems Escalate:**
 - Water infiltration leads to mold and interior damage
@@ -99,7 +99,7 @@ One of the biggest cost factors is timing. Foundation problems that could be fix
 
 ### Step 1: Free Consultation
 
-We offer completely free on-site assessments. We'll:
+We offer completely free assessments. Text us photos and we'll:
 - Examine all visible foundation issues
 - Identify root causes
 - Explain repair options

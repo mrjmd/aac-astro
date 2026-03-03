@@ -22,7 +22,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Manchester?"
-    answer: "Foundation crack repair in Manchester typically ranges from $500-$1,500 per crack. Manchester's housing stock is predominantly from the mid-to-late 1900s with poured concrete foundations that respond very well to our injection methods."
+    answer: "Foundation crack repair in Manchester typically ranges from $800-$1,200 per crack. Manchester's housing stock is predominantly from the mid-to-late 1900s with poured concrete foundations that respond very well to our injection methods."
   - question: "What causes foundation cracks in Manchester homes?"
     answer: "Manchester sits on varied terrain with both clay soils and areas of sandy, well-draining soil. The clay areas experience seasonal expansion and contraction that stresses foundations over time. Connecticut's freeze-thaw cycles accelerate crack formation, especially near the surface."
   - question: "Do you service condos and townhouses in Manchester?"
