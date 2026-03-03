@@ -175,11 +175,11 @@ Current: Realtors, Property Managers, Home Inspectors, Contractors.
 
 Per page: unique value prop, service-specific benefits, referral program details, testimonial, FAQ with schema, volume/partner discount mention.
 
-- [ ] Create `src/content/partners/insurance-adjusters.md`
-- [ ] Create `src/content/partners/mold-remediation.md`
-- [ ] Create `src/content/partners/plumbers.md`
-- [ ] Create `src/content/partners/landscapers.md`
-- [ ] Update partners index grid (`src/pages/partners/index.astro`)
+- [x] Create `src/content/partners/insurance-adjusters.md`
+- [x] Create `src/content/partners/mold-remediation.md`
+- [x] Create `src/content/partners/plumbers.md`
+- [x] Create `src/content/partners/landscapers.md`
+- [x] Partners index grid auto-populates from collection (no update needed)
 - [ ] Brainstorm additional personas with Matt (waterproofing companies, basement finishing, real estate attorneys)
 
 ### 4B: Preferred/Trusted Partners Page (NEW)
