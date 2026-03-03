@@ -1,0 +1,73 @@
+---
+import Icon from './Icon.astro';
+import SchemaMarkup from './SchemaMarkup.astro';
+
+const faqs = [
+	{
+		question: "What causes cracks in basement walls and foundations?",
+		answer: "Most foundation cracks in New England are caused by water pressure (hydrostatic pressure) pushing against basement walls, freeze-thaw cycles that expand and contract the soil, and normal concrete curing and settling over time. Horizontal cracks often signal serious lateral pressure, while vertical and diagonal cracks are usually from shrinkage or settlement. Either way, any crack that's leaking water or growing wider should be inspected — small cracks become big problems fast."
+	},
+	{
+		question: "How does foundation crack repair work?",
+		answer: `We fix foundation cracks using <a href="/services/foundation-crack-injection" class="text-aac-blue hover:underline font-semibold">low-pressure injection</a> of epoxy or polyurethane resin directly into the crack, sealing it from the inside out. The process takes about 30–60 minutes per crack with no excavation required. The injected resin fills the entire crack — from the interior surface through to the outside soil — creating a permanent, waterproof bond. Every repair comes with our lifetime transferable guarantee.`
+	},
+	{
+		question: "How much does foundation crack repair cost?",
+		answer: `Foundation crack repair typically costs between $400 and $800 per crack, depending on the length, location, and severity. That's significantly less than exterior excavation methods, which can run $3,000–$10,000+. We provide <a href="/services/free-foundation-consultations" class="text-aac-blue hover:underline font-semibold">free on-site inspections</a> with a written quote — no obligation, no pressure, no salespeople.`
+	},
+	{
+		question: "Do you offer free foundation inspections?",
+		answer: `Yes — every <a href="/services/free-foundation-consultations" class="text-aac-blue hover:underline font-semibold">foundation inspection</a> is 100% free with no obligation. One of our owners will personally come to your home, assess the cracks, explain exactly what's happening, and give you an honest recommendation. You can also text us photos for a quick remote assessment before scheduling an in-person visit.`
+	},
+	{
+		question: "What areas in Connecticut and Massachusetts do you serve?",
+		answer: `We serve homeowners across <a href="/locations/connecticut" class="text-aac-blue hover:underline font-semibold">Connecticut</a> and <a href="/locations/massachusetts" class="text-aac-blue hover:underline font-semibold">Massachusetts</a>, including Hartford, New Haven, Fairfield County, Springfield, Worcester, and the Greater Boston area. With 20+ years of experience in New England, we understand the unique foundation challenges that our climate, soil conditions, and older housing stock create.`
+	},
+	{
+		question: "Is it cement or concrete — does it matter for my repair?",
+		answer: `People often say "cement" when they mean "concrete" — and that's perfectly fine. Cement is actually just one ingredient in concrete (along with sand, gravel, and water). Your foundation is made of concrete, but regardless of what you call it, the repair process is the same: we inject structural resin directly into the crack to seal and strengthen it permanently. The fix works on poured concrete foundations, block walls, and stone foundations throughout Connecticut and Massachusetts.`
+	}
+];
+
+const faqSchema = {
+	"@type": "FAQPage",
+	"mainEntity": faqs.map(faq => ({
+		"@type": "Question",
+		"name": faq.question,
+		"acceptedAnswer": {
+			"@type": "Answer",
+			"text": faq.answer.replace(/<[^>]*>/g, '')
+		}
+	}))
+};
+---
+
+<SchemaMarkup schema={faqSchema} />
+
+<section id="faq" data-animate class="py-16 md:py-24 bg-zinc-50">
+	<div class="max-w-4xl mx-auto px-6">
+		<div class="text-center mb-12">
+			<p class="flex items-center justify-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-400 mb-6">
+				<Icon name="Info" size={14} /> COMMON QUESTIONS
+			</p>
+			<h2 class="text-4xl lg:text-5xl font-display font-black text-aac-dark tracking-tighter leading-[0.9]">
+				Foundation Repair <br />
+				<span class="text-aac-blue">Questions, Answered.</span>
+			</h2>
+		</div>
+
+		<div class="space-y-4">
+			{faqs.map((faq) => (
+				<details class="group bg-white rounded-2xl border-2 border-zinc-100 overflow-hidden">
+					<summary class="flex justify-between items-center p-6 cursor-pointer font-black text-lg hover:text-aac-blue transition-colors list-none">
+						{faq.question}
+						<span class="text-aac-blue shrink-0 ml-4 group-open:rotate-180 transition-transform">
+							<Icon name="ChevronRight" size={20} class="rotate-90" />
+						</span>
+					</summary>
+					<div class="px-6 pb-6 text-zinc-600 leading-relaxed" set:html={faq.answer} />
+				</details>
+			))}
+		</div>
+	</div>
+</section>
