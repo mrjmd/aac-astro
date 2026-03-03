@@ -8,6 +8,8 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
 import { reviewCount, rating, aggregateRatingSchema } from '../../utils/reviews';
+import { getForLocation } from '../../utils/testimonials';
+import { crackRepairRange, bulkheadRange, carbonFiberRange, sewerConduitRange } from '../../utils/pricing';
 
 export async function getStaticPaths() {
   const locations = await getCollection('locations');
@@ -22,9 +24,14 @@ export async function getStaticPaths() {
 const { location } = Astro.props;
 const { Content } = await render(location);
 
-// Get services (foundation repair + concrete repair for RI)
+// Get testimonial: use frontmatter if available, otherwise fall back to centralized data
+const testimonial = location.data.testimonial
+  || getForLocation(location.data.city, 'RI', 1)[0]
+  || getForLocation(location.data.city, 'MA', 1)[0]
+  || null;
+
+// Get services
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
-const concreteRepairServices = await getCollection('concrete-repair');
 
 // Get nearby city pages
 const allLocations = await getCollection('locations');
@@ -41,15 +48,14 @@ const breadcrumbItems = [
   { label: location.data.city }
 ];
 
+// Get concrete repair services (RI gets both foundation repair + concrete repair)
+const concreteRepairServices = await getCollection('concrete-repair');
+
 // Build significantLink array
 const significantLinks = [
-  // Foundation repair services
   ...services.slice(0, 3).map(s => `https://www.attackacrack.com/services/${s.id.replace(/\.md$/, '')}`),
-  // Concrete repair services (RI gets both)
   ...concreteRepairServices.slice(0, 2).map(s => `https://www.attackacrack.com/concrete-repair/${s.id.replace(/\.md$/, '')}`),
-  // Nearby cities
   ...nearbyLocations.slice(0, 3).map(l => `https://www.attackacrack.com/rhode-island/${l.id.replace(/\.md$/, '').replace(/^rhode-island\//, '')}`),
-  // State hub
   "https://www.attackacrack.com/rhode-island",
   "https://www.attackacrack.com/concrete-repair"
 ];
@@ -60,10 +66,10 @@ const mentions = [
   ...(location.data.neighborhoods || []).map(n => ({ "@type": "Neighborhood", "name": n })),
   ...(location.data.localLandmarks || []).map(l => ({ "@type": "Landmark", "name": l })),
   ...(location.data.commonFoundationTypes || []).map(f => ({ "@type": "Thing", "name": f })),
-  { "@type": "Thing", "name": "Concrete Resurfacing" }
+  { "@type": "Thing", "name": "Concrete Repair" }
 ];
 
-// LocalBusiness schema with LLM-ready properties
+// LocalBusiness schema for this city
 const citySchema = {
   "@type": "HomeAndConstructionBusiness",
   "name": `Attack A Crack Foundation Repair - ${location.data.city}, RI`,
@@ -140,16 +146,18 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 						<div class="flex flex-wrap gap-4 mb-8">
 							<div class="flex items-center gap-2 text-aac-yellow">
 								<Icon name="Star" size={18} />
-								<span class="font-bold text-sm">{reviewCount}+ 5-Star Reviews</span>
+								<span class="font-bold text-sm">5-Star Reviews</span>
 							</div>
 							<div class="flex items-center gap-2 text-white">
 								<Icon name="ShieldCheck" size={18} />
 								<span class="font-bold text-sm">Lifetime Guarantee</span>
 							</div>
-							<div class="flex items-center gap-2 text-aac-blue">
-								<Icon name="Wrench" size={18} />
-								<span class="font-bold text-sm">+ Resurfacing</span>
-							</div>
+							{location.data.servesResurfacing && (
+								<div class="flex items-center gap-2 text-aac-blue">
+									<Icon name="Wrench" size={18} />
+									<span class="font-bold text-sm">+ Resurfacing</span>
+								</div>
+							)}
 						</div>
 
 						<div class="flex flex-wrap gap-4">
@@ -178,22 +186,24 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 			</div>
 		</section>
 
-		<!-- Concrete Repair Banner (RI gets concrete repair) -->
-		<section class="py-6 bg-aac-blue text-white">
-			<div class="max-w-7xl mx-auto px-6">
-				<div class="flex flex-col md:flex-row items-center justify-between gap-4">
-					<div class="flex items-center gap-4">
-						<Icon name="Wrench" size={24} />
-						<p class="font-bold">
-							Concrete repair & resurfacing also available in {location.data.city}!
-						</p>
+		<!-- Resurfacing Banner -->
+		{location.data.servesResurfacing && (
+			<section class="py-6 bg-aac-blue text-white">
+				<div class="max-w-7xl mx-auto px-6">
+					<div class="flex flex-col md:flex-row items-center justify-between gap-4">
+						<div class="flex items-center gap-4">
+							<Icon name="Wrench" size={24} />
+							<p class="font-bold">
+								Concrete repair & resurfacing also available in {location.data.city}!
+							</p>
+						</div>
+						<a href="/concrete-repair" class="bg-white text-aac-blue px-4 py-2 rounded-lg font-black uppercase tracking-widest text-[10px] hover:bg-aac-yellow hover:text-aac-dark transition-colors inline-flex items-center gap-2">
+							Concrete Repair Services <Icon name="ArrowRight" size={14} />
+						</a>
 					</div>
-					<a href="/concrete-repair" class="bg-white text-aac-blue px-4 py-2 rounded-lg font-black uppercase tracking-widest text-[10px] hover:bg-aac-yellow hover:text-aac-dark transition-colors inline-flex items-center gap-2">
-						Concrete Repair Services <Icon name="ArrowRight" size={14} />
-					</a>
 				</div>
-			</div>
-		</section>
+			</section>
+		)}
 
 		<!-- City Info Section -->
 		{(location.data.neighborhoods || location.data.commonFoundationTypes) && (
@@ -202,10 +212,10 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 					<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 						{location.data.neighborhoods && location.data.neighborhoods.length > 0 && (
 							<div class="bg-white p-8 rounded-2xl border-2 border-zinc-100">
-								<h3 class="font-black text-lg mb-4 flex items-center gap-2">
+								<p class="font-black text-lg mb-4 flex items-center gap-2">
 									<Icon name="MapPin" size={20} class="text-aac-blue" />
 									Neighborhoods We Serve
-								</h3>
+								</p>
 								<ul class="space-y-2 text-zinc-600">
 									{location.data.neighborhoods.map(neighborhood => (
 										<li class="flex items-center gap-2">
@@ -219,10 +229,10 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 
 						{location.data.commonFoundationTypes && location.data.commonFoundationTypes.length > 0 && (
 							<div class="bg-white p-8 rounded-2xl border-2 border-zinc-100">
-								<h3 class="font-black text-lg mb-4 flex items-center gap-2">
+								<p class="font-black text-lg mb-4 flex items-center gap-2">
 									<Icon name="Hammer" size={20} class="text-aac-blue" />
 									Common Foundation Types
-								</h3>
+								</p>
 								<ul class="space-y-2 text-zinc-600">
 									{location.data.commonFoundationTypes.map(type => (
 										<li class="flex items-center gap-2">
@@ -236,10 +246,10 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 
 						{location.data.averageHomeAge && (
 							<div class="bg-white p-8 rounded-2xl border-2 border-zinc-100">
-								<h3 class="font-black text-lg mb-4 flex items-center gap-2">
+								<p class="font-black text-lg mb-4 flex items-center gap-2">
 									<Icon name="Clock" size={20} class="text-aac-blue" />
 									Local Insights
-								</h3>
+								</p>
 								<p class="text-zinc-600">
 									<strong>Average Home Age:</strong> {location.data.averageHomeAge}
 								</p>
@@ -290,16 +300,66 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 			</div>
 		</section>
 
+		<!-- Pricing Section -->
+		<section class="py-16 bg-white">
+			<div class="max-w-4xl mx-auto px-6">
+				<h2 class="text-3xl font-black tracking-tighter text-aac-dark mb-8 text-center">
+					{location.data.city} Foundation Repair Costs
+				</h2>
+				<div class="grid sm:grid-cols-2 gap-4">
+					<div class="p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
+						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
+							<Icon name="Hammer" size={20} />
+						</div>
+						<div>
+							<p class="font-black text-aac-dark">Crack Repair</p>
+							<p class="text-aac-blue font-bold">{crackRepairRange} per crack</p>
+						</div>
+					</div>
+					<div class="p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
+						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
+							<Icon name="Droplets" size={20} />
+						</div>
+						<div>
+							<p class="font-black text-aac-dark">Bulkhead Repair</p>
+							<p class="text-aac-blue font-bold">{bulkheadRange}</p>
+						</div>
+					</div>
+					<div class="p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
+						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
+							<Icon name="ShieldCheck" size={20} />
+						</div>
+						<div>
+							<p class="font-black text-aac-dark">Carbon Fiber Stitches</p>
+							<p class="text-aac-blue font-bold">{carbonFiberRange} per stitch</p>
+						</div>
+					</div>
+					<div class="p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
+						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
+							<Icon name="Wrench" size={20} />
+						</div>
+						<div>
+							<p class="font-black text-aac-dark">Pipe/Conduit Sealing</p>
+							<p class="text-aac-blue font-bold">{sewerConduitRange}</p>
+						</div>
+					</div>
+				</div>
+				<p class="text-center text-sm text-zinc-500 mt-6">
+					All prices are estimates. <a href="/services/free-foundation-consultations" class="text-aac-blue font-bold hover:underline">Get a free quote</a> for your specific situation.
+				</p>
+			</div>
+		</section>
+
 		<!-- FAQs -->
 		{location.data.faqs && location.data.faqs.length > 0 && (
-			<section class="py-16 bg-white">
+			<section class="py-16 bg-zinc-50">
 				<div class="max-w-4xl mx-auto px-6">
 					<h2 class="text-3xl font-black tracking-tighter text-aac-dark mb-8 text-center">
 						Foundation Repair FAQs for {location.data.city}
 					</h2>
 					<div class="space-y-4">
 						{location.data.faqs.map((faq) => (
-							<details class="group bg-zinc-50 rounded-xl overflow-hidden">
+							<details class="group bg-white rounded-xl overflow-hidden">
 								<summary class="flex justify-between items-center p-6 cursor-pointer font-bold hover:text-aac-blue transition-colors list-none">
 									{faq.question}
 									<Icon name="ChevronRight" size={20} class="text-aac-blue rotate-90 group-open:rotate-270 transition-transform" />
@@ -310,6 +370,24 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 							</details>
 						))}
 					</div>
+				</div>
+			</section>
+		)}
+
+		<!-- Testimonial -->
+		{testimonial && (
+			<section class="py-16 bg-aac-blue text-white">
+				<div class="max-w-4xl mx-auto px-6 text-center">
+					<Icon name="Star" size={48} class="text-aac-yellow mx-auto mb-6" />
+					<blockquote class="text-2xl lg:text-3xl font-bold mb-6 leading-relaxed">
+						"{testimonial.quote}"
+					</blockquote>
+					<p class="font-black">
+						— {testimonial.author}
+						{testimonial.location && (
+							<span class="font-normal text-white/90">, {testimonial.location}</span>
+						)}
+					</p>
 				</div>
 			</section>
 		)}

@@ -282,8 +282,8 @@ Blog (Problem) → Service (Solution) → City (Local):
 
 ### Tasks
 
-- [ ] Generate remaining 10 CT city pages
-- [ ] Generate 20 MA city pages
+- [x] Generate remaining 10 CT city pages (20 total CT)
+- [x] Generate 20 MA city pages (30 total MA)
 - [ ] Generate 10 RI city pages
 - [ ] Generate 10 NH city pages
 - [ ] Generate 10 ME city pages
