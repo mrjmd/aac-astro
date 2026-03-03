@@ -44,22 +44,37 @@ import { reviewCount } from '../utils/reviews';
     <div class="relative lg:-rotate-2">
       <div class="hero-slideshow aspect-[4/3] rounded-[48px] overflow-hidden border-8 border-white shadow-[24px_24px_60px_-15px_rgba(0,0,0,0.1)] relative">
         <img
-          src="/images/hero-slide-1.jpg"
+          src="/images/hero-slide-1.webp"
+          srcset="/images/hero-slide-1-sm.webp 600w, /images/hero-slide-1.webp 1200w"
+          sizes="(max-width: 1024px) 100vw, 50vw"
           alt="Technician injecting polyfoam sealant at a bulkhead joint"
           class="hero-slide absolute inset-0 w-full h-full object-cover object-[left_top] opacity-100"
+          width="1200"
+          height="1050"
+          fetchpriority="high"
           style="transform-origin: top left;"
           data-ken-burns="pan-down"
         />
         <img
-          src="/images/hero-slide-2.jpg"
+          src="/images/hero-slide-2.webp"
+          srcset="/images/hero-slide-2-sm.webp 600w, /images/hero-slide-2.webp 1200w"
+          sizes="(max-width: 1024px) 100vw, 50vw"
           alt="Setting up injection equipment at a bulkhead"
           class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0"
+          width="1200"
+          height="900"
+          loading="lazy"
           data-ken-burns="pan-right"
         />
         <img
-          src="/images/hero-slide-3.jpg"
+          src="/images/hero-slide-3.webp"
+          srcset="/images/hero-slide-3-sm.webp 600w, /images/hero-slide-3.webp 1200w"
+          sizes="(max-width: 1024px) 100vw, 50vw"
           alt="Grinding and cleaning a bulkhead joint for sealing"
           class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0"
+          width="1200"
+          height="900"
+          loading="lazy"
           style="transform-origin: 70% 20%;"
           data-ken-burns="zoom-in"
         />
@@ -101,7 +116,6 @@ import { reviewCount } from '../utils/reviews';
 
   .hero-slide {
     transition: opacity 1s ease-in-out;
-    will-change: transform, opacity;
   }
 
   .hero-slide.kb-active[data-ken-burns="pan-down"] {
@@ -121,8 +135,10 @@ import { reviewCount } from '../utils/reviews';
     let current = 0;
     const duration = 6000; // ms per slide
 
-    // Start first slide animation
-    slides[0].classList.add('kb-active');
+    // Defer first animation to avoid blocking LCP paint
+    requestAnimationFrame(() => {
+      slides[0].classList.add('kb-active');
+    });
 
     setInterval(() => {
       const prev = current;

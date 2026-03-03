@@ -7,28 +7,28 @@ const services = [
     description: "Urethane injection, epoxy resin, and carbon fiber stitches to repair foundation cracks in basement walls and support beams.",
     icon: "Hammer",
     link: "/services/wall-crack-repair",
-    img: "/images/service-wall-cracks.jpg"
+    img: "/images/service-wall-cracks.webp"
   },
   {
     title: "Leaky Bulkheads",
     description: "We remove the old gasket and inject between the foundation and precast bulkhead for a lifelong seal.",
     icon: "Droplets",
     link: "/services/leaky-bulkhead-repair",
-    img: "/images/service-bulkheads.jpg"
+    img: "/images/service-bulkheads.webp"
   },
   {
     title: "Utility Lines",
     description: "Durable urethane resin fills gaps around sewer, well, and electrical conduit lines without excavation.",
     icon: "ShieldCheck",
     link: "/services/sewer-well-conduit-line-repair",
-    img: "/images/service-utility.jpg"
+    img: "/images/service-utility.webp"
   },
   {
     title: "Free Diagnosis",
     description: "All diagnosis is free! We'll talk you through your options including DIY repair advice.",
     icon: "Info",
     link: "/services/free-foundation-consultations",
-    img: "/images/service-diagnosis.jpg"
+    img: "/images/service-diagnosis.webp"
   }
 ];
 ---
@@ -58,6 +58,9 @@ const services = [
               src={service.img}
               alt={service.title}
               class="w-full h-full object-cover"
+              width="600"
+              height="400"
+              loading="lazy"
             />
             <div class="absolute bottom-3 right-3 w-10 h-10 bg-aac-blue text-white rounded-xl flex items-center justify-center shadow-lg">
               <Icon name={service.icon} size={20} />

@@ -108,29 +108,13 @@ const schema = {
 		<!-- Schema.org -->
 		<script type="application/ld+json" set:html={JSON.stringify(schema)} />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Space+Grotesk:wght@300..700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Space+Grotesk:wght@300..700&display=swap"></noscript>
-
-		<!-- Netlify Identity Widget for Decap CMS authentication -->
-		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+		<!-- Preload critical fonts -->
+		<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin />
 	</head>
 	<body class="bg-white text-aac-dark font-sans selection:bg-aac-yellow selection:text-aac-dark antialiased">
 		<slot />
 		<SpeedInsights />
 
-		<!-- Redirect to admin after Netlify Identity login -->
-		<script is:inline>
-			if (window.netlifyIdentity) {
-				window.netlifyIdentity.on("init", user => {
-					if (!user) {
-						window.netlifyIdentity.on("login", () => {
-							document.location.href = "/admin/";
-						});
-					}
-				});
-			}
-		</script>
 	</body>
 </html>
