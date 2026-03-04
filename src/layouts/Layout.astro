@@ -7,13 +7,15 @@ interface Props {
 	description?: string;
 	image?: string;
 	canonicalURL?: string;
+	preloadHeroImage?: boolean;
 }
 
-const { 
-	title, 
+const {
+	title,
 	description = "Attack A Crack foundation repair, a trusted family-owned concrete foundation repair contractor, has served New England for 20+ years.",
 	image = "https://www.attackacrack.com/images/logo.jpg",
-	canonicalURL = Astro.url.href
+	canonicalURL = Astro.url.href,
+	preloadHeroImage = false
 } = Astro.props;
 
 const CT_NUMBER = "860-573-8760";
@@ -111,6 +113,12 @@ const schema = {
 		<!-- Preload critical fonts -->
 		<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
 		<link rel="preload" href="/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin />
+
+		{preloadHeroImage && (
+			<link rel="preload" href="/images/hero-slide-1.webp" as="image" type="image/webp"
+				imagesrcset="/images/hero-slide-1-sm.webp 600w, /images/hero-slide-1.webp 1200w"
+				imagesizes="(max-width: 1024px) 100vw, 50vw" />
+		)}
 	</head>
 	<body class="bg-white text-aac-dark font-sans selection:bg-aac-yellow selection:text-aac-dark antialiased">
 		<slot />

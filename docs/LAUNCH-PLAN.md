@@ -433,6 +433,7 @@ Matt: "In the CI they are currently just set as warnings, but before we launch t
 
 - [ ] Switch `public/robots.txt` to allow crawling
 - [ ] Remove `is-crawlable: 'off'` from `lighthouserc.cjs`
+- [ ] Raise `categories:seo` threshold in `lighthouserc.cjs` from 0.69 back to **0.95** (currently lowered only because `is-crawlable` fails with weight ~4x while robots.txt blocks crawling)
 - [ ] Backup current site
 - [ ] Point attackacrack.com DNS to Vercel
 - [ ] Verify SSL certificate
