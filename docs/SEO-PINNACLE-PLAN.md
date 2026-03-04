@@ -445,16 +445,16 @@ This keeps the technician's input minimal (10 seconds on phone) while producing 
 
 Script: `scripts/import-calendar-projects.js`
 
-- [ ] OAuth2 auth with Google Calendar API + Drive API
-- [ ] Credentials in `scripts/.credentials/` (gitignored)
-- [ ] Fetch events from 2025-01-01 to now where `harrringtonm@gmail.com` is attendee + has attachments
-- [ ] Download photos from Google Drive via attachment file IDs
-- [ ] Parse location field → city/state
-- [ ] **AI enrichment (Claude API, multimodal):** Send event description + before/after photos to Claude Sonnet → generate 280-char summary. Event titles are customer names (not useful for content), so the AI works from the description text and visual analysis of the photos to determine repair type and write a results-focused summary.
-- [ ] Generate `.md` files with `published: false` for review before publishing
-- [ ] `--dry-run` flag to preview without writing files
-- [ ] Dependencies: `googleapis`, `@anthropic-ai/sdk` (devDependencies)
-- [ ] npm script: `"import:calendar": "node scripts/import-calendar-projects.js"`
+- [x] OAuth2 auth with Google Calendar API + Drive API (local callback server on :3333)
+- [x] Credentials in `scripts/.credentials/` (gitignored)
+- [x] Fetch events from 2025-01-01 to now with attachments (paginated)
+- [x] Download photos from Google Drive via attachment file IDs
+- [x] Parse location field → city/state (address formats, state abbreviations)
+- [x] **AI enrichment (Claude API, multimodal):** Sends description + before/after photos to Claude Sonnet → 280-char summary
+- [x] Generate `.md` files with `published: false` for review before publishing
+- [x] `--dry-run`, `--since`, `--limit` flags
+- [ ] Dependencies: `googleapis`, `@anthropic-ai/sdk` (install when ready to run)
+- [x] npm script: `"import:calendar": "node scripts/import-calendar-projects.js"`
 
 **Prerequisites from Matt:**
 - Google Cloud project with Calendar API + Drive API enabled
@@ -464,13 +464,14 @@ Script: `scripts/import-calendar-projects.js`
 
 Script: `scripts/batch-post-gbp.js`
 
-- [ ] Read published project `.md` files not yet posted
-- [ ] Format GBP post: after photo + summary + "Learn More" CTA → project page URL
-- [ ] Route to CT or MA GBP location based on project state (RI/NH/ME → MA)
-- [ ] Track posted slugs in `scripts/.credentials/gbp-posted.json` (avoid duplicates)
-- [ ] Exponential backoff for rate limits
-- [ ] `--dry-run` and `--limit=N` flags
-- [ ] npm script: `"post:gbp": "node scripts/batch-post-gbp.js"`
+- [x] Read published project `.md` files not yet posted
+- [x] Format GBP post: after photo + summary + "Learn More" CTA → project page URL
+- [x] Route to CT or MA GBP location based on project state (CT/RI → CT office, MA/NH/ME → MA office)
+- [x] Track posted slugs in `scripts/.credentials/gbp-posted.json` (avoid duplicates)
+- [x] Exponential backoff for rate limits (3 retries, 2^n seconds + jitter)
+- [x] `--dry-run`, `--limit`, `--force` flags
+- [x] npm script: `"post:gbp": "node scripts/batch-post-gbp.js"`
+- [ ] Configure GBP account/location IDs (needs Matt's GBP access)
 
 **Prerequisites from Matt:**
 - Enable GBP API in same Google Cloud project

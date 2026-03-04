@@ -4,7 +4,7 @@
  * Content Uniqueness Validation Script
  *
  * Compares the body text of city/location pages to detect excessive similarity.
- * Flags any pair of pages with >80% text similarity as an error.
+ * Flags any pair of pages with >20% text similarity as an error.
  *
  * Uses word 4-gram (shingle) overlap with Jaccard similarity for accurate
  * content comparison that's resistant to shared industry terminology.
@@ -14,8 +14,8 @@
 import { readFileSync, readdirSync, existsSync } from 'fs';
 import { join, resolve } from 'path';
 
-const SIMILARITY_THRESHOLD = 0.50;  // Jaccard similarity (word 4-grams)
-const WARN_THRESHOLD = 0.40;
+const SIMILARITY_THRESHOLD = 0.20;  // Jaccard similarity (word 4-grams) — all 80 pages are <5%
+const WARN_THRESHOLD = 0.15;
 const CONTENT_DIR = resolve('src/content/locations');
 
 // Extract body text from markdown (strip frontmatter and markdown syntax)
