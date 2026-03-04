@@ -29,6 +29,9 @@ faqs:
   - question: "What causes foundation cracks in Natick's postwar homes?"
     answer: "Most Natick homes were built during the 1950s-1970s suburban expansion, and their poured concrete or block foundations are now 50-70 years old. Soil settlement, freeze-thaw cycling, and tree root pressure all contribute to cracking over time. Early repair prevents small cracks from becoming costly structural issues."
 servesResurfacing: true
+coordinates:
+  lat: 42.2835
+  lng: -71.3468
 ---
 
 ## Foundation Repair Services in Natick, Massachusetts

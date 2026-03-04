@@ -30,6 +30,9 @@ faqs:
   - question: "Do salt air and coastal storms damage Kittery foundations?"
     answer: "Yes, Kittery's direct ocean exposure means foundations endure constant salt air that corrodes concrete and deteriorates mortar joints over time. Nor'easters drive moisture deep into foundation walls, and the high water table from surrounding tidal waters keeps basement walls under persistent hydrostatic pressure. These conditions make regular foundation maintenance essential for Kittery homeowners."
 servesResurfacing: true
+coordinates:
+  lat: 43.0884
+  lng: -70.7356
 ---
 
 ## Foundation Repair Services in Kittery, Maine

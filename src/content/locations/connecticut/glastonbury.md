@@ -29,6 +29,9 @@ faqs:
   - question: "Will foundation repair affect my Glastonbury home's resale value?"
     answer: "A properly repaired foundation actually improves resale value. Our repairs come with a lifetime transferable warranty, which means the next buyer gets the same protection. Real estate agents in Glastonbury regularly recommend us because a documented, warrantied repair is far better than an unaddressed crack on an inspection report."
 servesResurfacing: false
+coordinates:
+  lat: 41.7123
+  lng: -72.6084
 ---
 
 ## Foundation Repair Services in Glastonbury, Connecticut

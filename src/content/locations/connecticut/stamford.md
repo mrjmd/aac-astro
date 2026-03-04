@@ -30,6 +30,9 @@ faqs:
   - question: "Do you serve both residential and commercial properties in Stamford?"
     answer: "Our focus is residential foundation repair, where our injection methods and lifetime guarantee provide the best value. We're experts in the single-family homes and townhouses found throughout Stamford's neighborhoods."
 servesResurfacing: false
+coordinates:
+  lat: 41.0534
+  lng: -73.5387
 ---
 
 ## Foundation Repair Services in Stamford, Connecticut

@@ -30,6 +30,9 @@ faqs:
   - question: "What soil conditions affect foundations in North Kingstown?"
     answer: "North Kingstown sits on varied glacial deposits including sandy outwash plains near Quonset Point and clay-rich soils further inland. Sandy soils drain quickly but can shift under foundations, while clay soils retain moisture and expand. Both conditions contribute to foundation cracking over time."
 servesResurfacing: true
+coordinates:
+  lat: 41.5501
+  lng: -71.4662
 ---
 
 ## Foundation Repair Services in North Kingstown, Rhode Island

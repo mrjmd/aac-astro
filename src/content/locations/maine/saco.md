@@ -30,6 +30,9 @@ faqs:
   - question: "Are Camp Ellis homes at higher risk for foundation problems?"
     answer: "Yes, properties in Camp Ellis and Ferry Beach face some of the toughest foundation conditions in southern Maine. The combination of sandy coastal soils, salt spray, high water tables, and direct storm exposure from Nor'easters accelerates foundation deterioration. We recommend annual foundation inspections for coastal Saco properties and offer fast, permanent crack repairs when needed."
 servesResurfacing: true
+coordinates:
+  lat: 43.5009
+  lng: -70.4428
 ---
 
 ## Foundation Repair Services in Saco, Maine

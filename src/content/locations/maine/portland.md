@@ -30,6 +30,9 @@ faqs:
   - question: "Do you repair fieldstone foundations in Portland's West End?"
     answer: "Yes, we specialize in repairing the fieldstone and brick foundations found throughout Portland's historic neighborhoods. The West End has some of Maine's oldest residential architecture, and our techniques stabilize these foundations without damaging their historic character. Every repair includes our lifetime transferable warranty."
 servesResurfacing: true
+coordinates:
+  lat: 43.6591
+  lng: -70.2568
 ---
 
 ## Foundation Repair Services in Portland, Maine

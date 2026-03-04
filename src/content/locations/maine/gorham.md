@@ -30,6 +30,9 @@ faqs:
   - question: "When is the best time to repair foundation cracks in Gorham?"
     answer: "We repair foundations year-round in Gorham, though spring and summer are the busiest seasons. Many homeowners discover cracks after spring snowmelt when water first appears in their basements. However, repairing cracks before winter is ideal because it prevents water from freezing inside the crack and expanding the damage further during Maine's long cold season."
 servesResurfacing: true
+coordinates:
+  lat: 43.6795
+  lng: -70.4442
 ---
 
 ## Foundation Repair Services in Gorham, Maine

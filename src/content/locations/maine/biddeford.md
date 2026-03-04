@@ -30,6 +30,9 @@ faqs:
   - question: "Can you repair fieldstone foundations in Biddeford's historic district?"
     answer: "Yes, we have extensive experience with the fieldstone and brick foundations found in Biddeford's historic mill district and surrounding neighborhoods. Our repair methods stabilize the foundation and seal water entry points without altering the structure's historic character. Each repair is backed by our lifetime transferable warranty."
 servesResurfacing: true
+coordinates:
+  lat: 43.4926
+  lng: -70.4534
 ---
 
 ## Foundation Repair Services in Biddeford, Maine

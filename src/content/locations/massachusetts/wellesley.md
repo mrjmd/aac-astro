@@ -30,6 +30,9 @@ faqs:
   - question: "Will foundation problems affect my Wellesley home's resale value?"
     answer: "In Wellesley's premium real estate market, unresolved foundation issues can significantly impact property value and complicate home sales. Buyers and inspectors scrutinize basements carefully. Professional repair with documented warranty protects both your home's integrity and its market position."
 servesResurfacing: true
+coordinates:
+  lat: 42.2968
+  lng: -71.2924
 ---
 
 ## Foundation Repair Services in Wellesley, Massachusetts

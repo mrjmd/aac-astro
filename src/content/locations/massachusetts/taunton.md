@@ -30,6 +30,9 @@ faqs:
   - question: "Can you repair fieldstone foundations in older Taunton homes?"
     answer: "Yes, we frequently work on fieldstone foundations in Taunton's historic neighborhoods. These foundations require repointing with compatible mortar, stabilization of shifting stones, and waterproofing that accounts for the irregular surface. Our techniques preserve the original construction while restoring structural integrity and water resistance."
 servesResurfacing: true
+coordinates:
+  lat: 41.9006
+  lng: -71.0898
 ---
 
 ## Foundation Repair Services in Taunton, Massachusetts

@@ -30,6 +30,9 @@ faqs:
   - question: "Why do Hingham homes near the harbor have more foundation issues?"
     answer: "Properties near Hingham Harbor and Crow Point experience elevated moisture levels from tidal influence and a high water table. This creates persistent hydrostatic pressure against foundation walls, leading to seepage and mortar deterioration. Proper drainage and waterproofing are essential for these homes."
 servesResurfacing: true
+coordinates:
+  lat: 42.2418
+  lng: -70.8898
 ---
 
 ## Foundation Repair Services in Hingham, Massachusetts

@@ -31,6 +31,9 @@ faqs:
   - question: "Do you offer payment plans for Bridgeport residents?"
     answer: "We understand that foundation repair is an unexpected expense. While we don't offer in-house financing, our pricing is transparent and competitive, and many homeowners find our repairs very affordable compared to other foundation contractors."
 servesResurfacing: false
+coordinates:
+  lat: 41.1865
+  lng: -73.1952
 ---
 
 ## Foundation Repair Services in Bridgeport, Connecticut

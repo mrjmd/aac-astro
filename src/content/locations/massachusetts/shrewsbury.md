@@ -28,6 +28,9 @@ faqs:
   - question: "Why is my Shrewsbury foundation cracking if my home is only 40-50 years old?"
     answer: "Shrewsbury's suburban-era homes are reaching the age where normal concrete aging, soil settlement, and decades of freeze-thaw exposure combine to produce visible cracking. This is expected and does not necessarily indicate a major structural problem. Early repair prevents water infiltration and stops small cracks from growing."
 servesResurfacing: true
+coordinates:
+  lat: 42.2959
+  lng: -71.7126
 ---
 
 ## Foundation Repair Services in Shrewsbury, Massachusetts

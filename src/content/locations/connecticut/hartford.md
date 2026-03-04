@@ -31,6 +31,9 @@ faqs:
   - question: "Do you offer warranties on Hartford foundation repairs?"
     answer: "Yes, every foundation crack repair we perform in Hartford comes with our lifetime transferable warranty. This covers the repaired crack for as long as you own your home—and transfers to the next owner if you sell."
 servesResurfacing: false
+coordinates:
+  lat: 41.7658
+  lng: -72.6734
 ---
 
 ## Foundation Repair Services in Hartford, Connecticut

@@ -30,6 +30,9 @@ faqs:
   - question: "How does the Charles River affect Waltham foundations?"
     answer: "The Charles River runs through Waltham and raises the water table in South Waltham, Warrendale, and nearby neighborhoods. Homes within a half mile of the river face increased hydrostatic pressure that pushes water through cracks and joints. Targeted waterproofing and crack sealing effectively manage this moisture."
 servesResurfacing: true
+coordinates:
+  lat: 42.3765
+  lng: -71.2356
 ---
 
 ## Foundation Repair Services in Waltham, Massachusetts

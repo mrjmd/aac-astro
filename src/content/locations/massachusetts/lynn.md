@@ -31,6 +31,9 @@ faqs:
   - question: "Do you service the Diamond District and waterfront areas of Lynn?"
     answer: "Yes, we regularly work in Lynn's Diamond District and all waterfront neighborhoods. These coastal areas face elevated water tables influenced by Nahant Bay and the Saugus River, requiring specialized waterproofing approaches. Our repair techniques are designed to handle the increased moisture pressure that waterfront Lynn properties experience."
 servesResurfacing: true
+coordinates:
+  lat: 42.4668
+  lng: -70.9495
 ---
 
 ## Foundation Repair Services in Lynn, Massachusetts

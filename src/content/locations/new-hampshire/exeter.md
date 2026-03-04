@@ -30,6 +30,9 @@ faqs:
   - question: "Does the Exeter River affect nearby foundations?"
     answer: "Absolutely. Homes near the Exeter River and Squamscott River experience elevated water tables, especially during spring runoff and high tides that push tidal water upstream. This persistent moisture increases hydrostatic pressure against foundation walls and accelerates deterioration. Early crack repair is essential in these riverside neighborhoods."
 servesResurfacing: true
+coordinates:
+  lat: 42.9815
+  lng: -70.9478
 ---
 
 ## Foundation Repair Services in Exeter, New Hampshire

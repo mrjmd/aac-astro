@@ -31,6 +31,9 @@ faqs:
   - question: "Can foundation cracks affect my Norwalk home's resale value?"
     answer: "Yes, visible foundation cracks and basement water issues are red flags for home buyers and inspectors. Our lifetime transferable warranty helps protect your home's value—buyers know the repair is guaranteed even after ownership transfers."
 servesResurfacing: false
+coordinates:
+  lat: 41.1177
+  lng: -73.4082
 ---
 
 ## Foundation Repair Services in Norwalk, Connecticut

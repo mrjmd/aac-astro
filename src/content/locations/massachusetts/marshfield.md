@@ -29,6 +29,9 @@ faqs:
   - question: "How do Marshfield's flood zones affect foundation repair?"
     answer: "Marshfield has significant FEMA flood zone areas along its coastline and river corridors. Foundations in these zones experience repeated cycles of water exposure that stress concrete and masonry materials beyond normal conditions. Our repair techniques account for these extreme moisture environments, using materials rated for persistent water contact and high hydrostatic pressure."
 servesResurfacing: true
+coordinates:
+  lat: 42.0918
+  lng: -70.7075
 ---
 
 ## Foundation Repair Services in Marshfield, Massachusetts

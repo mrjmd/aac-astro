@@ -31,6 +31,9 @@ faqs:
   - question: "Do you service all Brockton neighborhoods?"
     answer: "Yes, we provide foundation repair throughout Brockton—from Campello and Montello to the West Side and beyond. Our team knows the specific soil conditions and foundation types common in each area of the city."
 servesResurfacing: true
+coordinates:
+  lat: 42.0834
+  lng: -71.0184
 ---
 
 ## Foundation Repair Services in Brockton, Massachusetts

@@ -30,6 +30,9 @@ faqs:
   - question: "Do you serve the entire Dover and Tri-Cities area?"
     answer: "Yes, we serve all of Dover as well as neighboring Rochester and Somersworth. We repair foundations in every Dover neighborhood, from the historic downtown to newer developments along Back River Road. Our team is familiar with the soil and water conditions throughout the Tri-Cities region."
 servesResurfacing: true
+coordinates:
+  lat: 43.1979
+  lng: -70.8737
 ---
 
 ## Foundation Repair Services in Dover, New Hampshire

@@ -30,6 +30,9 @@ faqs:
   - question: "Can you repair historic fieldstone foundations in Portsmouth?"
     answer: "Absolutely. Portsmouth has some of New Hampshire's oldest homes, many with original fieldstone foundations. We use specialized techniques to seal and stabilize fieldstone walls without compromising their historic character. Our methods stop water intrusion while preserving the structural integrity of these irreplaceable foundations."
 servesResurfacing: true
+coordinates:
+  lat: 43.0718
+  lng: -70.7626
 ---
 
 ## Foundation Repair Services in Portsmouth, New Hampshire

@@ -32,6 +32,9 @@ faqs:
   - question: "Do you work in New Bedford's historic district?"
     answer: "Yes, we frequently work in the historic district and throughout New Bedford. Our techniques are designed to address water infiltration and structural concerns while preserving the character of the city's architecturally significant homes."
 servesResurfacing: true
+coordinates:
+  lat: 41.6362
+  lng: -70.9342
 ---
 
 ## Foundation Repair Services in New Bedford, Massachusetts

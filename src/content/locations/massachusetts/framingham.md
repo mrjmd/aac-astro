@@ -31,6 +31,9 @@ faqs:
   - question: "Do you work in Framingham's historic areas?"
     answer: "Yes, we service all of Framingham including the historic Saxonville and Framingham Centre neighborhoods. These areas feature older fieldstone foundations that require specialized techniques to address water infiltration while preserving their historic character."
 servesResurfacing: true
+coordinates:
+  lat: 42.2793
+  lng: -71.4162
 ---
 
 ## Foundation Repair Services in Framingham, Massachusetts

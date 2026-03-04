@@ -30,6 +30,9 @@ faqs:
   - question: "Can you fix a cracked basement floor in South Portland?"
     answer: "Absolutely. Cracked basement floors are common in South Portland, particularly in homes built on the clay soils near the Fore River. Floor cracks often indicate hydrostatic pressure from below, and we use specialized injection methods to seal them permanently. Our repairs address both the crack and the underlying moisture issue."
 servesResurfacing: true
+coordinates:
+  lat: 43.6415
+  lng: -70.2408
 ---
 
 ## Foundation Repair Services in South Portland, Maine

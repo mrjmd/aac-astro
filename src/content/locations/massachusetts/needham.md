@@ -29,6 +29,9 @@ faqs:
   - question: "Are postwar block foundations in Needham prone to problems?"
     answer: "Concrete block foundations built during Needham's 1940s-1960s growth period are reaching an age where mortar joints weaken and blocks can shift under soil pressure. Horizontal cracking and bowing are common signs. Carbon fiber reinforcement and crack injection can stabilize these walls without full replacement."
 servesResurfacing: true
+coordinates:
+  lat: 42.2813
+  lng: -71.2326
 ---
 
 ## Foundation Repair Services in Needham, Massachusetts

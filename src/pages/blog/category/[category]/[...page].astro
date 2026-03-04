@@ -74,6 +74,7 @@ const description = isFirstPage ? baseDescription : `Page ${page.currentPage} of
 <Layout
 	title={`${categoryLabels[category as string]} Blog Articles${titleSuffix}`}
 	description={description}
+	breadcrumbItems={breadcrumbItems}
 >
 	<LocationModal />
 	<Navbar currentPage="blog" />

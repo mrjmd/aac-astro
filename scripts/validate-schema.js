@@ -133,7 +133,16 @@ function validateSchema(schema, filePath) {
       if (!item.position || !item.name) {
         errors.push(`${filePath}: BreadcrumbList item ${i} missing position or name`);
       }
+      // B11: Breadcrumb URLs must be absolute
+      if (item.item && typeof item.item === 'string' && !item.item.startsWith('https://')) {
+        errors.push(`${filePath}: BreadcrumbList item ${i} URL not absolute HTTPS: ${item.item}`);
+      }
     }
+  }
+
+  // B11: AggregateRating must have itemReviewed
+  if (type === 'AggregateRating' && !schema.itemReviewed) {
+    errors.push(`${filePath}: AggregateRating missing itemReviewed`);
   }
 
   // Validate LocalBusiness specifics

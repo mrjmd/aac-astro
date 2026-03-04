@@ -30,6 +30,9 @@ faqs:
   - question: "Should I worry about foundation cracks in my newer Scarborough home?"
     answer: "Even newer homes in Scarborough can develop foundation cracks. Maine's freeze-thaw cycles are among the most extreme in New England, and the frost line extends more than five feet deep. This repeated freezing and thawing creates enormous soil pressure that can crack poured concrete foundations within their first decade. Early repair prevents small cracks from becoming costly structural problems."
 servesResurfacing: true
+coordinates:
+  lat: 43.5784
+  lng: -70.3218
 ---
 
 ## Foundation Repair Services in Scarborough, Maine

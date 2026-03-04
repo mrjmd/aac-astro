@@ -30,6 +30,9 @@ faqs:
   - question: "How deep do foundations need to be in Manchester, NH?"
     answer: "New Hampshire building code requires foundations to extend below the frost line, which is approximately 4 feet in Manchester. This deep frost line means a larger surface area of foundation wall is exposed to soil pressure and freeze-thaw stress, making proper waterproofing and crack repair essential."
 servesResurfacing: true
+coordinates:
+  lat: 42.9956
+  lng: -71.4548
 ---
 
 ## Foundation Repair Services in Manchester, New Hampshire

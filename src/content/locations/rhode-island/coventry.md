@@ -29,6 +29,9 @@ faqs:
   - question: "Do you serve rural areas of Coventry?"
     answer: "Yes, we serve all of Coventry including the more rural western sections near Greene and the Connecticut border. Whether your home is in a village center or on a wooded lot, our crew will travel to you for a free assessment and provide the same lifetime-guaranteed repair service."
 servesResurfacing: true
+coordinates:
+  lat: 41.7001
+  lng: -71.6828
 ---
 
 ## Foundation Repair Services in Coventry, Rhode Island

@@ -32,6 +32,9 @@ faqs:
   - question: "Do you service all Newton villages?"
     answer: "Yes, we provide foundation repair throughout all 13 Newton villages—from Newton Centre and Chestnut Hill to West Newton, Waban, and beyond. Our team knows the specific foundation types and soil conditions common in each area."
 servesResurfacing: true
+coordinates:
+  lat: 42.337
+  lng: -71.2092
 ---
 
 ## Foundation Repair Services in Newton, Massachusetts

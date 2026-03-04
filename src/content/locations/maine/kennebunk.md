@@ -30,6 +30,9 @@ faqs:
   - question: "How does the Kennebunk River affect nearby foundations?"
     answer: "The Kennebunk River and Mousam River both flow through town, keeping water tables elevated in the village center and Lower Village areas. During spring thaw, these rivers swell with snowmelt and raise groundwater levels substantially, putting increased hydrostatic pressure on nearby foundations. Homes within a few hundred yards of either river should be inspected regularly for new cracks."
 servesResurfacing: true
+coordinates:
+  lat: 43.384
+  lng: -70.5445
 ---
 
 ## Foundation Repair Services in Kennebunk, Maine

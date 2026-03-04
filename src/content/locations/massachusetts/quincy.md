@@ -31,6 +31,9 @@ faqs:
   - question: "Do you service the Quincy waterfront areas?"
     answer: "Absolutely. We regularly service Squantum, Houghs Neck, Marina Bay, and all Quincy waterfront neighborhoods. These areas often require specialized waterproofing approaches due to their proximity to the ocean and higher water tables."
 servesResurfacing: true
+coordinates:
+  lat: 42.2529
+  lng: -71.0023
 ---
 
 ## Foundation Repair Services in Quincy, Massachusetts

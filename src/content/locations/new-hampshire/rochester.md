@@ -28,6 +28,9 @@ faqs:
   - question: "Can you fix a leaking basement in Rochester?"
     answer: "Yes, most basement leaks in Rochester originate from foundation cracks that allow groundwater to seep through under hydrostatic pressure. Our injection repair process seals cracks from the inside, creating a permanent waterproof bond. This stops active leaks and prevents future water entry through the repaired crack."
 servesResurfacing: true
+coordinates:
+  lat: 43.3045
+  lng: -70.9756
 ---
 
 ## Foundation Repair Services in Rochester, New Hampshire

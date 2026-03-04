@@ -30,6 +30,9 @@ faqs:
   - question: "Can you work on foundations in York's historic district?"
     answer: "Yes, we regularly repair foundations in York Village and throughout the town's historic areas. Many of these homes have fieldstone or brick foundations dating to the 1800s, and our injection techniques are designed to seal cracks and stabilize walls without damaging the original masonry. We take particular care with historic properties to preserve their structural character while providing lasting waterproof repairs."
 servesResurfacing: true
+coordinates:
+  lat: 43.1609
+  lng: -70.6484
 ---
 
 ## Foundation Repair Services in York, Maine

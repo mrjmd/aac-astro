@@ -30,6 +30,9 @@ faqs:
   - question: "Why are concrete block basements common in Peabody?"
     answer: "Peabody's major residential growth occurred during the 1940s through 1970s when concrete block was a popular and cost-effective foundation material. While durable, block foundations are more susceptible to water infiltration through mortar joints and hollow cores than poured concrete. After 50-plus years of New England freeze-thaw cycles, many Peabody block foundations show signs of moisture penetration."
 servesResurfacing: true
+coordinates:
+  lat: 42.5279
+  lng: -70.9287
 ---
 
 ## Foundation Repair Services in Peabody, Massachusetts

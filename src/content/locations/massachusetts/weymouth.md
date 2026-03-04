@@ -29,6 +29,9 @@ faqs:
   - question: "Are Weymouth's coastal homes more prone to foundation issues?"
     answer: "Yes, homes in North Weymouth, Wessagusset, and other coastal sections face elevated water tables and salt air exposure that accelerate foundation deterioration. The proximity to Hingham Bay and the Back River means groundwater levels fluctuate significantly with tides and storms, increasing hydrostatic pressure against basement walls."
 servesResurfacing: true
+coordinates:
+  lat: 42.2188
+  lng: -70.9399
 ---
 
 ## Foundation Repair Services in Weymouth, Massachusetts

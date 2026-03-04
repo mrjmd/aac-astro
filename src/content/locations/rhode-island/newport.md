@@ -29,6 +29,9 @@ faqs:
   - question: "Can you repair foundations in Newport's historic district?"
     answer: "Yes, we have extensive experience with the types of foundations found in Newport's historic properties. From colonial-era fieldstone cellars on The Point to 19th-century brick foundations on Historic Hill, our repair methods preserve structural character while permanently stopping water infiltration."
 servesResurfacing: true
+coordinates:
+  lat: 41.4901
+  lng: -71.3128
 ---
 
 ## Foundation Repair Services in Newport, Rhode Island

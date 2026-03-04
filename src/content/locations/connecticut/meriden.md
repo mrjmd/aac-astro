@@ -30,6 +30,9 @@ faqs:
   - question: "Do you serve all neighborhoods in Meriden?"
     answer: "Yes. From the North End to South Meriden and everything in between, we service all Meriden neighborhoods. Most repairs are completed in a single visit lasting 2-4 hours, so there's minimal disruption to your day."
 servesResurfacing: false
+coordinates:
+  lat: 41.5382
+  lng: -72.807
 ---
 
 ## Foundation Repair Services in Meriden, Connecticut

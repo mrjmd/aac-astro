@@ -31,6 +31,9 @@ faqs:
   - question: "Why do so many Lawrence homes have foundation problems?"
     answer: "Lawrence's housing stock is among the oldest in the Merrimack Valley, with many homes dating to the early 1900s or before. These foundations have endured over a century of freeze-thaw cycles, soil settlement, and moisture exposure. The Merrimack River's influence on local water tables adds additional hydrostatic pressure that accelerates deterioration."
 servesResurfacing: true
+coordinates:
+  lat: 42.707
+  lng: -71.1631
 ---
 
 ## Foundation Repair Services in Lawrence, Massachusetts

@@ -30,6 +30,9 @@ faqs:
   - question: "Can you repair foundations built on Waterbury's rocky soil?"
     answer: "Absolutely. Connecticut's bedrock geology, common in the Waterbury area, actually provides stable support for foundations. The cracks we typically repair result from normal concrete curing and seasonal soil movement, not unstable bearing conditions."
 servesResurfacing: false
+coordinates:
+  lat: 41.5582
+  lng: -73.0515
 ---
 
 ## Foundation Repair Services in Waterbury, Connecticut

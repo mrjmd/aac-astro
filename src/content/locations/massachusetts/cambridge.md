@@ -32,6 +32,9 @@ faqs:
   - question: "Why are Cambridge basements so prone to water problems?"
     answer: "Cambridge's high water table, combined with its proximity to the Charles River and older housing stock, creates persistent moisture challenges. Many foundations predate modern waterproofing technology, and the city's clay soils don't drain well, increasing hydrostatic pressure."
 servesResurfacing: true
+coordinates:
+  lat: 42.3736
+  lng: -71.1097
 ---
 
 ## Foundation Repair Services in Cambridge, Massachusetts

@@ -32,6 +32,9 @@ faqs:
   - question: "Can you repair fieldstone foundations in Worcester?"
     answer: "Yes, we specialize in fieldstone foundation repair throughout Worcester. Many of the city's historic homes feature these traditional foundations, which require careful repointing and waterproofing techniques that preserve their character while stopping water infiltration."
 servesResurfacing: true
+coordinates:
+  lat: 42.2626
+  lng: -71.8023
 ---
 
 ## Foundation Repair Services in Worcester, Massachusetts

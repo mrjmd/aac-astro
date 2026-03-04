@@ -30,6 +30,9 @@ faqs:
   - question: "Can you fix a leaking basement in Cranston?"
     answer: "Yes, basement leaks in Cranston are typically caused by foundation cracks that allow groundwater to seep through. Our epoxy and polyurethane injection methods seal cracks from the inside, stopping water entry permanently. Every repair comes with a lifetime guarantee."
 servesResurfacing: true
+coordinates:
+  lat: 41.7798
+  lng: -71.4373
 ---
 
 ## Foundation Repair Services in Cranston, Rhode Island

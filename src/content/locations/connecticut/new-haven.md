@@ -32,6 +32,9 @@ faqs:
   - question: "Can you repair foundations in historic New Haven homes?"
     answer: "Absolutely. We have extensive experience with New Haven's historic housing stock, including fieldstone foundations common in East Rock and Westville. Our methods preserve the integrity of your historic home while providing lasting waterproofing and structural repair."
 servesResurfacing: false
+coordinates:
+  lat: 41.3083
+  lng: -72.9279
 ---
 
 ## Foundation Repair Services in New Haven, Connecticut

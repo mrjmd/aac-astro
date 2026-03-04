@@ -30,6 +30,9 @@ faqs:
   - question: "How long does a typical foundation repair take in West Hartford?"
     answer: "Most crack repairs are completed in 2-4 hours during a single visit. We schedule appointments at your convenience and complete the work efficiently with minimal disruption to your day."
 servesResurfacing: false
+coordinates:
+  lat: 41.762
+  lng: -72.742
 ---
 
 ## Foundation Repair Services in West Hartford, Connecticut

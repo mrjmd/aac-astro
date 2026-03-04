@@ -30,6 +30,9 @@ faqs:
   - question: "How do you protect landscaping during foundation repair?"
     answer: "Our interior injection repair method requires no exterior excavation, meaning your landscaping remains untouched. This is particularly important for Greenwich properties where mature landscaping represents significant investment."
 servesResurfacing: false
+coordinates:
+  lat: 41.0263
+  lng: -73.6282
 ---
 
 ## Foundation Repair Services in Greenwich, Connecticut

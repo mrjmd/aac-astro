@@ -29,6 +29,9 @@ faqs:
   - question: "Can you work on foundations during Somerville's busy construction season?"
     answer: "Yes, we regularly work in Somerville's tight urban lots and narrow driveways. Our crack injection process requires minimal equipment and doesn't need heavy machinery, making it ideal for Somerville's densely built neighborhoods where access can be challenging."
 servesResurfacing: true
+coordinates:
+  lat: 42.3876
+  lng: -71.0995
 ---
 
 ## Foundation Repair Services in Somerville, Massachusetts

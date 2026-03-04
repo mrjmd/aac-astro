@@ -32,6 +32,9 @@ faqs:
   - question: "Do you work on historic Boston properties?"
     answer: "Yes, we specialize in historic foundation repair throughout Boston. Our techniques are designed to preserve the integrity of fieldstone, brick, and brownstone foundations found in the city's older neighborhoods."
 servesResurfacing: true
+coordinates:
+  lat: 42.3601
+  lng: -71.0589
 ---
 
 ## Foundation Repair Services in Boston, Massachusetts

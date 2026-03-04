@@ -29,6 +29,9 @@ faqs:
   - question: "How quickly can you repair a foundation crack in Danbury?"
     answer: "Most foundation crack repairs are completed in a single visit of 2-4 hours. Our Danbury-area customers typically see us arrive in the morning and have a permanently repaired, warrantied crack by lunchtime."
 servesResurfacing: false
+coordinates:
+  lat: 41.3948
+  lng: -73.454
 ---
 
 ## Foundation Repair Services in Danbury, Connecticut

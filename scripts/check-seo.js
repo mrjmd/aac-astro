@@ -128,6 +128,14 @@ function checkOpenGraph(document, filePath) {
   if (!ogDesc) errors.push(`${filePath}: Missing og:description`);
   if (!ogImage) errors.push(`${filePath}: Missing og:image`);
   if (!ogUrl) errors.push(`${filePath}: Missing og:url`);
+
+  // B6: Check for placeholder OG images
+  if (ogImage) {
+    const imageUrl = ogImage.getAttribute('content') || '';
+    if (imageUrl.includes('picsum.photos')) {
+      errors.push(`${filePath}: og:image contains placeholder (picsum.photos)`);
+    }
+  }
 }
 
 function checkCanonical(document, filePath) {

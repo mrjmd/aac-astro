@@ -30,6 +30,9 @@ faqs:
   - question: "Why are Brookline basements prone to moisture problems?"
     answer: "Brookline's hilly terrain and mature tree canopy create complex drainage patterns that direct water toward foundations. The town's predominantly clay soils retain moisture, and many older homes were built before modern waterproofing standards existed. Seasonal groundwater fluctuations are especially pronounced near the Muddy River and in lower-lying areas around Brookline Village."
 servesResurfacing: true
+coordinates:
+  lat: 42.3318
+  lng: -71.1212
 ---
 
 ## Foundation Repair Services in Brookline, Massachusetts

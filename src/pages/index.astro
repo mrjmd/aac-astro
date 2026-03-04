@@ -25,7 +25,47 @@ const MA_NUMBER = phoneMA;
 	description="Attack A Crack provides expert foundation wall crack repair, bulkhead sealing, and concrete repair in CT & MA. 20+ years experience with a lifetime guarantee."
 	preloadHeroImage
 	breadcrumbItems={[{ label: 'Home' }]}
-	customSchema={faqSchema}
+	customSchema={[
+		faqSchema,
+		{
+			"@type": "HomeAndConstructionBusiness",
+			"name": "Attack A Crack Foundation Repair",
+			"@id": "https://www.attackacrack.com/#organization",
+			"url": "https://www.attackacrack.com",
+			"telephone": "860-573-8760",
+			"image": "https://www.attackacrack.com/images/logo.jpg",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "23 Elsmere Road",
+				"addressLocality": "Amston",
+				"addressRegion": "CT",
+				"postalCode": "06231",
+				"addressCountry": "US"
+			},
+			"subOrganization": [
+				{
+					"@type": "HomeAndConstructionBusiness",
+					"name": "Attack A Crack - Connecticut",
+					"telephone": CT_NUMBER,
+					"areaServed": { "@type": "State", "name": "Connecticut" }
+				},
+				{
+					"@type": "HomeAndConstructionBusiness",
+					"name": "Attack A Crack - Massachusetts",
+					"telephone": MA_NUMBER,
+					"areaServed": { "@type": "State", "name": "Massachusetts" }
+				}
+			],
+			"areaServed": [
+				{ "@type": "State", "name": "Connecticut" },
+				{ "@type": "State", "name": "Massachusetts" },
+				{ "@type": "State", "name": "Rhode Island" },
+				{ "@type": "State", "name": "New Hampshire" },
+				{ "@type": "State", "name": "Maine" }
+			],
+			"sameAs": ["https://www.facebook.com/attackacrack"]
+		}
+	]}
 >
 	<LocationModal />
 	<Navbar currentPage="home" />

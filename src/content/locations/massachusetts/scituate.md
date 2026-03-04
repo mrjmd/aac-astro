@@ -29,6 +29,9 @@ faqs:
   - question: "Are Scituate homes near the hurricane barrier at higher risk for foundation problems?"
     answer: "Homes near the Scituate sea wall and hurricane barrier face elevated flood risk during nor'easters and storm surges. Repeated water exposure weakens foundations over time. We recommend proactive waterproofing and crack sealing for properties in flood-prone areas."
 servesResurfacing: true
+coordinates:
+  lat: 42.1995
+  lng: -70.7256
 ---
 
 ## Foundation Repair Services in Scituate, Massachusetts

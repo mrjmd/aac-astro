@@ -15,7 +15,8 @@
     "check:a11y": "node scripts/check-a11y.js",
     "validate:links": "node scripts/validate-links.js",
     "validate:uniqueness": "node scripts/validate-uniqueness.js",
-    "validate": "npm run build && npm run validate:schema && npm run check:images && npm run check:seo && npm run check:a11y && npm run validate:links && npm run validate:uniqueness",
+    "validate:sitemap": "node scripts/validate-sitemap.js",
+    "validate": "npm run build && npm run validate:schema && npm run check:images && npm run check:seo && npm run check:a11y && npm run validate:links && npm run validate:uniqueness && npm run validate:sitemap",
     "screenshot": "node scripts/screenshot.js"
   },
   "dependencies": {

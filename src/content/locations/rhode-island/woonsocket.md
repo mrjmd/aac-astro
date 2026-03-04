@@ -29,6 +29,9 @@ faqs:
   - question: "Do you handle flood-related foundation damage in Woonsocket?"
     answer: "Yes, we repair foundation damage caused by flooding and high water events. Woonsocket has experienced significant flooding from the Blackstone River, and the resulting water pressure can crack and shift foundations. Our repairs restore structural integrity and prevent future water intrusion."
 servesResurfacing: true
+coordinates:
+  lat: 42.0029
+  lng: -71.5145
 ---
 
 ## Foundation Repair Services in Woonsocket, Rhode Island

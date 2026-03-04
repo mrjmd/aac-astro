@@ -30,6 +30,9 @@ faqs:
   - question: "Can you repair foundations in older Milford homes?"
     answer: "Yes. While many Milford homes were built in the 1950s-1970s with poured concrete, older sections near the town green and Devon feature block and fieldstone foundations from the early 1900s. We have specialized techniques for all foundation types and guarantee every repair for life."
 servesResurfacing: false
+coordinates:
+  lat: 41.2223
+  lng: -73.0568
 ---
 
 ## Foundation Repair Services in Milford, Connecticut

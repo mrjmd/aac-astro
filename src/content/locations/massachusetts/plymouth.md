@@ -31,6 +31,9 @@ faqs:
   - question: "Why do Plymouth basements flood?"
     answer: "Plymouth's sandy, well-draining soils can actually contribute to basement water problems. During heavy rains, water moves quickly through the soil and accumulates against foundations. Coastal areas also contend with high water tables that fluctuate with tides and seasons."
 servesResurfacing: true
+coordinates:
+  lat: 41.9584
+  lng: -70.6673
 ---
 
 ## Foundation Repair Services in Plymouth, Massachusetts

@@ -29,6 +29,9 @@ faqs:
   - question: "When should I repair a foundation crack in my Derry home?"
     answer: "The sooner the better. In Derry's climate, even a small crack will worsen through freeze-thaw cycles each winter. Water entering a crack freezes, expands, and widens the crack over time. Early repair costs less and prevents water damage to your basement finishing, stored belongings, and overall home structure."
 servesResurfacing: true
+coordinates:
+  lat: 42.8806
+  lng: -71.3273
 ---
 
 ## Foundation Repair Services in Derry, New Hampshire

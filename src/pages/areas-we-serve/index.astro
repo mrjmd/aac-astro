@@ -90,7 +90,21 @@ const areaSchema = {
   "areaServed": states.map(state => ({
     "@type": "State",
     "name": state.name
-  }))
+  })),
+  "subOrganization": [
+    {
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Attack A Crack - Connecticut",
+      "telephone": "860-573-8760",
+      "areaServed": { "@type": "State", "name": "Connecticut" }
+    },
+    {
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Attack A Crack - Massachusetts",
+      "telephone": "617-668-1677",
+      "areaServed": { "@type": "State", "name": "Massachusetts" }
+    }
+  ]
 };
 ---
 

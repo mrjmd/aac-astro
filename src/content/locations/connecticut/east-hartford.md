@@ -30,6 +30,9 @@ faqs:
   - question: "Do you repair foundations near the Connecticut River?"
     answer: "Yes. We regularly work on homes in East Hartford's river-adjacent neighborhoods including South Meadows and Hockanum. Higher water tables and wetter soils in these areas make proper crack sealing essential. Our flexible urethane injection is ideal for these conditions because it stays effective even in wet environments."
 servesResurfacing: false
+coordinates:
+  lat: 41.7823
+  lng: -72.6126
 ---
 
 ## Foundation Repair Services in East Hartford, Connecticut

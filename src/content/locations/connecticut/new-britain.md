@@ -31,6 +31,9 @@ faqs:
   - question: "Do you repair block and fieldstone foundations in New Britain?"
     answer: "Yes. Many older New Britain homes, especially in the East Side and Stanley Quarter neighborhoods, have block or fieldstone foundations. We use specialized injection techniques adapted for these older foundation types and back every repair with our lifetime guarantee."
 servesResurfacing: false
+coordinates:
+  lat: 41.6612
+  lng: -72.7795
 ---
 
 ## Foundation Repair Services in New Britain, Connecticut

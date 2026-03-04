@@ -30,6 +30,9 @@ faqs:
   - question: "Do you repair fieldstone foundations in Milton's older homes?"
     answer: "Absolutely. Many of Milton's pre-war homes, particularly those in Milton Village and along Adams Street, feature fieldstone or brick foundations that require specialized repair techniques. We use methods designed specifically for these historic materials, sealing cracks and mortar joints while preserving the foundation's structural character."
 servesResurfacing: true
+coordinates:
+  lat: 42.2498
+  lng: -71.0662
 ---
 
 ## Foundation Repair Services in Milton, Massachusetts

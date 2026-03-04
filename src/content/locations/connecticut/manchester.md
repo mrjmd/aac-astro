@@ -28,6 +28,9 @@ faqs:
   - question: "Do you service condos and townhouses in Manchester?"
     answer: "Yes, we repair foundations in all residential properties including condos and townhouses. We work with HOAs and individual unit owners to address foundation issues. Our injection methods are ideal for attached properties where exterior access may be limited."
 servesResurfacing: false
+coordinates:
+  lat: 41.7759
+  lng: -72.5215
 ---
 
 ## Foundation Repair Services in Manchester, Connecticut

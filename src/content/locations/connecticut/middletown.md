@@ -31,6 +31,9 @@ faqs:
   - question: "Can you repair historic foundations in Middletown?"
     answer: "Yes. Middletown has some of Connecticut's oldest residential architecture, especially along Main Street and in the downtown area. We have extensive experience with fieldstone and brick foundations typical of pre-1900 homes, using injection techniques adapted for these older materials."
 servesResurfacing: false
+coordinates:
+  lat: 41.5623
+  lng: -72.6506
 ---
 
 ## Foundation Repair Services in Middletown, Connecticut

@@ -30,6 +30,9 @@ faqs:
   - question: "Do you work on older foundations in Beverly Farms?"
     answer: "Absolutely. Beverly Farms features some of the North Shore's most distinguished historic estates, many with fieldstone foundations dating to the 1800s. We use specialized repair techniques designed for these older materials, carefully sealing cracks and restoring mortar joints while maintaining the structural integrity of the original construction."
 servesResurfacing: true
+coordinates:
+  lat: 42.5584
+  lng: -70.88
 ---
 
 ## Foundation Repair Services in Beverly, Massachusetts

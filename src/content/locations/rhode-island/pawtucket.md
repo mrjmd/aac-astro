@@ -30,6 +30,9 @@ faqs:
   - question: "Can you work on foundations in Pawtucket's older mill housing?"
     answer: "Absolutely. We have extensive experience with the types of foundations found in Pawtucket's mill-era worker housing. These homes often have shallow fieldstone or rubble foundations that require careful repair techniques to maintain structural integrity while stopping water infiltration."
 servesResurfacing: true
+coordinates:
+  lat: 41.8787
+  lng: -71.3826
 ---
 
 ## Foundation Repair Services in Pawtucket, Rhode Island

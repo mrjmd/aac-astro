@@ -29,6 +29,9 @@ faqs:
   - question: "Do you serve both Enfield and Thompsonville?"
     answer: "Yes. We serve all of Enfield including Thompsonville, Hazardville, Scitico, Shaker Pines, and North Enfield. We also cover the surrounding CT-MA border area. If you're near Springfield, MA—we serve there too through our Massachusetts office at 617-668-1677."
 servesResurfacing: false
+coordinates:
+  lat: 41.9762
+  lng: -72.5918
 ---
 
 ## Foundation Repair Services in Enfield, Connecticut

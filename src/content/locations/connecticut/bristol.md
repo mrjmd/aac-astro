@@ -29,6 +29,9 @@ faqs:
   - question: "Can you fix bulkhead leaks in Bristol homes?"
     answer: "Absolutely. Bulkhead door leaks are one of our most common repair calls in Bristol. We seal the joint between the precast bulkhead and your foundation using flexible urethane injection—no replacement needed in most cases. This repair costs $1,800-$2,500 and comes with our lifetime guarantee."
 servesResurfacing: false
+coordinates:
+  lat: 41.6718
+  lng: -72.9493
 ---
 
 ## Foundation Repair Services in Bristol, Connecticut

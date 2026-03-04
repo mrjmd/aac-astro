@@ -29,6 +29,9 @@ faqs:
   - question: "Does Torrington's location affect foundation problems?"
     answer: "Yes. Torrington is one of Connecticut's coldest cities, sitting at a higher elevation in the Litchfield Hills. More extreme freeze-thaw cycles, combined with heavy clay soils and mountain runoff, put additional stress on foundations compared to coastal Connecticut. This makes proper crack sealing especially important."
 servesResurfacing: false
+coordinates:
+  lat: 41.8009
+  lng: -73.121
 ---
 
 ## Foundation Repair Services in Torrington, Connecticut

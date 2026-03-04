@@ -28,6 +28,9 @@ faqs:
   - question: "Should I be worried about salt damage to my Hampton foundation?"
     answer: "Salt exposure is a real concern for Hampton foundations. Salt-laden air and occasional storm flooding introduce chlorides that corrode reinforcing steel and deteriorate concrete surfaces. Sealing cracks promptly prevents salt water from penetrating deeper into the foundation wall, where it can cause more serious structural damage over years of exposure."
 servesResurfacing: true
+coordinates:
+  lat: 42.9376
+  lng: -70.8389
 ---
 
 ## Foundation Repair Services in Hampton, New Hampshire

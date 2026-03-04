@@ -32,6 +32,9 @@ faqs:
   - question: "Why do Fall River homes have water in their basements?"
     answer: "Fall River's hilly terrain and older drainage infrastructure often direct water toward foundations. Many homes were built on slopes overlooking the Taunton River, and the city's clay soils don't drain well. Combine this with foundations that are 100+ years old, and water problems are common."
 servesResurfacing: true
+coordinates:
+  lat: 41.7015
+  lng: -71.155
 ---
 
 ## Foundation Repair Services in Fall River, Massachusetts

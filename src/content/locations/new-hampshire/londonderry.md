@@ -29,6 +29,9 @@ faqs:
   - question: "Can foundation cracks affect my Londonderry home's resale value?"
     answer: "Yes, visible foundation cracks and water staining are among the most common issues flagged in home inspections. Londonderry's competitive real estate market means buyers pay close attention to basement conditions. Our lifetime transferable guarantee actually adds value because it assures future buyers the repair is permanent."
 servesResurfacing: true
+coordinates:
+  lat: 42.8651
+  lng: -71.3734
 ---
 
 ## Foundation Repair Services in Londonderry, New Hampshire

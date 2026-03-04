@@ -30,6 +30,9 @@ faqs:
   - question: "What foundation types are most common in East Providence?"
     answer: "Most East Providence homes built in the mid-20th century have poured concrete or concrete block foundations. Older sections of Rumford and Watchemoket may have fieldstone foundations dating to the 1800s. We repair all foundation types with methods tailored to each material."
 servesResurfacing: true
+coordinates:
+  lat: 41.8137
+  lng: -71.3701
 ---
 
 ## Foundation Repair Services in East Providence, Rhode Island

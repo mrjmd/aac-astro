@@ -29,6 +29,9 @@ faqs:
   - question: "Can foundation cracks in Lexington be repaired without excavation?"
     answer: "In most cases, yes. Our interior crack injection process uses epoxy or polyurethane materials injected directly into the crack from inside the basement. This eliminates the need for exterior digging, preserves your landscaping, and completes most repairs in a single visit. We only recommend excavation when interior methods are not sufficient."
 servesResurfacing: true
+coordinates:
+  lat: 42.4473
+  lng: -71.2245
 ---
 
 ## Foundation Repair Services in Lexington, Massachusetts

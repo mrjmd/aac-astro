@@ -31,6 +31,9 @@ faqs:
   - question: "Why are Salem basements so damp near the waterfront?"
     answer: "Salem's harbor location means that homes in The Point, Derby Wharf area, and Salem Willows sit close to sea level with elevated water tables influenced by tidal cycles. The city's older foundations were built without modern waterproofing membranes, and centuries of salt air exposure have accelerated mortar deterioration in brick and fieldstone construction."
 servesResurfacing: true
+coordinates:
+  lat: 42.5195
+  lng: -70.8967
 ---
 
 ## Foundation Repair Services in Salem, Massachusetts

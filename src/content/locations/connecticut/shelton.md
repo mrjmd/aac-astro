@@ -29,6 +29,9 @@ faqs:
   - question: "Do you repair walk-out basement foundations?"
     answer: "Yes. Walk-out and daylight basements are common in Shelton due to the hilly terrain. These foundations face unique challenges because exposed walls experience different forces than fully buried walls. We have extensive experience repairing cracks in walk-out foundations and adapting our injection approach to these configurations."
 servesResurfacing: false
+coordinates:
+  lat: 41.3165
+  lng: -73.0932
 ---
 
 ## Foundation Repair Services in Shelton, Connecticut

@@ -30,6 +30,9 @@ faqs:
   - question: "Do you repair fieldstone foundations in Providence?"
     answer: "Yes, we specialize in fieldstone foundation repair throughout Providence. These rubble-stone foundations are common in Federal Hill, College Hill, and other historic neighborhoods. Our techniques stabilize and seal these older foundations without compromising their structural character."
 servesResurfacing: true
+coordinates:
+  lat: 41.824
+  lng: -71.4128
 ---
 
 ## Foundation Repair Services in Providence, Rhode Island

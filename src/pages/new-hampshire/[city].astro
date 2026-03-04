@@ -115,6 +115,9 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 <Layout
   title={location.data.metaTitle}
   description={location.data.metaDescription}
+  city={location.data.city}
+  state="NH"
+  coordinates={location.data.coordinates}
   customSchema={schemas}
   breadcrumbItems={breadcrumbItems}
 >

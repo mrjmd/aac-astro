@@ -8,6 +8,8 @@ module.exports = {
         'http://localhost/blog/index.html',
         'http://localhost/connecticut/index.html',
         'http://localhost/massachusetts/index.html',
+        'http://localhost/connecticut/hartford/index.html',
+        'http://localhost/blog/signs-of-foundation-problems/index.html',
       ],
       numberOfRuns: 3,
     },

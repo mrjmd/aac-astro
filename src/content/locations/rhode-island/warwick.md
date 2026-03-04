@@ -29,6 +29,9 @@ faqs:
   - question: "Do you serve all Warwick neighborhoods?"
     answer: "We serve every Warwick neighborhood from Conimicut and Warwick Neck on the bay to the inland areas of Cowesett and Apponaug. Whether your home sits near the waterfront or further inland, our technicians are experienced with the specific foundation challenges in your area."
 servesResurfacing: true
+coordinates:
+  lat: 41.7001
+  lng: -71.4162
 ---
 
 ## Foundation Repair Services in Warwick, Rhode Island

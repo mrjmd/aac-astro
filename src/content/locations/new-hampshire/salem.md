@@ -29,6 +29,9 @@ faqs:
   - question: "Is Salem, NH foundation repair different from Salem, MA?"
     answer: "While both areas face New England freeze-thaw challenges, Salem NH foundations contend with deeper frost lines at 4-5 feet compared to coastal Massachusetts. Salem NH homes also tend to be newer construction on different soil types. We serve both communities and tailor our approach to each location's specific conditions."
 servesResurfacing: true
+coordinates:
+  lat: 42.7886
+  lng: -71.2009
 ---
 
 ## Foundation Repair Services in Salem, New Hampshire

@@ -30,6 +30,9 @@ faqs:
   - question: "Can you repair stone foundations in Bristol's older homes?"
     answer: "Absolutely. Bristol has a number of historic homes with fieldstone and brick foundations, particularly near the harbor and along Hope Street. We use specialized mortar repair and sealing techniques designed for these older materials, preserving the character of the foundation while stopping leaks."
 servesResurfacing: true
+coordinates:
+  lat: 41.6771
+  lng: -71.2662
 ---
 
 ## Foundation Repair Services in Bristol, Rhode Island

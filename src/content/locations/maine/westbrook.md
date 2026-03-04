@@ -30,6 +30,9 @@ faqs:
   - question: "Are the old mill worker homes in Westbrook prone to foundation issues?"
     answer: "Yes, the worker housing built around Westbrook's paper mills in the late 1800s and early 1900s often sits on fieldstone or rubble foundations. These foundations were adequate for their era but have endured over a century of Maine winters. We regularly repair these foundations with modern injection techniques that preserve the home's structure while stopping water infiltration permanently."
 servesResurfacing: true
+coordinates:
+  lat: 43.677
+  lng: -70.3712
 ---
 
 ## Foundation Repair Services in Westbrook, Maine

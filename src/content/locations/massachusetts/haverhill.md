@@ -29,6 +29,9 @@ faqs:
   - question: "Are older Haverhill homes near downtown prone to foundation issues?"
     answer: "Yes, Haverhill's downtown and surrounding neighborhoods contain homes dating from the city's shoe manufacturing era, many with fieldstone or early concrete foundations. These older foundations were built without modern waterproofing and have endured over a century of freeze-thaw cycles. The combination of aged materials and the downtown area's proximity to the Merrimack makes these foundations especially vulnerable to water problems."
 servesResurfacing: true
+coordinates:
+  lat: 42.7762
+  lng: -71.0773
 ---
 
 ## Foundation Repair Services in Haverhill, Massachusetts

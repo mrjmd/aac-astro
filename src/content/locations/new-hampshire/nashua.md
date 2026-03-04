@@ -29,6 +29,9 @@ faqs:
   - question: "Do you repair both old and new foundations in Nashua?"
     answer: "Yes, we repair foundations of all ages throughout Nashua. We work on everything from older mill-era homes near downtown to the newer subdivisions along the Daniel Webster Highway. Our epoxy and polyurethane injection methods are effective on both poured concrete and block foundations."
 servesResurfacing: true
+coordinates:
+  lat: 42.7654
+  lng: -71.4676
 ---
 
 ## Foundation Repair Services in Nashua, New Hampshire
