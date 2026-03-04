@@ -1,0 +1,289 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LocationModal from '../../components/LocationModal.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Icon from '../../components/Icon.astro';
+
+export async function getStaticPaths() {
+	const projects = await getCollection('projects', ({ data }) => data.published);
+	return projects.map((project) => ({
+		params: { slug: project.id.replace(/\.md$/, '') },
+		props: { project },
+	}));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+
+const serviceTypeLabels: Record<string, string> = {
+	'crack-injection': 'Crack Injection',
+	'wall-crack-repair': 'Wall Crack Repair',
+	'bulkhead-repair': 'Bulkhead Repair',
+	'carbon-fiber': 'Carbon Fiber Reinforcement',
+	'sewer-conduit': 'Sewer & Conduit Repair',
+	'concrete-repair': 'Concrete Repair',
+};
+
+const stateLabels: Record<string, string> = {
+	CT: 'Connecticut',
+	MA: 'Massachusetts',
+	RI: 'Rhode Island',
+	NH: 'New Hampshire',
+	ME: 'Maine',
+};
+
+const breadcrumbItems = [
+	{ label: 'Home', href: '/' },
+	{ label: 'Recent Projects', href: '/projects' },
+	{ label: project.data.title }
+];
+
+function formatDate(date: Date): string {
+	return date.toLocaleDateString('en-US', {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric'
+	});
+}
+
+// Get other projects for "More Projects" section
+const allProjects = (await getCollection('projects', ({ data }) => data.published))
+	.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const moreProjects = allProjects.filter(p => p.id !== project.id).slice(0, 3);
+
+// Generate meta description from summary if not provided
+const metaDescription = project.data.metaDescription
+	|| `${serviceTypeLabels[project.data.serviceType]} in ${project.data.city}, ${stateLabels[project.data.state]}. ${project.data.summary}`.slice(0, 160);
+
+// Determine phone number based on state
+const isMARegion = ['MA', 'NH', 'ME'].includes(project.data.state);
+const phoneNumber = isMARegion ? '617-668-1677' : '860-573-8760';
+
+// Build JSON-LD schema
+const projectSchema = {
+	"@type": "HomeAndConstructionBusiness",
+	"name": "Attack A Crack Foundation Repair",
+	"@id": "https://www.attackacrack.com/#organization",
+	"url": `https://www.attackacrack.com/projects/${project.id.replace(/\.md$/, '')}`,
+	"telephone": phoneNumber,
+	"address": {
+		"@type": "PostalAddress",
+		"addressLocality": project.data.city,
+		"addressRegion": project.data.state,
+		"addressCountry": "US"
+	},
+	"areaServed": {
+		"@type": "City",
+		"name": project.data.city,
+		...(project.data.coordinates && {
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": project.data.coordinates.lat,
+				"longitude": project.data.coordinates.lng
+			}
+		})
+	},
+	"image": [
+		`https://www.attackacrack.com${project.data.beforeImage}`,
+		`https://www.attackacrack.com${project.data.afterImage}`
+	],
+	"description": project.data.summary,
+	"makesOffer": {
+		"@type": "Offer",
+		"itemOffered": {
+			"@type": "Service",
+			"name": serviceTypeLabels[project.data.serviceType],
+			"serviceType": "Foundation Repair"
+		}
+	}
+};
+---
+
+<Layout
+	title={project.data.metaTitle || `${serviceTypeLabels[project.data.serviceType]} in ${project.data.city}, ${project.data.state}`}
+	description={metaDescription}
+	customSchema={projectSchema}
+	breadcrumbItems={breadcrumbItems}
+	city={project.data.city}
+	state={project.data.state}
+	coordinates={project.data.coordinates}
+>
+	<LocationModal />
+	<Navbar />
+
+	<main class="pt-20 lg:pt-24">
+		<!-- Hero Section -->
+		<section class="py-12 lg:py-20 bg-white border-b border-zinc-100">
+			<div class="max-w-5xl mx-auto px-6">
+				<Breadcrumbs items={breadcrumbItems} class="mb-8" />
+
+				<div class="flex items-center gap-4 mb-6">
+					<span class="text-[10px] font-black uppercase tracking-widest text-aac-blue bg-aac-blue/10 px-3 py-1 rounded-full">
+						{serviceTypeLabels[project.data.serviceType]}
+					</span>
+					<span class="text-sm text-zinc-500 flex items-center gap-1">
+						<Icon name="MapPin" size={14} />
+						{project.data.city}, {stateLabels[project.data.state]}
+					</span>
+					<span class="text-sm text-zinc-500">
+						{formatDate(project.data.date)}
+					</span>
+				</div>
+
+				<h1 class="text-4xl lg:text-6xl font-black tracking-tighter mb-6 leading-tight">
+					{project.data.title}
+				</h1>
+
+				<p class="text-xl text-zinc-500 max-w-3xl">
+					{project.data.summary}
+				</p>
+			</div>
+		</section>
+
+		<!-- Before/After Photos -->
+		<section class="py-12 lg:py-20 bg-zinc-50">
+			<div class="max-w-6xl mx-auto px-6">
+				<div class="grid md:grid-cols-2 gap-8">
+					<!-- Before -->
+					<div>
+						<div class="flex items-center gap-2 mb-4">
+							<div class="w-3 h-3 bg-red-500 rounded-full"></div>
+							<span class="text-sm font-black uppercase tracking-widest text-zinc-700">Before</span>
+						</div>
+						<div class="aspect-[4/3] rounded-2xl overflow-hidden border-2 border-zinc-200 shadow-lg">
+							<img
+								src={project.data.beforeImage}
+								alt={`${project.data.title} - Before repair`}
+								class="w-full h-full object-cover"
+							/>
+						</div>
+					</div>
+					<!-- After -->
+					<div>
+						<div class="flex items-center gap-2 mb-4">
+							<div class="w-3 h-3 bg-green-500 rounded-full"></div>
+							<span class="text-sm font-black uppercase tracking-widest text-zinc-700">After</span>
+						</div>
+						<div class="aspect-[4/3] rounded-2xl overflow-hidden border-2 border-zinc-200 shadow-lg">
+							<img
+								src={project.data.afterImage}
+								alt={`${project.data.title} - After repair`}
+								class="w-full h-full object-cover"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Project Details -->
+		<section class="py-12 lg:py-20 bg-white">
+			<div class="max-w-3xl mx-auto px-6">
+				<!-- Quick Facts -->
+				<div class="grid grid-cols-3 gap-6 mb-12 p-8 bg-zinc-50 rounded-2xl border-2 border-zinc-100">
+					<div class="text-center">
+						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mx-auto mb-2">
+							<Icon name="Wrench" size={20} />
+						</div>
+						<p class="text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-1">Service</p>
+						<p class="font-bold text-sm">{serviceTypeLabels[project.data.serviceType]}</p>
+					</div>
+					<div class="text-center">
+						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mx-auto mb-2">
+							<Icon name="MapPin" size={20} />
+						</div>
+						<p class="text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-1">Location</p>
+						<p class="font-bold text-sm">{project.data.city}, {project.data.state}</p>
+					</div>
+					<div class="text-center">
+						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mx-auto mb-2">
+							<Icon name="ShieldCheck" size={20} />
+						</div>
+						<p class="text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-1">Guarantee</p>
+						<p class="font-bold text-sm">Lifetime</p>
+					</div>
+				</div>
+
+				{project.data.technicianNote && (
+					<div class="mb-12 p-6 bg-aac-blue/5 rounded-2xl border border-aac-blue/20">
+						<div class="flex items-start gap-4">
+							<div class="w-10 h-10 bg-aac-blue rounded-xl flex items-center justify-center text-white shrink-0">
+								<Icon name="Info" size={20} />
+							</div>
+							<div>
+								<p class="font-black text-sm mb-1">Technician's Note</p>
+								<p class="text-zinc-600 leading-relaxed">{project.data.technicianNote}</p>
+							</div>
+						</div>
+					</div>
+				)}
+
+				<!-- Markdown body content -->
+				<article class="prose prose-lg prose-zinc max-w-none prose-headings:font-black prose-headings:tracking-tight prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-p:leading-relaxed prose-a:text-aac-blue prose-a:font-bold prose-a:no-underline hover:prose-a:underline">
+					<Content />
+				</article>
+			</div>
+		</section>
+
+		<!-- More Projects -->
+		{moreProjects.length > 0 && (
+			<section class="py-16 bg-zinc-50 border-t border-zinc-100">
+				<div class="max-w-7xl mx-auto px-6">
+					<h2 class="text-2xl font-black mb-8">More Projects</h2>
+					<div class="grid md:grid-cols-3 gap-8">
+						{moreProjects.map((p) => (
+							<a href={`/projects/${p.id.replace(/\.md$/, '')}`} class="group bg-white rounded-2xl overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all">
+								<div class="aspect-video overflow-hidden">
+									<img
+										src={p.data.afterImage}
+										alt={`${p.data.title} - After repair`}
+										class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+									/>
+								</div>
+								<div class="p-6">
+									<span class="text-[10px] font-black uppercase tracking-widest text-aac-blue">
+										{p.data.city}, {p.data.state}
+									</span>
+									<h3 class="text-lg font-black mt-2 group-hover:text-aac-blue transition-colors line-clamp-2">
+										{p.data.title}
+									</h3>
+								</div>
+							</a>
+						))}
+					</div>
+					<div class="text-center mt-8">
+						<a href="/projects" class="inline-flex items-center gap-2 text-aac-dark font-black uppercase tracking-widest text-sm hover:text-aac-blue transition-colors">
+							View All Projects <Icon name="ArrowRight" size={16} />
+						</a>
+					</div>
+				</div>
+			</section>
+		)}
+
+		<!-- CTA Section -->
+		<section class="py-16 bg-aac-dark text-white">
+			<div class="max-w-4xl mx-auto px-6 text-center">
+				<h2 class="text-3xl lg:text-4xl font-black tracking-tighter mb-6">
+					Have a Similar Problem?
+				</h2>
+				<p class="text-lg text-zinc-400 mb-8">
+					Get a free consultation with our experts. We'll assess your situation and give you honest advice — no pressure, no salespeople.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<button class="open-modal bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
+						<Icon name="MessageSquare" size={20} />
+						Text Us Photos
+					</button>
+					<a href={`tel:${phoneNumber}`} class="bg-white/10 text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+						<Icon name="Phone" size={20} />
+						{phoneNumber}
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>

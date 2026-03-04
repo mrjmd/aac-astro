@@ -23,6 +23,7 @@ const REQUIRED_SCHEMAS = {
   'blog/': ['Article'],
   'partners/': ['WebPage'],
   'foundation-types/': ['Article'],
+  'projects/': ['LocalBusiness'],
 };
 
 // Hub pages that use ItemList/collection schemas instead of individual page schemas
@@ -31,6 +32,7 @@ const HUB_PAGES = [
   'concrete-repair/index.html',
   'blog/index.html',
   'foundation-types/index.html',
+  'projects/index.html',
   'blog/category/',  // Blog category listing pages (including paginated)
 ];
 

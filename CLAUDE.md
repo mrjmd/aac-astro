@@ -91,6 +91,7 @@ The `quality.yml` workflow runs the same checks on push/PR to main. All SEO/sche
 | team | `src/content/team/` | Team profiles |
 | faqs | `src/content/faqs/` | FAQ collections |
 | resources | `src/content/resources/` | Additional resources |
+| projects | `src/content/projects/` | Recent project case studies (before/after) |
 
 ## Launch Plan
 

@@ -218,6 +218,35 @@ const partnersCollection = defineCollection({
 });
 
 // =============================================================================
+// PROJECTS COLLECTION - Recent project case studies
+// =============================================================================
+const projectsCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    metaTitle: z.string().min(30).max(60).optional(),
+    metaDescription: z.string().min(120).max(160).optional(),
+    date: z.coerce.date(),
+    city: z.string(),
+    state: z.enum(['CT', 'MA', 'RI', 'NH', 'ME']),
+    coordinates: z.object({ lat: z.number(), lng: z.number() }).optional(),
+    serviceType: z.enum([
+      'crack-injection',
+      'wall-crack-repair',
+      'bulkhead-repair',
+      'carbon-fiber',
+      'sewer-conduit',
+      'concrete-repair',
+    ]),
+    beforeImage: z.string(),
+    afterImage: z.string(),
+    summary: z.string().max(280),
+    technicianNote: z.string().optional(),
+    published: z.boolean().default(true),
+  }),
+});
+
+// =============================================================================
 // EXPORT COLLECTIONS
 // =============================================================================
 export const collections = {
@@ -230,4 +259,5 @@ export const collections = {
   team: teamCollection,
   faqs: faqsCollection,
   partners: partnersCollection,
+  projects: projectsCollection,
 };

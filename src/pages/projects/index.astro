@@ -1,0 +1,174 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LocationModal from '../../components/LocationModal.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Icon from '../../components/Icon.astro';
+
+const allProjects = (await getCollection('projects', ({ data }) => data.published))
+	.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const serviceTypeLabels: Record<string, string> = {
+	'crack-injection': 'Crack Injection',
+	'wall-crack-repair': 'Wall Crack Repair',
+	'bulkhead-repair': 'Bulkhead Repair',
+	'carbon-fiber': 'Carbon Fiber',
+	'sewer-conduit': 'Sewer & Conduit',
+	'concrete-repair': 'Concrete Repair',
+};
+
+const stateLabels: Record<string, string> = {
+	CT: 'Connecticut',
+	MA: 'Massachusetts',
+	RI: 'Rhode Island',
+	NH: 'New Hampshire',
+	ME: 'Maine',
+};
+
+const breadcrumbItems = [
+	{ label: 'Home', href: '/' },
+	{ label: 'Recent Projects' }
+];
+
+function formatDate(date: Date): string {
+	return date.toLocaleDateString('en-US', {
+		year: 'numeric',
+		month: 'long',
+	});
+}
+
+// ItemList schema for the hub page
+const itemListSchema = {
+	"@type": "ItemList",
+	"name": "Recent Foundation Repair Projects",
+	"description": "Before and after photos from recent foundation repair projects across New England.",
+	"numberOfItems": allProjects.length,
+	"itemListElement": allProjects.map((project, index) => ({
+		"@type": "ListItem",
+		"position": index + 1,
+		"url": `https://www.attackacrack.com/projects/${project.id.replace(/\.md$/, '')}`,
+		"name": project.data.title,
+	})),
+};
+---
+
+<Layout
+	title="Recent Foundation Repair Projects"
+	description="Before and after photos from recent foundation repair projects across Connecticut, Massachusetts, and New England. See our work firsthand."
+	customSchema={itemListSchema}
+	breadcrumbItems={breadcrumbItems}
+>
+	<LocationModal />
+	<Navbar />
+
+	<main class="pt-20 lg:pt-24">
+		<!-- Hero Section -->
+		<section class="py-20 lg:py-32 bg-white border-b-4 border-zinc-100">
+			<div class="max-w-7xl mx-auto px-6">
+				<Breadcrumbs items={breadcrumbItems} class="mb-8" />
+				<div class="grid lg:grid-cols-2 gap-12 items-center">
+					<div>
+						<h1 class="text-6xl lg:text-8xl font-black tracking-tighter mb-8 leading-none">
+							RECENT<br />
+							<span class="text-aac-blue">PROJECTS.</span>
+						</h1>
+						<p class="text-xl text-zinc-500 max-w-lg">
+							Before and after photos from our foundation repair jobs across New England. Every project backed by our lifetime guarantee.
+						</p>
+					</div>
+					<div class="text-right">
+						<div class="inline-flex items-center gap-3 px-6 py-4 bg-aac-blue/10 text-aac-blue rounded-2xl border border-aac-blue/20">
+							<Icon name="CheckCircle2" size={24} />
+							<div class="text-left">
+								<p class="text-3xl font-black">{allProjects.length}</p>
+								<p class="text-sm font-bold uppercase tracking-widest">Projects Completed</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects Grid -->
+		<section class="py-24 bg-zinc-50">
+			<div class="max-w-7xl mx-auto px-6">
+				{allProjects.length > 0 ? (
+					<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+						{allProjects.map((project) => (
+							<a href={`/projects/${project.id.replace(/\.md$/, '')}`} class="group bg-white rounded-[32px] overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all">
+								<div class="aspect-video overflow-hidden relative">
+									<img
+										src={project.data.afterImage}
+										alt={`${project.data.title} - After repair`}
+										class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+									/>
+									<div class="absolute top-4 left-4 bg-aac-dark/80 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg border border-white/20">
+										{serviceTypeLabels[project.data.serviceType]}
+									</div>
+								</div>
+								<div class="p-8">
+									<div class="flex items-center gap-4 mb-4">
+										<span class="text-[10px] font-black uppercase tracking-widest text-aac-blue">
+											{project.data.city}, {project.data.state}
+										</span>
+										<span class="text-[10px] text-zinc-500 font-bold">
+											{formatDate(project.data.date)}
+										</span>
+									</div>
+									<h2 class="text-xl font-black mb-3 leading-tight group-hover:text-aac-blue transition-colors">
+										{project.data.title}
+									</h2>
+									<p class="text-zinc-500 text-sm leading-relaxed line-clamp-3">
+										{project.data.summary}
+									</p>
+									<span class="inline-flex items-center gap-2 text-aac-dark font-black uppercase tracking-widest text-[10px] mt-4 group-hover:gap-4 transition-all">
+										View Project <Icon name="ArrowRight" size={14} />
+									</span>
+								</div>
+							</a>
+						))}
+					</div>
+				) : (
+					<div class="text-center py-16">
+						<div class="w-16 h-16 bg-aac-blue/10 text-aac-blue rounded-full flex items-center justify-center mx-auto mb-6">
+							<Icon name="Hammer" size={32} />
+						</div>
+						<h2 class="text-2xl font-black mb-4">Projects Coming Soon</h2>
+						<p class="text-zinc-500 text-lg max-w-md mx-auto">
+							We're documenting our recent work. Check back soon for before and after photos from jobs across New England.
+						</p>
+					</div>
+				)}
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="py-16 lg:py-24 bg-aac-dark text-white">
+			<div class="max-w-7xl mx-auto px-6 text-center">
+				<h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-6">
+					Ready to Fix Your <span class="text-aac-yellow">Foundation?</span>
+				</h2>
+				<p class="text-xl text-zinc-400 max-w-2xl mx-auto mb-10">
+					Get a free consultation with our experts. We'll assess your foundation and provide an honest quote — no pressure, no salespeople.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<button class="open-modal bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] border-2 border-aac-dark inline-flex items-center justify-center gap-2">
+						<Icon name="MessageSquare" size={20} />
+						Text Us Photos
+					</button>
+					<a href="tel:860-573-8760" class="bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+						<Icon name="Phone" size={20} />
+						CT: 860-573-8760
+					</a>
+					<a href="tel:617-668-1677" class="bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+						<Icon name="Phone" size={20} />
+						MA: 617-668-1677
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
