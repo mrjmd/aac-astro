@@ -12,7 +12,7 @@ heroImageAlt: "Homeowner examining a foundation crack"
 relatedPosts:
   - "foundation-repair-cost-guide-2026"
   - "basement-waterproofing-vs-foundation-repair"
-  - "10-essential-tips-worry-free-foundation"
+  - "driveway-crack-repair-guide"
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"

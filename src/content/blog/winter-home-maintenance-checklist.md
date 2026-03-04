@@ -13,7 +13,7 @@ featured: false
 relatedPosts:
   - "10-essential-tips-worry-free-foundation"
   - "how-to-check-your-foundation"
-  - "signs-of-foundation-problems"
+  - "foundation-repair-seasonal-guide"
 relatedServices:
   - "free-foundation-consultations"
   - "foundation-crack-injection"

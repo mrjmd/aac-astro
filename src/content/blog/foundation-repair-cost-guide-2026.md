@@ -13,7 +13,7 @@ featured: true
 relatedPosts:
   - "bulkhead-repair-cost-guide-2026"
   - "diy-vs-professional-foundation-repair"
-  - "signs-of-foundation-problems"
+  - "does-insurance-cover-foundation-repair"
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"

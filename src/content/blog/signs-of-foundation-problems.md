@@ -11,7 +11,7 @@ featured: true
 relatedPosts:
   - "horizontal-foundation-cracks"
   - "foundation-settling-when-to-worry"
-  - "how-to-check-your-foundation"
+  - "how-we-diagnose-foundation-problems"
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
