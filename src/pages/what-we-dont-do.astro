@@ -5,7 +5,6 @@ import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import LocationModal from '../components/LocationModal.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
-import SchemaMarkup from '../components/SchemaMarkup.astro';
 import Icon from '../components/Icon.astro';
 
 // Get the "what-we-dont-do" resource
@@ -35,8 +34,12 @@ const pageSchema = {
 };
 ---
 
-<Layout title={resource.data.metaTitle} description={resource.data.metaDescription}>
-	<SchemaMarkup schema={pageSchema} />
+<Layout 
+  title={resource.data.metaTitle} 
+  description={resource.data.metaDescription}
+  customSchema={pageSchema}
+  breadcrumbItems={breadcrumbItems}
+>
 	<LocationModal />
 	<Navbar />
 

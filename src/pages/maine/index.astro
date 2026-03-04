@@ -5,7 +5,6 @@ import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
 import { aggregateRatingSchema } from '../../utils/reviews';
 import { ME_REGIONS } from '../../utils/regions';
@@ -54,8 +53,9 @@ const meSchema = {
 <Layout
   title="Foundation Repair in Maine"
   description="Expert foundation crack repair across Southern Maine. Family-owned with 20+ years experience. Concrete repair available. Call 617-668-1677."
+  customSchema={meSchema}
+  breadcrumbItems={breadcrumbItems}
 >
-	<SchemaMarkup schema={meSchema} />
 	<LocationModal />
 	<Navbar />
 

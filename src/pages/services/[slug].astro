@@ -5,7 +5,6 @@ import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
 import TestimonialCard from '../../components/TestimonialCard.astro';
 import { aggregateRatingSchema } from '../../utils/reviews';
@@ -128,8 +127,12 @@ const faqSchema = service.data.faqs && service.data.faqs.length > 0 ? {
 const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 ---
 
-<Layout title={service.data.metaTitle} description={service.data.metaDescription}>
-	<SchemaMarkup schema={schemas} />
+<Layout 
+  title={service.data.metaTitle} 
+  description={service.data.metaDescription}
+  customSchema={schemas}
+  breadcrumbItems={breadcrumbItems}
+>
 	<LocationModal />
 	<Navbar currentPage="services" />
 

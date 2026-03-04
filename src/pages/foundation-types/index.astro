@@ -5,7 +5,6 @@ import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
 
 const foundationTypes = await getCollection('foundation-types');
@@ -40,8 +39,9 @@ const pageSchema = {
 <Layout
   title="Foundation Types Guide"
   description="Learn about fieldstone, cinderblock, and other foundation types common in New England. Expert guidance on repair and maintenance."
+  customSchema={pageSchema}
+  breadcrumbItems={breadcrumbItems}
 >
-	<SchemaMarkup schema={pageSchema} />
 	<LocationModal />
 	<Navbar />
 

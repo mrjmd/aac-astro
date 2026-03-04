@@ -1,7 +1,7 @@
 ---
-title: "Pool Deck Repair & Resurfacing"
-metaTitle: "Concrete Pool Deck Repair | MA Only"
-metaDescription: "Professional concrete pool deck repair in Massachusetts. Fix cracks, stains, and heat issues with slip-resistant, cool-touch resurfacing. Free quote."
+title: "Pool Deck Concrete Repair"
+metaTitle: "Concrete Pool Deck Repair | MA"
+metaDescription: "Expert concrete pool deck repair in Massachusetts. Fix cracks, stains, and heat issues with slip-resistant, cool-touch resurfacing. Free quote."
 excerpt: "Repair cracked, stained pool decks with cool-touch, slip-resistant concrete overlays. Multiple colors and patterns to complement your outdoor space."
 icon: "Wrench"
 order: 5

@@ -29,7 +29,7 @@ const {
   title,
   description,
   canonical = Astro.url.href,
-  image = "https://picsum.photos/seed/aac-og/1200/630", // TODO: Replace with real OG image
+  image = "/images/logo.jpg", // A2: Default to real logo instead of picsum
   imageAlt = "Attack A Crack Foundation Repair",
   type = 'website',
   publishedTime,
@@ -38,13 +38,15 @@ const {
   section,
   tags = [],
   noindex = false,
-  geoRegion = "US-CT",
-  geoPlacename = "Amston",
-  geoPosition = "41.6151;-72.3484",
+  geoRegion,
+  geoPlacename,
+  geoPosition
 } = Astro.props;
 
-const siteName = "Attack A Crack Foundation Repair";
-const fullTitle = `${title} | ${siteName}`;
+// A1: Shorten suffix and prevent duplicates to stay under 60 chars
+const siteName = "Attack A Crack";
+const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
+
 const imageUrl = image.startsWith('http') ? image : new URL(image, Astro.site).href;
 const canonicalUrl = canonical.startsWith('http') ? canonical : new URL(canonical, Astro.site).href;
 ---
@@ -58,11 +60,18 @@ const canonicalUrl = canonical.startsWith('http') ? canonical : new URL(canonica
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalUrl} />
 
-<!-- Geo Tags (Local SEO) -->
-<meta name="geo.region" content={geoRegion} />
-<meta name="geo.placename" content={geoPlacename} />
-<meta name="geo.position" content={geoPosition} />
-<meta name="ICBM" content={geoPosition.replace(';', ', ')} />
+<!-- hreflang (Local SEO B7) -->
+<link rel="alternate" hreflang="en-us" href={canonicalUrl} />
+
+<!-- Geo Tags (Local SEO B1) -->
+{geoRegion && <meta name="geo.region" content={geoRegion} />}
+{geoPlacename && <meta name="geo.placename" content={geoPlacename} />}
+{geoPosition && (
+  <>
+    <meta name="geo.position" content={geoPosition} />
+    <meta name="ICBM" content={geoPosition.replace(';', ', ')} />
+  </>
+)}
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content={type} />

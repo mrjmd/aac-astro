@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import SpeedInsights from '@vercel/speed-insights/astro';
+import SEOHead from '../components/SEOHead.astro';
 
 interface Props {
 	title: string;
@@ -8,107 +9,112 @@ interface Props {
 	image?: string;
 	canonicalURL?: string;
 	preloadHeroImage?: boolean;
+	// Location-specific overrides for Schema/SEO
+	city?: string;
+	state?: string;
+	zip?: string;
+	coordinates?: { lat: number; lng: number };
+	customSchema?: Record<string, unknown> | Record<string, unknown>[];
+	breadcrumbItems?: { label: string; href?: string }[];
 }
 
 const {
 	title,
 	description = "Attack A Crack foundation repair, a trusted family-owned concrete foundation repair contractor, has served New England for 20+ years.",
-	image = "https://www.attackacrack.com/images/logo.jpg",
+	image = "/images/logo.jpg",
 	canonicalURL = Astro.url.href,
-	preloadHeroImage = false
+	preloadHeroImage = false,
+	city = "Amston",
+	state = "CT",
+	zip = "06231",
+	coordinates,
+	customSchema,
+	breadcrumbItems
 } = Astro.props;
+
+// Format coordinates for meta tags if present
+const geoPosition = coordinates ? `${coordinates.lat};${coordinates.lng}` : undefined;
 
 const CT_NUMBER = "860-573-8760";
 const MA_NUMBER = "617-668-1677";
 
-// Build page title - don't append brand if already included
-const pageTitle = title.includes('Attack A Crack') ? title : `${title} | Attack A Crack`;
-
-// JSON-LD Schema for Local Business
-const schema = {
-  "@context": "https://schema.org",
+// JSON-LD Schema for Local Business - Default if no customSchema provided
+const defaultSchema = {
   "@type": "HomeAndConstructionBusiness",
   "name": "Attack A Crack Foundation Repair",
   "alternateName": "Attack A Crack",
   "image": "https://www.attackacrack.com/images/logo.jpg",
   "@id": "https://attackacrack.com/#organization",
   "url": "https://attackacrack.com",
-  "telephone": CT_NUMBER,
+  "telephone": state === 'MA' ? MA_NUMBER : CT_NUMBER,
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Amston",
-    "addressLocality": "Amston",
-    "addressRegion": "CT",
-    "postalCode": "06231",
+    "streetAddress": city === 'Amston' ? "23 Elsmere Road" : city,
+    "addressLocality": city,
+    "addressRegion": state,
+    "postalCode": zip,
     "addressCountry": "US"
   },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 41.6151,
-    "longitude": -72.3484
-  },
   "areaServed": [
-    {
-      "@type": "State",
-      "name": "Connecticut"
-    },
-    {
-      "@type": "State",
-      "name": "Massachusetts"
-    }
+    { "@type": "State", "name": "Connecticut" },
+    { "@type": "State", "name": "Massachusetts" },
+    { "@type": "State", "name": "Rhode Island" },
+    { "@type": "State", "name": "New Hampshire" },
+    { "@type": "State", "name": "Maine" }
   ],
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday"
-    ],
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
     "opens": "00:00",
     "closes": "23:59"
   },
-  "sameAs": [
-    "https://www.facebook.com/attackacrack"
-  ]
+  "sameAs": ["https://www.facebook.com/attackacrack"]
 };
+
+// Breadcrumb Schema
+const breadcrumbSchema = breadcrumbItems ? {
+  "@type": "BreadcrumbList",
+  "itemListElement": breadcrumbItems.map((item, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "name": item.label,
+    "item": item.href ? new URL(item.href, Astro.site).href : undefined
+  }))
+} : null;
+
+// Use customSchema if provided, otherwise defaultSchema
+const finalSchema = customSchema 
+  ? (Array.isArray(customSchema) ? customSchema : [customSchema])
+  : [defaultSchema];
+
+if (breadcrumbSchema) {
+  finalSchema.push(breadcrumbSchema);
+}
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<link rel="canonical" href={canonicalURL} />
-		<meta name="geo.region" content="US-CT" />
-		<meta name="geo.placename" content="Amston" />
-		<meta name="geo.position" content="41.6151;-72.3484" />
-		<meta name="ICBM" content="41.6151, -72.3484" />
-		<title>{pageTitle}</title>
-
-		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content={Astro.url} />
-		<meta property="og:title" content={title} />
-		<meta property="og:description" content={description} />
-		<meta property="og:image" content={image} />
-
-		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content={Astro.url} />
-		<meta property="twitter:title" content={title} />
-		<meta property="twitter:description" content={description} />
-		<meta property="twitter:image" content={image} />
+		
+		<SEOHead 
+			title={title}
+			description={description}
+			image={image}
+			canonical={canonicalURL}
+			geoPlacename={city}
+			geoRegion={`US-${state}`}
+			geoPosition={geoPosition}
+		/>
 
 		<!-- Schema.org -->
-		<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+		{finalSchema.map(s => (
+			<script type="application/ld+json" set:html={JSON.stringify({ "@context": "https://schema.org", ...s })} />
+		))}
 
 		<!-- Preload critical fonts -->
 		<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
@@ -123,6 +129,5 @@ const schema = {
 	<body class="bg-white text-aac-dark font-sans selection:bg-aac-yellow selection:text-aac-dark antialiased">
 		<slot />
 		<SpeedInsights />
-
 	</body>
 </html>

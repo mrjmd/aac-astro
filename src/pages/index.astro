@@ -11,14 +11,22 @@ import Icon from '../components/Icon.astro';
 import TestimonialCard from '../components/TestimonialCard.astro';
 import { reviewCount, phoneCT, phoneMA, googleReviewsUrlCT, googleReviewsUrlMA } from '../utils/reviews';
 import { getFeatured } from '../utils/testimonials';
+import { homeFaqs, getFaqSchema } from '../utils/faqs';
 
 const featuredTestimonials = getFeatured(4);
+const faqSchema = getFaqSchema(homeFaqs);
 
 const CT_NUMBER = phoneCT;
 const MA_NUMBER = phoneMA;
 ---
 
-<Layout title="Foundation Crack Repair Made Simple" preloadHeroImage>
+<Layout 
+	title="Foundation Crack Repair Made Simple" 
+	description="Attack A Crack provides expert foundation wall crack repair, bulkhead sealing, and concrete repair in CT & MA. 20+ years experience with a lifetime guarantee."
+	preloadHeroImage
+	breadcrumbItems={[{ label: 'Home' }]}
+	customSchema={faqSchema}
+>
 	<LocationModal />
 	<Navbar currentPage="home" />
 	

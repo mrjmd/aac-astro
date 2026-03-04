@@ -5,7 +5,6 @@ import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
 import TestimonialCard from '../../components/TestimonialCard.astro';
 import { getByState } from '../../utils/testimonials';
@@ -71,10 +70,11 @@ const maSchema = {
 ---
 
 <Layout
-  title="Foundation Repair in Massachusetts"
-  description="Expert foundation crack repair across Massachusetts. Family-owned with 20+ years experience. Concrete repair & resurfacing available. Call 617-668-1677."
+  title="Foundation & Concrete Repair | MA"
+  description="Expert concrete repair and foundation repair across Massachusetts. Professional driveway, patio, and pool deck resurfacing. Call 617-668-1677."
+  customSchema={maSchema}
+  breadcrumbItems={breadcrumbItems}
 >
-	<SchemaMarkup schema={maSchema} />
 	<LocationModal />
 	<Navbar />
 
@@ -91,10 +91,10 @@ const maSchema = {
 							<Icon name="MapPin" size={14} /> Massachusetts
 						</div>
 						<h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-6 leading-none">
-							Foundation Repair in <span class="text-aac-blue">Massachusetts</span>
+							Foundation & <span class="text-aac-blue">Concrete Repair</span> in Massachusetts
 						</h1>
 						<p class="text-xl text-zinc-400 mb-8">
-							Expert foundation repair from Boston to the Cape. We also offer concrete repair & resurfacing services exclusively in Massachusetts—driveways, patios, pool decks, and more.
+							Expert concrete repair and foundation repair from Boston to the Cape. We offer professional concrete resurfacing exclusively in Massachusetts—driveways, patios, pool decks, and more.
 						</p>
 
 						<div class="flex flex-wrap gap-4 mb-8">
@@ -156,7 +156,7 @@ const maSchema = {
 							<Icon name="Wrench" size={24} />
 						</div>
 						<div>
-							<p class="font-black text-lg">Concrete Repair & Resurfacing - Massachusetts Only</p>
+							<p class="font-black text-lg">Concrete Repair Services - Massachusetts Only</p>
 							<p class="text-white">Driveways, patios, pool decks, walkways, stairs & garage floors</p>
 						</div>
 					</div>
@@ -192,10 +192,10 @@ const maSchema = {
 			<div class="max-w-7xl mx-auto px-6">
 				<div class="text-center mb-16">
 					<h2 class="text-4xl lg:text-5xl font-black tracking-tighter text-aac-dark">
-						Foundation Repair Services
+						Foundation & Concrete Repair Services
 					</h2>
 					<p class="text-lg text-zinc-500 mt-4 max-w-2xl mx-auto">
-						Complete foundation repair solutions for Massachusetts homes and businesses.
+						Complete foundation and concrete repair solutions for Massachusetts homes and businesses.
 					</p>
 				</div>
 

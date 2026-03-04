@@ -4,7 +4,6 @@ import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
 import { getAllPartners, getCategories } from '../../utils/trusted-partners';
 
@@ -17,23 +16,44 @@ const breadcrumbItems = [
   { label: 'Trusted Partners' }
 ];
 
-const pageSchema = {
-  "@type": "WebPage",
-  "name": "Massachusetts Trusted Partners | Attack A Crack",
-  "description": "Vetted professionals we personally trust and recommend to our customers throughout greater Boston and Massachusetts.",
-  "url": "https://www.attackacrack.com/massachusetts/trusted-partners",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Attack A Crack Foundation Repair"
+const pageSchema = [
+  {
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Attack A Crack Foundation Repair",
+    "alternateName": "Attack A Crack",
+    "image": "https://www.attackacrack.com/images/logo.jpg",
+    "@id": "https://attackacrack.com/#organization",
+    "url": "https://attackacrack.com",
+    "telephone": "617-668-1677",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "MA",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      { "@type": "State", "name": "Massachusetts" }
+    ]
+  },
+  {
+    "@type": "WebPage",
+    "name": "Massachusetts Trusted Partners | Attack A Crack",
+    "description": "Vetted professionals we personally trust and recommend to our customers throughout greater Boston and Massachusetts.",
+    "url": "https://www.attackacrack.com/massachusetts/trusted-partners",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Attack A Crack Foundation Repair"
+    }
   }
-};
+];
 ---
 
 <Layout
   title="MA Trusted Partners"
   description="Vetted professionals we personally trust and recommend to our customers across Massachusetts. Home inspectors, attorneys, CPAs, and more."
+  customSchema={pageSchema}
+  breadcrumbItems={breadcrumbItems}
 >
-  <SchemaMarkup schema={pageSchema} />
   <LocationModal />
   <Navbar />
 

@@ -1,7 +1,7 @@
 ---
-title: "Garage Floor Repair & Resurfacing"
-metaTitle: "Garage Floor Repair & Resurfacing | MA Only"
-metaDescription: "Repair your cracked, stained garage floor with professional concrete resurfacing. Epoxy and decorative options available. Massachusetts only."
+title: "Garage Floor Concrete Repair"
+metaTitle: "Concrete Garage Floor Repair | MA"
+metaDescription: "Expert concrete garage floor repair in Massachusetts with professional concrete resurfacing. Epoxy and decorative options available. Massachusetts only."
 excerpt: "Repair your garage floor from cracked and stained to showroom-quality. Choose from solid colors, decorative flakes, or metallic finishes."
 icon: "Wrench"
 order: 4

@@ -107,6 +107,13 @@ const blogCollection = defineCollection({
     relatedServices: z.array(z.string()).optional(),
     featured: z.boolean().default(false),
     draft: z.boolean().default(false),
+    // Pinnacle SEO B12: Optional geo-tags for blog posts
+    city: z.string().optional(),
+    state: z.enum(['CT', 'MA', 'RI', 'NH', 'ME']).optional(),
+    coordinates: z.object({
+      lat: z.number(),
+      lng: z.number(),
+    }).optional(),
   }),
 });
 
@@ -121,6 +128,11 @@ const locationsCollection = defineCollection({
     stateAbbr: z.enum(['CT', 'MA', 'RI', 'NH', 'ME']),
     metaTitle: z.string().min(30).max(60),
     metaDescription: z.string().min(120).max(160),
+    // Pinnacle SEO B1: Latitude/Longitude for local signaling
+    coordinates: z.object({
+      lat: z.number(),
+      lng: z.number(),
+    }).optional(),
     region: z.string().optional(), // e.g., "Metro Boston", "North Shore"
     population: z.number().optional(),
     averageHomeAge: z.string().optional(),

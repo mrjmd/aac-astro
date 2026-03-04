@@ -5,7 +5,6 @@ import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
 import { reviewCount } from '../../utils/reviews';
 
@@ -28,8 +27,9 @@ const pageSchema = {
 <Layout
   title="Partner With Us"
   description="Partner with Attack A Crack for fast foundation repairs. Realtors, property managers, home inspectors, and contractors trust us throughout CT & MA."
+  customSchema={pageSchema}
+  breadcrumbItems={breadcrumbItems}
 >
-	<SchemaMarkup schema={pageSchema} />
 	<LocationModal />
 	<Navbar currentPage="partners" />
 

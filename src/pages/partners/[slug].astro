@@ -5,7 +5,6 @@ import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
 
 export async function getStaticPaths() {
@@ -57,8 +56,12 @@ const faqSchema = partner.data.faqs && partner.data.faqs.length > 0 ? {
 const schemas = faqSchema ? [pageSchema, faqSchema] : [pageSchema];
 ---
 
-<Layout title={partner.data.metaTitle} description={partner.data.metaDescription}>
-	<SchemaMarkup schema={schemas} />
+<Layout 
+  title={partner.data.metaTitle} 
+  description={partner.data.metaDescription}
+  customSchema={schemas}
+  breadcrumbItems={breadcrumbItems}
+>
 	<LocationModal />
 	<Navbar currentPage="partners" />
 

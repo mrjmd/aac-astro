@@ -5,7 +5,6 @@ import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
 import TestimonialCard from '../../components/TestimonialCard.astro';
 import { reviewCount } from '../../utils/reviews';
@@ -90,8 +89,9 @@ const ctSchema = {
 <Layout
   title="Foundation Repair in Connecticut"
   description={`Expert foundation crack repair across Connecticut. Family-owned with 20+ years experience. ${reviewCount}+ 5-star reviews. Lifetime guarantee. Call 860-573-8760.`}
+  customSchema={ctSchema}
+  breadcrumbItems={breadcrumbItems}
 >
-	<SchemaMarkup schema={ctSchema} />
 	<LocationModal />
 	<Navbar />
 

@@ -1,7 +1,7 @@
 ---
-title: "Driveway Crack Repair & Resurfacing"
-metaTitle: "Concrete Driveway Crack Repair | MA Only"
-metaDescription: "Professional concrete driveway crack repair in Massachusetts. Fix cracks, stains, and wear with decorative resurfacing. Custom colors. Free quote."
+title: "Driveway Concrete Repair"
+metaTitle: "Concrete Driveway Crack Repair | MA"
+metaDescription: "Expert concrete driveway repair in Massachusetts. Fix cracks, stains, and scaling with professional repair and decorative resurfacing. Free quotes."
 excerpt: "Repair driveway cracks and damage without the cost of full replacement. Fix damage, add color, and boost curb appeal with decorative resurfacing."
 icon: "Wrench"
 order: 3

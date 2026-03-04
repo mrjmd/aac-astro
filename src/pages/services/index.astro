@@ -5,7 +5,6 @@ import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
 
 // Get all services sorted by order
@@ -43,8 +42,12 @@ const servicesSchema = {
 };
 ---
 
-<Layout title="Foundation Repair Services" description="Specialized foundation repair solutions with a lifetime guarantee. We repair wall cracks, leaky bulkheads, utility lines, and more in CT & MA.">
-	<SchemaMarkup schema={servicesSchema} />
+<Layout 
+  title="Foundation Repair Services" 
+  description="Specialized foundation repair solutions with a lifetime guarantee. We repair wall cracks, leaky bulkheads, utility lines, and more in CT & MA."
+  customSchema={servicesSchema}
+  breadcrumbItems={breadcrumbItems}
+>
 	<LocationModal />
 	<Navbar currentPage="services" />
 

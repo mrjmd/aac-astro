@@ -19,8 +19,8 @@ const breadcrumbItems = [
 // Service schema for the hub page
 const servicesSchema = {
   "@type": "ItemList",
-  "name": "Concrete Repair & Resurfacing Services",
-  "description": "Professional concrete repair and resurfacing services available exclusively in Massachusetts",
+  "name": "Concrete Repair Services",
+  "description": "Professional concrete repair and decorative resurfacing services available exclusively in Massachusetts",
   "numberOfItems": services.length,
   "itemListElement": services.map((service, index) => ({
     "@type": "ListItem",
@@ -44,10 +44,11 @@ const servicesSchema = {
 ---
 
 <Layout
-  title="Concrete Repair & Resurfacing Services"
-  description="Professional concrete repair for driveways, patios, pool decks, walkways, stairs, and garage floors. Massachusetts only. Call 617-668-1677."
+  title="Concrete Repair Services | Massachusetts"
+  description="Expert concrete repair and decorative resurfacing for driveways, patios, pool decks, and more. Local MA experts with 20+ years experience. Free quotes."
+  customSchema={servicesSchema}
+  breadcrumbItems={breadcrumbItems}
 >
-	<SchemaMarkup schema={servicesSchema} />
 	<LocationModal />
 	<Navbar />
 

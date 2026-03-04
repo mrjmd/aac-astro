@@ -1,7 +1,7 @@
 ---
-title: "Walkway Repair & Resurfacing"
-metaTitle: "Concrete Walkway Repair & Resurfacing | MA"
-metaDescription: "Repair cracked concrete walkways in Massachusetts with decorative resurfacing. Fix cracks, stains, and damage. Multiple colors and patterns. Free estimate."
+title: "Walkway Concrete Repair"
+metaTitle: "Concrete Walkway Crack Repair | MA"
+metaDescription: "Expert concrete walkway repair in Massachusetts with decorative resurfacing. Fix cracks, stains, and damage. Multiple colors and patterns. Free estimate."
 excerpt: "Repair cracked, stained, or dated concrete walkways with a beautiful decorative overlay. Multiple colors, patterns, and textures available."
 icon: "Wrench"
 order: 2

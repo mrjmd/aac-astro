@@ -5,7 +5,6 @@ import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import SchemaMarkup from '../../components/SchemaMarkup.astro';
 import Icon from '../../components/Icon.astro';
 import { reviewCount } from '../../utils/reviews';
 
@@ -98,8 +97,9 @@ const areaSchema = {
 <Layout
   title="Areas We Serve - New England"
   description="Expert foundation repair across New England: CT, MA, RI, NH, and ME. Family-owned with lifetime guarantee on all repairs."
+  customSchema={areaSchema}
+  breadcrumbItems={breadcrumbItems}
 >
-  <SchemaMarkup schema={areaSchema} />
   <LocationModal />
   <Navbar currentPage="areas" />
 
