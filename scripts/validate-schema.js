@@ -33,6 +33,7 @@ const HUB_PAGES = [
   'blog/index.html',
   'foundation-types/index.html',
   'projects/index.html',
+  'updates/index.html',
   'blog/category/',  // Blog category listing pages (including paginated)
 ];
 

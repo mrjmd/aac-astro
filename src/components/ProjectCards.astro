@@ -1,0 +1,84 @@
+---
+import Icon from './Icon.astro';
+
+interface Project {
+  id: string;
+  data: {
+    title: string;
+    date: Date;
+    city: string;
+    state: string;
+    serviceType: string;
+    afterImage: string;
+    summary: string;
+  };
+}
+
+interface Props {
+  projects: Project[];
+  heading: string;
+  viewAllText?: string;
+}
+
+const { projects, heading, viewAllText = 'View All Projects' } = Astro.props;
+
+const serviceTypeLabels: Record<string, string> = {
+  'crack-injection': 'Crack Injection',
+  'wall-crack-repair': 'Wall Crack Repair',
+  'bulkhead-repair': 'Bulkhead Repair',
+  'carbon-fiber': 'Carbon Fiber',
+  'sewer-conduit': 'Sewer & Conduit',
+  'concrete-repair': 'Concrete Repair',
+};
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long' });
+}
+---
+
+{projects.length > 0 && (
+  <section class="py-16 bg-white border-t border-zinc-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-2xl font-black tracking-tighter text-aac-dark">
+          {heading}
+        </h2>
+        <a href="/updates" class="text-aac-blue font-bold text-sm hover:underline inline-flex items-center gap-1">
+          {viewAllText} <Icon name="ArrowRight" size={14} />
+        </a>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.map((project) => (
+          <a href={`/projects/${project.id.replace(/\.md$/, '')}`} class="group bg-zinc-50 rounded-2xl overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all">
+            <div class="aspect-video overflow-hidden relative">
+              <img
+                src={project.data.afterImage}
+                alt={`${project.data.title} - After repair`}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute top-3 left-3 bg-aac-dark/80 backdrop-blur-md text-white text-[9px] font-black uppercase tracking-widest px-2.5 py-1 rounded-lg border border-white/20">
+                {serviceTypeLabels[project.data.serviceType] || project.data.serviceType}
+              </div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-[10px] font-black uppercase tracking-widest text-aac-blue">
+                  {project.data.city}, {project.data.state}
+                </span>
+                <span class="text-[10px] text-zinc-500 font-bold">
+                  {formatDate(project.data.date)}
+                </span>
+              </div>
+              <h3 class="font-black leading-tight group-hover:text-aac-blue transition-colors mb-2">
+                {project.data.title}
+              </h3>
+              <p class="text-zinc-500 text-sm leading-relaxed line-clamp-2">
+                {project.data.summary}
+              </p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

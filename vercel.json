@@ -32,6 +32,11 @@
       "source": "/free-foundation-consultations",
       "destination": "/services/free-foundation-consultations",
       "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/updates",
+      "permanent": true
     }
   ],
   "headers": [

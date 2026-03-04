@@ -20,6 +20,7 @@ nearbyCities:
   - "New Britain"
   - "Waterbury"
   - "West Hartford"
+  - "Torrington"
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Bristol?"

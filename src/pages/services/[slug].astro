@@ -7,8 +7,10 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
 import TestimonialCard from '../../components/TestimonialCard.astro';
+import ProjectCards from '../../components/ProjectCards.astro';
 import { aggregateRatingSchema } from '../../utils/reviews';
 import { getByService } from '../../utils/testimonials';
+import { getByService as getProjectsByService, SERVICE_SLUG_MAP } from '../../utils/projects';
 
 export async function getStaticPaths() {
   const services = await getCollection('services');
@@ -35,6 +37,10 @@ const maLocations = allLocations.filter(l => l.data.stateAbbr === 'MA').slice(0,
 // Get service-specific testimonials
 const serviceSlug = service.id.replace(/\.md$/, '');
 const serviceTestimonials = getByService(serviceSlug, 2);
+
+// Get matching projects for this service
+const projectServiceType = SERVICE_SLUG_MAP[serviceSlug];
+const serviceProjects = projectServiceType ? await getProjectsByService(projectServiceType, 3) : [];
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
@@ -261,6 +267,12 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 				</div>
 			</section>
 		)}
+
+		<!-- Recent Projects -->
+		<ProjectCards
+			projects={serviceProjects}
+			heading={`Recent ${service.data.title} Projects`}
+		/>
 
 		<!-- Related Services -->
 		{relatedServices.length > 0 && (

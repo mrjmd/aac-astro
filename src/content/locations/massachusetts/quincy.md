@@ -22,6 +22,8 @@ nearbyCities:
   - "Brockton"
   - "Plymouth"
   - "Cambridge"
+  - "Hingham"
+  - "Milton"
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Quincy?"

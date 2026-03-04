@@ -6,8 +6,10 @@ import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
+import ProjectCards from '../../components/ProjectCards.astro';
 import { reviewCount, rating, aggregateRatingSchema } from '../../utils/reviews';
 import { getForLocation } from '../../utils/testimonials';
+import { getForLocation as getProjectsForLocation } from '../../utils/projects';
 import { crackRepairRange, bulkheadRange, carbonFiberRange, sewerConduitRange } from '../../utils/pricing';
 
 export async function getStaticPaths() {
@@ -28,6 +30,9 @@ const testimonial = location.data.testimonial
   || getForLocation(location.data.city, 'NH', 1)[0]
   || getForLocation(location.data.city, 'MA', 1)[0]
   || null;
+
+// Get matching projects for this city
+const cityProjects = await getProjectsForLocation(location.data.city, 'NH', 3);
 
 // Get services
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
@@ -394,6 +399,12 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 				</div>
 			</section>
 		)}
+
+		<!-- Recent Projects -->
+		<ProjectCards
+			projects={cityProjects}
+			heading={`Recent Work in ${location.data.city}`}
+		/>
 
 		<!-- Nearby Cities -->
 		{nearbyLocations.length > 0 && (

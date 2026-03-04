@@ -6,6 +6,8 @@ import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
+import ProjectCards from '../../components/ProjectCards.astro';
+import { getByService as getProjectsByService } from '../../utils/projects';
 
 export async function getStaticPaths() {
   const services = await getCollection('concrete-repair');
@@ -17,6 +19,9 @@ export async function getStaticPaths() {
 
 const { service } = Astro.props;
 const { Content } = await render(service);
+
+// Get matching projects
+const concreteProjects = await getProjectsByService('concrete-repair', 3);
 
 // Get all concrete repair services for related section
 const allServices = await getCollection('concrete-repair');
@@ -195,6 +200,12 @@ const schemas = faqSchema ? [serviceSchema, faqSchema] : [serviceSchema];
 				</div>
 			</section>
 		)}
+
+		<!-- Recent Projects -->
+		<ProjectCards
+			projects={concreteProjects}
+			heading={`Recent ${service.data.title} Projects`}
+		/>
 
 		<!-- Related Services -->
 		{relatedServices.length > 0 && (

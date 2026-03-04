@@ -99,11 +99,15 @@ async function main() {
   const serviceIds = new Set(services.map(s => s.id));
   const concreteRepairIds = new Set(concreteRepair.map(s => s.id));
   const blogIds = new Set(blog.map(b => b.id));
-  const locationCities = new Map(); // city name -> location id
+  const locationCities = new Map(); // city name -> [location objects]
 
   for (const loc of locations) {
     if (loc.frontmatter?.city) {
-      locationCities.set(loc.frontmatter.city, loc.id);
+      const city = loc.frontmatter.city;
+      if (!locationCities.has(city)) {
+        locationCities.set(city, []);
+      }
+      locationCities.get(city).push(loc);
     }
   }
 
@@ -184,28 +188,30 @@ async function main() {
     const stateAbbr = location.frontmatter?.stateAbbr;
 
     for (const cityName of nearby) {
-      // Check if city exists in same state
-      const cityId = locationCities.get(cityName);
-      if (!cityId) {
+      const candidates = locationCities.get(cityName);
+      if (!candidates || candidates.length === 0) {
         console.log(`  [ERROR] ${location.id}: nearbyCities "${cityName}" not found`);
         errors++;
       } else {
-        // Verify it's in the same state
-        const cityLocation = locations.find(l => l.id === cityId);
-        if (cityLocation && cityLocation.frontmatter?.stateAbbr !== stateAbbr) {
-          console.log(`  [WARN] ${location.id}: nearbyCities "${cityName}" is in different state (${cityLocation.frontmatter?.stateAbbr})`);
+        // Prefer same-state match; fall back to first match if none in same state
+        const sameState = candidates.find(c => c.frontmatter?.stateAbbr === stateAbbr);
+        const matched = sameState || candidates[0];
+        if (!sameState) {
+          console.log(`  [WARN] ${location.id}: nearbyCities "${cityName}" is in different state (${matched.frontmatter?.stateAbbr})`);
           warnings++;
         }
-        incomingLinks.set(`locations/${cityId}`, (incomingLinks.get(`locations/${cityId}`) || 0) + 1);
+        incomingLinks.set(`locations/${matched.id}`, (incomingLinks.get(`locations/${matched.id}`) || 0) + 1);
       }
     }
   }
 
   // Check for orphan pages (pages with no incoming links)
+  // Pages linked from hub/index pages are exempt since the validator only tracks frontmatter cross-references
+  const hubLinkedPrefixes = ['foundation-types/'];
   console.log('\nChecking for orphan pages...');
   const orphans = [];
   for (const [page, count] of incomingLinks.entries()) {
-    if (count === 0) {
+    if (count === 0 && !hubLinkedPrefixes.some(prefix => page.startsWith(prefix))) {
       orphans.push(page);
     }
   }
