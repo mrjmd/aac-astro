@@ -105,7 +105,7 @@ Issues: huge white gap between state cards and "Why New England Trusts Us", plac
 - [x] Fix white gap between sections (reduced section padding)
 - [x] Change "0+ cities" to "Expanding Soon" for states with no city pages yet
 - [x] Tighten card layout for better visual density (compact inline headers)
-- [x] Note placeholder images for Phase 8 (hero map, "Why Choose Us" photo)
+- [x] Note placeholder images for Phase 8 (hero map, "Why Choose Us" photo) — replaced in Phase 2C
 
 File: `src/pages/areas-we-serve/index.astro`
 
@@ -120,7 +120,17 @@ Issues: "What We Stand For" section has too much white space, placeholder image,
 
 File: `src/pages/about.astro`
 
-### 2C: Blog — Add Pagination
+### 2C: Visual Audit & Formatting Fixes
+
+Issues found during site review: prose content pages render as unstyled text blobs (no heading sizes, paragraph spacing, list styling, or link colors), and CT/MA state cards on Areas We Serve are broken (single-column instead of 2-column grid).
+
+- [x] Install `@tailwindcss/typography` plugin — fixes prose styling on 12+ page templates (blog, services, partners, locations, foundation types, concrete repair, what-we-dont-do)
+- [x] Fix nested `<a>` tags on Areas We Serve page — outer card `<a>` + inner phone `<a>` is invalid HTML that breaks grid layout; changed to `<div>` with click handler
+- [x] Replace 2 placeholder images on Areas We Serve (hero + "Why Choose Us") with real site images
+
+Files: `src/styles/global.css`, `src/pages/areas-we-serve/index.astro`, `package.json`
+
+### 2D: Blog — Add Pagination
 
 Currently 14 posts on one page, no pagination.
 
@@ -342,8 +352,8 @@ Run full Lighthouse on representative pages:
 |----------|---------|--------|
 | OG default | picsum | Branded OG image (1200x630) |
 | About page story | picsum | Team/job site photo |
-| Areas We Serve hero | picsum | New England service area map |
-| Areas We Serve "Why Us" | picsum | Team on job site |
+| ~~Areas We Serve hero~~ | ~~picsum~~ | ✅ Replaced with hero-slide-1.webp |
+| ~~Areas We Serve "Why Us"~~ | ~~picsum~~ | ✅ Replaced with hero-slide-2.webp |
 | CT hub hero | picsum | Connecticut landscape/job |
 | MA hub hero | picsum | Massachusetts landscape/job |
 | RI hub hero | picsum | Rhode Island landscape/job |

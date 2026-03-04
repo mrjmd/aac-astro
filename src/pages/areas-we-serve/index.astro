@@ -148,10 +148,10 @@ const areaSchema = {
           <div class="relative hidden lg:block">
             <div class="aspect-square rounded-[32px] overflow-hidden border-4 border-white/20 bg-zinc-800">
               <img
-                src="https://picsum.photos/seed/new-england-map/800/800"
-                alt="New England service area map"
+                src="/images/hero-slide-1.webp"
+                alt="Attack A Crack technician performing foundation repair"
                 class="w-full h-full object-cover"
-                referrerpolicy="no-referrer"
+                loading="eager"
               />
             </div>
             <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl">
@@ -185,7 +185,7 @@ const areaSchema = {
         <!-- Primary States (CT & MA) -->
         <div class="grid md:grid-cols-2 gap-6 mb-6">
           {states.filter(s => s.highlight).map(state => (
-            <a href={`/${state.slug}`} class="group bg-white p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all shadow-sm hover:shadow-xl relative overflow-hidden">
+            <div class="group bg-white p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all shadow-sm hover:shadow-xl relative overflow-hidden cursor-pointer" data-href={`/${state.slug}`}>
               <div class="absolute top-0 right-0 w-32 h-32 bg-aac-blue/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
               <div class="relative">
                 <div class="flex items-center gap-4 mb-4">
@@ -206,12 +206,12 @@ const areaSchema = {
                   <a href={`tel:${state.phone}`} class="text-aac-blue font-bold text-sm hover:underline flex items-center gap-2">
                     <Icon name="Phone" size={16} /> {state.phone}
                   </a>
-                  <span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
+                  <a href={`/${state.slug}`} class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
                     View Cities <Icon name="ArrowRight" size={14} />
-                  </span>
+                  </a>
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
 
@@ -280,10 +280,10 @@ const areaSchema = {
           </div>
           <div class="aspect-[4/3] rounded-[32px] overflow-hidden border-8 border-white shadow-2xl bg-zinc-200">
             <img
-              src="https://picsum.photos/seed/ne-team/800/600"
-              alt="Attack A Crack foundation repair team"
+              src="/images/hero-slide-2.webp"
+              alt="Attack A Crack foundation repair team at work"
               class="w-full h-full object-cover"
-              referrerpolicy="no-referrer"
+              loading="lazy"
             />
           </div>
         </div>
@@ -315,3 +315,12 @@ const areaSchema = {
   </main>
   <Footer />
 </Layout>
+
+<script>
+  document.querySelectorAll('[data-href]').forEach(card => {
+    card.addEventListener('click', (e) => {
+      if ((e.target as HTMLElement).closest('a')) return;
+      window.location.href = card.getAttribute('data-href')!;
+    });
+  });
+</script>
