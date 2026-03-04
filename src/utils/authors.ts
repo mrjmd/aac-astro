@@ -22,10 +22,11 @@ export const authors: Record<string, Author> = {
       "Foundation Repair",
       "Concrete Crack Injection",
       "Epoxy & Polyurethane Resin",
+      "Carbon Fiber Structural Reinforcement",
       "New England Soil Conditions",
       "Historic Home Foundations"
     ],
-    description: "Founder of Attack A Crack with over 20 years of foundation repair experience in New England. Luc is a recognized expert in low-pressure injection techniques and believes in honest assessments over high-pressure sales."
+    description: "Founder of Attack A Crack with over 33 years of foundation repair experience in New England. Luc started working with concrete at age 16 under his father's foundation company and is a recognized expert in high-pressure injection techniques, diamond saw preparation, and copper port installation."
   },
   "Matt": {
     name: "Matt",

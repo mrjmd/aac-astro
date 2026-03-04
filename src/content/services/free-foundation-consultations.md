@@ -58,11 +58,12 @@ The foundation repair industry has a reputation for scare tactics. We take the o
 Text us clear photos of your cracks or concerns. Include a close-up and a wider shot showing the surrounding area. A ruler or coin next to the crack helps us gauge width.
 
 **2. Expert Review**
-One of our experts reviews your photos, looking at:
-- Crack patterns and characteristics
-- Signs of water infiltration
-- Evidence of structural movement
-- Previous repairs and their condition
+One of our experts reviews your photos using the same diagnostic criteria we apply on-site:
+- **Crack width measurement** — concern starts at 1/4 inch
+- **Displacement check** — is one side of the crack further forward than the other?
+- **Pattern analysis** — vertical (shrinkage), diagonal (settlement), horizontal (structural pressure), stair-step (masonry movement)
+- **Water infiltration signs** — efflorescence, staining, active moisture
+- **Previous repair condition** — has a prior fix failed?
 
 **3. Clear Explanation**
 We explain exactly what we see in plain language:
@@ -83,7 +84,14 @@ If professional repair is warranted, we provide a clear, itemized quote with no 
 
 ### In-Person Consultations
 
-For situations that need hands-on evaluation, our Massachusetts branch offers in-person consultations. Contact us and we'll let you know if an on-site visit would be helpful for your situation.
+For situations that need hands-on evaluation, we schedule an on-site visit. Our in-person assessments typically take 30-45 minutes and include:
+
+- **Visual inspection** — sighting down walls from each corner to detect bowing or displacement
+- **Hands-on testing** — prodding with a screwdriver to check for flaking or crumbling concrete
+- **Crack measurement** — documenting width, length, and pattern
+- **Moisture assessment** — identifying active water infiltration paths
+
+**First visit = repair visit.** Unlike many companies, we don't require a separate estimate appointment. If the repair is straightforward and you're ready to proceed, our technician can often complete the work during the same visit.
 
 ### Things We'll Always Tell You
 

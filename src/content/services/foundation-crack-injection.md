@@ -10,7 +10,7 @@ afterImage: "/images/services/injection-after.jpg"
 heroImage: "/images/services/injection-hero.jpg"
 faqs:
   - question: "What is foundation crack injection?"
-    answer: "Crack injection is the process of filling a foundation crack with specialized resin under controlled pressure. The material penetrates the entire crack depth—typically 8 to 10 inches through the wall—from the interior surface to the exterior soil. This creates a complete seal that surface patches and hydraulic cement cannot achieve."
+    answer: "Crack injection fills a foundation crack with specialized resin at 100 PSI—far more than the industry standard. After preparing the crack with a diamond saw and installing copper injection ports every 8-10 inches, we force material through the entire wall thickness (typically 8-10 inches) from interior to exterior soil. This creates a complete seal that surface patches and hydraulic cement cannot achieve."
   - question: "How long does injected material last?"
     answer: "Our injection materials are engineered to last the lifetime of your home. Flexible urethane won't degrade, dry out, or shrink over time, and structural epoxy creates bonds stronger than the original concrete. That's why we back every injection repair with a lifetime guarantee."
   - question: "Can you inject cracks in any weather?"
@@ -23,14 +23,16 @@ relatedServices:
   - "wall-crack-repair"
   - "carbon-fiber-stitches"
 steps:
-  - name: "Crack Inspection"
-    text: "We evaluate your foundation crack to determine its cause, whether it's active or dormant, and select the right injection material—flexible urethane for waterproofing or structural epoxy for strength."
-  - name: "Surface Prep & Port Installation"
-    text: "Injection ports are installed along the crack at regular intervals, and the surface is sealed with fast-setting epoxy paste to contain the injection material."
-  - name: "Low-Pressure Injection"
-    text: "Starting from the lowest port, we inject resin under controlled pressure, moving upward as each port fills to ensure the entire crack is sealed from interior to exterior soil."
-  - name: "Cure & Cleanup"
-    text: "The injection material cures within hours. We remove the ports, clean the surface, and confirm a complete seal—backed by our lifetime guarantee."
+  - name: "Crack Assessment"
+    text: "We evaluate your foundation crack to determine its cause, whether it's active or dormant, and select the right injection material—flexible urethane for waterproofing or structural epoxy for structural strength."
+  - name: "Diamond Saw Preparation"
+    text: "Using a diamond saw blade, we grind a 1/2-inch wide, 1/4-inch deep groove along the crack. This creates a clean channel for port placement and ensures a flush finished surface."
+  - name: "Copper Port Installation"
+    text: "We install copper injection ports spaced 8-10 inches apart along the entire crack length. Each port is sealed in place with hydraulic cement—no plastic ports sticking out of your wall."
+  - name: "High-Pressure Injection"
+    text: "Starting from the lowest port, we inject resin at 100 PSI—far more than the industry standard—working bottom to top. This forces material through the full wall thickness to the exterior soil and down to the footer."
+  - name: "Finishing"
+    text: "Each port is crimped off after injection. A specialized surface patch is applied over the groove, leaving a clean, polished finish—backed by our lifetime guarantee."
 ---
 
 ## Foundation Crack Injection: The Science of Permanent Repair
@@ -54,14 +56,17 @@ We evaluate each crack to determine:
 - Structural vs. non-structural nature
 - Appropriate injection material
 
-**Step 2: Surface Preparation**
-Injection ports are installed along the crack at intervals. The surface is then sealed with a fast-setting epoxy paste to contain the injection material.
+**Step 2: Diamond Saw Preparation**
+We use a diamond saw blade to grind a precise groove along the crack—1/2 inch wide and 1/4 inch deep. All debris is cleared. This creates a clean channel for port placement and ensures the finished repair sits flush with the wall.
 
-**Step 3: Low-Pressure Injection**
-Starting from the lowest port, we inject resin under controlled pressure. As each port fills, we move to the next, ensuring complete penetration.
+**Step 3: Copper Port Installation**
+We install **copper injection ports** spaced 8-10 inches apart along the entire crack length. Each port is sealed in place with hydraulic cement. Unlike the plastic ports many contractors use, copper ports are stronger, seal better, and don't leave unsightly bumps on your wall.
 
-**Step 4: Cure and Completion**
-The injection material cures within hours. We remove ports and surface seal, leaving a clean finished appearance.
+**Step 4: 100 PSI Injection**
+Starting from the lowest port, we inject resin at **100 PSI—far more than the industry standard**. This isn't low-pressure surface filling. Our pressure forces material through the complete wall thickness—8 to 10 inches—from the interior surface through to the exterior soil and down to the footer level. As each port fills, we move to the next, ensuring complete saturation.
+
+**Step 5: Finishing**
+Each port is crimped off after injection. A specialized surface patch is applied over the groove, leaving a clean, polished finish. No ports sticking out, no rough patches—just a clean repair backed by our lifetime guarantee.
 
 ### Injection Material Options
 

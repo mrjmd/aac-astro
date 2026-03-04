@@ -24,13 +24,13 @@ relatedServices:
   - "carbon-fiber-stitches"
 steps:
   - name: "Assessment"
-    text: "We start with a thorough evaluation of your crack, identifying whether it's a shrinkage crack, structural crack, or water-infiltration issue."
-  - name: "Preparation"
-    text: "We install injection ports along the length of the crack and seal the surface to contain the injection material."
-  - name: "Injection"
-    text: "Using specialized equipment, we inject either flexible urethane resin or structural epoxy deep into the crack, filling the entire void."
-  - name: "Curing and Cleanup"
-    text: "The injection material cures within hours. We remove the ports, clean up our work area, and leave your basement better than we found it."
+    text: "We evaluate your crack by measuring width, checking for displacement (one side further forward than the other), and sighting down the wall from each corner. We identify whether it's shrinkage, structural, or water-infiltration."
+  - name: "Diamond Saw Preparation"
+    text: "Using a diamond saw blade, we grind a precise groove along the crack and install copper injection ports every 8-10 inches, sealed with hydraulic cement."
+  - name: "100 PSI Injection"
+    text: "We inject either flexible urethane or structural epoxy at 100 PSI—far above the industry standard—filling the entire crack from interior to exterior soil."
+  - name: "Finishing"
+    text: "Ports are crimped, a specialized surface patch is applied for a clean finish, and we leave your basement better than we found it."
 ---
 
 ## Foundation Wall Crack Repair That Lasts a Lifetime
@@ -50,16 +50,16 @@ Foundation cracks develop for several reasons:
 ### Our Wall Crack Repair Process
 
 **1. Assessment**
-We start with a thorough evaluation of your crack. Not all cracks are created equal—we identify whether you're dealing with a shrinkage crack, structural crack, or water-infiltration issue.
+We evaluate each crack using the same techniques developed over 33+ years of foundation work. We measure crack width (concern starts at 1/4 inch), check for displacement by feeling whether one side sits further forward than the other, and sight down the wall from each corner to detect bowing. For masonry, we look for stair-step patterns in the mortar joints—a sign of structural movement. We also prod with a screwdriver to test for flaking or crumbling concrete.
 
-**2. Preparation**
-We install injection ports along the length of the crack and seal the surface to contain the injection material.
+**2. Diamond Saw Preparation**
+Using a diamond saw blade, we grind a precise 1/2-inch wide, 1/4-inch deep groove along the crack. We install **copper injection ports** every 8-10 inches along the full crack length, sealed in place with hydraulic cement. Copper ports are stronger and more aesthetic than the plastic ports many contractors use.
 
-**3. Injection**
-Using specialized equipment, we inject either flexible urethane resin or structural epoxy deep into the crack. The material fills the entire void, from the inside surface to the outer soil.
+**3. 100 PSI Injection**
+We inject either flexible urethane or structural epoxy at **100 PSI—far more than the industry standard**. This forces material through the complete wall thickness (8-10 inches) from interior to exterior soil and down to the footer level, ensuring total crack saturation.
 
-**4. Curing and Cleanup**
-The injection material cures within hours. We remove the ports, clean up our work area, and leave your basement better than we found it.
+**4. Finishing**
+Each port is crimped off. A specialized surface patch is applied over the groove, leaving a clean, polished finish. No ports sticking out, no rough patches—backed by our lifetime guarantee.
 
 ### Urethane vs. Epoxy: Choosing the Right Solution
 
@@ -92,5 +92,5 @@ Don't wait for water to pour in. Signs you need wall crack repair:
 - **Lifetime guarantee** on all repairs
 - **Same-day response** to urgent issues
 - **Free consultations** with honest assessments
-- **20+ years** of New England foundation experience
+- **33+ years** of New England foundation experience
 - **No salespeople**—talk directly to the experts

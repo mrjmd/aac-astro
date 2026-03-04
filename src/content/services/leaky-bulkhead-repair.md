@@ -45,6 +45,10 @@ The connection between your precast bulkhead unit and poured foundation is the w
 - **Freeze-thaw damage**: Ice expansion widens existing gaps
 - **Poor original installation**: Many bulkheads were installed without adequate sealing
 
+### Massachusetts vs. Connecticut Bulkheads
+
+Bulkhead construction varies by region, and we've repaired thousands across both states. **Massachusetts bulkheads** often position the cold joint directly against the vertical first step rather than forming a clean horizontal seam on the floor—making them trickier to seal and more prone to leaking. Connecticut bulkheads typically have a more accessible horizontal joint. Our technicians know both construction styles and adapt the repair approach accordingly.
+
 ### Our Bulkhead Repair Process
 
 **Step 1: Remove Failed Material**
@@ -86,10 +90,14 @@ We seal the injection points and clean up completely. Your bulkhead is protected
 - Musty odors coming from bulkhead area
 - Previous repairs that have failed
 
+### Why Winter Is Actually the Best Time
+
+Most homeowners think they need to wait for spring to fix a leaking bulkhead. The opposite is true. **Frozen ground causes moisture expansion, creating maximum joint gaps**—which means our urethane fills more void space. When spring thaw compresses the ground back, it further reinforces the repair, amplifying sealant effectiveness. We repair bulkheads year-round, and winter repairs are some of our most successful.
+
 ### The Attack A Crack Bulkhead Advantage
 
 - **Permanent repair**, not a temporary patch
-- **Lifetime guarantee** on all bulkhead sealing
+- **Lifetime guarantee** on all bulkhead sealing — we are the only company in New England offering a lifetime guarantee on this type of repair
 - **No messy excavation** required
 - **Same-day service** available
 - **Works in any weather**—we can even seal during active leaks

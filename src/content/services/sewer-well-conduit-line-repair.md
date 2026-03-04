@@ -66,16 +66,16 @@ Over time, settling and ground movement widen these gaps. Water finds the path o
 ### Our Injection Sealing Process
 
 **1. Locate All Penetrations**
-We identify every pipe, conduit, and line entering your foundation. Some may be hidden behind finished walls or covered by previous repairs.
+We identify every pipe, conduit, and line entering your foundation. Some may be hidden behind finished walls or covered by previous repairs. We audit the entire foundation—often finding leak sources homeowners didn't know existed.
 
-**2. Prepare for Injection**
-We install injection ports around each penetration and prepare the surface.
+**2. Remove Failed Sealant**
+We clear out any deteriorated hydraulic cement, caulk, or oakum from around the penetration. This ensures our injection bonds directly to the pipe and concrete surfaces.
 
 **3. Inject Flexible Urethane**
-Our specialized urethane is injected around the penetration. It flows into every void, expands to fill gaps, and bonds to both the pipe and concrete.
+Our specialized urethane is injected around the penetration under controlled pressure. It flows into every void, expands to fill the full gap between pipe and concrete, and bonds to both surfaces. The material reacts with water to accelerate its cure—so we can seal pipes that are actively leaking without waiting for dry conditions.
 
 **4. Verify Complete Seal**
-We confirm the seal is complete and remove any excess material. The repair is waterproof immediately.
+We confirm the seal is complete and remove any excess material. The repair is waterproof immediately and stays flexible for the life of your home, accommodating movement between pipe and foundation.
 
 ### Benefits of Our Approach
 

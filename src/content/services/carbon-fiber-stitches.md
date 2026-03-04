@@ -10,7 +10,7 @@ afterImage: "/images/services/carbon-fiber-after.jpg"
 heroImage: "/images/services/carbon-fiber-hero.jpg"
 faqs:
   - question: "What are carbon fiber stitches?"
-    answer: "Carbon fiber stitches are high-strength reinforcement strips made from carbon fiber fabric saturated in structural epoxy. They're embedded across foundation cracks to bridge both sides, distributing stress across a wider area. At 10x the strength of steel by weight, they provide permanent structural reinforcement without the bulk or corrosion risk of metal."
+    answer: "Carbon fiber stitches are Kevlar-grid reinforcement strips saturated in structural epoxy and embedded across foundation cracks. With 800,000 PSI tensile strength—4 to 10 times stronger than high-strength steels—they bridge both sides of a crack, distributing stress across a wider area. They provide permanent structural reinforcement without the bulk, excavation, or corrosion risk of the steel I-beams they've replaced."
   - question: "When are carbon fiber stitches needed?"
     answer: "Carbon fiber is recommended when cracks show signs of structural movement—diagonal cracks from corners, stair-step patterns, cracks wider than 1/4 inch, or cracks that have reopened after previous repair. We also use them as preventive reinforcement on older foundations or before adding load from home additions. During your free consultation, we'll assess whether injection alone is sufficient or if carbon fiber reinforcement is warranted."
   - question: "Are carbon fiber repairs visible?"
@@ -48,15 +48,16 @@ Carbon fiber stitches are reinforcement strips made from high-strength carbon fi
 
 ### The Science Behind Carbon Fiber
 
-Carbon fiber is an engineered material with remarkable properties:
+We use **Kevlar-grid carbon fiber** configured specifically for foundation repair. The material properties are remarkable:
 
-- **10x stronger than steel** (by weight)
-- **Completely corrosion-resistant**
-- **Zero elongation under load**
-- **Bonds permanently to concrete**
+- **800,000 PSI tensile strength** — 4 to 10 times stronger than high-strength steels
+- **Completely corrosion-resistant** — unlike steel, which rusts and causes additional damage
+- **Zero elongation under load** — no stretching, no fatigue, no degradation over time
+- **Bonds permanently to concrete** via structural epoxy
 - **Thin profile** (less than 1/8" when installed)
+- **Custom-shaped** for each specific repair need
 
-These properties make carbon fiber ideal for foundation repair. Unlike steel reinforcement that can rust and expand (causing more damage), carbon fiber remains stable indefinitely.
+Carbon fiber has largely replaced the steel I-beam reinforcement that was the industry standard for decades. The old approach required excavation on both interior and exterior walls to install steel beams—expensive, invasive, and the steel eventually corrodes. Our carbon fiber achieves superior structural reinforcement from the interior only, with no excavation required.
 
 ### When Carbon Fiber Is Needed
 
