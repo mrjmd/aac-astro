@@ -78,7 +78,7 @@ Matt's principle: "Better for someone to expect they'll pay a little less than t
 | Carbon fiber stitches | $800-$1,500/stitch | **$200-$300/stitch** |
 | Sewer/conduit line | (unspecified) | **$650-$900** |
 | Multi-crack jobs | $600-$1,800 for 2-3 | **"Significant multi-crack discounts available"** |
-| Full wall stabilization | $5,000-$15,000 | **Review with Matt** |
+| Full wall stabilization | $5,000-$15,000 | **$6,000-$15,000** |
 
 ### Tasks
 
@@ -447,14 +447,35 @@ Matt: "In the CI they are currently just set as warnings, but before we launch t
 These require Matt's input before Claude can proceed:
 
 - [ ] **Provide real photos** for 17+ placeholder locations (Phase 8)
-- [ ] **Confirm full wall stabilization pricing** ($5,000-$15,000 — still correct?) (Phase 1)
+- [x] **Confirm full wall stabilization pricing** — confirmed $6,000-$15,000
 - [ ] **Provide partner testimonials** for new persona types (Phase 4)
 - [ ] **Finalize new partner persona list** (insurance adjusters, mold, plumbers, landscapers + others?) (Phase 4)
 - [ ] **Name the trusted partners page** (Preferred Partners? Trusted Partners? Recommended?) (Phase 4B)
-- [ ] **Set up GitHub OAuth** for DecapCMS editor authentication
-- [ ] **Add Vercel secrets** to GitHub (VERCEL_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID)
+- [ ] **Set up DecapCMS with Netlify Identity** (see setup steps below)
+- [x] **Add Vercel secrets** to GitHub — VERCEL_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID all set (2026-03-02)
 - [ ] **Set up monitoring:** Google Search Console, GA4, uptime monitoring, error tracking
-- [ ] **Verify "240+ Google reviews" claim** is still accurate
+- [x] **Verify Google review count** — updated site-wide to 260+ reviews
+- [ ] **Expertise deep-dive session** — Pull detailed methodology/technique content from existing attackacrack.com and brainstorm additional expertise signals. Goal: weave specific technical details (injection methods, material choices, diagnostic approach, etc.) into service pages, blog posts, and location pages to strengthen E-E-A-T. Requires interactive session with Matt.
+
+---
+
+## DecapCMS Setup Guide (Netlify Identity)
+
+Decap CMS gives non-technical users (e.g., admin assistant) a visual editor at `yourdomain.com/admin/`. They log in with email/password — no GitHub account needed. Netlify is used **only** as a free auth proxy; the site stays on Vercel.
+
+### Setup Steps
+
+- [ ] **1. Create a Netlify site** — Go to [app.netlify.com](https://app.netlify.com), sign up/log in, "Add new site" → "Deploy manually" → drag an empty folder. Name doesn't matter.
+- [ ] **2. Connect to GitHub repo** — Netlify site → Site Settings → Build & Deploy → Link to `mrjmd/aac-astro` repo (branch: `main`). **Disable auto-publishing** so Netlify never actually deploys anything.
+- [ ] **3. Enable Identity** — Netlify site → Integrations → Identity → Enable. Set registration to "Invite only" (so only people you invite can access).
+- [ ] **4. Enable Git Gateway** — Same Identity page → Services → Git Gateway → Enable. This lets Identity users commit to your repo without GitHub accounts.
+- [ ] **5. Invite users** — Identity tab → Invite users → enter your assistant's email. They'll get an email to set a password.
+- [ ] **6. Update site URL in CMS config** — Claude will update `public/admin/config.yml` to point the Netlify site URL for auth (the `site_url` in the backend section).
+- [ ] **7. Test** — Visit `yourdomain.com/admin/`, log in with the invited email/password, make a test edit, verify it creates a PR or commit on GitHub.
+
+### Local Testing (No Auth Required)
+
+Run `npx decap-server` + `npm run dev` simultaneously. Visit `localhost:4321/admin/` to edit content locally. Changes save directly to your local files (no git commits) — you push when ready.
 
 ---
 
