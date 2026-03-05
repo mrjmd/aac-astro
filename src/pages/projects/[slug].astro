@@ -206,10 +206,12 @@ const projectSchema = {
 			<div class="max-w-5xl mx-auto px-6">
 				<Breadcrumbs items={breadcrumbItems} class="mb-8" />
 
-				<div class="flex items-center gap-4 mb-6">
-					<span class="text-[10px] font-black uppercase tracking-widest text-aac-blue bg-aac-blue/10 px-3 py-1 rounded-full">
-						{serviceTypeLabels[project.data.serviceTypes[0]]}
-					</span>
+				<div class="flex flex-wrap items-center gap-3 mb-6">
+					{project.data.serviceTypes.map((st: string) => (
+						<span class="text-[10px] font-black uppercase tracking-widest text-aac-blue bg-aac-blue/10 px-3 py-1 rounded-full">
+							{serviceTypeLabels[st] || st}
+						</span>
+					))}
 					<span class="text-sm text-zinc-500 flex items-center gap-1">
 						<Icon name="MapPin" size={14} />
 						{project.data.city}, {stateLabels[project.data.state]}
@@ -280,8 +282,8 @@ const projectSchema = {
 						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mx-auto mb-2">
 							<Icon name="Wrench" size={20} />
 						</div>
-						<p class="text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-1">Service</p>
-						<p class="font-bold text-sm">{serviceTypeLabels[project.data.serviceTypes[0]]}</p>
+						<p class="text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-1">{project.data.serviceTypes.length > 1 ? 'Services' : 'Service'}</p>
+						<p class="font-bold text-sm">{project.data.serviceTypes.map((st: string) => serviceTypeLabels[st] || st).join(' + ')}</p>
 					</div>
 					<div class="text-center">
 						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mx-auto mb-2">
