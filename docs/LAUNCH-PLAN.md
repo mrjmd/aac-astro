@@ -224,6 +224,9 @@ Not strictly blocking launch, but significantly improves quality.
 - [x] Create `docs/BRAND-VOICE.md` — Expert Jester voice guide + proposed site copy
 - [x] Update `docs/SEO-STRATEGY-2026.md` — seasonal content, geo zones, content pillars
 - [x] Create ~35 blog draft stubs with complete frontmatter and outlines
+- [x] Write full articles for all 35 stubs + 10 new posts (73 total blog posts)
+- [x] Publish 4 backdated posts (Jan-Mar 2026)
+- [x] Restructure content calendar (`docs/CONTENT-CALENDAR-2026.md`)
 
 ### Brand Voice Refresh (Matt Review Required)
 
@@ -235,19 +238,35 @@ Not strictly blocking launch, but significantly improves quality.
 - [ ] Claude implements approved changes (separate session)
 - [ ] Visual verification of all changed pages
 
-### Content Production (Post-Launch)
+### Blog Content (41 Full Drafts Written)
 
-- [ ] Write 35 draft blog posts (stubs created, need full content)
-- [ ] Prioritize Zone 1 (South Shore) geo-targeted posts first
-- [ ] Seasonal posts published on calendar schedule
+- [x] Write full content for all 35 blog stubs (800-1200+ words each)
+- [x] Create 10 new blog posts for empty calendar weeks
+- [x] Publish 4 backdated posts (ice dams, emergency, spring thaw, spring inspection)
+- [x] Restructure content calendar with published archive + forward calendar
+- [ ] **Matt: Review all 41 draft blog posts for accuracy and voice** — every article needs a read-through before publishing
+- [ ] **Matt: Provide or source hero images for blog posts** — all 73 posts currently have `heroImage: ""`
 - [ ] Case studies require real project data from Matt
+
+### Automated Blog Publishing (Cron Build)
+
+Set up weekly cron to auto-publish blog posts whose `publishDate` has arrived:
+
+- [ ] Update Astro `getStaticPaths` to filter blog posts: only build pages where `draft !== true` OR (`draft === true` AND `publishDate <= now`) — or switch to a `status` field (draft/scheduled/published)
+- [ ] Add GitHub Action cron job (weekly, e.g. Monday 6am ET) that triggers a Vercel deploy
+- [ ] Alternative: Use Vercel Cron to trigger rebuild on schedule
+- [ ] Test: set a post to `scheduled` with a past date, trigger build, verify it appears
+- [ ] Document the publishing workflow: Matt flips `draft: true` → `draft: false` (or status to `scheduled`) and the next cron build publishes it
+
+### Social Media (Post-Launch)
+
 - [ ] Begin social media posting (3x/week per marketing plan)
 
 ---
 
-## Blog Content Backlog (Reference)
+## Blog Content Status (Reference)
 
-### Tier 3: Consumer Language Content (Not Yet Written)
+### Tier 3: Consumer Language Content (All Written)
 
 | Topic | Target Keywords | Volume |
 |-------|-----------------|--------|

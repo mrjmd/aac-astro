@@ -193,17 +193,29 @@ The full marketing plan is in `docs/MARKETING-PLAN-2026.md`. Key decisions for y
 - [ ] Review geo-targeting zones — agree South Shore is the fortress?
 - [ ] Review SORA AI video concept — interested in testing AI video content?
 
-### Blog Content Calendar
+### Blog Content Review (41 Full Articles Written)
 
-52-week calendar is in `docs/CONTENT-CALENDAR-2026.md`. 35 draft stubs are created with outlines.
+All 41 draft blog posts now have complete, publish-ready content (800-1200+ words each). Calendar: `docs/CONTENT-CALENDAR-2026.md`.
 
-- [ ] Review calendar and flag any topics that feel off or missing
-- [ ] Provide real project details for the 6 planned case study posts
-- [ ] Prioritize which draft stubs to write first (recommend Zone 1 geo posts)
+- [ ] **Read every draft blog post** — check for accuracy, voice, and anything that feels off (they're in `src/content/blog/`, all with `draft: true`)
+- [ ] Flag any articles that need revision before publishing
+- [ ] Provide real project details for the case study posts (what-does-foundation-repair-look-like)
+- [ ] Source/provide hero images for blog posts (all 73 posts currently have blank `heroImage`)
+- [ ] Review content calendar timing — posts are scheduled weekly Apr-Dec 2026
 
 ---
 
-## 6. Content Decisions (Original)
+## 6. Automated Blog Publishing Setup
+
+Once blog posts are reviewed and approved, set up automatic weekly publishing:
+
+- [ ] Decide publishing mechanism: flip `draft: true` → `false` on reviewed posts (simplest), or add a `status: scheduled` field
+- [ ] Set up weekly cron build (GitHub Action or Vercel Cron) to trigger redeploy — posts whose `publishDate` has arrived will appear automatically
+- [ ] Claude implements the Astro filtering logic and cron config
+
+---
+
+## 7. Content Decisions (Original)
 
 ### Brainstorm Session (15 expertise gaps)
 
@@ -222,7 +234,7 @@ The site crawl identified 15 gaps where real expertise details would strengthen 
 
 ---
 
-## 7. Pre-Launch (When Ready)
+## 8. Pre-Launch (When Ready)
 
 These happen at DNS cutover time — don't do them early.
 
