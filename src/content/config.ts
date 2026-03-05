@@ -225,6 +225,7 @@ const projectsCollection = defineCollection({
       'stairway',
       'walkway',
       'floor-crack',
+      'fieldstone',
     ])).min(1),
     beforeImage: z.string(),
     afterImage: z.string(),

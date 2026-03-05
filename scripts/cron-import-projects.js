@@ -94,6 +94,7 @@ const GBP_SERVICE_LABELS = {
   'stairway': 'stairway repair',
   'walkway': 'walkway repair',
   'floor-crack': 'floor crack repair',
+  'fieldstone': 'fieldstone foundation repair',
 };
 
 async function postToGBP(auth, project) {

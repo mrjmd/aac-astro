@@ -10,6 +10,9 @@ import Icon from '../../components/Icon.astro';
 const allProjects = (await getCollection('projects', ({ data }) => data.published))
 	.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
+const PROJECTS_PER_PAGE = 12;
+const totalPages = Math.ceil(allProjects.length / PROJECTS_PER_PAGE);
+
 const serviceTypeLabels: Record<string, string> = {
 	'crack-injection': 'Crack Injection',
 	'wall-crack-repair': 'Wall Crack Repair',
@@ -24,6 +27,7 @@ const serviceTypeLabels: Record<string, string> = {
 	'stairway': 'Stairway Repair',
 	'walkway': 'Walkway Repair',
 	'floor-crack': 'Floor Crack Repair',
+	'fieldstone': 'Fieldstone Repair',
 };
 
 const stateLabels: Record<string, string> = {
@@ -102,14 +106,16 @@ const itemListSchema = {
 		<section class="py-24 bg-zinc-50">
 			<div class="max-w-7xl mx-auto px-6">
 				{allProjects.length > 0 ? (
-					<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-						{allProjects.map((project) => (
-							<a href={`/projects/${project.id.replace(/\.md$/, '')}`} class="group bg-white rounded-[32px] overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all">
+				<>
+					<div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+						{allProjects.map((project, i) => (
+							<a href={`/projects/${project.id.replace(/\.md$/, '')}`} data-page={Math.floor(i / PROJECTS_PER_PAGE) + 1} class="project-card group bg-white rounded-[32px] overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all" style={i >= PROJECTS_PER_PAGE ? 'display:none' : ''}>
 								<div class="aspect-video overflow-hidden relative">
 									<img
 										src={project.data.afterImage}
 										alt={`${project.data.title} - After repair`}
 										class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+										loading={i < PROJECTS_PER_PAGE ? 'eager' : 'lazy'}
 									/>
 									<div class="absolute top-4 left-4 bg-aac-dark/80 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg border border-white/20">
 										{serviceTypeLabels[project.data.serviceTypes[0]]}
@@ -137,6 +143,23 @@ const itemListSchema = {
 							</a>
 						))}
 					</div>
+
+					{totalPages > 1 && (
+						<nav class="flex items-center justify-center gap-2 mt-12" aria-label="Projects pagination">
+							<button id="prev-page" class="px-3 py-2 rounded-lg border-2 border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue transition-all disabled:opacity-30 disabled:cursor-not-allowed" disabled aria-label="Previous page">
+								&larr;
+							</button>
+							{Array.from({ length: totalPages }, (_, i) => (
+								<button data-goto={i + 1} class={`page-btn w-10 h-10 rounded-lg border-2 text-sm font-black transition-all ${i === 0 ? 'border-aac-blue bg-aac-blue text-white' : 'border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue'}`}>
+									{i + 1}
+								</button>
+							))}
+							<button id="next-page" class="px-3 py-2 rounded-lg border-2 border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue transition-all disabled:opacity-30 disabled:cursor-not-allowed" aria-label="Next page">
+								&rarr;
+							</button>
+						</nav>
+					)}
+				</>
 				) : (
 					<div class="text-center py-16">
 						<div class="w-16 h-16 bg-aac-blue/10 text-aac-blue rounded-full flex items-center justify-center mx-auto mb-6">
@@ -178,4 +201,42 @@ const itemListSchema = {
 		</section>
 	</main>
 	<Footer />
+
+	<script>
+		const cards = document.querySelectorAll('.project-card');
+		const pageBtns = document.querySelectorAll('.page-btn');
+		const prevBtn = document.getElementById('prev-page');
+		const nextBtn = document.getElementById('next-page');
+		const totalPages = pageBtns.length;
+		let currentPage = 1;
+
+		function showPage(page) {
+			currentPage = page;
+			cards.forEach(card => {
+				const cardPage = parseInt(card.dataset.page || '1');
+				card.style.display = cardPage === page ? '' : 'none';
+			});
+			pageBtns.forEach(btn => {
+				const goto = parseInt(btn.dataset.goto || '1');
+				if (goto === page) {
+					btn.classList.add('border-aac-blue', 'bg-aac-blue', 'text-white');
+					btn.classList.remove('border-zinc-200', 'text-zinc-500');
+				} else {
+					btn.classList.remove('border-aac-blue', 'bg-aac-blue', 'text-white');
+					btn.classList.add('border-zinc-200', 'text-zinc-500');
+				}
+			});
+			if (prevBtn) prevBtn.disabled = page === 1;
+			if (nextBtn) nextBtn.disabled = page === totalPages;
+			document.getElementById('projects-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		}
+
+		pageBtns.forEach(btn => {
+			btn.addEventListener('click', () => {
+				showPage(parseInt(btn.dataset.goto || '1'));
+			});
+		});
+		prevBtn?.addEventListener('click', () => { if (currentPage > 1) showPage(currentPage - 1); });
+		nextBtn?.addEventListener('click', () => { if (currentPage < totalPages) showPage(currentPage + 1); });
+	</script>
 </Layout>

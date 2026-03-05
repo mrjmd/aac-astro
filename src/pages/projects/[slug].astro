@@ -18,6 +18,7 @@ export async function getStaticPaths() {
 		'patio': 'Patio Repair', 'pool-deck': 'Pool Deck Repair',
 		'stairway': 'Stairway Repair', 'walkway': 'Walkway Repair',
 		'floor-crack': 'Floor Crack Repair',
+		'fieldstone': 'Fieldstone Repair',
 	};
 	const mons = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
@@ -77,6 +78,7 @@ const serviceTypeLabels: Record<string, string> = {
 	'stairway': 'Stairway Repair',
 	'walkway': 'Walkway Repair',
 	'floor-crack': 'Floor Crack Repair',
+	'fieldstone': 'Fieldstone Foundation Repair',
 };
 
 const stateLabels: Record<string, string> = {
@@ -108,6 +110,12 @@ const moreProjects = allProjects.filter(p => p.id !== project.id).slice(0, 3);
 
 // Use pre-computed unique title from getStaticPaths
 const defaultTitle = computedTitle;
+
+// Determine if photos are truly before/after or just project photos
+const PLACEHOLDER = '/images/projects/placeholder.svg';
+const hasBeforeAfter = project.data.beforeImage !== project.data.afterImage
+	&& project.data.beforeImage !== PLACEHOLDER
+	&& project.data.afterImage !== PLACEHOLDER;
 
 // Generate meta description from summary — ensure 120-160 chars
 function buildMetaDescription(summary: string, serviceLabel: string, city: string, state: string): string {
@@ -221,38 +229,44 @@ const projectSchema = {
 			</div>
 		</section>
 
-		<!-- Before/After Photos -->
+		<!-- Photos -->
 		<section class="py-12 lg:py-20 bg-zinc-50">
 			<div class="max-w-6xl mx-auto px-6">
-				<div class="grid md:grid-cols-2 gap-8">
-					<!-- Before -->
+				<div class={`grid gap-8 ${hasBeforeAfter ? 'md:grid-cols-2' : project.data.beforeImage === project.data.afterImage ? 'max-w-2xl mx-auto' : 'md:grid-cols-2'}`}>
+					{/* First photo */}
 					<div>
-						<div class="flex items-center gap-2 mb-4">
-							<div class="w-3 h-3 bg-red-500 rounded-full"></div>
-							<span class="text-sm font-black uppercase tracking-widest text-zinc-700">Before</span>
-						</div>
+						{hasBeforeAfter && (
+							<div class="flex items-center gap-2 mb-4">
+								<div class="w-3 h-3 bg-red-500 rounded-full"></div>
+								<span class="text-sm font-black uppercase tracking-widest text-zinc-700">Before</span>
+							</div>
+						)}
 						<div class="aspect-[4/3] rounded-2xl overflow-hidden border-2 border-zinc-200 shadow-lg">
 							<img
 								src={project.data.beforeImage}
-								alt={`${project.data.title} - Before repair`}
+								alt={`${project.data.title}${hasBeforeAfter ? ' - Before repair' : ''}`}
 								class="w-full h-full object-cover"
 							/>
 						</div>
 					</div>
-					<!-- After -->
+					{/* Second photo — only show if different from first */}
+					{project.data.beforeImage !== project.data.afterImage && (
 					<div>
-						<div class="flex items-center gap-2 mb-4">
-							<div class="w-3 h-3 bg-green-500 rounded-full"></div>
-							<span class="text-sm font-black uppercase tracking-widest text-zinc-700">After</span>
-						</div>
+						{hasBeforeAfter && (
+							<div class="flex items-center gap-2 mb-4">
+								<div class="w-3 h-3 bg-green-500 rounded-full"></div>
+								<span class="text-sm font-black uppercase tracking-widest text-zinc-700">After</span>
+							</div>
+						)}
 						<div class="aspect-[4/3] rounded-2xl overflow-hidden border-2 border-zinc-200 shadow-lg">
 							<img
 								src={project.data.afterImage}
-								alt={`${project.data.title} - After repair`}
+								alt={`${project.data.title}${hasBeforeAfter ? ' - After repair' : ''}`}
 								class="w-full h-full object-cover"
 							/>
 						</div>
 					</div>
+					)}
 				</div>
 			</div>
 		</section>

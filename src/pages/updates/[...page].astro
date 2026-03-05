@@ -32,6 +32,7 @@ const serviceTypeLabels: Record<string, string> = {
 	'stairway': 'Stairway Repair',
 	'walkway': 'Walkway Repair',
 	'floor-crack': 'Floor Crack Repair',
+	'fieldstone': 'Fieldstone Repair',
 };
 
 export const getStaticPaths = (async ({ paginate }) => {
@@ -87,8 +88,9 @@ const itemListSchema = {
 	})),
 };
 
-// Show max 4 projects on updates page
-const displayProjects = projects.slice(0, 4);
+// Projects pagination (client-side, independent of blog pagination)
+const PROJECTS_PER_PAGE = 4;
+const projectTotalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
 ---
 
 <Layout
@@ -189,8 +191,8 @@ const displayProjects = projects.slice(0, 4);
 			</div>
 		</section>
 
-		<!-- Recent Projects Section (only on first page, only when projects exist) -->
-		{isFirstPage && displayProjects.length > 0 && (
+		<!-- Recent Projects Section (all pages, with independent pagination) -->
+		{projects.length > 0 && (
 			<section class="py-24 bg-white border-t-4 border-zinc-100">
 				<div class="max-w-7xl mx-auto px-6">
 					<div class="flex items-center justify-between mb-12">
@@ -202,21 +204,20 @@ const displayProjects = projects.slice(0, 4);
 								Recent Projects
 							</h2>
 						</div>
-						{projects.length > 4 && (
-							<a href="/projects" class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] hover:gap-4 transition-all">
-								View All Projects <Icon name="ArrowRight" size={14} />
-							</a>
-						)}
+						<a href="/projects" class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] hover:gap-4 transition-all">
+							View All Projects <Icon name="ArrowRight" size={14} />
+						</a>
 					</div>
 
-					<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-						{displayProjects.map((project) => (
-							<a href={`/projects/${project.id.replace(/\.md$/, '')}`} class="group bg-zinc-50 rounded-2xl overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all">
+					<div id="updates-projects-grid" class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+						{projects.map((project, i) => (
+							<a href={`/projects/${project.id.replace(/\.md$/, '')}`} data-ppage={Math.floor(i / PROJECTS_PER_PAGE) + 1} class="updates-project-card group bg-zinc-50 rounded-2xl overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all" style={i >= PROJECTS_PER_PAGE ? 'display:none' : ''}>
 								<div class="aspect-video overflow-hidden relative">
 									<img
 										src={project.data.afterImage}
 										alt={`${project.data.title} - After repair`}
 										class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+										loading={i < PROJECTS_PER_PAGE ? 'eager' : 'lazy'}
 										referrerpolicy="no-referrer"
 									/>
 									<div class="absolute top-3 left-3 bg-aac-dark/80 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg border border-white/20">
@@ -237,6 +238,22 @@ const displayProjects = projects.slice(0, 4);
 							</a>
 						))}
 					</div>
+
+					{projectTotalPages > 1 && (
+						<nav class="flex items-center justify-center gap-2 mt-8" aria-label="Projects pagination">
+							<button id="pp-prev" class="px-3 py-2 rounded-lg border-2 border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue transition-all disabled:opacity-30 disabled:cursor-not-allowed" disabled aria-label="Previous projects page">
+								&larr;
+							</button>
+							{Array.from({ length: projectTotalPages }, (_, i) => (
+								<button data-ppgoto={i + 1} class={`pp-btn w-10 h-10 rounded-lg border-2 text-sm font-black transition-all ${i === 0 ? 'border-aac-blue bg-aac-blue text-white' : 'border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue'}`}>
+									{i + 1}
+								</button>
+							))}
+							<button id="pp-next" class="px-3 py-2 rounded-lg border-2 border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue transition-all disabled:opacity-30 disabled:cursor-not-allowed" aria-label="Next projects page">
+								&rarr;
+							</button>
+						</nav>
+					)}
 				</div>
 			</section>
 		)}
@@ -263,4 +280,40 @@ const displayProjects = projects.slice(0, 4);
 		</section>
 	</main>
 	<Footer />
+
+	<script>
+		const cards = document.querySelectorAll('.updates-project-card');
+		const pageBtns = document.querySelectorAll('.pp-btn');
+		const prevBtn = document.getElementById('pp-prev');
+		const nextBtn = document.getElementById('pp-next');
+		const totalPages = pageBtns.length;
+		let currentPage = 1;
+
+		function showProjectPage(page) {
+			currentPage = page;
+			cards.forEach(card => {
+				const p = parseInt(card.dataset.ppage || '1');
+				card.style.display = p === page ? '' : 'none';
+			});
+			pageBtns.forEach(btn => {
+				const goto = parseInt(btn.dataset.ppgoto || '1');
+				if (goto === page) {
+					btn.classList.add('border-aac-blue', 'bg-aac-blue', 'text-white');
+					btn.classList.remove('border-zinc-200', 'text-zinc-500');
+				} else {
+					btn.classList.remove('border-aac-blue', 'bg-aac-blue', 'text-white');
+					btn.classList.add('border-zinc-200', 'text-zinc-500');
+				}
+			});
+			if (prevBtn) prevBtn.disabled = page === 1;
+			if (nextBtn) nextBtn.disabled = page === totalPages;
+			document.getElementById('updates-projects-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		}
+
+		pageBtns.forEach(btn => {
+			btn.addEventListener('click', () => showProjectPage(parseInt(btn.dataset.ppgoto || '1')));
+		});
+		prevBtn?.addEventListener('click', () => { if (currentPage > 1) showProjectPage(currentPage - 1); });
+		nextBtn?.addEventListener('click', () => { if (currentPage < totalPages) showProjectPage(currentPage + 1); });
+	</script>
 </Layout>

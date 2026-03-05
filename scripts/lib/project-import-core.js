@@ -107,6 +107,7 @@ export const SERVICE_LABELS = {
   'stairway': 'Stairway Repair',
   'walkway': 'Walkway Repair',
   'floor-crack': 'Floor Crack Repair',
+  'fieldstone': 'Fieldstone Foundation Repair',
 };
 
 export const VALID_SERVICE_TYPES = Object.keys(SERVICE_LABELS);
@@ -622,6 +623,7 @@ export async function detectServiceTypes(text) {
     'pool-deck': 'Pool deck concrete repair or resurfacing',
     'stairway': 'Concrete step/stair repair or resurfacing',
     'walkway': 'Walkway/sidewalk concrete repair or resurfacing',
+    'fieldstone': 'Fieldstone, rubble stone, or rock foundation repair. Includes old stone walls, field stone retaining walls, mortar joint repair on stone foundations.',
   };
 
   try {
@@ -633,7 +635,7 @@ export async function detectServiceTypes(text) {
       .join('\n');
 
     const result = await model.generateContent(
-      `Classify this foundation/concrete repair job. Pick ALL service types that apply:\n\n${typeList}\n\nJob description: "${text}"\n\nRules:\n- "crack-injection" is ONLY for poured concrete foundation WALL cracks. NEVER for floors or garage floors.\n- Floor cracks and slab cracks = "floor-crack" (repaired with epoxy or rubber seal, not injection)\n- Garage floor work (resurfacing, repair, coating, cracks) = "garage-floor", NOT "crack-injection"\n- Only "wall-crack-repair" for block/stone/brick walls\n- Include specific concrete subtypes (garage-floor, driveway, stairway, etc.) when mentioned\n- List PRIMARY service first\n\nRespond with ONLY a JSON array: ["type1", "type2"]`
+      `Classify this foundation/concrete repair job. Pick ALL service types that apply:\n\n${typeList}\n\nJob description: "${text}"\n\nRules:\n- "crack-injection" is ONLY for poured concrete foundation WALL cracks. NEVER for floors or garage floors.\n- Floor cracks and slab cracks = "floor-crack" (repaired with epoxy or rubber seal, not injection)\n- Garage floor work (resurfacing, repair, coating, cracks) = "garage-floor", NOT "crack-injection"\n- Only "wall-crack-repair" for block/stone/brick/cinder block walls (NOT fieldstone)\n- Fieldstone, rubble stone, rock foundations, or natural stone walls = "fieldstone"\n- Include specific concrete subtypes (garage-floor, driveway, stairway, etc.) when mentioned\n- List PRIMARY service first\n\nRespond with ONLY a JSON array: ["type1", "type2"]`
     );
 
     const responseText = result.response.text().trim();
