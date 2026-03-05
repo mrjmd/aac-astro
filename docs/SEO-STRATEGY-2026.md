@@ -17,6 +17,9 @@ This document provides a **complete SEO strategy** for Attack A Crack, addressin
 6. **AI Overview Optimization** - Ranking in Google's SGE
 7. **Review Strategy** - The new competitive battleground
 8. **Content Strategy** - Beyond keywords to genuine expertise
+8A. **Seasonal Content Strategy** - Quarterly themes aligned with foundation repair seasonality
+8B. **Geo-Targeting Zones** - Fortress & Outposts framework for content investment
+8C. **Content Pillars** - Hub-and-spoke model connecting services, blog, and locations
 9. **ImageObject Schema** - Before/after photo structured data
 10. **LLM Crawler Optimization** - GPTBot, ClaudeBot, etc.
 11. **City Page Uniqueness** - Avoiding thin content penalties
@@ -26,6 +29,7 @@ This document provides a **complete SEO strategy** for Attack A Crack, addressin
 15. **Technical Foundation** - Status and remaining items
 16. **90-Day Implementation Sprint** - Actionable timeline
 17. **KPIs & Measurement** - Monthly tracking targets
+18. **Off-Site Strategy** - Social, backlinks, reviews, LSA, offline-to-online
 
 ### The 2026 Reality Check
 
@@ -701,6 +705,169 @@ Based on gap analysis, Attack A Crack is missing content for:
 
 ---
 
+## Part 8A: Seasonal Content Strategy
+
+*Added March 2026 — aligned with `docs/MARKETING-PLAN-2026.md` and `docs/CONTENT-CALENDAR-2026.md`*
+
+Foundation repair demand is highly seasonal in New England. Content should anticipate and match the homeowner's mindset each quarter.
+
+### Quarterly Content Themes
+
+| Quarter | Theme | Homeowner Mindset | Content Focus |
+|---|---|---|---|
+| **Q1 (Jan-Mar)** | Winter Damage + Planning | "Is this crack new? Should I worry?" | Ice dam damage, emergency repairs, spring prep guides, "is this normal?" content |
+| **Q2 (Apr-Jun)** | Spring Thaw + Inspection | "The snow melted and now my basement is wet" | Water intrusion after thaw, inspection checklists, rainy season prep, spring repair urgency |
+| **Q3 (Jul-Sep)** | Concrete Repair + Preventive | "While the weather's good, let me fix this" | Concrete repair (MA), driveway/patio/pool deck season, preventive maintenance |
+| **Q4 (Oct-Dec)** | Winterization + Pre-Freeze | "I need to deal with this before winter" | Fall inspection checklists, winterization guides, pre-freeze repair urgency |
+
+### Seasonal Publishing Cadence
+
+- **Peak seasons (Q2, Q4):** 2 posts/week — capitalize on search intent surges
+- **Steady seasons (Q1, Q3):** 1 post/week — maintain visibility, build evergreen library
+- **Seasonal alerts:** Publish timely posts within 48 hours of major weather events (nor'easters, heavy rain, freeze-thaw cycles)
+
+### Seasonal Keyword Opportunities
+
+| Season | High-Intent Keywords | Content Type |
+|---|---|---|
+| Spring | "water in basement after rain", "spring foundation inspection" | Guides, checklists |
+| Summer | "concrete driveway repair", "pool deck crack repair" | Service-adjacent guides |
+| Fall | "foundation repair before winter", "basement winterization" | Urgency/seasonal tips |
+| Winter | "ice dam foundation damage", "emergency foundation repair" | Emergency guides, planning content |
+
+---
+
+## Part 8B: Geo-Targeting Zones — Fortress & Outposts
+
+*Added March 2026 — aligned with `docs/MARKETING-PLAN-2026.md`*
+
+### Framework Overview
+
+Not all markets deserve equal content investment. The Fortress & Outposts model allocates content, ads, and outreach based on three zones of strategic importance.
+
+### Zone 1: Fortress (South Shore / Greater Boston)
+
+**Highest investment. All channels. Maximum content depth.**
+
+**Cities:** Quincy (HQ), Braintree, Weymouth, Milton, Randolph, Hingham, Norwell, Scituate, Marshfield, Plymouth, Hanover, Rockland, Abington, Whitman, Holbrook, Hull, Cohasset, Duxbury, Kingston, Pembroke
+
+**Content strategy:**
+- City pages with deep localization (neighborhood-specific content, local landmarks, housing stock details)
+- Geo-targeted blog posts (e.g., "South Shore Foundation Problems: What Makes This Area Different")
+- Case studies featuring Zone 1 projects
+- GBP optimization for MA location (Quincy)
+- Local partnerships (South Shore realtors, inspectors)
+
+**SEO targets:**
+- Rank page 1 for "[city] foundation repair" in all Zone 1 cities
+- Rank page 1 for "foundation repair south shore MA"
+- Dominate "near me" searches within 20-mile radius of Quincy
+
+### Zone 2: Expansion (CT Core + MA Cities)
+
+**Steady investment. Content + targeted ads.**
+
+**CT cities:** Hartford, New Haven, Middletown, Manchester, Bristol, Glastonbury, Farmington, Simsbury, Avon, Canton, and surrounding towns
+
+**MA cities:** Framingham, Worcester, Springfield, Shrewsbury, Natick, Wellesley, Needham, Newton, Brookline, Cambridge, and surrounding towns
+
+**Content strategy:**
+- City pages (already built for all Zone 2 cities)
+- Blog content with geo-targeting where relevant
+- GBP optimization for CT location (Amston)
+- Search ads on high-intent keywords
+
+**SEO targets:**
+- Rank page 1 for "[city] foundation repair" in top 10 Zone 2 cities
+- Maintain existing rankings for CT cities
+- Grow MA presence beyond South Shore
+
+### Zone 3: Outposts (RI / NH / ME)
+
+**Lightweight. Organic-first.**
+
+**RI:** Providence, Warwick, Cranston, Pawtucket, East Providence, Newport, etc.
+**NH:** Nashua, Manchester, Concord, Derry, Salem, Londonderry, etc.
+**ME:** Portland, South Portland, Scarborough, Westbrook, Gorham, Biddeford, etc.
+
+**Content strategy:**
+- City pages (already built, 10 per state)
+- Occasional geo-targeted blog posts (1-2 per quarter per state)
+- Organic-only — no paid investment
+- Referral-based growth
+
+**SEO targets:**
+- Rank for "[state] foundation repair" broad terms
+- Rank for major city names (Providence, Nashua, Portland)
+- Monitor demand signals — promote to Zone 2 if volume warrants
+
+### Mapping to Existing 80 City Pages
+
+| Zone | States | City Pages | Content Depth |
+|---|---|---|---|
+| Zone 1 (Fortress) | MA (South Shore) | ~20 | Deep (neighborhoods, case studies, local blog posts) |
+| Zone 2 (Expansion) | CT, MA (other) | ~30 | Standard (unique content, FAQs, testimonials) |
+| Zone 3 (Outposts) | RI, NH, ME | ~30 | Baseline (template + local variables) |
+
+---
+
+## Part 8C: Content Pillars — Hub-and-Spoke Model
+
+*Added March 2026 — makes explicit the content architecture already partially in place*
+
+### Pillar Architecture
+
+Each content pillar connects a **hub page** (service or topic page) to **spoke content** (blog posts, location pages) via internal links. This creates topical authority signals for Google.
+
+### Pillar 1: Foundation Crack Repair (Primary)
+
+- **Hub:** `/services/crack-injection/` + `/services/wall-crack-repair/`
+- **Spokes:**
+  - Blog: Horizontal cracks, vertical vs. horizontal, basement floor cracks, when to worry, DIY vs. professional
+  - Location: All 80 city pages (each links to relevant service)
+  - Cost: Foundation repair cost guide
+  - Case studies: Framingham, Shrewsbury, Wilmington
+
+### Pillar 2: Waterproofing & Water Intrusion
+
+- **Hub:** `/services/bulkhead-repair/`
+- **Spokes:**
+  - Blog: Water in basement after rain, bulkhead leaking, basement waterproofing vs. repair
+  - Cost: Bulkhead repair cost guide
+  - Seasonal: Spring thaw guides, winterization checklists
+  - Case studies: Leaky bulkhead repairs
+
+### Pillar 3: Concrete Repair (MA Only)
+
+- **Hub:** `/concrete-repair/` (all 6 surface types)
+- **Spokes:**
+  - Blog: Driveway crack repair, pool deck repair, cement vs. concrete
+  - Cost: Concrete repair cost guides
+  - Location: MA city pages with `servesResurfacing: true`
+
+### Pillar 4: Foundation Types & Education
+
+- **Hub:** Blog posts with `category: foundation-types` + services hub "Dive Deeper" section
+- **Spokes:**
+  - Blog: Fieldstone guide, cinderblock guide, crumbling foundations, foundation settling
+  - Educational: How to check your foundation, signs of problems, insurance coverage
+
+### Pillar 5: Professional Network & Trust
+
+- **Hub:** `/partners/` + About page
+- **Spokes:**
+  - Blog: ASHI conference, NAR NXT, partnership content
+  - Trust signals: E-E-A-T content, review strategy, "no salesperson" messaging
+
+### Internal Linking Rules
+
+1. Every blog post links to its parent hub page (service or topic)
+2. Every service page links to 3-5 relevant blog posts (`showOnServicesPage: true`)
+3. City pages link to relevant service pages and geo-targeted blog posts
+4. New blog stubs include `relatedServices` and `relatedPosts` in frontmatter
+
+---
+
 ## Part 9: ImageObject Schema for Before/After Photos
 
 ### Why ImageObject Matters in 2026
@@ -1265,6 +1432,78 @@ Subject: 30 seconds to help other homeowners
 ---
 
 *This document supersedes the Keyword Strategy document and provides the comprehensive framework for 2026 SEO success.*
+
+---
+
+## Part 18: Off-Site Strategy (Beyond the Website)
+
+*Merged from OFF-PAGE-STRATEGY-2026.md — March 5, 2026*
+
+While the website is the foundation, a successful 2026 local SEO strategy requires a comprehensive off-site presence. This section outlines the external signals needed to reinforce the Attack A Crack brand entity.
+
+### 18.1 Social Media & Content Distribution
+
+**Goal:** Establish active trust signals and reach local homeowners on platforms they use daily.
+**Cadence:** Weekly (minimum)
+
+**Primary Platform: Facebook & Instagram (Meta)**
+- **Before/After Showcases:** Post weekly "Transformation Tuesday" style posts.
+- **Local Community Groups:** Monitor local town groups for keywords like "crack", "basement", "water". Reply helpfully.
+- **Video Reels:** 15-30 second clips of epoxy injection or concrete resurfacing.
+- **Tagging:** Always tag the specific town/location in posts.
+
+**Secondary Platform: YouTube**
+- **"How It Works" Library:** 2-3 minute videos explaining the process (Injection, Staples, Resurfacing).
+- **Customer Testimonials:** Video interviews with happy clients.
+- **SEO Optimization:** Detailed descriptions with local keywords and timestamps.
+
+**Tertiary Platform: LinkedIn**
+- **Partner Networking:** Connect with local realtors, home inspectors, and insurance adjusters.
+- **Professional Updates:** Company milestones, certifications, educational content.
+
+### 18.2 Local Authority & Backlink Building
+
+**Goal:** Earn high-quality, locally relevant backlinks. **Metric:** 1-2 high-quality local links per month.
+
+**Hyper-Local Approach:**
+- **Youth Sports Sponsorships:** $300-$500/season, often gets a link from a `.org` or local domain. Sponsor one team per major hub.
+- **Local Chamber of Commerce:** Join chambers in key cities. Ensure profile has a do-follow link.
+- **Local News / Patch.com:** Press releases for milestones ("Local Business Celebrates 30 Years", "New Eco-Friendly Repair Method").
+
+**Industry Partnerships (B2B):**
+- **Home Inspectors:** Offer "Realtor/Inspector Rush Service". Create a PDF one-pager they can give clients.
+- **Waterproofers:** Two-way referral system — they do drainage, we do structural cracks.
+- **Real Estate Agencies:** "Lunch & Learn" sessions to teach agents how to spot foundation issues.
+
+### 18.3 Review Generation & Reputation Management
+
+**Goal:** Consistent flow of 4-5 star reviews.
+
+- **"Strike While Hot" Protocol:** Request review immediately upon job completion. QR code card → Google Review form.
+- **Response Strategy:** Reply within 48 hours. Use service keywords in replies. Handle negatives professionally.
+
+### 18.4 Local Service Ads (LSA) & Google Guarantee
+
+**Google Guarantee Badge:**
+- Requirement: background checks, insurance verification.
+- **CRITICAL:** Without this, you lose the top 3 spots automatically in 2026.
+- Even a small budget keeps the badge active.
+
+### 18.5 Offline to Online (O2O)
+
+- **Yard Signs:** "Another Foundation Saved by Attack A Crack" + QR code → "Check Your Foundation" checklist page.
+- **Truck Wraps:** Ensure URL and phone are massive and high-contrast.
+- **Direct Mail:** Target new homeowners (0-6 months post-purchase) in older neighborhoods. Offer "Free Foundation Health Check".
+
+### 18.6 Off-Site KPIs
+
+| Metric | Source | Frequency | Target |
+|--------|--------|-----------|--------|
+| Brand Mentions | Google Alerts | Weekly | Growing trend |
+| Referral Traffic | GA4 | Monthly | >15% of total |
+| Social Engagement | Meta Insights | Monthly | >5% rate |
+| LSA Leads | Google Ads | Weekly | <$50 CPA |
+| Partner Referrals | CRM / Ask Client | Monthly | 5+ per month |
 
 **Sources:**
 - [MapRanks - Google Business SEO 2026](https://www.mapranks.com/2026/02/23/google-business-seo-in-2026-whats-actually-driving-rankings-now/)

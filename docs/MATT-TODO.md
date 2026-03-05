@@ -170,7 +170,40 @@ This opens a browser for Google OAuth consent, then shows what it would import. 
 
 ---
 
-## 5. Content Decisions
+## 5. Brand Voice & Marketing Review
+
+### Brand Voice Refresh (Review Required)
+
+The Expert Jester voice guide is in `docs/BRAND-VOICE.md`. It includes before/after copy proposals for every major page. Nothing changes on the site until you approve.
+
+- [ ] Read `docs/BRAND-VOICE.md` — especially the "Proposed Changes Appendix"
+- [ ] Approve or mark up homepage hero + CTA copy
+- [ ] Approve or mark up about page story + values copy
+- [ ] Approve or mark up services hub descriptions
+- [ ] Approve or mark up team bios (Luc, Matt, Ed, Justin, Mike)
+- [ ] Note any lines that feel off-brand or too casual
+
+### Marketing Plan Review
+
+The full marketing plan is in `docs/MARKETING-PLAN-2026.md`. Key decisions for you:
+
+- [ ] Review social media strategy — are 3x/week posts feasible?
+- [ ] Review paid advertising budget zones — agree with 70/30 conversion/awareness split?
+- [ ] Review email marketing sequences — do you have an email platform preference?
+- [ ] Review geo-targeting zones — agree South Shore is the fortress?
+- [ ] Review SORA AI video concept — interested in testing AI video content?
+
+### Blog Content Calendar
+
+52-week calendar is in `docs/CONTENT-CALENDAR-2026.md`. 35 draft stubs are created with outlines.
+
+- [ ] Review calendar and flag any topics that feel off or missing
+- [ ] Provide real project details for the 6 planned case study posts
+- [ ] Prioritize which draft stubs to write first (recommend Zone 1 geo posts)
+
+---
+
+## 6. Content Decisions (Original)
 
 ### Brainstorm Session (15 expertise gaps)
 
@@ -189,7 +222,7 @@ The site crawl identified 15 gaps where real expertise details would strengthen 
 
 ---
 
-## 6. Pre-Launch (When Ready)
+## 7. Pre-Launch (When Ready)
 
 These happen at DNS cutover time — don't do them early.
 

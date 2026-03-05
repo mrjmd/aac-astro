@@ -215,6 +215,36 @@ Not strictly blocking launch, but significantly improves quality.
 
 ---
 
+## Marketing & Content (Claude + Matt)
+
+### 2026 Marketing Plan Integration
+
+- [x] Create `docs/MARKETING-PLAN-2026.md` — brand persona, channels, geo-targeting
+- [x] Create `docs/CONTENT-CALENDAR-2026.md` — 52-week editorial calendar
+- [x] Create `docs/BRAND-VOICE.md` — Expert Jester voice guide + proposed site copy
+- [x] Update `docs/SEO-STRATEGY-2026.md` — seasonal content, geo zones, content pillars
+- [x] Create ~35 blog draft stubs with complete frontmatter and outlines
+
+### Brand Voice Refresh (Matt Review Required)
+
+- [ ] Matt reviews proposed copy changes in `docs/BRAND-VOICE.md` (before/after appendix)
+- [ ] Approve or revise homepage hero + CTA changes
+- [ ] Approve or revise about page story + values changes
+- [ ] Approve or revise services hub description changes
+- [ ] Approve or revise team bio changes
+- [ ] Claude implements approved changes (separate session)
+- [ ] Visual verification of all changed pages
+
+### Content Production (Post-Launch)
+
+- [ ] Write 35 draft blog posts (stubs created, need full content)
+- [ ] Prioritize Zone 1 (South Shore) geo-targeted posts first
+- [ ] Seasonal posts published on calendar schedule
+- [ ] Case studies require real project data from Matt
+- [ ] Begin social media posting (3x/week per marketing plan)
+
+---
+
 ## Blog Content Backlog (Reference)
 
 ### Tier 3: Consumer Language Content (Not Yet Written)
