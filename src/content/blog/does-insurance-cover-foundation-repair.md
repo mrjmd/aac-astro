@@ -6,6 +6,7 @@ excerpt: "Most homeowners assume their insurance covers foundation cracks. The r
 publishDate: 2026-03-04
 author: "Matt Davis"
 category: "guides"
+showOnServicesPage: true
 tags: ["insurance", "foundation repair", "homeowners insurance", "claims", "Connecticut", "Massachusetts"]
 featured: false
 relatedPosts:

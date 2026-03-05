@@ -6,6 +6,7 @@ excerpt: "What actually happens during a foundation inspection? We pull back the
 publishDate: 2026-03-01
 author: "Luc Richard"
 category: "guides"
+showOnServicesPage: true
 tags: ["foundation inspection", "diagnosis", "foundation assessment", "crack evaluation", "free consultation"]
 featured: false
 relatedPosts:

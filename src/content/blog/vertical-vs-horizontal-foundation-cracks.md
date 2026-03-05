@@ -6,6 +6,7 @@ excerpt: "Not all foundation cracks are created equal. Learn which crack pattern
 publishDate: 2026-02-15
 author: "Luc Richard"
 category: "guides"
+showOnServicesPage: true
 tags: ["foundation cracks", "structural damage", "basement repair"]
 heroImage: "/images/blog/crack-types-hero.jpg"
 heroImageAlt: "Close-up of different foundation crack patterns"

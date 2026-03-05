@@ -1,0 +1,86 @@
+---
+import Icon from './Icon.astro';
+
+const team = [
+  {
+    name: "Luc Richard",
+    role: "Founder & Managing Partner",
+    location: "Connecticut",
+    img: "/images/team/luc.webp",
+    bio: "Luc started working with concrete at age 16 under his father's foundation company. After 15 years mastering injection techniques and concrete chemistry, he established Attack A Crack. Over 33+ years, he's developed the proprietary methods—diamond saw preparation, copper ports, 100 PSI injection—that set the company apart.",
+    personal: "When he's not fixing foundations, Luc is an avid outdoorsman who enjoys fishing and spending time with his family."
+  },
+  {
+    name: "Matt Davis",
+    role: "Managing Partner",
+    location: "Massachusetts",
+    img: "/images/team/matt.webp",
+    bio: "Matt joined Attack A Crack in 2024 to lead the Massachusetts expansion. He brings operational expertise and a customer-first approach, ensuring every homeowner in the Bay State receives the same quality and honesty that built the company's reputation in Connecticut.",
+    personal: "Outside of work, Matt is a technology enthusiast and dedicated father."
+  },
+  {
+    name: "Edward Crowell",
+    role: "Partnership Lead",
+    location: "Business Development",
+    img: "/images/team/ed.webp",
+    bio: "Ed builds and maintains Attack A Crack's professional network—connecting with realtors, home inspectors, property managers, and contractors across New England. His relationship-driven approach ensures partners always have a trusted foundation repair resource for their clients.",
+    personal: "Ed is passionate about community involvement and building lasting professional relationships."
+  },
+  {
+    name: "Justin La Fontaine",
+    role: "Lead Technician",
+    location: "Field Expert",
+    img: "/images/team/justin.webp",
+    bio: "Justin joined Luc right out of high school and has been with Attack A Crack for over 23 years. Together they've refined the injection techniques that deliver permanent repairs. Justin's hands-on expertise and meticulous approach make him one of the most experienced foundation repair technicians in New England.",
+    personal: "A true craftsman, Justin takes pride in every repair bearing his name."
+  },
+  {
+    name: "Mike Harrington",
+    role: "Technician",
+    location: "Field Expert",
+    img: "/images/team/mike.webp",
+    bio: "Mike brings skill and reliability to every job site. Trained in Attack A Crack's proprietary methods, he delivers the same quality and attention to detail that the company is known for across Connecticut and Massachusetts.",
+    personal: "Mike enjoys working with his hands both on and off the job."
+  }
+];
+---
+
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/10 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
+        <Icon name="Users" size={14} /> Meet the Team
+      </div>
+      <h2 class="text-4xl lg:text-5xl font-black tracking-tighter text-aac-dark">
+        The People Behind <span class="text-aac-blue">Every Repair</span>
+      </h2>
+      <p class="text-lg text-zinc-500 mt-4 max-w-2xl mx-auto">
+        No salespeople. No call centers. When you contact Attack A Crack, you talk directly to the experts who do the work.
+      </p>
+    </div>
+
+    <div class="space-y-8">
+      {team.map((member, i) => (
+        <div class={`flex flex-col ${i % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-8 items-center bg-zinc-50 rounded-[32px] p-8 border-2 border-zinc-100`}>
+          <div class="w-full md:w-64 shrink-0">
+            <div class="aspect-square rounded-2xl overflow-hidden border-4 border-white shadow-lg">
+              <img
+                src={member.img}
+                alt={member.name}
+                class="w-full h-full object-cover object-top"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-black text-aac-dark mb-1">{member.name}</h3>
+            <p class="text-aac-blue text-sm font-black uppercase tracking-widest mb-1">{member.role}</p>
+            <p class="text-zinc-400 text-xs font-bold uppercase tracking-widest mb-4">{member.location}</p>
+            <p class="text-zinc-600 leading-relaxed mb-3">{member.bio}</p>
+            <p class="text-zinc-500 text-sm italic">{member.personal}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -52,26 +52,6 @@ const concreteRepairCollection = defineCollection({
 });
 
 // =============================================================================
-// FOUNDATION TYPES COLLECTION - Educational content
-// =============================================================================
-const foundationTypesCollection = defineCollection({
-  type: 'content',
-  schema: z.object({
-    title: z.string(),
-    metaTitle: z.string().min(30).max(60),
-    metaDescription: z.string().min(120).max(160),
-    excerpt: z.string().min(50).max(200),
-    heroImage: z.string().optional(),
-    commonProblems: z.array(z.string()).optional(),
-    repairMethods: z.array(z.string()).optional(),
-    faqs: z.array(z.object({
-      question: z.string(),
-      answer: z.string(),
-    })).optional(),
-  }),
-});
-
-// =============================================================================
 // RESOURCES COLLECTION - Additional educational content
 // =============================================================================
 const resourcesCollection = defineCollection({
@@ -98,7 +78,8 @@ const blogCollection = defineCollection({
     publishDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     author: z.string(),
-    category: z.enum(['guides', 'case-studies', 'cost-guides', 'maintenance-tips', 'news']),
+    category: z.enum(['guides', 'case-studies', 'cost-guides', 'maintenance-tips', 'news', 'foundation-types']),
+    showOnServicesPage: z.boolean().default(false),
     tags: z.array(z.string()).optional(),
     heroImage: z.string().optional(),
     heroImageAlt: z.string().min(10).optional(),
@@ -252,7 +233,6 @@ const projectsCollection = defineCollection({
 export const collections = {
   services: servicesCollection,
   'concrete-repair': concreteRepairCollection,
-  'foundation-types': foundationTypesCollection,
   resources: resourcesCollection,
   blog: blogCollection,
   locations: locationsCollection,

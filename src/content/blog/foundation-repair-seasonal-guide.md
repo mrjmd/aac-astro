@@ -6,6 +6,7 @@ excerpt: "New England's four distinct seasons each affect foundation repair diff
 publishDate: 2026-03-02
 author: "Luc Richard"
 category: "guides"
+showOnServicesPage: true
 tags: ["seasonal repair", "foundation repair", "New England", "winter repair", "spring repair"]
 featured: false
 relatedPosts:

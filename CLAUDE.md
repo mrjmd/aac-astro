@@ -85,8 +85,7 @@ The `quality.yml` workflow runs the same checks on push/PR to main. All SEO/sche
 | services | `src/content/services/` | Foundation repair services (CT + MA) |
 | concrete-repair | `src/content/concrete-repair/` | Concrete repair (MA only) |
 | locations | `src/content/locations/{state}/` | City pages, nested by state |
-| blog | `src/content/blog/` | Blog posts with categories |
-| foundation-types | `src/content/foundation-types/` | Educational content |
+| blog | `src/content/blog/` | Blog posts with categories (includes foundation-types) |
 | partners | `src/content/partners/` | Partner type pages |
 | team | `src/content/team/` | Team profiles |
 | faqs | `src/content/faqs/` | FAQ collections |

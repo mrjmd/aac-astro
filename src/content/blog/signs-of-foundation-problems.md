@@ -6,6 +6,7 @@ excerpt: "Foundation problems rarely appear overnight. Learn to spot the early w
 publishDate: 2026-02-28
 author: "Matt Davis"
 category: "guides"
+showOnServicesPage: true
 tags: ["foundation problems", "warning signs", "foundation cracks", "home inspection", "structural damage"]
 featured: true
 relatedPosts:

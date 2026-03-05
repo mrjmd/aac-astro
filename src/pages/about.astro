@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
-import Team from '../components/Team.astro';
+import TeamExpanded from '../components/TeamExpanded.astro';
 import Footer from '../components/Footer.astro';
 import LocationModal from '../components/LocationModal.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
@@ -161,9 +161,9 @@ const aboutSchema = {
 						<div class="w-16 h-16 bg-aac-blue text-white rounded-2xl flex items-center justify-center mb-6">
 							<Icon name="MessageCircle" size={32} />
 						</div>
-						<h3 class="text-2xl font-black mb-4">Honesty First</h3>
+						<h3 class="text-2xl font-black mb-4">Honesty</h3>
 						<p class="text-zinc-400 leading-relaxed">
-							We provide honest, no-strings-attached advice. If you can handle it yourself, we'll tell you how. We'd rather earn your trust than your money on a job you don't need.
+							No-strings-attached advice, every time. If it's something you can handle yourself, we'll tell you how. We'd rather earn your trust than your money on a job you don't need.
 						</p>
 					</div>
 
@@ -172,9 +172,9 @@ const aboutSchema = {
 						<div class="w-16 h-16 bg-aac-yellow text-aac-dark rounded-2xl flex items-center justify-center mb-6">
 							<Icon name="Zap" size={32} />
 						</div>
-						<h3 class="text-2xl font-black mb-4">15-Minute Response</h3>
+						<h3 class="text-2xl font-black mb-4">Responsiveness</h3>
 						<p class="text-zinc-400 leading-relaxed">
-							We return calls and respond to texts within 15 minutes. When water is coming through your foundation, every minute matters. We treat your emergency like our own.
+							15-minute response time on calls and texts. When water is coming through your foundation, every minute matters. We treat your emergency like our own.
 						</p>
 					</div>
 
@@ -183,7 +183,7 @@ const aboutSchema = {
 						<div class="w-16 h-16 bg-aac-blue text-white rounded-2xl flex items-center justify-center mb-6">
 							<Icon name="Award" size={32} />
 						</div>
-						<h3 class="text-2xl font-black mb-4">Lifetime Guarantee</h3>
+						<h3 class="text-2xl font-black mb-4">Quality</h3>
 						<p class="text-zinc-400 leading-relaxed">
 							Diamond saw preparation, copper injection ports, and 100 PSI pressure—our methods go far beyond the industry standard. Every repair comes with a lifetime guarantee because we're confident in the work we do.
 						</p>
@@ -193,7 +193,7 @@ const aboutSchema = {
 		</section>
 
 		<!-- Team Section -->
-		<Team />
+		<TeamExpanded />
 
 		<!-- The "No Salesperson" Promise -->
 		<section class="py-24 bg-aac-blue text-white">

@@ -37,6 +37,21 @@
       "source": "/blog",
       "destination": "/updates",
       "permanent": true
+    },
+    {
+      "source": "/foundation-types",
+      "destination": "/blog/category/foundation-types",
+      "permanent": true
+    },
+    {
+      "source": "/foundation-types/fieldstone",
+      "destination": "/blog/fieldstone-foundation-repair-guide",
+      "permanent": true
+    },
+    {
+      "source": "/foundation-types/cinderblock",
+      "destination": "/blog/cinderblock-foundation-repair-guide",
+      "permanent": true
     }
   ],
   "headers": [

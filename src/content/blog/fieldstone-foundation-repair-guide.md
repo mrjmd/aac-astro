@@ -1,31 +1,22 @@
 ---
-title: "Fieldstone Foundations"
+title: "Fieldstone Foundation Repair: A Complete Guide for New England Homeowners"
 metaTitle: "Fieldstone Foundation Repair in CT & MA"
 metaDescription: "Expert fieldstone foundation repair for historic New England homes. Learn about common problems and professional repair solutions."
-excerpt: "Fieldstone foundations built the homes of early New England. Learn how we preserve and repair these historic structures while solving modern problems."
+excerpt: "Fieldstone foundations built the homes of early New England. Learn how we preserve and repair these historic structures while solving modern problems like mortar deterioration and water infiltration."
+publishDate: 2026-02-15
+author: "Luc Richard"
+category: "foundation-types"
+showOnServicesPage: true
+tags:
+  - "fieldstone"
+  - "historic foundations"
+  - "foundation repair"
+  - "New England"
 heroImage: "/images/foundation-types/fieldstone-hero.jpg"
-commonProblems:
-  - "Mortar deterioration between stones"
-  - "Water infiltration through porous stone and gaps"
-  - "Stone displacement and shifting"
-  - "Bulging or bowing walls"
-  - "Efflorescence (white mineral deposits)"
-  - "Basement moisture and dampness"
-repairMethods:
-  - "Repointing with historically appropriate mortar"
-  - "Interior waterproofing systems"
-  - "Structural stabilization"
-  - "Carbon fiber reinforcement"
-  - "Drainage improvements"
-faqs:
-  - question: "How old are most fieldstone foundations?"
-    answer: "In New England, fieldstone foundations typically date from the 1700s through early 1900s. Many homes with fieldstone foundations are 100-200+ years old, making them historic structures that require specialized repair approaches."
-  - question: "Can you waterproof a fieldstone basement?"
-    answer: "Yes, but the approach differs from modern foundations. We use interior drainage systems and specialized coatings that allow the stone to breathe while controlling water. Exterior waterproofing is rarely practical on fieldstone due to the irregular surface."
-  - question: "Is my fieldstone foundation failing?"
-    answer: "Common signs include deteriorating mortar (gaps between stones), water infiltration, bulging walls, or stones that have shifted. Not all issues indicate failure—many fieldstone foundations just need maintenance and minor repairs to last another century."
-  - question: "Should I replace my fieldstone foundation?"
-    answer: "Rarely. Replacement is extremely expensive ($100,000+) and destroys your home's historic character. Most fieldstone foundations can be repaired and stabilized at a fraction of the cost. We recommend replacement only when structural integrity is severely compromised."
+heroImageAlt: "Historic fieldstone foundation wall in a New England basement"
+relatedServices:
+  - "wall-crack-repair"
+  - "carbon-fiber-stitches"
 ---
 
 ## Understanding Fieldstone Foundations

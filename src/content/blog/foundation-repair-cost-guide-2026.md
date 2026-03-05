@@ -6,6 +6,7 @@ excerpt: "What should you actually expect to pay for foundation repair in New En
 publishDate: 2026-01-28
 author: "Matt Davis"
 category: "cost-guides"
+showOnServicesPage: true
 tags: ["foundation repair costs", "pricing", "budgeting", "Connecticut", "Massachusetts"]
 heroImage: "/images/blog/cost-guide-hero.jpg"
 heroImageAlt: "Calculator and home repair estimate documents"

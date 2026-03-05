@@ -10,6 +10,11 @@ import Icon from '../../components/Icon.astro';
 // Get all services sorted by order
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
 
+// Get blog posts flagged for services page
+const diveDeeper = (await getCollection('blog', ({ data }) => !data.draft && data.showOnServicesPage))
+	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+	.slice(0, 6);
+
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
   { label: 'Services' }
@@ -42,8 +47,8 @@ const servicesSchema = {
 };
 ---
 
-<Layout 
-  title="Foundation Repair Services" 
+<Layout
+  title="Foundation Repair Services"
   description="Specialized foundation repair solutions with a lifetime guarantee. We repair wall cracks, leaky bulkheads, utility lines, and more in CT & MA."
   customSchema={servicesSchema}
   breadcrumbItems={breadcrumbItems}
@@ -91,74 +96,95 @@ const servicesSchema = {
 
 				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{services.map((service) => (
-						<a href={`/services/${service.id.replace(/\.md$/, '')}`} class="group bg-white p-8 rounded-[32px] border-2 border-zinc-100 hover:border-aac-blue transition-all shadow-sm hover:shadow-xl">
-							<div class="w-14 h-14 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center mb-6 group-hover:bg-aac-blue group-hover:text-white transition-colors">
-								<Icon name={service.data.icon} size={28} />
+						<a href={`/services/${service.id.replace(/\.md$/, '')}`} class="group bg-white rounded-[32px] border-2 border-zinc-100 hover:border-aac-blue transition-all shadow-sm hover:shadow-xl overflow-hidden">
+							{service.data.heroImage ? (
+								<div class="aspect-video overflow-hidden relative">
+									<img src={service.data.heroImage} alt={service.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+									<div class="absolute bottom-4 left-4 w-12 h-12 bg-white/90 backdrop-blur-sm text-aac-blue rounded-xl flex items-center justify-center">
+										<Icon name={service.data.icon} size={24} />
+									</div>
+								</div>
+							) : (
+								<div class="p-8 pb-0">
+									<div class="w-14 h-14 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center mb-6 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+										<Icon name={service.data.icon} size={28} />
+									</div>
+								</div>
+							)}
+							<div class={service.data.heroImage ? "p-8" : "px-8 pb-8"}>
+								<h3 class="text-2xl font-black mb-4 tracking-tight group-hover:text-aac-blue transition-colors">
+									{service.data.title}
+								</h3>
+								<p class="text-zinc-600 mb-6 leading-relaxed">
+									{service.data.excerpt}
+								</p>
+								<span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
+									{service.data.title} Details <Icon name="ArrowRight" size={14} />
+								</span>
 							</div>
-							<h3 class="text-2xl font-black mb-4 tracking-tight group-hover:text-aac-blue transition-colors">
-								{service.data.title}
-							</h3>
-							<p class="text-zinc-600 mb-6 leading-relaxed">
-								{service.data.excerpt}
-							</p>
-							<span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
-								{service.data.title} Details <Icon name="ArrowRight" size={14} />
-							</span>
 						</a>
 					))}
-				</div>
-			</div>
-		</section>
 
-		<!-- Related Services Section -->
-		<section class="py-24 bg-white">
-			<div class="max-w-7xl mx-auto px-6">
-				<div class="text-center mb-12">
-					<h2 class="text-3xl lg:text-4xl font-black tracking-tighter text-aac-dark">
-						Specialized Services
-					</h2>
-					<p class="text-lg text-zinc-500 mt-4">
-						Beyond foundation crack repair, we offer these specialized services.
-					</p>
-				</div>
-
-				<div class="grid md:grid-cols-2 gap-8">
-					<a href="/foundation-types" class="group bg-zinc-50 p-8 rounded-[32px] border-2 border-zinc-100 hover:border-aac-blue transition-all">
-						<div class="flex items-start gap-6">
-							<div class="w-16 h-16 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-aac-blue group-hover:text-white transition-colors">
-								<Icon name="Building" size={32} />
-							</div>
-							<div>
-								<h3 class="text-2xl font-black mb-2 group-hover:text-aac-blue transition-colors">Foundation Types</h3>
-								<p class="text-zinc-600 mb-4">
-									Learn about different foundation types in New England—poured concrete, block, stone, and fieldstone—and how we repair each one.
-								</p>
-								<span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
-									Explore Foundation Types <Icon name="ArrowRight" size={14} />
-								</span>
+					<!-- Concrete Repair Card with MA Only Badge -->
+					<a href="/concrete-repair" class="group bg-white rounded-[32px] border-2 border-zinc-100 hover:border-aac-blue transition-all shadow-sm hover:shadow-xl overflow-hidden">
+						<div class="p-8 pb-0">
+							<div class="flex items-center gap-3 mb-6">
+								<div class="w-14 h-14 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center group-hover:bg-aac-blue group-hover:text-white transition-colors">
+									<Icon name="Layers" size={28} />
+								</div>
+								<span class="bg-aac-yellow text-aac-dark text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">MA Only</span>
 							</div>
 						</div>
-					</a>
-
-					<a href="/concrete-repair" class="group bg-zinc-50 p-8 rounded-[32px] border-2 border-zinc-100 hover:border-aac-blue transition-all">
-						<div class="flex items-start gap-6">
-							<div class="w-16 h-16 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-aac-blue group-hover:text-white transition-colors">
-								<Icon name="Layers" size={32} />
-							</div>
-							<div>
-								<h3 class="text-2xl font-black mb-2 group-hover:text-aac-blue transition-colors">Concrete Repair & Resurfacing</h3>
-								<p class="text-zinc-600 mb-4">
-									Repair and restore your driveways, patios, pool decks, and walkways with our decorative concrete repair services.
-								</p>
-								<span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
-									View Repair Options <Icon name="ArrowRight" size={14} />
-								</span>
-							</div>
+						<div class="px-8 pb-8">
+							<h3 class="text-2xl font-black mb-4 tracking-tight group-hover:text-aac-blue transition-colors">
+								Concrete Repair & Resurfacing
+							</h3>
+							<p class="text-zinc-600 mb-6 leading-relaxed">
+								Repair and restore driveways, patios, pool decks, and walkways with our decorative concrete repair services in Massachusetts.
+							</p>
+							<span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
+								View Repair Options <Icon name="ArrowRight" size={14} />
+							</span>
 						</div>
 					</a>
 				</div>
 			</div>
 		</section>
+
+		<!-- Dive Deeper Section -->
+		{diveDeeper.length > 0 && (
+			<section class="py-24 bg-white">
+				<div class="max-w-7xl mx-auto px-6">
+					<div class="text-center mb-16">
+						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/10 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
+							<Icon name="BookOpen" size={14} /> Expert Resources
+						</div>
+						<h2 class="text-4xl lg:text-5xl font-black tracking-tighter text-aac-dark">
+							Dive Deeper
+						</h2>
+						<p class="text-lg text-zinc-500 mt-4 max-w-2xl mx-auto">
+							Expert guides on foundation repair costs, common problems, and when to take action.
+						</p>
+					</div>
+
+					<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+						{diveDeeper.map((post) => (
+							<a href={`/blog/${post.id.replace(/\.md$/, '')}`} class="group bg-zinc-50 p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all">
+								<h3 class="text-lg font-black mb-3 group-hover:text-aac-blue transition-colors leading-tight">
+									{post.data.title}
+								</h3>
+								<p class="text-zinc-500 text-sm leading-relaxed mb-4 line-clamp-2">
+									{post.data.excerpt}
+								</p>
+								<span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
+									Read More <Icon name="ArrowRight" size={14} />
+								</span>
+							</a>
+						))}
+					</div>
+				</div>
+			</section>
+		)}
 
 		<!-- Proven Methods Section -->
 		<section class="py-24 bg-zinc-50">

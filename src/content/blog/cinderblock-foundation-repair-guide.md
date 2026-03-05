@@ -1,32 +1,22 @@
 ---
-title: "Cinderblock (CMU) Foundations"
+title: "Cinderblock (CMU) Foundation Repair: Signs, Solutions, and Costs"
 metaTitle: "Cinderblock Foundation Repair in CT & MA"
 metaDescription: "Professional cinderblock and CMU foundation repair. Fix cracks, bowing walls, and water problems in block foundations throughout CT and MA."
-excerpt: "Cinderblock foundations are common in mid-century homes but prone to specific problems. Learn how we repair cracked and bowing block walls."
+excerpt: "Cinderblock foundations are common in mid-century homes but prone to specific problems. Learn how we repair cracked and bowing block walls with carbon fiber, I-beams, and more."
+publishDate: 2026-02-15
+author: "Luc Richard"
+category: "foundation-types"
+showOnServicesPage: true
+tags:
+  - "cinderblock"
+  - "CMU"
+  - "foundation repair"
+  - "bowing walls"
 heroImage: "/images/foundation-types/cinderblock-hero.jpg"
-commonProblems:
-  - "Horizontal cracks from soil pressure"
-  - "Step cracks along mortar joints"
-  - "Bowing or leaning walls"
-  - "Water infiltration through hollow cores"
-  - "Efflorescence and mineral deposits"
-  - "Deteriorating mortar joints"
-repairMethods:
-  - "Carbon fiber reinforcement"
-  - "Steel I-beam installation"
-  - "Wall anchor systems"
-  - "Crack injection and sealing"
-  - "Interior waterproofing"
-  - "Core filling for strength"
-faqs:
-  - question: "Why do cinderblock walls crack horizontally?"
-    answer: "Horizontal cracks typically indicate lateral soil pressure pushing against the wall. This is especially common in New England where freeze-thaw cycles expand soil against foundation walls. Horizontal cracks are structural concerns that should be addressed promptly."
-  - question: "Can bowing cinderblock walls be repaired?"
-    answer: "Yes, in most cases. We use carbon fiber straps, steel I-beams, or wall anchors to stabilize bowing walls. The best solution depends on how much movement has occurred and the layout of your property. Early intervention prevents more extensive damage."
-  - question: "Why is water coming through my cinderblock basement walls?"
-    answer: "Cinderblocks are hollow with open cores that can fill with water. Water enters through cracks, mortar joints, or the porous block surface, then seeps through the interior face. Proper repair requires addressing both the water source and the hollow core issue."
-  - question: "Should I fill the cores in my cinderblock foundation?"
-    answer: "Core filling with concrete or foam can add strength and reduce water infiltration. However, it's not always necessary and should be evaluated based on your specific foundation's condition. We assess each situation individually."
+heroImageAlt: "Cinderblock CMU foundation wall showing typical stair-step crack pattern"
+relatedServices:
+  - "wall-crack-repair"
+  - "carbon-fiber-stitches"
 ---
 
 ## Understanding Cinderblock Foundations

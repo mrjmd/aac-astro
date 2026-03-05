@@ -1,0 +1,259 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import LocationModal from '../../components/LocationModal.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Pagination from '../../components/Pagination.astro';
+import Icon from '../../components/Icon.astro';
+
+const categoryLabels: Record<string, string> = {
+	'guides': 'Guide',
+	'case-studies': 'Case Study',
+	'cost-guides': 'Cost Guide',
+	'maintenance-tips': 'Tips',
+	'news': 'News',
+	'foundation-types': 'Foundation Types',
+};
+
+const serviceTypeLabels: Record<string, string> = {
+	'crack-injection': 'Crack Injection',
+	'wall-crack-repair': 'Wall Crack Repair',
+	'bulkhead-repair': 'Bulkhead Repair',
+	'carbon-fiber': 'Carbon Fiber',
+	'sewer-conduit': 'Sewer & Conduit',
+	'concrete-repair': 'Concrete Repair',
+};
+
+export const getStaticPaths = (async ({ paginate }) => {
+	const allPosts = (await getCollection('blog', ({ data }) => !data.draft))
+		.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+
+	// Get published projects (passed as props, not paginated)
+	const allProjects = (await getCollection('projects', ({ data }) => data.published))
+		.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+	// Get category counts for filter buttons
+	const categories = allPosts.reduce((acc, post) => {
+		acc[post.data.category] = (acc[post.data.category] || 0) + 1;
+		return acc;
+	}, {} as Record<string, number>);
+
+	return paginate(allPosts, {
+		pageSize: 6,
+		props: { categories, totalPosts: allPosts.length, projects: allProjects }
+	});
+}) satisfies GetStaticPaths;
+
+const { page, categories, totalPosts, projects } = Astro.props;
+
+function formatDate(date: Date): string {
+	return date.toLocaleDateString('en-US', {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric',
+	});
+}
+
+const breadcrumbItems = [
+	{ label: 'Home', href: '/' },
+	{ label: 'Updates' }
+];
+
+const isFirstPage = page.currentPage === 1;
+const titleSuffix = isFirstPage ? '' : ` - Page ${page.currentPage}`;
+const baseDescription = "Expert articles, cost guides, and recent project case studies from Attack A Crack. Foundation repair insights for New England homeowners.";
+const description = isFirstPage ? baseDescription : `Page ${page.currentPage} of foundation repair updates from Attack A Crack. Expert articles, cost guides, and project case studies for New England homeowners.`;
+
+const itemListSchema = {
+	"@type": "ItemList",
+	"name": "Foundation Repair Updates",
+	"description": baseDescription,
+	"numberOfItems": totalPosts,
+	"itemListElement": page.data.slice(0, 10).map((post, index) => ({
+		"@type": "ListItem",
+		"position": index + 1,
+		"url": `https://www.attackacrack.com/blog/${post.id.replace(/\.md$/, '')}`,
+		"name": post.data.title,
+	})),
+};
+
+// Show max 4 projects on updates page
+const displayProjects = projects.slice(0, 4);
+---
+
+<Layout
+	title={`Foundation Repair Updates${titleSuffix}`}
+	description={description}
+	customSchema={itemListSchema}
+	breadcrumbItems={breadcrumbItems}
+>
+	<LocationModal />
+	<Navbar currentPage="updates" />
+
+	<main class="pt-20 lg:pt-24">
+		<!-- Hero Section -->
+		<section class="py-20 lg:py-32 bg-white border-b-4 border-zinc-100">
+			<div class="max-w-7xl mx-auto px-6">
+				<Breadcrumbs items={breadcrumbItems} class="mb-8" />
+				<div class="grid lg:grid-cols-2 gap-12 items-center">
+					<div>
+						<h1 class="text-6xl lg:text-8xl font-black tracking-tighter mb-8 leading-none">
+							UP<br />
+							<span class="text-aac-blue">DATES.</span>
+						</h1>
+						<p class="text-xl text-zinc-500 max-w-lg">
+							Expert articles, cost guides, and before-and-after project case studies from New England's foundation repair specialists.
+						</p>
+					</div>
+					<div>
+						<!-- Category Filter Pills -->
+						<div class="flex flex-wrap gap-3" id="category-filters">
+							<a href="/updates" class:list={["px-4 py-2 rounded-full text-sm font-bold transition-colors", !Astro.params.page ? "bg-aac-dark text-white" : "bg-zinc-100 text-zinc-700 hover:bg-aac-blue hover:text-white"]}>
+								All ({totalPosts})
+							</a>
+							{Object.entries(categories).map(([cat, count]) => (
+								<a href={`/blog/category/${cat}`} class="px-4 py-2 bg-zinc-100 text-zinc-700 rounded-full text-sm font-bold hover:bg-aac-blue hover:text-white transition-colors">
+									{categoryLabels[cat] || cat} ({count})
+								</a>
+							))}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Articles Grid -->
+		<section class="py-24 bg-zinc-50">
+			<div class="max-w-7xl mx-auto px-6">
+				<h2 class="text-3xl font-black mb-12">
+					{isFirstPage ? 'Latest Articles' : `Articles - Page ${page.currentPage}`}
+				</h2>
+
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					{page.data.map((post) => (
+						<a
+							href={`/blog/${post.id.replace(/\.md$/, '')}`}
+							class="group bg-white rounded-[32px] overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all"
+						>
+							<div class="aspect-video overflow-hidden relative">
+								<img
+									src={post.data.heroImage || `https://picsum.photos/seed/${post.id}/600/400`}
+									alt={post.data.heroImageAlt || post.data.title}
+									class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+									referrerpolicy="no-referrer"
+								/>
+								<div class="absolute top-4 left-4 bg-aac-dark/80 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg border border-white/20">
+									{categoryLabels[post.data.category] || 'Article'}
+								</div>
+							</div>
+							<div class="p-8">
+								<div class="flex items-center gap-4 mb-4">
+									<span class="text-[10px] font-black uppercase tracking-widest text-aac-blue">
+										Article
+									</span>
+									<span class="text-[10px] text-zinc-500 font-bold">
+										{formatDate(post.data.publishDate)}
+									</span>
+								</div>
+								<h3 class="text-xl font-black mb-3 leading-tight group-hover:text-aac-blue transition-colors">
+									{post.data.title}
+								</h3>
+								<p class="text-zinc-500 text-sm leading-relaxed mb-4 line-clamp-3">
+									{post.data.excerpt}
+								</p>
+								<span class="inline-flex items-center gap-2 text-aac-dark font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
+									Read Article <Icon name="ArrowRight" size={14} />
+								</span>
+							</div>
+						</a>
+					))}
+				</div>
+
+				<Pagination
+					currentPage={page.currentPage}
+					lastPage={page.lastPage}
+					prevUrl={page.url.prev}
+					nextUrl={page.url.next}
+					baseUrl="/updates"
+				/>
+			</div>
+		</section>
+
+		<!-- Recent Projects Section (only on first page, only when projects exist) -->
+		{isFirstPage && displayProjects.length > 0 && (
+			<section class="py-24 bg-white border-t-4 border-zinc-100">
+				<div class="max-w-7xl mx-auto px-6">
+					<div class="flex items-center justify-between mb-12">
+						<div>
+							<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/10 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-4 border border-aac-blue/20">
+								<Icon name="Hammer" size={14} /> Before & After
+							</div>
+							<h2 class="text-3xl lg:text-4xl font-black tracking-tighter text-aac-dark">
+								Recent Projects
+							</h2>
+						</div>
+						{projects.length > 4 && (
+							<a href="/projects" class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] hover:gap-4 transition-all">
+								View All Projects <Icon name="ArrowRight" size={14} />
+							</a>
+						)}
+					</div>
+
+					<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+						{displayProjects.map((project) => (
+							<a href={`/projects/${project.id.replace(/\.md$/, '')}`} class="group bg-zinc-50 rounded-2xl overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all">
+								<div class="aspect-video overflow-hidden relative">
+									<img
+										src={project.data.afterImage}
+										alt={`${project.data.title} - After repair`}
+										class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+										referrerpolicy="no-referrer"
+									/>
+									<div class="absolute top-3 left-3 bg-aac-dark/80 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg border border-white/20">
+										{serviceTypeLabels[project.data.serviceType] || 'Project'}
+									</div>
+								</div>
+								<div class="p-6">
+									<p class="text-[10px] font-black uppercase tracking-widest text-aac-blue mb-2">
+										{project.data.city}, {project.data.state}
+									</p>
+									<h3 class="text-lg font-black mb-2 leading-tight group-hover:text-aac-blue transition-colors">
+										{project.data.title}
+									</h3>
+									<p class="text-zinc-500 text-sm line-clamp-2">
+										{project.data.summary}
+									</p>
+								</div>
+							</a>
+						))}
+					</div>
+				</div>
+			</section>
+		)}
+
+		<!-- CTA Section -->
+		<section class="py-16 bg-aac-yellow">
+			<div class="max-w-4xl mx-auto px-6 text-center">
+				<h2 class="text-3xl lg:text-4xl font-black text-aac-dark mb-6">
+					Have a Foundation Question?
+				</h2>
+				<p class="text-lg text-aac-dark/70 mb-8">
+					Get a free, no-pressure assessment from our experts. We'll give you honest answers about your foundation.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<button class="open-modal bg-aac-dark text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2">
+						<Icon name="MessageSquare" size={20} />
+						Text Us Photos
+					</button>
+					<a href="/services/free-foundation-consultations" class="bg-white text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
+						Free Consultation
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>

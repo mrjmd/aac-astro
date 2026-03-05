@@ -22,7 +22,6 @@ const REQUIRED_SCHEMAS = {
   'massachusetts/': ['LocalBusiness'],
   'blog/': ['Article'],
   'partners/': ['WebPage'],
-  'foundation-types/': ['Article'],
   'projects/': ['LocalBusiness'],
 };
 
@@ -31,14 +30,13 @@ const HUB_PAGES = [
   'services/index.html',
   'concrete-repair/index.html',
   'blog/index.html',
-  'foundation-types/index.html',
   'projects/index.html',
   'updates/index.html',
   'blog/category/',  // Blog category listing pages (including paginated)
 ];
 
 // Paginated listing pages (e.g., blog/2/index.html, blog/category/guides/2/index.html)
-const PAGINATED_PAGE_PATTERN = /^blog\/\d+\/index\.html$/;
+const PAGINATED_PAGE_PATTERN = /^(blog|updates)\/\d+\/index\.html$/;
 
 // Required properties for each schema type
 const SCHEMA_REQUIREMENTS = {
