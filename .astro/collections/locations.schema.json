@@ -37,6 +37,22 @@
           "minLength": 120,
           "maxLength": 160
         },
+        "coordinates": {
+          "type": "object",
+          "properties": {
+            "lat": {
+              "type": "number"
+            },
+            "lng": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "lat",
+            "lng"
+          ],
+          "additionalProperties": false
+        },
         "region": {
           "type": "string"
         },

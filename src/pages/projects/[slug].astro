@@ -9,13 +9,58 @@ import Icon from '../../components/Icon.astro';
 
 export async function getStaticPaths() {
 	const projects = await getCollection('projects', ({ data }) => data.published);
+
+	const svcLabels: Record<string, string> = {
+		'crack-injection': 'Crack Injection', 'wall-crack-repair': 'Wall Crack Repair',
+		'bulkhead-repair': 'Bulkhead Repair', 'carbon-fiber': 'Carbon Fiber Repair',
+		'sewer-conduit': 'Sewer & Conduit Repair', 'concrete-repair': 'Concrete Repair',
+		'garage-floor': 'Garage Floor Repair', 'driveway': 'Driveway Repair',
+		'patio': 'Patio Repair', 'pool-deck': 'Pool Deck Repair',
+		'stairway': 'Stairway Repair', 'walkway': 'Walkway Repair',
+		'floor-crack': 'Floor Crack Repair',
+	};
+	const mons = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+	function makeTitle(service: string, city: string, state: string, date: Date, maxLen: number): string {
+		const svc = svcLabels[service] || 'Foundation Repair';
+		const mon = mons[date.getMonth()];
+		const yr = date.getFullYear();
+		let t = `${svc} in ${city}, ${state} (${mon} ${yr})`;
+		if (t.length <= maxLen) return t;
+		t = `${svc} in ${city}, ${state} (${mon} '${String(yr).slice(2)})`;
+		if (t.length <= maxLen) return t;
+		t = `${svc} in ${city}, ${state} (${yr})`;
+		if (t.length <= maxLen) return t;
+		return `${svc} — ${city}, ${state}`;
+	}
+
+	// Pre-compute unique meta titles
+	const sorted = [...projects].sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf());
+	const usedTitles = new Map<string, number>();
+	const computedTitle = new Map<string, string>();
+
+	for (const p of sorted) {
+		if (p.data.metaTitle) {
+			computedTitle.set(p.id, p.data.metaTitle);
+			usedTitles.set(p.data.metaTitle, (usedTitles.get(p.data.metaTitle) || 0) + 1);
+			continue;
+		}
+		let title = makeTitle(p.data.serviceTypes[0], p.data.city, p.data.state, p.data.date, 43);
+		if (usedTitles.has(title)) {
+			const num = (usedTitles.get(title) || 1) + 1;
+			title = makeTitle(p.data.serviceTypes[0], p.data.city, p.data.state, p.data.date, 40) + ` #${num}`;
+		}
+		usedTitles.set(title, (usedTitles.get(title) || 0) + 1);
+		computedTitle.set(p.id, title);
+	}
+
 	return projects.map((project) => ({
 		params: { slug: project.id.replace(/\.md$/, '') },
-		props: { project },
+		props: { project, computedTitle: computedTitle.get(project.id) || '' },
 	}));
 }
 
-const { project } = Astro.props;
+const { project, computedTitle } = Astro.props;
 const { Content } = await render(project);
 
 const serviceTypeLabels: Record<string, string> = {
@@ -25,6 +70,13 @@ const serviceTypeLabels: Record<string, string> = {
 	'carbon-fiber': 'Carbon Fiber Reinforcement',
 	'sewer-conduit': 'Sewer & Conduit Repair',
 	'concrete-repair': 'Concrete Repair',
+	'garage-floor': 'Garage Floor Repair',
+	'driveway': 'Driveway Repair',
+	'patio': 'Patio Repair',
+	'pool-deck': 'Pool Deck Repair',
+	'stairway': 'Stairway Repair',
+	'walkway': 'Walkway Repair',
+	'floor-crack': 'Floor Crack Repair',
 };
 
 const stateLabels: Record<string, string> = {
@@ -54,9 +106,35 @@ const allProjects = (await getCollection('projects', ({ data }) => data.publishe
 	.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 const moreProjects = allProjects.filter(p => p.id !== project.id).slice(0, 3);
 
-// Generate meta description from summary if not provided
+// Use pre-computed unique title from getStaticPaths
+const defaultTitle = computedTitle;
+
+// Generate meta description from summary — ensure 120-160 chars
+function buildMetaDescription(summary: string, serviceLabel: string, city: string, state: string): string {
+	// Try: "Service in City, State. Summary"
+	let desc = `${serviceLabel} in ${city}, ${state}. ${summary}`;
+	if (desc.length >= 120 && desc.length <= 160) return desc;
+	// If too long, truncate summary to fit
+	if (desc.length > 160) {
+		const prefix = `${serviceLabel} in ${city}, ${state}. `;
+		const remaining = 157 - prefix.length; // 3 chars for "..."
+		return prefix + summary.slice(0, remaining) + '...';
+	}
+	// If too short, pad with location detail
+	if (desc.length < 120) {
+		desc = `Professional ${serviceLabel.toLowerCase()} in ${city}, ${state}. ${summary}`;
+		if (desc.length > 160) return desc.slice(0, 157) + '...';
+		if (desc.length < 120) {
+			desc += ` Serving ${state} homeowners with expert foundation repair.`;
+			if (desc.length > 160) return desc.slice(0, 157) + '...';
+		}
+	}
+	return desc;
+}
+
+const serviceLabel = serviceTypeLabels[project.data.serviceTypes[0]] || 'Foundation Repair';
 const metaDescription = project.data.metaDescription
-	|| `${serviceTypeLabels[project.data.serviceType]} in ${project.data.city}, ${stateLabels[project.data.state]}. ${project.data.summary}`.slice(0, 160);
+	|| buildMetaDescription(project.data.summary, serviceLabel, project.data.city, project.data.state);
 
 // Determine phone number based on state
 const isMARegion = ['MA', 'NH', 'ME'].includes(project.data.state);
@@ -95,7 +173,7 @@ const projectSchema = {
 		"@type": "Offer",
 		"itemOffered": {
 			"@type": "Service",
-			"name": serviceTypeLabels[project.data.serviceType],
+			"name": serviceTypeLabels[project.data.serviceTypes[0]],
 			"serviceType": "Foundation Repair"
 		}
 	}
@@ -103,7 +181,7 @@ const projectSchema = {
 ---
 
 <Layout
-	title={project.data.metaTitle || `${serviceTypeLabels[project.data.serviceType]} in ${project.data.city}, ${project.data.state}`}
+	title={project.data.metaTitle || defaultTitle}
 	description={metaDescription}
 	customSchema={projectSchema}
 	breadcrumbItems={breadcrumbItems}
@@ -122,7 +200,7 @@ const projectSchema = {
 
 				<div class="flex items-center gap-4 mb-6">
 					<span class="text-[10px] font-black uppercase tracking-widest text-aac-blue bg-aac-blue/10 px-3 py-1 rounded-full">
-						{serviceTypeLabels[project.data.serviceType]}
+						{serviceTypeLabels[project.data.serviceTypes[0]]}
 					</span>
 					<span class="text-sm text-zinc-500 flex items-center gap-1">
 						<Icon name="MapPin" size={14} />
@@ -189,7 +267,7 @@ const projectSchema = {
 							<Icon name="Wrench" size={20} />
 						</div>
 						<p class="text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-1">Service</p>
-						<p class="font-bold text-sm">{serviceTypeLabels[project.data.serviceType]}</p>
+						<p class="font-bold text-sm">{serviceTypeLabels[project.data.serviceTypes[0]]}</p>
 					</div>
 					<div class="text-center">
 						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mx-auto mb-2">
@@ -207,21 +285,7 @@ const projectSchema = {
 					</div>
 				</div>
 
-				{project.data.technicianNote && (
-					<div class="mb-12 p-6 bg-aac-blue/5 rounded-2xl border border-aac-blue/20">
-						<div class="flex items-start gap-4">
-							<div class="w-10 h-10 bg-aac-blue rounded-xl flex items-center justify-center text-white shrink-0">
-								<Icon name="Info" size={20} />
-							</div>
-							<div>
-								<p class="font-black text-sm mb-1">Technician's Note</p>
-								<p class="text-zinc-600 leading-relaxed">{project.data.technicianNote}</p>
-							</div>
-						</div>
-					</div>
-				)}
-
-				<!-- Markdown body content -->
+					<!-- Markdown body content -->
 				<article class="prose prose-lg prose-zinc max-w-none prose-headings:font-black prose-headings:tracking-tight prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-p:leading-relaxed prose-a:text-aac-blue prose-a:font-bold prose-a:no-underline hover:prose-a:underline">
 					<Content />
 				</article>

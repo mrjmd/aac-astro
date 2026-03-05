@@ -168,13 +168,15 @@ Not strictly blocking launch, but significantly improves quality.
 
 ### Google Cloud (Matt)
 
-- [ ] Create Google Cloud project (or use existing)
-- [ ] Enable APIs: Calendar, Drive, Business Profile
-- [ ] Create OAuth2 credentials (desktop app type)
-- [ ] Download JSON to `scripts/.credentials/google-oauth.json`
-- [ ] Install dependencies: `npm install googleapis @anthropic-ai/sdk --save-dev`
+- [x] Verify Google Cloud project exists (or create one)
+- [x] Enable APIs: Google Calendar API + Google Drive API
+- [ ] Create OAuth2 Desktop App credentials (for local use)
+- [ ] Download OAuth credentials JSON → `scripts/.credentials/google-oauth.json`
+- [ ] Add `matt@attackacrack.com` as test user in OAuth consent screen
+- [ ] Create service account (for CI/cron use)
+- [ ] Share calendar (`matt@attackacrack.com`) with service account (read-only)
+- [ ] Download service account key JSON
 - [ ] Provide CT + MA GBP account/location IDs
-- [ ] Test calendar import: `node scripts/import-calendar-projects.js --dry-run --limit 5`
 - [ ] Configure GBP IDs in `scripts/batch-post-gbp.js` (replace `XXXXXXXXXX` placeholders)
 - [ ] Test GBP posting: `node scripts/batch-post-gbp.js --dry-run`
 
@@ -184,6 +186,46 @@ Not strictly blocking launch, but significantly improves quality.
 - [ ] Set up GA4 / Vercel Analytics
 - [ ] Set up uptime monitoring
 - [ ] Set up error tracking
+
+---
+
+## Projects Import & Automation
+
+### Code Changes (Claude)
+
+- [x] Refactor `scripts/import-calendar-projects.js` into shared core module (`scripts/lib/project-import-core.js`) + thin CLI wrapper
+- [x] Fix calendar email: `harrringtonm@gmail.com` → `matt@attackacrack.com`
+- [x] Add Mike's dual-email config: check both `harrringtonm@gmail.com` and `mike@attackacrack.com` for attendee + photo ownership
+- [x] Add Drive API photo owner filter (only import photos owned by Mike)
+- [x] Add Claude AI before/after photo classification (unpredictable upload order)
+- [x] Add enhanced AI description generation (2-3 sentences + 280-char summary)
+- [x] Add dedup manifest system (`data/import-manifest.json`, committed to repo)
+- [x] Add Drive API scope to OAuth config
+- [x] Install dependencies: `npm install googleapis @anthropic-ai/sdk --save-dev`
+- [x] Create `data/import-manifest.json` with empty initial state
+
+### One-Time Historical Import
+
+- [ ] Dry run: `node scripts/import-calendar-projects.js --dry-run --limit 10`
+- [ ] First run opens browser for OAuth consent — authorize
+- [ ] Review dry run output: verify location parsing, service type detection, photo filtering
+- [ ] Fix any parsing issues discovered in dry run
+- [ ] Import small batch: `node scripts/import-calendar-projects.js --limit 5`
+- [ ] Review 5 generated project files for quality
+- [ ] Full import: `node scripts/import-calendar-projects.js` (all events since Jan 1, 2025)
+- [ ] Review all imported projects in `src/content/projects/`
+- [ ] Run `npm run validate`
+- [ ] Commit and push imported projects
+
+### Ongoing Cron Automation
+
+- [x] Create cron import script: `scripts/cron-import-projects.js` (auto-publish + GBP post)
+- [x] Create GitHub Action: `.github/workflows/import-projects.yml` (Mon + Thu 6am ET)
+- [ ] Add GitHub secrets: `GOOGLE_SERVICE_ACCOUNT_KEY`, `GEMINI_API_KEY`
+- [ ] Matt: Provide GBP account/location IDs for `scripts/batch-post-gbp.js`
+- [ ] Test cron with `workflow_dispatch` manual trigger
+- [ ] Monitor first 2 weeks of automated imports
+- [ ] Verify GBP posts appear correctly
 
 ---
 

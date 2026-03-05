@@ -25,6 +25,13 @@ const serviceTypeLabels: Record<string, string> = {
 	'carbon-fiber': 'Carbon Fiber',
 	'sewer-conduit': 'Sewer & Conduit',
 	'concrete-repair': 'Concrete Repair',
+	'garage-floor': 'Garage Floor',
+	'driveway': 'Driveway Repair',
+	'patio': 'Patio Repair',
+	'pool-deck': 'Pool Deck',
+	'stairway': 'Stairway Repair',
+	'walkway': 'Walkway Repair',
+	'floor-crack': 'Floor Crack Repair',
 };
 
 export const getStaticPaths = (async ({ paginate }) => {
@@ -213,7 +220,7 @@ const displayProjects = projects.slice(0, 4);
 										referrerpolicy="no-referrer"
 									/>
 									<div class="absolute top-3 left-3 bg-aac-dark/80 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg border border-white/20">
-										{serviceTypeLabels[project.data.serviceType] || 'Project'}
+										{serviceTypeLabels[project.data.serviceTypes[0]] || 'Project'}
 									</div>
 								</div>
 								<div class="p-6">

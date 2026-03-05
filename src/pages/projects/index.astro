@@ -17,6 +17,13 @@ const serviceTypeLabels: Record<string, string> = {
 	'carbon-fiber': 'Carbon Fiber',
 	'sewer-conduit': 'Sewer & Conduit',
 	'concrete-repair': 'Concrete Repair',
+	'garage-floor': 'Garage Floor',
+	'driveway': 'Driveway Repair',
+	'patio': 'Patio Repair',
+	'pool-deck': 'Pool Deck',
+	'stairway': 'Stairway Repair',
+	'walkway': 'Walkway Repair',
+	'floor-crack': 'Floor Crack Repair',
 };
 
 const stateLabels: Record<string, string> = {
@@ -105,7 +112,7 @@ const itemListSchema = {
 										class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
 									/>
 									<div class="absolute top-4 left-4 bg-aac-dark/80 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg border border-white/20">
-										{serviceTypeLabels[project.data.serviceType]}
+										{serviceTypeLabels[project.data.serviceTypes[0]]}
 									</div>
 								</div>
 								<div class="p-8">

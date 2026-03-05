@@ -3,12 +3,13 @@ title: "Foundation Crack Injection in Framingham, MA"
 date: 2026-03-01
 city: Framingham
 state: MA
+serviceTypes:
+  - crack-injection
 coordinates:
   lat: 42.2793
   lng: -71.4162
-serviceType: crack-injection
-beforeImage: /images/projects/framingham-crack-before.jpg
-afterImage: /images/projects/framingham-crack-after.jpg
+beforeImage: /images/projects/placeholder.svg
+afterImage: /images/projects/placeholder.svg
 summary: "8-foot vertical crack in a poured concrete foundation causing basement flooding every rainstorm. Sealed with polyurethane injection — lifetime guarantee."
 published: false
 ---

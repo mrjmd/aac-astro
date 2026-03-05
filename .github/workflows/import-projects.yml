@@ -1,0 +1,53 @@
+name: Import New Projects
+
+on:
+  schedule:
+    # Monday + Thursday at 10:00 UTC (6:00 AM ET)
+    - cron: '0 10 * * 1,4'
+  workflow_dispatch: # Manual trigger from GitHub Actions UI
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Import new projects from Google Calendar
+        run: node scripts/cron-import-projects.js
+        env:
+          GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GBP_CT_ACCOUNT: ${{ secrets.GBP_CT_ACCOUNT }}
+          GBP_CT_LOCATION: ${{ secrets.GBP_CT_LOCATION }}
+          GBP_MA_ACCOUNT: ${{ secrets.GBP_MA_ACCOUNT }}
+          GBP_MA_LOCATION: ${{ secrets.GBP_MA_LOCATION }}
+
+      - name: Check for new files
+        id: changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Validate new content
+        if: steps.changes.outputs.has_changes == 'true'
+        run: npm run validate
+
+      - name: Commit and push new projects
+        if: steps.changes.outputs.has_changes == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: auto-import new projects from Google Calendar"
+          file_pattern: "src/content/projects/*.md public/images/projects/* data/import-manifest.json"

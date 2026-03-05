@@ -66,8 +66,13 @@
             "case-studies",
             "cost-guides",
             "maintenance-tips",
-            "news"
+            "news",
+            "foundation-types"
           ]
+        },
+        "showOnServicesPage": {
+          "type": "boolean",
+          "default": false
         },
         "tags": {
           "type": "array",
@@ -91,6 +96,12 @@
             "type": "string"
           }
         },
+        "relatedServices": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
         "featured": {
           "type": "boolean",
           "default": false
@@ -98,6 +109,35 @@
         "draft": {
           "type": "boolean",
           "default": false
+        },
+        "city": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string",
+          "enum": [
+            "CT",
+            "MA",
+            "RI",
+            "NH",
+            "ME"
+          ]
+        },
+        "coordinates": {
+          "type": "object",
+          "properties": {
+            "lat": {
+              "type": "number"
+            },
+            "lng": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "lat",
+            "lng"
+          ],
+          "additionalProperties": false
         },
         "$schema": {
           "type": "string"
