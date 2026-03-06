@@ -130,12 +130,12 @@
     },
     {
       "source": "/store",
-      "destination": "/partners",
+      "destination": "/massachusetts/trusted-partners",
       "permanent": true
     },
     {
       "source": "/store/p/:slug",
-      "destination": "/partners",
+      "destination": "/massachusetts/trusted-partners",
       "permanent": true
     }
   ],

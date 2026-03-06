@@ -8,9 +8,10 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Pagination from '../../components/Pagination.astro';
 import Icon from '../../components/Icon.astro';
+import { isPublished } from '../../utils/blog';
 
 export const getStaticPaths = (async ({ paginate }) => {
-	const allPosts = (await getCollection('blog', ({ data }) => !data.draft))
+	const allPosts = (await getCollection('blog', isPublished))
 		.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 
 	const regularPosts = allPosts.filter(post => !post.data.featured);

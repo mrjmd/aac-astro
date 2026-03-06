@@ -7,6 +7,7 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
 import { getAuthorSchema } from '../../utils/authors';
+import { isPublished } from '../../utils/blog';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -19,8 +20,8 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 
-// Get related posts
-const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+// Get related posts (only published ones)
+const allPosts = await getCollection('blog', isPublished);
 const relatedPosts = post.data.relatedPosts
   ? allPosts.filter(p => post.data.relatedPosts?.includes(p.id.replace(/\.md$/, '')))
   : allPosts
