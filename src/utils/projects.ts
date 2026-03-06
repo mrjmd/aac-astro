@@ -35,14 +35,22 @@ export async function getForLocation(city: string, state: string, count = 3) {
 /** Get projects by service type */
 export async function getByService(serviceType: string, count = 3) {
   const all = await getAll();
-  return all.filter(p => p.data.serviceType === serviceType).slice(0, count);
+  return all.filter(p => p.data.serviceTypes.includes(serviceType)).slice(0, count);
 }
 
 /** Map service page slugs to project serviceType enum values */
 export const SERVICE_SLUG_MAP: Record<string, string> = {
+  // Foundation repair services
   'foundation-crack-injection': 'crack-injection',
   'wall-crack-repair': 'wall-crack-repair',
   'leaky-bulkhead-repair': 'bulkhead-repair',
   'carbon-fiber-stitches': 'carbon-fiber',
   'sewer-well-conduit-line-repair': 'sewer-conduit',
+  // Concrete repair services
+  'driveway': 'driveway',
+  'patio': 'patio',
+  'walkway': 'walkway',
+  'pool-deck': 'pool-deck',
+  'stairway': 'stairway',
+  'garage': 'garage-floor',
 };

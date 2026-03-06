@@ -2,8 +2,8 @@
 
 > **The only task tracker.** Every remaining item before (and after) launch. Completed work is archived in `docs/archive/LAUNCH-PLAN-COMPLETED.md`.
 
-*Consolidated: March 5, 2026*
-*Deployment: https://aac-website-theta.vercel.app/*
+*Updated: March 5, 2026*
+*Preview: https://aac-astro.vercel.app/*
 
 ---
 
@@ -47,6 +47,21 @@ These must be done before DNS cutover. Nothing else launches the site.
 - [ ] All pricing claims verified correct
 - [ ] Uniqueness validation passes
 
+### 301 Redirects & Old Site Preservation (Claude + Matt)
+
+**Current state:** Only 10 redirects in `vercel.json` (service pages + foundation types). The old Squarespace site has NOT been fully audited. Any old URL that isn't redirected = lost link equity + 404 for users.
+
+- [ ] **Crawl the live Squarespace site** — pull full sitemap from `attackacrack.com/sitemap.xml`
+- [ ] **Crawl Google Search Console** — export all indexed URLs (may include pages not in sitemap)
+- [ ] **Export Google Analytics top pages** — identify every URL with real traffic
+- [ ] **Map every old URL to its new equivalent** — or identify content that was dropped
+- [ ] **Add all missing 301 redirects to `vercel.json`** — every old URL must resolve
+- [ ] **Handle blog post URLs** — Squarespace blog slugs may differ from new slugs
+- [ ] **Handle any old `/blog/` tag/category pages** — redirect to new category structure
+- [ ] **Handle old image URLs** — Squarespace CDN images linked from external sites
+- [ ] **Test every redirect** — automated script to verify all 301s resolve correctly
+- [ ] **Check for external backlinks** — Ahrefs/SEMrush backlink audit, ensure linked URLs redirect
+
 ### DNS Cutover (Matt)
 
 - [ ] Backup current attackacrack.com
@@ -61,51 +76,42 @@ These must be done before DNS cutover. Nothing else launches the site.
 
 ---
 
+## Bug Fixes (Claude)
+
+### Projects on Service Pages — BROKEN
+
+- [ ] Fix `getByService()` in `src/utils/projects.ts` — queries `p.data.serviceType` (singular) but schema is `serviceTypes` (array). Zero projects showing on any service page right now.
+- [ ] Add concrete repair service types to `SERVICE_SLUG_MAP` (driveway, patio, walkway, pool-deck, stairway, garage-floor)
+- [ ] Verify projects appear on all 6 service pages + 6 concrete repair pages after fix
+
+### Projects on Location Pages — Improve Proximity
+
+- [ ] Current fallback: random same-state projects. Improve to nearest-town proximity using coordinates from `CITY_COORDS` in `project-import-core.js`
+- [ ] Verify location pages show local projects first, then nearby towns, then same-state
+
+---
+
 ## Page-Level Improvements
 
-### Critical Bug Fix
+### Completed
 
 - [x] Fix team section invisible on About page (move animation observer to Layout.astro)
-
-### About Page (2A, 2B)
-
 - [x] Update values section headings: Honesty, Responsiveness, Quality
 - [x] Create expanded team component (TeamExpanded.astro) for About page
+- [x] Foundation Types → Blog migration (category, redirects, links)
+- [x] Services Hub restructure (concrete repair card, "Dive Deeper" blog section)
+- [x] Updates Page restructure (pagination, category filters, recent projects)
+- [x] Trusted Partners cross-link from `/partners/`
 
-### Foundation Types → Blog Migration (1D)
+### Remaining
 
-- [x] Add `foundation-types` category to blog schema
-- [x] Add `showOnServicesPage` field to blog schema
-- [x] Convert foundation-types content to blog posts
-- [x] Add redirects from old `/foundation-types/` URLs
-- [x] Remove old foundation-types pages
-- [x] Update internal links
-
-### Services Hub Restructure (1A, 1B, 1C)
-
-- [x] Add Concrete Repair card with "MA Only" badge to main grid
-- [x] Replace "Specialized Services" with "Dive Deeper" blog section
-- [x] Wire up hero images on service cards (blocked on Matt's photos for full effect)
-- [x] Flag 4-6 blog posts for `showOnServicesPage: true`
-
-### Updates Page Restructure (3A, 3B, 3C)
-
-- [x] Convert to paginated route (`/updates/[...page]`)
-- [x] Add blog category filter pills
-- [x] Separate "Recent Projects" section below articles
-- [x] Keep old `/blog/` pages alive for SEO
-
-### Trusted Partners Discoverability (4)
-
-- [x] Add cross-link from `/partners/` to trusted partners directory
-
-### Static SVG Map (5) — Lower Priority
+#### Static SVG Map (Lower Priority)
 
 - [ ] Create ServiceAreaMap.astro with New England outline + 80 city dots
 - [ ] Color-code by establishment (CT/MA blue, RI/NH/ME lighter)
 - [ ] Add to areas-we-serve page
 
-### Pre-Launch Visual QA Pass (6) — Matt
+#### Pre-Launch Visual QA Pass (Matt)
 
 - [ ] Homepage walkthrough
 - [ ] Services hub + each service page
@@ -118,43 +124,201 @@ These must be done before DNS cutover. Nothing else launches the site.
 
 ---
 
+## Brand Voice Refresh (Matt → Claude)
+
+The "Expert Jester" voice guide is complete with before/after copy proposals for 10 page sections. **Nothing changes on the site until Matt approves.**
+
+See: `docs/BRAND-VOICE.md` — especially the "Proposed Changes Appendix"
+
+- [ ] Matt reads `docs/BRAND-VOICE.md`
+- [ ] Approve or revise homepage hero + CTA ("Your Foundation Called. We Answered.")
+- [ ] Approve or revise homepage testimonials header
+- [ ] Approve or revise about page story + values copy
+- [ ] Approve or revise services hub descriptions
+- [ ] Approve or revise team bios (Luc, Matt, Ed, Justin, Mike)
+- [ ] Note any lines that feel off-brand or too casual
+- [ ] Claude implements approved changes
+- [ ] Visual verification of all changed pages
+
+---
+
+## Brainstorm Session — Expertise Deep-Dive (Matt)
+
+38 unanswered questions in `docs/BRAINSTORM-AGENDA.md`. Answers unlock better content across the entire site.
+
+### Priority A: Technical Specs (verify what's on the site now)
+- [ ] Injection PSI — we wrote 100 PSI based on old site. Correct?
+- [ ] Copper ports vs plastic — what brand/type?
+- [ ] Diamond saw specifics — blade size, groove depth?
+- [ ] Carbon fiber product specs — manufacturer, tensile strength?
+- [ ] Finishing materials — what goes over the injection?
+
+### Priority B: Luc's Credentials (E-E-A-T, About page)
+- [ ] When did Luc start? (we say age 16 — confirm)
+- [ ] Total years of experience?
+- [ ] ASHI certification number?
+- [ ] Any other certs, training, manufacturer certifications?
+- [ ] Industry roles, associations, memberships?
+
+### Priority C: Case Studies (blog content, project depth)
+- [ ] 3-5 memorable job stories: hardest repair, unusual discovery, emergency call, historic home, dramatic transformation
+- [ ] Real project details for the "What Does Foundation Repair Look Like" blog post
+
+### Priority D: Operational Details
+- [ ] First visit = same-day repair? How often?
+- [ ] Insurance coverage — do you help homeowners navigate claims?
+- [ ] Multiple crack discount — real policy?
+- [ ] GBAR membership status?
+
+### After Matt Answers:
+- [ ] Claude weaves answers into service pages, blog posts, About page, location pages
+- [ ] Update Person schema with verified credentials
+- [ ] Enrich case study blog posts with real details
+
+---
+
 ## Content Depth (Claude + Matt)
 
-Not strictly blocking launch, but significantly improves quality.
-
-### D8. About Page E-E-A-T (Needs Matt)
+### D8. About Page E-E-A-T (Needs Brainstorm Answers)
 
 - [ ] Luc's credentials: certs, training, years, professional links
 - [ ] Justin La Fontaine's title/role and tenure
 - [ ] Company milestones timeline
 - [ ] Enrich Person schema with verified data
-- [ ] Verify author data accuracy (B4 from Pinnacle Plan)
 
 ### D9. City Page Deep Localization (Claude)
 
 - [ ] Neighborhood specifics for top 20 cities (hyper-local content)
 - [ ] Run uniqueness check against all 80 city pages
 
-### Brainstorm Session (Matt)
-
-- [ ] Complete expertise deep-dive — 38 questions in `docs/BRAINSTORM-AGENDA.md`
-- [ ] Weave answers into service pages, blog posts, location pages (Claude)
-
 ### Partner Decisions (Matt)
 
 - [ ] Brainstorm additional partner personas (waterproofing, basement finishing, real estate attorneys)
 - [ ] Provide partner testimonials for new persona types
 - [ ] Name the trusted partners page (Preferred? Trusted? Recommended?)
-- [ ] Add trusted partners to DecapCMS config
 
-### Schema (Claude — when photos available)
+### Schema Enhancements (Claude — when photos available)
 
 - [ ] Add ImageObject schema for before/after photos on service pages
 - [ ] Add ImageObject schema on project/case study pages
 
 ---
 
-## Automation Setup (Matt + Claude)
+## SEO Competitive Deep-Dive (Claude + Matt)
+
+Full competitive audit to maximize SERP dominance before and after launch.
+
+### Data Collection (Matt — needs account access)
+
+- [ ] **Google Search Console export** — all queries, pages, impressions, clicks, positions for attackacrack.com
+- [ ] **Google Analytics export** — top landing pages, organic traffic by page, bounce rates, conversion paths
+- [ ] **SEMrush competitive analysis** — pull reports for:
+  - [ ] attackacrack.com current keyword rankings (organic positions)
+  - [ ] Top 5 competitors (identify who ranks for our target terms in CT, MA, RI, NH, ME)
+  - [ ] Competitor keyword gaps — terms they rank for that we don't
+  - [ ] Competitor backlink profiles — who's linking to them
+  - [ ] Keyword difficulty + search volume for our target terms
+  - [ ] SERP feature analysis — which terms trigger local packs, FAQs, featured snippets
+
+### Competitive Analysis (Claude)
+
+- [ ] **Identify top 5 local competitors** per state (CT, MA, RI, NH, ME) — who shows up in local 3-pack?
+- [ ] **Audit competitor pages** — what content do they have that we don't?
+- [ ] **Gap analysis** — high-volume keywords where competitors rank and we don't
+- [ ] **SERP feature targeting** — identify which of our pages can win:
+  - [ ] Featured snippets (definition queries, "how to" queries)
+  - [ ] FAQ rich results (ensure FAQ schema on every page that answers questions)
+  - [ ] Local pack (GBP optimization, citations, reviews)
+  - [ ] People Also Ask (target PAA questions in blog content)
+  - [ ] Image pack (before/after photos with proper alt text)
+- [ ] **Content gap fill** — write new pages/posts targeting uncovered high-value terms
+- [ ] **Internal linking audit** — ensure every page passes equity to target pages
+
+### On-Page Optimization Pass (Claude)
+
+- [ ] **Title tag optimization** — audit all 297 pages against target keywords, refine for CTR
+- [ ] **Meta description optimization** — rewrite any underperforming descriptions for click-through
+- [ ] **H1/H2 keyword alignment** — ensure heading hierarchy matches target SERP terms
+- [ ] **Content depth audit** — are any pages thin compared to ranking competitors?
+- [ ] **Schema completeness** — ensure every page type has maximum applicable schema markup
+- [ ] **Internal link equity flow** — homepage → service pages → city pages → blog (proper silo)
+- [ ] **Image SEO** — all images have keyword-rich alt text, filenames, and proper dimensions
+
+### Citation & Off-Page (Matt + Claude)
+
+- [ ] **Citation audit** — verify NAP consistency across all directories (Yelp, BBB, Angi, HomeAdvisor, etc.)
+- [ ] **Fix inconsistent citations** — same name, address, phone everywhere
+- [ ] **Identify missing citations** — directories where competitors are listed but we aren't
+- [ ] **Backlink acquisition plan** — based on competitor backlink analysis, identify realistic link targets
+
+---
+
+## Blog Content & Auto-Publishing
+
+### Content Status
+
+- 73 total blog posts (32 published, 41 drafts ready for Q2-Q4)
+- All 41 drafts have complete 800-1200+ word content
+- Content calendar: `docs/CONTENT-CALENDAR-2026.md`
+
+### Matt Review (Blocking Publication)
+
+- [ ] **Read all 41 draft blog posts** for accuracy and voice — every article needs a read-through
+- [ ] Flag any that need revision
+- [ ] Provide/source hero images — all 73 posts have `heroImage: ""`
+
+### Auto-Publishing Setup (Claude — NOT YET IMPLEMENTED)
+
+Currently posts use `draft: true/false` only. The `publishDate` field exists but is NOT used for filtering — flipping `draft: false` publishes immediately regardless of date. There is no scheduled publishing.
+
+- [ ] Add build-time filter: only publish posts where `draft !== true` AND `publishDate <= buildDate`
+- [ ] Add GitHub Action cron job (weekly, Monday 6am ET) to trigger Vercel redeploy
+- [ ] Test: set a post with past `publishDate` + `draft: false`, verify it appears after build
+- [ ] Test: set a post with future `publishDate` + `draft: false`, verify it does NOT appear
+- [ ] Document workflow: Matt sets `draft: false` on reviewed posts; they auto-publish when `publishDate` arrives
+
+---
+
+## Automation & Infrastructure
+
+### Project Import Pipeline (DONE — needs secrets)
+
+Code is complete and tested. 91 projects imported. Cron runs Mon/Thu 6am ET via GitHub Actions.
+
+- [x] Import pipeline code (`scripts/cron-import-projects.js`, `scripts/lib/project-import-core.js`)
+- [x] GitHub Action workflow (`.github/workflows/import-projects.yml`)
+- [x] Buffer/GBP integration (`scripts/lib/buffer-client.js`)
+- [x] 91 historical projects imported with photos
+- [x] 10 GBP posts queued via Buffer (through March 19)
+
+#### GitHub Secrets Needed (Matt)
+
+These must be added at github.com → repo → Settings → Secrets for the cron to work:
+
+- [ ] `GOOGLE_SERVICE_ACCOUNT_KEY` — service account JSON for Calendar/Drive API
+- [ ] `GEMINI_API_KEY` — for photo classification
+- [ ] `BUFFER_API_TOKEN` — `QNzYfI...` (the token from tonight)
+- [ ] `BUFFER_CHANNEL_ID` — `69aa1ae63f3b94a1211df5f1`
+- [ ] `SITE_IMAGE_BASE` — `https://aac-astro.vercel.app`
+
+#### Google Cloud Setup (Matt — partially done)
+
+- [x] Google Cloud project exists
+- [x] Calendar API + Drive API enabled
+- [ ] Create service account (for CI/cron — different from OAuth)
+- [ ] Share calendar with service account (read-only)
+- [ ] Download service account key JSON → add as `GOOGLE_SERVICE_ACCOUNT_KEY` secret
+
+#### Buffer Queue Refill
+
+Buffer Essentials allows 10 scheduled posts. 73 projects remaining. Refill weekly:
+
+```bash
+SITE_IMAGE_BASE=https://aac-astro.vercel.app node scripts/buffer-post-projects.js \
+  --channel-id 69aa1ae63f3b94a1211df5f1 --start-date YYYY-MM-DD
+```
+
+- [ ] Consider upgrading to Buffer Team ($10/mo) for 2,000 scheduled posts
 
 ### DecapCMS (Matt)
 
@@ -162,23 +326,9 @@ Not strictly blocking launch, but significantly improves quality.
 2. [ ] Connect to GitHub repo (`mrjmd/aac-astro`, branch: `main`), disable auto-publishing
 3. [ ] Enable Identity (invite-only registration)
 4. [ ] Enable Git Gateway
-5. [ ] Invite users (assistant's email)
+5. [ ] Invite users
 6. [ ] Claude updates `public/admin/config.yml` with Netlify site URL
 7. [ ] Test: visit `/admin/`, log in, make test edit
-
-### Google Cloud (Matt)
-
-- [x] Verify Google Cloud project exists (or create one)
-- [x] Enable APIs: Google Calendar API + Google Drive API
-- [ ] Create OAuth2 Desktop App credentials (for local use)
-- [ ] Download OAuth credentials JSON → `scripts/.credentials/google-oauth.json`
-- [ ] Add `matt@attackacrack.com` as test user in OAuth consent screen
-- [ ] Create service account (for CI/cron use)
-- [ ] Share calendar (`matt@attackacrack.com`) with service account (read-only)
-- [ ] Download service account key JSON
-- [ ] Provide CT + MA GBP account/location IDs
-- [ ] Configure GBP IDs in `scripts/batch-post-gbp.js` (replace `XXXXXXXXXX` placeholders)
-- [ ] Test GBP posting: `node scripts/batch-post-gbp.js --dry-run`
 
 ### Monitoring (Matt)
 
@@ -186,46 +336,6 @@ Not strictly blocking launch, but significantly improves quality.
 - [ ] Set up GA4 / Vercel Analytics
 - [ ] Set up uptime monitoring
 - [ ] Set up error tracking
-
----
-
-## Projects Import & Automation
-
-### Code Changes (Claude)
-
-- [x] Refactor `scripts/import-calendar-projects.js` into shared core module (`scripts/lib/project-import-core.js`) + thin CLI wrapper
-- [x] Fix calendar email: `harrringtonm@gmail.com` → `matt@attackacrack.com`
-- [x] Add Mike's dual-email config: check both `harrringtonm@gmail.com` and `mike@attackacrack.com` for attendee + photo ownership
-- [x] Add Drive API photo owner filter (only import photos owned by Mike)
-- [x] Add Claude AI before/after photo classification (unpredictable upload order)
-- [x] Add enhanced AI description generation (2-3 sentences + 280-char summary)
-- [x] Add dedup manifest system (`data/import-manifest.json`, committed to repo)
-- [x] Add Drive API scope to OAuth config
-- [x] Install dependencies: `npm install googleapis @anthropic-ai/sdk --save-dev`
-- [x] Create `data/import-manifest.json` with empty initial state
-
-### One-Time Historical Import
-
-- [ ] Dry run: `node scripts/import-calendar-projects.js --dry-run --limit 10`
-- [ ] First run opens browser for OAuth consent — authorize
-- [ ] Review dry run output: verify location parsing, service type detection, photo filtering
-- [ ] Fix any parsing issues discovered in dry run
-- [ ] Import small batch: `node scripts/import-calendar-projects.js --limit 5`
-- [ ] Review 5 generated project files for quality
-- [ ] Full import: `node scripts/import-calendar-projects.js` (all events since Jan 1, 2025)
-- [ ] Review all imported projects in `src/content/projects/`
-- [ ] Run `npm run validate`
-- [ ] Commit and push imported projects
-
-### Ongoing Cron Automation
-
-- [x] Create cron import script: `scripts/cron-import-projects.js` (auto-publish + GBP post)
-- [x] Create GitHub Action: `.github/workflows/import-projects.yml` (Mon + Thu 6am ET)
-- [ ] Add GitHub secrets: `GOOGLE_SERVICE_ACCOUNT_KEY`, `GEMINI_API_KEY`
-- [ ] Matt: Provide GBP account/location IDs for `scripts/batch-post-gbp.js`
-- [ ] Test cron with `workflow_dispatch` manual trigger
-- [ ] Monitor first 2 weeks of automated imports
-- [ ] Verify GBP posts appear correctly
 
 ---
 
@@ -237,7 +347,6 @@ Not strictly blocking launch, but significantly improves quality.
 - [ ] Monitor uptime alerts
 - [ ] Fix any 404s from old URLs
 - [ ] Submit to Bing Webmaster Tools
-- [ ] Begin GBP optimization
 - [ ] Verify Vercel cache headers working correctly
 - [ ] Check server response times
 
@@ -248,75 +357,12 @@ Not strictly blocking launch, but significantly improves quality.
 - [ ] Begin review acquisition campaign
 - [ ] Citation audit and fixes
 
-### Ongoing (B13 Phases 2-3)
+### Ongoing
 
 - [ ] B13 Phase 2: Mobile intake form for technician case studies
-- [ ] B13 Phase 3: GBP auto-posting integration
 - [ ] Execute 90-day SEO sprint (see `docs/SEO-STRATEGY-2026.md` Part 16)
 - [ ] Off-page strategy execution (see `docs/SEO-STRATEGY-2026.md` Part 18)
-
----
-
-## Marketing & Content (Claude + Matt)
-
-### 2026 Marketing Plan Integration
-
-- [x] Create `docs/MARKETING-PLAN-2026.md` — brand persona, channels, geo-targeting
-- [x] Create `docs/CONTENT-CALENDAR-2026.md` — 52-week editorial calendar
-- [x] Create `docs/BRAND-VOICE.md` — Expert Jester voice guide + proposed site copy
-- [x] Update `docs/SEO-STRATEGY-2026.md` — seasonal content, geo zones, content pillars
-- [x] Create ~35 blog draft stubs with complete frontmatter and outlines
-- [x] Write full articles for all 35 stubs + 10 new posts (73 total blog posts)
-- [x] Publish 4 backdated posts (Jan-Mar 2026)
-- [x] Restructure content calendar (`docs/CONTENT-CALENDAR-2026.md`)
-
-### Brand Voice Refresh (Matt Review Required)
-
-- [ ] Matt reviews proposed copy changes in `docs/BRAND-VOICE.md` (before/after appendix)
-- [ ] Approve or revise homepage hero + CTA changes
-- [ ] Approve or revise about page story + values changes
-- [ ] Approve or revise services hub description changes
-- [ ] Approve or revise team bio changes
-- [ ] Claude implements approved changes (separate session)
-- [ ] Visual verification of all changed pages
-
-### Blog Content (41 Full Drafts Written)
-
-- [x] Write full content for all 35 blog stubs (800-1200+ words each)
-- [x] Create 10 new blog posts for empty calendar weeks
-- [x] Publish 4 backdated posts (ice dams, emergency, spring thaw, spring inspection)
-- [x] Restructure content calendar with published archive + forward calendar
-- [ ] **Matt: Review all 41 draft blog posts for accuracy and voice** — every article needs a read-through before publishing
-- [ ] **Matt: Provide or source hero images for blog posts** — all 73 posts currently have `heroImage: ""`
-- [ ] Case studies require real project data from Matt
-
-### Automated Blog Publishing (Cron Build)
-
-Set up weekly cron to auto-publish blog posts whose `publishDate` has arrived:
-
-- [ ] Update Astro `getStaticPaths` to filter blog posts: only build pages where `draft !== true` OR (`draft === true` AND `publishDate <= now`) — or switch to a `status` field (draft/scheduled/published)
-- [ ] Add GitHub Action cron job (weekly, e.g. Monday 6am ET) that triggers a Vercel deploy
-- [ ] Alternative: Use Vercel Cron to trigger rebuild on schedule
-- [ ] Test: set a post to `scheduled` with a past date, trigger build, verify it appears
-- [ ] Document the publishing workflow: Matt flips `draft: true` → `draft: false` (or status to `scheduled`) and the next cron build publishes it
-
-### Social Media (Post-Launch)
-
-- [ ] Begin social media posting (3x/week per marketing plan)
-
----
-
-## Blog Content Status (Reference)
-
-### Tier 3: Consumer Language Content (All Written)
-
-| Topic | Target Keywords | Volume |
-|-------|-----------------|--------|
-| Cement vs Concrete: What Homeowners Need to Know | cement repair terms | 14,800 |
-| Pool Deck Repair Guide | concrete pool deck repair | 5,400 |
-| Driveway Crack Repair Guide | driveway crack repair | 1,900 |
-
-> Note: Tier 1 and Tier 2 posts are all written. See archive for full list.
+- [ ] Social media posting (3x/week per marketing plan)
 
 ---
 
@@ -324,8 +370,11 @@ Set up weekly cron to auto-publish blog posts whose `publishDate` has arrived:
 
 | Doc | Purpose |
 |-----|---------|
+| `docs/BRAND-VOICE.md` | Expert Jester voice guide + proposed copy changes (PENDING APPROVAL) |
+| `docs/BRAINSTORM-AGENDA.md` | 38 expertise questions for Matt (UNANSWERED) |
 | `docs/SEO-STRATEGY-2026.md` | SEO playbook (17 parts + off-page strategy) |
-| `docs/BRAINSTORM-AGENDA.md` | 38 questions for Matt's expertise session |
+| `docs/CONTENT-CALENDAR-2026.md` | 52-week editorial calendar (41 drafts ready) |
+| `docs/MARKETING-PLAN-2026.md` | Brand persona, channels, geo-targeting |
 | `docs/MATT-TODO.md` | Everything Matt personally needs to do |
 | `docs/archive/` | Completed work, original plans, consumed references |
 | `CLAUDE.md` | Project rules and validation requirements |

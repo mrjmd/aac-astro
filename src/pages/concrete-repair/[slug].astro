@@ -7,7 +7,7 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
 import ProjectCards from '../../components/ProjectCards.astro';
-import { getByService as getProjectsByService } from '../../utils/projects';
+import { getByService as getProjectsByService, SERVICE_SLUG_MAP } from '../../utils/projects';
 
 export async function getStaticPaths() {
   const services = await getCollection('concrete-repair');
@@ -20,8 +20,10 @@ export async function getStaticPaths() {
 const { service } = Astro.props;
 const { Content } = await render(service);
 
-// Get matching projects
-const concreteProjects = await getProjectsByService('concrete-repair', 3);
+// Get matching projects for this specific concrete repair type
+const serviceSlug = service.id.replace(/\.md$/, '');
+const projectServiceType = SERVICE_SLUG_MAP[serviceSlug] || 'concrete-repair';
+const concreteProjects = await getProjectsByService(projectServiceType, 3);
 
 // Get all concrete repair services for related section
 const allServices = await getCollection('concrete-repair');
