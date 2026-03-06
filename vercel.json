@@ -52,6 +52,91 @@
       "source": "/foundation-types/cinderblock",
       "destination": "/blog/cinderblock-foundation-repair-guide",
       "permanent": true
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/partners/general-contractors",
+      "destination": "/partners/contractors",
+      "permanent": true
+    },
+    {
+      "source": "/trusted-partners",
+      "destination": "/massachusetts/trusted-partners",
+      "permanent": true
+    },
+    {
+      "source": "/blog/vertical-vs-horizontal-foundation-cracks-when-to-hit-the-panic-button",
+      "destination": "/blog/vertical-vs-horizontal-foundation-cracks",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-2026-foundation-repair-cost-guide-what-ma-amp-ct-homeowners-should-expect",
+      "destination": "/blog/foundation-repair-cost-guide-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-your-bulkhead-door-might-be-leaking-and-how-to-fix-it-for-good",
+      "destination": "/blog/bulkhead-leaking-causes-and-fixes",
+      "permanent": true
+    },
+    {
+      "source": "/blog/basement-leak-nightmare-how-we-stopped-an-active-crack-leak-in-framingham",
+      "destination": "/blog/basement-leak-framingham-case-study",
+      "permanent": true
+    },
+    {
+      "source": "/blog/10-essential-tips-for-a-worry-free-foundation",
+      "destination": "/blog/10-essential-tips-worry-free-foundation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leaky-bulkhead-in-wilmington",
+      "destination": "/blog/leaky-bulkhead-wilmington-repair",
+      "permanent": true
+    },
+    {
+      "source": "/blog/crumbling-foundations-in-massachusetts-and-connecticut",
+      "destination": "/blog/crumbling-foundations-massachusetts-connecticut",
+      "permanent": true
+    },
+    {
+      "source": "/blog/finished-basement-flooded-in-shrewsbury",
+      "destination": "/blog/finished-basement-flooded-shrewsbury",
+      "permanent": true
+    },
+    {
+      "source": "/blog/nar-nxt-2024-real-estate-conference",
+      "destination": "/blog/nar-nxt-boston-2024-partnerships",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-check-your-foundation-for-problems",
+      "destination": "/blog/how-to-check-your-foundation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/winter-home-maintenance-cold-prep",
+      "destination": "/blog/winter-home-maintenance-checklist",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ashi-home-inspectors-new-england-conference-2024",
+      "destination": "/blog/ashi-new-england-conference-2024",
+      "permanent": true
+    },
+    {
+      "source": "/store",
+      "destination": "/partners",
+      "permanent": true
+    },
+    {
+      "source": "/store/p/:slug",
+      "destination": "/partners",
+      "permanent": true
     }
   ],
   "headers": [

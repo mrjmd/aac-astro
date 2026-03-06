@@ -49,17 +49,19 @@ These must be done before DNS cutover. Nothing else launches the site.
 
 ### 301 Redirects & Old Site Preservation (Claude + Matt)
 
-**Current state:** Only 10 redirects in `vercel.json` (service pages + foundation types). The old Squarespace site has NOT been fully audited. Any old URL that isn't redirected = lost link equity + 404 for users.
+**Current state:** Sitemap crawled, 31 redirects now in `vercel.json` (was 10). All old Squarespace URLs from the sitemap are mapped. Remaining items need Matt's account access.
 
-- [ ] **Crawl the live Squarespace site** — pull full sitemap from `attackacrack.com/sitemap.xml`
+- [x] **Crawl the live Squarespace site** — pulled full sitemap from `attackacrack.com/sitemap.xml` (36 URLs)
+- [x] **Map every old URL to its new equivalent** — all 36 mapped, 21 new redirects added
+- [x] **Add all missing 301 redirects to `vercel.json`** — 31 total redirects now (was 10)
+- [x] **Handle blog post URLs** — all 12 old blog slugs redirected to new slugs
+- [x] **Handle /store/ partner pages** — `/store` and `/store/p/:slug` → `/partners`
+- [x] **Handle /home, /trusted-partners, /partners/general-contractors** — all redirected
 - [ ] **Crawl Google Search Console** — export all indexed URLs (may include pages not in sitemap)
 - [ ] **Export Google Analytics top pages** — identify every URL with real traffic
-- [ ] **Map every old URL to its new equivalent** — or identify content that was dropped
-- [ ] **Add all missing 301 redirects to `vercel.json`** — every old URL must resolve
-- [ ] **Handle blog post URLs** — Squarespace blog slugs may differ from new slugs
-- [ ] **Handle any old `/blog/` tag/category pages** — redirect to new category structure
+- [ ] **Handle any old `/blog/` tag/category pages** — redirect to new category structure if they exist
 - [ ] **Handle old image URLs** — Squarespace CDN images linked from external sites
-- [ ] **Test every redirect** — automated script to verify all 301s resolve correctly
+- [ ] **Test every redirect after DNS cutover** — verify all 31 redirects resolve correctly
 - [ ] **Check for external backlinks** — Ahrefs/SEMrush backlink audit, ensure linked URLs redirect
 
 ### DNS Cutover (Matt)
