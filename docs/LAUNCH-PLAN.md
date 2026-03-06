@@ -2,7 +2,7 @@
 
 > **The only task tracker.** Every remaining item before (and after) launch. Completed work is archived in `docs/archive/LAUNCH-PLAN-COMPLETED.md`.
 
-*Updated: March 5, 2026*
+*Updated: March 7, 2026*
 *Preview: https://aac-astro.vercel.app/*
 
 ---
@@ -55,7 +55,7 @@ These must be done before DNS cutover. Nothing else launches the site.
 - [x] **Map every old URL to its new equivalent** — all 36 mapped, 21 new redirects added
 - [x] **Add all missing 301 redirects to `vercel.json`** — 31 total redirects now (was 10)
 - [x] **Handle blog post URLs** — all 12 old blog slugs redirected to new slugs
-- [x] **Handle /store/ partner pages** — `/store` and `/store/p/:slug` → `/partners`
+- [x] **Handle /store/ partner pages** — `/store` and `/store/p/:slug` → `/massachusetts/trusted-partners`
 - [x] **Handle /home, /trusted-partners, /partners/general-contractors** — all redirected
 - [ ] **Crawl Google Search Console** — export all indexed URLs (may include pages not in sitemap)
 - [ ] **Export Google Analytics top pages** — identify every URL with real traffic
@@ -91,8 +91,8 @@ These must be done before DNS cutover. Nothing else launches the site.
 Service pages (`services/[slug].astro`) only show CT and MA in the "Available In" section at the bottom. RI, NH, and ME are missing. The concrete repair index page says "For foundation repair, we serve both MA and CT" — should say all of New England.
 
 - [ ] **Audit all pages** for territory language limited to CT/MA — find every instance across service pages, concrete repair pages, hubs, components, content files
-- [ ] Fix service page `[slug].astro` "Available In" section to include all 5 states (CT, MA, RI, NH, ME)
-- [ ] Fix concrete repair index page to say "all of New England" instead of "MA and CT"
+- [x] Fix service page `[slug].astro` "Available In" section to include all 5 states (CT, MA, RI, NH, ME)
+- [x] Fix concrete repair index page to say "all of New England" instead of "MA and CT"
 - [ ] Fix any other pages/components that limit territory to just 2 states
 - [ ] Verify all 5 states appear wherever service territory is mentioned
 
@@ -288,12 +288,12 @@ Full competitive audit to maximize SERP dominance before and after launch.
 - [ ] Flag any that need revision
 - [ ] Provide/source hero images — all 73 posts have `heroImage: ""`
 
-### Auto-Publishing Setup (Claude — NOT YET IMPLEMENTED)
+### Auto-Publishing Setup — DONE
 
-Currently posts use `draft: true/false` only. The `publishDate` field exists but is NOT used for filtering — flipping `draft: false` publishes immediately regardless of date. There is no scheduled publishing.
+Shared `isPublished()` filter in `src/utils/blog.ts` checks both `!draft` and `publishDate <= now`. All 5 blog listing pages use it. Weekly Monday 6am ET cron redeploy via `.github/workflows/weekly-redeploy.yml`.
 
-- [ ] Add build-time filter: only publish posts where `draft !== true` AND `publishDate <= buildDate`
-- [ ] Add GitHub Action cron job (weekly, Monday 6am ET) to trigger Vercel redeploy
+- [x] Add build-time filter: only publish posts where `draft !== true` AND `publishDate <= buildDate`
+- [x] Add GitHub Action cron job (weekly, Monday 6am ET) to trigger Vercel redeploy
 - [ ] Test: set a post with past `publishDate` + `draft: false`, verify it appears after build
 - [ ] Test: set a post with future `publishDate` + `draft: false`, verify it does NOT appear
 - [ ] Document workflow: Matt sets `draft: false` on reviewed posts; they auto-publish when `publishDate` arrives
