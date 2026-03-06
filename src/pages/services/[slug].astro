@@ -29,10 +29,20 @@ const relatedServices = service.data.relatedServices
   ? allServices.filter(s => service.data.relatedServices?.includes(s.id))
   : allServices.filter(s => s.id !== service.id).slice(0, 3);
 
-// Get locations for reverse linking (foundation repair serves both CT and MA)
+// Get locations for reverse linking (foundation repair serves all of New England)
 const allLocations = await getCollection('locations');
-const ctLocations = allLocations.filter(l => l.data.stateAbbr === 'CT').slice(0, 5);
-const maLocations = allLocations.filter(l => l.data.stateAbbr === 'MA').slice(0, 5);
+const stateConfig = [
+  { abbr: 'CT', name: 'Connecticut', path: 'connecticut' },
+  { abbr: 'MA', name: 'Massachusetts', path: 'massachusetts' },
+  { abbr: 'RI', name: 'Rhode Island', path: 'rhode-island' },
+  { abbr: 'NH', name: 'New Hampshire', path: 'new-hampshire' },
+  { abbr: 'ME', name: 'Maine', path: 'maine' },
+];
+const locationsByState = stateConfig.map(state => ({
+  ...state,
+  locations: allLocations.filter(l => l.data.stateAbbr === state.abbr).slice(0, 5),
+  totalCount: allLocations.filter(l => l.data.stateAbbr === state.abbr).length,
+})).filter(s => s.totalCount > 0);
 
 // Get service-specific testimonials
 const serviceSlug = service.id.replace(/\.md$/, '');
@@ -53,11 +63,9 @@ const significantLinks = [
   // Related services
   ...relatedServices.map(s => `https://www.attackacrack.com/services/${s.id.replace(/\.md$/, '')}`),
   // State hub pages
-  "https://www.attackacrack.com/connecticut",
-  "https://www.attackacrack.com/massachusetts",
-  // Sample city pages
-  ...ctLocations.slice(0, 3).map(l => `https://www.attackacrack.com/connecticut/${l.id.replace(/\.md$/, '').replace(/^connecticut\//, '')}`),
-  ...maLocations.slice(0, 3).map(l => `https://www.attackacrack.com/massachusetts/${l.id.replace(/\.md$/, '').replace(/^massachusetts\//, '')}`)
+  ...locationsByState.map(s => `https://www.attackacrack.com/${s.path}`),
+  // Sample city pages (first 2 from each state)
+  ...locationsByState.flatMap(s => s.locations.slice(0, 2).map(l => `https://www.attackacrack.com/${s.path}/${l.id.replace(/\.md$/, '').replace(new RegExp(`^${s.path.replace('-', '.*')}/`), '')}`))
 ];
 
 // Build mentions array
@@ -66,8 +74,7 @@ const mentions = [
   { "@type": "Thing", "name": "Foundation Repair" },
   { "@type": "Thing", "name": service.data.title },
   // States served
-  { "@type": "Place", "name": "Connecticut" },
-  { "@type": "Place", "name": "Massachusetts" }
+  ...stateConfig.map(s => ({ "@type": "Place", "name": s.name }))
 ];
 
 // Service schema with LLM-ready properties and AggregateRating
@@ -87,10 +94,7 @@ const serviceSchema = {
       "addressCountry": "US"
     }
   },
-  "areaServed": [
-    { "@type": "State", "name": "Connecticut" },
-    { "@type": "State", "name": "Massachusetts" }
-  ],
+  "areaServed": stateConfig.map(s => ({ "@type": "State", "name": s.name })),
   "serviceType": "Foundation Repair",
   "termsOfService": "Lifetime Guarantee",
   // AggregateRating for rich results
@@ -220,7 +224,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 						<h2 class="text-4xl font-black tracking-tighter text-aac-dark">
 							Frequently Asked Questions
 						</h2>
-						<p class="text-sm text-zinc-500 mt-3">Answered by the Attack A Crack team — 20+ years of foundation repair experience in CT & MA</p>
+						<p class="text-sm text-zinc-500 mt-3">Answered by the Attack A Crack team — 20+ years of foundation repair experience across New England</p>
 					</div>
 
 					<div class="space-y-4">
@@ -307,53 +311,32 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 		<section class="py-12 bg-zinc-50 border-t border-zinc-100">
 			<div class="max-w-7xl mx-auto px-6">
 				<h2 class="text-2xl font-black tracking-tighter text-aac-dark mb-6 text-center">
-					{service.data.title} Available In
+					{service.data.title} Available Across New England
 				</h2>
-				<div class="grid md:grid-cols-2 gap-8">
-					<!-- Connecticut -->
-					<div>
-						<h3 class="font-black text-lg mb-4 flex items-center gap-2">
-							<Icon name="MapPin" size={18} class="text-aac-blue" />
-							Connecticut
-						</h3>
-						<div class="flex flex-wrap gap-2">
-							{ctLocations.map(loc => (
-								<a
-									href={`/connecticut/${loc.id.replace(/\.md$/, '').replace(/^connecticut\//, '')}`}
-									class="px-3 py-1 bg-white border border-zinc-200 rounded-full text-sm hover:border-aac-blue hover:text-aac-blue transition-colors"
-								>
-									{loc.data.city}
-								</a>
-							))}
-							{allLocations.filter(l => l.data.stateAbbr === 'CT').length > 5 && (
-								<a href="/connecticut" class="px-3 py-1 bg-aac-blue/10 text-aac-blue rounded-full text-sm font-bold hover:bg-aac-blue hover:text-white transition-colors">
-									+{allLocations.filter(l => l.data.stateAbbr === 'CT').length - 5} more
-								</a>
-							)}
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					{locationsByState.map(state => (
+						<div>
+							<h3 class="font-black text-lg mb-4 flex items-center gap-2">
+								<Icon name="MapPin" size={18} class="text-aac-blue" />
+								{state.name}
+							</h3>
+							<div class="flex flex-wrap gap-2">
+								{state.locations.map(loc => (
+									<a
+										href={`/${state.path}/${loc.id.replace(/\.md$/, '').replace(new RegExp(`^${state.path.replace('-', '.*')}/`), '')}`}
+										class="px-3 py-1 bg-white border border-zinc-200 rounded-full text-sm hover:border-aac-blue hover:text-aac-blue transition-colors"
+									>
+										{loc.data.city}
+									</a>
+								))}
+								{state.totalCount > 5 && (
+									<a href={`/${state.path}`} class="px-3 py-1 bg-aac-blue/10 text-aac-blue rounded-full text-sm font-bold hover:bg-aac-blue hover:text-white transition-colors">
+										+{state.totalCount - 5} more
+									</a>
+								)}
+							</div>
 						</div>
-					</div>
-					<!-- Massachusetts -->
-					<div>
-						<h3 class="font-black text-lg mb-4 flex items-center gap-2">
-							<Icon name="MapPin" size={18} class="text-aac-blue" />
-							Massachusetts
-						</h3>
-						<div class="flex flex-wrap gap-2">
-							{maLocations.map(loc => (
-								<a
-									href={`/massachusetts/${loc.id.replace(/\.md$/, '').replace(/^massachusetts\//, '')}`}
-									class="px-3 py-1 bg-white border border-zinc-200 rounded-full text-sm hover:border-aac-blue hover:text-aac-blue transition-colors"
-								>
-									{loc.data.city}
-								</a>
-							))}
-							{allLocations.filter(l => l.data.stateAbbr === 'MA').length > 5 && (
-								<a href="/massachusetts" class="px-3 py-1 bg-aac-blue/10 text-aac-blue rounded-full text-sm font-bold hover:bg-aac-blue hover:text-white transition-colors">
-									+{allLocations.filter(l => l.data.stateAbbr === 'MA').length - 5} more
-								</a>
-							)}
-						</div>
-					</div>
+					))}
 				</div>
 			</div>
 		</section>
