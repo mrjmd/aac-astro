@@ -8,7 +8,7 @@
  *   2. Filter to Mike's photos via Drive API
  *   3. Classify before/after photos with Claude
  *   4. Generate project case study .md files (auto-published)
- *   5. Post new projects to Google Business Profile
+ *   5. Schedule new projects to Buffer (for GBP posting)
  *   6. Update dedup manifest
  *
  * The GitHub Action handles git commit + push → triggers Vercel rebuild.
@@ -19,7 +19,7 @@
  * Usage:
  *   node scripts/cron-import-projects.js              # Normal cron run
  *   node scripts/cron-import-projects.js --dry-run    # Preview without writing
- *   node scripts/cron-import-projects.js --skip-gbp   # Skip GBP posting
+ *   node scripts/cron-import-projects.js --skip-buffer # Skip Buffer posting
  */
 
 import { existsSync, mkdirSync, writeFileSync, readdirSync, readFileSync } from 'fs';
@@ -43,6 +43,7 @@ import {
   IMAGES_DIR,
   SERVICE_LABELS,
 } from './lib/project-import-core.js';
+import { getToken, createPost, buildPostText } from './lib/buffer-client.js';
 
 // ---------------------------------------------------------------------------
 // CLI args
@@ -50,7 +51,7 @@ import {
 
 const args = process.argv.slice(2);
 const DRY_RUN = args.includes('--dry-run');
-const SKIP_GBP = args.includes('--skip-gbp');
+const SKIP_BUFFER = args.includes('--skip-buffer');
 
 // ---------------------------------------------------------------------------
 // Config
@@ -59,77 +60,34 @@ const SKIP_GBP = args.includes('--skip-gbp');
 const LOOKBACK_DAYS = 14; // Look back 14 days from last check for late photo uploads
 
 // ---------------------------------------------------------------------------
-// GBP posting (inline — adapted from batch-post-gbp.js)
+// Buffer posting (replaces direct GBP API)
 // ---------------------------------------------------------------------------
 
-const SITE_URL = 'https://www.attackacrack.com';
+const SITE_IMAGE_BASE = process.env.SITE_IMAGE_BASE || '';
+const BUFFER_CHANNEL_ID = process.env.BUFFER_CHANNEL_ID || '';
 
-const GBP_CONFIG = {
-  CT: {
-    account: process.env.GBP_CT_ACCOUNT || 'accounts/XXXXXXXXXX',
-    location: process.env.GBP_CT_LOCATION || 'locations/XXXXXXXXXX',
-  },
-  MA: {
-    account: process.env.GBP_MA_ACCOUNT || 'accounts/XXXXXXXXXX',
-    location: process.env.GBP_MA_LOCATION || 'locations/XXXXXXXXXX',
-  },
-};
-
-const STATE_ROUTING = {
-  CT: 'CT', RI: 'CT',
-  MA: 'MA', NH: 'MA', ME: 'MA',
-};
-
-const GBP_SERVICE_LABELS = {
-  'crack-injection': 'foundation crack injection',
-  'wall-crack-repair': 'wall crack repair',
-  'bulkhead-repair': 'bulkhead repair',
-  'carbon-fiber': 'carbon fiber reinforcement',
-  'sewer-conduit': 'sewer & conduit repair',
-  'concrete-repair': 'concrete repair',
-  'garage-floor': 'garage floor repair',
-  'driveway': 'driveway repair',
-  'patio': 'patio repair',
-  'pool-deck': 'pool deck repair',
-  'stairway': 'stairway repair',
-  'walkway': 'walkway repair',
-  'floor-crack': 'floor crack repair',
-  'fieldstone': 'fieldstone foundation repair',
-};
-
-async function postToGBP(auth, project) {
-  const { google } = await import('googleapis');
-  const gbpLocation = STATE_ROUTING[project.state] || 'MA';
-  const config = GBP_CONFIG[gbpLocation];
-
-  if (!config || config.account.includes('XXXX')) {
-    console.log(`     ⚠️  GBP ${gbpLocation} location IDs not configured — skipping`);
+async function postToBuffer(token, project) {
+  if (!BUFFER_CHANNEL_ID) {
+    console.log('     ⚠️  BUFFER_CHANNEL_ID not configured — skipping');
     return false;
   }
 
-  const serviceLabel = GBP_SERVICE_LABELS[project.serviceType] || 'foundation repair';
-  const projectUrl = `${SITE_URL}/projects/${project.slug}`;
-  const postText = `Just completed ${serviceLabel} in ${project.city}, ${project.state}. ${project.summary}`;
+  const postText = buildPostText(project);
+  const imageUrl = project.afterImage && !project.afterImage.includes('placeholder')
+    ? `${SITE_IMAGE_BASE}${project.afterImage}`
+    : null;
 
   try {
-    await google.mybusinessbusinessinformation({
-      version: 'v1',
-      auth,
-    }).accounts.locations.localPosts.create({
-      parent: `${config.account}/${config.location}`,
-      requestBody: {
-        languageCode: 'en-US',
-        summary: postText.substring(0, 1500),
-        callToAction: {
-          actionType: 'LEARN_MORE',
-          url: projectUrl,
-        },
-        topicType: 'STANDARD',
-      },
+    await createPost({
+      token,
+      channelId: BUFFER_CHANNEL_ID,
+      text: postText,
+      imageUrl,
+      linkUrl: `https://www.attackacrack.com/projects/${project.slug}`,
     });
     return true;
   } catch (err) {
-    console.log(`     ⚠️  GBP post failed: ${err.message}`);
+    console.log(`     ⚠️  Buffer post failed: ${err.message}`);
     return false;
   }
 }
@@ -337,30 +295,40 @@ async function main() {
         publishedToGBP: false,
       };
 
-      newProjects.push({ slug, city, state, serviceType: primaryType, summary });
+      newProjects.push({ slug, city, state, serviceType: primaryType, summary, afterImage });
     }
 
     imported++;
     console.log();
   }
 
-  // GBP posting for new projects
-  if (!DRY_RUN && !SKIP_GBP && newProjects.length > 0) {
-    console.log(`\n📣 Posting ${newProjects.length} new project(s) to Google Business Profile...\n`);
+  // Buffer posting for new projects (schedules to GBP via Buffer)
+  if (!DRY_RUN && !SKIP_BUFFER && newProjects.length > 0) {
+    let bufferToken;
+    try {
+      bufferToken = getToken();
+    } catch {
+      console.log('\n  ⚠️  Buffer token not configured — skipping social posting');
+      bufferToken = null;
+    }
 
-    for (const project of newProjects) {
-      const eventEntry = Object.entries(manifest.imported).find(
-        ([, v]) => v.slug === project.slug
-      );
+    if (bufferToken) {
+      console.log(`\n📣 Scheduling ${newProjects.length} new project(s) to Buffer...\n`);
 
-      if (eventEntry && !eventEntry[1].publishedToGBP) {
-        console.log(`  📋 GBP: ${project.slug}`);
-        const ok = await postToGBP(auth, project);
-        if (ok) {
-          manifest.imported[eventEntry[0]].publishedToGBP = true;
-          console.log('     ✅ Posted to GBP');
+      for (const project of newProjects) {
+        const eventEntry = Object.entries(manifest.imported).find(
+          ([, v]) => v.slug === project.slug
+        );
+
+        if (eventEntry && !eventEntry[1].publishedToGBP) {
+          console.log(`  📋 Buffer: ${project.slug}`);
+          const ok = await postToBuffer(bufferToken, project);
+          if (ok) {
+            manifest.imported[eventEntry[0]].publishedToGBP = true;
+            console.log('     ✅ Queued to Buffer');
+          }
+          console.log();
         }
-        console.log();
       }
     }
   }

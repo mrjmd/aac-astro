@@ -32,7 +32,7 @@
       "serviceType": "crack-injection",
       "date": "2025-01-14",
       "importedAt": "2026-03-05T18:42:30.187Z",
-      "publishedToGBP": false
+      "publishedToGBP": true
     },
     "2h6miurirdq649jspk56n2bsmb": {
       "slug": "billerica-crack-injection-2025-01",
@@ -62,7 +62,7 @@
       "serviceType": "crack-injection",
       "date": "2025-02-17",
       "importedAt": "2026-03-05T18:47:15.865Z",
-      "publishedToGBP": false
+      "publishedToGBP": true
     },
     "vai1rqhrl2fgrtvn0jqt0ptu1c": {
       "slug": "rockland-wall-crack-repair-2025-02",
@@ -155,7 +155,7 @@
       "serviceType": "crack-injection",
       "date": "2025-04-04",
       "importedAt": "2026-03-05T18:50:56.604Z",
-      "publishedToGBP": false
+      "publishedToGBP": true
     },
     "2039t69o3rms16i8rq0rk64qt7": {
       "slug": "lenox-crack-injection-2025-04",
@@ -261,7 +261,7 @@
       "serviceType": "crack-injection",
       "date": "2025-06-05",
       "importedAt": "2026-03-05T18:55:17.113Z",
-      "publishedToGBP": false
+      "publishedToGBP": true
     },
     "5qonsfd8hllsqhtf17jo5mitu0": {
       "slug": "brockton-crack-injection-2025-06",
@@ -324,7 +324,7 @@
       "serviceType": "crack-injection",
       "date": "2025-06-13",
       "importedAt": "2026-03-05T18:57:11.419Z",
-      "publishedToGBP": false
+      "publishedToGBP": true
     },
     "167dq9cbom3bhj2kkmuvkrps8i": {
       "slug": "kingston-bulkhead-repair-2025-06",
@@ -364,7 +364,7 @@
       "serviceType": "crack-injection",
       "date": "2025-06-23",
       "importedAt": "2026-03-05T18:58:41.747Z",
-      "publishedToGBP": false
+      "publishedToGBP": true
     },
     "00ev6ktrjcu6vjf1rnmmkv9ekh": {
       "slug": "brockton-concrete-repair-2025-06",
@@ -417,7 +417,7 @@
       "serviceType": "crack-injection",
       "date": "2025-07-14",
       "importedAt": "2026-03-05T19:01:22.512Z",
-      "publishedToGBP": false
+      "publishedToGBP": true
     },
     "k3g70hjibgimlv3p2o54sro88g": {
       "slug": "worcester-crack-injection-2025-07",
@@ -476,7 +476,7 @@
       "serviceType": "crack-injection",
       "date": "2025-07-28",
       "importedAt": "2026-03-05T19:06:50.749Z",
-      "publishedToGBP": false
+      "publishedToGBP": true
     },
     "014jldnbvdm9aidjm9ttmjo845": {
       "slug": "weymouth-carbon-fiber-2025-08",
@@ -496,7 +496,7 @@
       "serviceType": "crack-injection",
       "date": "2025-08-07",
       "importedAt": "2026-03-05T19:10:06.926Z",
-      "publishedToGBP": false
+      "publishedToGBP": true
     },
     "40r2nbfemo3o1mqpu8jgqq0823": {
       "slug": "canton-crack-injection-2025-08",
@@ -559,7 +559,7 @@
       "serviceType": "bulkhead-repair",
       "date": "2025-08-22",
       "importedAt": "2026-03-05T19:15:26.124Z",
-      "publishedToGBP": false
+      "publishedToGBP": true
     },
     "14009701tic3v1qascr6ree8gi": {
       "slug": "plymouth-crack-injection-2025-08",
@@ -582,7 +582,7 @@
       "serviceType": "crack-injection",
       "date": "2025-08-26",
       "importedAt": "2026-03-05T19:16:03.952Z",
-      "publishedToGBP": false
+      "publishedToGBP": true
     },
     "48s7edeaf396nbs8tjo0677dog": {
       "slug": "boston-crack-injection-2025-09",
@@ -684,7 +684,7 @@
       "serviceType": "bulkhead-repair",
       "date": "2025-10-06",
       "importedAt": "2026-03-05T19:20:41.506Z",
-      "publishedToGBP": false
+      "publishedToGBP": true
     },
     "10261jndapcvb4o43b6nueos8h": {
       "slug": "milton-crack-injection-2025-10",
@@ -694,7 +694,7 @@
       "serviceType": "crack-injection",
       "date": "2025-10-08",
       "importedAt": "2026-03-05T19:21:01.819Z",
-      "publishedToGBP": false
+      "publishedToGBP": true
     },
     "610gljg0kmhjor32fp9k6e011l": {
       "slug": "quincy-crack-injection-2025-10",
@@ -780,7 +780,7 @@
       "serviceType": "crack-injection",
       "date": "2025-11-07",
       "importedAt": "2026-03-05T19:23:20.621Z",
-      "publishedToGBP": false
+      "publishedToGBP": true
     },
     "1ko5j40ev74nup26ijj6qod2hi": {
       "slug": "dedham-crack-injection-2025-12",
@@ -790,7 +790,7 @@
       "serviceType": "crack-injection",
       "date": "2025-12-04",
       "importedAt": "2026-03-05T19:23:36.445Z",
-      "publishedToGBP": false
+      "publishedToGBP": true
     },
     "3d3qad5sv1i5hsrp5rl58qsf75": {
       "slug": "milton-crack-injection-2025-12",
@@ -866,7 +866,7 @@
       "serviceType": "crack-injection",
       "date": "2026-01-30",
       "importedAt": "2026-03-05T19:25:35.733Z",
-      "publishedToGBP": false
+      "publishedToGBP": true
     },
     "0cr3iksh126m9p63c1tuuhc0ne": {
       "slug": "falmouth-crack-injection-2026-02",
@@ -896,7 +896,7 @@
       "serviceType": "crack-injection",
       "date": "2026-02-26",
       "importedAt": "2026-03-05T19:26:34.150Z",
-      "publishedToGBP": false
+      "publishedToGBP": true
     },
     "3vfhursf29qd4tp4djh2je33vi": {
       "slug": "duxbury-crack-injection-2026-03",
@@ -946,7 +946,7 @@
       "serviceType": "crack-injection",
       "date": "2025-07-17",
       "importedAt": "2026-03-05T19:32:33.735Z",
-      "publishedToGBP": false
+      "publishedToGBP": true
     },
     "5ntf8ghvpl0smvebthm63plvc2": {
       "slug": "quincy-crack-injection-2025-08-2",

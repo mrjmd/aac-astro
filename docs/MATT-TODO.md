@@ -162,11 +162,19 @@ node scripts/import-calendar-projects.js --dry-run --limit 5
 ```
 This opens a browser for Google OAuth consent, then shows what it would import. Remove `--dry-run` to create project files.
 
-### Step 5: GBP Posting Setup
+### Step 5: Buffer / GBP Posting (DONE — partially)
 
-- [ ] Get your CT and MA GBP account/location IDs from [business.google.com](https://business.google.com)
-- [ ] Edit `scripts/batch-post-gbp.js` — replace the `XXXXXXXXXX` placeholders in `GBP_CONFIG` (lines 36-43)
-- [ ] Test with: `node scripts/batch-post-gbp.js --dry-run`
+Buffer is connected to GBP and working. 10 posts are queued through March 19, 73 remaining.
+
+**Weekly refill** — run this whenever the queue gets low (Buffer Essentials allows 10 scheduled posts):
+```bash
+SITE_IMAGE_BASE=https://aac-astro.vercel.app node scripts/buffer-post-projects.js \
+  --channel-id 69aa1ae63f3b94a1211df5f1 --start-date YYYY-MM-DD
+```
+Replace `YYYY-MM-DD` with the day after your last scheduled post.
+
+- [ ] Consider upgrading to Buffer Team ($10/mo) for 2,000 scheduled posts — eliminates weekly refills
+- [ ] Add `BUFFER_API_TOKEN`, `BUFFER_CHANNEL_ID`, `SITE_IMAGE_BASE` to GitHub repo secrets (for automated cron posting of new projects)
 
 ---
 

@@ -1,0 +1,61 @@
+{
+  "lastRun": "2026-03-06T00:46:41.022Z",
+  "channelId": "69aa1ae63f3b94a1211df5f1",
+  "posts": {
+    "randolph-crack-injection-2025-06": {
+      "bufferPostId": "69aa23ecfc229289650a96d6",
+      "scheduledAt": "2026-03-09T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "weymouth-bulkhead-repair-2025-08": {
+      "bufferPostId": "69aa23ed94a16103613dfb54",
+      "scheduledAt": "2026-03-10T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "scituate-crack-injection-2026-02": {
+      "bufferPostId": "69aa23ed94a16103613dfb78",
+      "scheduledAt": "2026-03-11T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "braintree-crack-injection-2025-07": {
+      "bufferPostId": "69aa23eefc229289650a96fa",
+      "scheduledAt": "2026-03-12T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "middleborough-bulkhead-repair-2025-10": {
+      "bufferPostId": "69aa23eefc229289650a971e",
+      "scheduledAt": "2026-03-13T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "weymouth-crack-injection-2025-01": {
+      "bufferPostId": "69aa23effc229289650a9742",
+      "scheduledAt": "2026-03-16T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "rumford-crack-injection-2025-08": {
+      "bufferPostId": "69aa23ef94a16103613dfba4",
+      "scheduledAt": "2026-03-17T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "boston-crack-injection-2025-07": {
+      "bufferPostId": "69aa23f094a16103613dfbc8",
+      "scheduledAt": "2026-03-18T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "belchertown-crack-injection-2025-11": {
+      "bufferPostId": "69aa23f0fc229289650a9766",
+      "scheduledAt": "2026-03-19T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "attleboro-bulkhead-repair-2025-09": {
+      "bufferPostId": "69aa256594a16103613dff0e",
+      "scheduledAt": "now",
+      "status": "sent"
+    },
+    "abington-crack-injection-2025-03": {
+      "bufferPostId": "69aa2568fc229289650a9b41",
+      "scheduledAt": "2026-03-06T14:00:00.000Z",
+      "status": "scheduled"
+    }
+  }
+}
