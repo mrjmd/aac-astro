@@ -17,6 +17,7 @@ These must be done before DNS cutover. Nothing else launches the site.
 - [ ] Provide About page story photo (`public/images/about-story.jpg`)
 - [ ] Provide CT + MA hub hero images
 - [ ] Replace remaining placeholder images as assets become available (~40 more across concrete repair, state hubs, blog, city pages)
+  - **Interim option:** If city-specific photos aren't ready at launch, use one real regional photo per area (e.g., one South Shore photo for all 20 South Shore cities) instead of random picsum images. Picsum is the #1 "template site" signal for visitors.
 - [ ] Remove picsum.photos whitelist from `check-images.js` once all placeholders replaced (makes placeholders a build error)
 - [ ] Optimize all new images (proper sizing, WebP/AVIF)
 - [ ] Verify all images have meaningful alt text
@@ -105,25 +106,33 @@ Matt doesn't want "no salespeople" / "no salesperson" language anywhere on the s
 - [ ] Replace with "talk to an expert" or equivalent language
 - [ ] Verify no instances remain after fix
 
+### Centralize Hardcoded Contact Details (Claude)
+
+Phone numbers and addresses are hardcoded in 8+ templates (`services/[slug].astro`, `concrete-repair/[slug].astro`, `projects/[slug].astro`, all 5 city templates, `index.astro`). The project already centralizes pricing (`src/utils/pricing.ts`) and reviews (`src/utils/reviews.ts`) — contact info should follow the same pattern. If Luc changes a phone number, it's currently a search-and-replace across the codebase.
+
+- [ ] Create `src/utils/contact.ts` — export `phoneCT`, `phoneMA`, `addressCT`, `addressMA`, `email`
+- [ ] Update all templates to import from `contact.ts` instead of hardcoding
+- [ ] Update JSON-LD schemas (service, location, project) to use centralized values
+- [ ] Verify no hardcoded phone numbers or addresses remain in templates
+
 ### Projects on Location Pages — Improve Proximity
 
 - [ ] Current fallback: random same-state projects. Improve to nearest-town proximity using coordinates from `CITY_COORDS` in `project-import-core.js`
 - [ ] Verify location pages show local projects first, then nearby towns, then same-state
 
-### Internal Linking — Resolve 44 Orphaned Blog Posts
+### Internal Linking — DONE (was 44 Orphaned Blog Posts → 0)
 
-44 of 73 blog posts have zero incoming internal links. Blog content exists but the rest of the site doesn't link to it. All fixes use existing schema fields (reverse-lookups at build time) — no new content fields needed.
+All 73 blog posts now have incoming internal links via template-level reverse-lookups. 163 template-level links added. `validate-links.js` reports 0 errors, 0 warnings.
 
-- [ ] Create shared utility `src/utils/blog-linking.ts` with `getBlogForLocation()` and `getBlogForService()`
-- [ ] **Service pages** (`services/[slug].astro`) — add "Helpful Guides" section using reverse-lookup from blog `relatedServices` (up to 4 posts per service page)
-- [ ] **Concrete repair pages** (`concrete-repair/[slug].astro`) — same pattern as service pages
-- [ ] **Location pages** (all 5 state `[city].astro` templates) — add "Foundation Guides" section with 3-tier matching: exact city → targetLocation contains → same state (up to 3 posts)
-- [ ] **Project detail pages** (`projects/[slug].astro`) — make service type badges clickable links to service pages; add "Related Articles" section
-- [ ] **Homepage** (`index.astro`) — add "Latest from Our Blog" section (3 most recent posts)
-- [ ] **Blog related posts** (`blog/[slug].astro`) — improve fallback scoring: shared services (+3), shared category (+2), shared state (+1) instead of random same-category
-- [ ] **Update `validate-links.js`** — recognize template-level reverse-lookup links so orphan count reflects reality
-- [ ] Run `npm run validate` — all checks pass
-- [ ] Verify orphan count drops significantly in `validate-links.js` output
+- [x] Create shared utility `src/utils/blog-linking.ts` with `getBlogForLocation()` and `getBlogForService()`
+- [x] **Service pages** (`services/[slug].astro`) — "Helpful Guides" section (up to 4 posts per service page)
+- [x] **Concrete repair pages** (`concrete-repair/[slug].astro`) — same pattern
+- [x] **Location pages** (all 5 state `[city].astro` templates) — "Foundation Guides" section with 3-tier geo matching
+- [x] **Project detail pages** (`projects/[slug].astro`) — clickable service badges + "Related Articles" section
+- [x] **Homepage** (`index.astro`) — "Latest from Our Blog" section (3 most recent posts)
+- [x] **Blog related posts** (`blog/[slug].astro`) — improved fallback scoring (services +3, category +2, state +1)
+- [x] **Update `validate-links.js`** — counts template-level reverse-lookup links
+- [x] All checks pass, orphan count: 44 → 0
 
 ---
 
@@ -226,6 +235,7 @@ See: `docs/BRAND-VOICE.md` — especially the "Proposed Changes Appendix"
 
 - [ ] Neighborhood specifics for top 20 cities (hyper-local content)
 - [ ] Run uniqueness check against all 80 city pages
+- [ ] **Fortress cities (Quincy, Weymouth, Braintree):** Consider adding a `fortress: true` frontmatter flag that enables hyper-local extras — faster response time callout, team member photo, South Shore-specific landmarks in schema. Depends on Matt's photos and brainstorm answers being available first.
 
 ### Partner Decisions (Matt)
 
@@ -237,6 +247,7 @@ See: `docs/BRAND-VOICE.md` — especially the "Proposed Changes Appendix"
 
 - [ ] Add ImageObject schema for before/after photos on service pages
 - [ ] Add ImageObject schema on project/case study pages
+- [ ] **Future:** If blog posts start including repair step instructions, extract HowTo schema logic from `services/[slug].astro` into a shared `SchemaHowTo.astro` component so both services and blog posts can generate HowTo rich snippets without duplicating code
 
 ---
 

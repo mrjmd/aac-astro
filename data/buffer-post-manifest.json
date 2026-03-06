@@ -53,9 +53,10 @@
       "status": "sent"
     },
     "abington-crack-injection-2025-03": {
-      "bufferPostId": "69aa2568fc229289650a9b41",
-      "scheduledAt": "2026-03-06T14:00:00.000Z",
-      "status": "scheduled"
+      "bufferPostId": "69aae375e8c0a1cfe9d6c9fc",
+      "scheduledAt": "now",
+      "status": "sent",
+      "note": "Re-published with before image after GBP rejected scheduled post (false 'image too small' error on 1131x848 after image)"
     }
   }
 }
