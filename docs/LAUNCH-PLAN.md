@@ -110,6 +110,21 @@ Matt doesn't want "no salespeople" / "no salesperson" language anywhere on the s
 - [ ] Current fallback: random same-state projects. Improve to nearest-town proximity using coordinates from `CITY_COORDS` in `project-import-core.js`
 - [ ] Verify location pages show local projects first, then nearby towns, then same-state
 
+### Internal Linking — Resolve 44 Orphaned Blog Posts
+
+44 of 73 blog posts have zero incoming internal links. Blog content exists but the rest of the site doesn't link to it. All fixes use existing schema fields (reverse-lookups at build time) — no new content fields needed.
+
+- [ ] Create shared utility `src/utils/blog-linking.ts` with `getBlogForLocation()` and `getBlogForService()`
+- [ ] **Service pages** (`services/[slug].astro`) — add "Helpful Guides" section using reverse-lookup from blog `relatedServices` (up to 4 posts per service page)
+- [ ] **Concrete repair pages** (`concrete-repair/[slug].astro`) — same pattern as service pages
+- [ ] **Location pages** (all 5 state `[city].astro` templates) — add "Foundation Guides" section with 3-tier matching: exact city → targetLocation contains → same state (up to 3 posts)
+- [ ] **Project detail pages** (`projects/[slug].astro`) — make service type badges clickable links to service pages; add "Related Articles" section
+- [ ] **Homepage** (`index.astro`) — add "Latest from Our Blog" section (3 most recent posts)
+- [ ] **Blog related posts** (`blog/[slug].astro`) — improve fallback scoring: shared services (+3), shared category (+2), shared state (+1) instead of random same-category
+- [ ] **Update `validate-links.js`** — recognize template-level reverse-lookup links so orphan count reflects reality
+- [ ] Run `npm run validate` — all checks pass
+- [ ] Verify orphan count drops significantly in `validate-links.js` output
+
 ---
 
 ## Page-Level Improvements
@@ -262,7 +277,7 @@ Full competitive audit to maximize SERP dominance before and after launch.
 - [ ] **H1/H2 keyword alignment** — ensure heading hierarchy matches target SERP terms
 - [ ] **Content depth audit** — are any pages thin compared to ranking competitors?
 - [ ] **Schema completeness** — ensure every page type has maximum applicable schema markup
-- [ ] **Internal link equity flow** — homepage → service pages → city pages → blog (proper silo)
+- [x] **Internal link equity flow** — homepage → service pages → city pages → blog (proper silo)
 - [ ] **Image SEO** — all images have keyword-rich alt text, filenames, and proper dimensions
 
 ### Citation & Off-Page (Matt + Claude)

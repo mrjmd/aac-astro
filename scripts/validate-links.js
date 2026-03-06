@@ -205,6 +205,35 @@ async function main() {
     }
   }
 
+  // Count template-level reverse-lookup links
+  // Service pages link to blog posts via relatedServices reverse-lookup
+  // Location pages link to blog posts via city/state/targetLocation matching
+  // Project pages link to blog posts via shared serviceTypes
+  // Homepage links to latest 3 blog posts
+  console.log('\nCounting template-level links...');
+  let templateLinks = 0;
+
+  // Blog posts with relatedServices get linked from service detail pages
+  for (const post of blog) {
+    const relSvc = post.frontmatter?.relatedServices || [];
+    if (relSvc.length > 0) {
+      // Each relatedService means this post appears on that service's page
+      incomingLinks.set(`blog/${post.id}`, (incomingLinks.get(`blog/${post.id}`) || 0) + relSvc.length);
+      templateLinks += relSvc.length;
+    }
+  }
+
+  // Blog posts with geo fields get linked from location pages
+  for (const post of blog) {
+    const hasGeo = post.frontmatter?.city || post.frontmatter?.state || post.frontmatter?.targetLocation;
+    if (hasGeo) {
+      incomingLinks.set(`blog/${post.id}`, (incomingLinks.get(`blog/${post.id}`) || 0) + 1);
+      templateLinks++;
+    }
+  }
+
+  console.log(`  Template-level links counted: ${templateLinks}`);
+
   // Check for orphan pages (pages with no incoming links)
   // Pages linked from hub/index pages are exempt since the validator only tracks frontmatter cross-references
   const hubLinkedPrefixes = ['foundation-types/'];

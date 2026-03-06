@@ -12,8 +12,10 @@ import TestimonialCard from '../components/TestimonialCard.astro';
 import { reviewCount, phoneCT, phoneMA, googleReviewsUrlCT, googleReviewsUrlMA } from '../utils/reviews';
 import { getFeatured } from '../utils/testimonials';
 import { homeFaqs, getFaqSchema } from '../utils/faqs';
+import { getLatestBlog } from '../utils/blog-linking';
 
 const featuredTestimonials = getFeatured(4);
+const latestPosts = await getLatestBlog(3);
 const faqSchema = getFaqSchema(homeFaqs);
 
 const CT_NUMBER = phoneCT;
@@ -134,6 +136,51 @@ const MA_NUMBER = phoneMA;
 				</div>
 			</div>
 		</section>
+
+		<!-- Latest from Our Blog -->
+		{latestPosts.length > 0 && (
+			<section data-animate class="py-16 md:py-24 bg-zinc-50">
+				<div class="max-w-7xl mx-auto px-6">
+					<div class="text-center mb-12">
+						<p class="flex items-center justify-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-400 mb-6">
+							<Icon name="Info" size={14} /> From Our Blog
+						</p>
+						<h2 class="text-4xl lg:text-5xl font-display font-black text-aac-dark tracking-tighter leading-[0.9]">
+							Foundation Repair <span class="text-aac-blue">Guides & Tips</span>
+						</h2>
+					</div>
+					<div class="grid md:grid-cols-3 gap-8">
+						{latestPosts.map((post) => (
+							<a href={`/blog/${post.id.replace(/\.md$/, '')}`} class="group bg-white rounded-2xl overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all">
+								{post.data.heroImage && (
+									<div class="aspect-video overflow-hidden">
+										<img
+											src={post.data.heroImage}
+											alt={post.data.heroImageAlt || post.data.title}
+											class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+										/>
+									</div>
+								)}
+								<div class="p-6">
+									<span class="text-[10px] font-black uppercase tracking-widest text-aac-blue">
+										{post.data.category.replace(/-/g, ' ')}
+									</span>
+									<h3 class="text-lg font-black mt-2 group-hover:text-aac-blue transition-colors line-clamp-2">
+										{post.data.title}
+									</h3>
+									<p class="text-zinc-500 text-sm mt-2 line-clamp-2">{post.data.excerpt}</p>
+								</div>
+							</a>
+						))}
+					</div>
+					<div class="text-center mt-10">
+						<a href="/blog" class="inline-flex items-center gap-2 bg-aac-dark text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] hover:bg-aac-blue transition-colors">
+							View All Articles <Icon name="ArrowRight" size={16} />
+						</a>
+					</div>
+				</div>
+			</section>
+		)}
 
 		<HomeFaq />
 

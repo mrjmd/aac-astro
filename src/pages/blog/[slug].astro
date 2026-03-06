@@ -24,9 +24,24 @@ const { Content } = await render(post);
 const allPosts = await getCollection('blog', isPublished);
 const relatedPosts = post.data.relatedPosts
   ? allPosts.filter(p => post.data.relatedPosts?.includes(p.id.replace(/\.md$/, '')))
-  : allPosts
-      .filter(p => p.id !== post.id && p.data.category === post.data.category)
-      .slice(0, 3);
+  : (() => {
+      // Score-based fallback: relatedServices +3, category +2, state +1
+      const postServices = new Set(post.data.relatedServices || []);
+      return allPosts
+        .filter(p => p.id !== post.id)
+        .map(p => {
+          let score = 0;
+          const pServices = p.data.relatedServices || [];
+          if (postServices.size > 0 && pServices.some((s: string) => postServices.has(s))) score += 3;
+          if (p.data.category === post.data.category) score += 2;
+          if (post.data.state && p.data.state === post.data.state) score += 1;
+          return { post: p, score };
+        })
+        .filter(s => s.score > 0)
+        .sort((a, b) => b.score - a.score || b.post.data.publishDate.valueOf() - a.post.data.publishDate.valueOf())
+        .slice(0, 3)
+        .map(s => s.post);
+    })();
 
 // Get services for significantLink
 const services = await getCollection('services');

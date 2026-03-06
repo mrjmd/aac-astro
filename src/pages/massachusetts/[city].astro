@@ -10,6 +10,7 @@ import ProjectCards from '../../components/ProjectCards.astro';
 import { reviewCount, rating, aggregateRatingSchema } from '../../utils/reviews';
 import { getForLocation } from '../../utils/testimonials';
 import { getForLocation as getProjectsForLocation } from '../../utils/projects';
+import { getBlogForLocation } from '../../utils/blog-linking';
 import { crackRepairRange, bulkheadRange, carbonFiberRange, sewerConduitRange } from '../../utils/pricing';
 
 export async function getStaticPaths() {
@@ -32,6 +33,7 @@ const testimonial = location.data.testimonial
 
 // Get matching projects for this city
 const cityProjects = await getProjectsForLocation(location.data.city, 'MA', 3);
+const cityBlogPosts = await getBlogForLocation(location.data.city, 'MA', 3);
 
 // Get services
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
@@ -414,6 +416,38 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 			projects={cityProjects}
 			heading={`Recent Work in ${location.data.city}`}
 		/>
+
+		<!-- Foundation Guides -->
+		{cityBlogPosts.length > 0 && (
+			<section class="py-16 bg-white">
+				<div class="max-w-7xl mx-auto px-6">
+					<h2 class="text-2xl font-black tracking-tighter text-aac-dark mb-8">
+						Foundation Guides for {location.data.city} Homeowners
+					</h2>
+					<div class="grid md:grid-cols-3 gap-6">
+						{cityBlogPosts.map((post) => (
+							<a href={`/blog/${post.id.replace(/\.md$/, '')}`} class="group bg-zinc-50 rounded-2xl overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all">
+								{post.data.heroImage && (
+									<div class="aspect-video overflow-hidden">
+										<img
+											src={post.data.heroImage}
+											alt={post.data.heroImageAlt || post.data.title}
+											class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+										/>
+									</div>
+								)}
+								<div class="p-5">
+									<h3 class="font-black text-sm group-hover:text-aac-blue transition-colors line-clamp-2">
+										{post.data.title}
+									</h3>
+									<p class="text-zinc-500 text-xs mt-2 line-clamp-2">{post.data.excerpt}</p>
+								</div>
+							</a>
+						))}
+					</div>
+				</div>
+			</section>
+		)}
 
 		<!-- Nearby Cities -->
 		{nearbyLocations.length > 0 && (
