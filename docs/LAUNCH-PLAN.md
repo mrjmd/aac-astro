@@ -78,11 +78,30 @@ These must be done before DNS cutover. Nothing else launches the site.
 
 ## Bug Fixes (Claude)
 
-### Projects on Service Pages — BROKEN
+### Projects on Service Pages — FIXED
 
-- [ ] Fix `getByService()` in `src/utils/projects.ts` — queries `p.data.serviceType` (singular) but schema is `serviceTypes` (array). Zero projects showing on any service page right now.
-- [ ] Add concrete repair service types to `SERVICE_SLUG_MAP` (driveway, patio, walkway, pool-deck, stairway, garage-floor)
-- [ ] Verify projects appear on all 6 service pages + 6 concrete repair pages after fix
+- [x] Fix `getByService()` in `src/utils/projects.ts` — was querying `p.data.serviceType` (singular), now uses `serviceTypes.includes()` (array)
+- [x] Add concrete repair service types to `SERVICE_SLUG_MAP` (driveway, patio, walkway, pool-deck, stairway, garage-floor)
+- [x] Verify projects appear on all 6 service pages + 6 concrete repair pages after fix
+
+### Service Area Display — Only Showing CT & MA (Should Be All New England)
+
+Service pages (`services/[slug].astro`) only show CT and MA in the "Available In" section at the bottom. RI, NH, and ME are missing. The concrete repair index page says "For foundation repair, we serve both MA and CT" — should say all of New England.
+
+- [ ] **Audit all pages** for territory language limited to CT/MA — find every instance across service pages, concrete repair pages, hubs, components, content files
+- [ ] Fix service page `[slug].astro` "Available In" section to include all 5 states (CT, MA, RI, NH, ME)
+- [ ] Fix concrete repair index page to say "all of New England" instead of "MA and CT"
+- [ ] Fix any other pages/components that limit territory to just 2 states
+- [ ] Verify all 5 states appear wherever service territory is mentioned
+
+### "No Salesperson" / "Person Who Does the Work" Language — Remove
+
+Matt doesn't want "no salespeople" / "no salesperson" language anywhere on the site. Also doesn't want "speak directly to the person who does the job" — Matt talks to customers with expertise but doesn't do the repairs himself. "Talk to an expert" is the right framing.
+
+- [ ] **Audit all pages and content** for "no sales", "salesperson", "salespeople" language
+- [ ] **Audit for "person who does the job/work/repair"** and similar claims
+- [ ] Replace with "talk to an expert" or equivalent language
+- [ ] Verify no instances remain after fix
 
 ### Projects on Location Pages — Improve Proximity
 
