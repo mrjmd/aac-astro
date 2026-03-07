@@ -273,25 +273,25 @@ const maSchema = {
 		</section>
 
 		<!-- Project Map -->
-		<section class="py-24 bg-white">
+		<section class="py-16 bg-white">
 			<div class="max-w-7xl mx-auto px-6">
-				<div class="text-center mb-12">
+				<div class="text-center mb-8">
 					<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/10 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
-						<Icon name="MapPin" size={14} /> {maProjects.length} Projects Completed
+						<Icon name="MapPin" size={14} /> {maProjects.length}+ Featured Projects
 					</div>
 					<h2 class="text-4xl font-black tracking-tighter text-aac-dark">
 						Our Work Across Massachusetts
 					</h2>
 					<p class="text-lg text-zinc-500 mt-4 max-w-2xl mx-auto">
-						Every pin is a real foundation repair project. Click any pin to see the before & after.
+						Every pin represents a documented project from the thousands we've completed across Massachusetts. Click any pin to explore.
 					</p>
 				</div>
 
 				<div class="max-w-3xl mx-auto">
-					<ProjectMap projects={maProjects} />
+					<ProjectMap projects={maProjects} locations={maLocations} />
 				</div>
 
-				<div class="text-center mt-8">
+				<div class="text-center mt-6">
 					<a href="/updates" class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[11px] hover:gap-4 transition-all">
 						Browse All Projects <Icon name="ArrowRight" size={14} />
 					</a>
