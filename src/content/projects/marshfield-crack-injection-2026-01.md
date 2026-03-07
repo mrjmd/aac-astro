@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Marshfield, MA"
 date: 2026-01-12
 city: Marshfield
 state: MA
+coordinates:
+  lat: 42.0918
+  lng: -70.7076
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/marshfield-crack-injection-2026-01-before.jpg

@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Falmouth, MA"
 date: 2026-02-06
 city: Falmouth
 state: MA
+coordinates:
+  lat: 41.5515
+  lng: -70.6148
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/falmouth-crack-injection-2026-02-after.jpg

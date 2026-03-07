@@ -3,6 +3,9 @@ title: "Wall Crack Repair in Malden, MA"
 date: 2025-02-28
 city: Malden
 state: MA
+coordinates:
+  lat: 42.4251
+  lng: -71.0662
 serviceTypes:
   - wall-crack-repair
 beforeImage: /images/projects/malden-wall-crack-repair-2025-02-before.jpg

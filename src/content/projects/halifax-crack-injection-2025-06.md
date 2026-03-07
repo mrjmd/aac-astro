@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Halifax, MA"
 date: 2025-06-18
 city: Halifax
 state: MA
+coordinates:
+  lat: 41.9912
+  lng: -70.862
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/halifax-crack-injection-2025-06-after.jpg

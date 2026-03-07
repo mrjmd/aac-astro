@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Duxbury, MA"
 date: 2026-03-03
 city: Duxbury
 state: MA
+coordinates:
+  lat: 42.0409
+  lng: -70.6724
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/duxbury-crack-injection-2026-03-before.jpg

@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Walpole, MA"
 date: 2025-02-27
 city: Walpole
 state: MA
+coordinates:
+  lat: 42.1417
+  lng: -71.2498
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/walpole-crack-injection-2025-02-before.jpg

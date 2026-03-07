@@ -3,6 +3,9 @@ title: "Fieldstone Foundation Repair in Dedham, MA"
 date: 2025-12-04
 city: Dedham
 state: MA
+coordinates:
+  lat: 42.2418
+  lng: -71.1662
 serviceTypes:
   - fieldstone
 beforeImage: /images/projects/dedham-crack-injection-2025-12-before.jpg

@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Sandwich, MA"
 date: 2025-07-24
 city: Sandwich
 state: MA
+coordinates:
+  lat: 41.759
+  lng: -70.493
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/sandwich-crack-injection-2025-07-before.jpg

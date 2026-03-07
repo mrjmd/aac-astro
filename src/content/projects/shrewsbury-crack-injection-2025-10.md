@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Shrewsbury, MA"
 date: 2025-10-30
 city: Shrewsbury
 state: MA
+coordinates:
+  lat: 42.2959
+  lng: -71.7126
 serviceTypes:
   - crack-injection
   - wall-crack-repair

@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Randolph, MA"
 date: 2025-05-16
 city: Randolph
 state: MA
+coordinates:
+  lat: 42.1625
+  lng: -71.0418
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/randolph-crack-injection-2025-05-before.jpg

@@ -3,6 +3,9 @@ title: "Bulkhead Repair in Groveland, MA"
 date: 2025-08-18
 city: Groveland
 state: MA
+coordinates:
+  lat: 42.7562
+  lng: -71.0312
 serviceTypes:
   - bulkhead-repair
 beforeImage: /images/projects/groveland-bulkhead-repair-2025-08-before.jpg

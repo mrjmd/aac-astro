@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Lenox, MA"
 date: 2025-04-07
 city: Lenox
 state: MA
+coordinates:
+  lat: 42.357
+  lng: -73.2851
 serviceTypes:
   - crack-injection
   - concrete-repair

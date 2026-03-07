@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Norwell, MA"
 date: 2025-03-19
 city: Norwell
 state: MA
+coordinates:
+  lat: 42.1615
+  lng: -70.7934
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/norwell-crack-injection-2025-03-before.jpg

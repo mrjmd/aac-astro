@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Kingston, MA"
 date: 2025-06-06
 city: Kingston
 state: MA
+coordinates:
+  lat: 41.9945
+  lng: -70.7242
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/kingston-crack-injection-2025-06-before.jpg

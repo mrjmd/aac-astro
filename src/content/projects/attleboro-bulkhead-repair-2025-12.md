@@ -3,6 +3,9 @@ title: "Bulkhead Repair in Attleboro, MA"
 date: 2025-12-15
 city: Attleboro
 state: MA
+coordinates:
+  lat: 41.9445
+  lng: -71.2856
 serviceTypes:
   - bulkhead-repair
 beforeImage: /images/projects/attleboro-bulkhead-repair-2025-12-before.jpg

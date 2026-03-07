@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Canton, MA"
 date: 2025-08-08
 city: Canton
 state: MA
+coordinates:
+  lat: 42.1584
+  lng: -71.1448
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/canton-crack-injection-2025-08-before.jpg

@@ -3,6 +3,9 @@ title: "Bulkhead Repair in Middleborough, MA"
 date: 2025-10-06
 city: Middleborough
 state: MA
+coordinates:
+  lat: 41.8932
+  lng: -70.9112
 serviceTypes:
   - bulkhead-repair
   - crack-injection

@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Easton, MA"
 date: 2025-08-14
 city: Easton
 state: MA
+coordinates:
+  lat: 42.0251
+  lng: -71.1287
 serviceTypes:
   - crack-injection
   - garage-floor

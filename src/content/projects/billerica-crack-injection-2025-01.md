@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Billerica, MA"
 date: 2025-01-26
 city: Billerica
 state: MA
+coordinates:
+  lat: 42.5584
+  lng: -71.269
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/billerica-crack-injection-2025-01-before.jpg

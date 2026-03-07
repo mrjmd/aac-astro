@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Hull, MA"
 date: 2025-07-10
 city: Hull
 state: MA
+coordinates:
+  lat: 42.3018
+  lng: -70.8579
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/hull-crack-injection-2025-07-before.jpg

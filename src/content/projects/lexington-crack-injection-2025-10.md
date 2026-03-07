@@ -3,6 +3,9 @@ title: "Garage Floor Repair in Lexington, MA"
 date: 2025-10-28
 city: Lexington
 state: MA
+coordinates:
+  lat: 42.4473
+  lng: -71.2245
 serviceTypes:
   - garage-floor
 beforeImage: /images/projects/lexington-crack-injection-2025-10-before.jpg

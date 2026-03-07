@@ -91,11 +91,11 @@ These must be done before DNS cutover. Nothing else launches the site.
 
 Service pages (`services/[slug].astro`) only show CT and MA in the "Available In" section at the bottom. RI, NH, and ME are missing. The concrete repair index page says "For foundation repair, we serve both MA and CT" — should say all of New England.
 
-- [ ] **Audit all pages** for territory language limited to CT/MA — find every instance across service pages, concrete repair pages, hubs, components, content files
+- [x] **Audit all pages** for territory language limited to CT/MA — found 75 instances across 27 files (see `docs/archive/TERRITORY-LANGUAGE-REVIEW.md`)
 - [x] Fix service page `[slug].astro` "Available In" section to include all 5 states (CT, MA, RI, NH, ME)
 - [x] Fix concrete repair index page to say "all of New England" instead of "MA and CT"
-- [ ] Fix any other pages/components that limit territory to just 2 states
-- [ ] Verify all 5 states appear wherever service territory is mentioned
+- [x] Fix any other pages/components that limit territory to just 2 states — 46 changes across 27 files, keeping CT/MA in metaTitles for SEO
+- [x] Verify all 5 states appear wherever service territory is mentioned — areaServed schemas updated, descriptions expanded
 
 ### "No Salesperson" / "Person Who Does the Work" Language — Remove
 
@@ -110,15 +110,34 @@ Matt doesn't want "no salespeople" / "no salesperson" language anywhere on the s
 
 Phone numbers and addresses are hardcoded in 8+ templates (`services/[slug].astro`, `concrete-repair/[slug].astro`, `projects/[slug].astro`, all 5 city templates, `index.astro`). The project already centralizes pricing (`src/utils/pricing.ts`) and reviews (`src/utils/reviews.ts`) — contact info should follow the same pattern. If Luc changes a phone number, it's currently a search-and-replace across the codebase.
 
-- [ ] Create `src/utils/contact.ts` — export `phoneCT`, `phoneMA`, `addressCT`, `addressMA`, `email`
-- [ ] Update all templates to import from `contact.ts` instead of hardcoding
-- [ ] Update JSON-LD schemas (service, location, project) to use centralized values
-- [ ] Verify no hardcoded phone numbers or addresses remain in templates
+- [x] Create `src/utils/contact.ts` — export `phoneCT`, `phoneMA`, `addressCT`, `addressMA`, `email`
+- [x] Update all templates to import from `contact.ts` instead of hardcoding
+- [x] Update JSON-LD schemas (service, location, project) to use centralized values
+- [x] Verify no hardcoded phone numbers or addresses remain in templates
 
-### Projects on Location Pages — Improve Proximity
+### Project Coordinates, Proximity & Map (Claude)
 
-- [ ] Current fallback: random same-state projects. Improve to nearest-town proximity using coordinates from `CITY_COORDS` in `project-import-core.js`
-- [ ] Verify location pages show local projects first, then nearby towns, then same-state
+**Phase 1: Fill Project Coordinates** — DONE
+All 91 projects now have lat/lng coordinates.
+
+- [x] Created `scripts/backfill-coordinates.js` with comprehensive 49-town coordinate lookup
+- [x] Backfilled coordinates on all 70 projects that were missing them
+- [x] Verified all 91 projects have `coordinates` populated
+
+**Phase 2: Location Page Proximity**
+Current fallback: random same-state projects. Improve to nearest-town proximity.
+
+- [ ] Update `getForLocation()` in `src/utils/projects.ts` to sort by distance using coordinates
+- [ ] Logic: local city first → nearest towns → same-state fallback
+- [ ] Verify location pages show geographically relevant projects
+
+**Phase 3: Massachusetts Project Pin Map**
+Show a pin map of completed projects on the MA state page. 90 projects across MA — impressive density.
+
+- [ ] Create `ProjectMap.astro` component — static SVG or lightweight map with pins at project coordinates
+- [ ] Add to Massachusetts state page (`src/pages/massachusetts/index.astro`) as "Recent Projects" section
+- [ ] Each pin links to the project detail page
+- [ ] MA-only for now (90 projects). Expand to other states as project tracking grows.
 
 ### Internal Linking — DONE (was 44 Orphaned Blog Posts → 0)
 
@@ -150,11 +169,12 @@ All 73 blog posts now have incoming internal links via template-level reverse-lo
 
 ### Remaining
 
-#### Static SVG Map (Lower Priority)
+#### Static SVG Service Area Map (Lower Priority)
 
 - [ ] Create ServiceAreaMap.astro with New England outline + 80 city dots
 - [ ] Color-code by establishment (CT/MA blue, RI/NH/ME lighter)
 - [ ] Add to areas-we-serve page
+- *Note: MA project pin map is separate — see "Project Coordinates, Proximity & Map" in Bug Fixes section*
 
 #### Pre-Launch Visual QA Pass (Matt)
 

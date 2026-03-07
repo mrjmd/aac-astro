@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Marblehead, MA"
 date: 2025-06-05
 city: Marblehead
 state: MA
+coordinates:
+  lat: 42.5001
+  lng: -70.8579
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/marblehead-crack-injection-2025-06-before.jpg

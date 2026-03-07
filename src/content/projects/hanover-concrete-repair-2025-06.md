@@ -3,6 +3,9 @@ title: "Concrete Repair in Hanover, MA"
 date: 2025-06-17
 city: Hanover
 state: MA
+coordinates:
+  lat: 42.1126
+  lng: -70.812
 serviceTypes:
   - patio
 beforeImage: /images/projects/hanover-concrete-repair-2025-06-before.jpg

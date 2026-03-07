@@ -3,6 +3,9 @@ title: "Fieldstone Wall Repair in Malden, MA"
 date: 2025-03-07
 city: Malden
 state: MA
+coordinates:
+  lat: 42.4251
+  lng: -71.0662
 serviceTypes:
   - fieldstone
 beforeImage: /images/projects/malden-wall-crack-repair-2025-03-before.jpg

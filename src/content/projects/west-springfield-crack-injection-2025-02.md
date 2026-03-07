@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in West Springfield, MA"
 date: 2025-02-14
 city: West Springfield
 state: MA
+coordinates:
+  lat: 42.107
+  lng: -72.6201
 serviceTypes:
   - crack-injection
   - bulkhead-repair

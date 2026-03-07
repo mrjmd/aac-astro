@@ -3,6 +3,9 @@ title: "Carbon Fiber Reinforcement in Weymouth, MA"
 date: 2025-08-04
 city: Weymouth
 state: MA
+coordinates:
+  lat: 42.2211
+  lng: -70.9395
 serviceTypes:
   - carbon-fiber
   - wall-crack-repair

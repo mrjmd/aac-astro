@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Medford, MA"
 date: 2025-04-24
 city: Medford
 state: MA
+coordinates:
+  lat: 42.4184
+  lng: -71.1062
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/medford-crack-injection-2025-04-before.jpg

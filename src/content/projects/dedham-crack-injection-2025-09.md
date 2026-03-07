@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Dedham, MA"
 date: 2025-09-19
 city: Dedham
 state: MA
+coordinates:
+  lat: 42.2418
+  lng: -71.1662
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/dedham-crack-injection-2025-09-before.jpg

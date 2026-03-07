@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Braintree, MA"
 date: 2025-07-14
 city: Braintree
 state: MA
+coordinates:
+  lat: 42.2038
+  lng: -71.0022
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/braintree-crack-injection-2025-07-before.jpg

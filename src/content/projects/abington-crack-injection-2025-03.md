@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Abington, MA"
 date: 2025-03-27
 city: Abington
 state: MA
+coordinates:
+  lat: 42.1048
+  lng: -70.9454
 serviceTypes:
   - crack-injection
   - concrete-repair

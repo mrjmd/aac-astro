@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Danvers, MA"
 date: 2025-07-01
 city: Danvers
 state: MA
+coordinates:
+  lat: 42.5751
+  lng: -70.93
 serviceTypes:
   - crack-injection
   - sewer-conduit

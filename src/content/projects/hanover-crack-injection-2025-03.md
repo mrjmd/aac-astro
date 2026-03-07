@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Hanover, MA"
 date: 2025-03-24
 city: Hanover
 state: MA
+coordinates:
+  lat: 42.1126
+  lng: -70.812
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/hanover-crack-injection-2025-03-before.jpg

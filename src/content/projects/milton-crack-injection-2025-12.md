@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Milton, MA"
 date: 2025-12-05
 city: Milton
 state: MA
+coordinates:
+  lat: 42.2498
+  lng: -71.0662
 serviceTypes:
   - crack-injection
   - carbon-fiber

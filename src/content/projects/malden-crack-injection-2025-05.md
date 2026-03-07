@@ -3,6 +3,9 @@ title: "Fieldstone Foundation Repair in Malden, MA"
 date: 2025-05-13
 city: Malden
 state: MA
+coordinates:
+  lat: 42.4251
+  lng: -71.0662
 serviceTypes:
   - fieldstone
 beforeImage: /images/projects/malden-crack-injection-2025-05-after.jpg

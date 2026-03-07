@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Rockland, MA"
 date: 2025-08-07
 city: Rockland
 state: MA
+coordinates:
+  lat: 42.1307
+  lng: -70.9068
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/rockland-crack-injection-2025-08-before.jpg

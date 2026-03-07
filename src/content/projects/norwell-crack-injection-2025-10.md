@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Norwell, MA"
 date: 2025-10-24
 city: Norwell
 state: MA
+coordinates:
+  lat: 42.1615
+  lng: -70.7934
 serviceTypes:
   - bulkhead-repair
   - crack-injection

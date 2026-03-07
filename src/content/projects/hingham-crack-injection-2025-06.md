@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Hingham, MA"
 date: 2025-06-13
 city: Hingham
 state: MA
+coordinates:
+  lat: 42.2418
+  lng: -70.8898
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/hingham-crack-injection-2025-06-before.jpg

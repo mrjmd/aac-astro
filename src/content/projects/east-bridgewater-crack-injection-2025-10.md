@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in East Bridgewater, MA"
 date: 2025-10-29
 city: East Bridgewater
 state: MA
+coordinates:
+  lat: 42.0335
+  lng: -70.959
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/east-bridgewater-crack-injection-2025-10-before.jpg

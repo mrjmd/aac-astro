@@ -3,6 +3,9 @@ title: "Wall Crack Repair in Rockland, MA"
 date: 2025-02-20
 city: Rockland
 state: MA
+coordinates:
+  lat: 42.1307
+  lng: -70.9068
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/rockland-wall-crack-repair-2025-02-before.jpg

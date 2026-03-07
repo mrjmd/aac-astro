@@ -3,6 +3,9 @@ title: "Foundation Crack Injection & Garage Floor Repair in Scituate, MA"
 date: 2026-02-26
 city: Scituate
 state: MA
+coordinates:
+  lat: 42.1951
+  lng: -70.7256
 serviceTypes:
   - crack-injection
   - garage-floor

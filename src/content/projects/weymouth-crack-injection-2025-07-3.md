@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Weymouth, MA"
 date: 2025-07-17
 city: Weymouth
 state: MA
+coordinates:
+  lat: 42.2211
+  lng: -70.9395
 serviceTypes:
   - stairway
 beforeImage: /images/projects/weymouth-crack-injection-2025-07-3-before.jpg

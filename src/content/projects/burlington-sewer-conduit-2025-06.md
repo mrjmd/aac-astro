@@ -3,6 +3,9 @@ title: "Sewer & Conduit Repair in Burlington, MA"
 date: 2025-06-09
 city: Burlington
 state: MA
+coordinates:
+  lat: 42.5048
+  lng: -71.1956
 serviceTypes:
   - crack-injection
   - sewer-conduit

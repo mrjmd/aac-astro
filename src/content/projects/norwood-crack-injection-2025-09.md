@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Norwood, MA"
 date: 2025-09-17
 city: Norwood
 state: MA
+coordinates:
+  lat: 42.1815
+  lng: -71.2006
 serviceTypes:
   - crack-injection
   - walkway

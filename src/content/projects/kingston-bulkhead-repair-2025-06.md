@@ -3,6 +3,9 @@ title: "Bulkhead Repair in Kingston, MA"
 date: 2025-06-17
 city: Kingston
 state: MA
+coordinates:
+  lat: 41.9945
+  lng: -70.7242
 serviceTypes:
   - bulkhead-repair
 beforeImage: /images/projects/kingston-bulkhead-repair-2025-06-before.jpg

@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in East Sandwich, MA"
 date: 2026-02-11
 city: East Sandwich
 state: MA
+coordinates:
+  lat: 41.7418
+  lng: -70.4389
 serviceTypes:
   - crack-injection
   - carbon-fiber

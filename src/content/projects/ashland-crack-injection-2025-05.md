@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Ashland, MA"
 date: 2025-05-29
 city: Ashland
 state: MA
+coordinates:
+  lat: 42.2612
+  lng: -71.4634
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/ashland-crack-injection-2025-05-before.jpg

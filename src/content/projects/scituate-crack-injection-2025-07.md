@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Scituate, MA"
 date: 2025-07-17
 city: Scituate
 state: MA
+coordinates:
+  lat: 42.1951
+  lng: -70.7256
 serviceTypes:
   - crack-injection
   - sewer-conduit

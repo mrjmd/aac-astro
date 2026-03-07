@@ -3,6 +3,9 @@ title: "Bulkhead Repair in Weymouth, MA"
 date: 2025-08-22
 city: Weymouth
 state: MA
+coordinates:
+  lat: 42.2211
+  lng: -70.9395
 serviceTypes:
   - bulkhead-repair
   - crack-injection

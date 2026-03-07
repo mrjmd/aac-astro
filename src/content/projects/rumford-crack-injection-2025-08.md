@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Rumford, RI"
 date: 2025-08-26
 city: Rumford
 state: RI
+coordinates:
+  lat: 41.8426
+  lng: -71.3534
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/rumford-crack-injection-2025-08-before.jpg

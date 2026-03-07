@@ -3,6 +3,9 @@ title: "Garage Floor Repair in Milton, MA"
 date: 2026-03-04
 city: Milton
 state: MA
+coordinates:
+  lat: 42.2498
+  lng: -71.0662
 serviceTypes:
   - garage-floor
 beforeImage: /images/projects/milton-crack-injection-2026-03-before.jpg

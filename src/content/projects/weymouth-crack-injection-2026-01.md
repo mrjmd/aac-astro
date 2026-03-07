@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Weymouth, MA"
 date: 2026-01-30
 city: Weymouth
 state: MA
+coordinates:
+  lat: 42.2211
+  lng: -70.9395
 serviceTypes:
   - crack-injection
   - concrete-repair

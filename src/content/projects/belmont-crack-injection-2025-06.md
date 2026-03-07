@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Belmont, MA"
 date: 2025-06-11
 city: Belmont
 state: MA
+coordinates:
+  lat: 42.379
+  lng: -71.1773
 serviceTypes:
   - stairway
   - wall-crack-repair

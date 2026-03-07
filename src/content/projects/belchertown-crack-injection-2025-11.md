@@ -3,6 +3,9 @@ title: "Foundation Crack Injection in Belchertown, MA"
 date: 2025-11-07
 city: Belchertown
 state: MA
+coordinates:
+  lat: 42.277
+  lng: -72.4018
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/belchertown-crack-injection-2025-11-before.jpg
