@@ -7,8 +7,8 @@ publishDate: 2025-03-04
 author: "Matt Davis"
 category: "case-studies"
 tags: ["case study", "water intrusion", "Massachusetts", "polyurethane injection"]
-heroImage: "/images/blog/framingham-leak-hero.jpg"
-heroImageAlt: "Foundation crack repair in progress at Framingham home"
+heroImage: "/images/projects/east-bridgewater-crack-injection-2025-10-before.jpg"
+heroImageAlt: "Active basement wall crack leak before injection repair"
 featured: false
 relatedPosts:
   - "finished-basement-flooded-shrewsbury"

@@ -5,9 +5,7 @@ metaDescription: "Expert foundation wall crack repair using urethane injection, 
 excerpt: "Urethane injection, epoxy resin, and carbon fiber stitches to repair foundation cracks in basement walls and support beams. Lifetime guarantee included."
 icon: "Hammer"
 order: 1
-beforeImage: "/images/services/wall-crack-before.jpg"
-afterImage: "/images/services/wall-crack-after.jpg"
-heroImage: "/images/services/wall-crack-hero.jpg"
+heroImage: "/images/projects/malden-wall-crack-repair-2025-02-before.jpg"
 faqs:
   - question: "How long does wall crack repair take?"
     answer: "Most wall crack repairs are completed in 2-4 hours. We can typically repair multiple cracks in a single visit, minimizing disruption to your home."

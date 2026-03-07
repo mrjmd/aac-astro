@@ -7,7 +7,8 @@ publishDate: 2026-06-09
 author: "Attack A Crack"
 category: "guides"
 tags: ["carbon fiber", "structural repair", "foundation reinforcement", "crack stitching"]
-heroImage: ""
+heroImage: "/images/projects/weymouth-carbon-fiber-2025-08-before.jpg"
+heroImageAlt: "Carbon Fiber Foundation Repair: When Injection Alone Is Not Enough"
 draft: true
 
 relatedServices:

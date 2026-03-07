@@ -12,8 +12,8 @@ tags:
   - "historic foundations"
   - "foundation repair"
   - "New England"
-heroImage: "/images/foundation-types/fieldstone-hero.jpg"
-heroImageAlt: "Historic fieldstone foundation wall in a New England basement"
+heroImage: "/images/projects/belchertown-crack-injection-2025-11-before.jpg"
+heroImageAlt: "Foundation wall crack before repair in Belchertown basement"
 relatedServices:
   - "wall-crack-repair"
   - "carbon-fiber-stitches"

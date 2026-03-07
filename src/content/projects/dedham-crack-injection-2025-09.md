@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/dedham-crack-injection-2025-09-before.jpg
 afterImage: /images/projects/dedham-crack-injection-2025-09-after.jpg
+beforeAfterVerified: false
 summary: "A straightforward foundation crack in a Dedham, MA semi-finished basement was successfully injected and sealed, restoring structural integrity and preventing water intrusion."
 published: true
 ---

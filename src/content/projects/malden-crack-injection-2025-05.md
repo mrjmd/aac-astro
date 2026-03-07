@@ -7,6 +7,7 @@ serviceTypes:
   - fieldstone
 beforeImage: /images/projects/malden-crack-injection-2025-05-after.jpg
 afterImage: /images/projects/malden-crack-injection-2025-05-after.jpg
+beforeAfterVerified: false
 summary: "A Malden, MA rock foundation wall had persistent water intrusion. Our team sealed the latest leak source in the natural stone, restoring dryness to the area."
 published: true
 ---

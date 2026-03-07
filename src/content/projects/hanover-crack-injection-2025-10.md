@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/hanover-crack-injection-2025-10-before.jpg
 afterImage: /images/projects/hanover-crack-injection-2025-10-after.jpg
+beforeAfterVerified: false
 summary: "A Hanover, MA basement suffered from two leaking foundation cracks, including one by a window well. Foundation crack injection successfully sealed both leaks, restoring a dry and secure basement."
 published: true
 ---

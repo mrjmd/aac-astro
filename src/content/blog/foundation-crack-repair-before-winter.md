@@ -7,7 +7,8 @@ publishDate: 2026-10-06
 author: "Attack A Crack"
 category: "maintenance-tips"
 tags: ["winter preparation", "freeze-thaw", "crack repair timing", "seasonal"]
-heroImage: ""
+heroImage: "/images/projects/kingston-crack-injection-2025-06-before.jpg"
+heroImageAlt: "Foundation Crack Repair Before Winter: Why Timing Matters in New England"
 draft: true
 
 relatedServices:

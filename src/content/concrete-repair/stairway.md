@@ -5,9 +5,7 @@ metaDescription: "Expert concrete stairway repair in Massachusetts. Fix cracked,
 excerpt: "Repair cracked, spalling, or worn concrete stairs with a durable decorative overlay. Non-slip finishes available for safety."
 icon: "Wrench"
 order: 1
-beforeImage: "/images/concrete-repair/stairs-before.jpg"
-afterImage: "/images/concrete-repair/stairs-after.jpg"
-heroImage: "/images/concrete-repair/stairs-hero.jpg"
+heroImage: "/images/projects/weymouth-bulkhead-repair-2025-08-after.jpg"
 faqs:
   - question: "Can you repair very damaged concrete stairs?"
     answer: "Yes, in most cases. Our overlay system can address significant damage including cracks, spalling, and surface deterioration. If the structural integrity is compromised, we'll let you know and recommend alternatives."

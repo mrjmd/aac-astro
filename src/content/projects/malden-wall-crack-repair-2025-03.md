@@ -7,6 +7,7 @@ serviceTypes:
   - fieldstone
 beforeImage: /images/projects/malden-wall-crack-repair-2025-03-before.jpg
 afterImage: /images/projects/malden-wall-crack-repair-2025-03-after.jpg
+beforeAfterVerified: false
 summary: "In Malden, MA, a fieldstone retaining wall suffered severe cracking and structural failure. Expert repair restored the wall's integrity and stability."
 published: true
 ---

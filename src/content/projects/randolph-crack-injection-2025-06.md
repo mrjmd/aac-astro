@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/randolph-crack-injection-2025-06-before.jpg
 afterImage: /images/projects/randolph-crack-injection-2025-06-after.jpg
+beforeAfterVerified: false
 summary: "A foundation in Randolph, MA, suffered from water intrusion via a crack and tie rod holes. Expert crack injection permanently sealed the leaks, restoring the wall's integrity."
 published: true
 ---

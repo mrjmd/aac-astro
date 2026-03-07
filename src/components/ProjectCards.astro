@@ -10,6 +10,7 @@ interface Project {
     state: string;
     serviceType: string;
     afterImage: string;
+    beforeAfterVerified?: boolean;
     summary: string;
   };
 }
@@ -53,7 +54,7 @@ function formatDate(date: Date): string {
             <div class="aspect-video overflow-hidden relative">
               <img
                 src={project.data.afterImage}
-                alt={`${project.data.title} - After repair`}
+                alt={project.data.beforeAfterVerified !== false ? `${project.data.title} - After repair` : project.data.title}
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div class="absolute top-3 left-3 bg-aac-dark/80 backdrop-blur-md text-white text-[9px] font-black uppercase tracking-widest px-2.5 py-1 rounded-lg border border-white/20">

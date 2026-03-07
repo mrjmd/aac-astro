@@ -7,7 +7,8 @@ publishDate: 2026-11-24
 author: "Attack A Crack"
 category: "maintenance-tips"
 tags: ["Thanksgiving", "quick inspection", "basement check", "seasonal", "holiday"]
-heroImage: ""
+heroImage: "/images/projects/scituate-crack-injection-2026-02-before.jpg"
+heroImageAlt: "Thanksgiving Basement Check: 5 Things to Look At While You Are Down There"
 draft: true
 
 relatedServices:

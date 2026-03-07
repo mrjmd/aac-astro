@@ -7,7 +7,8 @@ publishDate: 2026-05-12
 author: "Attack A Crack"
 category: "guides"
 tags: ["sump pump", "crack injection", "wet basement", "waterproofing", "comparison"]
-heroImage: ""
+heroImage: "/images/projects/marshfield-crack-injection-2025-08-before.jpg"
+heroImageAlt: "Sump Pump vs. Crack Injection: Which Fix Do You Actually Need?"
 draft: true
 
 relatedServices:

@@ -79,7 +79,8 @@
               "pool-deck",
               "stairway",
               "walkway",
-              "floor-crack"
+              "floor-crack",
+              "fieldstone"
             ]
           },
           "minItems": 1
@@ -89,6 +90,10 @@
         },
         "afterImage": {
           "type": "string"
+        },
+        "beforeAfterVerified": {
+          "type": "boolean",
+          "default": true
         },
         "summary": {
           "type": "string",

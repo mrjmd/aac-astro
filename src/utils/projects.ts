@@ -38,6 +38,53 @@ export async function getByService(serviceType: string, count = 3) {
   return all.filter(p => p.data.serviceTypes.includes(serviceType)).slice(0, count);
 }
 
+// State-level fallback images (best project photo per state)
+const STATE_FALLBACK_IMAGES: Record<string, string> = {
+  CT: '/images/projects/weymouth-crack-injection-2025-01-before.jpg',
+  MA: '/images/projects/quincy-crack-injection-2025-10-before.jpg',
+  RI: '/images/projects/rumford-crack-injection-2025-08-before.jpg',
+  NH: '/images/projects/billerica-crack-injection-2025-01-before.jpg',
+  ME: '/images/projects/ashland-crack-injection-2025-05-before.jpg',
+};
+
+/** Get the best project image for a city page. Prefers after images from local projects. */
+export async function getProjectImageForCity(city: string, stateAbbr: string): Promise<{ src: string; alt: string }> {
+  const all = await getAll();
+
+  // Try exact city match first
+  const cityProjects = all.filter(
+    p => p.data.city.toLowerCase() === city.toLowerCase() && p.data.state === stateAbbr
+  );
+
+  if (cityProjects.length > 0) {
+    const project = cityProjects[0];
+    return {
+      src: project.data.afterImage !== '/images/projects/placeholder.svg'
+        ? project.data.afterImage
+        : project.data.beforeImage,
+      alt: `Foundation repair project in ${city}, ${stateAbbr}`,
+    };
+  }
+
+  // Fall back to same-state project
+  const stateProjects = all.filter(p => p.data.state === stateAbbr);
+  if (stateProjects.length > 0) {
+    const project = stateProjects[0];
+    return {
+      src: project.data.afterImage !== '/images/projects/placeholder.svg'
+        ? project.data.afterImage
+        : project.data.beforeImage,
+      alt: `Foundation repair project in ${stateAbbr}`,
+    };
+  }
+
+  // Ultimate fallback
+  return {
+    src: STATE_FALLBACK_IMAGES[stateAbbr] || STATE_FALLBACK_IMAGES.MA,
+    alt: `Foundation repair in ${stateAbbr}`,
+  };
+}
+
 /** Map service page slugs to project serviceType enum values */
 export const SERVICE_SLUG_MAP: Record<string, string> = {
   // Foundation repair services

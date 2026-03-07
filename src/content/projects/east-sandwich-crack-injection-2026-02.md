@@ -8,6 +8,7 @@ serviceTypes:
   - carbon-fiber
 beforeImage: /images/projects/east-sandwich-crack-injection-2026-02-before.jpg
 afterImage: /images/projects/east-sandwich-crack-injection-2026-02-after.jpg
+beforeAfterVerified: false
 summary: "A leaking foundation crack in East Sandwich, MA, was expertly injected and reinforced with five carbon fiber staples, permanently resolving water intrusion and stabilizing the wall."
 published: true
 ---

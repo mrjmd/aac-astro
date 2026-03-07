@@ -5,9 +5,7 @@ metaDescription: "Professional foundation crack injection using urethane and epo
 excerpt: "Professional urethane and epoxy injection to permanently seal foundation cracks. Our proven method fills cracks completely from interior to exterior soil."
 icon: "Wrench"
 order: 4
-beforeImage: "/images/services/injection-before.jpg"
-afterImage: "/images/services/injection-after.jpg"
-heroImage: "/images/services/injection-hero.jpg"
+heroImage: "/images/service-wall-cracks.jpg"
 faqs:
   - question: "What is foundation crack injection?"
     answer: "Crack injection fills a foundation crack with specialized resin at 100 PSI—far more than the industry standard. After preparing the crack with a diamond saw and installing copper injection ports every 8-10 inches, we force material through the entire wall thickness (typically 8-10 inches) from interior to exterior soil. This creates a complete seal that surface patches and hydraulic cement cannot achieve."

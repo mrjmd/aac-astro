@@ -7,7 +7,8 @@ publishDate: 2026-12-15
 author: "Attack A Crack"
 category: "maintenance-tips"
 tags: ["year-end maintenance", "annual review", "foundation planning", "new year"]
-heroImage: ""
+heroImage: "/images/projects/east-sandwich-crack-injection-2026-02-before.jpg"
+heroImageAlt: "Year-End Home Maintenance: Foundation Edition for New England"
 draft: true
 
 relatedServices:

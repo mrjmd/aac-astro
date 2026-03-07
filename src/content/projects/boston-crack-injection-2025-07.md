@@ -10,6 +10,7 @@ coordinates:
   lng: -71.0589
 beforeImage: /images/projects/boston-crack-injection-2025-07-before.jpg
 afterImage: /images/projects/boston-crack-injection-2025-07-after.jpg
+beforeAfterVerified: false
 summary: "A deteriorated concrete stairway in Boston with extensive peeling surfaces was fully resurfaced, restoring its safe and attractive appearance for the homeowner."
 published: true
 ---

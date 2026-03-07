@@ -7,6 +7,7 @@ serviceTypes:
   - fieldstone
 beforeImage: /images/projects/dedham-crack-injection-2025-12-before.jpg
 afterImage: /images/projects/dedham-crack-injection-2025-12-after.jpg
+beforeAfterVerified: false
 summary: "A Dedham fieldstone foundation was leaking through multiple cracks and deteriorating mortar joints. Specialized sealing techniques stopped all water intrusion."
 published: true
 ---

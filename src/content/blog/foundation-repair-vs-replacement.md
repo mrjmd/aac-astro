@@ -7,7 +7,8 @@ publishDate: 2026-09-22
 author: "Attack A Crack"
 category: "guides"
 tags: ["foundation repair", "foundation replacement", "structural repair", "cost comparison", "structural engineer"]
-heroImage: ""
+heroImage: "/images/projects/newton-crack-injection-2025-04-before.jpg"
+heroImageAlt: "Foundation Repair vs Replacement: When Each Makes Sense"
 draft: true
 
 relatedServices:

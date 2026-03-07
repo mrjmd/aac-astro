@@ -8,6 +8,7 @@ serviceTypes:
   - garage-floor
 beforeImage: /images/projects/scituate-crack-injection-2026-02-before.jpg
 afterImage: /images/projects/scituate-crack-injection-2026-02-after.jpg
+beforeAfterVerified: false
 summary: "A Scituate, MA garage had foundation wall cracks causing water intrusion and a deteriorating floor. Wall cracks were injected and the entire garage floor was resurfaced."
 published: true
 ---

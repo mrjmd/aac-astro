@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/weymouth-crack-injection-2025-05-before.jpg
 afterImage: /images/projects/weymouth-crack-injection-2025-05-after.jpg
+beforeAfterVerified: false
 summary: "A Weymouth foundation suffered from three cracks, two of which were previously repaired. Our expert crack injection service successfully sealed all areas, ensuring lasting waterproof integrity."
 published: true
 ---

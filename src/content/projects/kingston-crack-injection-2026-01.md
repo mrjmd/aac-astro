@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/kingston-crack-injection-2026-01-before.jpg
 afterImage: /images/projects/kingston-crack-injection-2026-01-after.jpg
+beforeAfterVerified: false
 summary: "A full-length foundation crack in Kingston, MA was expertly sealed via crack injection, restoring structural integrity and preventing water intrusion."
 published: true
 ---

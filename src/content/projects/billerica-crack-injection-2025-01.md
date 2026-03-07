@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/billerica-crack-injection-2025-01-before.jpg
 afterImage: /images/projects/billerica-crack-injection-2025-01-after.jpg
+beforeAfterVerified: false
 summary: "In Billerica, MA, a prominent foundation crack with significant exterior exposure was expertly sealed using polyurethane injection, permanently resolving potential water intrusion."
 published: true
 ---

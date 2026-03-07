@@ -7,7 +7,8 @@ publishDate: 2026-10-20
 author: "Attack A Crack"
 category: "guides"
 tags: ["Rhode Island", "Providence", "Warwick", "coastal foundations", "foundation repair"]
-heroImage: ""
+heroImage: "/images/projects/braintree-crack-injection-2025-07-before.jpg"
+heroImageAlt: "Providence and Warwick: Foundation Challenges in Rhode Island"
 draft: true
 targetLocation: Rhode Island
 relatedServices:

@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/hanover-crack-injection-2025-03-2-before.jpg
 afterImage: /images/projects/hanover-crack-injection-2025-03-2-after.jpg
+beforeAfterVerified: false
 summary: "A previously sealed hairline foundation crack in Hanover, MA was still leaking water into the basement. Our team successfully injected the crack, stopping water intrusion and restoring the foundation's integrity."
 published: true
 ---

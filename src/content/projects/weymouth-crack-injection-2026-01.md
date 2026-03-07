@@ -8,6 +8,7 @@ serviceTypes:
   - concrete-repair
 beforeImage: /images/projects/weymouth-crack-injection-2026-01-before.jpg
 afterImage: /images/projects/weymouth-crack-injection-2026-01-after.jpg
+beforeAfterVerified: false
 summary: "A Weymouth, MA home's foundation crack near a window caused leaks. We repaired it with injection, sealed minor cracks, and resurfaced exterior concrete, ensuring a dry and stable foundation."
 published: true
 ---

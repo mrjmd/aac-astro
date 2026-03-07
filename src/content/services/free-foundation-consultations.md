@@ -5,9 +5,7 @@ metaDescription: "Get a free, no-pressure foundation assessment from our experts
 excerpt: "All diagnosis is free! We'll talk you through your options including DIY repair advice. No salespeople, no pressure—just honest expert assessment."
 icon: "Info"
 order: 6
-beforeImage: "/images/services/consultation-before.jpg"
-afterImage: "/images/services/consultation-after.jpg"
-heroImage: "/images/services/consultation-hero.jpg"
+heroImage: "/images/service-diagnosis.jpg"
 faqs:
   - question: "Is the consultation really free?"
     answer: "Yes, 100% free. We don't charge for assessments, and there's no obligation to hire us. We believe in earning your business through expertise, not pressure tactics."

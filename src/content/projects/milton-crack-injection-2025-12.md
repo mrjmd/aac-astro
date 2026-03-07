@@ -8,6 +8,7 @@ serviceTypes:
   - carbon-fiber
 beforeImage: /images/projects/milton-crack-injection-2025-12-after.jpg
 afterImage: /images/projects/milton-crack-injection-2025-12-after.jpg
+beforeAfterVerified: false
 summary: "A foundation crack at a Milton, MA property was identified and sealed. Foundation crack injection and carbon fiber staples successfully restored structural integrity and prevented future water intrusion."
 published: true
 ---

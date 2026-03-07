@@ -7,8 +7,8 @@ publishDate: 2024-12-06
 author: "Matt Davis"
 category: "guides"
 tags: ["crumbling foundations", "pyrrhotite", "Massachusetts", "Connecticut"]
-heroImage: "/images/blog/crumbling-foundation-hero.jpg"
-heroImageAlt: "Crumbling concrete foundation showing deterioration"
+heroImage: "/images/projects/malden-wall-crack-repair-2025-03-before.jpg"
+heroImageAlt: "Deteriorating foundation wall with visible cracking in Malden basement"
 featured: false
 relatedPosts:
   - "signs-of-foundation-problems"

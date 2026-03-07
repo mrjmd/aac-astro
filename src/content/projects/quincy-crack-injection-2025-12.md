@@ -12,6 +12,7 @@ coordinates:
   lng: -71.0023
 beforeImage: /images/projects/placeholder.svg
 afterImage: /images/projects/placeholder.svg
+beforeAfterVerified: false
 summary: "A foundation crack in Quincy, MA compromised a stairway and wall. Crack injection stabilized the area, preparing it for successful resurfacing."
 published: true
 ---

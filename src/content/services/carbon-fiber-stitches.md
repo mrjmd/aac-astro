@@ -5,9 +5,7 @@ metaDescription: "Structural foundation repair using carbon fiber stitches. Stab
 excerpt: "High-strength carbon fiber stitches reinforce foundation walls and prevent crack expansion. Permanent structural stabilization without excavation."
 icon: "ShieldCheck"
 order: 5
-beforeImage: "/images/services/carbon-fiber-before.jpg"
-afterImage: "/images/services/carbon-fiber-after.jpg"
-heroImage: "/images/services/carbon-fiber-hero.jpg"
+heroImage: "/images/projects/weymouth-carbon-fiber-2025-08-after.jpg"
 faqs:
   - question: "What are carbon fiber stitches?"
     answer: "Carbon fiber stitches are Kevlar-grid reinforcement strips saturated in structural epoxy and embedded across foundation cracks. With 800,000 PSI tensile strength—4 to 10 times stronger than high-strength steels—they bridge both sides of a crack, distributing stress across a wider area. They provide permanent structural reinforcement without the bulk, excavation, or corrosion risk of the steel I-beams they've replaced."

@@ -7,7 +7,8 @@ publishDate: 2026-04-28
 author: "Attack A Crack"
 category: "cost-guides"
 tags: ["basement waterproofing cost", "waterproofing", "New England", "cost guide", "basement moisture"]
-heroImage: ""
+heroImage: "/images/projects/quincy-crack-injection-2025-04-before.jpg"
+heroImageAlt: "Basement Waterproofing Cost Guide: What New England Homeowners Pay"
 draft: true
 
 relatedServices:

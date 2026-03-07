@@ -7,8 +7,8 @@ publishDate: 2024-12-03
 author: "Matt Davis"
 category: "case-studies"
 tags: ["case study", "settling crack", "water intrusion", "Massachusetts"]
-heroImage: "/images/blog/shrewsbury-basement-hero.jpg"
-heroImageAlt: "Basement crack repair in Shrewsbury home"
+heroImage: "/images/projects/duxbury-crack-injection-2026-03-before.jpg"
+heroImageAlt: "Foundation settling crack before injection repair in basement"
 featured: false
 relatedPosts:
   - "basement-leak-framingham-case-study"

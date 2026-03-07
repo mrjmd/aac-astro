@@ -7,7 +7,8 @@ publishDate: 2026-10-13
 author: "Attack A Crack"
 category: "maintenance-tips"
 tags: ["basement waterproofing", "winterization", "freeze protection", "water intrusion"]
-heroImage: ""
+heroImage: "/images/projects/rockland-crack-injection-2025-08-before.jpg"
+heroImageAlt: "Waterproofing Your Basement Before the First Freeze: A Practical Guide"
 draft: true
 
 relatedServices:

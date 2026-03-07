@@ -7,7 +7,8 @@ publishDate: 2026-07-07
 author: "Attack A Crack"
 category: "guides"
 tags: ["efflorescence", "white powder", "basement walls", "moisture", "foundation"]
-heroImage: ""
+heroImage: "/images/projects/fall-river-crack-injection-2025-05-before.jpg"
+heroImageAlt: "White Powder on Basement Walls: What Efflorescence Means for Your Foundation"
 draft: true
 
 relatedServices:

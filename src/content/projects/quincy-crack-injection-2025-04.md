@@ -10,6 +10,7 @@ coordinates:
   lng: -71.0023
 beforeImage: /images/projects/quincy-crack-injection-2025-04-before.jpg
 afterImage: /images/projects/quincy-crack-injection-2025-04-after.jpg
+beforeAfterVerified: false
 summary: "A Quincy, MA foundation developed a vertical crack and tie rod issue. Our team performed a crack injection, effectively sealing the defect and restoring the foundation's integrity."
 published: true
 ---

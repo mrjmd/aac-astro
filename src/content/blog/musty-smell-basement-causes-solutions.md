@@ -7,7 +7,8 @@ publishDate: 2026-06-02
 author: "Attack A Crack"
 category: "guides"
 tags: ["musty basement", "basement smell", "mold", "moisture", "water intrusion", "basement humidity"]
-heroImage: ""
+heroImage: "/images/projects/walpole-crack-injection-2025-02-before.jpg"
+heroImageAlt: "Musty Smell in Your Basement? Causes, Solutions, and When to Worry"
 draft: true
 
 relatedServices:

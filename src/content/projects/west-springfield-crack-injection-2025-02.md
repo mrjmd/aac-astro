@@ -9,6 +9,7 @@ serviceTypes:
   - garage-floor
 beforeImage: /images/projects/placeholder.svg
 afterImage: /images/projects/placeholder.svg
+beforeAfterVerified: false
 summary: "Foundation cracks in a West Springfield bulkhead and a garage floor gap were addressed. We used crack injection and Sikaflex sealant, successfully waterproofing and securing the areas."
 published: true
 ---

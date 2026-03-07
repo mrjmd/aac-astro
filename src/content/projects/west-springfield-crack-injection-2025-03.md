@@ -8,6 +8,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/placeholder.svg
 afterImage: /images/projects/placeholder.svg
+beforeAfterVerified: false
 summary: "A West Springfield basement was experiencing recurring moisture near the bulkhead. Our team performed a specialized crack injection, successfully sealing the foundation and restoring dryness."
 published: true
 ---

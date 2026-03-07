@@ -10,6 +10,7 @@ coordinates:
   lng: -70.6673
 beforeImage: /images/projects/plymouth-crack-injection-2025-01-before.jpg
 afterImage: /images/projects/plymouth-crack-injection-2025-01-after.jpg
+beforeAfterVerified: false
 summary: "In Plymouth, MA, a persistent settling crack in a foundation, previously injected, was expertly re-sealed. This targeted repair effectively stopped water intrusion."
 published: true
 ---

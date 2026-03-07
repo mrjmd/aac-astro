@@ -11,6 +11,7 @@ coordinates:
   lng: -71.0023
 beforeImage: /images/projects/quincy-crack-injection-2025-08-2-before.jpg
 afterImage: /images/projects/quincy-crack-injection-2025-08-2-after.jpg
+beforeAfterVerified: false
 summary: "A Quincy, MA property experienced water intrusion from several foundation cracks. Expert crack injection sealed the leaks, ensuring a dry and secure foundation."
 published: true
 ---

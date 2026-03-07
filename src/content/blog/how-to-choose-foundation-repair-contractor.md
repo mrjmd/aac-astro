@@ -7,7 +7,8 @@ publishDate: 2026-06-02
 author: "Attack A Crack"
 category: "guides"
 tags: ["contractor selection", "scam prevention", "foundation repair", "hiring guide"]
-heroImage: ""
+heroImage: "/images/projects/scituate-crack-injection-2025-07-before.jpg"
+heroImageAlt: "How to Choose a Foundation Repair Contractor (Without Getting Scammed)"
 draft: true
 
 relatedServices:

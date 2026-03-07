@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/weymouth-crack-injection-2025-07-2-before.jpg
 afterImage: /images/projects/weymouth-crack-injection-2025-07-2-after.jpg
+beforeAfterVerified: false
 summary: "A foundation crack near the sewer line in Weymouth, MA caused water intrusion. Foundation crack injection successfully sealed the leak, restoring a dry basement."
 published: true
 ---

@@ -7,7 +7,8 @@ publishDate: 2026-06-30
 author: "Attack A Crack"
 category: "guides"
 tags: ["concrete repair", "Massachusetts", "driveway repair", "patio repair", "pool deck"]
-heroImage: ""
+heroImage: "/images/projects/lexington-crack-injection-2025-10-after.jpg"
+heroImageAlt: "Massachusetts Concrete Repair: Driveways, Patios, and Pool Decks"
 draft: true
 targetLocation: Massachusetts
 relatedServices:

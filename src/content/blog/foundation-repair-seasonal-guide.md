@@ -17,6 +17,8 @@ relatedServices:
   - "foundation-crack-injection"
   - "leaky-bulkhead-repair"
   - "wall-crack-repair"
+heroImage: "/images/projects/quincy-crack-injection-2025-10-before.jpg"
+heroImageAlt: "Foundation wall crack requiring seasonal repair"
 ---
 
 "When's the best time to get this fixed?" I hear it every week. Homeowners want to time their foundation repair for ideal conditions — which makes sense. But in 33+ years of working across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, I've learned something that surprises most people: **foundation repair works in every season, and waiting for "the right time" usually makes things worse.**

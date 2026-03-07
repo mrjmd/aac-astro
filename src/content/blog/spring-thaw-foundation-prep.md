@@ -7,7 +7,8 @@ publishDate: 2026-02-03
 author: "Attack A Crack"
 category: "maintenance-tips"
 tags: ["spring thaw", "foundation inspection", "seasonal maintenance", "water intrusion"]
-heroImage: ""
+heroImage: "/images/projects/brockton-crack-injection-2025-06-before.jpg"
+heroImageAlt: "Is Your Foundation Ready for Spring Thaw?"
 
 relatedServices:
   - "foundation-crack-injection"

@@ -15,6 +15,8 @@ relatedPosts:
 relatedServices:
   - "wall-crack-repair"
   - "foundation-crack-injection"
+heroImage: "/images/projects/newton-crack-injection-2025-04-after.jpg"
+heroImageAlt: "Concrete surface repair for pool deck area"
 ---
 
 A cracked pool deck isn't just cosmetic. Uneven sections create trip hazards around a wet surface — exactly where you don't want anyone falling. And in New England, every winter makes the damage worse.

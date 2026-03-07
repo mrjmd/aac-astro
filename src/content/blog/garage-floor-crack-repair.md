@@ -7,7 +7,8 @@ publishDate: 2026-08-25
 author: "Attack A Crack"
 category: "guides"
 tags: ["garage floor", "concrete cracks", "floor repair", "settlement"]
-heroImage: ""
+heroImage: "/images/projects/lexington-crack-injection-2025-10-before.jpg"
+heroImageAlt: "Garage Floor Crack Repair: Causes and Permanent Fixes for New England"
 draft: true
 
 relatedServices:

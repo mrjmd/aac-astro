@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/canton-crack-injection-2025-08-before.jpg
 afterImage: /images/projects/canton-crack-injection-2025-08-after.jpg
+beforeAfterVerified: false
 summary: "A Canton home presented with two foundation cracks, including one with a messy prior repair. Our team meticulously cleaned the old patch and injected both cracks, providing a neat, permanent seal."
 published: true
 ---

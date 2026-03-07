@@ -7,6 +7,7 @@ serviceTypes:
   - bulkhead-repair
 beforeImage: /images/projects/groveland-bulkhead-repair-2025-08-before.jpg
 afterImage: /images/projects/groveland-bulkhead-repair-2025-08-after.jpg
+beforeAfterVerified: false
 summary: "A Groveland, MA home had a leaking bulkhead allowing water into the basement. We successfully repaired the bulkhead, ensuring a dry and secure entry."
 published: true
 ---

@@ -16,6 +16,8 @@ relatedServices:
   - "foundation-crack-injection"
   - "carbon-fiber-stitches"
   - "free-foundation-consultations"
+heroImage: "/images/projects/randolph-crack-injection-2025-05-before.jpg"
+heroImageAlt: "Foundation settling crack in basement wall"
 ---
 
 "Your house is just settling." It's the most common reassurance homeowners hear. And sometimes it's accurate — every house settles, especially in the first few years.

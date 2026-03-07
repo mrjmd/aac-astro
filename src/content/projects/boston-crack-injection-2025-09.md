@@ -10,6 +10,7 @@ coordinates:
   lng: -71.0589
 beforeImage: /images/projects/boston-crack-injection-2025-09-after.jpg
 afterImage: /images/projects/boston-crack-injection-2025-09-after.jpg
+beforeAfterVerified: false
 summary: "A severe, full-height foundation crack in Boston was causing water intrusion. Our team performed a crack injection to permanently seal the wall and stop leaks."
 published: true
 ---

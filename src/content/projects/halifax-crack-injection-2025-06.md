@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/halifax-crack-injection-2025-06-after.jpg
 afterImage: /images/projects/halifax-crack-injection-2025-06-after.jpg
+beforeAfterVerified: false
 summary: "A Halifax, MA property suffered from a leaking foundation crack, evident by water seepage. Our team utilized foundation crack injection to effectively seal the fissure, permanently stopping water intrusion and reinforcing the wall."
 published: true
 ---

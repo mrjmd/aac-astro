@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/marshfield-crack-injection-2025-06-before.jpg
 afterImage: /images/projects/marshfield-crack-injection-2025-06-after.jpg
+beforeAfterVerified: false
 summary: "Three foundation cracks in Marshfield, MA, including a wide, displaced crack, were expertly injected. Epoxy was used for the structural crack, restoring integrity and waterproofing the foundation."
 published: true
 ---

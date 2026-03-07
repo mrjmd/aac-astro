@@ -7,6 +7,7 @@ serviceTypes:
   - stairway
 beforeImage: /images/projects/weymouth-crack-injection-2025-07-3-before.jpg
 afterImage: /images/projects/weymouth-crack-injection-2025-07-3-after.jpg
+beforeAfterVerified: false
 summary: "Worn and crumbling concrete steps in Weymouth, MA, were beautifully resurfaced, restoring the home's entryway and enhancing curb appeal."
 published: true
 ---

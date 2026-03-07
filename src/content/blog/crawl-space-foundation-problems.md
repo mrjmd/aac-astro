@@ -7,7 +7,8 @@ publishDate: 2026-04-21
 author: "Attack A Crack"
 category: "guides"
 tags: ["crawl space", "foundation problems", "moisture", "New England homes"]
-heroImage: ""
+heroImage: "/images/projects/easton-crack-injection-2025-08-before.jpg"
+heroImageAlt: "Crawl Space Foundation Problems: What New England Homeowners Need to Know"
 draft: true
 relatedServices:
   - "foundation-crack-injection"

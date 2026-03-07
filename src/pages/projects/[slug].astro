@@ -117,7 +117,8 @@ const defaultTitle = computedTitle;
 const PLACEHOLDER = '/images/projects/placeholder.svg';
 const hasBeforeAfter = project.data.beforeImage !== project.data.afterImage
 	&& project.data.beforeImage !== PLACEHOLDER
-	&& project.data.afterImage !== PLACEHOLDER;
+	&& project.data.afterImage !== PLACEHOLDER
+	&& project.data.beforeAfterVerified !== false;
 
 // Generate meta description from summary — ensure 120-160 chars
 function buildMetaDescription(summary: string, serviceLabel: string, city: string, state: string): string {
@@ -346,7 +347,7 @@ const projectSchema = {
 								<div class="aspect-video overflow-hidden">
 									<img
 										src={p.data.afterImage}
-										alt={`${p.data.title} - After repair`}
+										alt={p.data.beforeAfterVerified !== false ? `${p.data.title} - After repair` : p.data.title}
 										class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
 									/>
 								</div>

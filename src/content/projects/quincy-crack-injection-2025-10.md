@@ -10,6 +10,7 @@ coordinates:
   lng: -71.0023
 beforeImage: /images/projects/quincy-crack-injection-2025-10-before.jpg
 afterImage: /images/projects/quincy-crack-injection-2025-10-after.jpg
+beforeAfterVerified: false
 summary: "An older Quincy, MA concrete foundation with vertical, horizontal, and pinhole leaks was permanently sealed. Professional crack injection stopped all water intrusion."
 published: true
 ---

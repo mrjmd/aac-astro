@@ -5,9 +5,7 @@ metaDescription: "Expert concrete walkway repair in Massachusetts with decorativ
 excerpt: "Repair cracked, stained, or dated concrete walkways with a beautiful decorative overlay. Multiple colors, patterns, and textures available."
 icon: "Wrench"
 order: 2
-beforeImage: "/images/concrete-repair/walkway-before.jpg"
-afterImage: "/images/concrete-repair/walkway-after.jpg"
-heroImage: "/images/concrete-repair/walkway-hero.jpg"
+heroImage: "/images/projects/hanover-concrete-repair-2025-06-before.jpg"
 faqs:
   - question: "How long does walkway repair take?"
     answer: "Most residential walkways are completed in 1-2 days. You can typically walk on the surface within 24 hours, with full cure in 2-3 days."

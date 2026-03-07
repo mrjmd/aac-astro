@@ -8,6 +8,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/attleboro-bulkhead-repair-2025-09-before.jpg
 afterImage: /images/projects/attleboro-bulkhead-repair-2025-09-after.jpg
+beforeAfterVerified: false
 summary: "A property in Attleboro, MA, experienced a persistent bulkhead leak and foundation cracks, which were expertly sealed and repaired to restore structural integrity."
 published: true
 ---

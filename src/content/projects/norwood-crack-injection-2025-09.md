@@ -8,6 +8,7 @@ serviceTypes:
   - walkway
 beforeImage: /images/projects/placeholder.svg
 afterImage: /images/projects/placeholder.svg
+beforeAfterVerified: false
 summary: "In Norwood, MA, a severely cracked retaining wall and sidewalk were expertly repaired using crack injection and resurfacing, successfully restoring both stability and appearance."
 published: true
 ---

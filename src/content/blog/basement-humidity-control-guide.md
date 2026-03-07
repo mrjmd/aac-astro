@@ -7,7 +7,8 @@ publishDate: 2026-04-07
 author: "Attack A Crack"
 category: "guides"
 tags: ["basement humidity", "dehumidifier", "moisture control", "waterproofing"]
-heroImage: ""
+heroImage: "/images/projects/billerica-crack-injection-2025-01-before.jpg"
+heroImageAlt: "Basement Humidity Control: Why Your Dehumidifier Is Not Enough"
 draft: true
 
 relatedServices:

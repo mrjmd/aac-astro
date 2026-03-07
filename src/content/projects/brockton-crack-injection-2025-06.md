@@ -12,6 +12,7 @@ coordinates:
   lng: -71.0184
 beforeImage: /images/projects/brockton-crack-injection-2025-06-before.jpg
 afterImage: /images/projects/brockton-crack-injection-2025-06-after.jpg
+beforeAfterVerified: false
 summary: "Multiple foundation cracks and a large spalling area in Brockton, MA required expert repair. Cracks were injected/sealed, and the spalled concrete was resurfaced, restoring structural integrity and appearance."
 published: true
 ---

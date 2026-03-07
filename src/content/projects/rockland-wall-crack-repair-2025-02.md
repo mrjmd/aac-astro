@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/rockland-wall-crack-repair-2025-02-before.jpg
 afterImage: /images/projects/rockland-wall-crack-repair-2025-02-after.jpg
+beforeAfterVerified: false
 summary: "Foundation walls at two new homes in Rockland, MA developed stress cracks during construction. Specialized wall crack repair services were performed to restore structural integrity."
 published: true
 ---

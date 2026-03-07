@@ -7,8 +7,8 @@ publishDate: 2026-01-10
 author: "Luc Richard"
 category: "guides"
 tags: ["bulkhead repair", "basement waterproofing", "water damage"]
-heroImage: "/images/blog/bulkhead-leak-hero.jpg"
-heroImageAlt: "Water leaking through bulkhead door connection"
+heroImage: "/images/projects/kingston-bulkhead-repair-2025-06-before.jpg"
+heroImageAlt: "Leaking bulkhead door connection before repair in Kingston"
 relatedPosts:
   - "bulkhead-repair-cost-guide-2026"
   - "water-in-basement-after-rain"

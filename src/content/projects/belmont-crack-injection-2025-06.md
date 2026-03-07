@@ -8,6 +8,7 @@ serviceTypes:
   - wall-crack-repair
 beforeImage: /images/projects/belmont-crack-injection-2025-06-before.jpg
 afterImage: /images/projects/belmont-crack-injection-2025-06-after.jpg
+beforeAfterVerified: false
 summary: "Stabilized badly cracked and loose brick steps in Belmont, MA, using foundation crack injection. The repair enhanced safety and appearance until a future full replacement."
 published: true
 ---

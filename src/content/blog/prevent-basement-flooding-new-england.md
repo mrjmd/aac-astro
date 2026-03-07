@@ -7,7 +7,8 @@ publishDate: 2026-07-28
 author: "Attack A Crack"
 category: "maintenance-tips"
 tags: ["basement flooding", "flood prevention", "New England", "seasonal maintenance", "drainage", "gutters"]
-heroImage: ""
+heroImage: "/images/projects/boston-crack-injection-2025-10-before.jpg"
+heroImageAlt: "How to Prevent Basement Flooding in New England: A Seasonal Guide"
 draft: true
 
 relatedServices:

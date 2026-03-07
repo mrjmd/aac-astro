@@ -7,8 +7,8 @@ publishDate: 2025-02-05
 author: "Matt Davis"
 category: "guides"
 tags: ["foundation maintenance", "prevention", "homeowner tips", "drainage"]
-heroImage: "/images/blog/foundation-tips-hero.jpg"
-heroImageAlt: "Foundation maintenance and inspection"
+heroImage: "/images/projects/plymouth-crack-injection-2025-08-before.jpg"
+heroImageAlt: "Foundation crack before preventive repair in Plymouth basement"
 featured: false
 relatedPosts:
   - "how-to-check-your-foundation"

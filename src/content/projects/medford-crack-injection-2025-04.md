@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/medford-crack-injection-2025-04-before.jpg
 afterImage: /images/projects/medford-crack-injection-2025-04-after.jpg
+beforeAfterVerified: false
 summary: "A Medford, MA foundation with two vertical cracks was restored using crack injection, preventing water intrusion and securing the structure."
 published: true
 ---

@@ -17,6 +17,8 @@ relatedServices:
   - "free-foundation-consultations"
   - "wall-crack-repair"
   - "foundation-crack-injection"
+heroImage: "/images/projects/milton-crack-injection-2026-03-before.jpg"
+heroImageAlt: "Foundation wall being diagnosed for cracks"
 ---
 
 When you call us about a foundation concern, the first thing we do is schedule a consultation. But what actually happens during that visit? What are we looking at, and how do we decide what needs repair versus what's normal?

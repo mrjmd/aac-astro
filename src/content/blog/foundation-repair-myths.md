@@ -7,7 +7,8 @@ publishDate: 2026-12-22
 author: "Attack A Crack"
 category: "guides"
 tags: ["myths", "misconceptions", "foundation repair", "fact vs fiction"]
-heroImage: ""
+heroImage: "/images/projects/milton-crack-injection-2025-10-before.jpg"
+heroImageAlt: "Foundation Repair Myths: What the Internet Gets Wrong About Your Home"
 draft: true
 
 relatedServices:

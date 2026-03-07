@@ -8,6 +8,7 @@ serviceTypes:
   - sewer-conduit
 beforeImage: /images/projects/scituate-crack-injection-2025-07-before.jpg
 afterImage: /images/projects/scituate-crack-injection-2025-07-after.jpg
+beforeAfterVerified: false
 summary: "Multiple foundation cracks and a leaking conduit in Scituate, MA were comprehensively sealed with epoxy and polyurethane injections, restoring a dry and secure basement."
 published: true
 ---

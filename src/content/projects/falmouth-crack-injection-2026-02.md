@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/falmouth-crack-injection-2026-02-after.jpg
 afterImage: /images/projects/falmouth-crack-injection-2026-02-after.jpg
+beforeAfterVerified: false
 summary: "A Falmouth, MA property had water actively seeping through a foundation crack near a water line. Our team successfully injected the crack, providing a permanent and watertight seal."
 published: true
 ---

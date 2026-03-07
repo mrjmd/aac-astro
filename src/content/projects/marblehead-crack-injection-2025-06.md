@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/marblehead-crack-injection-2025-06-before.jpg
 afterImage: /images/projects/marblehead-crack-injection-2025-06-after.jpg
+beforeAfterVerified: false
 summary: "A leaking foundation crack near a basement window in Marblehead, MA, was permanently sealed with an injection, restoring a dry basement."
 published: true
 ---

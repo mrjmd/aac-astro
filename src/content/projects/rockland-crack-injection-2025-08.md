@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/rockland-crack-injection-2025-08-before.jpg
 afterImage: /images/projects/rockland-crack-injection-2025-08-after.jpg
+beforeAfterVerified: false
 summary: "A newly constructed foundation in Rockland, MA, developed a diagonal crack. Our team performed a foundation crack injection to expertly seal the breach, ensuring structural integrity and preventing future water intrusion."
 published: true
 ---

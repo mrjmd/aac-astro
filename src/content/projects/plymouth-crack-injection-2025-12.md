@@ -10,6 +10,7 @@ coordinates:
   lng: -70.6673
 beforeImage: /images/projects/plymouth-crack-injection-2025-12-after.jpg
 afterImage: /images/projects/plymouth-crack-injection-2025-12-after.jpg
+beforeAfterVerified: false
 summary: "A Plymouth, MA home had a foundation crack compromising its integrity. Our team provided a professional crack injection, effectively sealing the wall and restoring stability."
 published: true
 ---

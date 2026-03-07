@@ -7,8 +7,8 @@ publishDate: 2024-12-19
 author: "Matt Davis"
 category: "case-studies"
 tags: ["bulkhead repair", "Massachusetts", "case study", "urethane injection"]
-heroImage: "/images/blog/bulkhead-repair-hero.jpg"
-heroImageAlt: "Bulkhead concrete repair in Wilmington"
+heroImage: "/images/projects/attleboro-bulkhead-repair-2025-09-before.jpg"
+heroImageAlt: "Leaking bulkhead before injection repair in Attleboro"
 featured: false
 relatedPosts:
   - "basement-leak-framingham-case-study"

@@ -5,9 +5,7 @@ metaDescription: "Expert concrete driveway repair in Massachusetts. Fix cracks, 
 excerpt: "Repair driveway cracks and damage without the cost of full replacement. Fix damage, add color, and boost curb appeal with decorative resurfacing."
 icon: "Wrench"
 order: 3
-beforeImage: "/images/concrete-repair/driveway-before.jpg"
-afterImage: "/images/concrete-repair/driveway-after.jpg"
-heroImage: "/images/concrete-repair/driveway-hero.jpg"
+heroImage: "/images/projects/lexington-crack-injection-2025-10-before.jpg"
 faqs:
   - question: "How much does driveway repair cost compared to replacement?"
     answer: "Concrete repair and resurfacing typically costs 30-50% less than removing and replacing your driveway. The exact savings depend on driveway size and condition."

@@ -5,9 +5,7 @@ metaDescription: "Seal gaps around sewer pipes, well lines, and electrical condu
 excerpt: "Durable urethane resin fills gaps around sewer, well, and electrical conduit lines without excavation. Stop water infiltration at pipe penetrations."
 icon: "ShieldCheck"
 order: 3
-beforeImage: "/images/services/utility-before.jpg"
-afterImage: "/images/services/utility-after.jpg"
-heroImage: "/images/services/utility-hero.jpg"
+heroImage: "/images/service-utility.jpg"
 faqs:
   - question: "Why do pipes leak where they enter the foundation?"
     answer: "When pipes were originally installed through your foundation, the gaps around them were filled with hydraulic cement, caulk, or oakum—materials that shrink, crack, and deteriorate over time. As your home settles and New England freeze-thaw cycles widen these gaps, water finds the path of least resistance right through the penetration."

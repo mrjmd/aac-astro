@@ -7,7 +7,8 @@ publishDate: 2026-04-14
 author: "Attack A Crack"
 category: "guides"
 tags: ["home buying", "inspection findings", "foundation issues", "negotiation", "real estate"]
-heroImage: ""
+heroImage: "/images/projects/lenox-crack-injection-2025-04-before.jpg"
+heroImageAlt: "Buying a Home With Foundation Issues: What Every Buyer Should Know"
 draft: true
 
 relatedServices:

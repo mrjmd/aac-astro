@@ -7,6 +7,7 @@ serviceTypes:
   - garage-floor
 beforeImage: /images/projects/lexington-crack-injection-2025-10-before.jpg
 afterImage: /images/projects/lexington-crack-injection-2025-10-after.jpg
+beforeAfterVerified: false
 summary: "A 20x25 garage in Lexington, MA had a severely deteriorated floor and chipped door threshold. Full resurfacing and threshold rebuild restored the garage to like-new condition."
 published: true
 ---

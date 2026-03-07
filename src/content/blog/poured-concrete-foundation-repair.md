@@ -7,7 +7,8 @@ publishDate: 2026-06-16
 author: "Attack A Crack"
 category: "foundation-types"
 tags: ["poured concrete", "foundation types", "crack patterns", "New England homes"]
-heroImage: ""
+heroImage: "/images/projects/quincy-crack-injection-2025-08-after.jpg"
+heroImageAlt: "Poured Concrete Foundation Repair: The Most Common Type in New England"
 draft: true
 
 relatedServices:

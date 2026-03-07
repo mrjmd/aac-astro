@@ -8,6 +8,7 @@ serviceTypes:
   - concrete-repair
 beforeImage: /images/projects/abington-crack-injection-2025-03-before.jpg
 afterImage: /images/projects/abington-crack-injection-2025-03-after.jpg
+beforeAfterVerified: false
 summary: "A leaking garage settling crack was fully injected to stop water intrusion. A larger crack in the deck foundation was also sealed with hydraulic cement, restoring structural integrity."
 published: true
 ---

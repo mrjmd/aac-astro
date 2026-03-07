@@ -15,6 +15,8 @@ relatedPosts:
 relatedServices:
   - "foundation-crack-injection"
   - "leaky-bulkhead-repair"
+heroImage: "/images/projects/hingham-crack-injection-2025-01-before.jpg"
+heroImageAlt: "Water intrusion through basement wall crack"
 ---
 
 It rained last night, and now there's water on your basement floor. Maybe it's a puddle in the corner, a wet streak down the wall, or a small river flowing in through your bulkhead stairs.

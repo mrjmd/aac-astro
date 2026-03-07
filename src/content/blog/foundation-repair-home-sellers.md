@@ -7,7 +7,8 @@ publishDate: 2026-05-19
 author: "Attack A Crack"
 category: "guides"
 tags: ["home selling", "disclosure", "real estate", "foundation repair", "warranty transfer"]
-heroImage: ""
+heroImage: "/images/projects/medford-crack-injection-2025-04-before.jpg"
+heroImageAlt: "Foundation Repair for Home Sellers: What to Disclose and When to Fix"
 draft: true
 
 relatedServices:

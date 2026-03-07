@@ -12,8 +12,8 @@ tags:
   - "CMU"
   - "foundation repair"
   - "bowing walls"
-heroImage: "/images/foundation-types/cinderblock-hero.jpg"
-heroImageAlt: "Cinderblock CMU foundation wall showing typical stair-step crack pattern"
+heroImage: "/images/projects/malden-crack-injection-2025-05-after.jpg"
+heroImageAlt: "Cinderblock foundation wall after professional crack repair in Malden"
 relatedServices:
   - "wall-crack-repair"
   - "carbon-fiber-stitches"

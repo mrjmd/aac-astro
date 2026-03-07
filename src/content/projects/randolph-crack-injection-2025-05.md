@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/randolph-crack-injection-2025-05-before.jpg
 afterImage: /images/projects/randolph-crack-injection-2025-05-after.jpg
+beforeAfterVerified: false
 summary: "A newly finished basement wall in Randolph, MA, developed a leaking foundation crack. We performed a targeted injection repair, permanently sealing the crack for a dry and stable space."
 published: true
 ---

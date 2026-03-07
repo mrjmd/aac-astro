@@ -7,7 +7,8 @@ publishDate: 2026-09-01
 author: "Attack A Crack"
 category: "guides"
 tags: ["Braintree", "South Shore", "Massachusetts", "foundation repair", "fill material", "foundation problems"]
-heroImage: ""
+heroImage: "/images/projects/canton-crack-injection-2025-08-before.jpg"
+heroImageAlt: "Braintree Foundation Issues: What South Shore Homeowners Face"
 draft: true
 city: "Braintree"
 state: "MA"

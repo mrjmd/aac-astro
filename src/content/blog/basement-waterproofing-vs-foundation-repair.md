@@ -7,8 +7,8 @@ publishDate: 2025-12-15
 author: "Matt Davis"
 category: "guides"
 tags: ["basement waterproofing", "foundation repair", "water infiltration"]
-heroImage: "/images/blog/waterproofing-vs-repair-hero.jpg"
-heroImageAlt: "Basement with water infiltration issues"
+heroImage: "/images/projects/marshfield-crack-injection-2026-01-before.jpg"
+heroImageAlt: "Foundation crack with water infiltration before repair in Marshfield"
 relatedPosts:
   - "water-in-basement-after-rain"
   - "basement-floor-cracks-leaking"

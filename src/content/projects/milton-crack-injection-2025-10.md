@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/milton-crack-injection-2025-10-before.jpg
 afterImage: /images/projects/milton-crack-injection-2025-10-after.jpg
+beforeAfterVerified: false
 summary: "A persistent vertical crack near a basement window in Milton, MA, was causing water intrusion. Our team performed a professional foundation crack injection, permanently sealing the flaw and restoring the foundation's integrity."
 published: true
 ---

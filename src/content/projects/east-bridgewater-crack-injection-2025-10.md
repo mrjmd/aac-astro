@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/east-bridgewater-crack-injection-2025-10-before.jpg
 afterImage: /images/projects/east-bridgewater-crack-injection-2025-10-after.jpg
+beforeAfterVerified: false
 summary: "Foundation cracks in an East Bridgewater basement, including one by a window, were causing concern. We injected and sealed both cracks, creating a permanent waterproof barrier to prevent future water intrusion."
 published: true
 ---

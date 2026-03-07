@@ -17,6 +17,8 @@ relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
   - "free-foundation-consultations"
+heroImage: "/images/projects/quincy-crack-injection-2025-08-2-before.jpg"
+heroImageAlt: "Signs of foundation problems in basement wall"
 ---
 
 Most foundation problems don't announce themselves with a dramatic crack or a flooded basement. They creep in slowly — a door that sticks a little more each winter, a hairline crack that grows a quarter inch per year, a musty smell that wasn't there before.

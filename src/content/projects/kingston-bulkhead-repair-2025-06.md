@@ -7,6 +7,7 @@ serviceTypes:
   - bulkhead-repair
 beforeImage: /images/projects/kingston-bulkhead-repair-2025-06-before.jpg
 afterImage: /images/projects/kingston-bulkhead-repair-2025-06-after.jpg
+beforeAfterVerified: false
 summary: "A Kingston, MA step-up bulkhead had compromised seals, leading to water and debris intrusion. Our team performed a full bulkhead sealing, restoring its integrity and protecting the home."
 published: true
 ---

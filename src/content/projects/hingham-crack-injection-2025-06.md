@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/hingham-crack-injection-2025-06-before.jpg
 afterImage: /images/projects/hingham-crack-injection-2025-06-after.jpg
+beforeAfterVerified: false
 summary: "In Hingham, MA, two visible foundation cracks were expertly injected and sealed, resolving potential water entry and securing the foundation."
 published: true
 ---

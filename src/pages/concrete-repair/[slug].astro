@@ -141,18 +141,17 @@ const schemas = faqSchema ? [serviceSchema, faqSchema] : [serviceSchema];
 						</div>
 					</div>
 
-					<!-- Before/After Toggle -->
-					{(service.data.beforeImage || service.data.afterImage) && (
+					<!-- Service Image -->
+					{service.data.beforeImage && service.data.afterImage ? (
 						<div class="relative hidden lg:block">
 							<div class="aspect-[4/3] rounded-[32px] overflow-hidden border-4 border-white/20 shadow-2xl">
 								<div class="resurfacing-image-container relative w-full h-full">
 									<img
-										src={service.data.beforeImage || "https://picsum.photos/seed/before/800/600"}
-										data-before={service.data.beforeImage || "https://picsum.photos/seed/before/800/600"}
-										data-after={service.data.afterImage || "https://picsum.photos/seed/after/800/600"}
+										src={service.data.beforeImage}
+										data-before={service.data.beforeImage}
+										data-after={service.data.afterImage}
 										alt={`${service.data.title} - Before and After`}
 										class="resurfacing-hero-image w-full h-full object-cover transition-opacity duration-500"
-										referrerpolicy="no-referrer"
 									/>
 									<div class="status-badge absolute top-4 left-4 bg-aac-dark/80 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-lg border border-white/20">
 										Before
@@ -163,6 +162,14 @@ const schemas = faqSchema ? [serviceSchema, faqSchema] : [serviceSchema];
 								<Icon name="ArrowRight" size={14} />
 								See After
 							</button>
+						</div>
+					) : (service.data.heroImage || service.data.afterImage) && (
+						<div class="hidden lg:block aspect-[4/3] rounded-[32px] overflow-hidden border-4 border-white/20 shadow-2xl">
+							<img
+								src={service.data.heroImage || service.data.afterImage}
+								alt={service.data.title}
+								class="w-full h-full object-cover"
+							/>
 						</div>
 					)}
 				</div>

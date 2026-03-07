@@ -10,6 +10,7 @@ coordinates:
   lng: -71.0023
 beforeImage: /images/projects/quincy-crack-injection-2025-08-before.jpg
 afterImage: /images/projects/quincy-crack-injection-2025-08-after.jpg
+beforeAfterVerified: false
 summary: "In Quincy, MA, two small foundation cracks were discovered. Our team effectively sealed them with targeted crack injection, restoring the foundation's integrity and preventing future issues."
 published: true
 ---

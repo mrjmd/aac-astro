@@ -7,7 +7,8 @@ publishDate: 2026-09-15
 author: "Attack A Crack"
 category: "case-studies"
 tags: ["photo walkthrough", "repair process", "before and after", "crack injection"]
-heroImage: ""
+heroImage: "/images/projects/abington-crack-injection-2025-03-before.jpg"
+heroImageAlt: "What Does Foundation Repair Actually Look Like? A Photo Walkthrough"
 draft: true
 
 relatedServices:

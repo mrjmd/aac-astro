@@ -7,6 +7,7 @@ serviceTypes:
   - garage-floor
 beforeImage: /images/projects/milton-crack-injection-2026-03-before.jpg
 afterImage: /images/projects/milton-crack-injection-2026-03-after.jpg
+beforeAfterVerified: false
 summary: "Severe cracks in a Milton, MA garage slab compromised its integrity. Expert concrete repair stabilized and resurfaced the garage floor, restoring a smooth, durable finish."
 published: true
 ---

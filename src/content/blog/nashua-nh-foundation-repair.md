@@ -7,7 +7,8 @@ publishDate: 2026-11-10
 author: "Attack A Crack"
 category: "guides"
 tags: ["New Hampshire", "Nashua", "Manchester", "freeze-thaw", "granite", "foundation repair"]
-heroImage: ""
+heroImage: "/images/projects/weymouth-crack-injection-2025-05-before.jpg"
+heroImageAlt: "Nashua and Southern NH: Foundation Repair in the Granite State"
 draft: true
 targetLocation: New Hampshire
 relatedServices:

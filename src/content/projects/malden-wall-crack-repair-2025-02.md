@@ -7,6 +7,7 @@ serviceTypes:
   - wall-crack-repair
 beforeImage: /images/projects/malden-wall-crack-repair-2025-02-before.jpg
 afterImage: /images/projects/malden-wall-crack-repair-2025-02-after.jpg
+beforeAfterVerified: false
 summary: "A deteriorated cinder block patio wall in Malden, MA, required significant repair. Our team expertly restored the damaged sections, reinforcing the structure for lasting stability."
 published: true
 ---

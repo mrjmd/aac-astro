@@ -128,15 +128,16 @@ const servicesSchema = {
 
 					<!-- Concrete Repair Card with MA Only Badge -->
 					<a href="/concrete-repair" class="group bg-white rounded-[32px] border-2 border-zinc-100 hover:border-aac-blue transition-all shadow-sm hover:shadow-xl overflow-hidden">
-						<div class="p-8 pb-0">
-							<div class="flex items-center gap-3 mb-6">
-								<div class="w-14 h-14 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center group-hover:bg-aac-blue group-hover:text-white transition-colors">
-									<Icon name="Layers" size={28} />
+						<div class="aspect-video overflow-hidden relative">
+							<img src="/images/projects/hanover-concrete-repair-2025-06-before.jpg" alt="Concrete repair and resurfacing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+							<div class="absolute bottom-4 left-4 flex items-center gap-2">
+								<div class="w-12 h-12 bg-white/90 backdrop-blur-sm text-aac-blue rounded-xl flex items-center justify-center">
+									<Icon name="Layers" size={24} />
 								</div>
 								<span class="bg-aac-yellow text-aac-dark text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">MA Only</span>
 							</div>
 						</div>
-						<div class="px-8 pb-8">
+						<div class="p-8">
 							<h3 class="text-2xl font-black mb-4 tracking-tight group-hover:text-aac-blue transition-colors">
 								Concrete Repair & Resurfacing
 							</h3>
@@ -225,10 +226,9 @@ const servicesSchema = {
 					</div>
 					<div class="aspect-[4/3] rounded-[32px] overflow-hidden border-8 border-white shadow-2xl bg-zinc-200">
 						<img
-							src="https://picsum.photos/seed/method/800/600"
-							alt="Foundation repair technician performing injection repair"
+							src="/images/projects/marshfield-crack-injection-2025-08-before.jpg"
+							alt="Foundation crack requiring injection repair"
 							class="w-full h-full object-cover"
-							referrerpolicy="no-referrer"
 						/>
 					</div>
 				</div>

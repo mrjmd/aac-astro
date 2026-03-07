@@ -8,6 +8,7 @@ serviceTypes:
   - concrete-repair
 beforeImage: /images/projects/lenox-crack-injection-2025-04-before.jpg
 afterImage: /images/projects/lenox-crack-injection-2025-04-after.jpg
+beforeAfterVerified: false
 summary: "This commercial property in Lenox, MA, suffered from foundation cracks and a deteriorated concrete shelf. Crack injection provided structural repair, and meticulous resurfacing restored the prominent shelf's appearance."
 published: true
 ---

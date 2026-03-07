@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/weymouth-crack-injection-2025-07-before.jpg
 afterImage: /images/projects/weymouth-crack-injection-2025-07-after.jpg
+beforeAfterVerified: false
 summary: "A Weymouth, MA property had a leaking basement window crack. Foundation crack injection effectively sealed the crack, resolving water intrusion."
 published: true
 ---

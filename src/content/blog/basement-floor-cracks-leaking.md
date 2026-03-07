@@ -15,6 +15,8 @@ relatedPosts:
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
+heroImage: "/images/projects/kingston-crack-injection-2026-01-before.jpg"
+heroImageAlt: "Basement floor crack with water leaking"
 ---
 
 You walk downstairs and there it is: water seeping through a crack in your basement floor. It might be a thin trickle or a slow, persistent weep. Either way, you need to understand what's happening before you fix it.

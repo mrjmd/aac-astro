@@ -8,6 +8,7 @@ serviceTypes:
   - sewer-conduit
 beforeImage: /images/projects/burlington-sewer-conduit-2025-06-before.jpg
 afterImage: /images/projects/burlington-sewer-conduit-2025-06-after.jpg
+beforeAfterVerified: false
 summary: "A Burlington, MA property had a foundation crack connected to a sewer line inlet, causing water intrusion. We permanently sealed the crack, stopping water entry and restoring the foundation's integrity."
 published: true
 ---

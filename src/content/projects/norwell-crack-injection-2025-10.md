@@ -8,6 +8,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/norwell-crack-injection-2025-10-before.jpg
 afterImage: /images/projects/norwell-crack-injection-2025-10-after.jpg
+beforeAfterVerified: false
 summary: "A vertical crack in a Norwell, MA bulkhead wall allowed water to seep into the basement. Foundation crack injection permanently sealed the breach, stopping leaks and restoring a dry, secure foundation."
 published: true
 ---

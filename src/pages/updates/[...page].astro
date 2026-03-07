@@ -150,10 +150,9 @@ const projectTotalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
 						>
 							<div class="aspect-video overflow-hidden relative">
 								<img
-									src={post.data.heroImage || `https://picsum.photos/seed/${post.id}/600/400`}
+									src={post.data.heroImage || "/images/projects/marshfield-crack-injection-2025-06-before.jpg"}
 									alt={post.data.heroImageAlt || post.data.title}
 									class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-									referrerpolicy="no-referrer"
 								/>
 								<div class="absolute top-4 left-4 bg-aac-dark/80 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg border border-white/20">
 									{categoryLabels[post.data.category] || 'Article'}

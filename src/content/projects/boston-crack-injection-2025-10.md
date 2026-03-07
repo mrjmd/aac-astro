@@ -10,6 +10,7 @@ coordinates:
   lng: -71.0589
 beforeImage: /images/projects/boston-crack-injection-2025-10-before.jpg
 afterImage: /images/projects/boston-crack-injection-2025-10-after.jpg
+beforeAfterVerified: false
 summary: "Damaged concrete stairways in Boston, with missing chunks and cracks, were professionally resurfaced, restoring their integrity and appearance."
 published: true
 ---

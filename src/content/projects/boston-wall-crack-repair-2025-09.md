@@ -11,6 +11,7 @@ coordinates:
   lng: -71.0589
 beforeImage: /images/projects/boston-wall-crack-repair-2025-09-before.jpg
 afterImage: /images/projects/boston-wall-crack-repair-2025-09-after.jpg
+beforeAfterVerified: false
 summary: "A Boston homeowner reported growing floor cracks, possibly from train vibrations. An inspection revealed and addressed significant wall cracks, stabilizing the home's foundation."
 published: true
 ---

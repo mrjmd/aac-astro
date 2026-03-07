@@ -7,7 +7,8 @@ publishDate: 2026-05-05
 author: "Attack A Crack"
 category: "guides"
 tags: ["south shore", "Massachusetts", "coastal foundations", "water table", "foundation repair"]
-heroImage: ""
+heroImage: "/images/projects/marshfield-crack-injection-2025-06-before.jpg"
+heroImageAlt: "South Shore Foundation Problems: What Makes This Area Different"
 draft: true
 targetLocation: South Shore MA
 relatedServices:

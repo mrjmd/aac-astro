@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/walpole-crack-injection-2025-02-before.jpg
 afterImage: /images/projects/walpole-crack-injection-2025-02-after.jpg
+beforeAfterVerified: false
 summary: "A leaking foundation crack in a Walpole, MA property was expertly repaired using crack injection. This restored the foundation's integrity, ensuring a dry and secure basement."
 published: true
 ---

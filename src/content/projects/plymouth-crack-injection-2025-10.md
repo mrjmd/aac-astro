@@ -10,6 +10,7 @@ coordinates:
   lng: -70.6673
 beforeImage: /images/projects/plymouth-crack-injection-2025-10-after.jpg
 afterImage: /images/projects/plymouth-crack-injection-2025-10-after.jpg
+beforeAfterVerified: false
 summary: "A hairline crack was allowing water into a Plymouth, MA basement. Foundation crack injection successfully sealed the leak, ensuring a dry and secure foundation."
 published: true
 ---

@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/hanover-crack-injection-2025-06-before.jpg
 afterImage: /images/projects/hanover-crack-injection-2025-06-after.jpg
+beforeAfterVerified: false
 summary: "A Hanover foundation wall with multiple cracks was waterproofed and stabilized using crack injection and sealing techniques. The repair successfully prevented future water intrusion."
 published: true
 ---

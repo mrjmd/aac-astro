@@ -8,8 +8,8 @@ author: "Luc Richard"
 category: "guides"
 showOnServicesPage: true
 tags: ["foundation cracks", "structural damage", "basement repair"]
-heroImage: "/images/blog/crack-types-hero.jpg"
-heroImageAlt: "Close-up of different foundation crack patterns"
+heroImage: "/images/projects/boston-wall-crack-repair-2025-09-before.jpg"
+heroImageAlt: "Foundation wall crack before repair in Boston basement"
 featured: true
 relatedPosts:
   - "horizontal-foundation-cracks"

@@ -7,7 +7,8 @@ publishDate: 2026-09-29
 author: "Attack A Crack"
 category: "maintenance-tips"
 tags: ["fall inspection", "winterization", "seasonal checklist", "foundation maintenance"]
-heroImage: ""
+heroImage: "/images/projects/hull-crack-injection-2025-07-before.jpg"
+heroImageAlt: "Fall Foundation Inspection Checklist for New England Homeowners"
 draft: true
 
 relatedServices:

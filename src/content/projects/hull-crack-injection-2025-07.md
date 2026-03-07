@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/hull-crack-injection-2025-07-before.jpg
 afterImage: /images/projects/hull-crack-injection-2025-07-after.jpg
+beforeAfterVerified: false
 summary: "An actively leaking foundation crack in a 1900 Hull, MA home was sealed. Foundation crack injection successfully stopped the water intrusion, restoring the basement's integrity."
 published: true
 ---

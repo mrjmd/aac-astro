@@ -7,7 +7,8 @@ publishDate: 2026-05-19
 author: "Attack A Crack"
 category: "guides"
 tags: ["foundation repair timeline", "repair duration", "crack injection", "carbon fiber", "home repair planning"]
-heroImage: ""
+heroImage: "/images/projects/sandwich-crack-injection-2025-07-before.jpg"
+heroImageAlt: "How Long Does Foundation Repair Take? Timeline by Repair Type"
 draft: true
 
 relatedServices:

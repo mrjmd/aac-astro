@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/kingston-crack-injection-2025-06-before.jpg
 afterImage: /images/projects/kingston-crack-injection-2025-06-after.jpg
+beforeAfterVerified: false
 summary: "In Kingston, MA, a foundation with multiple cracks and 18 leaking tie rod holes was thoroughly injected and sealed, resolving all water intrusion issues."
 published: true
 ---

@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/abington-crack-injection-2025-09-before.jpg
 afterImage: /images/projects/abington-crack-injection-2025-09-after.jpg
+beforeAfterVerified: false
 summary: "In Abington, MA, a small foundation crack near a window was sealed using professional injection, preventing further water intrusion and damage."
 published: true
 ---

@@ -5,9 +5,7 @@ metaDescription: "Expert concrete pool deck repair in Massachusetts. Fix cracks,
 excerpt: "Repair cracked, stained pool decks with cool-touch, slip-resistant concrete overlays. Multiple colors and patterns to complement your outdoor space."
 icon: "Wrench"
 order: 5
-beforeImage: "/images/concrete-repair/pool-deck-before.jpg"
-afterImage: "/images/concrete-repair/pool-deck-after.jpg"
-heroImage: "/images/concrete-repair/pool-deck-hero.jpg"
+heroImage: "/images/projects/newton-concrete-repair-2025-07-after.jpg"
 faqs:
   - question: "Is the repaired surface safe for bare feet?"
     answer: "Absolutely. We use cool-touch technologies that reduce surface temperature and slip-resistant textures that provide traction even when wet. Safety is paramount around pools."

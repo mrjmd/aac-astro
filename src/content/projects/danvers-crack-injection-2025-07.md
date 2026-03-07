@@ -8,6 +8,7 @@ serviceTypes:
   - sewer-conduit
 beforeImage: /images/projects/danvers-crack-injection-2025-07-before.jpg
 afterImage: /images/projects/danvers-crack-injection-2025-07-after.jpg
+beforeAfterVerified: false
 summary: "A Danvers, MA foundation crack and leaking pipe penetration caused persistent water intrusion. We successfully injected the crack and sealed the penetration, resolving the leakage and restoring foundation integrity."
 published: true
 ---

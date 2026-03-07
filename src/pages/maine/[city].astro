@@ -9,7 +9,7 @@ import Icon from '../../components/Icon.astro';
 import ProjectCards from '../../components/ProjectCards.astro';
 import { reviewCount, rating, aggregateRatingSchema } from '../../utils/reviews';
 import { getForLocation } from '../../utils/testimonials';
-import { getForLocation as getProjectsForLocation } from '../../utils/projects';
+import { getForLocation as getProjectsForLocation, getProjectImageForCity } from '../../utils/projects';
 import { getBlogForLocation } from '../../utils/blog-linking';
 import { crackRepairRange, bulkheadRange, carbonFiberRange, sewerConduitRange } from '../../utils/pricing';
 
@@ -35,6 +35,7 @@ const testimonial = location.data.testimonial
 // Get matching projects for this city
 const cityProjects = await getProjectsForLocation(location.data.city, 'ME', 3);
 const cityBlogPosts = await getBlogForLocation(location.data.city, 'ME', 3);
+const heroImage = await getProjectImageForCity(location.data.city, 'ME');
 
 // Get services
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
@@ -185,10 +186,9 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 					<div class="hidden lg:block">
 						<div class="aspect-[4/3] rounded-[32px] overflow-hidden border-4 border-white/20 bg-zinc-800">
 							<img
-								src={`https://picsum.photos/seed/${location.data.city.toLowerCase()}-me/800/600`}
-								alt={`Foundation repair in ${location.data.city}, ME`}
+								src={heroImage.src}
+								alt={heroImage.alt}
 								class="w-full h-full object-cover"
-								referrerpolicy="no-referrer"
 							/>
 						</div>
 					</div>

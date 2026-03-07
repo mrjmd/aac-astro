@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/sandwich-crack-injection-2025-07-before.jpg
 afterImage: /images/projects/sandwich-crack-injection-2025-07-after.jpg
+beforeAfterVerified: false
 summary: "A basement wall in Sandwich, MA, developed a leaking crack below a window. Foundation crack injection sealed the opening, preventing further water intrusion and protecting the home's foundation."
 published: true
 ---

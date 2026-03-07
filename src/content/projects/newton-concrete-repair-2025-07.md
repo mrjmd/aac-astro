@@ -10,6 +10,7 @@ coordinates:
   lng: -71.2092
 beforeImage: /images/projects/newton-concrete-repair-2025-07-before.jpg
 afterImage: /images/projects/newton-concrete-repair-2025-07-after.jpg
+beforeAfterVerified: false
 summary: "A concrete retaining wall in Newton, MA, developed a crack. Our team performed a specialized injection repair, effectively sealing the defect and preparing the surface for a planned decorative finish."
 published: true
 ---

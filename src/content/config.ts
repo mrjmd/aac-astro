@@ -229,6 +229,7 @@ const projectsCollection = defineCollection({
     ])).min(1),
     beforeImage: z.string(),
     afterImage: z.string(),
+    beforeAfterVerified: z.boolean().default(true),
     summary: z.string().max(280),
     published: z.boolean().default(true),
   }),

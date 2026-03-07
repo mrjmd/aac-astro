@@ -7,7 +7,8 @@ publishDate: 2026-01-20
 author: "Attack A Crack"
 category: "guides"
 tags: ["emergency", "water intrusion", "basement flooding", "urgent repair"]
-heroImage: ""
+heroImage: "/images/projects/hanover-crack-injection-2025-06-before.jpg"
+heroImageAlt: "Foundation Emergency: What to Do When Your Basement Is Flooding"
 
 relatedServices:
   - "foundation-crack-injection"

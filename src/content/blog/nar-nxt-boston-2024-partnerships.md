@@ -7,8 +7,8 @@ publishDate: 2024-11-15
 author: "Matt Davis"
 category: "news"
 tags: ["events", "real estate", "Massachusetts", "partnerships"]
-heroImage: "/images/blog/nar-nxt-hero.jpg"
-heroImageAlt: "Attack A Crack team at NAR NXT conference"
+heroImage: "/images/projects/boston-crack-injection-2025-09-after.jpg"
+heroImageAlt: "Professional foundation crack injection repair completed in Boston"
 featured: false
 relatedPosts:
   - "ashi-new-england-conference-2024"

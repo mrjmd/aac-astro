@@ -14,6 +14,8 @@ relatedPosts:
   - "leaky-bulkhead-wilmington-repair"
 relatedServices:
   - "leaky-bulkhead-repair"
+heroImage: "/images/projects/groveland-bulkhead-repair-2025-08-after.jpg"
+heroImageAlt: "Bulkhead stairs after repair"
 ---
 
 If your bulkhead (cellar door) leaks every time it rains, you're wondering what it'll cost to fix. The answer depends on what kind of repair you need, and the right repair might be less expensive than you think.

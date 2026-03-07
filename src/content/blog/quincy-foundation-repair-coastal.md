@@ -7,7 +7,8 @@ publishDate: 2026-05-26
 author: "Attack A Crack"
 category: "guides"
 tags: ["Quincy", "coastal foundation", "water intrusion", "South Shore", "Massachusetts"]
-heroImage: ""
+heroImage: "/images/projects/danvers-crack-injection-2025-07-before.jpg"
+heroImageAlt: "Quincy Foundation Repair: Coastal Homes and Water Intrusion"
 draft: true
 targetLocation: Quincy MA
 relatedServices:

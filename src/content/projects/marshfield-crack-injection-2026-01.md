@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/marshfield-crack-injection-2026-01-before.jpg
 afterImage: /images/projects/marshfield-crack-injection-2026-01-after.jpg
+beforeAfterVerified: false
 summary: "In Marshfield, MA, a basement foundation had two significant cracks, including a wider window crack. Expert injection successfully sealed both, ensuring a dry and stable foundation."
 published: true
 ---

@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/randolph-crack-injection-2025-02-before.jpg
 afterImage: /images/projects/randolph-crack-injection-2025-02-after.jpg
+beforeAfterVerified: false
 summary: "A Randolph, MA property had a visible vertical crack in its foundation wall. We performed a professional crack injection, effectively sealing the wall and restoring its integrity against water intrusion."
 published: true
 ---

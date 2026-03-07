@@ -7,7 +7,8 @@ publishDate: 2026-08-18
 author: "Attack A Crack"
 category: "guides"
 tags: ["Weymouth", "South Shore", "Massachusetts", "foundation repair", "coastal foundations", "water table"]
-heroImage: ""
+heroImage: "/images/projects/weymouth-crack-injection-2025-07-2-before.jpg"
+heroImageAlt: "Foundation Repair in Weymouth MA: South Shore Challenges"
 draft: true
 city: "Weymouth"
 state: "MA"

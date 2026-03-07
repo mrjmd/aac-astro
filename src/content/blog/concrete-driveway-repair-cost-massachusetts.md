@@ -7,7 +7,8 @@ publishDate: 2026-12-01
 author: "Attack A Crack"
 category: "cost-guides"
 tags: ["driveway repair cost", "Massachusetts", "concrete repair pricing", "cost guide"]
-heroImage: ""
+heroImage: "/images/projects/newton-concrete-repair-2025-07-before.jpg"
+heroImageAlt: "How Much Does Concrete Driveway Repair Cost in Massachusetts?"
 draft: true
 targetLocation: Massachusetts
 relatedServices:

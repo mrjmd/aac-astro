@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/duxbury-crack-injection-2026-03-before.jpg
 afterImage: /images/projects/duxbury-crack-injection-2026-03-after.jpg
+beforeAfterVerified: false
 summary: "A Duxbury, MA home had two basement foundation cracks, one actively leaking. Professional injection sealed both, restoring structural integrity and a dry environment."
 published: true
 ---

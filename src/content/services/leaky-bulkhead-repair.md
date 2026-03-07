@@ -5,9 +5,7 @@ metaDescription: "Stop water from entering through your bulkhead door. Our speci
 excerpt: "We remove the old gasket and inject between the foundation and precast bulkhead for a lifelong seal. Stop basement flooding from your bulkhead door."
 icon: "Droplets"
 order: 2
-beforeImage: "/images/services/bulkhead-before.jpg"
-afterImage: "/images/services/bulkhead-after.jpg"
-heroImage: "/images/services/bulkhead-hero.jpg"
+heroImage: "/images/service-bulkheads.jpg"
 faqs:
   - question: "Why does my bulkhead leak?"
     answer: "Bulkheads leak when the seal between the precast unit and your poured foundation fails. The original rubber or foam gasket deteriorates over time, and New England's freeze-thaw cycles widen the gap. Settling can also shift the bulkhead relative to the foundation, breaking the seal. The result is water pooling on the stairs and flowing into your basement."

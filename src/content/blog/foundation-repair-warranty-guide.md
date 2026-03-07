@@ -7,7 +7,8 @@ publishDate: 2026-07-07
 author: "Attack A Crack"
 category: "guides"
 tags: ["foundation repair warranty", "lifetime warranty", "home repair", "warranty coverage", "consumer guide"]
-heroImage: ""
+heroImage: "/images/projects/norwell-crack-injection-2025-03-before.jpg"
+heroImageAlt: "Foundation Repair Warranties: What to Look For and What to Avoid"
 draft: true
 
 relatedServices:

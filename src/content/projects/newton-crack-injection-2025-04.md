@@ -10,6 +10,7 @@ coordinates:
   lng: -71.2092
 beforeImage: /images/projects/newton-crack-injection-2025-04-before.jpg
 afterImage: /images/projects/newton-crack-injection-2025-04-after.jpg
+beforeAfterVerified: false
 summary: "A significant vertical foundation crack in a Newton, MA, basement was professionally injected and sealed. This repair successfully waterproofed the area and restored the foundation's integrity."
 published: true
 ---

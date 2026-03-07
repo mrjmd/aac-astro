@@ -7,7 +7,8 @@ publishDate: 2026-08-18
 author: "Attack A Crack"
 category: "guides"
 tags: ["French drain", "crack injection", "wet basement", "waterproofing", "comparison"]
-heroImage: ""
+heroImage: "/images/projects/plymouth-crack-injection-2025-01-before.jpg"
+heroImageAlt: "French Drain vs. Crack Injection: Two Solutions for Two Different Problems"
 draft: true
 relatedServices:
   - "foundation-crack-injection"

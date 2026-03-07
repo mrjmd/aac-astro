@@ -7,7 +7,8 @@ publishDate: 2026-01-13
 author: "Attack A Crack"
 category: "maintenance-tips"
 tags: ["ice dams", "winter damage", "foundation cracks", "water intrusion"]
-heroImage: ""
+heroImage: "/images/projects/shrewsbury-crack-injection-2025-10-before.jpg"
+heroImageAlt: "Ice Dams: The Roof Problem That Wrecks Foundations"
 
 relatedServices:
   - "foundation-crack-injection"

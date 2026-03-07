@@ -7,7 +7,8 @@ publishDate: 2026-10-27
 author: "Attack A Crack"
 category: "guides"
 tags: ["selling home", "foundation issues", "Massachusetts", "disclosure", "real estate", "home value"]
-heroImage: ""
+heroImage: "/images/projects/hingham-crack-injection-2025-06-before.jpg"
+heroImageAlt: "Selling a House with Foundation Issues in Massachusetts"
 draft: true
 state: "MA"
 targetLocation: "Massachusetts"

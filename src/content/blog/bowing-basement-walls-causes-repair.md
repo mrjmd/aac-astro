@@ -7,7 +7,8 @@ publishDate: 2026-06-30
 author: "Attack A Crack"
 category: "guides"
 tags: ["bowing walls", "basement walls", "structural repair", "carbon fiber", "wall stabilization", "hydrostatic pressure"]
-heroImage: ""
+heroImage: "/images/projects/belmont-crack-injection-2025-06-before.jpg"
+heroImageAlt: "Bowing Basement Walls: Causes, Severity, and Repair Options"
 draft: true
 
 relatedServices:

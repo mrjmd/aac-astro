@@ -10,6 +10,7 @@ coordinates:
   lng: -71.8023
 beforeImage: /images/projects/worcester-crack-injection-2025-07-before.jpg
 afterImage: /images/projects/worcester-crack-injection-2025-07-after.jpg
+beforeAfterVerified: false
 summary: "A Worcester, MA basement suffered from an active leak and a deteriorated old crack repair. Both issues were resolved, ensuring a dry and secure foundation."
 published: true
 ---

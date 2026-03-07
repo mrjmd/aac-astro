@@ -8,6 +8,7 @@ serviceTypes:
   - garage-floor
 beforeImage: /images/projects/easton-crack-injection-2025-08-before.jpg
 afterImage: /images/projects/easton-crack-injection-2025-08-after.jpg
+beforeAfterVerified: false
 summary: "Foundation cracks, tie rod leaks, and a window crack threatened a home in Easton, MA. We sealed all issues with professional injection, ensuring a dry and stable basement and garage."
 published: true
 ---

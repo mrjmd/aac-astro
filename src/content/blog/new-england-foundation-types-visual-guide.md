@@ -7,7 +7,8 @@ publishDate: 2026-08-11
 author: "Attack A Crack"
 category: "guides"
 tags: ["foundation types", "New England homes", "identification", "visual guide"]
-heroImage: ""
+heroImage: "/images/projects/weymouth-crack-injection-2025-07-before.jpg"
+heroImageAlt: "New England Foundation Types: A Visual Guide to What Is Under Your House"
 draft: true
 
 relatedServices:

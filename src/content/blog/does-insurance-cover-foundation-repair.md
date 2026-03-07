@@ -17,6 +17,8 @@ relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
   - "free-foundation-consultations"
+heroImage: "/images/projects/boston-crack-injection-2025-10-after.jpg"
+heroImageAlt: "Foundation crack repair in Boston basement"
 ---
 
 "Will my insurance cover this?" It's one of the first questions homeowners ask when they find a crack in their foundation. The short answer: **probably not — but there are important exceptions.**

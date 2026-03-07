@@ -7,7 +7,8 @@ publishDate: 2026-08-04
 author: "Attack A Crack"
 category: "cost-guides"
 tags: ["concrete stairs", "stair repair", "cost guide", "Massachusetts", "safety"]
-heroImage: ""
+heroImage: "/images/projects/hanover-concrete-repair-2025-06-before.jpg"
+heroImageAlt: "Concrete Stair Repair: Safety, Costs, and What to Expect in 2026"
 draft: true
 targetLocation: Massachusetts
 relatedServices:

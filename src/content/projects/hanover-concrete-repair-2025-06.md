@@ -7,6 +7,7 @@ serviceTypes:
   - patio
 beforeImage: /images/projects/hanover-concrete-repair-2025-06-before.jpg
 afterImage: /images/projects/hanover-concrete-repair-2025-06-after.jpg
+beforeAfterVerified: false
 summary: "A cracking, previously skim-coated front patio in Hanover, MA was expertly refinished. The surface is now smooth, durable, and restored to pristine condition."
 published: true
 ---

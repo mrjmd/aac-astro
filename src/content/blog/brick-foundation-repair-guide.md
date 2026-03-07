@@ -7,7 +7,8 @@ publishDate: 2026-09-08
 author: "Attack A Crack"
 category: "foundation-types"
 tags: ["brick foundation", "old homes", "mortar repointing", "New England", "historic"]
-heroImage: ""
+heroImage: "/images/projects/dedham-crack-injection-2025-12-before.jpg"
+heroImageAlt: "Brick Foundation Repair: A Guide for Old New England Homes"
 draft: true
 
 relatedServices:

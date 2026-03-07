@@ -7,7 +7,8 @@ publishDate: 2026-12-08
 author: "Attack A Crack"
 category: "guides"
 tags: ["Portland", "Maine", "coastal foundation", "winter", "foundation repair"]
-heroImage: ""
+heroImage: "/images/projects/boston-crack-injection-2025-07-before.jpg"
+heroImageAlt: "Portland, ME Foundations: Coastal Homes and Winter Challenges"
 draft: true
 targetLocation: Maine
 relatedServices:

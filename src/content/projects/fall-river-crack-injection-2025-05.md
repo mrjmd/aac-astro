@@ -10,6 +10,7 @@ coordinates:
   lng: -71.155
 beforeImage: /images/projects/fall-river-crack-injection-2025-05-before.jpg
 afterImage: /images/projects/fall-river-crack-injection-2025-05-after.jpg
+beforeAfterVerified: false
 summary: "A Fall River, MA, basement suffered from a persistent leak due to a foundation crack with failed previous repairs. Our expert injection permanently sealed the crack, ensuring a dry space."
 published: true
 ---

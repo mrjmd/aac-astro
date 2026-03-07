@@ -7,6 +7,7 @@ serviceTypes:
   - bulkhead-repair
 beforeImage: /images/projects/attleboro-bulkhead-repair-2025-12-before.jpg
 afterImage: /images/projects/attleboro-bulkhead-repair-2025-12-after.jpg
+beforeAfterVerified: false
 summary: "An Attleboro bulkhead continued to leak from higher points despite a partial seal. We completed a full waterproofing along both sides of the bulkhead, stopping persistent water intrusion."
 published: true
 ---

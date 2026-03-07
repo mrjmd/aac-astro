@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/belchertown-crack-injection-2025-11-before.jpg
 afterImage: /images/projects/belchertown-crack-injection-2025-11-after.jpg
+beforeAfterVerified: false
 summary: "A foundation crack in Belchertown, MA, was expertly sealed via injection, navigating around a solar inverter. This prevented water intrusion and restored the foundation's integrity."
 published: true
 ---

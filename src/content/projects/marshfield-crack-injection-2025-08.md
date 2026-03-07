@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/marshfield-crack-injection-2025-08-before.jpg
 afterImage: /images/projects/marshfield-crack-injection-2025-08-after.jpg
+beforeAfterVerified: false
 summary: "A Marshfield, MA foundation had a vertical crack and leaking tie rod holes. Expert injection sealed the crack and three tie rod locations, effectively waterproofing the basement."
 published: true
 ---

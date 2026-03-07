@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/ashland-crack-injection-2025-05-before.jpg
 afterImage: /images/projects/ashland-crack-injection-2025-05-after.jpg
+beforeAfterVerified: false
 summary: "A gnarly foundation crack in an Ashland, MA basement was allowing water intrusion. Our team performed a crack injection, effectively sealing it and preventing future leaks."
 published: true
 ---

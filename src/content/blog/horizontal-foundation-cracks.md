@@ -16,6 +16,8 @@ relatedServices:
   - "wall-crack-repair"
   - "carbon-fiber-stitches"
   - "foundation-crack-injection"
+heroImage: "/images/projects/rockland-wall-crack-repair-2025-02-after.jpg"
+heroImageAlt: "Horizontal foundation crack repair"
 ---
 
 If you've spotted a horizontal crack running along your foundation wall, I'm not going to sugarcoat it: **this is the one type of crack you should never ignore.** Horizontal cracks indicate your wall is under lateral pressure and may be bowing inward — a structural issue that only gets worse with time.

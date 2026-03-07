@@ -5,9 +5,7 @@ metaDescription: "Expert concrete garage floor repair in Massachusetts with prof
 excerpt: "Repair your garage floor from cracked and stained to showroom-quality. Choose from solid colors, decorative flakes, or metallic finishes."
 icon: "Wrench"
 order: 4
-beforeImage: "/images/concrete-repair/garage-before.jpg"
-afterImage: "/images/concrete-repair/garage-after.jpg"
-heroImage: "/images/concrete-repair/garage-hero.jpg"
+heroImage: "/images/projects/lexington-crack-injection-2025-10-after.jpg"
 faqs:
   - question: "What's the difference between repair and epoxy coating?"
     answer: "Epoxy coatings are thin surface treatments that look great but may peel on damaged concrete. Our repair system actually rebuilds the concrete surface before any coating, creating a permanent foundation for topcoats."

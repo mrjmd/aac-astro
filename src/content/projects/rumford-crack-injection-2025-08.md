@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/rumford-crack-injection-2025-08-before.jpg
 afterImage: /images/projects/rumford-crack-injection-2025-08-after.jpg
+beforeAfterVerified: false
 summary: "A Rumford, RI basement had a leaking vertical foundation crack causing water damage. Polyurethane injection permanently sealed the crack, restoring a dry space."
 published: true
 ---

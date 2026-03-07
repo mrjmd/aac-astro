@@ -7,8 +7,8 @@ publishDate: 2025-11-20
 author: "Luc Richard"
 category: "guides"
 tags: ["DIY repair", "foundation cracks", "when to call a professional"]
-heroImage: "/images/blog/diy-vs-pro-hero.jpg"
-heroImageAlt: "Homeowner examining a foundation crack"
+heroImage: "/images/projects/ashland-crack-injection-2025-05-before.jpg"
+heroImageAlt: "Foundation crack before professional repair in Ashland basement"
 relatedPosts:
   - "foundation-repair-cost-guide-2026"
   - "basement-waterproofing-vs-foundation-repair"

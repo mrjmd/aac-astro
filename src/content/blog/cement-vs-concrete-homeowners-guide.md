@@ -15,6 +15,8 @@ relatedPosts:
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
+heroImage: "/images/projects/rockland-wall-crack-repair-2025-02-before.jpg"
+heroImageAlt: "Concrete foundation wall showing structural crack"
 ---
 
 If you've ever called a crack in your basement wall a "cement crack," you're in good company. Almost everyone uses "cement" and "concrete" interchangeably. But they're actually different things — and understanding the difference helps you make sense of your home's foundation, driveway, sidewalks, and any repairs they might need.

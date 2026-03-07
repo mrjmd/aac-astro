@@ -10,6 +10,7 @@ coordinates:
   lng: -70.6673
 beforeImage: /images/projects/plymouth-crack-injection-2025-08-before.jpg
 afterImage: /images/projects/plymouth-crack-injection-2025-08-after.jpg
+beforeAfterVerified: false
 summary: "In Plymouth, MA, foundation cracks around sewer and gas line penetrations were allowing moisture. Targeted injections permanently sealed these points, creating a watertight and secure foundation."
 published: true
 ---

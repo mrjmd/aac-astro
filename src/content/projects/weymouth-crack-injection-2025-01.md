@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/weymouth-crack-injection-2025-01-before.jpg
 afterImage: /images/projects/weymouth-crack-injection-2025-01-after.jpg
+beforeAfterVerified: false
 summary: "A persistent settling crack in a Weymouth, MA foundation allowed moisture intrusion. Our team performed a targeted crack injection, effectively sealing the fault and stopping water leaks."
 published: true
 ---

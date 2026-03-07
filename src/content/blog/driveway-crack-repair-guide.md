@@ -15,6 +15,8 @@ relatedPosts:
 relatedServices:
   - "wall-crack-repair"
   - "foundation-crack-injection"
+heroImage: "/images/projects/hanover-crack-injection-2025-03-after.jpg"
+heroImageAlt: "Concrete crack repair at ground level"
 ---
 
 Your driveway is the most abused concrete surface on your property. It handles vehicle weight, freeze-thaw cycles, road salt, snowplow blades, and UV exposure — all year, every year. In Connecticut and Massachusetts, that combination is brutal.

@@ -7,7 +7,8 @@ publishDate: 2026-07-21
 author: "Attack A Crack"
 category: "guides"
 tags: ["realtors", "home inspection", "foundation issues", "real estate", "transaction"]
-heroImage: ""
+heroImage: "/images/projects/marblehead-crack-injection-2025-06-before.jpg"
+heroImageAlt: "Foundation Repair for Realtors: What Your Home Inspector Found"
 draft: true
 
 relatedServices:

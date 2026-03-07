@@ -7,7 +7,8 @@ publishDate: 2026-07-14
 author: "Attack A Crack"
 category: "guides"
 tags: ["patio repair", "concrete cracks", "patio replacement", "outdoor concrete"]
-heroImage: ""
+heroImage: "/images/projects/quincy-crack-injection-2025-04-after.jpg"
+heroImageAlt: "Patio Crack Repair: When to Fix and When to Replace in New England"
 draft: true
 
 relatedServices:

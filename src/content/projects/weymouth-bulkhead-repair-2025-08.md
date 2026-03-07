@@ -9,6 +9,7 @@ serviceTypes:
   - sewer-conduit
 beforeImage: /images/projects/weymouth-bulkhead-repair-2025-08-before.jpg
 afterImage: /images/projects/weymouth-bulkhead-repair-2025-08-after.jpg
+beforeAfterVerified: false
 summary: "Leaks from two bulkheads, a window crack, and a defunct gas line plagued this Weymouth basement. We successfully sealed all sources, ensuring a dry foundation."
 published: true
 ---

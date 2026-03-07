@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/braintree-crack-injection-2025-07-before.jpg
 afterImage: /images/projects/braintree-crack-injection-2025-07-after.jpg
+beforeAfterVerified: false
 summary: "A Braintree, MA foundation developed a zig-zag crack, allowing moisture intrusion. Our crack injection permanently sealed the foundation, restoring its integrity."
 published: true
 ---

@@ -8,6 +8,7 @@ serviceTypes:
   - wall-crack-repair
 beforeImage: /images/projects/shrewsbury-crack-injection-2025-10-before.jpg
 afterImage: /images/projects/shrewsbury-crack-injection-2025-10-after.jpg
+beforeAfterVerified: false
 summary: "A Shrewsbury home faced several foundation cracks and a cold joint. Our team successfully injected and stabilized these issues, ensuring a dry and secure foundation."
 published: true
 ---

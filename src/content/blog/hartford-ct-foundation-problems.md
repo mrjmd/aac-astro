@@ -7,7 +7,8 @@ publishDate: 2026-06-23
 author: "Attack A Crack"
 category: "guides"
 tags: ["Hartford", "Connecticut", "River Valley", "clay soil", "foundation repair"]
-heroImage: ""
+heroImage: "/images/projects/randolph-crack-injection-2025-02-before.jpg"
+heroImageAlt: "Hartford Area Foundations: Common Problems in CT River Valley Homes"
 draft: true
 targetLocation: Hartford CT
 relatedServices:

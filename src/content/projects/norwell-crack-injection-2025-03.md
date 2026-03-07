@@ -7,6 +7,7 @@ serviceTypes:
   - crack-injection
 beforeImage: /images/projects/norwell-crack-injection-2025-03-before.jpg
 afterImage: /images/projects/norwell-crack-injection-2025-03-after.jpg
+beforeAfterVerified: false
 summary: "A Norwell, MA foundation had significant leaks from two cracks and five tie rods. Expert crack injection successfully sealed all breaches, restoring a dry and secure basement."
 published: true
 ---
