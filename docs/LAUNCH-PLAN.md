@@ -188,12 +188,14 @@ All 73 blog posts now have incoming internal links via template-level reverse-lo
 
 ### Remaining
 
-#### Static SVG Service Area Map (Lower Priority)
+#### Interactive Service Area Map
 
-- [ ] Create ServiceAreaMap.astro with New England outline + 80 city dots
-- [ ] Color-code by establishment (CT/MA blue, RI/NH/ME lighter)
+Build an interactive New England map (same style as the MA project pin map on the Massachusetts page) where each dot is a clickable city linking to its city page. Not a static SVG — dots should be interactive.
+
+- [ ] Create ServiceAreaMap.astro with New England outline + 80 city dots (clickable → city page)
+- [ ] Color-code by state (CT/MA blue, RI/NH/ME lighter)
 - [ ] Add to areas-we-serve page
-- *Note: MA project pin map is separate — see "Project Coordinates, Proximity & Map" in Bug Fixes section*
+- *Note: Mirror the style/approach of the MA ProjectMap.astro component*
 
 #### Pre-Launch Visual QA Pass (Matt)
 
@@ -270,11 +272,13 @@ See: `docs/BRAND-VOICE.md` — especially the "Proposed Changes Appendix"
 - [ ] Company milestones timeline
 - [ ] Enrich Person schema with verified data
 
-### D9. City Page Deep Localization (Claude)
+### D9. City Page Deep Localization (Claude) — DONE (fortress flag deferred)
 
-- [ ] Neighborhood specifics for top 20 cities (hyper-local content)
-- [ ] Run uniqueness check against all 80 city pages
-- [ ] **Fortress cities (Quincy, Weymouth, Braintree):** Consider adding a `fortress: true` frontmatter flag that enables hyper-local extras — faster response time callout, team member photo, South Shore-specific landmarks in schema. Depends on Matt's photos and brainstorm answers being available first.
+- [x] Neighborhood specifics for all 80 cities — template-driven "Neighborhoods We Serve" prose section renders neighborhood lists into natural-language paragraphs on all 5 state templates
+- [x] State-specific "Why {City} Homes Need Foundation Repair" section added to all 5 state templates (MA: clay/freeze-thaw, CT: variable soils, ME: deep frost/rocky coast, RI: coastal/high water table, NH: extreme winters/granite)
+- [x] Run uniqueness check against all 80 city pages — 3,160 comparisons, 0 errors, 0 warnings
+- [x] Body content ranges 180-400 words per city (intentional variation based on city-specific geology/history)
+- [ ] **Fortress cities (Quincy, Weymouth, Braintree):** Deferred — blocked on Matt's photos and brainstorm answers. Current city pages are launch-ready without the fortress flag. Re-evaluate post-brainstorm.
 
 ### Partner Decisions (Matt)
 
@@ -320,12 +324,14 @@ Full competitive audit to maximize SERP dominance before and after launch.
 - [ ] **Content gap fill** — write new pages/posts targeting uncovered high-value terms
 - [ ] **Internal linking audit** — ensure every page passes equity to target pages
 
-### On-Page Optimization Pass (Claude)
+### On-Page Optimization Pass (Claude — blocked on Data Collection above)
 
-- [ ] **Title tag optimization** — audit all 297 pages against target keywords, refine for CTR
-- [ ] **Meta description optimization** — rewrite any underperforming descriptions for click-through
-- [ ] **H1/H2 keyword alignment** — ensure heading hierarchy matches target SERP terms
-- [ ] **Content depth audit** — are any pages thin compared to ranking competitors?
+**This pass should not begin until Matt provides GSC, Analytics, and SEMrush data.** Optimizing titles, descriptions, and headings without keyword performance data is guesswork. The exports above will tell us which pages underperform, which keywords to target, and where competitors outrank us.
+
+- [ ] **Title tag optimization** — audit all pages against target keywords from SEMrush data, refine for CTR
+- [ ] **Meta description optimization** — rewrite underperforming descriptions using click-through data from GSC
+- [ ] **H1/H2 keyword alignment** — ensure heading hierarchy matches target SERP terms from keyword research
+- [ ] **Content depth audit** — compare page word counts against ranking competitors from SEMrush
 - [ ] **Schema completeness** — ensure every page type has maximum applicable schema markup
 - [x] **Internal link equity flow** — homepage → service pages → city pages → blog (proper silo)
 - [x] **Image SEO** — all images have keyword-rich alt text (service type + city + state pattern), filenames, and proper dimensions
@@ -361,7 +367,41 @@ Shared `isPublished()` filter in `src/utils/blog.ts` checks both `!draft` and `p
 - [x] Add GitHub Action cron job (weekly, Monday 6am ET) to trigger Vercel redeploy
 - [x] Test: set a post with past `publishDate` + `draft: false`, verify it appears after build
 - [x] Test: set a post with future `publishDate` + `draft: false`, verify it does NOT appear — also fixed `getStaticPaths` to exclude unpublished posts from build & sitemap
-- [ ] Document workflow: Matt sets `draft: false` on reviewed posts; they auto-publish when `publishDate` arrives
+- [x] Document workflow — see below
+
+#### Auto-Publishing Workflow
+
+**How it works:**
+
+1. Every blog post in `src/content/blog/` has two fields that control visibility:
+   - `draft: true/false` (default: `false`) — your editorial kill switch
+   - `publishDate: YYYY-MM-DD` — the scheduled publication date
+
+2. A post only appears on the site when **both** conditions are met:
+   - `draft` is `false` (or omitted, since it defaults to false)
+   - `publishDate` is today or earlier
+
+3. A GitHub Actions cron job (`.github/workflows/weekly-redeploy.yml`) triggers a Vercel rebuild every **Monday at 6am ET**. This is when scheduled posts go live.
+
+**To schedule a post for auto-publishing:**
+
+1. Review the post content in `src/content/blog/{slug}.md`
+2. Set `draft: false` (or remove the `draft` line entirely)
+3. Confirm `publishDate` is set to the desired date (already set per content calendar)
+4. Commit and push to `main`
+5. The post will automatically appear on the next Monday rebuild after its `publishDate`
+
+**To publish immediately (skip the weekly cron):**
+
+1. Set `draft: false` and `publishDate` to today or earlier
+2. Commit and push to `main` — the CI/CD deploy will include the post
+
+**To unpublish a post:**
+
+1. Set `draft: true` in the post's frontmatter
+2. Commit and push — the post will be removed from the next build
+
+**Important:** Posts with `draft: true` or future `publishDate` are completely excluded from the build output — they won't appear in listings, sitemaps, or even as direct URLs.
 
 ---
 
