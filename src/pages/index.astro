@@ -9,7 +9,8 @@ import LocationModal from '../components/LocationModal.astro';
 import HomeFaq from '../components/HomeFaq.astro';
 import Icon from '../components/Icon.astro';
 import TestimonialCard from '../components/TestimonialCard.astro';
-import { reviewCount, phoneCT, phoneMA, googleReviewsUrlCT, googleReviewsUrlMA } from '../utils/reviews';
+import { reviewCount, googleReviewsUrlCT, googleReviewsUrlMA } from '../utils/reviews';
+import { phoneCT, phoneMA, addressCT } from '../utils/contact';
 import { getFeatured } from '../utils/testimonials';
 import { homeFaqs, getFaqSchema } from '../utils/faqs';
 import { getLatestBlog } from '../utils/blog-linking';
@@ -34,11 +35,11 @@ const MA_NUMBER = phoneMA;
 			"name": "Attack A Crack Foundation Repair",
 			"@id": "https://www.attackacrack.com/#organization",
 			"url": "https://www.attackacrack.com",
-			"telephone": "860-573-8760",
+			"telephone": phoneCT,
 			"image": "https://www.attackacrack.com/images/logo.jpg",
 			"address": {
 				"@type": "PostalAddress",
-				"streetAddress": "23 Elsmere Road",
+				"streetAddress": addressCT.split(',')[0],
 				"addressLocality": "Amston",
 				"addressRegion": "CT",
 				"postalCode": "06231",

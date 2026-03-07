@@ -8,6 +8,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import Icon from '../components/Icon.astro';
 import TestimonialCard from '../components/TestimonialCard.astro';
 import { reviewCount } from '../utils/reviews';
+import { phoneCT, phoneCTHref, phoneMA, phoneMAHref } from '../utils/contact';
 import { getFeatured } from '../utils/testimonials';
 
 const testimonials = getFeatured(4);
@@ -23,7 +24,7 @@ const aboutSchema = {
   "name": "Attack A Crack Foundation Repair",
   "foundingDate": "1990",
   "description": "Family-owned foundation repair company serving Connecticut and Massachusetts for over 33 years.",
-  "telephone": "860-573-8760",
+  "telephone": phoneCT,
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Amston",
@@ -296,13 +297,13 @@ const aboutSchema = {
 					Schedule a free consultation and see why homeowners across New England trust us with their foundations.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">
-					<a href="tel:860-573-8760" class="bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white inline-flex items-center justify-center gap-3">
+					<a href={phoneCTHref} class="bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white inline-flex items-center justify-center gap-3">
 						<Icon name="Phone" size={24} />
-						CT: 860-573-8760
+						CT: {phoneCT}
 					</a>
-					<a href="tel:617-668-1677" class="bg-white/10 text-white px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-3">
+					<a href={phoneMAHref} class="bg-white/10 text-white px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-3">
 						<Icon name="Phone" size={24} />
-						MA: 617-668-1677
+						MA: {phoneMA}
 					</a>
 				</div>
 			</div>

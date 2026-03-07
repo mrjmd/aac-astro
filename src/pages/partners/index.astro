@@ -7,6 +7,7 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
 import { reviewCount } from '../../utils/reviews';
+import { phoneMA, phoneMAHref } from '../../utils/contact';
 
 // Get all partners sorted by order
 const partners = (await getCollection('partners')).sort((a, b) => a.data.order - b.data.order);
@@ -51,9 +52,9 @@ const pageSchema = {
 						</p>
 
 						<div class="flex flex-wrap gap-4">
-							<a href="tel:617-668-1677" class="bg-aac-dark text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+							<a href={phoneMAHref} class="bg-aac-dark text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
 								<Icon name="Phone" size={16} />
-								Call 617-668-1677
+								Call {phoneMA}
 							</a>
 							<button class="open-modal bg-white text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark hover:bg-aac-dark hover:text-white transition-all inline-flex items-center gap-2">
 								<Icon name="MessageSquare" size={16} />
@@ -195,9 +196,9 @@ const pageSchema = {
 							Join our network of New England professionals who trust Attack A Crack for their foundation needs.
 						</p>
 						<div class="flex flex-col sm:flex-row gap-4 justify-center">
-							<a href="tel:617-668-1677" class="bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
+							<a href={phoneMAHref} class="bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
 								<Icon name="Phone" size={20} />
-								617-668-1677
+								{phoneMA}
 							</a>
 							<button class="open-modal bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
 								<Icon name="MessageSquare" size={20} />

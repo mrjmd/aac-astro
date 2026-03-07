@@ -9,6 +9,7 @@ import Icon from '../../components/Icon.astro';
 import TestimonialCard from '../../components/TestimonialCard.astro';
 import ProjectCards from '../../components/ProjectCards.astro';
 import { aggregateRatingSchema } from '../../utils/reviews';
+import { phoneCT, phoneCTHref, phoneMA, phoneMAHref } from '../../utils/contact';
 import { getByService } from '../../utils/testimonials';
 import { getByService as getProjectsByService, SERVICE_SLUG_MAP } from '../../utils/projects';
 import { getBlogForService } from '../../utils/blog-linking';
@@ -90,7 +91,7 @@ const serviceSchema = {
   "provider": {
     "@type": "HomeAndConstructionBusiness",
     "name": "Attack A Crack Foundation Repair",
-    "telephone": "860-573-8760",
+    "telephone": phoneCT,
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Amston",
@@ -173,7 +174,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 								<Icon name="MessageSquare" size={16} />
 								Get Free Quote
 							</button>
-							<a href="tel:860-573-8760" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
+							<a href={phoneCTHref} class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
 								<Icon name="Phone" size={16} />
 								Call Now
 							</a>
@@ -408,13 +409,13 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 						<Icon name="MessageSquare" size={20} />
 						Text Us Photos
 					</button>
-					<a href="tel:860-573-8760" class="bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+					<a href={phoneCTHref} class="bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
 						<Icon name="Phone" size={20} />
-						CT: 860-573-8760
+						CT: {phoneCT}
 					</a>
-					<a href="tel:617-668-1677" class="bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+					<a href={phoneMAHref} class="bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
 						<Icon name="Phone" size={20} />
-						MA: 617-668-1677
+						MA: {phoneMA}
 					</a>
 				</div>
 			</div>

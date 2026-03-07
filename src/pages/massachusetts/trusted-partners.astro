@@ -6,6 +6,7 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
 import { getAllPartners, getCategories } from '../../utils/trusted-partners';
+import { phoneMA, phoneMAHref } from '../../utils/contact';
 
 const partners = getAllPartners('MA');
 const categories = getCategories('MA');
@@ -24,7 +25,7 @@ const pageSchema = [
     "image": "https://www.attackacrack.com/images/logo.jpg",
     "@id": "https://attackacrack.com/#organization",
     "url": "https://attackacrack.com",
-    "telephone": "617-668-1677",
+    "telephone": phoneMA,
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
@@ -161,9 +162,9 @@ const pageSchema = [
           We're always looking to connect with great professionals who share our commitment to quality work and honest service.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="tel:617-668-1677" class="bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white inline-flex items-center justify-center gap-3">
+          <a href={phoneMAHref} class="bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white inline-flex items-center justify-center gap-3">
             <Icon name="Phone" size={24} />
-            617-668-1677
+            {phoneMA}
           </a>
           <button class="open-modal bg-white/10 text-white px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-3">
             <Icon name="MessageSquare" size={24} />

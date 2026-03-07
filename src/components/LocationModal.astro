@@ -1,8 +1,9 @@
 ---
 import Icon from './Icon.astro';
+import { phoneCT, phoneMA } from '../utils/contact';
 
-const CT_NUMBER = "860-573-8760";
-const MA_NUMBER = "617-668-1677";
+const CT_NUMBER = phoneCT;
+const MA_NUMBER = phoneMA;
 ---
 
 <div id="location-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-6 hidden" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">

@@ -6,6 +6,7 @@ import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
+import { phoneCT, phoneCTHref, phoneMA, phoneMAHref } from '../../utils/contact';
 
 const allProjects = (await getCollection('projects', ({ data }) => data.published))
 	.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
@@ -188,13 +189,13 @@ const itemListSchema = {
 						<Icon name="MessageSquare" size={20} />
 						Text Us Photos
 					</button>
-					<a href="tel:860-573-8760" class="bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+					<a href={phoneCTHref} class="bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
 						<Icon name="Phone" size={20} />
-						CT: 860-573-8760
+						CT: {phoneCT}
 					</a>
-					<a href="tel:617-668-1677" class="bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+					<a href={phoneMAHref} class="bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
 						<Icon name="Phone" size={20} />
-						MA: 617-668-1677
+						MA: {phoneMA}
 					</a>
 				</div>
 			</div>

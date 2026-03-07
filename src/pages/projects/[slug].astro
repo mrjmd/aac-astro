@@ -8,6 +8,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
 import { isPublished } from '../../utils/blog';
 import { SERVICE_SLUG_MAP } from '../../utils/projects';
+import { phoneCT, phoneMA } from '../../utils/contact';
 
 export async function getStaticPaths() {
 	const projects = await getCollection('projects', ({ data }) => data.published);
@@ -149,7 +150,7 @@ const metaDescription = project.data.metaDescription
 
 // Determine phone number based on state
 const isMARegion = ['MA', 'NH', 'ME'].includes(project.data.state);
-const phoneNumber = isMARegion ? '617-668-1677' : '860-573-8760';
+const phoneNumber = isMARegion ? phoneMA : phoneCT;
 
 // Reverse map: serviceType enum → page slug (for clickable badges)
 const REVERSE_SLUG_MAP: Record<string, { slug: string; prefix: string }> = {};

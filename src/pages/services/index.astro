@@ -7,6 +7,7 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
 import { isPublished } from '../../utils/blog';
+import { phoneCT, phoneCTHref, phoneMA, phoneMAHref } from '../../utils/contact';
 
 // Get all services sorted by order
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
@@ -71,13 +72,13 @@ const servicesSchema = {
 					Specialized foundation repair solutions with a lifetime guarantee. We don't just patch cracks; we solve the root cause with proven injection techniques.
 				</p>
 				<div class="flex flex-wrap gap-4">
-					<a href="tel:860-573-8760" class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+					<a href={phoneCTHref} class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
 						<Icon name="Phone" size={16} />
-						Call CT: 860-573-8760
+						Call CT: {phoneCT}
 					</a>
-					<a href="tel:617-668-1677" class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
+					<a href={phoneMAHref} class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
 						<Icon name="Phone" size={16} />
-						Call MA: 617-668-1677
+						Call MA: {phoneMA}
 					</a>
 				</div>
 			</div>

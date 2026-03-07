@@ -411,6 +411,10 @@ SITE_IMAGE_BASE=https://aac-astro.vercel.app node scripts/buffer-post-projects.j
 - [ ] Off-page strategy execution (see `docs/SEO-STRATEGY-2026.md` Part 18)
 - [ ] Social media posting (3x/week per marketing plan)
 
+### Tech Debt
+
+- [ ] ~80 markdown files (blog posts, location pages, partner pages) have hardcoded phone numbers in body text. Markdown can't import TS utilities. If phone numbers change, grep `src/content/` for the old number. Consider replacing inline phone numbers with CTAs or links to the contact page instead.
+
 ---
 
 ## Reference Documents

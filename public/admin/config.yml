@@ -293,6 +293,16 @@ collections:
             widget: string
             default: "info@attackacrack.com"
 
+          - name: address_ct
+            label: Connecticut Address
+            widget: string
+            default: "23 Elsmere Road, Amston, CT 06231"
+
+          - name: address_ma
+            label: Massachusetts Address
+            widget: string
+            default: "30 Randlett St #2, Quincy, MA 02169"
+
           - name: google_reviews_count
             label: Google Reviews Count
             widget: number

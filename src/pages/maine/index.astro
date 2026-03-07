@@ -7,6 +7,7 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
 import { aggregateRatingSchema } from '../../utils/reviews';
+import { phoneMA, phoneMAHref } from '../../utils/contact';
 import { ME_REGIONS } from '../../utils/regions';
 
 // Get all ME location pages
@@ -29,7 +30,7 @@ const meSchema = {
   "image": "https://www.attackacrack.com/images/logo.jpg",
   "@id": "https://www.attackacrack.com/maine#organization",
   "url": "https://www.attackacrack.com/maine",
-  "telephone": "617-668-1677",
+  "telephone": phoneMA,
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
@@ -52,7 +53,7 @@ const meSchema = {
 
 <Layout
   title="Foundation Repair in Maine"
-  description="Expert foundation crack repair across Southern Maine. Family-owned with 20+ years experience. Concrete repair available. Call 617-668-1677."
+  description={`Expert foundation crack repair across Southern Maine. Family-owned with 20+ years experience. Concrete repair available. Call ${phoneMA}.`}
   customSchema={meSchema}
   breadcrumbItems={breadcrumbItems}
 >
@@ -94,9 +95,9 @@ const meSchema = {
 						</div>
 
 						<div class="flex flex-wrap gap-4">
-							<a href="tel:617-668-1677" class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+							<a href={phoneMAHref} class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
 								<Icon name="Phone" size={16} />
-								Call 617-668-1677
+								Call {phoneMA}
 							</a>
 							<button class="open-modal bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
 								<Icon name="MessageSquare" size={16} />
@@ -216,7 +217,7 @@ const meSchema = {
 				</div>
 
 				<p class="text-center text-zinc-500 mt-12">
-					Don't see your city? We serve Southern Maine! <a href="tel:617-668-1677" class="text-aac-blue font-bold hover:underline">Call 617-668-1677</a>
+					Don't see your city? We serve Southern Maine! <a href={phoneMAHref} class="text-aac-blue font-bold hover:underline">Call {phoneMA}</a>
 				</p>
 			</div>
 		</section>
@@ -231,9 +232,9 @@ const meSchema = {
 					Foundation repair or concrete repair—text us photos for a quick assessment, or schedule a free in-person consultation.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">
-					<a href="tel:617-668-1677" class="bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white inline-flex items-center justify-center gap-3">
+					<a href={phoneMAHref} class="bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white inline-flex items-center justify-center gap-3">
 						<Icon name="Phone" size={24} />
-						617-668-1677
+						{phoneMA}
 					</a>
 					<button class="open-modal bg-white/10 text-white px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-3">
 						<Icon name="MessageSquare" size={24} />

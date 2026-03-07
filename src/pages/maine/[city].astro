@@ -8,6 +8,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
 import ProjectCards from '../../components/ProjectCards.astro';
 import { reviewCount, rating, aggregateRatingSchema } from '../../utils/reviews';
+import { phoneMA, phoneMAHref } from '../../utils/contact';
 import { getForLocation } from '../../utils/testimonials';
 import { getForLocation as getProjectsForLocation, getProjectImageForCity } from '../../utils/projects';
 import { getBlogForLocation } from '../../utils/blog-linking';
@@ -83,7 +84,7 @@ const citySchema = {
   "image": "https://www.attackacrack.com/images/logo.jpg",
   "@id": `https://www.attackacrack.com/maine/${location.id.replace(/\.md$/, '').replace(/^maine\//, '')}#organization`,
   "url": `https://www.attackacrack.com/maine/${location.id.replace(/\.md$/, '').replace(/^maine\//, '')}`,
-  "telephone": location.data.phoneNumber || "617-668-1677",
+  "telephone": location.data.phoneNumber || phoneMA,
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
@@ -172,9 +173,9 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 						</div>
 
 						<div class="flex flex-wrap gap-4">
-							<a href={`tel:${location.data.phoneNumber || '617-668-1677'}`} class="bg-aac-yellow text-aac-dark px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+							<a href={location.data.phoneNumber ? `tel:${location.data.phoneNumber}` : phoneMAHref} class="bg-aac-yellow text-aac-dark px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
 								<Icon name="Phone" size={16} />
-								Call {location.data.phoneNumber || '617-668-1677'}
+								Call {location.data.phoneNumber || phoneMA}
 							</a>
 							<button class="open-modal bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
 								<Icon name="MessageSquare" size={16} />
@@ -471,9 +472,9 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 					Get a free consultation from our local experts. We'll assess your foundation and provide an honest quote.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">
-					<a href={`tel:${location.data.phoneNumber || '617-668-1677'}`} class="bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
+					<a href={location.data.phoneNumber ? `tel:${location.data.phoneNumber}` : phoneMAHref} class="bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
 						<Icon name="Phone" size={20} />
-						{location.data.phoneNumber || '617-668-1677'}
+						{location.data.phoneNumber || phoneMA}
 					</a>
 					<button class="open-modal bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
 						<Icon name="MessageSquare" size={20} />

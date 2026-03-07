@@ -6,6 +6,7 @@
  * - UI display ("260+ 5-Star Reviews")
  *
  * To update: Edit src/content/settings/general.json
+ * For phone/email/address info, see src/utils/contact.ts
  */
 
 import settings from '../content/settings/general.json';
@@ -13,10 +14,6 @@ import settings from '../content/settings/general.json';
 // Review data from centralized settings
 export const reviewCount = settings.google_reviews_count;
 export const rating = settings.google_rating;
-
-// Phone numbers
-export const phoneCT = settings.phone_ct;
-export const phoneMA = settings.phone_ma;
 
 // Google Reviews URLs
 export const googleReviewsUrlCT = settings.google_reviews_url_ct;
