@@ -7,8 +7,8 @@
  * Run after build: npm run check:images
  */
 
-import { readdir, readFile, stat } from 'fs/promises';
-import { join, relative, extname } from 'path';
+import { readdir, readFile, stat, access } from 'fs/promises';
+import { join, relative, extname, parse } from 'path';
 import { JSDOM } from 'jsdom';
 
 const SRC_DIR = 'src';
@@ -146,6 +146,39 @@ async function checkImageAssets() {
   }
 }
 
+async function checkWebpSiblings() {
+  const PROJECTS_DIR = 'public/images/projects';
+  try {
+    const entries = await readdir(PROJECTS_DIR);
+    const jpgs = entries.filter(f => f.endsWith('.jpg'));
+
+    for (const jpg of jpgs) {
+      const { name } = parse(jpg);
+      // Check that all 3 WebP sizes exist
+      for (const suffix of ['', '-400w', '-800w']) {
+        const webpFile = join(PROJECTS_DIR, `${name}${suffix}.webp`);
+        try {
+          await access(webpFile);
+        } catch {
+          errors.push(`${jpg}: Missing optimized WebP: ${name}${suffix}.webp (run \`npm run optimize:images\`)`);
+        }
+      }
+    }
+
+    // Warn about oversized WebP files
+    const webps = entries.filter(f => f.endsWith('.webp'));
+    for (const webp of webps) {
+      const stats = await stat(join(PROJECTS_DIR, webp));
+      const sizeKB = stats.size / 1024;
+      if (sizeKB > 400) {
+        warnings.push(`${webp}: WebP is ${Math.round(sizeKB)}KB (> 400KB threshold)`);
+      }
+    }
+  } catch (e) {
+    // No projects directory — skip
+  }
+}
+
 async function main() {
   console.log('🖼️  Checking image optimization...\n');
 
@@ -164,6 +197,9 @@ async function main() {
 
     // Check image assets
     await checkImageAssets();
+
+    // Check WebP siblings for project images
+    await checkWebpSiblings();
 
     console.log(`🖼️  Images checked: ${imagesChecked}`);
     console.log('');

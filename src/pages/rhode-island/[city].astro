@@ -9,6 +9,7 @@ import Icon from '../../components/Icon.astro';
 import ProjectCards from '../../components/ProjectCards.astro';
 import { reviewCount, rating, aggregateRatingSchema } from '../../utils/reviews';
 import { phoneMA, phoneMAHref } from '../../utils/contact';
+import { webpSrc, projectSrcset } from '../../utils/image';
 import { getForLocation } from '../../utils/testimonials';
 import { getForLocation as getProjectsForLocation, getProjectImageForCity } from '../../utils/projects';
 import { getBlogForLocation } from '../../utils/blog-linking';
@@ -187,9 +188,13 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 					<div class="hidden lg:block">
 						<div class="aspect-[4/3] rounded-[32px] overflow-hidden border-4 border-white/20 bg-zinc-800">
 							<img
-								src={heroImage.src}
+								src={webpSrc(heroImage.src)}
+								srcset={projectSrcset(heroImage.src)}
+								sizes="(max-width: 1024px) 100vw, 50vw"
 								alt={heroImage.alt}
 								class="w-full h-full object-cover"
+								width="800"
+								height="600"
 							/>
 						</div>
 					</div>
@@ -422,9 +427,14 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 								{post.data.heroImage && (
 									<div class="aspect-video overflow-hidden">
 										<img
-											src={post.data.heroImage}
+											src={webpSrc(post.data.heroImage)}
+											srcset={projectSrcset(post.data.heroImage)}
+											sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
 											alt={post.data.heroImageAlt || post.data.title}
 											class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+											width="640"
+											height="360"
+											loading="lazy"
 										/>
 									</div>
 								)}

@@ -7,6 +7,7 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
 import { phoneMA, phoneMAHref } from '../../utils/contact';
+import { webpSrc, projectSrcset } from '../../utils/image';
 
 // Get all concrete repair services sorted by order
 const services = (await getCollection('concrete-repair')).sort((a, b) => a.data.order - b.data.order);
@@ -86,9 +87,13 @@ const servicesSchema = {
 					<div class="relative hidden lg:block">
 						<div class="aspect-square rounded-[32px] overflow-hidden border-4 border-white/20 bg-white/10">
 							<img
-								src="/images/projects/newton-concrete-repair-2025-07-before.jpg"
+								src={webpSrc("/images/projects/newton-concrete-repair-2025-07-before.jpg")}
+								srcset={projectSrcset("/images/projects/newton-concrete-repair-2025-07-before.jpg")}
+								sizes="(max-width: 1024px) 100vw, 50vw"
 								alt="Concrete repair project in Massachusetts"
 								class="w-full h-full object-cover"
+								width="800"
+								height="600"
 							/>
 						</div>
 						<div class="absolute -bottom-6 -left-6 bg-aac-dark p-6 rounded-2xl shadow-xl text-white">
@@ -136,9 +141,14 @@ const servicesSchema = {
 						<a href={`/concrete-repair/${service.id.replace(/\.md$/, '')}`} class="group bg-zinc-50 rounded-[32px] overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all">
 							<div class="aspect-video bg-zinc-200 overflow-hidden">
 								<img
-									src={service.data.heroImage || "/images/projects/newton-concrete-repair-2025-07-before.jpg"}
+									src={webpSrc(service.data.heroImage || "/images/projects/newton-concrete-repair-2025-07-before.jpg")}
+									srcset={projectSrcset(service.data.heroImage || "/images/projects/newton-concrete-repair-2025-07-before.jpg")}
+									sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
 									alt={service.data.title}
 									class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+									width="640"
+									height="360"
+									loading="lazy"
 								/>
 							</div>
 							<div class="p-8">
@@ -210,9 +220,14 @@ const servicesSchema = {
 					</div>
 					<div class="aspect-[4/3] rounded-[32px] overflow-hidden border-8 border-white shadow-2xl">
 						<img
-							src="/images/projects/hanover-concrete-repair-2025-06-before.jpg"
+							src={webpSrc("/images/projects/hanover-concrete-repair-2025-06-before.jpg")}
+							srcset={projectSrcset("/images/projects/hanover-concrete-repair-2025-06-before.jpg")}
+							sizes="(max-width: 1024px) 100vw, 50vw"
 							alt="Concrete stair repair project"
 							class="w-full h-full object-cover"
+							width="800"
+							height="600"
+							loading="lazy"
 						/>
 					</div>
 				</div>

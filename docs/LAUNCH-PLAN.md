@@ -139,6 +139,25 @@ Static SVG map with 47 city pins on the MA state page. Impressive South Shore de
 - [x] Pins are non-interactive (a11y clean); "Browse All Projects" link below map
 - [x] All accessibility checks pass (36 checks on MA page)
 
+### Image Optimization Pipeline — DONE (Deploy Blocker Fix)
+
+Lighthouse CI performance dropped to 0.75 (threshold 0.85) after photo deep-dive commit. Root cause: 161 raw phone JPGs (184MB total) served unoptimized.
+
+- [x] Installed `sharp` as devDependency for image processing
+- [x] Created `scripts/optimize-images.js` — converts each .jpg to 3 responsive WebP sizes (400w, 800w, 1400w) at quality 82
+- [x] Added `npm run optimize:images` script
+- [x] Generated 483 WebP files (~39MB vs 184MB originals, ~79% reduction)
+- [x] Created `src/utils/image.ts` with `webpSrc()` and `projectSrcset()` helpers
+- [x] Updated all templates with `srcset`, `sizes`, `width`/`height`, and `loading="lazy"` (16 files)
+- [x] Enhanced `check-images.js` to enforce WebP siblings for every .jpg in `public/images/projects/`
+- [x] Full validation pipeline passes
+
+**Workflow for future images:**
+1. Drop `.jpg` into `public/images/projects/`
+2. Run `npm run optimize:images` (generates 3 WebP sizes)
+3. Commit both `.jpg` and `.webp` files
+4. Pre-commit hook → `check:images` → blocks if `.webp` siblings missing
+
 ### Internal Linking — DONE (was 44 Orphaned Blog Posts → 0)
 
 All 73 blog posts now have incoming internal links via template-level reverse-lookups. 163 template-level links added. `validate-links.js` reports 0 errors, 0 warnings.

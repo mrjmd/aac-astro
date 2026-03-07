@@ -20,7 +20,8 @@
     "screenshot": "node scripts/screenshot.js",
     "import:calendar": "node scripts/import-calendar-projects.js",
     "post:gbp": "node scripts/batch-post-gbp.js",
-    "post:buffer": "node scripts/buffer-post-projects.js"
+    "post:buffer": "node scripts/buffer-post-projects.js",
+    "optimize:images": "node scripts/optimize-images.js"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",
@@ -38,6 +39,7 @@
     "axe-core": "^4.9.0",
     "googleapis": "^171.4.0",
     "jsdom": "^24.0.0",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4.2.1",
     "typescript": "~5.8.2",
     "yaml": "^2.4.0"

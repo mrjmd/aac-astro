@@ -9,6 +9,7 @@ import Icon from '../../components/Icon.astro';
 import TestimonialCard from '../../components/TestimonialCard.astro';
 import { reviewCount } from '../../utils/reviews';
 import { phoneCT, phoneCTHref } from '../../utils/contact';
+import { webpSrc, projectSrcset } from '../../utils/image';
 import { getByState } from '../../utils/testimonials';
 
 // Get all CT location pages
@@ -141,9 +142,13 @@ const ctSchema = {
 					<div class="relative">
 						<div class="aspect-square rounded-[32px] overflow-hidden border-4 border-white/20 bg-zinc-800">
 							<img
-								src="/images/projects/weymouth-crack-injection-2025-01-before.jpg"
+								src={webpSrc("/images/projects/weymouth-crack-injection-2025-01-before.jpg")}
+								srcset={projectSrcset("/images/projects/weymouth-crack-injection-2025-01-before.jpg")}
+								sizes="(max-width: 1024px) 100vw, 50vw"
 								alt="Foundation crack repair in Connecticut"
 								class="w-full h-full object-cover"
+								width="800"
+								height="600"
 							/>
 						</div>
 						<div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl">

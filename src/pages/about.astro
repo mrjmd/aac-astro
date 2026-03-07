@@ -9,6 +9,7 @@ import Icon from '../components/Icon.astro';
 import TestimonialCard from '../components/TestimonialCard.astro';
 import { reviewCount } from '../utils/reviews';
 import { phoneCT, phoneCTHref, phoneMA, phoneMAHref } from '../utils/contact';
+import { webpSrc, projectSrcset } from '../utils/image';
 import { getFeatured } from '../utils/testimonials';
 
 const testimonials = getFeatured(4);
@@ -131,9 +132,14 @@ const aboutSchema = {
 					<div class="relative">
 						<div class="aspect-[4/3] rounded-[32px] overflow-hidden border-8 border-white shadow-2xl bg-zinc-200">
 							<img
-								src="/images/projects/weymouth-carbon-fiber-2025-08-after.jpg"
+								src={webpSrc("/images/projects/weymouth-carbon-fiber-2025-08-after.jpg")}
+								srcset={projectSrcset("/images/projects/weymouth-carbon-fiber-2025-08-after.jpg")}
+								sizes="(max-width: 1024px) 100vw, 50vw"
 								alt="Attack A Crack carbon fiber foundation repair"
 								class="w-full h-full object-cover"
+								width="800"
+								height="600"
+								loading="lazy"
 							/>
 						</div>
 						<div class="absolute -bottom-8 -left-8 bg-aac-dark text-white p-6 rounded-2xl shadow-xl">

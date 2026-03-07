@@ -14,6 +14,7 @@ import { phoneCT, phoneMA, addressCT } from '../utils/contact';
 import { getFeatured } from '../utils/testimonials';
 import { homeFaqs, getFaqSchema } from '../utils/faqs';
 import { getLatestBlog } from '../utils/blog-linking';
+import { webpSrc, projectSrcset } from '../utils/image';
 
 const featuredTestimonials = getFeatured(4);
 const latestPosts = await getLatestBlog(3);
@@ -156,9 +157,14 @@ const MA_NUMBER = phoneMA;
 								{post.data.heroImage && (
 									<div class="aspect-video overflow-hidden">
 										<img
-											src={post.data.heroImage}
+											src={webpSrc(post.data.heroImage)}
+											srcset={projectSrcset(post.data.heroImage)}
+											sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
 											alt={post.data.heroImageAlt || post.data.title}
 											class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+											width="640"
+											height="360"
+											loading="lazy"
 										/>
 									</div>
 								)}

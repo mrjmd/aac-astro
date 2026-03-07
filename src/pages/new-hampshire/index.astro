@@ -9,6 +9,7 @@ import Icon from '../../components/Icon.astro';
 import { aggregateRatingSchema } from '../../utils/reviews';
 import { phoneMA, phoneMAHref } from '../../utils/contact';
 import { NH_REGIONS } from '../../utils/regions';
+import { webpSrc, projectSrcset } from '../../utils/image';
 
 // Get all NH location pages
 const nhLocations = (await getCollection('locations'))
@@ -109,9 +110,13 @@ const nhSchema = {
 					<div class="relative hidden lg:block">
 						<div class="aspect-square rounded-[32px] overflow-hidden border-4 border-white/20 bg-zinc-800">
 							<img
-								src="/images/projects/billerica-crack-injection-2025-01-before.jpg"
+								src={webpSrc("/images/projects/billerica-crack-injection-2025-01-before.jpg")}
+								srcset={projectSrcset("/images/projects/billerica-crack-injection-2025-01-before.jpg")}
+								sizes="(max-width: 1024px) 100vw, 50vw"
 								alt="Foundation crack repair in New Hampshire"
 								class="w-full h-full object-cover"
+								width="800"
+								height="600"
 							/>
 						</div>
 						<div class="absolute -bottom-6 -right-6 bg-aac-blue p-6 rounded-2xl shadow-xl text-white">

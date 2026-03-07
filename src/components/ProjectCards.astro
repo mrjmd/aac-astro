@@ -1,5 +1,6 @@
 ---
 import Icon from './Icon.astro';
+import { webpSrc, projectSrcset } from '../utils/image';
 
 interface Project {
   id: string;
@@ -53,9 +54,14 @@ function formatDate(date: Date): string {
           <a href={`/projects/${project.id.replace(/\.md$/, '')}`} class="group bg-zinc-50 rounded-2xl overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all">
             <div class="aspect-video overflow-hidden relative">
               <img
-                src={project.data.afterImage}
+                src={webpSrc(project.data.afterImage)}
+                srcset={projectSrcset(project.data.afterImage)}
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 alt={project.data.beforeAfterVerified !== false ? `${project.data.title} - After repair` : project.data.title}
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                width="640"
+                height="360"
+                loading="lazy"
               />
               <div class="absolute top-3 left-3 bg-aac-dark/80 backdrop-blur-md text-white text-[9px] font-black uppercase tracking-widest px-2.5 py-1 rounded-lg border border-white/20">
                 {serviceTypeLabels[project.data.serviceType] || project.data.serviceType}

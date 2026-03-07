@@ -9,6 +9,7 @@ import Breadcrumbs from '../../../../components/Breadcrumbs.astro';
 import Pagination from '../../../../components/Pagination.astro';
 import Icon from '../../../../components/Icon.astro';
 import { isPublished } from '../../../../utils/blog';
+import { webpSrc, projectSrcset } from '../../../../utils/image';
 
 const categoryLabels: Record<string, string> = {
 	'guides': 'Guides',
@@ -135,9 +136,14 @@ const description = isFirstPage ? baseDescription : `Page ${page.currentPage} of
 								<a href={`/blog/${post.id.replace(/\.md$/, '')}`} class="group bg-white rounded-[32px] overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all">
 									<div class="aspect-video overflow-hidden">
 										<img
-											src={post.data.heroImage || "/images/projects/marshfield-crack-injection-2025-06-before.jpg"}
+											src={webpSrc(post.data.heroImage || "/images/projects/marshfield-crack-injection-2025-06-before.jpg")}
+											srcset={projectSrcset(post.data.heroImage || "/images/projects/marshfield-crack-injection-2025-06-before.jpg")}
+											sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
 											alt={post.data.heroImageAlt || post.data.title}
 											class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+											width="640"
+											height="360"
+											loading="lazy"
 										/>
 									</div>
 									<div class="p-8">
