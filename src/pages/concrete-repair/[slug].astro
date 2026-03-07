@@ -67,12 +67,25 @@ const mentions = [
   { "@type": "Place", "name": "Massachusetts" }
 ];
 
+// Build ImageObject for hero image
+const heroImg = service.data.heroImage;
+const serviceImageObject = heroImg ? {
+  "@type": "ImageObject",
+  "name": `${service.data.title} — concrete repair service`,
+  "description": service.data.excerpt,
+  "contentUrl": `https://www.attackacrack.com${heroImg}`,
+  "url": `https://www.attackacrack.com/concrete-repair/${serviceSlug}`,
+  "width": 800,
+  "height": 600
+} : null;
+
 // Service schema with LLM-ready properties
 const serviceSchema = {
   "@type": "Service",
   "name": service.data.title,
   "description": service.data.metaDescription,
   "url": `https://www.attackacrack.com/concrete-repair/${service.id.replace(/\.md$/, '')}`,
+  ...(serviceImageObject && { "image": serviceImageObject }),
   "provider": {
     "@type": "HomeAndConstructionBusiness",
     "name": "Attack A Crack",

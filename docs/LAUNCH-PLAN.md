@@ -284,8 +284,8 @@ See: `docs/BRAND-VOICE.md` — especially the "Proposed Changes Appendix"
 
 ### Schema Enhancements (Claude — when photos available)
 
-- [ ] Add ImageObject schema for before/after photos on service pages
-- [ ] Add ImageObject schema on project/case study pages
+- [x] Add ImageObject schema for before/after photos on service pages
+- [x] Add ImageObject schema on project/case study pages
 - [ ] **Future:** If blog posts start including repair step instructions, extract HowTo schema logic from `services/[slug].astro` into a shared `SchemaHowTo.astro` component so both services and blog posts can generate HowTo rich snippets without duplicating code
 
 ---
@@ -328,7 +328,7 @@ Full competitive audit to maximize SERP dominance before and after launch.
 - [ ] **Content depth audit** — are any pages thin compared to ranking competitors?
 - [ ] **Schema completeness** — ensure every page type has maximum applicable schema markup
 - [x] **Internal link equity flow** — homepage → service pages → city pages → blog (proper silo)
-- [ ] **Image SEO** — all images have keyword-rich alt text, filenames, and proper dimensions
+- [x] **Image SEO** — all images have keyword-rich alt text (service type + city + state pattern), filenames, and proper dimensions
 
 ### Citation & Off-Page (Matt + Claude)
 
@@ -359,8 +359,8 @@ Shared `isPublished()` filter in `src/utils/blog.ts` checks both `!draft` and `p
 
 - [x] Add build-time filter: only publish posts where `draft !== true` AND `publishDate <= buildDate`
 - [x] Add GitHub Action cron job (weekly, Monday 6am ET) to trigger Vercel redeploy
-- [ ] Test: set a post with past `publishDate` + `draft: false`, verify it appears after build
-- [ ] Test: set a post with future `publishDate` + `draft: false`, verify it does NOT appear
+- [x] Test: set a post with past `publishDate` + `draft: false`, verify it appears after build
+- [x] Test: set a post with future `publishDate` + `draft: false`, verify it does NOT appear — also fixed `getStaticPaths` to exclude unpublished posts from build & sitemap
 - [ ] Document workflow: Matt sets `draft: false` on reviewed posts; they auto-publish when `publishDate` arrives
 
 ---
