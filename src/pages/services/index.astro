@@ -36,7 +36,7 @@ const servicesSchema = {
       "@type": "Service",
       "name": service.data.title,
       "description": service.data.excerpt,
-      "url": `https://www.attackacrack.com/services/${service.id}`,
+      "url": `https://www.attackacrack.com/services/${service.id.replace(/\.md$/, '')}`,
       "provider": {
         "@type": "HomeAndConstructionBusiness",
         "name": "Attack A Crack Foundation Repair"
