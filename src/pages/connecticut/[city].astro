@@ -265,6 +265,30 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 			<div class="max-w-4xl mx-auto px-6">
 				<article class="prose prose-lg prose-zinc max-w-none prose-headings:font-black prose-headings:tracking-tight prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-p:leading-relaxed prose-a:text-aac-blue prose-a:font-bold prose-a:no-underline hover:prose-a:underline prose-strong:text-aac-dark">
 					<Content />
+
+					{location.data.neighborhoods && location.data.neighborhoods.length > 0 && (
+						<Fragment>
+							<h2>Neighborhoods We Serve in {location.data.city}</h2>
+							<p>
+								We provide foundation repair services throughout {location.data.city}, including {
+									location.data.neighborhoods.length === 1
+										? location.data.neighborhoods[0]
+										: location.data.neighborhoods.length === 2
+											? `${location.data.neighborhoods[0]} and ${location.data.neighborhoods[1]}`
+											: `${location.data.neighborhoods.slice(0, -1).join(', ')}, and ${location.data.neighborhoods[location.data.neighborhoods.length - 1]}`
+								}. Whether your home is in a newer development or an older established neighborhood, our team knows the local soil conditions and foundation types common to each area.
+							</p>
+						</Fragment>
+					)}
+
+					<Fragment>
+						<h2>Why {location.data.city} Homes Need Foundation Repair</h2>
+						<p>
+							Connecticut homes face unique foundation challenges due to the region's freeze-thaw cycles, variable soil conditions, and aging housing stock.
+							{location.data.averageHomeAge && ` Many ${location.data.city} homes date to the ${location.data.averageHomeAge}, an era when concrete mixes and construction practices differed from today's standards.`}
+							{' '}Seasonal temperature swings cause concrete to expand and contract, eventually forming cracks that allow water infiltration. Left unrepaired, these cracks can lead to structural damage, mold growth, and decreased property value.
+						</p>
+					</Fragment>
 				</article>
 			</div>
 		</section>
