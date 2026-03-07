@@ -11,7 +11,7 @@ benefits:
   - title: "MA Concrete Repair Services"
     description: "Our Massachusetts team handles exterior concrete repair including driveways, patios, walkways, pool decks, garage floors, and stairways."
   - title: "Foundation Repair Statewide"
-    description: "Foundation crack injection is available throughout CT and MA. When you spot basement issues during grading or drainage work, we're the call."
+    description: "Foundation crack injection is available throughout Connecticut, Massachusetts, and all of New England. When you spot basement issues during grading or drainage work, we're the call."
   - title: "Easy Referral, Happy Clients"
     description: "Your clients already trust you with their property. Referring them to a specialist for concrete issues makes you the complete outdoor expert."
 testimonial:
@@ -20,7 +20,7 @@ testimonial:
   company: "Green Acres Landscaping"
 faqs:
   - question: "What types of concrete repair do you handle?"
-    answer: "In Massachusetts, we repair cracked driveways, patios, walkways, pool decks, garage floors, and stairways. Throughout CT and MA, we repair foundation wall cracks, floor cracks, bulkheads, and pipe penetrations."
+    answer: "In Massachusetts, we repair cracked driveways, patios, walkways, pool decks, garage floors, and stairways. Throughout Connecticut, Massachusetts, and all of New England, we repair foundation wall cracks, floor cracks, bulkheads, and pipe penetrations."
   - question: "Can you repair concrete that was damaged by tree roots or frost heave?"
     answer: "Yes. Frost heave and root damage are extremely common in New England. We assess the damage and determine whether repair or replacement is the best path, then give your client an honest recommendation."
   - question: "Do you work with landscapers on grading and drainage-related foundation issues?"
@@ -48,7 +48,7 @@ Our Massachusetts team specializes in repairing and resurfacing:
 - Stairway repairs
 
 **Foundation Repairs (CT + MA)**
-Throughout Connecticut and Massachusetts, we handle:
+Throughout Connecticut, Massachusetts, and all of New England, we handle:
 - [Foundation wall crack injection](/services/foundation-crack-injection)
 - Basement floor crack repair
 - Bulkhead sealing
@@ -72,7 +72,7 @@ Spring thaw and fall rains drive both your busiest seasons and ours. Coordinate 
 - **Photo-based quotes** in minutes
 - **Fast scheduling** to coordinate with your projects
 - **Lifetime warranty** on foundation repairs
-- **CT and MA coverage** for your service area
+- **CT, MA, and New England-wide coverage** for your service area
 
 ### Get Started
 

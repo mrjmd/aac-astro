@@ -1,7 +1,7 @@
 ---
 title: "Insurance Adjusters"
 metaTitle: "Insurance Adjuster Partners | Attack A Crack"
-metaDescription: "Partner with Attack A Crack for fast, documented foundation crack repairs that simplify claims. Lifetime warranty, clear reports, CT and MA coverage."
+metaDescription: "Partner with Attack A Crack for fast, documented foundation crack repairs that simplify claims. Lifetime warranty, clear reports, CT, MA & New England."
 excerpt: "Simplify foundation damage claims with fast, documented repairs backed by a lifetime warranty. Professional reports for every job."
 icon: "FileCheck"
 order: 5
@@ -64,7 +64,7 @@ When a home sale triggers an inspection that reveals foundation issues, we provi
 - **Complete documentation** for every job
 - **Rapid response** — photo quotes in hours, repairs in days
 - **Lifetime warranty** on all repairs (transferable)
-- **CT and MA coverage** from our two offices
+- **CT, MA, and New England-wide coverage** from our two offices
 
 ### Get Started
 

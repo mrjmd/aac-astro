@@ -65,7 +65,7 @@ Ideally, cracks are sealed before mold work begins. This prevents new moisture f
 - **Flexible scheduling** to work with your projects
 - **Honest assessments** — we tell homeowners what they need (and don't need)
 - **Direct communication** with trade partners
-- **CT and MA coverage** for your service area
+- **CT, MA, and New England-wide coverage** for your service area
 
 ### Get Started
 

@@ -1,7 +1,7 @@
 ---
 title: "Foundation Repair Cost Guide 2026: What CT & MA Homeowners Should Expect"
 metaTitle: "Foundation Repair Costs 2026 CT & MA Guide"
-metaDescription: "Comprehensive guide to foundation repair costs in Connecticut and Massachusetts. Learn what affects pricing and how to budget for repairs."
+metaDescription: "Comprehensive guide to foundation repair costs in Connecticut, Massachusetts, and across New England. Learn what affects pricing and how to budget for repairs."
 excerpt: "What should you actually expect to pay for foundation repair in New England? We break down real costs, what affects pricing, and how to avoid getting overcharged."
 publishDate: 2026-01-28
 author: "Matt Davis"
@@ -86,7 +86,7 @@ Older stone foundations require specialized techniques and typically cost more t
 
 ### 5. Geographic Factors
 
-While Attack A Crack serves all of CT and MA, some geographic factors affect pricing:
+While Attack A Crack serves all of New England, some geographic factors affect pricing:
 
 - **Travel distance**: Very remote locations may have modest trip fees
 - **Urban access**: Boston-area jobs with limited parking/access can take longer

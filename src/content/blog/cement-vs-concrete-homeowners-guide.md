@@ -137,7 +137,7 @@ Here's a quick guide to assessing concrete and masonry issues around your proper
 - Stair-step cracking in block walls
 - Multiple cracks appearing rapidly
 
-If you're unsure about any concrete issue in your home, we offer [free foundation consultations](/services/free-foundation-consultations) across Connecticut and Massachusetts. One visit is usually enough to tell you whether a crack needs repair, monitoring, or nothing at all.
+If you're unsure about any concrete issue in your home, we offer [free foundation consultations](/services/free-foundation-consultations) across New England. One visit is usually enough to tell you whether a crack needs repair, monitoring, or nothing at all.
 
 ## Frequently Asked Questions
 

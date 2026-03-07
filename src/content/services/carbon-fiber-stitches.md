@@ -1,7 +1,7 @@
 ---
 title: "Carbon Fiber Stitches"
 metaTitle: "Carbon Fiber Foundation Repair in CT & MA"
-metaDescription: "Structural foundation repair using carbon fiber stitches. Stabilize cracked walls and prevent further movement. Lifetime guarantee in CT & MA."
+metaDescription: "Structural foundation repair using carbon fiber stitches. Stabilize cracked walls and prevent further movement. Lifetime guarantee across New England."
 excerpt: "High-strength carbon fiber stitches reinforce foundation walls and prevent crack expansion. Permanent structural stabilization without excavation."
 icon: "ShieldCheck"
 order: 5

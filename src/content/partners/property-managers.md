@@ -2,7 +2,7 @@
 title: "Property Managers"
 metaTitle: "Property Manager Partner | Attack A Crack"
 metaDescription: "Protect your managed properties with permanent foundation solutions. Prevent recurring water damage and costly repairs. Priority service available."
-excerpt: "Protect your assets with permanent solutions that prevent recurring water damage. Reliable foundation repair for property managers in CT and MA."
+excerpt: "Protect your assets with permanent solutions that prevent recurring water damage. Reliable foundation repair for property managers in CT, MA, and across New England."
 icon: "ShieldCheck"
 order: 2
 benefits:

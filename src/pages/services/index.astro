@@ -26,7 +26,7 @@ const breadcrumbItems = [
 const servicesSchema = {
   "@type": "ItemList",
   "name": "Foundation Repair Services",
-  "description": "Specialized foundation repair solutions with lifetime guarantee in Connecticut and Massachusetts",
+  "description": "Specialized foundation repair solutions with lifetime guarantee in Connecticut, Massachusetts, and across New England",
   "numberOfItems": services.length,
   "itemListElement": services.map((service, index) => ({
     "@type": "ListItem",
@@ -42,7 +42,10 @@ const servicesSchema = {
       },
       "areaServed": [
         { "@type": "State", "name": "Connecticut" },
-        { "@type": "State", "name": "Massachusetts" }
+        { "@type": "State", "name": "Massachusetts" },
+        { "@type": "State", "name": "Rhode Island" },
+        { "@type": "State", "name": "New Hampshire" },
+        { "@type": "State", "name": "Maine" }
       ]
     }
   }))
@@ -51,7 +54,7 @@ const servicesSchema = {
 
 <Layout
   title="Foundation Repair Services"
-  description="Specialized foundation repair solutions with a lifetime guarantee. We repair wall cracks, leaky bulkheads, utility lines, and more in CT & MA."
+  description="Specialized foundation repair with a lifetime guarantee. We repair wall cracks, leaky bulkheads, utility lines, and more in CT, MA & across New England."
   customSchema={servicesSchema}
   breadcrumbItems={breadcrumbItems}
 >

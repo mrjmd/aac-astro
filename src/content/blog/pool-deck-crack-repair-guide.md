@@ -168,7 +168,7 @@ DIY crack filling is fine for minor cosmetic cracks. Everything else benefits fr
 - **Surface delamination**: Large areas where the top layer is separating
 - **Near the pool coping**: Repairs at the pool edge need to maintain proper drainage and bonding
 
-Our [concrete repair services](/concrete-repair/pool-deck) cover pool deck assessment and repair across Connecticut and Massachusetts. If you're unsure about the extent of the damage, a professional evaluation saves you from choosing the wrong repair method.
+Our [concrete repair services](/concrete-repair/pool-deck) cover pool deck assessment and repair across Massachusetts. If you're unsure about the extent of the damage, a professional evaluation saves you from choosing the wrong repair method.
 
 ## Preventing Future Pool Deck Damage
 

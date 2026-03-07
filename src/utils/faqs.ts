@@ -16,12 +16,12 @@ export const homeFaqs = [
 		answer: `Yes — every <a href="/services/free-foundation-consultations" class="text-aac-blue hover:underline font-semibold">foundation assessment</a> is 100% free with no obligation. Text us photos of your cracks and one of our experts will review them, explain exactly what's happening, and give you an honest recommendation. Most issues can be diagnosed from photos alone. In-person consultations are also available in Massachusetts.`
 	},
 	{
-		question: "What areas in Connecticut and Massachusetts do you serve?",
-		answer: `We serve homeowners across <a href="/areas-we-serve" class="text-aac-blue hover:underline font-semibold">Connecticut</a> and <a href="/areas-we-serve" class="text-aac-blue hover:underline font-semibold">Massachusetts</a>, including Hartford, New Haven, Fairfield County, Springfield, Worcester, and the Greater Boston area. With 20+ years of experience in New England, we understand the unique foundation challenges that our climate, soil conditions, and older housing stock create.`
+		question: "What areas do you serve?",
+		answer: `We serve homeowners across <a href="/areas-we-serve" class="text-aac-blue hover:underline font-semibold">New England</a> — Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine — including Hartford, New Haven, Springfield, Worcester, and Greater Boston. With 20+ years of experience in New England, we understand the unique foundation challenges that our climate, soil conditions, and older housing stock create.`
 	},
 	{
 		question: "Is it cement or concrete — does it matter for my repair?",
-		answer: `People often say "cement" when they mean "concrete" — and that's perfectly fine. Cement is actually just one ingredient in concrete (along with sand, gravel, and water). Your foundation is made of concrete, but regardless of what you call it, the repair process is the same: we inject structural resin directly into the crack to seal and strengthen it permanently. The fix works on poured concrete foundations, block walls, and stone foundations throughout Connecticut and Massachusetts.`
+		answer: `People often say "cement" when they mean "concrete" — and that's perfectly fine. Cement is actually just one ingredient in concrete (along with sand, gravel, and water). Your foundation is made of concrete, but regardless of what you call it, the repair process is the same: we inject structural resin directly into the crack to seal and strengthen it permanently. The fix works on poured concrete foundations, block walls, and stone foundations throughout New England.`
 	}
 ];
 

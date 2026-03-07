@@ -1,7 +1,7 @@
 ---
 title: "Plumbers"
 metaTitle: "Plumber Partners | Attack A Crack"
-metaDescription: "Partner with Attack A Crack for foundation crack repairs your plumbing clients need. We fix cracks and leaks you spot in basements. CT and MA coverage."
+metaDescription: "Partner with Attack A Crack for foundation crack repairs your plumbing clients need. We fix cracks and leaks you spot in basements. CT, MA & New England."
 excerpt: "You're already in the basement — when you spot cracks and water, refer clients to the foundation experts. We fix what you find."
 icon: "Pipette"
 order: 7
@@ -65,7 +65,7 @@ Cracks in basement slabs that allow water to seep up from below, especially duri
 - **Photo-based quotes** in minutes
 - **Honest assessments** — we don't oversell
 - **Lifetime warranty** on all repairs
-- **CT and MA coverage** throughout our service area
+- **CT, MA, and New England-wide coverage** throughout our service area
 
 ### Get Started
 

@@ -125,7 +125,7 @@ Raised edges from heaving or settlement that create a trip or stub hazard should
 
 If the concrete crumbles when you probe it with a screwdriver, or you can see rebar exposed and rusting, the concrete has failed structurally. No surface repair will fix this — it needs section replacement.
 
-Our [driveway repair services](/concrete-repair/driveway) cover the full range from crack repair to section replacement across Connecticut and Massachusetts.
+Our [driveway repair services](/concrete-repair/driveway) cover the full range from crack repair to section replacement across Massachusetts.
 
 ## Prevention: How to Make Repairs Last
 

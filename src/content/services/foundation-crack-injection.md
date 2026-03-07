@@ -1,7 +1,7 @@
 ---
 title: "Foundation Crack Injection"
 metaTitle: "Foundation Crack Injection Services CT & MA"
-metaDescription: "Professional foundation crack injection using urethane and epoxy resins. Permanently seal cracks from the inside out. Lifetime guarantee in CT and MA."
+metaDescription: "Professional foundation crack injection using urethane and epoxy resins. Permanently seal cracks from the inside out. Lifetime guarantee across New England."
 excerpt: "Professional urethane and epoxy injection to permanently seal foundation cracks. Our proven method fills cracks completely from interior to exterior soil."
 icon: "Wrench"
 order: 4

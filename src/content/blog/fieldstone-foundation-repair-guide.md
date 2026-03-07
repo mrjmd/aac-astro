@@ -61,7 +61,7 @@ Over time, some fieldstone walls may:
 
 ### Our Approach to Fieldstone Repair
 
-We specialize in preserving historic fieldstone foundations throughout Connecticut and Massachusetts. Our approach combines traditional craftsmanship with modern stabilization techniques.
+We specialize in preserving historic fieldstone foundations throughout New England. Our approach combines traditional craftsmanship with modern stabilization techniques.
 
 **Assessment**
 
@@ -103,7 +103,7 @@ We believe in honest assessment. For some fieldstone issues, we'll refer you to 
 - **Historic preservation** requiring museum-quality restoration
 - **Archaeological concerns** on historically significant structures
 
-### Serving Connecticut and Massachusetts
+### Serving New England
 
 We repair fieldstone foundations throughout:
 

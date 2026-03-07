@@ -1,7 +1,7 @@
 ---
 title: "Wall Crack Repair"
 metaTitle: "Foundation Wall Crack Repair in CT & MA"
-metaDescription: "Expert foundation wall crack repair using urethane injection, epoxy resin, and carbon fiber stitches. Lifetime guarantee in CT & MA."
+metaDescription: "Expert foundation wall crack repair using urethane injection, epoxy resin, and carbon fiber stitches. Lifetime guarantee across New England."
 excerpt: "Urethane injection, epoxy resin, and carbon fiber stitches to repair foundation cracks in basement walls and support beams. Lifetime guarantee included."
 icon: "Hammer"
 order: 1
@@ -13,7 +13,7 @@ faqs:
     answer: "Our repairs come with a lifetime guarantee. The flexible urethane we inject moves with your foundation, preventing re-cracking even as the house settles."
   - question: "Is wall crack repair messy?"
     answer: "No. Our injection process is clean and contained. We protect your floors and clean up completely before we leave."
-  - question: "How much does wall crack repair cost in CT and MA?"
+  - question: "How much does wall crack repair cost in New England?"
     answer: "Costs vary based on crack length and complexity, but most repairs range from $800-$1,200 per crack. Larger structural cracks requiring carbon fiber reinforcement may run higher. We provide free consultations and honest, itemized quotes with no hidden fees."
   - question: "Is it cement or concrete — does it matter for repair?"
     answer: "Most homeowners say 'cement' when they mean 'concrete.' Cement is an ingredient in concrete (like flour in bread). Your foundation is poured concrete, and our injection repairs work by bonding directly to the concrete matrix. Whether you search for cement crack repair or concrete crack repair, the fix is the same proven injection process."

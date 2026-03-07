@@ -20,11 +20,11 @@ const categoryLabels: Record<string, string> = {
 };
 
 const categoryDescriptions: Record<string, string> = {
-	'guides': 'In-depth guides to understanding foundation problems, repair methods, and maintenance. Expert advice from CT and MA foundation repair specialists.',
+	'guides': 'In-depth guides to understanding foundation problems, repair methods, and maintenance. Expert advice from New England foundation repair specialists.',
 	'case-studies': 'Real foundation repair projects from Attack A Crack. See before and after photos, learn about repair methods used, and understand the results we deliver.',
-	'cost-guides': 'Transparent foundation repair pricing guides for CT and MA homeowners. Understand costs, factors affecting price, and how to budget for your repair project.',
+	'cost-guides': 'Transparent foundation repair pricing guides for New England homeowners. Understand costs, factors affecting price, and how to budget for your repair project.',
 	'maintenance-tips': 'Practical foundation maintenance tips to prevent water damage, cracks, and structural issues. Protect your home investment with expert seasonal advice.',
-	'news': 'Company updates, industry news, and announcements from Attack A Crack Foundation Repair serving Connecticut and Massachusetts homeowners since 2004.',
+	'news': 'Company updates, industry news, and announcements from Attack A Crack Foundation Repair serving New England homeowners since 2004.',
 	'foundation-types': 'Learn about different foundation types in New England—fieldstone, cinderblock, poured concrete, and more. Expert repair and maintenance guidance.'
 };
 
@@ -71,7 +71,7 @@ function formatDate(date: Date): string {
 const isFirstPage = page.currentPage === 1;
 const titleSuffix = isFirstPage ? '' : ` - Page ${page.currentPage}`;
 const baseDescription = categoryDescriptions[category as string] || `${categoryLabels[category as string]} articles from Attack A Crack Foundation Repair.`;
-const description = isFirstPage ? baseDescription : `Page ${page.currentPage} of ${categoryLabels[category as string].toLowerCase()} articles from Attack A Crack Foundation Repair. Expert foundation repair content for CT and MA homeowners.`;
+const description = isFirstPage ? baseDescription : `Page ${page.currentPage} of ${categoryLabels[category as string].toLowerCase()} articles from Attack A Crack Foundation Repair. Expert foundation repair content for New England homeowners.`;
 ---
 
 <Layout

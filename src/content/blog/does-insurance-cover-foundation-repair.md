@@ -1,7 +1,7 @@
 ---
 title: "Does Insurance Cover Foundation Repair? What New England Homeowners Need to Know"
 metaTitle: "Does Insurance Cover Foundation Repair?"
-metaDescription: "Find out when homeowners insurance covers foundation repair and when it doesn't. A plain-English guide for CT and MA homeowners from foundation repair experts."
+metaDescription: "Find out when homeowners insurance covers foundation repair and when it doesn't. A plain-English guide for New England homeowners from foundation experts."
 excerpt: "Most homeowners assume their insurance covers foundation cracks. The reality is more complicated. Here's what's actually covered, what's excluded, and how to navigate the claims process."
 publishDate: 2026-03-04
 author: "Matt Davis"

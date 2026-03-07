@@ -1,7 +1,7 @@
 ---
 title: "How We Diagnose Foundation Problems: Inside Our Inspection Process"
 metaTitle: "How We Diagnose Foundation Problems"
-metaDescription: "See exactly how professional foundation inspectors assess your home. Learn the diagnostic techniques, tools, and criteria our experts use in CT and MA."
+metaDescription: "See exactly how professional foundation inspectors assess your home. Learn the diagnostic techniques, tools, and criteria our experts use across New England."
 excerpt: "What actually happens during a foundation inspection? We pull back the curtain on our diagnostic process — the techniques, tools, and criteria we use to assess every crack."
 publishDate: 2026-03-01
 author: "Luc Richard"
