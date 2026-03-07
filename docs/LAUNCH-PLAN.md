@@ -124,20 +124,20 @@ All 91 projects now have lat/lng coordinates.
 - [x] Backfilled coordinates on all 70 projects that were missing them
 - [x] Verified all 91 projects have `coordinates` populated
 
-**Phase 2: Location Page Proximity**
-Current fallback: random same-state projects. Improve to nearest-town proximity.
+**Phase 2: Location Page Proximity** — DONE
+Fallback projects now sorted by haversine distance instead of random.
 
-- [ ] Update `getForLocation()` in `src/utils/projects.ts` to sort by distance using coordinates
-- [ ] Logic: local city first → nearest towns → same-state fallback
-- [ ] Verify location pages show geographically relevant projects
+- [x] Added `distanceMiles()` helper and proximity sorting to `getForLocation()` and `getProjectImageForCity()`
+- [x] All 5 state city templates pass `location.data.coordinates` for proximity sorting
+- [x] Verified: Salem MA shows Marblehead (4mi), Danvers (8mi), Malden (14mi) — nearest projects
 
-**Phase 3: Massachusetts Project Pin Map**
-Show a pin map of completed projects on the MA state page. 90 projects across MA — impressive density.
+**Phase 3: Massachusetts Project Pin Map** — DONE
+Static SVG map with 47 city pins on the MA state page. Impressive South Shore density visible at a glance.
 
-- [ ] Create `ProjectMap.astro` component — static SVG or lightweight map with pins at project coordinates
-- [ ] Add to Massachusetts state page (`src/pages/massachusetts/index.astro`) as "Recent Projects" section
-- [ ] Each pin links to the project detail page
-- [ ] MA-only for now (90 projects). Expand to other states as project tracking grows.
+- [x] Created `ProjectMap.astro` — static SVG with MA outline and grouped pins (count badges for multi-project cities)
+- [x] Added to Massachusetts state page as "Our Work Across Massachusetts" section
+- [x] Pins are non-interactive (a11y clean); "Browse All Projects" link below map
+- [x] All accessibility checks pass (36 checks on MA page)
 
 ### Internal Linking — DONE (was 44 Orphaned Blog Posts → 0)
 

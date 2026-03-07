@@ -17,18 +17,51 @@ export async function getAll() {
     .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 }
 
-/** Get projects for a specific location (city + state match) */
-export async function getForLocation(city: string, state: string, count = 3) {
+/** Haversine distance in miles between two lat/lng points */
+function distanceMiles(
+  lat1: number, lng1: number,
+  lat2: number, lng2: number
+): number {
+  const R = 3959; // Earth radius in miles
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLng = (lng2 - lng1) * Math.PI / 180;
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+    Math.sin(dLng / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+/** Get projects for a specific location (city + state match, with proximity fallback) */
+export async function getForLocation(
+  city: string,
+  state: string,
+  count = 3,
+  coordinates?: { lat: number; lng: number }
+) {
   const all = await getAll();
   const cityMatch = all.filter(
     p => p.data.city.toLowerCase() === city.toLowerCase() && p.data.state === state
   );
   if (cityMatch.length >= count) return cityMatch.slice(0, count);
 
-  // Fall back to same-state projects
+  // Fall back to same-state projects, sorted by proximity if coordinates available
   const stateMatch = all.filter(
     p => p.data.state === state && !cityMatch.includes(p)
   );
+
+  if (coordinates) {
+    stateMatch.sort((a, b) => {
+      const aDist = a.data.coordinates
+        ? distanceMiles(coordinates.lat, coordinates.lng, a.data.coordinates.lat, a.data.coordinates.lng)
+        : Infinity;
+      const bDist = b.data.coordinates
+        ? distanceMiles(coordinates.lat, coordinates.lng, b.data.coordinates.lat, b.data.coordinates.lng)
+        : Infinity;
+      return aDist - bDist;
+    });
+  }
+
   return [...cityMatch, ...stateMatch].slice(0, count);
 }
 
@@ -48,7 +81,11 @@ const STATE_FALLBACK_IMAGES: Record<string, string> = {
 };
 
 /** Get the best project image for a city page. Prefers after images from local projects. */
-export async function getProjectImageForCity(city: string, stateAbbr: string): Promise<{ src: string; alt: string }> {
+export async function getProjectImageForCity(
+  city: string,
+  stateAbbr: string,
+  coordinates?: { lat: number; lng: number }
+): Promise<{ src: string; alt: string }> {
   const all = await getAll();
 
   // Try exact city match first
@@ -66,15 +103,26 @@ export async function getProjectImageForCity(city: string, stateAbbr: string): P
     };
   }
 
-  // Fall back to same-state project
+  // Fall back to same-state project, nearest first
   const stateProjects = all.filter(p => p.data.state === stateAbbr);
+  if (coordinates) {
+    stateProjects.sort((a, b) => {
+      const aDist = a.data.coordinates
+        ? distanceMiles(coordinates.lat, coordinates.lng, a.data.coordinates.lat, a.data.coordinates.lng)
+        : Infinity;
+      const bDist = b.data.coordinates
+        ? distanceMiles(coordinates.lat, coordinates.lng, b.data.coordinates.lat, b.data.coordinates.lng)
+        : Infinity;
+      return aDist - bDist;
+    });
+  }
   if (stateProjects.length > 0) {
     const project = stateProjects[0];
     return {
       src: project.data.afterImage !== '/images/projects/placeholder.svg'
         ? project.data.afterImage
         : project.data.beforeImage,
-      alt: `Foundation repair project in ${stateAbbr}`,
+      alt: `Foundation repair project near ${city}, ${stateAbbr}`,
     };
   }
 

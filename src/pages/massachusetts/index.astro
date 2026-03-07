@@ -7,7 +7,9 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
 import TestimonialCard from '../../components/TestimonialCard.astro';
+import ProjectMap from '../../components/ProjectMap.astro';
 import { getByState } from '../../utils/testimonials';
+import { getAll as getAllProjects } from '../../utils/projects';
 import { phoneMA, phoneMAHref } from '../../utils/contact';
 
 // Get all MA location pages
@@ -32,6 +34,10 @@ const maRegions = {
   'Greater Fall River': ['Fall River', 'New Bedford', 'Taunton', 'Somerset', 'Swansea'],
   'Central Mass': ['Worcester', 'Fitchburg', 'Leominster', 'Marlborough', 'Shrewsbury']
 };
+
+// MA projects for the map
+const allProjects = await getAllProjects();
+const maProjects = allProjects.filter(p => p.data.state === 'MA');
 
 // Testimonials from centralized data
 const testimonials = getByState('MA', 3);
@@ -261,8 +267,35 @@ const maSchema = {
 			</div>
 		</section>
 
-		<!-- Testimonials -->
+		<!-- Project Map -->
 		<section class="py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="text-center mb-12">
+					<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/10 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
+						<Icon name="MapPin" size={14} /> {maProjects.length} Projects Completed
+					</div>
+					<h2 class="text-4xl font-black tracking-tighter text-aac-dark">
+						Our Work Across Massachusetts
+					</h2>
+					<p class="text-lg text-zinc-500 mt-4 max-w-2xl mx-auto">
+						Every pin is a real foundation repair project. Click any pin to see the before & after.
+					</p>
+				</div>
+
+				<div class="max-w-3xl mx-auto">
+					<ProjectMap projects={maProjects} />
+				</div>
+
+				<div class="text-center mt-8">
+					<a href="/updates" class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[11px] hover:gap-4 transition-all">
+						Browse All Projects <Icon name="ArrowRight" size={14} />
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Testimonials -->
+		<section class="py-24 bg-zinc-50">
 			<div class="max-w-7xl mx-auto px-6">
 				<div class="text-center mb-16">
 					<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-yellow/10 text-aac-dark rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-yellow">

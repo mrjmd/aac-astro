@@ -1,0 +1,202 @@
+---
+/**
+ * ProjectMap — Static SVG map of MA with project pins.
+ * Groups projects by city so each pin = one city, with count badge for multiple.
+ * No JS dependencies; pure SVG + CSS hover effects.
+ */
+
+interface Project {
+  id: string;
+  data: {
+    title: string;
+    city: string;
+    state: string;
+    coordinates?: { lat: number; lng: number };
+  };
+}
+
+interface Props {
+  projects: Project[];
+}
+
+const { projects } = Astro.props;
+
+// Group projects by city (using first project's coordinates per city)
+const cityGroups = new Map<string, { lat: number; lng: number; count: number; slug: string; city: string }>();
+for (const p of projects) {
+  if (!p.data.coordinates) continue;
+  const key = p.data.city;
+  if (!cityGroups.has(key)) {
+    cityGroups.set(key, {
+      lat: p.data.coordinates.lat,
+      lng: p.data.coordinates.lng,
+      count: 1,
+      slug: p.id.replace(/\.md$/, ''),
+      city: p.data.city,
+    });
+  } else {
+    cityGroups.get(key)!.count++;
+  }
+}
+
+// MA bounding box (with padding)
+const bounds = {
+  minLat: 41.15,
+  maxLat: 42.95,
+  minLng: -73.55,
+  maxLng: -69.80,
+};
+
+const svgWidth = 600;
+const svgHeight = 400;
+const padX = 20;
+const padY = 20;
+
+function toSvg(lat: number, lng: number): { x: number; y: number } {
+  const x = padX + ((lng - bounds.minLng) / (bounds.maxLng - bounds.minLng)) * (svgWidth - 2 * padX);
+  const y = padY + ((bounds.maxLat - lat) / (bounds.maxLat - bounds.minLat)) * (svgHeight - 2 * padY);
+  return { x, y };
+}
+
+const pins = Array.from(cityGroups.values()).map(g => ({
+  ...toSvg(g.lat, g.lng),
+  count: g.count,
+  city: g.city,
+  slug: g.slug,
+}));
+
+// Simplified MA state outline (approximate polygon points)
+// Key vertices tracing the state boundary
+const maOutline = [
+  // Northwest corner
+  { lat: 42.74, lng: -73.26 },
+  // Northern border (roughly along MA/VT/NH line)
+  { lat: 42.74, lng: -72.45 },
+  { lat: 42.74, lng: -71.80 },
+  { lat: 42.74, lng: -71.33 },
+  // Merrimack Valley / NH border curves south
+  { lat: 42.87, lng: -71.02 },
+  { lat: 42.87, lng: -70.82 },
+  // Northeast coast (Newburyport area)
+  { lat: 42.88, lng: -70.82 },
+  { lat: 42.80, lng: -70.82 },
+  // North Shore coast
+  { lat: 42.63, lng: -70.63 },
+  // Cape Ann
+  { lat: 42.64, lng: -70.60 },
+  { lat: 42.59, lng: -70.65 },
+  // Salem/Marblehead
+  { lat: 42.50, lng: -70.83 },
+  // Boston Harbor
+  { lat: 42.39, lng: -70.96 },
+  { lat: 42.33, lng: -70.97 },
+  // South Shore coast
+  { lat: 42.25, lng: -70.80 },
+  { lat: 42.20, lng: -70.72 },
+  // Scituate / Marshfield
+  { lat: 42.10, lng: -70.66 },
+  // Plymouth / Duxbury
+  { lat: 42.04, lng: -70.60 },
+  { lat: 41.96, lng: -70.58 },
+  // Cape Cod Bay
+  { lat: 41.88, lng: -70.50 },
+  // Provincetown (tip of cape)
+  { lat: 42.07, lng: -70.18 },
+  { lat: 42.05, lng: -70.06 },
+  // Outer Cape
+  { lat: 41.92, lng: -69.94 },
+  { lat: 41.70, lng: -69.95 },
+  // Chatham
+  { lat: 41.66, lng: -69.96 },
+  // Nantucket Sound coast
+  { lat: 41.63, lng: -70.10 },
+  { lat: 41.56, lng: -70.55 },
+  // Falmouth / Buzzards Bay
+  { lat: 41.54, lng: -70.61 },
+  { lat: 41.55, lng: -70.66 },
+  // Cape Cod Canal area
+  { lat: 41.74, lng: -70.62 },
+  { lat: 41.74, lng: -70.68 },
+  // Wareham / Onset
+  { lat: 41.74, lng: -70.72 },
+  // Buzzards Bay west coast
+  { lat: 41.63, lng: -70.86 },
+  { lat: 41.50, lng: -71.02 },
+  // Westport / Dartmouth
+  { lat: 41.48, lng: -71.02 },
+  // Fall River / RI border
+  { lat: 41.60, lng: -71.12 },
+  { lat: 41.68, lng: -71.12 },
+  // RI border going north
+  { lat: 41.78, lng: -71.38 },
+  { lat: 42.01, lng: -71.38 },
+  // CT border going west
+  { lat: 42.01, lng: -71.80 },
+  { lat: 42.04, lng: -72.10 },
+  { lat: 42.03, lng: -72.53 },
+  { lat: 42.03, lng: -72.78 },
+  // Southwest corner
+  { lat: 42.04, lng: -73.00 },
+  { lat: 42.05, lng: -73.23 },
+  // Back to northwest
+  { lat: 42.74, lng: -73.26 },
+].map(p => toSvg(p.lat, p.lng));
+
+const outlinePath = maOutline.map((p, i) => `${i === 0 ? 'M' : 'L'}${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' ') + ' Z';
+---
+
+<div class="project-map-container">
+  <svg
+    viewBox={`0 0 ${svgWidth} ${svgHeight}`}
+    class="w-full h-auto"
+    role="img"
+    aria-label={`Map of ${pins.length} Massachusetts cities where we've completed foundation repair projects`}
+  >
+    <!-- State outline -->
+    <path
+      d={outlinePath}
+      fill="#f4f4f5"
+      stroke="#d4d4d8"
+      stroke-width="1.5"
+    />
+
+    <!-- Project pins -->
+    {pins.map(pin => (
+      <g class="project-pin" role="img" aria-label={`${pin.city}: ${pin.count} project${pin.count > 1 ? 's' : ''}`}>
+        <circle
+          cx={pin.x}
+          cy={pin.y}
+          r={pin.count > 1 ? 7 : 5}
+          fill="#2563eb"
+          stroke="white"
+          stroke-width="1.5"
+          class="pin-dot"
+        />
+        {pin.count > 1 && (
+          <text
+            x={pin.x}
+            y={pin.y + 1}
+            text-anchor="middle"
+            dominant-baseline="middle"
+            fill="white"
+            font-size="8"
+            font-weight="bold"
+            aria-hidden="true"
+          >
+            {pin.count}
+          </text>
+        )}
+      </g>
+    ))}
+  </svg>
+</div>
+
+<style>
+  .project-map-container {
+    max-width: 100%;
+  }
+
+  .project-pin .pin-dot {
+    transition: all 0.2s ease;
+  }
+</style>
