@@ -56,16 +56,16 @@ for (const p of projects) {
 
 // MA bounding box (with padding)
 const bounds = {
-  minLat: 41.15,
+  minLat: 41.38,
   maxLat: 42.95,
   minLng: -73.55,
   maxLng: -69.80,
 };
 
 const svgWidth = 600;
-const svgHeight = 340;
+const svgHeight = 300;
 const padX = 20;
-const padY = 15;
+const padY = 10;
 
 function toSvg(lat: number, lng: number): { x: number; y: number } {
   const x = padX + ((lng - bounds.minLng) / (bounds.maxLng - bounds.minLng)) * (svgWidth - 2 * padX);
