@@ -90,7 +90,7 @@ If you own a home in Rhode Island, here is our honest advice after three decades
 
 **Do watch for water.** Water is the number one enemy of Rhode Island foundations. Monitor your basement after heavy rain, during spring snowmelt, and during high tide events if you are near the coast. Check out our [spring thaw foundation prep guide](/blog/spring-thaw-foundation-prep) for seasonal tips.
 
-**Do get a professional assessment.** We offer [free foundation consultations](/services/free-foundation-consultations) throughout Rhode Island. No sales pressure, just honest answers about what your foundation needs — which might be nothing at all.
+**Do get a professional assessment.** We offer [free foundation consultations](/services/free-foundation-consultations) throughout Rhode Island. No pressure, just honest answers about what your foundation needs — which might be nothing at all.
 
 **Do not try DIY crack repair.** We know it is tempting to grab a tube of caulk from the hardware store. We have written extensively about [why DIY approaches fall short](/blog/diy-vs-professional-foundation-repair). Professional injection fills the entire depth of the crack, not just the surface.
 

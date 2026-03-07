@@ -167,7 +167,7 @@ Foundation repairs are an investment in your home's value and safety. We work wi
 
 We're not the cheapest, and we're not the most expensive. We're the most honest:
 
-- **Free consultations** with real experts, not salespeople
+- **Free consultations** with real experts who give honest advice
 - **Transparent pricing** with no hidden fees
 - **Lifetime guarantee** on all repairs
 - **We'll tell you if you don't need repair**

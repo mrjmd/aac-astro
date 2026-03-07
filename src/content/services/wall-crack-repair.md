@@ -91,4 +91,4 @@ Don't wait for water to pour in. Signs you need wall crack repair:
 - **Same-day response** to urgent issues
 - **Free consultations** with honest assessments
 - **33+ years** of New England foundation experience
-- **No salespeople**—talk directly to the experts
+- **Talk to an expert**—honest assessments every time

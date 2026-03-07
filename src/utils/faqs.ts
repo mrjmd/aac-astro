@@ -9,7 +9,7 @@ export const homeFaqs = [
 	},
 	{
 		question: "How much does foundation crack repair cost?",
-		answer: `Foundation crack repair typically costs between $800 and $1,200 per crack, depending on the length, location, and severity. That's significantly less than exterior excavation methods, which can run $3,000–$10,000+. <a href="/services/free-foundation-consultations" class="text-aac-blue hover:underline font-semibold">Text us photos</a> for a free assessment with a written quote — no obligation, no pressure, no salespeople.`
+		answer: `Foundation crack repair typically costs between $800 and $1,200 per crack, depending on the length, location, and severity. That's significantly less than exterior excavation methods, which can run $3,000–$10,000+. <a href="/services/free-foundation-consultations" class="text-aac-blue hover:underline font-semibold">Text us photos</a> for a free assessment with a written quote — no obligation, no pressure — just honest expert advice.`
 	},
 	{
 		question: "Do you offer free foundation inspections?",

@@ -161,7 +161,7 @@ We wrote this guide knowing that it sets a standard we have to meet ourselves. H
 
 **Warranty:** Lifetime transferable warranty on crack injection repairs, in writing, with clear terms.
 
-**No sales pressure:** We do not employ commissioned salespeople. Our consultations are conducted by technicians who diagnose problems, not sales representatives who close deals.
+**No pressure:** Our consultations are conducted by experts who diagnose problems and give honest advice, not pressure tactics.
 
 **Free consultations:** We offer [free foundation consultations](/services/free-foundation-consultations) with no obligation. We tell you what we see, what it costs, and let you decide on your own timeline.
 

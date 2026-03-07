@@ -101,10 +101,10 @@ Service pages (`services/[slug].astro`) only show CT and MA in the "Available In
 
 Matt doesn't want "no salespeople" / "no salesperson" language anywhere on the site. Also doesn't want "speak directly to the person who does the job" — Matt talks to customers with expertise but doesn't do the repairs himself. "Talk to an expert" is the right framing.
 
-- [ ] **Audit all pages and content** for "no sales", "salesperson", "salespeople" language
-- [ ] **Audit for "person who does the job/work/repair"** and similar claims
-- [ ] Replace with "talk to an expert" or equivalent language
-- [ ] Verify no instances remain after fix
+- [x] **Audit all pages and content** for "no sales", "salesperson", "salespeople" language
+- [x] **Audit for "person who does the job/work/repair"** and similar claims
+- [x] Replace with "talk to an expert" or equivalent language
+- [x] Verify no instances remain after fix (one exception: `foundation-repair-warranty-guide.md` warns about other companies' salespeople — appropriate editorial content)
 
 ### Centralize Hardcoded Contact Details (Claude)
 

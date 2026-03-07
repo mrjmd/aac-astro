@@ -102,6 +102,6 @@ New Hampshire homeowners can take some practical steps to reduce foundation stre
 
 Attack A Crack serves southern New Hampshire from our New England base of operations. We understand the specific challenges that the Granite State throws at foundations because we have been fixing them for over three decades.
 
-We offer [free foundation consultations](/services/free-foundation-consultations) throughout our NH service area. No sales pitch, no pressure — just honest answers from people who have seen it all. Call us at 860-573-8760 and we will set up a time to take a look.
+We offer [free foundation consultations](/services/free-foundation-consultations) throughout our NH service area. No pressure — just honest answers from experts who have seen it all. Call us at 860-573-8760 and we will set up a time to take a look.
 
 Your foundation is dealing with some of the toughest conditions in New England. The least you can do is find out exactly where it stands.

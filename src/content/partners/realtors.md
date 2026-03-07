@@ -64,7 +64,7 @@ Need repairs completed before closing? We'll work with your timeline and provide
 
 - **24-hour quote turnaround** (often same-day)
 - **Flexible scheduling** to meet closing deadlines
-- **Direct communication** with principals, not salespeople
+- **Direct communication** with our experts
 - **Transferable lifetime warranty** on all repairs
 - **Clear documentation** for files and inspectors
 

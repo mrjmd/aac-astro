@@ -2,7 +2,7 @@
 title: "Free Foundation Consultations"
 metaTitle: "Free Foundation Consultation in CT & MA"
 metaDescription: "Get a free, no-pressure foundation assessment from our experts. We'll diagnose your problem, explain options, and give an honest quote."
-excerpt: "All diagnosis is free! We'll talk you through your options including DIY repair advice. No salespeople, no pressure—just honest expert assessment."
+excerpt: "All diagnosis is free! We'll talk you through your options including DIY repair advice. No pressure—just honest expert assessment."
 icon: "Info"
 order: 6
 heroImage: "/images/service-diagnosis.jpg"
@@ -41,8 +41,8 @@ Most foundation issues can be accurately diagnosed from good photos alone. No sc
 
 ### What Makes Our Consultations Different
 
-**No Salespeople**
-When you contact Attack A Crack, you're talking to the actual experts who do the work. We don't employ commission-based sales staff whose job is to close deals. You get honest information from people who care about doing the right thing.
+**Talk to an Expert**
+When you contact Attack A Crack, you're talking to someone who knows foundations inside and out. You get honest information from people who care about doing the right thing.
 
 **We'll Tell You the Truth**
 Some cracks don't need professional repair. If your issue is cosmetic or something you can handle yourself, we'll tell you—and we'll explain exactly how to do it. Our reputation is built on honesty, not maximizing sales.
@@ -105,7 +105,7 @@ For situations that need hands-on evaluation, we schedule an on-site visit. Our 
 - Recommend unnecessary repairs to increase the bill
 - Rush you into a decision
 - Charge for the consultation or quote
-- Send salespeople instead of technicians
+- Pressure you with high-pressure tactics
 
 ### Common Consultation Outcomes
 

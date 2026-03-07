@@ -85,7 +85,7 @@ What a specialist assessment includes that a general inspection does not:
 - **Repair scope and cost.** You get a specific repair plan with real numbers, not a vague recommendation.
 - **Honest evaluation.** A good foundation specialist will tell you when something is not a big deal. We regularly tell homebuyers that what they are looking at is normal and needs nothing more than a minor repair, or no repair at all.
 
-We offer [free foundation consultations](/services/free-foundation-consultations) specifically because we know how stressful this moment is. There is no sales pitch. We tell you what we see and what it would cost to fix, and you make your own decision.
+We offer [free foundation consultations](/services/free-foundation-consultations) specifically because we know how stressful this moment is. No pressure. We tell you what we see and what it would cost to fix, and you make your own decision.
 
 ## Negotiation Strategies That Work
 
