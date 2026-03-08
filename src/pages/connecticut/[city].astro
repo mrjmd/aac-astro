@@ -104,6 +104,13 @@ const citySchema = {
       "name": "Connecticut"
     }
   },
+  ...(location.data.coordinates && {
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": location.data.coordinates.lat,
+      "longitude": location.data.coordinates.lng
+    }
+  }),
   "aggregateRating": aggregateRatingSchema,
   // LLM-ready properties
   "significantLink": significantLinks,

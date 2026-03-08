@@ -101,6 +101,13 @@ const citySchema = {
       "name": "Rhode Island"
     }
   },
+  ...(location.data.coordinates && {
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": location.data.coordinates.lat,
+      "longitude": location.data.coordinates.lng
+    }
+  }),
   "aggregateRating": aggregateRatingSchema,
   "significantLink": significantLinks,
   "mentions": mentions

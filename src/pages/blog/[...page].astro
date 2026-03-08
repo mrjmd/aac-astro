@@ -58,9 +58,26 @@ const isFirstPage = page.currentPage === 1;
 const titleSuffix = isFirstPage ? '' : ` - Page ${page.currentPage}`;
 const baseDescription = "Expert insights, case studies, and maintenance tips to keep your foundation secure. Learn from New England's foundation repair specialists.";
 const description = isFirstPage ? baseDescription : `Page ${page.currentPage} of our foundation repair blog. Expert insights, case studies, and practical tips from New England's trusted specialists.`;
+
+// ItemList schema for the blog index (first page only)
+const blogListSchema = isFirstPage ? {
+	"@type": "CollectionPage",
+	"name": "Foundation Repair Blog",
+	"description": baseDescription,
+	"url": "https://www.attackacrack.com/blog",
+	"mainEntity": {
+		"@type": "ItemList",
+		"numberOfItems": totalPosts,
+		"itemListElement": [...(featuredPosts || []), ...page.data].slice(0, 10).map((post, i) => ({
+			"@type": "ListItem",
+			"position": i + 1,
+			"url": `https://www.attackacrack.com/blog/${post.id.replace(/\.md$/, '')}`
+		}))
+	}
+} : null;
 ---
 
-<Layout title={`Foundation Repair Blog${titleSuffix}`} description={description}>
+<Layout title={`Foundation Repair Blog${titleSuffix}`} description={description} {...(blogListSchema && { customSchema: blogListSchema })}>
 	<LocationModal />
 	<Navbar currentPage="blog" />
 

@@ -346,14 +346,13 @@ Full competitive audit to maximize SERP dominance before and after launch.
 - [ ] **Meta description optimization** — rewrite underperforming descriptions using click-through data from GSC
 - [ ] **H1/H2 keyword alignment** — ensure heading hierarchy matches target SERP terms from keyword research
 - [ ] **Content depth audit** — compare page word counts against ranking competitors from SEMrush
-- [x] **Schema completeness audit** — comprehensive audit completed March 7. Key findings:
-  - Validator does not check RI/NH/ME location pages (only CT/MA) — add to validator
-  - Homepage missing AggregateRating (most impactful gap)
-  - Concrete repair pages missing AggregateRating (inconsistent with service pages)
-  - Blog posts missing `wordCount` and `articleSection` (easy additions)
-  - Location pages missing `geo` GeoCoordinates on business schema (coordinates available but not used)
-  - Blog index has no schema (should have ItemList)
-  - Full findings documented in session; actionable items can be implemented post-launch data collection
+- [x] **Schema completeness audit** — comprehensive audit completed March 7. All gaps resolved:
+  - ~~Validator does not check RI/NH/ME~~ — already fixed (validator checks all 5 states)
+  - ~~Homepage missing AggregateRating~~ — already present via `aggregateRatingSchema`
+  - ~~Concrete repair pages missing AggregateRating~~ — already present
+  - ~~Blog posts missing `wordCount` and `articleSection`~~ — already present
+  - ✅ Location pages now include `geo` GeoCoordinates on business schema (all 80 city pages)
+  - ✅ Blog index now has `CollectionPage` + `ItemList` schema (first page only)
 - [x] **Internal link equity flow** — homepage → service pages → city pages → blog (proper silo)
 - [x] **Image SEO** — all images have keyword-rich alt text (service type + city + state pattern), filenames, and proper dimensions
 
