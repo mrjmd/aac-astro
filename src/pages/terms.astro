@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { email } from '../utils/contact';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Terms of Service' }
+];
+---
+
+<Layout
+  title="Terms of Service"
+  description="Terms of service for Attack A Crack Foundation Repair. Review the terms and conditions for using our website and services."
+  breadcrumbItems={breadcrumbItems}
+>
+  <section class="py-24 md:py-32">
+    <div class="max-w-3xl mx-auto px-6">
+      <h1 class="text-3xl md:text-4xl font-black text-aac-dark mb-8">Terms of Service</h1>
+      <p class="text-sm text-zinc-400 mb-8">Effective date: March 2026</p>
+      <div class="prose prose-zinc max-w-none">
+        <p>Welcome to attackacrack.com, operated by Attack A Crack Foundation Repair ("we," "us," or "our"). By using this website, you agree to the following terms.</p>
+
+        <h2>Use of This Website</h2>
+        <p>This website is provided for informational purposes about our foundation repair services. You may browse, download, and print content from this site for your personal, non-commercial use. You may not reproduce, distribute, or use our content for commercial purposes without our written permission.</p>
+
+        <h2>No Professional Advice</h2>
+        <p>The information on this website is general in nature and is not a substitute for a professional foundation inspection. Every property is different. Contact us for an on-site consultation before making repair decisions based on information found here.</p>
+
+        <h2>Service Estimates and Pricing</h2>
+        <p>Any pricing ranges or cost estimates mentioned on this website are approximate and provided for general reference only. Actual costs depend on the specific conditions of your property and the scope of work required. A formal estimate will be provided after an on-site consultation.</p>
+
+        <h2>Warranties</h2>
+        <p>Warranty terms for our repair services are provided in writing at the time of service and are governed by the specific warranty agreement for your project. General warranty information on this website does not constitute a warranty offer or guarantee.</p>
+
+        <h2>Limitation of Liability</h2>
+        <p>This website and its content are provided "as is" without warranties of any kind, either express or implied. We are not liable for any damages arising from your use of this website or reliance on its content.</p>
+
+        <h2>Third-Party Links</h2>
+        <p>This site may link to third-party websites for your convenience. We do not control or endorse those sites and are not responsible for their content or practices.</p>
+
+        <h2>Intellectual Property</h2>
+        <p>All content on this website — including text, images, logos, and design — is the property of Attack A Crack Foundation Repair and is protected by applicable intellectual property laws.</p>
+
+        <h2>Changes to These Terms</h2>
+        <p>We may update these Terms of Service at any time. Continued use of the website after changes are posted constitutes your acceptance of the updated terms.</p>
+
+        <h2>Governing Law</h2>
+        <p>These terms are governed by the laws of the State of Connecticut.</p>
+
+        <h2>Contact Us</h2>
+        <p>Questions about these terms? Contact us at <a href={`mailto:${email}`}>{email}</a>.</p>
+      </div>
+    </div>
+  </section>
+</Layout>

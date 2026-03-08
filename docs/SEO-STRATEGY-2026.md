@@ -1513,3 +1513,84 @@ While the website is the foundation, a successful 2026 local SEO strategy requir
 - [Heroic Rankings - E-E-A-T 2026](https://heroicrankings.com/seo/content-creation/google-eeat-and-seo-in-2026/)
 - [Search Engine Land - Local SEO 90-Day Plan](https://searchengineland.com/local-seo-sprints-a-90-day-plan-for-service-businesses-in-2026-469059)
 - [Agency Jet - GBP 2026 Guide](https://www.agencyjet.com/blog/google-business-profile-optimization-guide)
+
+---
+
+## Part 19: Third-Party Research & Competitive Intelligence Tools
+
+Beyond our core on-page and off-page strategy, these research-oriented tactics help identify gaps and opportunities that manual analysis misses.
+
+### 19.1 Content Gap Audit (Ahrefs / Semrush)
+
+Research competing domains (CrackX, A1 Foundation, regional competitors from Part 18) and run a "Content Gap" report. This identifies specific pages driving their organic traffic that we don't have equivalents for.
+
+**Tactic:** If a competitor ranks for "fieldstone foundation pointing" or "parging repair cost" and we don't have a page targeting that term, that's the next blog post or FAQ addition. Prioritize terms with commercial intent over informational-only queries.
+
+**When:** Post-launch, once we have 30+ days of GSC data to cross-reference.
+
+### 19.2 GSC Query Mapping — Low-Hanging CTR Fruit
+
+Post-launch, export Google Search Console data and look for queries where we have **high impressions but low CTR** (typically position 8-20). These are pages where Google already considers us relevant but we're not earning the click.
+
+**Tactic:** For each high-impression/low-CTR query:
+1. Check the current title tag and meta description — does it match the search intent?
+2. Rewrite the meta description with more "Expert Jester" personality to stand out in the SERP
+3. Consider whether the title tag could better target the exact query phrasing
+4. Re-check in 2-4 weeks for CTR improvement
+
+**Target:** Move 10+ queries from position 10-20 into position 1-10 within 90 days of launch.
+
+### 19.3 Semantic Completeness Analysis (SurferSEO / Frase)
+
+Google 2026 evaluates semantic completeness — does the page cover the topic thoroughly compared to competing pages? This goes beyond keyword density into topical coverage.
+
+**Tactic:** Run our top 5 service pages through SurferSEO or Frase and compare against the top 10 SERP results for each target keyword. If every top-ranking page mentions "polyurethane viscosity" or "hydrostatic pressure testing" and we don't, we have a semantic gap that's costing us rankings.
+
+**When:** Before launch for the top 5 service pages. Monthly post-launch for blog posts targeting competitive terms.
+
+### 19.4 BrightLocal for Local Pack Tracking
+
+Track Local Pack rankings (the map results), not just organic blue links. Local Pack position is a distinct ranking — a page can rank #1 organic but not appear in the Local Pack, or vice versa.
+
+**Tactic:**
+- Monitor Local Pack rankings for top 20 keywords across both GBP locations (CT + MA)
+- Track citation consistency (NAP) across all directories — BrightLocal automates this vs. manual checking
+- Set up rank tracking alerts for position drops in local pack
+
+**Relationship to Part 17:** Part 17's tools list mentions BrightLocal but doesn't describe these specific local pack tracking tactics.
+
+---
+
+## Part 20: Hyper-Local Link Strategy (2026)
+
+Part 18.2 covers general link building. This section adds specific 2026 tactical advice for hyper-local link acquisition, which is disproportionately valuable for Local SEO.
+
+### 20.1 Community & Civic Links
+
+A link from a local Little League team, Quincy Chamber of Commerce, or South Shore YMCA is often **more valuable for Local SEO** than a link from a generic home improvement blog. These links signal both locality and trust — exactly what Google's local algorithm weights.
+
+**Targets:**
+- Chamber of Commerce memberships (CT + MA locations)
+- Local sports team sponsorships (logo + link on team website)
+- Community event sponsorships (5K races, home shows, neighborhood fairs)
+- Local business directories (town-specific, not national aggregators)
+
+### 20.2 Strategic Guest Posting
+
+Target real estate and property management publications in New England. An expert column on "How to Spot a Foundation Crack Before Buying" in a regional real estate magazine or blog builds high-authority backlinks while positioning Luc as the local expert.
+
+**Priority targets:**
+- New England Real Estate Journal
+- Local realtor association blogs
+- Home inspector association newsletters
+- Property management company blogs (they need foundation repair referrals)
+
+### 20.3 GBP as a Freshness Signal
+
+Weekly posts on Google Business Profile using Expert Jester voice aren't just content — Google treats GBP activity as a "freshness" signal for the entire business entity. A GBP profile with weekly posts ranks higher in Local Pack than one that hasn't posted in months, even if the website is identical.
+
+**Tactic:** Maintain the existing Buffer-automated GBP posting pipeline (Part 18.2). If Buffer runs dry, manual weekly posts are a non-negotiable minimum. Each post should include:
+- A project photo or seasonal tip
+- Expert Jester voice (not generic contractor copy)
+- A CTA with phone number or website link
+- Relevant service keywords naturally woven in

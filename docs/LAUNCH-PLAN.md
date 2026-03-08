@@ -27,6 +27,11 @@ These must be done before DNS cutover. Nothing else launches the site.
 - [ ] Verify 20 testimonial quotes match actual Google reviews — names, cities, text accurate
 - [ ] Confirm legal/compliance: each quote from a real customer who gave permission
 
+### Legal Pages (Matt)
+
+- [ ] Write or commission Privacy Policy content for `src/pages/privacy.astro` (shell page exists)
+- [ ] Write or commission Terms of Service content for `src/pages/terms.astro` (shell page exists)
+
 ### Manual QA (Both)
 
 - [ ] All navigation links work
@@ -43,6 +48,8 @@ These must be done before DNS cutover. Nothing else launches the site.
 ### Automated Validation (Claude)
 
 - [x] Full `npm run validate` pass (clean) — 255 pages, 867 JSON-LD schemas, 0 errors across all 7 checks
+- [x] Sitemap pagination filter — excludes `/blog/2`, `/blog/3`, `/blog/category/*/2`, `/updates/2` etc. from sitemap
+- [x] Custom 404 page — branded, with CTAs and navigation links
 - [ ] `npm run check:images` passes with 0 placeholder warnings — *currently 8 WebP files over 400KB (non-blocking warnings); placeholder removal blocked on Matt's photos*
 - [ ] Lighthouse: Performance 90+, Accessibility 95+, SEO 95+
 - [x] All pricing claims verified correct — **3 inconsistencies flagged for Matt's review (see below)**
@@ -506,7 +513,7 @@ SITE_IMAGE_BASE=https://aac-astro.vercel.app node scripts/buffer-post-projects.j
 
 ### Tech Debt
 
-- [ ] ~80 markdown files (blog posts, location pages, partner pages) have hardcoded phone numbers in body text. Markdown can't import TS utilities. If phone numbers change, grep `src/content/` for the old number. Consider replacing inline phone numbers with CTAs or links to the contact page instead.
+- [ ] 80+ location markdown files have phone numbers in frontmatter fields (phoneNumber, metaDescription). Templates use centralized `contact.ts`, but content file frontmatter is hardcoded. If a phone number changes, grep `src/content/` for the old number. Additionally, 2 blog posts have hardcoded numbers in body text.
 
 ---
 
@@ -516,7 +523,7 @@ SITE_IMAGE_BASE=https://aac-astro.vercel.app node scripts/buffer-post-projects.j
 |-----|---------|
 | `docs/BRAND-VOICE.md` | Expert Jester voice guide + proposed copy changes (PENDING APPROVAL) |
 | `docs/BRAINSTORM-AGENDA.md` | 38 expertise questions for Matt (UNANSWERED) |
-| `docs/SEO-STRATEGY-2026.md` | SEO playbook (17 parts + off-page strategy) |
+| `docs/SEO-STRATEGY-2026.md` | SEO playbook (20 parts) |
 | `docs/CONTENT-CALENDAR-2026.md` | 52-week editorial calendar (41 drafts ready) |
 | `docs/MARKETING-PLAN-2026.md` | Brand persona, channels, geo-targeting |
 | `docs/MATT-TODO.md` | Everything Matt personally needs to do |

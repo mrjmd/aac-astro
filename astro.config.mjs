@@ -4,7 +4,9 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://www.attackacrack.com', // Use the production domain for SEO
-  integrations: [sitemap()],
+  integrations: [sitemap({
+    filter: (page) => !(/\/\d+\/?$/.test(page)),
+  })],
   vite: {
     plugins: [tailwindcss()],
   },

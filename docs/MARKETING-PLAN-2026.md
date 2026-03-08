@@ -138,6 +138,26 @@ Explore AI-generated video content for:
 3. **"Before Winter"** — Sep-Nov, Zone 1-2. Winterization, "fix it before the freeze."
 4. **"Concrete Season"** — May-Sep, MA only. Driveway/patio/pool deck repair.
 
+#### Emergency Funnel (High-Urgency Paid Search)
+
+Distinct from top-funnel and bottom-funnel — this targets homeowners in active crisis who need help **right now**.
+
+- **Keywords:** "water in basement now", "water in basement after rain", "emergency foundation repair [city]", "basement flooding help"
+- **Landing page:** Dedicated page that strips standard navigation and focuses entirely on immediate action — "Text Us Photos" button + "Call Now" button. No blog posts, no educational content, no service explanations. These users already know they need help.
+- **Ad copy:** Urgency-first. "Water in Your Basement Right Now? Text Us a Photo. Response in Minutes."
+- **Budget:** Small but always-on. Emergency keywords have high CPC but extremely high conversion rates.
+- **Tracking:** Separate conversion tracking from standard campaigns — these leads close faster and at higher ticket values.
+
+#### Brand Recall via Social (Top-of-Funnel Awareness)
+
+The SORA AI video concept (Section 3) isn't just content — it's a **brand recall play**. The goal isn't immediate conversion. It's ensuring that when a viewer's foundation cracks 6 months from now, Attack A Crack is the only company they remember.
+
+- **Strategy:** Use surreal, goofy, or visually arresting AI-generated video content for top-of-funnel awareness on Facebook, Instagram, and TikTok
+- **Why it works:** Foundation repair is a "when you need it, you need it" business. Most homeowners will never search for it proactively. But if they've laughed at 3 Attack A Crack videos in their feed, the brand is burned into memory when the crack appears.
+- **Content approach:** Expert Jester personality turned up to 11. Satisfying crack-filling ASMR, "foundation horror stories" with comedic narration, absurdist "what's under your house" explainers
+- **Budget:** Small — organic reach on entertaining content does the heavy lifting. Boost only the top-performing videos.
+- **KPI:** Brand search volume increase (track "attack a crack" searches in GSC), not direct conversions
+
 ---
 
 ## 5. Email Marketing
@@ -251,5 +271,5 @@ Explore AI-generated video content for:
 |---|---|
 | `docs/CONTENT-CALENDAR-2026.md` | 52-week editorial calendar |
 | `docs/BRAND-VOICE.md` | Expert Jester voice guide + proposed site copy changes |
-| `docs/SEO-STRATEGY-2026.md` | SEO playbook (18 parts) |
+| `docs/SEO-STRATEGY-2026.md` | SEO playbook (20 parts) |
 | `docs/LAUNCH-PLAN.md` | Task tracker for remaining work |

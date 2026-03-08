@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Icon from '../components/Icon.astro';
+import { phoneCT, phoneCTHref, phoneMA, phoneMAHref } from '../utils/contact';
+---
+
+<Layout
+  title="Page Not Found"
+  description="The page you're looking for doesn't exist. Contact Attack A Crack for expert foundation repair help across Connecticut, Massachusetts, and all of New England."
+>
+  <section class="py-24 md:py-32">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <p class="text-8xl font-black text-aac-yellow mb-6">404</p>
+      <h1 class="text-3xl md:text-4xl font-black text-aac-dark mb-4">
+        Page Not Found
+      </h1>
+      <p class="text-lg text-zinc-600 mb-12 max-w-xl mx-auto">
+        This page may have moved or no longer exists. Let's get you back on solid ground.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+        <a href={phoneCTHref} class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(26,26,26,1)] hover:translate-y-[-2px] transition-all font-black text-sm inline-flex items-center justify-center gap-2">
+          <Icon name="Phone" size={16} /> Call CT: {phoneCT}
+        </a>
+        <a href={phoneMAHref} class="bg-aac-blue text-white px-8 py-4 rounded-xl border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(26,26,26,1)] hover:translate-y-[-2px] transition-all font-black text-sm inline-flex items-center justify-center gap-2">
+          <Icon name="Phone" size={16} /> Call MA: {phoneMA}
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
+        <a href="/services" class="group p-6 rounded-2xl border-2 border-zinc-200 hover:border-aac-blue transition-colors">
+          <Icon name="Wrench" size={24} class="text-aac-blue mx-auto mb-3" />
+          <p class="font-black text-sm text-aac-dark group-hover:text-aac-blue transition-colors">Our Services</p>
+        </a>
+        <a href="/areas-we-serve" class="group p-6 rounded-2xl border-2 border-zinc-200 hover:border-aac-blue transition-colors">
+          <Icon name="MapPin" size={24} class="text-aac-blue mx-auto mb-3" />
+          <p class="font-black text-sm text-aac-dark group-hover:text-aac-blue transition-colors">Service Areas</p>
+        </a>
+        <a href="/updates" class="group p-6 rounded-2xl border-2 border-zinc-200 hover:border-aac-blue transition-colors">
+          <Icon name="BookOpen" size={24} class="text-aac-blue mx-auto mb-3" />
+          <p class="font-black text-sm text-aac-dark group-hover:text-aac-blue transition-colors">Updates & Blog</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
