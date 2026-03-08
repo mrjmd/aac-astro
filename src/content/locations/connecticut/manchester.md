@@ -19,6 +19,7 @@ neighborhoods:
 nearbyCities:
   - "Hartford"
   - "West Hartford"
+  - "Vernon"
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Manchester?"

@@ -21,6 +21,7 @@ nearbyCities:
   - "Hartford"
   - "Manchester"
   - "Glastonbury"
+  - "Vernon"
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in East Hartford?"

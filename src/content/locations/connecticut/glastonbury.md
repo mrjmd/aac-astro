@@ -20,6 +20,7 @@ nearbyCities:
   - "Hartford"
   - "Manchester"
   - "East Hartford"
+  - "Wethersfield"
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Glastonbury?"

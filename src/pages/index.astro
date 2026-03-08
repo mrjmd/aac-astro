@@ -9,7 +9,7 @@ import LocationModal from '../components/LocationModal.astro';
 import HomeFaq from '../components/HomeFaq.astro';
 import Icon from '../components/Icon.astro';
 import TestimonialCard from '../components/TestimonialCard.astro';
-import { reviewCount, googleReviewsUrlCT, googleReviewsUrlMA } from '../utils/reviews';
+import { reviewCount, googleReviewsUrlCT, googleReviewsUrlMA, aggregateRatingSchema } from '../utils/reviews';
 import { phoneCT, phoneMA, addressCT } from '../utils/contact';
 import { getFeatured } from '../utils/testimonials';
 import { homeFaqs, getFaqSchema } from '../utils/faqs';
@@ -67,7 +67,8 @@ const MA_NUMBER = phoneMA;
 				{ "@type": "State", "name": "New Hampshire" },
 				{ "@type": "State", "name": "Maine" }
 			],
-			"sameAs": ["https://www.facebook.com/attackacrack"]
+			"aggregateRating": aggregateRatingSchema,
+		"sameAs": ["https://www.facebook.com/attackacrack"]
 		}
 	]}
 >

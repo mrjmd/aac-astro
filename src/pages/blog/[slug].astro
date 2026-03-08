@@ -117,6 +117,8 @@ const articleSchema = {
     "@type": "WebPage",
     "@id": `https://www.attackacrack.com/blog/${post.id.replace(/\.md$/, '')}`
   },
+  "wordCount": wordCount,
+  "articleSection": categoryLabels[post.data.category],
   // LLM-ready properties for semantic understanding
   "significantLink": significantLinks,
   "mentions": mentions

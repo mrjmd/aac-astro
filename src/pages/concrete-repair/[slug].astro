@@ -10,6 +10,7 @@ import ProjectCards from '../../components/ProjectCards.astro';
 import { getByService as getProjectsByService, SERVICE_SLUG_MAP } from '../../utils/projects';
 import { getBlogForService } from '../../utils/blog-linking';
 import { phoneMA, phoneMAHref } from '../../utils/contact';
+import { aggregateRatingSchema } from '../../utils/reviews';
 import { webpSrc, projectSrcset } from '../../utils/image';
 
 export async function getStaticPaths() {
@@ -88,7 +89,7 @@ const serviceSchema = {
   ...(serviceImageObject && { "image": serviceImageObject }),
   "provider": {
     "@type": "HomeAndConstructionBusiness",
-    "name": "Attack A Crack",
+    "name": "Attack A Crack Foundation Repair",
     "telephone": phoneMA
   },
   "areaServed": {
@@ -96,6 +97,7 @@ const serviceSchema = {
     "name": "Massachusetts"
   },
   "serviceType": "Concrete Repair",
+  "aggregateRating": aggregateRatingSchema,
   // LLM-ready properties
   "significantLink": significantLinks,
   "mentions": mentions

@@ -6,6 +6,7 @@ import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
+import ServiceAreaMap from '../../components/ServiceAreaMap.astro';
 import { reviewCount } from '../../utils/reviews';
 import { phoneCT, phoneCTHref, phoneMA, phoneMAHref } from '../../utils/contact';
 
@@ -161,26 +162,8 @@ const areaSchema = {
           </div>
 
           <div class="relative hidden lg:block">
-            <div class="aspect-square rounded-[32px] overflow-hidden border-4 border-white/20 bg-zinc-800">
-              <img
-                src="/images/hero-slide-1.webp"
-                alt="Attack A Crack technician performing foundation repair"
-                class="w-full h-full object-cover"
-                width="800"
-                height="800"
-                loading="eager"
-              />
-            </div>
-            <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl">
-              <div class="flex items-center gap-4">
-                <div class="w-16 h-16 bg-aac-blue/10 rounded-xl flex items-center justify-center">
-                  <Icon name="MapPin" size={32} class="text-aac-blue" />
-                </div>
-                <div>
-                  <p class="text-3xl font-black text-aac-dark">5</p>
-                  <p class="text-sm text-zinc-500 font-bold">States Served</p>
-                </div>
-              </div>
+            <div class="bg-white/10 backdrop-blur-sm rounded-[32px] p-6 border border-white/20">
+              <ServiceAreaMap />
             </div>
           </div>
         </div>

@@ -1,0 +1,507 @@
+---
+/**
+ * ServiceAreaMap — Interactive SVG map of New England with clickable city pins.
+ * Each pin links to the city's location page. VT shown as context only.
+ * Cape Cod has proper hook shape for geographic accuracy.
+ */
+import { getCollection } from 'astro:content';
+
+const allLocations = await getCollection('locations');
+
+const stateSlugMap: Record<string, string> = {
+  CT: 'connecticut',
+  MA: 'massachusetts',
+  RI: 'rhode-island',
+  NH: 'new-hampshire',
+  ME: 'maine',
+};
+
+const pins = allLocations
+  .filter(loc => loc.data.coordinates)
+  .map(loc => {
+    const stateSlug = stateSlugMap[loc.data.stateAbbr];
+    const citySlug = loc.id.replace(/\.md$/, '').replace(/^[^/]+\//, '');
+    return {
+      city: loc.data.city,
+      state: loc.data.stateAbbr,
+      lat: loc.data.coordinates!.lat,
+      lng: loc.data.coordinates!.lng,
+      href: `/${stateSlug}/${citySlug}`,
+    };
+  });
+
+// Bounding box: just New England + VT context
+const bounds = {
+  minLat: 40.90,
+  maxLat: 45.20,
+  minLng: -73.80,
+  maxLng: -66.80,
+};
+
+const svgWidth = 600;
+const svgHeight = 560;
+const padX = 15;
+const padY = 15;
+
+function toSvg(lat: number, lng: number): { x: number; y: number } {
+  const cosLat = Math.cos((43.5 * Math.PI) / 180); // cos correction at ~center latitude
+  const lngRange = (bounds.maxLng - bounds.minLng) * cosLat;
+  const latRange = bounds.maxLat - bounds.minLat;
+  const aspect = lngRange / latRange;
+  const drawW = svgWidth - 2 * padX;
+  const drawH = svgHeight - 2 * padY;
+
+  // Fit to width, center vertically (or vice versa)
+  let scaleX: number, scaleY: number, offX = 0, offY = 0;
+  if (drawW / drawH > aspect) {
+    // height-constrained
+    scaleY = drawH / latRange;
+    scaleX = scaleY * cosLat;
+    offX = (drawW - (bounds.maxLng - bounds.minLng) * scaleX) / 2;
+  } else {
+    scaleX = drawW / ((bounds.maxLng - bounds.minLng) * cosLat) * cosLat;
+    scaleY = scaleX / cosLat;
+    offY = (drawH - latRange * scaleY) / 2;
+  }
+
+  const x = padX + offX + (lng - bounds.minLng) * scaleX;
+  const y = padY + offY + (bounds.maxLat - lat) * scaleY;
+  return { x, y };
+}
+
+const svgPins = pins.map(p => ({
+  ...toSvg(p.lat, p.lng),
+  city: p.city,
+  state: p.state,
+  href: p.href,
+}));
+
+// Unique color per state
+const stateColors: Record<string, { fill: string; pin: string; label: string }> = {
+  CT: { fill: '#dbeafe', pin: '#2563eb', label: 'Connecticut' },
+  MA: { fill: '#fce7f3', pin: '#db2777', label: 'Massachusetts' },
+  RI: { fill: '#ede9fe', pin: '#7c3aed', label: 'Rhode Island' },
+  NH: { fill: '#d1fae5', pin: '#059669', label: 'New Hampshire' },
+  ME: { fill: '#ffedd5', pin: '#ea580c', label: 'Maine' },
+};
+
+const contextFill = '#f4f4f5';
+const contextStroke = '#d4d4d8';
+
+// More accurate state outlines with proper Cape Cod
+const stateOutlines: Record<string, Array<{ lat: number; lng: number }>> = {
+  VT: [
+    // Clip at ~lat 44.5
+    { lat: 44.50, lng: -73.33 },
+    { lat: 44.50, lng: -72.00 },
+    { lat: 44.40, lng: -72.00 },
+    { lat: 43.90, lng: -72.30 },
+    { lat: 43.50, lng: -72.40 },
+    { lat: 43.00, lng: -72.55 },
+    { lat: 42.74, lng: -72.55 },
+    { lat: 42.74, lng: -73.26 },
+    { lat: 43.30, lng: -73.25 },
+    { lat: 43.60, lng: -73.38 },
+    { lat: 44.10, lng: -73.43 },
+    { lat: 44.50, lng: -73.33 },
+  ],
+  CT: [
+    { lat: 42.05, lng: -73.73 },
+    { lat: 42.05, lng: -72.81 },
+    { lat: 42.03, lng: -72.53 },
+    { lat: 42.03, lng: -71.80 },
+    // South coast - Long Island Sound
+    { lat: 41.27, lng: -71.84 },
+    { lat: 41.17, lng: -72.08 },
+    { lat: 41.07, lng: -72.35 },
+    { lat: 41.04, lng: -72.53 },
+    { lat: 41.05, lng: -72.88 },
+    { lat: 41.07, lng: -73.13 },
+    { lat: 41.10, lng: -73.38 },
+    { lat: 41.02, lng: -73.55 },
+    { lat: 41.00, lng: -73.66 },
+    { lat: 41.10, lng: -73.73 },
+    { lat: 42.05, lng: -73.73 },
+  ],
+  MA: [
+    // Western border
+    { lat: 42.74, lng: -73.26 },
+    { lat: 42.05, lng: -73.23 },
+    // Southern border with CT
+    { lat: 42.03, lng: -72.53 },
+    { lat: 42.01, lng: -71.80 },
+    // RI border
+    { lat: 42.01, lng: -71.38 },
+    { lat: 41.78, lng: -71.38 },
+    // Coast west — Westport, Buzzards Bay
+    { lat: 41.68, lng: -71.19 },
+    { lat: 41.60, lng: -71.12 },
+    { lat: 41.50, lng: -71.02 },
+    { lat: 41.52, lng: -70.90 },
+    { lat: 41.55, lng: -70.81 },
+    { lat: 41.63, lng: -70.71 },
+    // Buzzards Bay west shore
+    { lat: 41.66, lng: -70.66 },
+    { lat: 41.68, lng: -70.62 },
+    // Cape Cod Canal area
+    { lat: 41.74, lng: -70.62 },
+    { lat: 41.76, lng: -70.56 },
+    // Cape Cod south shore — Falmouth to Chatham
+    { lat: 41.55, lng: -70.56 },
+    { lat: 41.53, lng: -70.46 },
+    { lat: 41.55, lng: -70.32 },
+    { lat: 41.60, lng: -70.18 },
+    { lat: 41.63, lng: -70.07 },
+    { lat: 41.66, lng: -69.97 },
+    // Chatham elbow
+    { lat: 41.68, lng: -69.95 },
+    // Outer Cape — Chatham north to Provincetown
+    { lat: 41.75, lng: -69.94 },
+    { lat: 41.82, lng: -69.96 },
+    { lat: 41.88, lng: -69.97 },
+    { lat: 41.95, lng: -69.97 },
+    { lat: 42.00, lng: -70.00 },
+    { lat: 42.04, lng: -70.06 },
+    // Provincetown hook (curving west then south)
+    { lat: 42.07, lng: -70.12 },
+    { lat: 42.08, lng: -70.17 },
+    { lat: 42.07, lng: -70.21 },
+    { lat: 42.05, lng: -70.24 },
+    { lat: 42.03, lng: -70.22 },
+    // Cape Cod Bay side going back south
+    { lat: 42.00, lng: -70.10 },
+    { lat: 41.93, lng: -70.04 },
+    { lat: 41.87, lng: -70.02 },
+    { lat: 41.82, lng: -70.04 },
+    { lat: 41.77, lng: -70.10 },
+    { lat: 41.74, lng: -70.18 },
+    { lat: 41.72, lng: -70.28 },
+    // Cape Cod Canal north side
+    { lat: 41.77, lng: -70.50 },
+    { lat: 41.78, lng: -70.54 },
+    // North side of canal, then Plymouth coast
+    { lat: 41.80, lng: -70.60 },
+    { lat: 41.88, lng: -70.57 },
+    { lat: 41.96, lng: -70.58 },
+    // Plymouth / South Shore
+    { lat: 42.04, lng: -70.60 },
+    { lat: 42.10, lng: -70.66 },
+    { lat: 42.20, lng: -70.72 },
+    { lat: 42.25, lng: -70.80 },
+    { lat: 42.33, lng: -70.90 },
+    // Boston area coast
+    { lat: 42.33, lng: -70.97 },
+    { lat: 42.36, lng: -71.00 },
+    { lat: 42.39, lng: -70.96 },
+    { lat: 42.50, lng: -70.83 },
+    // North Shore
+    { lat: 42.55, lng: -70.73 },
+    { lat: 42.58, lng: -70.67 },
+    { lat: 42.63, lng: -70.63 },
+    { lat: 42.66, lng: -70.64 },
+    // Cape Ann (Gloucester)
+    { lat: 42.64, lng: -70.60 },
+    { lat: 42.62, lng: -70.65 },
+    { lat: 42.65, lng: -70.60 },
+    // North to NH border coast
+    { lat: 42.80, lng: -70.82 },
+    { lat: 42.87, lng: -70.82 },
+    // NH border
+    { lat: 42.87, lng: -71.02 },
+    { lat: 42.74, lng: -71.22 },
+    { lat: 42.74, lng: -71.33 },
+    // Northern border
+    { lat: 42.74, lng: -72.00 },
+    { lat: 42.74, lng: -73.26 },
+  ],
+  RI: [
+    { lat: 42.01, lng: -71.80 },
+    { lat: 42.01, lng: -71.38 },
+    { lat: 41.78, lng: -71.38 },
+    { lat: 41.68, lng: -71.19 },
+    { lat: 41.60, lng: -71.12 },
+    // South coast
+    { lat: 41.46, lng: -71.12 },
+    { lat: 41.38, lng: -71.13 },
+    { lat: 41.15, lng: -71.12 },
+    { lat: 41.15, lng: -71.23 },
+    // Narragansett Bay area
+    { lat: 41.15, lng: -71.52 },
+    { lat: 41.16, lng: -71.79 },
+    { lat: 41.27, lng: -71.84 },
+    { lat: 41.68, lng: -71.80 },
+    { lat: 42.01, lng: -71.80 },
+  ],
+  NH: [
+    { lat: 42.70, lng: -72.55 },
+    { lat: 42.70, lng: -71.44 },
+    { lat: 42.74, lng: -71.33 },
+    { lat: 42.74, lng: -71.22 },
+    { lat: 42.87, lng: -71.02 },
+    // Short coast
+    { lat: 43.02, lng: -70.84 },
+    { lat: 43.08, lng: -70.82 },
+    // ME border
+    { lat: 43.10, lng: -70.82 },
+    { lat: 43.30, lng: -70.70 },
+    { lat: 43.60, lng: -70.70 },
+    { lat: 43.80, lng: -70.75 },
+    // North along ME border
+    { lat: 43.80, lng: -71.02 },
+    { lat: 44.00, lng: -71.02 },
+    { lat: 44.40, lng: -71.02 },
+    { lat: 44.50, lng: -71.10 },
+    // Clip at ~lat 44.5 — straight line west
+    { lat: 44.50, lng: -71.50 },
+    { lat: 44.50, lng: -72.00 },
+    // West border (VT)
+    { lat: 44.40, lng: -72.00 },
+    { lat: 43.90, lng: -72.30 },
+    { lat: 43.50, lng: -72.40 },
+    { lat: 43.00, lng: -72.55 },
+    { lat: 42.70, lng: -72.55 },
+  ],
+  ME: [
+    // SW corner at NH border
+    { lat: 43.10, lng: -70.82 },
+    { lat: 43.08, lng: -70.82 },
+    // Coast — Kittery to Portland
+    { lat: 43.07, lng: -70.75 },
+    { lat: 43.09, lng: -70.68 },
+    { lat: 43.13, lng: -70.60 },
+    { lat: 43.22, lng: -70.58 },
+    { lat: 43.32, lng: -70.56 },
+    { lat: 43.38, lng: -70.44 },
+    { lat: 43.44, lng: -70.38 },
+    { lat: 43.50, lng: -70.34 },
+    // Portland
+    { lat: 43.56, lng: -70.30 },
+    { lat: 43.64, lng: -70.24 },
+    { lat: 43.68, lng: -70.18 },
+    // Mid-coast
+    { lat: 43.74, lng: -70.10 },
+    { lat: 43.78, lng: -69.90 },
+    { lat: 43.85, lng: -69.74 },
+    { lat: 43.90, lng: -69.50 },
+    { lat: 44.00, lng: -69.30 },
+    { lat: 44.10, lng: -69.10 },
+    { lat: 44.20, lng: -69.00 },
+    { lat: 44.35, lng: -68.80 },
+    { lat: 44.45, lng: -68.55 },
+    // Clip at ~lat 44.5 — straight line west to interior
+    { lat: 44.50, lng: -68.40 },
+    { lat: 44.50, lng: -69.00 },
+    { lat: 44.50, lng: -69.80 },
+    { lat: 44.50, lng: -70.70 },
+    // Back down NH border
+    { lat: 44.40, lng: -71.02 },
+    { lat: 44.00, lng: -71.02 },
+    { lat: 43.80, lng: -71.02 },
+    { lat: 43.80, lng: -70.75 },
+    { lat: 43.60, lng: -70.70 },
+    { lat: 43.30, lng: -70.70 },
+    { lat: 43.10, lng: -70.82 },
+  ],
+};
+
+function outlinePath(points: Array<{ lat: number; lng: number }>): string {
+  return points.map((p, i) => {
+    const { x, y } = toSvg(p.lat, p.lng);
+    return `${i === 0 ? 'M' : 'L'}${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(' ') + ' Z';
+}
+
+// State label positions
+const stateLabels = [
+  { abbr: 'CT', lat: 41.55, lng: -72.75 },
+  { abbr: 'MA', lat: 42.25, lng: -72.00 },
+  { abbr: 'RI', lat: 41.60, lng: -71.50 },
+  { abbr: 'NH', lat: 43.90, lng: -71.60 },
+  { abbr: 'ME', lat: 43.80, lng: -69.80 },
+  { abbr: 'VT', lat: 43.60, lng: -72.90 },
+].map(s => ({ ...s, ...toSvg(s.lat, s.lng) }));
+
+const contextStates = ['VT'];
+const serviceStates = ['CT', 'RI', 'MA', 'NH', 'ME'];
+---
+
+<div class="service-area-map-container">
+  <svg
+    viewBox={`0 0 ${svgWidth} ${svgHeight}`}
+    class="w-full h-auto"
+    role="group"
+    aria-label={`Interactive map of ${svgPins.length} cities across New England where we provide foundation repair services`}
+  >
+    <defs>
+      <filter id="ne-pin-shadow" x="-50%" y="-50%" width="200%" height="200%">
+        <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000" flood-opacity="0.15" />
+      </filter>
+    </defs>
+
+    {/* Context state (VT) — gray, non-interactive */}
+    {contextStates.map(state => stateOutlines[state] && (
+      <path
+        d={outlinePath(stateOutlines[state])}
+        fill={contextFill}
+        stroke={contextStroke}
+        stroke-width="1"
+      />
+    ))}
+
+    {/* Service area states — colored fills */}
+    {serviceStates.map(state => stateOutlines[state] && (
+      <path
+        d={outlinePath(stateOutlines[state])}
+        fill={stateColors[state].fill}
+        stroke="#94a3b8"
+        stroke-width="1.5"
+        class="state-outline"
+        data-state={state}
+      />
+    ))}
+
+    {/* State abbreviation labels */}
+    {stateLabels.map(label => {
+      const isContext = contextStates.includes(label.abbr);
+      return (
+        <text
+          x={label.x}
+          y={label.y}
+          text-anchor="middle"
+          dominant-baseline="middle"
+          fill={isContext ? '#a1a1aa' : '#64748b'}
+          font-size={isContext ? '13' : '12'}
+          font-weight={isContext ? '600' : '800'}
+          class="state-label"
+          aria-hidden="true"
+        >
+          {label.abbr}
+        </text>
+      );
+    })}
+
+    {/* Clickable city pins */}
+    {svgPins.map(pin => (
+      <a
+        href={pin.href}
+        class="city-pin"
+        aria-label={`${pin.city}, ${pin.state} — view local foundation repair services`}
+        data-city={pin.city}
+        data-state={pin.state}
+      >
+        <circle
+          cx={pin.x}
+          cy={pin.y}
+          r="5"
+          fill={stateColors[pin.state].pin}
+          stroke="white"
+          stroke-width="1.5"
+          class="pin-dot"
+          filter="url(#ne-pin-shadow)"
+        />
+      </a>
+    ))}
+
+    {/* Tooltip layer */}
+    <g class="tooltip-layer" aria-hidden="true">
+      {svgPins.map(pin => {
+        const textWidth = pin.city.length * 6.5 + 14;
+        return (
+          <g class="pin-tooltip" data-tooltip-city={pin.city}>
+            <rect
+              x={pin.x - textWidth / 2}
+              y={pin.y - 28}
+              width={textWidth}
+              height={20}
+              rx="4"
+              fill="#18181b"
+              opacity="0.9"
+            />
+            <polygon
+              points={`${pin.x - 4},${pin.y - 8} ${pin.x + 4},${pin.y - 8} ${pin.x},${pin.y - 4}`}
+              fill="#18181b"
+              opacity="0.9"
+            />
+            <text
+              x={pin.x}
+              y={pin.y - 16}
+              text-anchor="middle"
+              dominant-baseline="middle"
+              fill="white"
+              font-size="10"
+              font-weight="600"
+            >
+              {pin.city}
+            </text>
+          </g>
+        );
+      })}
+    </g>
+  </svg>
+
+  <!-- Legend -->
+  <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 mt-2 text-xs text-zinc-500">
+    {serviceStates.map(state => (
+      <div class="flex items-center gap-1.5">
+        <span class="inline-block w-3 h-3 rounded-full border-2 border-white shadow-sm" style={`background-color: ${stateColors[state].pin}`}></span>
+        <span>{stateColors[state].label}</span>
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+  .service-area-map-container {
+    max-width: 100%;
+  }
+
+  .city-pin {
+    cursor: pointer;
+  }
+
+  .city-pin .pin-dot {
+    transition: fill 0.15s ease, r 0.15s ease;
+  }
+
+  .city-pin:hover .pin-dot {
+    stroke: #bfdbfe;
+    stroke-width: 2.5;
+  }
+
+  .city-pin:focus {
+    outline: none;
+  }
+
+  .city-pin:focus .pin-dot {
+    stroke: #93c5fd;
+    stroke-width: 3;
+  }
+
+  .pin-tooltip {
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    pointer-events: none;
+  }
+
+  .pin-tooltip.is-visible {
+    opacity: 1;
+  }
+
+  .state-label {
+    pointer-events: none;
+    user-select: none;
+  }
+</style>
+
+<script>
+  document.querySelectorAll('.city-pin').forEach(pin => {
+    const city = pin.getAttribute('data-city');
+    const tooltip = document.querySelector(`.pin-tooltip[data-tooltip-city="${city}"]`);
+    if (!tooltip) return;
+
+    pin.addEventListener('mouseenter', () => tooltip.classList.add('is-visible'));
+    pin.addEventListener('mouseleave', () => tooltip.classList.remove('is-visible'));
+    pin.addEventListener('focus', () => tooltip.classList.add('is-visible'));
+    pin.addEventListener('blur', () => tooltip.classList.remove('is-visible'));
+  });
+</script>

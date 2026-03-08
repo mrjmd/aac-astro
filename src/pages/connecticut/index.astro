@@ -25,23 +25,21 @@ const breadcrumbItems = [
   { label: 'Connecticut' }
 ];
 
-// CT cities we serve (for display even before location pages exist)
+// CT cities we serve — 20 cities within ~1hr of Amston HQ
 const ctCities = [
-  'Hartford', 'New Haven', 'Bridgeport', 'Stamford', 'Waterbury',
-  'Danbury', 'Norwalk', 'Greenwich', 'Fairfield', 'Westport',
-  'Middletown', 'Manchester', 'Bristol', 'New London', 'Norwich',
-  'Meriden', 'West Hartford', 'Glastonbury', 'East Hartford', 'Southington',
-  'Vernon', 'Torrington', 'Wallingford', 'Naugatuck', 'Groton',
-  'Cheshire', 'Shelton', 'Milford', 'Stratford', 'Enfield'
+  'Hartford', 'West Hartford', 'East Hartford', 'Manchester', 'Glastonbury',
+  'Vernon', 'Enfield', 'Wethersfield', 'Newington',
+  'New Haven', 'Meriden', 'Wallingford', 'Cheshire',
+  'Middletown', 'Bristol', 'New Britain', 'Southington',
+  'Norwich', 'New London', 'Groton'
 ];
 
 // CT regions
 const ctRegions = {
-  'Greater Hartford': ['Hartford', 'West Hartford', 'East Hartford', 'Manchester', 'Glastonbury', 'Vernon', 'Enfield'],
-  'New Haven County': ['New Haven', 'Meriden', 'Wallingford', 'Cheshire', 'Milford', 'Naugatuck'],
-  'Fairfield County': ['Bridgeport', 'Stamford', 'Norwalk', 'Danbury', 'Greenwich', 'Fairfield', 'Westport', 'Shelton', 'Stratford'],
-  'Eastern Connecticut': ['New London', 'Norwich', 'Groton'],
-  'Central Connecticut': ['Middletown', 'Bristol', 'Southington', 'Torrington']
+  'Greater Hartford': ['Hartford', 'West Hartford', 'East Hartford', 'Manchester', 'Glastonbury', 'Vernon', 'Enfield', 'Wethersfield', 'Newington'],
+  'Greater New Haven': ['New Haven', 'Meriden', 'Wallingford', 'Cheshire'],
+  'Central Connecticut': ['Middletown', 'Bristol', 'New Britain', 'Southington'],
+  'Eastern Connecticut': ['Norwich', 'New London', 'Groton'],
 };
 
 // Testimonials from centralized data

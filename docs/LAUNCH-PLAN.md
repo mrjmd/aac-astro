@@ -42,11 +42,18 @@ These must be done before DNS cutover. Nothing else launches the site.
 
 ### Automated Validation (Claude)
 
-- [ ] Full `npm run validate` pass (clean)
-- [ ] `npm run check:images` passes with 0 placeholder warnings
+- [x] Full `npm run validate` pass (clean) — 255 pages, 867 JSON-LD schemas, 0 errors across all 7 checks
+- [ ] `npm run check:images` passes with 0 placeholder warnings — *currently 8 WebP files over 400KB (non-blocking warnings); placeholder removal blocked on Matt's photos*
 - [ ] Lighthouse: Performance 90+, Accessibility 95+, SEO 95+
-- [ ] All pricing claims verified correct
-- [ ] Uniqueness validation passes
+- [x] All pricing claims verified correct — **3 inconsistencies flagged for Matt's review (see below)**
+- [x] Uniqueness validation passes — 80 locations, 3,160 comparisons, 0 duplicates
+
+#### Pricing Inconsistencies (Matt to Confirm)
+
+1. **Crack injection floor:** Service pages/FAQs say $800-$1,200. Several blog posts say $500-$1,500. Which is the real minimum?
+   - Files: `basement-waterproofing-before-freeze.md:65`, `foundation-crack-repair-before-winter.md:43`, `year-end-foundation-maintenance.md:104`, `foundation-repair-myths.md:31`
+2. **Bulkhead replacement:** `leaky-bulkhead-repair.md:17` says $5,000-$10,000+, but `bulkhead-repair-cost-guide-2026.md:30` says $3,000-$6,000+
+3. **Wall stabilization floor:** Some posts say $5,000, others say $6,000 (minor)
 
 ### 301 Redirects & Old Site Preservation (Claude + Matt)
 
@@ -192,10 +199,10 @@ All 73 blog posts now have incoming internal links via template-level reverse-lo
 
 Build an interactive New England map (same style as the MA project pin map on the Massachusetts page) where each dot is a clickable city linking to its city page. Not a static SVG — dots should be interactive.
 
-- [ ] Create ServiceAreaMap.astro with New England outline + 80 city dots (clickable → city page)
-- [ ] Color-code by state (CT/MA blue, RI/NH/ME lighter)
-- [ ] Add to areas-we-serve page
-- *Note: Mirror the style/approach of the MA ProjectMap.astro component*
+- [x] Create ServiceAreaMap.astro with New England outline + 80 city dots (clickable → city page)
+- [x] Color-code by state (CT/MA blue, RI purple, NH/ME green)
+- [x] Add to areas-we-serve page (replaced hero image with interactive map)
+- *Mirrors the style/approach of the MA ProjectMap.astro component — hover tooltips, click-to-navigate, state outlines*
 
 #### Pre-Launch Visual QA Pass (Matt)
 
@@ -332,7 +339,14 @@ Full competitive audit to maximize SERP dominance before and after launch.
 - [ ] **Meta description optimization** — rewrite underperforming descriptions using click-through data from GSC
 - [ ] **H1/H2 keyword alignment** — ensure heading hierarchy matches target SERP terms from keyword research
 - [ ] **Content depth audit** — compare page word counts against ranking competitors from SEMrush
-- [ ] **Schema completeness** — ensure every page type has maximum applicable schema markup
+- [x] **Schema completeness audit** — comprehensive audit completed March 7. Key findings:
+  - Validator does not check RI/NH/ME location pages (only CT/MA) — add to validator
+  - Homepage missing AggregateRating (most impactful gap)
+  - Concrete repair pages missing AggregateRating (inconsistent with service pages)
+  - Blog posts missing `wordCount` and `articleSection` (easy additions)
+  - Location pages missing `geo` GeoCoordinates on business schema (coordinates available but not used)
+  - Blog index has no schema (should have ItemList)
+  - Full findings documented in session; actionable items can be implemented post-launch data collection
 - [x] **Internal link equity flow** — homepage → service pages → city pages → blog (proper silo)
 - [x] **Image SEO** — all images have keyword-rich alt text (service type + city + state pattern), filenames, and proper dimensions
 
