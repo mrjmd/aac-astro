@@ -524,6 +524,7 @@ SITE_IMAGE_BASE=https://aac-astro.vercel.app node scripts/buffer-post-projects.j
 | `docs/BRAINSTORM-AGENDA.md` | 38 expertise questions for Matt (UNANSWERED) |
 | `docs/SEO-STRATEGY-2026.md` | SEO playbook (20 parts) |
 | `docs/CONTENT-CALENDAR-2026.md` | 52-week editorial calendar (41 drafts ready) |
+| `docs/COMPETITIVE-ANALYSIS.md` | Competitor audit across 5 states (March 2026) |
 | `docs/MARKETING-PLAN-2026.md` | Brand persona, channels, geo-targeting |
 | `docs/MATT-TODO.md` | Everything Matt personally needs to do |
 | `docs/archive/` | Completed work, original plans, consumed references |
