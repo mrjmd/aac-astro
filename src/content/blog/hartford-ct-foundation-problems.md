@@ -14,15 +14,16 @@ targetLocation: Hartford CT
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
+  - "carbon-fiber-stitches"
 ---
 
 The Connecticut River Valley is a beautiful place to live. It's also a challenging place to keep a foundation dry and intact. Between the clay-heavy soils, the seasonal flooding, the aging housing stock, and freeze-thaw cycles that test every material to its limits, Hartford-area homeowners face a unique combination of foundation problems.
 
 We've been based in Amston, Connecticut, for over 33 years, and the greater Hartford area is practically our backyard. We know these soils, these neighborhoods, and these foundations — and we want to share what we've learned so you can make informed decisions about your home.
 
-## The Geography Working Against You
+## The Geology Working Against Hartford Foundations
 
-The Connecticut River Valley was carved by glacial activity thousands of years ago, leaving behind a geological layer cake that foundation contractors know all too well. The valley floor is a mix of glacial lake deposits — fine-grained clays and silts that settled when post-glacial lakes filled the valley — topped by alluvial deposits from centuries of river flooding.
+The Connecticut River Valley was carved by glacial activity thousands of years ago, leaving behind a geological layer cake of glacial till that foundation contractors know all too well. The valley floor is a mix of glacial lake deposits — fine-grained clays and silts that settled when post-glacial lakes filled the valley — topped by alluvial deposits from centuries of river flooding.
 
 What does this mean for your foundation? Three things:
 
@@ -62,7 +63,7 @@ March through May is our busiest period. Here's why:
 - Frozen ground thaws unevenly, creating differential settlement
 - Sump pumps that ran all winter finally give up
 
-If your basement is going to leak, spring is when you'll find out. The good news? A crack that leaks in spring is a crack we can fix permanently with [foundation crack injection](/services/foundation-crack-injection).
+If you notice water in basement after rain or snowmelt, spring is when you'll find out. The good news? A crack that leaks in spring is a crack we can fix permanently with [foundation crack injection](/services/foundation-crack-injection) at $800-$1,200 per crack, injected at approximately 100 PSI through the full 8-10 inches of concrete.
 
 ### Summer: The Hidden Damage Season
 
@@ -118,10 +119,10 @@ If you're a Hartford-area homeowner, here are the signs that it's time to get a 
 - New cracks in your foundation walls, especially horizontal ones
 - Doors or windows sticking (a sign of foundation movement)
 - Cracks in interior drywall, especially around door frames
-- Musty basement odors (indicates chronic moisture)
-- Efflorescence (white mineral deposits) on basement walls
+- Musty smell in basement (indicates chronic moisture)
+- Efflorescence — that white powder on basement walls — indicating moisture migration
 
-We offer [free foundation consultations](/services/free-foundation-consultations) throughout the greater Hartford area and all of Connecticut. Our [wall crack repair](/services/wall-crack-repair) process is minimally invasive, usually completed in a single visit, and backed by a lifetime transferable warranty.
+We offer [free foundation consultations](/services/free-foundation-consultations) throughout the greater Hartford area and all of Connecticut — or text us a photo for a quick assessment. Our [wall crack repair](/services/wall-crack-repair) process is minimally invasive, usually completed in a single visit, and backed by a lifetime transferable warranty. For walls showing structural stress, [carbon fiber stitches](/services/carbon-fiber-stitches) (carbon fiber staples) at $200-$300 per stitch add reinforcement without excavation.
 
 ## Our CT Roots
 

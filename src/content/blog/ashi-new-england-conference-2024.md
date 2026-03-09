@@ -38,7 +38,7 @@ Additionally, Attack A Crack became an ASHI New England affiliate member to stre
 
 ## For Home Inspectors
 
-If you're a home inspector in New England, consider Attack A Crack as your trusted foundation repair partner. We provide fast, professional assessments that help you serve your clients better.
+If you're a home inspector in New England, consider Attack A Crack as your trusted foundation repair partner. We provide fast, professional assessments that help you serve your clients better. Our [foundation inspection process](/blog/how-we-diagnose-foundation-problems) complements your work, and our [free consultations](/services/free-foundation-consultations) give homebuyers the answers they need.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

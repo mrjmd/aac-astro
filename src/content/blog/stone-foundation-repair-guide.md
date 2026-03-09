@@ -24,7 +24,7 @@ If you own an older home in Massachusetts or anywhere in New England, there is a
 
 After 33 years of working on stone foundations throughout Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, we have learned that the first step in any repair is understanding exactly what kind of stone foundation you have. The repair approach that works perfectly for one type can actually damage another.
 
-## Types of Stone Foundations in New England
+## Types of Stone Foundations in New England: Identification Guide
 
 Not all stone foundations are the same, and the differences matter for repair.
 
@@ -81,9 +81,9 @@ Warning signs:
 - Doors or windows near the foundation sticking
 - Cracks in the floors above
 
-### Frost Damage
+### Frost Damage From Freeze-Thaw Cycles
 
-New England's freeze-thaw cycles are brutal on stone foundations. Water enters mortar joints and stone pores, freezes, expands, and slowly pushes the assembly apart. Over decades, this process can loosen entire sections of wall.
+New England's freeze-thaw cycles are brutal on stone foundations. Water enters mortar joints and stone pores, freezes (expanding roughly 9%), and slowly pushes the assembly apart. In areas with clay-heavy glacial till, the soil itself expands and contracts seasonally, adding lateral pressure. Over decades, this process can loosen entire sections of wall.
 
 ## Repair Methods for Stone Foundations
 
@@ -99,9 +99,9 @@ When repointing alone does not solve water problems — common in areas with hig
 
 This is not a repair of the foundation itself, but it solves the practical problem of a wet basement. For many homeowners, the combination of repointing and interior drainage is the most cost-effective solution.
 
-### Carbon Fiber Reinforcement
+### Carbon Fiber Staples and Stitches for Structural Reinforcement
 
-For stone walls showing structural movement, [carbon fiber straps](/services/carbon-fiber-stitches) can stabilize the wall without the disruption of full excavation. The straps bond to the wall surface and resist further inward movement. This works well for walls that are bowing but have not displaced so far that they need rebuilding.
+For stone walls showing structural movement, carbon fiber staples (also called [carbon fiber stitches](/services/carbon-fiber-stitches)) can stabilize the wall without the disruption of full excavation. Individual staples at $200-$300 per stitch bridge cracks, while full carbon fiber straps bond to the wall surface and resist further inward movement at $800-$1,500 per strap. This works well for walls that are bowing but have not displaced so far that they need rebuilding.
 
 ### Helical Tiebacks
 
@@ -110,6 +110,10 @@ When wall movement is more severe, helical anchors can be drilled through the wa
 ### Partial Rebuilds
 
 Some sections of stone wall deteriorate beyond what repointing or reinforcement can address. In these cases, we remove the failed section and rebuild it using the original stones (supplemented as needed) with proper lime mortar. The goal is a repair that matches the original construction while meeting modern structural standards.
+
+## When NOT to Repair a Stone Foundation Yourself
+
+Stone foundations require specialized knowledge that differs fundamentally from modern concrete repair. The most common — and most damaging — DIY mistake is repointing with Portland cement instead of lime mortar. Portland cement is too rigid for stone foundations: it traps moisture, cracks the stone, and accelerates deterioration. If a contractor suggests Portland cement repointing on your pre-1900 foundation, find a different contractor.
 
 ## When to Call a Professional
 
@@ -137,4 +141,4 @@ For a more detailed cost breakdown, see our [foundation repair cost guide](/blog
 
 We inspect stone foundations across Massachusetts, Connecticut, Rhode Island, New Hampshire, and Maine. Our [free foundation consultation](/services/free-foundation-consultations) includes an honest assessment of your foundation's condition and clear recommendations for any needed repairs.
 
-Call 617-668-1677 to schedule. We will tell you what we see, explain your options, and give you a straight answer about what your foundation actually needs.
+Call 617-668-1677 to schedule, or text us a photo for assessment. With 20+ years of experience with New England stone foundations, we will tell you what we see, explain your options, and give you a straight answer about what your foundation actually needs.

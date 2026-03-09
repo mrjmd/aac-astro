@@ -23,7 +23,7 @@ relatedPosts:
 
 "Does my foundation need to be replaced?" is a question that strikes fear into homeowners' hearts — and for good reason. Foundation replacement is one of the most expensive home repairs possible, ranging from $30,000 to over $100,000.
 
-Here is the reassuring news: in 33 years of foundation work across New England, the vast majority of foundations we inspect need repair, not replacement. We estimate that 95% or more of foundation problems can be resolved with targeted repairs costing a fraction of what replacement would run.
+Here is the reassuring news: in 20+ years of foundation work across New England, the vast majority of foundations we inspect need repair, not replacement. We estimate that 95% or more of foundation problems can be resolved with targeted repairs costing a fraction of what replacement would run.
 
 But that still leaves the 5%. So let's talk about when repair makes sense, when replacement is truly necessary, and how to tell the difference.
 
@@ -168,4 +168,4 @@ The [signs of foundation problems](/blog/signs-of-foundation-problems) guide hel
 
 If you are worried about your foundation, call us at 860-573-8760 (CT) or 617-668-1677 (MA). We will inspect it thoroughly and give you an honest answer. If it needs repair, we will explain the options and costs. If it needs more than we do, we will tell you that too — because a foundation company that recommends work it cannot perform is a foundation company you can trust.
 
-Our lifetime warranty on all repairs means we stand behind our assessment that repair is sufficient. If we repair it and the repair fails, we fix it again at no cost. That is confidence backed by 33 years of experience.
+Our lifetime warranty on all repairs means we stand behind our assessment that repair is sufficient. If we repair it and the repair fails, we fix it again at no cost. That is confidence backed by 20+ years of experience.

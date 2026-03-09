@@ -1,0 +1,9 @@
+{
+  "http://localhost:63897/index.html": "https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1772907971478-4430.report.html",
+  "http://localhost:63897/services/index.html": "https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1772907972991-84191.report.html",
+  "http://localhost:63897/blog/index.html": "https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1772907974277-59319.report.html",
+  "http://localhost:63897/connecticut/index.html": "https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1772907975673-43264.report.html",
+  "http://localhost:63897/massachusetts/index.html": "https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1772907977108-27142.report.html",
+  "http://localhost:63897/connecticut/hartford/index.html": "https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1772907978492-20002.report.html",
+  "http://localhost:63897/blog/signs-of-foundation-problems/index.html": "https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1772907980540-16040.report.html"
+}

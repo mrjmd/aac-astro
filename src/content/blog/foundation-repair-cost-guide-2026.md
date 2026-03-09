@@ -31,8 +31,8 @@ But we understand you need ballpark numbers to plan and budget. So here's an hon
 |------------|---------------|---------|
 | Single crack injection | $800 - $1,200 | $1,000 |
 | Multiple crack repair (2-3) | Significant multi-crack discounts | Custom quote |
-| Bulkhead sealing | $1,800 - $2,500 | $2,100 |
-| Utility line sealing | $650 - $900 each | $775 |
+| Bulkhead sealant/repair | $1,800 - $2,500 | $2,100 |
+| Utility pipe sealing | $650 - $1,000 each | $775 |
 | Carbon fiber reinforcement | $200 - $300 per stitch | $250 |
 | Full wall stabilization | $6,000 - $15,000 | $9,000 |
 
@@ -45,10 +45,10 @@ But we understand you need ballpark numbers to plan and budget. So here's an hon
 Not all foundation problems are equal:
 
 **Simple Crack Injection**
-The most affordable repair. We inject flexible urethane or structural epoxy to fill and seal the crack through our [foundation crack injection](/services/foundation-crack-injection) process. Most homeowners pay $800-$1,200 per crack.
+The most affordable repair. We inject flexible urethane or structural epoxy at 100 PSI to fill and seal all 8-10 inches of concrete through our [foundation crack injection](/services/foundation-crack-injection) process. Most homeowners pay $800-$1,200 per crack.
 
-**Structural Reinforcement**
-If cracks indicate structural movement, carbon fiber stitches may be needed in addition to injection. This adds $200-$300 per stitch location.
+**Structural Reinforcement with Carbon Fiber Staples**
+If cracks indicate structural movement, [carbon fiber stitches](/services/carbon-fiber-stitches) (also called carbon fiber staples) may be needed in addition to injection. This adds $200-$300 per stitch location.
 
 **Wall Stabilization**
 Severely bowed or moving walls require more extensive solutions like wall anchors or steel beams. These projects typically range from $6,000-$15,000+.
@@ -90,7 +90,7 @@ While Attack A Crack serves all of New England, some geographic factors affect p
 
 - **Travel distance**: Very remote locations may have modest trip fees
 - **Urban access**: Boston-area jobs with limited parking/access can take longer
-- **Soil conditions**: Areas with known problematic soils may need enhanced solutions
+- **Soil conditions**: Areas with clay-heavy soil or glacial till may need enhanced solutions due to increased hydrostatic pressure and freeze-thaw damage
 
 ## The Hidden Cost: Waiting Too Long
 
@@ -131,6 +131,10 @@ Our quotes always specify:
 - Lifetime warranty details
 - Payment terms
 
+## When NOT to Choose the Cheapest Foundation Repair Quote
+
+While we encourage getting multiple quotes, the cheapest bid is often the most expensive in the long run. Contractors who quote dramatically below market rates typically cut corners on materials (using hardware-store epoxy instead of professional-grade resin), skip proper surface preparation, or offer minimal warranties. A failed repair means paying twice. Our [warranty guide](/blog/foundation-repair-warranty-guide) explains why the guarantee behind the work matters as much as the price.
+
 ## Red Flags: When You're Being Overcharged
 
 Watch out for these warning signs:
@@ -142,7 +146,7 @@ If someone quotes $10,000+ for a few cracks with no structural issues, get a sec
 "Your house could collapse!" — Unless you have severe horizontal cracking with significant bowing, this is almost certainly exaggeration.
 
 **Unnecessary Add-Ons**
-Interior drainage systems, sump pumps, and waterproofing aren't always needed. Sometimes crack injection alone solves the problem.
+Interior drainage systems, sump pumps, and [full waterproofing systems](/blog/basement-waterproofing-vs-foundation-repair) aren't always needed. Sometimes crack injection alone solves the problem — especially if water in your basement only appears after rain through identifiable cracks.
 
 **Per-Linear-Foot Pricing**
 Some companies charge by the foot to inflate costs on long cracks. Per-crack pricing is typically fairer for consumers.
@@ -165,7 +169,7 @@ Foundation repairs are an investment in your home's value and safety. We work wi
 
 ## The Attack A Crack Difference
 
-We're not the cheapest, and we're not the most expensive. We're the most honest:
+With 20+ years of foundation repair experience across New England, we're not the cheapest, and we're not the most expensive. We're the most honest:
 
 - **Free consultations** with real experts who give honest advice
 - **Transparent pricing** with no hidden fees

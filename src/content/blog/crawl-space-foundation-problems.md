@@ -13,6 +13,7 @@ draft: true
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
+  - "carbon-fiber-stitches"
 ---
 
 ## The Foundation Nobody Looks At
@@ -29,9 +30,9 @@ Every region has its challenges, but New England's combination of factors makes 
 
 Our annual cycle is punishing. Heavy winter snowpack melts rapidly in spring, saturating the soil around and beneath your home. Summer brings high humidity that condenses on cooler crawl space surfaces. Fall rain adds more groundwater. And winter's freeze-thaw cycle can crack the short foundation walls that form the crawl space perimeter.
 
-### Soil and Water Table
+### Glacial Till, Clay-Heavy Soil, and Water Table
 
-Much of Connecticut, Massachusetts, and Rhode Island has clay-heavy soil that holds water rather than draining it. In coastal areas and river valleys, the water table is naturally high. Both conditions push moisture up through the soil and into your crawl space. In some neighborhoods, particularly along the South Shore or Connecticut River Valley, the soil stays damp for months at a time.
+Much of Connecticut, Massachusetts, and Rhode Island sits on glacial till — a mix of clay, silt, sand, and gravel deposited by retreating glaciers. This clay-heavy soil holds water rather than draining it. In coastal areas and river valleys, the water table is naturally high. Both conditions push moisture up through the soil and into your crawl space. In some neighborhoods, particularly along the South Shore or Connecticut River Valley, the soil stays damp for months at a time.
 
 ### Old Construction Methods
 
@@ -67,9 +68,9 @@ You do not have to crawl into the crawl space to spot problems. Many crawl space
 
 If the floor over your crawl space is noticeably colder than other areas of your home, the crawl space may lack insulation, have excessive air infiltration, or have insulation that has fallen or been damaged by moisture.
 
-### Musty Odors
+### Musty Smell in Your Basement or First Floor
 
-That damp, earthy smell that never quite goes away, especially in certain rooms, often originates in the crawl space. Air moves upward through gaps in the subfloor, around plumbing penetrations, and through the natural porosity of wood. If the crawl space is moldy, you smell it.
+That damp, earthy musty smell in the basement or first floor that never quite goes away, especially in certain rooms, often originates in the crawl space. Air moves upward through gaps in the subfloor, around plumbing penetrations, and through the natural porosity of wood. If the crawl space is moldy, you smell it.
 
 ### Uneven or Bouncy Floors
 
@@ -87,9 +88,11 @@ Mold spores, dust mite populations (which thrive in humid environments), and oth
 
 The right approach depends on what you are dealing with. Here are the main strategies, from targeted repairs to comprehensive solutions.
 
-### Foundation Wall Crack Repair
+### Foundation Wall Crack Repair ($800+ Per Crack)
 
-Cracks in crawl space foundation walls can be repaired with [injection techniques](/services/foundation-crack-injection) similar to those used in full basements. The access is tighter, but the repair is equally effective and equally permanent. Sealing cracks stops water entry at the source.
+Cracks in crawl space foundation walls can be repaired with [injection techniques](/services/foundation-crack-injection) similar to those used in full basements — approximately 100 PSI injection through the full wall thickness. The access is tighter, but the repair is equally effective and equally permanent at $800-$1,200 per crack. Sealing cracks stops water entry at the source.
+
+For cracks showing structural movement, [carbon fiber stitches](/services/carbon-fiber-stitches) (also called carbon fiber staples) at $200-$300 per stitch can reinforce the wall and prevent further displacement.
 
 ### Vapor Barriers
 
@@ -117,6 +120,6 @@ On the other hand, crawl space repairs are often less disruptive to your daily l
 
 If you have a crawl space and have not looked inside it recently, or ever, it is worth a look. You do not need to army-crawl the entire space. Open the access door, use a bright flashlight, and look for standing water, visible mold, fallen insulation, or any signs of pest activity.
 
-If you see something concerning, or if you are experiencing any of the upstairs warning signs we described, a [free foundation consultation](/services/free-foundation-consultations) gets you a professional assessment without any obligation. We will tell you what needs attention now, what can wait, and what is perfectly fine as-is.
+If you see something concerning, or if you are experiencing any of the upstairs warning signs we described — especially a persistent musty smell in the basement — a [free foundation consultation](/services/free-foundation-consultations) gets you a professional assessment without any obligation. You can also text us a photo for a quick initial evaluation. We will tell you what needs attention now, what can wait, and what is perfectly fine as-is.
 
 The worst crawl space problems we see are always the ones that were ignored the longest. A quick look now can save you a major headache later.

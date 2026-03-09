@@ -49,7 +49,7 @@ Crack injection seals a specific crack in a poured concrete foundation wall. The
 
 **How it works:** Small ports are installed along the crack, then epoxy or polyurethane resin is injected under pressure, filling the crack through the full wall thickness. It takes a few hours, involves no jackhammering, and you can use the basement the same day. See our walkthrough of [what foundation repair actually looks like](/blog/what-does-foundation-repair-look-like).
 
-**Cost:** Between $500 and $1,500 per crack. Most homeowners spend under $1,000. Our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) covers the full range.
+**Cost:** Between $800 and $1,200 per crack. Most homeowners spend under $1,000. Our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) covers the full range.
 
 ## The Cost Comparison Is Not Even Close
 
@@ -67,7 +67,7 @@ Sometimes a homeowner has general perimeter water intrusion AND specific cracks 
 
 ## What We Do vs. What We Refer
 
-Attack A Crack specializes in [foundation crack injection](/services/foundation-crack-injection), [wall crack repair](/services/wall-crack-repair), [carbon fiber reinforcement](/services/carbon-fiber-stitches), and [bulkhead repair](/services/leaky-bulkhead-repair). We do not install French drain systems. If your basement needs one, we will tell you and point you toward reputable waterproofing contractors. We would rather send you to the right solution than sell you the wrong one.
+Attack A Crack specializes in [foundation crack injection](/services/foundation-crack-injection), [wall crack repair](/services/wall-crack-repair), [carbon fiber staples and reinforcement](/services/carbon-fiber-stitches), and [bulkhead repair](/services/leaky-bulkhead-repair). We do not install French drain systems. If your basement needs one, we will tell you and point you toward reputable waterproofing contractors. We would rather send you to the right solution than sell you the wrong one.
 
 ## Quick Diagnostic: Head to Your Basement During Rain
 
@@ -87,4 +87,4 @@ Attack A Crack specializes in [foundation crack injection](/services/foundation-
 
 ### Not Sure?
 
-That is normal. Water in basements is tricky to diagnose because it travels — what looks like a floor-level problem might be a wall crack channeling water downward behind the wall. Our [consultations are free](/services/free-foundation-consultations), and we will give you a straight answer. With over 33 years of experience across New England, we have seen every scenario and we are happy to tell you honestly whether you need a $800 repair or a $12,000 system.
+That is normal. Water in basements is tricky to diagnose because it travels — what looks like a floor-level problem might be a wall crack channeling water downward behind the wall. Our [consultations are free](/services/free-foundation-consultations), and we will give you a straight answer. With over 33 years of experience across New England, we have seen every scenario and we are happy to tell you honestly whether you need an $800-$1,200 crack repair or a $12,000 system. Text us a photo for a quick preliminary assessment.

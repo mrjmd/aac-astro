@@ -9,15 +9,21 @@ category: "maintenance-tips"
 tags: ["ice dams", "winter damage", "foundation cracks", "water intrusion"]
 heroImage: "/images/projects/shrewsbury-crack-injection-2025-10-before.jpg"
 heroImageAlt: "Ice Dams: The Roof Problem That Wrecks Foundations"
+targetLocation: "New England"
 
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
+  - "free-foundation-consultations"
+relatedPosts:
+  - "winter-home-maintenance-checklist"
+  - "water-in-basement-after-rain"
+  - "spring-thaw-foundation-prep"
 ---
 
 Most homeowners think of ice dams as a roofing problem. And they are -- ice dams can tear up shingles, rot fascia boards, and send water streaming into your attic. But here is the thing nobody talks about: the water that overflows your gutters has to go somewhere, and that somewhere is straight down to your foundation.
 
-After 33 years of repairing foundations across New England, we can tell you with certainty that ice dam season and foundation crack season are not a coincidence. They are cause and effect.
+After 20+ years of repairing foundations across New England, we can tell you with certainty that ice dam season and foundation crack season are not a coincidence. They are cause and effect.
 
 ## How Ice Dams Form (The 60-Second Version)
 
@@ -67,9 +73,9 @@ After an ice dam season, here is what to look for in your basement:
 
 **Water stains near the top of the wall.** Ice dam-related water intrusion often shows up higher on the wall than you would expect, because the soil saturation is concentrated near the surface.
 
-**White crystalline deposits (efflorescence).** Those chalky white streaks on your basement walls are mineral deposits left behind when water seeps through concrete and evaporates. Fresh efflorescence means recent water movement.
+**White powder on basement walls (efflorescence).** Those chalky white streaks on your basement walls are mineral deposits left behind when water seeps through concrete and evaporates. Fresh efflorescence means recent water movement — a reliable indicator of ongoing water intrusion.
 
-**Damp or musty smell.** Your nose knows. If the basement smells different than it did in the fall, moisture is getting in somewhere.
+**A musty smell in your basement.** Your nose knows. If the basement smells different than it did in the fall, moisture is getting in somewhere — likely through cracks widened by freeze-thaw cycles.
 
 **Staining on the floor near walls.** Water that enters through wall cracks often runs down to the floor joint and leaves visible marks.
 
@@ -102,6 +108,6 @@ Some of this you can handle yourself. Improving grading, extending downspouts, c
 
 At Attack A Crack, we offer [free foundation consultations](/services/free-foundation-consultations) throughout New England. We will assess the damage, explain exactly what is happening, and give you honest options -- including "just monitor it" when that is genuinely the right call.
 
-Here is our honest take after 33 years: most ice dam-related foundation cracks are very fixable with [crack injection](/services/foundation-crack-injection) or [wall crack repair](/services/wall-crack-repair). The key is addressing them before another winter makes them worse. That freeze-thaw cycle does not take years off. It takes seasons.
+Here is our honest take after 20+ years: most ice dam-related foundation cracks are very fixable with [crack injection](/services/foundation-crack-injection) or [wall crack repair](/services/wall-crack-repair). The key is addressing them before another winter makes them worse. That freeze-thaw cycle does not take years off. It takes seasons.
 
 If you have had ice dams this winter and something in the basement looks different, give us a call. Connecticut homeowners can reach us at 860-573-8760, and Massachusetts residents at 617-668-1677. We would rather tell you it is nothing than have you find a waterfall in your basement next January.

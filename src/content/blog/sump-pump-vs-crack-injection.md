@@ -24,7 +24,7 @@ Here is the short version: crack injection stops water from entering. A sump pum
 
 ## How Crack Injection Works
 
-When a foundation wall develops a crack, that crack extends through the full thickness of the concrete, typically 8 to 10 inches. Groundwater under hydrostatic pressure pushes through this crack and into your basement. The crack is the pathway. The fix is to seal the pathway.
+When a foundation wall develops a crack, that crack extends through the full 8-10 inches of concrete. Groundwater under hydrostatic pressure — especially in areas with glacial till or clay-heavy soil common across New England — pushes through this crack and into your basement. The crack is the pathway. The fix is to seal the pathway.
 
 [Foundation crack injection](/services/foundation-crack-injection) works by injecting expanding polyurethane or structural epoxy directly into the crack. Injection ports are installed along the crack's interior surface, and material is injected under pressure until it fills the entire crack from the inside face to the outside face and sometimes beyond. The material bonds to the concrete, flexes with minor movement, and creates a permanent waterproof seal.
 
@@ -38,7 +38,7 @@ The result: water hits the outside of your foundation wall, encounters a sealed 
 - The leak can be traced to one or a few specific locations
 - The foundation is poured concrete (the most common scenario in New England)
 
-For a typical wall crack, injection takes a few hours, costs significantly less than waterproofing system installation, and comes with a lifetime warranty. It is, in our professional and admittedly biased opinion, one of the best values in home repair.
+For a typical wall crack, injection takes a few hours, costs $800-$1,200 per crack (significantly less than waterproofing system installation), and comes with a lifetime warranty. It is, in our professional and admittedly biased opinion, one of the best values in home repair.
 
 ## How Sump Pumps Work
 
@@ -88,7 +88,7 @@ In these combined scenarios, injecting the cracks first actually makes the sump 
 
 Let us put real numbers on this.
 
-**Crack injection** for a typical wall crack: a few hundred to a few thousand dollars, depending on crack length and complexity. One-time cost. Lifetime warranty. No electricity or maintenance required.
+**Crack injection** for a typical wall crack: $800-$1,200 per crack, with multi-crack jobs running $800-$2,500. One-time cost. Lifetime warranty. No electricity or maintenance required.
 
 **Sump pump installation** (pump, pit, basic connection to existing drain): $1,000 to $3,000 for a quality setup. Add ongoing electricity costs of $5 to $15 per month. Pump replacement every 7 to 10 years ($200 to $500). Battery backup recommended ($200 to $500 installed).
 
@@ -105,6 +105,10 @@ When you call us for a [free consultation](/services/free-foundation-consultatio
 3. **Honest recommendation.** If your problem is a cracked wall, we say so and recommend injection. If your problem requires a sump pump, we say so, and in many cases we refer you to a waterproofing company that specializes in drainage systems. We do not install drainage systems or sump pumps because that is not our expertise. We would rather send you to someone who does it right than do it ourselves and do it poorly.
 
 That last point is worth emphasizing. We turn away work that is not right for us. If you need a sump pump and not injection, we will tell you. We would rather earn your trust by being honest than earn a fee by selling you the wrong solution.
+
+## When NOT to Get a Sump Pump
+
+Do not let a contractor sell you a sump pump system if your only problem is water in your basement after rain at a specific, identifiable crack. That is a crack injection problem, not a pump problem. Similarly, if you see white powder on basement walls (efflorescence) along a crack line, the solution is sealing the crack — not managing the water after it enters.
 
 ## The Decision Framework
 
@@ -124,4 +128,4 @@ Ask yourself these questions:
 
 A sump pump is not better than crack injection. Crack injection is not better than a sump pump. They are different tools for different problems, and the right choice depends entirely on an accurate diagnosis of your specific situation.
 
-If you are unsure which solution fits your situation, that is exactly what our free consultations are for. We will identify the source, recommend the right fix, and if that fix is not something we do, we will point you to someone who does. Call 617-668-1677 (Massachusetts) or 860-573-8760 (Connecticut) to schedule.
+If you are unsure which solution fits your situation, text us a photo for assessment or call for a free consultation. We will identify the source, recommend the right fix, and if that fix is not something we do, we will point you to someone who does. Call 617-668-1677 (Massachusetts) or 860-573-8760 (Connecticut) to schedule.

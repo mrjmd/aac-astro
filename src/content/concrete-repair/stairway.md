@@ -18,9 +18,11 @@ relatedServices:
   - "patio"
 ---
 
-## Concrete Step & Stair Repair in Massachusetts
+## Concrete Step & Stair Crack Repair in Massachusetts
 
-Concrete stairs take a beating—constant foot traffic, de-icing salt, freeze-thaw cycles, and years of exposure to New England weather. When your stairs become cracked, spalled, or simply ugly, our concrete step repair offers a cost-effective alternative to full replacement.
+Concrete stairs take a beating — constant foot traffic, de-icing salt, freeze-thaw cycles, and years of exposure to New England weather. When your stairs become cracked, spalled, or simply unsafe, our concrete step repair offers a cost-effective alternative to full replacement. We repair the concrete damage first, then apply a durable, non-slip finish.
+
+**Concrete vs. cement:** Most people say "cement steps" when they mean "concrete steps." Cement is just one ingredient in concrete. Your stairs are concrete, and our repair system bonds directly to the existing concrete surface.
 
 ### Why Repair Instead of Replace?
 
@@ -79,9 +81,16 @@ While most of our stair repair work is exterior, we also repair:
 
 The process is similar, with finish options appropriate for interior use.
 
+### When NOT to Repair Stairs
+
+We'll tell you honestly when repair isn't the right approach:
+- **Structurally compromised stairs** — if the underlying slab has shifted or broken away from the foundation
+- **Severely frost-heaved concrete** — when the base has moved, resurfacing alone won't fix the problem
+- **Missing sections of concrete** — when more than small areas need rebuilding
+
 ### Massachusetts Only
 
-Concrete repair services are available exclusively in Massachusetts. For foundation repair services, we serve both Massachusetts and Connecticut.
+Concrete repair services are available throughout Massachusetts. For foundation repair services (crack injection, carbon fiber staples, bulkhead sealant), we serve both Massachusetts and Connecticut.
 
 ### Get Your Free Quote
 

@@ -14,6 +14,8 @@ draft: true
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
+  - "leaky-bulkhead-repair"
+  - "sewer-well-conduit-line-repair"
 relatedPosts:
   - "basement-waterproofing-vs-foundation-repair"
   - "signs-of-foundation-problems"
@@ -26,7 +28,7 @@ That musty smell is not just an aesthetic problem. It is your basement telling y
 
 Let's figure out where it is coming from and what to do about it.
 
-## Why Basements Smell Musty: The Short Version
+## Why Does My Basement Smell Musty?
 
 Musty smells come from one thing: moisture. Specifically, moisture feeding biological growth — mold, mildew, bacteria, and fungi that thrive in damp, poorly ventilated spaces.
 
@@ -36,11 +38,11 @@ The question is not "why does my basement smell musty?" The question is "where i
 
 ### 1. Water Intrusion Through Foundation Cracks
 
-**The clue:** The smell is strongest near walls, particularly after rain. You may see staining, efflorescence (white crystalline deposits), or actual dampness on the wall surface.
+**The clue:** The smell is strongest near walls, particularly after rain — you might notice water in basement after rain or white powder on basement walls (efflorescence). You may see staining, crystalline deposits, or actual dampness on the wall surface.
 
-**What is happening:** Water from saturated soil is entering through cracks in your foundation walls. Even hairline cracks can admit enough moisture to feed mold growth. The water does not have to be pooling on the floor — moisture wicking through a crack and evaporating on the interior surface is enough.
+**What is happening:** Water from saturated soil — often clay-heavy glacial till that holds moisture against the foundation — is entering through cracks in your foundation walls. Even hairline cracks can admit enough moisture to feed mold growth. The water does not have to be pooling on the floor — moisture wicking through a crack and evaporating on the interior surface is enough.
 
-**The fix:** [Foundation crack injection](/services/foundation-crack-injection) seals the crack from inside to outside, eliminating the water entry point. No water entry, no moisture, no mold food, no smell.
+**The fix:** [Foundation crack injection](/services/foundation-crack-injection) at $800-$1,200 per crack seals the crack from inside to outside at approximately 100 PSI, filling the full 8-10 inches of wall thickness. No water entry, no moisture, no mold food, no smell.
 
 This is the cause we see most often in New England basements. Our freeze-thaw cycles crack foundations, and cracked foundations let in water. It is a predictable cycle. For more on identifying crack-related problems, see [signs of foundation problems](/blog/signs-of-foundation-problems).
 
@@ -69,7 +71,7 @@ This is the cause we see most often in New England basements. Our freeze-thaw cy
 
 **What is happening:** New England bulkheads are notorious for leaking. The joint where the bulkhead meets the foundation, the seam between the bulkhead doors, and rust-through holes in older metal bulkheads all let water pour in during rain.
 
-**The fix:** [Leaky bulkhead repair](/services/leaky-bulkhead-repair) addresses the joints and connections that admit water. For more on costs, our [bulkhead repair cost guide](/blog/bulkhead-repair-cost-guide-2026) has the details.
+**The fix:** [Leaky bulkhead repair](/services/leaky-bulkhead-repair) at $1,800-$2,500 addresses the joints and connections that admit water, including proper bulkhead sealant application at all critical junctions. For more on costs, our [bulkhead repair cost guide](/blog/bulkhead-repair-cost-guide-2026) has the details.
 
 ### 5. Drain and Plumbing Issues
 
@@ -124,12 +126,14 @@ Here is the systematic approach we recommend:
 
 **Step 6: Monitor.** After fixes, monitor humidity levels with a hygrometer (a $15 investment that pays for itself). Basement humidity should stay below 60%, ideally below 50%.
 
-## What It Should Not Smell Like
+## When NOT to Worry About Basement Smells
 
-A dry, well-maintained basement should smell like... nothing. Maybe a faint concrete smell. If your basement has any noticeable odor, moisture is present somewhere, and moisture is always doing something you do not want.
+A faint, occasional mineral smell in a basement with no visible moisture, no staining, and no efflorescence is probably just concrete being concrete. New England's humidity means some basement dampness during July and August is normal and manageable with a dehumidifier.
+
+**However:** A persistent musty smell in the basement that never fully goes away — especially one that worsens after rain — is always worth investigating. A dry, well-maintained basement should smell like nothing.
 
 ## Get to the Source
 
 The smell is the symptom. Moisture is the disease. And in New England, foundation cracks are the most common way moisture gets in.
 
-If your basement smells musty and you suspect water intrusion, give us a call at 860-573-8760 (CT) or 617-668-1677 (MA). Our [free consultations](/services/free-foundation-consultations) include a thorough inspection of your foundation for cracks, moisture intrusion points, and structural concerns. We will tell you exactly what is causing the problem — and whether the solution is a $1,000 crack repair or a trip to the hardware store for a better dehumidifier.
+If your basement smells musty and you suspect water intrusion, give us a call at 860-573-8760 (CT) or 617-668-1677 (MA), or text us a photo for a quick assessment. Our [free consultations](/services/free-foundation-consultations) include a thorough inspection of your foundation for cracks, moisture intrusion points, and structural concerns. After 20+ years of New England foundation work, we will tell you exactly what is causing the problem — and whether the solution is a $1,000 crack repair or a trip to the hardware store for a better dehumidifier.

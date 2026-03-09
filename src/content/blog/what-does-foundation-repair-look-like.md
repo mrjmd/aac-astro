@@ -14,6 +14,8 @@ draft: true
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
+  - "carbon-fiber-stitches"
+  - "leaky-bulkhead-repair"
 ---
 
 ## The Repair You Have Been Putting Off
@@ -24,7 +26,7 @@ Take a breath. For the vast majority of foundation cracks in New England homes, 
 
 Here is what a typical repair day actually looks like.
 
-## The Scenario: A Typical Poured Concrete Crack
+## The Scenario: A Typical Poured Concrete Foundation Crack
 
 The most common job we do: a vertical or diagonal crack in a poured concrete foundation wall. The homeowner noticed water during heavy rain — a wet streak down the wall ending in a puddle on the floor. The crack might be thin as a pencil line or wide as a credit card edge. The house is usually 20 to 60 years old, and the crack is from normal shrinkage or minor settlement. For context on crack types, see our post on [vertical vs. horizontal foundation cracks](/blog/vertical-vs-horizontal-foundation-cracks).
 
@@ -46,7 +48,7 @@ Between the ports, we apply an epoxy surface paste over the visible crack. This 
 
 ## Step 3: The Injection (30-60 Minutes)
 
-This is the main event. Depending on crack type and conditions, we inject either epoxy resin (rigid, structural-strength, bonds the concrete back together) or polyurethane foam (flexible, expands slightly, better for cracks with minor movement). Both are injected under controlled pressure — typically 20 to 40 PSI — ensuring the material fills the crack through the full 8-to-10-inch wall thickness.
+This is the main event. Depending on crack type and conditions, we inject either epoxy resin (rigid, structural-strength, bonds the concrete back together) or polyurethane foam (flexible, expands slightly, better for cracks with minor movement). Both are injected under controlled pressure — up to 100 PSI for stubborn cracks, typically 20 to 40 PSI for standard work — ensuring the material fills the crack through the full 8-to-10 inches of concrete wall thickness.
 
 We start at the bottom port and work up. We pump material into the first port and watch the next one up — when material appears there, we know the section between them is filled. Cap the current port, move to the next, repeat. This methodical approach ensures complete fill with no gaps.
 
@@ -78,8 +80,10 @@ While the single vertical crack is our bread and butter, we handle plenty of oth
 
 **Wall cracks:** Our [wall crack repair service](/services/wall-crack-repair) covers variations in access and preparation for above-grade cracks.
 
-**Bulkhead leaks:** [Leaky bulkheads](/services/leaky-bulkhead-repair) need tailored approaches for the connection between the bulkhead structure and foundation wall.
+**Bulkhead leaks:** [Leaky bulkheads](/services/leaky-bulkhead-repair) need tailored approaches using professional bulkhead sealant for the connection between the bulkhead structure and foundation wall. Most bulkhead repairs run $1,800-$2,500.
+
+**Carbon fiber reinforcement:** For walls showing structural stress, carbon fiber staples (also called carbon fiber stitches) bridge cracks at $200-$300 per stitch, preventing further movement without the bulk of steel I-beams.
 
 ## Still Nervous? That Is Normal
 
-The words "foundation repair" carry a weight that the actual process does not deserve — at least not for the crack injection work most homes need. The best way to know what your situation requires is to have someone look at it. Our [consultations are free](/services/free-foundation-consultations) with zero pressure. Call 860-573-8760 in Connecticut or 617-668-1677 in Massachusetts.
+The words "foundation repair" carry a weight that the actual process does not deserve — at least not for the crack injection work most homes need. Most single-crack repairs cost $800-$1,200 with a lifetime warranty. The best way to know what your situation requires is to have someone look at it — or text us a photo for assessment at 617-668-1677. Our [consultations are free](/services/free-foundation-consultations) with zero pressure. Call 860-573-8760 in Connecticut or 617-668-1677 in Massachusetts.

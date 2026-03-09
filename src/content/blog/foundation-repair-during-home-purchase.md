@@ -40,7 +40,7 @@ A vertical crack that shows water staining or minor dampness is still a common a
 
 ### Horizontal Cracks or Bowing Walls
 
-This is where the conversation changes. Horizontal cracks in foundation walls, especially in block or concrete block construction, often indicate lateral pressure from soil pushing against the wall. If the wall is visibly bowed inward, this is a structural issue that requires serious attention. It is fixable, often with [carbon fiber stitching](/services/carbon-fiber-stitches) or wall bracing, but the cost and scope are different from a simple crack repair.
+This is where the conversation changes. Horizontal cracks in foundation walls, especially in block or concrete block construction, often indicate lateral pressure from clay-heavy soil or glacial till pushing against the wall — common across New England. If the wall is visibly bowed inward, this is a structural issue that requires serious attention. It is fixable, often with carbon fiber staples (also called [carbon fiber stitches](/services/carbon-fiber-stitches)) at $200-$300 per stitch or full wall bracing, but the cost and scope are different from a simple crack repair.
 
 ### Step Cracks in Block Foundations
 
@@ -107,7 +107,7 @@ Similar to a price reduction but structured as a seller credit toward closing co
 
 Some foundation problems genuinely should make you reconsider. If multiple specialists identify active structural movement, if the repair cost is a significant percentage of the home's value, or if the seller refuses to acknowledge or address serious issues, walking away is a legitimate and sometimes wise choice.
 
-But walking away over a $1,500 crack injection on a $450,000 house? That is letting fear override math.
+But walking away over an $800-$1,200 crack injection on a $450,000 house? That is letting fear override math.
 
 ## The Warranty Question
 
@@ -137,7 +137,7 @@ The housing stock across Connecticut, Massachusetts, Rhode Island, New Hampshire
 
 Older homes in places like the Connecticut River Valley or Boston's inner suburbs often have foundations that have been through centuries of freeze-thaw cycles. Cracks are expected. The question is not whether an old foundation has cracks (it does), but whether those cracks are stable or active.
 
-The [New England climate](/blog/foundation-repair-seasonal-guide) with its dramatic temperature swings, heavy spring snowmelt, and clay-rich soil in many areas puts unique stresses on foundations. What would be unusual in Arizona is perfectly normal here.
+The [New England climate](/blog/foundation-repair-seasonal-guide) with its dramatic freeze-thaw cycles, heavy spring snowmelt, and clay-heavy glacial till in many areas puts unique stresses on foundations. What would be unusual in Arizona is perfectly normal here.
 
 ## The Bottom Line
 
@@ -145,4 +145,4 @@ Do not let a foundation inspection finding derail a home purchase without gettin
 
 Get a specialist assessment. Get real numbers. Then make a decision based on facts, not fear. We have helped thousands of New England homebuyers navigate this exact situation, and the vast majority end up buying the home and living happily in it with a repaired foundation and a lifetime warranty in the filing cabinet.
 
-Call us at 617-668-1677 (Massachusetts) or 860-573-8760 (Connecticut) to schedule a free assessment during your inspection period.
+Text us a photo for assessment or call us at 617-668-1677 (Massachusetts) or 860-573-8760 (Connecticut) to schedule a free assessment during your inspection period. With 20+ years of experience, we can often give you a preliminary read from a photo before scheduling an on-site visit.

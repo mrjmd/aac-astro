@@ -17,6 +17,11 @@ heroImageAlt: "Foundation wall crack before repair in Belchertown basement"
 relatedServices:
   - "wall-crack-repair"
   - "carbon-fiber-stitches"
+  - "free-foundation-consultations"
+relatedPosts:
+  - "foundation-repair-cost-guide-2026"
+  - "signs-of-foundation-problems"
+  - "foundation-repair-vs-replacement"
 ---
 
 ## Understanding Fieldstone Foundations
@@ -29,7 +34,7 @@ Fieldstone foundations are constructed from naturally occurring rocks, typically
 
 **Characteristics:**
 - **Age:** Most date from 1700s-1900s
-- **Material:** Local glacial stones, often granite
+- **Material:** Local glacial till stones, often granite
 - **Mortar:** Original lime-based, may have been repointed with Portland cement
 - **Thickness:** Typically 18-24 inches
 - **Appearance:** Irregular, textured surface with visible stones
@@ -45,16 +50,18 @@ The mortar between stones breaks down over time. Original lime mortar is softer 
 
 **Water Infiltration**
 
-Fieldstone foundations are inherently more porous than modern concrete. Water enters through:
+Fieldstone foundations are inherently more porous than modern concrete. Water in basement after rain is extremely common with fieldstone — water enters through:
 - Gaps in deteriorating mortar
 - Porous stone surfaces
-- The stone-to-soil interface
-- Inadequate exterior drainage
+- The stone-to-soil interface, especially in clay-heavy soil and glacial till
+- Inadequate exterior drainage and high water table conditions
+
+Signs include white powder on basement walls (efflorescence), a persistent musty smell in your basement, and visible dampness across large wall areas.
 
 **Structural Movement**
 
 Over time, some fieldstone walls may:
-- Bulge inward from soil pressure
+- Bulge inward from lateral soil pressure and freeze-thaw cycles
 - Settle unevenly
 - Show displaced stones
 - Develop cracks in mortar lines
@@ -90,11 +97,11 @@ For wet fieldstone basements, we typically recommend:
 
 **Structural Stabilization**
 
-For walls showing movement, options include:
-- Carbon fiber reinforcement straps
-- Steel I-beam supports
+For walls showing movement from freeze-thaw cycles and lateral soil pressure, options include:
+- [Carbon fiber staples (reinforcement straps)](/services/carbon-fiber-stitches) at $200-$300 per stitch — the least invasive structural reinforcement option
+- Steel I-beam supports for severe bowing
 - Helical tieback anchors
-- Targeted rebuilding of failed sections
+- Targeted rebuilding of failed sections — see our [foundation repair vs replacement guide](/blog/foundation-repair-vs-replacement)
 
 ### What We Don't Do
 
@@ -118,4 +125,4 @@ Wondering if your fieldstone foundation needs attention? Contact us for a free a
 
 **Connecticut & Massachusetts:** 617-668-1677
 
-We'll evaluate your foundation honestly and explain your options clearly.
+Text us a photo for a preliminary assessment, or call to schedule — with 20+ years of experience and 91+ documented projects, we'll evaluate your foundation honestly and explain your options clearly.

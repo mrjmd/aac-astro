@@ -29,9 +29,9 @@ steps:
     text: "You receive a clear, itemized quote with honest repair recommendations—or we tell you it's a DIY fix or doesn't need repair at all."
 ---
 
-## Free Foundation Consultations: Honest Answers, No Pressure
+## Free Foundation Inspection & Consultation: Honest Answers, No Pressure
 
-At Attack A Crack, we believe you deserve to understand what's happening with your foundation before you spend a dime. That's why every consultation is completely free, and we'll never pressure you into services you don't need.
+At Attack A Crack, we believe you deserve a thorough foundation inspection and honest answers before you spend a dime. That's why every foundation consultation is completely free, and we'll never pressure you into services you don't need. Whether you're a homeowner noticing cracks, a buyer getting a home inspection, or a realtor needing a foundation assessment, we provide expert diagnosis at no cost.
 
 ### How It Works: Text Us Photos
 
@@ -80,16 +80,24 @@ Based on our assessment, we'll recommend a course of action. This might be:
 **5. Transparent Quote**
 If professional repair is warranted, we provide a clear, itemized quote with no hidden fees. We explain exactly what we'll do and why it costs what it does.
 
-### In-Person Consultations
+### In-Person Foundation Inspections
 
-For situations that need hands-on evaluation, we schedule an on-site visit. Our in-person assessments typically take 30-45 minutes and include:
+For situations that need hands-on evaluation, we schedule an on-site foundation inspection. Our in-person assessments typically take 30-45 minutes and include:
 
 - **Visual inspection** — sighting down walls from each corner to detect bowing or displacement
 - **Hands-on testing** — prodding with a screwdriver to check for flaking or crumbling concrete
-- **Crack measurement** — documenting width, length, and pattern
-- **Moisture assessment** — identifying active water infiltration paths
+- **Crack measurement** — documenting width, length, and pattern using precise tools
+- **Moisture assessment** — identifying active water infiltration paths and hydrostatic pressure signs
+- **Structural evaluation** — checking for horizontal cracks, stair-step patterns, and differential settlement
+- **Foundation type identification** — poured concrete, block (CMU), fieldstone, brick, or combination
+
+Our inspection process draws on 20+ years of diagnosing New England foundations — from 1800s fieldstone to modern poured concrete. We've seen every foundation type and every failure mode.
 
 **First visit = repair visit.** Unlike many companies, we don't require a separate estimate appointment. If the repair is straightforward and you're ready to proceed, our technician can often complete the work during the same visit.
+
+### For Home Buyers and Realtors
+
+If a home inspection flagged foundation issues, we provide free foundation assessments for real estate transactions. We'll give you a clear, honest evaluation of what needs repair, what can be monitored, and what the costs would be — helping buyers and sellers make informed decisions. Many realtors across New England trust our assessments because we're specialists, not generalists trying to upsell waterproofing systems.
 
 ### Things We'll Always Tell You
 

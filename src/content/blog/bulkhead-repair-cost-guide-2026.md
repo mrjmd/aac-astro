@@ -123,9 +123,13 @@ Several factors influence where your repair falls within these ranges:
 
 For most leaking bulkheads in Connecticut and Massachusetts, injection sealing at $1,800-$2,500 is the sweet spot: it addresses the actual problem, costs a fraction of replacement, and carries a lifetime guarantee. Full replacement makes sense when the structure itself has failed, but that's less common than the industry suggests.
 
+## When NOT to Replace Your Bulkhead
+
+Full replacement ($5,000-$10,000+) makes sense when the concrete stairwell is literally crumbling or the frame has rusted through. But many contractors default to replacement because it is a bigger job. If your concrete is structurally sound and the leak is at the cold joint (which it usually is), injection sealing at $1,800-$2,500 is the smarter investment — permanent, guaranteed for life, and a fraction of the cost. See our [Wilmington case study](/blog/leaky-bulkhead-wilmington-repair) for a real example.
+
 ## Get a Free Bulkhead Assessment
 
-Not sure what your bulkhead needs? We'll examine it for free, diagnose the leak source, and give you an honest recommendation.
+Not sure what your bulkhead needs? With 20+ years of experience and 91+ documented projects, we'll examine it for free, diagnose the leak source, and give you an honest recommendation.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

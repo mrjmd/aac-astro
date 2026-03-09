@@ -14,6 +14,7 @@ draft: true
 relatedServices:
   - "foundation-crack-injection"
   - "leaky-bulkhead-repair"
+  - "sewer-well-conduit-line-repair"
 relatedPosts:
   - "foundation-repair-cost-guide-2026"
   - "basement-waterproofing-vs-foundation-repair"
@@ -26,7 +27,7 @@ The reason for that absurd range? "Basement waterproofing" covers everything fro
 
 Let's break down every option, what it costs, and — most importantly — which one you probably need.
 
-## The Full Spectrum of Basement Waterproofing Costs
+## How Much Does Basement Waterproofing Cost in 2026?
 
 | Solution | Typical Cost | Best For |
 |----------|-------------|----------|
@@ -43,13 +44,15 @@ These are 2026 estimates for the New England market — Connecticut, Massachuset
 
 Here is a secret the waterproofing industry would prefer you not know: **most basement water problems come through cracks, and cracks can be sealed individually.**
 
-[Foundation crack injection](/services/foundation-crack-injection) involves injecting flexible polyurethane or structural epoxy into the crack, filling it from the inside face of the wall all the way through to the outside. The material bonds to the concrete and seals the entry point permanently.
+[Foundation crack injection](/services/foundation-crack-injection) involves injecting flexible polyurethane or structural epoxy at approximately 100 PSI into the crack, filling it from the inside face of the wall all the way through to the outside — typically through 8-10 inches of concrete. The material bonds to the concrete and seals the entry point permanently.
 
-**When this is your answer:**
+**When this is your answer (you notice water in basement after rain):**
 - You can see where water enters during rain
 - Water appears at specific locations, not everywhere
 - You have visible vertical or diagonal cracks
 - The problem started after you noticed cracking
+
+**When NOT to use crack injection:** If water is entering from everywhere — along the entire wall-floor joint, through the floor slab, or from multiple directions with no visible cracks — your problem is likely hydrostatic pressure, not individual cracks. Injection cannot seal what it cannot reach.
 
 **Cost factors:**
 - Number of cracks (multi-crack discounts are common)
@@ -124,9 +127,9 @@ This is the nuclear option. Exterior waterproofing involves excavating around yo
 
 **When it is overkill:** Most of the time. Exterior waterproofing is legitimate but is also the highest-margin service for waterproofing companies. Before committing to a $20,000 exterior job, get a second opinion that includes less invasive options.
 
-## Option 6: Bulkhead Sealing ($1,800 - $2,500)
+## Option 6: Bulkhead Sealing and Bulkhead Sealant ($1,800 - $2,500)
 
-New England basements love their bulkheads, and bulkheads love leaking. The joint where the bulkhead meets the foundation is a perennial weak point, and the bulkhead itself can rust, crack, or separate from the house.
+New England basements love their bulkheads, and bulkheads love leaking. The joint where the bulkhead meets the foundation is a perennial weak point, and the bulkhead itself can rust, crack, or separate from the house. Proper bulkhead sealant and structural repair addresses the entire assembly — not just the visible gap.
 
 [Leaky bulkhead repair](/services/leaky-bulkhead-repair) addresses the seals, joints, and connections that let water pour in during every rainstorm. For a detailed cost breakdown, check out our [bulkhead repair cost guide](/blog/bulkhead-repair-cost-guide-2026).
 
@@ -146,7 +149,7 @@ Can equipment reach your foundation? Is the work area clear, or buried under fin
 
 ### Soil Conditions
 
-New England soil ranges from sandy coastal ground on the South Shore to heavy clay in river valleys. Clay soils hold more water against foundations and create more hydrostatic pressure, often requiring more aggressive solutions.
+New England soil ranges from sandy coastal ground on the South Shore to heavy clay-heavy glacial till in river valleys. Clay soils hold more water against foundations and create more hydrostatic pressure, often requiring more aggressive solutions. In areas with glacial till deposits — common across Connecticut, Massachusetts, and Rhode Island — the mix of clay, sand, and gravel creates unpredictable drainage patterns that vary block by block.
 
 ### Existing Drainage
 
@@ -177,4 +180,4 @@ If water enters through identifiable cracks, crack injection at $800 - $1,200 pe
 
 Exterior waterproofing has its place, but it should be the last resort — not the first recommendation.
 
-**Ready to find out what your basement actually needs?** Call us at 860-573-8760 (CT) or 617-668-1677 (MA) for a free consultation. We will tell you what we see, what it needs, and what it costs — even if the answer is "fix your gutters and call us if it does not improve."
+**Ready to find out what your basement actually needs?** Call us at 860-573-8760 (CT) or 617-668-1677 (MA) for a free consultation — or text us a photo of your basement problem for a quick assessment. We will tell you what we see, what it needs, and what it costs — even if the answer is "fix your gutters and call us if it does not improve." After 20+ years of foundation work across New England, we have seen every combination of water, soil, and concrete. Your basement is not a mystery to us.

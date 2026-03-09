@@ -13,11 +13,16 @@ heroImageAlt: "Spring Foundation Inspection: A 15-Minute Walkthrough"
 relatedServices:
   - "free-foundation-consultations"
   - "wall-crack-repair"
+  - "foundation-crack-injection"
+relatedPosts:
+  - "signs-of-foundation-problems"
+  - "spring-thaw-foundation-prep"
+  - "how-to-check-your-foundation"
 ---
 
 You do not need to be a foundation expert to spot foundation problems. You need a flashlight, a phone camera, 15 minutes, and the willingness to actually go look. That last part is where most homeowners fall short -- basements are not exactly inviting, and "I should check the foundation" gets pushed to next weekend indefinitely.
 
-Here is a structured walkthrough you can do right now, in about the time it takes to watch a sitcom without commercials. After 33 years of inspecting foundations across New England, this is roughly what we check (minus the specialized equipment), and you will be surprised how much you can catch on your own.
+Here is a structured walkthrough you can do right now, in about the time it takes to watch a sitcom without commercials. After 20+ years of inspecting foundations across New England, this is roughly what we check (minus the specialized equipment), and you will be surprised how much you can catch on your own.
 
 ## Before You Start: Gather Your Gear
 
@@ -54,9 +59,9 @@ If any foundation is exposed above grade, look for cracks. Vertical cracks in po
 
 ### Bulkhead Condition
 
-Check the frame and doors for gaps, rust, or deterioration. Make sure doors close tightly and the drain at the bottom is clear.
+Check the frame and doors for gaps, rust, or deterioration. Make sure doors close tightly and the drain at the bottom is clear. Look for failed bulkhead sealant or deteriorated rubber gaskets at the cold joint where the bulkhead meets your foundation.
 
-**What it means:** Bulkheads are the second most common water entry point in New England basements. A [bulkhead that does not seal properly](/services/leaky-bulkhead-repair) will let water in during every rain.
+**What it means:** Bulkheads are the second most common water entry point in New England basements. A [bulkhead that does not seal properly](/services/leaky-bulkhead-repair) will let water in during every rain. Professional bulkhead sealant injection ($1,800-$2,500) permanently fixes the cold joint — far cheaper than full replacement ($5,000-$10,000+).
 
 ### Window Wells
 
@@ -74,7 +79,7 @@ Start at one corner and work your way around every wall. Move slowly. You are lo
 
 - **Cracks.** Run your flashlight at a low angle to make cracks cast shadows. Check vertical, diagonal, and especially horizontal cracks.
 - **Water stains.** Discoloration or streaks running down the wall, indicating past water movement.
-- **Efflorescence.** White powdery deposits -- minerals left when water passes through concrete and evaporates. Fresh efflorescence is bright white; old is dull.
+- **Efflorescence.** White powder on basement walls -- minerals left when water passes through concrete and evaporates. Fresh efflorescence is bright white; old is dull.
 - **Flaking or spalling.** Concrete surface breaking away, caused by moisture freezing inside the wall.
 
 When you find a crack, mark it with pencil lines across both ends and write the date. When you check again in a few months, you will see if it has grown.
@@ -87,7 +92,7 @@ When you find a crack, mark it with pencil lines across both ends and write the 
 
 ### The Smell Test
 
-A musty or earthy smell indicates moisture even when you cannot see it. Your nose detects mold long before your eyes can spot growth.
+A musty smell in your basement indicates moisture even when you cannot see it. Your nose detects mold long before your eyes can spot growth. If you notice a persistent musty smell, water may be entering through hidden cracks in the foundation. Combined with white powder on basement walls (efflorescence), a musty smell almost always means ongoing water intrusion that needs professional attention.
 
 ### Upstairs Indicators
 
@@ -125,7 +130,7 @@ Mark these with chalk or pencil, take dated photos, and check them at least twic
 - Multiple doors sticking, new drywall cracks, or sloping floors
 - Persistent musty smell with visible moisture
 
-Red items do not necessarily mean expensive repairs. Many turn out to be straightforward [crack injection](/services/foundation-crack-injection) fixes. Some are cosmetic. A few need [wall repair](/services/wall-crack-repair) or [carbon fiber reinforcement](/services/carbon-fiber-stitches). The only way to know is to have it looked at.
+Red items do not necessarily mean expensive repairs. Many turn out to be straightforward [crack injection](/services/foundation-crack-injection) fixes at $800-$1,200 per crack. Some are cosmetic. A few need [wall repair](/services/wall-crack-repair) or [carbon fiber staples (stitches)](/services/carbon-fiber-stitches). The only way to know is to have it looked at.
 
 ## When to Call Us
 

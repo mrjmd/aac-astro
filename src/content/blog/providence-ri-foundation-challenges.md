@@ -14,6 +14,8 @@ targetLocation: Rhode Island
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
+  - "carbon-fiber-stitches"
+  - "leaky-bulkhead-repair"
 ---
 
 ## Rhode Island: Small State, Big Foundation Challenges
@@ -48,11 +50,11 @@ Move south from Providence into Warwick and Cranston, and the housing stock chan
 
 ### Poured Concrete Issues
 
-Poured concrete foundations from this era are generally solid, but they crack. They always crack. Concrete shrinks as it cures, and that shrinkage creates cracks, usually vertical or diagonal, often near corners and window wells. Most of these are cosmetic and can be sealed with [foundation crack injection](/services/foundation-crack-injection), but some indicate more serious settling.
+Poured concrete foundations from this era are generally solid, but they crack. They always crack. Concrete shrinks as it cures, and that shrinkage creates cracks through the full 8-10 inches of concrete, usually vertical or diagonal, often near corners and window wells. Most of these are cosmetic and can be sealed with [foundation crack injection](/services/foundation-crack-injection) at $800-$1,200 per crack, but some indicate more serious settling.
 
 ### Concrete Block Foundations
 
-Block foundations are common in Warwick's mid-century ranch homes. The hollow cores of concrete blocks can fill with water, and the mortar joints between blocks are natural weak points. If you see white, powdery deposits on your block foundation walls (that is efflorescence — mineral salts left behind by evaporating water), moisture is getting through.
+Block foundations are common in Warwick's mid-century ranch homes. The hollow cores of concrete blocks can fill with water, and the mortar joints between blocks are natural weak points. If you see white powder on your basement walls (that is efflorescence — mineral salts left behind by evaporating water), moisture is getting through. For walls showing structural stress, carbon fiber staples (also called carbon fiber stitches) at $200-$300 per stitch can stabilize without the bulk of steel I-beams.
 
 ### Water Table Concerns
 
@@ -74,11 +76,11 @@ Coastal communities like Warwick, East Greenwich, and Narragansett deal with wat
 
 Hurricane season is a reality for coastal Rhode Island. While a full storm surge is beyond what foundation repair can address, the repeated wetting and drying cycles from coastal flooding accelerate foundation deterioration. If your home survived a flood event, it is worth having the foundation inspected even if everything looks fine on the surface. Water may have found new pathways.
 
-## Soil Conditions Across Rhode Island
+## Glacial Till and Clay-Heavy Soil Across Rhode Island
 
-Rhode Island's geology is a patchwork. The northern part of the state sits on glacial till — a mix of clay, sand, gravel, and boulders dropped by retreating glaciers. The southern coast features more sandy soils.
+Rhode Island's geology is a patchwork shaped by glaciers retreating roughly 15,000 years ago. The northern part of the state sits on glacial till — a mix of clay, sand, gravel, and boulders dropped by retreating glaciers. The southern coast features more sandy soils.
 
-Clay-heavy soils are particularly troublesome for foundations because clay expands when wet and contracts when dry. This seasonal movement pushes and pulls against your foundation walls. Sandy soils drain well but can erode or shift, sometimes undermining footings.
+Clay-heavy soil is particularly troublesome for foundations because clay expands when wet and contracts when dry, compounded by New England's relentless freeze-thaw cycles. This seasonal movement pushes and pulls against your foundation walls. Sandy soils drain well but can erode or shift, sometimes undermining footings.
 
 The Narragansett Basin, which runs through much of eastern Rhode Island, features sedimentary rock and varied soil compositions. Homes built on this terrain can experience differential settling, where one side of the foundation sinks more than the other. You will notice this as diagonal cracks, sticking doors, or uneven floors.
 
@@ -98,6 +100,6 @@ If you own a home in Rhode Island, here is our honest advice after three decades
 
 Attack A Crack serves all of Rhode Island, from Woonsocket to Westerly. We have been repairing foundations in the Ocean State for over three decades, and we understand the specific challenges that RI geology, climate, and housing stock create.
 
-Most foundation repairs in Rhode Island are more affordable than homeowners expect. For honest pricing context, check our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026).
+Most foundation repairs in Rhode Island are more affordable than homeowners expect — crack injection runs $800-$1,200 per crack, and bulkhead repair with professional bulkhead sealant typically costs $1,800-$2,500. For honest pricing context, check our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026).
 
-Ready to find out what is going on with your foundation? Call us at 860-573-8760 or schedule a [free consultation](/services/free-foundation-consultations). We will give you straight answers — even if that answer is "your foundation is fine, stop worrying."
+Ready to find out what is going on with your foundation? Text us a photo for assessment or call us at 860-573-8760 to schedule a [free consultation](/services/free-foundation-consultations). We will give you straight answers — even if that answer is "your foundation is fine, stop worrying."

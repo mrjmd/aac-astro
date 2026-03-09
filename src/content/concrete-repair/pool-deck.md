@@ -18,9 +18,11 @@ relatedServices:
   - "walkway"
 ---
 
-## Concrete Pool Deck Repair in Massachusetts
+## Concrete Pool Deck Crack Repair in Massachusetts
 
-Your pool deck should be an inviting extension of your outdoor living space—not a cracked, stained eyesore that's too hot to walk on. Our pool deck repair and resurfacing service transforms worn concrete into a beautiful, safe, and comfortable surface.
+Your pool deck should be an inviting extension of your outdoor living space — not a cracked, stained eyesore that's too hot to walk on barefoot. Our pool deck concrete repair service fills cracks with specialized materials, then applies a cool-touch, slip-resistant overlay that transforms worn concrete into a beautiful, safe surface.
+
+**Concrete vs. cement:** Pool decks are made of concrete, not cement (cement is just one ingredient). Our repair system bonds directly to existing concrete for a permanent fix.
 
 ### Common Pool Deck Problems We Repair
 
@@ -96,9 +98,16 @@ For best results, we recommend:
 - Ensuring adequate drainage away from pool
 - Planning the project for dry weather
 
+### When NOT to Repair a Pool Deck
+
+We'll be honest about when resurfacing isn't the right answer:
+- **Severely settled sections** creating trip hazards or drainage problems — the base needs correction first
+- **Extensive structural failure** — when the concrete slab has broken into large, independent sections
+- **Active drainage issues** — water pooling toward the pool needs to be resolved before overlay
+
 ### Massachusetts Pool Deck Repair Experts
 
-We've repaired and resurfaced pool decks throughout Massachusetts, from modest residential pools to large community facilities. Our team understands the unique requirements of pool surfaces.
+We've repaired pool decks throughout Massachusetts, from modest residential pools to large community facilities. Our team understands the unique requirements of pool deck surfaces — safety, comfort, chemical resistance, and aesthetics.
 
 ### Get Your Pool Deck Quote
 

@@ -19,7 +19,7 @@ Massachusetts is not kind to concrete. Between 50+ freeze-thaw cycles per winter
 
 The result? Cracked driveways, crumbling patios, spalling pool decks, and walkways that look like they've been through a war. Sound familiar? You're not alone. Concrete damage is one of the most common home maintenance issues across the Commonwealth, and knowing when to repair versus when to replace can save you thousands of dollars.
 
-## Why Massachusetts Concrete Takes a Beating
+## Why Massachusetts Concrete Repair Is So Common
 
 Before we get into solutions, it helps to understand what you're fighting against. Massachusetts concrete faces a triple threat that most of the country doesn't deal with.
 
@@ -31,13 +31,15 @@ Water gets into the surface pores and micro-cracks in your concrete. When temper
 
 Road salt and calcium chloride are facts of life in Massachusetts. They keep roads safe, but they're terrible for concrete. Salt accelerates the freeze-thaw damage cycle by creating more frequent freezing and thawing at the surface level. It also chemically attacks the concrete paste, accelerating deterioration. Your driveway gets a double dose: salt from your own application plus salt-laden slush splashing off passing cars and snow plows.
 
-### Soil Movement
+### Glacial Till and Soil Movement
 
-Eastern Massachusetts sits on a patchwork of glacial deposits. Some areas have well-drained sandy soil; others have clay that swells when wet and shrinks when dry. The South Shore, much of MetroWest, and the Connecticut River Valley in western Mass are particularly prone to clay soil heaving that pushes concrete slabs up, cracks them, and then drops them back down unevenly.
+Eastern Massachusetts sits on a patchwork of glacial till deposits — the unsorted mix of clay, silt, sand, and gravel left behind by retreating glaciers. Some areas have well-drained sandy soil; others have clay-heavy soil that swells when wet and shrinks when dry. The South Shore, much of MetroWest, and the Connecticut River Valley in western Mass are particularly prone to clay soil heaving that pushes concrete slabs up, cracks them, and then drops them back down unevenly.
 
-## Repair vs. Replacement: The Decision Framework
+## Concrete Repair vs. Replacement: The Decision Framework
 
 This is the question that matters most, and we'll give you the straight answer: **repair if you can, replace only when you must.** Here's how to decide.
+
+**A note on cement vs. concrete:** Many people search for "cement repair" when they mean concrete. Cement is one ingredient in concrete (the powder binder). Your driveway, patio, and pool deck are concrete — and the distinction matters when selecting repair products.
 
 ### Repair Makes Sense When:
 
@@ -146,4 +148,4 @@ A few tips for hiring a concrete repair contractor in Massachusetts:
 - **Get a warranty in writing.** Any reputable contractor will stand behind their work.
 - **Don't automatically go with the cheapest bid.** The lowest price often means the thinnest materials, the least preparation, and a repair that fails in two winters.
 
-At Attack A Crack, we've been repairing concrete across Massachusetts for over three decades. Our MA office serves the greater Boston area and beyond. We offer [free consultations](/services/free-foundation-consultations) for concrete repair projects — call us at 617-668-1677 and we'll give you an honest assessment of what your concrete needs. No pressure, no upselling, just straight answers from people who've seen it all.
+At Attack A Crack, we've been repairing concrete across Massachusetts for 20+ years. Our MA office serves the greater Boston area and beyond. We offer [free consultations](/services/free-foundation-consultations) for concrete repair projects — call us at 617-668-1677 or text us a photo for a quick assessment. No pressure, no upselling, just straight answers from people who've seen it all.

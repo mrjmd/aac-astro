@@ -14,6 +14,8 @@ targetLocation: Maine
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
+  - "carbon-fiber-stitches"
+  - "leaky-bulkhead-repair"
 ---
 
 ## Where the Ocean Meets the Cold
@@ -70,9 +72,9 @@ Maine gets the most intense winter conditions in New England. That distinction h
 
 The frost line in the Portland area is approximately 48 to 60 inches below grade. That is four to five feet of frozen ground pushing against your foundation walls during the coldest months. Building codes require footings below the frost line, but many older homes were built before these codes existed. Shallow footings can heave, shift, and crack.
 
-### Ice Lensing
+### Ice Lensing in Glacial Till
 
-Ice lensing is a phenomenon where water migrates upward through soil toward the freezing front, forming layers (lenses) of ice that grow and exert tremendous upward pressure. This is distinct from simple frost heave — ice lensing can lift foundations, crack slabs, and distort walls. The silty clay soils common in parts of greater Portland are particularly susceptible to ice lensing.
+Ice lensing is a phenomenon where water migrates upward through soil toward the freezing front, forming layers (lenses) of ice that grow and exert tremendous upward pressure. This is distinct from simple frost heave — ice lensing can lift foundations, crack slabs, and distort walls. The silty clay glacial till soils common in parts of greater Portland are particularly susceptible to ice lensing. These glacial deposits — left behind by retreating ice sheets thousands of years ago — contain the fine-grained clay particles that make ice lensing most severe.
 
 ### Snow Load and Meltwater
 
@@ -84,11 +86,13 @@ Unlike southern New England, Maine foundations can remain frozen for weeks at a 
 
 ## Common Problems We See in Portland-Area Homes
 
-**Crack injection is our most common service here.** Vertical and diagonal cracks widened by freeze-thaw are straightforward [crack injection](/services/foundation-crack-injection) candidates, backed with a lifetime warranty.
+**Crack injection is our most common service here.** Vertical and diagonal cracks widened by freeze-thaw are straightforward [crack injection](/services/foundation-crack-injection) candidates at $800-$1,200 per crack — injected at approximately 100 PSI through the full 8-10 inches of concrete — backed with a lifetime warranty.
 
-**Wall cracks from lateral frost pressure.** Horizontal cracks indicate the wall is being pushed inward. [Wall crack repair](/services/wall-crack-repair) and [carbon fiber reinforcement](/services/carbon-fiber-stitches) can stabilize these walls.
+**Wall cracks from lateral frost pressure.** Horizontal cracks indicate the wall is being pushed inward. [Wall crack repair](/services/wall-crack-repair) and [carbon fiber reinforcement](/services/carbon-fiber-stitches) (also called carbon fiber staples) at $200-$300 per stitch can stabilize these walls without excavation.
 
-**Bulkhead failures.** Maine bulkheads take an absolute beating from freeze-thaw, salt, and snow load. [Leaky bulkhead repair](/services/leaky-bulkhead-repair) is a frequent request from Portland-area homeowners.
+**Bulkhead failures.** Maine bulkheads take an absolute beating from freeze-thaw, salt, and snow load. [Leaky bulkhead repair](/services/leaky-bulkhead-repair) at $1,800-$2,500, including proper bulkhead sealant, is a frequent request from Portland-area homeowners.
+
+**Pipe penetration sealing.** Where water lines, sewer connections, and other utilities enter the foundation, the original sealant deteriorates over decades. Pipe sealing runs $650-$1,000 and eliminates these common leak points.
 
 **Moisture intrusion in historic foundations.** Older Portland homes with fieldstone foundations often have chronic moisture issues that worsen as mortar deteriorates.
 
@@ -106,6 +110,6 @@ Unlike southern New England, Maine foundations can remain frozen for weeks at a 
 
 Attack A Crack serves southern Maine from Portland south. We understand the unique combination of coastal exposure and extreme winter conditions that makes this area so demanding on foundations.
 
-We offer [free foundation consultations](/services/free-foundation-consultations) throughout our service area. If you are wondering about a crack, dealing with water, or just want a professional opinion on what your foundation needs, give us a call at 860-573-8760. We will take a look and give you honest answers.
+We offer [free foundation consultations](/services/free-foundation-consultations) throughout our service area. If you are wondering about a crack, dealing with water in the basement after rain, or just want a professional opinion on what your foundation needs, give us a call at 860-573-8760 or text us a photo for a quick assessment. After 20+ years of New England foundation work, we will take a look and give you honest answers.
 
 Maine foundations earn every year they stand. Let us help yours stand for many more.

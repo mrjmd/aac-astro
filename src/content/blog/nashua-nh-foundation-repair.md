@@ -14,6 +14,8 @@ targetLocation: New Hampshire
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
+  - "carbon-fiber-stitches"
+  - "leaky-bulkhead-repair"
 ---
 
 ## The Granite State Is Not Kidding
@@ -76,11 +78,11 @@ These are the most common calls we get from NH homeowners. Vertical cracks in po
 
 ### Horizontal Cracks in Block Foundations
 
-Horizontal cracks, especially in concrete block walls, indicate lateral pressure from the soil outside. In New Hampshire, this pressure is amplified by frost heave — frozen ground pushing inward against the wall. If you see horizontal cracking, call us sooner rather than later. [Carbon fiber stitches](/services/carbon-fiber-stitches) can stabilize these walls before the damage progresses.
+Horizontal cracks, especially in concrete block walls, indicate lateral pressure from the soil outside. In New Hampshire, this pressure is amplified by frost heave — frozen ground pushing inward against the wall through clay-heavy glacial till. If you see horizontal cracking, call us sooner rather than later. Carbon fiber staples (also called [carbon fiber stitches](/services/carbon-fiber-stitches)) at $200-$300 per stitch can stabilize these walls before the damage progresses.
 
-### Bulkhead Leaks
+### Bulkhead Leaks and Bulkhead Sealant
 
-New Hampshire basements often have exterior bulkhead access, and these are notorious leak points. The bulkhead frame sits at grade level, exposed to every rainstorm, snowmelt, and freeze-thaw cycle. Deteriorated seals and rusted metal let water pour in. [Bulkhead repair](/services/leaky-bulkhead-repair) is one of our most requested services in NH.
+New Hampshire basements often have exterior bulkhead access, and these are notorious leak points. The bulkhead frame sits at grade level, exposed to every rainstorm, snowmelt, and freeze-thaw cycle. Deteriorated seals and rusted metal let water pour in — rubber gaskets simply cannot handle NH's thermal cycling. Professional bulkhead sealant injected under pressure is the permanent fix. [Bulkhead repair](/services/leaky-bulkhead-repair) at $1,800-$2,500 is one of our most requested services in NH.
 
 ### Step Cracks in Fieldstone Foundations
 
@@ -96,7 +98,9 @@ New Hampshire homeowners can take some practical steps to reduce foundation stre
 
 **Insulate your rim joist.** Where your framing meets the foundation wall is a major cold bridge in NH. Proper insulation reduces moisture problems below.
 
-**Do not wait on cracks.** In New Hampshire, one winter of freeze-thaw can turn a $500 repair into a $2,000 one. Our [cost guide](/blog/foundation-repair-cost-guide-2026) has details on pricing, and our [fall inspection checklist](/blog/fall-foundation-inspection-checklist) covers seasonal prep.
+**Do not wait on cracks.** In New Hampshire, one winter of freeze-thaw can turn an $800 crack injection into a $2,000+ structural repair. Our [cost guide](/blog/foundation-repair-cost-guide-2026) has details on pricing, and our [fall inspection checklist](/blog/fall-foundation-inspection-checklist) covers seasonal prep.
+
+**Text us a photo for assessment.** Not sure if what you see is serious? Send a photo to 860-573-8760 and we can often tell you what you are dealing with before scheduling a visit.
 
 ## Our New Hampshire Service
 

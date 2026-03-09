@@ -26,9 +26,9 @@ But summer creates its own set of foundation stresses, and ignoring them means d
 
 ## How Summer Heat Affects Your Foundation
 
-### Soil Shrinkage and Settlement
+### Clay-Heavy Soil Shrinkage and Settlement
 
-This is the big one. During extended dry periods, clay-rich soil (common across much of New England) shrinks as it loses moisture. That shrinkage creates a gap between the soil and your foundation wall. When rain finally returns, water pours directly down this gap and hits your foundation at the footing — exactly where you do not want concentrated water flow.
+This is the big one. During extended dry periods, clay-heavy soil and glacial till (common across much of New England) shrinks as it loses moisture. That shrinkage creates a gap between the soil and your foundation wall. When rain finally returns, water pours directly down this gap and hits your foundation at the footing — exactly where you do not want concentrated water flow.
 
 Even worse, if the soil shrinks unevenly around your foundation, it can cause differential settlement. One corner of your house loses support while another stays put. The result: new cracks, sticking doors, and subtle shifts that may not be obvious until they become serious.
 
@@ -75,7 +75,11 @@ Gutters clogged with spring pollen and seeds dump water right next to your found
 
 If you know about existing cracks, summer is the time to track them. Mark the ends of any cracks with a pencil line and date it. Check monthly. If a crack grows past your mark, it is active and should be evaluated before winter.
 
-New cracks that appear during summer drought often indicate soil shrinkage settlement. These should be inspected — not every crack is a crisis, but new cracks deserve professional assessment to determine if they are cosmetic or structural.
+New cracks that appear during summer drought often indicate soil shrinkage settlement. These should be inspected — a typical crack injection runs $800-$1,200 with a lifetime warranty if repair is needed. Not every crack is a crisis, but new cracks deserve professional assessment to determine if they are cosmetic or structural.
+
+### When NOT to Worry About Summer Cracks
+
+Hairline cracks (thinner than 1/16 inch) that appear during a heat wave and close back up when temperatures moderate are often thermal movement — the concrete expanding and contracting. Mark them and monitor through fall. If they stay stable and dry through the rainy season, they may not need repair at all.
 
 For help distinguishing crack types, see our guide on [vertical vs. horizontal foundation cracks](/blog/vertical-vs-horizontal-foundation-cracks).
 
@@ -123,6 +127,6 @@ The best time to repair foundation cracks is before winter, not during it. If yo
 
 Schedule an inspection in September or October. This gives you time to complete repairs before the ground freezes and the spring thaw brings water pressure against your foundation.
 
-We offer [free foundation consultations](/services/free-foundation-consultations) year-round. Call 617-668-1677 to schedule an assessment. We will evaluate your foundation, tell you what needs attention now, and what can wait — honestly.
+We offer [free foundation consultations](/services/free-foundation-consultations) year-round. Text us a photo for assessment or call 617-668-1677 to schedule an on-site inspection. We will evaluate your foundation, tell you what needs attention now, and what can wait — honestly.
 
 Summer is the cheapest time to prevent foundation problems. A few hours of maintenance now saves thousands in repair costs later.

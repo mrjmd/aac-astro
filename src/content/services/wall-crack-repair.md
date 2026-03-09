@@ -31,24 +31,25 @@ steps:
     text: "Ports are crimped, a specialized surface patch is applied for a clean finish, and we leave your basement better than we found it."
 ---
 
-## Foundation Wall Crack Repair That Lasts a Lifetime
+## Basement Wall Crack Repair That Lasts a Lifetime
 
-Cracks in your foundation walls aren't just cosmetic issues—they're pathways for water infiltration that can lead to structural damage, mold growth, and decreased home value. At Attack A Crack, we specialize in permanent wall crack repair using proven injection techniques.
+Cracks in your foundation walls aren't just cosmetic — they're pathways for water infiltration that can lead to structural damage, mold growth, and decreased home value. Whether you're seeing vertical cracks, horizontal cracks, or stair-step cracks in block foundations, Attack A Crack specializes in permanent basement wall crack repair using proven injection techniques backed by a lifetime guarantee.
 
 ### Why Foundation Walls Crack
 
-Foundation cracks develop for several reasons:
+Foundation cracks develop for several reasons, many specific to New England's geology and climate:
 
-- **Settling and shifting**: As your home settles over time, stress can cause cracks to form
-- **Hydrostatic pressure**: Water pressure from saturated soil pushes against foundation walls
-- **Freeze-thaw cycles**: New England's harsh winters cause concrete to expand and contract
-- **Tree roots**: Large trees near foundations can create pressure as roots grow
-- **Poor construction**: Inadequate curing or improper concrete mix can lead to early cracking
+- **Settling and soil movement**: Glacial till, clay-heavy soil, and fill material shift over time, creating uneven pressure on foundations
+- **Hydrostatic pressure**: Water pressure from saturated soil pushes against foundation walls — especially during spring thaw and heavy rain
+- **Freeze-thaw cycles**: New England's harsh winters cause water in concrete pores to freeze and expand, widening existing micro-cracks each year
+- **Tree roots**: Large trees near foundations create lateral pressure as roots grow against the wall
+- **Concrete shrinkage**: Natural curing shrinkage creates vertical cracks, typically within the first few years
+- **Poor construction**: Inadequate curing, improper concrete mix, or cold joints from interrupted pours
 
 ### Our Wall Crack Repair Process
 
 **1. Assessment**
-We evaluate each crack using the same techniques developed over 33+ years of foundation work. We measure crack width (concern starts at 1/4 inch), check for displacement by feeling whether one side sits further forward than the other, and sight down the wall from each corner to detect bowing. For masonry, we look for stair-step patterns in the mortar joints—a sign of structural movement. We also prod with a screwdriver to test for flaking or crumbling concrete.
+We evaluate each crack using the same techniques developed over 20+ years of foundation work. We measure crack width (concern starts at 1/4 inch), check for displacement by feeling whether one side sits further forward than the other, and sight down the wall from each corner to detect bowing. For masonry, we look for stair-step patterns in the mortar joints—a sign of structural movement. We also prod with a screwdriver to test for flaking or crumbling concrete.
 
 **2. Diamond Saw Preparation**
 Using a diamond saw blade, we grind a precise 1/2-inch wide, 1/4-inch deep groove along the crack. We install **copper injection ports** every 8-10 inches along the full crack length, sealed in place with hydraulic cement. Copper ports are stronger and more aesthetic than the plastic ports many contractors use.
@@ -75,20 +76,44 @@ Each port is crimped off. A specialized surface patch is applied over the groove
 
 Many homeowners search for "cement crack repair" or "cement foundation repair" when looking for help. While technically your foundation is made of concrete (cement is just one ingredient), the repair process is identical. Our urethane and epoxy injection methods bond directly to the concrete matrix, filling cracks completely regardless of what you call the material. If you've been searching for cement wall repair, you're in the right place.
 
-### When to Repair Foundation Cracks
+### Types of Foundation Wall Cracks
 
-Don't wait for water to pour in. Signs you need wall crack repair:
+**Vertical Cracks**
+The most common type — usually caused by concrete shrinkage or minor settling. Typically non-structural but still allow water infiltration. Most vertical cracks cost **$800-$1,200** to repair with injection.
+
+**Horizontal Cracks**
+The most serious type — indicate lateral soil pressure pushing against the wall. Horizontal cracks with bowing require immediate attention and often need carbon fiber staples or straps for stabilization in addition to injection.
+
+**Diagonal Cracks**
+Usually indicate differential settlement — one part of the foundation is settling faster than another. Often appear from corners of windows and doors.
+
+**Stair-Step Cracks**
+Found in block (CMU) and masonry foundations. Follow the mortar joints in a step pattern, indicating settlement or lateral pressure.
+
+### When to Repair Foundation Wall Cracks
+
+Don't wait for water in your basement after rain. Signs you need wall crack repair now:
 
 - Visible cracks wider than 1/8 inch
-- Water stains or efflorescence near cracks
+- Water stains or white powder on basement walls (efflorescence)
 - Active water leakage during rain
-- Cracks that appear to be growing
-- Horizontal cracks (urgent—call immediately)
+- Musty smell in basement near crack locations
+- Cracks that appear to be growing (mark them with pencil and date)
+- Horizontal cracks with any wall displacement (urgent — call immediately)
+- Basement floor cracks leaking water along the wall-floor joint
+
+### When NOT to Repair (Yet)
+
+We'll be honest about what doesn't need repair:
+- **Hairline cracks under 1/16"** with no moisture — monitor, don't repair
+- **Surface-only crazing** — cosmetic, not structural
+- **Cracks in non-structural walls** like partition walls — not a foundation issue
 
 ### The Attack A Crack Advantage
 
-- **Lifetime guarantee** on all repairs
+- **Lifetime guarantee** on all wall crack repairs
 - **Same-day response** to urgent issues
-- **Free consultations** with honest assessments
-- **33+ years** of New England foundation experience
-- **Talk to an expert**—honest assessments every time
+- **Free consultations** — text us a photo for assessment
+- **20+ years** of New England foundation experience
+- **91+ documented projects** with before/after photos
+- **Specialist focus** — crack repair is all we do, not a sideline

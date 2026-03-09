@@ -10,6 +10,7 @@ tags: ["case study", "settling crack", "water intrusion", "Massachusetts"]
 heroImage: "/images/projects/duxbury-crack-injection-2026-03-before.jpg"
 heroImageAlt: "Foundation settling crack before injection repair in basement"
 featured: false
+targetLocation: "Shrewsbury, MA"
 relatedPosts:
   - "basement-leak-framingham-case-study"
   - "leaky-bulkhead-wilmington-repair"
@@ -23,17 +24,21 @@ A homeowner in Shrewsbury discovered their finished basement had flooded due to 
 
 ## The Assessment
 
-Our team inspected the property and determined the crack posed no structural risk, though it required professional repair to prevent future water damage.
+Our team inspected the property and determined the crack posed no structural risk, though it required professional repair to prevent future water damage. The crack had been hidden behind wall paneling for years — a common problem in finished basements where homeowners cannot see warning signs like water stains, white powder on basement walls (efflorescence), or a musty smell in the basement.
 
-## The Solution
+## The Solution: Crack Injection Through Finished Walls
 
-The repair employed our [foundation crack injection](/services/foundation-crack-injection) method. The homeowner appreciated our reasonable pricing and lifetime guarantee—if the repaired crack ever leaked again, they wouldn't pay a penny for repairs.
+The repair employed our [foundation crack injection](/services/foundation-crack-injection) method, injecting polyurethane resin at 100 PSI through the full 8-10 inches of concrete from inside to outside. The typical cost for a single crack injection is $800-$1,200, and the homeowner appreciated our reasonable pricing and lifetime guarantee — if the repaired crack ever leaked again, they wouldn't pay a penny for repairs.
+
+## When NOT to Finish a Basement Without Fixing Cracks First
+
+This case highlights a critical lesson: never finish a basement without first inspecting and repairing all foundation cracks. Water in your basement after rain will find any existing crack, and once that crack is hidden behind drywall or paneling, the damage compounds silently — mold grows, wood framing rots, and what would have been a $800-$1,200 repair becomes thousands in water damage restoration.
 
 ## Peace of Mind
 
-The homeowner found reassurance knowing that future leaks caused by the same crack would be covered at no cost, including damage expenses. This is the Attack A Crack difference: we stand behind every repair for life.
+The homeowner found reassurance knowing that future leaks caused by the same crack would be covered at no cost, including damage expenses. This is the Attack A Crack difference: we stand behind every repair for life. See our [foundation repair warranty guide](/blog/foundation-repair-warranty-guide) for details on what our lifetime guarantee covers.
 
-**Have a crack in your basement?** Don't wait until it floods. Text us photos for a free assessment.
+**Have a crack in your basement?** Don't wait until it floods. Text us photos for a free assessment. With 20+ years of experience and 91+ documented projects across New England, we can diagnose the problem quickly — even through finished walls.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

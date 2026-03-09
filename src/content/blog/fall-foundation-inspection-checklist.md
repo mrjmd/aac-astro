@@ -14,6 +14,7 @@ draft: true
 relatedServices:
   - "free-foundation-consultations"
   - "foundation-crack-injection"
+  - "leaky-bulkhead-repair"
 ---
 
 ## Why Fall Is the Most Important Season for Your Foundation
@@ -46,7 +47,7 @@ Clean out leaves, debris, and standing water. If there is no drain at the bottom
 
 ### Bulkhead / Hatchway
 
-Check doors for rust, rot, or gaps. Check the seal where the frame meets the foundation wall. Look for cracks in the steps and walls. If your bulkhead leaks, our [leaky bulkhead repair service](/services/leaky-bulkhead-repair) can address it before winter makes it worse.
+Check doors for rust, rot, or gaps. Check the bulkhead sealant where the frame meets the foundation wall. Look for cracks in the steps and walls. If your bulkhead leaks, our [leaky bulkhead repair service](/services/leaky-bulkhead-repair) ($1,800-$2,500) can address it before winter makes it worse — including proper bulkhead sealant application at all joints.
 
 ## Interior Checklist
 
@@ -56,7 +57,7 @@ Head inside with a good flashlight and walk the entire basement perimeter.
 
 **Cracks:** If you have been monitoring cracks (a pencil mark at the crack tip with a date is the simplest method), check for growth. Measure widths with a tape.
 
-**Water signs:** Efflorescence, damp spots, or staining mean moisture is moving through the wall. Note whether it corresponds to a visible crack.
+**Water signs:** Efflorescence (white powder on basement walls), damp spots, or staining mean moisture is moving through the wall. Note whether it corresponds to a visible crack.
 
 **Bowing or leaning:** Hold a straight edge against the wall vertically. More than half an inch of inward lean warrants professional assessment.
 
@@ -90,8 +91,8 @@ After the rain, check your basement for new moisture. Water appearing during rai
 - Fix grading problems with topsoil
 
 ### Fix This Month
-- Seal visible cracks — for a permanent fix, [professional injection](/services/foundation-crack-injection) is the way to go
-- Repair leaky bulkhead seals
+- Seal visible cracks — for a permanent fix, [professional injection](/services/foundation-crack-injection) ($800-$1,200 per crack) is the way to go
+- Repair leaky bulkhead seals with proper bulkhead sealant
 - Test and service the sump pump
 - Seal rim joist gaps
 
@@ -106,4 +107,4 @@ Foundation repair contractors in New England get busy in fall. Everyone who watc
 
 Ground temperatures need to be above about 40 degrees for injection materials to cure properly — meaning work should ideally be completed by mid-November in southern New England, earlier in New Hampshire and Maine.
 
-We offer [free consultations](/services/free-foundation-consultations) and can usually get out within a week or two. Call 860-573-8760 in Connecticut or 617-668-1677 in Massachusetts. The one hour this inspection takes is the best investment you can make in your foundation before winter.
+We offer [free consultations](/services/free-foundation-consultations) and can usually get out within a week or two. Call 860-573-8760 in Connecticut or 617-668-1677 in Massachusetts — or text us a photo of any concerning cracks for a quick assessment. After 20+ years of New England foundation work, the one hour this inspection takes is the best investment you can make in your foundation before winter.

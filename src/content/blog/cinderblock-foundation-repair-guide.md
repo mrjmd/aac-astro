@@ -17,6 +17,11 @@ heroImageAlt: "Cinderblock foundation wall after professional crack repair in Ma
 relatedServices:
   - "wall-crack-repair"
   - "carbon-fiber-stitches"
+  - "free-foundation-consultations"
+relatedPosts:
+  - "horizontal-foundation-cracks"
+  - "bowing-basement-walls-causes-repair"
+  - "foundation-repair-cost-guide-2026"
 ---
 
 ## Understanding Cinderblock Foundations
@@ -52,7 +57,7 @@ Understanding the difference helps explain why block foundations fail differentl
 
 The most concerning issue in block foundations. Horizontal cracks indicate:
 - Soil pressure exceeding wall capacity
-- Freeze-thaw expansion pushing inward
+- Freeze-thaw cycle expansion pushing inward (especially in clay-heavy soil and glacial till)
 - Potential for progressive failure if untreated
 
 *Location matters:* Cracks near the middle of the wall are most serious, as this is where bending stress peaks.
@@ -84,13 +89,13 @@ Block foundations are particularly susceptible to water problems because:
 
 ### Our Cinderblock Repair Methods
 
-**Carbon Fiber Reinforcement**
+**Carbon Fiber Staples (Stitches) for Block Wall Reinforcement**
 
 For walls with cracking but minimal bowing (under 2"):
-- Carbon fiber straps bonded to wall surface
-- Extremely high tensile strength
-- Low profile—doesn't reduce basement space
-- Prevents further movement
+- [Carbon fiber staples (straps)](/services/carbon-fiber-stitches) bonded to wall surface at $200-$300 per stitch
+- Extremely high tensile strength — 10x stronger than steel by weight
+- Low profile — doesn't reduce basement space
+- Prevents further movement permanently
 - Lifetime transferable warranty available
 
 **Steel I-Beam Systems**
@@ -111,10 +116,10 @@ For bowing walls with accessible exterior yard space:
 
 **Crack Repair and Waterproofing**
 
-For water infiltration:
-- Crack injection with epoxy or polyurethane
+For water infiltration — if you notice water in your basement after rain, white powder on basement walls, or a musty smell in your basement:
+- [Crack injection](/services/foundation-crack-injection) with epoxy or polyurethane at 100 PSI ($800-$1,200 per crack)
 - Mortar joint restoration
-- Interior drainage systems
+- Interior drainage systems for high water table conditions
 - Core sealing where appropriate
 
 ### When to Act
@@ -142,4 +147,4 @@ If your cinderblock foundation shows signs of stress, contact us for a free eval
 
 **Connecticut & Massachusetts:** 617-668-1677
 
-We'll assess the severity, explain your options, and provide honest recommendations.
+Text us a photo for a quick preliminary assessment, or call to schedule. With 20+ years of experience and 91+ documented projects across New England, we'll assess the severity, explain your options, and provide honest recommendations. See our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) for complete pricing details.

@@ -33,7 +33,7 @@ Foundation issues frequently emerge during home inspections, potentially causing
 
 ## The Lifetime Guarantee Advantage
 
-A critical differentiator we discussed was our lifetime guarantee. This commitment extends beyond the initial repair throughout the home's lifespan, even transferring to subsequent owners. This assurance provides long-term confidence in real estate investments.
+A critical differentiator we discussed was our lifetime guarantee. This commitment extends beyond the initial repair throughout the home's lifespan, even transferring to subsequent owners. This assurance provides long-term confidence in real estate investments. Read more about what our [warranty covers](/blog/foundation-repair-warranty-guide).
 
 ## For Real Estate Professionals
 

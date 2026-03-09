@@ -17,6 +17,7 @@ relatedServices:
   - "free-foundation-consultations"
   - "wall-crack-repair"
   - "foundation-crack-injection"
+  - "sewer-well-conduit-line-repair"
 heroImage: "/images/projects/milton-crack-injection-2026-03-before.jpg"
 heroImageAlt: "Foundation wall being diagnosed for cracks"
 ---
@@ -29,7 +30,7 @@ I want to walk you through our exact diagnostic process. Not because I want you 
 
 Here's something most homeowners don't expect: **with Attack A Crack, the first visit is often the repair visit too.** When you call about a single crack or a leaking bulkhead, I'll bring everything I need to diagnose the problem and fix it on the spot if appropriate.
 
-This saves you a second appointment, a second day off work, and weeks of waiting with water in your basement. It's one of the advantages of working with a crew that's done this for 33+ years — we can assess and act in the same visit because we've seen every scenario.
+This saves you a second appointment, a second day off work, and weeks of waiting with water in your basement. It's one of the advantages of working with a crew that's done this for 20+ years — we can assess and act in the same visit because we've seen every scenario.
 
 But not every problem gets fixed on the first visit. Complex structural issues, multiple cracks, or situations requiring specialized materials may need a dedicated repair appointment. The inspection always comes first, and here's how it works.
 
@@ -51,8 +52,8 @@ I also look at:
 
 On homes where the foundation is visible above grade, I'm looking for:
 - **Surface cracks**: Their direction, width, and pattern
-- **Efflorescence**: White mineral deposits that indicate water is migrating through the concrete
-- **Spalling**: Surface flaking that suggests freeze-thaw damage or poor concrete mix
+- **Efflorescence**: White powder on basement walls — mineral deposits that indicate water is migrating through the concrete
+- **Spalling**: Surface flaking that suggests freeze-thaw cycle damage or poor concrete mix
 - **Previous repairs**: Patching, parging, or sealant that indicates past problems
 
 ### Bulkhead Condition
@@ -142,7 +143,7 @@ Many hairline vertical cracks, especially in poured foundations less than 20 yea
 
 ### "This Needs Repair but Isn't Urgent"
 
-Cracks that are leaking intermittently, showing efflorescence, or wider than 1/8 inch need attention — but you have time to schedule it. I'll explain the repair method ([crack injection](/services/foundation-crack-injection) for most wall cracks) and give you a clear quote.
+Cracks that are leaking intermittently, showing efflorescence, or wider than 1/8 inch need attention — but you have time to schedule it. I'll explain the repair method ([crack injection](/services/foundation-crack-injection) at $800-$1,200 per crack for most wall cracks) and give you a clear quote. See our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) for detailed pricing on every repair type.
 
 ### "This Needs Repair Soon"
 
@@ -150,7 +151,7 @@ Active leaks, cracks wider than 1/4 inch, any displacement, horizontal cracking,
 
 ### "This Is Structural — Let's Talk Options"
 
-Significant bowing, multiple horizontal cracks with displacement, or severely deteriorated walls may need [carbon fiber reinforcement](/services/carbon-fiber-stitches) or [full wall stabilization](/services/wall-crack-repair). For these situations, I'll walk you through options, timeline, and costs so you can make an informed decision.
+Significant bowing, multiple horizontal cracks with displacement, or severely deteriorated walls may need [carbon fiber staples (stitches)](/services/carbon-fiber-stitches) at $200-$300 per stitch or [full wall stabilization](/services/wall-crack-repair). For these situations, I'll walk you through options, timeline, and costs so you can make an informed decision. Our [bowing basement walls guide](/blog/bowing-basement-walls-causes-repair) covers this in detail.
 
 ## What We Don't Do
 
@@ -165,7 +166,7 @@ Transparency matters, so here's what you won't get from our inspection:
 
 Our [free foundation consultations](/services/free-foundation-consultations) are available across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine. There's no obligation, no high-pressure sales pitch — just an honest assessment from someone who's been doing this for over three decades.
 
-Call us at **(860) 573-8760** (CT) or **(617) 668-1677** (MA) to schedule.
+Call us at **(860) 573-8760** (CT) or **(617) 668-1677** (MA) to schedule. You can also text us a photo for a quick preliminary assessment.
 
 ## Frequently Asked Questions
 

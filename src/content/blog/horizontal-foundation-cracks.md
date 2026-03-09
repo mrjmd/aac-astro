@@ -38,7 +38,7 @@ This is the big one for New England homeowners. When water-saturated soil freeze
 
 ### Clay Soils
 
-Much of Connecticut and western Massachusetts sits on clay-heavy soil. Clay absorbs water and swells significantly — sometimes expanding 10% or more in volume. When it dries, it shrinks. This constant swell-shrink cycle creates relentless pressure on your foundation walls.
+Much of Connecticut and western Massachusetts sits on clay-heavy soil left by glacial till deposits. Clay absorbs water and swells significantly — sometimes expanding 10% or more in volume. When it dries, it shrinks. This constant swell-shrink cycle creates relentless pressure on your foundation walls.
 
 ### Backfill Settlement
 
@@ -85,9 +85,9 @@ Not every horizontal crack requires emergency intervention, but all of them need
 
 The right repair depends on severity. Here's what we use at Attack A Crack, starting with the most common solutions.
 
-### Carbon Fiber Reinforcement
+### Carbon Fiber Staples (Stitches) for Structural Reinforcement
 
-For walls with mild to moderate displacement, [carbon fiber stitches](/services/carbon-fiber-stitches) are the gold standard. Here's why:
+For walls with mild to moderate displacement, [carbon fiber staples (stitches)](/services/carbon-fiber-stitches) are the gold standard. Here's why:
 
 - **Stronger than steel**: Carbon fiber has a tensile strength 10 times greater than steel
 - **Low profile**: Strips bond directly to the wall surface, so they don't take up basement space
@@ -96,13 +96,13 @@ For walls with mild to moderate displacement, [carbon fiber stitches](/services/
 
 We apply carbon fiber straps vertically across the horizontal crack at regular intervals. Each strap is bonded to the wall with structural epoxy, creating a reinforcement system that permanently stabilizes the wall.
 
-Carbon fiber stitches typically run $200-$300 per stitch location, making this one of the most cost-effective structural repairs available.
+Carbon fiber staples typically run $200-$300 per stitch location, making this one of the most cost-effective structural repairs available.
 
-### Epoxy Injection
+### Epoxy Crack Injection at 100 PSI
 
-Once the wall is stabilized, we seal the crack itself using [professional crack injection](/services/wall-crack-repair). For structural horizontal cracks, we typically use epoxy rather than polyurethane because epoxy creates a bond stronger than the original concrete.
+Once the wall is stabilized, we seal the crack itself using [professional crack injection](/services/wall-crack-repair). For structural horizontal cracks, we typically use epoxy rather than polyurethane because epoxy creates a bond stronger than the original concrete. We inject at 100 PSI — far above industry standard — to ensure complete penetration.
 
-The injection fills the entire crack path — from the interior surface through the full 8-10 inch wall thickness to the exterior. This does two things:
+The injection fills the entire crack path — from the interior surface through the full 8-10 inches of concrete wall thickness to the exterior. This does two things:
 
 1. **Seals out water** completely
 2. **Restores structural continuity** to the wall
@@ -120,7 +120,7 @@ These are more invasive and expensive repairs ($5,000-$15,000+), which is exactl
 
 ## The New England Factor
 
-Living in New England means your foundation faces 100+ freeze-thaw cycles per year, heavy spring rainfall saturating soil as it thaws, clay-heavy soils in the Connecticut River Valley, and an older housing stock with many foundations built before modern standards. These factors don't mean your foundation is doomed — they mean being proactive about monitoring and early repair is essential.
+Living in New England means your foundation faces 100+ freeze-thaw cycles per year, heavy spring rainfall saturating soil as it thaws, clay-heavy soils and glacial till in the Connecticut River Valley, rising water table levels in spring, and an older housing stock with many foundations built before modern standards. These factors don't mean your foundation is doomed — they mean being proactive about monitoring and early repair is essential.
 
 ## Prevention: Reducing Pressure on Your Foundation
 
@@ -140,7 +140,7 @@ A proper assessment includes visual inspection of all walls, measurement of disp
 
 ## The Bottom Line
 
-Horizontal foundation cracks are serious, but they're also repairable — especially when caught early. If you're seeing horizontal cracking in your Connecticut home, don't wait for the next freeze-thaw season to make it worse.
+Horizontal foundation cracks are serious, but they're also repairable — especially when caught early. With 91+ documented projects across New England (see our [before/after project photos](/projects)), we have repaired horizontal cracks in every severity. If you're seeing horizontal cracking in your New England home, don't wait for the next freeze-thaw season to make it worse.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

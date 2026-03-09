@@ -10,10 +10,13 @@ tags: ["basement waterproofing", "winterization", "freeze protection", "water in
 heroImage: "/images/projects/rockland-crack-injection-2025-08-before.jpg"
 heroImageAlt: "Waterproofing Your Basement Before the First Freeze: A Practical Guide"
 draft: true
+targetLocation: "New England"
 
 relatedServices:
   - "foundation-crack-injection"
   - "leaky-bulkhead-repair"
+  - "wall-crack-repair"
+  - "carbon-fiber-stitches"
 ---
 
 ## What "Waterproofing" Actually Means
@@ -24,7 +27,7 @@ Here is what it actually means: keeping water out of your basement. The question
 
 ## The Winter Water Problem
 
-Winter creates unique challenges for New England basements. When the top soil layer freezes (12 to 36 inches deep in southern New England, deeper up north), it becomes impermeable — rainfall and snowmelt run across the frozen surface and concentrate against your foundation. Snow piled against the house melts during warm spells and delivers water straight to your concrete. Ice dams cause gutter overflow that pools at the foundation. And as we cover in our post on [foundation crack repair before winter](/blog/foundation-crack-repair-before-winter), freeze-thaw cycles turn small cracks into big ones.
+Winter creates unique challenges for New England basements. When the top layer of clay-heavy glacial till freezes (12 to 36 inches deep in southern New England, up to 48 inches in New Hampshire), it becomes impermeable — rainfall and snowmelt run across the frozen surface and concentrate against your foundation. Snow piled against the house melts during warm spells and delivers water straight to your concrete. Ice dams cause gutter overflow that pools at the foundation. And as we cover in our post on [foundation crack repair before winter](/blog/foundation-crack-repair-before-winter), freeze-thaw cycles turn small cracks into big ones.
 
 ## DIY Steps: Do These First
 

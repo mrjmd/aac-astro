@@ -17,9 +17,9 @@ relatedServices:
 
 Crumbling concrete stairs are one of those problems that starts small and becomes urgent fast. A chipped edge becomes a crumbling corner, which becomes a missing chunk, which becomes the thing your mail carrier trips over before you get a letter from their lawyer. We're only half kidding — concrete stair damage is a genuine safety and liability issue, and in Massachusetts, it's everywhere.
 
-The combination of brutal freeze-thaw cycles, decades of de-icing salt, and concrete that was often poured without air entrainment (a mix additive that improves freeze-thaw resistance) means that stair damage is one of the most common concrete problems we see across the Commonwealth. The good news? Most concrete stair repairs are affordable, and understanding your options helps you make the right call.
+The combination of brutal freeze-thaw cycles (50 to 80 per winter), decades of de-icing salt, and concrete that was often poured without air entrainment (a mix additive that improves freeze-thaw resistance) means that stair damage is one of the most common concrete repair problems we see across the Commonwealth. The good news? Most concrete stair repairs are affordable, and understanding your options helps you make the right call.
 
-## Concrete Stair Repair Cost Ranges
+## Concrete Stair Repair Cost Breakdown (2026 Prices)
 
 Let's start with the numbers. Here's what concrete stair repair typically costs in Massachusetts in 2026:
 
@@ -137,9 +137,9 @@ Here's what we actually do when we fix concrete stairs, ranked from least to mos
 
 **Durability:** 30-50+ years with proper mix design, air entrainment, and maintenance.
 
-## When to Repair vs. When to Replace
+## When to Repair vs. When to Replace Concrete Stairs
 
-Here's the decision framework we use:
+Here's the decision framework we use after 20+ years of concrete work:
 
 **Repair when:**
 - Damage is limited to 1-2 steps
@@ -153,6 +153,8 @@ Here's the decision framework we use:
 - The stairs don't meet code and reconfiguration is needed
 - The footing is compromised or undermined
 - Previous patch repairs have failed
+
+**When NOT to repair stairs:** If the concrete crumbles when you chip at it with a hammer, or if rebar is visibly corroded and expanding, surface patching will not hold. The underlying concrete has lost its structural integrity and needs replacement, not cosmetic repair. Spending $500 on a patch over deteriorated concrete is $500 wasted.
 
 For the broader repair-vs-replace decision for other concrete surfaces, our [driveway crack repair guide](/blog/driveway-crack-repair-guide) and [pool deck crack repair guide](/blog/pool-deck-crack-repair-guide) apply similar logic.
 
@@ -185,4 +187,4 @@ If your Massachusetts concrete stairs need attention — whether it's a minor pa
 
 No pressure, no upselling. If your stairs just need a $20 bag of patching compound and some elbow grease, we'll tell you that. If they need professional repair, we'll tell you exactly what's involved and what it costs.
 
-Call our Massachusetts office at 617-668-1677 to schedule. We serve the greater Boston area, South Shore, MetroWest, Worcester area, and throughout the Commonwealth. Your stairs have been crumbling long enough — let's fix them before someone gets hurt.
+Call our Massachusetts office at 617-668-1677 or text us a photo of your stairs for an initial assessment. We serve the greater Boston area, South Shore, MetroWest, Worcester area, and throughout the Commonwealth. Your stairs have been crumbling long enough — let's fix them before someone gets hurt.

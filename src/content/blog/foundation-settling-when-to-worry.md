@@ -22,7 +22,7 @@ heroImageAlt: "Foundation settling crack in basement wall"
 
 "Your house is just settling." It's the most common reassurance homeowners hear. And sometimes it's accurate — every house settles, especially in the first few years.
 
-But here's what I've learned in over a decade of foundation repair across Connecticut: **"settling" is also the excuse that lets small problems become expensive ones.** The trick is knowing the difference.
+But here's what I've learned in over a decade of foundation repair across Connecticut and Massachusetts: **"settling" is also the excuse that lets small problems become expensive ones.** The trick is knowing the difference.
 
 ## What Is Normal Foundation Settling?
 
@@ -55,7 +55,7 @@ When soil freezes, water expands and lifts the ground — sometimes by several i
 
 **Clay Soil Expansion and Contraction**
 
-The Connecticut River Valley and much of central Massachusetts sit on clay-heavy soil. Clay expands significantly when wet (up to 10% in volume) and shrinks when dry. This constant cycle of uplift and settlement is relentless — and the soil can pull away from the foundation during dry periods, creating gaps that fill with water during rain.
+The Connecticut River Valley and much of central Massachusetts sit on clay-heavy soil deposited as glacial till. Clay expands significantly when wet (up to 10% in volume) and shrinks when dry. This constant cycle of uplift and settlement is relentless — and the soil can pull away from the foundation during dry periods, creating gaps that fill with water during rain.
 
 **Poor Drainage**
 
@@ -97,7 +97,7 @@ Diagonal cracks at 45 degrees radiating from window and door corners indicate sh
 
 Any crack in your foundation wider than a quarter inch indicates significant movement. At this width, the crack is also likely allowing water infiltration, which accelerates further damage.
 
-**What to do:** [Professional crack injection](/services/foundation-crack-injection) fills and seals the crack permanently. For wider cracks with structural implications, [carbon fiber reinforcement](/services/carbon-fiber-stitches) may be needed. A typical crack repair runs $800-$1,200.
+**What to do:** [Professional crack injection](/services/foundation-crack-injection) at 100 PSI fills and seals the crack permanently through the full 8-10 inches of concrete wall. For wider cracks with structural implications, [carbon fiber staples (stitches)](/services/carbon-fiber-stitches) at $200-$300 per stitch may be needed. A typical crack repair runs $800-$1,200. See our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) for complete pricing.
 
 ## Why Waiting Makes It Worse
 
@@ -122,7 +122,7 @@ Get a professional foundation evaluation if:
 - **Your home is older than 50 years** and you've never had the foundation assessed
 - **You're buying or selling** a home and want an honest evaluation
 
-At Attack A Crack, we provide free, no-pressure consultations. We'll tell you honestly whether your foundation needs repair or whether what you're seeing is normal settling.
+At Attack A Crack, we provide [free, no-pressure consultations](/services/free-foundation-consultations). With 20+ years of experience and 91+ documented projects across New England, we'll tell you honestly whether your foundation needs repair or whether what you're seeing is normal settling.
 
 ## The Bottom Line
 
@@ -131,4 +131,4 @@ Some settling is normal. Some is the beginning of an expensive problem. The diff
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677
 
-Text us photos and we'll give you an honest preliminary read. If it looks like normal settling, we'll tell you that — and save you the worry.
+Text us a photo for assessment and we'll give you an honest preliminary read. If it looks like normal settling, we'll tell you that — and save you the worry.

@@ -9,7 +9,6 @@ category: "guides"
 tags: ["carbon fiber", "carbon fiber staples", "structural repair", "foundation cracks", "wall stabilization"]
 heroImage: "/images/projects/weymouth-carbon-fiber-2025-08-before.jpg"
 heroImageAlt: "Carbon fiber structural reinforcement on a foundation wall"
-draft: true
 featured: false
 relatedPosts:
   - "carbon-fiber-foundation-repair-guide"
@@ -38,11 +37,13 @@ Think of a carbon fiber staple as a heavy-duty bridge across a crack. We carve a
 
 **High tensile strength.** Carbon fiber is stronger than steel but much thinner, meaning we can reinforce your wall without creating a massive eyesore.
 
-**Deep anchoring.** Staples are designed to tie the two sections of the wall back together, preventing the crack from widening.
+**Deep anchoring.** Carbon fiber staples are designed to tie the two sections of the wall back together, preventing the crack from widening.
 
 **Low profile.** Once installed and covered with a finishing coat, you can barely see them. You can paint right over them.
 
-Staples work best for localized cracks that have not caused significant wall movement. They hold the crack together and prevent it from opening further.
+**Cost-effective.** At $200-$300 per carbon fiber stitch, staples are one of the most affordable structural reinforcements available.
+
+Staples work best for localized cracks that have not caused significant wall movement. They hold the crack together and prevent it from opening further — especially important in areas with clay-heavy glacial till where freeze-thaw cycles put constant pressure on walls.
 
 ## What Are Carbon Fiber Stitches?
 
@@ -62,9 +63,9 @@ Here is a quick decision guide:
 
 | Situation | Recommended Fix |
 |---|---|
-| Single horizontal crack, no bowing | Carbon fiber staples |
-| Multiple cracks, minimal movement | Staples at each crack |
-| Wall bowing less than 1 inch | Carbon fiber stitching straps |
+| Single horizontal crack, no bowing | Carbon fiber staples ($200-$300/stitch) |
+| Multiple cracks, minimal movement | Staples at each crack ($200-$300/stitch) |
+| Wall bowing less than 1 inch | Carbon fiber stitching straps ($800-$1,500/strap) |
 | Wall bowing more than 1 inch | Full strap system, possible tieback anchors |
 | Active displacement with shifting | Structural engineering assessment first |
 
@@ -74,8 +75,10 @@ In the old days, contractors used heavy steel I-beams to brace walls back into p
 
 Carbon fiber offers a no-profile alternative. It does not stretch, it does not rust, and it provides a permanent structural fix that is virtually invisible once finished. A carbon fiber strap is about as thick as a credit card but stronger than a steel beam of equivalent cross-section in tension.
 
-## Do Not Wait on Horizontal Cracks
+## When NOT to Use Carbon Fiber (and When You Must Act)
+
+Carbon fiber staples and stitches are not a substitute for structural engineering when walls have displaced more than 2 inches. If you can see daylight between the wall and the sill plate, or if the wall has buckled rather than bowed, you need an engineer before any reinforcement is applied.
 
 The biggest mistake homeowners make with horizontal cracks is waiting. A horizontal crack is a wall that is actively under stress. Every time the ground freezes and thaws, that wall moves a fraction of an inch more. What starts as a crack that needs staples can become a wall that needs a full reinforcement system — or worse, excavation and rebuilding.
 
-If you have a horizontal crack, get it assessed. Schedule a [free consultation](/services/free-foundation-consultations) and we will tell you exactly what level of reinforcement your wall needs.
+If you have a horizontal crack, get it assessed. Text us a photo for assessment at 617-668-1677 — we can often determine whether you need staples, straps, or an engineer from a photo. Or schedule a [free consultation](/services/free-foundation-consultations) and we will tell you exactly what level of reinforcement your wall needs.

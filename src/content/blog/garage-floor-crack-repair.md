@@ -14,11 +14,12 @@ draft: true
 relatedServices:
   - "free-foundation-consultations"
   - "foundation-crack-injection"
+  - "carbon-fiber-stitches"
 ---
 
 ## Why Garage Floors Crack in New England
 
-If you have a garage in New England, you have garage floor cracks. That is not pessimism — it is concrete science combined with a climate famous for frost heave, clay soils, and temperature swings from negative 10 to 95 degrees Fahrenheit.
+If you have a garage in New England, you have garage floor cracks. That is not pessimism — it is concrete science combined with a climate famous for frost heave, clay-heavy glacial till soils, and temperature swings from negative 10 to 95 degrees Fahrenheit.
 
 Not all garage floor cracks are created equal. Some are completely normal. Others are telling you something important about what is happening underneath. The trick is knowing which is which.
 
@@ -32,7 +33,7 @@ Concrete is going to crack. It is not a matter of if but when and where.
 
 **Settlement:** Soil disturbed during construction compacts unevenly over time, creating voids beneath the slab. The rigid concrete cracks where it loses support.
 
-**Heavy loads:** Your car sits on the same spots every day, concentrating 3,000 to 5,000 pounds on a slab that is typically only 4 inches thick.
+**Heavy loads:** Your car sits on the same spots every day, concentrating 3,000 to 5,000 pounds on a slab that is typically only 4 inches thick — compared to 8-10 inches of concrete in a typical foundation wall.
 
 ## Types of Cracks: Cosmetic vs. Concerning
 
@@ -64,7 +65,7 @@ For cosmetic cracks — hairlines, stable surface cracks, cracks inside control 
 
 **Active settlement or heaving:** If slab sections are sinking, rising, or tilting, the problem is beneath the slab. Professional options include mudjacking (pumping slurry beneath the slab) or polyurethane foam injection to lift settled sections and fill voids.
 
-**Cracks connecting to foundation walls:** If a garage floor crack extends into a foundation wall, you may have a foundation issue. This is especially true if the wall crack shows widening or water intrusion — the foundation crack needs [assessment and potential injection](/services/foundation-crack-injection). See our guide on [signs of foundation problems](/blog/signs-of-foundation-problems).
+**Cracks connecting to foundation walls:** If a garage floor crack extends into a foundation wall, you may have a foundation issue. This is especially true if the wall crack shows widening or water intrusion — the foundation crack needs [assessment and potential injection](/services/foundation-crack-injection) ($800-$1,200 per crack). For structural cracks, [carbon fiber stitches](/services/carbon-fiber-stitches) (also known as carbon fiber staples) at $200-$300 per stitch can prevent further movement. See our guide on [signs of foundation problems](/blog/signs-of-foundation-problems).
 
 **Widespread deterioration:** If the slab is crumbling or badly heaved in multiple spots, a new slab may be most cost-effective. Typically $3,000 to $6,000 for a two-car garage.
 
@@ -91,4 +92,6 @@ For cosmetic cracks — hairlines, stable surface cracks, cracks inside control 
 
 Most garage floor cracks in New England are cosmetic — the natural consequence of concrete in a harsh climate. A tube of crack filler and attention to drainage handle the majority of situations.
 
-But if your slab is moving, sinking, heaving, or cracking into the foundation walls, do not ignore it. [Schedule a free consultation](/services/free-foundation-consultations) and let us take a look. The inspection costs nothing, and knowing what you are dealing with beats guessing every time.
+**When NOT to DIY garage floor cracks:** If you see basement floor cracks leaking water, cracks with one side higher than the other, or cracks that extend into the foundation walls, surface fillers will not address the underlying problem. These need professional assessment.
+
+If your slab is moving, sinking, heaving, or cracking into the foundation walls, do not ignore it. [Schedule a free consultation](/services/free-foundation-consultations) or text us a photo for a quick assessment. After 20+ years across New England, the inspection costs nothing and knowing what you are dealing with beats guessing every time.

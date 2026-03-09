@@ -19,9 +19,11 @@ relatedServices:
   - "stairway"
 ---
 
-## Garage Floor Repair in Massachusetts
+## Garage Floor Concrete Crack Repair in Massachusetts
 
-Your garage floor endures chemical spills, road salt, hot tires, heavy impacts, and constant abuse. Over time, even quality concrete develops cracks, pits, and stains that make your garage look neglected. Our garage floor repair and resurfacing transforms your garage from eyesore to showpiece.
+Your garage floor endures chemical spills, road salt, hot tires, heavy impacts, and constant abuse. Over time, even quality concrete develops cracks, pits, and surface damage. Our garage floor concrete repair addresses the underlying damage first — filling cracks with epoxy resin or hybrid polyurethane — then applies a professional-grade protective finish.
+
+**Concrete vs. cement:** Most homeowners say "cement floor" when they mean "concrete floor." Cement is just one ingredient in concrete (like flour in bread). Your garage floor is concrete, and our repair process bonds directly to the existing concrete matrix.
 
 ### The Problem with Garage Floors
 
@@ -97,7 +99,14 @@ Industrial-grade finish with exceptional durability. Excellent for high-use gara
 
 ### What About Cracks?
 
-Existing cracks are filled and repaired before the overlay is applied. Hairline cracks and minor surface damage are fully addressed. Severe structural cracks may show through over time—we'll assess and advise during your consultation.
+Existing cracks are filled with epoxy resin or liquid polyurethane before the overlay is applied. Hairline cracks and minor surface damage are fully addressed during the preparation phase. Severe structural cracks may telegraph through over time — we'll assess honestly and advise during your free consultation.
+
+### When NOT to Resurface
+
+We'll tell you when resurfacing isn't the right answer:
+- **Severely heaved slabs** — may need mudjacking or replacement first
+- **Active water infiltration through floor cracks** — a foundation drainage issue, not a surface problem
+- **Heavily oil-saturated concrete** — may prevent proper bonding
 
 ### Massachusetts Service
 

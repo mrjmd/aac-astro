@@ -51,9 +51,9 @@ Homes built quickly (looking at you, mid-century housing booms) are particularly
 
 Large trees growing near foundations can exert root pressure against walls. More commonly, tree roots dry out soil unevenly, causing the soil to shrink and swell in ways that stress the wall.
 
-### Expansive Clay Soil
+### Expansive Clay Soil and Glacial Till
 
-While less common in New England than in the Midwest, some areas do have clay-heavy soil that swells significantly when wet and shrinks when dry. This cyclical expansion and contraction is brutal on foundation walls.
+While less common in New England than in the Midwest, some areas — particularly the Connecticut River Valley — do have clay-heavy soil and glacial till deposits that swell significantly when wet and shrink when dry. This cyclical expansion and contraction is brutal on foundation walls.
 
 ## Assessing Severity: How Bad Is It?
 
@@ -91,7 +91,7 @@ For help identifying crack patterns associated with bowing, our guide on [vertic
 
 **Best for:** Early to moderate bowing (up to approximately 2 inches)
 
-**How it works:** High-strength [carbon fiber straps](/services/carbon-fiber-stitches) are bonded vertically to the wall using structural epoxy. The carbon fiber is stronger than steel by weight and arrests further inward movement.
+**How it works:** High-strength [carbon fiber staples (straps)](/services/carbon-fiber-stitches) are bonded vertically to the wall using structural epoxy. Carbon fiber has a tensile strength of 800,000 PSI — roughly 10x stronger than steel — and permanently arrests further inward movement.
 
 **Pros:**
 - Minimal disruption (installed from inside the basement)
@@ -159,7 +159,7 @@ For help identifying crack patterns associated with bowing, our guide on [vertic
 - Landscaping, driveway, or patio removal and replacement
 - Takes weeks, not days
 
-**Cost range:** $20,000 - $50,000+. This is rarely necessary. In 33 years of foundation work, the vast majority of bowing walls we see can be stabilized with less invasive methods.
+**Cost range:** $20,000 - $50,000+. This is rarely necessary. In 20+ years of foundation work, the vast majority of bowing walls we see can be stabilized with less invasive methods.
 
 ## Prevention: Reducing the Pressure
 

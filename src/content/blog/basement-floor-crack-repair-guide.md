@@ -8,8 +8,7 @@ author: "Luc Richard"
 category: "guides"
 tags: ["floor crack repair", "basement floor", "concrete repair", "basement cracks", "radon"]
 heroImage: "/images/projects/kingston-crack-injection-2026-01-before.jpg"
-heroImageAlt: "Basement floor crack before professional injection repair"
-draft: true
+heroImageAlt: "Basement floor crack before professional repair"
 featured: false
 relatedPosts:
   - "basement-floor-cracks-leaking"
@@ -28,7 +27,9 @@ If you have a crack in your basement floor, you are essentially living above a p
 
 For floor cracks that are actively leaking water, see our guide on [basement floor cracks leaking water](/blog/basement-floor-cracks-leaking) for immediate steps.
 
-## Why Basement Floors Crack
+## Why Basement Floors Crack: Understanding Concrete vs. Cement
+
+First, a quick note: when people say "cement floor," they usually mean concrete. Cement is just one ingredient in concrete (cement + sand + gravel + water = concrete). Your basement floor is concrete — typically 3-4 inches thick — and it cracks for predictable reasons.
 
 Concrete is great at handling compression but poor at handling tension. Almost every basement floor will eventually develop a crack due to one of three causes:
 
@@ -36,7 +37,7 @@ Concrete is great at handling compression but poor at handling tension. Almost e
 
 **Settling.** If the soil underneath the slab was not properly compacted during construction, the floor can drop slightly, causing spiderweb or map cracking. This is more common in homes where the builder rushed the backfill process.
 
-**Hydrostatic pressure.** This is the serious one. When the water table rises under your house, it pushes up against the bottom of your floor. If the pressure is high enough, it will crack the concrete and start seeping through. This is especially common in coastal areas like the South Shore and in low-lying neighborhoods after heavy rain or snowmelt.
+**Hydrostatic pressure.** This is the serious one. When the coastal water table rises under your house, it pushes up against the bottom of your floor. If the pressure is high enough, it will crack the concrete and start seeping through — those basement floor cracks leaking water are a telltale sign. This is especially common in areas with clay-heavy glacial till like the South Shore and in low-lying neighborhoods after heavy rain or snowmelt.
 
 ## Why Hardware Store Patches Fail
 
@@ -46,19 +47,19 @@ Here is why that approach does not last: surface patches do not bond deeply into
 
 Silicone caulk is flexible enough to handle movement, but it does not bond well to concrete and has no structural strength. It fills the surface of the crack without sealing the path underneath.
 
-## Professional Repair: Flexible Injection
+## Professional Repair: Grind and Seal
 
-To fix a basement floor crack permanently, you need a material that is both flexible and adhesive, applied under pressure to fill the entire depth of the crack.
+To fix a basement floor crack permanently, you need to remove the damaged concrete and replace it with a material that bonds properly and resists water pressure from below.
 
 Our process involves three steps:
 
-**Cleaning and routing.** We use a diamond saw to open the crack slightly and remove any loose debris or old DIY patches. This creates a clean channel for the repair material.
+**Grinding out the crack.** We use a diamond grinder to open up the crack, removing all loose and deteriorated concrete. This creates a clean channel with fresh concrete surfaces — the critical preparation step that DIY repairs skip entirely.
 
-**Deep injection.** We use a specialized polyurethane or epoxy resin that flows all the way to the bottom of the slab. Unlike surface patches, injection fills the crack from the bottom up, sealing every path water or gas could take.
+**Self-leveling epoxy or rubber seal.** Depending on the crack and conditions, we fill the prepared channel with self-leveling epoxy (which bonds to both sides of the crack and cures harder than the original slab) or a commercial-grade rubber surface seal (which stays flexible to accommodate minor seasonal movement). Both materials flow into the full depth of the prepared channel and create a waterproof, gas-tight barrier.
 
-**Flexible seal.** Our materials are engineered to expand and contract with the floor. If the slab moves a fraction of an inch seasonally, the seal moves with it instead of breaking.
+**Flush finish.** The repair is smoothed level with the surrounding floor, creating a clean result that is ready for foot traffic within hours.
 
-The result is a repair that is invisible once cured, permanently flexible, and sealed against both water and soil gas infiltration.
+The result is a repair that is nearly invisible once cured, permanently sealed against both water and soil gas infiltration, and built to handle the real-world conditions of a New England basement.
 
 ## When a Floor Crack Needs Attention
 
@@ -70,16 +71,16 @@ Not every floor crack is an emergency, but you should call a professional if you
 
 **Widening over time.** If you mark the ends of a crack and it grows past your marks over weeks or months, the underlying cause is still active.
 
-**Musty odor.** A persistent smell rising from the floor suggests moisture is passing through the slab continuously, even if you cannot see standing water.
+**Musty odor.** That musty smell in your basement — a persistent smell rising from the floor suggests moisture is passing through the slab continuously, even if you cannot see standing water.
 
 ## Protect Your Finished Basement Investment
 
 If you are planning to install carpet, vinyl, or tile in your basement, fix floor cracks first. There is nothing more expensive than ripping up a brand-new finished basement because water started seeping through a crack you ignored.
 
-The cost of floor crack injection is a fraction of what you would spend on flooring replacement, mold remediation, and the aggravation of doing the project twice.
+The cost of professional floor crack repair is a fraction of what you would spend on flooring replacement, mold remediation, and the aggravation of doing the project twice.
 
 ## What to Do Next
 
 Start by monitoring the crack. Mark its endpoints with a pencil and date, and check it monthly. Note whether moisture appears after rain events.
 
-For a professional assessment, schedule a [free consultation](/services/free-foundation-consultations). We will examine the crack, determine the cause, and tell you whether it needs repair now or if monitoring is sufficient.
+For a professional assessment, text us a photo of your floor crack at 617-668-1677 or schedule a [free consultation](/services/free-foundation-consultations). We will examine the crack, determine the cause, and tell you whether it needs repair now or if monitoring is sufficient. Most floor crack repairs cost $500-$1,500 with a permanent seal against both water and radon gas.

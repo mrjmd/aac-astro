@@ -45,7 +45,7 @@ This is the number one cause. When soil around and beneath your foundation becom
 
 ### Rising Water Table
 
-In parts of Connecticut and Massachusetts, seasonal water table fluctuations are significant. During spring snowmelt or extended rainy periods, the water table can rise to slab level, dramatically increasing pressure.
+In parts of Connecticut and Massachusetts — where glacial till and clay-heavy soil dominate — seasonal water table fluctuations are significant. During spring snowmelt or extended rainy periods, the water table can rise to slab level, dramatically increasing pressure.
 
 ### Poor Exterior Drainage
 
@@ -58,6 +58,10 @@ This distinction matters for choosing the right fix.
 **Wall cracks** can be injected from the interior because we can access the full path water takes through the wall. [Foundation crack injection](/services/foundation-crack-injection) seals wall cracks permanently with a lifetime guarantee.
 
 **Floor cracks** behave differently. Water comes up from beneath the slab driven by hydrostatic pressure. The crack is the path of least resistance. Seal one floor crack and water under pressure may find another route, through another crack, along the cove joint, or through the porous concrete itself.
+
+## When NOT to Patch Leaking Floor Cracks
+
+Surface patches with hydraulic cement or hardware store epoxy are one of the most common (and most futile) DIY attempts we see. When water is being pushed upward at pressure from a high water table or saturated glacial till below your slab, a surface patch is fighting a losing battle. It may hold for a few months, then fail — and the homeowner has wasted time and money while conditions worsen. The right approach depends on whether the problem is the floor or the walls.
 
 ## How to Fix Leaking Floor Cracks
 
@@ -103,9 +107,9 @@ If the water enters through wall cracks, that's a much simpler fix. Wall crack i
 
 ## Get an Honest Assessment
 
-Not sure whether your water is coming through the floor or walls? That's exactly what our free consultations are for. We'll trace the water source and tell you honestly what you're dealing with, even if the answer is "this isn't something we repair."
+Not sure whether your water is coming through the floor or walls? That's exactly what our [free consultations](/services/free-foundation-consultations) are for. With 20+ years of experience and 91+ documented projects across New England, we'll trace the water source and tell you honestly what you're dealing with, even if the answer is "this isn't something we repair." Our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) has complete pricing details.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677
 
-Text us photos of your leaking floor cracks for a quick preliminary assessment.
+Text us a photo of your leaking floor cracks for a quick preliminary assessment.

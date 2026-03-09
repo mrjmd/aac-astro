@@ -14,6 +14,7 @@ draft: true
 relatedServices:
   - "foundation-crack-injection"
   - "leaky-bulkhead-repair"
+  - "sewer-well-conduit-line-repair"
 ---
 
 ## The Dehumidifier Trap
@@ -24,7 +25,7 @@ The dehumidifier is doing its job. It is pulling moisture out of the air. But it
 
 Think of it this way: if your kitchen faucet is running, you do not solve the problem by mopping faster. You turn off the faucet. Your basement works the same way.
 
-## Where Basement Moisture Actually Comes From
+## Where Basement Moisture Actually Comes From: Water in Basement After Rain
 
 In New England homes, basement moisture enters through a handful of predictable paths. Understanding which one is your problem changes everything about the solution.
 
@@ -56,7 +57,7 @@ A standard residential dehumidifier removes 30 to 70 pints of moisture per day. 
 
 Running a dehumidifier in a basement with active moisture intrusion is like running the air conditioning with the windows open. The machine works harder, your electricity bill climbs (expect $30 to $60 per month for a constantly running unit), and you never actually solve the problem.
 
-There is also a health angle. Persistent humidity above 60% relative humidity creates conditions for mold growth, dust mite proliferation, and musty odors. If your dehumidifier cannot get your basement below 60% RH consistently, you have an active moisture source that needs to be addressed at the point of entry.
+There is also a health angle. That musty smell in your basement? Persistent humidity above 60% relative humidity creates conditions for mold growth, dust mite proliferation, and musty odors. If your dehumidifier cannot get your basement below 60% RH consistently, you have an active moisture source that needs to be addressed at the point of entry.
 
 ## How to Find the Real Source
 
@@ -66,9 +67,9 @@ Before you can fix the problem, you need to identify where moisture is entering.
 
 Tape a 12-inch square of aluminum foil flat against your basement wall. Press the edges down firmly. Leave it for 24 to 48 hours, then check both sides. If moisture is on the outer surface (between the foil and the wall), water is migrating through the concrete. If moisture is on the inner surface (the room side), you have a condensation issue from humid air.
 
-### Visual Inspection After Rain
+### Visual Inspection After Rain: Look for White Powder on Basement Walls
 
-Walk your basement 12 to 24 hours after a heavy rain. Look for damp spots, water stains, efflorescence (white mineral deposits), and active drips. Pay special attention to corners, the floor-wall joint, and any visible cracks. If you see [white powder on your basement walls](/blog/efflorescence-white-powder-basement-walls), that is a telltale sign of moisture moving through concrete.
+Walk your basement 12 to 24 hours after a heavy rain. Look for damp spots, water stains, efflorescence (that white powder on basement walls is mineral deposits), and active drips. Pay special attention to corners, the floor-wall joint, and any visible cracks. If you see [white powder on your basement walls](/blog/efflorescence-white-powder-basement-walls), that is a telltale sign of moisture moving through concrete.
 
 ### Track Humidity Over Time
 
@@ -80,11 +81,11 @@ Once you know where moisture is entering, the fix is usually straightforward.
 
 ### Foundation Crack Injection
 
-For cracks in poured concrete walls, [foundation crack injection](/services/foundation-crack-injection) is the gold standard. We inject expanding polyurethane or epoxy directly into the crack, sealing it from the inside out through the full thickness of the wall. The repair stops water at the source and comes with a lifetime warranty. Most crack injections take a few hours and cost a fraction of what you will spend on dehumidifier electricity over the years.
+For cracks in poured concrete walls, [foundation crack injection](/services/foundation-crack-injection) is the gold standard. We inject expanding polyurethane or epoxy at up to 100 PSI directly into the crack, sealing it from the inside out through the full 8-10 inches of concrete wall thickness. At $800-$1,200 per crack, the repair stops water at the source and comes with a lifetime warranty. Most crack injections take a few hours and cost a fraction of what you will spend on dehumidifier electricity over the years.
 
-### Bulkhead Repair and Sealing
+### Bulkhead Repair and Bulkhead Sealant
 
-Leaking bulkheads need [targeted repair](/services/leaky-bulkhead-repair) that addresses the actual failure point: cracked walls, deteriorated doors, failed waterproof coatings, or drainage problems on the stairs. A properly sealed bulkhead eliminates one of the biggest moisture sources in New England basements.
+Leaking bulkheads need [targeted repair](/services/leaky-bulkhead-repair) with professional bulkhead sealant that addresses the actual failure point: cracked walls, deteriorated doors, failed waterproof coatings, or drainage problems on the stairs. At $1,800-$2,500 for most bulkhead repairs, a properly sealed bulkhead eliminates one of the biggest moisture sources in New England basements.
 
 ### Exterior Drainage Improvements
 
@@ -108,7 +109,9 @@ The key question is whether your dehumidifier is supplementing a dry basement or
 
 A quality dehumidifier costs $250 to $400 upfront. Running it year-round costs $300 to $700 annually in electricity. Over ten years, that is $3,000 to $7,000 in operating costs alone, plus one or two replacement units.
 
-A typical [foundation crack injection](/services/foundation-crack-injection) costs significantly less than that lifetime dehumidifier expense and comes with a warranty that lasts as long as you own the home. The math is not close.
+A typical [foundation crack injection](/services/foundation-crack-injection) costs $800-$1,200 — significantly less than that lifetime dehumidifier expense — and comes with a warranty that lasts as long as you own the home. The math is not close.
+
+Not sure where your moisture is coming from? Text us a photo for assessment at 617-668-1677 or 860-573-8760. We can often identify the source before scheduling an on-site visit.
 
 ## What to Do Next
 

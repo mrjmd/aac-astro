@@ -52,9 +52,9 @@ This is the strategic question, and the answer depends on the specific situation
 
 ### When to Fix Before Listing
 
-**The repair is affordable relative to the home's value.** A crack injection that costs well under $2,000 on a $400,000 home is an obvious fix. It removes an objection before it arises, and the repair cost is negligible compared to the potential price impact of leaving it unaddressed.
+**The repair is affordable relative to the home's value.** A crack injection at $800-$1,200 per crack on a $400,000 home is an obvious fix. It removes an objection before it arises, and the repair cost is negligible compared to the potential price impact of leaving it unaddressed.
 
-**The issue would alarm a typical buyer.** Active water seepage, visible wet spots, or musty odors will spook buyers and inspectors alike. Fixing these issues before showings begin means buyers see a dry, well-maintained basement instead of a problem.
+**The issue would alarm a typical buyer.** Active water seepage, visible wet spots, white powder on basement walls (efflorescence), or a musty smell in the basement will spook buyers and inspectors alike. Fixing these issues before showings begin means buyers see a dry, well-maintained basement instead of a problem.
 
 **You want a clean inspection.** In competitive markets, a clean inspection report is a significant advantage. Buyers who are comparing multiple properties will favor the one with fewer inspection findings.
 
@@ -124,11 +124,18 @@ The agents we work with most frequently share a common approach: address issues 
 
 **Ignoring it and hoping nobody notices.** Inspectors will find it. And the discovery during inspection is always worse than the disclosure upfront.
 
-**DIY repairs before selling.** We understand the impulse, but a caulk-and-paint repair on a foundation crack does not fool a competent inspector. Worse, it suggests the seller was trying to hide something. Professional repair with documentation is the only approach that helps.
+**DIY repairs before selling.** We understand the impulse, but a caulk-and-paint repair on a foundation crack does not fool a competent inspector. Worse, it suggests the seller was trying to hide something. Professional crack injection at $800-$1,200 per crack — with documentation and a lifetime transferable warranty — is the only approach that helps.
 
 **Over-estimating the impact.** Some sellers assume foundation issues will tank their sale. In reality, the vast majority of foundation problems in New England homes are minor and affordable to fix. Do not let anxiety about the issue prevent you from addressing it rationally.
 
 **Waiting until the buyer's inspection to react.** By then, you are negotiating from a weaker position. The buyer knows there is a problem and has leverage. Fixing it before listing puts you in control.
+
+## When NOT to Repair Before Selling
+
+There are situations where pre-sale foundation repair is not the right move:
+- **Major structural issues requiring $20,000+ in work.** If the foundation needs wall replacement or major excavation, the cost may not pencil out. Disclose, provide estimates, and adjust the price.
+- **You are selling to a developer or flipper.** Professional investors price in repairs regardless. Your repair investment will not change their offer.
+- **You are in a bidding-war market.** In extreme seller's markets with 10+ offers, minor foundation issues may not affect your final price. Discuss with your agent.
 
 ## Your Next Step
 

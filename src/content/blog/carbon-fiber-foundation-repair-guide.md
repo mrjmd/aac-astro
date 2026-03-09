@@ -14,11 +14,16 @@ draft: false
 relatedServices:
   - "carbon-fiber-stitches"
   - "wall-crack-repair"
+  - "foundation-crack-injection"
+relatedPosts:
+  - "horizontal-foundation-cracks"
+  - "bowing-basement-walls-causes-repair"
+  - "foundation-repair-cost-guide-2026"
 ---
 
 Most foundation cracks in New England are straightforward. Water finds a way in through a shrinkage crack, we inject it, it stops leaking, and everyone goes home happy. But some cracks need more than a seal — they need structural reinforcement. That's where [carbon fiber stitches](/services/carbon-fiber-stitches) come in.
 
-After 33 years of repairing foundations across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, we've seen every type of crack imaginable. And we can tell you this: knowing when injection is enough and when you need carbon fiber is the difference between a repair that lasts and one that fails in two years.
+After 20+ years of repairing foundations across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, we've seen every type of crack imaginable. And we can tell you this: knowing when injection is enough and when you need carbon fiber is the difference between a repair that lasts and one that fails in two years.
 
 ## When Injection Is Not Enough
 
@@ -40,7 +45,7 @@ If you see any of these, you need reinforcement. And carbon fiber is often the s
 
 ## How Carbon Fiber Reinforcement Works
 
-Carbon fiber is the same material used in aerospace, Formula 1 cars, and military applications. It's not a gimmick — it's genuinely one of the strongest materials on the planet relative to its weight. A carbon fiber strap has roughly ten times the tensile strength of steel.
+Carbon fiber is the same material used in aerospace, Formula 1 cars, and military applications. It's not a gimmick — it's genuinely one of the strongest materials on the planet relative to its weight. A carbon fiber strap has 800,000 PSI tensile strength — roughly ten times that of steel. Carbon fiber staples (also called carbon fiber stitches) create a permanent bond that will never rust, corrode, or degrade.
 
 ### The Installation Process
 
@@ -114,7 +119,7 @@ For a more complete picture of repair pricing, see our [foundation repair cost g
 
 ### What About the Warranty?
 
-Every carbon fiber repair we perform comes with a lifetime transferable warranty. That covers both the injection seal and the carbon fiber reinforcement. If the repair ever fails — and in 33+ years, we've seen vanishingly few failures with properly diagnosed carbon fiber applications — we come back and fix it at no charge.
+Every carbon fiber repair we perform comes with a lifetime transferable warranty. That covers both the injection seal and the carbon fiber reinforcement. If the repair ever fails — and in 20+ years, we've seen vanishingly few failures with properly diagnosed carbon fiber applications — we come back and fix it at no charge.
 
 The warranty transfers to new owners if you sell the home, which actually becomes a selling point rather than a liability. Real estate agents love seeing a professional structural repair with a lifetime warranty in the disclosure documents.
 

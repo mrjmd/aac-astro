@@ -13,6 +13,8 @@ draft: true
 
 relatedServices:
   - "free-foundation-consultations"
+  - "foundation-crack-injection"
+  - "carbon-fiber-stitches"
 ---
 
 ## Why We Are Writing This (And Yes, We See the Irony)
@@ -67,7 +69,7 @@ Before you hire anyone, ask these questions. The answers will tell you a lot.
 
 3. **What repair method do you recommend, and why?** There should be a clear rationale connecting the diagnosis to the solution. "We always do it this way" is not a rationale.
 
-4. **What materials will you use?** For crack injection: polyurethane or epoxy? What brand? What PSI rating? For reinforcement: what material? These are not trick questions. A professional knows this off the top of their head.
+4. **What materials will you use?** For crack injection: polyurethane or epoxy? What brand? Can they inject at up to 100 PSI for stubborn cracks? For reinforcement: carbon fiber staples or carbon fiber stitches? These are not trick questions. A professional knows this off the top of their head.
 
 5. **What does your warranty cover, specifically?** Get the written warranty terms before signing anything. Ask about exclusions, transferability, and what "warranty service" actually looks like if you need it.
 
@@ -85,11 +87,11 @@ Before you hire anyone, ask these questions. The answers will tell you a lot.
 
 Foundation repair pricing varies by repair type, scope, and region. Here are general ranges for New England:
 
-**Crack injection (single crack, poured concrete):** A few hundred to a few thousand dollars depending on crack length, accessibility, and material used.
+**Crack injection (single crack, poured concrete):** $800-$1,200 per crack for standard injection through the full 8-10 inches of concrete. Multi-crack jobs $800-$2,500.
 
-**Carbon fiber reinforcement (per strip):** Varies by the number of strips needed and wall condition. Costs more than injection but less than excavation-based solutions.
+**Carbon fiber staples/stitches (per stitch):** $200-$300 per carbon fiber stitch for crack bridging. Full wall reinforcement with straps runs $800-$1,500 per strap.
 
-**Wall stabilization (serious structural repair):** Several thousand dollars and up, depending on the scope. These are the bigger jobs.
+**Wall stabilization (serious structural repair):** $3,000-$8,000+ depending on the scope. These are the bigger jobs.
 
 **Full interior drainage system with sump pump:** $5,000 to $15,000 depending on basement size and conditions. This is not crack repair; it is water management.
 
@@ -168,6 +170,10 @@ We wrote this guide knowing that it sets a standard we have to meet ourselves. H
 **Honest assessments:** We regularly tell homeowners that their foundation does not need repair. We refer work to other specialists when the problem is outside our scope, such as [sump pump installation](/blog/sump-pump-vs-crack-injection) or comprehensive waterproofing systems.
 
 We are not the right contractor for every foundation problem. But we are the right contractor for the problems we specialize in, and we will tell you honestly which category yours falls into.
+
+## When NOT to Hire a Foundation Repair Contractor
+
+Not every crack needs professional repair. Hairline vertical cracks (thinner than 1/16 inch) that are not leaking and not growing can be safely monitored. Mark the ends with a pencil, note the date, and check quarterly. If it stays stable and dry, you do not need us. If it starts leaking, widening, or you notice water in your basement after rain near that spot, then it is time to call.
 
 ## The Bottom Line
 

@@ -30,7 +30,7 @@ We have worked on hundreds of foundations in Weymouth and the surrounding South 
 
 ## Why Weymouth Foundations Have It Tough
 
-### Coastal Proximity and Water Tables
+### Coastal Proximity and High Water Tables
 
 Weymouth is bordered by the Fore River, the Back River, and Hingham Bay. That much water nearby means the water table is persistently high, particularly in the eastern sections of town near the coast and in the low-lying areas along the rivers.
 
@@ -38,7 +38,7 @@ A high water table means your foundation walls are under near-constant hydrostat
 
 ### Soil Conditions
 
-Weymouth's soil is a mixed bag — literally. The coastal areas have sandy, gravelly soil deposited during glacial retreat. While sandy soil drains better than clay, it also allows water to move quickly to and through your foundation. Further inland, you get more varied soil with clay pockets that hold water against foundation walls.
+Weymouth's soil is a mixed bag — literally. The coastal areas have sandy, gravelly glacial till deposited during glacial retreat roughly 15,000 years ago. While sandy soil drains better than clay, it also allows water to move quickly to and through your foundation. Further inland, you get more varied clay-heavy soil with clay pockets that expand when wet and contract when dry, creating cyclical pressure against foundation walls through freeze-thaw cycles.
 
 The fill used in some of Weymouth's developed areas — particularly in neighborhoods built on reclaimed or filled land near the waterfront — can be inconsistent. Fill settles unpredictably, creating uneven pressure on foundations and drainage patterns that change over time.
 
@@ -82,19 +82,19 @@ North Weymouth sits between the Fore River and the Back River, making it essenti
 
 The number one issue. Vertical cracks from concrete shrinkage are nearly universal in Weymouth homes of this age. Most are not structurally concerning, but many admit water — and with Weymouth's high water table, even hairline cracks can become significant water entry points.
 
-Our [foundation crack injection](/services/foundation-crack-injection) service seals these cracks from inside to outside with flexible polyurethane that accommodates the minor movement all foundations experience. For more on evaluating crack severity, see [vertical vs. horizontal foundation cracks](/blog/vertical-vs-horizontal-foundation-cracks).
+Our [foundation crack injection](/services/foundation-crack-injection) service seals these cracks through the full 8-10 inches of concrete from inside to outside with flexible polyurethane injected at up to 100 PSI, accommodating the minor movement all foundations experience. Most single-crack injections in Weymouth cost $800-$1,200 with a lifetime warranty. For more on evaluating crack severity, see [vertical vs. horizontal foundation cracks](/blog/vertical-vs-horizontal-foundation-cracks).
 
 ### Bulkhead Leaks
 
-South Shore homes love their bulkheads, and Weymouth is no exception. The salt air accelerates corrosion on metal bulkhead components, and the high water table means water finds every gap. [Leaky bulkhead repair](/services/leaky-bulkhead-repair) is one of our most common Weymouth jobs.
+South Shore homes love their bulkheads, and Weymouth is no exception. The salt air accelerates corrosion on metal bulkhead components, and the high water table means water finds every gap. Professional bulkhead sealant — not hardware-store caulk or rubber gaskets — is the permanent fix for the metal-to-concrete interface. [Leaky bulkhead repair](/services/leaky-bulkhead-repair) at $1,800-$2,500 is one of our most common Weymouth jobs.
 
 ### Efflorescence and Mineral Deposits
 
-Those white, chalky deposits on your basement walls are not paint — they are efflorescence, mineral deposits left behind when water passes through concrete and evaporates on the interior surface. In Weymouth, efflorescence is extremely common and is a reliable indicator that water is migrating through your walls even if you do not see active leaks.
+That white powder on your basement walls is not paint — it is efflorescence, mineral deposits left behind when water passes through concrete and evaporates on the interior surface. In Weymouth, efflorescence is extremely common and is a reliable indicator that water is migrating through your walls even if you do not see active leaks.
 
-### Floor Cracks and Moisture
+### Basement Floor Cracks Leaking Water
 
-Basement floor cracks in Weymouth homes often admit moisture from the water table below. While floor cracks are usually not structural concerns, the moisture they introduce feeds mold growth and contributes to that perpetually damp basement feeling.
+Basement floor cracks in Weymouth homes often admit moisture from the water table below — if you have noticed basement floor cracks leaking water, you are not alone. While floor cracks are usually not structural concerns, the moisture they introduce feeds mold growth and contributes to that musty smell in your basement.
 
 ## What Weymouth Homeowners Should Do
 
@@ -131,6 +131,6 @@ For broader context on South Shore foundation challenges, see our article on [So
 
 ## Get Your Weymouth Foundation Inspected
 
-If you are a Weymouth homeowner with basement moisture, visible cracks, or concerns about your foundation, call us at 617-668-1677 for a [free consultation](/services/free-foundation-consultations). We will inspect your foundation, explain what we find, and give you an honest assessment of what needs attention now versus what can wait.
+If you are a Weymouth homeowner with basement moisture, visible cracks, or concerns about your foundation, text us a photo for assessment or call us at 617-668-1677 for a [free consultation](/services/free-foundation-consultations). We will inspect your foundation, explain what we find, and give you an honest assessment of what needs attention now versus what can wait.
 
 With over 33 years of experience on the South Shore, we know Weymouth's soil, water table, and housing stock. We will tell you what your foundation needs — and just as importantly, what it does not.

@@ -18,9 +18,11 @@ relatedServices:
   - "pool-deck"
 ---
 
-## Concrete Patio Repair in Massachusetts
+## Concrete Patio Crack Repair in Massachusetts
 
-Your patio should be an outdoor retreat—a place for relaxation, entertaining, and enjoying Massachusetts summers. When your concrete patio is cracked, stained, and ugly, it becomes a space you avoid rather than enjoy. Our patio repair and resurfacing service transforms your patio into the outdoor living area you deserve.
+Your patio should be an outdoor retreat — a place for relaxation, entertaining, and enjoying Massachusetts summers. When your concrete patio is cracked, stained, and deteriorating, it becomes a space you avoid rather than enjoy. Our concrete patio repair service fills cracks with epoxy resin or polymer-modified materials, then transforms the surface with durable, decorative finishes.
+
+**Concrete vs. cement:** Many homeowners search for "cement patio repair" — cement is just one ingredient in concrete. Your patio is concrete, and our overlay system bonds directly to the existing concrete matrix.
 
 ### From Eyesore to Outdoor Oasis
 
@@ -95,9 +97,16 @@ Unlike other patio surfaces, repaired and resurfaced concrete is easy to maintai
 **Furniture:** 5-7 days
 **Full Cure:** 14 days
 
+### When NOT to Repair Your Patio
+
+We'll tell you honestly when resurfacing isn't the right approach:
+- **Severely settled or heaved sections** — the base needs work before any overlay
+- **Extensive structural cracking** — when cracks are caused by tree roots or poor drainage, address the cause first
+- **More than 50% severely damaged** — replacement may be more cost-effective
+
 ### Massachusetts Concrete Patio Experts
 
-We've repaired patios throughout Massachusetts—from small urban courtyards in Boston to expansive suburban entertaining spaces. Our team understands both the technical requirements and the design possibilities for New England outdoor living.
+We've repaired patios throughout Massachusetts — from small urban courtyards in Boston to expansive suburban entertaining spaces. Our team understands both the technical requirements and the design possibilities for New England outdoor living.
 
 ### Ready to Repair Your Patio?
 

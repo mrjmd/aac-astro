@@ -19,9 +19,11 @@ relatedServices:
   - "stairway"
 ---
 
-## Concrete Walkway Repair in Massachusetts
+## Concrete Walkway Crack Repair in Massachusetts
 
-Your walkway is the first impression guests have of your home. When it's cracked, stained, or simply outdated, it detracts from your property's curb appeal. Walkway repair and resurfacing gives you a fresh, beautiful surface without the cost and disruption of replacement.
+Your walkway is the first impression guests have of your home. When it's cracked, stained, or simply outdated, it detracts from your property's curb appeal and creates trip hazards. Concrete walkway repair fills cracks with epoxy resin or polymer-modified materials and gives you a fresh, durable surface without the cost and disruption of full replacement.
+
+**Concrete vs. cement:** You might search for "cement walkway repair" — cement is actually just one ingredient in concrete (like flour in bread). Your walkway is concrete, and our repair system bonds directly to it.
 
 ### The Problem with Old Walkways
 

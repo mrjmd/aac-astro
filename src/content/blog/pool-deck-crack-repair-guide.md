@@ -29,7 +29,7 @@ Pool deck concrete takes more abuse than almost any other concrete surface on yo
 
 ### Freeze-Thaw Cycles
 
-This is the number one enemy of pool deck concrete in our region. Water penetrates the concrete surface, freezes, expands by up to 9%, and cracks the concrete from within. Connecticut and Massachusetts see 80-100+ freeze-thaw cycles per year — each one doing incremental damage.
+This is the number one enemy of pool deck concrete in our region. Water penetrates the concrete surface, freezes, expands by up to 9%, and cracks the concrete from within. Connecticut and Massachusetts see 80-100+ freeze-thaw cycles per year — each one doing incremental damage. The region's clay-heavy soil and glacial till deposits make settlement beneath pool decks even more common.
 
 ### Pool Chemistry Exposure
 
@@ -93,9 +93,9 @@ Flexible polyurethane or silicone caulk designed for concrete fills the crack an
 
 **Limitations:** Cosmetic only. Won't fix structural issues. Will need periodic reapplication. Color match is rarely perfect.
 
-### 2. Concrete Resurfacing
+### 2. Concrete Repair Resurfacing
 
-**Best for:** Widespread surface deterioration (spalling, scaling, roughness) with the underlying slab still structurally sound.
+**Best for:** Widespread surface deterioration (spalling, scaling, roughness) with the underlying slab still structurally sound. Note the distinction between [cement and concrete](/blog/cement-vs-concrete-homeowners-guide) — resurfacing uses a polymer-modified concrete overlay, not plain cement.
 
 A thin overlay (1/4 to 1/2 inch) of polymer-modified cementitious material is applied over the existing deck. This gives you a new surface without demolishing the old one.
 
@@ -152,7 +152,7 @@ The damaged section is saw-cut, removed, sub-base is re-compacted, and new concr
 Complete demolition and repour. This is the most expensive option but gives you a completely new surface with modern concrete mix design, proper reinforcement, and control joints.
 
 **Considerations for New England:**
-- Concrete should be 4+ inches thick on a compacted gravel base
+- Concrete should be 4+ inches thick (8-10 inches of concrete for structural elements) on a compacted gravel base
 - Air-entrained mix (6-7% air content) is essential for freeze-thaw resistance
 - Control joints every 8-10 feet to direct cracking
 - Proper slope away from the pool for drainage

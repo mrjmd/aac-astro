@@ -7,7 +7,7 @@ publishDate: 2026-02-15
 author: "Luc Richard"
 category: "guides"
 showOnServicesPage: true
-tags: ["foundation cracks", "structural damage", "basement repair"]
+tags: ["foundation cracks", "structural damage", "basement repair", "stair-step cracks", "diagonal cracks", "carbon fiber staples"]
 heroImage: "/images/projects/boston-wall-crack-repair-2025-09-before.jpg"
 heroImageAlt: "Foundation wall crack before repair in Boston basement"
 featured: true
@@ -42,7 +42,7 @@ Vertical cracks run straight up and down (or within 30 degrees of vertical). The
 
 2. **Settlement**: As a house settles into its foundation (especially in the first few years), minor vertical cracks can develop.
 
-3. **Thermal expansion**: Concrete expands and contracts with temperature changes. Over many freeze-thaw cycles, small vertical cracks can form.
+3. **Freeze-thaw cycles**: Concrete expands and contracts with temperature changes. New England's relentless freeze-thaw cycles — sometimes dozens per winter — gradually stress the concrete until small vertical cracks form.
 
 ### When Vertical Cracks Are Concerning
 
@@ -63,7 +63,7 @@ Horizontal cracks run parallel to the ground. They're much more serious than ver
 2. **Frost heave**: Frozen soil expands with tremendous force
 3. **Poor drainage**: Water collecting against the foundation increases pressure
 4. **Heavy equipment or vehicles**: Parking heavy vehicles too close to the foundation
-5. **Expansive clay soil**: Some soil types swell significantly when wet
+5. **Clay-heavy soil and glacial till**: New England's clay-heavy soil and glacial till deposits swell significantly when wet, creating enormous lateral pressure against foundation walls
 
 ### The Danger of Horizontal Cracks
 
@@ -75,11 +75,11 @@ Horizontal cracks indicate your foundation wall is bowing inward. This is a stru
 
 **If you see horizontal cracks, especially with visible bowing, contact a foundation specialist immediately.**
 
-## Diagonal and Stair-Step Cracks
+## Diagonal Cracks, Stair-Step Cracks, and Other Patterns
 
-These crack patterns fall somewhere between vertical and horizontal in terms of severity.
+These crack patterns fall somewhere between vertical and horizontal in terms of severity. Understanding the difference between diagonal cracks vs stair-step cracks helps you assess urgency.
 
-### Diagonal Cracks
+### Diagonal Foundation Cracks
 
 Diagonal cracks (running at a 45-degree angle) typically indicate:
 
@@ -87,13 +87,13 @@ Diagonal cracks (running at a 45-degree angle) typically indicate:
 - **Point loading**: Excessive weight in one area
 - **Tree roots**: Large trees can displace foundation soil
 
-### Stair-Step Cracks (Block Foundations)
+### Stair-Step Cracks in Block Foundations
 
-In block or brick foundations, cracks often follow mortar joints in a stair-step pattern. These indicate:
+In block or brick foundations, cracks often follow mortar joints in a stair-step pattern. Stair-step cracks are among the most searched foundation crack types — and for good reason. These indicate:
 
-- **Differential settlement**: Parts of the foundation settling at different rates
-- **Thermal movement**: Expansion and contraction in the block wall
-- **Structural stress**: May require carbon fiber reinforcement
+- **Differential settlement**: Parts of the foundation settling at different rates, often due to uneven clay-heavy soil conditions
+- **Thermal movement**: Expansion and contraction in the block wall from freeze-thaw cycles
+- **Structural stress**: May require [carbon fiber staples](/services/carbon-fiber-stitches) (also called carbon fiber stitches) to bridge the crack and prevent further movement — typically $200-$300 per stitch location
 
 ## How to Assess Your Foundation Cracks
 
@@ -108,7 +108,7 @@ Use a pencil to mark the ends of the crack and write the date. Measure the width
 Is water currently entering through the crack? Even occasional water infiltration can lead to:
 - Mold growth
 - Structural deterioration
-- Efflorescence (white mineral deposits)
+- Efflorescence (white powder on basement walls)
 
 ### Step 3: Look for Patterns
 
@@ -138,7 +138,7 @@ At Attack A Crack, we use proven injection techniques to permanently repair foun
 [Flexible polyurethane injection](/services/foundation-crack-injection) fills the entire crack from inside to outside. The material remains flexible, accommodating minor movement without re-cracking.
 
 **For Structural Cracks:**
-Epoxy injection creates a bond stronger than the original concrete, plus [carbon fiber stitches](/services/carbon-fiber-stitches) add reinforcement to prevent further movement.
+Epoxy injection creates a bond stronger than the original concrete, plus [carbon fiber staples](/services/carbon-fiber-stitches) (also called carbon fiber stitches) add reinforcement to prevent further movement. Each stitch costs $200-$300 installed.
 
 **For Bowing Walls:**
 Horizontal cracks with bowing require stabilization. We assess severity and recommend appropriate solutions, which may include carbon fiber straps or wall anchors.
@@ -149,7 +149,7 @@ Horizontal cracks with bowing require stabilization. We assess severity and reco
 - **Horizontal cracks**: Take them seriously. They indicate structural pressure that will only worsen.
 - **When in doubt**: Get a professional assessment. Our consultations are free and honest—we'll tell you if you don't need repair.
 
-**Have a crack you're worried about?** Text us a photo for a quick preliminary assessment, or schedule a free consultation.
+**Have a crack you're worried about?** Text us a photo for a quick preliminary assessment, or schedule a [free consultation](/services/free-foundation-consultations). With 20+ years of experience and 91+ documented projects across New England, we can diagnose your crack from a photo in most cases.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

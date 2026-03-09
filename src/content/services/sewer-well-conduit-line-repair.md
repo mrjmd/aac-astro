@@ -29,9 +29,9 @@ steps:
     text: "We confirm each penetration is fully sealed, remove excess material, and clean up. The repair is waterproof immediately and stays flexible for the life of your home."
 ---
 
-## Utility Line Penetration Sealing
+## Pipe Penetration Sealing: Utility Line Waterproofing
 
-Every pipe, conduit, and line that enters your foundation is a potential leak point. Sewer lines, well pipes, electrical conduits, and gas lines all create penetrations that can allow water infiltration. We seal these gaps permanently without excavation.
+Every pipe, conduit, and line that enters your foundation is a potential leak point. Sewer lines, well pipes, electrical conduits, and gas lines all create utility penetrations through your foundation wall — and each one can allow water infiltration. We provide permanent pipe penetration sealing and utility penetration waterproofing without excavation.
 
 ### Common Utility Penetration Problems
 
@@ -91,17 +91,32 @@ Traditional repairs require digging around your foundation exterior. Our injecti
 **Permanent Flexibility**
 Our urethane seal remains flexible, accommodating movement between pipe and foundation without cracking.
 
+### What Pipe Penetration Sealing Costs
+
+Most utility penetration sealing repairs cost **$650-$1,000 per penetration**, depending on pipe size, accessibility, and condition. Homes with multiple leaking penetrations often benefit from a full foundation audit — we frequently find leak sources homeowners didn't know existed. Every repair includes our lifetime guarantee.
+
 ### Signs You Need Penetration Sealing
 
-- Water stains around pipes entering basement
-- Active dripping during rain
-- Efflorescence (white mineral deposits) near penetrations
-- Previous repairs that have failed
-- Damp odors near utility entry points
+- Water stains around pipes entering your basement
+- Active dripping near utility lines during rain
+- Efflorescence (white powder on basement walls) near penetrations
+- Musty smell in basement near utility entry points
+- Previous hydraulic cement or caulk repairs that have failed
+- Water in basement after rain concentrated near pipe locations
+
+### When NOT to Seal (What's Really Going On)
+
+Sometimes what looks like a pipe leak is actually a different problem:
+- **Wall cracks near pipes** — the crack is the leak source, not the penetration
+- **Condensation on cold pipes** — insulation is the fix, not injection
+- **Floor drain backup** — a plumbing issue, not a foundation issue
+
+We'll diagnose the actual problem honestly — even if it means the fix isn't something we do. Text us a photo for a free assessment.
 
 ### The Attack A Crack Difference
 
-- **Complete penetration audit**—we find leaks you didn't know about
-- **Non-invasive repair**—no digging, no mess
+- **Complete penetration audit** — we find leaks you didn't know about
+- **Non-invasive pipe penetration sealing** — no digging, no mess
 - **Same-day completion** for most jobs
-- **Lifetime guarantee** on all sealing work
+- **Lifetime guarantee** on all utility penetration waterproofing
+- **20+ years** sealing pipe penetrations across New England

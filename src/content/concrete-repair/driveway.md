@@ -18,9 +18,11 @@ relatedServices:
   - "walkway"
 ---
 
-## Concrete Driveway Repair in Massachusetts
+## Concrete Driveway Crack Repair in Massachusetts
 
-Your driveway is one of the largest visible surfaces on your property. When it's covered in cracks, stains, and patches, it brings down your entire home's appearance. Driveway crack repair and resurfacing restores beauty and function without the expense of complete replacement.
+Your driveway is one of the largest visible surfaces on your property. When it's covered in cracks, stains, and patches, it brings down your entire home's appearance. Concrete driveway crack repair fills existing damage with epoxy resin or hybrid polyurethane, then restores beauty and function with a professional overlay — at 30-50% less than the cost of full replacement.
+
+**Concrete vs. cement:** Searching for "cement driveway repair"? Cement is just one ingredient in concrete. Your driveway is concrete, and our repair process bonds directly to the existing concrete surface.
 
 ### Why Driveways Crack and Deteriorate
 

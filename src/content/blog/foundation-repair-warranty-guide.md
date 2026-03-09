@@ -25,7 +25,7 @@ You have gotten three quotes for foundation repair. The prices are similar. The 
 
 Which one should you choose? And does the warranty actually mean anything?
 
-After 33 years of standing behind our own work across New England, we have opinions. Strong ones. And since we are not exactly unbiased — we offer a lifetime warranty on all our repairs — we will try to present this as fairly as possible while also being honest about what we have seen in the industry.
+After 20+ years of standing behind our own work across New England, we have opinions. Strong ones. And since we are not exactly unbiased — we offer a lifetime warranty on all our repairs — we will try to present this as fairly as possible while also being honest about what we have seen in the industry.
 
 ## Why Warranties Matter More for Foundation Repair
 
@@ -82,7 +82,7 @@ The last one is reasonable. The rest can be used to deny virtually any claim.
 
 A 25-year warranty from a company that has been in business for 3 years is a gamble. The warranty is only as good as the company's ability (and existence) to honor it.
 
-We have been fixing foundations in New England for over 33 years. When we say lifetime warranty, there is a track record behind those words. Ask any company offering long-term warranties how long they have been in business and check their licensing, insurance, and reviews.
+We have been fixing foundations in New England for over 20+ years. When we say lifetime warranty, there is a track record behind those words. Ask any company offering long-term warranties how long they have been in business and check their licensing, insurance, and reviews.
 
 ### Pro-Rated Coverage
 
@@ -112,7 +112,7 @@ We will be transparent about where we stand. Attack A Crack provides a lifetime 
 
 Why? Because we use the right materials for the right situations. We do not cut corners on injection materials to save 20% on supplies. We do not rush surface preparation for carbon fiber to squeeze in an extra job that afternoon.
 
-When the repair is done correctly with quality materials, failure is rare. We know that from 33 years of data. Our warranty is not a liability we worry about — it is a reflection of the work we do.
+When the repair is done correctly with quality materials, failure is rare. We know that from 20+ years of data. Our warranty is not a liability we worry about — it is a reflection of the work we do.
 
 Does that mean we never get a callback? No. Foundations are complex, and occasionally a repair needs attention. When that happens, we come back, we fix it, and we do not charge for it. That is what a warranty means.
 

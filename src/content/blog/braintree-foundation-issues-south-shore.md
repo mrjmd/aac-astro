@@ -18,6 +18,7 @@ relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
   - "carbon-fiber-stitches"
+  - "leaky-bulkhead-repair"
 relatedPosts:
   - "south-shore-foundation-problems"
   - "signs-of-foundation-problems"
@@ -28,7 +29,7 @@ Braintree sits at the intersection of the South Shore and the urban suburbs sout
 
 We have repaired foundations throughout Braintree for over 33 years, and the town has its own distinct set of challenges. Here is what we see and what it means for homeowners.
 
-## What Makes Braintree Different
+## What Makes Braintree Foundation Problems Unique
 
 ### The Fill Material Factor
 
@@ -48,9 +49,9 @@ Braintree's housing stock spans nearly a century of construction methods:
 
 **1980s-2000s homes** (newer subdivisions and developments): Generally in better condition but not immune. Even foundations from this era develop cracks, and some developments were built on filled land with the associated settlement risks.
 
-### Water Table and Drainage
+### Coastal Water Table and Drainage
 
-Braintree is not as directly coastal as Weymouth or Hingham, but the Monatiquot River runs through the town, and several brooks and wetland areas keep the water table elevated in low-lying neighborhoods. The western side of town, closer to Blue Hills, has better natural drainage due to higher elevation, but the eastern areas near the Quincy border share the South Shore's water table challenges.
+Braintree is not as directly coastal as Weymouth or Hingham, but the Monatiquot River runs through the town, and several brooks and wetland areas keep the coastal water table elevated in low-lying neighborhoods. The western side of town, closer to Blue Hills, has better natural drainage due to higher elevation, but the eastern areas near the Quincy border share the South Shore's water table challenges.
 
 ## Common Foundation Problems in Braintree
 
@@ -69,7 +70,7 @@ More common in Braintree than in many neighboring towns, likely related to the v
 
 The most common crack type across all of Braintree's post-war housing stock. Concrete shrinks as it cures and as it ages, creating vertical cracks that are structurally harmless but can admit water.
 
-In Braintree, these cracks tend to leak during spring thaw and heavy rain due to the elevated water table in many neighborhoods. [Foundation crack injection](/services/foundation-crack-injection) seals them permanently.
+In Braintree, these cracks tend to leak during spring thaw and heavy rain — homeowners often report water in basement after rain — due to the elevated water table in many neighborhoods. [Foundation crack injection](/services/foundation-crack-injection) at $800-$1,200 per crack seals them permanently through the full 8-10 inches of concrete.
 
 ### Block Foundation Deterioration
 
@@ -80,9 +81,9 @@ Braintree has a significant number of concrete block foundations from the 1940s-
 
 Block foundation repair requires different techniques than poured concrete. The repair must address both the mortar joints and the block cores, not just the visible crack surface.
 
-### Bulkhead and Utility Penetration Leaks
+### Bulkhead and Pipe Penetration Leaks
 
-Like all South Shore towns, Braintree homes have their share of leaky bulkheads and pipe penetrations. The joints where utilities enter the foundation — water lines, sewer connections, electrical conduit — are common leak points, especially in older homes where the original sealant has deteriorated.
+Like all South Shore towns, Braintree homes have their share of leaky bulkheads and pipe penetrations. Bulkhead repair runs $1,800-$2,500, including proper bulkhead sealant application. Pipe penetration sealing — for water lines, sewer connections, and electrical conduit — typically costs $650-$1,000, and these are common leak points in older homes where the original sealant has deteriorated.
 
 ## Neighborhood Patterns
 
@@ -142,7 +143,7 @@ Braintree shares foundation characteristics with its South Shore neighbors while
 
 ## Get a Professional Assessment
 
-If your Braintree home shows signs of foundation problems — cracks, water intrusion, settling, or that persistent musty basement smell — call us at 617-668-1677 for a [free consultation](/services/free-foundation-consultations).
+If your Braintree home shows signs of foundation problems — cracks, water intrusion, settling, or that persistent musty smell in your basement — call us at 617-668-1677 or text us a photo for a quick assessment. Our [free consultation](/services/free-foundation-consultations) includes a thorough evaluation of your specific conditions.
 
 We know Braintree's soil conditions, housing stock, and the specific challenges that come with South Shore foundations. Our assessment tells you exactly what is happening, whether it needs attention now or can be monitored, and what the repair involves if action is needed. Over 33 years, we have seen just about every foundation condition Braintree has to offer — and we have fixed them.
 

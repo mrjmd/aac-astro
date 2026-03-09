@@ -9,7 +9,6 @@ category: "guides"
 tags: ["bulkhead repair", "basement leak", "sealant", "Bilco door", "bulkhead sealant"]
 heroImage: "/images/projects/kingston-bulkhead-repair-2025-06-before.jpg"
 heroImageAlt: "Leaking bulkhead door connection showing failed gasket seal"
-draft: true
 featured: false
 relatedPosts:
   - "bulkhead-leaking-causes-and-fixes"
@@ -32,15 +31,15 @@ When you buy a Bilco door or a similar bulkhead system, it often comes with a fo
 
 However, several factors work against a gasket from day one:
 
-**Thermal expansion.** Metal and concrete expand and contract at different rates. In the summer heat, your bulkhead frame grows. In the winter freeze, it shrinks. This constant movement eventually creates micro-gaps in the gasket seal.
+**Thermal expansion and freeze-thaw cycles.** Metal and concrete expand and contract at different rates. In the summer heat, your bulkhead frame grows. In the winter freeze, it shrinks. New England's relentless freeze-thaw cycles — 50 to 80 per winter — eventually create micro-gaps in the gasket seal.
 
 **Surface irregularities.** Concrete is rarely perfectly flat. A pre-formed gasket cannot account for the pits, bumps, and dips in your foundation surface.
 
 **Dry rot.** Over time, rubber and foam gaskets become brittle. Once they lose their elasticity, they lose their ability to keep out water.
 
-## The Permanent Solution: Polyurethane Injection Sealant
+## The Permanent Bulkhead Sealant Solution: Polyurethane Injection
 
-We do not use gaskets. We use a high-pressure polyurethane injection sealant that is engineered specifically for the interface between metal and concrete.
+We do not use gaskets. We use a high-pressure polyurethane injection bulkhead sealant that is engineered specifically for the interface between metal and concrete. Most bulkhead repairs using this method cost $1,800-$2,500 with a lasting warranty.
 
 ### Why Polyurethane Sealant Works
 
@@ -70,8 +69,12 @@ The problem is that surface patches do not penetrate the gap between the bulkhea
 
 If you want to stop the water for good, you need a sealant that moves with your home and fills the void completely.
 
+## When NOT to Replace Your Bulkhead Door
+
+Many homeowners assume a leaking bulkhead means they need a whole new Bilco door ($2,000-$4,000 installed). In most cases, the door itself is fine — it is the seal points that have failed. Before replacing the entire unit, have the three seal points assessed. Professional bulkhead sealant injection can permanently fix the leaks at a fraction of the replacement cost.
+
 ## What to Do Next
 
-If your bulkhead is leaking, start with a visual inspection during the next heavy rain. Note where the water appears — at the top of the stairs, along the side rails, or at the base where the bulkhead meets the foundation. That tells us which seal points have failed.
+If your bulkhead is leaking — especially if you notice water in your basement after rain pooling at the base of the bulkhead stairs — start with a visual inspection during the next heavy rain. Note where the water appears — at the top of the stairs, along the side rails, or at the base where the bulkhead meets the foundation. That tells us which seal points have failed.
 
-For a detailed cost breakdown, see our [bulkhead repair cost guide](/blog/bulkhead-repair-cost-guide-2026). Or schedule a [free consultation](/services/free-foundation-consultations) and we will assess all three seal points and tell you exactly what needs to be fixed.
+For a detailed cost breakdown, see our [bulkhead repair cost guide](/blog/bulkhead-repair-cost-guide-2026). Or text us a photo for assessment at 617-668-1677 — we can often identify the failed seal point from a photo. You can also schedule a [free consultation](/services/free-foundation-consultations) and we will assess all three seal points in person and tell you exactly what needs to be fixed.

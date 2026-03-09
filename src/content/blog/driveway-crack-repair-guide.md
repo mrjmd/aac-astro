@@ -19,7 +19,7 @@ heroImage: "/images/projects/hanover-crack-injection-2025-03-after.jpg"
 heroImageAlt: "Concrete crack repair at ground level"
 ---
 
-Your driveway is the most abused concrete surface on your property. It handles vehicle weight, freeze-thaw cycles, road salt, snowplow blades, and UV exposure — all year, every year. In Connecticut and Massachusetts, that combination is brutal.
+Your driveway is the most abused concrete surface on your property. It handles vehicle weight, freeze-thaw cycles, road salt, snowplow blades, and UV exposure — all year, every year. New England's glacial till and clay-heavy soil make settlement beneath driveways especially common. In Connecticut and Massachusetts, that combination is brutal.
 
 If your driveway is cracking, here's how to figure out what's happening, what to do about it, and how to prevent it from getting worse.
 
@@ -187,4 +187,4 @@ A properly installed and maintained concrete driveway lasts 25-50 years in New E
 
 ### Should I repair or replace my cracked driveway?
 
-If damage is limited to surface cracks and minor spalling, repair is the clear choice. If more than 30-40% of the surface is damaged, sections have settled significantly, or the concrete itself is deteriorating (crumbling, exposed rebar), replacement is usually more cost-effective than repeated repairs. A professional assessment helps you avoid spending money on repairs that won't last.
+If damage is limited to surface cracks and minor spalling, concrete repair is the clear choice — always lead with repair over replacement when the structural integrity is sound. If more than 30-40% of the surface is damaged, sections have settled significantly, or the concrete itself is deteriorating (crumbling, exposed rebar), replacement is usually more cost-effective than repeated repairs. Understanding the [difference between cement and concrete](/blog/cement-vs-concrete-homeowners-guide) helps you choose the right repair products. A professional assessment helps you avoid spending money on repairs that won't last. Text us a photo for a quick preliminary assessment.

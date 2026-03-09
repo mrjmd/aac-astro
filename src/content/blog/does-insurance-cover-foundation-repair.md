@@ -64,7 +64,7 @@ Standard policies cover water damage from above (burst pipes, rain through a dam
 - Rising water table seeping through foundation walls
 - Groundwater infiltration
 
-This is the category that catches most New England homeowners off guard. Our region's freeze-thaw cycles, clay soils, and seasonal water table fluctuations cause the majority of foundation issues — and none of it is covered under a standard policy.
+This is the category that catches most New England homeowners off guard. Our region's freeze-thaw cycles, clay-heavy soil and glacial till, and seasonal water table fluctuations cause the majority of foundation issues — and none of it is covered under a standard policy.
 
 ### Flood Damage
 
@@ -147,8 +147,8 @@ Since most foundation repairs come out of pocket, it helps to know the real numb
 | Repair Type | Typical Cost |
 |------------|-------------|
 | Single crack injection | $800–$1,200 |
-| Bulkhead sealing | $1,800–$2,500 |
-| Carbon fiber reinforcement | $200–$300 per stitch |
+| Bulkhead sealant (injection) | $1,800–$2,500 |
+| Carbon fiber staples (reinforcement) | $200–$300 per stitch |
 | Full wall stabilization | $6,000–$15,000 |
 
 For a complete breakdown, see our [Foundation Repair Cost Guide 2026](/blog/foundation-repair-cost-guide-2026).
@@ -187,4 +187,4 @@ Only if the damage has a clear covered cause (burst pipe, fallen tree, vehicle i
 
 ### Can I get foundation repair financing if insurance won't pay?
 
-Yes. Many homeowners use home equity loans, HELOCs, or contractor financing for foundation repairs. Some repairs like a single crack injection ($800–$1,200) are manageable out of pocket. For larger jobs, financing spreads the cost over time. Ask about payment options during your consultation.
+Yes. Many homeowners use home equity loans, HELOCs, or contractor financing for foundation repairs. Some repairs like a single crack injection ($800-$1,200) are manageable out of pocket. For larger jobs, financing spreads the cost over time. Ask about payment options during your [free consultation](/services/free-foundation-consultations). With 20+ years of experience and 91+ documented projects across New England, we can give you an honest assessment of what your foundation needs — even if the answer is that you do not need repair at all.

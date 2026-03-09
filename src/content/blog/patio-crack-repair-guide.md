@@ -19,9 +19,9 @@ Your patio is cracked. Maybe it's a single line running across the middle, maybe
 
 Here in New England, cracked patios are practically a rite of homeownership. Our freeze-thaw cycles, clay soils, and enthusiastic tree root systems conspire against every concrete slab poured north of the Mason-Dixon line. But "cracked" doesn't automatically mean "condemned." Many patio cracks are repairable, and understanding the difference between a fix-it and a replace-it situation can save you thousands of dollars.
 
-## Types of Patio Cracks
+## Types of Concrete Patio Cracks
 
-Not all cracks are telling you the same story. Here's your field guide.
+Not all cracks are telling you the same story. Here's your field guide to patio crack repair decisions.
 
 ### Hairline Cracks
 
@@ -39,11 +39,11 @@ Not all cracks are telling you the same story. Here's your field guide.
 
 **Severity: Moderate.** The crack itself isn't dangerous, but the uneven surface is a trip hazard, and the underlying soil problem may continue to worsen.
 
-### Frost Heave Cracks
+### Frost Heave Cracks from Freeze-Thaw Cycles
 
 **What they look like:** Sections pushed upward, with cracks at the boundary between heaved and stable areas. Often appear or worsen in late winter or early spring.
 
-**What's happening:** Water in the soil under the slab freezes and expands, pushing the concrete upward. When it thaws, the slab may not settle back to its original position. Over multiple freeze-thaw seasons, the displacement accumulates.
+**What's happening:** Water in the clay-heavy glacial till soil under the slab freezes and expands by about 9%, pushing the concrete upward. When it thaws, the slab may not settle back to its original position. New England experiences 50-80 freeze-thaw cycles per winter, and over multiple seasons the displacement accumulates.
 
 **Severity: Moderate to high.** Frost heave cracks tend to get worse each winter. If the underlying drainage isn't addressed, the slab will continue to move.
 
@@ -116,7 +116,7 @@ Some patio problems are beyond the DIY toolkit, and attempting them yourself can
 - **Recurring cracks.** If you've filled a crack and it reopens within a season, there's an active force at work that needs a different solution.
 - **Widespread spalling.** When more than a quarter of your patio surface is deteriorating, spot patching becomes impractical.
 - **Drainage issues.** If water pools on or flows under your patio, the grading and drainage need professional correction.
-- **Proximity to the house foundation.** A settling patio slab adjacent to your foundation can direct water toward your basement. If you're seeing this alongside [efflorescence on your basement walls](/blog/efflorescence-white-powder-basement-walls), the two problems may be connected.
+- **Proximity to the house foundation.** A settling patio slab adjacent to your foundation can direct water toward your basement, causing water in basement after rain. If you're seeing this alongside [white powder on your basement walls](/blog/efflorescence-white-powder-basement-walls) (efflorescence), the two problems may be connected.
 
 ## Repair vs. Replace: The Cost Comparison
 
@@ -179,4 +179,6 @@ An ounce of prevention applies to patios as much as anything:
 
 A cracked patio isn't necessarily a catastrophe. Many cracks are repairable — affordably and durably — if you identify the type of damage correctly and choose the right repair method.
 
-If your patio situation is beyond the DIY level, or if you're not sure whether repair or replacement makes more sense, we're happy to take a look. Attack A Crack offers [free consultations](/services/free-foundation-consultations) for concrete repair across New England. Call us at 860-573-8760 (CT) or 617-668-1677 (MA) — we'll give you an honest assessment and a straight answer about what your patio actually needs.
+**When NOT to repair a patio:** If the entire slab is map-cracked, multiple sections sit at different heights, and the sub-base has washed out, patching is throwing good money after bad. Replacement gives you a fresh slab with proper base preparation and a 30+ year lifespan.
+
+If your patio situation is beyond the DIY level, or if you're not sure whether repair or replacement makes more sense, we're happy to take a look. Attack A Crack offers [free consultations](/services/free-foundation-consultations) for concrete repair across New England. Call us at 860-573-8760 (CT) or 617-668-1677 (MA), or text us a photo for a quick assessment — we'll give you an honest answer about what your patio actually needs after 20+ years of concrete work.

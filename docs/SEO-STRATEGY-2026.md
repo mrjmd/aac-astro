@@ -1,7 +1,7 @@
 # Attack A Crack: Comprehensive SEO Strategy 2026
 
 *Prepared: March 2026*
-*Last Updated: March 2026*
+*Last Updated: March 9, 2026*
 
 ---
 
@@ -30,6 +30,8 @@ This document provides a **complete SEO strategy** for Attack A Crack, addressin
 16. **90-Day Implementation Sprint** - Actionable timeline
 17. **KPIs & Measurement** - Monthly tracking targets
 18. **Off-Site Strategy** - Social, backlinks, reviews, LSA, offline-to-online
+19-22. **Frase Semantic Audit Targets** - Foundation repair CT/MA, bulkhead, floor cracks, carbon fiber, cost, waterproofing, inspection, panic searches
+23. **SERP Acquisition Playbook** - SEMrush data-driven keyword gaps, competitor intelligence, position tracking, prioritized targets (added March 9, 2026)
 
 ### The 2026 Reality Check
 
@@ -1731,4 +1733,271 @@ Beyond technical and service keywords, we must capture searchers at the moment o
 **Strategic Goal:** Pivot informational "what is this" searches to structural expert leads.
 - **Terms:** "Efflorescence," "mineral deposits," "concrete spalling," "water seepage," "moisture intrusion."
 - **Voice:** Educational. "It's not mold—it's minerals. But it means your foundation is breathing water."
+
+---
+
+## Part 23: SERP Acquisition Playbook
+
+*Added March 9, 2026 — Data-driven findings from SEMrush keyword gaps, competitor organic positions, position tracking (234 keywords), and organic competitor analysis.*
+
+**Data sources:** `docs/seo-reports/` — keyword gap CSVs (missing, shared, weak, untapped), position tracking, competitor organic positions, organic competitors list.
+
+---
+
+### 23.1 Keyword Gap Analysis Results
+
+SEMrush keyword gap analysis compared AAC against A-1 Foundation, CrackX, and Groundworks.
+
+**153 "Missing" Keywords** — competitors rank, AAC doesn't (position 0):
+
+| Keyword | Volume | KD | Top Competitor | Their Position |
+|---------|--------|-----|----------------|----------------|
+| basement crack repair near me | 3,600 | 7 | A-1 (pos 21) | CrackX dominates |
+| basement floor crack repair | 3,600 | 13 | CrackX (pos 25) | All 3 rank |
+| fixing cracks in basement floor | 2,400 | 17 | CrackX (pos 10) | Low KD |
+| basement floor repair | 1,900 | 23 | CrackX (pos 16) | All 3 rank |
+| cracks in basement floor | 1,900 | 12 | Groundworks (pos 8) | Informational |
+| basement water seepage repair | 880 | 14 | A-1 (pos 76) | CrackX stronger |
+| sealing cracks in basement floor | 720 | 20 | CrackX (pos 30) | All 3 rank |
+| cracks in foundation floor | 590 | 6 | CrackX (pos 8) | **Very low KD** |
+| fieldstone foundation | 390 | 12 | A-1 (pos 26) | NE-specific |
+| sandstone foundation repair | 390 | 12 | A-1 (pos 31) | NE-specific |
+| bulkhead repair near me | 320 | 11 | A-1 (pos 9) | CrackX (pos 2) |
+| bulkhead replacement near me | 210 | 18 | A-1 (pos 20) | CrackX (pos 50) |
+| foundation crack repair company | 320 | 21 | A-1 (pos 9) | CrackX (pos 11) |
+| fieldstone foundation repair cost | 260 | 8 | A-1 (pos 10) | **Easy win** |
+
+**55 "Shared" Keywords** — AAC ranks but weaker than competitors:
+
+| Keyword | Volume | AAC Pos | Best Competitor | Their Pos |
+|---------|--------|---------|-----------------|-----------|
+| foundation crack repair services near me | 590 | 8 | A-1 (pos 21) | AAC leads |
+| basement crack fix | 480 | 14 | CrackX (pos 10) | Close gap |
+| crack repair foundation | 390 | 21 | A-1 (pos 50) | AAC competitive |
+| foundation crack repairs | 390 | 14 | A-1 (pos 23) | AAC leads |
+| foundation repair massachusetts | 210 | 7 | A-1 (pos 2) | **A-1 dominates** |
+| foundation repair connecticut | 90 | 3 | Groundworks (pos 7) | **AAC leads** |
+| sealing bulkhead doors | 170 | 9 | CrackX (pos 4) | Optimize |
+| waterproof bulkhead doors | 170 | 28 | CrackX (pos 10) | **Big gap** |
+| basement wall crack repair near me | 170 | 12 | Groundworks (pos 13) | Close |
+| basement floor concrete crack repair | 170 | 28 | CrackX (pos 17) | Optimize |
+
+**7 "Weak" Keywords** — ALL competitors outrank AAC:
+
+| Keyword | Volume | AAC Pos | A-1 | CrackX | Groundworks |
+|---------|--------|---------|-----|--------|-------------|
+| basement floor cracks repair | 70 | 62 | 47 | 32 | 15 |
+| expert foundation crack repair | 70 | 17 | 10 | 9 | 6 |
+| bedford foundation crack repair | 50 | 80 | 32 | 19 | 6 |
+| bulkhead repair services | 50 | 95 | 34 | 17 | 1 |
+| foundation repair natick | 50 | 14 | 11 | 3 | 5 |
+| reliable foundation crack repair | 40 | 80 | 36 | 15 | 14 |
+| crack x nh | 30 | 86 | 24 | 1 | 26 |
+
+**1,000 "Untapped" Keywords** — only 1-2 competitors rank (mostly Groundworks national terms). Filtered to realistic local targets:
+
+The untapped list is dominated by Groundworks-only national terms (basement waterproofing 60,500 vol, crawl space encapsulation 33,100 vol, etc.) that are beyond AAC's current scope. Realistic local targets extracted:
+- "basement crack repair near me" variants (3,600 vol)
+- "fieldstone/sandstone foundation" cluster (780 combined vol, KD 12)
+- "basement water seepage repair" (880 vol, KD 14)
+- "bulkhead repair/replacement near me" (530 combined vol, KD 11-18)
+
+---
+
+### 23.2 The #1 Content Gap: "Basement Floor Crack Repair"
+
+**Combined cluster volume: 13,400+/month across variants. AAC has zero ranking pages.**
+
+| Keyword | Volume | KD | CrackX Pos | Groundworks Pos | A-1 Pos |
+|---------|--------|-----|------------|-----------------|---------|
+| basement floor crack repair | 3,600 | 13 | 25 | 13 | 33 |
+| fixing cracks in basement floor | 2,400 | 17 | 10 | 19 | 56 |
+| basement floor repair | 1,900 | 23 | 16 | 23 | 49 |
+| cracks in basement floor | 1,900 | 12 | 13 | 8 | 33 |
+| sealing cracks in basement floor | 720 | 20 | 30 | 21 | 67 |
+| basement floor crack | 590 | 16 | 45 | 5 | 53 |
+| cracks in foundation floor | 590 | 6 | 8 | 16 | 44 |
+| basement floor cracking | 480 | 9 | 87 | 5 | 47 |
+| basement floor cracks | 320 | 9 | 93 | 7 | 26 |
+| crack in basement floor | 320 | 7 | 24 | 4 | 47 |
+
+**All low KD (7-23). CrackX and Groundworks winning with dedicated pages.**
+
+**Action:** A blog post was drafted March 8 ("How to Fix Cracks in Your Basement Floor"). Consider also creating a dedicated service page at `/services/basement-floor-crack-repair` for transactional queries, or converting the blog post to a pillar resource page. The cluster is large enough to justify both an informational blog post and a commercial service page.
+
+---
+
+### 23.3 Position Tracking Baseline (234 keywords, March 9, 2026)
+
+**20 keywords at position 1** (mostly local pack):
+
+| Keyword | Pos | Type | Landing Page |
+|---------|-----|------|-------------|
+| basement concrete repair | 1 | local | — |
+| basement crack fix | 1 | local | — |
+| basement crack repair | 1 | local | — |
+| concrete crack repair company | 1 | local | — |
+| concrete crack repair near me | 1 | local | — |
+| concrete foundation repair | 1 | local | — |
+| concrete stitches | 1 | AI overview | /carbon-fiber-stitches |
+| connecticut foundation repair | 1 | local | — |
+| crack repair | 1 | local | — |
+| crack repair near me | 1 | local | — |
+| crack repair services | 1 | local | — |
+| crumbling foundations massachusetts | 1 | AI overview | /blog/crumbling-foundations... |
+| fix basement crack | 1 | local | — |
+| foundation crack injection services | 1 | local | — |
+| foundation crack repair | 1 | local | — |
+| foundation crack repairs | 1 | local | — |
+| massachusetts crumbling foundations | 1 | AI overview | /blog/crumbling-foundations... |
+| pyrrhotite foundation mass. towns | 1 | AI overview | /blog/crumbling-foundations... |
+| water leaking through bulkhead | 1 | AI overview | /blog/why-your-bulkhead... |
+
+**Quick wins at positions 2-10** (push to #1):
+
+| Keyword | Pos | Volume | Type |
+|---------|-----|--------|------|
+| cement foundation repair | 2 | 10 | local |
+| concrete foundation crack repair | 2 | 10 | local |
+| concrete repair near me | 2 | 30 | local |
+| concrete stair repair | 2 | 10 | local |
+| crack foundation repair | 2 | 50 | local |
+| basement crack | 3 | 10 | local |
+| basement crack repair companies | 3 | 10 | local |
+| foundation crack repair near me | 4 | 390 | local |
+| leaky bulkhead | 5 | 170 | organic |
+| foundation repair near me | 7 | 390 | local |
+| basement wall crack repair | 3 | 10 | local |
+
+**Positions 11-20** (page 2 — need optimization push):
+
+| Keyword | Pos | Volume | Action |
+|---------|-----|--------|--------|
+| foundation crack repair cost | 12 | 30 | Optimize cost guide page |
+| bulkhead waterproofing | 14 | 30 | Optimize service page |
+| foundation crack injection | 18 | 50 | Close to page 1 |
+| carbon fiber foundation repair | 16 | 10 | Optimize service page |
+| leaky basement | 20 | 30 | Blog + service page linking |
+
+---
+
+### 23.4 Competitor Intelligence Summary
+
+**A-1 Foundation Crack Repair** (a1foundationcrackrepair.com)
+- **1,665 organic keywords**, 2,591 traffic, $25,435 traffic cost
+- **Relevance to AAC: 0.30** (highest — 87 common keywords)
+- Strongest via GMB/local pack — many #1 positions are local pack
+- Top non-branded traffic drivers: "flex seal" blog post (198 visits/mo from 49,500 vol keyword), "lally column" post (175 visits/mo from 5,400 vol). Both are informational content plays.
+- "Foundation repair Massachusetts" — A-1 at pos 2, AAC at pos 7. Key battleground.
+
+**CrackX** (crackx.com)
+- **3,353 organic keywords** (2x A-1), 1,949 traffic, $12,875 traffic cost
+- **Relevance to AAC: 0.14** (87 common keywords, but broader footprint)
+- Broadest content footprint — dedicated pages for floor cracks, bulkhead, fieldstone, DIY vs professional
+- Position 2 for "crawl space repair" (18K vol) — biggest long-term threat in NE
+- "Concrete crack repair" at pos 10 (8,100 vol) — strong organic presence
+- Multi-state structure (CT, MA, NH, ME pages) mirrors AAC's approach
+
+**Groundworks** (groundworks.com)
+- **60,000+ keyword footprint**, 84,000+ traffic — national player
+- Not a direct local threat but owns informational terms ("foundation repair" pos 2, "basement waterproofing" pos 6)
+- Wins AI Overview snippets for many "how to repair" queries
+- Their depth of content resources (guides, glossary, solutions pages) sets the bar for topical authority
+
+**New Competitor Alert:** newenglandfoundationcrackrepair.com
+- Relevance 0.24, 515 keywords, 949 traffic, 36 common keywords
+- Appeared in competitor analysis — worth monitoring
+
+**Other Notable Competitors:**
+| Domain | Relevance | Common KWs | Traffic |
+|--------|-----------|------------|---------|
+| foundationcrackrepair.com | 0.17 | 29 | 1,536 |
+| crackattack.com | 0.12 | 28 | 1,797 |
+| cellardoors.com | 0.11 | 30 | 3,552 |
+| resconsolutions.com | 0.10 | 31 | 1,015 |
+| foundationcrackrepairllc.com | 0.08 | 27 | 2,255 |
+
+---
+
+### 23.5 Prioritized SERP Targets
+
+#### Tier 1: Move from page 2-3 to page 1 (existing rankings, need improvement)
+
+| Keyword | Est. Impressions | Current Pos | Action |
+|---------|-----------------|-------------|--------|
+| foundation crack repair near me | high | 4 | Already close — optimize service page + city page internal links |
+| foundation repair near me | very high | 7 | Local signals + city pages + GBP optimization |
+| leaky bulkhead | medium | 5 | Already close — optimize service page |
+| foundation crack injection | medium | 18 | Optimize service page, build internal links |
+| bulkhead waterproofing | medium | 14 | Optimize service page |
+| waterproof bulkhead doors | 170 vol | 28 | Big gap vs CrackX (pos 10) — content depth |
+| foundation repair massachusetts | 210 vol | 7 | A-1 at pos 2 — needs GBP + backlinks |
+| basement floor concrete crack repair | 170 vol | 28 | New content needed (see 23.2) |
+
+#### Tier 2: New content needed (zero AAC pages or very weak)
+
+| Target | Cluster Volume | KD Range | Rationale |
+|--------|---------------|----------|-----------|
+| **Basement floor crack repair** | 13,400+ | 7-23 | #1 gap — all competitors rank, AAC at zero |
+| **Lally column content** | 5,400 | 10 | A-1 gets 175 visits/mo from ONE blog post |
+| **Fieldstone/sandstone foundation** | 780 combined | 8-12 | NE-specific, low competition — AAC has blog posts but no service page |
+| **Foundation repair cost by city** | 5,400+ | varies | AAC at pos 12 for cost queries — push to top 5 with city-specific cost content |
+| **"Horizontal cracks" cluster** | 3,600 | 5 | Groundworks owns — AAC has a blog post, needs optimization |
+| **Bulkhead replacement near me** | 210 | 18 | CrackX at pos 50, A-1 at pos 20 — winnable |
+
+#### Tier 3: Unclaimed niches (first-mover advantage)
+
+- **Title I / FHA loan content** for foundation repair financing — HUD 92051 compliance
+- **"Flex Seal doesn't work on basement cracks"** debunking content — A-1's flex seal post gets 198 visits/mo from 49,500 searches. AAC can capture the same "flex seal + basement" traffic with a well-targeted rebuttal.
+- **Insurance coverage for foundation repair** (state-specific for CT, MA, RI, NH, ME) — high CPC ($17-27) indicates commercial value
+- **"Are cracks in basement floor normal?"** — 170 vol, KD 18, pure informational lead-gen
+- **"Professional foundation crack repair"** — 480 vol, KD 2 (!) — CrackX wins AI overview with a DIY vs pro post
+
+---
+
+### 23.6 Backlink Gap Strategy
+
+AAC has near-zero authoritative backlinks vs hundreds for competitors. This is the single biggest structural disadvantage.
+
+**Priority 1: BBB Listing** (Authority Score 78)
+Every competitor has a BBB profile. AAC does not. This is a free, high-authority backlink + trust signal. Submit immediately post-launch.
+
+**Priority 2: Chamber of Commerce** (CT + MA)
+Local authority backlinks. Both Amston/Hebron and Quincy chambers.
+
+**Priority 3: todayshomeowner.com Outreach**
+Links to A-1 with 433 links from this domain. High-authority home improvement site. Pitch AAC as a New England expert source.
+
+**Priority 4: HARO/Connectively Journalist Queries**
+Monitor for foundation repair, home maintenance, real estate inspection queries. Luc as expert source.
+
+**Priority 5: Partner Reciprocal Links**
+Real estate agents, home inspectors, and other partners link to AAC. AAC links back from partner pages. Ensure `rel="nofollow"` is NOT applied to legitimate partner links.
+
+**Priority 6: Content-Based Link Building**
+The "crumbling foundations" blog post already wins AI Overviews. Create more linkable assets:
+- NE foundation types visual guide (shareable infographic)
+- Foundation repair cost calculator (interactive tool)
+- State-specific foundation problem guides (journalists reference these)
+
+---
+
+### 23.7 Organic Competitor Watchlist
+
+Top 10 competitors by relevance, monitored quarterly:
+
+| Rank | Domain | Relevance | Common KWs | Organic Traffic | Threat Level |
+|------|--------|-----------|------------|-----------------|-------------|
+| 1 | a1foundationcrackrepair.com | 0.30 | 87 | 2,591 | **High** — direct local competitor |
+| 2 | newenglandfoundationcrackrepair.com | 0.24 | 36 | 949 | **Medium** — new entrant, NE-focused |
+| 3 | clamdoor.com | 0.22 | 32 | 903 | Low — bulkhead niche only |
+| 4 | foundationcrackrepair.com | 0.17 | 29 | 1,536 | Medium — generic domain authority |
+| 5 | crackx.com | 0.14 | 87 | 1,949 | **High** — broadest NE content |
+| 6 | crackattack.com | 0.12 | 28 | 1,797 | Medium — similar brand positioning |
+| 7 | lucigold.com | 0.12 | 20 | 1,078 | Low — niche overlap |
+| 8 | cellardoors.com | 0.11 | 30 | 3,552 | Low — bulkhead/cellar door niche |
+| 9 | resconsolutions.com | 0.10 | 31 | 1,015 | Low — broader services |
+| 10 | foundationcrackrepairllc.com | 0.08 | 27 | 2,255 | Medium — exact-match domain |
+
+**Key insight:** AAC's current organic traffic (~554) places it mid-pack among local competitors. The Astro launch with 185+ pages of optimized content should vault AAC to #1-2 in the local competitive set within 90 days, provided GBP optimization and citation work happens simultaneously.
 

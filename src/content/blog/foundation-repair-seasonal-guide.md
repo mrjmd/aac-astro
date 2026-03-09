@@ -21,7 +21,7 @@ heroImage: "/images/projects/quincy-crack-injection-2025-10-before.jpg"
 heroImageAlt: "Foundation wall crack requiring seasonal repair"
 ---
 
-"When's the best time to get this fixed?" I hear it every week. Homeowners want to time their foundation repair for ideal conditions — which makes sense. But in 33+ years of working across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, I've learned something that surprises most people: **foundation repair works in every season, and waiting for "the right time" usually makes things worse.**
+"When's the best time to get this fixed?" I hear it every week. Homeowners want to time their foundation repair for ideal conditions — which makes sense. But in 20+ years of working across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, I've learned something that surprises most people: **foundation repair works in every season, and waiting for "the right time" usually makes things worse.**
 
 That said, each season has its advantages and considerations. Here's the honest breakdown.
 
@@ -74,7 +74,7 @@ Summer is when most people think of doing home repairs, and it works well for fo
 - Homeowners sometimes decide a crack "fixed itself" when the leak stops seasonally — it hasn't
 - Extreme heat can affect certain repair materials (we adjust application accordingly)
 
-**Best for:** [Carbon fiber reinforcement](/services/carbon-fiber-stitches) (epoxy adhesive cures optimally in moderate temperatures), exterior concrete repair ([driveways](/concrete-repair/driveway), [pool decks](/concrete-repair/pool-deck), [patios](/concrete-repair/patio))
+**Best for:** [Carbon fiber staples (reinforcement)](/services/carbon-fiber-stitches) (epoxy adhesive cures optimally in moderate temperatures), exterior concrete repair ([driveways](/concrete-repair/driveway), [pool decks](/concrete-repair/pool-deck), [patios](/concrete-repair/patio))
 
 ## Fall: The Strategic Window
 
@@ -108,7 +108,7 @@ Most homeowners assume foundation repair can't be done in winter. **That's wrong
 
 ### What Happens to Your Foundation
 
-- **Ground freezes**: Frozen soil expands by up to 9%, pushing against your foundation walls with enormous force
+- **Ground freezes**: Frozen soil — especially New England's glacial till and clay-heavy soil — expands by up to 9%, pushing against your foundation walls with enormous force
 - **Frost heave**: The deeper the frost line (4+ feet in northern New England), the greater the force
 - **Ice wedging**: Water in existing cracks freezes and expands, widening them
 - **Freeze-thaw cycling**: Even during winter, New England gets thaw cycles that melt and refreeze — each cycle weakens the concrete further
@@ -118,7 +118,7 @@ Most homeowners assume foundation repair can't be done in winter. **That's wrong
 **Advantages:**
 - Interior repairs are unaffected by exterior temperature (your basement is climate-controlled enough)
 - Our fastest booking availability — most homeowners wait for spring, so you get priority scheduling
-- **Bulkhead repairs actually benefit from winter conditions**: Frozen ground causes maximum joint expansion, and when spring compression comes, it further reinforces the sealant
+- **Bulkhead repairs actually benefit from winter conditions**: Frozen ground causes maximum joint expansion, and when spring compression comes, it further reinforces the bulkhead sealant
 - Polyurethane injection works at any temperature encountered inside a basement
 - Prices are consistent year-round (we don't do seasonal pricing)
 
@@ -127,11 +127,11 @@ Most homeowners assume foundation repair can't be done in winter. **That's wrong
 - Concrete pours (for exterior work) require above-freezing conditions
 - Access around the home may be restricted by snow
 
-**Best for:** [Crack injection](/services/foundation-crack-injection) (interior work, unaffected by weather), [bulkhead repair](/services/leaky-bulkhead-repair) (winter conditions actually enhance the repair)
+**Best for:** [Crack injection](/services/foundation-crack-injection) at $800-$1,200 per crack (interior work, unaffected by weather), [bulkhead sealant injection](/services/leaky-bulkhead-repair) at $1,800-$2,500 (winter conditions actually enhance the bulkhead sealant repair)
 
 ## The Real Answer: Don't Wait
 
-Here's what 33 years of experience has taught me. The best time to repair your foundation is **when you discover the problem.**
+Here's what 20+ years of experience has taught me. The best time to repair your foundation is **when you discover the problem.**
 
 Every season that passes without repair:
 

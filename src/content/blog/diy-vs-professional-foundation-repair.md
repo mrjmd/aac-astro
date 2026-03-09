@@ -69,20 +69,20 @@ Small areas where the concrete surface is flaking or deteriorating.
 
 ## When to Call a Professional
 
-### Water Actively Entering
+### Water Actively Entering Through Foundation Cracks
 
-If water is coming through a crack—even occasionally—DIY surface treatments won't work. Here's why:
+If water is coming through a crack — even occasionally, such as water in your basement after rain — DIY surface treatments won't work. Here's why:
 
-Surface sealers only address the visible crack. Water entering your foundation travels through the entire wall thickness (8-10 inches of concrete). [Professional crack injection](/services/foundation-crack-injection) fills the complete crack path from inside to outside.
+Surface sealers only address the visible crack. Water entering your foundation travels through the entire wall thickness (8-10 inches of concrete). [Professional crack injection](/services/foundation-crack-injection) at 100 PSI fills the complete crack path from inside to outside for $800-$1,200 per crack with a lifetime guarantee.
 
-**DIY risk:** Surface sealing can trap water inside the wall, leading to freeze-thaw damage and larger cracks.
+**DIY risk:** Surface sealing can trap water inside the wall, leading to freeze-thaw damage in New England's clay-heavy soil and glacial till conditions, creating larger cracks and accelerating deterioration.
 
 ### Cracks Wider Than 1/4 Inch
 
 Wide cracks indicate significant movement and often require more than surface treatment. They may need:
-- Deep injection to fill the void
-- Structural assessment
-- Carbon fiber reinforcement
+- Deep injection at 100 PSI to fill the void through all 8-10 inches of concrete
+- Structural assessment by a professional
+- [Carbon fiber staples (stitches)](/services/carbon-fiber-stitches) for reinforcement at $200-$300 per stitch
 
 **DIY risk:** Wide cracks can continue to grow if the underlying cause isn't addressed.
 
@@ -138,11 +138,12 @@ Home improvement stores sell injection kits for foundation cracks. Here's our ho
 
 | DIY Kit | Professional Injection |
 |---------|----------------------|
-| Low-pressure application | High-pressure injection |
+| Low-pressure application | High-pressure injection at 100 PSI |
 | Limited material volume | Unlimited material as needed |
 | Rigid epoxy only | Flexible urethane or structural epoxy |
 | Surface preparation limited | Complete crack preparation |
 | No warranty | Lifetime guarantee |
+| Cost: $20-$50 per kit | Cost: $800-$1,200 per crack |
 
 ## Our Approach: Honest Assessment First
 
@@ -180,4 +181,4 @@ That's what free consultations are for. We'll look at your situation and give yo
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677
 
-Text us photos and we'll respond with initial guidance. Many homeowners get the answer they need without scheduling an on-site visit.
+Text us a photo for assessment and we'll respond with initial guidance. With 20+ years of experience and 91+ documented projects across New England, many homeowners get the answer they need without scheduling an on-site visit.

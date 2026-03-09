@@ -15,7 +15,7 @@ relatedServices:
   - "free-foundation-consultations"
 ---
 
-## The Honest Answer: It Depends (But We Will Give You Real Numbers)
+## How Much Does Driveway Repair Cost in Massachusetts?
 
 We get it — you are Googling "driveway repair cost Massachusetts" because you want a number, not a lecture. So here is the short answer: most concrete driveway repairs in Massachusetts cost between $300 and $3,500 depending on the type and extent of damage. Full replacement runs $4,000 to $10,000 or more.
 
@@ -61,7 +61,7 @@ A 20-foot crack costs more than a 3-foot crack. Three sunken sections cost more 
 
 ### Soil and Base Conditions
 
-If the soil beneath your driveway has eroded or was poorly compacted, any surface repair will fail unless the base is addressed first. Massachusetts soil varies by region — sandy coastal soils on the South Shore behave differently from clay-heavy soils in the Connecticut River Valley.
+If the soil beneath your driveway has eroded or was poorly compacted, any surface repair will fail unless the base is addressed first. Massachusetts soil varies by region — sandy coastal soils on the South Shore behave differently from clay-heavy glacial till and clay soils in the Connecticut River Valley. Freeze-thaw cycles are especially destructive on clay-heavy soil, which holds moisture against the slab and heaves unpredictably.
 
 ### Time of Year
 
@@ -85,7 +85,7 @@ The window closes when overnight temperatures consistently drop below 40 degrees
 
 Most concrete work stops during Massachusetts winters. If your driveway can wait until spring, it probably should.
 
-## Repair vs. Replace: The Real Math
+## Concrete Driveway Repair vs. Replacement: The Real Math
 
 The repair-or-replace decision is not just about today's cost. It is about cost per year of service life.
 
@@ -110,6 +110,8 @@ Here is what we believe a fair quoting process looks like:
 3. **No pressure.** If someone tells you the price goes up if you do not sign today, that is a red flag, not a deal.
 4. **Explanation of options.** You should understand what each option costs and how long it is expected to last.
 
-We offer [free consultations](/services/free-foundation-consultations) for driveway and foundation work throughout Massachusetts. Call us at 617-668-1677 to schedule. We will tell you what we see, what we recommend, and what it costs. If the answer is "patch it and wait," we will say that. We would rather give you honest advice today and earn your trust for the bigger job down the road.
+We offer [free consultations](/services/free-foundation-consultations) for driveway and concrete repair work throughout Massachusetts. Call us at 617-668-1677 or text us a photo for a quick assessment. We will tell you what we see, what we recommend, and what it costs. If the answer is "patch it and wait," we will say that. We would rather give you honest advice today and earn your trust for the bigger job down the road.
 
-That is just how we operate after 33 years. It seems to be working.
+**A note on cement vs. concrete:** Many homeowners say "cement driveway" when they mean concrete. Cement is just one ingredient in concrete — the powder that, when mixed with water, sand, and aggregate, forms concrete. Your driveway is concrete, and the distinction matters when choosing repair products and methods.
+
+That is just how we operate after 20+ years. It seems to be working.

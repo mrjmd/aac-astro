@@ -28,11 +28,11 @@ Head downstairs with a flashlight. Let us figure out what you are working with.
 
 The most common foundation type in New England by a wide margin. If your home was built after about 1940, this is almost certainly what you have.
 
-**What it looks like:** Smooth, uniform gray walls. You might see faint horizontal lines where concrete forms were stacked during construction and small evenly-spaced holes (tie holes) where metal ties held the forms together. Walls are typically 8 to 10 inches thick and feel solid when you knock.
+**What it looks like:** Smooth, uniform gray walls. You might see faint horizontal lines where concrete forms were stacked during construction and small evenly-spaced holes (tie holes) where metal ties held the forms together. Walls are typically 8-10 inches of concrete and feel solid when you knock.
 
 **Common problems:** Poured concrete cracks — that is physics, not a defect. Vertical or slightly diagonal cracks from shrinkage and settlement are the most common and most straightforward to repair. Horizontal cracks indicate lateral soil pressure and need prompt attention.
 
-**Repair approach:** The easiest foundation type to fix. Cracks can be sealed permanently with [foundation crack injection](/services/foundation-crack-injection), filling the crack from front to back with epoxy or polyurethane resin. See our [poured concrete foundation repair guide](/blog/poured-concrete-foundation-repair) for the full picture.
+**Repair approach:** The easiest foundation type to fix. Cracks can be sealed permanently with [foundation crack injection](/services/foundation-crack-injection) at $800-$1,200 per crack, filling the crack from front to back with epoxy or polyurethane resin at approximately 100 PSI. See our [poured concrete foundation repair guide](/blog/poured-concrete-foundation-repair) for the full picture.
 
 ## Cinderblock / CMU (1930s-1970s)
 
@@ -50,7 +50,9 @@ If your New England home was built before 1900, there is a good chance it sits o
 
 **What it looks like:** Unmistakable. Irregularly shaped stones of varying sizes fitted together like a three-dimensional puzzle, with mortar (usually a sandy lime-based mix) filling the gaps. Walls are often 18 to 24 inches thick. Colors vary by local geology: gray granite in Connecticut and Massachusetts, reddish sandstone in the Connecticut River Valley.
 
-**Common problems:** Fieldstone foundations were never waterproof — they were not designed to be. The original builders expected some moisture and used cellars for cold storage. Mortar deteriorates over time, stones can shift, and water passes through freely during heavy rains. Efflorescence (white powdery residue) is common.
+**Common problems:** Fieldstone foundations were never waterproof — they were not designed to be. The original builders expected some moisture and used cellars for cold storage. Mortar deteriorates over time, stones can shift, and water passes through freely during heavy rains. Efflorescence — that white powder on basement walls — is common and signals ongoing moisture movement.
+
+**A note on cement vs. concrete:** Homeowners often say "cement foundation." Cement is just one ingredient in concrete. Fieldstone foundations use neither — they are natural stone and lime mortar. The distinction matters because repair materials differ completely.
 
 **Repair approach:** Specialized work involving repointing mortar joints, stabilizing shifted stones, and managing water rather than eliminating it entirely. Our [fieldstone foundation repair guide](/blog/fieldstone-foundation-repair-guide) covers the specific approaches.
 
@@ -76,4 +78,4 @@ The oldest foundations in New England — under colonial homes, early Federal-er
 
 ## Not Sure What You Have?
 
-Some foundations are hybrids — fieldstone on the bottom with brick added during a later renovation, or block walls parged to look like poured concrete. If you are still unsure after reading this guide, that is completely normal. The easiest path is to [schedule a free inspection](/services/free-foundation-consultations). With over 33 years of experience on every foundation type in New England, we will identify yours, assess its condition, and explain your options in plain English.
+Some foundations are hybrids — fieldstone on the bottom with brick added during a later renovation, or block walls parged to look like poured concrete. If you are still unsure after reading this guide, that is completely normal. The easiest path is to [schedule a free inspection](/services/free-foundation-consultations) or text us a photo for a quick identification. With 20+ years of experience on every foundation type in New England, we will identify yours, assess its condition, and explain your options in plain English.

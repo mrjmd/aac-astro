@@ -26,13 +26,13 @@ These foundations are made of fired clay bricks laid in courses with mortar join
 
 After 100-plus years of New England weather, most brick foundations show wear. Understanding the causes helps you know what to watch for.
 
-### Mortar Joint Failure
+### Mortar Joint Failure (The #1 Problem)
 
 This is the number one issue, and it is nearly universal. The original mortar was lime-based — softer and more flexible than modern Portland cement. Over decades, it erodes from moisture, freeze-thaw cycles, and simple age. You will see recessed joints where mortar has worn back, crumbling mortar that turns to powder when touched, or gaps where mortar has fallen out entirely. Water follows these gaps straight into your basement.
 
-### Brick Spalling
+### Brick Spalling from Freeze-Thaw Cycles
 
-Spalling is when the face of a brick flakes or pops off, caused by moisture freezing inside the brick itself. New England's 50 to 80 freeze-thaw cycles per winter do cumulative damage that adds up over a hundred years.
+Spalling is when the face of a brick flakes or pops off, caused by moisture freezing inside the brick itself. New England's 50 to 80 freeze-thaw cycles per winter do cumulative damage that adds up over a hundred years. The glacial till soils common across New England hold moisture against brick walls, accelerating this process.
 
 ### Water Intrusion
 
@@ -64,13 +64,13 @@ While repointing addresses mortar deterioration, [crack injection](/services/fou
 
 Most brick foundation problems are manageable with repointing, crack repair, and drainage improvements. But some situations need more.
 
-**Bowing or bulging walls:** More than about an inch of inward bow means lateral soil pressure is overwhelming the wall. Options include [carbon fiber reinforcement](/services/carbon-fiber-stitches), steel braces, or wall reconstruction in severe cases.
+**Bowing or bulging walls:** More than about an inch of inward bow means lateral soil pressure is overwhelming the wall. Options include [carbon fiber reinforcement](/services/carbon-fiber-stitches) (also called carbon fiber staples) at $200-$300 per stitch, steel braces, or wall reconstruction in severe cases.
 
 **Severe mortar loss:** If mortar is gone from more than about 30 percent of joints in a wall section, the bricks are essentially stacked without bonding. This needs prompt professional attention.
 
 **Crumbling bricks:** A few spalling bricks are normal. Entire courses of crumbling bricks may require selective replacement or section rebuilding.
 
-**When it is too far gone:** Some brick foundations have deteriorated beyond practical repair — severely bowed walls, extensive brick damage, mortar largely gone. The cost of full restoration may exceed adding a new structural support system. This is rare, but when we see it, we say so.
+**When NOT to repair:** Some brick foundations have deteriorated beyond practical repair — severely bowed walls, extensive brick damage, mortar largely gone. If mortar loss exceeds 50 percent and multiple courses of brick are crumbling, the cost of full restoration may exceed adding a new structural support system. This is rare, but when we see it, we say so. We would rather give you an honest assessment than sell you a repair that will not last.
 
 ## What to Do Right Now
 
@@ -82,4 +82,6 @@ Most brick foundation problems are manageable with repointing, crack repair, and
 
 **Do not panic.** Your brick foundation has been standing for over a century. Whatever condition it is in today, it got there slowly over decades. You have time to plan a thoughtful repair.
 
-When you are ready for a professional assessment, [schedule a free consultation](/services/free-foundation-consultations). We have been working on brick foundations across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine for over 33 years, and we will tell you exactly what your foundation needs — and what it does not.
+When you are ready for a professional assessment, [schedule a free consultation](/services/free-foundation-consultations) or text us a photo of your brick foundation for a quick assessment. We have been working on brick foundations across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine for 20+ years, and we will tell you exactly what your foundation needs — and what it does not.
+
+**A note on cement vs. concrete:** Homeowners often say "cement foundation" when they mean concrete. Cement is just one ingredient in concrete (along with water, sand, and aggregate). A brick foundation uses neither — it is fired clay and mortar. The distinction matters because repair materials and techniques differ significantly between these foundation types.

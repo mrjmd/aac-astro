@@ -33,16 +33,16 @@ steps:
 
 ## Carbon Fiber Foundation Repair: Maximum Strength, Minimal Intrusion
 
-When foundation cracks indicate structural stress, carbon fiber stitches provide the reinforcement needed to stop movement and stabilize your foundation. This advanced repair method adds incredible strength without the cost and disruption of traditional structural repairs.
+When foundation cracks indicate structural stress, carbon fiber stitches (also called carbon fiber staples) provide the reinforcement needed to stop movement and stabilize your foundation. This advanced structural repair method adds incredible strength without the cost and disruption of traditional steel I-beam reinforcement or exterior excavation.
 
-### What Are Carbon Fiber Stitches?
+### What Are Carbon Fiber Stitches (Staples)?
 
-Carbon fiber stitches are reinforcement strips made from high-strength carbon fiber fabric embedded in structural epoxy. When installed across foundation cracks, they:
+Carbon fiber stitches — also known as carbon fiber staples or carbon fiber reinforcement strips — are high-strength carbon fiber fabric embedded in structural epoxy. Similar to Torque Lock-style staple systems used industry-wide, when installed across foundation cracks they:
 
-- **Prevent further crack expansion**
-- **Distribute stress across a wider area**
-- **Add tensile strength to the concrete**
-- **Create permanent structural reinforcement**
+- **Prevent further crack expansion** — locking both sides of the crack together
+- **Distribute stress across a wider area** — reducing point loads on the concrete
+- **Add tensile strength to the concrete** — compensating for concrete's natural weakness in tension
+- **Create permanent structural reinforcement** — no maintenance, no degradation, no corrosion
 
 ### The Science Behind Carbon Fiber
 
@@ -55,7 +55,7 @@ We use **Kevlar-grid carbon fiber** configured specifically for foundation repai
 - **Thin profile** (less than 1/8" when installed)
 - **Custom-shaped** for each specific repair need
 
-Carbon fiber has largely replaced the steel I-beam reinforcement that was the industry standard for decades. The old approach required excavation on both interior and exterior walls to install steel beams—expensive, invasive, and the steel eventually corrodes. Our carbon fiber achieves superior structural reinforcement from the interior only, with no excavation required.
+Carbon fiber staples and straps have largely replaced the steel I-beam reinforcement that was the industry standard for decades. The old approach required excavation on both interior and exterior walls to install steel beams — expensive, invasive, and the steel eventually corrodes. Our carbon fiber reinforcement achieves superior structural results from the interior only, with no excavation required. The material is used in aerospace, marine, and high-performance structural applications worldwide.
 
 ### When Carbon Fiber Is Needed
 
@@ -91,37 +91,45 @@ Carbon fiber fabric is saturated with structural epoxy and embedded into the pre
 **Step 4: Finishing**
 Once cured, the repair can be smoothed and painted to blend with surrounding walls. The low profile makes it nearly invisible.
 
-### Carbon Fiber vs. Traditional Methods
+### Carbon Fiber Staples vs. Traditional Methods
 
-**Steel Straps**
-- Prone to corrosion over time
-- Require more invasive installation
-- Higher profile on wall surface
-- Can cause additional cracking
+| Feature | Carbon Fiber Staples | Steel I-Beams | Wall Anchors | Concrete Replacement |
+|---------|---------------------|---------------|-------------|---------------------|
+| Excavation required | No | Yes (both sides) | Yes (exterior) | Yes |
+| Corrosion risk | None | High | Moderate | N/A |
+| Installation time | Same day | Multi-day | Multi-day | Weeks |
+| Wall profile | < 1/8" | 4-6" | Visible plates | N/A |
+| Tensile strength | 800,000 PSI | ~60,000 PSI | Varies | N/A |
+| Cost | $200-$300/stitch | $$$$ | $$$ | $$$$$ |
 
-**Concrete Replacement**
-- Extremely expensive
-- Major disruption to home
-- Creates new cold joints
-- Long project timeline
+### What Carbon Fiber Staples Cost
 
-**Carbon Fiber Stitches**
-- Never corrodes or degrades
-- Quick, clean installation
-- Low profile appearance
-- Same-day completion
+Carbon fiber stitches typically cost **$200-$300 per stitch**. Most cracks need 2-5 stitches depending on length and severity. For severe wall stabilization requiring full carbon fiber straps or grids, costs range from **$6,000-$15,000** depending on wall size and number of straps needed. We always combine stitches with crack injection for a complete structural and waterproof repair.
+
+### When NOT to Use Carbon Fiber
+
+We believe in honest recommendations — carbon fiber isn't always the right answer:
+- **Simple shrinkage cracks** — injection alone is sufficient and more cost-effective
+- **Cosmetic-only cracks** — no structural reinforcement needed
+- **Severely bowing walls (>2 inches)** — may require excavation and steel reinforcement
+- **Crumbling/deteriorated concrete** — carbon fiber needs solid concrete to bond to
+
+If your crack doesn't need carbon fiber, we'll tell you. Most residential cracks need injection only — we save carbon fiber for when it's truly warranted.
 
 ### Applications Beyond Cracks
 
 Carbon fiber reinforcement can also be used for:
-- **Wall stabilization**: Reinforcing bowing walls
-- **Beam wrapping**: Strengthening wooden beams
-- **Slab reinforcement**: Adding strength to concrete floors
-- **Preventive strengthening**: Reinforcing before problems develop
+- **Bowing wall stabilization**: Full carbon fiber straps or grids resist lateral soil pressure
+- **Beam wrapping**: Strengthening wooden beams and lally columns
+- **Slab reinforcement**: Adding strength to concrete floors with carbon fiber grids
+- **Preventive strengthening**: Reinforcing older foundations before problems develop
+- **Foundation corners**: High-stress areas prone to diagonal cracking
 
 ### The Attack A Crack Carbon Fiber Advantage
 
-- **Expert assessment**—we'll tell you if you really need carbon fiber
-- **Proper installation**—surface prep is critical for permanent bonding
-- **Combined approach**—injection + carbon fiber for complete repair
-- **Lifetime guarantee**—we stand behind every installation
+- **Expert assessment** — we'll tell you honestly if you need carbon fiber or if injection alone will do
+- **Proper installation** — surface prep is critical for permanent bonding; we don't cut corners
+- **Combined approach** — injection + carbon fiber staples for complete structural and waterproof repair
+- **Lifetime guarantee** — we stand behind every installation
+- **20+ years** of New England foundation experience
+- **Text us a photo** for a free assessment — most issues can be diagnosed from photos alone

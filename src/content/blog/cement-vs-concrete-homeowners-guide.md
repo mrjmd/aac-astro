@@ -21,7 +21,7 @@ heroImageAlt: "Concrete foundation wall showing structural crack"
 
 If you've ever called a crack in your basement wall a "cement crack," you're in good company. Almost everyone uses "cement" and "concrete" interchangeably. But they're actually different things — and understanding the difference helps you make sense of your home's foundation, driveway, sidewalks, and any repairs they might need.
 
-I'm Luc Richard, and after 33+ years of repairing foundations across New England, I've had this conversation thousands of times. Here's the plain-English version.
+I'm Luc Richard, and after 20+ years of repairing foundations across New England, I've had this conversation thousands of times. Here's the plain-English version.
 
 ## The Simple Difference
 
@@ -71,7 +71,7 @@ Most shrinkage and thermal cracks are cosmetic. They become a problem when water
 When homeowners search for "cement crack repair" or "cement foundation repair," they're looking for concrete repair. The repair methods are the same regardless of what you call the material:
 
 - **[Crack injection](/services/foundation-crack-injection)**: Polyurethane or epoxy resin is injected into the crack at high pressure (we use 100 PSI — far above industry standard) to fill the entire void from the interior surface through to the exterior soil.
-- **[Carbon fiber reinforcement](/services/carbon-fiber-stitches)**: Kevlar-grid carbon fiber strips bonded across cracks to prevent further movement. With 800,000 PSI tensile strength, they're 4 to 10 times stronger than steel.
+- **[Carbon fiber staples (reinforcement)](/services/carbon-fiber-stitches)**: Kevlar-grid carbon fiber strips bonded across cracks to prevent further movement. With 800,000 PSI tensile strength, they're 4 to 10 times stronger than steel.
 - **[Wall crack repair](/services/wall-crack-repair)**: For cracks showing displacement or structural concern, a combination of injection and stabilization.
 
 ## Common Concrete Problems Around Your Home
@@ -88,7 +88,7 @@ Basement slabs are typically only 3-4 inches thick and aren't structural. Cracks
 
 ### Driveways and Sidewalks
 
-Exterior concrete takes the worst beating from New England weather. Freeze-thaw cycles, road salt exposure, and UV degradation cause surface scaling, spalling, and cracking. [Driveway concrete repair](/concrete-repair/driveway) can restore surfaces without full replacement.
+Exterior concrete takes the worst beating from New England weather. Freeze-thaw cycles in the region's glacial till and clay-heavy soil, road salt exposure, and UV degradation cause surface scaling, spalling, and cracking. [Driveway concrete repair](/concrete-repair/driveway) can restore surfaces without full replacement. See our [driveway crack repair guide](/blog/driveway-crack-repair-guide) for detailed DIY and professional options.
 
 ### Pool Decks and Patios
 
@@ -151,4 +151,4 @@ Surface-applied cement or hydraulic cement will temporarily seal the visible fac
 
 ### How long does concrete last before it needs repair?
 
-Concrete foundations are designed to last 100+ years, but cracking typically begins within the first decade from curing shrinkage. In New England, most homes need their first foundation repair between 15 and 40 years of age, depending on soil conditions, drainage, and construction quality. Regular maintenance — keeping gutters clean, maintaining drainage, and addressing small cracks early — extends the life of any concrete structure.
+Concrete foundations are designed to last 100+ years, but cracking typically begins within the first decade from curing shrinkage. In New England, most homes need their first foundation repair between 15 and 40 years of age, depending on soil conditions (glacial till, clay-heavy soil), drainage, and construction quality. Regular maintenance — keeping gutters clean, maintaining drainage, and addressing small cracks early — extends the life of any concrete structure.

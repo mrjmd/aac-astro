@@ -23,7 +23,7 @@ relatedPosts:
 
 The question "how long does foundation repair take?" is almost as common as "how much does it cost?" And the answer is similarly annoying: it depends.
 
-But unlike some contractors who respond to timeline questions with vague shrugs, we are going to give you actual numbers. After 33 years of fixing foundations across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, we have a pretty solid sense of how long things take.
+But unlike some contractors who respond to timeline questions with vague shrugs, we are going to give you actual numbers. After 20+ years of fixing foundations across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, we have a pretty solid sense of how long things take.
 
 ## Quick Timeline Overview
 
@@ -48,7 +48,7 @@ Now let's dig into each one.
 1. **Setup (15-20 minutes):** We prepare the work area, set up equipment, and clean the crack surface.
 2. **Port installation (15-30 minutes):** Small injection ports are placed along the crack at regular intervals.
 3. **Surface seal (15-20 minutes):** The crack surface between ports is sealed so injected material cannot escape.
-4. **Injection (20-40 minutes):** Polyurethane or epoxy is injected through the ports, filling the crack from inside the wall to outside.
+4. **Injection (20-40 minutes):** Polyurethane or epoxy is injected through the ports at up to 100 PSI, filling the crack through the full 8-10 inches of concrete from inside the wall to outside.
 5. **Cleanup (10-15 minutes):** Ports are trimmed, area is cleaned up.
 
 For multiple cracks, each additional crack adds roughly 45 minutes to an hour once we are set up. A three-crack job typically takes three to four hours total.
@@ -59,7 +59,7 @@ For multiple cracks, each additional crack adds roughly 45 minutes to an hour on
 
 ## Carbon Fiber Stitching: Half a Day
 
-[Carbon fiber stitches](/services/carbon-fiber-stitches) are used to reinforce cracks and prevent further movement, often in combination with injection. Think of them as the structural insurance policy after the leak is sealed.
+[Carbon fiber staples (stitches)](/services/carbon-fiber-stitches) are used to reinforce cracks and prevent further movement, often in combination with injection. Think of them as the structural insurance policy after the leak is sealed.
 
 **Timeline:** Four to eight hours for a typical installation.
 
@@ -71,9 +71,9 @@ For multiple cracks, each additional crack adds roughly 45 minutes to an hour on
 
 **Why it takes longer than injection alone:** Surface preparation is the time-consuming part. The concrete needs to be smooth and clean for the carbon fiber to bond properly. Rushing this step compromises the entire repair.
 
-## Bulkhead Repair: Half a Day
+## Bulkhead Sealant Injection: Half a Day
 
-[Leaky bulkhead repair](/services/leaky-bulkhead-repair) typically takes four to eight hours, depending on the condition of the bulkhead and the complexity of the leak sources.
+[Leaky bulkhead repair](/services/leaky-bulkhead-repair) with professional bulkhead sealant injection typically takes four to eight hours, depending on the condition of the bulkhead and the complexity of the leak sources. Most bulkhead repairs cost $1,800-$2,500 — see our [bulkhead repair cost guide](/blog/bulkhead-repair-cost-guide-2026) for details.
 
 **What affects timing:**
 - Number of leak points (joints, cracks, rust-through)
@@ -151,6 +151,6 @@ A little preparation on your end can shave time (and therefore cost) off the job
 
 For the vast majority of homeowners, foundation repair is a same-day event. You call, we come out for a [free consultation](/services/free-foundation-consultations), and if you proceed, the actual repair takes hours — not days, not weeks.
 
-The 33 years of experience matter here. A crew that has done thousands of crack injections works efficiently because there is no guesswork. We know what we are looking at, we know the right approach, and we execute it cleanly.
+The 20+ years of experience matter here. A crew that has done thousands of crack injections works efficiently because there is no guesswork. We know what we are looking at, we know the right approach, and we execute it cleanly.
 
-**Wondering what your foundation needs?** Call us at 860-573-8760 (CT) or 617-668-1677 (MA). The consultation is free, takes about 30 minutes, and you will leave it knowing exactly what the repair involves, how long it takes, and what it costs. The [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) is a good starting point if you want to come prepared.
+**Wondering what your foundation needs?** Call us at 860-573-8760 (CT) or 617-668-1677 (MA). The consultation is free, takes about 30 minutes, and you will leave it knowing exactly what the repair involves, how long it takes, and what it costs. You can also text us a photo for a quick preliminary assessment. The [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) is a good starting point if you want to come prepared.

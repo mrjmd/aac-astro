@@ -20,9 +20,9 @@ You go down to the basement and notice something on the walls. White, chalky, so
 
 Take a breath. What you're looking at is almost certainly efflorescence, and while it's not dangerous in itself, it's your foundation sending you a message. A message worth reading.
 
-## What Is Efflorescence?
+## What Is White Powder on Basement Walls?
 
-Efflorescence is the fancy name for a simple process. Here's what's happening:
+Efflorescence is the fancy name for that white powder on basement walls. Here's what's happening:
 
 1. Water enters your concrete wall from the outside — through the soil, through cracks, or through the concrete's natural porosity.
 2. As the water moves through the concrete, it dissolves mineral salts (primarily calcium carbonate, sodium sulfate, and potassium sulfate) that are naturally present in concrete and morite.
@@ -126,9 +126,9 @@ Before calling anyone, walk around the outside of your house after a rain and ch
 
 You'd be amazed how often we visit a home with basement moisture problems and find a disconnected downspout dumping roof water right against the foundation. Free fix.
 
-### Step 2: Seal the Cracks
+### Step 2: Seal Foundation Cracks ($800-$1,200 Per Crack)
 
-If efflorescence is following a crack, that crack needs to be sealed from the inside out. Our [foundation crack injection](/services/foundation-crack-injection) process fills the crack through the full wall thickness, stopping water at its source. For cracks showing structural movement, we may combine injection with [carbon fiber reinforcement](/services/carbon-fiber-stitches).
+If efflorescence is following a crack, that crack needs to be sealed from the inside out. Our [foundation crack injection](/services/foundation-crack-injection) process injects material at approximately 100 PSI, filling the crack through the full 8-10 inches of wall thickness, stopping water at its source. For cracks showing structural movement, we may combine injection with [carbon fiber reinforcement](/services/carbon-fiber-stitches) (also called carbon fiber staples) at $200-$300 per stitch.
 
 For a full understanding of when professional repair makes sense versus when you can handle it yourself, see our guide on [DIY vs. professional foundation repair](/blog/diy-vs-professional-foundation-repair).
 
@@ -142,7 +142,7 @@ If your efflorescence is widespread — covering large areas without following s
 
 These are bigger projects, but they solve the problem permanently rather than chasing individual symptoms.
 
-## When Efflorescence Signals Serious Problems
+## When NOT to Ignore Efflorescence
 
 Most efflorescence is a minor nuisance pointing to a manageable moisture issue. But sometimes it's waving a red flag:
 
@@ -155,4 +155,4 @@ Most efflorescence is a minor nuisance pointing to a manageable moisture issue. 
 
 Efflorescence is your foundation talking to you. It's saying: "Water is coming through here." Whether that's a minor issue you can fix with a gutter repair or a significant problem requiring professional crack injection depends on the pattern, the severity, and the source.
 
-If you're seeing efflorescence in your New England basement and want to know what it means for your specific situation, we're happy to take a look. Our [free foundation consultations](/services/free-foundation-consultations) include a thorough assessment of moisture indicators like efflorescence, crack patterns, and drainage conditions. Call us at 860-573-8760 (CT) or 617-668-1677 (MA) — we'll help you decode what your basement is trying to tell you.
+If you're seeing white powder on basement walls and want to know what it means for your specific situation, we're happy to take a look. Our [free foundation consultations](/services/free-foundation-consultations) include a thorough assessment of moisture indicators like efflorescence, crack patterns, and drainage conditions. Call us at 860-573-8760 (CT) or 617-668-1677 (MA), or text us a photo for a quick assessment — we'll help you decode what your basement is trying to tell you. After 20+ years of foundation work, there is no efflorescence pattern we have not diagnosed.
