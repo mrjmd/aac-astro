@@ -4,6 +4,7 @@
 backend:
   name: git-gateway
   branch: main
+  base_url: https://bejewelled-youtiao-fcc0d4.netlify.app
   commit_messages:
     create: 'content: Create {{collection}} "{{slug}}"'
     update: 'content: Update {{collection}} "{{slug}}"'
