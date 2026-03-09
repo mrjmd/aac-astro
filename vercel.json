@@ -2,6 +2,12 @@
   "github": {
     "enabled": false
   },
+  "rewrites": [
+    {
+      "source": "/.netlify/:path*",
+      "destination": "https://bejewelled-youtiao-fcc0d4.netlify.app/.netlify/:path*"
+    }
+  ],
   "redirects": [
     {
       "source": "/admin",

@@ -4,8 +4,6 @@
 backend:
   name: git-gateway
   branch: main
-  identity_url: https://bejewelled-youtiao-fcc0d4.netlify.app/.netlify/identity
-  gateway_url: https://bejewelled-youtiao-fcc0d4.netlify.app/.netlify/git
   commit_messages:
     create: 'content: Create {{collection}} "{{slug}}"'
     update: 'content: Update {{collection}} "{{slug}}"'
