@@ -6,12 +6,19 @@
     <meta name="robots" content="noindex" />
     <title>Attack A Crack - Content Manager</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      // Point Identity widget at Netlify site (required when hosting on Vercel)
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.init({
+          APIUrl: "https://bejewelled-youtiao-fcc0d4.netlify.app/.netlify/identity"
+        });
+      }
+    </script>
   </head>
   <body>
     <!-- Include the script that builds the page and powers Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script>
-      // Initialize Decap CMS
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {
           if (!user) {
