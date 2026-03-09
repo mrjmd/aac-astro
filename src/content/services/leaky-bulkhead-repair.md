@@ -14,7 +14,7 @@ faqs:
   - question: "How long does bulkhead repair take?"
     answer: "Most bulkhead repairs are completed in 2-3 hours. The urethane seal begins working immediately upon injection, expanding to fill every void in the joint. We recommend waiting 24 hours before heavy rain exposure for full cure, but the repair is waterproof from the moment it's applied."
   - question: "Is bulkhead replacement necessary?"
-    answer: "Usually not. Most leaking bulkheads don't need full replacement—they need proper sealing at the foundation joint, which is where the water actually enters. Our injection repair costs a fraction of replacement ($1,800-$2,500 vs. $3,000-$6,000+ for replacement) and addresses the actual leak point. We'll always be honest if replacement is truly needed."
+    answer: "Usually not. Most leaking bulkheads don't need full replacement—they need proper sealing at the foundation joint, which is where the water actually enters. Our injection repair costs a fraction of replacement ($1,800-$2,500 vs. $5,000-$10,000+ for replacement) and addresses the actual leak point. We'll always be honest if replacement is truly needed."
 relatedServices:
   - "wall-crack-repair"
   - "foundation-crack-injection"

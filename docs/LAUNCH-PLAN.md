@@ -58,8 +58,8 @@ These must be done before DNS cutover. Nothing else launches the site.
 - [x] All pricing claims verified and normalized (March 8, 2026):
   - Crack injection: all posts now use $800 floor (was $500 in 4 posts), matching `pricing.json`
   - Wall stabilization: all posts now use $6,000 floor (was $5,000 in 4 posts), matching `pricing.json`
-  - Bulkhead replacement: service page FAQ now says $3,000-$6,000+ (was $5,000-$10,000+), matching cost guide
-  - Quincy cost guide uses $400-$800 for simple single-crack injection (intentional local market rate)
+  - Bulkhead replacement: all sources now say $5,000-$10,000+ (Matt confirmed)
+  - Quincy cost guide: raised from $400-$800 to $800-$1,200 to match canonical pricing
 - [x] Uniqueness validation passes — 80 locations, 3,160 comparisons, 0 duplicates
 
 ### 301 Redirects & Old Site Preservation (Claude + Matt)

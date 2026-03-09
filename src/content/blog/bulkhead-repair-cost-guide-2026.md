@@ -27,7 +27,7 @@ Here's an honest breakdown of bulkhead repair costs in Connecticut and Massachus
 | Repair Method | Typical Cost | Lifespan |
 |--------------|-------------|----------|
 | Injection sealing (our method) | $1,800 - $2,500 | Lifetime (guaranteed) |
-| Full bulkhead replacement | $3,000 - $6,000+ | 15-25 years |
+| Full bulkhead replacement | $5,000 - $10,000+ | 15-25 years |
 | DIY caulk/cement repair | $50 - $200 | 6-18 months |
 | Door-only replacement | $1,500 - $3,000 | 15-20 years |
 
@@ -61,7 +61,7 @@ This is what we do at Attack A Crack, and it's our recommended approach for the 
 
 Learn more on our [bulkhead repair service page](/services/leaky-bulkhead-repair).
 
-### Full Replacement ($3,000 - $6,000+)
+### Full Replacement ($5,000 - $10,000+)
 
 Complete tear-out and replacement of the entire bulkhead unit: stairwell, frame, and doors.
 

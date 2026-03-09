@@ -37,7 +37,7 @@ These ranges reflect what our Quincy-area customers typically pay:
 
 | Repair Type | Typical Cost Range | Average |
 |---|---|---|
-| Single crack injection | $400 – $800 | $600 |
+| Single crack injection | $800 – $1,200 | $1,000 |
 | Multiple crack injection (2-4 cracks) | $800 – $2,500 | $1,500 |
 | Carbon fiber stitching (per strap) | $800 – $1,500 | $1,100 |
 | Wall crack repair with reinforcement | $1,500 – $4,000 | $2,500 |
@@ -74,7 +74,7 @@ Rather than abstract numbers, here are scenarios we see regularly.
 
 **What it looks like:** One vertical crack in a poured concrete wall, actively leaking during rain or high water table events.
 
-**Typical Quincy cost:** $400 to $800
+**Typical Quincy cost:** $800 to $1,200
 
 **What is included:** Polyurethane injection to seal the crack permanently, with a lifetime warranty. This is our most common repair in Quincy. Most of the [foundation crack injection](/services/foundation-crack-injection) work we do falls in this range.
 
@@ -129,9 +129,9 @@ Every foundation is different. Here is what moves the price up or down:
 
 ## How to Budget for Foundation Repair
 
-Most Quincy homeowners spend between $500 and $3,000 on foundation repair. That covers the vast majority of crack injection and basic reinforcement work. Only the most extensive repairs — bowing walls, major structural issues, or comprehensive multi-wall work — push into the $5,000 to $15,000 range.
+Most Quincy homeowners spend between $800 and $3,000 on foundation repair. That covers the vast majority of crack injection and basic reinforcement work. Only the most extensive repairs — bowing walls, major structural issues, or comprehensive multi-wall work — push into the $6,000 to $15,000 range.
 
-If you are budgeting, the most important thing to know is that waiting increases cost. A $600 crack injection today can become a $3,000 structural repair if the crack expands and the wall starts moving. Quincy's coastal environment accelerates this timeline compared to inland locations.
+If you are budgeting, the most important thing to know is that waiting increases cost. An $800 crack injection today can become a $3,000 structural repair if the crack expands and the wall starts moving. Quincy's coastal environment accelerates this timeline compared to inland locations.
 
 ## Getting an Accurate Quote
 
