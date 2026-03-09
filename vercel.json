@@ -4,6 +4,11 @@
   },
   "redirects": [
     {
+      "source": "/admin",
+      "destination": "/admin/",
+      "permanent": true
+    },
+    {
       "source": "/wall-crack-repair",
       "destination": "/services/wall-crack-repair",
       "permanent": true
