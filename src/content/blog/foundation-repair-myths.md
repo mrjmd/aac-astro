@@ -28,7 +28,7 @@ Let us set the record straight.
 
 This is the big one. The fear that foundation repair requires a second mortgage keeps people from even getting an assessment.
 
-**The reality:** Most repairs we perform cost between $500 and $3,000. A typical [crack injection](/services/foundation-crack-injection) runs $500 to $1,500. Even [carbon fiber reinforcement](/services/carbon-fiber-stitches) or [bulkhead repair](/services/leaky-bulkhead-repair) usually falls in the $1,500 to $4,000 range.
+**The reality:** Most repairs we perform cost between $500 and $3,000. A typical [crack injection](/services/foundation-crack-injection) runs $800 to $1,500. Even [carbon fiber reinforcement](/services/carbon-fiber-stitches) or [bulkhead repair](/services/leaky-bulkhead-repair) usually falls in the $1,500 to $4,000 range.
 
 Can foundation work cost $50,000? Sure — if you need to underpin an entire house or address severe structural failure. But those situations are rare. The vast majority of issues we see are cracks, minor water intrusion, and deteriorated bulkheads. Check our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) for real numbers.
 

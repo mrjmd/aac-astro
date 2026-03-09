@@ -72,7 +72,7 @@ In our experience, foundation anxiety kills more deals unnecessarily than actual
 
 ### Myth: "Foundation Repair Costs Tens of Thousands"
 
-**Reality:** Most residential foundation repairs in New England cost between $800 and $3,000. Full wall stabilization can reach $5,000-$15,000 in severe cases, but these are uncommon. Our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) has detailed pricing for every repair type.
+**Reality:** Most residential foundation repairs in New England cost between $800 and $3,000. Full wall stabilization can reach $6,000-$15,000 in severe cases, but these are uncommon. Our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) has detailed pricing for every repair type.
 
 ### Myth: "A Repaired Foundation Reduces Home Value"
 

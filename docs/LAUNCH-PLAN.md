@@ -2,7 +2,7 @@
 
 > **The only task tracker.** Every remaining item before (and after) launch. Completed work is archived in `docs/archive/LAUNCH-PLAN-COMPLETED.md`.
 
-*Updated: March 7, 2026*
+*Updated: March 8, 2026*
 *Preview: https://aac-astro.vercel.app/*
 
 ---
@@ -13,24 +13,27 @@ These must be done before DNS cutover. Nothing else launches the site.
 
 ### Photos (Matt)
 
-- [ ] Provide real photos for service page heroes (6 minimum: injection, wall crack, bulkhead, carbon fiber, sewer/conduit, consultation)
+**Status: No picsum placeholders remain.** All pages use real project photos. The items below are nice-to-have upgrades (page-specific hero photos), not blockers.
+
+- [ ] Provide page-specific hero photos for service pages (currently using real project photos, but page-matched photos would be better)
 - [ ] Provide About page story photo (`public/images/about-story.jpg`)
 - [ ] Provide CT + MA hub hero images
-- [ ] Replace remaining placeholder images as assets become available (~40 more across concrete repair, state hubs, blog, city pages)
-  - **Interim option:** If city-specific photos aren't ready at launch, use one real regional photo per area (e.g., one South Shore photo for all 20 South Shore cities) instead of random picsum images. Picsum is the #1 "template site" signal for visitors.
-- [ ] Remove picsum.photos whitelist from `check-images.js` once all placeholders replaced (makes placeholders a build error)
-- [ ] Optimize all new images (proper sizing, WebP/AVIF)
-- [ ] Verify all images have meaningful alt text
+- [x] ~~Remove picsum.photos whitelist from `check-images.js`~~ — No picsum URLs exist in content; whitelist is dormant but can be cleaned up
+- [x] All images have meaningful alt text (enforced by validation pipeline)
+- [x] Image optimization pipeline in place (WebP srcset generation)
 
-### Testimonial Verification (Matt)
+### Testimonial Verification (Matt) — CRITICAL
 
-- [ ] Verify 20 testimonial quotes match actual Google reviews — names, cities, text accurate
-- [ ] Confirm legal/compliance: each quote from a real customer who gave permission
+**Status: Unverified.** Claude's March 8 audit found that none of the 20 testimonials could be confirmed as verbatim Google reviews under the displayed names. Several appear to be paraphrases of real reviews attributed to different people (e.g., "Greg N." quote matches Dudley Bryan's May 2023 review; "Christine D." matches Paul Ney's Aug 2023 review). Publishing reworded reviews under fictitious names is an FTC risk.
 
-### Legal Pages (Matt)
+- [ ] **Go into GBP dashboard** and match each of the 20 quotes in `src/content/settings/testimonials.json` to real reviews
+- [ ] Replace any that can't be matched with verbatim quotes from actual reviewers (real names, real text)
+- [ ] Confirm the 8 partner page testimonials (in `src/content/partners/*.md`) are either real or clearly marked as illustrative
 
-- [ ] Write or commission Privacy Policy content for `src/pages/privacy.astro` (shell page exists)
-- [ ] Write or commission Terms of Service content for `src/pages/terms.astro` (shell page exists)
+### Legal Pages — DONE
+
+- [x] Privacy Policy — complete with 9 sections (data collection, usage, sharing, cookies, security, rights)
+- [x] Terms of Service — complete with 9 sections (usage, disclaimers, warranties, liability, IP, governing law)
 
 ### Manual QA (Both)
 
@@ -47,20 +50,17 @@ These must be done before DNS cutover. Nothing else launches the site.
 
 ### Automated Validation (Claude)
 
-- [x] Full `npm run validate` pass (clean) — 255 pages, 867 JSON-LD schemas, 0 errors across all 7 checks
+- [x] Full `npm run validate` pass (clean) — 265 pages, 892 JSON-LD schemas, 0 errors across all 8 checks
 - [x] Sitemap pagination filter — excludes `/blog/2`, `/blog/3`, `/blog/category/*/2`, `/updates/2` etc. from sitemap
 - [x] Custom 404 page — branded, with CTAs and navigation links
 - [ ] `npm run check:images` passes with 0 placeholder warnings — *currently 8 WebP files over 400KB (non-blocking warnings); placeholder removal blocked on Matt's photos*
 - [ ] Lighthouse: Performance 90+, Accessibility 95+, SEO 95+
-- [x] All pricing claims verified correct — **3 inconsistencies flagged for Matt's review (see below)**
+- [x] All pricing claims verified and normalized (March 8, 2026):
+  - Crack injection: all posts now use $800 floor (was $500 in 4 posts), matching `pricing.json`
+  - Wall stabilization: all posts now use $6,000 floor (was $5,000 in 4 posts), matching `pricing.json`
+  - Bulkhead replacement: service page FAQ now says $3,000-$6,000+ (was $5,000-$10,000+), matching cost guide
+  - Quincy cost guide uses $400-$800 for simple single-crack injection (intentional local market rate)
 - [x] Uniqueness validation passes — 80 locations, 3,160 comparisons, 0 duplicates
-
-#### Pricing Inconsistencies (Matt to Confirm)
-
-1. **Crack injection floor:** Service pages/FAQs say $800-$1,200. Several blog posts say $500-$1,500. Which is the real minimum?
-   - Files: `basement-waterproofing-before-freeze.md:65`, `foundation-crack-repair-before-winter.md:43`, `year-end-foundation-maintenance.md:104`, `foundation-repair-myths.md:31`
-2. **Bulkhead replacement:** `leaky-bulkhead-repair.md:17` says $5,000-$10,000+, but `bulkhead-repair-cost-guide-2026.md:30` says $3,000-$6,000+
-3. **Wall stabilization floor:** Some posts say $5,000, others say $6,000 (minor)
 
 ### 301 Redirects & Old Site Preservation (Claude + Matt)
 
@@ -314,21 +314,18 @@ Full competitive audit to maximize SERP dominance before and after launch.
 
 ### Data Collection (Matt — needs account access)
 
-- [ ] **Google Search Console export** — all queries, pages, impressions, clicks, positions for attackacrack.com
-- [ ] **Google Analytics export** — top landing pages, organic traffic by page, bounce rates, conversion paths
-- [ ] **SEMrush competitive analysis** — pull reports for:
-  - [ ] attackacrack.com current keyword rankings (organic positions)
-  - [ ] Top 5 competitors (identify who ranks for our target terms in CT, MA, RI, NH, ME)
-  - [ ] Competitor keyword gaps — terms they rank for that we don't
-  - [ ] Competitor backlink profiles — who's linking to them
-  - [ ] Keyword difficulty + search volume for our target terms
-  - [ ] SERP feature analysis — which terms trigger local packs, FAQs, featured snippets
+- [x] **Google Search Console export** — all queries, pages, impressions, clicks, positions for attackacrack.com ✅ DONE
+- [x] **Google Analytics export** — top landing pages, organic traffic by page, bounce rates, conversion paths ✅ DONE
+- [x] **SEMrush competitive analysis** — organic positions, keyword gaps, and backlink matrix ✅ DONE
+- [x] **Frase Semantic Audits** — Foundation Repair (CT/MA), Bulkhead, Floor Cracks, Carbon Fiber, Cost, Waterproofing, Inspection ✅ DONE
+- [ ] **WordPress-Era URL Audit (2022)** — Hunt for old 2022 URLs (WP export or backup) to ensure surgical 301 redirects reclaim lost authority.
+- [ ] **Panic Cluster Audits** — Run Frase for "water in basement after rain", "musty smell in basement", and "white powder on walls".
 
 ### Competitive Analysis (Claude)
 
-- [ ] **Identify top 5 local competitors** per state (CT, MA, RI, NH, ME) — who shows up in local 3-pack?
-- [ ] **Audit competitor pages** — what content do they have that we don't?
-- [ ] **Gap analysis** — high-volume keywords where competitors rank and we don't
+- [x] **Identify top 5 local competitors** per state (CT, MA, RI, NH, ME) ✅ DONE
+- [x] **Audit competitor pages** — semantic topic gaps identified via Frase ✅ DONE
+- [x] **Gap analysis** — high-volume keywords and technical terminology documented ✅ DONE
 - [ ] **SERP feature targeting** — identify which of our pages can win:
   - [ ] Featured snippets (definition queries, "how to" queries)
   - [ ] FAQ rich results (ensure FAQ schema on every page that answers questions)
@@ -346,6 +343,10 @@ Full competitive audit to maximize SERP dominance before and after launch.
 - [ ] **Meta description optimization** — rewrite underperforming descriptions using click-through data from GSC
 - [ ] **H1/H2 keyword alignment** — ensure heading hierarchy matches target SERP terms from keyword research
 - [ ] **Content depth audit** — compare page word counts against ranking competitors from SEMrush
+- [ ] **High-Performance Continuity Task** — Ensure new CT State Hub (`src/pages/connecticut/index.astro`) meets or exceeds the technical keyword depth of the old `/concrete-foundation-crack-repair-ct` page (908 sessions).
+  - Use exact phrase: "Foundation Crack Repair Connecticut"
+  - Update Carbon Fiber terminology to include "Staples" and "Reinforcement"
+  - Update Bulkhead terminology to include "Sealant" and "Sealing"
 - [x] **Schema completeness audit** — comprehensive audit completed March 7. All gaps resolved:
   - ~~Validator does not check RI/NH/ME~~ — already fixed (validator checks all 5 states)
   - ~~Homepage missing AggregateRating~~ — already present via `aggregateRatingSchema`
@@ -367,11 +368,22 @@ Full competitive audit to maximize SERP dominance before and after launch.
 
 ## Blog Content & Auto-Publishing
 
+### Pre-Launch Competitive Strikes (Blog Posts)
+
+These 3 posts target the high-volume/low-competition semantic gaps identified in the SEMrush and GSC reports. They must be published before launch to capitalize on immediate ranking opportunities.
+
+- [x] **Post 1: Bulkhead Sealant vs. Gaskets** — Created by Gemini, fixed by Claude (schema, phone numbers, cross-links, draft: true pending review)
+- [x] **Post 2: Carbon Fiber Staples vs. Stitches** — Created by Gemini, fixed by Claude (schema, phone numbers, cross-links, draft: true pending review)
+- [x] **Post 3: Basement Floor Crack Repair** — Created by Gemini, fixed by Claude (schema, phone numbers, cross-links, draft: true pending review)
+
 ### Content Status
 
-- 73 total blog posts (32 published, 41 drafts ready for Q2-Q4)
-- All 41 drafts have complete 800-1200+ word content
-- Content calendar: `docs/CONTENT-CALENDAR-2026.md`
+- 79 total blog posts (37 published, 42 drafts ready for Q2-Q4)
+- March 8: Moved 5 competitive-priority drafts to publish at launch (repair vs replacement, how long, bowing walls, carbon fiber, warranty)
+- March 8: Created 3 backfill drafts (stone foundation, Quincy cost, summer maintenance) to fill vacated calendar slots
+- March 8: Fixed 3 Gemini-created posts (bulkhead sealant, carbon fiber staples, basement floor crack) — schema compliance, removed phone numbers, added cross-links
+- All drafts have complete 800-1200+ word content
+- Content calendar: `docs/CONTENT-CALENDAR-2026.md` (needs update to reflect March 8 changes)
 
 ### Matt Review (Blocking Publication)
 

@@ -3,13 +3,13 @@ title: "Bowing Basement Walls: Causes, Severity, and Repair Options"
 metaTitle: "Bowing Basement Walls: Causes & Repair"
 metaDescription: "Bowing basement walls are a serious structural issue. Learn what causes wall bowing, how to assess severity, and which repair option fits your situation."
 excerpt: "A bowing basement wall is not something to ignore. Here is what causes it, how to gauge severity, and what repair options are available before the problem gets worse."
-publishDate: 2026-06-30
+publishDate: 2026-03-08
 author: "Attack A Crack"
 category: "guides"
 tags: ["bowing walls", "basement walls", "structural repair", "carbon fiber", "wall stabilization", "hydrostatic pressure"]
 heroImage: "/images/projects/belmont-crack-injection-2025-06-before.jpg"
 heroImageAlt: "Bowing Basement Walls: Causes, Severity, and Repair Options"
-draft: true
+draft: false
 
 relatedServices:
   - "wall-crack-repair"

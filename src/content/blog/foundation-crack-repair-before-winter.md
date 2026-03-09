@@ -40,7 +40,7 @@ This repeats 50 to 80 times in a typical New England winter. Each cycle ratchets
 
 ### Fall Repair: Planned and Predictable
 
-A typical crack injection costs $500 to $1,500. You call, we schedule within a week or two, the repair takes a few hours, and it is sealed permanently with a lifetime warranty before the first freeze. Our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) has the full breakdown.
+A typical crack injection costs $800 to $1,500. You call, we schedule within a week or two, the repair takes a few hours, and it is sealed permanently with a lifetime warranty before the first freeze. Our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) has the full breakdown.
 
 ### Spring Repair: Bigger Problem, Higher Price
 

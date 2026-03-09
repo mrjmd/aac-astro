@@ -101,7 +101,7 @@ Using your walk-through notes, categorize issues:
 
 ### Get Estimates and Budget Now
 
-December and January are excellent times to get estimates — contractors are less busy and you can compare quotes without pressure. Most foundation crack repairs cost $500 to $1,500 for [injection repairs](/services/foundation-crack-injection), far less than most homeowners fear. Our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) has detailed pricing ranges.
+December and January are excellent times to get estimates — contractors are less busy and you can compare quotes without pressure. Most foundation crack repairs cost $800 to $1,500 for [injection repairs](/services/foundation-crack-injection), far less than most homeowners fear. Our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) has detailed pricing ranges.
 
 Wondering about insurance? Our article on [insurance coverage for foundation repair](/blog/does-insurance-cover-foundation-repair) breaks down what is typically covered.
 

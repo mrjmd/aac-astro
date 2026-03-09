@@ -61,6 +61,9 @@ All published posts, sorted by date. These are live on the site.
 | Mar 2 | The Best Time to Repair Your Foundation in New England (Seasonal Guide) | guides | - |
 | Mar 3 | Cement vs Concrete: What Every Homeowner Actually Needs to Know | guides | - |
 | Mar 4 | Does Insurance Cover Foundation Repair? What New England Homeowners Need to Know | guides | - |
+| Mar 9 | Bulkhead Sealant vs. Gaskets: Why Your Bilco Door Still Leaks | guides | - |
+| Mar 10 | Carbon Fiber Staples vs. Stitches: Which Structural Fix is Best? | guides | - |
+| Mar 11 | How to Fix Cracks in Your Basement Floor (Before the Water Comes In) | guides | - |
 | Mar 24 | Spring Foundation Inspection: A 15-Minute Walkthrough | maintenance-tips | - |
 
 **Total published: 32 posts**

@@ -62,7 +62,7 @@ Inspect door seals, the frame-to-foundation connection, and the stairwell drain.
 
 ## Professional Options: What We Do and What We Refer
 
-**Crack injection (our specialty):** [Foundation crack injection](/services/foundation-crack-injection) seals individual cracks through the full wall thickness with epoxy or polyurethane resin. Takes a few hours, costs $500 to $1,500 per crack, lifetime warranty. Most wet basements have one or two cracks responsible for the water.
+**Crack injection (our specialty):** [Foundation crack injection](/services/foundation-crack-injection) seals individual cracks through the full wall thickness with epoxy or polyurethane resin. Takes a few hours, costs $800 to $1,500 per crack, lifetime warranty. Most wet basements have one or two cracks responsible for the water.
 
 **Wall crack repair (our specialty):** For wider or structural cracks, our [wall crack repair](/services/wall-crack-repair) may combine injection with [carbon fiber reinforcement](/services/carbon-fiber-stitches).
 

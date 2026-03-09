@@ -496,4 +496,58 @@ Based on competitor targeting, AAC may be missing content for:
 
 ---
 
-*This analysis is based on publicly available web data as of March 2026. Review counts, page counts, and content assessments are approximate and based on web research, not exhaustive crawling.*
+## 11. High-Performance Page Audits (GA4 & GSC Analysis)
+
+Based on the 16-month GSC Queries report and the GA4 Landing Page report, the following "Semantic Gaps" must be addressed in the new content before launch to maintain and exceed current rankings.
+
+### 11.1 The "CT Foundation Repair" Giant
+- **Current Performance:** `/concrete-foundation-crack-repair-ct` is the #1 non-brand traffic driver (908 sessions).
+- **Semantic Gap:** The old page ranks for "concrete foundation repair ct" and "ct foundation repair." The new CT state hub (`src/pages/connecticut/index.astro`) is structurally sound but needs to ensure the H1 uses the exact phrase **"Foundation Crack Repair Connecticut"** to match the high-intent query patterns.
+- **Recommendation:** Do not dilute the H1 with "Expert Jester" humor yet; keep the technical "Foundation Repair CT" terminology in the primary header for SEO stability.
+
+### 11.2 Bulkhead Sealing: "Sealant" vs. "Gasket"
+- **Current Performance:** `/leaky-bulkhead-repair` (329 sessions) has the highest engagement time (44s).
+- **Semantic Gap:** GSC shows 8,800 impressions for **"bulkhead sealant"** and **"sealing bulkhead doors."** The new codebase (`src/content/services/leaky-bulkhead-repair.md`) focuses on "injection" but misses the "sealant/sealing" keyword clusters.
+- **Recommendation:** Add a specific section titled **"The Difference Between Temporary Gaskets and Permanent Injection Sealant"** to capture these high-volume technical searches.
+
+### 11.3 Carbon Fiber: "Stitches" vs. "Staples"
+- **Current Performance:** `/carbon-fiber-stitches` (221 sessions).
+- **Semantic Gap:** GSC shows 300+ monthly searches for **"carbon fiber staples"** and **"carbon fiber reinforcement."** The current codebase uses "Stitches" almost exclusively.
+- **Recommendation:** Update the service page and blog drafts to use **"Carbon Fiber Stitches & Staples"** in H2 headers. These terms are used interchangeably by homeowners but are distinct search entities.
+
+### 11.4 The Pyrrhotite (Crumbling Foundation) Authority
+- **Current Performance:** 519 combined sessions for Pyrrhotite content.
+- **Semantic Gap:** Attack A Crack is already an authority here. The GSC data shows high impressions for "ct crumbling foundations map" and "pyrrhotite massachusetts."
+- **Recommendation:** Transition the Pyrrhotite content from a "Blog" post to a **"Pillar Resource Page"** within the `src/content/resources` collection to signal to Google that this is permanent, authoritative reference material, not just a news update.
+
+---
+
+## 12. Semantic Dominance Audit (Pillar & Technical Targets)
+
+*Added March 8, 2026 — Based on expanded Frase "Topic Gap" audits.*
+
+To move beyond "ranking" and into "dominance," Attack A Crack must out-detail the competition in these high-value technical clusters. This creates a "Competitive Moat" that national franchises (who rely on generic, high-level copy) cannot easily cross.
+
+### 12.1 The "Foundation Repair Cost" Moat
+- **Strategic Gap:** Competitors like *Ram Jack* and *Groundworks* use high-level, often vague cost content to bait leads.
+- **Domination Tactic:** Lead with **"Cost Honesty."** Use precise New England geological terms (**"glacial till," "compacted clay," "South Shore water table"**) to explain cost variables.
+- **Semantic Targets:** "Soil movement," "structural stability," "Title I loan," "FHA title I loans," "full house leveling," "stone basements."
+- **Competitive Edge:** By discussing financing specifically (Title I/FHA), you capture searchers at the most sensitive part of the funnel.
+
+### 12.2 Basement Waterproofing vs. Crack Injection
+- **Strategic Gap:** Homeowners often search for "Waterproofing" (sump pumps/French drains) when they actually need a structural crack repair.
+- **Domination Tactic:** Position Crack Injection as the **"Surgical Alternative"** to invasive waterproofing.
+- **Semantic Targets:** "WaterGuard drainage system," "French drains," "sump pump installations," "hydrostatic pressure," "damp musty odor," "mold growth."
+- **Competitive Edge:** Use the competitor's own jargon (e.g., "WaterGuard") to explain why a surgical injection stops the *source* of the water without destroying the basement floor.
+
+### 12.3 Foundation Inspection & Lead Generation
+- **Strategic Gap:** Searchers for "Foundation Inspection" are high-intent (home buyers or people in panic).
+- **Domination Tactic:** Position Attack A Crack as the **"Technical Auditor"** for real estate transactions.
+- **Semantic Targets:** "Structural engineer," "professional engineer," "inspection report," "HUD 92051 Initial/Final Compliance," "signs of foundation damage," "floor elevation survey."
+- **Competitive Edge:** Emphasize **"Diagnosis as a Service."** Highlighting HUD compliance targets the real estate/mortgage funnel that generalists often overlook.
+
+### 12.4 Technical Crack Injection (Wall vs. Resurfacing)
+- **Strategic Gap:** Many contractors blur the line between cosmetic concrete repair and structural injection.
+- **Domination Tactic:** Own the **"Injection Engineering"** terminology for walls and floors.
+- **Semantic Targets:** "Low-pressure crack injection," "surface ports," "two-component epoxy resin," "expanding polyurethane foam," "surface seal-n-peel."
+- **Competitive Edge:** This technical specificity builds E-E-A-T trust. While others say "we fix cracks," you explain the **"Epoxy Resin bond strength"** and **"ASTM C-920"** standards you follow.

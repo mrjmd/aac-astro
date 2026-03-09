@@ -3,13 +3,13 @@ title: "Foundation Repair Warranties: What to Look For and What to Avoid"
 metaTitle: "Foundation Repair Warranty Guide"
 metaDescription: "Not all foundation repair warranties are equal. Learn what a good warranty covers, red flags to watch for, and why a lifetime warranty matters for your home."
 excerpt: "A foundation repair is only as good as the warranty behind it. Here is how to evaluate warranty coverage, spot red flags, and understand what lifetime really means."
-publishDate: 2026-07-07
+publishDate: 2026-03-08
 author: "Attack A Crack"
 category: "guides"
 tags: ["foundation repair warranty", "lifetime warranty", "home repair", "warranty coverage", "consumer guide"]
 heroImage: "/images/projects/norwell-crack-injection-2025-03-before.jpg"
 heroImageAlt: "Foundation Repair Warranties: What to Look For and What to Avoid"
-draft: true
+draft: false
 
 relatedServices:
   - "foundation-crack-injection"

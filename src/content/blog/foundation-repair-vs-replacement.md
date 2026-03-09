@@ -3,13 +3,13 @@ title: "Foundation Repair vs Replacement: When Each Makes Sense"
 metaTitle: "Foundation Repair vs Replacement Guide"
 metaDescription: "Foundation repair costs $1,000 to $15,000. Replacement costs $30,000 to $100,000 or more. Learn when repair is enough and when replacement is truly necessary."
 excerpt: "Foundation repair handles 95% of situations. Replacement is rare, expensive, and usually unnecessary. Here is how to know which one your home actually needs."
-publishDate: 2026-09-22
+publishDate: 2026-03-08
 author: "Attack A Crack"
 category: "guides"
 tags: ["foundation repair", "foundation replacement", "structural repair", "cost comparison", "structural engineer"]
 heroImage: "/images/projects/newton-crack-injection-2025-04-before.jpg"
 heroImageAlt: "Foundation Repair vs Replacement: When Each Makes Sense"
-draft: true
+draft: false
 
 relatedServices:
   - "foundation-crack-injection"
@@ -35,7 +35,7 @@ Let's start with the numbers, because they frame everything else.
 |----------|-------------------|----------|
 | Crack injection (per crack) | $800 - $1,200 | Hours |
 | Carbon fiber reinforcement | $3,000 - $8,000 | 1 day |
-| Wall stabilization (anchors/beams) | $5,000 - $15,000 | 1-3 days |
+| Wall stabilization (anchors/beams) | $6,000 - $15,000 | 1-3 days |
 | Full foundation replacement | $30,000 - $100,000+ | 3-8 weeks |
 
 That is a 10x to 100x cost difference. The gap in disruption is equally dramatic — you can live in your home during most repairs, but foundation replacement may require temporary relocation.

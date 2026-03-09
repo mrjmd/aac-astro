@@ -34,7 +34,7 @@ But we understand you need ballpark numbers to plan and budget. So here's an hon
 | Bulkhead sealing | $1,800 - $2,500 | $2,100 |
 | Utility line sealing | $650 - $900 each | $775 |
 | Carbon fiber reinforcement | $200 - $300 per stitch | $250 |
-| Full wall stabilization | $5,000 - $15,000 | $9,000 |
+| Full wall stabilization | $6,000 - $15,000 | $9,000 |
 
 **Note:** These are 2026 estimates for the CT/MA market. Your actual costs may vary based on factors we'll discuss below.
 
@@ -51,7 +51,7 @@ The most affordable repair. We inject flexible urethane or structural epoxy to f
 If cracks indicate structural movement, carbon fiber stitches may be needed in addition to injection. This adds $200-$300 per stitch location.
 
 **Wall Stabilization**
-Severely bowed or moving walls require more extensive solutions like wall anchors or steel beams. These projects typically range from $5,000-$15,000+.
+Severely bowed or moving walls require more extensive solutions like wall anchors or steel beams. These projects typically range from $6,000-$15,000+.
 
 ### 2. Number of Cracks
 
