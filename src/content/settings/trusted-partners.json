@@ -6,7 +6,8 @@
     "category": "Home Inspector",
     "website": "https://www.fivestarshomeinspection.com/",
     "description": "Thorough, detail-oriented home inspections throughout the greater Boston area. Brian catches what others miss.",
-    "state": "MA"
+    "state": "MA",
+    "photo": "/images/partners/brian-oboyle.webp"
   },
   {
     "id": "david-ekelund",
@@ -15,7 +16,8 @@
     "category": "Real Estate Law",
     "website": "https://www.crowleycummings.com/",
     "description": "Trusted real estate attorneys handling closings, title work, and property disputes across Massachusetts.",
-    "state": "MA"
+    "state": "MA",
+    "photo": "/images/partners/david-ekelund.webp"
   },
   {
     "id": "david-mclaren",
@@ -24,7 +26,8 @@
     "category": "CPA / Accounting",
     "website": "https://www.aafcpa.com/",
     "description": "Full-service accounting firm with decades of experience helping individuals and businesses with tax planning and advisory.",
-    "state": "MA"
+    "state": "MA",
+    "photo": "/images/partners/david-mclaren.webp"
   },
   {
     "id": "eric-groft",
@@ -33,7 +36,8 @@
     "category": "Web Development",
     "website": "https://www.tworowstudio.com/",
     "description": "Creative web development and digital strategy for small businesses. Eric builds sites that actually generate leads.",
-    "state": "MA"
+    "state": "MA",
+    "photo": "/images/partners/eric-groft.webp"
   },
   {
     "id": "evan-schmidt",
@@ -42,7 +46,8 @@
     "category": "Photography",
     "website": "https://www.halidephoto.com/",
     "description": "Professional photography for real estate, headshots, and events. Evan delivers polished work on tight timelines.",
-    "state": "MA"
+    "state": "MA",
+    "photo": "/images/partners/evan-schmidt.webp"
   },
   {
     "id": "jason-highland",
@@ -51,6 +56,157 @@
     "category": "Residential Real Estate",
     "website": "https://www.oconnorandhighland.com/",
     "description": "Experienced residential real estate agents serving the greater Boston market. Jason knows the local market inside and out.",
-    "state": "MA"
+    "state": "MA",
+    "photo": "/images/partners/jason-highland.webp"
+  },
+  {
+    "id": "kelly-makela",
+    "name": "Kelly Makela",
+    "company": "Charles Street Family Chiropractic",
+    "category": "Chiropractor",
+    "website": "https://www.thebostonwellnessgroup.com/dr-kelly-makela/",
+    "description": "Experienced chiropractor in downtown Boston specializing in family wellness and corrective care.",
+    "state": "MA",
+    "photo": "/images/partners/kelly-makela.webp"
+  },
+  {
+    "id": "mark-sewell",
+    "name": "Mark Sewell",
+    "company": "TD Bank",
+    "category": "Banking Services",
+    "website": "https://www.td.com/",
+    "description": "Commercial relationship manager at TD Bank helping businesses and individuals with banking solutions across the Boston area.",
+    "state": "MA",
+    "photo": "/images/partners/mark-sewell.webp"
+  },
+  {
+    "id": "michael-broderick",
+    "name": "Michael Broderick",
+    "company": "Fegreus & Broderick, LLP",
+    "category": "Estate Planning Law",
+    "website": "https://www.fegreuslaw.com/the-firm/michael-broderick/",
+    "description": "Estate planning, probate, and real estate attorney in Boston. Handles wills, trusts, and property conveyancing.",
+    "state": "MA",
+    "photo": "/images/partners/michael-broderick.webp"
+  },
+  {
+    "id": "michael-mullaney",
+    "name": "Michael Mullaney",
+    "company": "Titan Insurance LLC",
+    "category": "Insurance",
+    "website": "https://titaninsured.com/",
+    "description": "Full-service insurance agency in Boston offering auto, home, life, and commercial coverage. Mike has been in the industry since 2008.",
+    "state": "MA",
+    "photo": "/images/partners/michael-mullaney.webp"
+  },
+  {
+    "id": "miriam-crispo",
+    "name": "Miriam Crispo",
+    "company": "The McCarthy Group",
+    "category": "Marketing Consultant",
+    "website": "https://www.linkedin.com/in/miriam-crispo-54657a38/",
+    "description": "Marketing and branding consultant helping businesses grow through strategic planning, specialty sourcing, and brand engagement.",
+    "state": "MA",
+    "photo": "/images/partners/miriam-crispo.webp"
+  },
+  {
+    "id": "patrick-collins",
+    "name": "Patrick Collins",
+    "company": "Cross Country Mortgage",
+    "category": "Residential Mortgages",
+    "website": "https://crosscountrymortgage.com/",
+    "description": "Loan officer and sales manager helping homebuyers navigate the mortgage process across Massachusetts.",
+    "state": "MA",
+    "photo": "/images/partners/patrick-collins.webp"
+  },
+  {
+    "id": "richard-blanchard",
+    "name": "Richard Blanchard",
+    "company": "R H Blanchard Contract & Design, Inc.",
+    "category": "Renovations / Remodeling",
+    "website": "https://www.rhbcd.com/",
+    "description": "Family-owned renovation and remodeling company in Tewksbury serving MA homeowners and investors for over a decade. Top 1% BuildZoom rating.",
+    "state": "MA",
+    "photo": "/images/partners/richard-blanchard.webp"
+  },
+  {
+    "id": "rita-guastella",
+    "name": "Rita Guastella",
+    "company": "Coldwell Banker Realty",
+    "category": "Real Estate Rentals",
+    "website": "https://www.coldwellbanker.com/ma/cambridge/agents/rita-guastella/",
+    "description": "Cambridge-based real estate agent with 20+ years of multi-family landlord experience. Accredited Buyer Representative and Senior Real Estate Specialist.",
+    "state": "MA",
+    "photo": "/images/partners/rita-guastella.webp"
+  },
+  {
+    "id": "ross-greenstein",
+    "name": "Ross Greenstein",
+    "company": "Jason Stone Injury Lawyers",
+    "category": "Personal Injury Law",
+    "website": "https://www.stoneinjurylawyers.com/about-us/our-team/ross-greenstein/",
+    "description": "Senior trial attorney specializing in personal injury, catastrophic injury, and wrongful death cases across Massachusetts.",
+    "state": "MA",
+    "photo": "/images/partners/ross-greenstein.webp"
+  },
+  {
+    "id": "ryan-leonard",
+    "name": "Ryan Leonard",
+    "company": "Ryan Leonard Law, LLC",
+    "category": "Family Law",
+    "website": "https://www.hesslawgrp.com/hlg-team",
+    "description": "Family law attorney with 17 years of experience representing clients in divorce, custody, and family matters across Massachusetts.",
+    "state": "MA",
+    "photo": "/images/partners/ryan-leonard.webp"
+  },
+  {
+    "id": "sahil-patel",
+    "name": "Sahil Patel",
+    "company": "Namra Consulting Group LLC",
+    "category": "Digital Marketing",
+    "website": "https://www.instagram.com/namraconsulting/",
+    "description": "Full-service digital marketing agency offering social media management, advertising, SEO, and content marketing for small businesses.",
+    "state": "MA",
+    "photo": "/images/partners/sahil-patel.webp"
+  },
+  {
+    "id": "samar-abi-hassan",
+    "name": "Samar Abi Hassan",
+    "company": "Samar Real Estate Solutions",
+    "category": "Handyman",
+    "website": "https://solutionsbysamar.com/",
+    "description": "Handyman and construction services in Greater Boston — remodeling, carpentry, painting, plumbing, electrical, and more. Rated 4.8/5.",
+    "state": "MA",
+    "photo": "/images/partners/samar-abi-hassan.webp"
+  },
+  {
+    "id": "topher-brennan",
+    "name": "Topher Brennan",
+    "company": "Northwestern Mutual (Tellaro Wealth Management)",
+    "category": "Financial Advisor",
+    "website": "https://www.northwesternmutual.com/financial/advisor/christopher-brennan/",
+    "description": "Wealth management advisor and financial planner in Boston specializing in retirement and tax efficiency strategy.",
+    "state": "MA",
+    "photo": "/images/partners/topher-brennan.webp"
+  },
+  {
+    "id": "victor-chaves",
+    "name": "Victor Chaves",
+    "company": "Premium Q Moving and Storage",
+    "category": "Moving Company",
+    "website": "https://premiumqmoving.com/",
+    "description": "Top-rated moving company in Medford, MA. Local and long-distance moves, office relocations, packing, and storage. Rated 9.3/10.",
+    "state": "MA",
+    "photo": "/images/partners/victor-chaves.webp"
+  },
+  {
+    "id": "zachary-margules",
+    "name": "Zachary Margules",
+    "company": "Margules Law Group / Foti Law",
+    "category": "Litigation",
+    "website": "https://www.foti-law.com/zachary-d-margules.html",
+    "description": "Business litigation attorney licensed in MA, NY, and FL. Handles breach of contract, corporate disputes, and commercial litigation.",
+    "state": "MA",
+    "photo": "/images/partners/zachary-margules.webp"
   }
 ]
