@@ -18,6 +18,8 @@
  *   node scripts/import-calendar-projects.js --dry-run          # Preview without writing
  *   node scripts/import-calendar-projects.js --since 2025-06-01 # Custom start date
  *   node scripts/import-calendar-projects.js --limit 5          # Process max N events
+ *   node scripts/import-calendar-projects.js --update           # Check existing events for photo changes
+ *   node scripts/import-calendar-projects.js --update --dry-run # Preview photo changes
  *
  * Output: src/content/projects/<slug>.md files with published: false
  */
@@ -39,6 +41,8 @@ import {
   lookupCoordinates,
   loadManifest,
   saveManifest,
+  extractPhotoFileIds,
+  checkAndUpdatePhotos,
   PROJECTS_DIR,
   IMAGES_DIR,
   DEFAULT_SINCE,
@@ -53,6 +57,7 @@ import { writeFileSync } from 'fs';
 
 const args = process.argv.slice(2);
 const DRY_RUN = args.includes('--dry-run');
+const UPDATE_MODE = args.includes('--update');
 const sinceIdx = args.indexOf('--since');
 const SINCE = sinceIdx !== -1 ? args[sinceIdx + 1] : DEFAULT_SINCE;
 const limitIdx = args.indexOf('--limit');
@@ -67,6 +72,9 @@ async function main() {
 
   if (DRY_RUN) {
     console.log('  ℹ️  DRY RUN — no files will be written\n');
+  }
+  if (UPDATE_MODE) {
+    console.log('  🔄 UPDATE MODE — checking existing events for photo changes\n');
   }
 
   // Auth
@@ -91,6 +99,7 @@ async function main() {
 
   let imported = 0;
   let skipped = 0;
+  let updated = 0;
 
   for (const event of events) {
     const eventId = event.id;
@@ -100,6 +109,36 @@ async function main() {
 
     // Check dedup manifest
     if (manifest.imported[eventId]) {
+      if (UPDATE_MODE) {
+        // Check for photo changes on existing events
+        const entry = manifest.imported[eventId];
+        console.log(`  🔍 Checking for updates: ${entry.slug}`);
+
+        const result = await checkAndUpdatePhotos(auth, event, entry, { dryRun: DRY_RUN });
+
+        if (result.updated) {
+          const d = result.details;
+          console.log(`     📸 Photos changed: ${d.previousCount} → ${d.currentCount} (+${d.added} -${d.removed})`);
+
+          if (!DRY_RUN) {
+            // Update manifest with new photo IDs and reset GBP status
+            entry.photoFileIds = extractPhotoFileIds(event.attachments);
+            entry.lastProcessedAt = new Date().toISOString();
+            entry.publishedToGBP = false;
+            saveManifest(manifest);
+            console.log(`     ✅ Updated images + markdown, reset publishedToGBP`);
+          } else {
+            console.log(`     📄 Would update images + markdown + reset publishedToGBP`);
+          }
+          updated++;
+        } else {
+          console.log(`     ⏭️  No photo changes`);
+          skipped++;
+        }
+        console.log();
+        continue;
+      }
+
       console.log(`  ⏭️  Already imported (manifest): ${manifest.imported[eventId].slug}`);
       skipped++;
       continue;
@@ -266,6 +305,8 @@ async function main() {
         date: eventDate.toISOString().slice(0, 10),
         importedAt: new Date().toISOString(),
         publishedToGBP: false,
+        photoFileIds: extractPhotoFileIds(event.attachments),
+        lastProcessedAt: new Date().toISOString(),
       };
       manifest.lastCheck = new Date().toISOString();
       saveManifest(manifest);
@@ -281,6 +322,9 @@ async function main() {
   console.log('-----------------------------------');
   console.log(`  Events processed: ${events.length}`);
   console.log(`  Projects imported: ${imported}`);
+  if (UPDATE_MODE) {
+    console.log(`  Projects updated: ${updated}`);
+  }
   console.log(`  Skipped: ${skipped}`);
   console.log('-----------------------------------\n');
 

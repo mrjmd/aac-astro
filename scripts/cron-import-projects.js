@@ -39,6 +39,8 @@ import {
   lookupCoordinates,
   loadManifest,
   saveManifest,
+  extractPhotoFileIds,
+  checkAndUpdatePhotos,
   PROJECTS_DIR,
   IMAGES_DIR,
   SERVICE_LABELS,
@@ -293,6 +295,8 @@ async function main() {
         date: eventDate.toISOString().slice(0, 10),
         importedAt: new Date().toISOString(),
         publishedToGBP: false,
+        photoFileIds: extractPhotoFileIds(event.attachments),
+        lastProcessedAt: new Date().toISOString(),
       };
 
       newProjects.push({ slug, city, state, serviceType: primaryType, summary, afterImage });
@@ -302,8 +306,55 @@ async function main() {
     console.log();
   }
 
-  // Buffer posting for new projects (schedules to GBP via Buffer)
-  if (!DRY_RUN && !SKIP_BUFFER && newProjects.length > 0) {
+  // Phase 2: Check existing events for photo updates
+  let updatedCount = 0;
+  const updatedProjects = [];
+
+  console.log('\n🔄 Phase 2: Checking existing events for photo updates...\n');
+
+  for (const event of events) {
+    const eventId = event.id;
+    const entry = manifest.imported[eventId];
+
+    // Only check events that are already imported (skip new ones handled above)
+    if (!entry || !entry.photoFileIds) continue;
+
+    const result = await checkAndUpdatePhotos(auth, event, entry, { dryRun: DRY_RUN });
+
+    if (result.updated) {
+      const d = result.details;
+      console.log(`  📸 ${entry.slug}: photos changed (${d.previousCount} → ${d.currentCount}, +${d.added} -${d.removed})`);
+
+      if (!DRY_RUN) {
+        entry.photoFileIds = extractPhotoFileIds(event.attachments);
+        entry.lastProcessedAt = new Date().toISOString();
+        entry.publishedToGBP = false;
+        saveManifest(manifest);
+
+        updatedProjects.push({
+          slug: entry.slug,
+          city: entry.city,
+          state: entry.state,
+          serviceType: entry.serviceTypes?.[0] || entry.serviceType,
+          summary: '',
+          afterImage: d.afterImage,
+        });
+      }
+      updatedCount++;
+    }
+  }
+
+  if (updatedCount > 0) {
+    console.log(`\n  📋 ${updatedCount} project(s) updated with new photos\n`);
+  } else {
+    console.log('  No photo updates found.\n');
+  }
+
+  // Combine new and updated projects for Buffer posting
+  const allPostableProjects = [...newProjects, ...updatedProjects];
+
+  // Buffer posting for new + updated projects (schedules to GBP via Buffer)
+  if (!DRY_RUN && !SKIP_BUFFER && allPostableProjects.length > 0) {
     let bufferToken;
     try {
       bufferToken = getToken();
@@ -313,9 +364,9 @@ async function main() {
     }
 
     if (bufferToken) {
-      console.log(`\n📣 Scheduling ${newProjects.length} new project(s) to Buffer...\n`);
+      console.log(`\n📣 Scheduling ${allPostableProjects.length} project(s) to Buffer...\n`);
 
-      for (const project of newProjects) {
+      for (const project of allPostableProjects) {
         const eventEntry = Object.entries(manifest.imported).find(
           ([, v]) => v.slug === project.slug
         );
@@ -346,6 +397,7 @@ async function main() {
   console.log('-----------------------------------');
   console.log(`  Events scanned: ${events.length}`);
   console.log(`  New projects: ${imported}`);
+  console.log(`  Updated projects: ${updatedCount}`);
   console.log(`  Skipped: ${skipped}`);
   console.log('-----------------------------------\n');
 }

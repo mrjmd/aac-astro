@@ -21,8 +21,8 @@
 
 import { google } from 'googleapis';
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
-import { join, resolve } from 'path';
+import { readFileSync, writeFileSync, existsSync, mkdirSync, unlinkSync } from 'fs';
+import { join, resolve, basename } from 'path';
 import { createServer } from 'http';
 import { createInterface } from 'readline';
 
@@ -311,27 +311,36 @@ async function getNewToken(oauth2) {
  * @param {object} options
  * @param {string} [options.since] - ISO date string (default: 2025-01-01)
  * @param {number} [options.limit] - Max events to return
+ * @param {string} [options.updatedMin] - Only return events updated after this ISO date (uses orderBy: 'updated')
  * @returns {Promise<Array>} Filtered calendar events
  */
-export async function fetchJobEvents(auth, { since = DEFAULT_SINCE, limit = Infinity } = {}) {
+export async function fetchJobEvents(auth, { since = DEFAULT_SINCE, limit = Infinity, updatedMin } = {}) {
   const calendar = google.calendar({ version: 'v3', auth });
 
-  console.log(`📅 Fetching events since ${since} for ${CALENDAR_EMAIL}...\n`);
+  if (updatedMin) {
+    console.log(`📅 Fetching events since ${since}, updated after ${updatedMin}, for ${CALENDAR_EMAIL}...\n`);
+  } else {
+    console.log(`📅 Fetching events since ${since} for ${CALENDAR_EMAIL}...\n`);
+  }
 
   const events = [];
   let pageToken;
   const skippedReasons = { duration: 0, keyword: 0, color: 0, noMike: 0, noLocation: 0, noAttachments: 0, future: 0 };
 
   do {
-    const res = await calendar.events.list({
+    const listParams = {
       calendarId: CALENDAR_EMAIL,
       timeMin: new Date(since).toISOString(),
       timeMax: new Date().toISOString(),
       singleEvents: true,
-      orderBy: 'startTime',
+      orderBy: updatedMin ? 'updated' : 'startTime',
       maxResults: 250,
       pageToken,
-    });
+    };
+    if (updatedMin) {
+      listParams.updatedMin = new Date(updatedMin).toISOString();
+    }
+    const res = await calendar.events.list(listParams);
 
     for (const event of res.data.items || []) {
       // Must be completed (end time in the past)
@@ -852,4 +861,152 @@ export function saveManifest(manifest) {
   const dir = resolve('data');
   if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
   writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2) + '\n');
+}
+
+// ---------------------------------------------------------------------------
+// Photo update detection
+// ---------------------------------------------------------------------------
+
+/**
+ * Extract sorted Drive file IDs from calendar event attachments.
+ * @param {Array} attachments - Calendar event attachments
+ * @returns {string[]} Sorted array of file IDs
+ */
+export function extractPhotoFileIds(attachments) {
+  if (!attachments || attachments.length === 0) return [];
+  return attachments
+    .filter(att => att.fileId)
+    .map(att => att.fileId)
+    .sort();
+}
+
+/**
+ * Compare two sorted file ID arrays.
+ * @param {string[]} oldIds - Previously recorded file IDs
+ * @param {string[]} newIds - Current file IDs from calendar event
+ * @returns {{ added: string[], removed: string[], unchanged: string[] }}
+ */
+export function diffPhotoFileIds(oldIds, newIds) {
+  const oldSet = new Set(oldIds);
+  const newSet = new Set(newIds);
+  return {
+    added: newIds.filter(id => !oldSet.has(id)),
+    removed: oldIds.filter(id => !newSet.has(id)),
+    unchanged: newIds.filter(id => oldSet.has(id)),
+  };
+}
+
+/**
+ * Update only the beforeImage and afterImage lines in a markdown file's frontmatter.
+ * Preserves all other frontmatter fields and body text.
+ *
+ * @param {string} mdPath - Path to the markdown file
+ * @param {string} beforeImage - New beforeImage path
+ * @param {string} afterImage - New afterImage path
+ */
+export function updateMarkdownImages(mdPath, beforeImage, afterImage) {
+  let content = readFileSync(mdPath, 'utf-8');
+  content = content.replace(/^beforeImage:.*$/m, `beforeImage: ${beforeImage}`);
+  content = content.replace(/^afterImage:.*$/m, `afterImage: ${afterImage}`);
+  writeFileSync(mdPath, content);
+}
+
+/**
+ * Check if an existing event's photos have changed, and if so, re-download,
+ * re-classify, and update the project images + markdown.
+ *
+ * @param {object} auth - Google auth client
+ * @param {object} event - Calendar event object
+ * @param {object} manifestEntry - Existing manifest entry for this event
+ * @param {object} options
+ * @param {boolean} [options.dryRun=false] - If true, only report changes without modifying files
+ * @returns {Promise<{ updated: boolean, reason: string|null, details: object|null }>}
+ */
+export async function checkAndUpdatePhotos(auth, event, manifestEntry, { dryRun = false } = {}) {
+  const currentIds = extractPhotoFileIds(event.attachments);
+  const previousIds = manifestEntry.photoFileIds || [];
+  const diff = diffPhotoFileIds(previousIds, currentIds);
+
+  // No changes
+  if (diff.added.length === 0 && diff.removed.length === 0) {
+    return { updated: false, reason: null, details: null };
+  }
+
+  const details = {
+    slug: manifestEntry.slug,
+    previousCount: previousIds.length,
+    currentCount: currentIds.length,
+    added: diff.added.length,
+    removed: diff.removed.length,
+  };
+
+  if (dryRun) {
+    return { updated: true, reason: 'photos_changed', details };
+  }
+
+  // Live mode: re-download all current photos, re-classify, overwrite images
+  const slug = manifestEntry.slug;
+
+  // Filter to image attachments via Drive API
+  const mikePhotos = await filterMikePhotos(auth, event.attachments || []);
+
+  // Download all photos
+  const downloadedPaths = [];
+  for (let i = 0; i < mikePhotos.length; i++) {
+    const ext = mikePhotos[i].mimeType?.includes('png') ? 'png' : 'jpg';
+    const tempPath = join(IMAGES_DIR, `${slug}-update-${i}.${ext}`);
+    const ok = await downloadPhoto(auth, mikePhotos[i].fileId, tempPath);
+    if (ok) downloadedPaths.push(tempPath);
+  }
+
+  const PLACEHOLDER = '/images/projects/placeholder.svg';
+  let beforeImage = `/images/projects/${slug}-before.jpg`;
+  let afterImage = `/images/projects/${slug}-after.jpg`;
+
+  if (downloadedPaths.length === 0) {
+    beforeImage = PLACEHOLDER;
+    afterImage = PLACEHOLDER;
+  } else {
+    // Re-classify with Gemini
+    const classified = await classifyPhotos(downloadedPaths);
+    const beforePath = classified.before;
+    const afterPath = classified.after;
+
+    const finalBeforePath = join(IMAGES_DIR, `${slug}-before.jpg`);
+    const finalAfterPath = join(IMAGES_DIR, `${slug}-after.jpg`);
+
+    const { renameSync, copyFileSync } = await import('fs');
+
+    if (beforePath && existsSync(beforePath)) {
+      renameSync(beforePath, finalBeforePath);
+    }
+    if (afterPath && existsSync(afterPath)) {
+      if (afterPath !== beforePath) {
+        renameSync(afterPath, finalAfterPath);
+      } else {
+        copyFileSync(finalBeforePath, finalAfterPath);
+      }
+    }
+
+    if (!beforePath && afterPath) beforeImage = afterImage;
+    if (!afterPath && beforePath) afterImage = beforeImage;
+
+    // Clean up temp photos
+    for (const p of downloadedPaths) {
+      if (existsSync(p) && p !== finalBeforePath && p !== finalAfterPath) {
+        try { unlinkSync(p); } catch { /* ignore */ }
+      }
+    }
+  }
+
+  // Update markdown frontmatter (images only, preserve body)
+  const mdPath = join(PROJECTS_DIR, `${slug}.md`);
+  if (existsSync(mdPath)) {
+    updateMarkdownImages(mdPath, beforeImage, afterImage);
+  }
+
+  details.beforeImage = beforeImage;
+  details.afterImage = afterImage;
+
+  return { updated: true, reason: 'photos_changed', details };
 }
