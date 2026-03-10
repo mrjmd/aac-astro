@@ -17,7 +17,7 @@ export const homeFaqs = [
 	},
 	{
 		question: "What areas do you serve?",
-		answer: `We serve homeowners across <a href="/areas-we-serve" class="text-aac-blue hover:underline font-semibold">New England</a> — Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine — including Hartford, New Haven, Springfield, Worcester, and Greater Boston. With 20+ years of experience in New England, we understand the unique foundation challenges that our climate, soil conditions, and older housing stock create.`
+		answer: `We serve homeowners across <a href="/locations" class="text-aac-blue hover:underline font-semibold">New England</a> — Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine — including Hartford, New Haven, Springfield, Worcester, and Greater Boston. With 20+ years of experience in New England, we understand the unique foundation challenges that our climate, soil conditions, and older housing stock create.`
 	},
 	{
 		question: "Is it cement or concrete — does it matter for my repair?",

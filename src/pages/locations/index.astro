@@ -72,7 +72,7 @@ const states = [
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
-  { label: 'Areas We Serve' }
+  { label: 'Locations' }
 ];
 
 // Schema for service area
@@ -80,7 +80,7 @@ const areaSchema = {
   "@type": "HomeAndConstructionBusiness",
   "name": "Attack A Crack Foundation Repair",
   "@id": "https://www.attackacrack.com/#organization",
-  "url": "https://www.attackacrack.com/areas-we-serve",
+  "url": "https://www.attackacrack.com/locations",
   "telephone": phoneCT,
   "address": {
     "@type": "PostalAddress",
@@ -111,13 +111,13 @@ const areaSchema = {
 ---
 
 <Layout
-  title="Areas We Serve - New England"
+  title="Locations - New England"
   description="Expert foundation repair across New England: CT, MA, RI, NH, and ME. Family-owned with lifetime guarantee on all repairs."
   customSchema={areaSchema}
   breadcrumbItems={breadcrumbItems}
 >
   <LocationModal />
-  <Navbar currentPage="areas" />
+  <Navbar currentPage="locations" />
 
   <main class="pt-20 lg:pt-24">
     <!-- Hero Section -->
@@ -154,7 +154,7 @@ const areaSchema = {
                 <Icon name="Phone" size={16} />
                 CT: {phoneCT}
               </a>
-              <a href={phoneMAHref} class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
+              <a href={phoneMAHref} class="bg-aac-blue text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
                 <Icon name="Phone" size={16} />
                 MA: {phoneMA}
               </a>

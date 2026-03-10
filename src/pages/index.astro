@@ -82,24 +82,24 @@ const MA_NUMBER = phoneMA;
 		<div class="bg-aac-yellow border-y-8 border-aac-dark py-12">
 			<div class="max-w-7xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-12">
 				{[
-					{ label: "EXPERIENCE", val: "33+ Years" },
-					{ label: "GUARANTEE", val: "Lifetime" },
-					{ label: "REVIEWS", val: `${reviewCount}+ 5-Star` },
-					{ label: "DIAGNOSIS", val: "100% Free" }
+					{ num: "33+", desc: "Years Experience" },
+					{ num: "∞", desc: "Lifetime Guarantee" },
+					{ num: `${reviewCount}+`, desc: "5-Star Reviews" },
+					{ num: "Free", desc: "Every Diagnosis" }
 				].map((stat) => (
-					<div class="flex flex-col items-center lg:items-start text-center lg:text-left">
-						<span class="text-[10px] font-black uppercase tracking-[0.2em] text-aac-dark/70 mb-2">{stat.label}</span>
-						<span class="text-2xl font-black text-aac-dark tracking-tighter">{stat.val}</span>
+					<div class="flex items-center gap-4 lg:justify-start justify-center">
+						<span class="text-4xl font-black text-aac-dark tracking-tighter leading-none">{stat.num}</span>
+						<span class="text-sm font-black uppercase tracking-widest text-aac-dark/70 leading-tight">{stat.desc}</span>
 					</div>
 				))}
 			</div>
 		</div>
 
-		<Team />
 		<Services />
+		<Team />
 		
 		<!-- Testimonials -->
-		<section id="reviews" data-animate class="py-16 md:py-24 bg-white relative overflow-hidden">
+		<section id="reviews" data-animate class="py-16 md:py-24 bg-zinc-50 relative overflow-hidden">
 			<div class="max-w-7xl mx-auto px-6">
 				<div class="grid lg:grid-cols-[1fr_2fr] gap-12 items-start">
 					<div>
@@ -107,8 +107,8 @@ const MA_NUMBER = phoneMA;
 							<Icon name="MessageSquare" size={14} /> WHAT PEOPLE SAY
 						</p>
 						<h2 class="text-4xl lg:text-5xl font-display font-black text-aac-dark tracking-tighter leading-[0.9] mb-8">
-							Don't Just Take <br />
-							<span class="text-aac-blue">Our Word For It.</span>
+							Hear It From <br />
+							<span class="text-aac-blue">Our Homeowners</span>
 						</h2>
 						<div class="flex items-center gap-4 mb-6">
 							<div class="flex items-center gap-1">
@@ -142,7 +142,7 @@ const MA_NUMBER = phoneMA;
 
 		<!-- Latest from Our Blog -->
 		{latestPosts.length > 0 && (
-			<section data-animate class="py-16 md:py-24 bg-zinc-50">
+			<section data-animate class="py-16 md:py-24 bg-white">
 				<div class="max-w-7xl mx-auto px-6">
 					<div class="text-center mb-12">
 						<p class="flex items-center justify-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-400 mb-6">
@@ -190,8 +190,6 @@ const MA_NUMBER = phoneMA;
 			</section>
 		)}
 
-		<HomeFaq />
-
 		<!-- Final CTA -->
 		<section data-animate class="py-20 md:py-32 bg-aac-yellow relative overflow-hidden border-y-8 border-aac-dark">
 			<!-- Dot Pattern -->
@@ -201,7 +199,7 @@ const MA_NUMBER = phoneMA;
 				<h2 class="text-5xl sm:text-7xl lg:text-9xl font-display font-black tracking-tighter text-aac-dark mb-12 leading-[0.8]">
 					FIX YOUR <br />
 					<span class="text-aac-blue">FOUNDATION</span> <br />
-					TODAY.
+					TODAY
 				</h2>
 				<p class="text-xl font-bold text-aac-dark/70 mb-12 max-w-2xl mx-auto">
 					No pressure. Just honest experts ready to help you secure your home.
@@ -232,6 +230,8 @@ const MA_NUMBER = phoneMA;
 				</div>
 			</div>
 		</section>
+
+		<HomeFaq />
 	</main>
 	<Footer />
 </Layout>
