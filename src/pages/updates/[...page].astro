@@ -143,7 +143,7 @@ const projectTotalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
 					{isFirstPage ? 'Latest Articles' : `Articles - Page ${page.currentPage}`}
 				</h2>
 
-				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div class="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
 					{page.data.map((post) => (
 						<a
 							href={`/blog/${post.id.replace(/\.md$/, '')}`}
@@ -215,7 +215,7 @@ const projectTotalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
 						</a>
 					</div>
 
-					<div id="updates-projects-grid" class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<div id="updates-projects-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
 						{projects.map((project, i) => (
 							<a href={`/projects/${project.id.replace(/\.md$/, '')}`} data-ppage={Math.floor(i / PROJECTS_PER_PAGE) + 1} class="updates-project-card group bg-zinc-50 rounded-2xl overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all" style={i >= PROJECTS_PER_PAGE ? 'display:none' : ''}>
 								<div class="aspect-video overflow-hidden relative">
@@ -250,18 +250,7 @@ const projectTotalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
 					</div>
 
 					{projectTotalPages > 1 && (
-						<nav class="flex items-center justify-center gap-2 mt-8" aria-label="Projects pagination">
-							<button id="pp-prev" class="px-3 py-2 rounded-lg border-2 border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue transition-all disabled:opacity-30 disabled:cursor-not-allowed" disabled aria-label="Previous projects page">
-								&larr;
-							</button>
-							{Array.from({ length: projectTotalPages }, (_, i) => (
-								<button data-ppgoto={i + 1} class={`pp-btn w-10 h-10 rounded-lg border-2 text-sm font-black transition-all ${i === 0 ? 'border-aac-blue bg-aac-blue text-white' : 'border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue'}`}>
-									{i + 1}
-								</button>
-							))}
-							<button id="pp-next" class="px-3 py-2 rounded-lg border-2 border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue transition-all disabled:opacity-30 disabled:cursor-not-allowed" aria-label="Next projects page">
-								&rarr;
-							</button>
+						<nav id="pp-nav" class="flex items-center justify-center gap-2 mt-8" aria-label="Projects pagination" data-total={projectTotalPages}>
 						</nav>
 					)}
 				</div>
@@ -293,37 +282,50 @@ const projectTotalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
 
 	<script>
 		const cards = document.querySelectorAll('.updates-project-card');
-		const pageBtns = document.querySelectorAll('.pp-btn');
-		const prevBtn = document.getElementById('pp-prev');
-		const nextBtn = document.getElementById('pp-next');
-		const totalPages = pageBtns.length;
+		const nav = document.getElementById('pp-nav');
+		const totalPages = nav ? parseInt(nav.dataset.total || '1') : 1;
 		let currentPage = 1;
 
-		function showProjectPage(page) {
+		function getPageNumbers(current: number, last: number): (number | '...')[] {
+			if (last <= 5) return Array.from({ length: last }, (_, i) => i + 1);
+			const pages: (number | '...')[] = [1];
+			if (current > 3) pages.push('...');
+			for (let i = Math.max(2, current - 1); i <= Math.min(last - 1, current + 1); i++) pages.push(i);
+			if (current < last - 2) pages.push('...');
+			pages.push(last);
+			return pages;
+		}
+
+		function renderPagination() {
+			if (!nav) return;
+			const pages = getPageNumbers(currentPage, totalPages);
+			const prevDisabled = currentPage === 1;
+			const nextDisabled = currentPage === totalPages;
+			nav.innerHTML = `
+				<button id="pp-prev" class="px-3 py-2 rounded-lg border-2 border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue transition-all disabled:opacity-30 disabled:cursor-not-allowed" ${prevDisabled ? 'disabled' : ''} aria-label="Previous projects page">&larr;</button>
+				${pages.map(p => p === '...'
+					? '<span class="px-3 py-2 text-zinc-400">...</span>'
+					: `<button data-ppgoto="${p}" class="pp-btn w-10 h-10 rounded-lg border-2 text-sm font-black transition-all ${p === currentPage ? 'border-aac-blue bg-aac-blue text-white' : 'border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue'}">${p}</button>`
+				).join('')}
+				<button id="pp-next" class="px-3 py-2 rounded-lg border-2 border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue transition-all disabled:opacity-30 disabled:cursor-not-allowed" ${nextDisabled ? 'disabled' : ''} aria-label="Next projects page">&rarr;</button>
+			`;
+			nav.querySelectorAll('.pp-btn').forEach(btn => {
+				btn.addEventListener('click', () => showProjectPage(parseInt((btn as HTMLElement).dataset.ppgoto || '1')));
+			});
+			document.getElementById('pp-prev')?.addEventListener('click', () => { if (currentPage > 1) showProjectPage(currentPage - 1); });
+			document.getElementById('pp-next')?.addEventListener('click', () => { if (currentPage < totalPages) showProjectPage(currentPage + 1); });
+		}
+
+		function showProjectPage(page: number) {
 			currentPage = page;
 			cards.forEach(card => {
-				const p = parseInt(card.dataset.ppage || '1');
-				card.style.display = p === page ? '' : 'none';
+				const p = parseInt((card as HTMLElement).dataset.ppage || '1');
+				(card as HTMLElement).style.display = p === page ? '' : 'none';
 			});
-			pageBtns.forEach(btn => {
-				const goto = parseInt(btn.dataset.ppgoto || '1');
-				if (goto === page) {
-					btn.classList.add('border-aac-blue', 'bg-aac-blue', 'text-white');
-					btn.classList.remove('border-zinc-200', 'text-zinc-500');
-				} else {
-					btn.classList.remove('border-aac-blue', 'bg-aac-blue', 'text-white');
-					btn.classList.add('border-zinc-200', 'text-zinc-500');
-				}
-			});
-			if (prevBtn) prevBtn.disabled = page === 1;
-			if (nextBtn) nextBtn.disabled = page === totalPages;
+			renderPagination();
 			document.getElementById('updates-projects-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 		}
 
-		pageBtns.forEach(btn => {
-			btn.addEventListener('click', () => showProjectPage(parseInt(btn.dataset.ppgoto || '1')));
-		});
-		prevBtn?.addEventListener('click', () => { if (currentPage > 1) showProjectPage(currentPage - 1); });
-		nextBtn?.addEventListener('click', () => { if (currentPage < totalPages) showProjectPage(currentPage + 1); });
+		renderPagination();
 	</script>
 </Layout>
