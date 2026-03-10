@@ -55,20 +55,21 @@ These must be done before DNS cutover. Nothing else launches the site.
 - [ ] Remove `is-crawlable: 'off'` from `lighthouserc.cjs`
 - [ ] Raise `categories:seo` threshold in `lighthouserc.cjs` from 0.69 → **0.95**
 - [ ] Point attackacrack.com DNS to Vercel
+- [ ] Update `SITE_IMAGE_BASE` GitHub secret from `https://aac-astro.vercel.app` → `https://attackacrack.com`
 - [ ] Verify SSL certificate
 - [ ] Test all redirects work (`vercel.json`)
 - [ ] Submit sitemap to Google Search Console
 - [ ] Monitor for 404 errors
 
-### GitHub Secrets for CI/CD (Matt)
+### GitHub Secrets for CI/CD — DONE
 
-These must be added at github.com → repo → Settings → Secrets for the cron to work:
-
-- [ ] `GOOGLE_SERVICE_ACCOUNT_KEY` — service account JSON for Calendar/Drive API
-- [ ] `GEMINI_API_KEY` — for photo classification
-- [ ] `BUFFER_API_TOKEN` — `QNzYfI...` (the token from tonight)
-- [ ] `BUFFER_CHANNEL_ID` — `69aa1ae63f3b94a1211df5f1`
-- [ ] `SITE_IMAGE_BASE` — `https://aac-astro.vercel.app`
+- [x] `GEMINI_API_KEY` — photo classification + content generation
+- [x] `BUFFER_API_TOKEN` — social media auto-posting
+- [x] `BUFFER_CHANNEL_ID` — `69aa1ae63f3b94a1211df5f1`
+- [x] `SITE_IMAGE_BASE` — `https://aac-astro.vercel.app` (change to `https://attackacrack.com` at launch)
+- [x] `GOOGLE_OAUTH_CLIENT_ID` — OAuth2 for Calendar/Drive API (replaces service account — org policy blocks key creation)
+- [x] `GOOGLE_OAUTH_CLIENT_SECRET` — OAuth2 client secret
+- [x] `GOOGLE_OAUTH_REFRESH_TOKEN` — OAuth2 refresh token (see Tech Debt note on expiry)
 
 ---
 
@@ -191,13 +192,13 @@ Full list in `docs/BRAINSTORM-AGENDA.md`. Key questions:
 
 ### DecapCMS Setup
 
-1. [ ] Create a Netlify site (deploy manually, drag empty folder)
-2. [ ] Connect to GitHub repo (`mrjmd/aac-astro`, branch: `main`), disable auto-publishing
-3. [ ] Enable Identity (invite-only registration)
-4. [ ] Enable Git Gateway
-5. [ ] Invite users
-6. [ ] Claude updates `public/admin/config.yml` with Netlify site URL
-7. [ ] Test: visit `/admin/`, log in, make test edit
+1. [x] Create a Netlify site — `bejewelled-youtiao-fcc0d4.netlify.app`
+2. [x] Connect to GitHub repo (`mrjmd/aac-astro`, branch: `main`), disable auto-publishing
+3. [x] Enable Identity (invite-only registration)
+4. [x] Enable Git Gateway
+5. [x] Invite users — matt@attackacrack.com
+6. [x] Claude updates `public/admin/config.yml` with Netlify site URL + Vercel rewrite for `/.netlify/*`
+7. [x] Test: visit `/admin/`, log in — working on `aac-astro.vercel.app/admin/`
 
 ### Buffer Queue Refill
 
@@ -274,6 +275,7 @@ First 90 days after DNS cutover. Full strategy in `docs/SEO-STRATEGY-2026.md` (P
 
 - [ ] 80+ location markdown files have phone numbers in frontmatter fields. Templates use centralized `contact.ts`, but content frontmatter is hardcoded. If a phone number changes, grep `src/content/` for the old number.
 - [ ] Future: Extract HowTo schema into shared component for services + blog posts
+- [ ] **Google auth: OAuth refresh token in CI** — using OAuth refresh token instead of service account key (org policy blocks key creation). Refresh token can expire after 6 months of inactivity or if Google password changes. If the cron fails with "OAuth refresh failed", re-run `node scripts/import-calendar-projects.js` locally to get a new token, then update `GOOGLE_OAUTH_REFRESH_TOKEN` GitHub secret. Long-term fix: Workload Identity Federation (OIDC).
 
 ---
 

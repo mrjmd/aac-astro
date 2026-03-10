@@ -184,6 +184,26 @@ export async function authorize({ serviceAccountKey } = {}) {
     return auth.getClient();
   }
 
+  // CI mode: OAuth2 via env vars (when service account keys are blocked by org policy)
+  if (process.env.GOOGLE_OAUTH_CLIENT_ID && process.env.GOOGLE_OAUTH_REFRESH_TOKEN) {
+    const oauth2 = new google.auth.OAuth2(
+      process.env.GOOGLE_OAUTH_CLIENT_ID,
+      process.env.GOOGLE_OAUTH_CLIENT_SECRET,
+      'http://localhost:3333/callback'
+    );
+    oauth2.setCredentials({ refresh_token: process.env.GOOGLE_OAUTH_REFRESH_TOKEN });
+    // Force a token refresh to validate credentials
+    try {
+      const { credentials } = await oauth2.refreshAccessToken();
+      oauth2.setCredentials(credentials);
+    } catch (err) {
+      console.error('❌ OAuth refresh failed:', err.message);
+      console.error('  You may need to re-authorize locally and update GOOGLE_OAUTH_REFRESH_TOKEN');
+      process.exit(1);
+    }
+    return oauth2;
+  }
+
   // Local mode: OAuth2
   if (!existsSync(OAUTH_CREDS_PATH)) {
     console.error(`\n❌ OAuth credentials not found at ${OAUTH_CREDS_PATH}`);
