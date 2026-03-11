@@ -15,6 +15,7 @@ export interface TrustedPartner {
   website: string;
   description: string;
   state: string;
+  photo?: string;
 }
 
 const partners: TrustedPartner[] = data as TrustedPartner[];

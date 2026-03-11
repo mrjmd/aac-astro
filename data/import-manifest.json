@@ -135,7 +135,7 @@
       "serviceType": "crack-injection",
       "date": "2025-02-27",
       "importedAt": "2026-03-05T18:48:43.261Z",
-      "publishedToGBP": false,
+      "publishedToGBP": true,
       "photoFileIds": [
         "1JzD4h20nYKD_hbNehnkC4vFW0TtJJZ9S",
         "1UTP6QMsr0SspDu0yPteRXHBbcEsegpuR"
@@ -228,7 +228,7 @@
       "serviceType": "crack-injection",
       "date": "2025-03-27",
       "importedAt": "2026-03-05T18:50:40.404Z",
-      "publishedToGBP": false,
+      "publishedToGBP": true,
       "photoFileIds": [
         "1B26ZZVzNnw5lwHilEURfM9Cvsz1sUjgh",
         "1cANJdActZyjv0fwOe4LUkxg4WirtgE7p",
@@ -382,7 +382,7 @@
       "serviceType": "crack-injection",
       "date": "2025-05-29",
       "importedAt": "2026-03-05T18:54:46.327Z",
-      "publishedToGBP": false,
+      "publishedToGBP": true,
       "photoFileIds": [
         "10V0oikLUuCXsvLPU4NBbpSEbkRHNTDTX",
         "15-63xI2btUKWwx7L_E7UbIWMHa7AkA8C",
@@ -1032,7 +1032,7 @@
       "serviceType": "bulkhead-repair",
       "date": "2025-09-09",
       "importedAt": "2026-03-05T19:16:41.809Z",
-      "publishedToGBP": false,
+      "publishedToGBP": true,
       "photoFileIds": [
         "18hsSzNK3VGJh7CJ6LPqqBl4_blZiSKvU",
         "18mIa-85CN346xnnmiolJeNLZ4nbYg6WU",
@@ -1653,7 +1653,7 @@
       ],
       "date": "2025-08-29",
       "importedAt": "2026-03-10T14:29:15.727Z",
-      "publishedToGBP": false,
+      "publishedToGBP": true,
       "photoFileIds": [
         "1ZOSaj1U-jfjBqzvtTULSF2OqYQDaszuZ",
         "1ZUfFoYbZthJoxTbkq2Z8x9jWlopXafHK",

@@ -89,7 +89,7 @@ const pageSchema = [
 
           <!-- Sidebar: Category Filter -->
           <aside class="lg:w-64 shrink-0">
-            <div class="lg:sticky lg:top-28">
+            <div class="lg:sticky lg:top-28 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:pr-2">
               <h2 class="text-sm font-black uppercase tracking-widest text-zinc-400 mb-4">Filter by Category</h2>
               <nav class="flex flex-wrap lg:flex-col gap-2" id="category-nav">
                 <button
@@ -121,14 +121,26 @@ const pageSchema = [
                   class="partner-card group p-8 rounded-[32px] border-4 border-aac-dark shadow-[8px_8px_0px_0px_rgba(26,26,26,1)] bg-white hover:shadow-[12px_12px_0px_0px_rgba(26,26,26,1)] hover:translate-y-[-4px] transition-all"
                   data-category={partner.category}
                 >
-                  <div class="flex items-start justify-between mb-4">
-                    <div>
-                      <h3 class="text-xl font-black text-aac-dark">{partner.name}</h3>
-                      <p class="text-sm font-bold text-aac-blue">{partner.company}</p>
+                  <div class="flex items-start gap-4 mb-4">
+                    {partner.photo && (
+                      <img
+                        src={partner.photo}
+                        alt={partner.name}
+                        class="w-16 h-16 rounded-full object-cover border-2 border-aac-dark shrink-0"
+                        loading="lazy"
+                      />
+                    )}
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-start justify-between gap-2">
+                        <div>
+                          <h3 class="text-xl font-black text-aac-dark">{partner.name}</h3>
+                          <p class="text-sm font-bold text-aac-blue">{partner.company}</p>
+                        </div>
+                        <span class="inline-flex px-3 py-1 bg-zinc-100 text-zinc-600 rounded-full text-[10px] font-black uppercase tracking-widest shrink-0">
+                          {partner.category}
+                        </span>
+                      </div>
                     </div>
-                    <span class="inline-flex px-3 py-1 bg-zinc-100 text-zinc-600 rounded-full text-[10px] font-black uppercase tracking-widest shrink-0 ml-4">
-                      {partner.category}
-                    </span>
                   </div>
                   <p class="text-zinc-600 text-sm leading-relaxed mb-6">{partner.description}</p>
                   <a

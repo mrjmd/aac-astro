@@ -184,11 +184,11 @@ Full list in `docs/BRAINSTORM-AGENDA.md`. Key questions:
 - [ ] Any co-marketing agreements or referral relationships to highlight?
 - [ ] Name the trusted partners page (Preferred? Trusted? Recommended?)
 
-### Google Cloud Setup (for Calendar Import)
+### Google Cloud Setup (for Calendar Import) — SUPERSEDED
 
-- [ ] Create service account (for CI/cron — different from OAuth)
-- [ ] Share calendar with service account (read-only)
-- [ ] Download service account key JSON → add as `GOOGLE_SERVICE_ACCOUNT_KEY` secret
+- [x] ~~Create service account~~ — org policy blocks key creation; using OAuth2 refresh token instead (see Tech Debt)
+- [x] ~~Share calendar with service account~~ — not needed with OAuth2
+- [x] ~~Download service account key JSON~~ — not needed with OAuth2
 
 ### DecapCMS Setup
 

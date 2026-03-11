@@ -227,6 +227,42 @@ export async function createPost({ token, channelId, text, imageUrl, scheduledAt
   return data.createPost.post;
 }
 
+/**
+ * Get all scheduled posts for a channel.
+ * Returns array of { id, text, dueAt }.
+ */
+export async function getScheduledPosts(token, channelId) {
+  // Look up org ID
+  const orgs = await getOrganizations(token);
+  if (!orgs.length) throw new Error('No Buffer organizations found');
+  const orgId = orgs[0].id;
+
+  const data = await graphql(token, `
+    query GetScheduledPosts($input: PostsInput!) {
+      posts(input: $input, first: 100) {
+        edges {
+          node {
+            id
+            text
+            dueAt
+            status
+          }
+        }
+      }
+    }
+  `, {
+    input: {
+      organizationId: orgId,
+      filter: {
+        channelIds: [channelId],
+        status: ['scheduled'],
+      },
+    },
+  });
+
+  return (data.posts?.edges || []).map(e => e.node);
+}
+
 // ---------------------------------------------------------------------------
 // Post text builder
 // ---------------------------------------------------------------------------

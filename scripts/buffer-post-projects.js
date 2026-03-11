@@ -17,7 +17,7 @@
 import { readFileSync, writeFileSync, existsSync, readdirSync } from 'fs';
 import { join, resolve } from 'path';
 import { execSync } from 'child_process';
-import { getToken, getOrganizations, getChannels, createPost, buildPostText } from './lib/buffer-client.js';
+import { getToken, getOrganizations, getChannels, getScheduledPosts, createPost, buildPostText } from './lib/buffer-client.js';
 
 // ---------------------------------------------------------------------------
 // CLI args
@@ -213,9 +213,14 @@ function interleaveProjects(projects) {
 
 /**
  * Generate posting schedule: Monday-Friday at 9:00 AM ET (14:00 UTC).
+ * Skips any dates that already have scheduled Buffer posts.
  * Returns array of ISO 8601 timestamps.
+ *
+ * @param {string} startDate - YYYY-MM-DD
+ * @param {number} count - Number of slots to fill
+ * @param {Set<string>} occupiedDates - Set of YYYY-MM-DD strings to skip
  */
-function generateSchedule(startDate, count) {
+function generateSchedule(startDate, count, occupiedDates = new Set()) {
   const dates = [];
   const current = new Date(startDate + 'T14:00:00Z'); // 9 AM ET = 14:00 UTC
 
@@ -224,9 +229,12 @@ function generateSchedule(startDate, count) {
     current.setUTCDate(current.getUTCDate() + 1);
   }
 
-  while (dates.length < count) {
+  // Safety: don't scan more than 180 days out
+  let maxDays = 180;
+  while (dates.length < count && maxDays-- > 0) {
     const day = current.getUTCDay();
-    if (day >= 1 && day <= 5) {
+    const dateStr = current.toISOString().slice(0, 10);
+    if (day >= 1 && day <= 5 && !occupiedDates.has(dateStr)) {
       dates.push(current.toISOString());
     }
     current.setUTCDate(current.getUTCDate() + 1);
@@ -240,14 +248,14 @@ function generateSchedule(startDate, count) {
 // ---------------------------------------------------------------------------
 
 async function main() {
-  // Token not needed for dry-run (but needed for everything else)
+  // Always try to get a real token (needed to check existing schedule)
   let token;
-  if (DRY_RUN) {
-    token = process.env.BUFFER_API_TOKEN || 'dry-run';
-  } else {
-    try {
-      token = getToken();
-    } catch (err) {
+  try {
+    token = getToken();
+  } catch (err) {
+    if (DRY_RUN) {
+      token = 'dry-run';
+    } else {
       console.error(`❌ ${err.message}`);
       process.exit(1);
     }
@@ -318,12 +326,32 @@ async function main() {
     return;
   }
 
+  // Fetch existing scheduled posts from Buffer to avoid double-booking days
+  let occupiedDates = new Set();
+  if (CHANNEL_ID && token !== 'dry-run') {
+    try {
+      const existingPosts = await getScheduledPosts(token, CHANNEL_ID);
+      for (const post of existingPosts) {
+        if (post.dueAt) {
+          occupiedDates.add(new Date(post.dueAt).toISOString().slice(0, 10));
+        }
+      }
+      if (occupiedDates.size > 0) {
+        console.log(`  📅 Buffer already has posts on ${occupiedDates.size} day(s): ${[...occupiedDates].sort().join(', ')}`);
+        console.log(`     New posts will skip these dates.\n`);
+      }
+    } catch (err) {
+      console.log(`  ⚠️  Could not fetch existing Buffer schedule: ${err.message}`);
+      console.log(`     Proceeding without collision avoidance.\n`);
+    }
+  }
+
   // Interleave for diversity
   const ordered = interleaveProjects(unscheduled);
   const toSchedule = LIMIT ? ordered.slice(0, LIMIT) : ordered;
 
-  // Generate schedule
-  const schedule = generateSchedule(startDate, toSchedule.length);
+  // Generate schedule (skips occupied dates)
+  const schedule = generateSchedule(startDate, toSchedule.length, occupiedDates);
 
   // Preview
   console.log(`  📅 Scheduling ${toSchedule.length} posts, ${startDate} through ${schedule[schedule.length - 1]?.slice(0, 10)}\n`);
