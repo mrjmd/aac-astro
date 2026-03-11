@@ -182,6 +182,7 @@ const partnersCollection = defineCollection({
     excerpt: z.string().min(50).max(200),
     icon: z.string().optional(),
     order: z.number().default(0),
+    draft: z.boolean().default(false),
     benefits: z.array(z.object({
       title: z.string(),
       description: z.string(),
