@@ -29,6 +29,10 @@
           "type": "number",
           "default": 0
         },
+        "draft": {
+          "type": "boolean",
+          "default": false
+        },
         "benefits": {
           "type": "array",
           "items": {

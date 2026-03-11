@@ -2,7 +2,7 @@
 
 > **The only task tracker.** Three sections: launch blockers, Matt's items, post-launch sprint. Completed work is archived in `docs/archive/LAUNCH-PLAN-COMPLETED.md`.
 
-*Updated: March 9, 2026 — SEO gap-closing sprint completed*
+*Updated: March 10, 2026 — Testimonials verified, partner drafts added*
 *Preview: https://aac-astro.vercel.app/*
 
 ---
@@ -11,12 +11,12 @@
 
 These must be done before DNS cutover. Nothing else launches the site.
 
-### Testimonial Verification (Matt) — CRITICAL
+### Testimonial Verification (Matt) — DONE
 
-**Status: Unverified.** Claude's March 8 audit found that none of the 20 testimonials could be confirmed as verbatim Google reviews under the displayed names. Several appear to be paraphrases of real reviews attributed to different people (e.g., "Greg N." quote matches Dudley Bryan's May 2023 review; "Christine D." matches Paul Ney's Aug 2023 review). Publishing reworded reviews under fictitious names is an FTC risk.
+**Status: Verified.** Matt reviewed all testimonials on March 10, 2026 and replaced fake/paraphrased ones with real quotes from actual reviewers.
 
-- [ ] **Go into GBP dashboard** and match each of the 20 quotes in `src/content/settings/testimonials.json` to real reviews
-- [ ] Replace any that can't be matched with verbatim quotes from actual reviewers (real names, real text)
+- [x] **Go into GBP dashboard** and match each of the 20 quotes in `src/content/settings/testimonials.json` to real reviews
+- [x] Replace any that can't be matched with verbatim quotes from actual reviewers (real names, real text)
 - [ ] Confirm the 8 partner page testimonials (in `src/content/partners/*.md`) are either real or clearly marked as illustrative
 
 ### Manual QA (Both)
