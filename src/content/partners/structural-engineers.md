@@ -16,9 +16,8 @@ benefits:
   - title: "Lifetime Warranty"
     description: "Every repair comes with a transferable lifetime warranty. Your clients get long-term confidence in the fix."
 testimonial:
-  quote: "When I spec crack injection or carbon fiber reinforcement, I need a contractor who follows the plan exactly. Attack A Crack delivers consistent, quality work every time."
-  author: "David R."
-  company: "New England Structural Associates"
+  quote: "Excellent job from start to finish. Justin the tech was very helpful and informative. His work was neat and clean. Rarely have I dealt with a more professional organization."
+  author: "Douglas Flamino"
 faqs:
   - question: "Do you follow engineer-specified repair plans?"
     answer: "Absolutely. We work from your specifications and can discuss materials and methods to ensure the repair meets your engineering requirements. We're happy to coordinate directly."

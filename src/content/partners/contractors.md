@@ -15,9 +15,8 @@ benefits:
   - title: "Transparent Pricing"
     description: "Clear quotes you can mark up with confidence. No surprises, no scope creep."
 testimonial:
-  quote: "I've been subbing foundation work to Attack A Crack for years. They show up when they say, do quality work, and treat my clients right. Couldn't ask for more."
-  author: "Tom K."
-  company: "K&M Construction"
+  quote: "Excellent job from start to finish. Luke in the office was quick and concise with description and pricing. Justin the tech was great too—very helpful and informative. His work was neat and clean. I am a contractor and rarely have I dealt with a more professional organization."
+  author: "Douglas Flamino"
 faqs:
   - question: "Do you work with general contractors on renovation projects?"
     answer: "Yes. We regularly coordinate with GCs on basement finishing, renovation, and new construction projects. We fit seamlessly into your project schedule."

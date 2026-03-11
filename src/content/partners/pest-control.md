@@ -16,9 +16,8 @@ benefits:
   - title: "Fast Response"
     description: "Pest issues are urgent for homeowners. We schedule quickly so your clients aren't waiting weeks for the structural fix."
 testimonial:
-  quote: "Half my callbacks were from pests re-entering through foundation cracks. Since I started recommending Attack A Crack, those callbacks dropped to almost zero."
-  author: "Brian M."
-  company: "South Shore Pest Solutions"
+  quote: "Their work is extremely efficient and neat and comes with a lifetime guarantee, although I have never had to call them back for a fix on their work."
+  author: "Sandy Edge"
 faqs:
   - question: "What foundation issues are most common for pest entry?"
     answer: "Cracks in basement walls, gaps around sewer and utility line penetrations, and bulkhead joints are the most common pest entry points we seal. Even hairline cracks can let insects through."

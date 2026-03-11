@@ -15,9 +15,8 @@ benefits:
   - title: "No Surprises"
     description: "Honest assessments mean no unexpected findings at closing. We tell it like it is."
 testimonial:
-  quote: "Attack A Crack has saved multiple deals for me. They respond fast, repair fast, and their warranty gives buyers confidence. My go-to foundation guys."
-  author: "Sarah M."
-  company: "RE/MAX Realty"
+  quote: "I am a local Realtor and I highly recommend him. He was very professional and polite, sent a written quote with a detailed explanation of his work and warranty and was able to do the job on a holiday weekend."
+  author: "Jana Petano"
 faqs:
   - question: "How quickly can you provide a quote for my listing?"
     answer: "We typically provide quotes within 24 hours, often same-day for urgent situations. Just text us photos and we can give preliminary guidance immediately."

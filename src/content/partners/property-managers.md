@@ -15,9 +15,8 @@ benefits:
   - title: "Tenant-Friendly Service"
     description: "Quick, clean repairs that minimize tenant disruption. Most work is completed in one visit."
 testimonial:
-  quote: "Managing 50+ properties means dealing with constant maintenance issues. Attack A Crack's one-time permanent repairs have saved us thousands in recurring service calls."
-  author: "Michael R."
-  company: "Northeast Property Management"
+  quote: "I am a property manager of Condo Associations and use Luc at Attack A Crack almost exclusively at all my properties for any foundation cracks that need repair. Their work is extremely efficient and neat and comes with a lifetime guarantee, although I have never had to call them back for a fix on their work. One and done is the best thing for us property managers!"
+  author: "Sandy Edge"
 faqs:
   - question: "Do you offer maintenance contracts for multiple properties?"
     answer: "Yes. We offer property management packages that include priority scheduling, volume pricing, and regular preventive assessments across your portfolio."

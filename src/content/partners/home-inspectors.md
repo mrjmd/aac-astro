@@ -15,9 +15,9 @@ benefits:
   - title: "Referral Confidence"
     description: "Our reputation reflects on yours. We treat every referral with the professionalism you expect."
 testimonial:
-  quote: "I've referred dozens of clients to Attack A Crack. They're always honest about what needs repair and what doesn't. That honesty makes me look good to my clients."
-  author: "James T."
-  company: "Certified Home Inspections"
+  quote: "Quality work at a fair price. As a Home Inspector I get to see many repairs and selected Attack A Crack to fix my house."
+  author: "Peter Kenefick"
+  company: "Complete Inspection Solutions"
 faqs:
   - question: "How do you handle minor cracks that I flag in inspections?"
     answer: "We'll assess them honestly. If they're cosmetic shrinkage cracks that don't need repair, we'll tell the homeowner exactly that. We never upsell unnecessary work."

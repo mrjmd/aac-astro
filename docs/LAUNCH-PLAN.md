@@ -17,7 +17,7 @@ These must be done before DNS cutover. Nothing else launches the site.
 
 - [x] **Go into GBP dashboard** and match each of the 20 quotes in `src/content/settings/testimonials.json` to real reviews
 - [x] Replace any that can't be matched with verbatim quotes from actual reviewers (real names, real text)
-- [ ] Confirm the 8 partner page testimonials (in `src/content/partners/*.md`) are either real or clearly marked as illustrative
+- [x] Confirm the 8 partner page testimonials (in `src/content/partners/*.md`) are either real or clearly marked as illustrative
 
 ### Manual QA (Both)
 
