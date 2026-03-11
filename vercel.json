@@ -268,6 +268,96 @@
       "source": "/blog/blog-post-title-two-5d578",
       "destination": "/blog/nar-nxt-boston-2024-partnerships",
       "permanent": true
+    },
+    {
+      "source": "/cart",
+      "destination": "/massachusetts/trusted-partners",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/get-in-touch",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/trusted-partners-1",
+      "destination": "/massachusetts/trusted-partners",
+      "permanent": true
+    },
+    {
+      "source": "/tos",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tag/:tag",
+      "destination": "/updates",
+      "permanent": true
+    },
+    {
+      "source": "/pyrrhotite",
+      "destination": "/blog/crumbling-foundations-massachusetts-connecticut",
+      "permanent": true
+    },
+    {
+      "source": "/foundation-crack-repair",
+      "destination": "/services/foundation-crack-injection",
+      "permanent": true
+    },
+    {
+      "source": "/index.htm",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/angies-list",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/request-a-quote",
+      "destination": "/services/free-foundation-consultations",
+      "permanent": true
+    },
+    {
+      "source": "/request-quote",
+      "destination": "/services/free-foundation-consultations",
+      "permanent": true
+    },
+    {
+      "source": "/home-1",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/home-3",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/about-1",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/massachusetts-1",
+      "destination": "/massachusetts",
+      "permanent": true
     }
   ],
   "headers": [
