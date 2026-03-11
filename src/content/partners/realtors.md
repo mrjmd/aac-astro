@@ -17,6 +17,7 @@ benefits:
 testimonial:
   quote: "I am a local Realtor and I highly recommend him. He was very professional and polite, sent a written quote with a detailed explanation of his work and warranty and was able to do the job on a holiday weekend."
   author: "Jana Petano"
+  company: "CENTURY 21 AllPoints Realty"
 faqs:
   - question: "How quickly can you provide a quote for my listing?"
     answer: "We typically provide quotes within 24 hours, often same-day for urgent situations. Just text us photos and we can give preliminary guidance immediately."
