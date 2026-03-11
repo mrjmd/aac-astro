@@ -37,16 +37,17 @@ These must be done before DNS cutover. Nothing else launches the site.
 - [ ] Lighthouse: Performance 90+, Accessibility 95+, SEO 95+
 - [ ] `npm run check:images` passes with 0 placeholder warnings — *currently 8 WebP files over 400KB (non-blocking warnings)*
 
-### 301 Redirects — Remaining Items (Matt)
+### 301 Redirects — DONE (74 total)
 
-31 redirects are in `vercel.json`. All old Squarespace URLs from the sitemap are mapped. These items need Matt's account access:
+74 redirects in `vercel.json`, covering all three data sources:
 
-- [ ] **Crawl Google Search Console** — export all indexed URLs (may include pages not in sitemap)
-- [ ] **Export Google Analytics top pages** — identify every URL with real traffic
-- [ ] **Handle any old `/blog/` tag/category pages** — redirect to new category structure if they exist
-- [ ] **Handle old image URLs** — Squarespace CDN images linked from external sites
-- [ ] **Check for external backlinks** — Ahrefs/SEMrush backlink audit, ensure linked URLs redirect
-- [ ] **Test every redirect after DNS cutover** — verify all 31 redirects resolve correctly
+- [x] **Crawl Google Search Console** — all 31 indexed URLs covered (real pages or redirects)
+- [x] **Export Google Analytics top pages** — all 111 URLs cross-referenced, 19 new redirects added
+- [x] **Handle any old `/blog/` tag/category pages** — `/blog/tag/:tag` wildcard redirect added
+- [x] **Check for external backlinks** — GSC shows only `/` and `/massachusetts`, both real pages
+- [x] **WordPress-era redirects** — 24 old URLs from Squarespace redirect config added
+- [ ] **Handle old image URLs** — Squarespace CDN images linked from external sites (low priority, monitor post-launch)
+- [ ] **Test every redirect after DNS cutover** — verify all 74 redirects resolve correctly
 
 ### DNS Cutover (Matt)
 
