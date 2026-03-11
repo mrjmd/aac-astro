@@ -148,6 +148,126 @@
       "source": "/store/p/:slug",
       "destination": "/massachusetts/trusted-partners",
       "permanent": true
+    },
+    {
+      "source": "/home-maintenance-and-winter-prep-checklist",
+      "destination": "/blog/winter-home-maintenance-checklist",
+      "permanent": true
+    },
+    {
+      "source": "/10-fast-tips-for-a-worry-free-foundation",
+      "destination": "/blog/10-essential-tips-worry-free-foundation",
+      "permanent": true
+    },
+    {
+      "source": "/your-homes-foundation-may-be-compromised",
+      "destination": "/blog/how-to-check-your-foundation",
+      "permanent": true
+    },
+    {
+      "source": "/concrete-foundation-crack-repair-ct",
+      "destination": "/connecticut",
+      "permanent": true
+    },
+    {
+      "source": "/sewer-and-well-line-injection",
+      "destination": "/services/sewer-well-conduit-line-repair",
+      "permanent": true
+    },
+    {
+      "source": "/tips",
+      "destination": "/updates",
+      "permanent": true
+    },
+    {
+      "source": "/concrete-foundation-tips",
+      "destination": "/updates",
+      "permanent": true
+    },
+    {
+      "source": "/lifetime-guarantee",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/pyrrhotite-in-concrete",
+      "destination": "/blog/crumbling-foundations-massachusetts-connecticut",
+      "permanent": true
+    },
+    {
+      "source": "/preparing-your-home-for-the-winter-chill",
+      "destination": "/blog/winter-home-maintenance-checklist",
+      "permanent": true
+    },
+    {
+      "source": "/real-estate",
+      "destination": "/partners/realtors",
+      "permanent": true
+    },
+    {
+      "source": "/referrals",
+      "destination": "/partners",
+      "permanent": true
+    },
+    {
+      "source": "/realtors-and-inspectors",
+      "destination": "/partners/realtors",
+      "permanent": true
+    },
+    {
+      "source": "/home-seller",
+      "destination": "/partners/realtors",
+      "permanent": true
+    },
+    {
+      "source": "/free-inspection",
+      "destination": "/services/free-foundation-consultations",
+      "permanent": true
+    },
+    {
+      "source": "/home-buyer",
+      "destination": "/partners/realtors",
+      "permanent": true
+    },
+    {
+      "source": "/concrete-crack-injection",
+      "destination": "/services/foundation-crack-injection",
+      "permanent": true
+    },
+    {
+      "source": "/write-a-review",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/dmca",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/contact.htm",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/contest_rules",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/google_reviews",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/blog-post-title-two-5d578",
+      "destination": "/blog/nar-nxt-boston-2024-partnerships",
+      "permanent": true
     }
   ],
   "headers": [
