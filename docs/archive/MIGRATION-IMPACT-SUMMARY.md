@@ -9,7 +9,14 @@
 ## 1. Executive Summary
 The data confirms a multi-phase shift in performance. While the **transition to Squarespace (March/April 2024)** created a clear technical "floor" that suppressed recovery, your intuition was correct: **The decline began mid-2023**, while still on the WordPress platform. 
 
-The move to Astro is not just a "refresh"; it is a necessary **structural rescue** to reclaim the peak performance levels seen in 2022 and capitalize on the massive content momentum gained in 2025.
+![Traffic Migration Trend](./migration-trend.svg)
+
+### **Key Inflection Points:**
+1.  **May 2022 (Peak WordPress):** Highest historical authority (316 organic visits).
+2.  **2023 "The Slow Bleed":** Decline from 316 to 119 while still on WordPress. Likely caused by unoptimized technical debt and early Google EEAT updates.
+3.  **April 2024 (Squarespace Move):** Traffic bottomed out at 93. The platform change "cemented" the decline, creating a ceiling for growth.
+4.  **March 2025 (MA Content Surge):** Massively successful recovery driven by the new Massachusetts branch's marketing and relationship building.
+5.  **March 2026 (All-Time High):** Currently at 558 visits, proving the content value is high, but the branch-level traffic is imbalanced.
 
 ---
 
@@ -57,12 +64,46 @@ The 2023 decline was likely performance-related. Our Astro build targets:
 *   **Lighthouse Performance:** 95+ (Squarespace typically averages 40-60).
 *   **Core Web Vitals:** Pass on all metrics to signal to Google that Attack A Crack is the most "stable" and "fast" entity in the niche.
 
-### **Priority C: Entity Trust (The Expert Jester)**
+### **Priority C: Building Entity Trust**
 The 2025 surge proves Google wants your expertise. We will double down on this by:
-*   Injecting the **Expert Jester** voice into the top-performing pages found in GA4.
+*   Injecting our authoritative yet approachable technical voice into the top-performing pages found in GA4.
 *   Moving high-authority blog posts (like Pyrrhotite) into permanent **Pillar Resource Pages**.
 
 ---
 
-## 6. Conclusion
-The move to Squarespace was a period of **technical survival**. The move to Astro is a period of **market dominance**. We are starting from a new all-time high (554), and with the structural speed of Astro, we are positioned to break 1,000+ monthly visits by Q3 2026.
+## 7. The Connecticut vs. Massachusetts Divergence (2025-2026)
+
+Recent GA4 data reveals a stark contrast in performance between the two primary branches:
+*   **Massachusetts (Growth Engine):** ~370 organic visits/mo (66% of total traffic).
+*   **Connecticut (Legacy Anchor):** ~185 organic visits/mo (33% of total traffic).
+
+### **Finding: Relationship-Led vs. Legacy-Led Growth**
+The **Massachusetts branch** has seen a 2x traffic multiple over Connecticut despite being the "newer" territory. This is attributed to:
+1.  **Aggressive Networking:** Massive focus on realtor outreach, home inspector partnerships, and local South Shore sponsorships.
+2.  **Fresh Local Signals:** Consistent updates to MA-specific city pages and localized project showcases.
+
+In contrast, the **Connecticut branch** is currently relying on "Legacy Authority"—old WordPress-era pages that survived the migration. This branch is currently operating at **60% of its 2022 peak**, leaving significant market share on the table.
+
+---
+
+## 8. Competitive Landscape Impact (CT Market)
+
+While Attack A Crack was in a period of "Technical Survival" (Squarespace era), the Connecticut market shifted aggressively:
+
+### **The "Groundworks" Factor (Jan 2025)**
+The entry of **Groundworks** (backed by KKR capital) into North Haven in early 2025 changed the math for Connecticut SEO. Their massive ad spend and high-authority national domain created downward pressure on local CT keywords that AAC previously dominated.
+
+### **Local Rival Evolution**
+*   **A1 Foundation Crack Repair:** Pivoted to "Expert-Led" marketing via the *Crackman Podcast* and civil engineer branding, specifically targeting the "Real Estate Deal Saver" persona.
+*   **Crack-X:** Optimized for the "market-ready" homeowner with 10-year transferable warranties and "Structural Welding" terminology.
+
+---
+
+## 9. Conclusion: The "Astro Rescue" Mandate
+The move to Squarespace created a technical "floor," but the lack of fresh marketing signals in CT allowed competitors to erode your legacy lead. 
+
+**The Astro Launch Strategy:**
+1.  **Reclaim CT Authority:** Use the technical speed of Astro to outrank the "bloated" sites of national competitors (Groundworks).
+2.  **Mirror the MA Playbook:** Inject the same hyper-local relationship signals into the CT branch that drove the 2x explosion in Massachusetts.
+3.  **The Specialist Shield:** Differentiate from corporate competitors (Groundworks) by using the authentic, specialist-led voice that is already winning in the MA market.
+

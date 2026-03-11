@@ -3,7 +3,7 @@ title: "Basement Waterproofing vs Foundation Repair: What You Actually Need"
 metaTitle: "Basement Waterproofing vs Foundation Repair"
 metaDescription: "Don't pay for waterproofing when you need crack repair (or vice versa). Learn the difference and choose the right solution for your basement."
 excerpt: "Many homeowners pay thousands for basement waterproofing systems when simple crack injection would solve their problem. Here's how to know what you really need."
-publishDate: 2025-12-15
+publishDate: 2025-04-19
 author: "Matt Davis"
 category: "guides"
 tags: ["basement waterproofing", "foundation repair", "water infiltration", "water in basement after rain", "crack injection vs waterproofing"]

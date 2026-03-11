@@ -3,7 +3,7 @@ city: "Hartford"
 state: "Connecticut"
 stateAbbr: "CT"
 metaTitle: "Foundation Repair in Hartford, CT | Attack A Crack"
-metaDescription: "Expert foundation crack repair in Hartford, Connecticut. Trusted by homeowners since 2004. Lifetime guarantee. Call 860-573-8760."
+metaDescription: "Expert foundation crack repair in Hartford, Connecticut. Trusted by homeowners since 2002. Lifetime guarantee. Call 860-573-8760."
 region: "Greater Hartford"
 population: 121054
 averageHomeAge: "1920s-1950s"
@@ -45,4 +45,4 @@ As Connecticut's capital city, Hartford boasts a rich architectural heritage spa
 
 The Greater Hartford area sits on glacial till deposits mixed with clay-rich soils that expand and contract dramatically with seasonal moisture changes. This soil movement, combined with our harsh New England freeze-thaw cycles, puts tremendous stress on foundations. Many Hartford homeowners notice vertical cracks appearing in their poured concrete foundations or step-cracking in older block walls—both signs of normal settlement that can be permanently repaired.
 
-Attack A Crack has served Hartford homeowners since 2004, bringing specialized expertise in both modern concrete foundations and the historic fieldstone and brick foundations found in neighborhoods like Asylum Hill and Barry Square. Our injection repair methods fill cracks completely from interior to exterior soil, and our lifetime guarantee means your repair is protected for as long as you own your home. Whether you're near the Mark Twain House or across from Bushnell Park, we provide the same professional service that's made us the trusted choice for foundation repair throughout central Connecticut.
+Attack A Crack has served Hartford homeowners since 2002, bringing specialized expertise in both modern concrete foundations and the historic fieldstone and brick foundations found in neighborhoods like Asylum Hill and Barry Square. Our injection repair methods fill cracks completely from interior to exterior soil, and our lifetime guarantee means your repair is protected for as long as you own your home. Whether you're near the Mark Twain House or across from Bushnell Park, we provide the same professional service that's made us the trusted choice for foundation repair throughout central Connecticut.

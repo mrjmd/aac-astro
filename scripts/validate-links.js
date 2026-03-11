@@ -172,11 +172,13 @@ async function main() {
 
     const relatedSvc = post.frontmatter?.relatedServices || [];
     for (const svcId of relatedSvc) {
-      if (!serviceIds.has(svcId)) {
+      if (serviceIds.has(svcId)) {
+        incomingLinks.set(`services/${svcId}`, (incomingLinks.get(`services/${svcId}`) || 0) + 1);
+      } else if (concreteRepairIds.has(svcId)) {
+        incomingLinks.set(`concrete-repair/${svcId}`, (incomingLinks.get(`concrete-repair/${svcId}`) || 0) + 1);
+      } else {
         console.log(`  [ERROR] ${post.id}: relatedService "${svcId}" not found`);
         errors++;
-      } else {
-        incomingLinks.set(`services/${svcId}`, (incomingLinks.get(`services/${svcId}`) || 0) + 1);
       }
     }
   }

@@ -3,7 +3,7 @@ title: "Fieldstone Foundation Repair: A Complete Guide for New England Homeowner
 metaTitle: "Fieldstone Foundation Repair in CT & MA"
 metaDescription: "Expert fieldstone foundation repair for historic New England homes. Learn about common problems and professional repair solutions."
 excerpt: "Fieldstone foundations built the homes of early New England. Learn how we preserve and repair these historic structures while solving modern problems like mortar deterioration and water infiltration."
-publishDate: 2026-02-15
+publishDate: 2025-07-20
 author: "Luc Richard"
 category: "foundation-types"
 showOnServicesPage: true

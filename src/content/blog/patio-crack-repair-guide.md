@@ -13,6 +13,7 @@ draft: true
 
 relatedServices:
   - "free-foundation-consultations"
+  - "patio"
 ---
 
 Your patio is cracked. Maybe it's a single line running across the middle, maybe it's a corner that's lifted an inch, or maybe the whole thing looks like a jigsaw puzzle that's been stepped on. Before you assume it needs a complete tear-out, let's talk about what's actually going on and what your options really are.

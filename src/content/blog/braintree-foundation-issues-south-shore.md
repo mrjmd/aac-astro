@@ -27,7 +27,7 @@ relatedPosts:
 
 Braintree sits at the intersection of the South Shore and the urban suburbs south of Boston, and its foundations reflect that mixed identity. You have historic neighborhoods with pre-war homes, post-war subdivisions from the 1950s and 1960s, and areas developed on land with a complicated geological history — including proximity to the famous Quincy granite quarries and their associated fill material.
 
-We have repaired foundations throughout Braintree for over 33 years, and the town has its own distinct set of challenges. Here is what we see and what it means for homeowners.
+We have repaired foundations throughout Braintree for over 20 years, and the town has its own distinct set of challenges. Here is what we see and what it means for homeowners.
 
 ## What Makes Braintree Foundation Problems Unique
 
@@ -145,6 +145,6 @@ Braintree shares foundation characteristics with its South Shore neighbors while
 
 If your Braintree home shows signs of foundation problems — cracks, water intrusion, settling, or that persistent musty smell in your basement — call us at 617-668-1677 or text us a photo for a quick assessment. Our [free consultation](/services/free-foundation-consultations) includes a thorough evaluation of your specific conditions.
 
-We know Braintree's soil conditions, housing stock, and the specific challenges that come with South Shore foundations. Our assessment tells you exactly what is happening, whether it needs attention now or can be monitored, and what the repair involves if action is needed. Over 33 years, we have seen just about every foundation condition Braintree has to offer — and we have fixed them.
+We know Braintree's soil conditions, housing stock, and the specific challenges that come with South Shore foundations. Our assessment tells you exactly what is happening, whether it needs attention now or can be monitored, and what the repair involves if action is needed. Over 20 years, we have seen just about every foundation condition Braintree has to offer — and we have fixed them.
 
 The [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) is a good resource if you want pricing context before calling.

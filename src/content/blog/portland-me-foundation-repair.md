@@ -22,7 +22,7 @@ relatedServices:
 
 Portland, Maine, sits at an intersection that no foundation finds comfortable: brutal northern winters and relentless coastal exposure. It is the kind of combination that tests building materials in ways that engineers in warmer climates never have to consider. Add in a housing stock that includes homes from nearly every era of American construction, and you have got a foundation repair landscape that is anything but boring.
 
-We have been repairing foundations across New England for over 33 years, and our work in southern Maine has taught us a deep respect for what Casco Bay weather does to buildings. Portland-area homeowners are tough, their homes are tough, but concrete and stone have their limits.
+We have been repairing foundations across New England for over 20 years, and our work in southern Maine has taught us a deep respect for what Casco Bay weather does to buildings. Portland-area homeowners are tough, their homes are tough, but concrete and stone have their limits.
 
 Here is what you need to know about your foundation if you live in the Portland metro area — and what you can do about it.
 

@@ -22,7 +22,7 @@ You are getting ready to sell your home. Maybe you are downsizing, relocating, o
 
 Foundation issues create a real dilemma for sellers. Fix it and hope buyers notice the proactive maintenance? Disclose it and risk scaring people off? Pretend it is not there and hope nobody looks? (Please do not choose option three.)
 
-After 33 years of foundation repair across New England, we have helped thousands of sellers navigate this exact situation. Here is what we have learned about disclosure requirements, repair timing, and how to turn a foundation concern into a selling point.
+After 20 years of foundation repair across New England, we have helped thousands of sellers navigate this exact situation. Here is what we have learned about disclosure requirements, repair timing, and how to turn a foundation concern into a selling point.
 
 ## Disclosure Requirements: What the Law Says
 

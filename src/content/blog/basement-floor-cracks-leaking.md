@@ -3,7 +3,7 @@ title: "Basement Floor Cracks Leaking Water: Causes, Fixes, and When to Worry"
 metaTitle: "Basement Floor Cracks Leaking Water Fix"
 metaDescription: "Why your basement floor cracks are leaking water and how to fix them. Learn about hydrostatic pressure, repair methods, and when to call a professional."
 excerpt: "Basement floor cracks leaking water can signal hydrostatic pressure or settling. Learn the causes, when to worry, and the best repair methods to stop leaks for good."
-publishDate: 2026-02-20
+publishDate: 2025-08-24
 author: "Matt Davis"
 category: "guides"
 tags: ["basement floor cracks", "water leaking", "hydrostatic pressure", "foundation repair"]
@@ -15,6 +15,7 @@ relatedPosts:
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
+  - "basement-floor"
 heroImage: "/images/projects/kingston-crack-injection-2026-01-before.jpg"
 heroImageAlt: "Basement floor crack with water leaking"
 ---

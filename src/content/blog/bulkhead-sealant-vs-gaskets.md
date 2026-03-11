@@ -3,7 +3,7 @@ title: "Bulkhead Sealant vs. Gaskets: Why Your Bilco Door Still Leaks"
 metaTitle: "Bulkhead Sealant vs Gaskets Compared"
 metaDescription: "Standard rubber gaskets fail on New England bulkheads. Learn why polyurethane injection sealant is the permanent fix for leaky Bilco doors and cellar hatches."
 excerpt: "Replaced the gasket and your bulkhead still leaks? Standard gaskets cannot handle New England's thermal cycling. Here is why injection sealant is the permanent fix."
-publishDate: 2026-03-09
+publishDate: 2026-02-14
 author: "Luc Richard"
 category: "guides"
 tags: ["bulkhead repair", "basement leak", "sealant", "Bilco door", "bulkhead sealant"]

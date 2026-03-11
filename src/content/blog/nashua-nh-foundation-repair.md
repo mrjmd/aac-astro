@@ -22,7 +22,7 @@ relatedServices:
 
 New Hampshire earned its nickname honestly. The state sits on some of the oldest and hardest bedrock in North America, and that geology shapes everything about building here — especially what happens below ground level. If you own a home in southern New Hampshire, your foundation is dealing with conditions that would make a Connecticut homeowner's jaw drop.
 
-After 33 years of repairing foundations across New England, we have learned that New Hampshire is its own animal. The frost goes deeper, the temperature swings are wilder, and the ground itself fights back. But here is the good news: once you understand what you are dealing with, most NH foundation problems are very fixable.
+After 20 years of repairing foundations across New England, we have learned that New Hampshire is its own animal. The frost goes deeper, the temperature swings are wilder, and the ground itself fights back. But here is the good news: once you understand what you are dealing with, most NH foundation problems are very fixable.
 
 ## Nashua: Gateway City Foundations
 

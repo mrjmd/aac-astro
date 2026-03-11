@@ -19,7 +19,7 @@ relatedServices:
 
 ## Why We Are Writing This (And Yes, We See the Irony)
 
-A foundation repair company writing a guide on how to choose a foundation repair company. We get it. That is like a used car dealer writing "How to Spot a Shady Used Car Dealer." But here is the thing: we have been in this business for over 33 years, and we have seen what bad actors do to homeowners. We have fixed botched repairs done by unqualified contractors. We have talked to homeowners who paid thousands for work that solved nothing. And we have watched fly-by-night companies disappear after cashing a check.
+A foundation repair company writing a guide on how to choose a foundation repair company. We get it. That is like a used car dealer writing "How to Spot a Shady Used Car Dealer." But here is the thing: we have been in this business for over 20 years, and we have seen what bad actors do to homeowners. We have fixed botched repairs done by unqualified contractors. We have talked to homeowners who paid thousands for work that solved nothing. And we have watched fly-by-night companies disappear after cashing a check.
 
 So yes, this guide might benefit us if you choose us. But it will definitely benefit you regardless of who you choose, because an informed homeowner is harder to scam. That matters more.
 
@@ -157,7 +157,7 @@ In both states, ask for the registration number, write it down, and verify it on
 
 We wrote this guide knowing that it sets a standard we have to meet ourselves. Here is how we measure up.
 
-**Experience:** Over 33 years in New England foundation repair.
+**Experience:** Over 20 years in New England foundation repair.
 
 **Licensing:** Fully licensed and insured in every state we serve (CT, MA, RI, NH, ME).
 

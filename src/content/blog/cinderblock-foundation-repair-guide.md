@@ -3,7 +3,7 @@ title: "Cinderblock (CMU) Foundation Repair: Signs, Solutions, and Costs"
 metaTitle: "Cinderblock Foundation Repair in CT & MA"
 metaDescription: "Professional cinderblock and CMU foundation repair. Fix cracks, bowing walls, and water problems in block foundations throughout New England."
 excerpt: "Cinderblock foundations are common in mid-century homes but prone to specific problems. Learn how we repair cracked and bowing block walls with carbon fiber, I-beams, and more."
-publishDate: 2026-02-15
+publishDate: 2025-07-09
 author: "Luc Richard"
 category: "foundation-types"
 showOnServicesPage: true

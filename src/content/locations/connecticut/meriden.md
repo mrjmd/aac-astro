@@ -3,7 +3,7 @@ city: "Meriden"
 state: "Connecticut"
 stateAbbr: "CT"
 metaTitle: "Foundation Repair in Meriden, CT | Attack A Crack"
-metaDescription: "Professional foundation crack repair in Meriden, Connecticut. Serving central CT since 2004. Lifetime guarantee. Call 860-573-8760."
+metaDescription: "Professional foundation crack repair in Meriden, Connecticut. Serving central CT since 2002. Lifetime guarantee. Call 860-573-8760."
 region: "Central Connecticut"
 population: 60850
 averageHomeAge: "1940s-1960s"
@@ -42,4 +42,4 @@ Nestled between the Hanging Hills to the west and Beseck Mountain to the east, M
 
 Meriden experienced significant residential growth in the post-war decades, with housing developments spreading across the North End, South Meriden, and Westfield neighborhoods in the 1940s through 1960s. Many of these homes have poured concrete foundations that have now weathered 60-80 years of Connecticut's freeze-thaw cycles. Vertical shrinkage cracks are extremely common, and while many start as cosmetic concerns, they can become active water pathways during spring snowmelt and heavy rains.
 
-Attack A Crack has been the trusted foundation repair contractor for central Connecticut homeowners since 2004. Our injection repair process fills cracks completely—from the interior basement surface through to the exterior soil—using flexible urethane or structural epoxy depending on the nature of the crack. We don't use surface patches or hydraulic cement that fail within a few years. Every repair comes with a lifetime transferable warranty, and we'll always be honest about what your foundation actually needs.
+Attack A Crack has been the trusted foundation repair contractor for central Connecticut homeowners since 2002. Our injection repair process fills cracks completely—from the interior basement surface through to the exterior soil—using flexible urethane or structural epoxy depending on the nature of the crack. We don't use surface patches or hydraulic cement that fail within a few years. Every repair comes with a lifetime transferable warranty, and we'll always be honest about what your foundation actually needs.

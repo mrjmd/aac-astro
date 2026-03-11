@@ -1,15 +1,15 @@
 ---
 title: "Realtors"
 metaTitle: "Realtor Partner | Attack A Crack"
-metaDescription: "Partner with Attack A Crack for rapid foundation repair quotes and lifetime-guaranteed repairs that satisfy inspectors. Close deals faster."
-excerpt: "Close deals faster with rapid quotes and lifetime-guaranteed repairs that satisfy inspectors. Your reliable foundation repair partner in CT, MA, and across New England."
+metaDescription: "Partner with Attack A Crack for rapid foundation repair quotes and lifetime-guaranteed repairs that exceed inspection standards. Close deals faster."
+excerpt: "Close deals faster with rapid quotes and lifetime-guaranteed repairs that exceed inspection standards. Your reliable foundation repair partner in CT, MA, and across New England."
 icon: "Users"
 order: 1
 benefits:
   - title: "Same-Day Quotes"
     description: "We understand time kills deals. Get foundation repair quotes within 24 hours, often same-day."
   - title: "Inspection-Ready Repairs"
-    description: "Our repairs come with documentation that satisfies even the most thorough home inspectors."
+    description: "Our repairs come with documentation that exceeds even the most thorough inspection standards."
   - title: "Lifetime Guarantee"
     description: "Give your clients confidence with repairs backed by a transferable lifetime warranty."
   - title: "No Surprises"
@@ -29,7 +29,7 @@ faqs:
 
 ## Partner With Attack A Crack for Your Real Estate Transactions
 
-When foundation issues threaten to derail a sale, you need a repair partner who moves fast, communicates clearly, and delivers quality work that satisfies inspectors. That's exactly what we provide.
+When foundation issues threaten to derail a sale, you need a repair partner who moves fast, communicates clearly, and delivers quality work that exceeds inspection standards. That's exactly what we provide.
 
 ### Why Realtors Choose Us
 

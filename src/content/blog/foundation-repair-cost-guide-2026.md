@@ -3,7 +3,7 @@ title: "Foundation Repair Cost Guide 2026: What CT & MA Homeowners Should Expect
 metaTitle: "Foundation Repair Costs 2026 CT & MA Guide"
 metaDescription: "Comprehensive guide to foundation repair costs in Connecticut, Massachusetts, and across New England. Learn what affects pricing and how to budget for repairs."
 excerpt: "What should you actually expect to pay for foundation repair in New England? We break down real costs, what affects pricing, and how to avoid getting overcharged."
-publishDate: 2026-01-28
+publishDate: 2025-06-04
 author: "Matt Davis"
 category: "cost-guides"
 showOnServicesPage: true

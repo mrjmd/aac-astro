@@ -18,7 +18,7 @@ relatedServices:
 
 You're three weeks from closing. The inspection report lands in your inbox, and there it is on page four: "Foundation cracks observed. Recommend further evaluation by a qualified specialist." Your buyer's eyes go wide. The deal starts wobbling.
 
-We've been on the other end of that phone call thousands of times over the past 33 years. And here's what we want every real estate professional in New England to know: **most foundation findings are fixable, affordable, and absolutely not deal-breakers.** The key is understanding what you're looking at, communicating it calmly, and getting the right expert involved quickly.
+We've been on the other end of that phone call thousands of times over the past 20 years. And here's what we want every real estate professional in New England to know: **most foundation findings are fixable, affordable, and absolutely not deal-breakers.** The key is understanding what you're looking at, communicating it calmly, and getting the right expert involved quickly.
 
 This guide is for you — the listing agent, the buyer's agent, the broker who needs to translate inspector-speak into actionable information that keeps transactions on track.
 
@@ -106,7 +106,7 @@ This document is designed to be shared with buyers, sellers, attorneys, and lend
 
 This is the part that matters most, and it's worth stating plainly: **we don't manufacture problems to sell repairs.** If a crack is cosmetic and doesn't need repair, we say so. If a $1,000 injection fixes the issue, we're not going to recommend $10,000 in unnecessary work.
 
-Our business runs on referrals from real estate professionals and satisfied homeowners. That only works if our assessments are honest and our recommendations are proportional. We've been at this for 33 years precisely because agents trust us not to torpedo their deals with inflated diagnoses.
+Our business runs on referrals from real estate professionals and satisfied homeowners. That only works if our assessments are honest and our recommendations are proportional. We've been at this for 20 years precisely because agents trust us not to torpedo their deals with inflated diagnoses.
 
 ## The Transferable Warranty Advantage
 

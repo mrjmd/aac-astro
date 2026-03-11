@@ -22,7 +22,7 @@ relatedServices:
 
 Most homeowners think of spring and winter as foundation problem seasons — snowmelt flooding, freeze-thaw cracking, April showers overwhelming drainage. Summer gets a pass. You are barbecuing, not thinking about your basement.
 
-But summer creates its own set of foundation stresses, and ignoring them means discovering new cracks when fall rain arrives. After 33 years of repairing foundations across New England, we can tell you that a surprising number of fall service calls trace back to summer conditions that nobody noticed.
+But summer creates its own set of foundation stresses, and ignoring them means discovering new cracks when fall rain arrives. After 20 years of repairing foundations across New England, we can tell you that a surprising number of fall service calls trace back to summer conditions that nobody noticed.
 
 ## How Summer Heat Affects Your Foundation
 

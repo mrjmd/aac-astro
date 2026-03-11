@@ -11,7 +11,9 @@ import { phoneCT, phoneCTHref, phoneMA, phoneMAHref } from '../../utils/contact'
 import { webpSrc, projectSrcset } from '../../utils/image';
 
 // Get all services sorted by order
-const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+const allServices = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+const services = allServices.filter(s => !s.id.includes('free-foundation-consultations'));
+const freeConsultation = allServices.find(s => s.id.includes('free-foundation-consultations'));
 
 // Get blog posts flagged for services page
 const diveDeeper = (await getCollection('blog', (entry) => isPublished(entry) && entry.data.showOnServicesPage))
@@ -70,7 +72,7 @@ const servicesSchema = {
 				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-400 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-400" />
 				<h1 class="text-6xl lg:text-8xl font-black tracking-tighter mb-8 leading-none">
 					FOUNDATION <br />
-					<span class="text-aac-blue">REPAIR.</span>
+					<span class="text-aac-blue">REPAIR</span>
 				</h1>
 				<p class="text-xl text-zinc-400 max-w-2xl mb-12">
 					Specialized foundation repair solutions with a lifetime guarantee. We don't just patch cracks; we solve the root cause with proven injection techniques.
@@ -155,6 +157,31 @@ const servicesSchema = {
 						</div>
 					</a>
 				</div>
+
+				<!-- Free Consultation - Full Width -->
+				{freeConsultation && (
+					<a href={`/services/${freeConsultation.id.replace(/\.md$/, '')}`} class="group mt-8 grid md:grid-cols-2 bg-white rounded-[32px] border-2 border-zinc-100 hover:border-aac-blue transition-all shadow-sm hover:shadow-xl overflow-hidden">
+						{freeConsultation.data.heroImage && (
+							<div class="aspect-video md:aspect-auto overflow-hidden relative">
+								<img src={webpSrc(freeConsultation.data.heroImage)} srcset={projectSrcset(freeConsultation.data.heroImage)} sizes="(max-width: 768px) 100vw, 50vw" alt={freeConsultation.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="640" height="360" loading="lazy" />
+							</div>
+						)}
+						<div class="p-8 lg:p-12 flex flex-col justify-center">
+							<div class="w-14 h-14 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center mb-6 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+								<Icon name={freeConsultation.data.icon} size={28} />
+							</div>
+							<h3 class="text-2xl lg:text-3xl font-black mb-4 tracking-tight group-hover:text-aac-blue transition-colors">
+								{freeConsultation.data.title}
+							</h3>
+							<p class="text-zinc-600 mb-6 leading-relaxed text-lg">
+								{freeConsultation.data.excerpt}
+							</p>
+							<span class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
+								Learn More <Icon name="ArrowRight" size={14} />
+							</span>
+						</div>
+					</a>
+				)}
 			</div>
 		</section>
 

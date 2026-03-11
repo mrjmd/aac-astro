@@ -3,7 +3,7 @@ title: "Signs of Foundation Problems: A Homeowner's Complete Guide"
 metaTitle: "Signs of Foundation Problems to Watch"
 metaDescription: "Discover the most common signs of foundation problems, from wall cracks to sticking doors. Learn when each warning sign needs professional attention."
 excerpt: "Foundation problems rarely appear overnight. Learn to spot the early warning signs, understand which ones are serious, and know when to call a professional."
-publishDate: 2026-02-28
+publishDate: 2025-10-09
 author: "Matt Davis"
 category: "guides"
 showOnServicesPage: true

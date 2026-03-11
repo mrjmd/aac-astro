@@ -3,7 +3,7 @@ city: "Quincy"
 state: "Massachusetts"
 stateAbbr: "MA"
 metaTitle: "Foundation Repair in Quincy, MA | Attack A Crack"
-metaDescription: "Professional foundation crack repair in Quincy, MA. Serving the City of Presidents since 1999. Lifetime guarantee on all repairs. Call 617-668-1677."
+metaDescription: "Professional foundation crack repair in Quincy, MA. Serving the City of Presidents since 2002. Lifetime guarantee on all repairs. Call 617-668-1677."
 region: "South Shore"
 population: 101636
 averageHomeAge: "1950s-1970s"

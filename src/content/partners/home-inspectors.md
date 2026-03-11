@@ -2,7 +2,7 @@
 title: "Home Inspectors"
 metaTitle: "Home Inspector Partner | Attack A Crack"
 metaDescription: "A reliable foundation repair partner you can recommend with confidence. Honest diagnosis and expert repair. Protect your reputation."
-excerpt: "A reliable partner you can recommend for honest diagnosis and expert repair. Protect your reputation with a foundation specialist you trust."
+excerpt: "A reliable partner you can recommend for honest diagnosis and permanent repair. Our refined injection method delivers repairs built to outlast the home."
 icon: "CheckCircle2"
 order: 3
 benefits:

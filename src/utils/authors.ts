@@ -26,7 +26,7 @@ export const authors: Record<string, Author> = {
       "New England Soil Conditions",
       "Historic Home Foundations"
     ],
-    description: "Founder of Attack A Crack with over 33 years of foundation repair experience in New England. Luc started working with concrete at age 16 under his father's foundation company and is a recognized expert in high-pressure injection techniques, diamond saw preparation, and copper port installation."
+    description: "Founder of Attack A Crack with over 20 years of foundation repair experience in New England. Luc started working with concrete at age 16 under his father's concrete company and is a recognized expert in high-pressure injection techniques, diamond saw preparation, and copper port installation."
   },
   "Matt": {
     name: "Matt",

@@ -3,7 +3,7 @@ title: "Carbon Fiber Foundation Repair: When Injection Alone Is Not Enough"
 metaTitle: "Carbon Fiber Foundation Repair"
 metaDescription: "Carbon fiber stitches reinforce structural foundation cracks that injection alone cannot fix. Learn when you need carbon fiber and how the process works."
 excerpt: "Some foundation cracks need more than injection — they need structural reinforcement. Learn when carbon fiber stitches are the right solution and how they work."
-publishDate: 2026-03-08
+publishDate: 2025-12-29
 author: "Attack A Crack"
 category: "guides"
 tags: ["carbon fiber", "structural repair", "foundation reinforcement", "crack stitching"]

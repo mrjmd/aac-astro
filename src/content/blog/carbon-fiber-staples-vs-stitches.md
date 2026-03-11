@@ -3,7 +3,7 @@ title: "Carbon Fiber Staples vs. Stitches: Which Structural Fix Do You Need?"
 metaTitle: "Carbon Fiber Staples vs Stitches Guide"
 metaDescription: "Carbon fiber staples and stitches serve different purposes. Learn which structural reinforcement your foundation wall needs based on crack type and severity."
 excerpt: "Carbon fiber staples and stitches sound similar but serve different purposes. Here is how to know which structural reinforcement your foundation wall actually needs."
-publishDate: 2026-03-10
+publishDate: 2026-02-25
 author: "Luc Richard"
 category: "guides"
 tags: ["carbon fiber", "carbon fiber staples", "structural repair", "foundation cracks", "wall stabilization"]

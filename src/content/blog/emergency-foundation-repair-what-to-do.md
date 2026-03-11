@@ -3,7 +3,7 @@ title: "Foundation Emergency: What to Do When Your Basement Is Flooding"
 metaTitle: "Emergency Foundation Repair: What to Do Now"
 metaDescription: "Water pouring into your basement right now? Here is exactly what to do step by step, what to avoid, and when to call for emergency foundation repair."
 excerpt: "If water is actively coming through your basement wall right now, here is your step-by-step emergency response guide. First: do not panic. Second: read this."
-publishDate: 2026-01-20
+publishDate: 2025-05-23
 author: "Attack A Crack"
 category: "guides"
 tags: ["emergency", "water intrusion", "basement flooding", "urgent repair"]

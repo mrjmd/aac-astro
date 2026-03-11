@@ -20,7 +20,7 @@ relatedServices:
 
 You found the house. You love the neighborhood, the kitchen is perfect, and the yard has that maple tree your kids will climb for the next twenty years. Then the home inspection comes back with words like "foundation crack," "moisture intrusion," or "structural concern," and suddenly that dream home feels like a money pit.
 
-Here is the truth after 33 years of foundation repair across New England: most foundation issues that show up in home inspections are fixable, often affordably. But some are genuinely serious. Knowing the difference is the key to making a smart decision instead of an emotional one.
+Here is the truth after 20 years of foundation repair across New England: most foundation issues that show up in home inspections are fixable, often affordably. But some are genuinely serious. Knowing the difference is the key to making a smart decision instead of an emotional one.
 
 ## Reading the Inspection Report: What It Actually Says
 

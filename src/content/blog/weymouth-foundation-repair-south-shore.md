@@ -26,7 +26,7 @@ relatedPosts:
 
 Weymouth is a town that gives foundation repair companies plenty of business. Located on the South Shore of Massachusetts, it combines coastal proximity, a high water table, and a housing stock that ranges from pre-war to mid-century — the perfect recipe for foundation challenges.
 
-We have worked on hundreds of foundations in Weymouth and the surrounding South Shore communities over our 33 years in business. Here is what makes this area different and what Weymouth homeowners should watch for.
+We have worked on hundreds of foundations in Weymouth and the surrounding South Shore communities over our 20 years in business. Here is what makes this area different and what Weymouth homeowners should watch for.
 
 ## Why Weymouth Foundations Have It Tough
 
@@ -133,4 +133,4 @@ For broader context on South Shore foundation challenges, see our article on [So
 
 If you are a Weymouth homeowner with basement moisture, visible cracks, or concerns about your foundation, text us a photo for assessment or call us at 617-668-1677 for a [free consultation](/services/free-foundation-consultations). We will inspect your foundation, explain what we find, and give you an honest assessment of what needs attention now versus what can wait.
 
-With over 33 years of experience on the South Shore, we know Weymouth's soil, water table, and housing stock. We will tell you what your foundation needs — and just as importantly, what it does not.
+With over 20 years of experience on the South Shore, we know Weymouth's soil, water table, and housing stock. We will tell you what your foundation needs — and just as importantly, what it does not.

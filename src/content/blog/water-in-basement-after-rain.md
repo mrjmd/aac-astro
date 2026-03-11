@@ -3,7 +3,7 @@ title: "Water in Basement After Rain: Why It Happens and How to Stop It"
 metaTitle: "Water in Basement After Rain: Causes & Fix"
 metaDescription: "Find water in your basement after every rainstorm? Learn the common causes like foundation cracks and bulkhead leaks, plus permanent solutions that work."
 excerpt: "Water in your basement after rain usually means a foundation crack or bulkhead leak, not a drainage problem. Here is what causes it and how to fix it permanently."
-publishDate: 2026-02-18
+publishDate: 2025-08-12
 author: "Luc Richard"
 category: "guides"
 tags: ["water in basement", "rain leaks", "foundation cracks", "bulkhead leaks", "basement waterproofing"]

@@ -3,7 +3,7 @@ title: "Driveway Crack Repair: What New England Homeowners Need to Know"
 metaTitle: "Driveway Crack Repair Guide for CT & MA"
 metaDescription: "How to repair cracked driveway concrete in New England. Covers crack types, DIY fixes, when to hire a pro, and how to prevent future damage from freeze-thaw."
 excerpt: "New England driveways take a beating from freeze-thaw cycles, salt, and plows. Here's how to assess cracks, choose the right repair, and make it last."
-publishDate: 2026-02-25
+publishDate: 2025-09-05
 author: "Matt Davis"
 category: "guides"
 tags: ["driveway repair", "concrete repair", "crack repair", "driveway maintenance", "freeze-thaw"]
@@ -15,6 +15,7 @@ relatedPosts:
 relatedServices:
   - "wall-crack-repair"
   - "foundation-crack-injection"
+  - "driveway"
 heroImage: "/images/projects/hanover-crack-injection-2025-03-after.jpg"
 heroImageAlt: "Concrete crack repair at ground level"
 ---

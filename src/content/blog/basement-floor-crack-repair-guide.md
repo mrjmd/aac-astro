@@ -3,7 +3,7 @@ title: "Basement Floor Crack Repair: Methods, Costs, and When to Call a Pro"
 metaTitle: "Basement Floor Crack Repair Guide"
 metaDescription: "Basement floor cracks let in water and radon gas. Learn professional repair methods, why DIY patches fail, and when a floor crack needs professional attention."
 excerpt: "A cracked basement floor is an open path for water and radon. Learn why hardware store patches fail, how professional repair works, and what your crack is telling you."
-publishDate: 2026-03-11
+publishDate: 2026-03-09
 author: "Luc Richard"
 category: "guides"
 tags: ["floor crack repair", "basement floor", "concrete repair", "basement cracks", "radon"]
@@ -17,6 +17,7 @@ relatedPosts:
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
+  - "basement-floor"
 ---
 
 Most homeowners ignore cracks in their basement floor. "It is just the floor," they say. "It is not holding up the house."

@@ -3,7 +3,7 @@ title: "DIY vs Professional Foundation Repair: When to Call an Expert"
 metaTitle: "DIY vs Professional Foundation Crack Repair"
 metaDescription: "Some foundation issues you can handle yourself. Others need professional help. Here's how to know the difference and avoid costly mistakes."
 excerpt: "We'll be honest: not every foundation crack needs professional repair. Here's what you can DIY, what you shouldn't, and how to avoid making problems worse."
-publishDate: 2025-11-20
+publishDate: 2025-04-07
 author: "Luc Richard"
 category: "guides"
 tags: ["DIY repair", "foundation cracks", "when to call a professional"]

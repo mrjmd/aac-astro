@@ -157,7 +157,7 @@ If your home already has functional gutters, proper grading, and downspout exten
 
 ## The Smart Approach: Diagnose Before You Spend
 
-Here is our honest recommendation after 33 years of foundation work across New England:
+Here is our honest recommendation after 20 years of foundation work across New England:
 
 1. **Start with a [free consultation](/services/free-foundation-consultations).** A qualified inspector can identify exactly where water enters and why.
 2. **Address the simplest solution first.** Fix grading and gutters. Seal visible cracks. These low-cost steps solve the problem for a surprising number of homeowners.

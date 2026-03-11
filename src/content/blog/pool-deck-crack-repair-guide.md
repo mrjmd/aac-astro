@@ -3,7 +3,7 @@ title: "Pool Deck Crack Repair: A Complete Guide for New England Homeowners"
 metaTitle: "Pool Deck Crack Repair Guide for CT & MA"
 metaDescription: "Learn how to assess and repair cracked pool deck concrete. Covers causes, DIY vs professional options, costs, and when full replacement is needed."
 excerpt: "Cracked pool deck concrete is ugly, potentially dangerous, and gets worse every winter. Here's how to assess the damage and choose the right repair approach."
-publishDate: 2026-02-28
+publishDate: 2025-09-28
 author: "Matt Davis"
 category: "guides"
 tags: ["pool deck repair", "concrete repair", "crack repair", "outdoor concrete", "pool maintenance"]
@@ -15,6 +15,7 @@ relatedPosts:
 relatedServices:
   - "wall-crack-repair"
   - "foundation-crack-injection"
+  - "pool-deck"
 heroImage: "/images/projects/newton-crack-injection-2025-04-after.jpg"
 heroImageAlt: "Concrete surface repair for pool deck area"
 ---

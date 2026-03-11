@@ -3,7 +3,7 @@ title: "Horizontal Foundation Cracks: What They Mean and How to Fix Them"
 metaTitle: "Horizontal Foundation Cracks Explained"
 metaDescription: "Learn what horizontal foundation cracks mean for your home. Understand the causes, when to worry, and proven repair methods from New England experts."
 excerpt: "Horizontal cracks are the most serious type of foundation damage. Learn what causes them, how to assess severity, and the repair options that work."
-publishDate: 2026-03-01
+publishDate: 2025-10-21
 author: "Luc Richard"
 category: "guides"
 tags: ["horizontal cracks", "foundation cracks", "bowing walls", "carbon fiber", "structural repair"]

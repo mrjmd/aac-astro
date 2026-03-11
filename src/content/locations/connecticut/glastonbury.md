@@ -3,7 +3,7 @@ city: "Glastonbury"
 state: "Connecticut"
 stateAbbr: "CT"
 metaTitle: "Foundation Repair in Glastonbury, CT | Attack A Crack"
-metaDescription: "Trusted foundation crack repair in Glastonbury, Connecticut. Protecting high-value homes since 2004. Lifetime guarantee. Call 860-573-8760."
+metaDescription: "Trusted foundation crack repair in Glastonbury, Connecticut. Protecting high-value homes since 2002. Lifetime guarantee. Call 860-573-8760."
 region: "Greater Hartford"
 population: 35159
 averageHomeAge: "1960s-1990s"
@@ -41,4 +41,4 @@ Glastonbury is one of the Hartford area's most desirable communities, known for 
 
 The town spans diverse terrain along the eastern bank of the Connecticut River. South Glastonbury features river valley soils—sandy and well-drained in spots, clay-heavy in others. The central and eastern sections of town sit on glacial till deposits with varying amounts of clay and ledge. This soil diversity means foundation challenges in Glastonbury aren't one-size-fits-all—a home in Naubuc may face very different issues than one in Eastbury.
 
-Attack A Crack has been the trusted foundation repair choice for Glastonbury homeowners since 2004. We've repaired hundreds of foundations in town, from the 1960s ranches in Glastonbury Center to the 1990s colonials along the ridge. Our injection repair method fills cracks completely without excavation, and our lifetime transferable warranty travels with your home—an important detail in a competitive real estate market. Text us photos of your foundation concern for a fast, expert assessment.
+Attack A Crack has been the trusted foundation repair choice for Glastonbury homeowners since 2002. We've repaired hundreds of foundations in town, from the 1960s ranches in Glastonbury Center to the 1990s colonials along the ridge. Our injection repair method fills cracks completely without excavation, and our lifetime transferable warranty travels with your home—an important detail in a competitive real estate market. Text us photos of your foundation concern for a fast, expert assessment.

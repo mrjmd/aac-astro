@@ -84,10 +84,23 @@ import { reviewCount } from '../utils/reviews';
             <Icon name="Star" size={16} class="fill-aac-dark text-aac-dark" />
           </div>
           <div>
-            <p class="text-white font-black text-sm uppercase tracking-widest">Expert Response</p>
-            <p class="text-white/70 text-xs font-bold mt-0.5">Get a professional assessment in minutes, not days.</p>
+            <p id="hero-label" class="text-white font-black text-sm uppercase tracking-widest">One-Day Repairs</p>
+            <p id="hero-subtext" class="text-white/70 text-xs font-bold mt-0.5">Foundation cracks fixed in a single visit — no excavation needed.</p>
           </div>
         </div>
+        <script>
+          (function(){
+            var opts=[
+              ["One-Day Repairs","Foundation cracks fixed in a single visit \u2014 no excavation needed."],
+              ["Lifetime Guarantee","Every repair backed by a warranty that transfers to the next owner."],
+              ["Honest Diagnosis","We\u2019ll tell you what\u2019s wrong, what\u2019s not, and what it\u2019ll cost \u2014 upfront."],
+              ["Permanent Fix","Expanding resin fills the full depth of the crack \u2014 not just a surface patch."]
+            ];
+            var i=Math.floor(Math.random()*opts.length);
+            document.getElementById("hero-label").textContent=opts[i][0];
+            document.getElementById("hero-subtext").textContent=opts[i][1];
+          })();
+        </script>
       </div>
 
       <!-- 15-Minute Quote Badge -->

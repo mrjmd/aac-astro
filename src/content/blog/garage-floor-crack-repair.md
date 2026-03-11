@@ -15,6 +15,7 @@ relatedServices:
   - "free-foundation-consultations"
   - "foundation-crack-injection"
   - "carbon-fiber-stitches"
+  - "garage"
 ---
 
 ## Why Garage Floors Crack in New England

@@ -3,7 +3,7 @@ title: "Why Your Bulkhead Door Might Be Leaking (And How to Fix It)"
 metaTitle: "Bulkhead Door Leaks: Causes & Fixes"
 metaDescription: "Common causes of bulkhead door leaks in New England homes and proven repair methods that actually work. Stop basement flooding for good."
 excerpt: "Every rainstorm turns your bulkhead stairs into a waterfall? Here's why traditional fixes fail and what actually works for a permanent seal."
-publishDate: 2026-01-10
+publishDate: 2025-04-30
 author: "Luc Richard"
 category: "guides"
 tags: ["bulkhead repair", "basement waterproofing", "water damage", "bulkhead sealant", "Bilco doors", "bulkhead leak"]

@@ -22,7 +22,7 @@ relatedServices:
 
 If you own a home on Massachusetts' South Shore, your foundation lives a harder life than most. The combination of coastal soil conditions, high water tables, older housing stock, and the relentless New England climate creates a set of challenges that homeowners in Worcester or Springfield simply do not face.
 
-We say this from 20+ years of experience. Our Massachusetts headquarters is in Quincy, right in the heart of the South Shore. We have been repairing foundations in these communities for over three decades, and we have developed a deep understanding of what makes this stretch of coast different. This is not a generic foundation repair article. This is specific to your area, your soil, and your homes.
+We say this from 20+ years of experience. Our Massachusetts headquarters is in Quincy, right in the heart of the South Shore. We have been repairing foundations in these communities for over two decades, and we have developed a deep understanding of what makes this stretch of coast different. This is not a generic foundation repair article. This is specific to your area, your soil, and your homes.
 
 Not sure if what you are seeing is a problem? Text us a photo for assessment at 617-668-1677 — we can often tell you what you are dealing with before scheduling a visit.
 
@@ -70,7 +70,7 @@ We see accelerated spalling on coastal homes in Hull, Scituate, Cohasset, and th
 
 ## Neighborhood-Specific Patterns
 
-After 33 years of work on the South Shore, we have observed patterns that are specific to individual communities.
+After 20 years of work on the South Shore, we have observed patterns that are specific to individual communities.
 
 ### Quincy
 

@@ -91,7 +91,7 @@ const itemListSchema = {
 };
 
 // Projects pagination (client-side, independent of blog pagination)
-const PROJECTS_PER_PAGE = 4;
+const PROJECTS_PER_PAGE = 8;
 const projectTotalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
 ---
 
@@ -113,7 +113,7 @@ const projectTotalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
 					<div>
 						<h1 class="text-6xl lg:text-8xl font-black tracking-tighter mb-8 leading-none">
 							UP<br />
-							<span class="text-aac-blue">DATES.</span>
+							<span class="text-aac-blue">DATES</span>
 						</h1>
 						<p class="text-xl text-zinc-500 max-w-lg">
 							Expert articles, cost guides, and before-and-after project case studies from New England's foundation repair specialists.
@@ -264,7 +264,7 @@ const projectTotalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
 					Have a Foundation Question?
 				</h2>
 				<p class="text-lg text-aac-dark/70 mb-8">
-					Get a free, no-pressure assessment from our experts. We'll give you honest answers about your foundation.
+					Get a free assessment from our experts.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">
 					<button class="open-modal bg-aac-dark text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2">

@@ -3,7 +3,7 @@ title: "Is Your Foundation Ready for Spring Thaw?"
 metaTitle: "Spring Thaw Foundation Prep for New England"
 metaDescription: "Spring thaw is the most dangerous season for New England foundations. Use this checklist to prepare your home before snowmelt causes cracks and water intrusion."
 excerpt: "Spring thaw is the most dangerous time for New England foundations. Use this checklist to catch cracks, drainage problems, and water intrusion before they worsen."
-publishDate: 2026-02-03
+publishDate: 2025-06-16
 author: "Attack A Crack"
 category: "maintenance-tips"
 tags: ["spring thaw", "foundation inspection", "seasonal maintenance", "water intrusion"]

@@ -29,7 +29,7 @@ relatedServices:
 
 When you search "foundation repair cost" online, you get national averages that have almost nothing to do with what you will actually pay in Quincy. National data mixes Arizona slab repairs with New England basement foundations, sunbelt pricing with northeast labor rates, and dry-climate fixes with coastal water intrusion solutions.
 
-As a company headquartered at 30 Randlett Street in Quincy, we have been repairing foundations in this city and across the South Shore for over 33 years. Here are real numbers based on actual work in your area.
+As a company headquartered at 30 Randlett Street in Quincy, we have been repairing foundations in this city and across the South Shore for over 20 years. Here are real numbers based on actual work in your area.
 
 ## Average Foundation Repair Costs in Quincy and the South Shore
 

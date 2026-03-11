@@ -13,13 +13,14 @@ draft: true
 targetLocation: Massachusetts
 relatedServices:
   - "free-foundation-consultations"
+  - "driveway"
 ---
 
 ## How Much Does Driveway Repair Cost in Massachusetts?
 
 We get it — you are Googling "driveway repair cost Massachusetts" because you want a number, not a lecture. So here is the short answer: most concrete driveway repairs in Massachusetts cost between $300 and $3,500 depending on the type and extent of damage. Full replacement runs $4,000 to $10,000 or more.
 
-Now, those ranges are wide enough to drive a truck through (possibly over your cracked driveway). So let us break down what actually determines where you fall on that spectrum. After 33 years of concrete work across Massachusetts, we have a pretty clear picture of what things cost and — just as important — what they should cost.
+Now, those ranges are wide enough to drive a truck through (possibly over your cracked driveway). So let us break down what actually determines where you fall on that spectrum. After 20 years of concrete work across Massachusetts, we have a pretty clear picture of what things cost and — just as important — what they should cost.
 
 ## Driveway Repair Cost Ranges by Type
 

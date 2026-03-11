@@ -3,7 +3,7 @@ title: "Bulkhead Repair Cost Guide 2026: What New England Homeowners Pay"
 metaTitle: "Bulkhead Repair Cost Guide 2026 | Prices"
 metaDescription: "Complete guide to bulkhead repair costs in 2026. Compare replacement vs. sealing methods, learn what affects pricing, and get honest estimates from experts."
 excerpt: "Bulkhead repair costs range from $1,800 to $2,500 for injection sealing. Compare methods, learn what drives pricing, and find out why full replacement is often overkill."
-publishDate: 2026-02-15
+publishDate: 2025-06-27
 author: "Matt Davis"
 category: "cost-guides"
 tags: ["bulkhead repair cost", "bulkhead sealing", "cellar door repair", "pricing"]

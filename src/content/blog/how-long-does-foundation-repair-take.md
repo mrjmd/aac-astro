@@ -3,7 +3,7 @@ title: "How Long Does Foundation Repair Take? Timeline by Repair Type"
 metaTitle: "How Long Does Foundation Repair Take?"
 metaDescription: "Foundation repair timelines vary from a few hours to several weeks. Get realistic timeframes for crack injection, carbon fiber, wall stabilization, and more."
 excerpt: "Foundation repair can take anywhere from a few hours to several weeks. Here is what determines your timeline and how to prepare for each type of repair."
-publishDate: 2026-03-08
+publishDate: 2026-02-02
 author: "Attack A Crack"
 category: "guides"
 tags: ["foundation repair timeline", "repair duration", "crack injection", "carbon fiber", "home repair planning"]

@@ -3,7 +3,7 @@ title: "Foundation Settling: When It's Normal and When to Worry"
 metaTitle: "Foundation Settling: Normal vs Serious"
 metaDescription: "Every home settles, but not all settling is harmless. Learn to tell the difference between normal foundation settling and signs of a real problem."
 excerpt: "All homes settle over time, but how do you know when settling crosses the line into structural damage? A New England expert breaks it down."
-publishDate: 2026-02-25
+publishDate: 2025-09-16
 author: "Luc Richard"
 category: "guides"
 tags: ["foundation settling", "structural damage", "frost heave", "old homes", "foundation repair"]

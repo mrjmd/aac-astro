@@ -3,7 +3,7 @@ title: "The Best Time to Repair Your Foundation in New England (Seasonal Guide)"
 metaTitle: "Best Time for Foundation Repair by Season"
 metaDescription: "When is the best time to repair your foundation in New England? A season-by-season guide covering spring, summer, fall, and winter repair considerations."
 excerpt: "New England's four distinct seasons each affect foundation repair differently. Here's when to schedule repairs, when to wait, and why winter might surprise you."
-publishDate: 2026-03-02
+publishDate: 2025-11-13
 author: "Luc Richard"
 category: "guides"
 showOnServicesPage: true

@@ -3,7 +3,7 @@ title: "Cement vs Concrete: What Every Homeowner Actually Needs to Know"
 metaTitle: "Cement vs Concrete Homeowner's Guide"
 metaDescription: "Cement and concrete are not the same thing. Learn the real difference, why it matters for your home repairs, and when to call a professional."
 excerpt: "Most people use 'cement' and 'concrete' interchangeably. They're not the same thing — and knowing the difference helps you make better decisions about your home."
-publishDate: 2026-03-03
+publishDate: 2025-11-25
 author: "Luc Richard"
 category: "guides"
 tags: ["cement", "concrete", "concrete repair", "homeowner education", "foundation repair"]
