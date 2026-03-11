@@ -9,7 +9,7 @@ import Icon from '../../components/Icon.astro';
 import { phoneMA, phoneMAHref } from '../../utils/contact';
 
 export async function getStaticPaths() {
-  const partners = await getCollection('partners');
+  const partners = await getCollection('partners', ({ data }) => !data.draft);
   return partners.map((partner) => ({
     params: { slug: partner.id.replace(/\.md$/, '') },
     props: { partner },
@@ -20,7 +20,7 @@ const { partner } = Astro.props;
 const { Content } = await render(partner);
 
 // Get other partner types for related section
-const allPartners = await getCollection('partners');
+const allPartners = await getCollection('partners', ({ data }) => !data.draft);
 const otherPartners = allPartners.filter(p => p.id !== partner.id).sort((a, b) => a.data.order - b.data.order);
 
 const breadcrumbItems = [

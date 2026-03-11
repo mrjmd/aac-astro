@@ -123,27 +123,6 @@ Needed for author schema and the About page. Currently using placeholder data.
 - [ ] Awards, press mentions, or speaking engagements
 - [ ] Justin La Fontaine's title/role and tenure
 
-### Brand Voice Review
-
-The Expert Jester voice guide is complete. **Nothing changes on the site until Matt approves.**
-
-- [ ] Read `docs/BRAND-VOICE.md` — especially the "Proposed Changes Appendix"
-- [ ] Approve or revise homepage hero + CTA copy
-- [ ] Approve or revise about page story + values copy
-- [ ] Approve or revise services hub descriptions
-- [ ] Approve or revise team bios (Luc, Matt, Ed, Justin, Mike)
-- [ ] Note any lines that feel off-brand or too casual
-
-### Marketing Plan Review
-
-Full plan in `docs/MARKETING-PLAN-2026.md`:
-
-- [ ] Social media strategy — are 3x/week posts feasible?
-- [ ] Paid advertising budget zones — agree with 70/30 conversion/awareness split?
-- [ ] Email marketing sequences — email platform preference?
-- [ ] Geo-targeting zones — agree South Shore is the fortress?
-- [ ] SORA AI video concept — interested in testing AI video?
-
 ### Blog Draft Review (42 drafts)
 
 All drafts have complete 800-1200+ word content. Calendar: `docs/CONTENT-CALENDAR-2026.md`.
@@ -153,36 +132,16 @@ All drafts have complete 800-1200+ word content. Calendar: `docs/CONTENT-CALENDA
 - [ ] Provide/source hero images — all 79 posts have `heroImage: ""`
 - [ ] Provide real project details for case study posts
 
-### Brainstorm Session — 38 Questions
-
-Full list in `docs/BRAINSTORM-AGENDA.md`. Key questions:
-
-- [ ] Injection PSI — we wrote 100 PSI based on old site. Correct?
-- [ ] Copper ports vs plastic — what brand/type?
-- [ ] Diamond saw specifics — blade size, groove depth?
-- [ ] Carbon fiber product specs — manufacturer, tensile strength?
-- [ ] When did Luc start? (we say age 16 — confirm)
-- [ ] ASHI certification number?
-- [ ] 3-5 memorable job stories for case studies
-- [ ] Insurance coverage — do you help homeowners navigate claims?
-- [ ] GBAR membership status?
-
 ### Visual QA Pass
 
 - [ ] Homepage walkthrough
 - [ ] Services hub + each service page
 - [ ] About page
 - [ ] Updates page
-- [ ] Areas We Serve
+- [ ] Locations
 - [ ] Partners hub + Trusted Partners
 - [ ] Sample blog post + sample location page
 - [ ] Mobile spot-check on each
-
-### Partner Decisions
-
-- [ ] Which partners do you want featured? (real estate agents, home inspectors, etc.)
-- [ ] Any co-marketing agreements or referral relationships to highlight?
-- [ ] Name the trusted partners page (Preferred? Trusted? Recommended?)
 
 ### Google Cloud Setup (for Calendar Import) — SUPERSEDED
 
@@ -253,6 +212,13 @@ First 90 days after DNS cutover. Full strategy in `docs/SEO-STRATEGY-2026.md` (P
 - [ ] Video content: embed YouTube clips on service pages, post to GBP
 - [ ] Continue 2-4 posts/month per content calendar
 
+### Deferred to Post-Launch
+
+- [ ] **Partner expansion** — unpublished drafts ready: insurance adjusters, mold remediation, plumbers, landscapers. New targets: structural engineers, waterproofers, basement finishing contractors, foundation inspectors, civil engineers, pest control, HVAC contractors, chimney repair
+- [ ] **Brand voice review** — archived to `docs/archive/BRAND-VOICE.md`, revisit post-launch
+- [ ] **Marketing plan review** — `docs/MARKETING-PLAN-2026.md` (social cadence, ad budget, email platform, geo-targeting, AI video)
+- [ ] **Brainstorm session** — 38 technical questions in `docs/BRAINSTORM-AGENDA.md` (injection PSI, carbon fiber specs, job stories, etc.)
+
 ### Ongoing
 
 - [ ] B13 Phase 2: Mobile intake form for technician case studies
@@ -283,7 +249,7 @@ First 90 days after DNS cutover. Full strategy in `docs/SEO-STRATEGY-2026.md` (P
 
 | Doc | Purpose |
 |-----|---------|
-| `docs/BRAND-VOICE.md` | Expert Jester voice guide + proposed copy changes (PENDING APPROVAL) |
+| `docs/archive/BRAND-VOICE.md` | Expert Jester voice guide + proposed copy changes (ARCHIVED — deferred to post-launch) |
 | `docs/BRAINSTORM-AGENDA.md` | 38 expertise questions for Matt (UNANSWERED) |
 | `docs/SEO-STRATEGY-2026.md` | SEO playbook (23 parts, includes SERP Acquisition Playbook) |
 | `docs/CONTENT-CALENDAR-2026.md` | Editorial calendar (81 posts: 42 published, 39 drafts) |

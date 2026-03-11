@@ -10,7 +10,7 @@ import { reviewCount } from '../../utils/reviews';
 import { phoneMA, phoneMAHref } from '../../utils/contact';
 
 // Get all partners sorted by order
-const partners = (await getCollection('partners')).sort((a, b) => a.data.order - b.data.order);
+const partners = (await getCollection('partners', ({ data }) => !data.draft)).sort((a, b) => a.data.order - b.data.order);
 
 const breadcrumbItems = [
   { label: 'Home', href: '/' },
