@@ -1,12 +1,10 @@
 ---
-import type { GetStaticPaths } from 'astro';
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import Pagination from '../../components/Pagination.astro';
 import Icon from '../../components/Icon.astro';
 import { isPublished } from '../../utils/blog';
 import { webpSrc, projectSrcset } from '../../utils/image';
@@ -37,27 +35,18 @@ const serviceTypeLabels: Record<string, string> = {
 	'fieldstone': 'Fieldstone Repair',
 };
 
-export const getStaticPaths = (async ({ paginate }) => {
-	const allPosts = (await getCollection('blog', isPublished))
-		.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+const allPosts = (await getCollection('blog', isPublished))
+	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 
-	// Get published projects (passed as props, not paginated)
-	const allProjects = (await getCollection('projects', ({ data }) => data.published))
-		.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const allProjects = (await getCollection('projects', ({ data }) => data.published))
+	.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
-	// Get category counts for filter buttons
-	const categories = allPosts.reduce((acc, post) => {
-		acc[post.data.category] = (acc[post.data.category] || 0) + 1;
-		return acc;
-	}, {} as Record<string, number>);
+const categories = allPosts.reduce((acc, post) => {
+	acc[post.data.category] = (acc[post.data.category] || 0) + 1;
+	return acc;
+}, {} as Record<string, number>);
 
-	return paginate(allPosts, {
-		pageSize: 6,
-		props: { categories, totalPosts: allPosts.length, projects: allProjects }
-	});
-}) satisfies GetStaticPaths;
-
-const { page, categories, totalPosts, projects } = Astro.props;
+const totalPosts = allPosts.length;
 
 function formatDate(date: Date): string {
 	return date.toLocaleDateString('en-US', {
@@ -72,17 +61,14 @@ const breadcrumbItems = [
 	{ label: 'Updates' }
 ];
 
-const isFirstPage = page.currentPage === 1;
-const titleSuffix = isFirstPage ? '' : ` - Page ${page.currentPage}`;
-const baseDescription = "Expert articles, cost guides, and recent project case studies from Attack A Crack. Foundation repair insights for New England homeowners.";
-const description = isFirstPage ? baseDescription : `Page ${page.currentPage} of foundation repair updates from Attack A Crack. Expert articles, cost guides, and project case studies for New England homeowners.`;
+const description = "Expert articles, cost guides, and recent project case studies from Attack A Crack. Foundation repair insights for New England homeowners.";
 
 const itemListSchema = {
 	"@type": "ItemList",
 	"name": "Foundation Repair Updates",
-	"description": baseDescription,
+	"description": description,
 	"numberOfItems": totalPosts,
-	"itemListElement": page.data.slice(0, 10).map((post, index) => ({
+	"itemListElement": allPosts.slice(0, 10).map((post, index) => ({
 		"@type": "ListItem",
 		"position": index + 1,
 		"url": `https://www.attackacrack.com/blog/${post.id.replace(/\.md$/, '')}`,
@@ -90,13 +76,15 @@ const itemListSchema = {
 	})),
 };
 
-// Projects pagination (client-side, independent of blog pagination)
+const ARTICLES_PER_PAGE = 6;
+const articleTotalPages = Math.ceil(allPosts.length / ARTICLES_PER_PAGE);
+
 const PROJECTS_PER_PAGE = 8;
-const projectTotalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
+const projectTotalPages = Math.ceil(allProjects.length / PROJECTS_PER_PAGE);
 ---
 
 <Layout
-	title={`Foundation Repair Updates${titleSuffix}`}
+	title="Foundation Repair Updates"
 	description={description}
 	customSchema={itemListSchema}
 	breadcrumbItems={breadcrumbItems}
@@ -122,7 +110,7 @@ const projectTotalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
 					<div>
 						<!-- Category Filter Pills -->
 						<div class="flex flex-wrap gap-3" id="category-filters">
-							<a href="/updates" class:list={["px-4 py-2 rounded-full text-sm font-bold transition-colors", !Astro.params.page ? "bg-aac-dark text-white" : "bg-zinc-100 text-zinc-700 hover:bg-aac-blue hover:text-white"]}>
+							<a href="/updates" class="px-4 py-2 rounded-full text-sm font-bold transition-colors bg-aac-dark text-white">
 								All ({totalPosts})
 							</a>
 							{Object.entries(categories).map(([cat, count]) => (
@@ -139,15 +127,15 @@ const projectTotalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
 		<!-- Articles Grid -->
 		<section class="py-24 bg-zinc-50">
 			<div class="max-w-7xl mx-auto px-6">
-				<h2 class="text-3xl font-black mb-12">
-					{isFirstPage ? 'Latest Articles' : `Articles - Page ${page.currentPage}`}
-				</h2>
+				<h2 id="articles-heading" class="text-3xl font-black mb-12">Latest Articles</h2>
 
-				<div class="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-					{page.data.map((post) => (
+				<div id="articles-grid" class="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+					{allPosts.map((post, i) => (
 						<a
 							href={`/blog/${post.id.replace(/\.md$/, '')}`}
-							class="group bg-white rounded-[32px] overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all"
+							data-apage={Math.floor(i / ARTICLES_PER_PAGE) + 1}
+							class="article-card group bg-white rounded-[32px] overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all"
+							style={i >= ARTICLES_PER_PAGE ? 'display:none' : ''}
 						>
 							<div class="aspect-video overflow-hidden relative">
 								<img
@@ -158,7 +146,7 @@ const projectTotalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
 									class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
 									width="640"
 									height="360"
-									loading="lazy"
+									loading={i < ARTICLES_PER_PAGE ? 'eager' : 'lazy'}
 								/>
 								<div class="absolute top-4 left-4 bg-aac-dark/80 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-lg border border-white/20">
 									{categoryLabels[post.data.category] || 'Article'}
@@ -187,18 +175,15 @@ const projectTotalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
 					))}
 				</div>
 
-				<Pagination
-					currentPage={page.currentPage}
-					lastPage={page.lastPage}
-					prevUrl={page.url.prev}
-					nextUrl={page.url.next}
-					baseUrl="/updates"
-				/>
+				{articleTotalPages > 1 && (
+					<nav id="articles-nav" class="flex items-center justify-center gap-2 mt-12" aria-label="Articles pagination" data-total={articleTotalPages}>
+					</nav>
+				)}
 			</div>
 		</section>
 
-		<!-- Recent Projects Section (all pages, with independent pagination) -->
-		{projects.length > 0 && (
+		<!-- Recent Projects Section -->
+		{allProjects.length > 0 && (
 			<section class="py-24 bg-white border-t-4 border-zinc-100">
 				<div class="max-w-7xl mx-auto px-6">
 					<div class="flex items-center justify-between mb-12">
@@ -216,7 +201,7 @@ const projectTotalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
 					</div>
 
 					<div id="updates-projects-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
-						{projects.map((project, i) => (
+						{allProjects.map((project, i) => (
 							<a href={`/projects/${project.id.replace(/\.md$/, '')}`} data-ppage={Math.floor(i / PROJECTS_PER_PAGE) + 1} class="updates-project-card group bg-zinc-50 rounded-2xl overflow-hidden border-2 border-zinc-100 hover:border-aac-blue transition-all" style={i >= PROJECTS_PER_PAGE ? 'display:none' : ''}>
 								<div class="aspect-video overflow-hidden relative">
 									<img
@@ -281,10 +266,18 @@ const projectTotalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
 	<Footer />
 
 	<script>
-		const cards = document.querySelectorAll('.updates-project-card');
-		const nav = document.getElementById('pp-nav');
-		const totalPages = nav ? parseInt(nav.dataset.total || '1') : 1;
-		let currentPage = 1;
+		// Shared URL param helpers
+		function getParam(key: string): number {
+			return parseInt(new URLSearchParams(location.search).get(key) || '1');
+		}
+		function setParams(updates: Record<string, number>) {
+			const params = new URLSearchParams(location.search);
+			for (const [k, v] of Object.entries(updates)) {
+				v === 1 ? params.delete(k) : params.set(k, String(v));
+			}
+			const qs = params.toString();
+			history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+		}
 
 		function getPageNumbers(current: number, last: number): (number | '...')[] {
 			if (last <= 5) return Array.from({ length: last }, (_, i) => i + 1);
@@ -296,36 +289,88 @@ const projectTotalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
 			return pages;
 		}
 
-		function renderPagination() {
-			if (!nav) return;
-			const pages = getPageNumbers(currentPage, totalPages);
-			const prevDisabled = currentPage === 1;
-			const nextDisabled = currentPage === totalPages;
-			nav.innerHTML = `
+		// --- Articles pagination ---
+		const articleCards = document.querySelectorAll('.article-card');
+		const articlesNav = document.getElementById('articles-nav');
+		const articleTotalPages = articlesNav ? parseInt(articlesNav.dataset.total || '1') : 1;
+		let articlePage = Math.min(Math.max(1, getParam('articles')), articleTotalPages);
+
+		function renderArticlesPagination() {
+			if (!articlesNav) return;
+			const pages = getPageNumbers(articlePage, articleTotalPages);
+			const prevDisabled = articlePage === 1;
+			const nextDisabled = articlePage === articleTotalPages;
+			articlesNav.innerHTML = `
+				<button id="a-prev" class="px-3 py-2 rounded-lg border-2 border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue transition-all disabled:opacity-30 disabled:cursor-not-allowed" ${prevDisabled ? 'disabled' : ''} aria-label="Previous articles page">&larr;</button>
+				${pages.map(p => p === '...'
+					? '<span class="px-3 py-2 text-zinc-400">...</span>'
+					: `<button data-agoto="${p}" class="a-btn w-10 h-10 rounded-lg border-2 text-sm font-black transition-all ${p === articlePage ? 'border-aac-blue bg-aac-blue text-white' : 'border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue'}">${p}</button>`
+				).join('')}
+				<button id="a-next" class="px-3 py-2 rounded-lg border-2 border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue transition-all disabled:opacity-30 disabled:cursor-not-allowed" ${nextDisabled ? 'disabled' : ''} aria-label="Next articles page">&rarr;</button>
+			`;
+			articlesNav.querySelectorAll('.a-btn').forEach(btn => {
+				btn.addEventListener('click', () => showArticlePage(parseInt((btn as HTMLElement).dataset.agoto || '1'), true));
+			});
+			document.getElementById('a-prev')?.addEventListener('click', () => { if (articlePage > 1) showArticlePage(articlePage - 1, true); });
+			document.getElementById('a-next')?.addEventListener('click', () => { if (articlePage < articleTotalPages) showArticlePage(articlePage + 1, true); });
+		}
+
+		function showArticlePage(page: number, scroll: boolean) {
+			articlePage = page;
+			setParams({ articles: page });
+			const heading = document.getElementById('articles-heading');
+			if (heading) heading.textContent = page === 1 ? 'Latest Articles' : `Articles — Page ${page}`;
+			articleCards.forEach(card => {
+				const p = parseInt((card as HTMLElement).dataset.apage || '1');
+				(card as HTMLElement).style.display = p === page ? '' : 'none';
+			});
+			renderArticlesPagination();
+			if (scroll) {
+				document.getElementById('articles-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			}
+		}
+
+		// --- Projects pagination ---
+		const projectCards = document.querySelectorAll('.updates-project-card');
+		const ppNav = document.getElementById('pp-nav');
+		const projectTotalPages = ppNav ? parseInt(ppNav.dataset.total || '1') : 1;
+		let projectPage = Math.min(Math.max(1, getParam('projects')), projectTotalPages);
+
+		function renderProjectsPagination() {
+			if (!ppNav) return;
+			const pages = getPageNumbers(projectPage, projectTotalPages);
+			const prevDisabled = projectPage === 1;
+			const nextDisabled = projectPage === projectTotalPages;
+			ppNav.innerHTML = `
 				<button id="pp-prev" class="px-3 py-2 rounded-lg border-2 border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue transition-all disabled:opacity-30 disabled:cursor-not-allowed" ${prevDisabled ? 'disabled' : ''} aria-label="Previous projects page">&larr;</button>
 				${pages.map(p => p === '...'
 					? '<span class="px-3 py-2 text-zinc-400">...</span>'
-					: `<button data-ppgoto="${p}" class="pp-btn w-10 h-10 rounded-lg border-2 text-sm font-black transition-all ${p === currentPage ? 'border-aac-blue bg-aac-blue text-white' : 'border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue'}">${p}</button>`
+					: `<button data-ppgoto="${p}" class="pp-btn w-10 h-10 rounded-lg border-2 text-sm font-black transition-all ${p === projectPage ? 'border-aac-blue bg-aac-blue text-white' : 'border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue'}">${p}</button>`
 				).join('')}
 				<button id="pp-next" class="px-3 py-2 rounded-lg border-2 border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue transition-all disabled:opacity-30 disabled:cursor-not-allowed" ${nextDisabled ? 'disabled' : ''} aria-label="Next projects page">&rarr;</button>
 			`;
-			nav.querySelectorAll('.pp-btn').forEach(btn => {
-				btn.addEventListener('click', () => showProjectPage(parseInt((btn as HTMLElement).dataset.ppgoto || '1')));
+			ppNav.querySelectorAll('.pp-btn').forEach(btn => {
+				btn.addEventListener('click', () => showProjectPage(parseInt((btn as HTMLElement).dataset.ppgoto || '1'), true));
 			});
-			document.getElementById('pp-prev')?.addEventListener('click', () => { if (currentPage > 1) showProjectPage(currentPage - 1); });
-			document.getElementById('pp-next')?.addEventListener('click', () => { if (currentPage < totalPages) showProjectPage(currentPage + 1); });
+			document.getElementById('pp-prev')?.addEventListener('click', () => { if (projectPage > 1) showProjectPage(projectPage - 1, true); });
+			document.getElementById('pp-next')?.addEventListener('click', () => { if (projectPage < projectTotalPages) showProjectPage(projectPage + 1, true); });
 		}
 
-		function showProjectPage(page: number) {
-			currentPage = page;
-			cards.forEach(card => {
+		function showProjectPage(page: number, scroll: boolean) {
+			projectPage = page;
+			setParams({ projects: page });
+			projectCards.forEach(card => {
 				const p = parseInt((card as HTMLElement).dataset.ppage || '1');
 				(card as HTMLElement).style.display = p === page ? '' : 'none';
 			});
-			renderPagination();
-			document.getElementById('updates-projects-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			renderProjectsPagination();
+			if (scroll) {
+				document.getElementById('updates-projects-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			}
 		}
 
-		renderPagination();
+		// Initialize both pagers from URL params (no scroll)
+		showArticlePage(articlePage, false);
+		showProjectPage(projectPage, false);
 	</script>
 </Layout>

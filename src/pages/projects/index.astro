@@ -201,7 +201,19 @@ const itemListSchema = {
 		const cards = document.querySelectorAll('.project-card');
 		const nav = document.getElementById('proj-nav');
 		const totalPages = nav ? parseInt(nav.dataset.total || '1') : 1;
-		let currentPage = 1;
+
+		function getParam(key: string): number {
+			return parseInt(new URLSearchParams(location.search).get(key) || '1');
+		}
+		function setParam(key: string, value: number) {
+			const params = new URLSearchParams(location.search);
+			value === 1 ? params.delete(key) : params.set(key, String(value));
+			const qs = params.toString();
+			history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+		}
+
+		const initPage = Math.min(Math.max(1, getParam('page')), totalPages);
+		let currentPage = initPage;
 
 		function getPageNumbers(current: number, last: number): (number | '...')[] {
 			if (last <= 5) return Array.from({ length: last }, (_, i) => i + 1);
@@ -227,22 +239,25 @@ const itemListSchema = {
 				<button id="next-page" class="px-3 py-2 rounded-lg border-2 border-zinc-200 text-zinc-500 hover:border-aac-blue hover:text-aac-blue transition-all disabled:opacity-30 disabled:cursor-not-allowed" ${nextDisabled ? 'disabled' : ''} aria-label="Next page">&rarr;</button>
 			`;
 			nav.querySelectorAll('.page-btn').forEach(btn => {
-				btn.addEventListener('click', () => showPage(parseInt((btn as HTMLElement).dataset.goto || '1')));
+				btn.addEventListener('click', () => showPage(parseInt((btn as HTMLElement).dataset.goto || '1'), true));
 			});
-			document.getElementById('prev-page')?.addEventListener('click', () => { if (currentPage > 1) showPage(currentPage - 1); });
-			document.getElementById('next-page')?.addEventListener('click', () => { if (currentPage < totalPages) showPage(currentPage + 1); });
+			document.getElementById('prev-page')?.addEventListener('click', () => { if (currentPage > 1) showPage(currentPage - 1, true); });
+			document.getElementById('next-page')?.addEventListener('click', () => { if (currentPage < totalPages) showPage(currentPage + 1, true); });
 		}
 
-		function showPage(page: number) {
+		function showPage(page: number, scroll: boolean) {
 			currentPage = page;
+			setParam('page', page);
 			cards.forEach(card => {
 				const cardPage = parseInt((card as HTMLElement).dataset.page || '1');
 				(card as HTMLElement).style.display = cardPage === page ? '' : 'none';
 			});
 			renderPagination();
-			document.getElementById('projects-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			if (scroll) {
+				document.getElementById('projects-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			}
 		}
 
-		renderPagination();
+		showPage(initPage, false);
 	</script>
 </Layout>
