@@ -6,7 +6,7 @@ state: MA
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/west-bridgewater-crack-injection-2026-02-before.jpg
-afterImage: /images/projects/west-bridgewater-crack-injection-2026-02-after.jpg
+afterImage: /images/projects/west-bridgewater-crack-injection-2026-02-before.jpg
 summary: "A West Bridgewater, MA home had three leaking foundation cracks. These were permanently sealed using a specialized injection process, restoring the foundation's integrity."
 published: true
 ---

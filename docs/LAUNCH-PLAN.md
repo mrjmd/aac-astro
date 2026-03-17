@@ -124,15 +124,6 @@ Needed for author schema and the About page. Currently using placeholder data.
 - [ ] Awards, press mentions, or speaking engagements
 - [ ] Justin La Fontaine's title/role and tenure
 
-### Blog Draft Review (42 drafts)
-
-All drafts have complete 800-1200+ word content. Calendar: `docs/CONTENT-CALENDAR-2026.md`.
-
-- [ ] **Read all draft blog posts** for accuracy and voice (they're in `src/content/blog/`, all with `draft: true`)
-- [ ] Flag any that need revision
-- [ ] Provide/source hero images — all 79 posts have `heroImage: ""`
-- [ ] Provide real project details for case study posts
-
 ### Visual QA Pass
 
 - [ ] Homepage walkthrough
@@ -201,6 +192,7 @@ First 90 days after DNS cutover. Full strategy in `docs/SEO-STRATEGY-2026.md` (P
 
 ### Month 2-3: Content Expansion & Link Building
 
+- [ ] **CT city expansion** — add 16 new eastern/central CT city pages (see `docs/CT-CITY-EXPANSION-PLAN.md`)
 - [ ] Write 20+ more city pages (expand into underserved NE areas)
 - [x] Create dedicated "Basement Floor Crack Repair" service page (13,400 vol cluster) — `src/content/concrete-repair/basement-floor.md` (MA only, grind + epoxy/rubber method)
 - [x] Write lally column content (5,400 vol, KD 10) — `src/content/blog/lally-columns-guide.md` (draft, pending Matt review)
@@ -215,6 +207,7 @@ First 90 days after DNS cutover. Full strategy in `docs/SEO-STRATEGY-2026.md` (P
 
 ### Deferred to Post-Launch
 
+- [ ] **Blog draft review (42 drafts)** — All drafts have complete 800-1200+ word content. Read for accuracy and voice (`src/content/blog/`, `draft: true`), flag revisions, source hero images, provide real project details for case studies. Calendar: `docs/CONTENT-CALENDAR-2026.md`
 - [ ] **Partner expansion** — unpublished drafts ready: insurance adjusters, mold remediation, plumbers, landscapers. New targets: structural engineers, waterproofers, basement finishing contractors, foundation inspectors, civil engineers, pest control, HVAC contractors, chimney repair
 - [ ] **Brand voice review** — archived to `docs/archive/BRAND-VOICE.md`, revisit post-launch
 - [ ] **Marketing plan review** — `docs/MARKETING-PLAN-2026.md` (social cadence, ad budget, email platform, geo-targeting, AI video)

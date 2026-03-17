@@ -4,7 +4,7 @@
  * All frontmatter paths stay as .jpg — these helpers convert at render time.
  */
 
-const HAS_WEBP = (s: string) => s.startsWith('/images/projects/') && s.endsWith('.jpg');
+const HAS_WEBP = (s: string) => (s.startsWith('/images/projects/') || s.startsWith('/images/blog/')) && s.endsWith('.jpg');
 
 /** Convert a project .jpg path to its optimized .webp equivalent (1400w max). */
 export function webpSrc(src: string): string {

@@ -9,7 +9,7 @@ coordinates:
 serviceTypes:
   - crack-injection
 beforeImage: /images/projects/hingham-crack-injection-2025-01-before.jpg
-afterImage: /images/projects/hingham-crack-injection-2025-01-after.jpg
+afterImage: /images/projects/hingham-crack-injection-2025-01-before.jpg
 beforeAfterVerified: false
 summary: "A Hingham, MA foundation suffered from a significant crack. Our expert injection service permanently sealed the breach, restoring structural integrity and preventing water intrusion."
 published: true

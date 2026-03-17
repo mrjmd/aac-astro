@@ -5,7 +5,7 @@ metaDescription: "Professional basement floor crack repair in Massachusetts. We 
 excerpt: "Basement floor cracks let in water and radon gas. We grind out damage and seal with self-leveling epoxy or commercial rubber — hardware store patches cannot compare."
 icon: "Wrench"
 order: 7
-heroImage: "/images/projects/kingston-crack-injection-2026-01-before.jpg"
+heroImage: "/images/projects/quincy-crack-injection-2025-08-2-before.jpg"
 faqs:
   - question: "Are basement floor cracks serious?"
     answer: "Most basement floor cracks are normal shrinkage cracks and are not structural — your basement floor is a slab, not a load-bearing wall. However, even non-structural floor cracks can allow water infiltration and radon gas entry. If a crack is leaking water, widening over time, or accompanied by heaving or displacement, it needs professional evaluation."

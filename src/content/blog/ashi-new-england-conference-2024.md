@@ -7,8 +7,8 @@ publishDate: 2024-09-12
 author: "Matt Davis"
 category: "news"
 tags: ["events", "home inspectors", "Massachusetts", "industry news"]
-heroImage: "/images/projects/hanover-crack-injection-2025-10-before.jpg"
-heroImageAlt: "Foundation crack requiring professional inspection in Hanover basement"
+heroImage: "/images/blog/ashi-ne-2024-booth.jpg"
+heroImageAlt: "Matt Davis at ASHI New England Conference 2024 booth with attendee"
 featured: false
 relatedPosts:
   - "nar-nxt-boston-2024-partnerships"

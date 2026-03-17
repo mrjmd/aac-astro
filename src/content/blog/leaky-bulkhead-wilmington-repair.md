@@ -7,8 +7,8 @@ publishDate: 2024-12-19
 author: "Matt Davis"
 category: "case-studies"
 tags: ["bulkhead repair", "Massachusetts", "case study", "urethane injection"]
-heroImage: "/images/projects/attleboro-bulkhead-repair-2025-09-before.jpg"
-heroImageAlt: "Leaking bulkhead before injection repair in Attleboro"
+heroImage: "/images/blog/wilmington-bulkhead-1.jpg"
+heroImageAlt: "Leaking bulkhead before injection repair in Wilmington MA"
 featured: false
 targetLocation: "Wilmington, MA"
 relatedPosts:
@@ -31,6 +31,12 @@ The repair process involved two key steps:
 
 1. **Sealing ports** with hydraulic cement to ensure a watertight injection environment
 2. **Injecting urethane bulkhead sealant** to permanently seal the bulkhead joint — the same expanding foam technology we use in [foundation crack injection](/services/foundation-crack-injection)
+
+<img src="/images/blog/wilmington-bulkhead-3.jpg" alt="Injection ports installed on bulkhead joint during Wilmington repair" width="800" height="1062" loading="lazy" />
+
+<img src="/images/blog/wilmington-bulkhead-5.jpg" alt="Urethane sealant injection in progress on Wilmington bulkhead" width="800" height="1062" loading="lazy" />
+
+<img src="/images/blog/wilmington-bulkhead-7.jpg" alt="Completed bulkhead sealant injection showing sealed joint in Wilmington" width="800" height="1062" loading="lazy" />
 
 We selected urethane material because it expands to fill gaps and creates a flexible, waterproof bond that accommodates natural movement over time. Unlike surface-applied caulk or hydraulic cement (which fails within 1-2 New England winters), injection reaches every hidden void in the cold joint.
 

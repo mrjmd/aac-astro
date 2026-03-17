@@ -8,8 +8,8 @@ author: "Luc Richard"
 category: "guides"
 showOnServicesPage: true
 tags: ["foundation cracks", "structural damage", "basement repair", "stair-step cracks", "diagonal cracks", "carbon fiber staples"]
-heroImage: "/images/projects/boston-wall-crack-repair-2025-09-before.jpg"
-heroImageAlt: "Foundation wall crack before repair in Boston basement"
+heroImage: "/images/blog/vertical-foundation-crack.jpg"
+heroImageAlt: "Vertical foundation crack in concrete basement wall showing typical settling pattern"
 featured: true
 relatedPosts:
   - "horizontal-foundation-cracks"
@@ -35,6 +35,8 @@ But there's much more nuance to this, so let's dive deeper.
 ## Understanding Vertical Foundation Cracks
 
 Vertical cracks run straight up and down (or within 30 degrees of vertical). They're the most common type of foundation crack and usually the least concerning.
+
+<img src="/images/blog/horizontal-foundation-crack.jpg" alt="Horizontal foundation crack showing lateral soil pressure damage on basement wall" width="640" height="427" loading="lazy" />
 
 ### Why Vertical Cracks Form
 

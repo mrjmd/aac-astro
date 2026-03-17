@@ -147,35 +147,37 @@ async function checkImageAssets() {
 }
 
 async function checkWebpSiblings() {
-  const PROJECTS_DIR = 'public/images/projects';
-  try {
-    const entries = await readdir(PROJECTS_DIR);
-    const jpgs = entries.filter(f => f.endsWith('.jpg'));
+  const IMAGE_DIRS = ['public/images/projects', 'public/images/blog'];
+  for (const dir of IMAGE_DIRS) {
+    try {
+      const entries = await readdir(dir);
+      const jpgs = entries.filter(f => f.endsWith('.jpg'));
 
-    for (const jpg of jpgs) {
-      const { name } = parse(jpg);
-      // Check that all 3 WebP sizes exist
-      for (const suffix of ['', '-400w', '-800w']) {
-        const webpFile = join(PROJECTS_DIR, `${name}${suffix}.webp`);
-        try {
-          await access(webpFile);
-        } catch {
-          errors.push(`${jpg}: Missing optimized WebP: ${name}${suffix}.webp (run \`npm run optimize:images\`)`);
+      for (const jpg of jpgs) {
+        const { name } = parse(jpg);
+        // Check that all 3 WebP sizes exist
+        for (const suffix of ['', '-400w', '-800w']) {
+          const webpFile = join(dir, `${name}${suffix}.webp`);
+          try {
+            await access(webpFile);
+          } catch {
+            errors.push(`${jpg}: Missing optimized WebP: ${name}${suffix}.webp (run \`npm run optimize:images\`)`);
+          }
         }
       }
-    }
 
-    // Warn about oversized WebP files
-    const webps = entries.filter(f => f.endsWith('.webp'));
-    for (const webp of webps) {
-      const stats = await stat(join(PROJECTS_DIR, webp));
-      const sizeKB = stats.size / 1024;
-      if (sizeKB > 400) {
-        warnings.push(`${webp}: WebP is ${Math.round(sizeKB)}KB (> 400KB threshold)`);
+      // Warn about oversized WebP files
+      const webps = entries.filter(f => f.endsWith('.webp'));
+      for (const webp of webps) {
+        const stats = await stat(join(dir, webp));
+        const sizeKB = stats.size / 1024;
+        if (sizeKB > 400) {
+          warnings.push(`${webp}: WebP is ${Math.round(sizeKB)}KB (> 400KB threshold)`);
+        }
       }
+    } catch (e) {
+      // Directory doesn't exist — skip
     }
-  } catch (e) {
-    // No projects directory — skip
   }
 }
 

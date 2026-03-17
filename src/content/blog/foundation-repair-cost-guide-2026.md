@@ -8,8 +8,8 @@ author: "Matt Davis"
 category: "cost-guides"
 showOnServicesPage: true
 tags: ["foundation repair costs", "pricing", "budgeting", "Connecticut", "Massachusetts"]
-heroImage: "/images/projects/dedham-crack-injection-2025-09-before.jpg"
-heroImageAlt: "Foundation crack before professional injection repair in Dedham"
+heroImage: "/images/blog/cost-guide-foundation-repair.jpg"
+heroImageAlt: "Illustration of foundation repair process showing crack injection technique"
 featured: true
 relatedPosts:
   - "bulkhead-repair-cost-guide-2026"

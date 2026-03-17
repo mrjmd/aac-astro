@@ -7,8 +7,8 @@ publishDate: 2024-12-06
 author: "Matt Davis"
 category: "guides"
 tags: ["crumbling foundations", "pyrrhotite", "Massachusetts", "Connecticut"]
-heroImage: "/images/projects/malden-wall-crack-repair-2025-03-before.jpg"
-heroImageAlt: "Deteriorating foundation wall with visible cracking in Malden basement"
+heroImage: "/images/blog/crumbling-foundation-damage-1.jpg"
+heroImageAlt: "Crumbling concrete foundation showing severe pyrrhotite deterioration damage"
 featured: false
 targetLocation: "Connecticut"
 relatedPosts:
@@ -31,6 +31,14 @@ The same issue has now emerged in Massachusetts, beginning in the central region
 ## Why Pyrrhotite Foundation Damage Is So Catastrophic
 
 Pyrrhotite-induced damage cannot be reversed. Unlike normal freeze-thaw cycle cracking that can be repaired with [crack injection](/services/foundation-crack-injection) ($800-$1,200 per crack), pyrrhotite-affected foundations require complete replacement through a process of lifting the home and rebuilding the foundation, costing between $150,000 to $250,000 or more. Understanding the difference between cement and concrete matters here: it is the aggregate (stone) in the concrete, not the cement binder, that contains pyrrhotite. See our [foundation repair vs replacement guide](/blog/foundation-repair-vs-replacement) for more on when full replacement is truly necessary.
+
+<img src="/images/blog/crumbling-foundations-map-2024.jpg" alt="Map of pyrrhotite-affected towns in Massachusetts and Connecticut as of August 2024" width="1256" height="813" loading="lazy" />
+
+<img src="/images/blog/crumbling-foundations-map-2023.jpg" alt="Map of crumbling foundation affected towns in Connecticut and Massachusetts 2023" width="1400" height="1081" loading="lazy" />
+
+<img src="/images/blog/crumbling-foundation-damage-2.jpg" alt="Condo foundation showing severe crumbling concrete from pyrrhotite contamination" width="1200" height="675" loading="lazy" />
+
+<img src="/images/blog/crumbling-foundation-damage-3.jpg" alt="Close-up of crumbling concrete foundation wall deterioration" width="770" height="481" loading="lazy" />
 
 ## Warning Signs of Crumbling Foundation Concrete
 

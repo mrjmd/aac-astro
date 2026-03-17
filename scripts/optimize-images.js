@@ -3,8 +3,8 @@
 /**
  * Image Optimization Script
  *
- * Converts all .jpg files in public/images/projects/ to optimized WebP
- * at three responsive sizes: 400w, 800w, and 1400w (full-size).
+ * Converts all .jpg files in public/images/projects/ and public/images/blog/
+ * to optimized WebP at three responsive sizes: 400w, 800w, and 1400w (full-size).
  *
  * Usage: npm run optimize:images
  *
@@ -15,7 +15,7 @@ import { readdir, stat } from 'fs/promises';
 import { join, parse } from 'path';
 import sharp from 'sharp';
 
-const PROJECTS_DIR = 'public/images/projects';
+const IMAGE_DIRS = ['public/images/projects', 'public/images/blog'];
 const QUALITY = 82;
 const SIZES = [
   { suffix: '-400w', width: 400 },
@@ -23,23 +23,28 @@ const SIZES = [
   { suffix: '', width: 1400 },
 ];
 
-async function main() {
-  const entries = await readdir(PROJECTS_DIR);
+async function processDir(dir) {
+  let entries;
+  try {
+    entries = await readdir(dir);
+  } catch {
+    return { processed: 0, skipped: 0 };
+  }
   const jpgs = entries.filter(f => f.endsWith('.jpg'));
 
-  console.log(`Found ${jpgs.length} .jpg files in ${PROJECTS_DIR}\n`);
+  console.log(`Found ${jpgs.length} .jpg files in ${dir}`);
 
   let processed = 0;
   let skipped = 0;
 
   for (const jpg of jpgs) {
-    const srcPath = join(PROJECTS_DIR, jpg);
+    const srcPath = join(dir, jpg);
     const { name } = parse(jpg);
     const srcStat = await stat(srcPath);
     let allExist = true;
 
     for (const { suffix } of SIZES) {
-      const outPath = join(PROJECTS_DIR, `${name}${suffix}.webp`);
+      const outPath = join(dir, `${name}${suffix}.webp`);
       try {
         const outStat = await stat(outPath);
         if (outStat.mtimeMs < srcStat.mtimeMs) {
@@ -60,7 +65,7 @@ async function main() {
     const image = sharp(srcPath);
 
     for (const { suffix, width } of SIZES) {
-      const outPath = join(PROJECTS_DIR, `${name}${suffix}.webp`);
+      const outPath = join(dir, `${name}${suffix}.webp`);
       await image
         .clone()
         .resize({ width, withoutEnlargement: true })
@@ -74,7 +79,20 @@ async function main() {
     }
   }
 
-  console.log(`\nDone! ${processed} images processed, ${skipped} skipped (already up-to-date)`);
+  return { processed, skipped };
+}
+
+async function main() {
+  let totalProcessed = 0;
+  let totalSkipped = 0;
+
+  for (const dir of IMAGE_DIRS) {
+    const { processed, skipped } = await processDir(dir);
+    totalProcessed += processed;
+    totalSkipped += skipped;
+  }
+
+  console.log(`\nDone! ${totalProcessed} images processed, ${totalSkipped} skipped (already up-to-date)`);
 }
 
 main().catch(err => {

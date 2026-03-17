@@ -7,8 +7,8 @@ publishDate: 2025-03-04
 author: "Matt Davis"
 category: "case-studies"
 tags: ["case study", "water intrusion", "Massachusetts", "polyurethane injection"]
-heroImage: "/images/projects/east-bridgewater-crack-injection-2025-10-before.jpg"
-heroImageAlt: "Active basement wall crack leak before injection repair"
+heroImage: "/images/blog/framingham-leak-1.jpg"
+heroImageAlt: "Active water leak streaming through foundation crack in Framingham basement"
 featured: false
 targetLocation: "Framingham, MA"
 relatedPosts:
@@ -31,6 +31,12 @@ The answer is yes — and in fact, wet conditions can actually help ensure a bet
 ## The Solution
 
 Our team employed [polyurethane crack injection](/services/foundation-crack-injection) technology, which functions effectively even in wet conditions. The moisture actually helps ensure complete material penetration, creating a permanent seal from within rather than relying on surface-level patches.
+
+<img src="/images/blog/framingham-leak-2.jpg" alt="Close-up of active water leak through foundation crack in Framingham basement" width="800" height="1062" loading="lazy" />
+
+<img src="/images/blog/framingham-leak-3.jpg" alt="Polyurethane injection ports installed on leaking Framingham foundation crack" width="800" height="1062" loading="lazy" />
+
+<img src="/images/blog/framingham-leak-4.jpg" alt="Foundation crack sealed after polyurethane injection in Framingham" width="800" height="1062" loading="lazy" />
 
 The process involved injecting high-quality polyurethane resin through the full 8-10 inches of concrete wall thickness. The resin expands upon contact with water, filling every crevice and establishing a watertight barrier. By project completion, the transformation was dramatic—a flooded, compromised basement became dry and secure.
 

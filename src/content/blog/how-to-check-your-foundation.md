@@ -7,8 +7,8 @@ publishDate: 2024-10-07
 author: "Matt Davis"
 category: "guides"
 tags: ["foundation inspection", "warning signs", "homeowner tips", "maintenance"]
-heroImage: "/images/projects/norwell-crack-injection-2025-10-before.jpg"
-heroImageAlt: "Visible foundation crack requiring inspection in Norwell basement"
+heroImage: "/images/blog/check-foundation-homeowner.jpg"
+heroImageAlt: "Homeowner inspecting basement foundation wall for cracks and damage signs"
 featured: true
 relatedPosts:
   - "signs-of-foundation-problems"

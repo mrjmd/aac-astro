@@ -7,8 +7,8 @@ publishDate: 2024-12-03
 author: "Matt Davis"
 category: "case-studies"
 tags: ["case study", "settling crack", "water intrusion", "Massachusetts"]
-heroImage: "/images/projects/duxbury-crack-injection-2026-03-before.jpg"
-heroImageAlt: "Foundation settling crack before injection repair in basement"
+heroImage: "/images/blog/shrewsbury-flood-1.jpg"
+heroImageAlt: "Foundation settling crack behind wall paneling in flooded Shrewsbury basement"
 featured: false
 targetLocation: "Shrewsbury, MA"
 relatedPosts:
@@ -25,6 +25,10 @@ A homeowner in Shrewsbury discovered their finished basement had flooded due to 
 ## The Assessment
 
 Our team inspected the property and determined the crack posed no structural risk, though it required professional repair to prevent future water damage. The crack had been hidden behind wall paneling for years — a common problem in finished basements where homeowners cannot see warning signs like water stains, white powder on basement walls (efflorescence), or a musty smell in the basement.
+
+<img src="/images/blog/shrewsbury-flood-2.jpg" alt="Foundation crack exposed behind removed wall paneling in Shrewsbury basement" width="800" height="1062" loading="lazy" />
+
+<img src="/images/blog/shrewsbury-flood-3.jpg" alt="Crack injection repair in progress on Shrewsbury basement foundation" width="800" height="1062" loading="lazy" />
 
 ## The Solution: Crack Injection Through Finished Walls
 

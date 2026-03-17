@@ -7,8 +7,8 @@ publishDate: 2024-09-30
 author: "Matt Davis"
 category: "guides"
 tags: ["winter maintenance", "seasonal tips", "home protection", "prevention"]
-heroImage: "/images/projects/weymouth-crack-injection-2026-01-before.jpg"
-heroImageAlt: "Foundation crack before winter repair in Weymouth basement"
+heroImage: "/images/blog/winter-maintenance-home.jpg"
+heroImageAlt: "Home exterior in winter showing proper maintenance preparation for cold weather"
 featured: false
 relatedPosts:
   - "10-essential-tips-worry-free-foundation"

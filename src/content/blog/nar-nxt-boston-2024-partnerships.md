@@ -7,8 +7,8 @@ publishDate: 2024-11-15
 author: "Matt Davis"
 category: "news"
 tags: ["events", "real estate", "Massachusetts", "partnerships"]
-heroImage: "/images/projects/boston-crack-injection-2025-09-after.jpg"
-heroImageAlt: "Professional foundation crack injection repair completed in Boston"
+heroImage: "/images/blog/nar-nxt-2024-photo-backdrop.jpg"
+heroImageAlt: "Luc Richard and Matt Davis at NAR NXT Boston 2024 conference photo backdrop"
 featured: false
 relatedPosts:
   - "ashi-new-england-conference-2024"
@@ -20,6 +20,8 @@ relatedServices:
 ---
 
 Attack A Crack partners Luc Richard and Matt Davis attended the NAR Conference in Boston. We were excited about connecting with realtors—these partnerships naturally extend our work and create smoother transactions for everyone involved.
+
+<img src="/images/blog/nar-nxt-2024-badge.jpg" alt="NAR NXT 2024 conference badge with Attack A Crack hat" width="800" height="1066" loading="lazy" />
 
 ## A Key Conversation
 

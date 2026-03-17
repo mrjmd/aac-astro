@@ -7,16 +7,16 @@
 ---
 
 ## 1. Executive Summary
-The data confirms a multi-phase shift in performance. While the **transition to Squarespace (March/April 2024)** created a clear technical "floor" that suppressed recovery, your intuition was correct: **The decline began mid-2023**, while still on the WordPress platform. 
+The data confirms a multi-phase evolution in performance across three platforms. While the **transition to Squarespace (March/April 2024)** provided critical stabilization that halted a mid-2023 decline, the upcoming move to Astro is positioned to unlock the technical ceiling and scale the momentum seen in the 2025 content surge.
 
 ![Traffic Migration Trend](./migration-trend.svg)
 
 ### **Key Inflection Points:**
 1.  **May 2022 (Peak WordPress):** Highest historical authority (316 organic visits).
 2.  **2023 "The Slow Bleed":** Decline from 316 to 119 while still on WordPress. Likely caused by unoptimized technical debt and early Google EEAT updates.
-3.  **April 2024 (Squarespace Move):** Traffic bottomed out at 93. The platform change "cemented" the decline, creating a ceiling for growth.
-4.  **March 2025 (MA Content Surge):** Massively successful recovery driven by the new Massachusetts branch's marketing and relationship building.
-5.  **March 2026 (All-Time High):** Currently at 558 visits, proving the content value is high, but the branch-level traffic is imbalanced.
+3.  **April 2024 (Squarespace Move):** Traffic bottomed out at 93. The migration served as the **inflection point** that halted the 2023 decline and triggered an immediate, though initially slow, rebound (to 149 by October).
+4.  **March 2025 (The Rapid Recovery Explosion):** Content-led surge (428) driven by the new Massachusetts branch's marketing and relationship building.
+5.  **March 2026 (All-Time High):** Currently at 558 visits, proving the content value is high, but the platform is dragging its feet.
 
 ---
 
@@ -27,26 +27,28 @@ The data confirms a multi-phase shift in performance. While the **transition to 
 | **May 2022** | **316 (Peak)** | WordPress | Peak historical authority. |
 | **Jan – June 2023** | **227 - 279** | WordPress | The start of the "Slow Bleed." Authority began to erode. |
 | **July – Dec 2023** | **119 - 185** | WordPress | Significant decline. Lost ~50% of peak traffic *before* the move. |
-| **Mar – Apr 2024** | **93 - 95** | **Cutover** | Migration to Squarespace. Traffic bottomed out at 30% of peak. |
-| **May – Dec 2024** | **113 - 123** | Squarespace | "The Stagnation Period." Zero growth for 8 months. |
-| **March 2025** | **428** | Squarespace | **The Recovery.** Content-led surge (Recent blog/EEAT work). |
+| Mar – Apr 2024 | **93 - 95** | **Cutover** | Migration to Squarespace. Traffic bottomed out at 30% of peak. |
+| May – Dec 2024 | **113 - 149** | Squarespace | **"The Slow Rebound Period."** Recovery begins immediately post-migration. |
+| March 2025 | **428** | Squarespace | **"The Rapid Recovery Explosion."** Content-led surge (MA branch outreach). |
 | **March 2026** | **554** | Squarespace | Current state. High content value, low platform performance. |
 
 ---
 
 ## 3. Analysis: Why did it fall *before* the move?
 
-The 2023 decline (from 316 to 119) suggests two likely factors:
-1.  **Google Algorithm Shifts (EEAT):** 2023 saw several "Helpful Content Updates." If the WordPress site had technical debt (slow plugins, poor mobile UX, or thin content), Google began devaluing it.
-2.  **Competitive Pressure:** This is the same period where Groundworks and other national franchises aggressively expanded their digital footprints.
+The 2023 decline (from 316 to 119) suggests two primary factors:
+1.  **Google Algorithm Shifts (EEAT):** 2023 saw several "Helpful Content Updates" where Google began rewarding "Demonstrated Experience." The legacy WordPress site, likely carrying technical debt and stagnant content, lost authority compared to more active rivals.
+2.  **Increased Local Sophistication:** Regional specialists like **A-1 Foundation Crack Repair** and **Connecticut Basement Systems** aggressively expanded their content footprints during this period (e.g., A-1's *Crackman Podcast* and expert-led guides), opening a "Content Gap" that Attack A Crack failed to close before the Squarespace migration.
 
 ---
 
-## 4. The Squarespace "Floor" (2024 Impact)
+## 4. The Squarespace "Stabilization" (2024 Rebound)
 
-When the migration happened in early 2024, it didn't just "fail to fix" the decline—it **cemented it**.
-*   **The Loss of Momentum:** On WordPress, you had a high "Organic Keyword Count" (516). Within two months of moving to Squarespace, that dropped and stayed flat.
-*   **The Technical Ceiling:** Squarespace’s rigid URL structure and slower load times (compared to a well-tuned WordPress or Astro site) likely prevented the "Pre-Launch Surge" of 2025 from happening sooner.
+While the migration to Squarespace in early 2024 initially bottomed out at 93-95 visits, the platform actually served as a **Stabilization Layer** that halted the 2023 "Slow Bleed."
+
+*   **Immediate Keyword Rebound:** Far from "staying flat," your Organic Keyword count jumped from **145 in April** to **274 in July 2024** (+89%). This proves that the new site structure was cleaner and more "crawlable" for Google than the legacy WordPress site.
+*   **The Growth Foundation:** Squarespace provided the stability needed to begin the recovery. The traffic increase from 95 (April) to 149 (October) showed that the site was once again gaining trust, setting the stage for the massive 2025 surge.
+*   **The Technical Opportunity:** While Squarespace stabilized the site, the upcoming move to Astro is about **Unlocking the Ceiling.** Astro’s superior speed and customizable URL structures will allow the branch-level content (which proved it can drive 2x growth in MA) to rank even higher and faster in the competitive CT market.
 
 ---
 
