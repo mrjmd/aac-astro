@@ -24,7 +24,9 @@ import '../../styles/global.css';
 </head>
 <body class="min-h-screen bg-white flex items-center justify-center p-8">
   <div class="text-center max-w-sm">
-    <img src="/images/logo.webp" alt="Attack A Crack" class="h-20 mx-auto mb-8" />
+    <div id="logos" class="flex items-center justify-center gap-4 mb-8">
+      <img src="/images/logo.webp" alt="Attack A Crack" class="h-20" />
+    </div>
 
     <div id="qr-container" class="mx-auto mb-6"></div>
 
@@ -44,9 +46,28 @@ import '../../styles/global.css';
       ed: 'Edward Crowell',
     };
 
+    const PARTNER_LOGOS: Record<string, string> = {
+      exit: '/images/partners/exit.webp',
+    };
+
     const params = new URLSearchParams(window.location.search);
     const ref = params.get('ref') || 'ed';
-    const captureUrl = `${window.location.origin}/partners/capture?ref=${ref}`;
+    const partner = params.get('partner');
+
+    // Add partner logo if specified
+    if (partner && PARTNER_LOGOS[partner]) {
+      const logos = document.getElementById('logos')!;
+      const img = document.createElement('img');
+      img.src = PARTNER_LOGOS[partner];
+      img.alt = partner;
+      img.className = 'h-20';
+      logos.appendChild(img);
+    }
+
+    // Build capture URL — pass partner param through too
+    const captureParams = new URLSearchParams({ ref });
+    if (partner) captureParams.set('partner', partner);
+    const captureUrl = `${window.location.origin}/partners/capture?${captureParams}`;
 
     // Generate QR code
     const qr = qrcode(0, 'M');

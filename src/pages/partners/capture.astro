@@ -14,9 +14,9 @@ import '../../styles/global.css';
 </head>
 <body class="min-h-screen bg-gray-50 flex items-center justify-center p-4">
   <div class="w-full max-w-md">
-    <!-- Logo -->
-    <div class="text-center mb-6">
-      <img src="/images/logo.webp" alt="Attack A Crack" class="h-16 mx-auto" />
+    <!-- Logos -->
+    <div id="logos" class="flex items-center justify-center gap-4 mb-6">
+      <img src="/images/logo.webp" alt="Attack A Crack" class="h-16" />
     </div>
 
     <!-- Form -->
@@ -75,16 +75,58 @@ import '../../styles/global.css';
       <div class="text-5xl mb-4">&#10003;</div>
       <h2 class="text-2xl font-bold text-aac-dark mb-2">You're In!</h2>
       <p class="text-gray-600 mb-6">Thanks for connecting. Save our contact info to stay in touch.</p>
-      <a
-        href="/partners/attack-a-crack.vcf"
-        class="block w-full bg-aac-blue text-white font-bold py-4 rounded-lg text-lg hover:brightness-90 active:brightness-80 transition text-center"
-      >
-        Save Contact
-      </a>
+      <div class="space-y-3">
+        <a
+          href="/partners/attack-a-crack.vcf"
+          class="block w-full bg-aac-blue text-white font-bold py-4 rounded-lg text-lg hover:brightness-90 active:brightness-80 transition text-center"
+        >
+          Save Attack A Crack Contact
+        </a>
+        <a
+          id="referrer-vcf"
+          href="#"
+          class="block w-full bg-aac-dark text-white font-bold py-4 rounded-lg text-lg hover:brightness-125 active:brightness-150 transition text-center hidden"
+        >
+          Save Contact
+        </a>
+      </div>
     </div>
   </div>
 
   <script>
+    // Referrer data — add new referrers here
+    const REFERRERS: Record<string, { name: string; vcf: string }> = {
+      ed: { name: 'Edward Crowell', vcf: '/partners/edward-crowell.vcf' },
+    };
+
+    // Partner logos — add new partner orgs here
+    const PARTNER_LOGOS: Record<string, string> = {
+      exit: '/images/partners/exit.webp',
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const ref = params.get('ref');
+    const partner = params.get('partner');
+
+    // Add partner logo if specified
+    if (partner && PARTNER_LOGOS[partner]) {
+      const logos = document.getElementById('logos')!;
+      const img = document.createElement('img');
+      img.src = PARTNER_LOGOS[partner];
+      img.alt = partner;
+      img.className = 'h-16';
+      logos.appendChild(img);
+    }
+
+    // Set up referrer vCard button
+    const referrer = ref ? REFERRERS[ref] : undefined;
+    if (referrer) {
+      const vcfBtn = document.getElementById('referrer-vcf') as HTMLAnchorElement;
+      vcfBtn.href = referrer.vcf;
+      vcfBtn.textContent = `Save ${referrer.name}'s Contact`;
+      vcfBtn.classList.remove('hidden');
+    }
+
     const form = document.getElementById('lead-form') as HTMLFormElement;
     const formContainer = document.getElementById('form-container')!;
     const successContainer = document.getElementById('success-container')!;
@@ -118,7 +160,7 @@ import '../../styles/global.css';
         const res = await fetch('/api/leads', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ name, phone, email, ref: new URLSearchParams(window.location.search).get('ref') || undefined }),
+          body: JSON.stringify({ name, phone, email, ref: ref || undefined }),
         });
 
         const data = await res.json();
