@@ -10,7 +10,7 @@ faqs:
   - question: "Why does my bulkhead leak?"
     answer: "Bulkheads leak when the seal between the precast unit and your poured foundation fails. The original rubber or foam gasket deteriorates over time, and New England's freeze-thaw cycles widen the gap. Settling can also shift the bulkhead relative to the foundation, breaking the seal. The result is water pooling on the stairs and flowing into your basement."
   - question: "Can you repair any type of bulkhead?"
-    answer: "Yes. We repair all types of bulkhead doors including precast concrete, steel, and combination units. Our urethane injection method works on any bulkhead-to-foundation connection because we're sealing the joint itself, not the door. Whether your bulkhead is old or relatively new, the injection process creates a permanent, flexible seal."
+    answer: "Typically yes — we repair precast concrete, steel, and combination bulkheads. Our urethane injection method works on any bulkhead-to-foundation connection because we're sealing the joint itself, not the door. The one exception is full CMU block bulkheads, which may require exterior excavation. We'll assess your bulkhead and let you know — and if it's outside our scope, we'll refer you to someone who can help."
   - question: "How long does bulkhead repair take?"
     answer: "Most bulkhead repairs are completed in 2-3 hours. The urethane seal begins working immediately upon injection, expanding to fill every void in the joint. We recommend waiting 24 hours before heavy rain exposure for full cure, but the repair is waterproof from the moment it's applied."
   - question: "Is bulkhead replacement necessary?"
@@ -37,11 +37,13 @@ A leaking bulkhead door turns every rainstorm into a basement flooding event. Wa
 
 The connection between your precast bulkhead unit and poured foundation is the weak point — specifically the cold joint where two different concrete pours meet. This joint fails because:
 
+- **Frost heave**: Moisture freezes under the bulkhead stairs, soil expands, and heaves the precast unit upward — breaking the gasket seal. This is the #1 cause of bulkhead leaks in New England
 - **Rubber gasket deterioration**: The original rubber gasket or foam seal breaks down from UV, freeze-thaw, and age
 - **Settling creates gaps**: As your home settles, the bulkhead shifts relative to the foundation
 - **Hydrostatic pressure**: Water pressure from saturated soil forces water through gaps as small as 1/64"
 - **Freeze-thaw damage**: Ice expansion widens existing gaps every winter — especially in New England's glacial till soils
 - **Poor original installation**: Many bulkheads were installed without adequate waterproof sealant at the foundation joint
+- **Mounting bolt leaks**: Most precast bulkheads are secured to the foundation with 4 mounting bolts — each one is a potential leak point where the seal can fail. Our repair addresses these too
 
 ### Massachusetts vs. Connecticut Bulkheads
 

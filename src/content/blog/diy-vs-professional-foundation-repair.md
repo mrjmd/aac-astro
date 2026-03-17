@@ -138,7 +138,7 @@ Home improvement stores sell injection kits for foundation cracks. Here's our ho
 
 | DIY Kit | Professional Injection |
 |---------|----------------------|
-| Low-pressure application | High-pressure injection at 100 PSI |
+| Basic application | High-pressure injection at 100 PSI |
 | Limited material volume | Unlimited material as needed |
 | Rigid epoxy only | Flexible urethane or structural epoxy |
 | Surface preparation limited | Complete crack preparation |

@@ -12,7 +12,7 @@ At Attack A Crack, we're specialists—not generalists. We do specific things ex
 
 ### What We Do
 
-**Foundation Repair (CT & MA)**
+**Foundation Repair (CT, MA & New England)**
 - Wall crack injection and repair
 - Bulkhead waterproofing
 - Carbon fiber reinforcement
@@ -152,15 +152,21 @@ Preservation contractors familiar with your local historic commission requiremen
 
 ---
 
-## We Can Still Help
+## Call Us First
 
-Even when a project isn't in our wheelhouse, we're happy to:
+Even when a project isn't in our wheelhouse, **call us first**. We have no incentive to recommend services we don't provide — so you can trust our advice.
 
-**Assess and advise** – We'll look at your situation and tell you honestly what type of contractor you need.
+**Waterproofing?** Call us first. We'll assess your situation honestly and only recommend waterproofing if it's truly needed. Many homeowners spend thousands on waterproofing systems when a crack injection would have solved the problem. If you do need waterproofing, we'll refer you to someone we trust.
 
-**Identify the real problem** – Sometimes what looks like one issue is actually another. We can help clarify what's actually happening.
+**Structural engineering?** We can often save you the cost of an engineer's report by giving our assessment first. After 20+ years of foundation work, we can tell you whether your issue genuinely requires engineering — and if it does, we'll refer you to a PE we trust.
 
-**Provide referrals** – We've built relationships with other contractors and can suggest reputable companies for work outside our scope.
+**Excavation?** We'll make sure interior repair isn't possible first. Interior crack injection is a fraction of the cost of exterior excavation, and in most cases it's the better solution. If exterior work is truly needed, we'll tell you.
+
+**Assess and advise** — We'll look at your situation and tell you honestly what type of contractor you need.
+
+**Identify the real problem** — Sometimes what looks like one issue is actually another. We can help clarify what's actually happening.
+
+**Provide referrals** — We've built relationships with other contractors and can suggest reputable companies for work outside our scope.
 
 ---
 

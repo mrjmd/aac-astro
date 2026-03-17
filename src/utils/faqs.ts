@@ -5,7 +5,7 @@ export const homeFaqs = [
 	},
 	{
 		question: "How does foundation crack repair work?",
-		answer: `We fix foundation cracks using <a href="/services/foundation-crack-injection" class="text-aac-blue hover:underline font-semibold">low-pressure injection</a> of epoxy or polyurethane resin directly into the crack, sealing it from the inside out. The process takes about 30–60 minutes per crack with no excavation required. The injected resin fills the entire crack — from the interior surface through to the outside soil — creating a permanent, waterproof bond. Every repair comes with our lifetime transferable guarantee.`
+		answer: `We fix foundation cracks using <a href="/services/foundation-crack-injection" class="text-aac-blue hover:underline font-semibold">high-pressure injection</a> of epoxy or polyurethane resin directly into the crack, sealing it from the inside out. The process takes about 30–60 minutes per crack with no excavation required. The injected resin fills the entire crack — from the interior surface through to the outside soil — creating a permanent, waterproof bond. Every repair comes with our lifetime transferable guarantee.`
 	},
 	{
 		question: "How much does foundation crack repair cost?",

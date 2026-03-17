@@ -10,7 +10,7 @@ faqs:
   - question: "What are carbon fiber stitches?"
     answer: "Carbon fiber stitches are Kevlar-grid reinforcement strips saturated in structural epoxy and embedded across foundation cracks. With 800,000 PSI tensile strength—4 to 10 times stronger than high-strength steels—they bridge both sides of a crack, distributing stress across a wider area. They provide permanent structural reinforcement without the bulk, excavation, or corrosion risk of the steel I-beams they've replaced."
   - question: "When are carbon fiber stitches needed?"
-    answer: "Carbon fiber is recommended when cracks show signs of structural movement—diagonal cracks from corners, stair-step patterns, cracks wider than 1/4 inch, or cracks that have reopened after previous repair. We also use them as preventive reinforcement on older foundations or before adding load from home additions. During your free consultation, we'll assess whether injection alone is sufficient or if carbon fiber reinforcement is warranted."
+    answer: "Carbon fiber is recommended when cracks show signs of structural movement—stair-step patterns, cracks wider than 1/4 inch, horizontal cracks with displacement, or cracks that have reopened after previous repair. We also use them as preventive reinforcement on older foundations or before adding load from home additions. During your free consultation, we'll assess whether injection alone is sufficient or if carbon fiber reinforcement is warranted."
   - question: "Are carbon fiber repairs visible?"
     answer: "The stitches are very low-profile—less than 1/8 inch when installed. They can be smoothed, skim-coated, and painted to blend with your wall. Most homeowners find them virtually invisible, and they're completely hidden if you later finish the basement with drywall or paneling."
   - question: "How long do carbon fiber repairs last?"
@@ -60,7 +60,6 @@ Carbon fiber staples and straps have largely replaced the steel I-beam reinforce
 ### When Carbon Fiber Is Needed
 
 **Structural Crack Patterns**
-- Diagonal cracks from corners of windows/doors
 - Stair-step cracks in block foundations
 - Horizontal cracks with wall displacement
 - Cracks wider than 1/4 inch
@@ -83,7 +82,7 @@ Carbon fiber staples and straps have largely replaced the steel I-beam reinforce
 We grind a shallow channel across the crack where the stitch will be installed. The concrete surface is cleaned and profiled for optimal bonding.
 
 **Step 2: Crack Injection**
-Before installing stitches, we inject the crack to seal and fill it completely. This addresses water infiltration and provides a stable base.
+Before installing stitches, we will often inject the crack to seal and fill it. This addresses water infiltration and provides a stable base.
 
 **Step 3: Stitch Installation**
 Carbon fiber fabric is saturated with structural epoxy and embedded into the prepared channel. The material bonds permanently to the concrete.
@@ -104,8 +103,7 @@ Once cured, the repair can be smoothed and painted to blend with surrounding wal
 
 ### What Carbon Fiber Staples Cost
 
-Carbon fiber stitches typically cost **$200-$300 per stitch**. Most cracks need 2-5 stitches depending on length and severity. For severe wall stabilization requiring full carbon fiber straps or grids, costs range from **$6,000-$15,000** depending on wall size and number of straps needed. We always combine stitches with crack injection for a complete structural and waterproof repair.
-
+Carbon fiber stitches typically cost **$200-$300 per stitch**. Most cracks need 2-5 stitches depending on length and severity. For severe wall stabilization requiring full carbon fiber straps or grids, costs range from **$6,000-$15,000** depending on wall size and number of straps needed. 
 ### When NOT to Use Carbon Fiber
 
 We believe in honest recommendations — carbon fiber isn't always the right answer:

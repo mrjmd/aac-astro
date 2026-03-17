@@ -1,6 +1,6 @@
 # Manual QA Checklist
 
-> **How to use:** Go through each page, check the box when reviewed, add notes in the Notes column. When complete, Claude will address all notes in a single pass.
+> **How to use:** Go through each page, check the box when reviewed, add notes on the line below. When complete, Claude will address all notes in a single pass.
 >
 > **Preview:** https://aac-astro.vercel.app
 >
@@ -12,134 +12,191 @@
 
 These apply site-wide. Check once, not per-page.
 
-- [ ] **Navigation** — All nav links work (Services, Locations, About, Updates, Partners)
-- [ ] **Footer** — All footer links work, phone numbers correct, addresses correct
-- [ ] **Contact form** — "Text Us Photos" modal submits correctly
-- [ ] **Phone numbers** — CT: (860) 573-8760, MA: (617) 668-1677
-- [ ] **Addresses** — CT: 23 Elsmere Road, Amston, CT 06231; MA: 30 Randlett St #2, Quincy, MA 02169
-- [ ] **"260+ Google reviews" claim** — Still current?
+- [x] **Navigation** — All nav links work (Services, Locations, About, Updates, Partners)
+- [x] **Footer** — All footer links work, phone numbers correct, addresses correct
+- [x] **Contact form** — "Text Us Photos" modal submits correctly
+- [x] **Phone numbers** — CT: (860) 573-8760, MA: (617) 668-1677
+- [x] **Addresses** — CT: 23 Elsmere Road, Amston, CT 06231; MA: 30 Randlett St #2, Quincy, MA 02169
+- [x] **"260+ Google reviews" claim** — Still current?
 - [ ] **Mobile responsive** — Spot-check on iPhone/Android
-- [ ] **Favicon** — Displays correctly in browser tab
-- [ ] **Schema** — Validates in Google Rich Results Test (spot-check 2-3 pages)
-
-**Notes:**
-
+- [x] **Favicon** — Displays correctly in browser tab
+- [ ] **Schema** — Paste page source into [Schema Markup Validator](https://validator.schema.org/) (spot-check 2-3 pages)
 
 ---
 
 ## Core Pages (5)
 
-| # | Page | URL | Reviewed | Notes |
-|---|------|-----|----------|-------|
-| 1 | Homepage | [/](https://aac-astro.vercel.app/) | [ ] | |
-| 2 | About | [/about](https://aac-astro.vercel.app/about) | [ ] | |
-| 3 | What We Don't Do | [/what-we-dont-do](https://aac-astro.vercel.app/what-we-dont-do) | [ ] | |
-| 4 | Privacy Policy | [/privacy](https://aac-astro.vercel.app/privacy) | [ ] | |
-| 5 | Terms of Service | [/terms](https://aac-astro.vercel.app/terms) | [ ] | |
+- [ ] **Homepage** — [Preview](https://aac-astro.vercel.app/)
+  - Notes: The homepage hero needs to be updated so it's not only just images from a single job. It should show different jobs instead. That can be a post-launch task, but it should be a fast follow. The images showing under the "From Our Blog" section on the home page are not good; they're rotated sideways. I thought we had fixed that, but I see a wall crack that's about floor cracks. I see an article about carbon fiber staples that does not show any staples, and it looks like they're both sideways, so we gotta fix that. And look into whether there's a broader issue with blog posts still having sideways images. Under "How does foundation crack repair work?" in the Frequently Asked Questions section of the home page, we're still saying that we use low-pressure injection, which is specifically inaccurate. I thought we had fixed this throughout the site, so that's concerning. We need to do an audit and make sure that we're not claiming low pressure anywhere. We actually do a higher pressure injection of 95 to 100 psi, higher than the hand pumps. It's part of our value proposition. 
+- [ ] **About** — [Preview](https://aac-astro.vercel.app/about)
+  - Notes: in the About page, it could say at the very top "50+ years of experience" because it's referencing experience not in business. Down in the why trust attack a crack section. HIC licensed and certified. Let's remove the construction supervisor license in MA line. Instead of "Ashi affiliate member", I wonder if we shouldn't just say "active locally" or "local memberships" or something and make it more broad. Then we list underneath: we're members of Ashi, we're members of G Bar, we're members of local chambers of commerce, things like that. It says 260 plus 5-star reviews and then a 4.9-star average, but actually we're a 5.0-star average. Instead of "Meet the team in person", I think it should be "Contact the team today" or something. We're probably not going to meet you unless you actually book us for a job. You can talk to us, though, for free. 
+- [ ] **What We Don't Do** — [Preview](https://aac-astro.vercel.app/what-we-dont-do)
+  - Notes: where is the "What We Don't Do" page even linked from? It seems like an important page, but I don't see it cross-linked a lot of places, so I'm curious about that. I'd never actually looked at this page until this moment. Under "What We Do", Foundation Repair, it says CT and MA instead of CT, MA, and New England. Let's fix that. One thing I would want us to be emphasizing on this page is that you can always call us first. One of the reasons to call us first is because we will never try to upsell you into things that we don't do, because we don't make any money off of that. I don't want to put it that directly, but that's the idea to convey. I don't want to use upsell, but we want to convey that idea. We don't do basement waterproofing systems or sump pump installation, but you can call us and you can trust that we would only recommend that if it's really needed, because we don't do it. We can almost always refer you to someone. Same thing with all of these. Structural engineer: we don't do it, but we can often save you the need for a structural engineer by giving you our advice first. If we're not confident and we do think you should speak to a structural engineer, we'll tell you so and we'll give you a referral to one if you'd like. Excavation contractors? Ensure that they carry proper insurance for this work and that the repair isn't possible to do from the interior at a much more affordable cost. 
+- [ ] **Privacy Policy** — [Preview](https://aac-astro.vercel.app/privacy)
+  - Notes: it says Attack A Crack Foundation Repair operates the website, but it's really just Attack A Crack. 
+- [ ] **Terms of Service** — [Preview](https://aac-astro.vercel.app/terms)
+  - Notes: it says Attack A Crack Foundation Repair operates the website, but it's really just Attack A Crack. Multiple places it references an on-site consultation. We shouldn't say on-site. Contact us for a consultation is all it needs to say. Don't include "on-site". 
 
 ---
 
 ## Services (7)
 
-| # | Page | URL | Reviewed | Notes |
-|---|------|-----|----------|-------|
-| 1 | Services Hub | [/services](https://aac-astro.vercel.app/services) | [ ] | |
-| 2 | Foundation Crack Injection | [/services/foundation-crack-injection](https://aac-astro.vercel.app/services/foundation-crack-injection) | [ ] | |
-| 3 | Wall Crack Repair | [/services/wall-crack-repair](https://aac-astro.vercel.app/services/wall-crack-repair) | [ ] | |
-| 4 | Leaky Bulkhead Repair | [/services/leaky-bulkhead-repair](https://aac-astro.vercel.app/services/leaky-bulkhead-repair) | [ ] | |
-| 5 | Carbon Fiber Stitches | [/services/carbon-fiber-stitches](https://aac-astro.vercel.app/services/carbon-fiber-stitches) | [ ] | |
-| 6 | Sewer/Conduit Repair | [/services/sewer-well-conduit-line-repair](https://aac-astro.vercel.app/services/sewer-well-conduit-line-repair) | [ ] | |
-| 7 | Free Consultations | [/services/free-foundation-consultations](https://aac-astro.vercel.app/services/free-foundation-consultations) | [ ] | |
+- [ ] **Services Hub** — [Preview](https://aac-astro.vercel.app/services)
+  - Notes: the concrete repair and resurfacing image on the main services page is still sideways. The "dive deeper" section doesn't show any thumbnail images for these posts. The Proven Methods Lifetime Guarantee section has a sideways image. Can we please just audit the whole site for sideways fucking images? I thought we did this. 
+- [ ] **Foundation Crack Injection** — [Preview](https://aac-astro.vercel.app/services/foundation-crack-injection)
+  - Notes: it says "low pressure" in the opening paragraph of foundation crack injection. It's not low pressure injection; it's high pressure injection. We got to audit the whole fucking site for this because you screwed it up. "permanent repair that’s as strong as — or stronger than — the original concrete" - Let's just say it's stronger than the original concrete. We don't inject stair-step cracks and block our masonry foundations typically. We also don't inject basement floor cracks. I'd also like to remove the line about 91+ documented projects on this page. 
+- [ ] **Wall Crack Repair** — [Preview](https://aac-astro.vercel.app/services/wall-crack-repair)
+  - Notes: let's get the 91+ documented projects thing off of here too. 
+- [ ] **Leaky Bulkhead Repair** — [Preview](https://aac-astro.vercel.app/services/leaky-bulkhead-repair)
+  - Notes: the "Why bulkheads leak" section doesn't mention heaving, which is actually the primary cause of these issues. Moisture gets up underneath the stairs and freezes, and that causes the soil underneath the stairs to expand and heave the entire precast bulkhead upwards. That causes the gasket to fail. One thing that's not mentioned in this page anywhere that I see is that the four bolts that hold the bulkhead to the main foundation are often failure points as well. You may see leaking inside your main basement from one of the four bolts, and our repair method will also address this. Under the Frequently Asked Questions, when it says "Can you repair any type of bulkhead?" The answer is not quite a simple yes. We can typically repair any kind of bulkhead, including pre-cast concrete, steel, and combination units; however, there are cases where a full CMU block bulkhead that is leaking may require excavation and sealing from the outside. In that case, we will let you know and can refer you to someone who can do that. Under the Featured Leaky Bulkhead Repair Projects, I see one bulkhead repair and then I see two crack injection repairs. They're not even all bulkhead repairs. They're being listed there as bulkhead repairs. 
+- [ ] **Carbon Fiber Stitches** — [Preview](https://aac-astro.vercel.app/services/carbon-fiber-stitches)
+  - Notes: under the "When carbon fiber is needed" section, diagonal cracks from corners of windows and doors is not a typical reason to do stitches. Let's remove that one. Under our process, step two is crack injection. We don't do that in every case, so we should say before installing stitches, we will often inject the crack to seal and fill it completely. However, for example, on a block stair step crack, we don't do that because injecting the block is pointless. Further down, we have a similar sentence: "We always combine stitches with crack injection for a complete structural and waterproof repair." That is not accurate. Let's just delete that sentence. Frequently asked questions also mentions diagonal cracks from corners, but that is not a typical reason we use carbon fiber. Let's delete that. The featured projects show projects that are not carbon fiber. Maybe it's fine; it's just a little confusing. 
+- [ ] **Sewer/Conduit Repair** — [Preview](https://aac-astro.vercel.app/services/sewer-well-conduit-line-repair)
+  - Notes: this one looks good. The only issue is down in the featured projects section. It just includes a bunch of projects that don't show super well or conduit line. This seems to be a recurring issue on all of them. 
+- [ ] **Free Consultations** — [Preview](https://aac-astro.vercel.app/services/free-foundation-consultations)
+  - Notes: in-person foundation inspections are only available in Massachusetts. The frequently asked questions: photo assessments typically get a response within minutes, and we usually have you a quote within an hour of sending us photos. In-person consultations only are offered in Massachusetts and typically take 30 minutes. There's a little bit too much emphasis on this page about the DIY thing. I think it's mentioned like four or five times. Can we pare it down a little bit? Get rid of that Frequently Asked Questions. Will you try to sell me services I don't need? I don't like that question. Get that out of there. Also, something about the DIY thing. If some old woman calls us, she's not going to want to hear about DIY, so it could be we'll talk you through DIY or what to tell a handyman for simple repairs, something like that. 
 
 ---
 
 ## Concrete Repair — MA Only (8)
 
-| # | Page | URL | Reviewed | Notes |
-|---|------|-----|----------|-------|
-| 1 | Concrete Repair Hub | [/concrete-repair](https://aac-astro.vercel.app/concrete-repair) | [ ] | |
-| 2 | Driveway | [/concrete-repair/driveway](https://aac-astro.vercel.app/concrete-repair/driveway) | [ ] | |
-| 3 | Patio | [/concrete-repair/patio](https://aac-astro.vercel.app/concrete-repair/patio) | [ ] | |
-| 4 | Walkway | [/concrete-repair/walkway](https://aac-astro.vercel.app/concrete-repair/walkway) | [ ] | |
-| 5 | Pool Deck | [/concrete-repair/pool-deck](https://aac-astro.vercel.app/concrete-repair/pool-deck) | [ ] | |
-| 6 | Stairway | [/concrete-repair/stairway](https://aac-astro.vercel.app/concrete-repair/stairway) | [ ] | |
-| 7 | Garage Floor | [/concrete-repair/garage](https://aac-astro.vercel.app/concrete-repair/garage) | [ ] | |
-| 8 | Basement Floor | [/concrete-repair/basement-floor](https://aac-astro.vercel.app/concrete-repair/basement-floor) | [ ] | |
+- [ ] **Concrete Repair Hub** — [Preview](https://aac-astro.vercel.app/concrete-repair)
+  - Notes:
+- [ ] **Driveway** — [Preview](https://aac-astro.vercel.app/concrete-repair/driveway)
+  - Notes:
+- [ ] **Patio** — [Preview](https://aac-astro.vercel.app/concrete-repair/patio)
+  - Notes:
+- [ ] **Walkway** — [Preview](https://aac-astro.vercel.app/concrete-repair/walkway)
+  - Notes:
+- [ ] **Pool Deck** — [Preview](https://aac-astro.vercel.app/concrete-repair/pool-deck)
+  - Notes:
+- [ ] **Stairway** — [Preview](https://aac-astro.vercel.app/concrete-repair/stairway)
+  - Notes:
+- [ ] **Garage Floor** — [Preview](https://aac-astro.vercel.app/concrete-repair/garage)
+  - Notes:
+- [ ] **Basement Floor** — [Preview](https://aac-astro.vercel.app/concrete-repair/basement-floor)
+  - Notes:
 
 ---
 
 ## Partners (5)
 
-| # | Page | URL | Reviewed | Notes |
-|---|------|-----|----------|-------|
-| 1 | Partners Hub | [/partners](https://aac-astro.vercel.app/partners) | [ ] | |
-| 2 | Realtors | [/partners/realtors](https://aac-astro.vercel.app/partners/realtors) | [ ] | |
-| 3 | Home Inspectors | [/partners/home-inspectors](https://aac-astro.vercel.app/partners/home-inspectors) | [ ] | |
-| 4 | Contractors | [/partners/contractors](https://aac-astro.vercel.app/partners/contractors) | [ ] | |
-| 5 | Property Managers | [/partners/property-managers](https://aac-astro.vercel.app/partners/property-managers) | [ ] | |
+- [ ] **Partners Hub** — [Preview](https://aac-astro.vercel.app/partners)
+  - Notes:
+- [ ] **Realtors** — [Preview](https://aac-astro.vercel.app/partners/realtors)
+  - Notes:
+- [ ] **Home Inspectors** — [Preview](https://aac-astro.vercel.app/partners/home-inspectors)
+  - Notes:
+- [ ] **Contractors** — [Preview](https://aac-astro.vercel.app/partners/contractors)
+  - Notes:
+- [ ] **Property Managers** — [Preview](https://aac-astro.vercel.app/partners/property-managers)
+  - Notes:
 
 *6 additional partner pages (insurance adjusters, mold remediation, plumbers, landscapers, structural engineers, pest control) are drafted but unpublished — deferred to post-launch.*
 
 ---
 
-## Updates & Blog (42)
+## Updates & Blog
 
-### Hub Pages
+### Hub Pages (8)
 
-| # | Page | URL | Reviewed | Notes |
-|---|------|-----|----------|-------|
-| 1 | Updates Hub | [/updates](https://aac-astro.vercel.app/updates) | [ ] | |
-| 2 | Blog Index | [/blog](https://aac-astro.vercel.app/blog) | [ ] | |
-| 3 | Category: Guides | [/blog/category/guides](https://aac-astro.vercel.app/blog/category/guides) | [ ] | |
-| 4 | Category: Case Studies | [/blog/category/case-studies](https://aac-astro.vercel.app/blog/category/case-studies) | [ ] | |
-| 5 | Category: Cost Guides | [/blog/category/cost-guides](https://aac-astro.vercel.app/blog/category/cost-guides) | [ ] | |
-| 6 | Category: Tips | [/blog/category/maintenance-tips](https://aac-astro.vercel.app/blog/category/maintenance-tips) | [ ] | |
-| 7 | Category: News | [/blog/category/news](https://aac-astro.vercel.app/blog/category/news) | [ ] | |
-| 8 | Category: Foundation Types | [/blog/category/foundation-types](https://aac-astro.vercel.app/blog/category/foundation-types) | [ ] | |
+- [ ] **Updates Hub** — [Preview](https://aac-astro.vercel.app/updates)
+  - Notes:
+- [ ] **Blog Index** — [Preview](https://aac-astro.vercel.app/blog)
+  - Notes:
+- [ ] **Category: Guides** — [Preview](https://aac-astro.vercel.app/blog/category/guides)
+  - Notes:
+- [ ] **Category: Case Studies** — [Preview](https://aac-astro.vercel.app/blog/category/case-studies)
+  - Notes:
+- [ ] **Category: Cost Guides** — [Preview](https://aac-astro.vercel.app/blog/category/cost-guides)
+  - Notes:
+- [ ] **Category: Tips** — [Preview](https://aac-astro.vercel.app/blog/category/maintenance-tips)
+  - Notes:
+- [ ] **Category: News** — [Preview](https://aac-astro.vercel.app/blog/category/news)
+  - Notes:
+- [ ] **Category: Foundation Types** — [Preview](https://aac-astro.vercel.app/blog/category/foundation-types)
+  - Notes:
 
 ### Published Blog Posts (39 live)
 
-| # | Title | URL | Reviewed | Notes |
-|---|-------|-----|----------|-------|
-| 1 | 10 Essential Tips for a Worry-Free Foundation | [link](https://aac-astro.vercel.app/blog/10-essential-tips-worry-free-foundation) | [ ] | |
-| 2 | ASHI New England Conference 2024 | [link](https://aac-astro.vercel.app/blog/ashi-new-england-conference-2024) | [ ] | |
-| 3 | Basement Floor Crack Repair: Methods, Costs, and When to Call a Pro | [link](https://aac-astro.vercel.app/blog/basement-floor-crack-repair-guide) | [ ] | |
-| 4 | Basement Floor Cracks Leaking Water | [link](https://aac-astro.vercel.app/blog/basement-floor-cracks-leaking) | [ ] | |
-| 5 | Basement Leak Nightmare: Framingham Case Study | [link](https://aac-astro.vercel.app/blog/basement-leak-framingham-case-study) | [ ] | |
-| 6 | Basement Waterproofing vs Foundation Repair | [link](https://aac-astro.vercel.app/blog/basement-waterproofing-vs-foundation-repair) | [ ] | |
-| 7 | Bowing Basement Walls: Causes, Severity, and Repair | [link](https://aac-astro.vercel.app/blog/bowing-basement-walls-causes-repair) | [ ] | |
-| 8 | Why Your Bulkhead Door Might Be Leaking | [link](https://aac-astro.vercel.app/blog/bulkhead-leaking-causes-and-fixes) | [ ] | |
-| 9 | Bulkhead Repair Cost Guide 2026 | [link](https://aac-astro.vercel.app/blog/bulkhead-repair-cost-guide-2026) | [ ] | |
-| 10 | Bulkhead Sealant vs. Gaskets | [link](https://aac-astro.vercel.app/blog/bulkhead-sealant-vs-gaskets) | [ ] | |
-| 11 | Carbon Fiber Foundation Repair | [link](https://aac-astro.vercel.app/blog/carbon-fiber-foundation-repair-guide) | [ ] | |
-| 12 | Carbon Fiber Staples vs. Stitches | [link](https://aac-astro.vercel.app/blog/carbon-fiber-staples-vs-stitches) | [ ] | |
-| 13 | Cement vs Concrete: What Every Homeowner Needs to Know | [link](https://aac-astro.vercel.app/blog/cement-vs-concrete-homeowners-guide) | [ ] | |
-| 14 | Cinderblock (CMU) Foundation Repair | [link](https://aac-astro.vercel.app/blog/cinderblock-foundation-repair-guide) | [ ] | |
-| 15 | Crumbling Foundations in MA and CT | [link](https://aac-astro.vercel.app/blog/crumbling-foundations-massachusetts-connecticut) | [ ] | |
-| 16 | DIY vs Professional Foundation Repair | [link](https://aac-astro.vercel.app/blog/diy-vs-professional-foundation-repair) | [ ] | |
-| 17 | Does Insurance Cover Foundation Repair? | [link](https://aac-astro.vercel.app/blog/does-insurance-cover-foundation-repair) | [ ] | |
-| 18 | Driveway Crack Repair | [link](https://aac-astro.vercel.app/blog/driveway-crack-repair-guide) | [ ] | |
-| 19 | Foundation Emergency: What to Do | [link](https://aac-astro.vercel.app/blog/emergency-foundation-repair-what-to-do) | [ ] | |
-| 20 | Fieldstone Foundation Repair Guide | [link](https://aac-astro.vercel.app/blog/fieldstone-foundation-repair-guide) | [ ] | |
-| 21 | Finished Basement Flooded in Shrewsbury | [link](https://aac-astro.vercel.app/blog/finished-basement-flooded-shrewsbury) | [ ] | |
-| 22 | Foundation Repair Cost Guide 2026 | [link](https://aac-astro.vercel.app/blog/foundation-repair-cost-guide-2026) | [ ] | |
-| 23 | Best Time to Repair Foundation (Seasonal Guide) | [link](https://aac-astro.vercel.app/blog/foundation-repair-seasonal-guide) | [ ] | |
-| 24 | Foundation Repair vs Replacement | [link](https://aac-astro.vercel.app/blog/foundation-repair-vs-replacement) | [ ] | |
-| 25 | Foundation Repair Warranties Guide | [link](https://aac-astro.vercel.app/blog/foundation-repair-warranty-guide) | [ ] | |
-| 26 | Foundation Settling: When to Worry | [link](https://aac-astro.vercel.app/blog/foundation-settling-when-to-worry) | [ ] | |
-| 27 | Horizontal Foundation Cracks | [link](https://aac-astro.vercel.app/blog/horizontal-foundation-cracks) | [ ] | |
-| 28 | How Long Does Foundation Repair Take? | [link](https://aac-astro.vercel.app/blog/how-long-does-foundation-repair-take) | [ ] | |
-| 29 | How to Check Your Foundation for Problems | [link](https://aac-astro.vercel.app/blog/how-to-check-your-foundation) | [ ] | |
-| 30 | How We Diagnose Foundation Problems | [link](https://aac-astro.vercel.app/blog/how-we-diagnose-foundation-problems) | [ ] | |
-| 31 | Ice Dams: The Roof Problem That Wrecks Foundations | [link](https://aac-astro.vercel.app/blog/ice-dam-foundation-damage) | [ ] | |
-| 32 | Leaky Bulkhead in Wilmington | [link](https://aac-astro.vercel.app/blog/leaky-bulkhead-wilmington-repair) | [ ] | |
-| 33 | NAR NXT Boston 2024 Partnerships | [link](https://aac-astro.vercel.app/blog/nar-nxt-boston-2024-partnerships) | [ ] | |
-| 34 | Pool Deck Crack Repair Guide | [link](https://aac-astro.vercel.app/blog/pool-deck-crack-repair-guide) | [ ] | |
-| 35 | Signs of Foundation Problems | [link](https://aac-astro.vercel.app/blog/signs-of-foundation-problems) | [ ] | |
-| 36 | Is Your Foundation Ready for Spring Thaw? | [link](https://aac-astro.vercel.app/blog/spring-thaw-foundation-prep) | [ ] | |
-| 37 | Vertical vs. Horizontal Foundation Cracks | [link](https://aac-astro.vercel.app/blog/vertical-vs-horizontal-foundation-cracks) | [ ] | |
-| 38 | Water in Basement After Rain | [link](https://aac-astro.vercel.app/blog/water-in-basement-after-rain) | [ ] | |
-| 39 | Essential Winter Home Maintenance Checklist | [link](https://aac-astro.vercel.app/blog/winter-home-maintenance-checklist) | [ ] | |
+- [ ] **10 Essential Tips for a Worry-Free Foundation** — [Preview](https://aac-astro.vercel.app/blog/10-essential-tips-worry-free-foundation)
+  - Notes:
+- [ ] **ASHI New England Conference 2024** — [Preview](https://aac-astro.vercel.app/blog/ashi-new-england-conference-2024)
+  - Notes:
+- [ ] **Basement Floor Crack Repair: Methods, Costs, and When to Call a Pro** — [Preview](https://aac-astro.vercel.app/blog/basement-floor-crack-repair-guide)
+  - Notes:
+- [ ] **Basement Floor Cracks Leaking Water** — [Preview](https://aac-astro.vercel.app/blog/basement-floor-cracks-leaking)
+  - Notes:
+- [ ] **Basement Leak Nightmare: Framingham Case Study** — [Preview](https://aac-astro.vercel.app/blog/basement-leak-framingham-case-study)
+  - Notes:
+- [ ] **Basement Waterproofing vs Foundation Repair** — [Preview](https://aac-astro.vercel.app/blog/basement-waterproofing-vs-foundation-repair)
+  - Notes:
+- [ ] **Bowing Basement Walls: Causes, Severity, and Repair** — [Preview](https://aac-astro.vercel.app/blog/bowing-basement-walls-causes-repair)
+  - Notes:
+- [ ] **Why Your Bulkhead Door Might Be Leaking** — [Preview](https://aac-astro.vercel.app/blog/bulkhead-leaking-causes-and-fixes)
+  - Notes:
+- [ ] **Bulkhead Repair Cost Guide 2026** — [Preview](https://aac-astro.vercel.app/blog/bulkhead-repair-cost-guide-2026)
+  - Notes:
+- [ ] **Bulkhead Sealant vs. Gaskets** — [Preview](https://aac-astro.vercel.app/blog/bulkhead-sealant-vs-gaskets)
+  - Notes:
+- [ ] **Carbon Fiber Foundation Repair** — [Preview](https://aac-astro.vercel.app/blog/carbon-fiber-foundation-repair-guide)
+  - Notes:
+- [ ] **Carbon Fiber Staples vs. Stitches** — [Preview](https://aac-astro.vercel.app/blog/carbon-fiber-staples-vs-stitches)
+  - Notes:
+- [ ] **Cement vs Concrete: What Every Homeowner Needs to Know** — [Preview](https://aac-astro.vercel.app/blog/cement-vs-concrete-homeowners-guide)
+  - Notes:
+- [ ] **Cinderblock (CMU) Foundation Repair** — [Preview](https://aac-astro.vercel.app/blog/cinderblock-foundation-repair-guide)
+  - Notes:
+- [ ] **Crumbling Foundations in MA and CT** — [Preview](https://aac-astro.vercel.app/blog/crumbling-foundations-massachusetts-connecticut)
+  - Notes:
+- [ ] **DIY vs Professional Foundation Repair** — [Preview](https://aac-astro.vercel.app/blog/diy-vs-professional-foundation-repair)
+  - Notes:
+- [ ] **Does Insurance Cover Foundation Repair?** — [Preview](https://aac-astro.vercel.app/blog/does-insurance-cover-foundation-repair)
+  - Notes:
+- [ ] **Driveway Crack Repair** — [Preview](https://aac-astro.vercel.app/blog/driveway-crack-repair-guide)
+  - Notes:
+- [ ] **Foundation Emergency: What to Do** — [Preview](https://aac-astro.vercel.app/blog/emergency-foundation-repair-what-to-do)
+  - Notes:
+- [ ] **Fieldstone Foundation Repair Guide** — [Preview](https://aac-astro.vercel.app/blog/fieldstone-foundation-repair-guide)
+  - Notes:
+- [ ] **Finished Basement Flooded in Shrewsbury** — [Preview](https://aac-astro.vercel.app/blog/finished-basement-flooded-shrewsbury)
+  - Notes:
+- [ ] **Foundation Repair Cost Guide 2026** — [Preview](https://aac-astro.vercel.app/blog/foundation-repair-cost-guide-2026)
+  - Notes:
+- [ ] **Best Time to Repair Foundation (Seasonal Guide)** — [Preview](https://aac-astro.vercel.app/blog/foundation-repair-seasonal-guide)
+  - Notes:
+- [ ] **Foundation Repair vs Replacement** — [Preview](https://aac-astro.vercel.app/blog/foundation-repair-vs-replacement)
+  - Notes:
+- [ ] **Foundation Repair Warranties Guide** — [Preview](https://aac-astro.vercel.app/blog/foundation-repair-warranty-guide)
+  - Notes:
+- [ ] **Foundation Settling: When to Worry** — [Preview](https://aac-astro.vercel.app/blog/foundation-settling-when-to-worry)
+  - Notes:
+- [ ] **Horizontal Foundation Cracks** — [Preview](https://aac-astro.vercel.app/blog/horizontal-foundation-cracks)
+  - Notes:
+- [ ] **How Long Does Foundation Repair Take?** — [Preview](https://aac-astro.vercel.app/blog/how-long-does-foundation-repair-take)
+  - Notes:
+- [ ] **How to Check Your Foundation for Problems** — [Preview](https://aac-astro.vercel.app/blog/how-to-check-your-foundation)
+  - Notes:
+- [ ] **How We Diagnose Foundation Problems** — [Preview](https://aac-astro.vercel.app/blog/how-we-diagnose-foundation-problems)
+  - Notes:
+- [ ] **Ice Dams: The Roof Problem That Wrecks Foundations** — [Preview](https://aac-astro.vercel.app/blog/ice-dam-foundation-damage)
+  - Notes:
+- [ ] **Leaky Bulkhead in Wilmington** — [Preview](https://aac-astro.vercel.app/blog/leaky-bulkhead-wilmington-repair)
+  - Notes:
+- [ ] **NAR NXT Boston 2024 Partnerships** — [Preview](https://aac-astro.vercel.app/blog/nar-nxt-boston-2024-partnerships)
+  - Notes:
+- [ ] **Pool Deck Crack Repair Guide** — [Preview](https://aac-astro.vercel.app/blog/pool-deck-crack-repair-guide)
+  - Notes:
+- [ ] **Signs of Foundation Problems** — [Preview](https://aac-astro.vercel.app/blog/signs-of-foundation-problems)
+  - Notes:
+- [ ] **Is Your Foundation Ready for Spring Thaw?** — [Preview](https://aac-astro.vercel.app/blog/spring-thaw-foundation-prep)
+  - Notes:
+- [ ] **Vertical vs. Horizontal Foundation Cracks** — [Preview](https://aac-astro.vercel.app/blog/vertical-vs-horizontal-foundation-cracks)
+  - Notes:
+- [ ] **Water in Basement After Rain** — [Preview](https://aac-astro.vercel.app/blog/water-in-basement-after-rain)
+  - Notes:
+- [ ] **Essential Winter Home Maintenance Checklist** — [Preview](https://aac-astro.vercel.app/blog/winter-home-maintenance-checklist)
+  - Notes:
 
 *1 additional post (Spring Foundation Inspection Walkthrough) auto-publishes March 24.*
 
@@ -149,130 +206,205 @@ These apply site-wide. Check once, not per-page.
 
 ## Locations — Connecticut (21)
 
-| # | Page | URL | Reviewed | Notes |
-|---|------|-----|----------|-------|
-| 1 | CT State Hub | [/connecticut](https://aac-astro.vercel.app/connecticut) | [ ] | |
-| 2 | Bristol | [/connecticut/bristol](https://aac-astro.vercel.app/connecticut/bristol) | [ ] | |
-| 3 | Cheshire | [/connecticut/cheshire](https://aac-astro.vercel.app/connecticut/cheshire) | [ ] | |
-| 4 | East Hartford | [/connecticut/east-hartford](https://aac-astro.vercel.app/connecticut/east-hartford) | [ ] | |
-| 5 | Enfield | [/connecticut/enfield](https://aac-astro.vercel.app/connecticut/enfield) | [ ] | |
-| 6 | Glastonbury | [/connecticut/glastonbury](https://aac-astro.vercel.app/connecticut/glastonbury) | [ ] | |
-| 7 | Groton | [/connecticut/groton](https://aac-astro.vercel.app/connecticut/groton) | [ ] | |
-| 8 | Hartford | [/connecticut/hartford](https://aac-astro.vercel.app/connecticut/hartford) | [ ] | |
-| 9 | Manchester | [/connecticut/manchester](https://aac-astro.vercel.app/connecticut/manchester) | [ ] | |
-| 10 | Meriden | [/connecticut/meriden](https://aac-astro.vercel.app/connecticut/meriden) | [ ] | |
-| 11 | Middletown | [/connecticut/middletown](https://aac-astro.vercel.app/connecticut/middletown) | [ ] | |
-| 12 | New Britain | [/connecticut/new-britain](https://aac-astro.vercel.app/connecticut/new-britain) | [ ] | |
-| 13 | New Haven | [/connecticut/new-haven](https://aac-astro.vercel.app/connecticut/new-haven) | [ ] | |
-| 14 | New London | [/connecticut/new-london](https://aac-astro.vercel.app/connecticut/new-london) | [ ] | |
-| 15 | Newington | [/connecticut/newington](https://aac-astro.vercel.app/connecticut/newington) | [ ] | |
-| 16 | Norwich | [/connecticut/norwich](https://aac-astro.vercel.app/connecticut/norwich) | [ ] | |
-| 17 | Southington | [/connecticut/southington](https://aac-astro.vercel.app/connecticut/southington) | [ ] | |
-| 18 | Vernon | [/connecticut/vernon](https://aac-astro.vercel.app/connecticut/vernon) | [ ] | |
-| 19 | Wallingford | [/connecticut/wallingford](https://aac-astro.vercel.app/connecticut/wallingford) | [ ] | |
-| 20 | West Hartford | [/connecticut/west-hartford](https://aac-astro.vercel.app/connecticut/west-hartford) | [ ] | |
-| 21 | Wethersfield | [/connecticut/wethersfield](https://aac-astro.vercel.app/connecticut/wethersfield) | [ ] | |
+- [ ] **CT State Hub** — [Preview](https://aac-astro.vercel.app/connecticut)
+  - Notes:
+- [ ] **Bristol** — [Preview](https://aac-astro.vercel.app/connecticut/bristol)
+  - Notes:
+- [ ] **Cheshire** — [Preview](https://aac-astro.vercel.app/connecticut/cheshire)
+  - Notes:
+- [ ] **East Hartford** — [Preview](https://aac-astro.vercel.app/connecticut/east-hartford)
+  - Notes:
+- [ ] **Enfield** — [Preview](https://aac-astro.vercel.app/connecticut/enfield)
+  - Notes:
+- [ ] **Glastonbury** — [Preview](https://aac-astro.vercel.app/connecticut/glastonbury)
+  - Notes:
+- [ ] **Groton** — [Preview](https://aac-astro.vercel.app/connecticut/groton)
+  - Notes:
+- [ ] **Hartford** — [Preview](https://aac-astro.vercel.app/connecticut/hartford)
+  - Notes:
+- [ ] **Manchester** — [Preview](https://aac-astro.vercel.app/connecticut/manchester)
+  - Notes:
+- [ ] **Meriden** — [Preview](https://aac-astro.vercel.app/connecticut/meriden)
+  - Notes:
+- [ ] **Middletown** — [Preview](https://aac-astro.vercel.app/connecticut/middletown)
+  - Notes:
+- [ ] **New Britain** — [Preview](https://aac-astro.vercel.app/connecticut/new-britain)
+  - Notes:
+- [ ] **New Haven** — [Preview](https://aac-astro.vercel.app/connecticut/new-haven)
+  - Notes:
+- [ ] **New London** — [Preview](https://aac-astro.vercel.app/connecticut/new-london)
+  - Notes:
+- [ ] **Newington** — [Preview](https://aac-astro.vercel.app/connecticut/newington)
+  - Notes:
+- [ ] **Norwich** — [Preview](https://aac-astro.vercel.app/connecticut/norwich)
+  - Notes:
+- [ ] **Southington** — [Preview](https://aac-astro.vercel.app/connecticut/southington)
+  - Notes:
+- [ ] **Vernon** — [Preview](https://aac-astro.vercel.app/connecticut/vernon)
+  - Notes:
+- [ ] **Wallingford** — [Preview](https://aac-astro.vercel.app/connecticut/wallingford)
+  - Notes:
+- [ ] **West Hartford** — [Preview](https://aac-astro.vercel.app/connecticut/west-hartford)
+  - Notes:
+- [ ] **Wethersfield** — [Preview](https://aac-astro.vercel.app/connecticut/wethersfield)
+  - Notes:
 
 ---
 
 ## Locations — Massachusetts (32)
 
-| # | Page | URL | Reviewed | Notes |
-|---|------|-----|----------|-------|
-| 1 | MA State Hub | [/massachusetts](https://aac-astro.vercel.app/massachusetts) | [ ] | |
-| 2 | Trusted Partners | [/massachusetts/trusted-partners](https://aac-astro.vercel.app/massachusetts/trusted-partners) | [ ] | |
-| 3 | Beverly | [/massachusetts/beverly](https://aac-astro.vercel.app/massachusetts/beverly) | [ ] | |
-| 4 | Boston | [/massachusetts/boston](https://aac-astro.vercel.app/massachusetts/boston) | [ ] | |
-| 5 | Brockton | [/massachusetts/brockton](https://aac-astro.vercel.app/massachusetts/brockton) | [ ] | |
-| 6 | Brookline | [/massachusetts/brookline](https://aac-astro.vercel.app/massachusetts/brookline) | [ ] | |
-| 7 | Cambridge | [/massachusetts/cambridge](https://aac-astro.vercel.app/massachusetts/cambridge) | [ ] | |
-| 8 | Fall River | [/massachusetts/fall-river](https://aac-astro.vercel.app/massachusetts/fall-river) | [ ] | |
-| 9 | Framingham | [/massachusetts/framingham](https://aac-astro.vercel.app/massachusetts/framingham) | [ ] | |
-| 10 | Haverhill | [/massachusetts/haverhill](https://aac-astro.vercel.app/massachusetts/haverhill) | [ ] | |
-| 11 | Hingham | [/massachusetts/hingham](https://aac-astro.vercel.app/massachusetts/hingham) | [ ] | |
-| 12 | Lawrence | [/massachusetts/lawrence](https://aac-astro.vercel.app/massachusetts/lawrence) | [ ] | |
-| 13 | Lexington | [/massachusetts/lexington](https://aac-astro.vercel.app/massachusetts/lexington) | [ ] | |
-| 14 | Lynn | [/massachusetts/lynn](https://aac-astro.vercel.app/massachusetts/lynn) | [ ] | |
-| 15 | Marshfield | [/massachusetts/marshfield](https://aac-astro.vercel.app/massachusetts/marshfield) | [ ] | |
-| 16 | Milton | [/massachusetts/milton](https://aac-astro.vercel.app/massachusetts/milton) | [ ] | |
-| 17 | Natick | [/massachusetts/natick](https://aac-astro.vercel.app/massachusetts/natick) | [ ] | |
-| 18 | Needham | [/massachusetts/needham](https://aac-astro.vercel.app/massachusetts/needham) | [ ] | |
-| 19 | New Bedford | [/massachusetts/new-bedford](https://aac-astro.vercel.app/massachusetts/new-bedford) | [ ] | |
-| 20 | Newton | [/massachusetts/newton](https://aac-astro.vercel.app/massachusetts/newton) | [ ] | |
-| 21 | Peabody | [/massachusetts/peabody](https://aac-astro.vercel.app/massachusetts/peabody) | [ ] | |
-| 22 | Plymouth | [/massachusetts/plymouth](https://aac-astro.vercel.app/massachusetts/plymouth) | [ ] | |
-| 23 | Quincy | [/massachusetts/quincy](https://aac-astro.vercel.app/massachusetts/quincy) | [ ] | |
-| 24 | Salem | [/massachusetts/salem](https://aac-astro.vercel.app/massachusetts/salem) | [ ] | |
-| 25 | Scituate | [/massachusetts/scituate](https://aac-astro.vercel.app/massachusetts/scituate) | [ ] | |
-| 26 | Shrewsbury | [/massachusetts/shrewsbury](https://aac-astro.vercel.app/massachusetts/shrewsbury) | [ ] | |
-| 27 | Somerville | [/massachusetts/somerville](https://aac-astro.vercel.app/massachusetts/somerville) | [ ] | |
-| 28 | Taunton | [/massachusetts/taunton](https://aac-astro.vercel.app/massachusetts/taunton) | [ ] | |
-| 29 | Waltham | [/massachusetts/waltham](https://aac-astro.vercel.app/massachusetts/waltham) | [ ] | |
-| 30 | Wellesley | [/massachusetts/wellesley](https://aac-astro.vercel.app/massachusetts/wellesley) | [ ] | |
-| 31 | Weymouth | [/massachusetts/weymouth](https://aac-astro.vercel.app/massachusetts/weymouth) | [ ] | |
-| 32 | Worcester | [/massachusetts/worcester](https://aac-astro.vercel.app/massachusetts/worcester) | [ ] | |
+- [ ] **MA State Hub** — [Preview](https://aac-astro.vercel.app/massachusetts)
+  - Notes:
+- [ ] **Trusted Partners** — [Preview](https://aac-astro.vercel.app/massachusetts/trusted-partners)
+  - Notes:
+- [ ] **Beverly** — [Preview](https://aac-astro.vercel.app/massachusetts/beverly)
+  - Notes:
+- [ ] **Boston** — [Preview](https://aac-astro.vercel.app/massachusetts/boston)
+  - Notes:
+- [ ] **Brockton** — [Preview](https://aac-astro.vercel.app/massachusetts/brockton)
+  - Notes:
+- [ ] **Brookline** — [Preview](https://aac-astro.vercel.app/massachusetts/brookline)
+  - Notes:
+- [ ] **Cambridge** — [Preview](https://aac-astro.vercel.app/massachusetts/cambridge)
+  - Notes:
+- [ ] **Fall River** — [Preview](https://aac-astro.vercel.app/massachusetts/fall-river)
+  - Notes:
+- [ ] **Framingham** — [Preview](https://aac-astro.vercel.app/massachusetts/framingham)
+  - Notes:
+- [ ] **Haverhill** — [Preview](https://aac-astro.vercel.app/massachusetts/haverhill)
+  - Notes:
+- [ ] **Hingham** — [Preview](https://aac-astro.vercel.app/massachusetts/hingham)
+  - Notes:
+- [ ] **Lawrence** — [Preview](https://aac-astro.vercel.app/massachusetts/lawrence)
+  - Notes:
+- [ ] **Lexington** — [Preview](https://aac-astro.vercel.app/massachusetts/lexington)
+  - Notes:
+- [ ] **Lynn** — [Preview](https://aac-astro.vercel.app/massachusetts/lynn)
+  - Notes:
+- [ ] **Marshfield** — [Preview](https://aac-astro.vercel.app/massachusetts/marshfield)
+  - Notes:
+- [ ] **Milton** — [Preview](https://aac-astro.vercel.app/massachusetts/milton)
+  - Notes:
+- [ ] **Natick** — [Preview](https://aac-astro.vercel.app/massachusetts/natick)
+  - Notes:
+- [ ] **Needham** — [Preview](https://aac-astro.vercel.app/massachusetts/needham)
+  - Notes:
+- [ ] **New Bedford** — [Preview](https://aac-astro.vercel.app/massachusetts/new-bedford)
+  - Notes:
+- [ ] **Newton** — [Preview](https://aac-astro.vercel.app/massachusetts/newton)
+  - Notes:
+- [ ] **Peabody** — [Preview](https://aac-astro.vercel.app/massachusetts/peabody)
+  - Notes:
+- [ ] **Plymouth** — [Preview](https://aac-astro.vercel.app/massachusetts/plymouth)
+  - Notes:
+- [ ] **Quincy** — [Preview](https://aac-astro.vercel.app/massachusetts/quincy)
+  - Notes:
+- [ ] **Salem** — [Preview](https://aac-astro.vercel.app/massachusetts/salem)
+  - Notes:
+- [ ] **Scituate** — [Preview](https://aac-astro.vercel.app/massachusetts/scituate)
+  - Notes:
+- [ ] **Shrewsbury** — [Preview](https://aac-astro.vercel.app/massachusetts/shrewsbury)
+  - Notes:
+- [ ] **Somerville** — [Preview](https://aac-astro.vercel.app/massachusetts/somerville)
+  - Notes:
+- [ ] **Taunton** — [Preview](https://aac-astro.vercel.app/massachusetts/taunton)
+  - Notes:
+- [ ] **Waltham** — [Preview](https://aac-astro.vercel.app/massachusetts/waltham)
+  - Notes:
+- [ ] **Wellesley** — [Preview](https://aac-astro.vercel.app/massachusetts/wellesley)
+  - Notes:
+- [ ] **Weymouth** — [Preview](https://aac-astro.vercel.app/massachusetts/weymouth)
+  - Notes:
+- [ ] **Worcester** — [Preview](https://aac-astro.vercel.app/massachusetts/worcester)
+  - Notes:
 
 ---
 
 ## Locations — Rhode Island (11)
 
-| # | Page | URL | Reviewed | Notes |
-|---|------|-----|----------|-------|
-| 1 | RI State Hub | [/rhode-island](https://aac-astro.vercel.app/rhode-island) | [ ] | |
-| 2 | Bristol | [/rhode-island/bristol](https://aac-astro.vercel.app/rhode-island/bristol) | [ ] | |
-| 3 | Coventry | [/rhode-island/coventry](https://aac-astro.vercel.app/rhode-island/coventry) | [ ] | |
-| 4 | Cranston | [/rhode-island/cranston](https://aac-astro.vercel.app/rhode-island/cranston) | [ ] | |
-| 5 | East Providence | [/rhode-island/east-providence](https://aac-astro.vercel.app/rhode-island/east-providence) | [ ] | |
-| 6 | Newport | [/rhode-island/newport](https://aac-astro.vercel.app/rhode-island/newport) | [ ] | |
-| 7 | North Kingstown | [/rhode-island/north-kingstown](https://aac-astro.vercel.app/rhode-island/north-kingstown) | [ ] | |
-| 8 | Pawtucket | [/rhode-island/pawtucket](https://aac-astro.vercel.app/rhode-island/pawtucket) | [ ] | |
-| 9 | Providence | [/rhode-island/providence](https://aac-astro.vercel.app/rhode-island/providence) | [ ] | |
-| 10 | Warwick | [/rhode-island/warwick](https://aac-astro.vercel.app/rhode-island/warwick) | [ ] | |
-| 11 | Woonsocket | [/rhode-island/woonsocket](https://aac-astro.vercel.app/rhode-island/woonsocket) | [ ] | |
+- [ ] **RI State Hub** — [Preview](https://aac-astro.vercel.app/rhode-island)
+  - Notes:
+- [ ] **Bristol** — [Preview](https://aac-astro.vercel.app/rhode-island/bristol)
+  - Notes:
+- [ ] **Coventry** — [Preview](https://aac-astro.vercel.app/rhode-island/coventry)
+  - Notes:
+- [ ] **Cranston** — [Preview](https://aac-astro.vercel.app/rhode-island/cranston)
+  - Notes:
+- [ ] **East Providence** — [Preview](https://aac-astro.vercel.app/rhode-island/east-providence)
+  - Notes:
+- [ ] **Newport** — [Preview](https://aac-astro.vercel.app/rhode-island/newport)
+  - Notes:
+- [ ] **North Kingstown** — [Preview](https://aac-astro.vercel.app/rhode-island/north-kingstown)
+  - Notes:
+- [ ] **Pawtucket** — [Preview](https://aac-astro.vercel.app/rhode-island/pawtucket)
+  - Notes:
+- [ ] **Providence** — [Preview](https://aac-astro.vercel.app/rhode-island/providence)
+  - Notes:
+- [ ] **Warwick** — [Preview](https://aac-astro.vercel.app/rhode-island/warwick)
+  - Notes:
+- [ ] **Woonsocket** — [Preview](https://aac-astro.vercel.app/rhode-island/woonsocket)
+  - Notes:
 
 ---
 
 ## Locations — New Hampshire (11)
 
-| # | Page | URL | Reviewed | Notes |
-|---|------|-----|----------|-------|
-| 1 | NH State Hub | [/new-hampshire](https://aac-astro.vercel.app/new-hampshire) | [ ] | |
-| 2 | Derry | [/new-hampshire/derry](https://aac-astro.vercel.app/new-hampshire/derry) | [ ] | |
-| 3 | Dover | [/new-hampshire/dover](https://aac-astro.vercel.app/new-hampshire/dover) | [ ] | |
-| 4 | Exeter | [/new-hampshire/exeter](https://aac-astro.vercel.app/new-hampshire/exeter) | [ ] | |
-| 5 | Hampton | [/new-hampshire/hampton](https://aac-astro.vercel.app/new-hampshire/hampton) | [ ] | |
-| 6 | Londonderry | [/new-hampshire/londonderry](https://aac-astro.vercel.app/new-hampshire/londonderry) | [ ] | |
-| 7 | Manchester | [/new-hampshire/manchester](https://aac-astro.vercel.app/new-hampshire/manchester) | [ ] | |
-| 8 | Nashua | [/new-hampshire/nashua](https://aac-astro.vercel.app/new-hampshire/nashua) | [ ] | |
-| 9 | Portsmouth | [/new-hampshire/portsmouth](https://aac-astro.vercel.app/new-hampshire/portsmouth) | [ ] | |
-| 10 | Rochester | [/new-hampshire/rochester](https://aac-astro.vercel.app/new-hampshire/rochester) | [ ] | |
-| 11 | Salem | [/new-hampshire/salem](https://aac-astro.vercel.app/new-hampshire/salem) | [ ] | |
+- [ ] **NH State Hub** — [Preview](https://aac-astro.vercel.app/new-hampshire)
+  - Notes:
+- [ ] **Derry** — [Preview](https://aac-astro.vercel.app/new-hampshire/derry)
+  - Notes:
+- [ ] **Dover** — [Preview](https://aac-astro.vercel.app/new-hampshire/dover)
+  - Notes:
+- [ ] **Exeter** — [Preview](https://aac-astro.vercel.app/new-hampshire/exeter)
+  - Notes:
+- [ ] **Hampton** — [Preview](https://aac-astro.vercel.app/new-hampshire/hampton)
+  - Notes:
+- [ ] **Londonderry** — [Preview](https://aac-astro.vercel.app/new-hampshire/londonderry)
+  - Notes:
+- [ ] **Manchester** — [Preview](https://aac-astro.vercel.app/new-hampshire/manchester)
+  - Notes:
+- [ ] **Nashua** — [Preview](https://aac-astro.vercel.app/new-hampshire/nashua)
+  - Notes:
+- [ ] **Portsmouth** — [Preview](https://aac-astro.vercel.app/new-hampshire/portsmouth)
+  - Notes:
+- [ ] **Rochester** — [Preview](https://aac-astro.vercel.app/new-hampshire/rochester)
+  - Notes:
+- [ ] **Salem** — [Preview](https://aac-astro.vercel.app/new-hampshire/salem)
+  - Notes:
 
 ---
 
 ## Locations — Maine (11)
 
-| # | Page | URL | Reviewed | Notes |
-|---|------|-----|----------|-------|
-| 1 | ME State Hub | [/maine](https://aac-astro.vercel.app/maine) | [ ] | |
-| 2 | Biddeford | [/maine/biddeford](https://aac-astro.vercel.app/maine/biddeford) | [ ] | |
-| 3 | Gorham | [/maine/gorham](https://aac-astro.vercel.app/maine/gorham) | [ ] | |
-| 4 | Kennebunk | [/maine/kennebunk](https://aac-astro.vercel.app/maine/kennebunk) | [ ] | |
-| 5 | Kittery | [/maine/kittery](https://aac-astro.vercel.app/maine/kittery) | [ ] | |
-| 6 | Portland | [/maine/portland](https://aac-astro.vercel.app/maine/portland) | [ ] | |
-| 7 | Saco | [/maine/saco](https://aac-astro.vercel.app/maine/saco) | [ ] | |
-| 8 | Scarborough | [/maine/scarborough](https://aac-astro.vercel.app/maine/scarborough) | [ ] | |
-| 9 | South Portland | [/maine/south-portland](https://aac-astro.vercel.app/maine/south-portland) | [ ] | |
-| 10 | Westbrook | [/maine/westbrook](https://aac-astro.vercel.app/maine/westbrook) | [ ] | |
-| 11 | York | [/maine/york](https://aac-astro.vercel.app/maine/york) | [ ] | |
+- [ ] **ME State Hub** — [Preview](https://aac-astro.vercel.app/maine)
+  - Notes:
+- [ ] **Biddeford** — [Preview](https://aac-astro.vercel.app/maine/biddeford)
+  - Notes:
+- [ ] **Gorham** — [Preview](https://aac-astro.vercel.app/maine/gorham)
+  - Notes:
+- [ ] **Kennebunk** — [Preview](https://aac-astro.vercel.app/maine/kennebunk)
+  - Notes:
+- [ ] **Kittery** — [Preview](https://aac-astro.vercel.app/maine/kittery)
+  - Notes:
+- [ ] **Portland** — [Preview](https://aac-astro.vercel.app/maine/portland)
+  - Notes:
+- [ ] **Saco** — [Preview](https://aac-astro.vercel.app/maine/saco)
+  - Notes:
+- [ ] **Scarborough** — [Preview](https://aac-astro.vercel.app/maine/scarborough)
+  - Notes:
+- [ ] **South Portland** — [Preview](https://aac-astro.vercel.app/maine/south-portland)
+  - Notes:
+- [ ] **Westbrook** — [Preview](https://aac-astro.vercel.app/maine/westbrook)
+  - Notes:
+- [ ] **York** — [Preview](https://aac-astro.vercel.app/maine/york)
+  - Notes:
 
 ---
 
 ## Locations Hub (1)
 
-| # | Page | URL | Reviewed | Notes |
-|---|------|-----|----------|-------|
-| 1 | All Locations | [/locations](https://aac-astro.vercel.app/locations) | [ ] | |
+- [ ] **All Locations** — [Preview](https://aac-astro.vercel.app/locations)
+  - Notes:
 
 ---
 
@@ -280,18 +412,26 @@ These apply site-wide. Check once, not per-page.
 
 > **Tip:** You don't need to review every project individually for content — they're generated from structured data. Focus on spot-checking 5-10 across different service types to verify layout, images, and summaries look right. Check any you know have real before/after photos.
 
-| # | Page | URL | Reviewed | Notes |
-|---|------|-----|----------|-------|
-| 1 | Projects Hub | [/projects](https://aac-astro.vercel.app/projects) | [ ] | |
-| 2 | Spot-check: Crack Injection | [/projects/duxbury-crack-injection-2026-03](https://aac-astro.vercel.app/projects/duxbury-crack-injection-2026-03) | [ ] | |
-| 3 | Spot-check: Bulkhead | [/projects/groveland-bulkhead-repair-2025-08](https://aac-astro.vercel.app/projects/groveland-bulkhead-repair-2025-08) | [ ] | |
-| 4 | Spot-check: Carbon Fiber | [/projects/weymouth-carbon-fiber-2025-08](https://aac-astro.vercel.app/projects/weymouth-carbon-fiber-2025-08) | [ ] | |
-| 5 | Spot-check: Concrete Repair | [/projects/south-yarmouth-concrete-repair-2026-03](https://aac-astro.vercel.app/projects/south-yarmouth-concrete-repair-2026-03) | [ ] | |
-| 6 | Spot-check: Sewer/Conduit | [/projects/burlington-sewer-conduit-2025-06](https://aac-astro.vercel.app/projects/burlington-sewer-conduit-2025-06) | [ ] | |
-| 7 | Spot-check: Wall Crack | [/projects/rockland-wall-crack-repair-2025-02](https://aac-astro.vercel.app/projects/rockland-wall-crack-repair-2025-02) | [ ] | |
-| 8 | Spot-check: Fieldstone | [/projects/rockland-fieldstone-2025-08](https://aac-astro.vercel.app/projects/rockland-fieldstone-2025-08) | [ ] | |
-| 9 | Spot-check: Single image | [/projects/quincy-crack-injection-2025-09](https://aac-astro.vercel.app/projects/quincy-crack-injection-2025-09) | [ ] | |
-| 10 | Spot-check: Your choice | | [ ] | |
+- [ ] **Projects Hub** — [Preview](https://aac-astro.vercel.app/projects)
+  - Notes:
+- [ ] **Spot-check: Crack Injection** — [Preview](https://aac-astro.vercel.app/projects/duxbury-crack-injection-2026-03)
+  - Notes:
+- [ ] **Spot-check: Bulkhead** — [Preview](https://aac-astro.vercel.app/projects/groveland-bulkhead-repair-2025-08)
+  - Notes:
+- [ ] **Spot-check: Carbon Fiber** — [Preview](https://aac-astro.vercel.app/projects/weymouth-carbon-fiber-2025-08)
+  - Notes:
+- [ ] **Spot-check: Concrete Repair** — [Preview](https://aac-astro.vercel.app/projects/south-yarmouth-concrete-repair-2026-03)
+  - Notes:
+- [ ] **Spot-check: Sewer/Conduit** — [Preview](https://aac-astro.vercel.app/projects/burlington-sewer-conduit-2025-06)
+  - Notes:
+- [ ] **Spot-check: Wall Crack** — [Preview](https://aac-astro.vercel.app/projects/rockland-wall-crack-repair-2025-02)
+  - Notes:
+- [ ] **Spot-check: Fieldstone** — [Preview](https://aac-astro.vercel.app/projects/rockland-fieldstone-2025-08)
+  - Notes:
+- [ ] **Spot-check: Single image** — [Preview](https://aac-astro.vercel.app/projects/quincy-crack-injection-2025-09)
+  - Notes:
+- [ ] **Spot-check: Your choice**
+  - Notes:
 
 ---
 

@@ -32,6 +32,12 @@ These must be done before DNS cutover. Nothing else launches the site.
 - [ ] Schema validates in Google Rich Results Test
 - [ ] Favicon displays correctly
 
+### Manual QA Follow-Up (Claude)
+
+- [ ] **Featured projects filtering audit** — Service pages show mismatched projects (e.g., crack injection on bulkhead page). Audit all 96 project `serviceTypes` in frontmatter to ensure correct categorization.
+- [ ] **"What We Don't Do" cross-linking** — Page has zero inbound links from any other page. Add links from relevant service pages, the footer, or contextual spots in blog content.
+- [ ] **Visual sideways image audit** — EXIF metadata is fixed (0 remaining issues), but run a visual/pixel analysis on all project and blog images to catch any that are genuinely sideways in their pixel data (not just EXIF). Use PIL to check if images appear to be rotated based on aspect ratio and content, and visually verify flagged images.
+
 ### Lighthouse Threshold (Claude)
 
 - [ ] Lighthouse: Performance 90+, Accessibility 95+, SEO 95+

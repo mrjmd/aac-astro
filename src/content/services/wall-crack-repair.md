@@ -115,5 +115,4 @@ We'll be honest about what doesn't need repair:
 - **Same-day response** to urgent issues
 - **Free consultations** — text us a photo for assessment
 - **20+ years** of New England foundation experience
-- **91+ documented projects** with before/after photos
 - **Specialist focus** — crack repair is all we do, not a sideline

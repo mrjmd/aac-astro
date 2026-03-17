@@ -35,7 +35,7 @@ steps:
 
 ## Foundation Crack Injection: The Science of Permanent Repair
 
-Foundation crack injection is the gold standard for repairing poured concrete foundation cracks. Whether you call it cement crack repair or concrete crack repair, the science is the same: unlike surface sealers, hydraulic cement patches, or caulk, low-pressure injection fills the entire crack from interior surface to exterior soil, creating a complete seal that lasts the lifetime of your home.
+Foundation crack injection is the gold standard for repairing poured concrete foundation cracks. Whether you call it cement crack repair or concrete crack repair, the science is the same: unlike surface sealers, hydraulic cement patches, or caulk, injection fills the entire crack from interior surface to exterior soil, creating a complete seal that lasts the lifetime of your home.
 
 Most homeowners notice water in the basement after rain, white powder on basement walls (efflorescence), or a musty smell in the basement — all signs that a foundation crack is allowing water infiltration. Crack injection addresses the root cause, not just the symptom.
 
@@ -45,7 +45,7 @@ Most homeowners notice water in the basement after rain, white powder on basemen
 Foundation cracks aren't surface issues — they extend through the entire wall thickness (typically 8-10 inches of concrete). Surface repairs only address what you can see, leaving the rest of the crack open to water seeping through from saturated soil. Basement floor cracks leaking water are often caused by the same hydrostatic pressure that drives water through wall cracks.
 
 **The Solution**
-Crack injection fills the complete crack void using either polyurethane foam or epoxy resin. Under controlled pressure, specialized resin is forced through injection ports spaced every 8-10 inches, filling the crack completely from interior surface through to the exterior soil. The result is a solid, permanent repair that's as strong as — or stronger than — the original concrete.
+Crack injection fills the complete crack void using either polyurethane foam or epoxy resin. Under controlled pressure, specialized resin is forced through injection ports spaced every 8-10 inches, filling the crack completely from interior surface through to the exterior soil. The result is a solid, permanent repair that's stronger than the original concrete.
 
 ### Our Injection Process
 
@@ -98,11 +98,9 @@ Some cracks benefit from both materials — structural epoxy resin for strength 
 
 - **Vertical shrinkage cracks** — the most common type in poured concrete foundations
 - **Diagonal settlement cracks** — often caused by soil settlement or frost heave
-- **Stair-step cracks** in block or masonry foundations
 - **Cracks around windows and doors** — stress concentration points
 - **Floor-to-wall joint cracks** (cove joints) — where the slab meets the footing
 - **Cracks at cold joints** — where concrete pours met during original construction
-- **Basement floor cracks** leaking water from hydrostatic pressure
 
 ## What Crack Injection Costs
 
@@ -126,4 +124,3 @@ We'll always recommend the right solution — even if it means referring you to 
 - **Complete crack filling** — we don't stop until it's done
 - **Clean, professional work** — your basement stays clean
 - **20+ years** of New England foundation experience
-- **91+ documented projects** — see our before/after photos
