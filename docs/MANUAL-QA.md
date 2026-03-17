@@ -26,35 +26,35 @@ These apply site-wide. Check once, not per-page.
 
 ## Core Pages (5)
 
-- [ ] **Homepage** — [Preview](https://aac-astro.vercel.app/)
-  - Notes: The homepage hero needs to be updated so it's not only just images from a single job. It should show different jobs instead. That can be a post-launch task, but it should be a fast follow. The images showing under the "From Our Blog" section on the home page are not good; they're rotated sideways. I thought we had fixed that, but I see a wall crack that's about floor cracks. I see an article about carbon fiber staples that does not show any staples, and it looks like they're both sideways, so we gotta fix that. And look into whether there's a broader issue with blog posts still having sideways images. Under "How does foundation crack repair work?" in the Frequently Asked Questions section of the home page, we're still saying that we use low-pressure injection, which is specifically inaccurate. I thought we had fixed this throughout the site, so that's concerning. We need to do an audit and make sure that we're not claiming low pressure anywhere. We actually do a higher pressure injection of 95 to 100 psi, higher than the hand pumps. It's part of our value proposition. 
-- [ ] **About** — [Preview](https://aac-astro.vercel.app/about)
-  - Notes: in the About page, it could say at the very top "50+ years of experience" because it's referencing experience not in business. Down in the why trust attack a crack section. HIC licensed and certified. Let's remove the construction supervisor license in MA line. Instead of "Ashi affiliate member", I wonder if we shouldn't just say "active locally" or "local memberships" or something and make it more broad. Then we list underneath: we're members of Ashi, we're members of G Bar, we're members of local chambers of commerce, things like that. It says 260 plus 5-star reviews and then a 4.9-star average, but actually we're a 5.0-star average. Instead of "Meet the team in person", I think it should be "Contact the team today" or something. We're probably not going to meet you unless you actually book us for a job. You can talk to us, though, for free. 
-- [ ] **What We Don't Do** — [Preview](https://aac-astro.vercel.app/what-we-dont-do)
-  - Notes: where is the "What We Don't Do" page even linked from? It seems like an important page, but I don't see it cross-linked a lot of places, so I'm curious about that. I'd never actually looked at this page until this moment. Under "What We Do", Foundation Repair, it says CT and MA instead of CT, MA, and New England. Let's fix that. One thing I would want us to be emphasizing on this page is that you can always call us first. One of the reasons to call us first is because we will never try to upsell you into things that we don't do, because we don't make any money off of that. I don't want to put it that directly, but that's the idea to convey. I don't want to use upsell, but we want to convey that idea. We don't do basement waterproofing systems or sump pump installation, but you can call us and you can trust that we would only recommend that if it's really needed, because we don't do it. We can almost always refer you to someone. Same thing with all of these. Structural engineer: we don't do it, but we can often save you the need for a structural engineer by giving you our advice first. If we're not confident and we do think you should speak to a structural engineer, we'll tell you so and we'll give you a referral to one if you'd like. Excavation contractors? Ensure that they carry proper insurance for this work and that the repair isn't possible to do from the interior at a much more affordable cost. 
-- [ ] **Privacy Policy** — [Preview](https://aac-astro.vercel.app/privacy)
-  - Notes: it says Attack A Crack Foundation Repair operates the website, but it's really just Attack A Crack. 
-- [ ] **Terms of Service** — [Preview](https://aac-astro.vercel.app/terms)
-  - Notes: it says Attack A Crack Foundation Repair operates the website, but it's really just Attack A Crack. Multiple places it references an on-site consultation. We shouldn't say on-site. Contact us for a consultation is all it needs to say. Don't include "on-site". 
+- [x] **Homepage** — [Preview](https://aac-astro.vercel.app/)
+  - Notes:
+- [x] **About** — [Preview](https://aac-astro.vercel.app/about)
+  - Notes:
+- [x] **What We Don't Do** — [Preview](https://aac-astro.vercel.app/what-we-dont-do)
+  - Notes: 
+- [x] **Privacy Policy** — [Preview](https://aac-astro.vercel.app/privacy)
+  - Notes:
+- [x] **Terms of Service** — [Preview](https://aac-astro.vercel.app/terms)
+  - Notes:
 
 ---
 
 ## Services (7)
 
-- [ ] **Services Hub** — [Preview](https://aac-astro.vercel.app/services)
-  - Notes: the concrete repair and resurfacing image on the main services page is still sideways. The "dive deeper" section doesn't show any thumbnail images for these posts. The Proven Methods Lifetime Guarantee section has a sideways image. Can we please just audit the whole site for sideways fucking images? I thought we did this. 
-- [ ] **Foundation Crack Injection** — [Preview](https://aac-astro.vercel.app/services/foundation-crack-injection)
-  - Notes: it says "low pressure" in the opening paragraph of foundation crack injection. It's not low pressure injection; it's high pressure injection. We got to audit the whole fucking site for this because you screwed it up. "permanent repair that’s as strong as — or stronger than — the original concrete" - Let's just say it's stronger than the original concrete. We don't inject stair-step cracks and block our masonry foundations typically. We also don't inject basement floor cracks. I'd also like to remove the line about 91+ documented projects on this page. 
-- [ ] **Wall Crack Repair** — [Preview](https://aac-astro.vercel.app/services/wall-crack-repair)
-  - Notes: let's get the 91+ documented projects thing off of here too. 
-- [ ] **Leaky Bulkhead Repair** — [Preview](https://aac-astro.vercel.app/services/leaky-bulkhead-repair)
-  - Notes: the "Why bulkheads leak" section doesn't mention heaving, which is actually the primary cause of these issues. Moisture gets up underneath the stairs and freezes, and that causes the soil underneath the stairs to expand and heave the entire precast bulkhead upwards. That causes the gasket to fail. One thing that's not mentioned in this page anywhere that I see is that the four bolts that hold the bulkhead to the main foundation are often failure points as well. You may see leaking inside your main basement from one of the four bolts, and our repair method will also address this. Under the Frequently Asked Questions, when it says "Can you repair any type of bulkhead?" The answer is not quite a simple yes. We can typically repair any kind of bulkhead, including pre-cast concrete, steel, and combination units; however, there are cases where a full CMU block bulkhead that is leaking may require excavation and sealing from the outside. In that case, we will let you know and can refer you to someone who can do that. Under the Featured Leaky Bulkhead Repair Projects, I see one bulkhead repair and then I see two crack injection repairs. They're not even all bulkhead repairs. They're being listed there as bulkhead repairs. 
-- [ ] **Carbon Fiber Stitches** — [Preview](https://aac-astro.vercel.app/services/carbon-fiber-stitches)
-  - Notes: under the "When carbon fiber is needed" section, diagonal cracks from corners of windows and doors is not a typical reason to do stitches. Let's remove that one. Under our process, step two is crack injection. We don't do that in every case, so we should say before installing stitches, we will often inject the crack to seal and fill it completely. However, for example, on a block stair step crack, we don't do that because injecting the block is pointless. Further down, we have a similar sentence: "We always combine stitches with crack injection for a complete structural and waterproof repair." That is not accurate. Let's just delete that sentence. Frequently asked questions also mentions diagonal cracks from corners, but that is not a typical reason we use carbon fiber. Let's delete that. The featured projects show projects that are not carbon fiber. Maybe it's fine; it's just a little confusing. 
-- [ ] **Sewer/Conduit Repair** — [Preview](https://aac-astro.vercel.app/services/sewer-well-conduit-line-repair)
-  - Notes: this one looks good. The only issue is down in the featured projects section. It just includes a bunch of projects that don't show super well or conduit line. This seems to be a recurring issue on all of them. 
-- [ ] **Free Consultations** — [Preview](https://aac-astro.vercel.app/services/free-foundation-consultations)
-  - Notes: in-person foundation inspections are only available in Massachusetts. The frequently asked questions: photo assessments typically get a response within minutes, and we usually have you a quote within an hour of sending us photos. In-person consultations only are offered in Massachusetts and typically take 30 minutes. There's a little bit too much emphasis on this page about the DIY thing. I think it's mentioned like four or five times. Can we pare it down a little bit? Get rid of that Frequently Asked Questions. Will you try to sell me services I don't need? I don't like that question. Get that out of there. Also, something about the DIY thing. If some old woman calls us, she's not going to want to hear about DIY, so it could be we'll talk you through DIY or what to tell a handyman for simple repairs, something like that. 
+- [x] **Services Hub** — [Preview](https://aac-astro.vercel.app/services)
+  - Notes:
+- [x] **Foundation Crack Injection** — [Preview](https://aac-astro.vercel.app/services/foundation-crack-injection)
+  - Notes:
+- [x] **Wall Crack Repair** — [Preview](https://aac-astro.vercel.app/services/wall-crack-repair)
+  - Notes:
+- [x] **Leaky Bulkhead Repair** — [Preview](https://aac-astro.vercel.app/services/leaky-bulkhead-repair)
+  - Notes:
+- [x] **Carbon Fiber Stitches** — [Preview](https://aac-astro.vercel.app/services/carbon-fiber-stitches)
+  - Notes:
+- [x] **Sewer/Conduit Repair** — [Preview](https://aac-astro.vercel.app/services/sewer-well-conduit-line-repair)
+  - Notes:
+- [x] **Free Consultations** — [Preview](https://aac-astro.vercel.app/services/free-foundation-consultations)
+  - Notes:
 
 ---
 

@@ -5,7 +5,7 @@ metaDescription: "Expert concrete patio repair in Massachusetts. Fix cracks and 
 excerpt: "Repair your worn concrete patio and transform it into a beautiful outdoor living space. Stamped patterns, custom colors, and durable finishes."
 icon: "Wrench"
 order: 6
-heroImage: "/images/projects/newton-concrete-repair-2025-07-before.jpg"
+heroImage: "/images/concrete-patio-cracked.jpg"
 faqs:
   - question: "Can you make my concrete patio look like natural stone?"
     answer: "Absolutely. Our stamped overlay system can replicate the look of flagstone, slate, brick, cobblestone, and other natural materials at a fraction of the cost."
