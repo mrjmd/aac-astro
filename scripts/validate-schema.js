@@ -12,6 +12,13 @@ import { join, relative } from 'path';
 import { JSDOM } from 'jsdom';
 
 const DIST_DIR = 'dist';
+
+// Paths to exclude from schema validation (not public-facing pages)
+const EXCLUDE_PATHS = [
+  'partners/capture/',  // Lead capture form (no JSON-LD)
+  'partners/qr/',       // QR code print page (no JSON-LD)
+];
+
 const REQUIRED_SCHEMAS = {
   // Page type patterns and their required schema types
   // Hub/index pages use ItemList schemas, not individual page schemas
@@ -209,6 +216,12 @@ function checkRequiredSchemas(schemas, filePath) {
 async function validateFile(filePath) {
   const html = await readFile(filePath, 'utf-8');
   const relativePath = relative(DIST_DIR, filePath);
+
+  // Skip excluded paths
+  if (EXCLUDE_PATHS.some(p => relativePath.startsWith(p))) {
+    pagesChecked++;
+    return;
+  }
 
   const schemas = extractJsonLd(html);
 

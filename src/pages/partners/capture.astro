@@ -1,0 +1,141 @@
+---
+// Standalone lead capture page — no Layout.astro wrapper
+// Used at events via QR code for partner sign-ups
+import '../../styles/global.css';
+---
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Partner with Us | Attack A Crack</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+</head>
+<body class="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+  <div class="w-full max-w-md">
+    <!-- Logo -->
+    <div class="text-center mb-6">
+      <img src="/images/logo.webp" alt="Attack A Crack" class="h-16 mx-auto" />
+    </div>
+
+    <!-- Form -->
+    <div id="form-container" class="bg-white rounded-2xl shadow-lg p-6">
+      <h1 class="text-2xl font-bold text-aac-dark text-center mb-6">Partner with Us</h1>
+      <form id="lead-form" class="space-y-4" novalidate>
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            autocomplete="name"
+            class="w-full rounded-lg border border-gray-300 px-4 py-3 text-base focus:border-aac-blue focus:ring-2 focus:ring-aac-blue/20 outline-none"
+            placeholder="Your full name"
+          />
+        </div>
+        <div>
+          <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            autocomplete="tel"
+            class="w-full rounded-lg border border-gray-300 px-4 py-3 text-base focus:border-aac-blue focus:ring-2 focus:ring-aac-blue/20 outline-none"
+            placeholder="(555) 123-4567"
+          />
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            autocomplete="email"
+            class="w-full rounded-lg border border-gray-300 px-4 py-3 text-base focus:border-aac-blue focus:ring-2 focus:ring-aac-blue/20 outline-none"
+            placeholder="you@company.com"
+          />
+        </div>
+        <div id="form-error" class="text-red-600 text-sm hidden"></div>
+        <button
+          type="submit"
+          id="submit-btn"
+          class="w-full bg-aac-yellow text-aac-dark font-bold py-4 rounded-lg text-lg hover:brightness-95 active:brightness-90 transition disabled:opacity-50"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <!-- Success (hidden by default) -->
+    <div id="success-container" class="bg-white rounded-2xl shadow-lg p-6 text-center hidden">
+      <div class="text-5xl mb-4">&#10003;</div>
+      <h2 class="text-2xl font-bold text-aac-dark mb-2">You're In!</h2>
+      <p class="text-gray-600 mb-6">Thanks for connecting. Save our contact info to stay in touch.</p>
+      <a
+        href="/partners/attack-a-crack.vcf"
+        class="block w-full bg-aac-blue text-white font-bold py-4 rounded-lg text-lg hover:brightness-90 active:brightness-80 transition text-center"
+      >
+        Save Contact
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('lead-form') as HTMLFormElement;
+    const formContainer = document.getElementById('form-container')!;
+    const successContainer = document.getElementById('success-container')!;
+    const errorEl = document.getElementById('form-error')!;
+    const submitBtn = document.getElementById('submit-btn') as HTMLButtonElement;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      errorEl.classList.add('hidden');
+
+      const name = (document.getElementById('name') as HTMLInputElement).value.trim();
+      const phone = (document.getElementById('phone') as HTMLInputElement).value.trim();
+      const email = (document.getElementById('email') as HTMLInputElement).value.trim();
+
+      if (!name || !phone || !email) {
+        errorEl.textContent = 'All fields are required.';
+        errorEl.classList.remove('hidden');
+        return;
+      }
+
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        errorEl.textContent = 'Please enter a valid email address.';
+        errorEl.classList.remove('hidden');
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      try {
+        const res = await fetch('/api/leads', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, phone, email, ref: new URLSearchParams(window.location.search).get('ref') || undefined }),
+        });
+
+        const data = await res.json();
+
+        if (!res.ok || !data.success) {
+          throw new Error(data.error || 'Something went wrong.');
+        }
+
+        formContainer.classList.add('hidden');
+        successContainer.classList.remove('hidden');
+      } catch (err: any) {
+        errorEl.textContent = err.message || 'Something went wrong. Please try again.';
+        errorEl.classList.remove('hidden');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit';
+      }
+    });
+  </script>
+</body>
+</html>

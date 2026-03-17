@@ -16,6 +16,8 @@ const DIST_DIR = 'dist';
 // Paths to exclude from SEO checks (not public-facing pages)
 const EXCLUDE_PATHS = [
   'admin/',  // Decap CMS admin interface
+  'partners/capture/',  // Lead capture form (noindex, no SEO needed)
+  'partners/qr/',  // QR code print page (noindex, no SEO needed)
 ];
 
 // SEO constraints
