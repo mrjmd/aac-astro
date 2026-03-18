@@ -42,6 +42,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       personPayload[referredByKey] = referrerPersonId;
     }
 
+    // Tag lead source so Pipedrive Automations can filter on it
+    const leadSourceKey = process.env.PIPEDRIVE_LEAD_SOURCE_FIELD_KEY;
+    if (leadSourceKey) {
+      personPayload[leadSourceKey] = 'partner-form';
+    }
+
     const personRes = await fetch(
       `https://api.pipedrive.com/v1/persons?api_token=${apiToken}`,
       {
