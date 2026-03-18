@@ -35,8 +35,7 @@ import '../../styles/global.css';
     <div id="qr-container" class="mx-auto mb-6"></div>
 
     <p class="text-xl font-bold text-aac-dark mb-2">Scan to Partner with Us</p>
-    <p id="referrer-name" class="text-sm text-gray-500 mb-1"></p>
-    <p id="qr-url" class="text-xs text-gray-400"></p>
+    <p id="referrer-name" class="text-sm text-gray-500"></p>
 
     <button onclick="window.print()" class="no-print mt-8 bg-aac-blue text-white font-bold py-3 px-8 rounded-lg hover:brightness-90 transition">
       Print This Page
@@ -84,7 +83,6 @@ import '../../styles/global.css';
     // Show referrer name and URL
     const name = REFERRERS[ref] || ref;
     document.getElementById('referrer-name')!.textContent = name;
-    document.getElementById('qr-url')!.textContent = captureUrl.replace(/^https?:\/\//, '');
   </script>
 </body>
 </html>
