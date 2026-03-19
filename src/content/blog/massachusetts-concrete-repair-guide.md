@@ -16,8 +16,7 @@ relatedServices:
   - "driveway"
   - "patio"
   - "pool-deck"
-  - "walkway"
-  - "stairway"
+  - "walkway-stairway"
 ---
 
 Massachusetts is not kind to concrete. Between 50+ freeze-thaw cycles per winter, road salt that gets tracked and splashed onto every surface, clay-heavy soils that heave and settle, and the occasional nor'easter dumping two feet of snow that gets plowed into piles against your garage — your outdoor concrete is under constant assault.

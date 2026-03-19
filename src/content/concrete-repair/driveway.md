@@ -1,10 +1,10 @@
 ---
 title: "Driveway Concrete Repair"
 metaTitle: "Concrete Driveway Crack Repair | MA"
-metaDescription: "Expert concrete driveway repair in Massachusetts. Fix cracks, stains, and scaling with professional repair and decorative resurfacing. Free quotes."
-excerpt: "Repair driveway cracks and damage without the cost of full replacement. Fix damage, add color, and boost curb appeal with decorative resurfacing."
+metaDescription: "Expert concrete driveway repair in Massachusetts. Fix cracks, stains, and scaling with professional resurfacing. Free quotes available."
+excerpt: "Repair driveway cracks and damage without the cost of full replacement. Restore your concrete driveway's appearance with professional resurfacing — typically done in one day."
 icon: "Wrench"
-order: 3
+order: 2
 heroImage: "/images/concrete-driveway-cracked.jpg"
 faqs:
   - question: "How much does driveway repair cost compared to replacement?"
@@ -13,16 +13,22 @@ faqs:
     answer: "We can address most cracks up to 1/4 inch wide. Larger structural cracks may telegraph through over time, but we use crack isolation membranes to minimize this. We'll assess your specific situation."
   - question: "How soon can I drive on a repaired driveway?"
     answer: "Foot traffic is typically allowed within 24 hours. Vehicle traffic should wait 3-5 days for full cure, depending on weather conditions."
+  - question: "Do you repair asphalt driveways?"
+    answer: "No — we work exclusively on concrete driveways. Asphalt (blacktop) requires a different repair process and different materials. If you're unsure whether your driveway is concrete or asphalt, send us a photo and we'll let you know."
 relatedServices:
   - "garage"
-  - "walkway"
+  - "walkway-stairway"
 ---
 
 ## Concrete Driveway Crack Repair in Massachusetts
 
-Your driveway is one of the largest visible surfaces on your property. When it's covered in cracks, stains, and patches, it brings down your entire home's appearance. Concrete driveway crack repair fills existing damage with epoxy resin or hybrid polyurethane, then restores beauty and function with a professional overlay — at 30-50% less than the cost of full replacement.
+Your driveway is one of the largest visible surfaces on your property. When it's covered in cracks, stains, and patches, it brings down your entire home's appearance. Concrete driveway crack repair fills existing damage with epoxy resin or hybrid polyurethane, then restores the surface with a professional overlay — at 30-50% less than the cost of full replacement.
 
 **Concrete vs. cement:** Searching for "cement driveway repair"? Cement is just one ingredient in concrete. Your driveway is concrete, and our repair process bonds directly to the existing concrete surface.
+
+### Concrete Only — Not Asphalt
+
+We repair concrete driveways exclusively. If your driveway is asphalt (blacktop), we're not the right fit — asphalt requires completely different materials and techniques. Not sure what you have? Concrete is typically light gray, while asphalt is black. Text us a photo and we'll confirm.
 
 ### Why Driveways Crack and Deteriorate
 
@@ -36,36 +42,13 @@ Massachusetts driveways face constant assault:
 
 ### How We Repair Driveway Damage
 
-Our concrete overlay system repairs existing damage and creates a brand-new wearing surface over your existing driveway. The result looks like a freshly poured driveway—often better, thanks to decorative options original concrete doesn't offer.
+Our concrete overlay system repairs existing damage and creates a brand-new wearing surface over your existing driveway.
 
 **What We Repair:**
 - Surface cracks and crazing
 - Spalling and flaking
 - Stains and discoloration
 - Rough, worn texture
-- Plain, dated appearance
-
-### Design Options
-
-Transform your driveway's appearance with:
-
-**Colors**
-- Classic grays (multiple shades)
-- Earth tones and browns
-- Custom color matching
-- Two-tone borders and accents
-
-**Patterns**
-- Stamped stone looks
-- Brick patterns
-- Exposed aggregate appearance
-- Custom geometric designs
-
-**Finishes**
-- Smooth troweled
-- Broom textured
-- Light sand texture
-- Heavy slip-resistant
 
 ### Our Driveway Repair Process
 
@@ -73,29 +56,20 @@ Transform your driveway's appearance with:
 We pressure wash and degrease your driveway to remove all contaminants that could interfere with bonding.
 
 **2. Crack Repair**
-Every crack is addressed—filled, routed, or treated with crack isolation membrane as appropriate.
+Every crack is addressed — filled, routed, or treated with crack isolation membrane as appropriate.
 
 **3. Surface Profiling**
-Grinding or etching creates the surface profile needed for permanent overlay adhesion.
+Grinding or etching (typically about 1/8 inch) creates the surface profile needed for permanent overlay adhesion.
 
 **4. Overlay Application**
 Multiple coats of polymer-modified overlay are applied, building to specified thickness (typically 1/8" to 1/4").
 
-**5. Color and Pattern**
-For decorative finishes, color is applied and patterns created while the material is workable.
-
-**6. Protective Sealing**
-High-quality sealer protects against stains, UV damage, and harsh Massachusetts weather.
+**5. Optional Sealer Topcoat**
+A high-quality sealer protects against stains, UV damage, and harsh Massachusetts weather.
 
 ### Timeline and Disruption
 
-**Typical Project Duration:** 2-4 days depending on driveway size
-
-**Timeline:**
-- Day 1: Cleaning and prep
-- Day 2: Repairs and base coat
-- Day 3: Finish coats and decoration
-- Day 4: Sealing and cleanup
+**Typical Project Duration:** Completed in 1 day, 2 at most
 
 **Cure Time:**
 - Foot traffic: 24 hours
@@ -110,9 +84,9 @@ We'll recommend replacement when:
 - Previous overlays are failing
 - Cost of repairs exceeds 60-70% of replacement cost
 
-### Massachusetts Only
+### Massachusetts Service Area
 
-Concrete driveway repair and resurfacing is available throughout Massachusetts. For driveway cracks that are actually foundation-related, we serve both MA and CT for structural repair.
+Concrete driveway repair and resurfacing is available throughout Massachusetts. For foundation repair services, we serve Massachusetts, Connecticut, and much of New England.
 
 ### Get Your Free Quote
 

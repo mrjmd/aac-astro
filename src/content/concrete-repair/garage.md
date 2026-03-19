@@ -1,27 +1,27 @@
 ---
 title: "Garage Floor Concrete Repair"
 metaTitle: "Concrete Garage Floor Repair | MA"
-metaDescription: "Expert concrete garage floor repair in Massachusetts with professional concrete resurfacing. Epoxy and decorative options available. Massachusetts only."
-excerpt: "Repair your garage floor from cracked and stained to showroom-quality. Choose from solid colors, decorative flakes, or metallic finishes."
+metaDescription: "Expert concrete garage floor repair in Massachusetts with professional resurfacing. Fix cracks, pitting, and surface damage. Free assessments available."
+excerpt: "Repair your cracked, stained garage floor with professional concrete resurfacing. We fix the damage and restore a clean, durable surface — typically done in a single day."
 icon: "Wrench"
-order: 4
+order: 3
 heroImage: "/images/projects/lexington-crack-injection-2025-10-after.jpg"
 faqs:
-  - question: "What's the difference between repair and epoxy coating?"
-    answer: "Epoxy coatings are thin surface treatments that look great but may peel on damaged concrete. Our repair system actually rebuilds the concrete surface before any coating, creating a permanent foundation for topcoats."
+  - question: "What's the difference between your repair and an epoxy coating?"
+    answer: "Epoxy coatings are thin surface treatments that may peel on damaged concrete. Our repair system actually rebuilds the concrete surface first, creating a solid foundation. The result is a clean, durable concrete surface."
   - question: "Will the finish resist hot tire pickup?"
-    answer: "Yes. We use polyaspartic topcoats that resist hot tire marks, a common problem with cheaper garage floor systems."
+    answer: "Yes. Our topcoats are formulated to resist hot tire marks, a common problem with cheaper garage floor systems."
   - question: "Can you work around items in my garage?"
-    answer: "We need the floor completely clear for the repair. Most clients temporarily relocate vehicles and items for 3-4 days during the project."
+    answer: "We need the floor completely clear for the repair. Most clients temporarily relocate vehicles and items for the day."
 relatedServices:
   - "driveway"
   - "patio"
-  - "stairway"
+  - "walkway-stairway"
 ---
 
 ## Garage Floor Concrete Crack Repair in Massachusetts
 
-Your garage floor endures chemical spills, road salt, hot tires, heavy impacts, and constant abuse. Over time, even quality concrete develops cracks, pits, and surface damage. Our garage floor concrete repair addresses the underlying damage first — filling cracks with epoxy resin or hybrid polyurethane — then applies a professional-grade protective finish.
+Your garage floor endures chemical spills, road salt, hot tires, heavy impacts, and constant abuse. Over time, even quality concrete develops cracks, pits, and surface damage. Our garage floor concrete repair addresses the underlying damage first — filling cracks with epoxy resin or hybrid polyurethane — then restores the surface with a professional-grade finish.
 
 **Concrete vs. cement:** Most homeowners say "cement floor" when they mean "concrete floor." Cement is just one ingredient in concrete (like flour in bread). Your garage floor is concrete, and our repair process bonds directly to the existing concrete matrix.
 
@@ -35,7 +35,7 @@ Garage floors face unique challenges:
 - **Moisture** from snow-covered vehicles
 - **Abrasion** from foot traffic and moving items
 
-### Beyond Basic Epoxy
+### Beyond DIY Epoxy Kits
 
 Big-box store epoxy kits promise garage transformation, but they often fail because:
 - Surface preparation is inadequate
@@ -43,59 +43,41 @@ Big-box store epoxy kits promise garage transformation, but they often fail beca
 - Products aren't formulated for garage conditions
 - Application by untrained DIYers compromises results
 
-Our professional repair system addresses the concrete itself, creating a solid foundation for long-lasting finishes.
-
-### Finish Options
-
-**Solid Color**
-Clean, professional look in a wide range of colors. Ideal for workshops and utility garages.
-
-**Decorative Flake**
-Vinyl color chips broadcast into the coating create depth and hide imperfections. The classic "garage floor" look.
-
-**Metallic Epoxy**
-Three-dimensional, flowing patterns that make your garage floor a work of art. Perfect for car enthusiasts.
-
-**Quartz Broadcast**
-Industrial-grade finish with exceptional durability. Excellent for high-use garages and workshops.
+Our professional repair system addresses the concrete itself, creating a solid, clean surface that looks like a fresh garage floor.
 
 ### Our Garage Floor Repair Process
 
-**Day 1: Preparation**
+**1. Preparation**
 - Remove all items from garage
 - Diamond grind entire floor (creates proper profile)
 - Fill cracks and repair damage
 - Clean and vacuum thoroughly
 
-**Day 2: Base Coat**
+**2. Overlay Application**
 - Apply moisture barrier if needed
-- Apply repair base coat
-- Allow initial cure
+- Apply polymer-modified overlay
+- Build to proper thickness
 
-**Day 3: Finish Coats**
-- Apply color base coat
-- Broadcast flakes or apply metallic (if chosen)
-- Apply clear topcoat(s)
-
-**Day 4: Final Steps**
-- Final topcoat application
-- Quality inspection
-- Cleanup
+**3. Finish and Seal**
+- Apply protective topcoat
+- Quality inspection and cleanup
 
 ### Performance Features
 
-- **Chemical resistant** – oil, gasoline, antifreeze, brake fluid
-- **Hot tire resistant** – no peeling or marks
-- **Impact resistant** – dropped tools won't damage
-- **Easy to clean** – dust and debris wipe up easily
-- **UV stable** – won't yellow or fade
-- **Slip resistant** – texture options for safety
+- **Chemical resistant** — oil, gasoline, antifreeze, brake fluid
+- **Hot tire resistant** — no peeling or marks
+- **Impact resistant** — dropped tools won't damage
+- **Easy to clean** — dust and debris wipe up easily
+- **UV stable** — won't yellow or fade
 
-### Cure Time
+### Timeline
 
-- **Foot traffic:** 24 hours
-- **Vehicles:** 5-7 days (we'll provide specific guidance)
-- **Heavy use:** 14 days for full chemical resistance
+Most garage floors are completed in a single full day.
+
+**Cure Time:**
+- Foot traffic: 24 hours
+- Vehicles: 5-7 days (we'll provide specific guidance)
+- Full cure: 14 days
 
 ### What About Cracks?
 

@@ -27,10 +27,26 @@ const { Content } = await render(service);
 // Get matching projects for this specific concrete repair type
 const serviceSlug = service.id.replace(/\.md$/, '');
 const projectServiceType = SERVICE_SLUG_MAP[serviceSlug] || 'concrete-repair';
-const concreteProjects = await getProjectsByService(projectServiceType, 3);
+let concreteProjects = await getProjectsByService(projectServiceType, 3);
+
+// Backfill with other concrete-repair projects if fewer than 3
+if (concreteProjects.length < 3) {
+  const allConcreteProjects = await getProjectsByService('concrete-repair', 6);
+  const existingIds = new Set(concreteProjects.map(p => p.id));
+  const backfill = allConcreteProjects.filter(p => !existingIds.has(p.id));
+  concreteProjects = [...concreteProjects, ...backfill].slice(0, 3);
+}
 
 // Get related blog posts for this concrete repair type
-const relatedBlogPosts = await getBlogForService(serviceSlug, 4);
+let relatedBlogPosts = await getBlogForService(serviceSlug, 4);
+
+// Backfill with general concrete-related blog posts if fewer than 3
+if (relatedBlogPosts.length < 3) {
+  const generalPosts = await getBlogForService('concrete-repair', 6);
+  const existingIds = new Set(relatedBlogPosts.map(p => p.id));
+  const backfill = generalPosts.filter(p => !existingIds.has(p.id));
+  relatedBlogPosts = [...relatedBlogPosts, ...backfill].slice(0, 4);
+}
 
 // Get all concrete repair services for related section
 const allServices = await getCollection('concrete-repair');
@@ -242,7 +258,7 @@ const schemas = faqSchema ? [serviceSchema, faqSchema] : [serviceSchema];
 		<!-- Featured Projects -->
 		<ProjectCards
 			projects={concreteProjects}
-			heading={`Featured ${service.data.title} Projects`}
+			heading="Recent Concrete Repair Projects"
 		/>
 
 		<!-- Helpful Guides -->
@@ -254,7 +270,7 @@ const schemas = faqSchema ? [serviceSchema, faqSchema] : [serviceSchema];
 							<Icon name="Info" size={14} /> Helpful Guides
 						</div>
 						<h2 class="text-3xl font-black tracking-tighter text-aac-dark">
-							Learn More About {service.data.title}
+							Concrete Repair Guides
 						</h2>
 					</div>
 					<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -153,7 +153,7 @@ I've seen homeowners wait years for "the right time" and end up paying three to 
 ### Summer (June–August)
 - [ ] Inspect exterior foundation for cracks, spalling, efflorescence
 - [ ] Check grading — soil should slope away from foundation
-- [ ] Repair exterior concrete ([steps](/concrete-repair/stairway), [walkways](/concrete-repair/walkway)) while conditions allow
+- [ ] Repair exterior concrete ([walkways and stairs](/concrete-repair/walkway-stairway)) while conditions allow
 - [ ] Schedule foundation inspection if you noticed spring leaks
 
 ### Fall (September–November)

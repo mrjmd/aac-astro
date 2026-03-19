@@ -1,30 +1,30 @@
 ---
 title: "Patio Concrete Repair"
 metaTitle: "Concrete Patio Crack Repair | MA"
-metaDescription: "Expert concrete patio repair in Massachusetts. Fix cracks and damage with decorative resurfacing—custom colors and patterns. Free consultation."
-excerpt: "Repair your worn concrete patio and transform it into a beautiful outdoor living space. Stamped patterns, custom colors, and durable finishes."
+metaDescription: "Expert concrete patio repair in Massachusetts. Fix cracks, stains, and surface damage with professional resurfacing. Free consultation available."
+excerpt: "Repair your worn concrete patio and restore it to a clean, durable surface. Fix cracks, stains, and weathering — most patios completed in 1-2 days."
 icon: "Wrench"
-order: 6
+order: 5
 heroImage: "/images/concrete-patio-cracked.jpg"
 faqs:
-  - question: "Can you make my concrete patio look like natural stone?"
-    answer: "Absolutely. Our stamped overlay system can replicate the look of flagstone, slate, brick, cobblestone, and other natural materials at a fraction of the cost."
-  - question: "How does the repaired surface hold up to outdoor furniture?"
-    answer: "Very well. The surface is durable enough for furniture, grills, and normal patio use. We recommend felt pads on furniture legs to prevent scratching, just as you would on any quality surface."
+  - question: "How long does patio repair take?"
+    answer: "Most patios are completed in 1-2 days depending on size and condition. You can typically use the patio for light foot traffic within 48 hours, with full cure in about a week."
   - question: "What about winter in Massachusetts?"
     answer: "Our repair systems are designed for New England's freeze-thaw cycles. Proper sealing protects against moisture penetration, and the overlay materials expand and contract with temperature changes."
+  - question: "Can you match the color of my existing concrete?"
+    answer: "We offer basic color matching to blend with your home's exterior and surrounding hardscape. The result is a clean, uniform surface rather than a patchwork appearance."
 relatedServices:
-  - "walkway"
+  - "walkway-stairway"
   - "pool-deck"
 ---
 
 ## Concrete Patio Crack Repair in Massachusetts
 
-Your patio should be an outdoor retreat — a place for relaxation, entertaining, and enjoying Massachusetts summers. When your concrete patio is cracked, stained, and deteriorating, it becomes a space you avoid rather than enjoy. Our concrete patio repair service fills cracks with epoxy resin or polymer-modified materials, then transforms the surface with durable, decorative finishes.
+Your patio should be an outdoor retreat — a place for relaxation, entertaining, and enjoying Massachusetts summers. When your concrete patio is cracked, stained, and deteriorating, it becomes a space you avoid rather than enjoy. Our concrete patio repair service fills cracks with epoxy resin or polymer-modified materials, then restores the surface with durable finishes.
 
 **Concrete vs. cement:** Many homeowners search for "cement patio repair" — cement is just one ingredient in concrete. Your patio is concrete, and our overlay system bonds directly to the existing concrete matrix.
 
-### From Eyesore to Outdoor Oasis
+### From Eyesore to Outdoor Space
 
 Concrete patios deteriorate for many reasons:
 - **Age and weathering** dull the surface
@@ -32,66 +32,34 @@ Concrete patios deteriorate for many reasons:
 - **Stains accumulate** from grills, plants, and weather
 - **The original finish** was never very attractive anyway
 
-Our repair process addresses all of these issues, giving you a beautiful new surface that actually enhances your outdoor space.
-
-### Design Possibilities
-
-This is where concrete repair really shines. Unlike plain gray concrete, our decorative overlays offer virtually unlimited design options:
-
-**Stamped Patterns**
-- **Flagstone** – Natural, organic shapes
-- **Slate** – Clean, elegant lines
-- **Brick** – Classic herringbone or running bond
-- **Cobblestone** – Old-world charm
-- **Tile** – Mediterranean or contemporary styles
-
-**Colors**
-- Earth tones that complement your landscape
-- Cool grays for modern aesthetics
-- Warm terra cotta for traditional homes
-- Two-tone combinations for visual interest
-- Custom matching to your home's exterior
-
-**Borders and Accents**
-- Contrasting border colors
-- Compass rose inlays
-- Custom patterns and logos
-- Transition details between areas
+Our repair process addresses all of these issues, giving you a clean new surface that restores your outdoor space.
 
 ### Our Patio Repair Process
 
-**Consultation**
-We visit your home, assess your existing patio, and discuss your vision. We'll show you samples and help you choose the perfect design.
+**Photo Assessment**
+Text us photos of your patio and we'll evaluate the condition and provide an initial recommendation. Most assessments can be done from photos alone.
 
 **Preparation**
-Your patio is thoroughly cleaned and prepared. Cracks are repaired, low spots are leveled, and the surface is profiled for optimal bonding.
+Your patio is thoroughly cleaned and prepared. Cracks are repaired, low spots are filled in, and the surface is profiled for optimal bonding.
 
 **Base Coat Application**
-Our polymer-modified base coat creates a solid foundation for decorative work. This layer bonds permanently to your existing concrete.
+Our polymer-modified base coat creates a solid foundation. This layer bonds permanently to your existing concrete.
 
-**Decorative Work**
-For stamped patterns, we apply the color and texture coats, then stamp the pattern while the material is workable. For textured finishes, we apply color and create the desired texture.
-
-**Sealing**
-Premium sealer protects your investment from stains, UV damage, and Massachusetts weather. We typically apply multiple coats for maximum protection.
+**Texture and Seal**
+We apply the desired texture for a clean, uniform finish. An optional sealant topcoat adds extra protection against stains and Massachusetts weather.
 
 ### Maintenance Made Easy
 
-Unlike other patio surfaces, repaired and resurfaced concrete is easy to maintain:
+Repaired and resurfaced concrete is easy to maintain:
 - Sweep or blow off debris regularly
 - Rinse with garden hose as needed
-- Reseal every 2-3 years (we offer maintenance packages)
+- Reseal every 2-3 years for best results
 - No weeds growing between pavers
 - No individual stones settling or shifting
 
 ### Timeline
 
-**Typical Project:** 3-5 days
-
-- Day 1-2: Preparation and repairs
-- Day 2-3: Base coat and curing
-- Day 3-4: Decorative application
-- Day 4-5: Sealing and cleanup
+**Typical Project:** Most patios completed in 1-2 days
 
 **Light Use:** 48 hours after completion
 **Furniture:** 5-7 days
@@ -106,10 +74,10 @@ We'll tell you honestly when resurfacing isn't the right approach:
 
 ### Massachusetts Concrete Patio Experts
 
-We've repaired patios throughout Massachusetts — from small urban courtyards in Boston to expansive suburban entertaining spaces. Our team understands both the technical requirements and the design possibilities for New England outdoor living.
+We've repaired patios throughout Massachusetts — from small urban courtyards in Boston to expansive suburban entertaining spaces. Our team understands the technical requirements for New England outdoor surfaces.
 
 ### Ready to Repair Your Patio?
 
-Contact us for a free design consultation and quote:
+Contact us for a free consultation and quote:
 
 **Massachusetts:** 617-668-1677

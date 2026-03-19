@@ -2,25 +2,25 @@
 title: "Pool Deck Concrete Repair"
 metaTitle: "Concrete Pool Deck Repair | MA"
 metaDescription: "Expert concrete pool deck repair in Massachusetts. Fix cracks, stains, and heat issues with slip-resistant, cool-touch resurfacing. Free quote."
-excerpt: "Repair cracked, stained pool decks with cool-touch, slip-resistant concrete overlays. Multiple colors and patterns to complement your outdoor space."
+excerpt: "Repair cracked, stained pool decks with cool-touch, slip-resistant concrete resurfacing. Safe, comfortable surfaces for bare feet — typically done in 1-2 days."
 icon: "Wrench"
-order: 5
+order: 4
 heroImage: "/images/concrete-pool-deck-cracked.jpg"
 faqs:
   - question: "Is the repaired surface safe for bare feet?"
     answer: "Absolutely. We use cool-touch technologies that reduce surface temperature and slip-resistant textures that provide traction even when wet. Safety is paramount around pools."
   - question: "How does the surface handle pool chemicals?"
     answer: "Our sealers are formulated to resist chlorine, salt, and other pool chemicals. The surface won't discolor or deteriorate from normal pool water exposure."
-  - question: "Can you match my pool coping or patio furniture?"
-    answer: "Yes. We offer extensive color options and can custom-match to coordinate with your existing outdoor elements."
+  - question: "Do I need to lower the pool water level?"
+    answer: "No — there's no need to lower your pool water. Just stay off the deck during the repair and curing process."
 relatedServices:
   - "patio"
-  - "walkway"
+  - "walkway-stairway"
 ---
 
 ## Concrete Pool Deck Crack Repair in Massachusetts
 
-Your pool deck should be an inviting extension of your outdoor living space — not a cracked, stained eyesore that's too hot to walk on barefoot. Our pool deck concrete repair service fills cracks with specialized materials, then applies a cool-touch, slip-resistant overlay that transforms worn concrete into a beautiful, safe surface.
+Your pool deck should be an inviting extension of your outdoor living space — not a cracked, stained eyesore that's too hot to walk on barefoot. Our pool deck concrete repair service fills cracks with specialized materials, then applies a cool-touch, slip-resistant overlay that transforms worn concrete into a safe, comfortable surface.
 
 **Concrete vs. cement:** Pool decks are made of concrete, not cement (cement is just one ingredient). Our repair system bonds directly to existing concrete for a permanent fix.
 
@@ -34,7 +34,7 @@ Pool decks face unique conditions that cause damage:
 - **Heat buildup** making barefoot use impossible
 - **Staining** from years of pool use
 
-Standard concrete repair alone isn't enough—our overlay system fixes the damage and upgrades the surface.
+Standard concrete repair alone isn't enough — our overlay system fixes the damage and upgrades the surface.
 
 ### Critical Safety Features
 
@@ -42,35 +42,15 @@ Standard concrete repair alone isn't enough—our overlay system fixes the damag
 Wet concrete is dangerously slippery. Our pool deck surfaces incorporate slip-resistant textures and additives that maintain traction even when soaking wet. We meet or exceed safety standards for coefficient of friction.
 
 **Cool-Touch Technology**
-Dark concrete can reach 140°F+ in summer sun—impossible to walk on barefoot. Our cool-deck formulations reflect heat and stay comfortable even in full sun.
+Dark concrete can reach 140°F+ in summer sun — impossible to walk on barefoot. Our cool-deck formulations reflect heat and stay comfortable even in full sun.
 
 **Smooth but Safe**
-Nobody wants rough concrete scratching their feet. Our textures strike the perfect balance—smooth enough for comfort, textured enough for safety.
-
-### Design Options
-
-**Colors**
-- Sandstone and desert tones
-- Cool grays and blues
-- Terra cotta and earth tones
-- Custom colors to match your outdoor decor
-
-**Patterns**
-- Natural stone looks
-- Flagstone patterns
-- Tile designs
-- Textured solid colors
-
-**Borders and Accents**
-- Contrasting coping colors
-- Decorative borders
-- Inlaid patterns
-- Custom logos or designs
+Nobody wants rough concrete scratching their feet. Our textures strike the perfect balance — smooth enough for comfort, textured enough for safety.
 
 ### Our Pool Deck Repair Process
 
 **Assessment**
-We evaluate your deck's condition, identify all cracks and damage, discuss your aesthetic preferences, and recommend the best repair approach.
+We evaluate your deck's condition, identify all cracks and damage, and recommend the best repair approach.
 
 **Preparation**
 The deck is thoroughly cleaned, and all cracks and damage are repaired. Proper prep is crucial for pool decks that endure constant moisture.
@@ -78,23 +58,19 @@ The deck is thoroughly cleaned, and all cracks and damage are repaired. Proper p
 **Application**
 Multiple coats of our pool deck overlay system are applied. Special formulations ensure proper curing even in the humid pool environment.
 
-**Texture and Color**
-Slip-resistant texture is applied along with your chosen color. Decorative elements are added at this stage.
-
-**Sealing**
-Premium sealer protects against UV, chemicals, and stains while maintaining slip resistance.
+**Texture and Sealing**
+Slip-resistant texture is applied along with a protective sealer that guards against UV, chemicals, and stains.
 
 ### Timeline
 
-- **Project duration:** 3-5 days depending on deck size
+- **Project duration:** Most pool decks completed in 1-2 days
 - **Pool use:** Resume 5-7 days after completion
 - **Full cure:** 14 days
 
 ### Preparation Requirements
 
 For best results, we recommend:
-- Lowering pool water level slightly (we'll specify)
-- Removing all furniture and accessories
+- Removing all furniture and accessories from the deck
 - Ensuring adequate drainage away from pool
 - Planning the project for dry weather
 
@@ -107,7 +83,7 @@ We'll be honest about when resurfacing isn't the right answer:
 
 ### Massachusetts Pool Deck Repair Experts
 
-We've repaired pool decks throughout Massachusetts, from modest residential pools to large community facilities. Our team understands the unique requirements of pool deck surfaces — safety, comfort, chemical resistance, and aesthetics.
+We've repaired pool decks throughout Massachusetts, from modest residential pools to large community facilities. Our team understands the unique requirements of pool deck surfaces — safety, comfort, and chemical resistance.
 
 ### Get Your Pool Deck Quote
 

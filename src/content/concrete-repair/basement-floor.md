@@ -4,7 +4,7 @@ metaTitle: "Basement Floor Crack Repair in MA"
 metaDescription: "Professional basement floor crack repair in Massachusetts. We grind out cracks and seal with self-leveling epoxy or commercial rubber coating. Free assessments."
 excerpt: "Basement floor cracks let in water and radon gas. We grind out damage and seal with self-leveling epoxy or commercial rubber — hardware store patches cannot compare."
 icon: "Wrench"
-order: 7
+order: 6
 heroImage: "/images/projects/quincy-crack-injection-2025-08-2-before.jpg"
 faqs:
   - question: "Are basement floor cracks serious?"
@@ -91,7 +91,7 @@ For context:
 
 Basement floor crack repair is available throughout **Massachusetts**. We serve the Greater Boston area, South Shore, North Shore, MetroWest, Central MA, and Western MA.
 
-For basement wall cracks in Connecticut or Massachusetts, see our [foundation crack injection](/services/foundation-crack-injection) services available in both states.
+For basement wall cracks in Connecticut, Massachusetts, or the rest of New England, see our [foundation crack injection](/services/foundation-crack-injection) services available throughout the region.
 
 ### Get Your Free Assessment
 

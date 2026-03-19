@@ -144,8 +144,7 @@ export const SERVICE_SLUG_MAP: Record<string, string> = {
   // Concrete repair services
   'driveway': 'driveway',
   'patio': 'patio',
-  'walkway': 'walkway',
+  'walkway-stairway': 'walkway',
   'pool-deck': 'pool-deck',
-  'stairway': 'stairway',
   'garage': 'garage-floor',
 };

@@ -96,7 +96,7 @@ Settling, cracking, and surface deterioration are common on flat concrete surfac
 
 ### Steps and Stoops
 
-Concrete steps crack and spall from salt exposure and impact. Pulling away from the house is common as the soil beneath settles. [Stairway repair](/concrete-repair/stairway) can fix both structural and cosmetic issues.
+Concrete steps crack and spall from salt exposure and impact. Pulling away from the house is common as the soil beneath settles. [Walkway and stairway repair](/concrete-repair/walkway-stairway) can fix both structural and cosmetic issues.
 
 ## Mortar vs. Concrete vs. Cement: The Full Picture
 
