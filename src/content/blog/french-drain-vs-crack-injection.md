@@ -67,7 +67,7 @@ Sometimes a homeowner has general perimeter water intrusion AND specific cracks 
 
 ## What We Do vs. What We Refer
 
-Attack A Crack specializes in [foundation crack injection](/services/foundation-crack-injection), [wall crack repair](/services/wall-crack-repair), [carbon fiber staples and reinforcement](/services/carbon-fiber-stitches), and [bulkhead repair](/services/leaky-bulkhead-repair). We do not install French drain systems. If your basement needs one, we will tell you and point you toward reputable waterproofing contractors. We would rather send you to the right solution than sell you the wrong one.
+Attack A Crack specializes in [foundation crack injection](/services/foundation-crack-injection), [wall crack repair](/services/wall-crack-repair), [carbon fiber staples and reinforcement](/services/carbon-fiber-stitches), and [bulkhead repair](/services/leaky-bulkhead-repair). We do not install French drain systems — see [what we don't do](/what-we-dont-do) for the full list. If your basement needs one, we will tell you and point you toward reputable waterproofing contractors. We would rather send you to the right solution than sell you the wrong one.
 
 ## Quick Diagnostic: Head to Your Basement During Rain
 

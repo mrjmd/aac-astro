@@ -101,7 +101,7 @@ const articleSchema = {
   "@type": "Article",
   "headline": post.data.title,
   "description": post.data.metaDescription,
-  "image": post.data.heroImage || "/images/projects/marshfield-crack-injection-2025-06-before.jpg",
+  "image": new URL(post.data.heroImage || "/images/projects/marshfield-crack-injection-2025-06-before.jpg", "https://www.attackacrack.com").href,
   "datePublished": post.data.publishDate.toISOString(),
   "dateModified": (post.data.updatedDate || post.data.publishDate).toISOString(),
   "author": getAuthorSchema(post.data.author),

@@ -116,7 +116,7 @@ We've examined thousands of wet basements. We can quickly assess whether your pr
 - Better addressed with waterproofing (some cases)
 - A combination of both (occasionally)
 
-When waterproofing is truly needed, we'll refer you to reputable waterproofers—companies we trust to treat you fairly.
+When waterproofing is truly needed, we'll refer you to reputable waterproofers—companies we trust to treat you fairly. For a full list of services we don't offer (and why), see [what we don't do](/what-we-dont-do).
 
 ## Case Study: The Targeted Fix vs. $12,000 Quote
 

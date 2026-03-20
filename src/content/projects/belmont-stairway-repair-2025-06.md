@@ -8,6 +8,7 @@ coordinates:
   lng: -71.1773
 serviceTypes:
   - stairway
+  - walkway
   - wall-crack-repair
 beforeImage: /images/projects/belmont-crack-injection-2025-06-before.jpg
 afterImage: /images/projects/belmont-crack-injection-2025-06-after.jpg

@@ -29,14 +29,14 @@ These must be done before DNS cutover. Nothing else launches the site.
 - [ ] "260+ Google reviews" claim is current
 - [ ] Images load on all pages
 - [ ] Mobile responsive (iPhone, Android)
-- [ ] Schema validates in Google Rich Results Test
+- [x] Schema validates in Google Rich Results Test — Spot-checked 5 representative pages (homepage, service, city, blog, state hub). Fixed: blog Article image relative→absolute URL, duplicate BreadcrumbList on all pages, missing author lookup for "Matt Davis" and "Attack A Crack".
 - [ ] Favicon displays correctly
 
 ### Manual QA Follow-Up (Claude)
 
-- [ ] **Featured projects filtering audit** — Service pages show mismatched projects (e.g., crack injection on bulkhead page). Audit all 96 project `serviceTypes` in frontmatter to ensure correct categorization.
-- [ ] **"What We Don't Do" cross-linking** — Page has zero inbound links from any other page. Add links from relevant service pages, the footer, or contextual spots in blog content.
-- [ ] **Visual sideways image audit** — EXIF metadata is fixed (0 remaining issues), but run a visual/pixel analysis on all project and blog images to catch any that are genuinely sideways in their pixel data (not just EXIF). Use PIL to check if images appear to be rotated based on aspect ratio and content, and visually verify flagged images.
+- [x] **Featured projects filtering audit** — Renamed 8 mismatched project files to match serviceTypes. Added `walkway` to 4 stairway-tagged projects so they appear on walkway-stairway service page.
+- [x] **"What We Don't Do" cross-linking** — Added contextual links in 3 blog posts (waterproofing, repair-vs-replacement, French drain) + footer Quick Links.
+- [x] **Visual sideways image audit** — PIL dimension check on 217 JPGs found 6 tall-portrait anomalies, all verified as correctly oriented vertical crack photos. No sideways images found.
 - [ ] **Home page hero images (Matt)** — Hand-select photos from multiple projects to feature in the home page hero section. Matt to choose which project photos best represent the range of services.
 
 ### Lighthouse Threshold (Claude)

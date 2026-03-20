@@ -39,6 +39,31 @@ export const authors: Record<string, Author> = {
       "Massachusetts Foundation Repair Standards"
     ],
     description: "Managing Partner at Attack A Crack, leading Massachusetts operations. Matt brings technical expertise and a commitment to customer satisfaction to every project."
+  },
+  "Matt Davis": {
+    name: "Matt Davis",
+    jobTitle: "Managing Partner",
+    worksFor: "Attack A Crack Foundation Repair",
+    image: "https://www.attackacrack.com/images/team/matt.webp",
+    knowsAbout: [
+      "Project Management",
+      "Customer Consultation",
+      "Massachusetts Foundation Repair Standards"
+    ],
+    description: "Managing Partner at Attack A Crack, leading Massachusetts operations. Matt brings technical expertise and a commitment to customer satisfaction to every project."
+  },
+  "Attack A Crack": {
+    name: "Attack A Crack Foundation Repair",
+    jobTitle: "",
+    worksFor: "Attack A Crack Foundation Repair",
+    image: "https://www.attackacrack.com/images/logo.jpg",
+    knowsAbout: [
+      "Foundation Repair",
+      "Concrete Crack Injection",
+      "Structural Reinforcement",
+      "New England Foundation Problems"
+    ],
+    description: "Family-owned foundation repair contractor serving New England for 20+ years. Specialists in crack injection, carbon fiber reinforcement, and concrete repair."
   }
 };
 

@@ -8,6 +8,7 @@ coordinates:
   lng: -70.9395
 serviceTypes:
   - stairway
+  - walkway
 beforeImage: /images/projects/weymouth-crack-injection-2025-07-3-before.jpg
 afterImage: /images/projects/weymouth-crack-injection-2025-07-3-after.jpg
 beforeAfterVerified: false
