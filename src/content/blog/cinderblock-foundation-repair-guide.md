@@ -2,7 +2,7 @@
 title: "Cinderblock (CMU) Foundation Repair: Signs, Solutions, and Costs"
 metaTitle: "Cinderblock Foundation Repair in CT & MA"
 metaDescription: "Professional cinderblock and CMU foundation repair. Fix cracks, bowing walls, and water problems in block foundations throughout New England."
-excerpt: "Cinderblock foundations are common in mid-century homes but prone to specific problems. Learn how we repair cracked and bowing block walls with carbon fiber, I-beams, and more."
+excerpt: "Cinderblock foundations are common in mid-century homes but prone to specific problems. Learn how we repair cracked and bowing block walls with carbon fiber reinforcement."
 publishDate: 2025-07-09
 author: "Luc Richard"
 category: "foundation-types"
@@ -12,8 +12,8 @@ tags:
   - "CMU"
   - "foundation repair"
   - "bowing walls"
-heroImage: "/images/projects/malden-crack-injection-2025-05-after.jpg"
-heroImageAlt: "Cinderblock foundation wall after professional crack repair in Malden"
+heroImage: "/images/projects/weymouth-carbon-fiber-2025-08-before.jpg"
+heroImageAlt: "Cinderblock foundation wall showing cracks requiring carbon fiber reinforcement"
 relatedServices:
   - "wall-crack-repair"
   - "carbon-fiber-stitches"
@@ -87,40 +87,28 @@ Block foundations are particularly susceptible to water problems because:
 - Block surfaces are porous
 - Age causes mortar deterioration
 
-### Our Cinderblock Repair Methods
+### Repairs We Perform
 
 **Carbon Fiber Staples (Stitches) for Block Wall Reinforcement**
 
-For walls with cracking but minimal bowing (under 2"):
+Our primary cinderblock repair method. For walls with cracking but minimal bowing (under 2"):
 - [Carbon fiber staples (straps)](/services/carbon-fiber-stitches) bonded to wall surface at $200-$300 per stitch
 - Extremely high tensile strength — 10x stronger than steel by weight
 - Low profile — doesn't reduce basement space
 - Prevents further movement permanently
 - Lifetime transferable warranty available
 
-**Steel I-Beam Systems**
+**Important note about block injection:** Unlike poured concrete walls, cinderblock walls usually cannot be injected effectively. The hollow cores and mortar joints create too many pathways for material to dissipate. Carbon fiber reinforcement is typically the right approach for structural cracks in block foundations.
 
-For walls with moderate bowing or where carbon fiber isn't suitable:
-- Steel beams installed vertically against wall
-- Anchored to floor slab and floor framing
-- Can often be adjusted to gradually straighten wall
-- Industrial-strength stabilization
+### Repairs We May Recommend
 
-**Wall Anchor Systems**
+The following are not services we perform, but depending on the severity of your situation, we may recommend a specialist who does.
 
-For bowing walls with accessible exterior yard space:
-- Steel rods extend from wall through soil to anchor plates
-- Earth anchors installed in stable soil beyond foundation
-- Can often restore wall to near-vertical over time
-- Least visible interior solution
+**Steel I-Beam Systems** — For walls with moderate to severe bowing where carbon fiber isn't sufficient. Steel beams installed vertically against the wall provide industrial-strength stabilization.
 
-**Crack Repair and Waterproofing**
+**Wall Anchor Systems** — For bowing walls with accessible exterior yard space. Steel rods extend through soil to anchor plates, and can often restore a wall to near-vertical over time.
 
-For water infiltration — if you notice water in your basement after rain, white powder on basement walls, or a musty smell in your basement:
-- [Crack injection](/services/foundation-crack-injection) with epoxy or polyurethane at 100 PSI ($800-$1,200 per crack)
-- Mortar joint restoration
-- Interior drainage systems for high water table conditions
-- Core sealing where appropriate
+**Interior Waterproofing/Drainage** — For water infiltration through block walls (water in your basement after rain, white powder on walls, musty smell), interior drainage systems may be needed for high water table conditions.
 
 ### When to Act
 
@@ -128,6 +116,7 @@ Cinderblock foundation problems tend to worsen over time. Early signs that warra
 
 - **Cracks wider than 1/4"** – Indicates significant movement
 - **Horizontal cracks at any width** – Structural concern
+- **Step cracks following mortar joints** – Settlement or soil pressure
 - **Visible wall bowing** – Progressive failure risk
 - **Water entering basement** – Ongoing damage to foundation
 
@@ -147,4 +136,4 @@ If your cinderblock foundation shows signs of stress, contact us for a free eval
 
 **Connecticut & Massachusetts:** 617-668-1677
 
-Text us a photo for a quick preliminary assessment, or call to schedule. With 20+ years of experience and 91+ documented projects across New England, we'll assess the severity, explain your options, and provide honest recommendations. See our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) for complete pricing details.
+Text us a photo for a quick preliminary assessment, or call to schedule. With 50+ years of combined experience and thousands of projects across New England, we'll assess the severity, explain your options, and provide honest recommendations. See our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) for complete pricing details.

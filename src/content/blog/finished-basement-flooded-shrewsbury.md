@@ -42,7 +42,7 @@ This case highlights a critical lesson: never finish a basement without first in
 
 The homeowner found reassurance knowing that future leaks caused by the same crack would be covered at no cost, including damage expenses. This is the Attack A Crack difference: we stand behind every repair for life. See our [foundation repair warranty guide](/blog/foundation-repair-warranty-guide) for details on what our lifetime guarantee covers.
 
-**Have a crack in your basement?** Don't wait until it floods. Text us photos for a free assessment. With 20+ years of experience and 91+ documented projects across New England, we can diagnose the problem quickly — even through finished walls.
+**Have a crack in your basement?** Don't wait until it floods. Text us photos for a free assessment. With 50+ years of combined experience and thousands of projects across New England, we can diagnose the problem quickly — even through finished walls.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

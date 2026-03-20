@@ -16,8 +16,8 @@ relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
   - "basement-floor"
-heroImage: "/images/projects/kingston-crack-injection-2026-01-before.jpg"
-heroImageAlt: "Basement floor crack with water leaking"
+heroImage: "/images/projects/quincy-crack-injection-2025-08-2-before.jpg"
+heroImageAlt: "Basement floor crack with water leaking through concrete slab"
 ---
 
 You walk downstairs and there it is: water seeping through a crack in your basement floor. It might be a thin trickle or a slow, persistent weep. Either way, you need to understand what's happening before you fix it.
@@ -26,7 +26,7 @@ Most basement floor cracks are not structural emergencies. But they do need atte
 
 ## Why Basement Floors Crack
 
-Your basement floor (the slab) is typically 3-4 inches of concrete poured over compacted gravel and soil. Unlike your foundation walls, the slab is not structural. It sits on the footing, which is a separate pour.
+Your basement floor (the slab) is typically four inches of concrete poured over compacted gravel and soil. Unlike your foundation walls, the slab is not structural. It sits on the footing, which is a separate pour.
 
 Because the slab isn't structural, builders pour it thinner with less reinforcement. Cracks are almost inevitable:
 
@@ -108,7 +108,7 @@ If the water enters through wall cracks, that's a much simpler fix. Wall crack i
 
 ## Get an Honest Assessment
 
-Not sure whether your water is coming through the floor or walls? That's exactly what our [free consultations](/services/free-foundation-consultations) are for. With 20+ years of experience and 91+ documented projects across New England, we'll trace the water source and tell you honestly what you're dealing with, even if the answer is "this isn't something we repair." Our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) has complete pricing details.
+Not sure whether your water is coming through the floor or walls? That's exactly what our [free consultations](/services/free-foundation-consultations) are for. With 50+ years of combined experience and thousands of projects across New England, we'll trace the water source and tell you honestly what you're dealing with, even if the answer is "this isn't something we repair." Our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) has complete pricing details.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

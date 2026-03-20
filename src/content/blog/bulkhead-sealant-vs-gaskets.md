@@ -7,8 +7,8 @@ publishDate: 2026-02-14
 author: "Luc Richard"
 category: "guides"
 tags: ["bulkhead repair", "basement leak", "sealant", "Bilco door", "bulkhead sealant"]
-heroImage: "/images/projects/kingston-bulkhead-repair-2025-06-before.jpg"
-heroImageAlt: "Leaking bulkhead door connection showing failed gasket seal"
+heroImage: "/images/projects/attleboro-bulkhead-repair-2025-12-before.jpg"
+heroImageAlt: "Failed bulkhead sealant with rust staining at concrete joint"
 featured: false
 relatedPosts:
   - "bulkhead-leaking-causes-and-fixes"
@@ -31,7 +31,9 @@ When you buy a Bilco door or a similar bulkhead system, it often comes with a fo
 
 However, several factors work against a gasket from day one:
 
-**Thermal expansion and freeze-thaw cycles.** Metal and concrete expand and contract at different rates. In the summer heat, your bulkhead frame grows. In the winter freeze, it shrinks. New England's relentless freeze-thaw cycles — 50 to 80 per winter — eventually create micro-gaps in the gasket seal.
+**Frost heaving.** This is the number one reason gaskets fail in New England. When the soil underneath the bulkhead stairs freezes, it expands and pushes upward on the stairway unit. This movement breaks the gasket seal between the bulkhead and foundation — and it happens every single winter.
+
+**Thermal expansion and freeze-thaw cycles.** Metal and concrete expand and contract at different rates. In the summer heat, your bulkhead frame grows. In the winter freeze, it shrinks. New England's relentless freeze-thaw cycles — 50 to 80 per winter — create micro-gaps in whatever seal remains after frost heaving has done its damage.
 
 **Surface irregularities.** Concrete is rarely perfectly flat. A pre-formed gasket cannot account for the pits, bumps, and dips in your foundation surface.
 
@@ -39,7 +41,7 @@ However, several factors work against a gasket from day one:
 
 ## The Permanent Bulkhead Sealant Solution: Polyurethane Injection
 
-We do not use gaskets. We use a high-pressure polyurethane injection bulkhead sealant that is engineered specifically for the interface between metal and concrete. Most bulkhead repairs using this method cost $1,800-$2,500 with a lasting warranty.
+We do not use gaskets. We use a high-pressure polyurethane injection bulkhead sealant that is engineered specifically for the interface between metal and concrete. Most bulkhead repairs using this method cost $1,800-$2,500 with a lifetime warranty.
 
 ### Why Polyurethane Sealant Works
 
@@ -77,4 +79,7 @@ Many homeowners assume a leaking bulkhead means they need a whole new Bilco door
 
 If your bulkhead is leaking — especially if you notice water in your basement after rain pooling at the base of the bulkhead stairs — start with a visual inspection during the next heavy rain. Note where the water appears — at the top of the stairs, along the side rails, or at the base where the bulkhead meets the foundation. That tells us which seal points have failed.
 
-For a detailed cost breakdown, see our [bulkhead repair cost guide](/blog/bulkhead-repair-cost-guide-2026). Or text us a photo for assessment at 617-668-1677 — we can often identify the failed seal point from a photo. You can also schedule a [free consultation](/services/free-foundation-consultations) and we will assess all three seal points in person and tell you exactly what needs to be fixed.
+For a detailed cost breakdown, see our [bulkhead repair cost guide](/blog/bulkhead-repair-cost-guide-2026). Or text us a photo for assessment — we can often identify the failed seal point from a photo. You can also schedule a [free consultation](/services/free-foundation-consultations) and we will assess all three seal points in person and tell you exactly what needs to be fixed.
+
+**Connecticut:** 860-573-8760
+**Massachusetts:** 617-668-1677

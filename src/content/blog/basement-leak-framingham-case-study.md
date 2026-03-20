@@ -56,7 +56,7 @@ If water is actively flowing through a crack, do not attempt to seal it with hyd
 
 Professional foundation crack repair doesn't require dry conditions. Whether you're facing slow drips or active leaks, addressing the problem promptly prevents deterioration. Most crack injection repairs cost $800-$1,200 per crack and come with a lifetime guarantee. For cracks showing structural movement, [carbon fiber staples (stitches)](/services/carbon-fiber-stitches) at $200-$300 per stitch add permanent reinforcement.
 
-**Have an actively leaking crack?** Don't wait — text us photos for a free assessment. With 91+ documented projects across New England, we have repaired cracks in every condition imaginable.
+**Have an actively leaking crack?** Don't wait — text us photos for a free assessment. With thousands of projects across New England, we have repaired cracks in every condition imaginable.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

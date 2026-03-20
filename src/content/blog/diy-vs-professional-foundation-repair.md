@@ -126,7 +126,7 @@ Home improvement stores sell injection kits for foundation cracks. Here's our ho
 **When they work:**
 - Small, dormant, non-leaking cracks
 - Hairline cracks for cosmetic improvement
-- As a temporary measure while planning professional repair
+- As a temporary measure — but be aware we often have to charge more to clean out a DIY repair before we can do our professional injection
 
 **When they fail:**
 - Actively leaking cracks (the crack must be dry for epoxy)
@@ -143,7 +143,7 @@ Home improvement stores sell injection kits for foundation cracks. Here's our ho
 | Rigid epoxy only | Flexible urethane or structural epoxy |
 | Surface preparation limited | Complete crack preparation |
 | No warranty | Lifetime guarantee |
-| Cost: $20-$50 per kit | Cost: $800-$1,200 per crack |
+| Cost: $75-$200 per kit | Cost: $800-$1,200 per crack |
 
 ## Our Approach: Honest Assessment First
 
@@ -181,4 +181,4 @@ That's what free consultations are for. We'll look at your situation and give yo
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677
 
-Text us a photo for assessment and we'll respond with initial guidance. With 20+ years of experience and 91+ documented projects across New England, many homeowners get the answer they need without scheduling an on-site visit.
+Text us a photo for assessment and we'll respond with initial guidance. With 50+ years of combined experience and thousands of projects across New England, many homeowners get the answer they need from a photo alone.

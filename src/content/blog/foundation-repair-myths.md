@@ -1,8 +1,8 @@
 ---
 title: "Foundation Repair Myths: What the Internet Gets Wrong About Your Home"
 metaTitle: "Foundation Repair Myths Debunked"
-metaDescription: "The internet is full of bad foundation repair advice. We debunk the most common myths with 20 years of hands-on experience fixing New England foundations."
-excerpt: "After 20 years of fixing foundations, we have heard every myth. Here are the biggest misconceptions about foundation repair and what is actually true."
+metaDescription: "The internet is full of bad foundation repair advice. We debunk the most common myths with decades of hands-on experience fixing New England foundations."
+excerpt: "After decades of fixing foundations, we have heard every myth. Here are the biggest misconceptions about foundation repair and what is actually true."
 publishDate: 2026-12-22
 author: "Attack A Crack"
 category: "guides"
@@ -20,7 +20,7 @@ relatedServices:
 
 If you have ever Googled "foundation crack" at 11 PM after noticing something in your basement, you know how this goes. Within five minutes, you have read three forum posts saying your house is about to collapse, two articles saying it is nothing, and one Reddit thread recommending a repair method that involves flex tape and prayer.
 
-After 20 years of repairing foundations across New England — Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine — we have encountered every myth, misconception, and half-truth about foundation repair that exists. Some of these myths are just annoying. Others actually cost homeowners money by delaying necessary repairs or leading them toward solutions that do not work.
+After decades of repairing foundations across New England — Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine — we have encountered every myth, misconception, and half-truth about foundation repair that exists. Some of these myths are just annoying. Others actually cost homeowners money by delaying necessary repairs or leading them toward solutions that do not work.
 
 Let us set the record straight.
 
@@ -97,4 +97,4 @@ This is the most expensive myth on the list. A crack that costs $700 today can c
 
 Foundation problems do not get better on their own. They slowly get worse, and the repair cost grows with them.
 
-Go look at your basement. Take some photos. And if anything concerns you, call us at 860-573-8760 (CT) or 617-668-1677 (MA) for a [free consultation](/services/free-foundation-consultations). We have been doing this for 20 years, and we will give you honest answers — even if that answer is "you are fine, stop worrying."
+Go look at your basement. Take some photos. And if anything concerns you, call us at 860-573-8760 (CT) or 617-668-1677 (MA) for a [free consultation](/services/free-foundation-consultations). We have been doing this for decades, and we will give you honest answers — even if that answer is "you are fine, stop worrying."

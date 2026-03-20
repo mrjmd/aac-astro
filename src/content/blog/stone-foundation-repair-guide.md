@@ -22,7 +22,7 @@ relatedServices:
 
 If you own an older home in Massachusetts or anywhere in New England, there is a good chance you are living on top of a stone foundation. These foundations predate modern concrete by a century or more, and they are still holding up homes across the region. But "holding up" and "doing great" are not the same thing.
 
-After 20 years of working on stone foundations throughout Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, we have learned that the first step in any repair is understanding exactly what kind of stone foundation you have. The repair approach that works perfectly for one type can actually damage another.
+After decades of working on stone foundations throughout Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, we have learned that the first step in any repair is understanding exactly what kind of stone foundation you have. The repair approach that works perfectly for one type can actually damage another.
 
 ## Types of Stone Foundations in New England: Identification Guide
 
@@ -141,4 +141,4 @@ For a more detailed cost breakdown, see our [foundation repair cost guide](/blog
 
 We inspect stone foundations across Massachusetts, Connecticut, Rhode Island, New Hampshire, and Maine. Our [free foundation consultation](/services/free-foundation-consultations) includes an honest assessment of your foundation's condition and clear recommendations for any needed repairs.
 
-Call 617-668-1677 to schedule, or text us a photo for assessment. With 20+ years of experience with New England stone foundations, we will tell you what we see, explain your options, and give you a straight answer about what your foundation actually needs.
+Call 617-668-1677 to schedule, or text us a photo for assessment. With 50+ years of combined experience with New England stone foundations, we will tell you what we see, explain your options, and give you a straight answer about what your foundation actually needs.

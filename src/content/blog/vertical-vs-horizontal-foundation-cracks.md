@@ -8,8 +8,8 @@ author: "Luc Richard"
 category: "guides"
 showOnServicesPage: true
 tags: ["foundation cracks", "structural damage", "basement repair", "stair-step cracks", "diagonal cracks", "carbon fiber staples"]
-heroImage: "/images/blog/vertical-foundation-crack.jpg"
-heroImageAlt: "Vertical foundation crack in concrete basement wall showing typical settling pattern"
+heroImage: "/images/blog/vertical-vs-horizontal-hero.webp"
+heroImageAlt: "Foundation crack comparison showing vertical and horizontal crack patterns"
 featured: true
 relatedPosts:
   - "horizontal-foundation-cracks"
@@ -36,7 +36,7 @@ But there's much more nuance to this, so let's dive deeper.
 
 Vertical cracks run straight up and down (or within 30 degrees of vertical). They're the most common type of foundation crack and usually the least concerning.
 
-<img src="/images/blog/horizontal-foundation-crack.jpg" alt="Horizontal foundation crack showing lateral soil pressure damage on basement wall" width="640" height="427" loading="lazy" />
+<img src="/images/blog/vertical-foundation-crack-old.webp" alt="Vertical foundation crack in concrete basement wall showing typical settling pattern" width="640" height="427" loading="lazy" />
 
 ### Why Vertical Cracks Form
 
@@ -56,6 +56,8 @@ Not all vertical cracks are harmless. Watch for these warning signs:
 - **Multiple parallel cracks**: Could indicate systematic foundation movement
 
 ## Understanding Horizontal Foundation Cracks
+
+<img src="/images/blog/horizontal-foundation-crack-old.webp" alt="Horizontal foundation crack showing lateral soil pressure damage on basement wall" width="640" height="427" loading="lazy" />
 
 Horizontal cracks run parallel to the ground. They're much more serious than vertical cracks because they indicate lateral pressure against your foundation wall.
 
@@ -151,7 +153,7 @@ Horizontal cracks with bowing require stabilization. We assess severity and reco
 - **Horizontal cracks**: Take them seriously. They indicate structural pressure that will only worsen.
 - **When in doubt**: Get a professional assessment. Our consultations are free and honest—we'll tell you if you don't need repair.
 
-**Have a crack you're worried about?** Text us a photo for a quick preliminary assessment, or schedule a [free consultation](/services/free-foundation-consultations). With 20+ years of experience and 91+ documented projects across New England, we can diagnose your crack from a photo in most cases.
+**Have a crack you're worried about?** Text us a photo for a [free assessment](/services/free-foundation-consultations). With 50+ years of combined experience and thousands of projects across New England, we can diagnose your crack from a photo in most cases.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

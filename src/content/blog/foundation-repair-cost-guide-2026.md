@@ -79,7 +79,7 @@ Different foundation types present different challenges:
 Standard repair techniques work well. Most repairs fall within typical price ranges.
 
 **Block/CMU Foundations**
-May require different approaches. Cores may need to be filled, which adds cost.
+May require different approaches. Hollow cores can make injections more complicated or impossible, which may require alternative approaches.
 
 **Fieldstone Foundations**
 Older stone foundations require specialized techniques and typically cost more to repair.
@@ -146,30 +146,26 @@ If someone quotes $10,000+ for a few cracks with no structural issues, get a sec
 "Your house could collapse!" — Unless you have severe horizontal cracking with significant bowing, this is almost certainly exaggeration.
 
 **Unnecessary Add-Ons**
-Interior drainage systems, sump pumps, and [full waterproofing systems](/blog/basement-waterproofing-vs-foundation-repair) aren't always needed. Sometimes crack injection alone solves the problem — especially if water in your basement only appears after rain through identifiable cracks.
-
-**Per-Linear-Foot Pricing**
-Some companies charge by the foot to inflate costs on long cracks. Per-crack pricing is typically fairer for consumers.
+Interior drainage systems, sump pumps, and [full waterproofing systems](/blog/basement-waterproofing-vs-foundation-repair) aren't always needed. In many cases, crack injection alone solves the problem — especially if water in your basement only appears after rain through identifiable cracks.
 
 ## Financing Options
 
 Foundation repairs are an investment in your home's value and safety. We work with homeowners to make repairs accessible:
 
 - **Payment plans**: Spread cost over multiple payments
-- **Insurance**: Some policies cover foundation damage (check your coverage)
+- **Insurance**: Some policies cover foundation damage — see our [insurance coverage guide](/blog/does-insurance-cover-foundation-repair)
 - **Home equity**: Foundation repairs often make sense as part of larger renovations
 
 ## Questions to Ask Any Foundation Repair Company
 
 1. **What's included in this price?** (Materials, labor, warranty)
 2. **How long is your warranty?** (We offer lifetime guarantee)
-3. **Do you use subcontractors?** (We don't—our technicians do all work)
+3. **Do you use subcontractors?** (We don't — our full-time salaried technicians do all work)
 4. **What happens if the repair fails?** (We fix it at no cost)
-5. **Can I talk to past customers?** (We're happy to provide references)
 
 ## The Attack A Crack Difference
 
-With 20+ years of foundation repair experience across New England, we're not the cheapest, and we're not the most expensive. We're the most honest:
+With 50+ years of foundation repair experience across New England, we're not the cheapest, and we're not the most expensive. We're the most honest:
 
 - **Free consultations** with real experts who give honest advice
 - **Transparent pricing** with no hidden fees

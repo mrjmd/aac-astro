@@ -22,7 +22,7 @@ heroImageAlt: "Water intrusion through basement wall crack"
 
 It rained last night, and now there's water on your basement floor. Maybe it's a puddle in the corner, a wet streak down the wall, or a small river flowing in through your bulkhead stairs.
 
-I've been repairing foundations in Connecticut for over a decade, and this is the most common call we get. Here's what I tell every homeowner: don't panic, but don't ignore it. Water in your basement after rain almost always has a specific, fixable cause.
+I've been repairing foundations in Connecticut for decades, and this is the most common call we get. Here's what I tell every homeowner: don't panic, but don't ignore it. Water in your basement after rain almost always has a specific, fixable cause.
 
 ## The Most Common Causes
 
@@ -99,9 +99,9 @@ Call a professional immediately if you notice:
 
 ## Get a Free Basement Water Assessment
 
-Not sure where your water is coming from? That's exactly what we diagnose every day. With 20+ years of experience and 91+ documented projects across New England, our [consultations are free](/services/free-foundation-consultations), and we'll trace the water to its source. For cracks showing structural movement, [carbon fiber staples (stitches)](/services/carbon-fiber-stitches) at $200-$300 per stitch add permanent reinforcement.
+Not sure where your water is coming from? That's exactly what we diagnose every day. With 50+ years of combined experience and thousands of projects across New England, our [consultations are free](/services/free-foundation-consultations), and we'll trace the water to its source. For cracks showing structural movement, [carbon fiber staples (stitches)](/services/carbon-fiber-stitches) at $200-$300 per stitch add permanent reinforcement.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677
 
-Text us a photo of where the water appears and we'll give you a quick preliminary assessment before scheduling a visit.
+Text us a photo of where the water appears and we'll give you a quick preliminary assessment.

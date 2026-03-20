@@ -7,8 +7,8 @@ publishDate: 2025-05-12
 author: "Attack A Crack"
 category: "maintenance-tips"
 tags: ["ice dams", "winter damage", "foundation cracks", "water intrusion"]
-heroImage: "/images/projects/shrewsbury-crack-injection-2025-10-before.jpg"
-heroImageAlt: "Ice Dams: The Roof Problem That Wrecks Foundations"
+heroImage: "/images/blog/ice-dam-roof-water-foundation-damage.jpg"
+heroImageAlt: "Ice dam on roof edge with water dripping toward home foundation in winter"
 targetLocation: "New England"
 
 relatedServices:
@@ -23,7 +23,7 @@ relatedPosts:
 
 Most homeowners think of ice dams as a roofing problem. And they are -- ice dams can tear up shingles, rot fascia boards, and send water streaming into your attic. But here is the thing nobody talks about: the water that overflows your gutters has to go somewhere, and that somewhere is straight down to your foundation.
 
-After 20+ years of repairing foundations across New England, we can tell you with certainty that ice dam season and foundation crack season are not a coincidence. They are cause and effect.
+After 50+ combined years of repairing foundations across New England, we can tell you with certainty that ice dam season and foundation crack season are not a coincidence. They are cause and effect.
 
 ## How Ice Dams Form (The 60-Second Version)
 
@@ -108,6 +108,6 @@ Some of this you can handle yourself. Improving grading, extending downspouts, c
 
 At Attack A Crack, we offer [free foundation consultations](/services/free-foundation-consultations) throughout New England. We will assess the damage, explain exactly what is happening, and give you honest options -- including "just monitor it" when that is genuinely the right call.
 
-Here is our honest take after 20+ years: most ice dam-related foundation cracks are very fixable with [crack injection](/services/foundation-crack-injection) or [wall crack repair](/services/wall-crack-repair). The key is addressing them before another winter makes them worse. That freeze-thaw cycle does not take years off. It takes seasons.
+Here is our honest take after decades of foundation work: most ice dam-related foundation cracks are very fixable with [crack injection](/services/foundation-crack-injection) or [wall crack repair](/services/wall-crack-repair). The key is addressing them before another winter makes them worse. That freeze-thaw cycle does not take years off. It takes seasons.
 
 If you have had ice dams this winter and something in the basement looks different, give us a call. Connecticut homeowners can reach us at 860-573-8760, and Massachusetts residents at 617-668-1677. We would rather tell you it is nothing than have you find a waterfall in your basement next January.

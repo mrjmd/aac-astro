@@ -129,7 +129,7 @@ Your last chance to seal cracks before freeze-thaw season. Our [fall foundation 
 
 Here is the truth: most homeowners have no idea what is happening beneath their feet. They spend thousands on kitchen renovations, bathroom upgrades, and landscaping but never glance at the thing holding all of it up. You do not need to become a structural engineer. You just need to pay attention.
 
-If your year-end review uncovered anything that concerns you — or if you just want a professional baseline assessment to compare against in future years — give us a call. Attack A Crack has been helping New England homeowners understand and maintain their foundations for over 20 years.
+If your year-end review uncovered anything that concerns you — or if you just want a professional baseline assessment to compare against in future years — give us a call. Attack A Crack has been helping New England homeowners understand and maintain their foundations for decades.
 
 We offer [free consultations](/services/free-foundation-consultations) with no obligation and no pressure. Call 860-573-8760 (CT) or 617-668-1677 (MA) to schedule.
 

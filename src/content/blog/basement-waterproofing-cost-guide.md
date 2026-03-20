@@ -157,7 +157,7 @@ If your home already has functional gutters, proper grading, and downspout exten
 
 ## The Smart Approach: Diagnose Before You Spend
 
-Here is our honest recommendation after 20 years of foundation work across New England:
+Here is our honest recommendation after decades of foundation work across New England:
 
 1. **Start with a [free consultation](/services/free-foundation-consultations).** A qualified inspector can identify exactly where water enters and why.
 2. **Address the simplest solution first.** Fix grading and gutters. Seal visible cracks. These low-cost steps solve the problem for a surprising number of homeowners.
@@ -180,4 +180,4 @@ If water enters through identifiable cracks, crack injection at $800 - $1,200 pe
 
 Exterior waterproofing has its place, but it should be the last resort — not the first recommendation.
 
-**Ready to find out what your basement actually needs?** Call us at 860-573-8760 (CT) or 617-668-1677 (MA) for a free consultation — or text us a photo of your basement problem for a quick assessment. We will tell you what we see, what it needs, and what it costs — even if the answer is "fix your gutters and call us if it does not improve." After 20+ years of foundation work across New England, we have seen every combination of water, soil, and concrete. Your basement is not a mystery to us.
+**Ready to find out what your basement actually needs?** Call us at 860-573-8760 (CT) or 617-668-1677 (MA) for a free consultation — or text us a photo of your basement problem for a quick assessment. We will tell you what we see, what it needs, and what it costs — even if the answer is "fix your gutters and call us if it does not improve." After 50+ combined years of foundation work across New England, we have seen every combination of water, soil, and concrete. Your basement is not a mystery to us.

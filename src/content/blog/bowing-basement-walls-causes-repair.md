@@ -7,8 +7,8 @@ publishDate: 2025-12-18
 author: "Attack A Crack"
 category: "guides"
 tags: ["bowing walls", "basement walls", "structural repair", "carbon fiber", "wall stabilization", "hydrostatic pressure"]
-heroImage: "/images/projects/belmont-crack-injection-2025-06-before.jpg"
-heroImageAlt: "Bowing Basement Walls: Causes, Severity, and Repair Options"
+heroImage: "/images/blog/bowing-basement-wall-horizontal-crack.jpg"
+heroImageAlt: "Bowing basement wall with horizontal crack from hydrostatic pressure"
 draft: false
 
 relatedServices:
@@ -87,7 +87,7 @@ For help identifying crack patterns associated with bowing, our guide on [vertic
 
 ## Repair Options by Severity
 
-### Carbon Fiber Reinforcement Straps
+### Carbon Fiber Reinforcement Straps — What We Do
 
 **Best for:** Early to moderate bowing (up to approximately 2 inches)
 
@@ -106,60 +106,23 @@ For help identifying crack patterns associated with bowing, our guide on [vertic
 
 **Cost range:** $3,000 - $8,000 depending on the number of straps and wall size. Our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) has more detail.
 
-### Wall Anchors
+Carbon fiber reinforcement is our specialty and covers the majority of bowing wall situations we encounter. For cases requiring other methods, we can recommend trusted contractors who specialize in those approaches.
 
-**Best for:** Moderate bowing with potential to gradually straighten over time
+### Other Repair Methods We May Recommend
 
-**How it works:** Steel rods are driven through the basement wall and extended through the soil to anchor plates placed in stable earth beyond the disturbed zone. Interior plates are tightened against the wall, and over time, periodic tightening can slowly push the wall back toward its original position.
+The following methods are not services we perform, but depending on the severity of your situation, we may recommend a specialist who does.
 
-**Pros:**
-- Can potentially straighten the wall over years
-- Strong resistance to further movement
-- Interior installation with minimal exterior disruption
-- Can be installed in winter when soil is less saturated
+**Wall Anchors**
 
-**Cons:**
-- Requires adequate yard space for anchor placement
-- Periodic tightening needed for straightening
-- More expensive than carbon fiber for simple stabilization
+Best for moderate bowing with potential to gradually straighten over time. Steel rods are driven through the basement wall and extended through the soil to anchor plates placed in stable earth. Interior plates are tightened against the wall, and periodic tightening can slowly push the wall back toward its original position. Typical cost: $5,000 - $12,000 depending on the number of anchors needed.
 
-**Cost range:** $5,000 - $12,000 depending on the number of anchors needed (typically 4-6 per wall).
+**Steel I-Beams**
 
-### Steel I-Beams
+Best for severe bowing or walls with significant structural compromise. Vertical steel beams are placed against the wall, bolted to the basement floor slab and sill plate. They provide direct structural support but take up about 4 inches of basement space per beam. Typical cost: $7,000 - $15,000.
 
-**Best for:** Severe bowing or walls with significant structural compromise
+**Wall Replacement**
 
-**How it works:** Vertical steel beams are placed against the wall, bolted to the basement floor slab at the bottom and the sill plate at the top. They provide direct structural support to prevent further movement.
-
-**Pros:**
-- Handles the most severe bowing
-- Immediate structural support
-- No exterior work required
-- Long track record of performance
-
-**Cons:**
-- Visible in the basement (can be incorporated into finished walls)
-- Does not straighten the wall — only prevents further movement
-- Takes up some basement space (about 4 inches per beam)
-
-**Cost range:** $7,000 - $15,000 depending on the number of beams and installation complexity.
-
-### Wall Replacement
-
-**Best for:** Catastrophic failure or walls beyond practical repair
-
-**How it works:** The failed wall section is removed and rebuilt. This requires temporary structural support for the home above, excavation, and new wall construction.
-
-**Pros:**
-- A new wall is a new wall — complete resolution
-
-**Cons:**
-- The most expensive option by far
-- Most disruptive — may require temporary relocation
-- Landscaping, driveway, or patio removal and replacement
-- Takes weeks, not days
-
-**Cost range:** $20,000 - $50,000+. This is rarely necessary. In 20+ years of foundation work, the vast majority of bowing walls we see can be stabilized with less invasive methods.
+Best for catastrophic failure or walls beyond practical repair. The failed wall section is removed and rebuilt, requiring temporary structural support, excavation, and new construction. Typical cost: $20,000 - $50,000+. This is rarely necessary — the vast majority of bowing walls can be stabilized with less invasive methods.
 
 ## Prevention: Reducing the Pressure
 
@@ -188,4 +151,4 @@ Here is the uncomfortable truth about bowing walls: they do not get better on th
 
 The difference between repairing a wall with 1 inch of bow (a $5,000 carbon fiber job) and repairing a wall with 3 inches of bow (a $15,000 steel beam installation — or worse) is often just a few years of inaction.
 
-If your basement wall is bowing, call us at 860-573-8760 (CT) or 617-668-1677 (MA) for a [free consultation](/services/free-foundation-consultations). We will measure the deflection, assess the cause, and recommend the most appropriate and cost-effective repair. Our lifetime warranty covers the work, and the sooner you act, the more options you have.
+If your basement wall is bowing, call us at 860-573-8760 (CT) or 617-668-1677 (MA) for a [free consultation](/services/free-foundation-consultations). We will talk you through measuring the deflection, assess the cause, and recommend the most appropriate and cost-effective repair. Our lifetime warranty covers the work, and the sooner you act, the more options you have.

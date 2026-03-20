@@ -15,7 +15,7 @@ benefits:
   - title: "Tenant-Friendly Service"
     description: "Quick, clean repairs that minimize tenant disruption. Most work is completed in one visit."
 testimonial:
-  quote: "I am a property manager of Condo Associations and use Luc at Attack A Crack almost exclusively at all my properties for any foundation cracks that need repair. Their work is extremely efficient and neat and comes with a lifetime guarantee, although I have never had to call them back for a fix on their work. One and done is the best thing for us property managers!"
+  quote: "I am a property manager of Condo Associations and use Luc at Attack A Crack almost exclusively at all my properties for any foundation cracks that need repair. Their work is extremely efficient and neat and comes with a lifetime guarantee, although I have never had to call them back for a fix on their work."
   author: "Sandy Edge"
 faqs:
   - question: "Do you offer maintenance contracts for multiple properties?"
@@ -47,8 +47,8 @@ We don't do temporary patches. Our [foundation crack injection](/services/founda
 
 ### Property Management Services
 
-**Portfolio Assessments**
-Schedule a walkthrough of all your properties. We'll identify existing issues and potential problems, giving you a complete picture of your foundation repair needs.
+**Portfolio Assessments (Massachusetts)**
+Schedule a walkthrough of your Massachusetts properties. We'll identify existing issues and potential problems, giving you a complete picture of your foundation repair needs.
 
 **Priority Scheduling**
 Property management partners receive priority booking. When you have an urgent issue, we move fast to resolve it.
@@ -57,9 +57,8 @@ Property management partners receive priority booking. When you have an urgent i
 Multiple properties mean multiple opportunities for efficiency. We offer competitive pricing for property management partners.
 
 **Detailed Reporting**
-Every repair comes with complete documentation:
-- Photos and description of work
-- Materials and methods used
+Every repair comes with documentation:
+- Description of work performed
 - Warranty certificate
 - Recommendations for other properties
 
@@ -83,7 +82,11 @@ Need documentation for insurance purposes? We provide detailed reports of damage
 - **Dedicated account contact**
 - **Volume pricing structures**
 - **Flexible billing options**
-- **Annual assessment programs**
+- **Annual assessment programs (Massachusetts)**
+
+### Massachusetts Concrete Resurfacing
+
+In Massachusetts, we also offer professional concrete resurfacing for driveways, walkways, patios, pool decks, and garage floors. Curb appeal and property condition matter — [learn about our concrete repair services](/concrete-repair).
 
 ### Start Protecting Your Portfolio
 

@@ -23,7 +23,7 @@ relatedPosts:
 
 "Does my foundation need to be replaced?" is a question that strikes fear into homeowners' hearts — and for good reason. Foundation replacement is one of the most expensive home repairs possible, ranging from $30,000 to over $100,000.
 
-Here is the reassuring news: in 20+ years of foundation work across New England, the vast majority of foundations we inspect need repair, not replacement. We estimate that 95% or more of foundation problems can be resolved with targeted repairs costing a fraction of what replacement would run.
+Here is the reassuring news: in 50+ combined years of foundation work across New England, the vast majority of foundations we inspect need repair, not replacement. We estimate that 95% or more of foundation problems can be resolved with targeted repairs costing a fraction of what replacement would run.
 
 But that still leaves the 5%. So let's talk about when repair makes sense, when replacement is truly necessary, and how to tell the difference.
 
@@ -50,7 +50,7 @@ Foundation repair is appropriate — and sufficient — for the overwhelming maj
 
 Cracks are the most common foundation issue, and they are almost always repairable. [Foundation crack injection](/services/foundation-crack-injection) seals cracks from inside to outside, restoring the watertight integrity of the wall. [Carbon fiber stitches](/services/carbon-fiber-stitches) add structural reinforcement when needed.
 
-Even horizontal cracks with wall bowing — a serious issue — are typically addressable with carbon fiber strips, wall anchors, or steel beams without replacing the wall. See our guide on [vertical vs. horizontal foundation cracks](/blog/vertical-vs-horizontal-foundation-cracks) for understanding crack severity.
+Even horizontal cracks with wall bowing — a serious issue — are typically addressable with carbon fiber straps, wall anchors, or steel beams without replacing the wall. See our guide on [vertical vs. horizontal foundation cracks](/blog/vertical-vs-horizontal-foundation-cracks) for understanding crack severity.
 
 ### Minor to Moderate Settlement
 
@@ -94,7 +94,7 @@ When the concrete itself has deteriorated to the point where it cannot hold fast
 - Aggregate separating from cement paste across large areas
 - Walls that have lost significant cross-section to deterioration
 
-Some older New England homes have foundations made with substandard concrete mixes or salt-contaminated aggregate that deteriorate more rapidly. The Connecticut crumbling foundations crisis (caused by pyrrhotite-containing aggregate) is the most dramatic example.
+Some older New England homes have foundations made with substandard concrete mixes or salt-contaminated aggregate that deteriorate more rapidly. The [crumbling foundations crisis](/blog/crumbling-foundations-massachusetts-connecticut) (caused by pyrrhotite-containing aggregate) is the most dramatic example.
 
 ### Foundation Type Incompatible with Repair
 
@@ -168,4 +168,4 @@ The [signs of foundation problems](/blog/signs-of-foundation-problems) guide hel
 
 If you are worried about your foundation, call us at 860-573-8760 (CT) or 617-668-1677 (MA). We will inspect it thoroughly and give you an honest answer. If it needs repair, we will explain the options and costs. If it needs more than we do, we will tell you that too — because a foundation company that recommends work it cannot perform is a foundation company you can trust.
 
-Our lifetime warranty on all repairs means we stand behind our assessment that repair is sufficient. If we repair it and the repair fails, we fix it again at no cost. That is confidence backed by 20+ years of experience.
+Our lifetime warranty on all repairs means we stand behind our assessment that repair is sufficient. If we repair it and the repair fails, we fix it again at no cost. That is confidence backed by 50+ years of combined experience.

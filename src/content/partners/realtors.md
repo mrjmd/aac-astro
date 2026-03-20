@@ -6,10 +6,10 @@ excerpt: "Close deals faster with rapid quotes and lifetime-guaranteed repairs t
 icon: "Users"
 order: 1
 benefits:
-  - title: "Same-Day Quotes"
-    description: "We understand time kills deals. Get foundation repair quotes within 24 hours, often same-day."
+  - title: "Rapid Quotes"
+    description: "Text us photos and get foundation repair quotes within minutes, not days."
   - title: "Inspection-Ready Repairs"
-    description: "Our repairs come with documentation that exceeds even the most thorough inspection standards."
+    description: "Our injection method delivers durable repairs backed by a transferable lifetime warranty that gives inspectors confidence."
   - title: "Lifetime Guarantee"
     description: "Give your clients confidence with repairs backed by a transferable lifetime warranty."
   - title: "No Surprises"
@@ -20,7 +20,7 @@ testimonial:
   company: "CENTURY 21 AllPoints Realty"
 faqs:
   - question: "How quickly can you provide a quote for my listing?"
-    answer: "We typically provide quotes within 24 hours, often same-day for urgent situations. Just text us photos and we can give preliminary guidance immediately."
+    answer: "Text us photos and we can typically get you a quote within minutes. We'll walk you through exactly how to take the photos we need to ensure an accurate quote up front."
   - question: "Do you offer any priority service for real estate transactions?"
     answer: "Yes. We prioritize real estate transactions and understand the time-sensitive nature of closings. Let us know your timeline and we'll work to meet it."
   - question: "Is your warranty transferable to new homeowners?"
@@ -31,6 +31,12 @@ faqs:
 
 When foundation issues threaten to derail a sale, you need a repair partner who moves fast, communicates clearly, and delivers quality work that exceeds inspection standards. That's exactly what we provide.
 
+### Proud Affiliations
+
+![Greater Boston Association of Realtors Affiliate Member](/images/gbar-logo.jpeg)
+
+**GBAR Affiliate Member** — We're proud to be an affiliate member of the Greater Boston Association of Realtors.
+
 ### Why Realtors Choose Us
 
 **Speed That Matches Your Timeline**
@@ -39,12 +45,12 @@ Real estate transactions move fast. We match your pace with same-day assessments
 **Clear Communication**
 We keep you informed every step of the way. You'll know exactly what we found, what we recommend, and when we can complete the work. No guesswork, no surprises.
 
-**Documentation That Satisfies Inspectors**
-Every repair comes with detailed documentation including:
-- Before and after photos
+**Repair Methods Inspectors Trust**
+Our refined injection method delivers permanent, full-depth crack repairs backed by a transferable lifetime warranty. Every repair comes with:
 - Description of work performed
-- Materials used and specifications
 - Lifetime warranty certificate
+
+For details on the technique itself, see our [crack injection page](/services/foundation-crack-injection).
 
 **Honest Assessments**
 We don't inflate issues to maximize sales. If a crack is cosmetic, we'll say so. This honesty protects your reputation and builds trust with your clients.
@@ -62,11 +68,15 @@ Need repairs completed before closing? We'll work with your timeline and provide
 
 ### Our Commitment to Realtors
 
-- **24-hour quote turnaround** (often same-day)
-- **Flexible scheduling** to meet closing deadlines
+- **Rapid quoting** — text us photos for quotes within minutes
+- **Priority scheduling** to meet closing deadlines
 - **Direct communication** with our experts
 - **Transferable lifetime warranty** on all repairs
 - **Clear documentation** for files and inspectors
+
+### Massachusetts Concrete Resurfacing
+
+In Massachusetts, we also offer professional concrete resurfacing for driveways, walkways, patios, pool decks, and garage floors. Curb appeal and property condition matter — [learn about our concrete repair services](/concrete-repair).
 
 ### Get Started
 

@@ -95,4 +95,4 @@ Most garage floor cracks in New England are cosmetic — the natural consequence
 
 **When NOT to DIY garage floor cracks:** If you see basement floor cracks leaking water, cracks with one side higher than the other, or cracks that extend into the foundation walls, surface fillers will not address the underlying problem. These need professional assessment.
 
-If your slab is moving, sinking, heaving, or cracking into the foundation walls, do not ignore it. [Schedule a free consultation](/services/free-foundation-consultations) or text us a photo for a quick assessment. After 20+ years across New England, the inspection costs nothing and knowing what you are dealing with beats guessing every time.
+If your slab is moving, sinking, heaving, or cracking into the foundation walls, do not ignore it. [Schedule a free consultation](/services/free-foundation-consultations) or text us a photo for a quick assessment. After 50+ combined years across New England, the inspection costs nothing and knowing what you are dealing with beats guessing every time.

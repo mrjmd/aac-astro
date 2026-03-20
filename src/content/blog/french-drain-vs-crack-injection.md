@@ -87,4 +87,4 @@ Attack A Crack specializes in [foundation crack injection](/services/foundation-
 
 ### Not Sure?
 
-That is normal. Water in basements is tricky to diagnose because it travels — what looks like a floor-level problem might be a wall crack channeling water downward behind the wall. Our [consultations are free](/services/free-foundation-consultations), and we will give you a straight answer. With over 20 years of experience across New England, we have seen every scenario and we are happy to tell you honestly whether you need an $800-$1,200 crack repair or a $12,000 system. Text us a photo for a quick preliminary assessment.
+That is normal. Water in basements is tricky to diagnose because it travels — what looks like a floor-level problem might be a wall crack channeling water downward behind the wall. Our [consultations are free](/services/free-foundation-consultations), and we will give you a straight answer. With decades of experience across New England, we have seen every scenario and we are happy to tell you honestly whether you need an $800-$1,200 crack repair or a $12,000 system. Text us a photo for a quick preliminary assessment.

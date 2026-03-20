@@ -1,8 +1,8 @@
 ---
-title: "How We Diagnose Foundation Problems: Inside Our Inspection Process"
+title: "How We Diagnose Foundation Problems: Our Photo-Based Assessment Process"
 metaTitle: "How We Diagnose Foundation Problems"
-metaDescription: "See exactly how professional foundation inspectors assess your home. Learn the diagnostic techniques, tools, and criteria our experts use across New England."
-excerpt: "What actually happens during a foundation inspection? We pull back the curtain on our diagnostic process — the techniques, tools, and criteria we use to assess every crack."
+metaDescription: "See how Attack A Crack diagnoses foundation issues from your photos. Learn what to photograph and what happens on repair day."
+excerpt: "Most foundation problems can be diagnosed from photos you text us. Here is exactly how our process works — what we look for, what we ask you to photograph, and what happens when we arrive."
 publishDate: 2025-11-02
 author: "Luc Richard"
 category: "guides"
@@ -18,166 +18,164 @@ relatedServices:
   - "wall-crack-repair"
   - "foundation-crack-injection"
   - "sewer-well-conduit-line-repair"
-heroImage: "/images/projects/milton-crack-injection-2026-03-before.jpg"
-heroImageAlt: "Foundation wall being diagnosed for cracks"
+heroImage: "/images/blog/homeowner-texting-foundation-crack-photo.jpg"
+heroImageAlt: "Homeowner photographing a foundation crack to send for diagnosis"
 ---
 
-When you call us about a foundation concern, the first thing we do is schedule a consultation. But what actually happens during that visit? What are we looking at, and how do we decide what needs repair versus what's normal?
+Most homeowners assume a foundation diagnosis requires someone crawling around their basement. It does not. With decades of experience across New England, we can diagnose the vast majority of foundation problems from photos and videos you send us — and give you an accurate quote before we ever set foot in your home.
 
-I want to walk you through our exact diagnostic process. Not because I want you to become a foundation inspector — but because understanding how professionals assess your home helps you make better decisions about repairs.
+Here is exactly how our diagnostic process works.
 
-## Why the First Visit Matters
+## Before We Arrive: Photo-Based Assessment
 
-Here's something most homeowners don't expect: **with Attack A Crack, the first visit is often the repair visit too.** When you call about a single crack or a leaking bulkhead, I'll bring everything I need to diagnose the problem and fix it on the spot if appropriate.
+When you reach out about a foundation concern, we do not schedule an inspection visit. Instead, we ask you to text us photos and sometimes short videos of what you are seeing. This is how the majority of our diagnostics happen — and it works because we have seen thousands of similar situations.
 
-This saves you a second appointment, a second day off work, and weeks of waiting with water in your basement. It's one of the advantages of working with a crew that's done this for 20+ years — we can assess and act in the same visit because we've seen every scenario.
+### What We Ask You to Photograph
 
-But not every problem gets fixed on the first visit. Complex structural issues, multiple cracks, or situations requiring specialized materials may need a dedicated repair appointment. The inspection always comes first, and here's how it works.
+We will guide you through taking the right photos. Here is what we typically need:
 
-## Phase 1: The Exterior Walk-Around
+**The crack or problem area:**
+- A full-length shot showing the entire crack from end to end
+- A close-up with something for scale (a coin, ruler, or your finger next to the crack)
+- A photo showing whether the crack is wet, stained, or dry
 
-Before I even step inside, I walk the perimeter of your home. The outside tells me a lot about what I'll find inside.
+**Context shots:**
+- The full wall so we can see where the crack falls (mid-wall, near a corner, near a window)
+- The floor along the base of the wall (looking for water stains, efflorescence)
+- Any areas where water appears or has appeared
 
-### Grading and Drainage
+**If we need more:** We may ask you to photograph specific things — the exterior grade near that wall, your gutters, your bulkhead, or other cracks you may not have noticed. We guide you through this over text or phone.
 
-I check how the ground slopes around your foundation. Soil should fall away from the house — about 6 inches of drop over the first 10 feet. If the grade is flat or slopes toward the house, water is being directed right at your foundation.
+### What We Can Tell from Photos
 
-I also look at:
-- **Gutter condition**: Clogged or missing gutters concentrate roof water at the foundation
-- **Downspout discharge**: Where does the water go? It should be at least 6 feet from the house
-- **Window wells**: Are they draining properly or holding water?
-- **Landscaping**: Mulch beds, flower beds, and irrigation systems too close to the foundation
+You would be surprised how much experienced eyes can diagnose from a good photo:
 
-### Visible Foundation Exposure
+**Crack direction and pattern** — Vertical cracks suggest shrinkage or settling. [Horizontal cracks](/blog/horizontal-foundation-cracks) indicate lateral pressure. Stair-step cracks in block walls signal structural movement. The direction alone tells us a lot about the cause.
 
-On homes where the foundation is visible above grade, I'm looking for:
-- **Surface cracks**: Their direction, width, and pattern
-- **Efflorescence**: White powder on basement walls — mineral deposits that indicate water is migrating through the concrete
-- **Spalling**: Surface flaking that suggests freeze-thaw cycle damage or poor concrete mix
-- **Previous repairs**: Patching, parging, or sealant that indicates past problems
+**Crack width and severity** — With a coin or ruler for scale, we can gauge width accurately. Hairline cracks under 1/16 inch are very different from cracks over 1/4 inch.
 
-### Bulkhead Condition
+**Displacement** — Photos taken at an angle along the wall show whether one side of the crack sits forward of the other. Displacement is the most important structural indicator — a narrow crack with displacement is more concerning than a wide crack without it.
 
-For homes with basement bulkheads (which is most New England homes), I check the bulkhead doors, the frame, the hinge points, and where the bulkhead meets the foundation wall. The cold joint between the bulkhead and foundation is the most common leak point we see.
+**Water activity** — Staining patterns, efflorescence (that [white powder on basement walls](/blog/efflorescence-white-powder-basement-walls)), and visible moisture tell us whether water has been moving through the crack and for how long.
 
-## Phase 2: Interior Foundation Assessment
+**Foundation type and age** — We can identify poured concrete, block, brick, and [stone foundations](/blog/stone-foundation-repair-guide) from photos, which directly affects the repair approach.
 
-This is where the real diagnostic work happens. I systematically examine every visible section of your foundation walls and floor.
+**Previous repairs** — Patching, old injection ports, or failed sealant tells us someone has tried before and helps us understand what we are dealing with.
 
-### The Sighting Technique
+### From Photos to Quote
 
-One of my first moves in any basement is to **sight down each foundation wall from the corner**. I position my eye at floor level and look along the wall's length. This reveals:
+In most cases, we can give you a clear diagnosis and an accurate quote directly from your photos. We will tell you:
+- What is causing the problem
+- Whether it needs repair now, can be monitored, or is not a concern
+- What the repair involves and how long it takes
+- What it costs
 
-- **Bowing**: Even slight inward bowing that isn't visible head-on becomes obvious from this angle
-- **Bulging**: Localized areas where the wall is pushed inward
-- **Step patterns**: In block walls, offset along mortar joints that indicates movement
+If your situation is straightforward — and the majority are — you will get the answers you need without anyone visiting your home. If photos reveal something complex or unusual, we will let you know and discuss next steps.
 
-This technique catches problems that homeowners walk past every day without noticing.
+## On Repair Day: What We Check On-Site
 
-### Crack Assessment Criteria
+When we arrive to do the repair, that is when we do our hands-on assessment. Our crew does not just fix the specific crack you called about — we take a professional look at the whole picture.
 
-For every crack I find, I evaluate five specific characteristics:
+### The Exterior Walk-Around
 
-**1. Direction**
-- **Vertical**: Usually shrinkage or minor settlement — the least concerning direction
-- **Horizontal**: Indicates lateral pressure — the most serious direction
-- **Diagonal**: Often indicates differential settlement — one side settling faster than the other
-- **Stair-step**: Follows mortar joints in block walls — signals structural movement
+Before we head inside, we walk the perimeter of your home. The outside tells us a lot about what is happening to your foundation:
 
-**2. Width**
-I measure crack width with a crack gauge. In general:
-- Under 1/16": Hairline — cosmetic unless leaking
-- 1/16" to 1/8": Monitor or repair depending on other factors
-- 1/8" to 1/4": Repair recommended
-- Over 1/4": Structural concern — repair needed
+- **Grading and drainage**: Soil should slope away from the house — about 6 inches of drop over the first 10 feet. Flat or negative grading directs water right at your foundation.
+- **Gutter condition**: Clogged or missing gutters concentrate roof water at the foundation.
+- **Downspout discharge**: Water should exit at least 6 feet from the house.
+- **Bulkhead condition**: The cold joint between the bulkhead and foundation is the most common leak point we see.
+- **Visible foundation above grade**: Surface cracks, efflorescence, spalling, or signs of previous repairs.
 
-**3. Displacement**
-I run my hand across both sides of the crack. Can I feel one side sitting further forward than the other? **Displacement is the most important structural indicator.** A narrow crack with displacement is more concerning than a wide crack without it.
+### Interior Assessment Techniques
 
-**4. Activity**
-Is water actively coming through? Is there efflorescence (mineral staining) indicating past water flow? Are there rust stains from reinforcing steel? These tell me whether water has found this crack and how long it's been using it.
+Inside, we use techniques honed over thousands of projects:
 
-**5. Pattern**
-A single vertical crack is different from multiple horizontal cracks across the same wall. I look at the overall pattern of cracking to understand what forces are acting on your foundation.
+**The Sighting Technique**
 
-### The Screwdriver Test
+One of the first things we do is sight down each foundation wall from the corner. Positioning your eye at floor level and looking along the wall reveals bowing or bulging that is invisible when viewed head-on. This catches problems that homeowners walk past every day.
 
-For older foundations or areas with suspicious surface deterioration, I'll gently **prod the concrete with a screwdriver**. Sound concrete resists the probe. Deteriorating concrete flakes or crumbles.
+**Crack Assessment Criteria**
 
-This test is particularly important for:
-- Pre-1940s foundations where concrete quality was inconsistent
-- Areas with [crumbling concrete](/blog/crumbling-foundations-massachusetts-connecticut) (a serious issue in some Connecticut towns with pyrrhotite)
-- Block walls where mortar may be deteriorating
+For every crack, we evaluate five characteristics:
 
-### Water Tracking
+1. **Direction** — Vertical (least concerning), horizontal (most serious), diagonal (differential settlement), stair-step (structural movement in block walls)
+2. **Width** — Under 1/16 inch is hairline. Over 1/4 inch is a structural concern. We measure with a crack gauge.
+3. **Displacement** — We run a hand across both sides. One side sitting forward is more concerning than width alone.
+4. **Activity** — Active water, efflorescence, or rust stains from reinforcing steel indicate how long water has been using this crack as a pathway.
+5. **Pattern** — A single vertical crack is different from multiple horizontal cracks across the same wall. The overall pattern reveals the forces acting on your foundation.
 
-If there's evidence of water — active leaks, staining, efflorescence, mold — I trace it to its source. Water in your basement doesn't always enter where it shows up. It can travel along the wall-floor joint, follow cracks, or wick through porous concrete before becoming visible.
+**The Screwdriver Test**
 
-## Phase 3: Above-Grade Indicators
+For older foundations or suspicious surface deterioration, we gently probe the concrete with a screwdriver. Sound concrete resists. Deteriorating concrete flakes or crumbles. This is particularly important for pre-1940s foundations, areas with [crumbling concrete](/blog/crumbling-foundations-massachusetts-connecticut), and block walls where mortar may be failing.
 
-Foundation problems often create symptoms on the upper floors. I'll ask to look at a few key areas:
+**Water Tracking**
 
-### Doors and Windows
-- Doors that stick or won't latch — indicates frame distortion from foundation movement
+If there is evidence of water — active leaks, staining, efflorescence, mold — we trace it to its source. Water does not always enter where it shows up. It can travel along the wall-floor joint, follow cracks, or wick through porous concrete before becoming visible.
+
+### Above-Grade Indicators
+
+Foundation problems create symptoms upstairs too. On repair day, we may check:
+- Doors that stick or will not latch (frame distortion from foundation movement)
 - Gaps between window frames and walls
-- Visible cracks radiating from door or window corners
+- Diagonal cracks from door or window corners (classic settlement indicator)
+- Sloping or uneven floors
 
-### Walls and Ceilings
-- Diagonal cracks from corner of doorways (classic settlement indicator)
-- Separation between walls and ceiling
-- Nail pops in drywall
+These help us correlate what we see in the basement with what is happening to the whole structure.
 
-### Floors
-- Sloping or uneven floors (I sometimes use a level)
-- Bouncing or springy floors
+## What We Find — and What We Recommend
 
-These above-grade symptoms help me correlate what I see in the basement with what's happening to the whole structure.
-
-## Phase 4: Diagnosis and Recommendation
-
-After the inspection, I explain what I've found in plain language. No jargon, no scare tactics. Here's how I categorize findings:
+After the assessment, we explain everything in plain language. No jargon, no scare tactics.
 
 ### "This Is Normal — No Action Needed"
 
-Many hairline vertical cracks, especially in poured foundations less than 20 years old, are normal curing shrinkage. If they're not leaking, not displaced, and not growing, I'll tell you to monitor them and call if anything changes. I'm not going to sell you a repair you don't need.
+Many hairline vertical cracks, especially in poured foundations less than 20 years old, are normal curing shrinkage. If they are not leaking, not displaced, and not growing, we will tell you to monitor them. We are not going to sell you a repair you do not need.
 
-### "This Needs Repair but Isn't Urgent"
+### "This Needs Repair but Is Not Urgent"
 
-Cracks that are leaking intermittently, showing efflorescence, or wider than 1/8 inch need attention — but you have time to schedule it. I'll explain the repair method ([crack injection](/services/foundation-crack-injection) at $800-$1,200 per crack for most wall cracks) and give you a clear quote. See our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) for detailed pricing on every repair type.
+Cracks leaking intermittently, showing efflorescence, or wider than 1/8 inch need attention — but you have time to schedule it. We will explain the repair method ([crack injection](/services/foundation-crack-injection) at $800-$1,200 per crack for most wall cracks) and give you a clear quote. See our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) for detailed pricing.
 
 ### "This Needs Repair Soon"
 
-Active leaks, cracks wider than 1/4 inch, any displacement, horizontal cracking, or bowing walls fall into this category. These problems get worse with every freeze-thaw cycle and every rainstorm. Delaying increases both damage and cost.
+Active leaks, cracks wider than 1/4 inch, any displacement, horizontal cracking, or bowing walls. These get worse with every freeze-thaw cycle. Delaying increases both damage and cost.
 
 ### "This Is Structural — Let's Talk Options"
 
-Significant bowing, multiple horizontal cracks with displacement, or severely deteriorated walls may need [carbon fiber staples (stitches)](/services/carbon-fiber-stitches) at $200-$300 per stitch or [full wall stabilization](/services/wall-crack-repair). For these situations, I'll walk you through options, timeline, and costs so you can make an informed decision. Our [bowing basement walls guide](/blog/bowing-basement-walls-causes-repair) covers this in detail.
+Significant bowing, multiple horizontal cracks with displacement, or severely deteriorated walls may need [carbon fiber staples (stitches)](/services/carbon-fiber-stitches) at $200-$300 per stitch or [wall stabilization](/services/wall-crack-repair). We walk you through options, timeline, and costs. Our [bowing basement walls guide](/blog/bowing-basement-walls-causes-repair) covers this in detail.
+
+## If We Spot Other Issues
+
+In the overwhelming majority of cases, we fix what we came for and that is it. But occasionally we notice something else during our walk-around — and we will mention it honestly.
+
+Most of the time, our additional recommendations are for work that someone else does:
+- Fix your gutters and lengthen your downspouts
+- Improve the grading around your house
+- Consider an exterior French drain system
+
+These are referrals, not upsells. We are a niche company focused on crack injection, carbon fiber reinforcement, and bulkhead repair. It is very rare that we discover additional work in our wheelhouse that you did not already know about. And when we do, we explain it — we do not pressure you into it.
 
 ## What We Don't Do
 
-Transparency matters, so here's what you won't get from our inspection:
+Transparency matters:
 
-- **We don't scare you into repairs.** If a crack doesn't need fixing, I'll say so.
-- **We don't "find" problems that aren't there.** Our consultation is free — I have no incentive to manufacture work.
-- **We don't sell waterproofing systems.** We fix the source of water intrusion. If you need interior drainage or a sump pump, we'll tell you, but that's not our scope. ([Learn the difference](/blog/basement-waterproofing-vs-foundation-repair).)
-- **We don't do structural engineering.** If your situation requires a PE-stamped structural assessment, we'll refer you to a licensed structural engineer.
+- **We do not scare you into repairs.** If a crack does not need fixing, we say so.
+- **We do not manufacture problems.** Our assessment is free — we have no incentive to invent work.
+- **We do not sell waterproofing systems.** We fix the source of water intrusion. If you need interior drainage or a sump pump, we will tell you, but that is not our scope. ([Learn the difference](/blog/basement-waterproofing-vs-foundation-repair).)
+- **We do not do structural engineering.** If your situation requires a PE-stamped structural assessment, we refer you to a licensed structural engineer.
 
-## Scheduling Your Inspection
+## Get Your Foundation Assessed
 
-Our [free foundation consultations](/services/free-foundation-consultations) are available across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine. There's no obligation, no high-pressure sales pitch — just an honest assessment from someone who's been doing this for over three decades.
-
-Call us at **(860) 573-8760** (CT) or **(617) 668-1677** (MA) to schedule. You can also text us a photo for a quick preliminary assessment.
+Text us photos at **(860) 573-8760** (CT) or **(617) 668-1677** (MA). We will tell you what we see, what it means, and what it costs to fix — most of the time, all from your photos alone. Our [free foundation assessments](/services/free-foundation-consultations) cover all of Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine.
 
 ## Frequently Asked Questions
 
-### How long does a foundation inspection take?
+### How long does it take to get a diagnosis from photos?
 
-Most inspections take 30 to 60 minutes. I examine the exterior perimeter, all accessible interior foundation walls, and any above-grade symptoms. For straightforward single-crack issues, the inspection and repair often happen in the same visit — saving you a second appointment.
+Most homeowners hear back within a few hours during business days. For straightforward cracks, we can often give you a diagnosis and quote the same day you text us photos.
 
-### What should I do to prepare for a foundation inspection?
+### What if my situation is too complex for photo diagnosis?
 
-Clear access to your foundation walls. Move boxes, furniture, and storage away from basement walls so I can see the full surface. If you know where the crack or leak is, make sure that area is fully accessible. Also clear the exterior perimeter near problem areas so I can check grading and drainage.
+Some situations — multiple issues, unusual cracking patterns, or suspected structural problems — benefit from hands-on assessment. In those cases, we will let you know and schedule accordingly. But even then, your photos give us a head start so the on-site visit is focused and efficient.
 
 ### Does a foundation crack always mean structural damage?
 
-No. Most vertical cracks in poured concrete foundations are normal shrinkage cracks that don't affect structural integrity. They may need repair if they're leaking water, but they're not structural emergencies. Horizontal cracks, stair-step cracks in block walls, and any crack with visible displacement are the ones that indicate structural concern and need professional evaluation.
+No. Most vertical cracks in poured concrete foundations are normal shrinkage cracks that do not affect structural integrity. They may need repair if they are leaking water, but they are not structural emergencies. Horizontal cracks, stair-step cracks in block walls, and any crack with visible displacement are the ones that indicate structural concern and need professional evaluation.

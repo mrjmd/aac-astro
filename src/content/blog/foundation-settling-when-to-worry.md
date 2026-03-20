@@ -16,13 +16,13 @@ relatedServices:
   - "foundation-crack-injection"
   - "carbon-fiber-stitches"
   - "free-foundation-consultations"
-heroImage: "/images/projects/randolph-crack-injection-2025-05-before.jpg"
-heroImageAlt: "Foundation settling crack in basement wall"
+heroImage: "/images/blog/foundation-settling-sloping-floor-gap.jpg"
+heroImageAlt: "Gap between baseboard and floor showing foundation settling"
 ---
 
 "Your house is just settling." It's the most common reassurance homeowners hear. And sometimes it's accurate — every house settles, especially in the first few years.
 
-But here's what I've learned in over a decade of foundation repair across Connecticut and Massachusetts: **"settling" is also the excuse that lets small problems become expensive ones.** The trick is knowing the difference.
+But here's what I've learned in decades of foundation repair across Connecticut and Massachusetts: **"settling" is also the excuse that lets small problems become expensive ones.** The trick is knowing the difference.
 
 ## What Is Normal Foundation Settling?
 
@@ -122,7 +122,13 @@ Get a professional foundation evaluation if:
 - **Your home is older than 50 years** and you've never had the foundation assessed
 - **You're buying or selling** a home and want an honest evaluation
 
-At Attack A Crack, we provide [free, no-pressure consultations](/services/free-foundation-consultations). With 20+ years of experience and 91+ documented projects across New England, we'll tell you honestly whether your foundation needs repair or whether what you're seeing is normal settling.
+At Attack A Crack, we provide [free, no-pressure consultations](/services/free-foundation-consultations). With 50+ years of combined experience and thousands of projects across New England, we'll tell you honestly whether your foundation needs repair or whether what you're seeing is normal settling.
+
+### Our Warranty Covers More Than Just the Repair
+
+Here is something most homeowners do not know: our lifetime warranty does not just cover the repair itself. If a warrantied repair ever fails and causes damage to your finished basement — walls, flooring, appliances, anything — we cover that damage too.
+
+If you have a finished basement, this matters enormously. A crack injection that fails and floods your finished space could mean thousands in damage to drywall, carpet, and personal property. With our warranty, you are covered for all of it. Hardly anyone else in this industry offers that level of protection. It is one of the reasons homeowners with finished basements specifically seek us out.
 
 ## The Bottom Line
 

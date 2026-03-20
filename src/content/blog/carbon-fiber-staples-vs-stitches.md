@@ -7,8 +7,8 @@ publishDate: 2026-02-25
 author: "Luc Richard"
 category: "guides"
 tags: ["carbon fiber", "carbon fiber staples", "structural repair", "foundation cracks", "wall stabilization"]
-heroImage: "/images/projects/weymouth-carbon-fiber-2025-08-before.jpg"
-heroImageAlt: "Carbon fiber structural reinforcement on a foundation wall"
+heroImage: "/images/projects/weymouth-carbon-fiber-2025-08-after.jpg"
+heroImageAlt: "Carbon fiber staples bridging stair-step cracks on a block foundation wall"
 featured: false
 relatedPosts:
   - "carbon-fiber-foundation-repair-guide"
@@ -41,7 +41,7 @@ Think of a carbon fiber staple as a heavy-duty bridge across a crack. We carve a
 
 **Low profile.** Once installed and covered with a finishing coat, you can barely see them. You can paint right over them.
 
-**Cost-effective.** At $200-$300 per carbon fiber stitch, staples are one of the most affordable structural reinforcements available.
+**Cost-effective.** At $200-$300 per staple, carbon fiber staples are one of the most affordable structural reinforcements available.
 
 Staples work best for localized cracks that have not caused significant wall movement. They hold the crack together and prevent it from opening further — especially important in areas with clay-heavy glacial till where freeze-thaw cycles put constant pressure on walls.
 
@@ -63,8 +63,8 @@ Here is a quick decision guide:
 
 | Situation | Recommended Fix |
 |---|---|
-| Single horizontal crack, no bowing | Carbon fiber staples ($200-$300/stitch) |
-| Multiple cracks, minimal movement | Staples at each crack ($200-$300/stitch) |
+| Single horizontal crack, no bowing | Carbon fiber staples ($200-$300/staple) |
+| Multiple cracks, minimal movement | Staples at each crack ($200-$300/staple) |
 | Wall bowing less than 1 inch | Carbon fiber stitching straps ($800-$1,500/strap) |
 | Wall bowing more than 1 inch | Full strap system, possible tieback anchors |
 | Active displacement with shifting | Structural engineering assessment first |

@@ -16,13 +16,13 @@ relatedServices:
   - "wall-crack-repair"
   - "carbon-fiber-stitches"
   - "foundation-crack-injection"
-heroImage: "/images/projects/rockland-wall-crack-repair-2025-02-after.jpg"
-heroImageAlt: "Horizontal foundation crack repair"
+heroImage: "/images/blog/horizontal-crack-bowing-wall.jpg"
+heroImageAlt: "Horizontal crack in bowing basement wall showing structural pressure"
 ---
 
 If you've spotted a horizontal crack running along your foundation wall, I'm not going to sugarcoat it: **this is the one type of crack you should never ignore.** Horizontal cracks indicate your wall is under lateral pressure and may be bowing inward — a structural issue that only gets worse with time.
 
-I'm Luc Richard, and I've been repairing foundations across Connecticut for over a decade. Here's everything you need to know.
+I'm Luc Richard, and I've been repairing foundations across Connecticut for decades. Here's everything you need to know.
 
 ## What Causes Horizontal Foundation Cracks?
 
@@ -85,18 +85,18 @@ Not every horizontal crack requires emergency intervention, but all of them need
 
 The right repair depends on severity. Here's what we use at Attack A Crack, starting with the most common solutions.
 
-### Carbon Fiber Staples (Stitches) for Structural Reinforcement
+### Carbon Fiber Straps for Wall Stabilization
 
-For walls with mild to moderate displacement, [carbon fiber staples (stitches)](/services/carbon-fiber-stitches) are the gold standard. Here's why:
+For walls with mild to moderate displacement, [carbon fiber straps](/services/carbon-fiber-stitches) are the gold standard. Here's why:
 
 - **Stronger than steel**: Carbon fiber has a tensile strength 10 times greater than steel
-- **Low profile**: Strips bond directly to the wall surface, so they don't take up basement space
+- **Low profile**: Straps bond directly to the wall surface, so they don't take up basement space
 - **Permanent**: Carbon fiber doesn't rust, corrode, or degrade over time
 - **Stops further movement**: Once installed, the wall cannot bow further inward
 
 We apply carbon fiber straps vertically across the horizontal crack at regular intervals. Each strap is bonded to the wall with structural epoxy, creating a reinforcement system that permanently stabilizes the wall.
 
-Carbon fiber staples typically run $200-$300 per stitch location, making this one of the most cost-effective structural repairs available.
+Carbon fiber straps typically run $700-$1,000 each, making this a cost-effective alternative to wall anchors or steel beams.
 
 ### Epoxy Crack Injection at 100 PSI
 
@@ -117,6 +117,8 @@ For walls with significant bowing (more than 2 inches of displacement), carbon f
 - **Steel I-beams**: Vertical beams braced against the floor and ceiling to hold the wall in place
 
 These are more invasive and expensive repairs ($5,000-$15,000+), which is exactly why addressing horizontal cracks early saves serious money.
+
+**Note:** Wall anchors and steel I-beams are repairs we may recommend but do not perform ourselves. We will refer you to a trusted contractor for these installations.
 
 ## The New England Factor
 
@@ -140,7 +142,7 @@ A proper assessment includes visual inspection of all walls, measurement of disp
 
 ## The Bottom Line
 
-Horizontal foundation cracks are serious, but they're also repairable — especially when caught early. With 91+ documented projects across New England (see our [before/after project photos](/projects)), we have repaired horizontal cracks in every severity. If you're seeing horizontal cracking in your New England home, don't wait for the next freeze-thaw season to make it worse.
+Horizontal foundation cracks are serious, but they're also repairable — especially when caught early. With thousands of projects across New England (see our [before/after project photos](/projects)), we have repaired horizontal cracks in every severity. If you're seeing horizontal cracking in your New England home, don't wait for the next freeze-thaw season to make it worse.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

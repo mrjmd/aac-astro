@@ -7,8 +7,8 @@ publishDate: 2025-12-29
 author: "Attack A Crack"
 category: "guides"
 tags: ["carbon fiber", "structural repair", "foundation reinforcement", "crack stitching"]
-heroImage: "/images/projects/weymouth-carbon-fiber-2025-08-before.jpg"
-heroImageAlt: "Carbon Fiber Foundation Repair: When Injection Alone Is Not Enough"
+heroImage: "/images/projects/weymouth-carbon-fiber-2025-08-after.jpg"
+heroImageAlt: "Carbon fiber staples installed across stair-step cracks on a CMU foundation wall"
 draft: false
 
 relatedServices:
@@ -23,7 +23,7 @@ relatedPosts:
 
 Most foundation cracks in New England are straightforward. Water finds a way in through a shrinkage crack, we inject it, it stops leaking, and everyone goes home happy. But some cracks need more than a seal — they need structural reinforcement. That's where [carbon fiber stitches](/services/carbon-fiber-stitches) come in.
 
-After 20+ years of repairing foundations across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, we've seen every type of crack imaginable. And we can tell you this: knowing when injection is enough and when you need carbon fiber is the difference between a repair that lasts and one that fails in two years.
+After 50+ combined years of repairing foundations across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, we've seen every type of crack imaginable. And we can tell you this: knowing when injection is enough and when you need carbon fiber is the difference between a repair that lasts and one that fails in two years.
 
 ## When Injection Is Not Enough
 
@@ -53,7 +53,7 @@ Here's how we install [carbon fiber stitches](/services/carbon-fiber-stitches) o
 
 1. **Surface preparation.** We grind the concrete surface smooth along the crack path and at each stitch location. The concrete needs to be clean and slightly rough for proper adhesion.
 
-2. **Crack injection first.** If the crack is leaking, we inject it with polyurethane or epoxy before applying carbon fiber. The injection seals against water; the carbon fiber handles structural loads. They're complementary, not redundant.
+2. **Crack injection first (typically).** In most cases, we inject the crack with polyurethane or epoxy before applying carbon fiber. The injection seals against water; the carbon fiber handles structural loads. They're complementary, not redundant. In some cases — like block foundations where injection isn't practical — we may proceed directly to carbon fiber installation without a full crack injection.
 
 3. **Epoxy application.** We apply a structural-grade, two-part epoxy to the prepared concrete surface. This is not hardware-store epoxy — it's engineered specifically for carbon fiber bonding to concrete.
 
@@ -74,7 +74,8 @@ Carbon fiber isn't the only structural repair option. Here's how it compares to 
 Steel I-beams are the traditional approach to bowing walls. Vertical steel columns are placed against the wall and anchored to the footing and floor framing above.
 
 **Pros:** Proven technology, can handle severe bowing, adjustable over time.
-**Cons:** They stick out 4-6 inches from the wall (goodbye, finished basement layout), they're heavy, installation is disruptive, and they can cost $800-$1,500 per beam. A typical wall might need 4-6 beams.
+
+**Cons:** They stick out 4-6 inches from the wall (goodbye, finished basement layout), they're heavy, installation is disruptive, and they can cost $800-$1,500 per beam. A typical wall might need 4-6 beams ($4,000-$10,000 per wall).
 
 ### Wall Anchors
 
@@ -111,15 +112,15 @@ If you're curious about how this fits into the bigger picture of foundation repa
 
 ## Cost and Warranty
 
-Let's talk numbers. Carbon fiber stitches typically run $200-$300 per stitch, with most cracks needing 3-6 stitches depending on length and severity. Combined with injection, a typical structural crack repair runs $1,500-$3,000.
+Let's talk numbers. Carbon fiber stitches typically run $200-$300 per stitch, with most cracks needing 3-8 stitches depending on length and severity. Combined with injection, a typical structural crack repair runs $2,000-$4,000.
 
-Compare that to steel I-beams at $3,200-$9,000 per wall or wall anchor systems at similar price points, and carbon fiber starts looking like a pretty smart investment — especially when the engineering says it's the right solution.
+Compare that to steel I-beams at $4,000-$10,000 per wall or wall anchor systems at similar price points, and carbon fiber starts looking like a pretty smart investment — especially when the engineering says it's the right solution.
 
 For a more complete picture of repair pricing, see our [foundation repair cost guide for 2026](/blog/foundation-repair-cost-guide-2026).
 
 ### What About the Warranty?
 
-Every carbon fiber repair we perform comes with a lifetime transferable warranty. That covers both the injection seal and the carbon fiber reinforcement. If the repair ever fails — and in 20+ years, we've seen vanishingly few failures with properly diagnosed carbon fiber applications — we come back and fix it at no charge.
+Every carbon fiber repair we perform comes with a lifetime transferable warranty. That covers both the injection seal and the carbon fiber reinforcement. If the repair ever fails — and in 50+ combined years, we've seen vanishingly few failures with properly diagnosed carbon fiber applications — we come back and fix it at no charge.
 
 The warranty transfers to new owners if you sell the home, which actually becomes a selling point rather than a liability. Real estate agents love seeing a professional structural repair with a lifetime warranty in the disclosure documents.
 

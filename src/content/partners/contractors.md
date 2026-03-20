@@ -82,6 +82,10 @@ We work with your schedule:
 - Work you can stand behind
 - Callbacks handled promptly
 
+### Massachusetts Concrete Resurfacing
+
+In Massachusetts, we also offer professional concrete resurfacing for driveways, walkways, patios, pool decks, and garage floors. Curb appeal and property condition matter — [learn about our concrete repair services](/concrete-repair).
+
 ### Join Our Contractor Network
 
 Let's establish a working relationship. Start with a [free foundation consultation](/services/free-foundation-consultations) and when foundation issues come up on your projects, you'll have a reliable specialist to call.

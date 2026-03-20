@@ -43,7 +43,7 @@ Your home's foundation is the backbone of its structural integrity. If it's comp
 
 - **Hairline cracks:** Generally safe but warrant monitoring — seal before winter to prevent freeze-thaw widening
 - **Stair-step cracks:** May signal foundation movement with wall bulging, common in block/CMU foundations
-- **Horizontal cracks:** Most serious; indicate lateral soil pressure from clay-heavy soil or hydrostatic pressure — may require [carbon fiber staples](/services/carbon-fiber-stitches) ($200-$300 per stitch) to prevent further bowing
+- **Horizontal cracks:** Most serious; indicate lateral soil pressure from clay-heavy soil or hydrostatic pressure — may require [carbon fiber straps](/services/carbon-fiber-stitches) to prevent further bowing
 - **Vertical cracks:** Common shrinkage cracks, but [professional crack injection](/services/foundation-crack-injection) ($800-$1,200 per crack) is needed if they leak or widen beyond 1/4 inch
 
 ## Structural Support and Basement Moisture Checks
@@ -55,7 +55,7 @@ Your home's foundation is the backbone of its structural integrity. If it's comp
 
 ## 10 Preventive Maintenance Tips
 
-1. **Seal minor cracks** with epoxy or concrete repair materials
+1. **Seal minor cracks** (we can talk you through whether DIY or professional is appropriate)
 2. **Maintain consistent soil moisture** using rock beds 18"–24" from foundation
 3. **Direct drainage** at least 5 feet away (sandy soil) to 10 feet (expansive soil)
 4. **Eliminate standing water** through in-ground drains or gravel basins
@@ -72,7 +72,7 @@ While monitoring hairline cracks is appropriate for homeowners, never attempt to
 
 ## When to Call a Professional
 
-If you notice any of these warning signs, contact Attack A Crack for a [free foundation consultation](/services/free-foundation-consultations). With 91+ documented projects across New England, we can assess your situation quickly. Text us a photo for a quick assessment — addressing issues early can prevent costly foundation replacements.
+If you notice any of these warning signs, contact Attack A Crack for a [free foundation consultation](/services/free-foundation-consultations). With thousands of projects across New England, we can assess your situation quickly. Text us a photo for a quick assessment — addressing issues early can prevent costly foundation replacements.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

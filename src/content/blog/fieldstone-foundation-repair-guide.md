@@ -1,6 +1,6 @@
 ---
 title: "Fieldstone Foundation Repair: A Complete Guide for New England Homeowners"
-metaTitle: "Fieldstone Foundation Repair in CT & MA"
+metaTitle: "Fieldstone Foundation Repair in MA"
 metaDescription: "Expert fieldstone foundation repair for historic New England homes. Learn about common problems and professional repair solutions."
 excerpt: "Fieldstone foundations built the homes of early New England. Learn how we preserve and repair these historic structures while solving modern problems like mortar deterioration and water infiltration."
 publishDate: 2025-07-20
@@ -12,8 +12,8 @@ tags:
   - "historic foundations"
   - "foundation repair"
   - "New England"
-heroImage: "/images/projects/belchertown-crack-injection-2025-11-before.jpg"
-heroImageAlt: "Foundation wall crack before repair in Belchertown basement"
+heroImage: "/images/blog/fieldstone-foundation-wall-deterioration.jpg"
+heroImageAlt: "Deteriorating fieldstone foundation wall with crumbling mortar joints"
 relatedServices:
   - "wall-crack-repair"
   - "carbon-fiber-stitches"
@@ -68,56 +68,53 @@ Over time, some fieldstone walls may:
 
 ### Our Approach to Fieldstone Repair
 
-We specialize in preserving historic fieldstone foundations throughout New England. Our approach combines traditional craftsmanship with modern stabilization techniques.
+Our Massachusetts branch handles limited fieldstone foundation repairs. We focus on repointing and injection — the techniques where we can deliver reliable results.
 
-**Assessment**
+**Photo-Based Assessment**
 
-Every fieldstone foundation is unique. We thoroughly inspect your foundation to understand:
-- Original construction methods
+Every fieldstone foundation is unique. Send us photos of your foundation and we'll evaluate:
+- Overall condition and construction type
 - Previous repairs (and their quality)
-- Current moisture conditions
-- Structural integrity
-- Specific problem areas
+- Visible moisture issues or deterioration
+- Whether the problem is something we can help with
+- If an on-site visit is warranted
 
-**Mortar Restoration**
+**Limited Mortar Restoration**
 
-When repointing is needed, we use appropriate mortar mixes that:
-- Are compatible with historic stone and mortar
-- Allow moisture to escape (breathability)
-- Match the original appearance
-- Won't damage adjacent stone
+We do limited repointing on fieldstone foundations where the scope is manageable:
+- Compatible mortar mixes for historic stone
+- Focused on specific deteriorated areas
+- Breathable mixes that allow moisture to escape
+- For extensive repointing needs, we'll refer you to a mason who specializes in historic stone work
 
 **Water Management**
 
-For wet fieldstone basements, we typically recommend:
-- Interior drainage systems at the floor/wall joint
-- Sump pump installation
-- Vapor barriers on interior walls (where appropriate)
-- Exterior drainage improvements when accessible
+For wet fieldstone basements, we can help with crack injection where applicable. However, interior drainage systems, sump pump installation, and vapor barriers are **not services we provide** — we'd refer you to a waterproofing contractor for those. Exterior drainage improvements are also outside our scope.
 
-**Structural Stabilization**
+**Structural Reinforcement (Limited)**
 
-For walls showing movement from freeze-thaw cycles and lateral soil pressure, options include:
-- [Carbon fiber staples (reinforcement straps)](/services/carbon-fiber-stitches) at $200-$300 per stitch — the least invasive structural reinforcement option
-- Steel I-beam supports for severe bowing
-- Helical tieback anchors
-- Targeted rebuilding of failed sections — see our [foundation repair vs replacement guide](/blog/foundation-repair-vs-replacement)
+For walls showing movement from freeze-thaw cycles and lateral soil pressure, we can provide:
+- [Carbon fiber staples (reinforcement stitches)](/services/carbon-fiber-stitches) at $200-$300 per stitch — a targeted reinforcement technique for specific crack areas
+
+Steel I-beam supports, helical tiebacks, and targeted wall rebuilding are **not services we offer** — these require a structural contractor, and we'll refer you to one if that's what your foundation needs. See our [foundation repair vs replacement guide](/blog/foundation-repair-vs-replacement) for more context on when repairs aren't enough.
 
 ### What We Don't Do
 
-We believe in honest assessment. For some fieldstone issues, we'll refer you to specialists:
+We believe in honest assessment. Fieldstone foundations often need work that's outside our scope, and we'll tell you upfront rather than take on something we can't deliver well:
+- **I-beam supports and helical tiebacks** — structural stabilization beyond carbon fiber stitches
+- **Interior drainage, sump pumps, and vapor barriers** — waterproofing systems
 - **Major rebuilds** requiring full wall replacement
+- **Extensive repointing** beyond limited, targeted mortar work
 - **Historic preservation** requiring museum-quality restoration
 - **Archaeological concerns** on historically significant structures
 
-### Serving New England
+If your fieldstone foundation needs something we don't do, we'll let you know and refer you to the right specialist.
 
-We repair fieldstone foundations throughout:
+### Serving Massachusetts
 
-**Connecticut:** Hartford County, New Haven County, Fairfield County, and beyond
-**Massachusetts:** Greater Boston, South Shore, North Shore, Central MA
+We handle limited fieldstone foundation repairs in Massachusetts, including Greater Boston, South Shore, North Shore, and Central MA.
 
-Many of our clients own historic homes in communities like Cambridge, Salem, Concord, Lexington, Old Lyme, Guilford, and other historic New England towns.
+Many of our clients own historic homes in communities like Cambridge, Salem, Concord, Lexington, and other historic Massachusetts towns.
 
 ### Get Your Fieldstone Foundation Assessed
 
@@ -125,4 +122,4 @@ Wondering if your fieldstone foundation needs attention? Contact us for a free a
 
 **Connecticut & Massachusetts:** 617-668-1677
 
-Text us a photo for a preliminary assessment, or call to schedule — with 20+ years of experience and 91+ documented projects, we'll evaluate your foundation honestly and explain your options clearly.
+Text us a photo for a preliminary assessment, or call to schedule — with 50+ years of combined experience and thousands of projects, we'll evaluate your foundation honestly and explain your options clearly.

@@ -20,7 +20,7 @@ relatedServices:
 
 You found the house. You love the neighborhood, the kitchen is perfect, and the yard has that maple tree your kids will climb for the next twenty years. Then the home inspection comes back with words like "foundation crack," "moisture intrusion," or "structural concern," and suddenly that dream home feels like a money pit.
 
-Here is the truth after 20 years of foundation repair across New England: most foundation issues that show up in home inspections are fixable, often affordably. But some are genuinely serious. Knowing the difference is the key to making a smart decision instead of an emotional one.
+Here is the truth after decades of foundation repair across New England: most foundation issues that show up in home inspections are fixable, often affordably. But some are genuinely serious. Knowing the difference is the key to making a smart decision instead of an emotional one.
 
 ## Reading the Inspection Report: What It Actually Says
 
@@ -145,4 +145,4 @@ Do not let a foundation inspection finding derail a home purchase without gettin
 
 Get a specialist assessment. Get real numbers. Then make a decision based on facts, not fear. We have helped thousands of New England homebuyers navigate this exact situation, and the vast majority end up buying the home and living happily in it with a repaired foundation and a lifetime warranty in the filing cabinet.
 
-Text us a photo for assessment or call us at 617-668-1677 (Massachusetts) or 860-573-8760 (Connecticut) to schedule a free assessment during your inspection period. With 20+ years of experience, we can often give you a preliminary read from a photo before scheduling an on-site visit.
+Text us a photo for assessment or call us at 617-668-1677 (Massachusetts) or 860-573-8760 (Connecticut). With 50+ years of combined experience, we can often give you a preliminary read from a photo alone.

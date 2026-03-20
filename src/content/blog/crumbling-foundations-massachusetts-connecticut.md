@@ -58,7 +58,7 @@ Not every crumbling foundation is pyrrhotite-related. Normal freeze-thaw damage,
 
 ## How Attack A Crack Can Help
 
-Attack A Crack specializes in diagnosing crumbling foundation issues and offers free assessments. With 20+ years of experience and 91+ documented projects in New England, we can determine whether your foundation's deterioration is pyrrhotite-related or simply normal freeze-thaw cycle damage in the region's clay-heavy soil and coastal water table conditions. While we don't handle full foundation replacements, we connect clients with trusted partners for repair guidance.
+Attack A Crack specializes in diagnosing crumbling foundation issues and offers free assessments. With 50+ years of combined experience and thousands of projects in New England, we can determine whether your foundation's deterioration is pyrrhotite-related or simply normal freeze-thaw cycle damage in the region's clay-heavy soil and coastal water table conditions. While we don't handle full foundation replacements, we connect clients with trusted partners for repair guidance.
 
 If you're concerned about your foundation, text us a photo for a preliminary assessment or contact us for a [free evaluation](/services/free-foundation-consultations):
 

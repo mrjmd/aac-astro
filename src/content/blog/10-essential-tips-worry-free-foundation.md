@@ -67,7 +67,7 @@ Some foundation issues demand immediate attention. Never delay if you see horizo
 
 ## Get a Professional Assessment
 
-Attack A Crack offers [free foundation consultations](/services/free-foundation-consultations) to evaluate your foundation's condition. With 20+ years of experience and 91+ documented projects across New England, we can identify problems early. Text us a photo for a quick assessment — routine maintenance and early detection prevent minor issues from becoming costly structural repairs. See our [signs of foundation problems guide](/blog/signs-of-foundation-problems) for a detailed walkthrough of what to look for.
+Attack A Crack offers [free foundation consultations](/services/free-foundation-consultations) to evaluate your foundation's condition. With 50+ years of combined experience and thousands of projects across New England, we can identify problems early. Text us a photo for a quick assessment — routine maintenance and early detection prevent minor issues from becoming costly structural repairs. See our [signs of foundation problems guide](/blog/signs-of-foundation-problems) for a detailed walkthrough of what to look for.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

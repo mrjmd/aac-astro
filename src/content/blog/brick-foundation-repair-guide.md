@@ -82,6 +82,6 @@ Most brick foundation problems are manageable with repointing, crack repair, and
 
 **Do not panic.** Your brick foundation has been standing for over a century. Whatever condition it is in today, it got there slowly over decades. You have time to plan a thoughtful repair.
 
-When you are ready for a professional assessment, [schedule a free consultation](/services/free-foundation-consultations) or text us a photo of your brick foundation for a quick assessment. We have been working on brick foundations across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine for 20+ years, and we will tell you exactly what your foundation needs — and what it does not.
+When you are ready for a professional assessment, [text us photos for a free assessment](/services/free-foundation-consultations) of your brick foundation. We have been working on brick foundations across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine for 50+ combined years, and we will tell you exactly what your foundation needs — and what it does not.
 
 **A note on cement vs. concrete:** Homeowners often say "cement foundation" when they mean concrete. Cement is just one ingredient in concrete (along with water, sand, and aggregate). A brick foundation uses neither — it is fired clay and mortar. The distinction matters because repair materials and techniques differ significantly between these foundation types.

@@ -107,7 +107,7 @@ Legitimate contractors let you think it over and get other opinions.
 
 ## Our Honest Approach
 
-At Attack A Crack, we're foundation repair specialists — not waterproofing generalists. With 20+ years of experience, we specialize in crack repair. But here's what makes us different:
+At Attack A Crack, we're foundation repair specialists — not waterproofing generalists. With 50+ years of combined experience, we specialize in crack repair. But here's what makes us different:
 
 **We'll tell you if you need waterproofing.**
 
@@ -126,7 +126,7 @@ A homeowner in Hartford contacted us after getting a $12,000 quote from a waterp
 
 **What we did:** Injected both cracks with flexible urethane at 100 PSI through all 8-10 inches of concrete — with a multi-crack discount.
 
-**Result:** No water infiltration in the 18 months since repair — at a fraction of the $12,000 waterproofing quote. This is one of 91+ documented projects across New England where targeted repair solved the problem completely.
+**Result:** No water infiltration in the 18 months since repair — at a fraction of the $12,000 waterproofing quote. This is one of thousands of projects across New England where targeted repair solved the problem completely.
 
 This homeowner almost spent $12,000 on a system they didn't need. Targeted crack repair solved their problem. See our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) for real pricing.
 

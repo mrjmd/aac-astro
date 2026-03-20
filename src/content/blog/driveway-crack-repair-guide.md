@@ -16,13 +16,15 @@ relatedServices:
   - "wall-crack-repair"
   - "foundation-crack-injection"
   - "driveway"
-heroImage: "/images/projects/hanover-crack-injection-2025-03-after.jpg"
-heroImageAlt: "Concrete crack repair at ground level"
+heroImage: "/images/blog/cracked-concrete-driveway-repair.jpg"
+heroImageAlt: "Cracked concrete driveway showing typical repair-ready damage"
 ---
 
 Your driveway is the most abused concrete surface on your property. It handles vehicle weight, freeze-thaw cycles, road salt, snowplow blades, and UV exposure — all year, every year. New England's glacial till and clay-heavy soil make settlement beneath driveways especially common. In Connecticut and Massachusetts, that combination is brutal.
 
-If your driveway is cracking, here's how to figure out what's happening, what to do about it, and how to prevent it from getting worse.
+**Important: This guide covers concrete driveways only.** If your driveway is asphalt (blacktop), the repair methods, products, and costs discussed here do not apply. Asphalt driveways require completely different materials and techniques, and we do not work on asphalt surfaces. If you're not sure whether your driveway is concrete or asphalt, concrete is typically light gray and asphalt is black.
+
+If your concrete driveway is cracking, here's how to figure out what's happening, what to do about it, and how to prevent it from getting worse.
 
 ## Types of Driveway Cracks
 
@@ -168,13 +170,13 @@ Fill cracks before winter. A hairline crack filled in October stays a hairline c
 
 | Repair Type | DIY Cost | Professional Cost |
 |------------|----------|------------------|
-| Crack filling (per linear foot) | $0.50–$2 | $3–$8 |
-| Surface resurfacing (per sq ft) | $0.50–$1.50 | $3–$8 |
-| Slab jacking (per section) | N/A | $500–$1,500 |
-| Section replacement (per sq ft) | N/A | $8–$15 |
-| Full driveway replacement | N/A | $8–$15/sq ft |
+| Crack filling (per linear foot) | $1–$3 | $5–$12 |
+| Surface resurfacing (per sq ft) | $1–$2.50 | $5–$12 |
+| Slab jacking (per section) | N/A | $800–$2,000 |
+| Section replacement (per sq ft) | N/A | $10–$20 |
+| Full driveway replacement | N/A | $10–$20/sq ft |
 
-For a typical 2-car driveway (400-600 sq ft), full replacement runs $3,200–$9,000. Professional resurfacing runs $1,200–$4,800. Crack filling a few cracks yourself costs under $50.
+For a typical 2-car driveway (400-600 sq ft), full replacement runs $4,000–$12,000. Professional resurfacing runs $2,000–$7,200. Crack filling a few cracks yourself costs $50-$150 in materials.
 
 ## Frequently Asked Questions
 

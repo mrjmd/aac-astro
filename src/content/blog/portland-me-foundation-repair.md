@@ -22,7 +22,7 @@ relatedServices:
 
 Portland, Maine, sits at an intersection that no foundation finds comfortable: brutal northern winters and relentless coastal exposure. It is the kind of combination that tests building materials in ways that engineers in warmer climates never have to consider. Add in a housing stock that includes homes from nearly every era of American construction, and you have got a foundation repair landscape that is anything but boring.
 
-We have been repairing foundations across New England for over 20 years, and our work in southern Maine has taught us a deep respect for what Casco Bay weather does to buildings. Portland-area homeowners are tough, their homes are tough, but concrete and stone have their limits.
+We have been repairing foundations across New England for decades, and our work in southern Maine has taught us a deep respect for what Casco Bay weather does to buildings. Portland-area homeowners are tough, their homes are tough, but concrete and stone have their limits.
 
 Here is what you need to know about your foundation if you live in the Portland metro area — and what you can do about it.
 
@@ -110,6 +110,6 @@ Unlike southern New England, Maine foundations can remain frozen for weeks at a 
 
 Attack A Crack serves southern Maine from Portland south. We understand the unique combination of coastal exposure and extreme winter conditions that makes this area so demanding on foundations.
 
-We offer [free foundation consultations](/services/free-foundation-consultations) throughout our service area. If you are wondering about a crack, dealing with water in the basement after rain, or just want a professional opinion on what your foundation needs, give us a call at 860-573-8760 or text us a photo for a quick assessment. After 20+ years of New England foundation work, we will take a look and give you honest answers.
+We offer [free foundation consultations](/services/free-foundation-consultations) throughout our service area. If you are wondering about a crack, dealing with water in the basement after rain, or just want a professional opinion on what your foundation needs, give us a call at 860-573-8760 or text us a photo for a quick assessment. After 50+ combined years of New England foundation work, we will take a look and give you honest answers.
 
 Maine foundations earn every year they stand. Let us help yours stand for many more.

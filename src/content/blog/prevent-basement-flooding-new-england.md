@@ -22,7 +22,7 @@ relatedPosts:
 
 New England gives your basement every reason to flood. We have spring snowmelt, summer thunderstorms, fall hurricanes, and winter ice dams. The ground freezes, thaws, and saturates on a cycle designed to test every weakness in your foundation.
 
-But here is the thing — most basement flooding is preventable. Not with a $20,000 waterproofing system, but with a systematic approach to the actual causes of water entry. After 20 years of fixing flooded basements across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, we can tell you that the majority of flooding we see could have been prevented with maintenance that costs little or nothing.
+But here is the thing — most basement flooding is preventable. Not with a $20,000 waterproofing system, but with a systematic approach to the actual causes of water entry. After decades of fixing flooded basements across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, we can tell you that the majority of flooding we see could have been prevented with maintenance that costs little or nothing.
 
 Let's go through it season by season.
 

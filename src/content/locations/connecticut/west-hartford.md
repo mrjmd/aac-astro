@@ -3,7 +3,7 @@ city: "West Hartford"
 state: "Connecticut"
 stateAbbr: "CT"
 metaTitle: "Foundation Repair in West Hartford, CT | Attack A Crack"
-metaDescription: "Foundation crack repair in West Hartford, CT. Trusted by local homeowners for 20+ years. Lifetime warranty included. Call 860-573-8760."
+metaDescription: "Foundation crack repair in West Hartford, CT. Trusted by local homeowners for decades. Lifetime warranty included. Call 860-573-8760."
 region: "Greater Hartford"
 population: 64083
 averageHomeAge: "1920s-1960s"

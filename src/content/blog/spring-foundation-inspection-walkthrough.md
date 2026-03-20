@@ -22,7 +22,7 @@ relatedPosts:
 
 You do not need to be a foundation expert to spot foundation problems. You need a flashlight, a phone camera, 15 minutes, and the willingness to actually go look. That last part is where most homeowners fall short -- basements are not exactly inviting, and "I should check the foundation" gets pushed to next weekend indefinitely.
 
-Here is a structured walkthrough you can do right now, in about the time it takes to watch a sitcom without commercials. After 20+ years of inspecting foundations across New England, this is roughly what we check (minus the specialized equipment), and you will be surprised how much you can catch on your own.
+Here is a structured walkthrough you can do right now, in about the time it takes to watch a sitcom without commercials. After 50+ combined years of inspecting foundations across New England, this is roughly what we check (minus the specialized equipment), and you will be surprised how much you can catch on your own.
 
 ## Before You Start: Gather Your Gear
 

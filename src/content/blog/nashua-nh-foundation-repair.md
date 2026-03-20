@@ -22,7 +22,7 @@ relatedServices:
 
 New Hampshire earned its nickname honestly. The state sits on some of the oldest and hardest bedrock in North America, and that geology shapes everything about building here — especially what happens below ground level. If you own a home in southern New Hampshire, your foundation is dealing with conditions that would make a Connecticut homeowner's jaw drop.
 
-After 20 years of repairing foundations across New England, we have learned that New Hampshire is its own animal. The frost goes deeper, the temperature swings are wilder, and the ground itself fights back. But here is the good news: once you understand what you are dealing with, most NH foundation problems are very fixable.
+After decades of repairing foundations across New England, we have learned that New Hampshire is its own animal. The frost goes deeper, the temperature swings are wilder, and the ground itself fights back. But here is the good news: once you understand what you are dealing with, most NH foundation problems are very fixable.
 
 ## Nashua: Gateway City Foundations
 
@@ -100,12 +100,12 @@ New Hampshire homeowners can take some practical steps to reduce foundation stre
 
 **Do not wait on cracks.** In New Hampshire, one winter of freeze-thaw can turn an $800 crack injection into a $2,000+ structural repair. Our [cost guide](/blog/foundation-repair-cost-guide-2026) has details on pricing, and our [fall inspection checklist](/blog/fall-foundation-inspection-checklist) covers seasonal prep.
 
-**Text us a photo for assessment.** Not sure if what you see is serious? Send a photo to 860-573-8760 and we can often tell you what you are dealing with before scheduling a visit.
+**Text us a photo for assessment.** Not sure if what you see is serious? Send a photo to 860-573-8760 and we can often tell you what you are dealing with from a photo alone.
 
 ## Our New Hampshire Service
 
 Attack A Crack serves southern New Hampshire from our New England base of operations. We understand the specific challenges that the Granite State throws at foundations because we have been fixing them for over three decades.
 
-We offer [free foundation consultations](/services/free-foundation-consultations) throughout our NH service area. No pressure — just honest answers from experts who have seen it all. Call us at 860-573-8760 and we will set up a time to take a look.
+We offer [free foundation assessments](/services/free-foundation-consultations) throughout our NH service area. No pressure — just honest answers from experts who have seen it all. Text us photos at 860-573-8760 for a free assessment.
 
 Your foundation is dealing with some of the toughest conditions in New England. The least you can do is find out exactly where it stands.

@@ -24,12 +24,18 @@ faqs:
   - question: "Can you explain your findings to my clients?"
     answer: "Absolutely. We provide clear, jargon-free explanations and are happy to answer all of a homeowner's questions about their foundation."
   - question: "What documentation do you provide after repairs?"
-    answer: "Complete documentation including photos, work description, materials used, and warranty certificate. Everything needed for transaction files."
+    answer: "A description of work performed and a transferable lifetime warranty certificate — everything needed for transaction files."
 ---
 
 ## A Foundation Partner for Home Inspectors
 
 When you flag foundation issues in an inspection, your clients need a specialist who will give them honest information—not a sales pitch. We're the foundation repair partner you can recommend with confidence.
+
+### Proud Affiliations
+
+![ASHI New England Affiliate Member](/images/ASHI-New-England-Logo.png)
+
+**ASHI New England** — We're proud to partner with the American Society of Home Inspectors, New England Chapter.
 
 ### Why Inspectors Refer to Us
 
@@ -48,12 +54,14 @@ We understand foundation science. When homeowners have questions about what you 
 - What the repair involves
 - What happens if they wait
 
+**Built to Outlast the Home**
+Our refined injection method fills cracks full-depth, creating a bond that's stronger than the surrounding concrete. We're so confident in our technique that we back every repair with a transferable lifetime warranty. For details on the method itself, see our [crack injection page](/services/foundation-crack-injection).
+
 **Professional Communication**
 We treat your clients with the same professionalism you do:
 - Prompt responses and on-time appointments
 - Clear explanations without jargon
 - Written quotes with no hidden fees
-- Complete documentation for transaction files
 
 ### Common Inspection Findings We Address
 
@@ -82,10 +90,10 @@ We explain our findings in plain language. No scare tactics, no technical jargon
 
 **Professional Documentation**
 Every repair comes with:
-- Before/after photos
 - Description of work performed
-- Materials and methods used
-- Transferable lifetime warranty
+- Transferable lifetime warranty certificate
+
+For details on the technique itself, see our [crack injection page](/services/foundation-crack-injection).
 
 **Fair Pricing**
 Honest quotes with no surprises. The price we quote is the price they pay.

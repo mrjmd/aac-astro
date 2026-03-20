@@ -23,17 +23,17 @@ relatedPosts:
 
 The question "how long does foundation repair take?" is almost as common as "how much does it cost?" And the answer is similarly annoying: it depends.
 
-But unlike some contractors who respond to timeline questions with vague shrugs, we are going to give you actual numbers. After 20+ years of fixing foundations across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, we have a pretty solid sense of how long things take.
+But unlike some contractors who respond to timeline questions with vague shrugs, we are going to give you actual numbers. After 50+ combined years of fixing foundations across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, we have a pretty solid sense of how long things take.
 
 ## Quick Timeline Overview
 
 | Repair Type | Typical Duration | Disruption Level |
 |------------|-----------------|-----------------|
-| Single crack injection | 1 - 2 hours | Minimal |
-| Multiple crack injection (2-4) | 2 - 4 hours | Minimal |
-| Carbon fiber stitching | 4 - 8 hours | Low |
-| Bulkhead sealing | 4 - 8 hours | Low |
-| Wall stabilization (carbon fiber strips) | 1 day | Moderate |
+| Single crack injection | 2 - 4 hours | Minimal |
+| Multiple crack injection (2-4) | 3 - 6 hours | Minimal |
+| Carbon fiber stitching | 2 - 4 hours | Low |
+| Bulkhead sealing | ~4 hours | Low |
+| Wall stabilization (carbon fiber straps) | 1 day | Moderate |
 | Wall anchors or steel beams | 1 - 3 days | Moderate |
 | Major structural repair | 1 - 3 weeks | Significant |
 
@@ -41,17 +41,18 @@ Now let's dig into each one.
 
 ## Crack Injection: Hours, Not Days
 
-[Foundation crack injection](/services/foundation-crack-injection) is the most common repair we perform, and it is also the fastest. A single crack takes one to two hours from setup to cleanup.
+[Foundation crack injection](/services/foundation-crack-injection) is the most common repair we perform, and it is also the fastest. A single crack takes two to four hours from setup to cleanup.
 
 **What happens during those hours:**
 
-1. **Setup (15-20 minutes):** We prepare the work area, set up equipment, and clean the crack surface.
-2. **Port installation (15-30 minutes):** Small injection ports are placed along the crack at regular intervals.
-3. **Surface seal (15-20 minutes):** The crack surface between ports is sealed so injected material cannot escape.
-4. **Injection (20-40 minutes):** Polyurethane or epoxy is injected through the ports at up to 100 PSI, filling the crack through the full 8-10 inches of concrete from inside the wall to outside.
+1. **Setup (~30 minutes):** We prepare the work area, set up equipment, and clean the crack surface.
+2. **Port installation (~30 minutes):** Small injection ports are placed along the crack at regular intervals.
+3. **Surface seal (30-45 minutes):** The crack surface between ports is sealed so injected material cannot escape.
+4. **Injection (~1 hour):** Polyurethane or epoxy is injected through the ports at up to 100 PSI, filling the crack through the full 8-10 inches of concrete from inside the wall to outside.
 5. **Cleanup (10-15 minutes):** Ports are trimmed, area is cleaned up.
+6. **Surface seal over ports (10-15 minutes):** Final seal application over the injection ports, followed by cure time.
 
-For multiple cracks, each additional crack adds roughly 45 minutes to an hour once we are set up. A three-crack job typically takes three to four hours total.
+For multiple cracks, each additional crack adds roughly 1 to 1.5 hours once we are set up. A three-crack job typically takes three to four hours total.
 
 **Can you be home?** Absolutely. Most homeowners go about their day while we work. The equipment is not excessively loud, there are no fumes to worry about, and we work in a contained area of the basement.
 
@@ -61,7 +62,7 @@ For multiple cracks, each additional crack adds roughly 45 minutes to an hour on
 
 [Carbon fiber staples (stitches)](/services/carbon-fiber-stitches) are used to reinforce cracks and prevent further movement, often in combination with injection. Think of them as the structural insurance policy after the leak is sealed.
 
-**Timeline:** Four to eight hours for a typical installation.
+**Timeline:** Two to four hours for a typical installation.
 
 **What happens:**
 1. The wall surface is prepared — ground smooth at each stitch location
@@ -73,20 +74,22 @@ For multiple cracks, each additional crack adds roughly 45 minutes to an hour on
 
 ## Bulkhead Sealant Injection: Half a Day
 
-[Leaky bulkhead repair](/services/leaky-bulkhead-repair) with professional bulkhead sealant injection typically takes four to eight hours, depending on the condition of the bulkhead and the complexity of the leak sources. Most bulkhead repairs cost $1,800-$2,500 — see our [bulkhead repair cost guide](/blog/bulkhead-repair-cost-guide-2026) for details.
+[Leaky bulkhead repair](/services/leaky-bulkhead-repair) with professional bulkhead sealant injection typically takes about four hours, depending on the condition of the bulkhead and the complexity of the leak sources. Most bulkhead repairs cost $1,800-$2,500 — see our [bulkhead repair cost guide](/blog/bulkhead-repair-cost-guide-2026) for details.
 
 **What affects timing:**
 - Number of leak points (joints, cracks, rust-through)
 - Whether the bulkhead frame needs structural work
 - Drainage modifications around the bulkhead
-- Weather conditions (we need dry conditions for sealant adhesion)
+- Weather conditions (we will seal even if wet, but weather may affect how long the job takes)
 
 ## Wall Stabilization: One to Three Days
 
 When a basement wall is bowing inward — a serious structural concern — the repair is more involved. See our guide on [vertical vs. horizontal foundation cracks](/blog/vertical-vs-horizontal-foundation-cracks) to understand why horizontal cracking with bowing demands prompt attention.
 
-**Carbon fiber reinforcement strips (1 day):**
-For walls with early-stage bowing (less than 2 inches of deflection), carbon fiber strips bonded vertically to the wall can arrest further movement. This is a full-day job for a typical basement wall.
+**Carbon fiber reinforcement straps (1 day):**
+For walls with early-stage bowing (less than 2 inches of deflection), carbon fiber straps bonded vertically to the wall can arrest further movement. This is a full-day job for a typical basement wall.
+
+**Note:** Carbon fiber straps are the only wall stabilization method we perform. Wall anchors and steel I-beams described below are repairs we may recommend but refer to specialized contractors.
 
 **Wall anchors (1-2 days):**
 Wall anchors involve drilling through the basement wall, extending a rod through the soil to an anchor plate in stable ground, and tightening to stabilize the wall. Each anchor takes a few hours, and most walls need 4-6 anchors.
@@ -132,7 +135,7 @@ These curing times do not require you to leave your home or avoid the basement �
 A little preparation on your end can shave time (and therefore cost) off the job.
 
 **Before the crew arrives:**
-- Clear a 4-foot path along any walls being repaired
+- Clear a 3-foot path along any walls being repaired
 - Move stored items away from the work area
 - Ensure the crew can access the basement easily (unlock doors, clear stairs)
 - If you have a finished basement, discuss wall removal in advance
@@ -151,6 +154,6 @@ A little preparation on your end can shave time (and therefore cost) off the job
 
 For the vast majority of homeowners, foundation repair is a same-day event. You call, we come out for a [free consultation](/services/free-foundation-consultations), and if you proceed, the actual repair takes hours — not days, not weeks.
 
-The 20+ years of experience matter here. A crew that has done thousands of crack injections works efficiently because there is no guesswork. We know what we are looking at, we know the right approach, and we execute it cleanly.
+The 50+ years of combined experience matter here. A crew that has done thousands of crack injections works efficiently because there is no guesswork. We know what we are looking at, we know the right approach, and we execute it cleanly.
 
-**Wondering what your foundation needs?** Call us at 860-573-8760 (CT) or 617-668-1677 (MA). The consultation is free, takes about 30 minutes, and you will leave it knowing exactly what the repair involves, how long it takes, and what it costs. You can also text us a photo for a quick preliminary assessment. The [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) is a good starting point if you want to come prepared.
+**Wondering what your foundation needs?** Text us a photo for a free assessment at 860-573-8760 (CT) or 617-668-1677 (MA). We can usually tell you what the repair involves, how long it takes, and what it costs from your photos. The [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) is a good starting point if you want to come prepared.

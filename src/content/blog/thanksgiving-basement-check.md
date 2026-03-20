@@ -111,7 +111,7 @@ These warrant a professional evaluation. We offer [free foundation consultations
 
 You just did something that 90% of homeowners never do: you actually looked at your foundation. That five minutes of attention could save you thousands of dollars by catching problems early. Most [foundation repairs](/blog/foundation-repair-cost-guide-2026) cost $800-$1,200 per crack — a fraction of what people fear — especially when caught before freeze-thaw cycles have a chance to worsen them.
 
-Not sure if what you found is concerning? Text us a photo for assessment at 860-573-8760 (CT) or 617-668-1677 (MA). We can often tell you whether it needs attention before scheduling a visit.
+Not sure if what you found is concerning? Text us a photo for assessment at 860-573-8760 (CT) or 617-668-1677 (MA). We can often tell you whether it needs attention from a photo alone.
 
 Now put down the flashlight, grab those folding chairs, and go help with the mashed potatoes. Your foundation will be right where you left it when you come back down for the Christmas decorations next month.
 

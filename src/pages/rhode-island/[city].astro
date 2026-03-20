@@ -7,6 +7,7 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
 import ProjectCards from '../../components/ProjectCards.astro';
+import ProcessBar from '../../components/ProcessBar.astro';
 import { reviewCount, rating, aggregateRatingSchema } from '../../utils/reviews';
 import { phoneMA, phoneMAHref } from '../../utils/contact';
 import { webpSrc, projectSrcset } from '../../utils/image';
@@ -208,6 +209,9 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 				</div>
 			</div>
 		</section>
+
+		<!-- 3-Step Process Bar -->
+		<ProcessBar />
 
 		<!-- Resurfacing Banner -->
 		{location.data.servesResurfacing && (

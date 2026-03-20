@@ -17,8 +17,8 @@ relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
   - "free-foundation-consultations"
-heroImage: "/images/projects/quincy-crack-injection-2025-08-2-before.jpg"
-heroImageAlt: "Signs of foundation problems in basement wall"
+heroImage: "/images/blog/basement-foundation-warning-signs.jpg"
+heroImageAlt: "Basement wall showing visible foundation warning signs and cracks"
 ---
 
 Most foundation problems don't announce themselves with a dramatic crack or a flooded basement. They creep in slowly — a door that sticks a little more each winter, a hairline crack that grows a quarter inch per year, a musty smell that wasn't there before.
@@ -113,7 +113,7 @@ Foundation movement translates upward through the entire structure.
 
 ## The New England Context
 
-Living in Connecticut or Massachusetts means your foundation deals with a frost line extending 42-48 inches deep, clay-heavy soil and glacial till that swell and shrink with moisture, relentless freeze-thaw cycles through the winter, about 50 inches of precipitation annually, and an older housing stock built before modern engineering standards. These geological and climate factors make proactive monitoring especially important in our region. With 20+ years of experience, we've seen how New England's unique soil conditions accelerate every problem on this list.
+Living in Connecticut or Massachusetts means your foundation deals with a frost line extending 42-48 inches deep, clay-heavy soil and glacial till that swell and shrink with moisture, relentless freeze-thaw cycles through the winter, about 50 inches of precipitation annually, and an older housing stock built before modern engineering standards. These geological and climate factors make proactive monitoring especially important in our region. With 50+ years of combined experience, we've seen how New England's unique soil conditions accelerate every problem on this list.
 
 ## When NOT to Ignore Foundation Warning Signs
 
@@ -133,9 +133,9 @@ Contact a foundation specialist if you notice:
 - Any sign that's getting worse over time
 - Bowing or leaning walls (this is urgent)
 
-At Attack A Crack, our consultations are completely free. We inspect your foundation, explain what we find, and give you honest recommendations — including telling you when you don't need repair.
+At Attack A Crack, our assessments are completely free. Text us photos and we will explain what we see and give you honest recommendations — including telling you when you don't need repair.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677
 
-Text us photos and we'll give you preliminary guidance. Many homeowners get the answer they need without an on-site visit.
+Many homeowners get the answer they need from photos alone.

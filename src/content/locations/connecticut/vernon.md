@@ -36,7 +36,7 @@ coordinates:
 
 ## Foundation Repair Services in Vernon, Connecticut
 
-Vernon straddles the Hockanum River northeast of Hartford, blending the historic mill village of Rockville with suburban neighborhoods developed through the mid-to-late 20th century. This mix of housing ages means Vernon homeowners encounter a range of foundation types and conditions, from older block and fieldstone walls in Rockville to poured concrete in the newer developments around Vernon Center.
+Vernon straddles the Hockanum River northeast of Hartford, blending the historic mill village of Rockville with suburban neighborhoods developed through the mid-to-late 20th century. This mix of housing ages means Vernon homeowners encounter a range of foundation types and conditions, from older block walls in Rockville to poured concrete in the newer developments around Vernon Center.
 
 The Hockanum River valley's clay-heavy soils create persistent foundation stress throughout Vernon. These soils absorb moisture and expand during wet seasons, then shrink and pull away from foundations during dry periods. Over years of this cycle, combined with Connecticut's severe freeze-thaw pattern, cracks develop in even well-built foundations. Homeowners often first notice damp spots or hairline cracks in their basement walls.
 

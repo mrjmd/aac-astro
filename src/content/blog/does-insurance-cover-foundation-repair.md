@@ -17,8 +17,8 @@ relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
   - "free-foundation-consultations"
-heroImage: "/images/projects/boston-crack-injection-2025-10-after.jpg"
-heroImageAlt: "Foundation crack repair in Boston basement"
+heroImage: "/images/blog/insurance-documents-foundation-repair.jpg"
+heroImageAlt: "Insurance documents and policy papers for foundation repair coverage"
 ---
 
 "Will my insurance cover this?" It's one of the first questions homeowners ask when they find a crack in their foundation. The short answer: **probably not — but there are important exceptions.**
@@ -187,4 +187,4 @@ Only if the damage has a clear covered cause (burst pipe, fallen tree, vehicle i
 
 ### Can I get foundation repair financing if insurance won't pay?
 
-Yes. Many homeowners use home equity loans, HELOCs, or contractor financing for foundation repairs. Some repairs like a single crack injection ($800-$1,200) are manageable out of pocket. For larger jobs, financing spreads the cost over time. Ask about payment options during your [free consultation](/services/free-foundation-consultations). With 20+ years of experience and 91+ documented projects across New England, we can give you an honest assessment of what your foundation needs — even if the answer is that you do not need repair at all.
+Yes. Many homeowners use home equity loans, HELOCs, or contractor financing for foundation repairs. Some repairs like a single crack injection ($800-$1,200) are manageable out of pocket. For larger jobs, financing spreads the cost over time. Ask about payment options during your [free consultation](/services/free-foundation-consultations). With 50+ years of combined experience and thousands of projects completed across New England, we can give you an honest assessment of what your foundation needs — even if the answer is that you do not need repair at all.

@@ -140,7 +140,7 @@ Here's what we actually do when we fix concrete stairs, ranked from least to mos
 
 ## When to Repair vs. When to Replace Concrete Stairs
 
-Here's the decision framework we use after 20+ years of concrete work:
+Here's the decision framework we use after decades of concrete work:
 
 **Repair when:**
 - Damage is limited to 1-2 steps

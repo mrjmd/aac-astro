@@ -127,7 +127,12 @@ const projectTotalPages = Math.ceil(allProjects.length / PROJECTS_PER_PAGE);
 		<!-- Articles Grid -->
 		<section class="py-24 bg-zinc-50">
 			<div class="max-w-7xl mx-auto px-6">
-				<h2 id="articles-heading" class="text-3xl font-black mb-12">Latest Articles</h2>
+				<div class="flex items-center justify-between mb-12">
+					<h2 id="articles-heading" class="text-3xl font-black">Latest Articles</h2>
+					<a href="/blog" class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] hover:gap-4 transition-all">
+						View All Articles <Icon name="ArrowRight" size={14} />
+					</a>
+				</div>
 
 				<div id="articles-grid" class="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
 					{allPosts.map((post, i) => (

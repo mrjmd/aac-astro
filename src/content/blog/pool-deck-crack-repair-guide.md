@@ -16,8 +16,8 @@ relatedServices:
   - "wall-crack-repair"
   - "foundation-crack-injection"
   - "pool-deck"
-heroImage: "/images/projects/newton-crack-injection-2025-04-after.jpg"
-heroImageAlt: "Concrete surface repair for pool deck area"
+heroImage: "/images/blog/cracked-concrete-pool-deck.jpg"
+heroImageAlt: "Cracked concrete pool deck showing freeze-thaw damage"
 ---
 
 A cracked pool deck isn't just cosmetic. Uneven sections create trip hazards around a wet surface — exactly where you don't want anyone falling. And in New England, every winter makes the damage worse.
@@ -38,7 +38,7 @@ Chlorinated water splashes onto the deck surface constantly during the swimming 
 
 ### Soil Settlement
 
-Pool decks are poured on backfill around the pool excavation. This backfill is looser than undisturbed soil and compacts unevenly over time, causing sections of the deck to settle and crack. Settlement is especially common in the first 5-10 years after pool installation.
+Pool decks are poured on backfill around the pool excavation. If not properly tamped down, this backfill can be looser than undisturbed soil and compact unevenly over time, causing sections of the deck to settle and crack. Settlement is especially common in the first 5-10 years after pool installation.
 
 ### Tree Root Pressure
 
@@ -98,11 +98,12 @@ Flexible polyurethane or silicone caulk designed for concrete fills the crack an
 
 **Best for:** Widespread surface deterioration (spalling, scaling, roughness) with the underlying slab still structurally sound. Note the distinction between [cement and concrete](/blog/cement-vs-concrete-homeowners-guide) — resurfacing uses a polymer-modified concrete overlay, not plain cement.
 
+**Our Massachusetts branch offers [concrete repair resurfacing](/concrete-repair/pool-deck) — this is the one repair type on this page that we perform directly.**
+
 A thin overlay (1/4 to 1/2 inch) of polymer-modified cementitious material is applied over the existing deck. This gives you a new surface without demolishing the old one.
 
 **Advantages:**
 - Fraction of the cost of full replacement
-- Can add texture, color, or decorative patterns
 - Covers minor imperfections and discoloration
 - Typical lifespan: 8-15 years with proper maintenance
 
@@ -130,6 +131,8 @@ Material is pumped through small holes drilled in the settled slab, lifting it b
 - Mudjacking can fail if the sub-base continues to compact
 - Not suitable for severely cracked or crumbling slabs
 
+**Note:** Slab jacking is not a service we perform. We can refer you to a trusted contractor if this is what your pool deck needs.
+
 ### 4. Section Replacement
 
 **Best for:** One or two sections that are severely damaged while the rest of the deck is in good condition.
@@ -146,6 +149,8 @@ The damaged section is saw-cut, removed, sub-base is re-compacted, and new concr
 - The joint between old and new is a future crack point
 - If multiple sections need replacement, full tear-out may be more cost-effective
 
+**Note:** Section replacement is not a service we perform. We can refer you to a specialist.
+
 ### 5. Full Replacement
 
 **Best for:** Extensive damage, severe settlement, or when the deck is past its useful life.
@@ -158,6 +163,8 @@ Complete demolition and repour. This is the most expensive option but gives you 
 - Control joints every 8-10 feet to direct cracking
 - Proper slope away from the pool for drainage
 - A good sealer applied after curing
+
+**Note:** Full pool deck replacement is not a service we perform. We can connect you with a trusted contractor.
 
 ## When to Hire a Professional
 
@@ -199,7 +206,7 @@ A small crack filled today prevents a large crack next spring. Freeze-thaw cycle
 
 ### How much does pool deck crack repair cost?
 
-Costs vary widely by repair type. Simple crack filling is a DIY project under $50. Professional concrete resurfacing runs $3-$8 per square foot. Slab jacking is $500-$1,500 per section. Full replacement is $8-$15 per square foot including demolition. The right approach depends on the type and extent of damage — over-repairing wastes money, and under-repairing means you'll be doing it again in a year.
+Costs vary widely by repair type. Simple crack filling is a DIY project under $50. Professional concrete resurfacing runs $6-$12 per square foot. Slab jacking is $500-$1,500 per section. Full replacement is $8-$15 per square foot including demolition. The right approach depends on the type and extent of damage — over-repairing wastes money, and under-repairing means you'll be doing it again in a year.
 
 ### Can you repair a pool deck in winter?
 

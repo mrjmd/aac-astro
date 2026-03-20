@@ -16,7 +16,7 @@ relatedServices:
   - "wall-crack-repair"
 ---
 
-If your New England home was built after about 1940, there's a very good chance you're sitting on a poured concrete foundation. It's the most common foundation type in our region, and after 20 years of repairing them across five states, we have some good news: poured concrete is actually the best foundation type to repair. Not the cheapest to build originally, but when something goes wrong, the fixes are reliable, permanent, and typically less expensive than repairs on other foundation types.
+If your New England home was built after about 1940, there's a very good chance you're sitting on a poured concrete foundation. It's the most common foundation type in our region, and after decades of repairing them across five states, we have some good news: poured concrete is actually the best foundation type to repair. Not the cheapest to build originally, but when something goes wrong, the fixes are reliable, permanent, and typically less expensive than repairs on other foundation types.
 
 Here's everything you need to know about your poured concrete foundation — what makes it crack, what those cracks mean, and when to actually pick up the phone.
 

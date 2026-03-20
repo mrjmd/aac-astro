@@ -7,8 +7,8 @@ publishDate: 2025-04-30
 author: "Luc Richard"
 category: "guides"
 tags: ["bulkhead repair", "basement waterproofing", "water damage", "bulkhead sealant", "Bilco doors", "bulkhead leak"]
-heroImage: "/images/projects/kingston-bulkhead-repair-2025-06-before.jpg"
-heroImageAlt: "Leaking bulkhead door connection before repair in Kingston"
+heroImage: "/images/projects/groveland-bulkhead-repair-2025-08-before.jpg"
+heroImageAlt: "Leaking bulkhead door frame showing gap between concrete and frame in Groveland"
 relatedPosts:
   - "bulkhead-repair-cost-guide-2026"
   - "water-in-basement-after-rain"
@@ -28,11 +28,12 @@ When water appears in your bulkhead, most people assume the door seal is bad. Th
 
 ### Why Original Bulkhead Sealant and Gaskets Fail
 
-1. **Rubber gasket deterioration**: The original rubber gasket installed between the bulkhead and foundation breaks down over time, especially with UV exposure and temperature extremes
-2. **Settlement**: As your home settles, the bulkhead can shift relative to the foundation, breaking the cold joint seal
-3. **Freeze-thaw cycles**: New England's relentless freeze-thaw cycles are brutal on any sealant material — rubber gaskets crack and foam compresses
-4. **Poor original installation**: Many Bilco doors and other bulkhead brands were never properly sealed at the cold joint to begin with
-5. **Hydrostatic pressure**: Clay-heavy soil and glacial till hold water against the joint, pushing through even small gaps
+1. **Frost heaving**: The number one cause. When the soil underneath the bulkhead stairs freezes, it expands and pushes upward on the stairway unit. This movement breaks the seal between the bulkhead and foundation — and it happens every single winter
+2. **Rubber gasket deterioration**: The original rubber gasket installed between the bulkhead and foundation breaks down over time, especially with UV exposure and temperature extremes
+3. **Settlement**: As your home settles, the bulkhead can shift relative to the foundation, breaking the cold joint seal
+4. **Freeze-thaw cycles**: Beyond frost heaving, New England's relentless freeze-thaw cycles are brutal on any sealant material — rubber gaskets crack and foam compresses
+5. **Poor original installation**: Many Bilco doors and other bulkhead brands were never properly sealed at the cold joint to begin with
+6. **Hydrostatic pressure**: Clay-heavy soil and glacial till hold water against the joint, pushing through even small gaps
 
 ## Common DIY Fixes (And Why They Fail)
 
@@ -46,7 +47,7 @@ When water appears in your bulkhead, most people assume the door seal is bad. Th
 
 **The idea:** Pack hydraulic cement into the joint to fill gaps.
 
-**Why it fails:** Hydraulic cement is rigid and shrinks as it cures. When the bulkhead and foundation move even slightly (and they will), the cement cracks. It's also only filling the accessible gap, not the hidden voids.
+**Why it fails:** Hydraulic cement is rigid and shrinks as it cures. When the bulkhead and foundation move even slightly (and they will in the next freeze-thaw cycle, if not before), the cement cracks. It's also only filling the accessible gap, not the hidden voids.
 
 ### Tar or Asphalt Products
 
@@ -81,12 +82,17 @@ Our [bulkhead leak repair](/services/leaky-bulkhead-repair) method addresses the
 
 **It's permanent:** Our bulkhead repairs carry a lifetime guarantee because they work.
 
+### Don't Forget the Bolts
+
+The four bolts that hold the precast bulkhead unit to the main foundation wall are often an overlooked source of leaks. These bolt penetrations can allow water through even when the cold joint seal is intact. You may be able to see these bolts from inside the basement — look for small wet spots or staining around the bolt locations on your foundation wall.
+
 ## Signs You Need Bulkhead Repair
 
 - Water in basement after rain appearing at the bulkhead stairs
 - Puddles forming at the base of the stairs
 - Water stains or white powder on basement walls near the bulkhead (efflorescence)
 - Visible gap at the cold joint between bulkhead and foundation
+- Wet spots around bolt penetrations on the foundation wall
 - Musty smell in basement coming from the bulkhead area
 - Previous caulk, hydraulic cement, or rubber gasket repairs that have failed
 
@@ -130,4 +136,4 @@ Stop the cycle of temporary fixes that fail after every storm. Our bulkhead inje
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677
 
-With 20+ years of experience and 91+ documented projects across New England, we'll examine your bulkhead, explain exactly what's causing the leak, and provide a clear quote for permanent repair. See our [bulkhead repair cost guide](/blog/bulkhead-repair-cost-guide-2026) for detailed pricing, or read our [Wilmington case study](/blog/leaky-bulkhead-wilmington-repair) to see what a typical bulkhead sealant injection repair looks like.
+With 50+ years of combined experience and thousands of projects across New England, we'll examine your bulkhead, explain exactly what's causing the leak, and provide a clear quote for permanent repair. See our [bulkhead repair cost guide](/blog/bulkhead-repair-cost-guide-2026) for detailed pricing, or read our [Wilmington case study](/blog/leaky-bulkhead-wilmington-repair) to see what a typical bulkhead sealant injection repair looks like.

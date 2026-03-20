@@ -15,13 +15,13 @@ relatedPosts:
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
-heroImage: "/images/projects/rockland-wall-crack-repair-2025-02-before.jpg"
-heroImageAlt: "Concrete foundation wall showing structural crack"
+heroImage: "/images/blog/cement-powder-vs-concrete-mix-comparison.jpg"
+heroImageAlt: "Side-by-side comparison of cement powder and concrete mix"
 ---
 
 If you've ever called a crack in your basement wall a "cement crack," you're in good company. Almost everyone uses "cement" and "concrete" interchangeably. But they're actually different things — and understanding the difference helps you make sense of your home's foundation, driveway, sidewalks, and any repairs they might need.
 
-I'm Luc Richard, and after 20+ years of repairing foundations across New England, I've had this conversation thousands of times. Here's the plain-English version.
+I'm Luc Richard, and after decades of repairing foundations across New England, I've had this conversation thousands of times. Here's the plain-English version.
 
 ## The Simple Difference
 
@@ -71,7 +71,7 @@ Most shrinkage and thermal cracks are cosmetic. They become a problem when water
 When homeowners search for "cement crack repair" or "cement foundation repair," they're looking for concrete repair. The repair methods are the same regardless of what you call the material:
 
 - **[Crack injection](/services/foundation-crack-injection)**: Polyurethane or epoxy resin is injected into the crack at high pressure (we use 100 PSI — far above industry standard) to fill the entire void from the interior surface through to the exterior soil.
-- **[Carbon fiber staples (reinforcement)](/services/carbon-fiber-stitches)**: Kevlar-grid carbon fiber strips bonded across cracks to prevent further movement. With 800,000 PSI tensile strength, they're 4 to 10 times stronger than steel.
+- **[Carbon fiber staples (reinforcement)](/services/carbon-fiber-stitches)**: Kevlar-grid carbon fiber straps bonded across cracks to prevent further movement. With 800,000 PSI tensile strength, they're 4 to 10 times stronger than steel.
 - **[Wall crack repair](/services/wall-crack-repair)**: For cracks showing displacement or structural concern, a combination of injection and stabilization.
 
 ## Common Concrete Problems Around Your Home
@@ -137,7 +137,7 @@ Here's a quick guide to assessing concrete and masonry issues around your proper
 - Stair-step cracking in block walls
 - Multiple cracks appearing rapidly
 
-If you're unsure about any concrete issue in your home, we offer [free foundation consultations](/services/free-foundation-consultations) across New England. One visit is usually enough to tell you whether a crack needs repair, monitoring, or nothing at all.
+If you're unsure about any concrete issue in your home, we offer [free foundation consultations](/services/free-foundation-consultations) across New England. Text us a few photos and we will tell you whether a crack needs repair, monitoring, or nothing at all.
 
 ## Frequently Asked Questions
 

@@ -19,7 +19,7 @@ relatedServices:
 
 The Connecticut River Valley is a beautiful place to live. It's also a challenging place to keep a foundation dry and intact. Between the clay-heavy soils, the seasonal flooding, the aging housing stock, and freeze-thaw cycles that test every material to its limits, Hartford-area homeowners face a unique combination of foundation problems.
 
-We've been based in Amston, Connecticut, for over 20 years, and the greater Hartford area is practically our backyard. We know these soils, these neighborhoods, and these foundations — and we want to share what we've learned so you can make informed decisions about your home.
+We've been based in Amston, Connecticut, for decades, and the greater Hartford area is practically our backyard. We know these soils, these neighborhoods, and these foundations — and we want to share what we've learned so you can make informed decisions about your home.
 
 ## The Geology Working Against Hartford Foundations
 
@@ -126,7 +126,7 @@ We offer [free foundation consultations](/services/free-foundation-consultations
 
 ## Our CT Roots
 
-Attack A Crack has been headquartered in Connecticut since the beginning. When you call our CT line at 860-573-8760, you're talking to people who've driven your roads, know your neighborhoods, and have probably already fixed a foundation on your street. We understand the Hartford area's unique combination of soils, climate, and housing stock because we've been living in it and working in it for over 20 years.
+Attack A Crack has been headquartered in Connecticut since the beginning. When you call our CT line at 860-573-8760, you're talking to people who've driven your roads, know your neighborhoods, and have probably already fixed a foundation on your street. We understand the Hartford area's unique combination of soils, climate, and housing stock because we've been living in it and working in it for decades.
 
 Whether your 1890 brownstone in the West End has a fieldstone wall that's weeping, your 1955 ranch in Newington has a block wall with a horizontal crack, or your 1985 colonial in Glastonbury has a poured concrete crack that leaks every spring — we've seen it before, we've fixed it before, and we'll fix it right.
 

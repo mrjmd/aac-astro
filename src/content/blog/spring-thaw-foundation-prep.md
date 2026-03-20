@@ -7,8 +7,8 @@ publishDate: 2025-06-16
 author: "Attack A Crack"
 category: "maintenance-tips"
 tags: ["spring thaw", "foundation inspection", "seasonal maintenance", "water intrusion"]
-heroImage: "/images/projects/brockton-crack-injection-2025-06-before.jpg"
-heroImageAlt: "Is Your Foundation Ready for Spring Thaw?"
+heroImage: "/images/blog/spring-thaw-snowmelt-near-foundation.jpg"
+heroImageAlt: "Snow melting near a home foundation during spring thaw in New England"
 targetLocation: "New England"
 
 relatedServices:
@@ -23,7 +23,7 @@ relatedPosts:
 
 Ask any foundation repair contractor in New England what their busiest season is, and they will all say the same thing: spring. Not because spring is when foundations break -- foundations take damage all winter long. Spring is when homeowners finally see the evidence.
 
-After 20+ years of repairing foundations across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, we can tell you this with absolute certainty: what you do in the weeks before and during spring thaw directly affects whether you spend the season with a dry basement or a wet one.
+After 50+ combined years of repairing foundations across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, we can tell you this with absolute certainty: what you do in the weeks before and during spring thaw directly affects whether you spend the season with a dry basement or a wet one.
 
 Here is how to be ready.
 
@@ -73,6 +73,7 @@ Not everything on that checklist requires a phone call. But some findings do:
 - Horizontal cracks in basement walls (these indicate lateral pressure)
 - Walls that appear to be bowing inward even slightly
 - Active water seepage through any crack
+- Stains that may be evidence of past water seepage
 
 **Monitor closely during thaw:**
 - Hairline cracks with no current moisture (but photograph and measure them)
@@ -114,7 +115,7 @@ Any of these warrants a closer look. Most warrant a professional opinion.
 
 ## Get Ahead of It
 
-We offer [free foundation consultations](/services/free-foundation-consultations) across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine. A pre-thaw assessment takes about an hour, gives you a clear picture of your foundation's condition, and lets you make an informed decision about whether repairs are needed -- before the spring rush.
+We offer [free foundation assessments](/services/free-foundation-consultations) across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine.
 
 Call us at 860-573-8760 in Connecticut or 617-668-1677 in Massachusetts. You can also text us a photo for a quick preliminary assessment. We would much rather help you prepare for spring than bail you out during it.
 

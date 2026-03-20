@@ -22,7 +22,7 @@ relatedServices:
 
 Rhode Island may be the smallest state in the union, but when it comes to foundation problems, it punches well above its weight class. Between the aging housing stock, coastal proximity, and some genuinely tricky soil conditions, RI homeowners face a unique combination of challenges that most general contractors simply do not understand.
 
-After more than 20 years repairing foundations across New England, we have worked on hundreds of Rhode Island homes. From the grand Victorians on Providence's East Side to the ranch-style homes lining Warwick's suburban streets, we have seen what the Ocean State does to foundations. And honestly, it is not always pretty.
+After decades of repairing foundations across New England, we have worked on hundreds of Rhode Island homes. From the grand Victorians on Providence's East Side to the ranch-style homes lining Warwick's suburban streets, we have seen what the Ocean State does to foundations. And honestly, it is not always pretty.
 
 Here is what Rhode Island homeowners need to know about their foundations and how to protect them.
 

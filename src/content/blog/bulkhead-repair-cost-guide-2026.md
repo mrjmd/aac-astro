@@ -83,7 +83,7 @@ Surface-applied caulk, hydraulic cement, or asphalt sealants from the hardware s
 
 **Why they fail:** They only seal the surface, not hidden voids behind the joint. Caulk and cement crack within one to two New England winters. They can't withstand the hydrostatic pressure that pushes water through.
 
-We understand the appeal of a $30 tube of caulk. If you want to try it as a temporary measure, go for it. But it's buying you months, not years.
+We understand the appeal of a $30 tube of caulk. If you want to try it as a temporary measure, go for it — but be aware that we may need to charge a bit more to clean out a DIY repair before we can do our professional injection. It's buying you months, not years, and can add to the eventual cost.
 
 ### Door-Only Replacement ($1,500 - $3,000)
 
@@ -127,9 +127,13 @@ For most leaking bulkheads in Connecticut and Massachusetts, injection sealing a
 
 Full replacement ($5,000-$10,000+) makes sense when the concrete stairwell is literally crumbling or the frame has rusted through. But many contractors default to replacement because it is a bigger job. If your concrete is structurally sound and the leak is at the cold joint (which it usually is), injection sealing at $1,800-$2,500 is the smarter investment — permanent, guaranteed for life, and a fraction of the cost. See our [Wilmington case study](/blog/leaky-bulkhead-wilmington-repair) for a real example.
 
+We don't do bulkhead replacements or door replacements ourselves, but if that's what your situation truly requires, we can refer you to people who do quality work. We'll never try to upsell you on services we don't provide — if you need a replacement, we'll tell you honestly and point you in the right direction.
+
+For a deeper dive into why bulkheads leak in the first place, see our guide on [why your bulkhead door might be leaking](/blog/bulkhead-leaking-causes-and-fixes).
+
 ## Get a Free Bulkhead Assessment
 
-Not sure what your bulkhead needs? With 20+ years of experience and 91+ documented projects, we'll examine it for free, diagnose the leak source, and give you an honest recommendation.
+Not sure what your bulkhead needs? With 50+ years of combined experience and thousands of projects completed, we'll examine it for free, diagnose the leak source, and give you an honest recommendation.
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

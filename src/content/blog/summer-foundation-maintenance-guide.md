@@ -22,7 +22,7 @@ relatedServices:
 
 Most homeowners think of spring and winter as foundation problem seasons — snowmelt flooding, freeze-thaw cracking, April showers overwhelming drainage. Summer gets a pass. You are barbecuing, not thinking about your basement.
 
-But summer creates its own set of foundation stresses, and ignoring them means discovering new cracks when fall rain arrives. After 20 years of repairing foundations across New England, we can tell you that a surprising number of fall service calls trace back to summer conditions that nobody noticed.
+But summer creates its own set of foundation stresses, and ignoring them means discovering new cracks when fall rain arrives. After decades of repairing foundations across New England, we can tell you that a surprising number of fall service calls trace back to summer conditions that nobody noticed.
 
 ## How Summer Heat Affects Your Foundation
 
@@ -127,6 +127,6 @@ The best time to repair foundation cracks is before winter, not during it. If yo
 
 Schedule an inspection in September or October. This gives you time to complete repairs before the ground freezes and the spring thaw brings water pressure against your foundation.
 
-We offer [free foundation consultations](/services/free-foundation-consultations) year-round. Text us a photo for assessment or call 617-668-1677 to schedule an on-site inspection. We will evaluate your foundation, tell you what needs attention now, and what can wait — honestly.
+We offer [free foundation assessments](/services/free-foundation-consultations) year-round. Text us a photo for assessment at 617-668-1677 or call 860-573-8760. We will evaluate your foundation, tell you what needs attention now, and what can wait — honestly.
 
 Summer is the cheapest time to prevent foundation problems. A few hours of maintenance now saves thousands in repair costs later.

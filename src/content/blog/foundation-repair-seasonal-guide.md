@@ -17,11 +17,11 @@ relatedServices:
   - "foundation-crack-injection"
   - "leaky-bulkhead-repair"
   - "wall-crack-repair"
-heroImage: "/images/projects/quincy-crack-injection-2025-10-before.jpg"
-heroImageAlt: "Foundation wall crack requiring seasonal repair"
+heroImage: "/images/blog/new-england-home-seasonal-foundation-stress.jpg"
+heroImageAlt: "New England home showing seasonal weather stress on foundation"
 ---
 
-"When's the best time to get this fixed?" I hear it every week. Homeowners want to time their foundation repair for ideal conditions — which makes sense. But in 20+ years of working across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, I've learned something that surprises most people: **foundation repair works in every season, and waiting for "the right time" usually makes things worse.**
+"When's the best time to get this fixed?" I hear it every week. Homeowners want to time their foundation repair for ideal conditions — which makes sense. But in 50+ combined years of working across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine, I've learned something that surprises most people: **foundation repair works in every season, and waiting for "the right time" usually makes things worse.**
 
 That said, each season has its advantages and considerations. Here's the honest breakdown.
 
@@ -131,7 +131,7 @@ Most homeowners assume foundation repair can't be done in winter. **That's wrong
 
 ## The Real Answer: Don't Wait
 
-Here's what 20+ years of experience has taught me. The best time to repair your foundation is **when you discover the problem.**
+Here's what 50+ years of combined experience has taught me. The best time to repair your foundation is **when you discover the problem.**
 
 Every season that passes without repair:
 

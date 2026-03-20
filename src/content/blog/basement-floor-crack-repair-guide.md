@@ -4,11 +4,11 @@ metaTitle: "Basement Floor Crack Repair Guide"
 metaDescription: "Basement floor cracks let in water and radon gas. Learn professional repair methods, why DIY patches fail, and when a floor crack needs professional attention."
 excerpt: "A cracked basement floor is an open path for water and radon. Learn why hardware store patches fail, how professional repair works, and what your crack is telling you."
 publishDate: 2026-03-09
-author: "Luc Richard"
+author: "Matt Davis"
 category: "guides"
 tags: ["floor crack repair", "basement floor", "concrete repair", "basement cracks", "radon"]
-heroImage: "/images/projects/kingston-crack-injection-2026-01-before.jpg"
-heroImageAlt: "Basement floor crack before professional repair"
+heroImage: "/images/projects/quincy-crack-injection-2025-08-2-before.jpg"
+heroImageAlt: "Basement floor crack with water seepage before repair"
 featured: false
 relatedPosts:
   - "basement-floor-cracks-leaking"
