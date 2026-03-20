@@ -126,7 +126,7 @@ const serviceSchema = {
 // HowTo schema (if steps exist in frontmatter)
 const howToSchema = service.data.steps && service.data.steps.length > 0 ? {
   "@type": "HowTo",
-  "name": `How to ${service.data.title}`,
+  "name": `How ${service.data.title} Works`,
   "description": service.data.excerpt,
   "step": service.data.steps.map((step, index) => ({
     "@type": "HowToStep",

@@ -13,6 +13,15 @@ faqs:
     answer: "Hardware store patching compounds sit on the surface and do not bond properly to the existing concrete. They crack and peel within months, especially if water pressure is pushing through from below. Professional repair involves grinding out the crack and filling it with self-leveling epoxy or commercial-grade rubber sealant for a permanent, flush finish."
   - question: "How much does basement floor crack repair cost?"
     answer: "Most basement floor crack repairs cost $500-$1,500 depending on length, number of cracks, and the repair method required. This is a permanent, one-time repair — far more cost-effective than repeated DIY patching or interior drainage systems."
+steps:
+  - name: "Crack Assessment"
+    text: "We evaluate each crack for width, depth, water infiltration, and displacement. We determine whether the crack is shrinkage, settlement, or water-pressure related."
+  - name: "Grinding & Preparation"
+    text: "Cracks are ground out with a diamond blade to create a clean channel that accepts the repair material. This removes loose concrete and ensures a solid bond."
+  - name: "Epoxy or Rubber Fill"
+    text: "The ground channel is filled with self-leveling epoxy for structural cracks or commercial-grade rubber sealant for expansion joints. Both create a permanent, flush finish."
+  - name: "Final Inspection"
+    text: "We verify that every crack is fully sealed, the surface is flush with the surrounding floor, and any water entry points are permanently closed."
 relatedServices:
   - "garage"
   - "driveway"

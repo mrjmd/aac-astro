@@ -15,6 +15,15 @@ faqs:
     answer: "No. We always apply non-slip additives to stair surfaces. Safety is the top priority, especially on outdoor stairs exposed to rain and snow."
   - question: "Can you repair very damaged concrete stairs?"
     answer: "Yes, in most cases. Our overlay system can address significant damage including cracks, spalling, and surface deterioration. If the structural integrity is compromised, we'll let you know and recommend alternatives."
+steps:
+  - name: "Assessment & Trip Hazard Check"
+    text: "We evaluate every crack, lip, and uneven section for trip hazards. Stairways get special attention for tread depth, rise uniformity, and structural integrity."
+  - name: "Crack & Edge Repair"
+    text: "Cracks are cleaned and filled with epoxy resin or polymer-modified materials. Broken stair edges and nosings are rebuilt to restore safe, uniform steps."
+  - name: "Surface Profiling"
+    text: "Walkway and stair surfaces are mechanically profiled to create an ideal bonding surface for the overlay."
+  - name: "Non-Slip Overlay"
+    text: "A durable overlay is applied with non-slip additives for safe footing in rain, snow, and ice. The result is a clean, uniform surface that eliminates trip hazards."
 relatedServices:
   - "driveway"
   - "patio"

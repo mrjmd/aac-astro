@@ -132,7 +132,23 @@ const faqSchema = service.data.faqs && service.data.faqs.length > 0 ? {
   }))
 } : null;
 
-const schemas = faqSchema ? [serviceSchema, faqSchema] : [serviceSchema];
+// HowTo schema (if steps exist in frontmatter)
+const howToSchema = service.data.steps && service.data.steps.length > 0 ? {
+  "@type": "HowTo",
+  "name": `How ${service.data.title} Works`,
+  "description": service.data.excerpt,
+  "step": service.data.steps.map((step, index) => ({
+    "@type": "HowToStep",
+    "position": index + 1,
+    "name": step.name,
+    "text": step.text
+  })),
+  "totalTime": "PT4H",
+  "supply": [],
+  "tool": []
+} : null;
+
+const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 ---
 
 <Layout 

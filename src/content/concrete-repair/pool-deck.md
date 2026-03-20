@@ -13,6 +13,15 @@ faqs:
     answer: "Our sealers are formulated to resist chlorine, salt, and other pool chemicals. The surface won't discolor or deteriorate from normal pool water exposure."
   - question: "Do I need to lower the pool water level?"
     answer: "No — there's no need to lower your pool water. Just stay off the deck during the repair and curing process."
+steps:
+  - name: "Safety & Condition Assessment"
+    text: "We inspect the pool deck for cracks, trip hazards, and surface deterioration. We check drainage patterns and identify areas where water pools near the pool edge."
+  - name: "Crack & Joint Repair"
+    text: "All cracks and expansion joints are cleaned and filled with flexible sealants that accommodate the concrete's movement through temperature changes."
+  - name: "Surface Preparation"
+    text: "The deck surface is ground and profiled to ensure proper adhesion of the cool-touch overlay system."
+  - name: "Cool-Touch Overlay & Slip-Resistant Finish"
+    text: "A cool-touch overlay is applied to reduce surface temperature, followed by a slip-resistant texture for safety around the pool. The result is comfortable for bare feet and safe when wet."
 relatedServices:
   - "patio"
   - "walkway-stairway"

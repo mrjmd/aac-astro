@@ -13,6 +13,15 @@ faqs:
     answer: "Yes. Our topcoats are formulated to resist hot tire marks, a common problem with cheaper garage floor systems."
   - question: "Can you work around items in my garage?"
     answer: "We need the floor completely clear for the repair. Most clients temporarily relocate vehicles and items for the day."
+steps:
+  - name: "Floor Assessment"
+    text: "We evaluate cracks, pitting, spalling, and surface damage across the entire garage floor. We check for moisture issues and identify areas where previous patches have failed."
+  - name: "Crack & Pit Repair"
+    text: "All cracks are ground out and filled with epoxy resin or hybrid polyurethane. Pits and spalled areas are rebuilt to create a level surface."
+  - name: "Diamond Grinding"
+    text: "The entire floor is diamond-ground to remove contaminants and create an ideal bonding profile for the overlay system."
+  - name: "Overlay & Topcoat"
+    text: "A polymer-modified overlay restores a smooth, durable surface. A hot-tire-resistant topcoat is applied for long-lasting protection against chemicals, salt, and daily garage use."
 relatedServices:
   - "driveway"
   - "patio"

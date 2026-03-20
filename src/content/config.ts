@@ -48,6 +48,11 @@ const concreteRepairCollection = defineCollection({
       answer: z.string(),
     })).optional(),
     relatedServices: z.array(z.string()).optional(),
+    // HowTo schema support - optional repair steps
+    steps: z.array(z.object({
+      name: z.string(),
+      text: z.string(),
+    })).optional(),
   }),
 });
 

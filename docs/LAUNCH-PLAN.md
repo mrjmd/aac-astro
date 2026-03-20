@@ -219,6 +219,8 @@ First 90 days after DNS cutover. Full strategy in `docs/SEO-STRATEGY-2026.md` (P
 - [ ] **Brand voice review** — archived to `docs/archive/BRAND-VOICE.md`, revisit post-launch
 - [ ] **Marketing plan review** — `docs/MARKETING-PLAN-2026.md` (social cadence, ad budget, email platform, geo-targeting, AI video)
 - [ ] **Brainstorm session** — 38 technical questions in `docs/BRAINSTORM-AGENDA.md` (injection PSI, carbon fiber specs, job stories, etc.)
+- [ ] **Before/after photo verification** — Review project photos and flip `beforeAfterVerified: true` on verified pairs (enables paired ImageObject schema in `projects/[slug].astro`). Also source real before/after hero images for each service page as a trust signal.
+- [ ] **Basement floor multi-state blog post** — Write a blog post targeting "basement floor crack repair" for all 5 states, linking to `/concrete-repair/basement-floor` for MA homeowners. Floor crack repair technique (grinding + epoxy fill) differs from wall injection — better as educational content than reclassifying as a foundation service.
 
 ### Ongoing
 

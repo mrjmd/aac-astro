@@ -101,7 +101,7 @@ If a home inspection flagged foundation issues, we provide free foundation asses
 
 - If a crack is cosmetic and doesn't need repair
 - If something is a simple fix and what to tell a handyman
-- If another company might serve you better for a specific issue
+- If [another company might serve you better](/what-we-dont-do) for a specific issue
 - The honest timeline for how urgent repairs are
 - When monitoring is appropriate vs. immediate action
 

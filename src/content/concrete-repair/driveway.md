@@ -15,6 +15,15 @@ faqs:
     answer: "Foot traffic is typically allowed within 24 hours. Vehicle traffic should wait 3-5 days for full cure, depending on weather conditions."
   - question: "Do you repair asphalt driveways?"
     answer: "No — we work exclusively on concrete driveways. Asphalt (blacktop) requires a different repair process and different materials. If you're unsure whether your driveway is concrete or asphalt, send us a photo and we'll let you know."
+steps:
+  - name: "Surface Assessment"
+    text: "We evaluate every crack, stain, and damaged area on your driveway. We measure crack widths, check for structural settlement, and determine the best repair approach."
+  - name: "Crack Repair"
+    text: "All cracks are cleaned out and filled with epoxy resin or hybrid polyurethane, creating a permanent bond that moves with the concrete through freeze-thaw cycles."
+  - name: "Surface Preparation"
+    text: "The entire driveway surface is ground and profiled to create a clean bonding surface for the overlay material."
+  - name: "Overlay Application"
+    text: "A polymer-modified concrete overlay is applied to restore a smooth, uniform surface. The result looks like new concrete at a fraction of replacement cost."
 relatedServices:
   - "garage"
   - "walkway-stairway"

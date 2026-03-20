@@ -13,6 +13,15 @@ faqs:
     answer: "Our repair systems are designed for New England's freeze-thaw cycles. Proper sealing protects against moisture penetration, and the overlay materials expand and contract with temperature changes."
   - question: "Can you match the color of my existing concrete?"
     answer: "We offer basic color matching to blend with your home's exterior and surrounding hardscape. The result is a clean, uniform surface rather than a patchwork appearance."
+steps:
+  - name: "Condition Assessment"
+    text: "We inspect the entire patio surface for cracks, spalling, staining, and structural issues. We identify root causes like tree roots or poor drainage before starting repairs."
+  - name: "Crack & Damage Repair"
+    text: "Cracks are cleaned and filled with epoxy resin or polymer-modified materials. Spalled areas are ground smooth and rebuilt to match the surrounding surface."
+  - name: "Surface Profiling"
+    text: "The patio surface is mechanically profiled to create an ideal bonding surface for the overlay system."
+  - name: "Overlay & Sealing"
+    text: "A durable polymer-modified overlay restores a clean, uniform surface. A protective sealer is applied to resist freeze-thaw damage and UV exposure."
 relatedServices:
   - "walkway-stairway"
   - "pool-deck"
