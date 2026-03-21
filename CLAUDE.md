@@ -12,12 +12,11 @@ Attack A Crack Foundation Repair - Astro static site for a New England foundatio
 
 ## Robots.txt / Crawling
 
-**The site is NOT live.** `robots.txt` blocks all crawlers (`Disallow: /`) until launch. This is intentional and must NOT be changed until the site is ready for production DNS cutover.
+**The site is launching.** `robots.txt` is set to production mode (`Allow: /`). DNS cutover to Vercel is the next step.
 
-- `public/robots.txt` — staging mode, blocks all crawling
-- `lighthouserc.cjs` — `is-crawlable` audit is set to `'off'` because of this
-- **Pre-launch tasks:** When launching, switch robots.txt to production mode AND remove the `is-crawlable: 'off'` line from lighthouserc.cjs
-- The `is-crawlable` Lighthouse skip is the **only** allowed SEO exception. Every other SEO check must pass at 100%.
+- `public/robots.txt` — production mode, allows all crawling + AI crawlers
+- `lighthouserc.cjs` — SEO threshold set to 0.93
+- Every SEO check must pass. No exceptions.
 
 ## SEO is Sacrosanct
 

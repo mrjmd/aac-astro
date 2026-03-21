@@ -2001,3 +2001,26 @@ Top 10 competitors by relevance, monitored quarterly:
 
 **Key insight:** AAC's current organic traffic (~554) places it mid-pack among local competitors. The Astro launch with 185+ pages of optimized content should vault AAC to #1-2 in the local competitive set within 90 days, provided GBP optimization and citation work happens simultaneously.
 
+---
+
+## Part 24: Technical Performance Dominance
+
+*Added March 2026 — Performance is a core ranking factor in the Astro era.*
+
+To "blow competitors out of the water," Attack A Crack leverages Astro's zero-JS architecture to achieve performance scores that national franchises and dated local sites cannot match.
+
+### Summary of Targets for Dominance
+
+| Metric | Budget | "Good" (Google) | **Domination Target** |
+| :--- | :--- | :--- | :--- |
+| **FCP** (First Contentful Paint) | 1,500ms | < 1,800ms | **< 800ms** |
+| **LCP** (Largest Contentful Paint) | 2,500ms | < 2,500ms | **< 1,200ms** |
+| **TTI** (Time to Interactive) | 3,000ms | < 3,800ms | **< 1,500ms** |
+| **CLS** (Cumulative Layout Shift) | N/A | < 0.1 | **< 0.01** |
+
+### Strategic Implementation
+- **LCP Optimization:** Preload the first hero slide with `fetchpriority="high"` and defer subsequent slides to post-load hydration.
+- **Paint Efficiency:** Avoid expensive `box-shadow` animations in the hero; use GPU-composited `transform` scales instead.
+- **Resource Budgets:** Maintain a strict 1MB total page weight budget to ensure lightning-fast loads on mobile LTE/5G.
+
+

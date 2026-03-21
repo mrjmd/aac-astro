@@ -1,46 +1,33 @@
-# =============================================================================
-# STAGING MODE - Block all crawlers until production launch
-# =============================================================================
-# PRE-LAUNCH TASK: Replace this entire file with production version below
-# =============================================================================
-
 User-agent: *
-Disallow: /
+Allow: /
 
-# =============================================================================
-# PRODUCTION MODE - Replace the above block with this before DNS cutover
-# =============================================================================
-#
-# User-agent: *
-# Allow: /
-#
-# Sitemap: https://attackacrack.com/sitemap-index.xml
-#
-# User-agent: GPTBot
-# Allow: /
-#
-# User-agent: CCBot
-# Allow: /
-#
-# User-agent: ClaudeBot
-# Allow: /
-#
-# User-agent: Google-Extended
-# Allow: /
-#
-# User-agent: Applebot
-# Allow: /
-#
-# User-agent: anthropic-ai
-# Allow: /
-#
-# User-agent: PerplexityBot
-# Allow: /
-#
-# User-agent: GPTBot
-# Disallow: /admin/
-# Disallow: /api/
-#
-# User-agent: CCBot
-# Disallow: /admin/
-# Disallow: /api/
+Sitemap: https://attackacrack.com/sitemap-index.xml
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GPTBot
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: CCBot
+Disallow: /admin/
+Disallow: /api/
