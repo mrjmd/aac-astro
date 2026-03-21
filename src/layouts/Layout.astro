@@ -161,6 +161,8 @@ if (breadcrumbSchema) {
 	<body class="bg-white text-aac-dark font-sans selection:bg-aac-yellow selection:text-aac-dark antialiased">
 		<slot />
 		<SpeedInsights />
+		<script is:inline>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+		<script defer src="/_vercel/insights/script.js"></script>
 		<script>
 			const observer = new IntersectionObserver(
 				(entries) => {
