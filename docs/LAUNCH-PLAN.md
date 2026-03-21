@@ -2,8 +2,7 @@
 
 > **The only task tracker.** Launch sequence first, then post-launch growth. Completed work is archived in `docs/archive/LAUNCH-PLAN-COMPLETED.md`.
 
-*Updated: March 21, 2026 — Launch day prep. All pre-launch work complete.*
-*Preview: https://aac-astro.vercel.app/*
+*Updated: March 21, 2026 — LAUNCHED. Site live at www.attackacrack.com.*
 
 ---
 
@@ -13,54 +12,40 @@
 
 - [x] **Switch `public/robots.txt` to production mode** — `Allow: /`, sitemap URL, AI crawler rules
 - [x] **Update `lighthouserc.cjs`** — Removed `is-crawlable: 'off'`, raised SEO threshold to 0.93
-- [ ] **Commit and push to main** — CI deploys updated robots.txt + lighthouse config to Vercel
+- [x] **Commit and push to main** — CI deploys updated robots.txt + lighthouse config to Vercel
 
-### Step 2: Update Secrets (Matt)
+### Step 2: Update Secrets — DONE
 
-- [ ] **Update `SITE_IMAGE_BASE`** — In GitHub repo Settings > Secrets: change from `https://aac-astro.vercel.app` to `https://attackacrack.com`
+- [x] **Update `SITE_IMAGE_BASE`** — Changed from `https://aac-astro.vercel.app` to `https://attackacrack.com`
 
-### Step 3: Add Domain in Vercel (Matt)
+### Step 3: Add Domain in Vercel — DONE
 
-- [ ] **Go to Vercel Dashboard** > Project (aac-astro) > Settings > Domains
-- [ ] **Add `attackacrack.com`** and **`www.attackacrack.com`**
-- [ ] **Set `www.attackacrack.com` as primary** (matches `site` in `astro.config.mjs`)
-- [ ] **Configure non-www → www redirect** (Vercel offers this in domain settings)
-- [ ] **Note the DNS records Vercel tells you to create** (either nameservers or A/CNAME records)
+- [x] Added `attackacrack.com` and `www.attackacrack.com` to `aac-astro` project
+- [x] `www.attackacrack.com` set as primary (matches `site` in `astro.config.mjs`)
+- [x] Non-www → www redirect configured (307)
 
-### Step 4: DNS Cutover (Matt)
+### Step 4: DNS Cutover — DONE
 
-Two options — pick one:
+- [x] A record and CNAME configured in Cloudflare (DNS only, no proxy)
 
-**Option A (Recommended): Vercel Nameservers**
-- [ ] Go to your domain registrar (wherever `attackacrack.com` is registered)
-- [ ] Change nameservers to the ones Vercel showed you in Step 3
+### Step 5: Verify SSL — DONE
 
-**Option B: A/CNAME Records (if you can't change nameservers)**
-- [ ] Add `A` record: `attackacrack.com` → `76.76.21.21`
-- [ ] Add `CNAME` record: `www.attackacrack.com` → `cname.vercel-dns.com`
+- [x] `https://www.attackacrack.com` — lock icon confirmed
+- [x] `https://attackacrack.com` — redirects to www
+- [x] `http://attackacrack.com` — redirects to HTTPS
 
-### Step 5: Verify SSL (Matt — wait 5-30 min after DNS change)
+### Step 6: Spot-Check Redirects — DONE
 
-- [ ] Visit `https://www.attackacrack.com` — confirm lock icon shows
-- [ ] Visit `https://attackacrack.com` — confirm it redirects to `https://www.attackacrack.com`
-- [ ] Visit `http://attackacrack.com` — confirm it redirects to HTTPS
+- [x] `/concrete-foundation-crack-repair-ct` → 308 to `/connecticut`
+- [x] All 74 redirects working (was on wrong Vercel project initially, fixed)
+- [x] Custom 404 page serving correctly
 
-### Step 6: Spot-Check Redirects (Matt — same session)
+### Step 7: Google Search Console — DONE
 
-Test these critical old URLs in your browser:
-- [ ] `attackacrack.com/concrete-foundation-crack-repair-ct` → should 301 to `/connecticut` (this was 908 sessions)
-- [ ] `attackacrack.com/tips` → should 301 to `/updates`
-- [ ] `attackacrack.com/contact` → should 301 to `/`
-- [ ] `attackacrack.com/foundation-types` → should 301 to `/blog/category/foundation-types`
-- [ ] `attackacrack.com/wall-crack-repair` → should 301 to `/services/wall-crack-repair`
-- [ ] Spot-check 5-10 more from the 74 redirects in `vercel.json`
-
-### Step 7: Google Search Console (Matt — same day)
-
-- [ ] Go to [Google Search Console](https://search.google.com/search-console)
-- [ ] If existing property is for old Squarespace: add new property `https://www.attackacrack.com`
-- [ ] Verify ownership (DNS TXT record or HTML file upload)
-- [ ] Go to Sitemaps > Add: `https://www.attackacrack.com/sitemap-index.xml`
+- [x] GSC property verified for `https://www.attackacrack.com`
+- [x] Submitted `sitemap-index.xml` and `sitemap-0.xml`
+- [x] Removed old `/sitemap.xml` (Squarespace era, had errors)
+- [x] Requested indexing on priority pages via URL Inspection tool
 - [ ] Use URL Inspection tool to request indexing on these 10 priority pages:
   1. `/` (homepage)
   2. `/services/` (services hub)
@@ -73,11 +58,10 @@ Test these critical old URLs in your browser:
   9. `/about/`
   10. `/concrete-repair/`
 
-### Step 8: Bing Webmaster Tools (Matt — same day)
+### Step 8: Bing Webmaster Tools — DONE
 
-- [ ] Go to [Bing Webmaster Tools](https://www.bing.com/webmasters)
-- [ ] Sign in and choose "Import from Google Search Console" (one-click)
-- [ ] Submit same sitemap URL
+- [x] Site already existed in Bing Webmaster Tools
+- [x] Submitted sitemap URLs
 
 ### Step 9: Monitor First 48 Hours (Both)
 
