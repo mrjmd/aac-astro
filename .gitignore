@@ -9,3 +9,12 @@ coverage/
 .claude/screenshots/
 .vercel
 scripts/.credentials/
+
+# Competitive intelligence / strategy docs (repo is public)
+docs/
+media/
+
+# Lighthouse audit artifacts
+.lighthouseci/
+.lighthouse-audit-results*.json
+.lighthouse-prod-*.json
