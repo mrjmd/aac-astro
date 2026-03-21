@@ -21,6 +21,8 @@ nearbyCities:
   - "Manchester"
   - "East Hartford"
   - "Wethersfield"
+  - "Rocky Hill"
+  - "South Windsor"
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Glastonbury?"

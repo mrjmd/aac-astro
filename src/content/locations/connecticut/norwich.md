@@ -22,6 +22,9 @@ nearbyCities:
   - "New London"
   - "Groton"
   - "Middletown"
+  - "Ledyard"
+  - "Colchester"
+  - "Salem"
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Norwich?"

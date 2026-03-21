@@ -20,6 +20,8 @@ nearbyCities:
   - "New Britain"
   - "Southington"
   - "West Hartford"
+  - "Avon"
+  - "Canton"
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Bristol?"

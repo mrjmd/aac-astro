@@ -21,6 +21,7 @@ nearbyCities:
   - "Salem"
   - "Peabody"
   - "Boston"
+  - "Gloucester"
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Beverly?"

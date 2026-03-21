@@ -20,6 +20,7 @@ nearbyCities:
   - "Manchester"
   - "East Hartford"
   - "Enfield"
+  - "South Windsor"
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Vernon?"

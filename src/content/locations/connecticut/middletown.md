@@ -23,6 +23,9 @@ nearbyCities:
   - "New Britain"
   - "Hartford"
   - "Wethersfield"
+  - "East Hampton"
+  - "Rocky Hill"
+  - "Chester"
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Middletown?"

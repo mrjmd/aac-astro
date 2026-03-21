@@ -21,6 +21,7 @@ nearbyCities:
   - "Wethersfield"
   - "West Hartford"
   - "Hartford"
+  - "Rocky Hill"
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Newington?"
