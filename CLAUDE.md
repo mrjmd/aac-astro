@@ -93,7 +93,7 @@ The `quality.yml` workflow runs the same checks on push/PR to main. All SEO/sche
 
 ## Launch Plan
 
-`docs/LAUNCH-PLAN.md` is the **canonical task tracker** for all remaining work. At the start of each session, read it to find the next unchecked item and work through phases in order. Check off items only after they pass validation and are committed.
+`docs/POST-LAUNCH-PLAN.md` is the **canonical task tracker** for all remaining work. At the start of each session, read it to find the next unchecked item and work through phases in order. Check off items only after they pass validation and are committed.
 
 ## File Conventions
 

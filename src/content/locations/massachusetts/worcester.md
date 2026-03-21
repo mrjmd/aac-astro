@@ -24,6 +24,7 @@ nearbyCities:
   - "Boston"
   - "Newton"
   - "Shrewsbury"
+  - "Marlborough"
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Worcester?"
