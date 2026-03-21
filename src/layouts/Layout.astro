@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import SpeedInsights from '@vercel/speed-insights/astro';
+import Analytics from '@vercel/analytics/astro';
 import SEOHead from '../components/SEOHead.astro';
 import { phoneCT, phoneMA, addressCT } from '../utils/contact';
 
@@ -161,8 +162,7 @@ if (breadcrumbSchema) {
 	<body class="bg-white text-aac-dark font-sans selection:bg-aac-yellow selection:text-aac-dark antialiased">
 		<slot />
 		<SpeedInsights />
-		<script is:inline>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
-		<script defer src="/_vercel/insights/script.js"></script>
+		<Analytics />
 		<script>
 			const observer = new IntersectionObserver(
 				(entries) => {
