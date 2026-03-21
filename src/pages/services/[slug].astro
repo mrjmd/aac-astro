@@ -170,11 +170,11 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 		<section class="py-16 lg:py-24 bg-aac-dark text-white relative overflow-hidden">
 			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
 			<div class="max-w-7xl mx-auto px-6 relative z-10">
-				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-300 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-300" />
+				<Breadcrumbs items={breadcrumbItems} class="mb-8" variant="dark" />
 
 				<div class="grid lg:grid-cols-2 gap-12 items-center">
 					<div>
-						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/20 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/30">
+						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/5 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/30">
 							<Icon name={service.data.icon} size={14} /> Foundation Repair Service
 						</div>
 						<h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-6 leading-none">
@@ -252,7 +252,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 			<section class="py-16 lg:py-24 bg-zinc-50">
 				<div class="max-w-4xl mx-auto px-6">
 					<div class="text-center mb-12">
-						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/10 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
+						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/5 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
 							<Icon name="Info" size={14} /> Common Questions
 						</div>
 						<h2 class="text-4xl font-black tracking-tighter text-aac-dark">
@@ -317,7 +317,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 			<section class="py-16 lg:py-24 bg-white border-t border-zinc-100">
 				<div class="max-w-7xl mx-auto px-6">
 					<div class="text-center mb-12">
-						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/10 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
+						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/5 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
 							<Icon name="Info" size={14} /> Helpful Guides
 						</div>
 						<h2 class="text-3xl font-black tracking-tighter text-aac-dark">
@@ -372,7 +372,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 					<div class="grid md:grid-cols-3 gap-8">
 						{relatedServices.map((related) => (
 							<a href={`/services/${related.id.replace(/\.md$/, '')}`} class="group bg-zinc-50 p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all">
-								<div class="w-12 h-12 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mb-4 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+								<div class="w-12 h-12 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center mb-4 group-hover:bg-aac-blue group-hover:text-white transition-colors">
 									<Icon name={related.data.icon} size={24} />
 								</div>
 								<h3 class="text-xl font-black mb-2 group-hover:text-aac-blue transition-colors">
@@ -411,7 +411,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 									</a>
 								))}
 								{state.totalCount > 5 && (
-									<a href={`/${state.path}`} class="px-3 py-1 bg-aac-blue/10 text-aac-blue rounded-full text-sm font-bold hover:bg-aac-blue hover:text-white transition-colors">
+									<a href={`/${state.path}`} class="px-3 py-1 bg-aac-blue/5 text-aac-blue rounded-full text-sm font-bold hover:bg-aac-blue hover:text-white transition-colors">
 										+{state.totalCount - 5} more
 									</a>
 								)}

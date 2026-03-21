@@ -165,7 +165,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 		<section class="py-16 lg:py-24 bg-aac-blue text-white relative overflow-hidden">
 			<div class="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 translate-x-1/2"></div>
 			<div class="max-w-7xl mx-auto px-6 relative z-10">
-				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-white/80 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-white" />
+				<Breadcrumbs items={breadcrumbItems} class="mb-8" variant="dark" />
 
 				<div class="grid lg:grid-cols-2 gap-12 items-center">
 					<div>
@@ -183,7 +183,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 								<Icon name="Phone" size={16} />
 								Call {phoneMA}
 							</a>
-							<button class="open-modal bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
+							<button class="open-modal bg-white/5 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/30 hover:bg-white/15 transition-all inline-flex items-center gap-2">
 								<Icon name="MessageSquare" size={16} />
 								Get Free Quote
 							</button>
@@ -284,7 +284,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 			<section class="py-16 lg:py-24 bg-white border-t border-zinc-100">
 				<div class="max-w-7xl mx-auto px-6">
 					<div class="text-center mb-12">
-						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/10 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
+						<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-blue/5 text-aac-blue rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-blue/20">
 							<Icon name="Info" size={14} /> Helpful Guides
 						</div>
 						<h2 class="text-3xl font-black tracking-tighter text-aac-dark">
@@ -339,7 +339,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 					<div class="grid md:grid-cols-3 gap-8">
 						{relatedServices.map((related) => (
 							<a href={`/concrete-repair/${related.id.replace(/\.md$/, '')}`} class="group bg-zinc-50 p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all">
-								<div class="w-12 h-12 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mb-4 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+								<div class="w-12 h-12 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center mb-4 group-hover:bg-aac-blue group-hover:text-white transition-colors">
 									<Icon name={related.data.icon} size={24} />
 								</div>
 								<h3 class="text-xl font-black mb-2 group-hover:text-aac-blue transition-colors">
@@ -371,7 +371,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 						</a>
 					))}
 					{allLocations.filter(l => l.data.stateAbbr === 'MA').length > 8 && (
-						<a href="/massachusetts" class="px-3 py-1 bg-aac-blue/10 text-aac-blue rounded-full text-sm font-bold hover:bg-aac-blue hover:text-white transition-colors">
+						<a href="/massachusetts" class="px-3 py-1 bg-aac-blue/5 text-aac-blue rounded-full text-sm font-bold hover:bg-aac-blue hover:text-white transition-colors">
 							+{allLocations.filter(l => l.data.stateAbbr === 'MA').length - 8} more cities
 						</a>
 					)}

@@ -39,7 +39,7 @@ const pageSchema = {
 		<section class="py-20 lg:py-32 bg-aac-yellow relative overflow-hidden">
 			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-dark/5 skew-x-12 translate-x-1/2"></div>
 			<div class="max-w-7xl mx-auto px-6 relative z-10">
-				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-aac-dark/60 [&_a:hover]:text-aac-dark [&_span]:text-aac-dark [&_svg]:text-aac-dark/40" />
+				<Breadcrumbs items={breadcrumbItems} class="mb-8" variant="yellow" />
 
 				<div class="grid lg:grid-cols-2 gap-12 items-center">
 					<div>
@@ -102,7 +102,7 @@ const pageSchema = {
 					{partners.map((partner) => (
 						<a href={`/partners/${partner.id.replace(/\.md$/, '')}`} class="group p-8 rounded-[32px] border-4 border-aac-dark shadow-[8px_8px_0px_0px_rgba(26,26,26,1)] bg-white hover:shadow-[12px_12px_0px_0px_rgba(26,26,26,1)] hover:translate-y-[-4px] transition-all">
 							<div class="flex items-start gap-6">
-								<div class="w-16 h-16 bg-aac-blue/10 text-aac-blue rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+								<div class="w-16 h-16 bg-aac-blue/5 text-aac-blue rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-aac-blue group-hover:text-white transition-colors">
 									<Icon name={partner.data.icon || 'Users'} size={32} />
 								</div>
 								<div>

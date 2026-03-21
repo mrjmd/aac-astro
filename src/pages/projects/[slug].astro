@@ -341,21 +341,21 @@ const projectSchema = {
 				<!-- Quick Facts -->
 				<div class="grid grid-cols-3 gap-6 mb-12 p-8 bg-zinc-50 rounded-2xl border-2 border-zinc-100">
 					<div class="text-center">
-						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mx-auto mb-2">
+						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center mx-auto mb-2">
 							<Icon name="Wrench" size={20} />
 						</div>
 						<p class="text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-1">{project.data.serviceTypes.length > 1 ? 'Services' : 'Service'}</p>
 						<p class="font-bold text-sm">{project.data.serviceTypes.map((st: string) => serviceTypeLabels[st] || st).join(' + ')}</p>
 					</div>
 					<div class="text-center">
-						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mx-auto mb-2">
+						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center mx-auto mb-2">
 							<Icon name="MapPin" size={20} />
 						</div>
 						<p class="text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-1">Location</p>
 						<p class="font-bold text-sm">{project.data.city}, {project.data.state}</p>
 					</div>
 					<div class="text-center">
-						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mx-auto mb-2">
+						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center mx-auto mb-2">
 							<Icon name="ShieldCheck" size={20} />
 						</div>
 						<p class="text-[10px] font-black uppercase tracking-widest text-zinc-500 mb-1">Guarantee</p>

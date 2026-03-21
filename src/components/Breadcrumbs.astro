@@ -9,9 +9,33 @@ interface BreadcrumbItem {
 interface Props {
   items: BreadcrumbItem[];
   class?: string;
+  variant?: 'light' | 'dark' | 'yellow';
 }
 
-const { items, class: className = '' } = Astro.props;
+const { items, class: className = '', variant = 'light' } = Astro.props;
+
+const styles = {
+  light: {
+    link: 'text-zinc-500 hover:text-aac-blue transition-colors font-medium',
+    icon: 'text-zinc-400',
+    current: 'text-aac-dark font-bold',
+    inactive: 'text-zinc-500 font-medium',
+  },
+  dark: {
+    link: 'text-white/90 hover:text-white transition-colors font-medium',
+    icon: 'text-white/60',
+    current: 'text-white font-bold',
+    inactive: 'text-white/70 font-medium',
+  },
+  yellow: {
+    link: 'text-aac-dark/80 hover:text-aac-dark transition-colors font-medium',
+    icon: 'text-aac-dark/50',
+    current: 'text-aac-dark font-bold',
+    inactive: 'text-aac-dark/70 font-medium',
+  },
+};
+
+const { link: linkClass, icon: iconClass, current: currentClass, inactive: inactiveClass } = styles[variant];
 
 ---
 
@@ -20,18 +44,18 @@ const { items, class: className = '' } = Astro.props;
     {items.map((item, index) => (
       <li class="flex items-center gap-2">
         {index > 0 && (
-          <Icon name="ChevronRight" size={14} class="text-zinc-500" />
+          <Icon name="ChevronRight" size={14} class={iconClass} />
         )}
         {item.href && index < items.length - 1 ? (
           <a
             href={item.href}
-            class="text-zinc-500 hover:text-aac-blue transition-colors font-medium"
+            class={linkClass}
           >
             {item.label}
           </a>
         ) : (
           <span
-            class={index === items.length - 1 ? "text-aac-dark font-bold" : "text-zinc-500 font-medium"}
+            class={index === items.length - 1 ? currentClass : inactiveClass}
             aria-current={index === items.length - 1 ? "page" : undefined}
           >
             {item.label}

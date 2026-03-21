@@ -66,7 +66,7 @@ const riSchema = {
 		<section class="py-20 lg:py-32 bg-aac-dark text-white relative overflow-hidden">
 			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
 			<div class="max-w-7xl mx-auto px-6 relative z-10">
-				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-300 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-300" />
+				<Breadcrumbs items={breadcrumbItems} class="mb-8" variant="dark" />
 
 				<div class="grid lg:grid-cols-2 gap-12 items-center">
 					<div>
@@ -89,7 +89,7 @@ const riSchema = {
 								<Icon name="ShieldCheck" size={20} />
 								<span class="font-bold">Lifetime Guarantee</span>
 							</div>
-							<div class="flex items-center gap-2 text-aac-blue">
+							<div class="flex items-center gap-2 text-blue-400">
 								<Icon name="Wrench" size={20} />
 								<span class="font-bold">+ Resurfacing</span>
 							</div>
@@ -169,7 +169,7 @@ const riSchema = {
 				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{services.map((service) => (
 						<a href={`/services/${service.id.replace(/\.md$/, '')}`} class="group p-8 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue transition-all">
-							<div class="w-14 h-14 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center mb-6 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+							<div class="w-14 h-14 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center mb-6 group-hover:bg-aac-blue group-hover:text-white transition-colors">
 								<Icon name={service.data.icon} size={28} />
 							</div>
 							<h3 class="text-xl font-black mb-3 group-hover:text-aac-blue transition-colors">

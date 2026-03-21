@@ -147,7 +147,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 		<section class="py-16 lg:py-24 bg-aac-dark text-white relative overflow-hidden">
 			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
 			<div class="max-w-7xl mx-auto px-6 relative z-10">
-				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-300 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-300" />
+				<Breadcrumbs items={breadcrumbItems} class="mb-8" variant="dark" />
 
 				<div class="grid lg:grid-cols-2 gap-12 items-center">
 					<div>
@@ -174,7 +174,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 								<span class="font-bold text-sm">Lifetime Guarantee</span>
 							</div>
 							{location.data.servesResurfacing && (
-								<div class="flex items-center gap-2 text-aac-blue">
+								<div class="flex items-center gap-2 text-blue-400">
 									<Icon name="Wrench" size={18} />
 									<span class="font-bold text-sm">+ Resurfacing</span>
 								</div>
@@ -338,7 +338,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 					{services.map((service) => (
 						<a href={`/services/${service.id.replace(/\.md$/, '')}`} class="group bg-white p-6 rounded-xl border-2 border-zinc-100 hover:border-aac-blue transition-all flex items-start gap-4">
-							<div class="w-12 h-12 bg-aac-blue/10 text-aac-blue rounded-xl flex items-center justify-center shrink-0 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+							<div class="w-12 h-12 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center shrink-0 group-hover:bg-aac-blue group-hover:text-white transition-colors">
 								<Icon name={service.data.icon} size={24} />
 							</div>
 							<div>
@@ -363,7 +363,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 				</h2>
 				<div class="grid sm:grid-cols-2 gap-4">
 					<div class="p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
-						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
+						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
 							<Icon name="Hammer" size={20} />
 						</div>
 						<div>
@@ -372,7 +372,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 						</div>
 					</div>
 					<div class="p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
-						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
+						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
 							<Icon name="Droplets" size={20} />
 						</div>
 						<div>
@@ -381,7 +381,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 						</div>
 					</div>
 					<div class="p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
-						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
+						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
 							<Icon name="ShieldCheck" size={20} />
 						</div>
 						<div>
@@ -390,7 +390,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 						</div>
 					</div>
 					<div class="p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
-						<div class="w-10 h-10 bg-aac-blue/10 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
+						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
 							<Icon name="Wrench" size={20} />
 						</div>
 						<div>
