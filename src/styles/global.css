@@ -32,6 +32,12 @@
   body {
     @apply bg-white text-aac-dark font-sans selection:bg-aac-yellow selection:text-aac-dark antialiased;
   }
+
+  /* Prevent wide Markdown tables from overflowing mobile viewport */
+  .prose table {
+    display: block;
+    overflow-x: auto;
+  }
 }
 
 @layer utilities {
