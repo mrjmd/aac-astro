@@ -89,7 +89,7 @@ const servicesSchema = {
 							<img
 								src={webpSrc("/images/concrete-repair-hero.jpg")}
 								srcset={projectSrcset("/images/concrete-repair-hero.jpg")}
-								sizes="(max-width: 1024px) 100vw, 50vw"
+								sizes="(max-width: 1024px) calc(100vw - 48px), 600px"
 								alt="Cracked concrete driveway at a New England home needing repair"
 								class="w-full h-full object-cover"
 								width="800"
@@ -143,7 +143,7 @@ const servicesSchema = {
 								<img
 									src={webpSrc(service.data.heroImage || "/images/projects/newton-concrete-repair-2025-07-before.jpg")}
 									srcset={projectSrcset(service.data.heroImage || "/images/projects/newton-concrete-repair-2025-07-before.jpg")}
-									sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+									sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1024px) 344px, 400px"
 									alt={service.data.title}
 									class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
 									width="640"
@@ -222,7 +222,7 @@ const servicesSchema = {
 						<img
 							src={webpSrc("/images/projects/hanover-concrete-repair-2025-06-before.jpg")}
 							srcset={projectSrcset("/images/projects/hanover-concrete-repair-2025-06-before.jpg")}
-							sizes="(max-width: 1024px) 100vw, 50vw"
+							sizes="(max-width: 1024px) calc(100vw - 48px), 600px"
 							alt="Concrete stair repair project"
 							class="w-full h-full object-cover"
 							width="800"

@@ -203,7 +203,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 									<img
 										src={webpSrc(service.data.beforeImage)}
 										srcset={projectSrcset(service.data.beforeImage)}
-										sizes="(max-width: 768px) 100vw, 50vw"
+										sizes="(max-width: 768px) calc(100vw - 48px), 400px"
 										data-before={webpSrc(service.data.beforeImage)}
 										data-after={webpSrc(service.data.afterImage)}
 										alt={`${service.data.title} - Before and After`}
@@ -226,7 +226,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 							<img
 								src={webpSrc(service.data.heroImage || service.data.afterImage)}
 								srcset={projectSrcset(service.data.heroImage || service.data.afterImage)}
-								sizes="(max-width: 768px) 100vw, 50vw"
+								sizes="(max-width: 768px) calc(100vw - 48px), 400px"
 								alt={service.data.title}
 								class="w-full h-full object-cover"
 								width="800"
@@ -332,7 +332,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 										<img
 											src={webpSrc(post.data.heroImage)}
 											srcset={projectSrcset(post.data.heroImage)}
-											sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+											sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1024px) 344px, 300px"
 											alt={post.data.heroImageAlt || post.data.title}
 											class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
 											width="640"

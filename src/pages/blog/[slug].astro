@@ -183,7 +183,7 @@ const articleSchema = {
 					<img
 						src={webpSrc(post.data.heroImage)}
 						srcset={projectSrcset(post.data.heroImage)}
-						sizes="100vw"
+						sizes="(max-width: 1024px) 100vw, 1024px"
 						alt={post.data.heroImageAlt || post.data.title}
 						class="w-full aspect-[2/1] object-cover"
 						width="1200"
@@ -245,7 +245,7 @@ const articleSchema = {
 									<img
 										src={webpSrc(related.data.heroImage || "/images/projects/marshfield-crack-injection-2025-06-before.jpg")}
 										srcset={projectSrcset(related.data.heroImage || "/images/projects/marshfield-crack-injection-2025-06-before.jpg")}
-										sizes="(max-width: 768px) 100vw, 33vw"
+										sizes="(max-width: 768px) calc(100vw - 48px), 400px"
 										alt={related.data.heroImageAlt || related.data.title}
 										class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
 										width="640"

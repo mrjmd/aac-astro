@@ -198,7 +198,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 							<img
 								src={webpSrc(heroImage.src)}
 								srcset={projectSrcset(heroImage.src)}
-								sizes="(max-width: 1024px) 100vw, 50vw"
+								sizes="(max-width: 1024px) calc(100vw - 48px), 600px"
 								alt={heroImage.alt}
 								class="w-full h-full object-cover"
 								width="800"
@@ -467,7 +467,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 										<img
 											src={webpSrc(post.data.heroImage)}
 											srcset={projectSrcset(post.data.heroImage)}
-											sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+											sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1024px) 344px, 400px"
 											alt={post.data.heroImageAlt || post.data.title}
 											class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
 											width="640"

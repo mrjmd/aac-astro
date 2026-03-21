@@ -107,7 +107,7 @@ const servicesSchema = {
 						<a href={`/services/${service.id.replace(/\.md$/, '')}`} class="group bg-white rounded-[32px] border-2 border-zinc-100 hover:border-aac-blue transition-all shadow-sm hover:shadow-xl overflow-hidden">
 							{service.data.heroImage ? (
 								<div class="aspect-video overflow-hidden relative">
-									<img src={webpSrc(service.data.heroImage)} srcset={projectSrcset(service.data.heroImage)} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt={service.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="640" height="360" loading="lazy" />
+									<img src={webpSrc(service.data.heroImage)} srcset={projectSrcset(service.data.heroImage)} sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1024px) 344px, 400px" alt={service.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="640" height="360" loading="lazy" />
 									<div class="absolute bottom-4 left-4 w-12 h-12 bg-white/90 backdrop-blur-sm text-aac-blue rounded-xl flex items-center justify-center">
 										<Icon name={service.data.icon} size={24} />
 									</div>
@@ -136,7 +136,7 @@ const servicesSchema = {
 					<!-- Concrete Repair Card with MA Only Badge -->
 					<a href="/concrete-repair" class="group bg-white rounded-[32px] border-2 border-zinc-100 hover:border-aac-blue transition-all shadow-sm hover:shadow-xl overflow-hidden">
 						<div class="aspect-video overflow-hidden relative">
-							<img src={webpSrc("/images/projects/hanover-concrete-repair-2025-06-before.jpg")} srcset={projectSrcset("/images/projects/hanover-concrete-repair-2025-06-before.jpg")} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Concrete repair and resurfacing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="640" height="360" loading="lazy" />
+							<img src={webpSrc("/images/projects/hanover-concrete-repair-2025-06-before.jpg")} srcset={projectSrcset("/images/projects/hanover-concrete-repair-2025-06-before.jpg")} sizes="(max-width: 640px) calc(100vw - 48px), (max-width: 1024px) 344px, 400px" alt="Concrete repair and resurfacing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="640" height="360" loading="lazy" />
 							<div class="absolute bottom-4 left-4 flex items-center gap-2">
 								<div class="w-12 h-12 bg-white/90 backdrop-blur-sm text-aac-blue rounded-xl flex items-center justify-center">
 									<Icon name="Layers" size={24} />
@@ -163,7 +163,7 @@ const servicesSchema = {
 					<a href={`/services/${freeConsultation.id.replace(/\.md$/, '')}`} class="group mt-8 grid md:grid-cols-2 bg-white rounded-[32px] border-2 border-zinc-100 hover:border-aac-blue transition-all shadow-sm hover:shadow-xl overflow-hidden">
 						{freeConsultation.data.heroImage && (
 							<div class="aspect-video md:aspect-auto overflow-hidden relative">
-								<img src={webpSrc(freeConsultation.data.heroImage)} srcset={projectSrcset(freeConsultation.data.heroImage)} sizes="(max-width: 768px) 100vw, 50vw" alt={freeConsultation.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="640" height="360" loading="lazy" />
+								<img src={webpSrc(freeConsultation.data.heroImage)} srcset={projectSrcset(freeConsultation.data.heroImage)} sizes="(max-width: 768px) calc(100vw - 48px), 400px" alt={freeConsultation.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="640" height="360" loading="lazy" />
 							</div>
 						)}
 						<div class="p-8 lg:p-12 flex flex-col justify-center">
@@ -260,7 +260,7 @@ const servicesSchema = {
 						<img
 							src={webpSrc("/images/projects/marshfield-crack-injection-2025-08-before.jpg")}
 							srcset={projectSrcset("/images/projects/marshfield-crack-injection-2025-08-before.jpg")}
-							sizes="(max-width: 1024px) 100vw, 50vw"
+							sizes="(max-width: 1024px) calc(100vw - 48px), 600px"
 							alt="Foundation crack requiring injection repair"
 							class="w-full h-full object-cover"
 							width="800"
