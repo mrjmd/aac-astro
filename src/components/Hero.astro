@@ -42,7 +42,7 @@ import { reviewCount } from '../utils/reviews';
     </div>
     
     <div class="relative lg:-rotate-2">
-      <div class="hero-slideshow aspect-[4/3] rounded-[48px] overflow-hidden border-8 border-white shadow-[24px_24px_60px_-15px_rgba(0,0,0,0.1)] relative">
+      <div class="hero-slideshow aspect-[4/3] rounded-[48px] overflow-hidden border-8 border-white shadow-[24px_24px_60px_-15px_rgba(0,0,0,0.1)] relative isolate">
         <img
           id="hero-slide-1"
           src="/images/hero-slide-1.webp"
@@ -57,7 +57,7 @@ import { reviewCount } from '../utils/reviews';
           data-ken-burns="pan-down"
         />
         <!-- Bottom overlay -->
-        <div class="absolute bottom-0 left-0 right-0 bg-aac-dark/85 backdrop-blur-sm px-6 py-5 flex items-center gap-4 z-10">
+        <div class="absolute bottom-0 left-0 right-0 bg-aac-dark/85 backdrop-blur-sm px-6 py-5 flex items-center gap-4 z-10 rounded-b-[40px]">
           <div class="w-8 h-8 bg-aac-yellow rounded-lg flex items-center justify-center shrink-0">
             <Icon name="Star" size={16} class="fill-aac-dark text-aac-dark" />
           </div>
@@ -104,6 +104,12 @@ import { reviewCount } from '../utils/reviews';
   @keyframes kb-zoom-in {
     from { transform: scale(1.0); }
     to { transform: scale(1.2); }
+  }
+
+  .hero-slideshow {
+    /* Force compositing layer so overflow-hidden clips transformed children */
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    transform: translateZ(0);
   }
 
   .hero-slide {
