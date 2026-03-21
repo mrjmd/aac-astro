@@ -139,6 +139,8 @@ if (breadcrumbSchema) {
 
 		{GA4_ID && (
 			<>
+				<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+				<link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
 				<script async src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}></script>
 				<script is:inline define:vars={{ GA4_ID }}>
 					window.dataLayer = window.dataLayer || [];

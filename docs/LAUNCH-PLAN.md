@@ -2,7 +2,7 @@
 
 > **The only task tracker.** Three sections: launch blockers, Matt's items, post-launch sprint. Completed work is archived in `docs/archive/LAUNCH-PLAN-COMPLETED.md`.
 
-*Updated: March 10, 2026 — Testimonials verified, partner drafts added*
+*Updated: March 20, 2026 — GA4 tracking live, cement keyword optimization, launch prep*
 *Preview: https://aac-astro.vercel.app/*
 
 ---
@@ -21,16 +21,16 @@ These must be done before DNS cutover. Nothing else launches the site.
 
 ### Manual QA (Both)
 
-- [ ] All navigation links work
-- [ ] All footer links work
-- [ ] Contact forms submit correctly
-- [ ] Phone numbers correct: CT (860) 573-8760, MA (617) 668-1677
-- [ ] Addresses correct: CT 23 Elsmere Road, Amston, CT 06231; MA 30 Randlett St #2, Quincy, MA 02169
-- [ ] "260+ Google reviews" claim is current
-- [ ] Images load on all pages
+- [x] All navigation links work
+- [x] All footer links work
+- [x] Contact forms submit correctly
+- [x] Phone numbers correct: CT (860) 573-8760, MA (617) 668-1677
+- [x] Addresses correct: CT 23 Elsmere Road, Amston, CT 06231; MA 30 Randlett St #2, Quincy, MA 02169
+- [x] "260+ Google reviews" claim is current
+- [x] Images load on all pages
 - [ ] Mobile responsive (iPhone, Android)
 - [x] Schema validates in Google Rich Results Test — Spot-checked 5 representative pages (homepage, service, city, blog, state hub). Fixed: blog Article image relative→absolute URL, duplicate BreadcrumbList on all pages, missing author lookup for "Matt Davis" and "Attack A Crack".
-- [ ] Favicon displays correctly
+- [x] Favicon displays correctly
 
 ### Manual QA Follow-Up (Claude)
 
@@ -42,7 +42,7 @@ These must be done before DNS cutover. Nothing else launches the site.
 ### Lighthouse Threshold (Claude)
 
 - [ ] Lighthouse: Performance 90+, Accessibility 95+, SEO 95+
-- [ ] `npm run check:images` passes with 0 placeholder warnings
+- [x] `npm run check:images` passes with 0 placeholder warnings
 
 ### 301 Redirects — DONE (74 total)
 
@@ -58,9 +58,9 @@ These must be done before DNS cutover. Nothing else launches the site.
 
 ### Analytics & Tracking Setup (Matt)
 
-- [ ] **Google Search Console** — Reuse existing GSC property (same domain). Verify new site via DNS TXT record. After DNS cutover: submit new sitemap (`/sitemap-index.xml`), monitor index coverage for old URLs hitting 404.
-- [ ] **Google Analytics 4** — Reuse existing GA4 property. Get Measurement ID (`G-XXXXXXXXXX`) from Admin → Data Streams → set `PUBLIC_GA4_ID` in Vercel project env vars (Production environment). Deploys will automatically include the tracking script.
-- [ ] **Bing Webmaster Tools** — verify at bing.com/webmasters (can auto-import from GSC).
+- [x] **Google Search Console** — Reusing existing GSC property (same domain, DNS TXT verification carries over). After DNS cutover: submit new sitemap (`/sitemap-index.xml`), monitor index coverage for old URLs hitting 404.
+- [x] **Google Analytics 4** — GA4 script added to Layout.astro (env-var gated). `PUBLIC_GA4_ID=G-VQGHX85D5D` set in Vercel production env vars. Live on next deploy.
+- [ ] **Bing Webmaster Tools** — verify at bing.com/webmasters (can auto-import from GSC). Do post-launch.
 
 ### DNS Cutover (Matt)
 
@@ -139,13 +139,13 @@ Needed for author schema and the About page. Currently using placeholder data.
 
 ### Visual QA Pass
 
-- [ ] Homepage walkthrough
-- [ ] Services hub + each service page
+- [x] Homepage walkthrough
+- [x] Services hub + each service page
 - [ ] About page
-- [ ] Updates page
-- [ ] Locations
-- [ ] Partners hub + Trusted Partners
-- [ ] Sample blog post + sample location page
+- [x] Updates page
+- [x] Locations
+- [x] Partners hub + Trusted Partners
+- [x] Sample blog post + sample location page
 - [ ] Mobile spot-check on each
 
 ### Google Cloud Setup (for Calendar Import) — SUPERSEDED
@@ -183,11 +183,11 @@ First 90 days after DNS cutover. Full strategy in `docs/SEO-STRATEGY-2026.md` (P
 
 ### Week 1: Foundation Setup
 
-- [ ] Set up Google Search Console + verify both CT and MA properties
+- [x] Set up Google Search Console + verify both CT and MA properties
 - [ ] Submit sitemap to GSC
-- [ ] Set up GA4 / Vercel Analytics
+- [x] Set up GA4 / Vercel Analytics
 - [ ] Optimize Google Business Profile (photos, posts, Q&A, services, attributes)
-- [ ] Submit BBB listing (Authority Score 78 — every competitor has it)
+- [x] Submit BBB listing (Authority Score 78 — every competitor has it)
 - [ ] Set up uptime monitoring + error tracking
 - [ ] Submit to Bing Webmaster Tools
 - [ ] Fix any 404s from old URLs
@@ -249,6 +249,7 @@ First 90 days after DNS cutover. Full strategy in `docs/SEO-STRATEGY-2026.md` (P
 ### Tech Debt
 
 - [ ] 80+ location markdown files have phone numbers in frontmatter fields. Templates use centralized `contact.ts`, but content frontmatter is hardcoded. If a phone number changes, grep `src/content/` for the old number.
+- [ ] **Lighthouse CI on real servers** — Set up Vercel preview deployments (branch environments) or similar so Lighthouse runs against actual server responses instead of local static files. Re-enable Lighthouse job in `.github/workflows/quality.yml` once working.
 - [ ] Future: Extract HowTo schema into shared component for services + blog posts
 - [ ] **Google auth: OAuth refresh token in CI** — using OAuth refresh token instead of service account key (org policy blocks key creation). Refresh token can expire after 6 months of inactivity or if Google password changes. If the cron fails with "OAuth refresh failed", re-run `node scripts/import-calendar-projects.js` locally to get a new token, then update `GOOGLE_OAUTH_REFRESH_TOKEN` GitHub secret. Long-term fix: Workload Identity Federation (OIDC).
 
