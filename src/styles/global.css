@@ -48,11 +48,12 @@
   }
 
   @keyframes pulse-soft {
-    0%, 100% { transform: scale(1) rotate(12deg); box-shadow: 0 0 0 0 rgba(30, 111, 184, 0.4); }
-    50% { transform: scale(1.1) rotate(12deg); box-shadow: 0 0 20px 10px rgba(30, 111, 184, 0); }
+    0%, 100% { transform: scale(1) rotate(12deg); }
+    50% { transform: scale(1.1) rotate(12deg); }
   }
   .animate-pulse-soft {
     animation: pulse-soft 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+    will-change: transform;
   }
 
   /* Scroll-triggered entrance animations */

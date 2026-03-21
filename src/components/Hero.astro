@@ -44,6 +44,7 @@ import { reviewCount } from '../utils/reviews';
     <div class="relative lg:-rotate-2">
       <div class="hero-slideshow aspect-[4/3] rounded-[48px] overflow-hidden border-8 border-white shadow-[24px_24px_60px_-15px_rgba(0,0,0,0.1)] relative">
         <img
+          id="hero-slide-1"
           src="/images/hero-slide-1.webp"
           srcset="/images/hero-slide-1-sm.webp 600w, /images/hero-slide-1.webp 1200w"
           sizes="(max-width: 1024px) 100vw, 50vw"
@@ -54,29 +55,6 @@ import { reviewCount } from '../utils/reviews';
           fetchpriority="high"
           style="transform-origin: top left;"
           data-ken-burns="pan-down"
-        />
-        <img
-          src="/images/hero-slide-2.webp"
-          srcset="/images/hero-slide-2-sm.webp 600w, /images/hero-slide-2.webp 1200w"
-          sizes="(max-width: 1024px) 100vw, 50vw"
-          alt="Setting up injection equipment at a bulkhead"
-          class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0"
-          width="1200"
-          height="900"
-          loading="lazy"
-          data-ken-burns="pan-right"
-        />
-        <img
-          src="/images/hero-slide-3.webp"
-          srcset="/images/hero-slide-3-sm.webp 600w, /images/hero-slide-3.webp 1200w"
-          sizes="(max-width: 1024px) 100vw, 50vw"
-          alt="Grinding and cleaning a bulkhead joint for sealing"
-          class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0"
-          width="1200"
-          height="900"
-          loading="lazy"
-          style="transform-origin: 70% 20%;"
-          data-ken-burns="zoom-in"
         />
         <!-- Bottom overlay -->
         <div class="absolute bottom-0 left-0 right-0 bg-aac-dark/85 backdrop-blur-sm px-6 py-5 flex items-center gap-4 z-10">
@@ -144,32 +122,81 @@ import { reviewCount } from '../utils/reviews';
 </style>
 
 <script>
-  const slides = document.querySelectorAll('.hero-slide');
-  if (slides.length > 1) {
-    let current = 0;
-    const duration = 6000; // ms per slide
+  // Ghost Slide pattern: only slide 1 is in HTML for fast LCP.
+  // Slides 2-3 are injected after page load to avoid bandwidth competition.
+  const ghostSlides = [
+    {
+      src: "/images/hero-slide-2.webp",
+      srcset: "/images/hero-slide-2-sm.webp 600w, /images/hero-slide-2.webp 1200w",
+      sizes: "(max-width: 1024px) 100vw, 50vw",
+      alt: "Setting up injection equipment at a bulkhead",
+      width: 1200, height: 900,
+      kenBurns: "pan-right",
+      style: ""
+    },
+    {
+      src: "/images/hero-slide-3.webp",
+      srcset: "/images/hero-slide-3-sm.webp 600w, /images/hero-slide-3.webp 1200w",
+      sizes: "(max-width: 1024px) 100vw, 50vw",
+      alt: "Grinding and cleaning a bulkhead joint for sealing",
+      width: 1200, height: 900,
+      kenBurns: "zoom-in",
+      style: "transform-origin: 70% 20%;"
+    }
+  ];
 
-    // Defer first animation to avoid blocking LCP paint
-    requestAnimationFrame(() => {
-      slides[0].classList.add('kb-active');
+  const container = document.querySelector('.hero-slideshow');
+  const slide1 = document.getElementById('hero-slide-1') as HTMLImageElement;
+  const overlay = container?.querySelector('.absolute.bottom-0');
+
+  // Start Ken Burns on slide 1 only after it's decoded (don't block LCP)
+  function startSlide1Animation() {
+    slide1.classList.add('kb-active');
+  }
+  if (slide1.complete) {
+    requestAnimationFrame(startSlide1Animation);
+  } else {
+    slide1.addEventListener('load', () => requestAnimationFrame(startSlide1Animation));
+  }
+
+  // Inject ghost slides and start slideshow after full page load
+  window.addEventListener('load', () => {
+    const injected: HTMLImageElement[] = [];
+
+    ghostSlides.forEach(data => {
+      const img = document.createElement('img');
+      img.src = data.src;
+      img.srcset = data.srcset;
+      img.sizes = data.sizes;
+      img.alt = data.alt;
+      img.width = data.width;
+      img.height = data.height;
+      img.className = 'hero-slide absolute inset-0 w-full h-full object-cover opacity-0';
+      img.dataset.kenBurns = data.kenBurns;
+      if (data.style) img.style.cssText = data.style;
+      // Insert before the overlay so it stays behind it
+      container!.insertBefore(img, overlay!);
+      injected.push(img);
     });
+
+    // Start slideshow once ghost slides are injected
+    const allSlides = [slide1, ...injected];
+    let current = 0;
+    const duration = 6000;
 
     setInterval(() => {
       const prev = current;
-      current = (current + 1) % slides.length;
+      current = (current + 1) % allSlides.length;
 
-      // Fade out previous
-      (slides[prev] as HTMLElement).style.opacity = '0';
-      slides[prev].classList.remove('kb-active');
+      allSlides[prev].style.opacity = '0';
+      allSlides[prev].classList.remove('kb-active');
 
-      // Fade in next and start its animation
-      (slides[current] as HTMLElement).style.opacity = '1';
-      slides[current].classList.add('kb-active');
-      // Reset animation by removing and re-adding the class
-      const el = slides[current] as HTMLElement;
-      el.style.animation = 'none';
-      el.offsetHeight; // trigger reflow
-      el.style.animation = '';
+      allSlides[current].style.opacity = '1';
+      allSlides[current].classList.add('kb-active');
+      // Reset animation
+      allSlides[current].style.animation = 'none';
+      allSlides[current].offsetHeight;
+      allSlides[current].style.animation = '';
     }, duration);
-  }
+  });
 </script>
