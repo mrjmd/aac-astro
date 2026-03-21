@@ -147,7 +147,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 		<section class="py-16 lg:py-24 bg-aac-dark text-white relative overflow-hidden">
 			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
 			<div class="max-w-7xl mx-auto px-6 relative z-10">
-				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-400 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-400" />
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-300 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-300" />
 
 				<div class="grid lg:grid-cols-2 gap-12 items-center">
 					<div>
@@ -159,7 +159,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 						</h1>
 
 						{location.data.population && (
-							<p class="text-lg text-zinc-400 mb-4">
+							<p class="text-lg text-zinc-300 mb-4">
 								Serving {location.data.population.toLocaleString()}+ {location.data.city} residents with expert foundation repair.
 							</p>
 						)}
@@ -203,6 +203,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 								class="w-full h-full object-cover"
 								width="800"
 								height="600"
+								loading="lazy"
 							/>
 						</div>
 					</div>
@@ -516,7 +517,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 				<h2 class="text-3xl lg:text-4xl font-black tracking-tighter mb-6">
 					Need Foundation Repair in {location.data.city}?
 				</h2>
-				<p class="text-lg text-zinc-400 mb-8">
+				<p class="text-lg text-zinc-300 mb-8">
 					Get a free consultation from our local experts. We'll assess your foundation and provide an honest quote.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">

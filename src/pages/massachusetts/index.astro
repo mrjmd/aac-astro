@@ -94,7 +94,7 @@ const maSchema = {
 		<section class="py-20 lg:py-32 bg-aac-dark text-white relative overflow-hidden">
 			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
 			<div class="max-w-7xl mx-auto px-6 relative z-10">
-				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-400 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-400" />
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-300 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-300" />
 
 				<div class="grid lg:grid-cols-2 gap-12 items-center">
 					<div>
@@ -104,7 +104,7 @@ const maSchema = {
 						<h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-6 leading-none">
 							Foundation & <span class="text-aac-blue">Concrete Repair</span> in Massachusetts
 						</h1>
-						<p class="text-xl text-zinc-400 mb-8">
+						<p class="text-xl text-zinc-300 mb-8">
 							Expert foundation crack repair and concrete repair from Boston to the Cape. We specialize in crack injection, carbon fiber staples, and bulkhead sealant repair across Massachusetts — plus professional concrete repair for driveways, patios, pool decks, and more. Massachusetts' clay-heavy soils, high water tables, and harsh freeze-thaw cycles demand specialists, not generalists.
 						</p>
 
@@ -287,12 +287,12 @@ const maSchema = {
 					{Object.entries(maRegions).map(([region, cities]) => (
 						<div class="bg-white p-8 rounded-2xl border-2 border-zinc-100">
 							<h3 class="text-xl font-black mb-6 text-aac-dark">{region}</h3>
-							<ul class="space-y-3">
+							<ul class="space-y-1">
 								{cities.map(city => {
 									const hasPage = maLocations.some(loc => loc.data.city === city);
 									return hasPage ? (
 										<li>
-											<a href={`/massachusetts/${city.toLowerCase().replace(/\s+/g, '-')}`} class="flex items-center gap-2 text-aac-blue hover:underline font-medium">
+											<a href={`/massachusetts/${city.toLowerCase().replace(/\s+/g, '-')}`} class="flex items-center gap-2 py-2 text-aac-blue hover:underline font-medium">
 												<Icon name="MapPin" size={14} />
 												{city}
 											</a>
@@ -346,7 +346,7 @@ const maSchema = {
 				<h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-6">
 					Get Your Free <span class="text-aac-yellow">MA Quote</span>
 				</h2>
-				<p class="text-xl text-zinc-400 mb-10">
+				<p class="text-xl text-zinc-300 mb-10">
 					Foundation repair or concrete repair — text us photos for a quick assessment, completely free.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">

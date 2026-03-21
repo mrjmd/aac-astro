@@ -274,7 +274,7 @@ const articleSchema = {
 				<h2 class="text-3xl lg:text-4xl font-black tracking-tighter mb-6">
 					Have Questions About Your Foundation?
 				</h2>
-				<p class="text-lg text-zinc-400 mb-8">
+				<p class="text-lg text-zinc-300 mb-8">
 					Get a free consultation with our experts. We'll assess your situation and give you honest advice—no pressure, just expert guidance.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -300,10 +300,11 @@ const articleSchema = {
 <style>
 	/* Prose table styling */
 	.prose table {
+		display: block;
 		width: 100%;
 		border-collapse: collapse;
 		border-radius: 0.5rem;
-		overflow: hidden;
+		overflow-x: auto;
 	}
 	.prose table th {
 		background-color: var(--color-aac-dark);

@@ -33,7 +33,7 @@ When foundation issues threaten to derail a sale, you need a repair partner who 
 
 ### Proud Affiliations
 
-![Greater Boston Association of Realtors Affiliate Member](/images/gbar-logo.jpeg)
+<img src="/images/gbar-logo.jpeg" alt="Greater Boston Association of Realtors Affiliate Member" width="225" height="225" loading="lazy" />
 
 **GBAR Affiliate Member** — We're proud to be an affiliate member of the Greater Boston Association of Realtors.
 

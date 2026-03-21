@@ -124,7 +124,7 @@ const areaSchema = {
     <section class="py-20 lg:py-32 bg-aac-dark text-white relative overflow-hidden">
       <div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
       <div class="max-w-7xl mx-auto px-6 relative z-10">
-        <Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-400 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-400" />
+        <Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-300 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-300" />
 
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -134,7 +134,7 @@ const areaSchema = {
             <h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-6 leading-none">
               Serving <span class="text-aac-blue">New England</span>
             </h1>
-            <p class="text-xl text-zinc-400 mb-8">
+            <p class="text-xl text-zinc-300 mb-8">
               Family-owned foundation repair with over 50 years of combined experience. We serve Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine with a lifetime guarantee on all repairs.
             </p>
 
@@ -203,10 +203,10 @@ const areaSchema = {
                   {state.description}
                 </p>
                 <div class="flex items-center justify-between">
-                  <a href={`tel:${state.phone}`} class="text-aac-blue font-bold text-sm hover:underline flex items-center gap-2">
+                  <a href={`tel:${state.phone}`} class="text-aac-blue font-bold text-sm hover:underline flex items-center gap-2 py-2">
                     <Icon name="Phone" size={16} /> {state.phone}
                   </a>
-                  <a href={`/${state.slug}`} class="inline-flex items-center gap-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
+                  <a href={`/${state.slug}`} class="inline-flex items-center gap-2 py-2 text-aac-blue font-black uppercase tracking-widest text-[10px] group-hover:gap-4 transition-all">
                     View Cities <Icon name="ArrowRight" size={14} />
                   </a>
                 </div>
@@ -299,7 +299,7 @@ const areaSchema = {
         <h2 class="text-4xl lg:text-6xl font-black tracking-tighter mb-6">
           Free Foundation <span class="text-aac-yellow">Consultation</span>
         </h2>
-        <p class="text-xl text-zinc-400 mb-10 max-w-2xl mx-auto">
+        <p class="text-xl text-zinc-300 mb-10 max-w-2xl mx-auto">
           Not sure what's wrong with your foundation? Text us photos for a free assessment—completely free, no obligation. Most issues can be diagnosed from photos alone.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">

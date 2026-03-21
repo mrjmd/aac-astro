@@ -170,7 +170,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 		<section class="py-16 lg:py-24 bg-aac-dark text-white relative overflow-hidden">
 			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
 			<div class="max-w-7xl mx-auto px-6 relative z-10">
-				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-400 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-400" />
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-zinc-300 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-zinc-300" />
 
 				<div class="grid lg:grid-cols-2 gap-12 items-center">
 					<div>
@@ -180,7 +180,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 						<h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-6 leading-none">
 							{service.data.title}
 						</h1>
-						<p class="text-xl text-zinc-400 mb-8">
+						<p class="text-xl text-zinc-300 mb-8">
 							{service.data.excerpt}
 						</p>
 						<div class="flex flex-wrap gap-4">
@@ -428,7 +428,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 				<h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-6">
 					Ready to Fix Your <span class="text-aac-yellow">Foundation?</span>
 				</h2>
-				<p class="text-xl text-zinc-400 max-w-2xl mx-auto mb-10">
+				<p class="text-xl text-zinc-300 max-w-2xl mx-auto mb-10">
 					Get a free consultation with our experts. We'll assess your foundation and provide an honest quote—no pressure, just honest advice.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -485,10 +485,11 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 <style>
 	/* Prose table styling */
 	.prose table {
+		display: block;
 		width: 100%;
 		border-collapse: collapse;
 		border-radius: 0.5rem;
-		overflow: hidden;
+		overflow-x: auto;
 	}
 	.prose table th {
 		background-color: var(--color-aac-dark);

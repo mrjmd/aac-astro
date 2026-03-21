@@ -58,7 +58,7 @@ const servicesSchema = {
 		<section class="py-20 lg:py-32 bg-aac-blue text-white relative overflow-hidden">
 			<div class="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 translate-x-1/2"></div>
 			<div class="max-w-7xl mx-auto px-6 relative z-10">
-				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-white/80 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-white/60" />
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-white/80 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-white" />
 
 				<div class="grid lg:grid-cols-2 gap-12 items-center">
 					<div>
@@ -94,6 +94,7 @@ const servicesSchema = {
 								class="w-full h-full object-cover"
 								width="800"
 								height="600"
+								loading="lazy"
 							/>
 						</div>
 						<div class="absolute -bottom-6 -left-6 bg-aac-dark p-6 rounded-2xl shadow-xl text-white">
@@ -103,7 +104,7 @@ const servicesSchema = {
 								</div>
 								<div>
 									<p class="text-3xl font-black">6</p>
-									<p class="text-sm text-zinc-400">Surface Types</p>
+									<p class="text-sm text-zinc-300">Surface Types</p>
 								</div>
 							</div>
 						</div>
@@ -274,7 +275,7 @@ const servicesSchema = {
 				<h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-6">
 					Ready to Repair Your <span class="text-aac-yellow">Concrete?</span>
 				</h2>
-				<p class="text-xl text-zinc-400 mb-10">
+				<p class="text-xl text-zinc-300 mb-10">
 					Get a free consultation and quote. We'll assess your concrete and give you an honest recommendation.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">

@@ -165,7 +165,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 		<section class="py-16 lg:py-24 bg-aac-blue text-white relative overflow-hidden">
 			<div class="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 translate-x-1/2"></div>
 			<div class="max-w-7xl mx-auto px-6 relative z-10">
-				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-white/80 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-white/60" />
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-white/80 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-white" />
 
 				<div class="grid lg:grid-cols-2 gap-12 items-center">
 					<div>
@@ -205,6 +205,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 										class="resurfacing-hero-image w-full h-full object-cover transition-opacity duration-500"
 										width="800"
 										height="600"
+										loading="lazy"
 									/>
 									<div class="status-badge absolute top-4 left-4 bg-aac-dark/80 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-lg border border-white/20">
 										Before
@@ -226,6 +227,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 								class="w-full h-full object-cover"
 								width="800"
 								height="600"
+								loading="lazy"
 							/>
 						</div>
 					)}
@@ -387,7 +389,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 				<h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-6">
 					Ready for Your <span class="text-aac-yellow">Free Quote?</span>
 				</h2>
-				<p class="text-xl text-zinc-400 mb-10">
+				<p class="text-xl text-zinc-300 mb-10">
 					Contact us for a free assessment. We'll evaluate your concrete and provide an honest quote.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -400,7 +402,7 @@ const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 						Text Photos
 					</button>
 				</div>
-				<p class="text-zinc-400 mt-8 text-sm">
+				<p class="text-zinc-300 mt-8 text-sm">
 					<Icon name="MapPin" size={14} class="inline mr-1" />
 					Concrete repair available in Massachusetts only
 				</p>

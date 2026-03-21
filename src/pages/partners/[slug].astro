@@ -71,7 +71,7 @@ const schemas = faqSchema ? [pageSchema, faqSchema] : [pageSchema];
 		<section class="py-16 lg:py-24 bg-aac-yellow relative overflow-hidden">
 			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-dark/5 skew-x-12 translate-x-1/2"></div>
 			<div class="max-w-7xl mx-auto px-6 relative z-10">
-				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-aac-dark/60 [&_a:hover]:text-aac-dark [&_span]:text-aac-dark [&_svg]:text-aac-dark/40" />
+				<Breadcrumbs items={breadcrumbItems} class="mb-8 [&_a]:text-aac-dark [&_a:hover]:text-aac-dark [&_span]:text-aac-dark [&_svg]:text-aac-dark/60" />
 
 				<div class="grid lg:grid-cols-2 gap-12 items-center">
 					<div>
@@ -81,7 +81,7 @@ const schemas = faqSchema ? [pageSchema, faqSchema] : [pageSchema];
 						<h1 class="text-4xl lg:text-6xl font-black tracking-tighter mb-6 leading-none text-aac-dark">
 							For {partner.data.title}
 						</h1>
-						<p class="text-xl text-aac-dark/70 mb-8">
+						<p class="text-xl text-aac-dark mb-8">
 							{partner.data.excerpt}
 						</p>
 						<div class="flex flex-wrap gap-4">
@@ -220,7 +220,7 @@ const schemas = faqSchema ? [pageSchema, faqSchema] : [pageSchema];
 				<h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-6">
 					Ready to <span class="text-aac-yellow">Partner?</span>
 				</h2>
-				<p class="text-xl text-zinc-400 mb-10">
+				<p class="text-xl text-zinc-300 mb-10">
 					Join our network of {partner.data.title.toLowerCase()} who trust Attack A Crack for foundation repairs.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -233,7 +233,7 @@ const schemas = faqSchema ? [pageSchema, faqSchema] : [pageSchema];
 						Let's Talk
 					</button>
 				</div>
-				<p class="text-zinc-400 mt-8 text-sm">
+				<p class="text-zinc-300 mt-8 text-sm">
 					<Icon name="MapPin" size={14} class="inline mr-1" />
 					Serving all of New England
 				</p>

@@ -45,11 +45,6 @@
       "permanent": true
     },
     {
-      "source": "/blog",
-      "destination": "/updates",
-      "permanent": true
-    },
-    {
       "source": "/foundation-types",
       "destination": "/blog/category/foundation-types",
       "permanent": true
