@@ -15,6 +15,8 @@ faqs:
     answer: "Foot traffic is typically allowed within 24 hours. Vehicle traffic should wait 3-5 days for full cure, depending on weather conditions."
   - question: "Do you repair asphalt driveways?"
     answer: "No — we work exclusively on concrete driveways. Asphalt (blacktop) requires a different repair process and different materials. If you're unsure whether your driveway is concrete or asphalt, send us a photo and we'll let you know."
+  - question: "Do you repair cement driveways?"
+    answer: "Yes! 'Cement driveway' and 'concrete driveway' refer to the same thing — cement is just one ingredient in concrete, like flour in bread. We repair and resurface concrete driveways throughout Massachusetts."
 steps:
   - name: "Surface Assessment"
     text: "We evaluate every crack, stain, and damaged area on your driveway. We measure crack widths, check for structural settlement, and determine the best repair approach."

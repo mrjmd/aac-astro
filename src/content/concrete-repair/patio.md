@@ -13,6 +13,8 @@ faqs:
     answer: "Our repair systems are designed for New England's freeze-thaw cycles. Proper sealing protects against moisture penetration, and the overlay materials expand and contract with temperature changes."
   - question: "Can you match the color of my existing concrete?"
     answer: "We offer basic color matching to blend with your home's exterior and surrounding hardscape. The result is a clean, uniform surface rather than a patchwork appearance."
+  - question: "Is my patio cement or concrete?"
+    answer: "Your patio is concrete — cement is just one ingredient in concrete, like flour in bread. Many homeowners search for 'cement patio repair,' but the material is concrete. We repair and resurface concrete patios throughout Massachusetts."
 steps:
   - name: "Condition Assessment"
     text: "We inspect the entire patio surface for cracks, spalling, staining, and structural issues. We identify root causes like tree roots or poor drainage before starting repairs."

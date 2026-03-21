@@ -13,6 +13,8 @@ faqs:
     answer: "Yes. Our topcoats are formulated to resist hot tire marks, a common problem with cheaper garage floor systems."
   - question: "Can you work around items in my garage?"
     answer: "We need the floor completely clear for the repair. Most clients temporarily relocate vehicles and items for the day."
+  - question: "Is my garage floor cement or concrete?"
+    answer: "Your garage floor is concrete — cement is just one ingredient in concrete, like flour in bread. Many homeowners say 'cement floor' when they mean concrete. We repair and resurface concrete garage floors throughout Massachusetts."
 steps:
   - name: "Floor Assessment"
     text: "We evaluate cracks, pitting, spalling, and surface damage across the entire garage floor. We check for moisture issues and identify areas where previous patches have failed."

@@ -42,7 +42,7 @@ These must be done before DNS cutover. Nothing else launches the site.
 ### Lighthouse Threshold (Claude)
 
 - [ ] Lighthouse: Performance 90+, Accessibility 95+, SEO 95+
-- [ ] `npm run check:images` passes with 0 placeholder warnings — *currently 8 WebP files over 400KB (non-blocking warnings)*
+- [ ] `npm run check:images` passes with 0 placeholder warnings
 
 ### 301 Redirects — DONE (74 total)
 
@@ -55,6 +55,12 @@ These must be done before DNS cutover. Nothing else launches the site.
 - [x] **WordPress-era redirects** — 24 old URLs from Squarespace redirect config added
 - [ ] **Handle old image URLs** — Squarespace CDN images linked from external sites (low priority, monitor post-launch)
 - [ ] **Test every redirect after DNS cutover** — verify all 74 redirects resolve correctly
+
+### Analytics & Tracking Setup (Matt)
+
+- [ ] **Google Search Console** — Reuse existing GSC property (same domain). Verify new site via DNS TXT record. After DNS cutover: submit new sitemap (`/sitemap-index.xml`), monitor index coverage for old URLs hitting 404.
+- [ ] **Google Analytics 4** — Reuse existing GA4 property. Get Measurement ID (`G-XXXXXXXXXX`) from Admin → Data Streams → set `PUBLIC_GA4_ID` in Vercel project env vars (Production environment). Deploys will automatically include the tracking script.
+- [ ] **Bing Webmaster Tools** — verify at bing.com/webmasters (can auto-import from GSC).
 
 ### DNS Cutover (Matt)
 

@@ -15,6 +15,8 @@ faqs:
     answer: "No. We always apply non-slip additives to stair surfaces. Safety is the top priority, especially on outdoor stairs exposed to rain and snow."
   - question: "Can you repair very damaged concrete stairs?"
     answer: "Yes, in most cases. Our overlay system can address significant damage including cracks, spalling, and surface deterioration. If the structural integrity is compromised, we'll let you know and recommend alternatives."
+  - question: "Do you repair cement stairs and walkways?"
+    answer: "Yes! When homeowners search for 'cement stair repair' or 'cement walkway repair,' they're usually referring to concrete — cement is just one ingredient in concrete, like flour in bread. We repair concrete stairs, walkways, and steps throughout Massachusetts."
 steps:
   - name: "Assessment & Trip Hazard Check"
     text: "We evaluate every crack, lip, and uneven section for trip hazards. Stairways get special attention for tread depth, rise uniformity, and structural integrity."
@@ -33,7 +35,9 @@ relatedServices:
 
 Your walkway and front steps are the first things guests see when they visit your home. When they're cracked, stained, or crumbling, they create trip hazards and drag down your curb appeal. Concrete walkway and stairway repair fills cracks with epoxy resin or polymer-modified materials and gives you a fresh, durable surface — without the cost and disruption of full replacement.
 
-**Concrete vs. cement:** You might search for "cement walkway repair" or "cement step repair" — cement is actually just one ingredient in concrete (like flour in bread). Your walkway and stairs are concrete, and our repair system bonds directly to it.
+### Searching for Cement Stair or Walkway Repair?
+
+You might search for "cement walkway repair" or "cement step repair" — cement is actually just one ingredient in concrete (like flour in bread). Your walkway and stairs are concrete, and our repair system bonds directly to it.
 
 ### The Problem with Old Walkways and Stairs
 
