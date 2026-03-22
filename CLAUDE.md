@@ -59,6 +59,13 @@ All SEO-related issues are hard failures. No warnings. No exceptions.
 - All axe-core violations are errors, including minor/moderate
 - Images must have alt attributes
 
+### Images — ALWAYS Optimize
+
+- **NEVER add an image without running `npm run optimize:images` immediately after.**
+- Source JPGs go in `public/images/blog/` or `public/images/projects/`. The optimize script generates WebP variants (400w, 800w, 1400w).
+- Frontmatter references `.jpg` paths — the `webpSrc()` utility converts to `.webp` at render time. Browsers are always served WebP, never raw JPGs.
+- If you add a new image and forget to optimize, the WebP variants won't exist and the page will serve a broken or unoptimized image.
+
 ## Validation Pipeline
 
 ### Local (before commit)

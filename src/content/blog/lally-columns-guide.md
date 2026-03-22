@@ -3,18 +3,18 @@ title: "Lally Columns: What Every New England Homeowner Should Know"
 metaTitle: "Lally Columns: Replacement Guide"
 metaDescription: "Lally columns support your home's main beam. Learn the signs of failure, when replacement is needed, and why adjustable columns are only a temporary fix."
 excerpt: "Lally columns hold up your house. If they are rusted, leaning, or buckling, your floors and framing are at risk. Here is what every New England homeowner needs to know."
-publishDate: 2026-03-12
+publishDate: 2026-02-14
 author: "Attack A Crack"
 category: "guides"
 tags: ["lally columns", "basement support", "structural repair", "column replacement", "New England homes"]
-heroImage: "/images/projects/weymouth-carbon-fiber-2025-08-before.jpg"
-heroImageAlt: "Basement structural support column in a New England home"
-draft: true
+heroImage: "/images/blog/lally-columns-guide.jpg"
+heroImageAlt: "New England basement with lally columns supporting the main carrying beam, fieldstone walls and concrete floor visible"
+draft: false
 
 relatedServices:
-  - "foundation-crack-injection"
-  - "carbon-fiber-stitches"
   - "free-foundation-consultations"
+  - "foundation-crack-injection"
+  - "wall-crack-repair"
 relatedPosts:
   - "signs-of-foundation-problems"
   - "bowing-basement-walls-causes-repair"
@@ -83,7 +83,7 @@ The entire process typically takes 1 to 2 days per column, depending on footing 
 
 ## Why Adjustable Columns Are Not a Permanent Fix
 
-This is the most common mistake we see: a homeowner or contractor installs an adjustable screw-jack column as a "permanent" replacement. Hardware stores sell them, and they seem like a quick, affordable fix.
+This is one of the most common mistakes in New England basements: a homeowner or contractor installs an adjustable screw-jack column as a "permanent" replacement. Hardware stores sell them, and they seem like a quick, affordable fix.
 
 The problem is that adjustable columns are rated as **temporary supports only**. Most building codes in Massachusetts and Connecticut do not allow them as permanent structural members because:
 
@@ -107,8 +107,14 @@ These costs include engineering, permits, materials, and labor. Compared to the 
 
 ## When to Call a Professional
 
-If you notice any signs of lally column failure, start with a professional assessment. A foundation specialist or structural engineer can evaluate whether the column needs immediate replacement or can be monitored.
+If you notice any signs of lally column failure, start with a professional assessment. A structural engineer can evaluate whether the column needs immediate replacement or can be monitored.
 
 Do not attempt to jack up a sagging beam yourself. Improper jacking can crack the beam, damage the framing above, or cause the column to kick out — all of which turn a manageable repair into a much larger project.
 
-**Text us a photo of your lally columns** for a free assessment. We will tell you honestly whether replacement is needed now or whether monitoring is appropriate. If the issue is related to foundation movement causing column stress, we can address the root cause with [crack injection](/services/foundation-crack-injection) or [carbon fiber reinforcement](/services/carbon-fiber-stitches) before the column problem worsens. [Schedule a free consultation](/services/free-foundation-consultations).
+## A Note from Attack A Crack
+
+**Lally column replacement is not a service we offer.** This guide is provided for educational purposes — we want New England homeowners to understand what is holding up their house and when to take action.
+
+If you need lally column work, we are happy to refer you to a qualified structural contractor. Just [give us a call](/services/free-foundation-consultations) and we will point you in the right direction.
+
+What we *do* specialize in is the foundation work that often accompanies column issues. If your lally columns are failing because of foundation movement, cracking, or settling, that is where we come in. We can address the root cause with [crack injection](/services/foundation-crack-injection), [wall crack repair](/services/wall-crack-repair), or [carbon fiber reinforcement](/services/carbon-fiber-stitches) — so the problem does not come back after your columns are replaced.
