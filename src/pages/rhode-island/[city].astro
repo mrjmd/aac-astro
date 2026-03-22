@@ -38,7 +38,7 @@ const testimonial = location.data.testimonial
 // Get matching projects for this city
 const cityProjects = await getProjectsForLocation(location.data.city, 'RI', 3, location.data.coordinates);
 const cityBlogPosts = await getBlogForLocation(location.data.city, 'RI', 3);
-const heroImage = await getProjectImageForCity(location.data.city, 'RI', location.data.coordinates);
+const heroImage = await getProjectImageForCity(location.data.city, 'RI', location.data.coordinates, location.data.heroImage, location.data.heroImageAlt);
 
 // Get services
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);

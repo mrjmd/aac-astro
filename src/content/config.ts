@@ -138,6 +138,8 @@ const locationsCollection = defineCollection({
       answer: z.string(),
     })).optional(),
     servesResurfacing: z.boolean().default(false), // Only true for MA cities
+    heroImage: z.string().optional(), // Override the auto-assigned hero image
+    heroImageAlt: z.string().optional(),
   }),
 });
 

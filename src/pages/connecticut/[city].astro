@@ -36,7 +36,7 @@ const testimonial = location.data.testimonial
 
 // Get matching projects for this city
 const cityProjects = await getProjectsForLocation(location.data.city, 'CT', 3, location.data.coordinates);
-const heroImage = await getProjectImageForCity(location.data.city, 'CT', location.data.coordinates);
+const heroImage = await getProjectImageForCity(location.data.city, 'CT', location.data.coordinates, location.data.heroImage, location.data.heroImageAlt);
 
 // Get related blog posts for this location
 const cityBlogPosts = await getBlogForLocation(location.data.city, 'CT', 3);

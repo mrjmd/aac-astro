@@ -137,6 +137,12 @@
           "type": "boolean",
           "default": false
         },
+        "heroImage": {
+          "type": "string"
+        },
+        "heroImageAlt": {
+          "type": "string"
+        },
         "$schema": {
           "type": "string"
         }

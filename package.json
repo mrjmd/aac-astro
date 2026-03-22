@@ -16,6 +16,7 @@
     "validate:links": "node scripts/validate-links.js",
     "validate:uniqueness": "node scripts/validate-uniqueness.js",
     "validate:sitemap": "node scripts/validate-sitemap.js",
+    "audit:images": "node scripts/audit-image-diversity.js",
     "validate": "npm run build && npm run validate:schema && npm run check:images && npm run check:seo && npm run check:a11y && npm run validate:links && npm run validate:uniqueness && npm run validate:sitemap",
     "screenshot": "node scripts/screenshot.js",
     "import:calendar": "node scripts/import-calendar-projects.js",
