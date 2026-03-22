@@ -111,13 +111,12 @@ const serviceSchema = {
       "addressLocality": "Amston",
       "addressRegion": "CT",
       "addressCountry": "US"
-    }
+    },
+    "aggregateRating": aggregateRatingSchema,
   },
   "areaServed": stateConfig.map(s => ({ "@type": "State", "name": s.name })),
   "serviceType": "Foundation Repair",
   "termsOfService": "Lifetime Guarantee",
-  // AggregateRating for rich results
-  "aggregateRating": aggregateRatingSchema,
   // LLM-ready properties
   "significantLink": significantLinks,
   "mentions": mentions

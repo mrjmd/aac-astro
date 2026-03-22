@@ -156,6 +156,17 @@ function validateSchema(schema, filePath) {
     errors.push(`${filePath}: AggregateRating missing itemReviewed`);
   }
 
+  // Google only supports aggregateRating on specific types for review snippets.
+  // Using it on unsupported types causes "Invalid object type for field <parent_node>" in GSC.
+  const AGGREGATE_RATING_TYPES = [
+    'LocalBusiness', 'HomeAndConstructionBusiness', 'Product', 'Course',
+    'Book', 'Recipe', 'Event', 'HowTo', 'SoftwareApplication', 'Organization',
+    'CreativeWorkSeason', 'CreativeWorkSeries', 'MediaObject',
+  ];
+  if (schema.aggregateRating && !AGGREGATE_RATING_TYPES.includes(type)) {
+    errors.push(`${filePath}: aggregateRating on "${type}" is not supported by Google for rich results — move it to a supported type (e.g., LocalBusiness)`);
+  }
+
   // Validate LocalBusiness specifics
   if (type === 'LocalBusiness' || type === 'HomeAndConstructionBusiness') {
     if (!schema.telephone) {
