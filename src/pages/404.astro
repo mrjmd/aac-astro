@@ -43,4 +43,15 @@ import { phoneCT, phoneCTHref, phoneMA, phoneMAHref } from '../utils/contact';
       </div>
     </div>
   </section>
+
+  <script>
+    // Track 404 hits in GA4 so we can see exactly which URLs are 404ing
+    if (typeof gtag === 'function') {
+      gtag('event', 'page_not_found', {
+        page_path: window.location.pathname,
+        page_url: window.location.href,
+        referrer: document.referrer || '(direct)',
+      });
+    }
+  </script>
 </Layout>
