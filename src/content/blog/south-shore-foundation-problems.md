@@ -3,13 +3,13 @@ title: "South Shore Foundation Problems: What Makes This Area Different"
 metaTitle: "South Shore Foundation Problems"
 metaDescription: "South Shore MA homes face unique foundation challenges from coastal soil, high water tables, and older housing stock. Learn what to watch for in your area."
 excerpt: "From Quincy to Plymouth, South Shore homes face foundation challenges you will not find inland. Learn why coastal soil, water tables, and housing age matter."
-publishDate: 2026-05-05
+publishDate: 2026-03-23
 author: "Attack A Crack"
 category: "guides"
 tags: ["south shore", "Massachusetts", "coastal foundations", "water table", "foundation repair"]
-heroImage: "/images/projects/marshfield-crack-injection-2025-06-before.jpg"
-heroImageAlt: "South Shore Foundation Problems: What Makes This Area Different"
-draft: true
+heroImage: "/images/blog/south-shore-foundation-problems.jpg"
+heroImageAlt: "Cape Cod style home on the Massachusetts South Shore coastline with visible foundation crack and coastal erosion"
+draft: false
 targetLocation: South Shore MA
 relatedServices:
   - "foundation-crack-injection"
@@ -74,7 +74,9 @@ After decades of work on the South Shore, we have observed patterns that are spe
 
 ### Quincy
 
-As our home base, we know Quincy foundations intimately. The older neighborhoods near Quincy Center and Adams Shore have some of the most challenging conditions: aging housing stock, proximity to the coast, and variable soil. We have a detailed [Quincy-specific guide](/blog/quincy-foundation-repair-coastal) covering these neighborhoods in depth.
+As our home base, we know Quincy foundations intimately. The older neighborhoods near Quincy Center and Adams Shore have some of the most challenging conditions: aging housing stock, proximity to the coast, and variable soil.
+<!-- TODO: When quincy-foundation-repair-coastal is published, add link back:
+We have a detailed [Quincy-specific guide](/blog/quincy-foundation-repair-coastal) covering these neighborhoods in depth. -->
 
 ### Braintree and Weymouth
 
@@ -98,7 +100,9 @@ Given the specific conditions on the South Shore, here is what to pay attention 
 
 **After rain or snowmelt,** check your basement for new moisture, damp spots, or active seepage. If you notice water in your basement after rain, the timing and location of water appearance tells us a lot about the source. A musty smell in your basement is another early warning sign, even without visible water.
 
-**Each spring,** walk the exterior of your foundation and look for new cracks, spalling concrete, or changes in grading. Winter freeze-thaw is when most new damage occurs, and spring is when you will first see it. Our [spring inspection walkthrough](/blog/spring-foundation-inspection-walkthrough) covers exactly what to look for.
+**Each spring,** walk the exterior of your foundation and look for new cracks, spalling concrete, or changes in grading. Winter freeze-thaw is when most new damage occurs, and spring is when you will first see it.
+<!-- TODO: When spring-foundation-inspection-walkthrough is published, add link back:
+Our [spring inspection walkthrough](/blog/spring-foundation-inspection-walkthrough) covers exactly what to look for. -->
 
 **Watch your basement humidity** with a digital hygrometer, especially from April through September. If humidity consistently exceeds 60%, moisture is entering from somewhere.
 
@@ -110,7 +114,7 @@ Most South Shore foundation problems fall into the fixable category. [Foundation
 
 ### When NOT to Panic About South Shore Cracks
 
-Not every crack on the South Shore is an emergency. Hairline vertical cracks in poured concrete are normal shrinkage — they happen in every foundation. If the crack is stable, not leaking, and not wider than 1/16 inch, monitoring it quarterly is a reasonable approach. The cracks that warrant prompt attention are horizontal cracks (indicating lateral soil pressure), cracks that are widening, or any crack admitting water in a high-water-table area.
+Not every crack on the South Shore is an emergency. Hairline vertical cracks in poured concrete are normal shrinkage — they happen in every foundation. If the crack is stable, not leaking, and not wider than 1/16 inch, monitoring it quarterly is a reasonable approach. The cracks that warrant prompt attention are horizontal cracks (indicating lateral soil pressure), cracks that are widening, or any crack admitting water.
 
 The key is not to wait. South Shore conditions are not getting milder, the housing stock is not getting younger, and small problems left alone tend to become larger problems. A [free consultation](/services/free-foundation-consultations) from a team that knows your specific area is the smartest first step.
 

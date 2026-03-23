@@ -87,7 +87,7 @@ The right repair depends on severity. Here's what we use at Attack A Crack, star
 
 ### Carbon Fiber Straps for Wall Stabilization
 
-For walls with mild to moderate displacement, [carbon fiber straps](/services/carbon-fiber-stitches) are the gold standard. Here's why:
+For walls with mild to moderate displacement, carbon fiber straps are the gold standard. Here's why:
 
 - **Stronger than steel**: Carbon fiber has a tensile strength 10 times greater than steel
 - **Low profile**: Straps bond directly to the wall surface, so they don't take up basement space
