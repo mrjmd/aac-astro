@@ -123,12 +123,27 @@ const articleSchema = {
   "significantLink": significantLinks,
   "mentions": mentions
 };
+
+// FAQ schema (if FAQs exist in frontmatter)
+const faqSchema = post.data.faqs && post.data.faqs.length > 0 ? {
+  "@type": "FAQPage",
+  "mainEntity": post.data.faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+} : null;
+
+const schemas = [articleSchema, faqSchema].filter(Boolean);
 ---
 
 <Layout
   title={post.data.metaTitle || post.data.title}
   description={post.data.metaDescription}
-  customSchema={articleSchema}
+  customSchema={schemas}
   breadcrumbItems={breadcrumbItems}
   city={post.data.city}
   state={post.data.state}

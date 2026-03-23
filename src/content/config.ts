@@ -93,6 +93,10 @@ const blogCollection = defineCollection({
     relatedServices: z.array(z.string()).optional(),
     featured: z.boolean().default(false),
     draft: z.boolean().default(false),
+    faqs: z.array(z.object({
+      question: z.string(),
+      answer: z.string(),
+    })).optional(),
     // Pinnacle SEO B12: Optional geo-tags for blog posts
     city: z.string().optional(),
     state: z.enum(['CT', 'MA', 'RI', 'NH', 'ME']).optional(),

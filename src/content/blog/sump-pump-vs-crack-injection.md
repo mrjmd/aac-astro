@@ -3,17 +3,28 @@ title: "Sump Pump vs. Crack Injection: Which Fix Do You Actually Need?"
 metaTitle: "Sump Pump vs Crack Injection Guide"
 metaDescription: "Sump pump or crack injection? Learn which solution actually fixes your wet basement problem and when you need both. Honest comparison from experts."
 excerpt: "A sump pump and crack injection solve completely different problems. Here is how to figure out which one you actually need — and when the answer is both."
-publishDate: 2026-05-12
+publishDate: 2026-03-22
 author: "Attack A Crack"
 category: "guides"
 tags: ["sump pump", "crack injection", "wet basement", "waterproofing", "comparison"]
-heroImage: "/images/projects/marshfield-crack-injection-2025-08-before.jpg"
-heroImageAlt: "Sump Pump vs. Crack Injection: Which Fix Do You Actually Need?"
-draft: true
+heroImage: "/images/blog/sump-pump-vs-crack-injection.jpg"
+heroImageAlt: "Side-by-side comparison of a sump pump in a basement pit and crack injection ports along a foundation wall crack"
+draft: false
 
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
+faqs:
+  - question: "Can you (or a professional) identify a specific crack where water enters?"
+    answer: "If yes, start with crack injection. It is the targeted, cost-effective fix at $800-$1,200 per crack with a lifetime warranty."
+  - question: "Does water appear across the floor or at the floor-wall joint generally?"
+    answer: "If yes, a sump pump or interior drainage system may be necessary. This indicates water is entering from below rather than through a specific wall crack."
+  - question: "Does water appear only after heavy rain or snowmelt?"
+    answer: "This usually points to a specific entry point — a wall crack or joint — that crack injection can seal permanently."
+  - question: "Does water appear even during dry periods?"
+    answer: "This suggests a high water table or groundwater issue that requires a sump pump-based solution to manage ongoing water."
+  - question: "Does your basement smell damp but you never see standing water?"
+    answer: "This could be vapor transmission through concrete, which neither injection nor a sump pump solves. A dehumidifier and moisture management approach may be more appropriate."
 ---
 
 ## The Question We Hear Every Week
@@ -33,7 +44,7 @@ The result: water hits the outside of your foundation wall, encounters a sealed 
 ### When Crack Injection Is the Right Answer
 
 - Water appears at a specific, identifiable crack in the wall
-- Moisture staining or efflorescence follows a visible crack line
+- Moisture staining or [efflorescence](/blog/efflorescence-white-powder-basement-walls) follows a visible crack line
 - Water entry correlates with rain events or snowmelt
 - The leak can be traced to one or a few specific locations
 - The foundation is poured concrete (the most common scenario in New England)
@@ -70,7 +81,8 @@ Why does this happen? A few reasons:
 
 **Conservative approach.** There is a defensible argument that a comprehensive system is more thorough. And sometimes that is genuinely true. But "more thorough" should not mean spending ten times more when the problem is localized.
 
-We have written about a similar comparison in our [French drain vs. crack injection guide](/blog/french-drain-vs-crack-injection), which covers the indoor drainage system question in more detail.
+<!-- TODO: When french-drain-vs-crack-injection is published, add link back here:
+We have written about a similar comparison in our [French drain vs. crack injection guide](/blog/french-drain-vs-crack-injection), which covers the indoor drainage system question in more detail. -->
 
 ## When You Need Both
 
@@ -108,13 +120,13 @@ That last point is worth emphasizing. We turn away work that is not right for us
 
 ## When NOT to Get a Sump Pump
 
-Do not let a contractor sell you a sump pump system if your only problem is water in your basement after rain at a specific, identifiable crack. That is a crack injection problem, not a pump problem. Similarly, if you see white powder on basement walls (efflorescence) along a crack line, the solution is sealing the crack — not managing the water after it enters.
+Do not let a contractor sell you a sump pump system if your only problem is water in your basement after rain at a specific, identifiable crack. That is a crack injection problem, not a pump problem. Similarly, if you see [white powder on basement walls (efflorescence)](/blog/efflorescence-white-powder-basement-walls) along a crack line, the solution is sealing the crack — not managing the water after it enters.
 
 ## The Decision Framework
 
 Ask yourself these questions:
 
-**Can you identify a specific crack where water enters?** If yes, start with crack injection. It is the targeted, cost-effective fix.
+**Can you (or a professional) identify a specific crack where water enters?** If yes, start with crack injection. It is the targeted, cost-effective fix.
 
 **Does water appear across the floor or at the floor-wall joint generally?** If yes, a sump pump or drainage system may be necessary.
 
