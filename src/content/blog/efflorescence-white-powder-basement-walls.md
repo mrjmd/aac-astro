@@ -3,13 +3,13 @@ title: "White Powder on Basement Walls: What Efflorescence Means for Your Founda
 metaTitle: "Efflorescence on Basement Walls"
 metaDescription: "White powder or crystalline deposits on your basement walls is efflorescence — a sign of moisture moving through concrete. Learn what it means and what to do."
 excerpt: "That white, chalky substance on your basement walls has a name: efflorescence. It is not mold, but it is telling you something important about your foundation."
-publishDate: 2026-07-07
+publishDate: 2026-03-10
 author: "Attack A Crack"
 category: "guides"
 tags: ["efflorescence", "white powder", "basement walls", "moisture", "foundation"]
-heroImage: "/images/projects/fall-river-crack-injection-2025-05-before.jpg"
-heroImageAlt: "White Powder on Basement Walls: What Efflorescence Means for Your Foundation"
-draft: true
+heroImage: "/images/blog/efflorescence-white-powder-basement-walls.jpg"
+heroImageAlt: "Basement wall showing white chalky efflorescence deposits along a vertical crack and streaking down from a window"
+draft: false
 
 relatedServices:
   - "foundation-crack-injection"
