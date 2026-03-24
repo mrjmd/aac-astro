@@ -6,6 +6,7 @@ import Footer from '../components/Footer.astro';
 import LocationModal from '../components/LocationModal.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import Icon from '../components/Icon.astro';
+import TrustBar from '../components/TrustBar.astro';
 import TestimonialCard from '../components/TestimonialCard.astro';
 import { reviewCount } from '../utils/reviews';
 import { phoneCT, phoneCTHref, phoneMA, phoneMAHref } from '../utils/contact';
@@ -104,6 +105,8 @@ const aboutSchema = {
 				</div>
 			</div>
 		</section>
+
+		<TrustBar pathname={Astro.url.pathname} />
 
 		<!-- Our Story Section -->
 		<section class="py-24 bg-white">
@@ -259,7 +262,7 @@ const aboutSchema = {
 					</p>
 				</div>
 
-				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+				<div class="grid md:grid-cols-3 gap-8">
 					<div class="bg-white p-6 rounded-2xl border-2 border-zinc-100 text-center">
 						<div class="w-16 h-16 bg-aac-blue/5 text-aac-blue rounded-2xl flex items-center justify-center mx-auto mb-4">
 							<Icon name="GraduationCap" size={32} />
@@ -267,14 +270,6 @@ const aboutSchema = {
 						<p class="text-3xl font-black text-aac-dark mb-1">50+</p>
 						<h3 class="font-black text-lg mb-2">Combined Years Experience</h3>
 						<p class="text-sm text-zinc-600">Our team brings over 50 combined years of hands-on foundation repair experience across New England.</p>
-					</div>
-					<div class="bg-white p-6 rounded-2xl border-2 border-zinc-100 text-center">
-						<div class="w-16 h-16 bg-aac-blue/5 text-aac-blue rounded-2xl flex items-center justify-center mx-auto mb-4">
-							<Icon name="Briefcase" size={32} />
-						</div>
-						<p class="text-3xl font-black text-aac-dark mb-1">HIC</p>
-						<h3 class="font-black text-lg mb-2">Licensed & Certified</h3>
-						<p class="text-sm text-zinc-600">CT HIC #0629164. MA HIC #214356. <a href="https://www.bbb.org/us/ct/north-windham/profile/concrete-repair/attack-a-crack-0111-74000203" target="_blank" rel="noopener noreferrer" class="text-aac-blue hover:underline">BBB A+ Accredited</a>. Fully insured across all five New England states.</p>
 					</div>
 					<div class="bg-white p-6 rounded-2xl border-2 border-zinc-100 text-center">
 						<div class="w-16 h-16 bg-aac-blue/5 text-aac-blue rounded-2xl flex items-center justify-center mx-auto mb-4">
