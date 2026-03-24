@@ -235,6 +235,82 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 			</section>
 		)}
 
+		<!-- Services in This City -->
+		<section class="py-8 lg:py-16 bg-zinc-50">
+			<div class="max-w-7xl mx-auto px-6">
+				<h2 class="text-3xl font-black tracking-tighter text-aac-dark mb-6 lg:mb-8 text-center">
+					Services in {location.data.city}
+				</h2>
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+					{services.map((service) => (
+						<a href={`/services/${service.id.replace(/\.md$/, '')}`} class="group bg-white p-5 lg:p-6 rounded-xl border-2 border-zinc-100 hover:border-aac-blue transition-all flex items-start gap-4">
+							<div class="w-10 h-10 lg:w-12 lg:h-12 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center shrink-0 group-hover:bg-aac-blue group-hover:text-white transition-colors">
+								<Icon name={service.data.icon} size={24} />
+							</div>
+							<div>
+								<h3 class="font-black group-hover:text-aac-blue transition-colors">
+									{service.data.title}
+								</h3>
+								<p class="text-sm text-zinc-500 mt-1 line-clamp-2">
+									{service.data.excerpt}
+								</p>
+							</div>
+						</a>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<!-- Pricing Section -->
+		<section class="py-8 lg:py-16 bg-white">
+			<div class="max-w-4xl mx-auto px-6">
+				<h2 class="text-3xl font-black tracking-tighter text-aac-dark mb-6 lg:mb-8 text-center">
+					{location.data.city} Foundation Repair Costs
+				</h2>
+				<div class="grid sm:grid-cols-2 gap-4">
+					<div class="p-5 lg:p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
+						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
+							<Icon name="Hammer" size={20} />
+						</div>
+						<div>
+							<p class="font-black text-aac-dark">Crack Repair</p>
+							<p class="text-aac-blue font-bold">{crackRepairRange} per crack</p>
+						</div>
+					</div>
+					<div class="p-5 lg:p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
+						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
+							<Icon name="Droplets" size={20} />
+						</div>
+						<div>
+							<p class="font-black text-aac-dark">Bulkhead Repair</p>
+							<p class="text-aac-blue font-bold">{bulkheadRange}</p>
+						</div>
+					</div>
+					<div class="p-5 lg:p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
+						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
+							<Icon name="ShieldCheck" size={20} />
+						</div>
+						<div>
+							<p class="font-black text-aac-dark">Carbon Fiber Stitches</p>
+							<p class="text-aac-blue font-bold">{carbonFiberRange} per stitch</p>
+						</div>
+					</div>
+					<div class="p-5 lg:p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
+						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
+							<Icon name="Wrench" size={20} />
+						</div>
+						<div>
+							<p class="font-black text-aac-dark">Pipe/Conduit Sealing</p>
+							<p class="text-aac-blue font-bold">{sewerConduitRange}</p>
+						</div>
+					</div>
+				</div>
+				<p class="text-center text-sm text-zinc-500 mt-6">
+					All prices are estimates. <a href="/services/free-foundation-consultations" class="text-aac-blue font-bold hover:underline">Get a free quote</a> for your specific situation.
+				</p>
+			</div>
+		</section>
+
 		<!-- City Info Section -->
 		{(location.data.neighborhoods || location.data.commonFoundationTypes) && (
 			<section class="py-8 lg:py-16 bg-zinc-50">
@@ -328,82 +404,6 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 						</p>
 					</Fragment>
 				</article>
-			</div>
-		</section>
-
-		<!-- Services in This City -->
-		<section class="py-16 bg-zinc-50">
-			<div class="max-w-7xl mx-auto px-6">
-				<h2 class="text-3xl font-black tracking-tighter text-aac-dark mb-8 text-center">
-					Services in {location.data.city}
-				</h2>
-				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-					{services.map((service) => (
-						<a href={`/services/${service.id.replace(/\.md$/, '')}`} class="group bg-white p-6 rounded-xl border-2 border-zinc-100 hover:border-aac-blue transition-all flex items-start gap-4">
-							<div class="w-12 h-12 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center shrink-0 group-hover:bg-aac-blue group-hover:text-white transition-colors">
-								<Icon name={service.data.icon} size={24} />
-							</div>
-							<div>
-								<h3 class="font-black group-hover:text-aac-blue transition-colors">
-									{service.data.title}
-								</h3>
-								<p class="text-sm text-zinc-500 mt-1 line-clamp-2">
-									{service.data.excerpt}
-								</p>
-							</div>
-						</a>
-					))}
-				</div>
-			</div>
-		</section>
-
-		<!-- Pricing Section -->
-		<section class="py-16 bg-white">
-			<div class="max-w-4xl mx-auto px-6">
-				<h2 class="text-3xl font-black tracking-tighter text-aac-dark mb-8 text-center">
-					{location.data.city} Foundation Repair Costs
-				</h2>
-				<div class="grid sm:grid-cols-2 gap-4">
-					<div class="p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
-						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
-							<Icon name="Hammer" size={20} />
-						</div>
-						<div>
-							<p class="font-black text-aac-dark">Crack Repair</p>
-							<p class="text-aac-blue font-bold">{crackRepairRange} per crack</p>
-						</div>
-					</div>
-					<div class="p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
-						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
-							<Icon name="Droplets" size={20} />
-						</div>
-						<div>
-							<p class="font-black text-aac-dark">Bulkhead Repair</p>
-							<p class="text-aac-blue font-bold">{bulkheadRange}</p>
-						</div>
-					</div>
-					<div class="p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
-						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
-							<Icon name="ShieldCheck" size={20} />
-						</div>
-						<div>
-							<p class="font-black text-aac-dark">Carbon Fiber Stitches</p>
-							<p class="text-aac-blue font-bold">{carbonFiberRange} per stitch</p>
-						</div>
-					</div>
-					<div class="p-6 rounded-xl border-2 border-zinc-100 flex items-center gap-4">
-						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-lg flex items-center justify-center shrink-0">
-							<Icon name="Wrench" size={20} />
-						</div>
-						<div>
-							<p class="font-black text-aac-dark">Pipe/Conduit Sealing</p>
-							<p class="text-aac-blue font-bold">{sewerConduitRange}</p>
-						</div>
-					</div>
-				</div>
-				<p class="text-center text-sm text-zinc-500 mt-6">
-					All prices are estimates. <a href="/services/free-foundation-consultations" class="text-aac-blue font-bold hover:underline">Get a free quote</a> for your specific situation.
-				</p>
 			</div>
 		</section>
 
