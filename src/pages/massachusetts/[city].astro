@@ -154,10 +154,10 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 
 	<main class="pt-20 lg:pt-24">
 		<!-- Hero Section -->
-		<section class="py-16 lg:py-24 bg-aac-dark text-white relative overflow-hidden">
+		<section class="py-10 lg:py-24 bg-aac-dark text-white relative overflow-hidden">
 			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
 			<div class="max-w-7xl mx-auto px-6 relative z-10">
-				<Breadcrumbs items={breadcrumbItems} class="mb-8" variant="dark" />
+				<Breadcrumbs items={breadcrumbItems} class="mb-4 lg:mb-8" variant="dark" />
 
 				<div class="grid lg:grid-cols-2 gap-12 items-center">
 					<div>
@@ -191,14 +191,15 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 							)}
 						</div>
 
-						<div class="flex flex-wrap gap-4">
-							<a href={`tel:${location.data.phoneNumber || phoneMA}`} class="bg-aac-yellow text-aac-dark px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+						<div class="flex gap-3">
+							<a href={`tel:${location.data.phoneNumber || phoneMA}`} class="flex-1 sm:flex-none bg-aac-yellow text-aac-dark px-5 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2">
 								<Icon name="Phone" size={16} />
-								Call {location.data.phoneNumber || phoneMA}
+								<span class="hidden sm:inline">Call {location.data.phoneNumber || phoneMA}</span>
+								<span class="sm:hidden">Call Now</span>
 							</a>
-							<a href={`sms:${location.data.phoneNumber || phoneMA}`} class="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
+							<a href={`sms:${location.data.phoneNumber || phoneMA}`} class="flex-1 sm:flex-none bg-white/10 backdrop-blur-sm text-white px-5 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center justify-center gap-2">
 								<Icon name="MessageSquare" size={16} />
-								Text Us Photos
+								Text Photos
 							</a>
 						</div>
 					</div>
@@ -245,9 +246,9 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 
 		<!-- City Info Section -->
 		{(location.data.neighborhoods || location.data.commonFoundationTypes) && (
-			<section class="py-16 bg-zinc-50">
+			<section class="py-8 lg:py-16 bg-zinc-50">
 				<div class="max-w-7xl mx-auto px-6">
-					<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
 						{location.data.neighborhoods && location.data.neighborhoods.length > 0 && (
 							<div class="bg-white p-8 rounded-2xl border-2 border-zinc-100">
 								<p class="font-black text-lg mb-4 flex items-center gap-2">
@@ -304,7 +305,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 		)}
 
 		<!-- Main Content -->
-		<section class="py-16 bg-white">
+		<section class="py-8 lg:py-16 bg-white">
 			<div class="max-w-4xl mx-auto px-6">
 				<article class="prose prose-lg prose-zinc max-w-none prose-headings:font-black prose-headings:tracking-tight prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-p:leading-relaxed prose-a:text-aac-blue prose-a:font-bold prose-a:no-underline hover:prose-a:underline prose-strong:text-aac-dark">
 					<Content />
