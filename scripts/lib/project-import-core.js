@@ -91,6 +91,9 @@ export const EXCLUDE_COLOR_IDS = ['5', '3'];
 export const SCOPES = [
   'https://www.googleapis.com/auth/calendar.readonly',
   'https://www.googleapis.com/auth/drive.readonly',
+  'https://www.googleapis.com/auth/adwords',
+  'https://www.googleapis.com/auth/analytics.readonly',
+  'https://www.googleapis.com/auth/webmasters.readonly',
 ];
 
 export const SERVICE_LABELS = {
