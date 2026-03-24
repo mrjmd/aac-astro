@@ -26,6 +26,12 @@ Which one should you choose? And does the warranty actually mean anything?
 
 After 50+ combined years of standing behind our own work across New England, we have opinions. Strong ones. And since we are not exactly unbiased — we offer a lifetime warranty on all our repairs — we will try to present this as fairly as possible while also being honest about what we have seen in the industry.
 
+<div style="display:flex;justify-content:center;margin:2rem 0">
+<div style="aspect-ratio:9/16;max-height:500px;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
+<iframe src="https://www.youtube.com/embed/eg_jMeHCRIs" title="Attack A Crack lifetime guarantee" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:108%;height:108%;margin-top:-4%;margin-left:-4%"></iframe>
+</div>
+</div>
+
 ## Why Warranties Matter More for Foundation Repair
 
 Foundation repair is different from most home improvements. A kitchen remodel either looks right or it does not — you know immediately. But foundation repair has a delayed feedback loop. A crack injection might look perfect on day one and fail during the spring thaw three years later. A wall stabilization might hold for a year and then shift when the next record rainstorm hits.
@@ -35,6 +41,12 @@ You need a warranty that outlasts the testing period, and for foundations in New
 ## Types of Foundation Repair Warranties
 
 ### Lifetime Warranty
+
+<div style="display:flex;justify-content:center;margin:2rem 0">
+<div style="aspect-ratio:9/16;max-height:500px;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
+<iframe src="https://www.youtube.com/embed/eqAU6S5WEl8" title="Lifetime guarantee means lifetime — the home, not the homeowner" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:108%;height:108%;margin-top:-4%;margin-left:-4%"></iframe>
+</div>
+</div>
 
 **What it means:** The repair is covered for as long as you own the home, and often transfers to the next owner.
 

@@ -37,6 +37,12 @@ The fastest way to get expert eyes on your foundation is to **text us photos**. 
 
 Most foundation issues can be accurately diagnosed from good photos alone. No scheduling, no waiting around for someone to show up, no awkward sales pitch in your basement.
 
+<div style="display:flex;justify-content:center;margin:2rem 0">
+<div style="aspect-ratio:9/16;max-height:500px;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
+<iframe src="https://www.youtube.com/embed/rLga9lmq_HQ" title="Attack A Crack gets you quotes quickly from photos you text us" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:108%;height:108%;margin-top:-4%;margin-left:-4%"></iframe>
+</div>
+</div>
+
 ### What Makes Our Consultations Different
 
 **Talk to an Expert**

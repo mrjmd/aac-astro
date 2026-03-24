@@ -49,6 +49,12 @@ But we understand you need ballpark numbers to plan and budget. So here's an hon
 | Hydraulic cement (DIY) | $10 - $30 | Temporary surface patching only — [does not seal the full crack](/blog/flex-seal-basement-cracks/) | 30 min | None |
 | Exterior excavation | $5,000 - $15,000+ | Severe structural damage requiring access to the outside of the wall | 3-5 days | Varies |
 
+<div style="display:flex;justify-content:center;margin:2rem 0">
+<div style="aspect-ratio:9/16;max-height:500px;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
+<iframe src="https://www.youtube.com/embed/JofSoPnh97k" title="Surprisingly affordable foundation repairs — Attack A Crack" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:108%;height:108%;margin-top:-4%;margin-left:-4%"></iframe>
+</div>
+</div>
+
 ## What Affects Foundation Repair Costs
 
 ### 1. Type of Repair Needed

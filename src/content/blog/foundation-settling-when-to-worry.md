@@ -24,6 +24,12 @@ heroImageAlt: "Gap between baseboard and floor showing foundation settling"
 
 But here's what I've learned in decades of foundation repair across Connecticut and Massachusetts: **"settling" is also the excuse that lets small problems become expensive ones.** The trick is knowing the difference.
 
+<div style="display:flex;justify-content:center;margin:2rem 0">
+<div style="aspect-ratio:9/16;max-height:500px;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
+<iframe src="https://www.youtube.com/embed/n8-oq3Y95yc" title="Why most foundation issues are not a huge deal — Attack A Crack" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:108%;height:108%;margin-top:-4%;margin-left:-4%"></iframe>
+</div>
+</div>
+
 ## What Is Normal Foundation Settling?
 
 When a home is built, it sits on soil that was either undisturbed or compacted during construction. Over time, the weight of the structure compresses the soil beneath it. This is settling — and it's completely expected.

@@ -10,6 +10,15 @@ heroImage: "/images/resources/what-we-dont-do-hero.jpg"
 
 At Attack A Crack, we're specialists—not generalists. We do specific things extremely well, but we don't try to do everything. When your project falls outside our expertise, we'll tell you honestly and point you toward the right solution.
 
+<div style="display:flex;justify-content:center;gap:1rem;margin:2rem 0;flex-wrap:wrap">
+<div style="aspect-ratio:9/16;max-height:400px;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
+<iframe src="https://www.youtube.com/embed/chZSnf8BRtQ" title="Attack A Crack does specialized repairs only" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:108%;height:108%;margin-top:-4%;margin-left:-4%"></iframe>
+</div>
+<div style="aspect-ratio:9/16;max-height:400px;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
+<iframe src="https://www.youtube.com/embed/feVgG35bBwY" title="We will never upsell you — Attack A Crack" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:108%;height:108%;margin-top:-4%;margin-left:-4%"></iframe>
+</div>
+</div>
+
 ### What We Do
 
 **Foundation Repair (CT, MA & New England)**
