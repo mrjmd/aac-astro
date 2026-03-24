@@ -16,7 +16,8 @@ export const authors: Record<string, Author> = {
     image: "https://www.attackacrack.com/images/team/luc.webp",
     sameAs: [
       "https://www.facebook.com/attackacrack",
-      // Add LinkedIn or other profile if available
+      "https://www.instagram.com/attackacrack/",
+      "https://www.linkedin.com/company/attack-a-crack",
     ],
     knowsAbout: [
       "Foundation Repair",
