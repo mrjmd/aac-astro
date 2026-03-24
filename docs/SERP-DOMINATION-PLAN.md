@@ -109,7 +109,7 @@ All content referenced below is already published. This is about ranking higher,
 | concrete foundation crack repair | 2 | 10 | Epoxy injection page | Hold/defend — minimal intervention needed |
 
 - [x] Audit internal links pointing to quick-win pages — 10 links added across 8 blog posts (March 24)
-- [ ] Run Frase-style semantic audit on bulkhead page (see SEO-STRATEGY-2026.md Part 20)
+- [x] Frase-style semantic audit completed on bulkhead page against 9 competitor pages (CrackX, Drycrete, A-1, Hunker, BasementSupply, Done Right, LaPan, TrueFix) (March 24). Added: bulkhead types (precast/CMU/poured/steel), door vs. joint vs. flashing leak distinction, DIY product names (DAP/Quikrete/Flex Seal/Drylok), consequences section (mold/IAQ/pests/property value/radon/energy), drainage/maintenance section, 2 new FAQs, "cellar door" synonym in meta desc. Page grew from ~1,800 to ~2,500 words.
 - [x] Quick-win pages confirmed: all have `FAQPage` + `HowTo` schema (March 24 audit)
 
 ### Page 2 Targets — Positions 11-20 (Push to Page 1)
