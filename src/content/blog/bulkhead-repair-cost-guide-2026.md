@@ -24,12 +24,12 @@ Here's an honest breakdown of bulkhead repair costs in Connecticut and Massachus
 
 ## Quick Cost Summary
 
-| Repair Method | Typical Cost | Lifespan |
-|--------------|-------------|----------|
-| Injection sealing (our method) | $1,800 - $2,500 | Lifetime (guaranteed) |
-| Full bulkhead replacement | $5,000 - $10,000+ | 15-25 years |
-| DIY caulk/cement repair | $50 - $200 | 6-18 months |
-| Door-only replacement | $1,500 - $3,000 | 15-20 years |
+| Repair Method | Typical Cost | Best For | Time | Lifespan |
+|--------------|-------------|----------|------|----------|
+| [Injection sealing](/services/leaky-bulkhead-repair) (our method) | $1,800 - $2,500 | Joint leaks — the most common cause of bulkhead water | Half day | Lifetime (guaranteed) |
+| Full bulkhead replacement | $5,000 - $10,000+ | Crumbling concrete stairwell or rusted-through frame | 2-4 days | 15-25 years |
+| DIY caulk/cement repair | $50 - $200 | Temporary surface patch — [won't seal hidden voids](/blog/bulkhead-sealant-vs-gaskets/) | 1 hour | 6-18 months |
+| Door-only replacement | $1,500 - $3,000 | Rusted, dented, or non-closing doors (doesn't fix joint leaks) | 1 day | 15-20 years |
 
 ## Understanding Your Bulkhead Problem
 
