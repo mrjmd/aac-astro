@@ -18,6 +18,9 @@
  *   node scripts/google-ads-keywords.js --add-broad \
  *     --campaign "Leads-Search-3" \
  *     [--execute]                                                  # add broader keywords to all city ad groups
+ *   node scripts/google-ads-keywords.js --update-rsa \
+ *     --campaign "Leads-Search-3" \
+ *     [--execute]                                                  # update RSAs with improved headlines
  *   node scripts/google-ads-keywords.js --account MA              # target account (default: MA)
  */
 
@@ -37,6 +40,7 @@ const LIST_AD_GROUPS = args.includes('--list-ad-groups');
 const ADD = args.includes('--add');
 const CREATE_CITY_GROUPS = args.includes('--create-city-groups');
 const ADD_BROAD = args.includes('--add-broad');
+const UPDATE_RSA = args.includes('--update-rsa');
 const DRY_RUN = args.includes('--dry-run');
 const EXECUTE = args.includes('--execute');
 
@@ -192,35 +196,81 @@ function generateCityKeywords(baseKeywords, city) {
 
 // ===== GENERATE RSA HEADLINES & DESCRIPTIONS =====
 
+// Pick the first option that fits within maxLen chars
+function pickHeadline(options, maxLen = 30) {
+  for (const opt of options) {
+    if (opt.length <= maxLen) return opt;
+  }
+  return null; // all too long — shouldn't happen with good fallbacks
+}
+
 function generateRSA(city, baseKeywords) {
   const { city: cityName, stateAbbr } = city;
-  const primaryService = baseKeywords[0] || 'Foundation Repair';
-  // Capitalize first letter of each word
-  const titleCase = (s) => s.replace(/\b\w/g, c => c.toUpperCase());
 
-  // Headlines (max 30 chars each, provide 10-15 for RSA optimization)
+  // Build 15 headlines with fallbacks for long city names (30 char max)
   const headlines = [
-    `${titleCase(primaryService)} ${cityName}`,
-    `${cityName} ${stateAbbr} ${titleCase(primaryService)}`,
-    `${cityName} Foundation Experts`,
+    // 1. Primary service + city (pinned to headline 1)
+    pickHeadline([
+      `Foundation Repair ${cityName}`,
+      `Foundation Repair ${stateAbbr}`,
+    ]),
+    // 2. City + state + service variant
+    pickHeadline([
+      `${cityName} ${stateAbbr} Foundation Repair`,
+      `${cityName} ${stateAbbr} Crack Repair`,
+      `${cityName} Foundation Repair`,
+    ]),
+    // 3. Dynamic keyword insertion
+    '{Keyword:Foundation Repair}',
+    // 4. Service variant + city
+    pickHeadline([
+      `Basement Crack Repair ${cityName}`,
+      `Crack Repair ${cityName} ${stateAbbr}`,
+      `Basement Repair ${cityName}`,
+    ]),
+    // 5. Authority
+    pickHeadline([
+      `${cityName} Foundation Experts`,
+      `${cityName} Repair Experts`,
+    ]),
+    // 6. CTA
     'Free Estimate - Call Now',
+    // 7. Trust
     'Lifetime Guarantee',
+    // 8. Social proof
     '260+ 5-Star Reviews',
+    // 9. Credibility
     '20+ Years Experience',
+    // 10. Urgency
     'Same-Day Estimates Available',
-    `${cityName} Crack Repair`,
-    'Never An Upsell',
-    `Serving ${cityName} ${stateAbbr}`,
-    'Call For Free Consultation',
-  ].filter(h => h.length <= 30).slice(0, 15);
+    // 11. "Near me" variant (matches broad keywords)
+    'Foundation Repair Near Me',
+    // 12. Service variant (matches broad keyword)
+    'Basement Waterproofing',
+    // 13. Differentiator vs corporate competitors
+    'Family Owned, Not Corporate',
+    // 14. Trust / differentiator
+    'No Upsells, Just Repairs',
+    // 15. CTA variant
+    'Free Foundation Inspection',
+  ].filter(Boolean).filter(h => h.length <= 30).slice(0, 15);
 
-  // Descriptions (max 90 chars each, provide 4)
+  // Descriptions (max 90 chars each, 4 required)
   const descriptions = [
-    `Expert foundation crack repair in ${cityName}, ${stateAbbr}. Lifetime guarantee. Call today!`,
-    `20+ years experience. 260+ 5-star reviews. Serving ${cityName} and surrounding areas.`,
-    `Professional basement crack repair in ${cityName}. Free estimates. No obligation.`,
-    `${cityName}'s trusted foundation repair specialists. Highest quality repairs guaranteed.`,
-  ].filter(d => d.length <= 90).slice(0, 4);
+    pickHeadline([
+      `Expert foundation crack repair in ${cityName}, ${stateAbbr}. Lifetime guarantee. Call today!`,
+      `Expert foundation crack repair in ${cityName}. Lifetime guarantee. Call today!`,
+    ], 90),
+    'Family owned, 20+ years experience. 260+ 5-star reviews. Not a franchise.',
+    pickHeadline([
+      `Professional basement crack repair in ${cityName}. Free estimates. No obligation.`,
+      `Professional crack repair in ${cityName}, ${stateAbbr}. Free estimates. No obligation.`,
+    ], 90),
+    pickHeadline([
+      `Higher quality repairs guaranteed for life. Serving ${cityName} and all of ${stateAbbr}.`,
+      `Higher quality repairs guaranteed for life. Serving ${cityName} area.`,
+    ], 90),
+  ].filter(Boolean).filter(d => d.length <= 90).slice(0, 4);
 
   return { headlines, descriptions };
 }
@@ -501,6 +551,162 @@ async function addBroadKeywords(auth, customerId, { campaignName, execute }) {
   return { added: addedTotal, failed: failedTotal, skipped: skipCount };
 }
 
+// ===== UPDATE RSAs ON CITY AD GROUPS =====
+
+async function updateRSAs(auth, customerId, { campaignName, execute }) {
+  // Load cities for URL/name mapping
+  const allCities = await loadCityPages();
+  const cityMap = new Map();
+  for (const city of allCities) {
+    cityMap.set(cityToAdGroupName(city.city, city.stateAbbr), city);
+  }
+
+  // Find campaign
+  console.log(`  Finding campaign "${campaignName}"...`);
+  const campaign = await findCampaign(auth, customerId, campaignName);
+  console.log(`  ✅ Campaign: ${campaign.name}`);
+
+  // Get city ad groups
+  const adGroups = await listAdGroups(auth, customerId);
+  const cityPattern = /^[A-Z][a-zA-Z\s]+\s[A-Z]{2}$/;
+  const cityGroups = adGroups.filter(ag => ag.campaign === campaign.name && cityPattern.test(ag.name));
+  console.log(`  Found ${cityGroups.length} city ad groups`);
+
+  // Get existing RSAs
+  console.log('  Fetching existing RSAs...');
+  const existingAds = await gaqlQuery(auth, customerId, `
+    SELECT ad_group.name, ad_group.resource_name,
+      ad_group_ad.resource_name, ad_group_ad.ad.responsive_search_ad.headlines,
+      ad_group_ad.ad.responsive_search_ad.descriptions,
+      ad_group_ad.ad.final_urls, ad_group_ad.ad_strength
+    FROM ad_group_ad
+    WHERE campaign.name = '${campaignName.replace(/'/g, "\\'")}'
+      AND ad_group_ad.ad.type = 'RESPONSIVE_SEARCH_AD'
+      AND ad_group_ad.status = 'ENABLED'
+  `);
+
+  // Map ad group name -> existing RSA info
+  const adMap = new Map();
+  for (const row of existingAds) {
+    adMap.set(row.adGroup?.name, {
+      adResource: row.adGroupAd?.resourceName,
+      agResource: row.adGroup?.resourceName,
+      strength: row.adGroupAd?.adStrength,
+      headlineCount: row.adGroupAd?.ad?.responsiveSearchAd?.headlines?.length || 0,
+      descCount: row.adGroupAd?.ad?.responsiveSearchAd?.descriptions?.length || 0,
+      finalUrls: row.adGroupAd?.ad?.finalUrls,
+    });
+  }
+
+  // Plan updates
+  const plan = [];
+  const skipped = [];
+
+  for (const ag of cityGroups) {
+    const city = cityMap.get(ag.name);
+    if (!city) {
+      skipped.push({ name: ag.name, reason: 'no city match' });
+      continue;
+    }
+
+    const existing = adMap.get(ag.name);
+    const rsa = generateRSA(city, ['foundation repair', 'basement crack repair']);
+    const landingUrl = `https://www.attackacrack.com${city.url}`;
+
+    plan.push({
+      adGroupName: ag.name,
+      adGroupResource: ag.resourceName,
+      existingAdResource: existing?.adResource || null,
+      currentStrength: existing?.strength || 'NONE',
+      currentHeadlines: existing?.headlineCount || 0,
+      newHeadlines: rsa.headlines.length,
+      newDescriptions: rsa.descriptions.length,
+      rsa,
+      landingUrl,
+    });
+  }
+
+  // Summary
+  const strengths = {};
+  for (const p of plan) {
+    strengths[p.currentStrength] = (strengths[p.currentStrength] || 0) + 1;
+  }
+
+  console.log(`\n  📋 RSA Update Plan:`);
+  console.log(`    Ad groups to update: ${plan.length}`);
+  console.log(`    Skipped: ${skipped.length}`);
+  console.log(`    Current ad strength: ${Object.entries(strengths).map(([k, v]) => `${k}: ${v}`).join(', ')}`);
+  console.log(`    New headline count: 15 (all cities)`);
+  console.log(`    New description count: 4 (all cities)`);
+
+  if (skipped.length > 0) {
+    console.log(`\n  ⏭️  Skipped: ${skipped.map(s => `${s.name} (${s.reason})`).join(', ')}`);
+  }
+
+  // Preview first 3
+  console.log(`\n  Preview (first 3):`);
+  for (const item of plan.slice(0, 3)) {
+    console.log(`\n    📍 ${item.adGroupName} (current: ${item.currentStrength}, ${item.currentHeadlines}h)`);
+    console.log(`       Headlines (${item.rsa.headlines.length}):`);
+    for (const h of item.rsa.headlines) {
+      console.log(`         ${h} (${h.length})`);
+    }
+    console.log(`       Descriptions (${item.rsa.descriptions.length}):`);
+    for (const d of item.rsa.descriptions) {
+      console.log(`         ${d} (${d.length})`);
+    }
+  }
+
+  if (!execute) {
+    console.log(`\n  ⚠️  DRY RUN — pass --execute to update these RSAs.`);
+    console.log(`     Command: npm run ads:keywords -- --update-rsa --campaign "${campaignName}" --execute`);
+    return { dryRun: true, planned: plan.length, skipped: skipped.length };
+  }
+
+  // Execute: remove old RSA, create new one
+  console.log(`\n  🚀 Updating RSAs on ${plan.length} ad groups...`);
+  let updated = 0;
+  let failed = 0;
+
+  for (const item of plan) {
+    try {
+      // Remove existing RSA if present
+      if (item.existingAdResource) {
+        await mutateResource(auth, customerId, 'adGroupAds', [{
+          remove: item.existingAdResource,
+        }]);
+      }
+
+      // Create new RSA
+      const rsaPayload = {
+        create: {
+          adGroup: item.adGroupResource,
+          ad: {
+            responsiveSearchAd: {
+              headlines: item.rsa.headlines.map((text, i) => ({
+                text,
+                ...(i === 0 ? { pinnedField: 'HEADLINE_1' } : {}),
+              })),
+              descriptions: item.rsa.descriptions.map(text => ({ text })),
+            },
+            finalUrls: [item.landingUrl],
+          },
+          status: 'ENABLED',
+        },
+      };
+      await mutateResource(auth, customerId, 'adGroupAds', [rsaPayload]);
+      updated++;
+      console.log(`    ✅ ${item.adGroupName}: 15h/4d → ${item.landingUrl}`);
+    } catch (err) {
+      failed++;
+      console.log(`    ❌ ${item.adGroupName}: ${err.message}`);
+    }
+  }
+
+  console.log(`\n  📊 Results: ${updated} updated, ${failed} failed, ${skipped.length} skipped`);
+  return { updated, failed, skipped: skipped.length };
+}
+
 // ===== MAIN =====
 
 async function main() {
@@ -565,6 +771,14 @@ async function main() {
 
     await addKeyword(auth, customerId, { adGroupName, keyword, matchType, dryRun: DRY_RUN });
 
+  } else if (UPDATE_RSA) {
+    const campaignName = getArg('--campaign');
+    if (!campaignName) {
+      console.error('❌ Usage: --update-rsa --campaign "Campaign Name" [--execute]');
+      process.exit(1);
+    }
+    await updateRSAs(auth, customerId, { campaignName, execute: EXECUTE });
+
   } else if (ADD_BROAD) {
     const campaignName = getArg('--campaign');
     if (!campaignName) {
@@ -598,6 +812,7 @@ async function main() {
     console.log('    --add "kw" --ad-group "X" Add keyword to ad group');
     console.log('    --create-city-groups      Bulk create city ad groups');
     console.log('    --add-broad --campaign X  Add broader keywords to all city ad groups');
+    console.log('    --update-rsa --campaign X Update RSAs on all city ad groups');
     console.log('    --account MA|CT           Target account (default: MA)');
   }
 }

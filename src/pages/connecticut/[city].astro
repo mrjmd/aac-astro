@@ -514,6 +514,5 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 		</section>
 	</main>
 	<Footer />
-	<div class="h-16 lg:hidden"></div>
 	<StickyCTA phone={location.data.phoneNumber || phoneCT} phoneHref={`tel:${location.data.phoneNumber || phoneCT}`} smsHref={`sms:${location.data.phoneNumber || phoneCT}`} reviewCount={reviewCountDisplay} />
 </Layout>
