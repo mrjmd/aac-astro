@@ -21,35 +21,55 @@ const breadcrumbItems = [
 ];
 
 // Organization schema
-const aboutSchema = {
-  "@type": "HomeAndConstructionBusiness",
-  "name": "Attack A Crack Foundation Repair",
-  "foundingDate": "2002",
-  "description": "Family-owned foundation repair company serving Connecticut, Massachusetts, and all of New England for over 20 years.",
-  "telephone": phoneCT,
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Amston",
-    "addressRegion": "CT",
-    "postalCode": "06231",
-    "addressCountry": "US"
+const aboutSchema = [
+  {
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Attack A Crack Foundation Repair",
+    "foundingDate": "2002",
+    "description": "Family-owned foundation repair company serving Connecticut, Massachusetts, and all of New England for over 20 years.",
+    "telephone": phoneCT,
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Amston",
+      "addressRegion": "CT",
+      "postalCode": "06231",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      { "@type": "State", "name": "Connecticut" },
+      { "@type": "State", "name": "Massachusetts" },
+      { "@type": "State", "name": "Rhode Island" },
+      { "@type": "State", "name": "New Hampshire" },
+      { "@type": "State", "name": "Maine" }
+    ],
+    "numberOfEmployees": {
+      "@type": "QuantitativeValue",
+      "value": 5
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Luc Richard"
+    }
   },
-  "areaServed": [
-    { "@type": "State", "name": "Connecticut" },
-    { "@type": "State", "name": "Massachusetts" },
-    { "@type": "State", "name": "Rhode Island" },
-    { "@type": "State", "name": "New Hampshire" },
-    { "@type": "State", "name": "Maine" }
-  ],
-  "numberOfEmployees": {
-    "@type": "QuantitativeValue",
-    "value": 5
+  {
+    "@type": "VideoObject",
+    "name": "Luc Richard: A Lifetime in Concrete",
+    "description": "Luc Richard grew up in his father's concrete company, learning to pour and finish concrete from age 16. That hands-on experience became the foundation for Attack A Crack, New England's specialist in high-pressure crack injection repair.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/bxcldptZcFI/hqdefault.jpg",
+    "uploadDate": "2026-03-24",
+    "contentUrl": "https://www.youtube.com/shorts/bxcldptZcFI",
+    "embedUrl": "https://www.youtube.com/embed/bxcldptZcFI"
   },
-  "founder": {
-    "@type": "Person",
-    "name": "Luc Richard"
+  {
+    "@type": "VideoObject",
+    "name": "Attack A Crack: Our Team Coming Together",
+    "description": "Meet the Attack A Crack team — a family-owned foundation repair crew that has worked together for over 20 years. Lead technician Justin La Fontaine joined founder Luc Richard straight out of high school, and together they've perfected the methods that set Attack A Crack apart.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/lquOoplN6qY/hqdefault.jpg",
+    "uploadDate": "2026-03-24",
+    "contentUrl": "https://www.youtube.com/shorts/lquOoplN6qY",
+    "embedUrl": "https://www.youtube.com/embed/lquOoplN6qY"
   }
-};
+];
 ---
 
 <Layout 
@@ -132,22 +152,20 @@ const aboutSchema = {
 							</p>
 						</div>
 					</div>
-					<div class="relative">
-						<div class="aspect-[4/3] rounded-[32px] overflow-hidden border-8 border-white shadow-2xl bg-zinc-200">
-							<img
-								src={webpSrc("/images/projects/weymouth-carbon-fiber-2025-08-after.jpg")}
-								srcset={projectSrcset("/images/projects/weymouth-carbon-fiber-2025-08-after.jpg")}
-								sizes="(max-width: 1024px) calc(100vw - 48px), 600px"
-								alt="Attack A Crack carbon fiber foundation repair"
-								class="w-full h-full object-cover"
-								width="800"
-								height="600"
+					<div class="relative flex justify-center">
+						<div class="aspect-[9/16] max-h-[500px] w-auto rounded-[32px] overflow-hidden border-8 border-white shadow-2xl bg-zinc-900">
+							<iframe
+								src="https://www.youtube.com/embed/bxcldptZcFI"
+								title="Luc Richard: A lifetime in concrete — Attack A Crack Foundation Repair"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
 								loading="lazy"
-							/>
+								class="w-[104%] h-[104%] -mt-[2%] -ml-[2%]"
+							></iframe>
 						</div>
-						<div class="absolute -bottom-8 -left-8 bg-aac-dark text-white p-6 rounded-2xl shadow-xl">
-							<p class="text-4xl font-black">2002</p>
-							<p class="text-sm text-zinc-300">Founded in CT</p>
+						<div class="absolute bottom-4 right-4 bg-aac-dark/90 backdrop-blur-sm text-white px-4 py-3 rounded-xl shadow-xl z-10">
+							<p class="text-2xl font-black leading-none">2002</p>
+							<p class="text-[10px] text-zinc-300 font-bold uppercase tracking-wider">Founded in CT</p>
 						</div>
 					</div>
 				</div>
@@ -206,6 +224,34 @@ const aboutSchema = {
 
 		<!-- Team Section -->
 		<TeamExpanded />
+
+		<!-- Team Video -->
+		<section class="py-16 lg:py-24 bg-zinc-50">
+			<div class="max-w-4xl mx-auto px-6">
+				<div class="grid md:grid-cols-2 gap-12 items-center">
+					<div>
+						<h2 class="text-3xl lg:text-4xl font-black tracking-tighter text-aac-dark mb-6">
+							Our Team <span class="text-aac-blue">Coming Together</span>
+						</h2>
+						<p class="text-zinc-600 leading-relaxed">
+							Attack A Crack isn't a franchise with revolving-door technicians. Our crew has worked together for decades — Justin joined Luc straight out of high school over 20 years ago. That kind of continuity shows in the quality and consistency of every repair.
+						</p>
+					</div>
+					<div class="flex justify-center">
+						<div class="aspect-[9/16] max-h-[450px] w-auto rounded-[24px] overflow-hidden border-4 border-white shadow-xl bg-zinc-900">
+							<iframe
+								src="https://www.youtube.com/embed/lquOoplN6qY"
+								title="Attack A Crack team: family-owned foundation repair in New England"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+								loading="lazy"
+								class="w-[104%] h-[104%] -mt-[2%] -ml-[2%]"
+							></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<!-- The Expert Promise -->
 		<section class="py-24 bg-aac-blue text-white">

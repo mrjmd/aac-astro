@@ -33,6 +33,12 @@ steps:
 
 **Bulkhead leak repair** is the process of permanently sealing the joint between a precast concrete bulkhead and the poured foundation wall. Flexible urethane foam is injected into the cold joint where the two concrete sections meet, creating an expansive waterproof seal that stops water from entering your basement through the bulkhead stairs.
 
+<div style="display:flex;justify-content:center;margin:2rem 0">
+<div style="aspect-ratio:9/16;max-height:500px;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
+<iframe src="https://www.youtube.com/embed/8c_gHPiH9Ic" title="Bulkhead leak repair — Attack A Crack Foundation Repair" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:104%;height:104%;margin-top:-2%;margin-left:-2%"></iframe>
+</div>
+</div>
+
 ## Bulkhead Door Leak Repair: A Permanent Solution
 
 A leaking bulkhead door turns every rainstorm into a basement flooding event. Water pools on your bulkhead stairs, seeps through the foundation joint, and floods your basement. Whether you have a Bilco door, a precast concrete bulkhead, or a steel hatchway, we fix this problem permanently with our specialized bulkhead sealant injection process.

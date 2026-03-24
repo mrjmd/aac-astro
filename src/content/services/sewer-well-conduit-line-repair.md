@@ -33,6 +33,15 @@ steps:
 
 **Pipe penetration sealing** is the process of waterproofing the gaps around pipes, conduits, and utility lines where they pass through a concrete foundation wall or floor slab. Flexible urethane or hydraulic cement is applied to permanently seal these openings against water infiltration — without excavation or pipe removal.
 
+<div style="display:flex;justify-content:center;margin:2rem 0">
+<div style="aspect-ratio:9/16;max-height:450px;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
+<iframe src="https://www.youtube.com/embed/Zu-RP5rLG_k" title="Leaky sewer line repair — Attack A Crack Foundation Repair" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:104%;height:104%;margin-top:-2%;margin-left:-2%"></iframe>
+</div>
+<div style="aspect-ratio:9/16;max-height:450px;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15);margin-left:1rem">
+<iframe src="https://www.youtube.com/embed/esYW2dxMC3o" title="Leaky water line repair — Attack A Crack Foundation Repair" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:104%;height:104%;margin-top:-2%;margin-left:-2%"></iframe>
+</div>
+</div>
+
 ## Pipe Penetration Sealing: Utility Line Waterproofing
 
 Every pipe, conduit, and line that enters your foundation is a potential leak point. Sewer lines, well pipes, electrical conduits, and gas lines all create utility penetrations through your foundation wall — and each one can allow water infiltration. We provide permanent pipe penetration sealing and utility penetration waterproofing without excavation.
