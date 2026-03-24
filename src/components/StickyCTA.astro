@@ -65,7 +65,7 @@ const { phone, phoneHref, reviewCount, smsHref } = Astro.props;
 
 <style>
   .safe-area-pb {
-    padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+    padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
   }
 </style>
 
@@ -89,15 +89,5 @@ const { phone, phoneHref, reviewCount, smsHref } = Astro.props;
     );
     observer.observe(heroSection);
 
-    // iOS Safari fix: adjust position when visual viewport resizes
-    // (toolbar show/hide changes the visual viewport but not the layout viewport)
-    if (window.visualViewport) {
-      const updatePosition = () => {
-        const offset = window.innerHeight - window.visualViewport.height - window.visualViewport.offsetTop;
-        stickyCta.style.bottom = offset > 0 ? `${offset}px` : '0px';
-      };
-      window.visualViewport.addEventListener('resize', updatePosition);
-      window.visualViewport.addEventListener('scroll', updatePosition);
-    }
   }
 </script>

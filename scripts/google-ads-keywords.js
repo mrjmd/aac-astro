@@ -207,52 +207,49 @@ function pickHeadline(options, maxLen = 30) {
 function generateRSA(city, baseKeywords) {
   const { city: cityName, stateAbbr } = city;
 
-  // Build 15 headlines with fallbacks for long city names (30 char max)
+  // Review count varies by state: CT has 260+, MA/RI/NH/ME have 50+
+  const reviewCount = stateAbbr === 'CT' ? '260+' : '50+';
+
+  // Build 15 headlines covering distinct Google Ads categories:
+  // Location, Keyword, Problem, CTA, Trust, Social Proof, Credibility,
+  // Urgency, Promotion/Value, Differentiator
   const headlines = [
-    // 1. Primary service + city (pinned to headline 1)
+    // 1. Location: primary service + city (pinned to headline 1)
     pickHeadline([
       `Foundation Repair ${cityName}`,
       `Foundation Repair ${stateAbbr}`,
     ]),
-    // 2. City + state + service variant
-    pickHeadline([
-      `${cityName} ${stateAbbr} Foundation Repair`,
-      `${cityName} ${stateAbbr} Crack Repair`,
-      `${cityName} Foundation Repair`,
-    ]),
-    // 3. Dynamic keyword insertion
+    // 2. Keyword: dynamic insertion
     '{Keyword:Foundation Repair}',
-    // 4. Service variant + city
-    pickHeadline([
-      `Basement Crack Repair ${cityName}`,
-      `Crack Repair ${cityName} ${stateAbbr}`,
-      `Basement Repair ${cityName}`,
-    ]),
-    // 5. Authority
+    // 3. Location: authority + city
     pickHeadline([
       `${cityName} Foundation Experts`,
       `${cityName} Repair Experts`,
     ]),
-    // 6. CTA
+    // 4. Problem-focused
+    'Leaky Basement?',
+    // 5. Problem-focused variant
+    'Cracks Getting Worse?',
+    // 6. Speed / urgency
+    'Done in One Day',
+    // 7. CTA
     'Free Estimate - Call Now',
-    // 7. Trust
+    // 8. Trust
     'Lifetime Guarantee',
-    // 8. Social proof
-    '260+ 5-Star Reviews',
-    // 9. Credibility
+    // 9. Social proof (correct count per state)
+    `${reviewCount} 5-Star Reviews`,
+    // 10. Credibility
     '20+ Years Experience',
-    // 10. Urgency
+    // 11. Urgency
     'Same-Day Estimates Available',
-    // 11. "Near me" variant (matches broad keywords)
+    // 12. Location: "near me" variant (matches broad keywords)
     'Foundation Repair Near Me',
-    // 12. Service variant (matches broad keyword)
-    'Basement Waterproofing',
     // 13. Differentiator vs corporate competitors
     'Family Owned, Not Corporate',
-    // 14. Trust / differentiator
-    'No Upsells, Just Repairs',
-    // 15. CTA variant
-    'Free Foundation Inspection',
+    // 14. Promotion / value
+    'Affordable Crack Repair',
+    // 15. Trust: quality
+    'Highest Quality Repairs',
   ].filter(Boolean).filter(h => h.length <= 30).slice(0, 15);
 
   // Descriptions (max 90 chars each, 4 required)
@@ -261,7 +258,7 @@ function generateRSA(city, baseKeywords) {
       `Expert foundation crack repair in ${cityName}, ${stateAbbr}. Lifetime guarantee. Call today!`,
       `Expert foundation crack repair in ${cityName}. Lifetime guarantee. Call today!`,
     ], 90),
-    'Family owned, 20+ years experience. 260+ 5-star reviews. Not a franchise.',
+    `Family owned, 20+ years experience. ${reviewCount} 5-star reviews. Not a franchise.`,
     pickHeadline([
       `Professional basement crack repair in ${cityName}. Free estimates. No obligation.`,
       `Professional crack repair in ${cityName}, ${stateAbbr}. Free estimates. No obligation.`,

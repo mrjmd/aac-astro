@@ -28,6 +28,18 @@
   --font-display: "Space Grotesk", sans-serif;
 }
 
+/* iOS Safari fix: prevent fixed elements from floating above the viewport bottom
+   when the dynamic toolbar hides/shows. This forces the body to fill the full
+   dynamic viewport height so fixed bottom-0 elements stay at the true bottom. */
+@supports (-webkit-touch-callout: none) {
+  body {
+    min-height: -webkit-fill-available;
+  }
+  html {
+    height: -webkit-fill-available;
+  }
+}
+
 @layer base {
   body {
     @apply bg-white text-aac-dark font-sans selection:bg-aac-yellow selection:text-aac-dark antialiased;
