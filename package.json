@@ -22,7 +22,11 @@
     "import:calendar": "node scripts/import-calendar-projects.js",
     "post:gbp": "node scripts/batch-post-gbp.js",
     "post:buffer": "node scripts/buffer-post-projects.js",
-    "optimize:images": "node scripts/optimize-images.js"
+    "optimize:images": "node scripts/optimize-images.js",
+    "report:ads": "node scripts/google-ads-report.js",
+    "report:ga4": "node scripts/ga4-report.js",
+    "report:gsc": "node scripts/gsc-report.js",
+    "report:all": "node scripts/google-ads-report.js && node scripts/ga4-report.js && node scripts/gsc-report.js"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",
