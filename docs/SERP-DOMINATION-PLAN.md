@@ -36,9 +36,11 @@ Video content strategy is in `docs/VIDEO-STRATEGY-2026.md` and `POST-LAUNCH-PLAN
 
 91 project case studies exist. Before/after photos are prime candidates for `ImageObject` schema.
 
-- [ ] Add `ImageObject` schema to project page template (`src/pages/projects/`)
-- [ ] Include `contentUrl`, `description`, `name`, `datePublished`
+- [x] `ImageObject` schema already in project page template (`src/pages/projects/[slug].astro` lines 174-197) — renders for all projects with real images
+- [x] Includes `contentUrl`, `description`, `name` — auto-generated from project frontmatter
 - [ ] Consider `ImageGallery` wrapper for multi-photo projects
+- [ ] Verify image descriptions match actual photo content (Gemini AI classified; some may be wrong)
+- [ ] Run `fix-placeholder-projects.js` on 6 projects still using placeholder images
 
 ### Organization Credential & Profile Expansion
 
@@ -79,12 +81,12 @@ Expand the `sameAs` array and add `hasCredential`:
 
 These are high-volume PAA questions that appear across foundation repair SERPs:
 
-- [ ] "How much does foundation crack repair cost?" → cost guide post
-- [ ] "Are cracks in basement floor normal?" → `basement-floor-cracks-leaking.md`
-- [ ] "How long does foundation crack injection last?" → epoxy injection service page
-- [ ] "Is foundation crack repair covered by insurance?" → dedicated blog post or FAQ
-- [ ] "When should I worry about foundation cracks?" → `types-of-foundation-cracks.md`
-- [ ] "Can I fix a foundation crack myself?" → `flex-seal-basement-cracks.md` (answer: temporary, call a pro)
+- [x] "How much does foundation crack repair cost?" → `foundation-repair-cost-guide-2026.md` (published, comparison table added March 24)
+- [x] "Are cracks in basement floor normal?" → `basement-floor-cracks-leaking.md` (published, addresses "normal vs problem" directly)
+- [x] "How long does foundation crack injection last?" → foundation-crack-injection service page FAQ (published, "How long does injected material last?")
+- [x] "Is foundation crack repair covered by insurance?" → `does-insurance-cover-foundation-repair.md` (published, dedicated post)
+- [x] "When should I worry about foundation cracks?" → `foundation-settling-when-to-worry.md` (published)
+- [x] "Can I fix a foundation crack myself?" → `flex-seal-basement-cracks.md` + `diy-vs-professional-foundation-repair.md` (both published)
 
 **Reference:** Frase semantic analysis targets in `SEO-STRATEGY-2026.md` Parts 19-22 for term gaps.
 
@@ -126,7 +128,7 @@ These posts target high-volume topics where competitors get significant traffic.
 
 **`lally-columns-guide.md`** — A-1 gets 175 visits/mo from this topic
 - [ ] Audit semantic completeness against A-1's content
-- [ ] Add internal links from relevant location pages (MA especially)
+- [x] Internal links added from carbon-fiber-foundation-repair-guide and signs-of-foundation-problems (March 24)
 - [ ] Monitor position in GSC after 30 days
 
 **`flex-seal-basement-cracks.md`** — 49,500 volume cluster, A-1 gets 198 visits/mo
@@ -168,8 +170,8 @@ These posts target high-volume topics where competitors get significant traffic.
 
 ### Author Entity: Luc Richard (E-E-A-T)
 
-- [ ] Ensure author schema in `src/utils/authors.ts` has complete `knowsAbout` array
-- [ ] Add author bio to all blog posts with credentials and experience
+- [x] Author schema in `src/utils/authors.ts` has `knowsAbout` array (6 topics) + `sameAs` (3 URLs) + detailed `description`
+- [x] Author bio renders on all blog posts via `getAuthorSchema()` — includes credentials and experience
 - [ ] Create/update Luc's profile on industry directories (ASHI, etc.)
 - [ ] Long-term: LinkedIn articles, industry publication guest posts
 
@@ -262,6 +264,25 @@ Green checkmark in Local Services Ads. Foundation repair is an eligible category
 - [ ] Monthly: New backlink opportunities (sponsorships, partners)
 - [ ] Quarterly: Full SEMrush keyword tracking refresh
 - [ ] Quarterly: Competitor re-analysis (A-1, CrackX, Groundworks positions)
+
+---
+
+## SERP Feature Competitive Landscape (March 2026, from SEMrush data)
+
+| SERP Feature | AAC Status | Competitors | Strategy |
+|---|---|---|---|
+| **Local Pack** | Winning 20+ keywords at #1 | A-1 wins MA-specific ("foundation repair massachusetts" #1), Groundworks national | GBP optimization (Matt) |
+| **AI Overview** | Winning 4 keywords (concrete stitches, crumbling foundations, pyrrhotite, bulkhead leaking) | Groundworks dominates broad repair terms via `/resources/` pages; CrackX wins DIY vs pro, bulkhead door, hairline cracks | "What is X?" definitions on service pages (done March 24) |
+| **Featured Snippet** | Not winning any yet | CrackX has bulkhead repair cost snippet | Cost comparison tables added (done March 24) |
+| **PAA** | Not specifically targeted | CrackX owns bulkhead PAA positions | FAQPage schema on all 12 service pages (confirmed March 24) |
+| **Knowledge Panel** | Not confirmed | A-1 + CrackX both have them | `sameAs` expanded to 8 URLs (done March 24) — monitor for panel appearance |
+| **ImageObject / Image Pack** | Not targeted | CrackX wins "seeping water" via Image Pack; Groundworks wins "flooded basement" | Add ImageObject schema to project pages with real photos (next) |
+| **Video / Video Carousel** | Zero video content on site | Appears as SERP feature on nearly every query; A-1 shows Video Carousel | Matt has YouTube videos of Luc — embed on service/blog pages + add VideoObject schema |
+| **Things to Know** | Not targeted | A-1 lally columns, CrackX concrete piers | Deep educational content (lally guide exists, needs ranking time) |
+| **Google Guaranteed** | Not applied | **Nobody in competitive set has it** | First mover advantage — apply for Local Services Ads |
+| **Reviews in SERP** | 260+ Google reviews, AggregateRating schema live | A-1 shows review rich results for CT queries | Already implemented — continue review acquisition |
+
+**Key insight:** The three biggest untapped SERP features are Video (appears on almost every query), Google Guaranteed (no competitor has it), and Image Pack (91 real project photos available for ImageObject schema).
 
 ---
 
