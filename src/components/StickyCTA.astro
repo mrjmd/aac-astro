@@ -1,0 +1,91 @@
+---
+/**
+ * Sticky Mobile CTA Bar
+ *
+ * Fixed-bottom bar on mobile/tablet with "Call Now" and "Text Photos" buttons.
+ * Hidden on desktop (lg:hidden). Appears on scroll past the hero section.
+ *
+ * Props:
+ *   phone - Display phone number (e.g., "(781) 780-4542")
+ *   phoneHref - Tel link (e.g., "tel:(781) 780-4542")
+ *   reviewCount - Review count display (e.g., "260+")
+ *   smsHref - Optional direct SMS link. If provided, "Text Photos" links directly
+ *             instead of opening the location modal. Use on city/state pages where
+ *             the phone number is already known.
+ */
+import Icon from './Icon.astro';
+
+interface Props {
+  phone: string;
+  phoneHref: string;
+  reviewCount: string;
+  smsHref?: string;
+}
+
+const { phone, phoneHref, reviewCount, smsHref } = Astro.props;
+---
+
+<nav
+  id="sticky-cta"
+  class="fixed bottom-0 left-0 right-0 z-40 lg:hidden translate-y-full transition-transform duration-300"
+  aria-label="Quick contact"
+>
+  <div class="bg-aac-dark/95 backdrop-blur-sm border-t border-white/10 px-4 py-3 safe-area-pb">
+    <div class="flex items-center gap-3 max-w-lg mx-auto">
+      <a
+        href={phoneHref}
+        class="flex-1 bg-aac-yellow text-aac-dark px-4 py-2.5 rounded-xl font-black uppercase tracking-widest text-[10px] inline-flex items-center justify-center gap-2 active:scale-95 transition-transform"
+      >
+        <Icon name="Phone" size={14} />
+        Call Now
+      </a>
+      <div class="flex flex-col items-center text-white shrink-0">
+        <div class="flex items-center gap-0.5 text-aac-yellow text-xs" aria-label="5 star rating">★★★★★</div>
+        <span class="text-[9px] text-zinc-400 font-semibold">{reviewCount} Reviews</span>
+      </div>
+      {smsHref ? (
+        <a
+          href={smsHref}
+          class="flex-1 bg-white/10 text-white px-4 py-2.5 rounded-xl font-black uppercase tracking-widest text-[10px] border border-white/20 inline-flex items-center justify-center gap-2 active:scale-95 transition-transform"
+        >
+          <Icon name="MessageSquare" size={14} />
+          Text Photos
+        </a>
+      ) : (
+        <button
+          class="open-modal flex-1 bg-white/10 text-white px-4 py-2.5 rounded-xl font-black uppercase tracking-widest text-[10px] border border-white/20 inline-flex items-center justify-center gap-2 active:scale-95 transition-transform"
+        >
+          <Icon name="MessageSquare" size={14} />
+          Text Photos
+        </button>
+      )}
+    </div>
+  </div>
+</nav>
+
+<style>
+  .safe-area-pb {
+    padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+  }
+</style>
+
+<script>
+  const stickyCta = document.getElementById('sticky-cta');
+  const heroSection = document.querySelector('main > section:first-of-type');
+
+  if (stickyCta && heroSection) {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          stickyCta.classList.add('translate-y-full');
+          stickyCta.classList.remove('translate-y-0');
+        } else {
+          stickyCta.classList.remove('translate-y-full');
+          stickyCta.classList.add('translate-y-0');
+        }
+      },
+      { threshold: 0 }
+    );
+    observer.observe(heroSection);
+  }
+</script>

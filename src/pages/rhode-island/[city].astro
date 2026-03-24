@@ -8,7 +8,8 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
 import ProjectCards from '../../components/ProjectCards.astro';
 import ProcessBar from '../../components/ProcessBar.astro';
-import { reviewCount, rating, aggregateRatingSchema } from '../../utils/reviews';
+import StickyCTA from '../../components/StickyCTA.astro';
+import { reviewCount, reviewCountDisplay, rating, aggregateRatingSchema, googleReviewsUrlMA } from '../../utils/reviews';
 import { phoneMA, phoneMAHref } from '../../utils/contact';
 import { webpSrc, projectSrcset } from '../../utils/image';
 import { getForLocation } from '../../utils/testimonials';
@@ -165,10 +166,10 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 						)}
 
 						<div class="flex flex-wrap gap-4 mb-8">
-							<div class="flex items-center gap-2 text-aac-yellow">
+							<a href={googleReviewsUrlMA} target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-aac-yellow hover:text-yellow-300 transition-colors">
 								<Icon name="Star" size={18} />
-								<span class="font-bold text-sm">5-Star Reviews</span>
-							</div>
+								<span class="font-bold text-sm">{reviewCountDisplay} 5-Star Reviews</span>
+							</a>
 							<div class="flex items-center gap-2 text-white">
 								<Icon name="ShieldCheck" size={18} />
 								<span class="font-bold text-sm">Lifetime Guarantee</span>
@@ -186,10 +187,10 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 								<Icon name="Phone" size={16} />
 								Call {location.data.phoneNumber || phoneMA}
 							</a>
-							<button class="open-modal bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
+							<a href={`sms:${location.data.phoneNumber || phoneMA}`} class="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
 								<Icon name="MessageSquare" size={16} />
 								Text Us Photos
-							</button>
+							</a>
 						</div>
 					</div>
 
@@ -525,13 +526,15 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 						<Icon name="Phone" size={20} />
 						{location.data.phoneNumber || phoneMA}
 					</a>
-					<button class="open-modal bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+					<a href={`sms:${location.data.phoneNumber || phoneMA}`} class="bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
 						<Icon name="MessageSquare" size={20} />
 						Text Photos
-					</button>
+					</a>
 				</div>
 			</div>
 		</section>
 	</main>
 	<Footer />
+	<div class="h-16 lg:hidden"></div>
+	<StickyCTA phone={location.data.phoneNumber || phoneMA} phoneHref={`tel:${location.data.phoneNumber || phoneMA}`} smsHref={`sms:${location.data.phoneNumber || phoneMA}`} reviewCount={reviewCountDisplay} />
 </Layout>
