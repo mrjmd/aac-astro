@@ -14,7 +14,7 @@
  *   node scripts/google-ads-report.js --account MA       # target account (default: MA)
  *
  * Sections (--full runs all, --section runs one):
- *   campaigns, searchTerms, keywords, geo, impressionShare, budget, hourly, device, monthly, extensions
+ *   campaigns, searchTerms, keywords, geo, impressionShare, budget, hourly, device, monthly, weekly, daily, network, extensions
  */
 
 import { writeFile, mkdir } from 'fs/promises';
@@ -34,7 +34,7 @@ const sectionIdx = args.indexOf('--section');
 const SECTION = sectionIdx !== -1 ? args[sectionIdx + 1] : null;
 
 const CORE_SECTIONS = ['campaigns', 'searchTerms', 'keywords', 'geo'];
-const DEEP_SECTIONS = ['impressionShare', 'budget', 'hourly', 'device', 'monthly', 'extensions'];
+const DEEP_SECTIONS = ['impressionShare', 'budget', 'hourly', 'device', 'monthly', 'weekly', 'daily', 'network', 'extensions'];
 const ALL_SECTIONS = [...CORE_SECTIONS, ...DEEP_SECTIONS];
 
 function shouldRun(section) {
@@ -266,6 +266,81 @@ async function main() {
     report.monthlyTrends = Object.values(monthMap).sort((a, b) => a.month.localeCompare(b.month));
   }
 
+  // ===== WEEKLY TRENDS =====
+  if (shouldRun('weekly')) {
+    console.log('  Fetching weekly trends...');
+    const rows = await gaqlQuery(auth, customerId, `
+      SELECT segments.week, campaign.name, metrics.impressions, metrics.clicks,
+        metrics.cost_micros, metrics.conversions
+      FROM campaign WHERE segments.date ${dateRange}
+      ORDER BY segments.week
+    `);
+    const weekMap = {};
+    rows.forEach(r => {
+      const w = r.segments.week;
+      const cname = r.campaign?.name;
+      const key = `${w}|${cname}`;
+      if (!weekMap[w]) weekMap[w] = { week: w, totalSpend: 0, totalClicks: 0, totalImp: 0, totalConv: 0, byCampaign: {} };
+      weekMap[w].totalSpend += microsToDollars(r.metrics?.costMicros);
+      weekMap[w].totalClicks += parseInt(r.metrics?.clicks || '0', 10);
+      weekMap[w].totalImp += parseInt(r.metrics?.impressions || '0', 10);
+      weekMap[w].totalConv += parseFloat(r.metrics?.conversions || '0');
+      if (!weekMap[w].byCampaign[cname]) weekMap[w].byCampaign[cname] = { spend: 0, clicks: 0, conv: 0 };
+      weekMap[w].byCampaign[cname].spend += microsToDollars(r.metrics?.costMicros);
+      weekMap[w].byCampaign[cname].clicks += parseInt(r.metrics?.clicks || '0', 10);
+      weekMap[w].byCampaign[cname].conv += parseFloat(r.metrics?.conversions || '0');
+    });
+    report.weeklyTrends = Object.values(weekMap).sort((a, b) => a.week.localeCompare(b.week)).map(w => ({
+      ...w,
+      avgDailySpend: Math.round(w.totalSpend / 7 * 100) / 100,
+    }));
+  }
+
+  // ===== DAILY SPEND =====
+  if (shouldRun('daily')) {
+    console.log('  Fetching daily spend...');
+    const rows = await gaqlQuery(auth, customerId, `
+      SELECT segments.date, campaign.name, metrics.impressions, metrics.clicks,
+        metrics.cost_micros, metrics.conversions
+      FROM campaign WHERE segments.date ${dateRange}
+      ORDER BY segments.date
+    `);
+    const dayMap = {};
+    rows.forEach(r => {
+      const d = r.segments.date;
+      const cname = r.campaign?.name;
+      if (!dayMap[d]) dayMap[d] = { date: d, totalSpend: 0, totalClicks: 0, totalImp: 0, totalConv: 0, byCampaign: {} };
+      dayMap[d].totalSpend += microsToDollars(r.metrics?.costMicros);
+      dayMap[d].totalClicks += parseInt(r.metrics?.clicks || '0', 10);
+      dayMap[d].totalImp += parseInt(r.metrics?.impressions || '0', 10);
+      dayMap[d].totalConv += parseFloat(r.metrics?.conversions || '0');
+      if (!dayMap[d].byCampaign[cname]) dayMap[d].byCampaign[cname] = { spend: 0, clicks: 0 };
+      dayMap[d].byCampaign[cname].spend += microsToDollars(r.metrics?.costMicros);
+      dayMap[d].byCampaign[cname].clicks += parseInt(r.metrics?.clicks || '0', 10);
+    });
+    report.dailySpend = Object.values(dayMap).sort((a, b) => a.date.localeCompare(b.date));
+  }
+
+  // ===== NETWORK SETTINGS =====
+  if (shouldRun('network')) {
+    console.log('  Fetching network settings...');
+    const rows = await gaqlQuery(auth, customerId, `
+      SELECT campaign.name, campaign.status,
+        campaign.network_settings.target_google_search,
+        campaign.network_settings.target_search_network,
+        campaign.network_settings.target_content_network,
+        campaign.network_settings.target_partner_search_network
+      FROM campaign WHERE campaign.status = 'ENABLED'
+    `);
+    report.networkSettings = rows.map(r => ({
+      campaign: r.campaign?.name,
+      googleSearch: r.campaign?.networkSettings?.targetGoogleSearch,
+      searchPartners: r.campaign?.networkSettings?.targetSearchNetwork,
+      displayNetwork: r.campaign?.networkSettings?.targetContentNetwork,
+      partnerSearch: r.campaign?.networkSettings?.targetPartnerSearchNetwork,
+    }));
+  }
+
   // ===== AD EXTENSIONS =====
   if (shouldRun('extensions')) {
     console.log('  Fetching ad extensions...');
@@ -357,6 +432,23 @@ async function main() {
     report.monthlyTrends.forEach(m => {
       const cpc = m.conversions > 0 ? '$' + (m.cost / m.conversions).toFixed(0) : 'N/A';
       console.log(`    ${m.month} | $${String(m.cost.toFixed(0)).padStart(8)} | ${String(m.clicks).padStart(6)} | ${String(m.conversions.toFixed(0)).padStart(4)} | ${cpc}`);
+    });
+  }
+
+  if (report.weeklyTrends?.length > 0) {
+    console.log(`\n  Weekly Spend Trends (avg $/day):`);
+    console.log(`    Week of    | Avg $/day | Total   | Clicks | Conv`);
+    report.weeklyTrends.forEach(w => {
+      const flag = w.avgDailySpend < 20 ? ' ⬇️' : w.avgDailySpend > 80 ? ' 🔥' : '';
+      console.log(`    ${w.week} | $${String(w.avgDailySpend.toFixed(0)).padStart(7)}/day | $${String(w.totalSpend.toFixed(0)).padStart(6)} | ${String(w.totalClicks).padStart(6)} | ${String(w.totalConv.toFixed(0)).padStart(4)}${flag}`);
+    });
+  }
+
+  if (report.networkSettings?.length > 0) {
+    console.log(`\n  Network Settings:`);
+    report.networkSettings.forEach(n => {
+      console.log(`    ${n.campaign}:`);
+      console.log(`      Google Search: ${n.googleSearch} | Search Partners: ${n.searchPartners} | Display: ${n.displayNetwork}`);
     });
   }
 
