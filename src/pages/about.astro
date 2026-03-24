@@ -12,6 +12,7 @@ import { reviewCount } from '../utils/reviews';
 import { phoneCT, phoneCTHref, phoneMA, phoneMAHref } from '../utils/contact';
 import { webpSrc, projectSrcset } from '../utils/image';
 import { getFeatured } from '../utils/testimonials';
+import { getVideoSchemas } from '../utils/video';
 
 const testimonials = getFeatured(4);
 
@@ -51,24 +52,7 @@ const aboutSchema = [
       "name": "Luc Richard"
     }
   },
-  {
-    "@type": "VideoObject",
-    "name": "Luc Richard: A Lifetime in Concrete",
-    "description": "Luc Richard grew up in his father's concrete company, learning to pour and finish concrete from age 16. That hands-on experience became the foundation for Attack A Crack, New England's specialist in high-pressure crack injection repair.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/bxcldptZcFI/hqdefault.jpg",
-    "uploadDate": "2026-03-24",
-    "contentUrl": "https://www.youtube.com/shorts/bxcldptZcFI",
-    "embedUrl": "https://www.youtube.com/embed/bxcldptZcFI"
-  },
-  {
-    "@type": "VideoObject",
-    "name": "Attack A Crack: Our Team Coming Together",
-    "description": "Meet the Attack A Crack team — a family-owned foundation repair crew that has worked together for over 20 years. Lead technician Justin La Fontaine joined founder Luc Richard straight out of high school, and together they've perfected the methods that set Attack A Crack apart.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/lquOoplN6qY/hqdefault.jpg",
-    "uploadDate": "2026-03-24",
-    "contentUrl": "https://www.youtube.com/shorts/lquOoplN6qY",
-    "embedUrl": "https://www.youtube.com/embed/lquOoplN6qY"
-  }
+  ...getVideoSchemas('about')
 ];
 ---
 

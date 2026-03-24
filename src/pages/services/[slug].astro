@@ -14,6 +14,7 @@ import { webpSrc, projectSrcset } from '../../utils/image';
 import { getByService } from '../../utils/testimonials';
 import { getByService as getProjectsByService, SERVICE_SLUG_MAP } from '../../utils/projects';
 import { getBlogForService } from '../../utils/blog-linking';
+import { getVideoSchemas } from '../../utils/video';
 
 export async function getStaticPaths() {
   const services = await getCollection('services');
@@ -151,8 +152,11 @@ const faqSchema = service.data.faqs && service.data.faqs.length > 0 ? {
   }))
 } : null;
 
+// VideoObject schemas for any embedded videos
+const videoSchemas = getVideoSchemas(serviceSlug);
+
 // Combine all schemas
-const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
+const schemas = [serviceSchema, howToSchema, faqSchema, ...videoSchemas].filter(Boolean);
 ---
 
 <Layout 

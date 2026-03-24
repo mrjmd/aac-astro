@@ -7,6 +7,7 @@ import LocationModal from '../components/LocationModal.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import Icon from '../components/Icon.astro';
 import { phoneMA, phoneMAHref } from '../utils/contact';
+import { getVideoSchemas } from '../utils/video';
 
 // Get the "what-we-dont-do" resource
 const resources = await getCollection('resources');
@@ -23,16 +24,19 @@ const breadcrumbItems = [
   { label: 'What We Don\'t Do' }
 ];
 
-const pageSchema = {
-  "@type": "WebPage",
-  "name": resource.data.title,
-  "description": resource.data.metaDescription,
-  "url": "https://www.attackacrack.com/what-we-dont-do",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Attack A Crack"
-  }
-};
+const pageSchema = [
+  {
+    "@type": "WebPage",
+    "name": resource.data.title,
+    "description": resource.data.metaDescription,
+    "url": "https://www.attackacrack.com/what-we-dont-do",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Attack A Crack"
+    }
+  },
+  ...getVideoSchemas('what-we-dont-do')
+];
 ---
 
 <Layout 

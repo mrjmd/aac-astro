@@ -35,8 +35,8 @@ steps:
 
 **Basement wall crack repair** is the process of permanently sealing cracks in poured concrete or block foundation walls using high-pressure resin injection. Epoxy restores structural strength while polyurethane foam creates a flexible, waterproof seal — both methods fill the crack through the full wall thickness without excavation.
 
-<div style="display:flex;justify-content:center;margin:2rem 0">
-<div style="aspect-ratio:9/16;max-height:500px;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
+<div class="video-right">
+<div style="aspect-ratio:9/16;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
 <iframe src="https://www.youtube.com/embed/Ijb7aXaaCSY" title="Foundation wall crack repair in progress — Attack A Crack" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:104%;height:104%;margin-top:-2%;margin-left:-2%"></iframe>
 </div>
 </div>

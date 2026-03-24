@@ -10,6 +10,7 @@ import { getAuthorSchema } from '../../utils/authors';
 import { webpSrc, projectSrcset } from '../../utils/image';
 import { isPublished } from '../../utils/blog';
 import { phoneCT, phoneCTHref, phoneMA, phoneMAHref } from '../../utils/contact';
+import { getVideoSchemas } from '../../utils/video';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', isPublished);
@@ -137,7 +138,10 @@ const faqSchema = post.data.faqs && post.data.faqs.length > 0 ? {
   }))
 } : null;
 
-const schemas = [articleSchema, faqSchema].filter(Boolean);
+// VideoObject schemas for any embedded videos
+const videoSchemas = getVideoSchemas(post.id.replace(/\.md$/, ''));
+
+const schemas = [articleSchema, faqSchema, ...videoSchemas].filter(Boolean);
 ---
 
 <Layout

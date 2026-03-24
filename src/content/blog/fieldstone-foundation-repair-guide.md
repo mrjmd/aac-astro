@@ -120,6 +120,6 @@ Many of our clients own historic homes in communities like Cambridge, Salem, Con
 
 Wondering if your fieldstone foundation needs attention? Contact us for a free assessment:
 
-**Connecticut & Massachusetts:** 617-668-1677
+**Connecticut:** 860-573-8760 | **Massachusetts:** 617-668-1677
 
 Text us a photo for a preliminary assessment, or call to schedule — with 50+ years of combined experience and thousands of projects, we'll evaluate your foundation honestly and explain your options clearly.

@@ -9,6 +9,7 @@ import Icon from '../../components/Icon.astro';
 import { isPublished } from '../../utils/blog';
 import { phoneCT, phoneCTHref, phoneMA, phoneMAHref } from '../../utils/contact';
 import { webpSrc, projectSrcset } from '../../utils/image';
+import { getVideoSchemas } from '../../utils/video';
 
 // Get all services sorted by order
 const allServices = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
@@ -58,7 +59,7 @@ const servicesSchema = {
 <Layout
   title="Foundation Repair Services"
   description="Specialized foundation repair with a lifetime guarantee. We repair wall cracks, leaky bulkheads, utility lines, and more in CT, MA & across New England."
-  customSchema={servicesSchema}
+  customSchema={[servicesSchema, ...getVideoSchemas('services-hub')]}
   breadcrumbItems={breadcrumbItems}
 >
 	<LocationModal />

@@ -33,8 +33,8 @@ faqs:
 
 Here is the short version: crack injection stops water from entering. A sump pump manages water that has already entered. One is a seal. The other is a pump. They work at different points in the water's journey, and the right choice depends entirely on where your water problem originates.
 
-<div style="display:flex;justify-content:center;margin:2rem 0">
-<div style="aspect-ratio:9/16;max-height:500px;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
+<div class="video-right">
+<div style="aspect-ratio:9/16;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
 <iframe src="https://www.youtube.com/embed/7WHRFcalczA" title="Crack injections versus sump pumps — Attack A Crack" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:108%;height:108%;margin-top:-4%;margin-left:-4%"></iframe>
 </div>
 </div>

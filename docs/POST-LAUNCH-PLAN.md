@@ -97,10 +97,14 @@ We have hundreds of real project photos across the site. The problem isn't quant
 
 Video is the #1 E-E-A-T signal for home services. 30 seconds of before/after is worth 5,000 words.
 
-- [ ] Record 3 quick phone clips: diamond saw cutting, resin injection, finished repair
-- [ ] Upload to YouTube with proper titles/descriptions/tags
-- [ ] Embed on corresponding service pages (Claude will add VideoObject schema)
-- [ ] Post to both GBP listings
+**Completed — 18 videos embedded across 11 pages (March 24, 2026):**
+- [x] 18 YouTube Shorts embedded across about, services hub, 5 service pages, 4 blog posts, and What We Don't Do
+- [x] VideoObject schema on all 13 pages with video embeds via `src/utils/video.ts` helper
+- [x] Right-float layout with text wrap on all markdown-embedded videos
+- [ ] Shoot homepage intro video (highest-value E-E-A-T signal — no competitor has this)
+- [ ] Shoot Flex Seal debunk video (49,500/mo keyword cluster — highest-value SEO video)
+- [ ] Shoot CT state hub video, MA state hub video, concrete repair walkthrough
+- [ ] Post videos to both GBP listings
 
 ### Backlink Building (Matt — AAC has ZERO authority backlinks)
 

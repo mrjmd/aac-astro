@@ -24,13 +24,15 @@ Add `HowTo` structured data to service pages that describe a repair process. Goo
 
 **Files to modify:** Service page templates in `src/content/services/` and `src/content/concrete-repair/`, plus schema generation in page templates under `src/pages/`.
 
-### VideoObject Schema (When Ready)
+### VideoObject Schema
 
-Video content strategy is in `docs/VIDEO-STRATEGY-2026.md` and `POST-LAUNCH-PLAN.md`. Schema goes in when YouTube embeds land.
+Video embeds are live on 11 pages (18 videos total). See `docs/VIDEO-STRATEGY-2026.md` Section 7 for full inventory.
 
-- [ ] Create reusable `VideoObject` schema helper in `src/utils/`
-- [ ] Add to blog posts and service pages that embed YouTube videos
-- [ ] Required properties: `name`, `description`, `thumbnailUrl`, `uploadDate`, `contentUrl`
+- [x] VideoObject schema live on about page (2 videos: founder story + team) — added March 24
+- [x] 18 YouTube Shorts embedded across 11 pages with right-float layout (March 24)
+- [x] Created reusable `VideoObject` schema helper in `src/utils/video.ts` — central video registry with `getVideoSchemas()` function (March 24)
+- [x] Added VideoObject schema to all 13 pages with video embeds: 6 service pages, services hub, about, what-we-dont-do, 4 blog posts (March 24)
+- [x] Required properties all included: `name`, `description`, `thumbnailUrl`, `uploadDate`, `contentUrl`, `embedUrl`
 
 ### ImageObject for Before/After Projects
 
@@ -253,7 +255,7 @@ Green checkmark in Local Services Ads. Foundation repair is an eligible category
 - [ ] Apply for Google Guaranteed / Local Services Ads
 - [ ] Apply for manufacturer directory listings
 - [ ] Begin featured snippet monitoring (track which queries show snippets)
-- [ ] Add `VideoObject` schema when first YouTube embeds go live
+- [x] `VideoObject` schema on all 13 video-embedded pages via `src/utils/video.ts` helper (March 24)
 - [ ] PAA optimization based on actual search appearance data
 - [ ] Begin HARO/Connectively responses
 
@@ -277,12 +279,12 @@ Green checkmark in Local Services Ads. Foundation repair is an eligible category
 | **PAA** | Not specifically targeted | CrackX owns bulkhead PAA positions | FAQPage schema on all 12 service pages (confirmed March 24) |
 | **Knowledge Panel** | Not confirmed | A-1 + CrackX both have them | `sameAs` expanded to 8 URLs (done March 24) — monitor for panel appearance |
 | **ImageObject / Image Pack** | Not targeted | CrackX wins "seeping water" via Image Pack; Groundworks wins "flooded basement" | Add ImageObject schema to project pages with real photos (next) |
-| **Video / Video Carousel** | Zero video content on site | Appears as SERP feature on nearly every query; A-1 shows Video Carousel | Matt has YouTube videos of Luc — embed on service/blog pages + add VideoObject schema |
+| **Video / Video Carousel** | 18 videos on 11 pages; VideoObject schema on about page | Appears as SERP feature on nearly every query; A-1 shows Video Carousel | Add VideoObject schema to remaining 9 pages; shoot homepage intro + Flex Seal debunk |
 | **Things to Know** | Not targeted | A-1 lally columns, CrackX concrete piers | Deep educational content (lally guide exists, needs ranking time) |
 | **Google Guaranteed** | Not applied | **Nobody in competitive set has it** | First mover advantage — apply for Local Services Ads |
 | **Reviews in SERP** | 260+ Google reviews, AggregateRating schema live | A-1 shows review rich results for CT queries | Already implemented — continue review acquisition |
 
-**Key insight:** The three biggest untapped SERP features are Video (appears on almost every query), Google Guaranteed (no competitor has it), and Image Pack (91 real project photos available for ImageObject schema).
+**Key insight:** Video is now partially addressed (18 embeds, schema on 1 page — need schema on remaining 9). The two biggest untapped SERP features are Google Guaranteed (no competitor has it) and Image Pack (91 real project photos available for ImageObject schema). Highest-value new videos to shoot: homepage intro and Flex Seal debunk.
 
 ---
 
