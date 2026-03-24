@@ -148,16 +148,15 @@ if (breadcrumbSchema) {
 				<script async src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}></script>
 				<script is:inline define:vars={{ GA4_ID, GOOGLE_ADS_MA_ID }}>
 					window.dataLayer = window.dataLayer || [];
-					function gtag(){dataLayer.push(arguments);}
+					window.gtag = function(){dataLayer.push(arguments);};
 					gtag('js', new Date());
 					gtag('config', GA4_ID);
 					if (GOOGLE_ADS_MA_ID) gtag('config', GOOGLE_ADS_MA_ID);
 					// TODO: Uncomment when CT Google Ads account is linked to MCC
 					// if (GOOGLE_ADS_CT_ID) gtag('config', GOOGLE_ADS_CT_ID);
-				</script>
 
-				<!-- Phone/text click tracking — fires GA4 events + Google Ads conversions -->
-				<script is:inline define:vars={{ GOOGLE_ADS_MA_ID }}>
+					// Phone/text click tracking — fires GA4 events + Google Ads conversions
+					var _ADS_MA = GOOGLE_ADS_MA_ID;
 					document.addEventListener('click', function(e) {
 						var link = e.target.closest('a');
 						if (!link) return;
@@ -189,9 +188,9 @@ if (breadcrumbSchema) {
 							// Google Ads conversion — MA only for now
 							// TODO: Add CT conversion when CT account is linked
 							// TODO: Replace PHONE_CONVERSION_LABEL with actual label from Google Ads
-							if (region === 'MA' && GOOGLE_ADS_MA_ID) {
+							if (region === 'MA' && _ADS_MA) {
 								gtag('event', 'conversion', {
-									send_to: GOOGLE_ADS_MA_ID + '/PHONE_CONVERSION_LABEL',
+									send_to: _ADS_MA + '/PHONE_CONVERSION_LABEL',
 									value: 500,
 									currency: 'USD'
 								});
@@ -211,9 +210,9 @@ if (breadcrumbSchema) {
 							// Google Ads conversion — MA only for now
 							// TODO: Add CT conversion when CT account is linked
 							// TODO: Replace TEXT_CONVERSION_LABEL with actual label from Google Ads
-							if (smsRegion === 'MA' && GOOGLE_ADS_MA_ID) {
+							if (smsRegion === 'MA' && _ADS_MA) {
 								gtag('event', 'conversion', {
-									send_to: GOOGLE_ADS_MA_ID + '/TEXT_CONVERSION_LABEL',
+									send_to: _ADS_MA + '/TEXT_CONVERSION_LABEL',
 									value: 500,
 									currency: 'USD'
 								});
