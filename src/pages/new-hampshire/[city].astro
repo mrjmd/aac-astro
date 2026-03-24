@@ -8,7 +8,6 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
 import ProjectCards from '../../components/ProjectCards.astro';
 import ProcessBar from '../../components/ProcessBar.astro';
-import StickyCTA from '../../components/StickyCTA.astro';
 import { reviewCount, reviewCountDisplay, rating, aggregateRatingSchema, googleReviewsUrlMA } from '../../utils/reviews';
 import { phoneMA, phoneMAHref } from '../../utils/contact';
 import { webpSrc, projectSrcset } from '../../utils/image';
@@ -536,5 +535,4 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 		</section>
 	</main>
 	<Footer />
-	<StickyCTA phone={location.data.phoneNumber || phoneMA} phoneHref={`tel:${location.data.phoneNumber || phoneMA}`} smsHref={`sms:${location.data.phoneNumber || phoneMA}`} reviewCount={reviewCountDisplay} />
 </Layout>

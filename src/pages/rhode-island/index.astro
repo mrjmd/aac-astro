@@ -100,10 +100,10 @@ const riSchema = {
 								<Icon name="Phone" size={16} />
 								Call {phoneMA}
 							</a>
-							<button class="open-modal bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
+							<a href={`sms:${phoneMA}`} class="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/20 hover:bg-white/20 transition-all inline-flex items-center gap-2">
 								<Icon name="MessageSquare" size={16} />
 								Text Us Photos
-							</button>
+							</a>
 						</div>
 					</div>
 
@@ -242,10 +242,10 @@ const riSchema = {
 						<Icon name="Phone" size={24} />
 						{phoneMA}
 					</a>
-					<button class="open-modal bg-white/10 text-white px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-3">
+					<a href={`sms:${phoneMA}`} class="bg-white/10 text-white px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-3">
 						<Icon name="MessageSquare" size={24} />
 						Text Photos
-					</button>
+					</a>
 				</div>
 			</div>
 		</section>

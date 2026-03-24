@@ -3,7 +3,9 @@ import '../styles/global.css';
 import SpeedInsights from '@vercel/speed-insights/astro';
 import Analytics from '@vercel/analytics/astro';
 import SEOHead from '../components/SEOHead.astro';
+import StickyCTA from '../components/StickyCTA.astro';
 import { phoneCT, phoneMA, addressCT } from '../utils/contact';
+import { reviewCountDisplay } from '../utils/reviews';
 
 interface Props {
 	title: string;
@@ -44,6 +46,19 @@ const geoPosition = coordinates ? `${coordinates.lat};${coordinates.lng}` : unde
 
 const CT_NUMBER = phoneCT;
 const MA_NUMBER = phoneMA;
+
+// Determine sticky CTA phone number and whether to use direct SMS
+// State pages (city + hub) get direct SMS; generic pages get the modal
+const path = Astro.url.pathname;
+const isCTPage = path.startsWith('/connecticut');
+const isMAPage = path.startsWith('/massachusetts');
+const isRIPage = path.startsWith('/rhode-island');
+const isNHPage = path.startsWith('/new-hampshire');
+const isMEPage = path.startsWith('/maine');
+const isStatePage = isCTPage || isMAPage || isRIPage || isNHPage || isMEPage;
+const stickyPhone = isCTPage ? CT_NUMBER : MA_NUMBER;
+const stickyPhoneHref = `tel:${stickyPhone}`;
+const stickySmsHref = isStatePage ? `sms:${stickyPhone}` : undefined;
 
 // JSON-LD Schema for Local Business - Default if no customSchema provided
 const defaultSchema = {
@@ -234,6 +249,12 @@ if (breadcrumbSchema) {
 		<slot />
 		<SpeedInsights />
 		<Analytics />
+		<StickyCTA
+			phone={stickyPhone}
+			phoneHref={stickyPhoneHref}
+			smsHref={stickySmsHref}
+			reviewCount={reviewCountDisplay}
+		/>
 		<script>
 			const observer = new IntersectionObserver(
 				(entries) => {
