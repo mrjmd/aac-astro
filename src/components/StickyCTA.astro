@@ -30,11 +30,11 @@ const { phone, phoneHref, reviewCount, smsHref } = Astro.props;
   class="fixed bottom-0 left-0 right-0 z-40 lg:hidden translate-y-full transition-transform duration-300"
   aria-label="Quick contact"
 >
-  <div class="bg-aac-dark/95 backdrop-blur-sm border-t border-white/10 px-6 py-2 safe-area-pb">
+  <div class="bg-aac-dark/95 backdrop-blur-sm border-t border-white/10 px-6 pt-2.5 pb-1.5 safe-area-pb">
     <div class="flex items-center justify-center gap-3">
       <a
         href={phoneHref}
-        class="bg-aac-yellow text-aac-dark px-6 py-2.5 rounded-full font-black uppercase tracking-widest text-[10px] inline-flex items-center gap-2 active:scale-95 transition-transform"
+        class="bg-aac-yellow text-aac-dark px-6 py-2 rounded-full font-black uppercase tracking-widest text-[10px] inline-flex items-center gap-2 active:scale-95 transition-transform"
       >
         <Icon name="Phone" size={14} />
         Call Now
@@ -42,14 +42,14 @@ const { phone, phoneHref, reviewCount, smsHref } = Astro.props;
       {smsHref ? (
         <a
           href={smsHref}
-          class="bg-white/10 text-white px-6 py-2.5 rounded-full font-black uppercase tracking-widest text-[10px] border border-white/20 inline-flex items-center gap-2 active:scale-95 transition-transform"
+          class="bg-white/10 text-white px-6 py-2 rounded-full font-black uppercase tracking-widest text-[10px] border border-white/20 inline-flex items-center gap-2 active:scale-95 transition-transform"
         >
           <Icon name="MessageSquare" size={14} />
           Text Photos
         </a>
       ) : (
         <button
-          class="open-modal bg-white/10 text-white px-6 py-2.5 rounded-full font-black uppercase tracking-widest text-[10px] border border-white/20 inline-flex items-center gap-2 active:scale-95 transition-transform"
+          class="open-modal bg-white/10 text-white px-6 py-2 rounded-full font-black uppercase tracking-widest text-[10px] border border-white/20 inline-flex items-center gap-2 active:scale-95 transition-transform"
         >
           <Icon name="MessageSquare" size={14} />
           Text Photos
@@ -60,8 +60,10 @@ const { phone, phoneHref, reviewCount, smsHref } = Astro.props;
 </nav>
 
 <style>
+  /* No safe area padding — let the buttons sit low in the bevel,
+     dark background extends behind them into the curved area */
   .safe-area-pb {
-    padding-bottom: env(safe-area-inset-bottom, 0.5rem);
+    padding-bottom: 0;
   }
 </style>
 
