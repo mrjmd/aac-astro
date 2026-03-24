@@ -17,7 +17,6 @@ relatedServices:
   - "free-foundation-consultations"
 relatedPosts:
   - "foundation-repair-cost-guide-2026"
-  - "foundation-repair-home-sellers"
   - "diy-vs-professional-foundation-repair"
 ---
 
@@ -99,7 +98,7 @@ Here is what we believe a foundation repair warranty should include:
 
 **No ambiguous exclusions:** The warranty should not be defeatable by normal New England weather conditions. If your crack repair warranty excludes water intrusion during heavy rain, what exactly is it covering?
 
-**Transferability:** If you sell your home, the warranty should transfer to the new buyer. This protects the buyer, adds value to your home, and demonstrates the company's confidence in their work. See our guide on [foundation repair for home sellers](/blog/foundation-repair-home-sellers) for more on how this affects real estate transactions.
+**Transferability:** If you sell your home, the warranty should transfer to the new buyer. This protects the buyer, adds value to your home, and demonstrates the company's confidence in their work.
 
 **Written documentation:** A physical or digital warranty document with specific terms, the company's contact information, and the date and description of the work performed.
 

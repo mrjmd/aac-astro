@@ -52,7 +52,7 @@ The South Shore's housing stock spans three centuries, and each era brought diff
 
 ### Fieldstone and Rubble Foundations (Pre-1900)
 
-The oldest homes in Quincy, Hingham, Weymouth, and Braintree often sit on foundations built from locally gathered fieldstone or quarried granite (Quincy granite was a major industry). These foundations have no mortar or use lime-based mortar that deteriorates over time. They are inherently porous and flexible, which means they handle some settling well but are essentially open invitations for water. Read more about [fieldstone foundation repair](/blog/fieldstone-foundation-repair-guide) and its unique challenges.
+The oldest homes in Quincy, Hingham, Weymouth, and Braintree often sit on foundations built from locally gathered fieldstone or quarried granite (Quincy granite was a major industry). These foundations have no mortar or use lime-based mortar that deteriorates over time. They are inherently porous and flexible, which means they handle some settling well but are essentially open invitations for water. Fieldstone foundation repair requires specialized techniques to address these unique challenges.
 
 ### Early Poured Concrete and Block (1920s-1960s)
 

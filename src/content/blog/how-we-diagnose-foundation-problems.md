@@ -58,7 +58,7 @@ You would be surprised how much experienced eyes can diagnose from a good photo:
 
 **Water activity** — Staining patterns, efflorescence (that [white powder on basement walls](/blog/efflorescence-white-powder-basement-walls)), and visible moisture tell us whether water has been moving through the crack and for how long.
 
-**Foundation type and age** — We can identify poured concrete, block, brick, and [stone foundations](/blog/stone-foundation-repair-guide) from photos, which directly affects the repair approach.
+**Foundation type and age** — We can identify poured concrete, block, brick, and stone foundations from photos, which directly affects the repair approach.
 
 **Previous repairs** — Patching, old injection ports, or failed sealant tells us someone has tried before and helps us understand what we are dealing with.
 
