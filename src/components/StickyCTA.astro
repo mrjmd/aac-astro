@@ -74,6 +74,7 @@ const { phone, phoneHref, reviewCount, smsHref } = Astro.props;
   const heroSection = document.querySelector('main > section:first-of-type');
 
   if (stickyCta && heroSection) {
+    // Show/hide based on hero visibility
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -87,5 +88,16 @@ const { phone, phoneHref, reviewCount, smsHref } = Astro.props;
       { threshold: 0 }
     );
     observer.observe(heroSection);
+
+    // iOS Safari fix: adjust position when visual viewport resizes
+    // (toolbar show/hide changes the visual viewport but not the layout viewport)
+    if (window.visualViewport) {
+      const updatePosition = () => {
+        const offset = window.innerHeight - window.visualViewport.height - window.visualViewport.offsetTop;
+        stickyCta.style.bottom = offset > 0 ? `${offset}px` : '0px';
+      };
+      window.visualViewport.addEventListener('resize', updatePosition);
+      window.visualViewport.addEventListener('scroll', updatePosition);
+    }
   }
 </script>
