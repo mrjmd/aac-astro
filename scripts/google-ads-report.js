@@ -26,12 +26,11 @@ const DAYS = daysIdx !== -1 ? parseInt(args[daysIdx + 1], 10) : 30;
 const acctIdx = args.indexOf('--account');
 const ACCOUNT_KEY = acctIdx !== -1 ? args[acctIdx + 1] : 'MA';
 
-// GAQL date range
-const dateRange = DAYS === 30 ? 'LAST_30_DAYS'
-  : DAYS === 7 ? 'LAST_7_DAYS'
-  : DAYS === 14 ? 'LAST_14_DAYS'
-  : DAYS === 90 ? 'LAST_90_DAYS'
-  : 'LAST_30_DAYS';
+// GAQL date range — only a few DURING literals exist, use explicit dates for everything else
+const DURING_LITERALS = { 7: 'LAST_7_DAYS', 14: 'LAST_14_DAYS', 30: 'LAST_30_DAYS' };
+const dateRange = DURING_LITERALS[DAYS]
+  ? `DURING ${DURING_LITERALS[DAYS]}`
+  : `BETWEEN '${daysAgo(DAYS)}' AND '${daysAgo(1)}'`;
 
 function daysAgo(n) {
   const d = new Date();
@@ -68,7 +67,7 @@ async function main() {
       metrics.conversions_value,
       metrics.average_cpc
     FROM campaign
-    WHERE segments.date DURING ${dateRange}
+    WHERE segments.date ${dateRange}
     ORDER BY metrics.cost_micros DESC
   `);
 
@@ -95,7 +94,7 @@ async function main() {
       metrics.conversions,
       metrics.conversions_value
     FROM search_term_view
-    WHERE segments.date DURING ${dateRange}
+    WHERE segments.date ${dateRange}
       AND metrics.clicks > 0
     ORDER BY metrics.cost_micros DESC
   `);
@@ -125,7 +124,7 @@ async function main() {
       metrics.search_impression_share,
       ad_group_criterion.quality_info.quality_score
     FROM keyword_view
-    WHERE segments.date DURING ${dateRange}
+    WHERE segments.date ${dateRange}
       AND metrics.impressions > 0
     ORDER BY metrics.cost_micros DESC
   `);
@@ -156,7 +155,7 @@ async function main() {
         metrics.cost_micros,
         metrics.conversions
       FROM geographic_view
-      WHERE segments.date DURING ${dateRange}
+      WHERE segments.date ${dateRange}
         AND metrics.clicks > 0
       ORDER BY metrics.cost_micros DESC
     `);
