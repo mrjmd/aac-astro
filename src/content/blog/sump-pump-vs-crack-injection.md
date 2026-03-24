@@ -53,7 +53,7 @@ For a typical wall crack, injection takes a few hours, costs $800-$1,200 per cra
 
 ## How Sump Pumps Work
 
-A sump pump sits in a pit (the sump) dug below the level of your basement floor, usually in a low corner. Water that enters the basement through various pathways, the floor-wall joint, floor cracks, or an interior drain system, flows by gravity into the sump pit. When the water level reaches a trigger point, the pump activates and pushes the water through a discharge pipe to the exterior, away from the foundation.
+A sump pump sits in a pit (the sump) dug below the level of your basement floor, usually in a low corner. Water that enters the basement through various pathways, the floor-wall joint, [floor cracks](/blog/basement-floor-cracks-leaking/), or an interior drain system, flows by gravity into the sump pit. When the water level reaches a trigger point, the pump activates and pushes the water through a discharge pipe to the exterior, away from the foundation.
 
 A sump pump is a water management system. It accepts that water will enter the basement and removes it before it causes damage. It does not stop water from entering. It just makes sure water does not stay.
 

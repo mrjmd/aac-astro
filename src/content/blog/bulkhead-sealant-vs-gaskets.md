@@ -79,7 +79,7 @@ Many homeowners assume a leaking bulkhead means they need a whole new Bilco door
 
 If your bulkhead is leaking — especially if you notice water in your basement after rain pooling at the base of the bulkhead stairs — start with a visual inspection during the next heavy rain. Note where the water appears — at the top of the stairs, along the side rails, or at the base where the bulkhead meets the foundation. That tells us which seal points have failed.
 
-For a detailed cost breakdown, see our [bulkhead repair cost guide](/blog/bulkhead-repair-cost-guide-2026). Or text us a photo for assessment — we can often identify the failed seal point from a photo. You can also schedule a [free consultation](/services/free-foundation-consultations) and we will assess all three seal points in person and tell you exactly what needs to be fixed.
+For a detailed cost breakdown, see our [bulkhead repair cost guide](/blog/bulkhead-repair-cost-guide-2026). Or text us a photo for assessment — we can often identify the failed seal point from a photo. You can also schedule a [free consultation](/services/free-foundation-consultations) and we will assess all three seal points in person and tell you exactly what needs to be fixed. Learn more about our [professional bulkhead repair service](/services/leaky-bulkhead-repair/).
 
 **Connecticut:** 860-573-8760
 **Massachusetts:** 617-668-1677

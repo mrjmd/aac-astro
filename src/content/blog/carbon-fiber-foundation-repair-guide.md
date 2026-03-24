@@ -71,7 +71,7 @@ Carbon fiber isn't the only structural repair option. Here's how it compares to 
 
 ### Steel I-Beams
 
-Steel I-beams are the traditional approach to bowing walls. Vertical steel columns are placed against the wall and anchored to the footing and floor framing above.
+Steel I-beams are the traditional approach to bowing walls. Vertical steel columns are placed against the wall and anchored to the footing and floor framing above. (Not to be confused with [lally columns](/blog/lally-columns-guide/), which are the support posts holding up your main beam.)
 
 **Pros:** Proven technology, can handle severe bowing, adjustable over time.
 

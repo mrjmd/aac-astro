@@ -75,7 +75,7 @@ This is one of the earliest and most overlooked signs of foundation movement.
 - You can feel a distinct "dip" or "hump" in specific areas
 - The unevenness is accompanied by cracking in walls or ceilings above
 
-**What to do:** Measure and document the slope. Check the basement directly below the uneven area for foundation cracks, water damage, or deteriorating support structures.
+**What to do:** Measure and document the slope. Check the basement directly below the uneven area for foundation cracks, water damage, or deteriorating support structures like rusted [lally columns](/blog/lally-columns-guide/).
 
 ## 4. Wall and Ceiling Cracks Inside the Home
 

@@ -43,6 +43,8 @@ These are often shrinkage cracks that don't affect structural integrity or let w
 - Masonry crack filler
 - Flexible polyurethane caulk
 
+**Products that don't work:** [DIY sealants like Flex Seal](/blog/flex-seal-basement-cracks/) are not designed for foundation cracks and will peel or fail within months.
+
 ### Minor Efflorescence
 
 **What it is:**
@@ -75,7 +77,7 @@ If water is coming through a crack — even occasionally, such as water in your 
 
 Surface sealers only address the visible crack. Water entering your foundation travels through the entire wall thickness (8-10 inches of concrete). [Professional crack injection](/services/foundation-crack-injection) at 100 PSI fills the complete crack path from inside to outside for $800-$1,200 per crack with a lifetime guarantee.
 
-**DIY risk:** Surface sealing can trap water inside the wall, leading to freeze-thaw damage in New England's clay-heavy soil and glacial till conditions, creating larger cracks and accelerating deterioration.
+**DIY risk:** Surface sealing — including [spray-on products like Flex Seal](/blog/flex-seal-basement-cracks/) — can trap water inside the wall, leading to freeze-thaw damage in New England's clay-heavy soil and glacial till conditions, creating larger cracks and accelerating deterioration.
 
 ### Cracks Wider Than 1/4 Inch
 

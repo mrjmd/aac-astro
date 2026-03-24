@@ -45,7 +45,7 @@ But we understand you need ballpark numbers to plan and budget. So here's an hon
 Not all foundation problems are equal:
 
 **Simple Crack Injection**
-The most affordable repair. We inject flexible urethane or structural epoxy at 100 PSI to fill and seal all 8-10 inches of concrete through our [foundation crack injection](/services/foundation-crack-injection) process. Most homeowners pay $800-$1,200 per crack.
+The most affordable repair. We inject flexible urethane or structural epoxy at 100 PSI to fill and seal all 8-10 inches of concrete through our [foundation crack injection](/services/foundation-crack-injection) process. Most homeowners pay $800-$1,200 per crack. For floor-specific issues, see our [basement floor crack repair guide](/blog/basement-floor-crack-repair-guide/).
 
 **Structural Reinforcement with Carbon Fiber Staples**
 If cracks indicate structural movement, [carbon fiber stitches](/services/carbon-fiber-stitches) (also called carbon fiber staples) may be needed in addition to injection. This adds $200-$300 per stitch location.

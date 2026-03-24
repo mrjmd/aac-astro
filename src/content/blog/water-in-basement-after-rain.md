@@ -74,7 +74,7 @@ If you've just found water after a rain:
 
 Here's something the waterproofing industry won't tell you: if your water enters through one or two cracks or a leaky bulkhead, you don't need a $15,000 interior drainage system. You need the specific entry point sealed.
 
-Interior waterproofing systems manage water after it enters. They make sense for widespread seepage, high water tables, or hydrostatic pressure from below. But for the majority of homes I inspect, water enters through identifiable cracks or joints. Sealing those entry points stops it at the source for a fraction of the cost.
+Interior waterproofing systems manage water after it enters. They make sense for widespread seepage, high water tables, or hydrostatic pressure from below. But for the majority of homes I inspect, water enters through identifiable cracks or joints. Sealing those entry points stops it at the source for a fraction of the cost. And if you're tempted to try a quick fix first, know that [Flex Seal and similar products won't solve basement cracks](/blog/flex-seal-basement-cracks/) — they're surface coatings that peel off within months.
 
 **My honest advice:** Before signing with a waterproofing company, get a crack repair assessment. If we can identify where water enters and seal it with injection, you'll spend $800-$2,500 instead of $10,000+. And if your situation genuinely requires waterproofing, I'll tell you that too. We don't sell drainage systems, so we have no reason to oversell.
 
