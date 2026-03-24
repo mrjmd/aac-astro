@@ -76,8 +76,8 @@ Expand the `sameAs` array and add `hasCredential`:
 
 - [x] Cost comparison tables added to both published cost guides (foundation + bulkhead) (March 24)
 - [x] "What is X?" definitions added to all 6 service pages (March 24)
-- [ ] Ensure how-to blog posts use proper numbered `<ol>` lists (not just bold text)
-- [ ] Structure FAQ sections with exact PAA question phrasing as H3 headings
+- [x] Fixed `<ol>` numbered list formatting in basement-floor-crack-repair-guide.md (March 24). Other how-to posts use H3 headings as section dividers (correct for SEO).
+- [x] Added FAQPage schema via frontmatter FAQs to flex-seal and lally-columns posts (March 24). Blog template auto-generates FAQPage schema from `faqs:` frontmatter.
 
 ### Priority PAA Questions to Target
 
@@ -129,13 +129,13 @@ All content referenced below is already published. This is about ranking higher,
 These posts target high-volume topics where competitors get significant traffic. The content exists; it needs to rank.
 
 **`lally-columns-guide.md`** — A-1 gets 175 visits/mo from this topic
-- [ ] Audit semantic completeness against A-1's content
+- [x] Semantic audit completed against A-1 (9 articles) + Fine Homebuilding + NE Structural Works + Groundworks (March 24). Added: 6 column types (brick/wood/block/hollow/improvised), 1898 Waltham history, building codes & permits, 180-day temp column rule, footing specs (24x24x12 rebar), home inspection section, "can I move a column" section, top plate/cap plate details, 30-60% strength loss figure, road salt corrosion, LVL beams, floor lifting angle, FAQPage schema. Post grew from ~1,100 to ~2,200 words.
 - [x] Internal links added from carbon-fiber-foundation-repair-guide and signs-of-foundation-problems (March 24)
 - [ ] Monitor position in GSC after 30 days
 
 **`flex-seal-basement-cracks.md`** — 49,500 volume cluster, A-1 gets 198 visits/mo
-- [ ] Compare content depth against top 5 ranking pages
-- [ ] Ensure title tag and meta description are CTR-optimized
+- [x] Content depth audit completed against A-1 (4 articles), NJ Basement Waterproofing, Flex Seal official, RI Pros (March 24). Added: product variants (Liquid/Spray/Shot/Tape/Paste), tie rod failure point, hydraulic cement comparison, home inspection/real estate angle, 5 FAQs for PAA capture. Post grew from ~950 to ~1,500 words. A-1 wins on URL volume (4 thin articles) not depth — our single comprehensive article should outrank.
+- [x] Title changed to question format "Does Flex Seal Work on Basement Cracks?" matching primary query. Meta description updated with product variant names for keyword breadth. (March 24)
 - [x] Internal links added from DIY-vs-pro and water-in-basement posts (March 24)
 
 **`basement-floor-crack-repair-guide.md` + `basement-floor-cracks-leaking.md`** — 13,400/mo cluster

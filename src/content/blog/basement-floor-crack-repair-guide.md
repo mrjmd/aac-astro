@@ -54,11 +54,9 @@ To fix a basement floor crack permanently, you need to remove the damaged concre
 
 Our process involves three steps:
 
-**Grinding out the crack.** We use a diamond grinder to open up the crack, removing all loose and deteriorated concrete. This creates a clean channel with fresh concrete surfaces — the critical preparation step that DIY repairs skip entirely.
-
-**Self-leveling epoxy or rubber seal.** Depending on the crack and conditions, we fill the prepared channel with self-leveling epoxy (which bonds to both sides of the crack and cures harder than the original slab) or a commercial-grade rubber surface seal (which stays flexible to accommodate minor seasonal movement). Both materials flow into the full depth of the prepared channel and create a waterproof, gas-tight barrier.
-
-**Flush finish.** The repair is smoothed level with the surrounding floor, creating a clean result that is ready for foot traffic within hours.
+1. **Grinding out the crack.** We use a diamond grinder to open up the crack, removing all loose and deteriorated concrete. This creates a clean channel with fresh concrete surfaces — the critical preparation step that DIY repairs skip entirely.
+2. **Self-leveling epoxy or rubber seal.** Depending on the crack and conditions, we fill the prepared channel with self-leveling epoxy (which bonds to both sides of the crack and cures harder than the original slab) or a commercial-grade rubber surface seal (which stays flexible to accommodate minor seasonal movement). Both materials flow into the full depth of the prepared channel and create a waterproof, gas-tight barrier.
+3. **Flush finish.** The repair is smoothed level with the surrounding floor, creating a clean result that is ready for foot traffic within hours.
 
 The result is a repair that is nearly invisible once cured, permanently sealed against both water and soil gas infiltration, and built to handle the real-world conditions of a New England basement.
 

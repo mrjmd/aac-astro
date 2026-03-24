@@ -1,7 +1,7 @@
 ---
 title: "Does Flex Seal Work on Basement Cracks? What Actually Happens"
-metaTitle: "Flex Seal on Basement Cracks: Truth"
-metaDescription: "Flex Seal cannot fix a leaking basement crack. Learn why rubber sealants fail on foundation walls, when surface sealers are fine, and what actually stops leaks."
+metaTitle: "Does Flex Seal Work on Basement Cracks?"
+metaDescription: "Flex Seal won't fix a leaking basement crack — here's why, plus what actually works. Covers Flex Seal Liquid, Spray, and Tape on foundation walls."
 excerpt: "Flex Seal seems like a quick fix for a wet basement. Here is why it fails on foundation cracks, when surface sealants are actually fine, and what works instead."
 publishDate: 2026-02-26
 author: "Attack A Crack"
@@ -18,6 +18,17 @@ relatedPosts:
   - "diy-vs-professional-foundation-repair"
   - "water-in-basement-after-rain"
   - "basement-floor-crack-repair-guide"
+faqs:
+  - question: "How long does Flex Seal last on basement walls?"
+    answer: "On a dry, non-leaking surface, Flex Seal can last several years. On a basement crack with active water infiltration, it typically fails within weeks to months — the hydrostatic pressure behind the wall pushes water through or behind the seal, causing it to peel, bubble, or lift."
+  - question: "Can Flex Seal stop an active water leak in a basement?"
+    answer: "No. Flex Seal is a surface coating that cannot resist hydrostatic pressure from saturated soil pushing water through a foundation crack. It may temporarily slow visible dripping but does not seal the full crack depth. Professional crack injection, which fills the entire crack from interior to exterior under pressure, is the permanent solution."
+  - question: "Is Flex Seal safe to use indoors in a basement?"
+    answer: "Flex Seal products require adequate ventilation during application. In an enclosed basement with limited airflow, the fumes can be significant. Always open windows or use fans when applying any spray sealant product indoors."
+  - question: "What is better than Flex Seal for basement cracks?"
+    answer: "Professional crack injection using polyurethane or epoxy resin is the proven fix for leaking basement cracks. The resin is injected under pressure through the full 8-10 inch wall thickness, chemically bonds to the concrete, and creates a permanent seal. It costs $800-$1,200 per crack but comes with a lifetime guarantee — unlike Flex Seal which needs repeated reapplication."
+  - question: "Will Flex Seal on a basement crack affect a home inspection?"
+    answer: "Yes. Home inspectors flag visible Flex Seal patches on foundation cracks as evidence of unresolved water infiltration. A DIY surface repair can raise concerns during a home sale and may result in the buyer requiring professional repair as a condition of closing."
 ---
 
 You have a crack in your basement wall. Water seeps through when it rains. You search online for a quick fix and every other result mentions Flex Seal — the rubberized spray sealant you have seen advertised on TV sealing buckets, gutters, and even boats.
@@ -28,9 +39,9 @@ Here is what is actually happening, and why Flex Seal is the wrong tool for base
 
 ## What Flex Seal Is (and Is Not)
 
-Flex Seal is a rubberized coating that sprays on as a liquid and dries into a flexible rubber membrane. It works well for what it is designed to do: sealing surface gaps on materials like metal, wood, and PVC where water runs across a surface.
+Flex Seal is a family of rubberized sealant products — **Flex Seal Spray**, **Flex Seal Liquid**, **Flex Shot** (caulk-style), **Flex Tape**, and **Flex Paste**. They all work on the same principle: a rubberized coating that dries into a flexible membrane. The products have strong reviews (72% five-star ratings from thousands of users) and they genuinely work well for what they are designed to do: sealing surface gaps on materials like metal, wood, and PVC where water runs across a surface.
 
-What it is **not** designed for:
+What none of them are designed for:
 
 - **Structural cracks under hydrostatic pressure** — water being pushed through a wall by soil pressure
 - **Concrete-to-concrete bonds** — rubber does not chemically bond to concrete the way epoxy or polyurethane does
@@ -62,6 +73,20 @@ When you seal only the interior surface of a crack, water that enters from the e
 - **Wider cracks** — the original crack deteriorates faster because water cannot escape
 
 This is why some homeowners report their crack getting **worse** after applying Flex Seal. The water did not stop — it just found a new path.
+
+### 5. Tie Rod Holes Are a Common Failure Point
+
+Many homeowners apply Flex Seal around **tie rod holes** — the small circular penetrations left from the concrete form ties when the foundation was originally poured. These holes go straight through the wall and leak frequently. Flex Seal covers the interior opening, but the hole is a cylinder through 8-10 inches of concrete. Water pushes right through behind the seal within a few rain cycles.
+
+## Why Hydraulic Cement Fails Too
+
+Flex Seal is not the only surface product homeowners try. **Hydraulic cement** is another common DIY attempt — it expands slightly as it cures and seems like a logical fix. But hydraulic cement is rigid, not flexible. When your foundation shifts even slightly with seasonal temperature changes, the cement cracks and the leak returns. Like Flex Seal, it only addresses the visible surface and cannot fill the full depth of the crack.
+
+## The Home Inspection Problem
+
+Here is something homeowners rarely consider: **Flex Seal on a basement crack is a red flag for home inspectors.** A visible Flex Seal patch tells the inspector that water was actively entering — and that it was "fixed" with a product that does not work on foundation cracks. We have seen cases where a DIY Flex Seal repair nearly killed a real estate deal because the buyer's inspector flagged it as an unresolved water infiltration issue that required professional repair before closing.
+
+If you are planning to sell your home, a Flex Seal patch on a foundation crack can cost you far more in negotiation than a professional injection would have cost to do it right.
 
 ## When Surface Sealants Are Actually Fine
 
