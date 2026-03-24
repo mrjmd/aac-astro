@@ -26,7 +26,9 @@
     "report:ads": "node scripts/google-ads-report.js",
     "report:ga4": "node scripts/ga4-report.js",
     "report:gsc": "node scripts/gsc-report.js",
-    "report:all": "node scripts/google-ads-report.js && node scripts/ga4-report.js && node scripts/gsc-report.js"
+    "report:all": "node scripts/google-ads-report.js && node scripts/ga4-report.js && node scripts/gsc-report.js",
+    "ads:assets": "node scripts/google-ads-assets.js",
+    "ads:negatives": "node scripts/google-ads-negatives.js"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",

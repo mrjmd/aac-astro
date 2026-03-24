@@ -82,6 +82,41 @@ export async function gaqlQuery(auth, customerId, query) {
   return rows;
 }
 
+/**
+ * Mutate resources (create, update, pause) on any Google Ads resource type.
+ *
+ * @param {object} auth - OAuth2 client
+ * @param {string} customerId - Target account ID (no dashes)
+ * @param {string} resourceType - e.g. 'assets', 'campaignAssets', 'adGroupAssets', 'campaignCriteria'
+ * @param {Array} operations - Array of operation objects ({ create: {...} } or { update: {...}, updateMask: '...' } or { remove: '...' })
+ * @returns {object} - API response
+ */
+export async function mutateResource(auth, customerId, resourceType, operations) {
+  const config = await loadConfig();
+  const token = await auth.getAccessToken();
+  const accessToken = typeof token === 'string' ? token : token.token;
+
+  const url = `${BASE_URL}/customers/${customerId}/${resourceType}:mutate`;
+
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${accessToken}`,
+      'developer-token': config.developerToken,
+      'login-customer-id': config.managerAccountId,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ operations }),
+  });
+
+  if (!response.ok) {
+    const errorBody = await response.text();
+    throw new Error(`Google Ads mutate error on ${resourceType} (${response.status}): ${errorBody}`);
+  }
+
+  return response.json();
+}
+
 /** Get the config (for account IDs, etc.) */
 export async function getConfig() {
   return loadConfig();
@@ -90,4 +125,9 @@ export async function getConfig() {
 /** Convert cost_micros to dollars */
 export function microsToDollars(micros) {
   return Number((parseInt(micros || '0', 10) / 1_000_000).toFixed(2));
+}
+
+/** Get the base URL (for custom endpoints) */
+export function getBaseUrl() {
+  return BASE_URL;
 }
