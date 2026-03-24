@@ -31,9 +31,13 @@ steps:
     text: "Once cured, we inspect every stitch for proper bond, smooth the surface for a clean finish, and confirm the crack is fully stabilized."
 ---
 
+## What Are Carbon Fiber Stitches?
+
+**Carbon fiber stitches** (also called carbon fiber staples) are high-strength carbon fiber strips embedded in structural epoxy and installed across foundation cracks to prevent further movement. They bridge both sides of the crack, distributing stress across a wider area and permanently stabilizing the wall — without excavation or steel beams.
+
 ## Carbon Fiber Foundation Repair: Maximum Strength, Minimal Intrusion
 
-When foundation cracks indicate structural stress, carbon fiber stitches (also called carbon fiber staples) provide the reinforcement needed to stop movement and stabilize your foundation. This advanced structural repair method adds incredible strength without the cost and disruption of traditional steel I-beam reinforcement or exterior excavation.
+When foundation cracks indicate structural stress, carbon fiber stitches provide the reinforcement needed to stop movement and stabilize your foundation. This advanced structural repair method adds incredible strength without the cost and disruption of traditional steel I-beam reinforcement or exterior excavation.
 
 ### What Are Carbon Fiber Stitches (Staples)?
 

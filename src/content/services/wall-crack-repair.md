@@ -31,6 +31,10 @@ steps:
     text: "Ports are crimped, a specialized surface patch is applied for a clean finish, and we leave your basement better than we found it."
 ---
 
+## What Is Basement Wall Crack Repair?
+
+**Basement wall crack repair** is the process of permanently sealing cracks in poured concrete or block foundation walls using high-pressure resin injection. Epoxy restores structural strength while polyurethane foam creates a flexible, waterproof seal — both methods fill the crack through the full wall thickness without excavation.
+
 ## Basement Wall Crack Repair That Lasts a Lifetime
 
 Cracks in your foundation walls aren't just cosmetic — they're pathways for water infiltration that can lead to structural damage, mold growth, and decreased home value. Whether you're seeing vertical cracks, horizontal cracks, or stair-step cracks in block foundations, Attack A Crack specializes in permanent basement wall crack repair using proven injection techniques backed by a lifetime guarantee.

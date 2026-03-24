@@ -27,6 +27,10 @@ relatedServices:
   - "driveway"
 ---
 
+## What Is Basement Floor Crack Repair?
+
+**Basement floor crack repair** is the process of grinding out cracks in a concrete basement slab and filling them with self-leveling epoxy or flexible rubber sealant. This permanently seals the crack against water seepage and radon gas infiltration while creating a smooth, durable surface that won't re-crack.
+
 ## Basement Floor Crack Repair in Massachusetts
 
 Cracks in your basement floor are more than cosmetic — they are open pathways for water and radon gas to enter your home. Whether you are seeing water seep up through the floor after rain, noticing a damp streak along a crack line, or your radon test came back high, fixing cracks in your basement floor permanently requires more than a bag of concrete patch from the hardware store.

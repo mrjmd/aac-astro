@@ -33,7 +33,11 @@ steps:
     text: "Each port is crimped off after injection. A specialized surface patch is applied over the groove, leaving a clean, polished finish—backed by our lifetime guarantee."
 ---
 
-## Foundation Crack Injection: The Science of Permanent Repair
+## What Is Foundation Crack Injection?
+
+**Foundation crack injection** is a repair method where epoxy or polyurethane resin is injected under high pressure into a concrete foundation crack, filling it completely from the interior surface through to the exterior soil. It permanently seals the crack against water infiltration and restores structural integrity — no exterior excavation required.
+
+## The Science of Permanent Repair
 
 Foundation crack injection is the gold standard for repairing poured concrete foundation cracks. Whether you call it cement crack repair or concrete crack repair, the science is the same: unlike surface sealers, hydraulic cement patches, or caulk, injection fills the entire crack from interior surface to exterior soil, creating a complete seal that lasts the lifetime of your home.
 
