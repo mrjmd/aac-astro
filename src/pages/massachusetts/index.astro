@@ -12,6 +12,7 @@ import { getByState } from '../../utils/testimonials';
 import { getAll as getAllProjects } from '../../utils/projects';
 import { phoneMA, phoneMAHref } from '../../utils/contact';
 import { webpSrc, projectSrcset } from '../../utils/image';
+import TrustBar from '../../components/TrustBar.astro';
 
 // Get all MA location pages
 const maLocations = (await getCollection('locations'))
@@ -229,6 +230,9 @@ const maSchema = {
 				</div>
 			</div>
 		</section>
+
+		<!-- Trust Badges -->
+		<TrustBar pathname={Astro.url.pathname} />
 
 		<!-- Services We Offer -->
 		<section class="py-24 bg-white">

@@ -10,6 +10,7 @@ import { aggregateRatingSchema } from '../../utils/reviews';
 import { phoneMA, phoneMAHref } from '../../utils/contact';
 import { ME_REGIONS } from '../../utils/regions';
 import { webpSrc, projectSrcset } from '../../utils/image';
+import TrustBar from '../../components/TrustBar.astro';
 
 // Get all ME location pages
 const meLocations = (await getCollection('locations'))
@@ -153,6 +154,9 @@ const meSchema = {
 				</div>
 			</div>
 		</section>
+
+		<!-- Trust Badges -->
+		<TrustBar pathname={Astro.url.pathname} />
 
 		<!-- Services We Offer -->
 		<section class="py-24 bg-white">

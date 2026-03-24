@@ -11,6 +11,7 @@ import { reviewCount } from '../../utils/reviews';
 import { phoneCT, phoneCTHref } from '../../utils/contact';
 import { webpSrc, projectSrcset } from '../../utils/image';
 import { getByState } from '../../utils/testimonials';
+import TrustBar from '../../components/TrustBar.astro';
 
 // Get all CT location pages
 const ctLocations = (await getCollection('locations'))
@@ -167,6 +168,9 @@ const ctSchema = {
 				</div>
 			</div>
 		</section>
+
+		<!-- Trust Badges -->
+		<TrustBar pathname={Astro.url.pathname} />
 
 		<!-- Services We Offer -->
 		<section class="py-24 bg-white">

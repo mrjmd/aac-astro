@@ -1,0 +1,86 @@
+---
+interface Props {
+  pathname: string;
+}
+
+const { pathname } = Astro.props;
+
+const isMA = pathname.startsWith('/massachusetts');
+const isCT = pathname.startsWith('/connecticut');
+const isHome = pathname === '/';
+
+interface Badge {
+  name: string;
+  src: string;
+  alt: string;
+  href: string;
+}
+
+interface HICBadge {
+  type: 'hic';
+  scope: 'ct' | 'both';
+}
+
+type BadgeItem = Badge | HICBadge;
+
+const logoBadges: Badge[] = [
+  { name: 'BBB A+ Accredited', src: '/images/bbb-logo-torch.webp', alt: 'BBB A+ Accredited Business', href: 'https://www.bbb.org/us/ct/north-windham/profile/concrete-repair/attack-a-crack-0111-74000203' },
+  { name: 'ASHI New England', src: '/images/ASHI-New-England-Logo.webp', alt: 'ASHI New England Affiliate Member', href: 'https://www.ashinewengland.org/' },
+  { name: 'GBAR Member', src: '/images/gbar-logo.webp', alt: 'Greater Boston Association of Realtors Member', href: 'https://www.gbar.org/' },
+  { name: 'Quincy Chamber', src: '/images/quincy-chamber-member-logo.webp', alt: 'Quincy Chamber of Commerce Member', href: 'https://www.quincychamber.com/' },
+];
+
+function getBadge(name: string): Badge {
+  return logoBadges.find(b => b.name === name)!;
+}
+
+let selected: BadgeItem[];
+
+if (isMA) {
+  selected = [getBadge('ASHI New England'), getBadge('GBAR Member'), getBadge('Quincy Chamber')];
+} else if (isCT) {
+  selected = [getBadge('BBB A+ Accredited'), getBadge('ASHI New England'), { type: 'hic', scope: 'ct' }];
+} else {
+  // Homepage + RI/NH/ME/services/blog/about
+  selected = [getBadge('BBB A+ Accredited'), getBadge('ASHI New England'), { type: 'hic', scope: 'both' }];
+}
+---
+
+<div class="bg-aac-yellow border-y-8 border-aac-dark py-8">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-center gap-8 md:gap-16">
+    {selected.map((badge) => (
+      'type' in badge ? (
+        <div class="flex flex-col items-center gap-1">
+          <div class="h-10 md:h-12 flex flex-col items-center justify-center">
+            {badge.scope === 'both' ? (
+              <>
+                <a href="https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx" target="_blank" rel="noopener noreferrer" class="text-[9px] md:text-[10px] font-black text-aac-dark/70 hover:text-aac-dark transition-colors tracking-wide">
+                  CT HIC #0629164
+                </a>
+                <a href="https://contractorhub.mass.gov/s/hic-contractor-search" target="_blank" rel="noopener noreferrer" class="text-[9px] md:text-[10px] font-black text-aac-dark/70 hover:text-aac-dark transition-colors tracking-wide">
+                  MA HIC #214356
+                </a>
+              </>
+            ) : (
+              <a href="https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx" target="_blank" rel="noopener noreferrer" class="text-[10px] md:text-xs font-black text-aac-dark/70 hover:text-aac-dark transition-colors tracking-wide">
+                CT HIC #0629164
+              </a>
+            )}
+          </div>
+          <span class="text-[10px] md:text-xs font-black uppercase tracking-widest text-aac-dark/50">
+            Licensed Contractor
+          </span>
+        </div>
+      ) : (
+        <a href={badge.href} target="_blank" rel="noopener noreferrer"
+           class="flex flex-col items-center gap-1.5 group">
+          <img src={badge.src} alt={badge.alt} loading="eager" width="48" height="48"
+               class="h-10 md:h-12 w-auto object-contain" />
+          <span class="text-[10px] md:text-xs font-black uppercase tracking-widest text-aac-dark/50">
+            {badge.name}
+          </span>
+        </a>
+      )
+    ))}
+  </div>
+</div>

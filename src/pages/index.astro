@@ -15,6 +15,7 @@ import { getFeatured } from '../utils/testimonials';
 import { homeFaqs, getFaqSchema } from '../utils/faqs';
 import { getLatestBlog } from '../utils/blog-linking';
 import { webpSrc, projectSrcset } from '../utils/image';
+import TrustBar from '../components/TrustBar.astro';
 
 const featuredTestimonials = getFeatured(4);
 const latestPosts = await getLatestBlog(3);
@@ -68,7 +69,10 @@ const MA_NUMBER = phoneMA;
 				{ "@type": "State", "name": "Maine" }
 			],
 			"aggregateRating": aggregateRatingSchema,
-		"sameAs": ["https://www.facebook.com/attackacrack"]
+		"sameAs": [
+				"https://www.facebook.com/attackacrack",
+				"https://www.bbb.org/us/ct/north-windham/profile/concrete-repair/attack-a-crack-0111-74000203"
+			]
 		}
 	]}
 >
@@ -77,12 +81,12 @@ const MA_NUMBER = phoneMA;
 	
 	<main>
 		<Hero />
-		
+
 		<!-- Stats Bar -->
 		<div class="bg-aac-yellow border-y-8 border-aac-dark py-12">
 			<div class="max-w-7xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-12">
 				{[
-					{ num: "20+", desc: "Years Experience" },
+					{ num: "20+", desc: "Years in Business" },
 					{ num: "∞", desc: "Lifetime Guarantee" },
 					{ num: `${reviewCount}+`, desc: "5-Star Reviews" },
 					{ num: "Free", desc: "Every Diagnosis" }
@@ -96,6 +100,9 @@ const MA_NUMBER = phoneMA;
 		</div>
 
 		<Services />
+
+		<!-- Trust Badges -->
+		<TrustBar pathname={Astro.url.pathname} />
 		<Team />
 		
 		<!-- Testimonials -->

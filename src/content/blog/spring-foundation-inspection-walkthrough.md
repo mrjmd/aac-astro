@@ -7,8 +7,8 @@ publishDate: 2026-03-24
 author: "Attack A Crack"
 category: "maintenance-tips"
 tags: ["foundation inspection", "spring maintenance", "DIY inspection", "homeowner guide"]
-heroImage: "/images/projects/abington-crack-injection-2025-09-before.jpg"
-heroImageAlt: "Spring Foundation Inspection: A 15-Minute Walkthrough"
+heroImage: "/images/blog/spring-foundation-inspection-exterior.jpg"
+heroImageAlt: "Homeowner inspecting foundation exterior during spring thaw with snow melting around the house"
 
 relatedServices:
   - "free-foundation-consultations"

@@ -8,6 +8,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
 import ProjectCards from '../../components/ProjectCards.astro';
 import ProcessBar from '../../components/ProcessBar.astro';
+import TrustBar from '../../components/TrustBar.astro';
 import { reviewCount, reviewCountDisplay, rating, aggregateRatingSchema, googleReviewsUrlMA } from '../../utils/reviews';
 import { phoneMA, phoneMAHref } from '../../utils/contact';
 import { webpSrc, projectSrcset } from '../../utils/image';
@@ -173,12 +174,6 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 								<Icon name="ShieldCheck" size={18} />
 								<span class="font-bold text-sm">Lifetime Guarantee</span>
 							</div>
-							{location.data.servesResurfacing && (
-								<div class="flex items-center gap-2 text-blue-400">
-									<Icon name="Wrench" size={18} />
-									<span class="font-bold text-sm">+ Resurfacing</span>
-								</div>
-							)}
 						</div>
 
 						<div class="flex gap-3">
@@ -212,27 +207,12 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 			</div>
 		</section>
 
+		<!-- Trust Badges -->
+		<TrustBar pathname={Astro.url.pathname} />
+
 		<!-- 3-Step Process Bar -->
 		<ProcessBar />
 
-		<!-- Resurfacing Banner -->
-		{location.data.servesResurfacing && (
-			<section class="py-6 bg-aac-blue text-white">
-				<div class="max-w-7xl mx-auto px-6">
-					<div class="flex flex-col md:flex-row items-center justify-between gap-4">
-						<div class="flex items-center gap-4">
-							<Icon name="Wrench" size={24} />
-							<p class="font-bold">
-								Concrete repair & resurfacing also available in {location.data.city}!
-							</p>
-						</div>
-						<a href="/concrete-repair" class="bg-white text-aac-blue px-4 py-2 rounded-lg font-black uppercase tracking-widest text-[10px] hover:bg-aac-yellow hover:text-aac-dark transition-colors inline-flex items-center gap-2">
-							Concrete Repair Services <Icon name="ArrowRight" size={14} />
-						</a>
-					</div>
-				</div>
-			</section>
-		)}
 
 		<!-- Services in This City -->
 		<section class="py-8 lg:py-16 bg-zinc-50">

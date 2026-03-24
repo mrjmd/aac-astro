@@ -10,6 +10,7 @@ import { aggregateRatingSchema } from '../../utils/reviews';
 import { phoneMA, phoneMAHref } from '../../utils/contact';
 import { NH_REGIONS } from '../../utils/regions';
 import { webpSrc, projectSrcset } from '../../utils/image';
+import TrustBar from '../../components/TrustBar.astro';
 
 // Get all NH location pages
 const nhLocations = (await getCollection('locations'))
@@ -153,6 +154,9 @@ const nhSchema = {
 				</div>
 			</div>
 		</section>
+
+		<!-- Trust Badges -->
+		<TrustBar pathname={Astro.url.pathname} />
 
 		<!-- Services We Offer -->
 		<section class="py-24 bg-white">

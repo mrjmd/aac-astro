@@ -238,6 +238,32 @@ Switch from working on `main` to feature branches with Vercel preview environmen
 - [ ] Execute backlink strategy from deep-dive analysis (see Backlink Building section above)
 - [ ] Continue 2 posts/week from the full content calendar
 
+## SERP Domination (see `docs/SERP-DOMINATION-PLAN.md`)
+
+Execution plan for maximizing SERP coverage — schema upgrades, featured snippets, ranking optimization, entity building, and backlinks.
+
+- [ ] **Schema: Rich result expansion** — Add HowTo, VideoObject, ImageObject schemas to service/project pages
+- [ ] **Schema: Credential & profile** — Add `hasCredential` (HIC licenses), `memberOf` (ASHI, GBAR, Quincy Chamber), expand `sameAs` (BBB, Google Maps, Yelp)
+- [ ] **Ranking: Quick wins** — Optimize pages at positions 4-10 (foundation crack repair near me, leaky bulkhead)
+- [ ] **Ranking: Gap posts** — Optimize existing lally columns, Flex Seal, basement floor cracks posts for ranking (content exists, needs SEO tuning)
+- [ ] **Snippets: Featured snippet prep** — Add cost comparison tables, "What is X?" paragraphs, proper list markup
+- [ ] **Entity: NAP consistency audit** — Verify identical info across BBB, ASHI, GBAR, chambers, Google Maps, Yelp
+- [ ] **Backlinks: Directory verification** — Confirm all org memberships have active backlinks to attackacrack.com
+- [ ] **Backlinks: Google Guaranteed** — Apply for Local Services Ads (green checkmark in SERP)
+
+## Trust Badges & Credentials (see `docs/TRUST-BADGES-PLAN.md`)
+
+Add visual trust badges, license numbers, and schema for credentials across the site.
+
+- [ ] **TrustBar component** — Create `TrustBar.astro` with context-aware badge display (3 per page)
+- [ ] **Homepage** — Replace stats bar position with trust bar; relocate stats bar below Services
+- [ ] **City pages** — Add trust bar to all 5 state templates (MA: ASHI/GBAR/Quincy; CT: BBB/ASHI/HIC; others: BBB/ASHI/HIC)
+- [ ] **Footer** — Add CT HIC #0629164 and MA HIC #214356 with state lookup links
+- [ ] **About page** — Update E-E-A-T section with BBB link, license numbers
+- [ ] **Schema** — Add `hasCredential`, `memberOf`, expand `sameAs` in Layout.astro
+- [ ] **Image optimization** — Run `npm run optimize:images` on badge logos
+- [ ] **Competitive analysis updated** — Section 10 added to `docs/COMPETITIVE-ANALYSIS.md` with competitor badge audit
+
 ## SEO Quick Wins (Claude — with GSC data)
 
 - [ ] Title tag optimization — audit against target keywords from SEMrush

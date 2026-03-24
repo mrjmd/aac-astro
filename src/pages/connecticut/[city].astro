@@ -8,6 +8,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
 import ProjectCards from '../../components/ProjectCards.astro';
 import ProcessBar from '../../components/ProcessBar.astro';
+import TrustBar from '../../components/TrustBar.astro';
 import { reviewCount, reviewCountDisplay, rating, aggregateRatingSchema, googleReviewsUrlCT } from '../../utils/reviews';
 import { phoneCT, phoneCTHref } from '../../utils/contact';
 import { webpSrc, projectSrcset } from '../../utils/image';
@@ -209,6 +210,9 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 				</div>
 			</div>
 		</section>
+
+		<!-- Trust Badges -->
+		<TrustBar pathname={Astro.url.pathname} />
 
 		<!-- 3-Step Process Bar -->
 		<ProcessBar />
