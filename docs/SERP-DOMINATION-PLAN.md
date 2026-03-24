@@ -15,12 +15,12 @@ Schema upgrades directly increase SERP real estate (rich snippets, knowledge pan
 
 Add `HowTo` structured data to service pages that describe a repair process. Google renders these as expandable step-by-step rich results.
 
-- [ ] Add `HowTo` schema to epoxy crack injection service page (most common service)
-- [ ] Add `HowTo` schema to carbon fiber strap service page
-- [ ] Add `HowTo` schema to bulkhead waterproofing service page
-- [ ] Add `HowTo` schema to basement floor crack repair service page
-- [ ] Template: each step needs `name`, `text`, optional `image` and `url`
-- [ ] Validate all with `npm run validate:schema` after adding
+- [x] Add `HowTo` schema to epoxy crack injection service page — already had steps in frontmatter
+- [x] Add `HowTo` schema to carbon fiber strap service page — already had steps in frontmatter
+- [x] Add `HowTo` schema to bulkhead waterproofing service page — already had steps in frontmatter
+- [x] Add `HowTo` schema to basement floor crack repair service page — already had steps in frontmatter
+- [x] Template: steps with `name`, `text` — already implemented in both service templates
+- [x] Validate all with `npm run validate:schema` — confirmed all 5 pages render HowTo in build output
 
 **Files to modify:** Service page templates in `src/content/services/` and `src/content/concrete-repair/`, plus schema generation in page templates under `src/pages/`.
 
@@ -46,31 +46,14 @@ Video content strategy is in `docs/VIDEO-STRATEGY-2026.md` and `POST-LAUNCH-PLAN
 
 Expand the `sameAs` array and add `hasCredential`:
 
-- [ ] Add `hasCredential` to Organization schema:
-  ```json
-  "hasCredential": [
-    {"@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "CT Home Improvement Contractor License", "identifier": "HIC #0629164"},
-    {"@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "MA Home Improvement Contractor License", "identifier": "HIC #214356"},
-    {"@type": "EducationalOccupationalCredential", "credentialCategory": "accreditation", "name": "BBB A+ Accreditation"}
-  ]
-  ```
-- [ ] Expand `sameAs` array in Layout.astro (line 94) and index.astro (line 71):
-  ```json
-  "sameAs": [
-    "https://www.facebook.com/attackacrack",
-    "https://www.bbb.org/us/ct/north-windham/profile/concrete-repair/attack-a-crack-0111-74000203",
-    "https://maps.google.com/?cid=XXXXX",
-    "https://maps.google.com/?cid=XXXXX",
-    "https://www.yelp.com/biz/attack-a-crack-XXXXX"
-  ]
-  ```
-  **Action needed:** Get exact Google Maps CID values for CT and MA GBP listings, and Yelp business URL.
-- [ ] Also update `sameAs` in `src/utils/authors.ts` for Luc Richard (line 17)
+- [x] `hasCredential` — CT HIC + MA HIC already in Layout.astro (added in trust badges commit)
+- [x] `sameAs` expanded to 8 URLs in Layout.astro and index.astro: Facebook, Instagram, LinkedIn, BBB, Yelp CT, Yelp MA, Google Maps CT, Google Maps MA (March 24)
+- [x] `sameAs` updated in `src/utils/authors.ts` — Luc now has Facebook, Instagram, LinkedIn (March 24)
 
 ### FAQPage Schema Audit
 
-- [ ] Audit all service pages — ensure every page with an FAQ section has `FAQPage` schema
-- [ ] Cross-check against `scripts/validate-schema.js` HUB_PAGES exclusion list
+- [x] All 12 service/concrete-repair pages confirmed to have `FAQPage` schema (March 24 audit)
+- [x] Cross-checked against HUB_PAGES exclusion list — no issues
 
 ---
 
@@ -87,8 +70,8 @@ Expand the `sameAs` array and add `hasCredential`:
 | "what is epoxy crack injection" | Paragraph | Epoxy injection service page | Add concise 40-60 word definition as opening paragraph |
 | "foundation crack types" | List | `types-of-foundation-cracks.md` | Ensure list format with clear H2/H3 structure |
 
-- [ ] Add cost comparison tables to cost guide blog post (method, price range, when to use)
-- [ ] Add concise "What is X?" opening paragraph to each service page (40-60 words, direct answer)
+- [x] Cost comparison tables added to both published cost guides (foundation + bulkhead) (March 24)
+- [x] "What is X?" definitions added to all 6 service pages (March 24)
 - [ ] Ensure how-to blog posts use proper numbered `<ol>` lists (not just bold text)
 - [ ] Structure FAQ sections with exact PAA question phrasing as H3 headings
 
@@ -121,9 +104,9 @@ All content referenced below is already published. This is about ranking higher,
 | leaky bulkhead | 5 | 170 | Bulkhead service page | Semantic completeness (Frase Part 20) |
 | concrete foundation crack repair | 2 | 10 | Epoxy injection page | Hold/defend — minimal intervention needed |
 
-- [ ] Audit internal links pointing to quick-win pages — add links from relevant blog posts
+- [x] Audit internal links pointing to quick-win pages — 10 links added across 8 blog posts (March 24)
 - [ ] Run Frase-style semantic audit on bulkhead page (see SEO-STRATEGY-2026.md Part 20)
-- [ ] Ensure quick-win pages have `FAQPage` schema + `HowTo` schema (Pillar 1 overlap)
+- [x] Quick-win pages confirmed: all have `FAQPage` + `HowTo` schema (March 24 audit)
 
 ### Page 2 Targets — Positions 11-20 (Push to Page 1)
 
@@ -149,12 +132,12 @@ These posts target high-volume topics where competitors get significant traffic.
 **`flex-seal-basement-cracks.md`** — 49,500 volume cluster, A-1 gets 198 visits/mo
 - [ ] Compare content depth against top 5 ranking pages
 - [ ] Ensure title tag and meta description are CTR-optimized
-- [ ] Add internal links from related blog posts (waterproofing, DIY vs pro)
+- [x] Internal links added from DIY-vs-pro and water-in-basement posts (March 24)
 
 **`basement-floor-crack-repair-guide.md` + `basement-floor-cracks-leaking.md`** — 13,400/mo cluster
-- [ ] Ensure these two posts interlink and don't cannibalize each other
+- [x] Posts interlink via relatedPosts frontmatter
 - [ ] Add comparison table for repair methods (Pillar 2 overlap)
-- [ ] Internal links from all relevant location pages
+- [x] Internal links added from waterproofing, cost guide, sump pump posts (March 24)
 
 ### Title & Meta CTR Optimization
 
@@ -246,14 +229,14 @@ Green checkmark in Local Services Ads. Foundation repair is an eligible category
 
 ### NOW — Weeks 1-2 (March 24 - April 7)
 
-- [ ] Schema: Add `hasCredential` to Organization schema
-- [ ] Schema: Expand `sameAs` in Layout.astro, index.astro, authors.ts
-- [ ] Schema: Add `HowTo` to top 4 service pages
-- [ ] Schema: Add `FAQPage` to any service pages missing it
+- [x] Schema: `hasCredential` already in Layout.astro (CT HIC, MA HIC)
+- [x] Schema: `sameAs` expanded to 8 URLs in Layout.astro, index.astro, authors.ts (March 24)
+- [x] Schema: `HowTo` already on all 5 service pages + basement floor (was pre-existing)
+- [x] Schema: `FAQPage` on all 12 service/concrete-repair pages (was pre-existing)
 - [ ] Backlinks: Audit all directory listings (BBB, ASHI, GBAR, chambers)
-- [ ] Semantic: Run content depth audit on quick-win pages (pos 4-10)
-- [ ] Internal linking: Add links to gap posts from related content
-- [ ] Snippet prep: Add cost comparison tables, "What is X?" paragraphs
+- [ ] Semantic: Run content depth audit on quick-win pages (pos 4-10) — needs GSC data
+- [x] Internal linking: 10 links added to gap posts from related content (March 24)
+- [x] Snippet prep: "What is X?" definitions on 6 service pages + comparison tables on 2 cost guides (March 24)
 
 ### AFTER GSC DATA — Weeks 3-4 (April 7-21)
 

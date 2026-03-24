@@ -242,11 +242,11 @@ Switch from working on `main` to feature branches with Vercel preview environmen
 
 Execution plan for maximizing SERP coverage — schema upgrades, featured snippets, ranking optimization, entity building, and backlinks.
 
-- [ ] **Schema: Rich result expansion** — Add HowTo, VideoObject, ImageObject schemas to service/project pages
-- [ ] **Schema: Credential & profile** — Add `hasCredential` (HIC licenses), `memberOf` (ASHI, GBAR, Quincy Chamber), expand `sameAs` (BBB, Google Maps, Yelp)
-- [ ] **Ranking: Quick wins** — Optimize pages at positions 4-10 (foundation crack repair near me, leaky bulkhead)
-- [ ] **Ranking: Gap posts** — Optimize existing lally columns, Flex Seal, basement floor cracks posts for ranking (content exists, needs SEO tuning)
-- [ ] **Snippets: Featured snippet prep** — Add cost comparison tables, "What is X?" paragraphs, proper list markup
+- [x] **Schema: Rich result expansion** — HowTo already on all 5 service pages; VideoObject/ImageObject deferred until video content exists
+- [x] **Schema: Credential & profile** — `hasCredential`, `memberOf`, `sameAs` (8 URLs: FB, IG, LinkedIn, BBB, Yelp CT/MA, Google Maps CT/MA) all live
+- [x] **Ranking: Quick wins** — 10 internal links added to quick-win pages (Flex Seal, lally columns, basement floor cracks, bulkhead service)
+- [x] **Ranking: Gap posts** — Internal links added from related published posts to boost authority
+- [x] **Snippets: Featured snippet prep** — "What is X?" definitions on 6 service pages, cost comparison tables on both published cost guides
 - [ ] **Entity: NAP consistency audit** — Verify identical info across BBB, ASHI, GBAR, chambers, Google Maps, Yelp
 - [ ] **Backlinks: Directory verification** — Confirm all org memberships have active backlinks to attackacrack.com
 - [ ] **Backlinks: Google Guaranteed** — Apply for Local Services Ads (green checkmark in SERP)
@@ -255,12 +255,12 @@ Execution plan for maximizing SERP coverage — schema upgrades, featured snippe
 
 Add visual trust badges, license numbers, and schema for credentials across the site.
 
-- [ ] **TrustBar component** — Create `TrustBar.astro` with context-aware badge display (3 per page)
-- [ ] **Homepage** — Replace stats bar position with trust bar; relocate stats bar below Services
-- [ ] **City pages** — Add trust bar to all 5 state templates (MA: ASHI/GBAR/Quincy; CT: BBB/ASHI/HIC; others: BBB/ASHI/HIC)
-- [ ] **Footer** — Add CT HIC #0629164 and MA HIC #214356 with state lookup links
-- [ ] **About page** — Update E-E-A-T section with BBB link, license numbers
-- [ ] **Schema** — Add `hasCredential`, `memberOf`, expand `sameAs` in Layout.astro
+- [x] **TrustBar component** — Created `TrustBar.astro` with context-aware badge display (3 per page)
+- [x] **Homepage** — TrustBar below hero; stats bar below Services
+- [x] **City pages** — TrustBar on all 5 state templates + state hub pages
+- [x] **Footer** — CT HIC #0629164, MA HIC #214356 with lookup links + social icons (FB/IG/LinkedIn)
+- [x] **About page** — TrustBar added, E-E-A-T section consolidated (3 items), BBB/licenses/memberships all present
+- [x] **Schema** — `hasCredential`, `memberOf`, `sameAs` (8 URLs) all in Layout.astro and index.astro
 - [ ] **Image optimization** — Run `npm run optimize:images` on badge logos
 - [ ] **Competitive analysis updated** — Section 10 added to `docs/COMPETITIVE-ANALYSIS.md` with competitor badge audit
 
