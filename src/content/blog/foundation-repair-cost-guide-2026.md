@@ -38,6 +38,17 @@ But we understand you need ballpark numbers to plan and budget. So here's an hon
 
 **Note:** These are 2026 estimates for the CT/MA market. Your actual costs may vary based on factors we'll discuss below.
 
+### Foundation Repair Methods Compared
+
+| Method | Cost Range | Best For | Time to Complete | Warranty |
+|--------|-----------|----------|-----------------|---------|
+| [Epoxy crack injection](/services/foundation-crack-injection) | $800 - $1,200/crack | Structural cracks in poured concrete — restores original strength | 2-4 hours | Lifetime |
+| [Urethane foam injection](/services/foundation-crack-injection) | $800 - $1,200/crack | Active water leaks — flexible seal expands with concrete movement | 2-4 hours | Lifetime |
+| [Carbon fiber stitches](/services/carbon-fiber-stitches) | $200 - $300/stitch | Cracks with structural movement — prevents further spreading | 3-5 hours | Lifetime |
+| [Bulkhead sealant injection](/services/leaky-bulkhead-repair) | $1,800 - $2,500 | Leaking bulkhead-to-foundation joints — seals the cold joint | Half day | Lifetime |
+| Hydraulic cement (DIY) | $10 - $30 | Temporary surface patching only — [does not seal the full crack](/blog/flex-seal-basement-cracks/) | 30 min | None |
+| Exterior excavation | $5,000 - $15,000+ | Severe structural damage requiring access to the outside of the wall | 3-5 days | Varies |
+
 ## What Affects Foundation Repair Costs
 
 ### 1. Type of Repair Needed
