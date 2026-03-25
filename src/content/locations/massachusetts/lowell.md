@@ -20,6 +20,8 @@ neighborhoods:
   - "Belvidere"
 nearbyCities:
   - "Lawrence"
+  - "Chelmsford"
+  - "Billerica"
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Lowell?"

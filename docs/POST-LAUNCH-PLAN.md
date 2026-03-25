@@ -229,7 +229,7 @@ Switch from working on `main` to feature branches with Vercel preview environmen
 
 - [x] **CT city expansion** — 16/16 new cities created (36 total CT cities) — completed, plan archived to `docs/archive/`
 - [x] **MA city expansion Phases 1-4** — 30/41 new cities created (60 total MA cities) — plan archived to `docs/archive/`
-- [ ] **MA city expansion Phase 5** — 11 competitor-targeted cities remain: Dedham, Medford, Malden, Revere, Chelmsford, Billerica, Andover, Methuen, Attleboro, Wareham, Stoughton. Also need to update `maRegions` in `src/pages/massachusetts/index.astro` to add Merrimack Valley region.
+- [x] **MA city expansion Phase 5** — 11/11 competitor-targeted cities created March 24: Dedham, Medford, Malden, Revere, Chelmsford, Billerica, Andover, Methuen, Attleboro, Wareham, Stoughton. maRegions updated. 71 total MA cities.
 - [ ] Optimize pages at positions 4-10: foundation crack, leaky bulkhead, basement wall crack
 - [ ] Push bulkhead cluster from positions 14-20 to page 1
 - [ ] Execute backlink strategy from deep-dive analysis (see Backlink Building section above)
