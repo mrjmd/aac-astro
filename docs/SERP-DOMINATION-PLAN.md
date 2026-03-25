@@ -40,7 +40,7 @@ Video embeds are live on 11 pages (18 videos total). See `docs/VIDEO-STRATEGY-20
 
 - [x] `ImageObject` schema already in project page template (`src/pages/projects/[slug].astro` lines 174-197) — renders for all projects with real images
 - [x] Includes `contentUrl`, `description`, `name` — auto-generated from project frontmatter
-- [ ] Consider `ImageGallery` wrapper for multi-photo projects
+- [x] `ImageGallery` wrapper for multi-photo projects — before/after pairs now wrapped in ImageGallery schema (March 25)
 - [ ] Verify image descriptions match actual photo content (Gemini AI classified; some may be wrong)
 - [ ] Run `fix-placeholder-projects.js` on 6 projects still using placeholder images
 
@@ -140,7 +140,7 @@ These posts target high-volume topics where competitors get significant traffic.
 
 **`basement-floor-crack-repair-guide.md` + `basement-floor-cracks-leaking.md`** — 13,400/mo cluster
 - [x] Posts interlink via relatedPosts frontmatter
-- [ ] Add comparison table for repair methods (Pillar 2 overlap)
+- [x] Add comparison table for repair methods — 5-method comparison table added March 25 (professional grind & seal, polyurethane injection, hydraulic cement, silicone caulk, epoxy kit)
 - [x] Internal links added from waterproofing, cost guide, sump pump posts (March 24)
 
 ### Title & Meta CTR Optimization

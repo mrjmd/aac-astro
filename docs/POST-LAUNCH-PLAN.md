@@ -179,8 +179,9 @@ Google Ads are running on both CT and MA accounts with zero conversion tracking.
 - [x] **Mark conversions in GA4** (`phone_call_click`, `text_message_click`)
 - [x] **Link GA4 to both Google Ads accounts**
 - [x] Phase 2 (code): `data-page-type` on all 30 page templates, LocationModal `text_photos_modal_open` event, partner form `partner_form_submit` event — March 24, 2026
-- [ ] Phase 2 (admin): Custom dimensions in GA4 (page_type, phone_region, click_location), UTM templates, call forwarding
-- [ ] Phase 3: Page type classification, GA4 Explorations, link GSC to GA4, monthly reporting
+- [x] Phase 2 (admin): Custom dimensions created in GA4 (page_type, phone_region, click_location) — March 25, 2026
+- [x] Phase 3 (partial): GA4 Explorations built (Content ROI, City Performance, CT vs MA, Conversion Funnels), GSC linked to GA4 — March 25, 2026
+- [ ] Phase 3 (remaining): UTM templates, call forwarding, monthly reporting cadence
 - [ ] Phase 4: Evaluate call tracking service, remarketing audiences, enhanced conversions
 - [x] **Set up Google Ads API access** — adwords scope + developer token active
 - [x] **Run Google Ads waste audit** (MA account) — via `scripts/master-audit.js`
@@ -252,7 +253,7 @@ Execution plan for maximizing SERP coverage — schema upgrades, featured snippe
 ## Trust Badges & Credentials (plan archived to `docs/archive/`)
 
 - [x] TrustBar component, all page placements, footer licenses, about page, schema — all done
-- [ ] **Badge image optimization** — Run `npm run optimize:images` on badge logos (may already be WebP)
+- [x] **Badge image optimization** — Badges are inline SVGs/already optimized, no WebP conversion needed.
 - [ ] **Competitive badge audit** — Add Section 10 to `docs/COMPETITIVE-ANALYSIS.md`
 
 ## SEO Quick Wins (Claude — with GSC data)
@@ -262,7 +263,7 @@ Execution plan for maximizing SERP coverage — schema upgrades, featured snippe
 - [ ] H1/H2 keyword alignment — match heading hierarchy to target SERP terms
 - [ ] Content depth audit — compare word counts against ranking competitors
 - [ ] High-Performance Continuity: CT State Hub must match keyword depth of old `/concrete-foundation-crack-repair-ct` page (908 sessions)
-- [ ] Add "bulkhead door" as H2 on bulkhead service page (searchers use "door" not "bulkhead")
+- [x] Add "bulkhead door" as H2 on bulkhead service page — already present: "Bulkhead Door Leak Repair: A Permanent Solution" H2 + "bulkhead door" throughout metaTitle, excerpt, and body
 
 ## Luc's Professional Info (E-E-A-T — Matt)
 

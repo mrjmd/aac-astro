@@ -220,7 +220,11 @@ const projectSchema = {
 			}
 		})
 	},
-	"image": imageObjects,
+	"image": hasBeforeAfter ? {
+		"@type": "ImageGallery",
+		"name": `${serviceLabel} before and after in ${project.data.city}, ${project.data.state}`,
+		"image": imageObjects
+	} : imageObjects[0],
 	"description": project.data.summary,
 	"makesOffer": {
 		"@type": "Offer",

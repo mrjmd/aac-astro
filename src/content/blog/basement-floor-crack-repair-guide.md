@@ -60,6 +60,18 @@ Our process involves three steps:
 
 The result is a repair that is nearly invisible once cured, permanently sealed against both water and soil gas infiltration, and built to handle the real-world conditions of a New England basement.
 
+## Repair Methods Compared
+
+| Method | Cost | Durability | Waterproof? | Radon Seal? | Best For |
+|---|---|---|---|---|---|
+| **Professional grind & seal** (epoxy/rubber) | $500–$1,500 | Permanent | Yes | Yes | Any active crack, finished basements |
+| **Polyurethane foam injection** | $300–$800 | 10+ years | Yes | Partial | Narrow cracks with active water |
+| **Hydraulic cement** (DIY) | $20–$50 | 6–12 months | Temporary | No | Emergency patch only |
+| **Silicone caulk** (DIY) | $10–$20 | 6–12 months | No | No | Cosmetic only — not a real fix |
+| **Epoxy crack filler kit** (DIY) | $30–$80 | 1–3 years | Partial | No | Minor cosmetic cracks, no water |
+
+The professional methods (grind & seal, injection) work because they bond deep into the crack and seal the full depth. DIY surface patches fail because they only cover the top — water and gas find their way around them within months.
+
 ## When a Floor Crack Needs Attention
 
 Not every floor crack is an emergency, but you should call a professional if you notice any of these signs:
