@@ -96,6 +96,21 @@ const serviceImageObject = heroImg ? {
   "height": 600
 } : null;
 
+// Business schema (separate from Service to avoid Google <parent_node> warning on aggregateRating)
+const businessSchema = {
+  "@type": "HomeAndConstructionBusiness",
+  "@id": "https://www.attackacrack.com/#organization",
+  "name": "Attack A Crack Foundation Repair",
+  "telephone": phoneMA,
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Quincy",
+    "addressRegion": "MA",
+    "addressCountry": "US"
+  },
+  "aggregateRating": aggregateRatingSchema,
+};
+
 // Service schema with LLM-ready properties
 const serviceSchema = {
   "@type": "Service",
@@ -104,10 +119,7 @@ const serviceSchema = {
   "url": `https://www.attackacrack.com/concrete-repair/${service.id.replace(/\.md$/, '')}`,
   ...(serviceImageObject && { "image": serviceImageObject }),
   "provider": {
-    "@type": "HomeAndConstructionBusiness",
-    "name": "Attack A Crack Foundation Repair",
-    "telephone": phoneMA,
-    "aggregateRating": aggregateRatingSchema,
+    "@id": "https://www.attackacrack.com/#organization"
   },
   "areaServed": {
     "@type": "State",
@@ -148,7 +160,7 @@ const howToSchema = service.data.steps && service.data.steps.length > 0 ? {
   "tool": []
 } : null;
 
-const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
+const schemas = [businessSchema, serviceSchema, howToSchema, faqSchema].filter(Boolean);
 ---
 
 <Layout

@@ -97,6 +97,20 @@ const serviceImageObject = heroImg ? {
 } : null;
 
 // Service schema with LLM-ready properties and AggregateRating
+const businessSchema = {
+  "@type": "HomeAndConstructionBusiness",
+  "@id": "https://www.attackacrack.com/#organization",
+  "name": "Attack A Crack Foundation Repair",
+  "telephone": phoneCT,
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Amston",
+    "addressRegion": "CT",
+    "addressCountry": "US"
+  },
+  "aggregateRating": aggregateRatingSchema,
+};
+
 const serviceSchema = {
   "@type": "Service",
   "name": service.data.title,
@@ -104,16 +118,7 @@ const serviceSchema = {
   "url": `https://www.attackacrack.com/services/${service.id.replace(/\.md$/, '')}`,
   ...(serviceImageObject && { "image": serviceImageObject }),
   "provider": {
-    "@type": "HomeAndConstructionBusiness",
-    "name": "Attack A Crack Foundation Repair",
-    "telephone": phoneCT,
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Amston",
-      "addressRegion": "CT",
-      "addressCountry": "US"
-    },
-    "aggregateRating": aggregateRatingSchema,
+    "@id": "https://www.attackacrack.com/#organization"
   },
   "areaServed": stateConfig.map(s => ({ "@type": "State", "name": s.name })),
   "serviceType": "Foundation Repair",
@@ -156,7 +161,7 @@ const faqSchema = service.data.faqs && service.data.faqs.length > 0 ? {
 const videoSchemas = getVideoSchemas(serviceSlug);
 
 // Combine all schemas
-const schemas = [serviceSchema, howToSchema, faqSchema, ...videoSchemas].filter(Boolean);
+const schemas = [businessSchema, serviceSchema, howToSchema, faqSchema, ...videoSchemas].filter(Boolean);
 ---
 
 <Layout
