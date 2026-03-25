@@ -86,6 +86,14 @@ const MA_NUMBER = phoneMA;
       content.classList.remove('scale-90', 'opacity-0');
       content.classList.add('scale-100', 'opacity-100');
     }, 10);
+
+    // Analytics: track modal open as intent signal
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'text_photos_modal_open', {
+        page_path: window.location.pathname,
+        page_type: document.body.dataset.pageType || 'unknown',
+      });
+    }
   }
 
   function closeModal() {

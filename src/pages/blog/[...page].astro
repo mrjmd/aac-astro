@@ -77,7 +77,7 @@ const blogListSchema = isFirstPage ? {
 } : null;
 ---
 
-<Layout title={`Foundation Repair Blog${titleSuffix}`} description={description} {...(blogListSchema && { customSchema: blogListSchema })}>
+<Layout title={`Foundation Repair Blog${titleSuffix}`} description={description} pageType="hub" {...(blogListSchema && { customSchema: blogListSchema })}>
 	<LocationModal />
 	<Navbar currentPage="blog" />
 

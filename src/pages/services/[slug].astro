@@ -159,9 +159,10 @@ const videoSchemas = getVideoSchemas(serviceSlug);
 const schemas = [serviceSchema, howToSchema, faqSchema, ...videoSchemas].filter(Boolean);
 ---
 
-<Layout 
-  title={service.data.metaTitle} 
+<Layout
+  title={service.data.metaTitle}
   description={service.data.metaDescription}
+  pageType="service"
   customSchema={schemas}
   breadcrumbItems={breadcrumbItems}
 >

@@ -147,6 +147,7 @@ const schemas = [articleSchema, faqSchema, ...videoSchemas].filter(Boolean);
 <Layout
   title={post.data.metaTitle || post.data.title}
   description={post.data.metaDescription}
+  pageType="blog"
   customSchema={schemas}
   breadcrumbItems={breadcrumbItems}
   city={post.data.city}

@@ -178,7 +178,8 @@ Google Ads are running on both CT and MA accounts with zero conversion tracking.
 - [x] **Add phone/text click tracking** via event delegation script — tracks CT vs MA independently
 - [x] **Mark conversions in GA4** (`phone_call_click`, `text_message_click`)
 - [x] **Link GA4 to both Google Ads accounts**
-- [ ] Phase 2: LocationModal tracking, form submit tracking, custom dimensions, UTM templates, call forwarding
+- [x] Phase 2 (code): `data-page-type` on all 30 page templates, LocationModal `text_photos_modal_open` event, partner form `partner_form_submit` event — March 24, 2026
+- [ ] Phase 2 (admin): Custom dimensions in GA4 (page_type, phone_region, click_location), UTM templates, call forwarding
 - [ ] Phase 3: Page type classification, GA4 Explorations, link GSC to GA4, monthly reporting
 - [ ] Phase 4: Evaluate call tracking service, remarketing audiences, enhanced conversions
 - [x] **Set up Google Ads API access** — adwords scope + developer token active

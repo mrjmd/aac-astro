@@ -151,9 +151,10 @@ const howToSchema = service.data.steps && service.data.steps.length > 0 ? {
 const schemas = [serviceSchema, howToSchema, faqSchema].filter(Boolean);
 ---
 
-<Layout 
-  title={service.data.metaTitle} 
+<Layout
+  title={service.data.metaTitle}
   description={service.data.metaDescription}
+  pageType="service"
   customSchema={schemas}
   breadcrumbItems={breadcrumbItems}
 >

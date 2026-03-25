@@ -11,6 +11,13 @@ import '../../styles/global.css';
   <meta name="robots" content="noindex, nofollow" />
   <title>Partner with Us | Attack A Crack</title>
   <link rel="icon" type="image/png" href="/favicon.png" />
+  <script async src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA4_ID}`}></script>
+  <script is:inline define:vars={{ GA4_ID: import.meta.env.PUBLIC_GA4_ID }}>
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function(){dataLayer.push(arguments);};
+    gtag('js', new Date());
+    if (GA4_ID) gtag('config', GA4_ID);
+  </script>
 </head>
 <body class="min-h-screen bg-gray-50 flex items-center justify-center p-4">
   <div class="w-full max-w-md">
@@ -171,6 +178,14 @@ import '../../styles/global.css';
 
         formContainer.classList.add('hidden');
         successContainer.classList.remove('hidden');
+
+        // Analytics: track partner form submission
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'partner_form_submit', {
+            referrer: ref || 'direct',
+            partner: partner || 'none',
+          });
+        }
       } catch (err: any) {
         errorEl.textContent = err.message || 'Something went wrong. Please try again.';
         errorEl.classList.remove('hidden');

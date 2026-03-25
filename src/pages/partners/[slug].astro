@@ -57,9 +57,10 @@ const faqSchema = partner.data.faqs && partner.data.faqs.length > 0 ? {
 const schemas = faqSchema ? [pageSchema, faqSchema] : [pageSchema];
 ---
 
-<Layout 
-  title={partner.data.metaTitle} 
+<Layout
+  title={partner.data.metaTitle}
   description={partner.data.metaDescription}
+  pageType="partner"
   customSchema={schemas}
   breadcrumbItems={breadcrumbItems}
 >

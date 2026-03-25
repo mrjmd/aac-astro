@@ -13,6 +13,7 @@ interface Props {
 	image?: string;
 	canonicalURL?: string;
 	preloadHeroImage?: boolean;
+	pageType?: 'home' | 'city' | 'service' | 'blog' | 'about' | 'hub' | 'partner' | 'project' | 'legal' | 'other';
 	// Location-specific overrides for Schema/SEO
 	city?: string;
 	state?: string;
@@ -38,7 +39,8 @@ const {
 	zip = "06231",
 	coordinates,
 	customSchema,
-	breadcrumbItems
+	breadcrumbItems,
+	pageType
 } = Astro.props;
 
 // Format coordinates for meta tags if present
@@ -226,6 +228,7 @@ if (breadcrumbSchema) {
 								phone_number: number,
 								click_location: inferClickLocation(link),
 								page_path: window.location.pathname,
+								page_type: document.body.dataset.pageType || 'unknown',
 							});
 
 							// Google Ads conversion — MA only for now
@@ -248,6 +251,7 @@ if (breadcrumbSchema) {
 								phone_number: smsNumber,
 								click_location: inferClickLocation(link),
 								page_path: window.location.pathname,
+								page_type: document.body.dataset.pageType || 'unknown',
 							});
 
 							// Google Ads conversion — MA only for now
@@ -273,7 +277,7 @@ if (breadcrumbSchema) {
 				imagesizes="(max-width: 1024px) calc(100vw - 48px), 640px" />
 		)}
 	</head>
-	<body class="bg-white text-aac-dark font-sans selection:bg-aac-yellow selection:text-aac-dark antialiased">
+	<body class="bg-white text-aac-dark font-sans selection:bg-aac-yellow selection:text-aac-dark antialiased" data-page-type={pageType}>
 		<slot />
 		<SpeedInsights />
 		<Analytics />
