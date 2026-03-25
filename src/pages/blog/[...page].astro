@@ -83,7 +83,7 @@ const blogListSchema = isFirstPage ? {
 
 	<main class="pt-20 lg:pt-24">
 		<!-- Hero Section -->
-		<section class="py-20 lg:py-32 bg-white border-b-4 border-zinc-100">
+		<section class="py-12 lg:py-32 bg-white border-b-4 border-zinc-100">
 			<div class="max-w-7xl mx-auto px-6">
 				<Breadcrumbs items={breadcrumbItems} class="mb-8" />
 				<div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -115,7 +115,7 @@ const blogListSchema = isFirstPage ? {
 
 		<!-- Featured Posts (page 1 only) -->
 		{isFirstPage && featuredPosts.length > 0 && (
-			<section class="py-16 bg-aac-dark text-white">
+			<section class="py-10 md:py-16 bg-aac-dark text-white">
 				<div class="max-w-7xl mx-auto px-6">
 					<div class="flex items-center gap-3 mb-12">
 						<Icon name="Star" size={24} class="text-aac-yellow" />
@@ -223,7 +223,7 @@ const blogListSchema = isFirstPage ? {
 		</section>
 
 		<!-- Newsletter/CTA Section -->
-		<section class="py-16 bg-aac-yellow">
+		<section class="py-10 md:py-16 bg-aac-yellow">
 			<div class="max-w-4xl mx-auto px-6 text-center">
 				<h2 class="text-3xl lg:text-4xl font-black text-aac-dark mb-6">
 					Have a Foundation Question?

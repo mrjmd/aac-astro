@@ -215,7 +215,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 		<ProcessBar />
 
 		<!-- Services in This City -->
-		<section class="py-8 lg:py-16 bg-zinc-50">
+		<section class="py-8 lg:py-10 md:py-16 bg-zinc-50">
 			<div class="max-w-7xl mx-auto px-6">
 				<h2 class="text-3xl font-black tracking-tighter text-aac-dark mb-6 lg:mb-8 text-center">
 					Services in {location.data.city}
@@ -241,7 +241,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 		</section>
 
 		<!-- Pricing Section -->
-		<section class="py-8 lg:py-16 bg-white">
+		<section class="py-8 lg:py-10 md:py-16 bg-white">
 			<div class="max-w-4xl mx-auto px-6">
 				<h2 class="text-3xl font-black tracking-tighter text-aac-dark mb-6 lg:mb-8 text-center">
 					{location.data.city} Foundation Repair Costs
@@ -292,7 +292,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 
 		<!-- City Info Section -->
 		{(location.data.neighborhoods || location.data.commonFoundationTypes) && (
-			<section class="py-8 lg:py-16 bg-zinc-50">
+			<section class="py-8 lg:py-10 md:py-16 bg-zinc-50">
 				<div class="max-w-7xl mx-auto px-6">
 					<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
 						{location.data.neighborhoods && location.data.neighborhoods.length > 0 && (
@@ -351,7 +351,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 		)}
 
 		<!-- Main Content -->
-		<section class="py-8 lg:py-16 bg-white">
+		<section class="py-8 lg:py-10 md:py-16 bg-white">
 			<div class="max-w-4xl mx-auto px-6">
 				<article class="prose prose-lg prose-zinc max-w-none prose-headings:font-black prose-headings:tracking-tight prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-p:leading-relaxed prose-a:text-aac-blue prose-a:font-bold prose-a:no-underline hover:prose-a:underline prose-strong:text-aac-dark">
 					<Content />
@@ -388,7 +388,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 
 		<!-- FAQs -->
 		{location.data.faqs && location.data.faqs.length > 0 && (
-			<section class="py-16 bg-zinc-50">
+			<section class="py-10 md:py-16 bg-zinc-50">
 				<div class="max-w-4xl mx-auto px-6">
 					<h2 class="text-3xl font-black tracking-tighter text-aac-dark mb-8 text-center">
 						Foundation Repair FAQs for {location.data.city}
@@ -412,7 +412,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 
 		<!-- Testimonial -->
 		{testimonial && (
-			<section class="py-16 bg-aac-blue text-white">
+			<section class="py-10 md:py-16 bg-aac-blue text-white">
 				<div class="max-w-4xl mx-auto px-6 text-center">
 					<Icon name="Star" size={48} class="text-aac-yellow mx-auto mb-6" />
 					<blockquote class="text-2xl lg:text-3xl font-bold mb-6 leading-relaxed">
@@ -436,7 +436,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 
 		<!-- Foundation Guides -->
 		{cityBlogPosts.length > 0 && (
-			<section class="py-16 bg-white">
+			<section class="py-10 md:py-16 bg-white">
 				<div class="max-w-7xl mx-auto px-6">
 					<h2 class="text-2xl font-black tracking-tighter text-aac-dark mb-8">
 						Foundation Guides for {location.data.city} Homeowners
@@ -473,7 +473,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 
 		<!-- Nearby Cities -->
 		{nearbyLocations.length > 0 && (
-			<section class="py-16 bg-zinc-50">
+			<section class="py-10 md:py-16 bg-zinc-50">
 				<div class="max-w-7xl mx-auto px-6">
 					<h2 class="text-2xl font-black tracking-tighter text-aac-dark mb-8">
 						We Also Serve Nearby Cities
@@ -493,7 +493,7 @@ const schemas = faqSchema ? [citySchema, faqSchema] : [citySchema];
 		)}
 
 		<!-- CTA Section -->
-		<section class="py-16 bg-aac-dark text-white">
+		<section class="py-10 md:py-16 bg-aac-dark text-white">
 			<div class="max-w-4xl mx-auto px-6 text-center">
 				<h2 class="text-3xl lg:text-4xl font-black tracking-tighter mb-6">
 					Need Foundation Repair in {location.data.city}?
