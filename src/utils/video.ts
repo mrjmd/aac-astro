@@ -37,7 +37,7 @@ const VIDEO_REGISTRY: Record<string, VideoEntry[]> = {
   // === Homepage ===
   "home": [
     {
-      id: "EXV9Lzn0NH4",
+      id: "IXrQmjHXLVg",
       name: "Attack A Crack Foundation Repair — Company Overview",
       description: "Meet Attack A Crack Foundation Repair — New England's foundation crack repair specialists. Over 20 years of experience sealing cracks, waterproofing bulkheads, and reinforcing foundations across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine.",
       uploadDate: "2026-03-25",
