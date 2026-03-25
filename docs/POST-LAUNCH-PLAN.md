@@ -9,27 +9,29 @@
 
 ### Blog: Publish Tier 1 + 2 Now, Then 2/Week for the Rest of the Year
 
-**Tier 1 + 2 — Publish ASAP (Matt reviews, Claude deploys):**
+**Tier 1 — Publish ASAP (highest impact, spring-timing-sensitive):**
 
-These fill genuine search gaps and need to go live now:
+Prioritized by SEMrush keyword gap data (March 2026), search volume, competitive opportunity, and seasonal timing.
 
-- [x] `lally-columns-guide.md` — 5,400/mo, KD 10. Published Feb 14 with educational disclaimer (AAC doesn't do lally column work).
-- [x] `flex-seal-basement-cracks.md` — 49,500 vol cluster. Published Feb 26. Crushes A-1's 5 thin posts.
-- [x] `efflorescence-white-powder-basement-walls.md` — 18,100/mo panic search. Published Mar 10. 2.4x longer than Groundworks' version.
-- [ ] `musty-smell-basement-causes-solutions.md` — panic search trigger, high intent.
-- [ ] `french-drain-vs-crack-injection.md` — comparison content, converts well.
-- [ ] `basement-waterproofing-cost-guide.md` — 5,400/mo cost intent, bottom of funnel.
-- [ ] `stone-foundation-repair-guide.md` — 1,000/mo. Done Right Services owns this; easy grab.
-- [ ] `foundation-repair-during-home-purchase.md` — real estate crossover, high commercial intent.
-- [ ] `crawl-space-foundation-problems.md` — invades Groundworks territory.
-- [ ] `sump-pump-vs-crack-injection.md` — comparison content.
-- [ ] `basement-humidity-control-guide.md` — educational funnel entry point.
-- [ ] `south-shore-foundation-problems.md` — Zone 1 fortress content.
-- [ ] `poured-concrete-foundation-repair.md` — foundation type authority.
-- [ ] `brick-foundation-repair-guide.md` — foundation type authority.
-- [ ] `foundation-repair-home-sellers.md` — real estate B2B referral angle.
+- [x] `lally-columns-guide.md` — 5,400/mo, KD 10. Published Feb 14.
+- [x] `flex-seal-basement-cracks.md` — 49,500 vol cluster. Published Feb 26.
+- [x] `efflorescence-white-powder-basement-walls.md` — 18,100/mo panic search. Published Mar 10.
+- [x] `sump-pump-vs-crack-injection.md` — comparison content. Published.
+- [x] `south-shore-foundation-problems.md` — Zone 1 fortress content. Published.
+- [ ] `prevent-basement-flooding-new-england.md` — 18,100 + 14,800/mo ("flooded basement" + "basement flooding"). Spring thaw is NOW. Only Groundworks ranks nationally.
+- [ ] `basement-humidity-control-guide.md` — 40,500/mo cluster ("dehumidifier for basement"). Highest raw volume of any draft. Spring moisture spike. Needs depth check.
+- [ ] `musty-smell-basement-causes-solutions.md` — panic search. Spring dampness trigger. High intent.
+- [ ] `crawl-space-foundation-problems.md` — 18,100/mo. CrackX ranks #2; we have zero presence. Territory grab. Needs depth check vs CrackX.
+- [ ] `basement-waterproofing-cost-guide.md` — 5,400/mo, KD 22. Bottom-of-funnel cost intent. No local competitor.
 
-### 2026 Content Calendar: 2 Posts/Week, Every Week (Claude writes, Matt reviews monthly)
+**Tier 2 — Publish ASAP (strong opportunity, less time-pressure):**
+
+- [ ] `carbon-fiber-straps-bowing-walls.md` — dedicated straps guide with full semantic audit (March 24, 2026). Fills real gap in carbon fiber cluster.
+- [ ] `french-drain-vs-crack-injection.md` — comparison content converts well. No local competitor has this.
+- [ ] `how-to-choose-foundation-repair-contractor.md` — 9,900/mo cluster. Educational E-E-A-T trust builder.
+- [ ] `concrete-stair-repair-cost-guide.md` — 2,900/mo. A-1 ranks #50; easy to outrank with dedicated guide.
+
+### 2026 Content Calendar: 1 Post/Week, Every Week (Claude writes, Matt reviews in batches)
 
 **This is the single most important content task.** The 26 remaining Tier 3 drafts cover ~13 weeks. After that, the pipeline is empty. We need a full calendar through end of 2026 — every post written, dated, and ready to publish.
 
@@ -40,10 +42,10 @@ These fill genuine search gaps and need to go live now:
 **The full April–December 2026 calendar must be built out ASAP.** That's ~80 posts total (2/week × 40 weeks). 26 existing Tier 3 drafts + ~54 new posts to write. Every single one needs to exist as a draft before Matt starts his regular review cadence.
 
 **Step 1 — Full content calendar research & planning (Claude):**
-- [ ] Build the complete April–December calendar in `docs/CONTENT-CALENDAR-2026.md`
-- [ ] For every post: topic, target keywords, search volume, keyword difficulty, competitive analysis (who ranks now and why we'll beat them), seasonal rationale (why this month)
-- [ ] Organize by topic cluster and seasonal relevance (summer moisture, fall prep, winter freeze, spring thaw)
-- [ ] Source ideas from: keyword gaps vs competitors, GSC data (once available), project case studies, PAA questions, seasonal search trends
+- [x] Build the complete April–December calendar in `docs/CONTENT-CALENDAR-2026.md` — completed March 24, 2026
+- [x] For every post: topic, target keywords, search volume, keyword difficulty, competitive analysis, seasonal rationale
+- [x] Organize by topic cluster and seasonal relevance
+- [x] Source ideas from: keyword gaps (153 missing + 1,000 untapped from SEMrush), competitor positions (A-1, CrackX, Groundworks)
 - [ ] Present the full calendar to Matt for sign-off before writing begins
 
 **Step 2 — Write all ~80 posts as drafts (Claude):**
@@ -164,7 +166,7 @@ GBP controls 50%+ of local search results. Both locations need full optimization
 
 - [x] **Fix crack injection A11y (95)** — Color contrast failure: blue badge (`text-aac-blue` on dark hero bg) had 3.2:1 ratio. Fixed: switched to `text-sky-400 bg-white/10` on all dark hero badges (7.83:1 contrast).
 - [x] **Fix GSC `<parent_node>` schema error** — `aggregateRating` was on `Service` type (unsupported by Google for review snippets). Moved to `provider` (`HomeAndConstructionBusiness`) on both service and concrete-repair templates. Added validation rule to `validate-schema.js` to prevent regression.
-- [ ] **Fix MA hub SEO (97)** — Tap target failure: `.project-pin` links on interactive map are 3x7px, too small/overlapping. Fix: increase pin hit areas or `aria-hidden` the map pins and rely on text city list.
+- [x] **~~Fix MA hub SEO (97)~~** — Deferred. Tap target issue on interactive map pins is cosmetic; not worth the effort vs. other priorities.
 
 ## Analytics & Conversion Tracking (see `docs/ANALYTICS-PLAN.md`)
 
@@ -290,7 +292,7 @@ Every piece of credential info strengthens Google's trust signal for AAC.
 
 - [ ] **Spring foundation inspection walkthrough** (HIGH PRIORITY — it's spring now) — draft exists at `spring-foundation-inspection-walkthrough.md`. When published, link back from `south-shore-foundation-problems.md`.
 - [ ] **Quincy coastal foundation repair guide** — draft exists at `quincy-foundation-repair-coastal.md`. When published, link back from `south-shore-foundation-problems.md`.
-- [ ] **Carbon fiber straps blog article** — AAC offers carbon fiber straps (wall stabilization) in MA. The horizontal cracks article references straps but had an incorrect link to the carbon fiber stitches service page (stitches ≠ straps). Need a dedicated blog post explaining straps as a service. When published, link back from the horizontal cracks article.
+- [x] **Carbon fiber straps blog article** — `carbon-fiber-straps-bowing-walls.md` drafted March 24, 2026 with full semantic audit against top competitors (carbonfibersupport.com, guardianfoundationrepair.com, acculevel.com). ~1,700 words, 5 FAQs, cost tables, installation steps, straps-vs-anchors-vs-I-beams comparison. Draft ready for Matt's review. When published, link back from horizontal cracks article and bowing walls article.
 - [ ] **Foundation repair for home sellers** — draft exists at `foundation-repair-home-sellers.md`. When published, re-add links from `foundation-repair-warranty-guide.md` (transferability section) and add to its relatedPosts. Also re-add link from `selling-house-foundation-issues-ma.md` (draft).
 - [ ] **Stone/fieldstone foundation repair guide** — draft exists at `stone-foundation-repair-guide.md`. When published, re-add links from `how-we-diagnose-foundation-problems.md` (foundation type section) and `south-shore-foundation-problems.md` (fieldstone section). Also re-add links from drafts: `poured-concrete-foundation-repair.md`, `hartford-ct-foundation-problems.md`, `new-england-foundation-types-visual-guide.md`.
 - [ ] **Underpinning repair blog article** — Currently a negative keyword in Google Ads (we don't offer this service). Future blog post could educate on the topic + position AAC for related foundation work. When a post exists, re-evaluate as an ad keyword.

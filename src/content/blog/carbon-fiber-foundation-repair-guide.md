@@ -16,9 +16,9 @@ relatedServices:
   - "wall-crack-repair"
   - "foundation-crack-injection"
 relatedPosts:
+  - "carbon-fiber-straps-bowing-walls"
   - "horizontal-foundation-cracks"
   - "bowing-basement-walls-causes-repair"
-  - "foundation-repair-cost-guide-2026"
 ---
 
 Most foundation cracks in New England are straightforward. Water finds a way in through a shrinkage crack, we inject it, it stops leaking, and everyone goes home happy. But some cracks need more than a seal — they need structural reinforcement. That's where [carbon fiber stitches](/services/carbon-fiber-stitches) come in.

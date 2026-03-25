@@ -16,9 +16,9 @@ relatedServices:
   - "carbon-fiber-stitches"
   - "free-foundation-consultations"
 relatedPosts:
+  - "carbon-fiber-straps-bowing-walls"
   - "vertical-vs-horizontal-foundation-cracks"
   - "signs-of-foundation-problems"
-  - "foundation-repair-cost-guide-2026"
 ---
 
 When a basement wall starts bowing inward, it gets your attention. Unlike a hairline crack you might debate ignoring for another year, a wall that is visibly curving inward feels urgent. And your instincts are right — bowing walls are a legitimate structural concern that gets more expensive to fix the longer you wait.
