@@ -201,8 +201,7 @@ if (breadcrumbSchema) {
 					// TODO: Uncomment when CT Google Ads account is linked to MCC
 					// if (GOOGLE_ADS_CT_ID) gtag('config', GOOGLE_ADS_CT_ID);
 
-					// Phone/text click tracking — fires GA4 events + Google Ads conversions
-					var _ADS_MA = GOOGLE_ADS_MA_ID;
+					// Phone/text click tracking — fires GA4 events (conversions imported into Google Ads via GA4 link)
 					document.addEventListener('click', function(e) {
 						var link = e.target.closest('a');
 						if (!link) return;
@@ -232,17 +231,6 @@ if (breadcrumbSchema) {
 								page_type: document.body.dataset.pageType || 'unknown',
 							});
 
-							// Google Ads conversion — MA only for now
-							// TODO: Add CT conversion when CT account is linked
-							// TODO: Replace PHONE_CONVERSION_LABEL with actual label from Google Ads
-							if (region === 'MA' && _ADS_MA) {
-								gtag('event', 'conversion', {
-									send_to: _ADS_MA + '/PHONE_CONVERSION_LABEL',
-									value: 500,
-									currency: 'USD'
-								});
-							}
-
 						} else if (href.indexOf('sms:') === 0) {
 							var smsNumber = href.replace(/sms:[+]?/, '').replace(/\D/g, '');
 							var smsRegion = smsNumber.indexOf(CT_NUMBER) !== -1 ? 'CT' : 'MA';
@@ -254,17 +242,6 @@ if (breadcrumbSchema) {
 								page_path: window.location.pathname,
 								page_type: document.body.dataset.pageType || 'unknown',
 							});
-
-							// Google Ads conversion — MA only for now
-							// TODO: Add CT conversion when CT account is linked
-							// TODO: Replace TEXT_CONVERSION_LABEL with actual label from Google Ads
-							if (smsRegion === 'MA' && _ADS_MA) {
-								gtag('event', 'conversion', {
-									send_to: _ADS_MA + '/TEXT_CONVERSION_LABEL',
-									value: 500,
-									currency: 'USD'
-								});
-							}
 						}
 					});
 				</script>
