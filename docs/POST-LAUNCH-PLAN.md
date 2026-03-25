@@ -185,27 +185,17 @@ Google Ads are running on both CT and MA accounts with zero conversion tracking.
 - [x] **Audit campaign structure + landing pages** — 60 city ad groups with city-specific landing pages created March 24
 - [ ] Set up monthly Google Ads analysis cadence
 
-## City Page Conversion Optimization (see `docs/CITY-PAGE-OPTIMIZATION-PLAN.md`)
+## City Page Conversion Optimization (plan archived to `docs/archive/`)
 
-60 MA city ad groups are live in Google Ads (March 24, 2026) pointing to city landing pages. Pages are SEO-optimized but need conversion enhancements for paid traffic — 79% mobile, desktop +25% bid active.
-
-**Phase 1 — Quick wins (before paid traffic ramps):**
-- [x] **Sticky mobile CTA bar** — Call + Text pill buttons on all pages, direct SMS on state/city pages, modal on generic pages
-- [x] **Review snippet in hero** — "260+/50+ 5-Star Google Reviews" linked to Google Reviews on all city pages
-- [x] **Fix low-volume keywords** — 240 broader keywords added to 60 city ad groups (`ads:keywords --add-broad`)
-- [x] **Side-by-side hero CTAs** — Call Now + Text Photos buttons on same row on mobile
-- [x] **Services + Pricing moved above content** — visitors see what AAC does within 2 scrolls
-- [x] **Direct SMS links** on all city + state hub pages (no modal when state is known)
-- [x] **RSA headline diversity** — 15 headlines covering 8 distinct categories per Google's recommendations
-- [x] **Compact mobile layout** — tighter spacing, horizontal ProcessBar, reduced section padding
+Phase 1 complete (sticky CTA, review snippet, hero CTAs, services reorder, SMS, keywords, RSA, compact layout). Remaining work:
 
 **Phase 2 — Deeper optimization (April, after conversion data):**
 - [ ] Lead capture form for desktop visitors
-- [ ] Seasonal urgency signals
-- [ ] Testimonial placement higher on page
+- [ ] Seasonal urgency signals (honest: "spring scheduling filling up", date-driven banners)
+- [ ] Testimonial placement higher on page (compact review snippet below hero, above content)
 
 **Phase 3 — Paid-only landing page (June+, data-dependent):**
-- [ ] Dedicated `/lp/` template, A/B test via Google Ads experiment
+- [ ] Dedicated `/lp/` template, A/B test via Google Ads experiment (needs 2+ weeks of conversion data first)
 
 ## CI/CD Pipeline Upgrade (see `docs/CICD-IMPROVEMENT-PLAN.md`)
 
@@ -235,8 +225,9 @@ Switch from working on `main` to feature branches with Vercel preview environmen
 
 ## Month 2-3: Expansion + Link Building
 
-- [ ] **CT city expansion** — 16 new cities (see `docs/CT-CITY-EXPANSION-PLAN.md`)
-- [ ] **MA city expansion** — 41 new cities (see `docs/MA-CITY-EXPANSION-PLAN.md`)
+- [x] **CT city expansion** — 16/16 new cities created (36 total CT cities) — completed, plan archived to `docs/archive/`
+- [x] **MA city expansion Phases 1-4** — 30/41 new cities created (60 total MA cities) — plan archived to `docs/archive/`
+- [ ] **MA city expansion Phase 5** — 11 competitor-targeted cities remain: Dedham, Medford, Malden, Revere, Chelmsford, Billerica, Andover, Methuen, Attleboro, Wareham, Stoughton. Also need to update `maRegions` in `src/pages/massachusetts/index.astro` to add Merrimack Valley region.
 - [ ] Optimize pages at positions 4-10: foundation crack, leaky bulkhead, basement wall crack
 - [ ] Push bulkhead cluster from positions 14-20 to page 1
 - [ ] Execute backlink strategy from deep-dive analysis (see Backlink Building section above)
@@ -246,7 +237,7 @@ Switch from working on `main` to feature branches with Vercel preview environmen
 
 Execution plan for maximizing SERP coverage — schema upgrades, featured snippets, ranking optimization, entity building, and backlinks.
 
-- [x] **Schema: Rich result expansion** — HowTo already on all 5 service pages; VideoObject/ImageObject deferred until video content exists
+- [x] **Schema: Rich result expansion** — HowTo on all 5 service pages; VideoObject on all 13 video-embedded pages via `src/utils/video.ts`
 - [x] **Schema: Credential & profile** — `hasCredential`, `memberOf`, `sameAs` (8 URLs: FB, IG, LinkedIn, BBB, Yelp CT/MA, Google Maps CT/MA) all live
 - [x] **Ranking: Quick wins** — 10 internal links added to quick-win pages (Flex Seal, lally columns, basement floor cracks, bulkhead service)
 - [x] **Ranking: Gap posts** — Internal links added from related published posts to boost authority
@@ -255,18 +246,11 @@ Execution plan for maximizing SERP coverage — schema upgrades, featured snippe
 - [ ] **Backlinks: Directory verification** — Confirm all org memberships have active backlinks to attackacrack.com
 - [ ] **Backlinks: Google Guaranteed** — Apply for Local Services Ads (green checkmark in SERP)
 
-## Trust Badges & Credentials (see `docs/TRUST-BADGES-PLAN.md`)
+## Trust Badges & Credentials (plan archived to `docs/archive/`)
 
-Add visual trust badges, license numbers, and schema for credentials across the site.
-
-- [x] **TrustBar component** — Created `TrustBar.astro` with context-aware badge display (3 per page)
-- [x] **Homepage** — TrustBar below hero; stats bar below Services
-- [x] **City pages** — TrustBar on all 5 state templates + state hub pages
-- [x] **Footer** — CT HIC #0629164, MA HIC #214356 with lookup links + social icons (FB/IG/LinkedIn)
-- [x] **About page** — TrustBar added, E-E-A-T section consolidated (3 items), BBB/licenses/memberships all present
-- [x] **Schema** — `hasCredential`, `memberOf`, `sameAs` (8 URLs) all in Layout.astro and index.astro
-- [ ] **Image optimization** — Run `npm run optimize:images` on badge logos
-- [ ] **Competitive analysis updated** — Section 10 added to `docs/COMPETITIVE-ANALYSIS.md` with competitor badge audit
+- [x] TrustBar component, all page placements, footer licenses, about page, schema — all done
+- [ ] **Badge image optimization** — Run `npm run optimize:images` on badge logos (may already be WebP)
+- [ ] **Competitive badge audit** — Add Section 10 to `docs/COMPETITIVE-ANALYSIS.md`
 
 ## SEO Quick Wins (Claude — with GSC data)
 
