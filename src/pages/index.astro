@@ -16,8 +16,10 @@ import { homeFaqs, getFaqSchema } from '../utils/faqs';
 import { getLatestBlog } from '../utils/blog-linking';
 import { webpSrc, projectSrcset } from '../utils/image';
 import TrustBar from '../components/TrustBar.astro';
+import { getVideoSchemas } from '../utils/video';
 
 const featuredTestimonials = getFeatured(4);
+const videoSchemas = getVideoSchemas('home');
 const latestPosts = await getLatestBlog(3);
 const faqSchema = getFaqSchema(homeFaqs);
 
@@ -29,10 +31,10 @@ const MA_NUMBER = phoneMA;
 	title="Foundation Crack Repair Made Simple"
 	description="Expert foundation crack repair, bulkhead sealant repair, and carbon fiber staples in CT, MA, and across New England. Lifetime guarantee."
 	pageType="home"
-	preloadHeroImage
 	breadcrumbItems={[{ label: 'Home' }]}
 	customSchema={[
 		faqSchema,
+		...videoSchemas,
 		{
 			"@type": "HomeAndConstructionBusiness",
 			"name": "Attack A Crack Foundation Repair",

@@ -9,7 +9,7 @@ import { reviewCount } from '../utils/reviews';
       <div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-yellow/20 text-aac-dark rounded-full text-[10px] font-black uppercase tracking-widest mb-8">
         <Icon name="ShieldCheck" size={14} class="text-aac-blue" /> Lifetime Guarantee
       </div>
-      
+
       <h1 class="font-display font-black tracking-tighter text-aac-dark leading-[0.85] mb-8">
         <span class="block sm:hidden text-[10.2vw] whitespace-nowrap">WE SEAL CRACKS &</span>
         <span class="block sm:hidden text-[9.4vw] whitespace-nowrap"><span class="text-aac-blue">SECURE</span> YOUR HOME</span>
@@ -18,20 +18,20 @@ import { reviewCount } from '../utils/reviews';
           <span class="block text-[10.5cqw] whitespace-nowrap"><span class="text-aac-blue">SECURE</span> YOUR HOME</span>
         </span>
       </h1>
-      
+
       <p class="text-lg font-bold text-zinc-500 max-w-lg mb-12 leading-relaxed">
         Talk directly to a <span class="text-aac-dark font-black border-b-4 border-aac-yellow">foundation expert</span> right now. We provide durable solutions and quotes within&nbsp;minutes.
       </p>
-      
+
       <div class="flex flex-col sm:flex-row items-center gap-8">
-        <button 
+        <button
           class="open-modal bg-aac-yellow text-aac-dark px-10 py-6 rounded-2xl font-black text-xl uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(26,26,26,1)] border-4 border-aac-dark flex items-center justify-center gap-3 group"
         >
           <Icon name="MessageSquare" size={24} />
           Text Photos
           <Icon name="ArrowRight" size={24} class="group-hover:translate-x-2 transition-transform" />
         </button>
-        
+
         <div class="flex flex-col">
           <div class="flex items-center gap-1 mb-1">
             {[...Array(5)].map(() => <Icon name="Star" size={16} class="fill-aac-yellow text-aac-dark" />)}
@@ -40,50 +40,23 @@ import { reviewCount } from '../utils/reviews';
         </div>
       </div>
     </div>
-    
-    <div class="relative lg:-rotate-2">
-      <div class="hero-slideshow aspect-[4/3] rounded-[48px] overflow-hidden border-8 border-white shadow-[24px_24px_60px_-15px_rgba(0,0,0,0.1)] relative isolate">
-        <img
-          id="hero-slide-1"
-          src="/images/hero-slide-1.webp"
-          srcset="/images/hero-slide-1-sm.webp 600w, /images/hero-slide-1-800w.webp 800w, /images/hero-slide-1.webp 1200w"
-          sizes="(max-width: 1024px) calc(100vw - 48px), 640px"
-          alt="Technician injecting polyfoam sealant at a bulkhead joint"
-          class="absolute inset-0 w-full h-full object-cover object-[left_top]"
-          width="1200"
-          height="1050"
-          fetchpriority="high"
-          decoding="sync"
-          style="transform-origin: top left;"
-          data-ken-burns="pan-down"
-        />
-        <!-- Bottom overlay -->
-        <div class="absolute bottom-0 left-0 right-0 bg-aac-dark/90 px-6 py-5 flex items-center gap-4 z-10 rounded-b-[40px]">
-          <div class="w-8 h-8 bg-aac-yellow rounded-lg flex items-center justify-center shrink-0">
-            <Icon name="Star" size={16} class="fill-aac-dark text-aac-dark" />
-          </div>
-          <div>
-            <p id="hero-label" class="text-white font-black text-sm uppercase tracking-widest">One-Day Repairs</p>
-            <p id="hero-subtext" class="text-white/70 text-xs font-bold mt-0.5">Foundation cracks fixed in a single visit — no excavation needed.</p>
-          </div>
+
+    <div class="relative">
+      <div class="rounded-[48px] overflow-hidden border-8 border-white shadow-[24px_24px_60px_-15px_rgba(0,0,0,0.1)]">
+        <div class="relative w-full" style="padding-bottom:56.25%">
+          <iframe
+            src="https://www.youtube.com/embed/EXV9Lzn0NH4?rel=0"
+            title="Attack A Crack Foundation Repair — Company Overview"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="eager"
+            class="absolute inset-0 w-full h-full border-0"
+          ></iframe>
         </div>
-        <script>
-          (function(){
-            var opts=[
-              ["One-Day Repairs","Foundation cracks fixed in a single visit \u2014 no excavation needed."],
-              ["Lifetime Guarantee","Every repair backed by a warranty that transfers to the next owner."],
-              ["Honest Diagnosis","We\u2019ll tell you what\u2019s wrong, what\u2019s not, and what it\u2019ll cost \u2014 upfront."],
-              ["Permanent Fix","Expanding resin fills the full depth of the crack \u2014 not just a surface patch."]
-            ];
-            var i=Math.floor(Math.random()*opts.length);
-            document.getElementById("hero-label").textContent=opts[i][0];
-            document.getElementById("hero-subtext").textContent=opts[i][1];
-          })();
-        </script>
       </div>
 
       <!-- 15-Minute Quote Badge -->
-      <div class="absolute -top-8 -right-8 w-28 h-28 bg-aac-blue text-white rounded-3xl flex flex-col items-center justify-center text-center border-8 border-white shadow-2xl animate-pulse-soft">
+      <div class="absolute -top-8 -right-8 lg:-rotate-6 w-28 h-28 bg-aac-blue text-white rounded-3xl flex flex-col items-center justify-center text-center border-8 border-white shadow-2xl animate-pulse-soft">
         <span class="text-[9px] font-black uppercase tracking-widest">Quotes in</span>
         <span class="text-3xl font-black leading-none">15</span>
         <span class="text-[9px] font-black uppercase tracking-widest">Minutes</span>
@@ -91,121 +64,3 @@ import { reviewCount } from '../utils/reviews';
     </div>
   </div>
 </section>
-
-<style>
-  /* Ken Burns pan/zoom animations */
-  @keyframes kb-pan-down {
-    from { transform: scale(1.08) translateY(0); }
-    to { transform: scale(1.15) translateY(-5%); }
-  }
-  @keyframes kb-pan-right {
-    from { transform: scale(1.15) translateX(0); }
-    to { transform: scale(1.15) translateX(-4%); }
-  }
-  @keyframes kb-zoom-in {
-    from { transform: scale(1.0); }
-    to { transform: scale(1.2); }
-  }
-
-  .hero-slideshow {
-    /* Force compositing layer so overflow-hidden clips transformed children */
-    transform: translateZ(0);
-  }
-
-  .hero-slide {
-    transition: opacity 1s ease-in-out;
-  }
-
-  .hero-slide.kb-active[data-ken-burns="pan-down"] {
-    animation: kb-pan-down 7s ease-in-out forwards;
-  }
-  .hero-slide.kb-active[data-ken-burns="pan-right"] {
-    animation: kb-pan-right 7s ease-in-out forwards;
-  }
-  .hero-slide.kb-active[data-ken-burns="zoom-in"] {
-    animation: kb-zoom-in 7s ease-in-out forwards;
-  }
-</style>
-
-<script>
-  // Ghost Slide pattern: only slide 1 is in HTML for fast LCP.
-  // Slides 2-3 are injected after page load to avoid bandwidth competition.
-  const ghostSlides = [
-    {
-      src: "/images/hero-slide-2.webp",
-      srcset: "/images/hero-slide-2-sm.webp 600w, /images/hero-slide-2-800w.webp 800w, /images/hero-slide-2.webp 1200w",
-      sizes: "(max-width: 1024px) calc(100vw - 48px), 640px",
-      alt: "Setting up injection equipment at a bulkhead",
-      width: 1200, height: 900,
-      kenBurns: "pan-right",
-      style: ""
-    },
-    {
-      src: "/images/hero-slide-3.webp",
-      srcset: "/images/hero-slide-3-sm.webp 600w, /images/hero-slide-3-800w.webp 800w, /images/hero-slide-3.webp 1200w",
-      sizes: "(max-width: 1024px) calc(100vw - 48px), 640px",
-      alt: "Grinding and cleaning a bulkhead joint for sealing",
-      width: 1200, height: 900,
-      kenBurns: "zoom-in",
-      style: "transform-origin: 70% 20%;"
-    }
-  ];
-
-  const container = document.querySelector('.hero-slideshow');
-  const slide1 = document.getElementById('hero-slide-1') as HTMLImageElement;
-  const overlay = container?.querySelector('.absolute.bottom-0');
-
-  // Start Ken Burns on slide 1 only after it's decoded (don't block LCP)
-  function startSlide1Animation() {
-    slide1.classList.add('kb-active');
-  }
-  if (slide1.complete) {
-    requestAnimationFrame(startSlide1Animation);
-  } else {
-    slide1.addEventListener('load', () => requestAnimationFrame(startSlide1Animation));
-  }
-
-  // Inject ghost slides and start slideshow after full page load
-  window.addEventListener('load', () => {
-    const injected: HTMLImageElement[] = [];
-
-    ghostSlides.forEach(data => {
-      const img = document.createElement('img');
-      img.src = data.src;
-      img.srcset = data.srcset;
-      img.sizes = data.sizes;
-      img.alt = data.alt;
-      img.width = data.width;
-      img.height = data.height;
-      img.className = 'hero-slide absolute inset-0 w-full h-full object-cover opacity-0';
-      img.dataset.kenBurns = data.kenBurns;
-      if (data.style) img.style.cssText = data.style;
-      // Insert before the overlay so it stays behind it
-      container!.insertBefore(img, overlay!);
-      injected.push(img);
-    });
-
-    // Add transition class to slide 1 now that slideshow is ready
-    slide1.classList.add('hero-slide');
-
-    // Start slideshow once ghost slides are injected
-    const allSlides = [slide1, ...injected];
-    let current = 0;
-    const duration = 6000;
-
-    setInterval(() => {
-      const prev = current;
-      current = (current + 1) % allSlides.length;
-
-      allSlides[prev].style.opacity = '0';
-      allSlides[prev].classList.remove('kb-active');
-
-      allSlides[current].style.opacity = '1';
-      allSlides[current].classList.add('kb-active');
-      // Reset animation
-      allSlides[current].style.animation = 'none';
-      allSlides[current].offsetHeight;
-      allSlides[current].style.animation = '';
-    }, duration);
-  });
-</script>
