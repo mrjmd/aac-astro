@@ -144,10 +144,17 @@ const { currentPage = 'home' } = Astro.props;
     mobileMenu.classList.add('translate-x-full');
   });
 
-  // Handle modal opening
+  // Handle modal opening — text mode (default)
   document.querySelectorAll('.open-modal').forEach(btn => {
     btn.addEventListener('click', () => {
-      window.dispatchEvent(new CustomEvent('open-location-modal'));
+      window.dispatchEvent(new CustomEvent('open-location-modal', { detail: { mode: 'text' } }));
+    });
+  });
+
+  // Handle modal opening — call mode
+  document.querySelectorAll('.open-call-modal').forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.dispatchEvent(new CustomEvent('open-location-modal', { detail: { mode: 'call' } }));
     });
   });
 </script>

@@ -180,6 +180,6 @@ Even when a project isn't in our wheelhouse, **call us first**. We have no incen
 
 Not sure if we can help? Call us:
 
-**Connecticut:** 860-573-8760 | **Massachusetts:** 617-668-1677
+**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)
 
 We'll give you an honest answer about whether your project is something we handle—and if not, we'll point you in the right direction.

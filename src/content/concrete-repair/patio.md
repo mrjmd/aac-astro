@@ -91,4 +91,4 @@ We've repaired patios throughout Massachusetts — from small urban courtyards i
 
 Contact us for a free consultation and quote:
 
-**Massachusetts:** 617-668-1677
+**Massachusetts:** [617-668-1677](tel:617-668-1677)

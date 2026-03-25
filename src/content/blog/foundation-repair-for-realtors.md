@@ -155,6 +155,6 @@ We work with hundreds of real estate professionals across Connecticut, Massachus
 - **Respond quickly.** Real estate runs on timelines. We respect them.
 - **Be honest.** Every time. About severity, about costs, about timelines. If we tell your client something needs repair, it needs repair. If we say it's fine, it's fine.
 
-If you'd like to discuss how we can support your transactions, or if you have a deal right now with a foundation question, give us a call. CT: 860-573-8760. MA: 617-668-1677. You can also schedule through our [free consultation page](/services/free-foundation-consultations) — just mention you're a real estate professional and we'll prioritize accordingly.
+If you'd like to discuss how we can support your transactions, or if you have a deal right now with a foundation question, give us a call. CT: [860-573-8760](tel:860-573-8760). MA: [617-668-1677](tel:617-668-1677). You can also schedule through our [free consultation page](/services/free-foundation-consultations) — just mention you're a real estate professional and we'll prioritize accordingly.
 
 We've been helping agents keep deals on track for over three decades. Your clients' foundations are in good hands.

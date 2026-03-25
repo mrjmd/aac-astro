@@ -166,6 +166,6 @@ Foundation issues are one of the most manageable obstacles in selling a Massachu
 
 The worst strategy is avoidance. The second worst is disclosure without repair. The best strategy is: inspect, repair, document, and sell with confidence.
 
-**Getting ready to sell?** Call us at 617-668-1677 for a [free consultation](/services/free-foundation-consultations). We will inspect your foundation, tell you what it needs, provide a written quote, and — if you proceed — give you the repair documentation and lifetime transferable warranty that make your sale smoother. We work with Massachusetts real estate agents regularly and understand the timeline pressures of a home sale.
+**Getting ready to sell?** Call us at [617-668-1677](tel:617-668-1677) for a [free consultation](/services/free-foundation-consultations). We will inspect your foundation, tell you what it needs, provide a written quote, and — if you proceed — give you the repair documentation and lifetime transferable warranty that make your sale smoother. We work with Massachusetts real estate agents regularly and understand the timeline pressures of a home sale.
 
 The [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) provides detailed pricing if you want to estimate costs before calling.

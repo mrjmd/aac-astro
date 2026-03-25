@@ -82,4 +82,4 @@ The cost of professional floor crack repair is a fraction of what you would spen
 
 Start by monitoring the crack. Mark its endpoints with a pencil and date, and check it monthly. Note whether moisture appears after rain events.
 
-For a professional assessment, text us a photo of your floor crack at 617-668-1677 or schedule a [free consultation](/services/free-foundation-consultations). We will examine the crack, determine the cause, and tell you whether it needs repair now or if monitoring is sufficient. Most floor crack repairs cost $500-$1,500 with a permanent seal against both water and radon gas.
+For a professional assessment, text us a photo of your floor crack at [617-668-1677](sms:617-668-1677) or schedule a [free consultation](/services/free-foundation-consultations). We will examine the crack, determine the cause, and tell you whether it needs repair now or if monitoring is sufficient. Most floor crack repairs cost $500-$1,500 with a permanent seal against both water and radon gas.

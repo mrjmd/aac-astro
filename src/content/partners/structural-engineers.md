@@ -78,5 +78,5 @@ Epoxy and urethane injection for structural and waterproofing repairs. We match 
 
 When your next assessment calls for foundation repair, you'll have a reliable specialist to recommend.
 
-**Connecticut:** 860-573-8760
-**Massachusetts:** 617-668-1677
+**Connecticut:** [860-573-8760](tel:860-573-8760)
+**Massachusetts:** [617-668-1677](tel:617-668-1677)

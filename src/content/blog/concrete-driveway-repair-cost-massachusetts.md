@@ -111,7 +111,7 @@ Here is what we believe a fair quoting process looks like:
 3. **No pressure.** If someone tells you the price goes up if you do not sign today, that is a red flag, not a deal.
 4. **Explanation of options.** You should understand what each option costs and how long it is expected to last.
 
-We offer [free consultations](/services/free-foundation-consultations) for driveway and concrete repair work throughout Massachusetts. Call us at 617-668-1677 or text us a photo for a quick assessment. We will tell you what we see, what we recommend, and what it costs. If the answer is "patch it and wait," we will say that. We would rather give you honest advice today and earn your trust for the bigger job down the road.
+We offer [free consultations](/services/free-foundation-consultations) for driveway and concrete repair work throughout Massachusetts. Call us at [617-668-1677](sms:617-668-1677) or text us a photo for a quick assessment. We will tell you what we see, what we recommend, and what it costs. If the answer is "patch it and wait," we will say that. We would rather give you honest advice today and earn your trust for the bigger job down the road.
 
 **A note on cement vs. concrete:** Many homeowners say "cement driveway" when they mean concrete. Cement is just one ingredient in concrete — the powder that, when mixed with water, sand, and aggregate, forms concrete. Your driveway is concrete, and the distinction matters when choosing repair products and methods.
 

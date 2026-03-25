@@ -118,4 +118,4 @@ Without identifying specific addresses (privacy matters), here are representativ
 
 Our Quincy office means we can often assess your foundation the same day you call. No waiting for a crew to drive from an hour away. We know the streets, we know the neighborhoods, and we almost certainly have experience with foundations built by the same crews that built yours.
 
-Call 617-668-1677 to schedule a [free foundation consultation](/services/free-foundation-consultations). We will take a look, tell you what we see, and give you honest options. If it turns out your foundation is fine, we will tell you that too. We would rather have a neighbor who trusts us than a customer who did not need us.
+Call [617-668-1677](tel:617-668-1677) to schedule a [free foundation consultation](/services/free-foundation-consultations). We will take a look, tell you what we see, and give you honest options. If it turns out your foundation is fine, we will tell you that too. We would rather have a neighbor who trusts us than a customer who did not need us.

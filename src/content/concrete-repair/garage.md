@@ -109,4 +109,4 @@ Garage floor repair is available throughout Massachusetts. We serve Greater Bost
 
 Ready for a garage floor you can be proud of? Contact us for a free assessment:
 
-**Massachusetts:** 617-668-1677
+**Massachusetts:** [617-668-1677](tel:617-668-1677)

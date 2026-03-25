@@ -141,4 +141,4 @@ For a more detailed cost breakdown, see our [foundation repair cost guide](/blog
 
 We inspect stone foundations across Massachusetts, Connecticut, Rhode Island, New Hampshire, and Maine. Our [free foundation consultation](/services/free-foundation-consultations) includes an honest assessment of your foundation's condition and clear recommendations for any needed repairs.
 
-Call 617-668-1677 to schedule, or text us a photo for assessment. With 50+ years of combined experience with New England stone foundations, we will tell you what we see, explain your options, and give you a straight answer about what your foundation actually needs.
+Call [617-668-1677](sms:617-668-1677) to schedule, or text us a photo for assessment. With 50+ years of combined experience with New England stone foundations, we will tell you what we see, explain your options, and give you a straight answer about what your foundation actually needs.

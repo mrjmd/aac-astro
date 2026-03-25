@@ -110,7 +110,7 @@ If the water enters through wall cracks, that's a much simpler fix. Wall crack i
 
 Not sure whether your water is coming through the floor or walls? That's exactly what our [free consultations](/services/free-foundation-consultations) are for. With 50+ years of combined experience and thousands of projects across New England, we'll trace the water source and tell you honestly what you're dealing with, even if the answer is "this isn't something we repair." Our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) has complete pricing details.
 
-**Connecticut:** 860-573-8760
-**Massachusetts:** 617-668-1677
+**Connecticut:** [860-573-8760](tel:860-573-8760)
+**Massachusetts:** [617-668-1677](tel:617-668-1677)
 
 Text us a photo of your leaking floor cracks for a quick preliminary assessment.

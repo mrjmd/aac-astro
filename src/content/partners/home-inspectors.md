@@ -102,5 +102,5 @@ Honest quotes with no surprises. The price we quote is the price they pay.
 
 We'd like to be your go-to foundation specialist. When you encounter foundation issues, you'll have a trusted partner to call.
 
-**Connecticut:** 860-573-8760
-**Massachusetts:** 617-668-1677
+**Connecticut:** [860-573-8760](tel:860-573-8760)
+**Massachusetts:** [617-668-1677](tel:617-668-1677)

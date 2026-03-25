@@ -49,8 +49,9 @@ const geoPosition = coordinates ? `${coordinates.lat};${coordinates.lng}` : unde
 const CT_NUMBER = phoneCT;
 const MA_NUMBER = phoneMA;
 
-// Determine sticky CTA phone number and whether to use direct SMS
-// State pages (city + hub) get direct SMS; generic pages get the modal
+// Determine sticky CTA behavior based on page context
+// State pages: direct call + direct SMS to that state's number
+// Generic pages: both buttons open modals (visitor picks their state)
 const path = Astro.url.pathname;
 const isCTPage = path.startsWith('/connecticut');
 const isMAPage = path.startsWith('/massachusetts');
@@ -58,8 +59,8 @@ const isRIPage = path.startsWith('/rhode-island');
 const isNHPage = path.startsWith('/new-hampshire');
 const isMEPage = path.startsWith('/maine');
 const isStatePage = isCTPage || isMAPage || isRIPage || isNHPage || isMEPage;
-const stickyPhone = isCTPage ? CT_NUMBER : MA_NUMBER;
-const stickyPhoneHref = `tel:${stickyPhone}`;
+const stickyPhone = isCTPage ? CT_NUMBER : (isMAPage || isRIPage || isNHPage || isMEPage) ? MA_NUMBER : undefined;
+const stickyPhoneHref = stickyPhone ? `tel:${stickyPhone}` : undefined;
 const stickySmsHref = isStatePage ? `sms:${stickyPhone}` : undefined;
 
 // JSON-LD Schema for Local Business - Default if no customSchema provided
@@ -282,10 +283,8 @@ if (breadcrumbSchema) {
 		<SpeedInsights />
 		<Analytics />
 		<StickyCTA
-			phone={stickyPhone}
 			phoneHref={stickyPhoneHref}
 			smsHref={stickySmsHref}
-			reviewCount={reviewCountDisplay}
 		/>
 		<script>
 			const observer = new IntersectionObserver(

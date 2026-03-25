@@ -102,4 +102,4 @@ Attack A Crack serves all of Rhode Island, from Woonsocket to Westerly. We have 
 
 Most foundation repairs in Rhode Island are more affordable than homeowners expect — crack injection runs $800-$1,200 per crack, and bulkhead repair with professional bulkhead sealant typically costs $1,800-$2,500. For honest pricing context, check our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026).
 
-Ready to find out what is going on with your foundation? Text us a photo for assessment or call us at 860-573-8760 to schedule a [free consultation](/services/free-foundation-consultations). We will give you straight answers — even if that answer is "your foundation is fine, stop worrying."
+Ready to find out what is going on with your foundation? Text us a photo for assessment or call us at [860-573-8760](sms:860-573-8760) to schedule a [free consultation](/services/free-foundation-consultations). We will give you straight answers — even if that answer is "your foundation is fine, stop worrying."

@@ -126,7 +126,7 @@ We offer [free foundation consultations](/services/free-foundation-consultations
 
 ## Our CT Roots
 
-Attack A Crack has been headquartered in Connecticut since the beginning. When you call our CT line at 860-573-8760, you're talking to people who've driven your roads, know your neighborhoods, and have probably already fixed a foundation on your street. We understand the Hartford area's unique combination of soils, climate, and housing stock because we've been living in it and working in it for decades.
+Attack A Crack has been headquartered in Connecticut since the beginning. When you call our CT line at [860-573-8760](tel:860-573-8760), you're talking to people who've driven your roads, know your neighborhoods, and have probably already fixed a foundation on your street. We understand the Hartford area's unique combination of soils, climate, and housing stock because we've been living in it and working in it for decades.
 
 Whether your 1890 brownstone in the West End has a fieldstone wall that's weeping, your 1955 ranch in Newington has a block wall with a horizontal crack, or your 1985 colonial in Glastonbury has a poured concrete crack that leaks every spring — we've seen it before, we've fixed it before, and we'll fix it right.
 

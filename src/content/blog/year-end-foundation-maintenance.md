@@ -131,6 +131,6 @@ Here is the truth: most homeowners have no idea what is happening beneath their 
 
 If your year-end review uncovered anything that concerns you — or if you just want a professional baseline assessment to compare against in future years — give us a call. Attack A Crack has been helping New England homeowners understand and maintain their foundations for decades.
 
-We offer [free consultations](/services/free-foundation-consultations) with no obligation and no pressure. Call 860-573-8760 (CT) or 617-668-1677 (MA) to schedule.
+We offer [free consultations](/services/free-foundation-consultations) with no obligation and no pressure. Call [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) to schedule.
 
 Start the new year knowing exactly where your foundation stands. That is one resolution worth keeping.

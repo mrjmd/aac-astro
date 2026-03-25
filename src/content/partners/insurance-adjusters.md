@@ -71,5 +71,5 @@ When a home sale triggers an inspection that reveals foundation issues, we provi
 
 Add Attack A Crack to your preferred vendor list. When foundation claims come in, you'll have a trusted partner ready to help.
 
-**Connecticut:** 860-573-8760
-**Massachusetts:** 617-668-1677
+**Connecticut:** [860-573-8760](tel:860-573-8760)
+**Massachusetts:** [617-668-1677](tel:617-668-1677)

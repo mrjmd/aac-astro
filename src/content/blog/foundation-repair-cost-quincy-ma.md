@@ -145,4 +145,4 @@ During the inspection, we will:
 
 No pressure, no scare tactics, no inflated estimates. We have been in this city for over three decades, and our reputation matters more than any single sale.
 
-Call 617-668-1677 to schedule your free inspection. We will give you straight numbers for your specific situation.
+Call [617-668-1677](tel:617-668-1677) to schedule your free inspection. We will give you straight numbers for your specific situation.

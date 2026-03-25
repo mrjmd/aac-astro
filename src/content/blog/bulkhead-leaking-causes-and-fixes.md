@@ -133,7 +133,7 @@ Stop the cycle of temporary fixes that fail after every storm. Our bulkhead inje
 
 **Schedule a free assessment:**
 
-**Connecticut:** 860-573-8760
-**Massachusetts:** 617-668-1677
+**Connecticut:** [860-573-8760](tel:860-573-8760)
+**Massachusetts:** [617-668-1677](tel:617-668-1677)
 
 With 50+ years of combined experience and thousands of projects across New England, we'll examine your bulkhead, explain exactly what's causing the leak, and provide a clear quote for permanent repair. See our [bulkhead repair cost guide](/blog/bulkhead-repair-cost-guide-2026) for detailed pricing, or read our [Wilmington case study](/blog/leaky-bulkhead-wilmington-repair) to see what a typical bulkhead sealant injection repair looks like.

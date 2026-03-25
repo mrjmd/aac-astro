@@ -27,7 +27,7 @@ faqs:
   - question: "Do homes near Gardner Lake have more foundation issues?"
     answer: "Homes in the Gardner Lake area do face elevated foundation risk. The lake and surrounding wetlands keep the local water table high, and the glacial soils in this part of Salem drain inconsistently—sandy deposits allow rapid water movement while clay pockets trap moisture against foundations. Seasonal lake-level fluctuations add another variable that affects nearby basements."
   - question: "How quickly can Attack A Crack reach Salem?"
-    answer: "Salem is one of the closest towns to our Amston, CT headquarters—just minutes away. That proximity means fast scheduling, short response times, and deep familiarity with the glacial terrain and soil conditions specific to the Gardner Lake area and greater Salem. Call 860-573-8760 and we can often schedule a visit the same week."
+    answer: "Salem is one of the closest towns to our Amston, CT headquarters—just minutes away. That proximity means fast scheduling, short response times, and deep familiarity with the glacial terrain and soil conditions specific to the Gardner Lake area and greater Salem. Call [860-573-8760](tel:860-573-8760) and we can often schedule a visit the same week."
 servesResurfacing: false
 coordinates:
   lat: 41.4893
@@ -40,4 +40,4 @@ Salem is a small eastern Connecticut town of roughly 4,200 residents, known for 
 
 Salem's landscape was carved by glacial activity that left behind a complex mix of soil types across short distances. Sandy outwash deposits near Gardner Lake and Horse Pond allow water to move quickly through the ground, while clay-rich till on surrounding hillsides holds moisture and expands under pressure. This patchwork means two homes on the same street can face entirely different drainage conditions. The lake itself influences the local water table, and seasonal fluctuations—higher in spring, lower in late summer—create cyclical hydrostatic pressure changes that stress basement walls in the Gardner Lake neighborhood and East Salem.
 
-Attack A Crack's Connecticut headquarters is in Amston, making Salem one of our nearest service areas. We know the glacial soils and lakeside water table conditions here better than anyone. Our injection repair methods permanently seal foundation cracks from the inside out, and every repair includes our lifetime transferable warranty. Call 860-573-8760 for a free consultation.
+Attack A Crack's Connecticut headquarters is in Amston, making Salem one of our nearest service areas. We know the glacial soils and lakeside water table conditions here better than anyone. Our injection repair methods permanently seal foundation cracks from the inside out, and every repair includes our lifetime transferable warranty. Call [860-573-8760](tel:860-573-8760) for a free consultation.

@@ -78,5 +78,5 @@ Structural protection involves:
 
 Winter's freeze-thaw cycles can wreak havoc on your home's foundation, causing cracks and leaks — especially in New England's glacial till and clay-heavy soil, where frozen ground expands by up to 9%. Look for water in your basement after rain, white powder on basement walls (efflorescence), or a musty smell in your basement. Attack A Crack offers [free foundation repair consultations](/services/free-foundation-consultations) and inspections to address potential issues before they escalate into costly repairs. Most crack repairs run $800-$1,200 per crack with a lifetime guarantee.
 
-**Connecticut:** 860-573-8760
-**Massachusetts:** 617-668-1677
+**Connecticut:** [860-573-8760](tel:860-573-8760)
+**Massachusetts:** [617-668-1677](tel:617-668-1677)

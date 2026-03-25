@@ -98,4 +98,4 @@ We've repaired pool decks throughout Massachusetts, from modest residential pool
 
 Ready to repair your pool deck? Contact us for a free assessment:
 
-**Massachusetts:** 617-668-1677
+**Massachusetts:** [617-668-1677](tel:617-668-1677)

@@ -131,6 +131,6 @@ For broader context on South Shore foundation challenges, see our article on [So
 
 ## Get Your Weymouth Foundation Inspected
 
-If you are a Weymouth homeowner with basement moisture, visible cracks, or concerns about your foundation, text us a photo for assessment or call us at 617-668-1677 for a [free consultation](/services/free-foundation-consultations). We will inspect your foundation, explain what we find, and give you an honest assessment of what needs attention now versus what can wait.
+If you are a Weymouth homeowner with basement moisture, visible cracks, or concerns about your foundation, text us a photo for assessment or call us at [617-668-1677](sms:617-668-1677) for a [free consultation](/services/free-foundation-consultations). We will inspect your foundation, explain what we find, and give you an honest assessment of what needs attention now versus what can wait.
 
 With decades of experience on the South Shore, we know Weymouth's soil, water table, and housing stock. We will tell you what your foundation needs — and just as importantly, what it does not.

@@ -166,6 +166,6 @@ The [signs of foundation problems](/blog/signs-of-foundation-problems) guide hel
 
 ## Get an Honest Assessment
 
-If you are worried about your foundation, call us at 860-573-8760 (CT) or 617-668-1677 (MA). We will inspect it thoroughly and give you an honest answer. If it needs repair, we will explain the options and costs. If it needs more than we do, we will tell you that too — see [what we don't do](/what-we-dont-do) for a full list of services we refer out. A foundation company that recommends work it cannot perform is a foundation company you can trust.
+If you are worried about your foundation, call us at [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA). We will inspect it thoroughly and give you an honest answer. If it needs repair, we will explain the options and costs. If it needs more than we do, we will tell you that too — see [what we don't do](/what-we-dont-do) for a full list of services we refer out. A foundation company that recommends work it cannot perform is a foundation company you can trust.
 
 Our lifetime warranty on all repairs means we stand behind our assessment that repair is sufficient. If we repair it and the repair fails, we fix it again at no cost. That is confidence backed by 50+ years of combined experience.

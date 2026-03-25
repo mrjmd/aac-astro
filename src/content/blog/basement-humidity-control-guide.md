@@ -111,7 +111,7 @@ A quality dehumidifier costs $250 to $400 upfront. Running it year-round costs $
 
 A typical [foundation crack injection](/services/foundation-crack-injection) costs $800-$1,200 — significantly less than that lifetime dehumidifier expense — and comes with a warranty that lasts as long as you own the home. The math is not close.
 
-Not sure where your moisture is coming from? Text us a photo for assessment at 617-668-1677 or 860-573-8760. We can often identify the source from a photo alone.
+Not sure where your moisture is coming from? Text us a photo for assessment at [617-668-1677](sms:617-668-1677) or [860-573-8760](sms:860-573-8760). We can often identify the source from a photo alone.
 
 ## What to Do Next
 

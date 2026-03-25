@@ -104,4 +104,4 @@ The biggest mistake homeowners make is waiting. A crack that needs $600 in stapl
 
 ## Get an Assessment
 
-Not sure whether your wall needs staples or straps? Text us a photo at **617-668-1677** (MA) or **860-573-8760** (CT) — we can usually gauge severity from a photo. Or schedule a [free foundation consultation](/services/free-foundation-consultations) and we will measure the deflection and tell you exactly what your wall needs.
+Not sure whether your wall needs staples or straps? Text us a photo at **[617-668-1677](sms:617-668-1677)** (MA) or **[860-573-8760](sms:860-573-8760)** (CT) — we can usually gauge severity from a photo. Or schedule a [free foundation consultation](/services/free-foundation-consultations) and we will measure the deflection and tell you exactly what your wall needs.

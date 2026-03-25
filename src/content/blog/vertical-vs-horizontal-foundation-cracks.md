@@ -155,5 +155,5 @@ Horizontal cracks with bowing require stabilization. We assess severity and reco
 
 **Have a crack you're worried about?** Text us a photo for a [free assessment](/services/free-foundation-consultations). With 50+ years of combined experience and thousands of projects across New England, we can diagnose your crack from a photo in most cases.
 
-**Connecticut:** 860-573-8760
-**Massachusetts:** 617-668-1677
+**Connecticut:** [860-573-8760](tel:860-573-8760)
+**Massachusetts:** [617-668-1677](tel:617-668-1677)

@@ -101,7 +101,7 @@ Call a professional immediately if you notice:
 
 Not sure where your water is coming from? That's exactly what we diagnose every day. With 50+ years of combined experience and thousands of projects across New England, our [consultations are free](/services/free-foundation-consultations), and we'll trace the water to its source. For cracks showing structural movement, [carbon fiber staples (stitches)](/services/carbon-fiber-stitches) at $200-$300 per stitch add permanent reinforcement.
 
-**Connecticut:** 860-573-8760
-**Massachusetts:** 617-668-1677
+**Connecticut:** [860-573-8760](tel:860-573-8760)
+**Massachusetts:** [617-668-1677](tel:617-668-1677)
 
 Text us a photo of where the water appears and we'll give you a quick preliminary assessment.

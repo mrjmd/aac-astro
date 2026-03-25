@@ -135,7 +135,7 @@ For a deeper dive into why bulkheads leak in the first place, see our guide on [
 
 Not sure what your bulkhead needs? With 50+ years of combined experience and thousands of projects completed, we'll examine it for free, diagnose the leak source, and give you an honest recommendation.
 
-**Connecticut:** 860-573-8760
-**Massachusetts:** 617-668-1677
+**Connecticut:** [860-573-8760](tel:860-573-8760)
+**Massachusetts:** [617-668-1677](tel:617-668-1677)
 
 Text us photos of your bulkhead for a quick preliminary assessment.

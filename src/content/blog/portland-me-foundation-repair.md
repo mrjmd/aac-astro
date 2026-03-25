@@ -110,6 +110,6 @@ Unlike southern New England, Maine foundations can remain frozen for weeks at a 
 
 Attack A Crack serves southern Maine from Portland south. We understand the unique combination of coastal exposure and extreme winter conditions that makes this area so demanding on foundations.
 
-We offer [free foundation consultations](/services/free-foundation-consultations) throughout our service area. If you are wondering about a crack, dealing with water in the basement after rain, or just want a professional opinion on what your foundation needs, give us a call at 860-573-8760 or text us a photo for a quick assessment. After 50+ combined years of New England foundation work, we will take a look and give you honest answers.
+We offer [free foundation consultations](/services/free-foundation-consultations) throughout our service area. If you are wondering about a crack, dealing with water in the basement after rain, or just want a professional opinion on what your foundation needs, give us a call at [860-573-8760](sms:860-573-8760) or text us a photo for a quick assessment. After 50+ combined years of New England foundation work, we will take a look and give you honest answers.
 
 Maine foundations earn every year they stand. Let us help yours stand for many more.

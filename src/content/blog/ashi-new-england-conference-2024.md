@@ -42,5 +42,5 @@ If you're a home inspector in New England, consider Attack A Crack as your trust
 
 We provide fast, professional assessments that help you serve your clients better. Our [foundation inspection process](/blog/how-we-diagnose-foundation-problems) complements your work, and our [free consultations](/services/free-foundation-consultations) give homebuyers the answers they need.
 
-**Connecticut:** 860-573-8760
-**Massachusetts:** 617-668-1677
+**Connecticut:** [860-573-8760](tel:860-573-8760)
+**Massachusetts:** [617-668-1677](tel:617-668-1677)

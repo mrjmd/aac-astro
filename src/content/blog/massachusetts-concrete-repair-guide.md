@@ -152,4 +152,4 @@ A few tips for hiring a concrete repair contractor in Massachusetts:
 - **Get a warranty in writing.** Any reputable contractor will stand behind their work.
 - **Don't automatically go with the cheapest bid.** The lowest price often means the thinnest materials, the least preparation, and a repair that fails in two winters.
 
-At Attack A Crack, we've been repairing concrete across Massachusetts for 50+ combined years. Our MA office serves the greater Boston area and beyond. We offer [free consultations](/services/free-foundation-consultations) for concrete repair projects — call us at 617-668-1677 or text us a photo for a quick assessment. No pressure, no upselling, just straight answers from people who've seen it all.
+At Attack A Crack, we've been repairing concrete across Massachusetts for 50+ combined years. Our MA office serves the greater Boston area and beyond. We offer [free consultations](/services/free-foundation-consultations) for concrete repair projects — call us at [617-668-1677](sms:617-668-1677) or text us a photo for a quick assessment. No pressure, no upselling, just straight answers from people who've seen it all.

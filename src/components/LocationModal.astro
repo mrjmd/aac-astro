@@ -12,64 +12,131 @@ const MA_NUMBER = phoneMA;
     <button id="modal-close" class="absolute top-4 right-4 text-zinc-500 hover:text-zinc-900" aria-label="Close modal">
       <Icon name="X" size={24} />
     </button>
-    <div class="text-center mb-8">
-      <div class="w-16 h-16 bg-aac-yellow rounded-2xl flex items-center justify-center mx-auto mb-4">
-        <Icon name="MapPin" class="text-aac-dark" size={32} />
+
+    <!-- TEXT MODE (default): SMS primary, call secondary -->
+    <div id="modal-text-mode">
+      <div class="text-center mb-8">
+        <div class="w-16 h-16 bg-aac-yellow rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <Icon name="MapPin" class="text-aac-dark" size={32} />
+        </div>
+        <p id="modal-title" class="text-2xl font-bold text-aac-dark mb-2">Where are you located?</p>
+        <p class="text-zinc-500 font-medium">Text us photos for a free assessment.</p>
       </div>
-      <p id="modal-title" class="text-2xl font-bold text-aac-dark mb-2">Where are you located?</p>
-      <p class="text-zinc-500 font-medium">We service New England only.</p>
-    </div>
-    <div class="grid gap-4">
-      <a href={`sms:${CT_NUMBER}`} class="flex items-center justify-between p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue hover:bg-aac-blue/5 transition-all group">
-        <div class="flex items-center gap-4">
-          <div class="w-12 h-12 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center font-black group-hover:bg-aac-blue group-hover:text-white transition-colors">CT</div>
-          <div class="text-left">
-            <p class="font-black text-aac-dark">Connecticut</p>
-            <p class="text-xs text-zinc-500 font-bold uppercase tracking-widest">Text Photos to {CT_NUMBER}</p>
+      <div class="grid gap-4">
+        <a href={`sms:${CT_NUMBER}`} class="flex items-center justify-between p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue hover:bg-aac-blue/5 transition-all group">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center font-black group-hover:bg-aac-blue group-hover:text-white transition-colors">CT</div>
+            <div class="text-left">
+              <p class="font-black text-aac-dark">Connecticut</p>
+              <p class="text-xs text-zinc-500 font-bold uppercase tracking-widest">Text Photos to {CT_NUMBER}</p>
+            </div>
           </div>
-        </div>
-        <Icon name="MessageSquare" size={20} class="text-aac-blue" />
-      </a>
-      <a href={`sms:${MA_NUMBER}`} class="flex items-center justify-between p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue hover:bg-aac-blue/5 transition-all group">
-        <div class="flex items-center gap-4">
-          <div class="w-12 h-12 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center font-black group-hover:bg-aac-blue group-hover:text-white transition-colors">MA</div>
-          <div class="text-left">
-            <p class="font-black text-aac-dark">Massachusetts</p>
-            <p class="text-xs text-zinc-500 font-bold uppercase tracking-widest">Text Photos to {MA_NUMBER}</p>
-          </div>
-        </div>
-        <Icon name="MessageSquare" size={20} class="text-aac-blue" />
-      </a>
-      <a href={`sms:${MA_NUMBER}`} class="flex items-center justify-between p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue hover:bg-aac-blue/5 transition-all group">
-        <div class="flex items-center gap-4">
-          <div class="w-12 h-12 bg-zinc-100 text-zinc-500 rounded-xl flex items-center justify-center font-black group-hover:bg-aac-blue group-hover:text-white transition-colors">NE</div>
-          <div class="text-left">
-            <p class="font-black text-aac-dark">Other New England</p>
-            <p class="text-xs text-zinc-500 font-bold uppercase tracking-widest">Routes to {MA_NUMBER}</p>
-          </div>
-        </div>
-        <Icon name="MessageSquare" size={20} class="text-zinc-300" />
-      </a>
-    </div>
-    <div class="mt-8 p-4 bg-zinc-50 rounded-2xl border-2 border-zinc-100">
-      <div class="flex items-center gap-4 mb-3">
-        <Icon name="Phone" size={20} class="text-aac-blue" />
-        <div class="text-left">
-          <p class="text-[10px] font-black uppercase tracking-widest text-zinc-500">Prefer to call?</p>
-          <p class="text-sm font-black text-aac-dark">Speak with an expert directly.</p>
-        </div>
-      </div>
-      <div class="grid grid-cols-2 gap-3">
-        <a href={`tel:${CT_NUMBER}`} class="p-3 bg-white rounded-xl border-2 border-zinc-100 hover:border-aac-blue transition-all flex items-center justify-center gap-2">
-          <Icon name="Phone" size={16} class="text-aac-blue" />
-          <span class="text-sm font-black text-aac-dark">CT</span>
+          <Icon name="MessageSquare" size={20} class="text-aac-blue" />
         </a>
-        <a href={`tel:${MA_NUMBER}`} class="p-3 bg-white rounded-xl border-2 border-zinc-100 hover:border-aac-blue transition-all flex items-center justify-center gap-2">
-          <Icon name="Phone" size={16} class="text-aac-blue" />
-          <span class="text-sm font-black text-aac-dark">MA</span>
+        <a href={`sms:${MA_NUMBER}`} class="flex items-center justify-between p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue hover:bg-aac-blue/5 transition-all group">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center font-black group-hover:bg-aac-blue group-hover:text-white transition-colors">MA</div>
+            <div class="text-left">
+              <p class="font-black text-aac-dark">Massachusetts</p>
+              <p class="text-xs text-zinc-500 font-bold uppercase tracking-widest">Text Photos to {MA_NUMBER}</p>
+            </div>
+          </div>
+          <Icon name="MessageSquare" size={20} class="text-aac-blue" />
+        </a>
+        <a href={`sms:${MA_NUMBER}`} class="flex items-center justify-between p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue hover:bg-aac-blue/5 transition-all group">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-zinc-100 text-zinc-500 rounded-xl flex items-center justify-center font-black group-hover:bg-aac-blue group-hover:text-white transition-colors">NE</div>
+            <div class="text-left">
+              <p class="font-black text-aac-dark">Other New England</p>
+              <p class="text-xs text-zinc-500 font-bold uppercase tracking-widest">Routes to {MA_NUMBER}</p>
+            </div>
+          </div>
+          <Icon name="MessageSquare" size={20} class="text-zinc-300" />
         </a>
       </div>
+      <div class="mt-8 p-4 bg-zinc-50 rounded-2xl border-2 border-zinc-100">
+        <div class="flex items-center gap-4 mb-3">
+          <Icon name="Phone" size={20} class="text-aac-blue" />
+          <div class="text-left">
+            <p class="text-[10px] font-black uppercase tracking-widest text-zinc-500">Prefer to call?</p>
+            <p class="text-sm font-black text-aac-dark">Speak with an expert directly.</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <a href={`tel:${CT_NUMBER}`} class="p-3 bg-white rounded-xl border-2 border-zinc-100 hover:border-aac-blue transition-all flex items-center justify-center gap-2">
+            <Icon name="Phone" size={16} class="text-aac-blue" />
+            <span class="text-sm font-black text-aac-dark">CT</span>
+          </a>
+          <a href={`tel:${MA_NUMBER}`} class="p-3 bg-white rounded-xl border-2 border-zinc-100 hover:border-aac-blue transition-all flex items-center justify-center gap-2">
+            <Icon name="Phone" size={16} class="text-aac-blue" />
+            <span class="text-sm font-black text-aac-dark">MA</span>
+          </a>
+        </div>
+      </div>
     </div>
+
+    <!-- CALL MODE: Call primary, text secondary -->
+    <div id="modal-call-mode" class="hidden">
+      <div class="text-center mb-8">
+        <div class="w-16 h-16 bg-aac-yellow rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <Icon name="Phone" class="text-aac-dark" size={32} />
+        </div>
+        <p class="text-2xl font-bold text-aac-dark mb-2">Call an Expert</p>
+        <p class="text-zinc-500 font-medium">Select your location to connect.</p>
+      </div>
+      <div class="grid gap-4">
+        <a href={`tel:${CT_NUMBER}`} class="flex items-center justify-between p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue hover:bg-aac-blue/5 transition-all group">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center font-black group-hover:bg-aac-blue group-hover:text-white transition-colors">CT</div>
+            <div class="text-left">
+              <p class="font-black text-aac-dark">Connecticut</p>
+              <p class="text-xs text-zinc-500 font-bold uppercase tracking-widest">Call {CT_NUMBER}</p>
+            </div>
+          </div>
+          <Icon name="Phone" size={20} class="text-aac-blue" />
+        </a>
+        <a href={`tel:${MA_NUMBER}`} class="flex items-center justify-between p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue hover:bg-aac-blue/5 transition-all group">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center font-black group-hover:bg-aac-blue group-hover:text-white transition-colors">MA</div>
+            <div class="text-left">
+              <p class="font-black text-aac-dark">Massachusetts</p>
+              <p class="text-xs text-zinc-500 font-bold uppercase tracking-widest">Call {MA_NUMBER}</p>
+            </div>
+          </div>
+          <Icon name="Phone" size={20} class="text-aac-blue" />
+        </a>
+        <a href={`tel:${MA_NUMBER}`} class="flex items-center justify-between p-6 rounded-2xl border-2 border-zinc-100 hover:border-aac-blue hover:bg-aac-blue/5 transition-all group">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-zinc-100 text-zinc-500 rounded-xl flex items-center justify-center font-black group-hover:bg-aac-blue group-hover:text-white transition-colors">NE</div>
+            <div class="text-left">
+              <p class="font-black text-aac-dark">Other New England</p>
+              <p class="text-xs text-zinc-500 font-bold uppercase tracking-widest">Routes to {MA_NUMBER}</p>
+            </div>
+          </div>
+          <Icon name="Phone" size={20} class="text-zinc-300" />
+        </a>
+      </div>
+      <div class="mt-8 p-4 bg-zinc-50 rounded-2xl border-2 border-zinc-100">
+        <div class="flex items-center gap-4 mb-3">
+          <Icon name="MessageSquare" size={20} class="text-aac-blue" />
+          <div class="text-left">
+            <p class="text-[10px] font-black uppercase tracking-widest text-zinc-500">Prefer to text?</p>
+            <p class="text-sm font-black text-aac-dark">Send us photos for a free assessment.</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <a href={`sms:${CT_NUMBER}`} class="p-3 bg-white rounded-xl border-2 border-zinc-100 hover:border-aac-blue transition-all flex items-center justify-center gap-2">
+            <Icon name="MessageSquare" size={16} class="text-aac-blue" />
+            <span class="text-sm font-black text-aac-dark">CT</span>
+          </a>
+          <a href={`sms:${MA_NUMBER}`} class="p-3 bg-white rounded-xl border-2 border-zinc-100 hover:border-aac-blue transition-all flex items-center justify-center gap-2">
+            <Icon name="MessageSquare" size={16} class="text-aac-blue" />
+            <span class="text-sm font-black text-aac-dark">MA</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -78,8 +145,21 @@ const MA_NUMBER = phoneMA;
   const backdrop = document.getElementById('modal-backdrop');
   const closeBtn = document.getElementById('modal-close');
   const content = modal.querySelector('.relative');
+  const textMode = document.getElementById('modal-text-mode');
+  const callMode = document.getElementById('modal-call-mode');
 
-  function openModal() {
+  function openModal(e) {
+    // Determine mode from event detail or default to 'text'
+    const mode = (e && e.detail && e.detail.mode) || 'text';
+
+    if (mode === 'call') {
+      textMode.classList.add('hidden');
+      callMode.classList.remove('hidden');
+    } else {
+      callMode.classList.add('hidden');
+      textMode.classList.remove('hidden');
+    }
+
     modal.classList.remove('hidden');
     modal.setAttribute('aria-hidden', 'false');
     setTimeout(() => {
@@ -89,7 +169,7 @@ const MA_NUMBER = phoneMA;
 
     // Analytics: track modal open as intent signal
     if (typeof window.gtag === 'function') {
-      window.gtag('event', 'text_photos_modal_open', {
+      window.gtag('event', mode === 'call' ? 'call_modal_open' : 'text_photos_modal_open', {
         page_path: window.location.pathname,
         page_type: document.body.dataset.pageType || 'unknown',
       });

@@ -24,7 +24,7 @@ If you own a home on Massachusetts' South Shore, your foundation lives a harder 
 
 We say this from 50+ years of combined experience. Our Massachusetts headquarters is in Quincy, right in the heart of the South Shore. We have been repairing foundations in these communities for over two decades, and we have developed a deep understanding of what makes this stretch of coast different. This is not a generic foundation repair article. This is specific to your area, your soil, and your homes.
 
-Not sure if what you are seeing is a problem? Text us a photo for assessment at 617-668-1677 — we can often tell you what you are dealing with from a photo alone.
+Not sure if what you are seeing is a problem? Text us a photo for assessment at [617-668-1677](sms:617-668-1677) — we can often tell you what you are dealing with from a photo alone.
 
 ## The Geology Under Your South Shore House
 
@@ -118,4 +118,4 @@ Not every crack on the South Shore is an emergency. Hairline vertical cracks in 
 
 The key is not to wait. South Shore conditions are not getting milder, the housing stock is not getting younger, and small problems left alone tend to become larger problems. A [free consultation](/services/free-foundation-consultations) from a team that knows your specific area is the smartest first step.
 
-Call our Massachusetts office at 617-668-1677. We are local, we are here, and we have probably already repaired a foundation on your street.
+Call our Massachusetts office at [617-668-1677](tel:617-668-1677). We are local, we are here, and we have probably already repaired a foundation on your street.

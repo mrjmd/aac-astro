@@ -107,4 +107,4 @@ Foundation repair contractors in New England get busy in fall. Everyone who watc
 
 Ground temperatures need to be above about 40 degrees for injection materials to cure properly — meaning work should ideally be completed by mid-November in southern New England, earlier in New Hampshire and Maine.
 
-We offer [free consultations](/services/free-foundation-consultations) and can usually get out within a week or two. Call 860-573-8760 in Connecticut or 617-668-1677 in Massachusetts — or text us a photo of any concerning cracks for a quick assessment. After 50+ combined years of New England foundation work, the one hour this inspection takes is the best investment you can make in your foundation before winter.
+We offer [free consultations](/services/free-foundation-consultations) and can usually get out within a week or two. Call [860-573-8760](sms:860-573-8760) in Connecticut or [617-668-1677](sms:617-668-1677) in Massachusetts — or text us a photo of any concerning cracks for a quick assessment. After 50+ combined years of New England foundation work, the one hour this inspection takes is the best investment you can make in your foundation before winter.

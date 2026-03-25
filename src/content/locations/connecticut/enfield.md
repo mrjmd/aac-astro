@@ -28,7 +28,7 @@ faqs:
   - question: "Why do Enfield homes develop foundation cracks?"
     answer: "Enfield straddles the Connecticut River valley where sandy, loamy soils meet the clay deposits of the Hartford basin. Seasonal moisture changes cause these soils to shift, and the northern location means deeper frost penetration and more aggressive freeze-thaw cycles than towns further south. Both factors stress foundations over time."
   - question: "Do you serve both Enfield and Thompsonville?"
-    answer: "Yes. We serve all of Enfield including Thompsonville, Hazardville, Scitico, Shaker Pines, and North Enfield. We also cover the surrounding CT-MA border area. If you're near Springfield, MA—we serve there too through our Massachusetts office at 617-668-1677."
+    answer: "Yes. We serve all of Enfield including Thompsonville, Hazardville, Scitico, Shaker Pines, and North Enfield. We also cover the surrounding CT-MA border area. If you're near Springfield, MA—we serve there too through our Massachusetts office at [617-668-1677](tel:617-668-1677)."
 servesResurfacing: false
 coordinates:
   lat: 41.9762

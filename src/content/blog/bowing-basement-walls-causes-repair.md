@@ -151,4 +151,4 @@ Here is the uncomfortable truth about bowing walls: they do not get better on th
 
 The difference between repairing a wall with 1 inch of bow (a $5,000 carbon fiber job) and repairing a wall with 3 inches of bow (a $15,000 steel beam installation — or worse) is often just a few years of inaction.
 
-If your basement wall is bowing, call us at 860-573-8760 (CT) or 617-668-1677 (MA) for a [free consultation](/services/free-foundation-consultations). We will talk you through measuring the deflection, assess the cause, and recommend the most appropriate and cost-effective repair. Our lifetime warranty covers the work, and the sooner you act, the more options you have.
+If your basement wall is bowing, call us at [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) for a [free consultation](/services/free-foundation-consultations). We will talk you through measuring the deflection, assess the cause, and recommend the most appropriate and cost-effective repair. Our lifetime warranty covers the work, and the sooner you act, the more options you have.

@@ -141,7 +141,7 @@ There are situations where pre-sale foundation repair is not the right move:
 
 If you are planning to sell and you have any foundation concerns, here is the sequence:
 
-1. Call us at 617-668-1677 (Massachusetts) or 860-573-8760 (Connecticut) for a [free assessment](/services/free-foundation-consultations).
+1. Call us at [617-668-1677](tel:617-668-1677) (Massachusetts) or [860-573-8760](tel:860-573-8760) (Connecticut) for a [free assessment](/services/free-foundation-consultations).
 2. Get a clear picture of what needs attention and what it costs.
 3. Decide with your agent whether to repair or disclose-and-adjust.
 4. If you repair, get the warranty documentation into your listing file.

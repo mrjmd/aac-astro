@@ -6,23 +6,22 @@
  * Hidden on desktop (lg:hidden). Appears on scroll past the hero section.
  *
  * Props:
- *   phone - Display phone number (e.g., "(781) 780-4542")
- *   phoneHref - Tel link (e.g., "tel:(781) 780-4542")
- *   reviewCount - Review count display (e.g., "260+")
- *   smsHref - Optional direct SMS link. If provided, "Text Photos" links directly
- *             instead of opening the location modal. Use on city/state pages where
- *             the phone number is already known.
+ *   phoneHref - Optional direct tel: link. If provided, "Call Now" dials directly.
+ *               If omitted, "Call Now" opens the location modal in call mode.
+ *   smsHref - Optional direct SMS link. If provided, "Text Photos" links directly.
+ *             If omitted, "Text Photos" opens the location modal in text mode.
+ *
+ * State pages (CT/MA/RI/NH/ME) get direct phoneHref + smsHref.
+ * Generic pages (home, services, blog, about) get neither — both buttons open modals.
  */
 import Icon from './Icon.astro';
 
 interface Props {
-  phone: string;
-  phoneHref: string;
-  reviewCount: string;
+  phoneHref?: string;
   smsHref?: string;
 }
 
-const { phone, phoneHref, reviewCount, smsHref } = Astro.props;
+const { phoneHref, smsHref } = Astro.props;
 ---
 
 <nav
@@ -32,13 +31,22 @@ const { phone, phoneHref, reviewCount, smsHref } = Astro.props;
 >
   <div class="bg-aac-dark/95 backdrop-blur-sm border-t border-white/10 px-6 py-2.5">
     <div class="flex items-center justify-center gap-3">
-      <a
-        href={phoneHref}
-        class="bg-aac-yellow text-aac-dark px-6 py-2 rounded-full font-black uppercase tracking-widest text-[10px] inline-flex items-center gap-2 active:scale-95 transition-transform"
-      >
-        <Icon name="Phone" size={14} />
-        Call Now
-      </a>
+      {phoneHref ? (
+        <a
+          href={phoneHref}
+          class="bg-aac-yellow text-aac-dark px-6 py-2 rounded-full font-black uppercase tracking-widest text-[10px] inline-flex items-center gap-2 active:scale-95 transition-transform"
+        >
+          <Icon name="Phone" size={14} />
+          Call Now
+        </a>
+      ) : (
+        <button
+          class="open-call-modal bg-aac-yellow text-aac-dark px-6 py-2 rounded-full font-black uppercase tracking-widest text-[10px] inline-flex items-center gap-2 active:scale-95 transition-transform"
+        >
+          <Icon name="Phone" size={14} />
+          Call Now
+        </button>
+      )}
       {smsHref ? (
         <a
           href={smsHref}

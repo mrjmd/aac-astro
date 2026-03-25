@@ -117,6 +117,6 @@ Any of these warrants a closer look. Most warrant a professional opinion.
 
 We offer [free foundation assessments](/services/free-foundation-consultations) across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine.
 
-Call us at 860-573-8760 in Connecticut or 617-668-1677 in Massachusetts. You can also text us a photo for a quick preliminary assessment. We would much rather help you prepare for spring than bail you out during it.
+Call us at [860-573-8760](sms:860-573-8760) in Connecticut or [617-668-1677](sms:617-668-1677) in Massachusetts. You can also text us a photo for a quick preliminary assessment. We would much rather help you prepare for spring than bail you out during it.
 
 Your foundation survived another New England winter. Let us make sure it is ready for what comes next.

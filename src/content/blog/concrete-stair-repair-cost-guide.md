@@ -188,4 +188,4 @@ If your Massachusetts concrete stairs need attention — whether it's a minor pa
 
 No pressure, no upselling. If your stairs just need a $20 bag of patching compound and some elbow grease, we'll tell you that. If they need professional repair, we'll tell you exactly what's involved and what it costs.
 
-Call our Massachusetts office at 617-668-1677 or text us a photo of your stairs for an initial assessment. We serve the greater Boston area, South Shore, MetroWest, Worcester area, and throughout the Commonwealth. Your stairs have been crumbling long enough — let's fix them before someone gets hurt.
+Call our Massachusetts office at [617-668-1677](sms:617-668-1677) or text us a photo of your stairs for an initial assessment. We serve the greater Boston area, South Shore, MetroWest, Worcester area, and throughout the Commonwealth. Your stairs have been crumbling long enough — let's fix them before someone gets hurt.

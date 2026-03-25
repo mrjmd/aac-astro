@@ -79,5 +79,5 @@ Spring thaw and fall rains drive both your busiest seasons and ours. Coordinate 
 
 Next time a client asks about their cracked driveway or wet basement, you'll know exactly who to call.
 
-**Connecticut:** 860-573-8760
-**Massachusetts:** 617-668-1677
+**Connecticut:** [860-573-8760](tel:860-573-8760)
+**Massachusetts:** [617-668-1677](tel:617-668-1677)

@@ -78,4 +78,4 @@ The best time to fix a foundation crack was when it first appeared. The second-b
 
 We offer [free consultations](/services/free-foundation-consultations) across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine. We will assess your cracks, explain your options, and give you a straightforward quote. If the crack does not need professional repair, we will tell you — no charge, no pressure.
 
-Call 860-573-8760 in Connecticut or 617-668-1677 in Massachusetts. October appointments are filling up, and the freeze is coming whether you are ready or not.
+Call [860-573-8760](tel:860-573-8760) in Connecticut or [617-668-1677](tel:617-668-1677) in Massachusetts. October appointments are filling up, and the freeze is coming whether you are ready or not.
