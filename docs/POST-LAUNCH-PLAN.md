@@ -43,7 +43,7 @@ These fill genuine search gaps and need to go live now:
 - [ ] Build the complete April–December calendar in `docs/CONTENT-CALENDAR-2026.md`
 - [ ] For every post: topic, target keywords, search volume, keyword difficulty, competitive analysis (who ranks now and why we'll beat them), seasonal rationale (why this month)
 - [ ] Organize by topic cluster and seasonal relevance (summer moisture, fall prep, winter freeze, spring thaw)
-- [ ] Source ideas from: keyword gaps vs competitors, GSC data (once available), brainstorm session (`docs/BRAINSTORM-AGENDA.md`), project case studies, PAA questions, seasonal search trends
+- [ ] Source ideas from: keyword gaps vs competitors, GSC data (once available), project case studies, PAA questions, seasonal search trends
 - [ ] Present the full calendar to Matt for sign-off before writing begins
 
 **Step 2 — Write all ~80 posts as drafts (Claude):**
@@ -305,7 +305,7 @@ Every piece of credential info strengthens Google's trust signal for AAC.
 - [ ] Handle old Squarespace CDN image URLs (low priority, monitor)
 - [ ] Financing page integration (Hearth/GreenSky)
 - [ ] Consider upgrading Buffer to Team plan ($10/mo) for 2,000 scheduled posts
-- [ ] Brainstorm session — 38 technical questions in `docs/BRAINSTORM-AGENDA.md`
+
 - [ ] Before/after photo verification — flip `beforeAfterVerified: true` on verified pairs
 
 ## Tech Debt
