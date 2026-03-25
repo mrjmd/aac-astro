@@ -110,6 +110,66 @@ const MA_NUMBER = phoneMA;
 
 		<!-- Trust Badges -->
 		<TrustBar pathname={Astro.url.pathname} />
+
+		<!-- Why Choose Us + NE Context -->
+		<section data-animate class="py-16 md:py-24 bg-zinc-50">
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="grid lg:grid-cols-2 gap-16 items-start">
+					<div>
+						<p class="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-400 mb-6">
+							<Icon name="Shield" size={14} /> WHY CHOOSE US
+						</p>
+						<h2 class="text-4xl lg:text-5xl font-display font-black text-aac-dark tracking-tighter leading-[0.9] mb-8">
+							The New England <br />
+							<span class="text-aac-blue">Foundation Experts</span>
+						</h2>
+						<div class="grid sm:grid-cols-2 gap-6">
+							{[
+								{ icon: "ShieldCheck", title: "Lifetime Guarantee", desc: "Every repair backed for the life of your home — transferable if you sell." },
+								{ icon: "Clock", title: "20+ Years Experience", desc: "Thousands of foundation repairs across five New England states." },
+								{ icon: "MapPin", title: "5-State Coverage", desc: "Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine." },
+								{ icon: "MessageCircle", title: "Photo Assessment", desc: "Text us a photo — we can often diagnose your foundation issue before we visit." },
+								{ icon: "Zap", title: "Same-Week Service", desc: "Most repairs scheduled within days, completed in a single visit." },
+								{ icon: "Award", title: "High-Pressure Injection", desc: "We inject at 100 PSI — higher pressure ensures a complete, durable seal." },
+							].map((item) => (
+								<div class="flex gap-4">
+									<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center flex-shrink-0">
+										<Icon name={item.icon} size={20} />
+									</div>
+									<div>
+										<p class="font-black text-aac-dark text-sm">{item.title}</p>
+										<p class="text-zinc-500 text-sm mt-1">{item.desc}</p>
+									</div>
+								</div>
+							))}
+						</div>
+					</div>
+					<div class="bg-white rounded-3xl p-8 lg:p-10 border-2 border-zinc-100">
+						<h3 class="text-2xl font-display font-black text-aac-dark tracking-tight mb-4">
+							Why New England Homes Crack
+						</h3>
+						<p class="text-zinc-600 leading-relaxed mb-4">
+							New England's geology creates unique foundation challenges. Our glacial till soils — dense, clay-heavy deposits left by retreating ice sheets — retain water and expand when wet. Combined with freeze-thaw cycles that can push temperatures from 50°F to -10°F in a single week, the soil around your foundation is constantly moving.
+						</p>
+						<p class="text-zinc-600 leading-relaxed mb-4">
+							Hydrostatic pressure builds as this waterlogged soil pushes against your foundation walls. Over time, it finds every weakness: shrinkage cracks, cold joints, pipe penetrations, and bulkhead seals. This is why New England has a higher rate of foundation problems than most of the country — and why local expertise matters.
+						</p>
+						<p class="text-zinc-600 leading-relaxed">
+							We've repaired foundations in every soil condition across CT, MA, RI, NH, and ME. That pattern recognition — knowing what Quincy clay does differently from Hartford river sand — is what ensures the right repair the first time.
+						</p>
+						<div class="mt-6 flex flex-wrap gap-3">
+							<a href="/blog/signs-of-foundation-problems" class="text-[10px] font-black uppercase tracking-widest text-aac-blue hover:text-aac-dark transition-colors inline-flex items-center gap-1">
+								Signs of Foundation Problems <Icon name="ArrowRight" size={12} />
+							</a>
+							<a href="/blog/water-in-basement-after-rain" class="text-[10px] font-black uppercase tracking-widest text-aac-blue hover:text-aac-dark transition-colors inline-flex items-center gap-1">
+								Water After Rain <Icon name="ArrowRight" size={12} />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<Team />
 		
 		<!-- Testimonials -->

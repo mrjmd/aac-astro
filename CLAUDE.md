@@ -54,6 +54,15 @@ All SEO-related issues are hard failures. No warnings. No exceptions.
 - Every page needs og:title, og:description, og:image, og:url
 - Every page needs a canonical URL (absolute HTTPS)
 
+### Phone Numbers in Content
+
+- **Non-state-specific pages** (services, blog, home, about) MUST show BOTH phone numbers: CT (860-573-8760) AND MA (617-668-1677). Never show only one.
+- **State-specific pages** (CT city pages, MA city pages) show only that state's number.
+- **`tel:` links are for calling.** Never say "call or text" with a `tel:` link — that's misleading. Say "Call" with `tel:` links. If you want a text action, use a separate `sms:` link.
+- **`sms:` links are for texting.** Use "Text us a photo" with `sms:` links.
+- **Every phone number in markdown must be a clickable link** — either `[860-573-8760](tel:860-573-8760)` or `[617-668-1677](sms:617-668-1677)`. No plain-text phone numbers.
+- The sticky CTA and location modal handle the call/text routing on generic pages — don't duplicate that complexity in markdown CTAs.
+
 ### Accessibility
 
 - All axe-core violations are errors, including minor/moderate

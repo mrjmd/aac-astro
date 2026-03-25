@@ -35,17 +35,27 @@ steps:
 
 ## What Is Bulkhead Leak Repair?
 
-**Bulkhead leak repair** is the process of permanently sealing the joint between a precast concrete bulkhead and the poured foundation wall. Flexible urethane foam is injected into the cold joint where the two concrete sections meet, creating an expansive waterproof seal that stops water from entering your basement through the bulkhead stairs.
-
 <div class="video-right">
 <div style="aspect-ratio:9/16;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
 <iframe src="https://www.youtube.com/embed/8c_gHPiH9Ic" title="Bulkhead leak repair — Attack A Crack Foundation Repair" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:104%;height:104%;margin-top:-2%;margin-left:-2%"></iframe>
 </div>
 </div>
 
+**Bulkhead leak repair** is the process of permanently sealing the joint between a precast concrete bulkhead and the poured foundation wall. Flexible urethane foam is injected into the cold joint where the two concrete sections meet, creating an expansive waterproof seal that stops water from entering your basement through the bulkhead stairs.
+
 ## Bulkhead Door Leak Repair: A Permanent Solution
 
 A leaking bulkhead door turns every rainstorm into a basement flooding event. Water pools on your bulkhead stairs, seeps through the foundation joint, and floods your basement. Whether you have a Bilco door, a precast concrete bulkhead, or a steel hatchway, we fix this problem permanently with our specialized bulkhead sealant injection process.
+
+**What we do:** We remove the failed gasket material, inject flexible urethane foam into the cold joint under pressure, and seal the connection permanently. The repair takes 2-3 hours, works in any weather (including active leaks), and is backed by our lifetime guarantee — the only one in New England for bulkhead sealing.
+
+**What it costs:** Most repairs run **$1,800–$2,500**, compared to **$5,000–$10,000+** for full bulkhead replacement. Replacement often doesn't solve the problem because a new bulkhead creates a new cold joint with the same sealing challenge.
+
+**Is it your bulkhead or your door?** If water enters through the door itself (failed weatherstripping), that's a DIY fix. If water pools on the stairs or seeps across the floor near the bulkhead, the foundation joint is the problem — and that's our specialty. See [door vs. joint leaks](#door-leaks-vs-foundation-joint-leaks) below for the full distinction.
+
+---
+
+## The Full Guide: Bulkhead Leaks in New England
 
 ### Why Bulkheads Leak
 
@@ -127,10 +137,6 @@ Many homeowners try to waterproof bulkhead doors with off-the-shelf products bef
 - Remains flexible for decades
 - One-time permanent repair
 - Backed by lifetime guarantee
-
-### What Bulkhead Repair Costs
-
-Most bulkhead leak repairs cost **$1,800-$2,500** — a fraction of the **$5,000-$10,000+** cost of full bulkhead replacement. Our injection addresses the actual leak point (the foundation joint), which replacement often doesn't solve because a new bulkhead creates a new cold joint with the same sealing challenge. Every repair includes our lifetime guarantee — we are the only company in New England offering a lifetime guarantee on bulkhead sealing.
 
 ### Signs Your Bulkhead Needs Repair
 

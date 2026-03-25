@@ -33,13 +33,20 @@ steps:
 
 ## What Is Basement Wall Crack Repair?
 
-**Basement wall crack repair** is the process of permanently sealing cracks in poured concrete or block foundation walls using high-pressure resin injection. Epoxy restores structural strength while polyurethane foam creates a flexible, waterproof seal — both methods fill the crack through the full wall thickness without excavation.
-
 <div class="video-right">
 <div style="aspect-ratio:9/16;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
 <iframe src="https://www.youtube.com/embed/Ijb7aXaaCSY" title="Foundation wall crack repair in progress — Attack A Crack" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:104%;height:104%;margin-top:-2%;margin-left:-2%"></iframe>
 </div>
 </div>
+
+**Basement wall crack repair** is the process of permanently sealing cracks in poured concrete or block foundation walls using high-pressure resin injection. Epoxy restores structural strength while polyurethane foam creates a flexible, waterproof seal — both methods fill the crack through the full wall thickness without excavation.
+
+**Most wall crack repairs cost $800–$1,200 per crack**, with structural cracks requiring carbon fiber reinforcement running higher. If you see water stains, white powder (efflorescence), or active leaking in your basement, a foundation crack is the likely cause. We inject flexible urethane or structural epoxy at 100 PSI to fill the crack through the full wall thickness — no excavation, no exterior digging. Every repair includes a lifetime guarantee.
+
+Call [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) for a free assessment.
+
+---
+
 
 ## Basement Wall Crack Repair That Lasts a Lifetime
 
@@ -118,6 +125,23 @@ We'll be honest about what doesn't need repair:
 - **Hairline cracks under 1/16"** with no moisture — monitor, don't repair
 - **Surface-only crazing** — cosmetic, not structural
 - **Cracks in non-structural walls** like partition walls — not a foundation issue
+
+### Prevention and Maintenance
+
+While you can't prevent all foundation cracks — concrete shrinkage and New England's freeze-thaw cycles are unavoidable — you can reduce the hydrostatic pressure and soil stress that cause cracks to form and worsen:
+
+- **Grade soil away from your foundation** — the ground should slope at least 6 inches over the first 10 feet from the foundation wall. Flat or inward-sloping grade directs water straight to your foundation.
+- **Maintain gutters and downspouts** — clogged gutters dump concentrated water right at the foundation. Extend downspouts at least 4 feet from the house.
+- **Manage tree roots** — keep large trees at least 10 feet from your foundation. Roots exert lateral pressure on walls and draw moisture from soil, causing uneven settlement.
+- **Monitor crack width seasonally** — mark existing cracks with pencil and date them. Cracks that widen in spring (when hydrostatic pressure peaks) and narrow in summer may indicate ongoing water pressure issues that need drainage correction.
+
+### Post-Repair Care
+
+After your wall crack is repaired, a few simple steps will protect the seal and help you catch any new issues early:
+
+- **Control basement humidity** — keep humidity below 60% using a dehumidifier if needed. High humidity causes condensation on walls, which can mask new leaks and promote mold growth.
+- **Ensure adequate ventilation** — stagnant basement air traps moisture. Open vents or run a fan periodically, especially in summer.
+- **Inspect repaired cracks annually** — check for any new cracking adjacent to the repair, fresh efflorescence, or moisture. If you notice anything, call [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) — warranty callbacks are free.
 
 ### The Attack A Crack Advantage
 

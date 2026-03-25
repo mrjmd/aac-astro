@@ -35,19 +35,34 @@ steps:
 
 ## What Is Foundation Crack Injection?
 
-**Foundation crack injection** is a repair method where epoxy or polyurethane resin is injected under high pressure into a concrete foundation crack, filling it completely from the interior surface through to the exterior soil. It permanently seals the crack against water infiltration and restores structural integrity — no exterior excavation required.
-
 <div class="video-right">
 <div style="aspect-ratio:9/16;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
 <iframe src="https://www.youtube.com/embed/Ijb7aXaaCSY" title="Foundation crack injection repair in progress — Attack A Crack" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:104%;height:104%;margin-top:-2%;margin-left:-2%"></iframe>
 </div>
 </div>
 
+**Foundation crack injection** is a repair method where epoxy or polyurethane resin is injected under high pressure into a concrete foundation crack, filling it completely from the interior surface through to the exterior soil. It permanently seals the crack against water infiltration and restores structural integrity — no exterior excavation required.
+
+**Foundation crack injection costs $800–$1,200 per crack** and is the only repair method that fills a crack through the full wall thickness — from interior surface to exterior soil. If you're seeing water after rain, white mineral deposits, or a musty basement smell, a crack is letting groundwater in. Our high-pressure injection process seals it permanently with flexible urethane or structural epoxy, and every repair is backed by a lifetime guarantee.
+
+Call [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) for a free assessment.
+
+---
+
+
 ## The Science of Permanent Repair
 
 Foundation crack injection is the gold standard for repairing poured concrete foundation cracks. Whether you call it cement crack repair or concrete crack repair, the science is the same: unlike surface sealers, hydraulic cement patches, or caulk, injection fills the entire crack from interior surface to exterior soil, creating a complete seal that lasts the lifetime of your home.
 
 Most homeowners notice water in the basement after rain, white powder on basement walls (efflorescence), or a musty smell in the basement — all signs that a foundation crack is allowing water infiltration. Crack injection addresses the root cause, not just the symptom.
+
+### Hydrostatic Pressure: The Force Behind Foundation Leaks
+
+**Hydrostatic pressure** is the force exerted by groundwater against your foundation walls and floor slab. After rain or snowmelt, soil surrounding your foundation becomes saturated. That water has weight — roughly 62 pounds per cubic foot — and it presses against every square inch of your concrete. Cracks, no matter how small, become the path of least resistance. Hydrostatic pressure doesn't just push water through existing cracks; over time, it can widen them, turning a hairline crack into an active leak. This is why cracks that were "dry for years" suddenly start leaking — the soil drainage around your home changed, or the water table rose, and the pressure finally exceeded what the crack could resist.
+
+### Freeze-Thaw Cycles and New England Foundations
+
+New England's climate is uniquely hard on concrete foundations. Water enters microscopic pores in the concrete, and when temperatures drop below freezing — which happens dozens of times each winter in Connecticut and Massachusetts — that water expands by roughly 9%. This freeze-thaw cycle widens existing micro-cracks each year, gradually turning invisible stress fractures into visible, leaking cracks. A foundation that was crack-free at 10 years old may develop shrinkage cracks by 15, and active leaks by 20 — not because of poor construction, but because of the relentless freeze-thaw cycle working on the concrete over decades.
 
 ## How Crack Injection Works
 
@@ -88,7 +103,7 @@ Each port is crimped off after injection. A specialized surface patch is applied
 - Best for: Waterproofing, active cracks, moving cracks
 
 **Structural Epoxy Resin**
-- Creates bond stronger than the original concrete
+- Creates bond stronger than the original concrete — true structural epoxy restores the wall to its original load-bearing capacity
 - Rigid when cured — restores full structural integrity
 - Best for: Structural cracks, load-bearing walls, cracks requiring maximum strength
 
@@ -108,6 +123,7 @@ Some cracks benefit from both materials — structural epoxy resin for strength 
 
 - **Vertical shrinkage cracks** — the most common type in poured concrete foundations
 - **Diagonal settlement cracks** — often caused by soil settlement or frost heave
+- **Stair-step cracks** — follow mortar joints in block foundations, indicating settlement or lateral pressure (these are a diagnostic sign that structural evaluation may be needed alongside injection)
 - **Cracks around windows and doors** — stress concentration points
 - **Floor-to-wall joint cracks** (cove joints) — where the slab meets the footing
 - **Cracks at cold joints** — where concrete pours met during original construction
@@ -126,6 +142,10 @@ We believe in honest assessment — we'll tell you when injection isn't the righ
 - **Cracks wider than 1/2 inch with displacement**: May indicate a structural issue requiring engineering assessment
 
 We'll always recommend the right solution — even if it means referring you to a structural engineer or another specialist. That honesty is how we've built our reputation over 20+ years. Text us a photo for a free assessment.
+
+## Radon Prevention: An Overlooked Benefit
+
+Every sealed crack is one less pathway for radon gas — important in New England where radon levels are among the highest in the country. The EPA estimates that 1 in 5 homes in Connecticut and Massachusetts exceed the action level of 4 pCi/L. Foundation cracks are a primary entry point for radon, which rises through the soil and enters your basement through any gap in the concrete. While crack injection alone isn't a complete radon mitigation system, sealing all foundation cracks is a critical first step — and many homeowners find that sealing cracks reduces their radon readings significantly even without a dedicated mitigation fan.
 
 ## The Attack A Crack Injection Guarantee
 

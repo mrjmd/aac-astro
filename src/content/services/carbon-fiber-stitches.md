@@ -33,13 +33,20 @@ steps:
 
 ## What Are Carbon Fiber Stitches?
 
-**Carbon fiber stitches** (also called carbon fiber staples) are high-strength carbon fiber strips embedded in structural epoxy and installed across foundation cracks to prevent further movement. They bridge both sides of the crack, distributing stress across a wider area and permanently stabilizing the wall — without excavation or steel beams.
-
 <div class="video-right">
 <div style="aspect-ratio:9/16;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
 <iframe src="https://www.youtube.com/embed/lYYIhHN9nxw" title="Carbon fiber staple installation — Attack A Crack Foundation Repair" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:104%;height:104%;margin-top:-2%;margin-left:-2%"></iframe>
 </div>
 </div>
+
+**Carbon fiber stitches** (also called carbon fiber staples) are high-strength carbon fiber strips embedded in structural epoxy and installed across foundation cracks to prevent further movement. They bridge both sides of the crack, distributing stress across a wider area and permanently stabilizing the wall — without excavation or steel beams.
+
+**Carbon fiber stitches cost $200–$300 per stitch** and provide permanent structural reinforcement for foundation cracks that show movement or stress. If your wall has cracks wider than 1/4 inch, stair-step patterns, or signs of bowing, stitches lock both sides together and prevent further movement. For walls with significant bowing, full [carbon fiber straps for bowing walls](/blog/carbon-fiber-straps-bowing-walls) may be the better solution. Every carbon fiber repair includes our lifetime guarantee — the material itself will outlast your home.
+
+Call [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) for a free structural assessment.
+
+---
+
 
 ## Carbon Fiber Foundation Repair: Maximum Strength, Minimal Intrusion
 
@@ -127,11 +134,22 @@ If your crack doesn't need carbon fiber, we'll tell you. Most residential cracks
 ### Applications Beyond Cracks
 
 Carbon fiber reinforcement can also be used for:
-- **Bowing wall stabilization**: Full carbon fiber straps or grids resist lateral soil pressure
+- **Bowing wall stabilization**: Full [carbon fiber straps for bowing walls](/blog/carbon-fiber-straps-bowing-walls) resist lateral soil pressure and provide permanent wall stabilization without excavation
 - **Beam wrapping**: Strengthening wooden beams and lally columns
 - **Slab reinforcement**: Adding strength to concrete floors with carbon fiber grids
 - **Preventive strengthening**: Reinforcing older foundations before problems develop
 - **Foundation corners**: High-stress areas prone to diagonal cracking
+
+### Post-Repair Monitoring
+
+After carbon fiber stitches are installed, periodic monitoring helps confirm the repair is holding and no new movement has occurred. Here's what to watch for:
+
+- **Check for new cracking** around or beyond the repaired area — new cracks could indicate that the underlying cause (soil pressure, drainage) hasn't been fully addressed
+- **Measure any existing bow quarterly** — use a long straightedge or string line against the wall and record the measurement. The bow should remain stable; any increase warrants a callback
+- **Look for fresh efflorescence** — new white mineral deposits near the repair may indicate water is finding a new pathway
+- **Monitor doors and windows** — sticking or misalignment in nearby frames can signal ongoing foundation movement
+
+If anything changes, call [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) — warranty callbacks are always free.
 
 ### The Attack A Crack Carbon Fiber Advantage
 

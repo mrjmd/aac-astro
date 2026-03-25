@@ -256,6 +256,19 @@ Execution plan for maximizing SERP coverage — schema upgrades, featured snippe
 - [x] **Badge image optimization** — Badges are inline SVGs/already optimized, no WebP conversion needed.
 - [ ] **Competitive badge audit** — Add Section 10 to `docs/COMPETITIVE-ANALYSIS.md`
 
+## Service Page Semantic Audits (Claude)
+
+The bulkhead service page got a full Frase-style semantic audit (March 24) — grew from 1,800 to 2,500 words, added 6 new content sections, 2 FAQs. Same treatment needed for the other 5 service pages + homepage.
+
+- [ ] **Foundation crack injection** — audit against top 5 ranking competitors for "foundation crack repair near me" (pos 4, 390/mo)
+- [ ] **Carbon fiber stitches** — audit against competitors for "carbon fiber foundation repair" (pos 16, 10/mo)
+- [ ] **Wall crack repair** — audit against competitors for "basement wall crack repair"
+- [ ] **Basement floor repair** — audit against competitors for "basement floor crack repair" (3,600/mo cluster)
+- [ ] **Sewer/conduit repair** — check if page is competitive (niche service)
+- [ ] **Homepage** — competitive SEO analysis against A-1, CrackX, Groundworks across content depth, schema, keyword targeting, internal linking, CTA structure
+
+Only make changes where there's clear evidence of ranking opportunity. Don't add content just for word count.
+
 ## SEO Quick Wins (Claude — with GSC data)
 
 - [ ] Title tag optimization — audit against target keywords from SEMrush

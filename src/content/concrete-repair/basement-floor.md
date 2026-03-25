@@ -31,6 +31,11 @@ relatedServices:
 
 **Basement floor crack repair** is the process of grinding out cracks in a concrete basement slab and filling them with self-leveling epoxy or flexible rubber sealant. This permanently seals the crack against water seepage and radon gas infiltration while creating a smooth, durable surface that won't re-crack.
 
+**Basement floor crack repair costs $500–$1,500** and permanently seals the pathways that let water and radon gas into your home. This Massachusetts-only service uses professional-grade self-leveling epoxy or commercial rubber — not the hardware store patches that fail within months. If you're seeing water seep through floor cracks after rain or your radon test came back elevated, floor crack repair addresses both problems at once. [Call 617-668-1677](tel:617-668-1677) or [text us a photo](sms:617-668-1677) for a free assessment.
+
+---
+
+
 ## Basement Floor Crack Repair in Massachusetts
 
 Cracks in your basement floor are more than cosmetic — they are open pathways for water and radon gas to enter your home. Whether you are seeing water seep up through the floor after rain, noticing a damp streak along a crack line, or your radon test came back high, fixing cracks in your basement floor permanently requires more than a bag of concrete patch from the hardware store.
@@ -99,6 +104,18 @@ For context:
 - **DIY patching compound:** $15-$30 per application (repeated every 6-12 months)
 - **Interior drainage system:** $8,000-$15,000 (addresses symptoms, not the crack itself)
 - **Professional floor crack repair:** $500-$1,500 (one-time, permanent)
+
+### Radon and Floor Cracks
+
+Basement floor cracks are the **primary entry pathway for radon gas** into your home. Radon is a naturally occurring radioactive gas that rises through soil and enters through any gap in the concrete — cracks, control joints, and the cove joint where the floor meets the wall. New England has elevated radon levels: the EPA estimates that **1 in 5 homes in Connecticut and Massachusetts exceed the action level of 4 pCi/L**.
+
+Sealing floor cracks significantly reduces radon entry by eliminating the largest openings in the slab. While a dedicated radon mitigation system (sub-slab depressurization) is the gold standard for high radon levels, crack sealing is a critical complementary step — and for borderline readings, it may be enough on its own. If radon is a concern, get a radon test AND seal your cracks. The two approaches work together.
+
+### Interaction with Drainage Systems
+
+If you have a sump pump or interior French drain, floor cracks near these systems need special attention. Water migrating through floor cracks can overwhelm your drainage system's capacity during heavy rain events, especially during spring thaw when hydrostatic pressure peaks. Sealing floor cracks reduces the total water volume entering your basement, which in turn reduces the load on your sump pump and extends its lifespan. If your sump pump runs frequently, unsealed floor cracks may be contributing a significant portion of the water it's handling.
+
+After repair, **maintain basement humidity below 60%** to prevent condensation on the sealed surface and protect the repair. A dehumidifier is a worthwhile investment in any New England basement — it protects both the repair and your belongings.
 
 ### Massachusetts Service Area
 

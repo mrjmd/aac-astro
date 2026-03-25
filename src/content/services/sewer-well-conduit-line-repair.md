@@ -31,13 +31,20 @@ steps:
 
 ## What Is Pipe Penetration Sealing?
 
-**Pipe penetration sealing** is the process of waterproofing the gaps around pipes, conduits, and utility lines where they pass through a concrete foundation wall or floor slab. Flexible urethane or hydraulic cement is applied to permanently seal these openings against water infiltration — without excavation or pipe removal.
-
 <div class="video-right">
 <div style="aspect-ratio:9/16;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.15)">
 <iframe src="https://www.youtube.com/embed/Zu-RP5rLG_k" title="Leaky sewer line repair — Attack A Crack Foundation Repair" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:104%;height:104%;margin-top:-2%;margin-left:-2%"></iframe>
 </div>
 </div>
+
+**Pipe penetration sealing** is the process of waterproofing the gaps around pipes, conduits, and utility lines where they pass through a concrete foundation wall or floor slab. Flexible urethane or hydraulic cement is applied to permanently seal these openings against water infiltration — without excavation or pipe removal.
+
+**Pipe penetration sealing costs $650–$1,000 per penetration** and permanently stops water from entering your basement around sewer lines, well pipes, electrical conduits, and other utility lines. If you see water stains, dripping, or efflorescence around any pipe entering your foundation, the original seal has failed. Our flexible urethane injection works even on actively leaking penetrations — no excavation, no waiting for dry weather. Every repair includes a lifetime guarantee.
+
+Call [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) for a free assessment.
+
+---
+
 
 ## Pipe Penetration Sealing: Utility Line Waterproofing
 
@@ -128,6 +135,14 @@ Sometimes what looks like a pipe leak is actually a different problem:
 - **Floor drain backup** — a plumbing issue, not a foundation issue
 
 We'll diagnose the actual problem honestly — even if it means the fix isn't something we do. Text us a photo for a free assessment.
+
+### Radon Entry Through Pipe Penetrations
+
+Pipe penetrations through foundation walls are a significant but often overlooked radon entry pathway. Every gap around a sewer line, water supply, or electrical conduit allows soil gas — including radon — to enter your basement. Because these gaps are hidden behind pipes and often out of sight, they can contribute to elevated radon levels without any visible sign of a problem. Sealing pipe penetrations is part of a comprehensive radon reduction strategy alongside [foundation crack repair](/services/foundation-crack-injection) and floor crack sealing.
+
+### Settling and Gap Growth
+
+As your home settles over the decades, the gap between pipes and the surrounding foundation concrete widens. What started as a hairline gap when the home was built can become a 1/4-inch opening that actively leaks water and allows soil gas entry. New England's freeze-thaw cycles accelerate this process — water in the gap freezes, expands, and pushes the concrete and pipe slightly further apart each winter.
 
 ### The Attack A Crack Difference
 
