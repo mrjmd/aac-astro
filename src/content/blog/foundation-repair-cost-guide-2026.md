@@ -189,6 +189,10 @@ With 50+ years of foundation repair experience across New England, we're not the
 - **Lifetime guarantee** on all repairs
 - **We'll tell you if you don't need repair**
 
+## Payment Plans Available
+
+Don't let cost delay a repair that only gets more expensive with time. We offer flexible monthly [payment plans through Affirm](/financing) on every repair. When you receive your invoice, simply choose Affirm as your payment method and select a plan that fits your budget — 3 to 36 months, no hidden fees, no prepayment penalties.
+
 ## Get Your Free Quote
 
 Ready to find out exactly what your foundation repair will cost? Contact us for a free, no-pressure assessment:

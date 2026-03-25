@@ -1,0 +1,291 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import LocationModal from '../components/LocationModal.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Icon from '../components/Icon.astro';
+import HomeFaq from '../components/HomeFaq.astro';
+import { phoneCT, phoneMA } from '../utils/contact';
+import { getFaqSchema } from '../utils/faqs';
+
+const breadcrumbItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Financing' }
+];
+
+const financingFaqs = [
+  {
+    question: "How do I apply for payment plans?",
+    answer: "You don't need to apply in advance. When you receive your invoice after we complete your repair, you'll see an option to pay with Affirm. Select it, answer a few quick questions, and choose a payment plan that works for your budget. The whole process takes about 2 minutes."
+  },
+  {
+    question: "Does checking my rate affect my credit score?",
+    answer: "Checking your eligibility with Affirm uses a soft credit check, which does not affect your credit score. A hard credit check only occurs if you choose to proceed with a payment plan."
+  },
+  {
+    question: "What are the payment terms?",
+    answer: "Affirm offers flexible terms depending on the repair amount and your credit profile. Plans typically range from 3 to 36 months. You'll see your exact rate and monthly payment before you commit — no hidden fees, no surprises."
+  },
+  {
+    question: "Can I pay off my plan early?",
+    answer: "Yes. Affirm has no prepayment penalties. You can pay off your balance early at any time without any additional fees."
+  },
+  {
+    question: "Do I need to arrange financing before calling for a repair?",
+    answer: "No. Get your free assessment and quote first. Financing is handled at invoicing after the repair is complete. Focus on getting the right diagnosis — we'll handle the payment flexibility."
+  }
+];
+
+const faqSchema = {
+  "@type": "FAQPage",
+  "mainEntity": financingFaqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
+
+const pageSchema = [
+  faqSchema,
+  {
+    "@type": "WebPage",
+    "name": "Foundation Repair Financing & Payment Plans",
+    "description": "Payment plans available on all foundation repairs. Pay over time with Affirm — flexible monthly payments, no hidden fees.",
+    "url": "https://www.attackacrack.com/financing",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Attack A Crack Foundation Repair"
+    }
+  }
+];
+---
+
+<Layout
+  title="Financing & Payment Plans"
+  description="Payment plans available on all foundation repairs. Pay over time with Affirm — flexible monthly payments, no hidden fees. Get a free quote today."
+  pageType="other"
+  customSchema={pageSchema}
+  breadcrumbItems={breadcrumbItems}
+>
+	<LocationModal />
+	<Navbar />
+
+	<main class="pt-20 lg:pt-24">
+		<!-- Hero -->
+		<section class="py-10 lg:py-24 bg-aac-dark text-white relative overflow-hidden">
+			<div class="absolute top-0 right-0 w-1/2 h-full bg-aac-blue/10 skew-x-12 translate-x-1/2"></div>
+			<div class="max-w-7xl mx-auto px-6 relative z-10">
+				<Breadcrumbs items={breadcrumbItems} class="mb-8" variant="dark" />
+				<div class="max-w-3xl">
+					<div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-yellow/20 text-aac-yellow rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-aac-yellow/30">
+						<Icon name="ShieldCheck" size={14} /> Payment Plans Available
+					</div>
+					<h1 class="text-4xl lg:text-7xl font-display font-black tracking-tighter leading-none mb-6">
+						Foundation Repair <br />
+						<span class="text-aac-yellow">Payment Plans</span>
+					</h1>
+					<p class="text-xl text-zinc-300 font-bold leading-relaxed max-w-2xl">
+						Don't let cost delay a repair that's only getting more expensive. Flexible monthly payments are available on every repair through Affirm — apply in minutes when you receive your invoice.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- How It Works -->
+		<section class="py-10 lg:py-24 bg-white">
+			<div class="max-w-7xl mx-auto px-6">
+				<p class="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-400 mb-4 md:mb-6">
+					<Icon name="Info" size={14} /> HOW IT WORKS
+				</p>
+				<h2 class="text-4xl lg:text-5xl font-display font-black text-aac-dark tracking-tighter leading-[0.9] mb-10 md:mb-16">
+					Three Steps to <span class="text-aac-blue">Affordable Repair</span>
+				</h2>
+
+				<div class="grid md:grid-cols-3 gap-8">
+					<div class="bg-zinc-50 rounded-3xl p-8 border-2 border-zinc-100">
+						<div class="w-14 h-14 bg-aac-yellow rounded-2xl flex items-center justify-center mb-6">
+							<span class="text-2xl font-black text-aac-dark">1</span>
+						</div>
+						<h3 class="text-xl font-black text-aac-dark mb-3">Get Your Free Quote</h3>
+						<p class="text-zinc-500 font-bold text-sm leading-relaxed">
+							Call or text us for a free foundation assessment. We'll diagnose the issue, explain the repair, and give you a clear quote — no pressure, no obligation.
+						</p>
+					</div>
+					<div class="bg-zinc-50 rounded-3xl p-8 border-2 border-zinc-100">
+						<div class="w-14 h-14 bg-aac-yellow rounded-2xl flex items-center justify-center mb-6">
+							<span class="text-2xl font-black text-aac-dark">2</span>
+						</div>
+						<h3 class="text-xl font-black text-aac-dark mb-3">We Complete the Repair</h3>
+						<p class="text-zinc-500 font-bold text-sm leading-relaxed">
+							Most repairs take a single visit — often just a few hours. You don't pay anything until the work is done and you're satisfied with the result.
+						</p>
+					</div>
+					<div class="bg-zinc-50 rounded-3xl p-8 border-2 border-zinc-100">
+						<div class="w-14 h-14 bg-aac-blue rounded-2xl flex items-center justify-center mb-6">
+							<span class="text-2xl font-black text-white">3</span>
+						</div>
+						<h3 class="text-xl font-black text-aac-dark mb-3">Choose Your Payment Plan</h3>
+						<p class="text-zinc-500 font-bold text-sm leading-relaxed">
+							When you receive your invoice, select Affirm as your payment method. Choose a monthly plan that fits your budget — 3 to 36 months with no hidden fees.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Monthly Payment Examples -->
+		<section class="py-10 lg:py-24 bg-zinc-50">
+			<div class="max-w-4xl mx-auto px-6">
+				<p class="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-400 mb-4 md:mb-6">
+					<Icon name="Clock" size={14} /> MONTHLY PAYMENT EXAMPLES
+				</p>
+				<h2 class="text-4xl lg:text-5xl font-display font-black text-aac-dark tracking-tighter leading-[0.9] mb-4">
+					What It <span class="text-aac-blue">Actually Costs</span> Per Month
+				</h2>
+				<p class="text-zinc-500 font-bold mb-10">
+					These are illustrative examples. Your actual rate and terms depend on your credit profile and are shown before you commit.
+				</p>
+
+				<div class="bg-white rounded-3xl border-2 border-zinc-100 overflow-hidden">
+					<table class="w-full">
+						<thead>
+							<tr class="bg-aac-dark text-white">
+								<th class="text-left p-4 text-[10px] font-black uppercase tracking-widest">Repair</th>
+								<th class="text-left p-4 text-[10px] font-black uppercase tracking-widest">Total Cost</th>
+								<th class="text-left p-4 text-[10px] font-black uppercase tracking-widest">12 Months</th>
+								<th class="text-left p-4 text-[10px] font-black uppercase tracking-widest hidden sm:table-cell">36 Months</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="border-b border-zinc-100">
+								<td class="p-4 font-bold text-sm text-aac-dark">Crack Injection</td>
+								<td class="p-4 text-sm text-zinc-600">$800–$1,300</td>
+								<td class="p-4 text-sm font-black text-aac-blue">~$67–$108/mo</td>
+								<td class="p-4 text-sm text-zinc-600 hidden sm:table-cell">~$22–$36/mo</td>
+							</tr>
+							<tr class="border-b border-zinc-100">
+								<td class="p-4 font-bold text-sm text-aac-dark">Bulkhead Repair</td>
+								<td class="p-4 text-sm text-zinc-600">$1,800–$2,500</td>
+								<td class="p-4 text-sm font-black text-aac-blue">~$150–$208/mo</td>
+								<td class="p-4 text-sm text-zinc-600 hidden sm:table-cell">~$50–$69/mo</td>
+							</tr>
+							<tr class="border-b border-zinc-100">
+								<td class="p-4 font-bold text-sm text-aac-dark">Carbon Fiber Stitches</td>
+								<td class="p-4 text-sm text-zinc-600">$400–$1,500</td>
+								<td class="p-4 text-sm font-black text-aac-blue">~$33–$125/mo</td>
+								<td class="p-4 text-sm text-zinc-600 hidden sm:table-cell">~$11–$42/mo</td>
+							</tr>
+							<tr>
+								<td class="p-4 font-bold text-sm text-aac-dark">Carbon Fiber Straps</td>
+								<td class="p-4 text-sm text-zinc-600">$3,200–$9,000</td>
+								<td class="p-4 text-sm font-black text-aac-blue">~$267–$750/mo</td>
+								<td class="p-4 text-sm text-zinc-600 hidden sm:table-cell">~$89–$250/mo</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<p class="text-xs text-zinc-400 mt-4">
+					Examples assume 0% APR for simplicity. Actual rates vary based on creditworthiness. Affirm shows your exact rate and payment before you commit. No hidden fees. No prepayment penalties.
+				</p>
+			</div>
+		</section>
+
+		<!-- Why Finance? -->
+		<section class="py-10 lg:py-24 bg-white">
+			<div class="max-w-4xl mx-auto px-6">
+				<h2 class="text-3xl font-display font-black text-aac-dark tracking-tighter mb-8">
+					Why Financing Makes Sense for Foundation Repair
+				</h2>
+				<div class="grid sm:grid-cols-2 gap-6">
+					<div class="flex gap-4">
+						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center flex-shrink-0">
+							<Icon name="Clock" size={20} />
+						</div>
+						<div>
+							<p class="font-black text-aac-dark text-sm">Waiting Costs More</p>
+							<p class="text-zinc-500 text-sm mt-1">A $1,000 crack today becomes a $6,000 wall stabilization next year. Financing lets you fix it now at today's price.</p>
+						</div>
+					</div>
+					<div class="flex gap-4">
+						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center flex-shrink-0">
+							<Icon name="ShieldCheck" size={20} />
+						</div>
+						<div>
+							<p class="font-black text-aac-dark text-sm">Warranty Starts Immediately</p>
+							<p class="text-zinc-500 text-sm mt-1">Your lifetime guarantee begins the day of repair, regardless of how you pay. The protection doesn't wait for your last payment.</p>
+						</div>
+					</div>
+					<div class="flex gap-4">
+						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center flex-shrink-0">
+							<Icon name="Award" size={20} />
+						</div>
+						<div>
+							<p class="font-black text-aac-dark text-sm">No Surprises</p>
+							<p class="text-zinc-500 text-sm mt-1">Affirm shows your exact rate and monthly payment upfront. No hidden fees, no compounding interest traps, no prepayment penalties.</p>
+						</div>
+					</div>
+					<div class="flex gap-4">
+						<div class="w-10 h-10 bg-aac-blue/5 text-aac-blue rounded-xl flex items-center justify-center flex-shrink-0">
+							<Icon name="Zap" size={20} />
+						</div>
+						<div>
+							<p class="font-black text-aac-dark text-sm">Home Value Protected</p>
+							<p class="text-zinc-500 text-sm mt-1">A repaired foundation with a transferable warranty adds value when you sell. An unrepaired crack is a negotiation point that costs you more.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQs -->
+		<section class="py-10 lg:py-24 bg-zinc-50">
+			<div class="max-w-4xl mx-auto px-6">
+				<p class="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-400 mb-4 md:mb-6">
+					<Icon name="Info" size={14} /> COMMON QUESTIONS
+				</p>
+				<h2 class="text-4xl font-display font-black text-aac-dark tracking-tighter leading-[0.9] mb-8">
+					Financing <span class="text-aac-blue">Questions, Answered</span>
+				</h2>
+				<div class="space-y-4">
+					{financingFaqs.map((faq) => (
+						<details class="group bg-white rounded-2xl border-2 border-zinc-100 overflow-hidden">
+							<summary class="flex items-center justify-between p-6 cursor-pointer font-black text-aac-dark hover:text-aac-blue transition-colors">
+								<span class="pr-4">{faq.question}</span>
+								<Icon name="ChevronRight" size={20} class="text-zinc-300 group-open:rotate-90 transition-transform shrink-0" />
+							</summary>
+							<div class="px-6 pb-6 text-zinc-600 font-bold text-sm leading-relaxed">
+								{faq.answer}
+							</div>
+						</details>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section class="py-10 lg:py-24 bg-aac-dark text-white">
+			<div class="max-w-4xl mx-auto px-6 text-center">
+				<h2 class="text-4xl lg:text-5xl font-black tracking-tighter mb-6">
+					Ready for Your <span class="text-aac-yellow">Free Quote?</span>
+				</h2>
+				<p class="text-xl text-zinc-300 mb-10 max-w-2xl mx-auto">
+					Get an honest assessment and clear pricing. Payment plans are available on every repair — you'll see your options when you receive your invoice.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="/services/free-foundation-consultations" class="bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all border-2 border-aac-dark inline-flex items-center justify-center gap-2">
+						<Icon name="Phone" size={18} /> Get a Free Quote
+					</a>
+					<button class="open-modal bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+						<Icon name="MessageSquare" size={18} /> Text Us Photos
+					</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>

@@ -131,6 +131,10 @@ We don't do bulkhead replacements or door replacements ourselves, but if that's 
 
 For a deeper dive into why bulkheads leak in the first place, see our guide on [why your bulkhead door might be leaking](/blog/bulkhead-leaking-causes-and-fixes).
 
+## Payment Plans Available
+
+Concerned about the cost? We offer flexible monthly [payment plans through Affirm](/financing) on every bulkhead repair. Choose a plan that fits your budget when you receive your invoice — 3 to 36 months, no hidden fees, no prepayment penalties.
+
 ## Get a Free Bulkhead Assessment
 
 Not sure what your bulkhead needs? With 50+ years of combined experience and thousands of projects completed, we'll examine it for free, diagnose the leak source, and give you an honest recommendation.

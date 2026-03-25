@@ -187,4 +187,4 @@ Only if the damage has a clear covered cause (burst pipe, fallen tree, vehicle i
 
 ### Can I get foundation repair financing if insurance won't pay?
 
-Yes. Many homeowners use home equity loans, HELOCs, or contractor financing for foundation repairs. Some repairs like a single crack injection ($800-$1,300) are manageable out of pocket. For larger jobs, financing spreads the cost over time. Ask about payment options during your [free consultation](/services/free-foundation-consultations). With 50+ years of combined experience and thousands of projects completed across New England, we can give you an honest assessment of what your foundation needs — even if the answer is that you do not need repair at all.
+Yes. We offer flexible [payment plans through Affirm](/financing) on every repair. When you receive your invoice, choose a monthly plan that fits your budget — 3 to 36 months, no hidden fees, no prepayment penalties. Some repairs like a single crack injection ($800-$1,300) are manageable out of pocket; for larger jobs, Affirm makes it affordable. Ask about payment options during your [free consultation](/services/free-foundation-consultations).
