@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Cranston?"
-    answer: "Foundation crack repair in Cranston typically costs $800-$1,200 per crack. The cost depends on crack severity and your foundation type. Many Cranston homes have poured concrete or block foundations that respond well to injection repair. We offer free on-site estimates."
+    answer: "Foundation crack repair in Cranston typically costs $800-$1,300 per crack. The cost depends on crack severity and your foundation type. Many Cranston homes have poured concrete or block foundations that respond well to injection repair. We offer free on-site estimates."
   - question: "What causes foundation problems in Cranston homes?"
     answer: "Cranston sits in the Pawtuxet River valley, where clay-rich glacial soils retain moisture and expand during wet seasons. This soil movement combined with harsh freeze-thaw cycles puts pressure on foundations. Homes in low-lying areas near the river are especially prone to hydrostatic pressure and water infiltration."
   - question: "Can you fix a leaking basement in Cranston?"

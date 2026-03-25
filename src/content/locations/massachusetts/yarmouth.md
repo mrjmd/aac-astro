@@ -22,7 +22,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Yarmouth?"
-    answer: "Foundation crack repair in Yarmouth typically costs $800-$1,200 per crack. Properties along the Route 28 corridor and in low-lying bayside areas may require additional waterproofing measures. We provide free estimates for all Yarmouth homeowners, year-round and seasonal."
+    answer: "Foundation crack repair in Yarmouth typically costs $800-$1,300 per crack. Properties along the Route 28 corridor and in low-lying bayside areas may require additional waterproofing measures. We provide free estimates for all Yarmouth homeowners, year-round and seasonal."
   - question: "Why do so many Yarmouth basements have water problems?"
     answer: "Yarmouth's narrow mid-Cape geography means most properties sit between Cape Cod Bay and Nantucket Sound with water tables just feet below grade. The sandy glacial soil provides almost no barrier to groundwater movement, so even moderate rainfall drives water directly against foundation walls. Homes built during the 1960s-1980s boom often have minimal exterior waterproofing by today's standards."
   - question: "Do vacation homes in Yarmouth need foundation repair before selling?"

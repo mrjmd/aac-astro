@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Cohasset?"
-    answer: "Foundation repair costs in Cohasset depend on the foundation type and damage severity. Crack injection for poured concrete foundations runs $800-$1,200 per crack. Cohasset's older fieldstone and granite foundations may require repointing or stabilization ranging from $2,000-$8,000. Coastal properties with more extensive deterioration may need comprehensive waterproofing. We offer free on-site inspections for all Cohasset homes."
+    answer: "Foundation repair costs in Cohasset depend on the foundation type and damage severity. Crack injection for poured concrete foundations runs $800-$1,300 per crack. Cohasset's older fieldstone and granite foundations may require repointing or stabilization ranging from $2,000-$8,000. Coastal properties with more extensive deterioration may need comprehensive waterproofing. We offer free on-site inspections for all Cohasset homes."
   - question: "How does Cohasset's coastal location affect foundations?"
     answer: "Cohasset sits on exposed granite ledge along the South Shore coastline, where ocean spray, high water tables, and storm-driven moisture create persistent challenges for foundations. Salt crystallization degrades mortar in fieldstone and granite foundations over time, while coastal storms drive water against basement walls under significant pressure. Properties along Jerusalem Road and Sandy Beach face the most direct exposure to these marine conditions."
   - question: "Do you repair older fieldstone foundations in Cohasset?"

@@ -7,9 +7,9 @@ const CT_NUMBER = phoneCT;
 const MA_NUMBER = phoneMA;
 ---
 
-<footer class="bg-white pt-16 md:pt-24 pb-20 lg:pb-12 border-t border-zinc-100">
+<footer class="bg-white pt-10 md:pt-24 pb-20 lg:pb-12 border-t border-zinc-100">
   <div class="max-w-7xl mx-auto px-6">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-10 md:mb-20">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-16 mb-8 md:mb-20">
       <div class="lg:col-span-5">
         <a href="/" class="flex items-center gap-3 mb-8 group">
           <img src="/images/logo.webp" alt="Attack A Crack" class="w-10 h-10 rounded-lg object-cover" width="200" height="200" loading="lazy" />
@@ -51,7 +51,7 @@ const MA_NUMBER = phoneMA;
 
       <div class="grid grid-cols-2 gap-8 lg:contents">
       <div class="lg:col-span-3">
-        <p class="font-black text-aac-dark uppercase tracking-widest text-xs mb-8">Quick Links</p>
+        <p class="font-black text-aac-dark uppercase tracking-widest text-xs mb-4 md:mb-8">Quick Links</p>
         <ul class="space-y-0">
           <li>
             <a href="/updates" class="text-zinc-500 hover:text-aac-blue font-bold text-sm transition-colors uppercase tracking-widest text-[10px] inline-flex items-center min-h-12">Updates</a>
@@ -75,7 +75,7 @@ const MA_NUMBER = phoneMA;
       </div>
 
       <div class="lg:col-span-4">
-        <p class="font-black text-aac-dark uppercase tracking-widest text-xs mb-8">Service Areas</p>
+        <p class="font-black text-aac-dark uppercase tracking-widest text-xs mb-4 md:mb-8">Service Areas</p>
         <ul class="space-y-0">
           <li>
             <a href="/connecticut" class="text-zinc-500 hover:text-aac-blue font-bold text-sm transition-colors uppercase tracking-widest text-[10px] flex items-center gap-2 min-h-12">
@@ -102,15 +102,17 @@ const MA_NUMBER = phoneMA;
               <Icon name="MapPin" size={14} class="text-aac-blue shrink-0" /> Maine
             </a>
           </li>
+          <li>
+            <a href="/locations" class="text-aac-blue hover:underline font-bold text-sm transition-colors uppercase tracking-widest text-[10px] inline-flex items-center gap-2 min-h-12">
+              View All Locations <Icon name="ArrowRight" size={12} />
+            </a>
+          </li>
         </ul>
-        <a href="/locations" class="inline-flex items-center gap-2 mt-4 text-aac-blue font-bold text-[10px] uppercase tracking-widest hover:underline min-h-12">
-          View All Locations <Icon name="ArrowRight" size={12} />
-        </a>
       </div>
       </div>
     </div>
 
-    <div class="pt-12 border-t border-zinc-100 flex flex-col md:flex-row justify-between items-center gap-8">
+    <div class="pt-6 md:pt-12 border-t border-zinc-100 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8">
       <p class="text-zinc-500 text-[10px] font-black uppercase tracking-widest">
         © {new Date().getFullYear()} ATTACK A CRACK. ALL RIGHTS RESERVED.
       </p>

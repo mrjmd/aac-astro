@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Falmouth?"
-    answer: "Crack injection repair in Falmouth typically runs $800-$1,200 per crack. Coastal properties in Woods Hole or along Vineyard Sound may require marine-grade materials that affect pricing. We offer free on-site assessments for all Falmouth homeowners."
+    answer: "Crack injection repair in Falmouth typically runs $800-$1,300 per crack. Coastal properties in Woods Hole or along Vineyard Sound may require marine-grade materials that affect pricing. We offer free on-site assessments for all Falmouth homeowners."
   - question: "Why are Falmouth foundations especially vulnerable to moisture?"
     answer: "Falmouth is nearly surrounded by water — Buzzards Bay to the west, Vineyard Sound to the south, and dozens of coastal ponds throughout town. This geography creates persistently high water tables and salt-saturated air that attacks concrete from both sides. Foundations absorb moisture through sandy soils below and salt spray above, accelerating deterioration."
   - question: "Do seasonal homes in Falmouth need foundation maintenance?"

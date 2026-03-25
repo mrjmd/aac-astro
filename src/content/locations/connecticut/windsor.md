@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Windsor?"
-    answer: "Foundation crack repair in Windsor typically costs $800-$1,200 per crack for poured concrete foundations. Windsor's mix of historic and mid-century homes means foundation types vary widely—we'll assess your specific situation with a free consultation and give you an honest recommendation."
+    answer: "Foundation crack repair in Windsor typically costs $800-$1,300 per crack for poured concrete foundations. Windsor's mix of historic and mid-century homes means foundation types vary widely—we'll assess your specific situation with a free consultation and give you an honest recommendation."
   - question: "Why do Windsor homes near the rivers get more foundation cracks?"
     answer: "Windsor sits at the confluence of the Connecticut and Farmington Rivers, creating some of the most moisture-variable soil in the Hartford area. The sandy loam and clay deposits near the rivers expand and contract with seasonal water table changes, putting cyclical stress on foundation walls. Homes in Poquonock and the Wilson area are especially affected by these river-influenced conditions."
   - question: "Can you repair fieldstone foundations in Windsor's older homes?"

@@ -107,7 +107,7 @@ Similar to a price reduction but structured as a seller credit toward closing co
 
 Some foundation problems genuinely should make you reconsider. If multiple specialists identify active structural movement, if the repair cost is a significant percentage of the home's value, or if the seller refuses to acknowledge or address serious issues, walking away is a legitimate and sometimes wise choice.
 
-But walking away over an $800-$1,200 crack injection on a $450,000 house? That is letting fear override math.
+But walking away over an $800-$1,300 crack injection on a $450,000 house? That is letting fear override math.
 
 ## The Warranty Question
 

@@ -146,7 +146,7 @@ Since most foundation repairs come out of pocket, it helps to know the real numb
 
 | Repair Type | Typical Cost |
 |------------|-------------|
-| Single crack injection | $800–$1,200 |
+| Single crack injection | $800–$1,300 |
 | Bulkhead sealant (injection) | $1,800–$2,500 |
 | Carbon fiber staples (reinforcement) | $200–$300 per stitch |
 | Full wall stabilization | $6,000–$15,000 |
@@ -169,7 +169,7 @@ Keep gutters clean, extend downspouts 6+ feet from the foundation, and maintain 
 
 ### Address Problems Early
 
-Small cracks are cheaper to fix than big ones. A single [crack injection](/services/foundation-crack-injection) at $800–$1,200 today prevents a $6,000+ wall stabilization later. Early repair also means you can't be accused of deferred maintenance if a covered event later causes additional damage.
+Small cracks are cheaper to fix than big ones. A single [crack injection](/services/foundation-crack-injection) at $800–$1,300 today prevents a $6,000+ wall stabilization later. Early repair also means you can't be accused of deferred maintenance if a covered event later causes additional damage.
 
 ### Keep Records
 
@@ -187,4 +187,4 @@ Only if the damage has a clear covered cause (burst pipe, fallen tree, vehicle i
 
 ### Can I get foundation repair financing if insurance won't pay?
 
-Yes. Many homeowners use home equity loans, HELOCs, or contractor financing for foundation repairs. Some repairs like a single crack injection ($800-$1,200) are manageable out of pocket. For larger jobs, financing spreads the cost over time. Ask about payment options during your [free consultation](/services/free-foundation-consultations). With 50+ years of combined experience and thousands of projects completed across New England, we can give you an honest assessment of what your foundation needs — even if the answer is that you do not need repair at all.
+Yes. Many homeowners use home equity loans, HELOCs, or contractor financing for foundation repairs. Some repairs like a single crack injection ($800-$1,300) are manageable out of pocket. For larger jobs, financing spreads the cost over time. Ask about payment options during your [free consultation](/services/free-foundation-consultations). With 50+ years of combined experience and thousands of projects completed across New England, we can give you an honest assessment of what your foundation needs — even if the answer is that you do not need repair at all.

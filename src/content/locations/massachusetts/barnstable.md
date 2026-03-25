@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Barnstable?"
-    answer: "Foundation crack repair in Barnstable typically costs $800-$1,200 per crack. Homes in low-lying villages like Centerville or Cotuit may need additional waterproofing due to high water tables. We provide free estimates across all seven villages."
+    answer: "Foundation crack repair in Barnstable typically costs $800-$1,300 per crack. Homes in low-lying villages like Centerville or Cotuit may need additional waterproofing due to high water tables. We provide free estimates across all seven villages."
   - question: "Why do Barnstable foundations crack in sandy Cape Cod soil?"
     answer: "Barnstable sits on glacial outwash plains where loose, sandy soil shifts and settles unevenly under foundations. This is especially common in postwar homes built on shallow footings. Seasonal water table fluctuations add hydrostatic pressure that drives moisture through cracks in poured concrete and block walls."
   - question: "Do different Barnstable villages have different foundation problems?"

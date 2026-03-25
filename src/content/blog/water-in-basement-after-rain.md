@@ -32,7 +32,7 @@ The single most common reason water appears after rain. Your poured concrete fou
 
 **How to spot it:** Water at a specific point on the wall, often as a vertical wet streak. The crack might be hidden behind paint or drywall.
 
-**The fix:** [Foundation crack injection](/services/foundation-crack-injection) seals the crack using flexible urethane that fills from interior to exterior. It typically costs $800-$1,200 per crack and comes with a lifetime guarantee.
+**The fix:** [Foundation crack injection](/services/foundation-crack-injection) seals the crack using flexible urethane that fills from interior to exterior. It typically costs $800-$1,300 per crack and comes with a lifetime guarantee.
 
 ### 2. Bulkhead Leaks
 
@@ -82,7 +82,7 @@ Interior waterproofing systems manage water after it enters. They make sense for
 
 Once you've identified the source, here's the playbook:
 
-**Fix the source first.** Seal cracks with [professional injection](/services/foundation-crack-injection) ($800-$1,200 per crack), repair bulkheads with [bulkhead sealant injection](/services/leaky-bulkhead-repair) ($1,800-$2,500), fix pipe penetrations ($650-$1,000 per pipe). Address the specific entry point.
+**Fix the source first.** Seal cracks with [professional injection](/services/foundation-crack-injection) ($800-$1,300 per crack), repair bulkheads with [bulkhead sealant injection](/services/leaky-bulkhead-repair) ($1,800-$2,500), fix pipe penetrations ($650-$1,000 per pipe). Address the specific entry point.
 
 **Then reduce water pressure.** Improve grading, extend downspouts, clear window well drains. Less water reaching your foundation means less pressure on weak points.
 

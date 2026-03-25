@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Lowell?"
-    answer: "Foundation crack injection in Lowell typically costs $800-$1,200 per crack for poured concrete foundations. Older fieldstone and brick foundations common in the Highlands and downtown triple-deckers may require mortar repointing and stabilization, quoted individually based on scope. We offer free on-site evaluations."
+    answer: "Foundation crack injection in Lowell typically costs $800-$1,300 per crack for poured concrete foundations. Older fieldstone and brick foundations common in the Highlands and downtown triple-deckers may require mortar repointing and stabilization, quoted individually based on scope. We offer free on-site evaluations."
   - question: "Can you repair fieldstone foundations in Lowell's older homes?"
     answer: "Absolutely. Lowell's historic housing stock — including mill worker homes, triple-deckers, and Victorian-era houses — often features fieldstone or brick foundations. We specialize in stabilizing these structures with appropriate repointing techniques and interior drainage solutions that preserve the original character while stopping water infiltration."
   - question: "Why do Lowell homes near the rivers have worse foundation problems?"

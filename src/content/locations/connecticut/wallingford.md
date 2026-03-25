@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Wallingford?"
-    answer: "Foundation crack repair in Wallingford typically ranges from $800-$1,200 per crack depending on severity and access. Most Wallingford homes have poured concrete foundations from the post-war building boom. We provide free consultations and transparent pricing."
+    answer: "Foundation crack repair in Wallingford typically ranges from $800-$1,300 per crack depending on severity and access. Most Wallingford homes have poured concrete foundations from the post-war building boom. We provide free consultations and transparent pricing."
   - question: "What causes foundation cracks in Wallingford?"
     answer: "Wallingford sits in the Quinnipiac River valley where clay-rich alluvial soils create significant seasonal movement. These soils swell when wet and shrink when dry, putting lateral and settling pressure on foundation walls. Combined with Connecticut's freeze-thaw cycles, this leads to cracking over time."
   - question: "Are newer Wallingford homes immune to foundation issues?"

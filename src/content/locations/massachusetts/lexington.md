@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Lexington?"
-    answer: "Foundation crack repair in Lexington typically costs $800-$1,200 per crack. The town's predominantly postwar housing stock means most repairs involve standard poured concrete or block foundations. We provide free consultations and honest quotes."
+    answer: "Foundation crack repair in Lexington typically costs $800-$1,300 per crack. The town's predominantly postwar housing stock means most repairs involve standard poured concrete or block foundations. We provide free consultations and honest quotes."
   - question: "What foundation problems are most common in Lexington's 1950s-1970s homes?"
     answer: "Lexington homes from the suburban expansion era commonly develop vertical and diagonal cracks in poured concrete walls from soil settlement and freeze-thaw cycling. Block foundations may show horizontal cracking from lateral soil pressure. These are all repairable conditions that we address routinely across the Metrowest area."
   - question: "Can foundation cracks in Lexington be repaired without excavation?"

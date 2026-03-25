@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Chaplin?"
-    answer: "Foundation crack repair in Chaplin typically ranges from $800-$1,200 per crack depending on severity and access. Many Chaplin homes have poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
+    answer: "Foundation crack repair in Chaplin typically ranges from $800-$1,300 per crack depending on severity and access. Many Chaplin homes have poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
   - question: "How does the Natchaug River affect Chaplin foundations?"
     answer: "The Natchaug River cuts through Chaplin's center, and its floodplain soils are clay-rich and moisture-retentive. Homes near the river corridor—particularly in the Natchaug area and South Chaplin—face elevated water tables that push groundwater against basement walls. Even homes on higher ground deal with runoff from the steep, wooded terrain that drains toward the river valley."
   - question: "Do Chaplin's rural properties face unique foundation risks?"

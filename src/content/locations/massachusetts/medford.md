@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Medford?"
-    answer: "Costs depend on foundation type and damage extent. Crack injection on poured concrete runs $800 to $1,200 per crack, while fieldstone repointing and brick foundation work can range higher based on the wall's condition. We offer free inspections so Medford homeowners get an accurate quote before any work begins."
+    answer: "Costs depend on foundation type and damage extent. Crack injection on poured concrete runs $800 to $1,300 per crack, while fieldstone repointing and brick foundation work can range higher based on the wall's condition. We offer free inspections so Medford homeowners get an accurate quote before any work begins."
   - question: "Why are Medford's older foundations especially vulnerable?"
     answer: "Most Medford homes were built between 1900 and 1940, an era when fieldstone and brick foundations were standard and exterior waterproofing was minimal. Over a century of freeze-thaw cycles, shifting clay soils along the Mystic River, and rising groundwater have deteriorated mortar joints and cracked masonry throughout the city. These older foundations need specialized repair techniques rather than standard injection methods."
   - question: "Do you repair triple-decker foundations in Medford?"

@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Fitchburg?"
-    answer: "Foundation repair costs in Fitchburg vary with foundation type. Crack injection for poured concrete runs $800-$1,200 per crack. Fitchburg's older fieldstone and brick foundations from the mill era may require repointing or stabilization work typically ranging from $2,000-$8,000 depending on the extent of deterioration. We provide free inspections and estimates for all Fitchburg properties."
+    answer: "Foundation repair costs in Fitchburg vary with foundation type. Crack injection for poured concrete runs $800-$1,300 per crack. Fitchburg's older fieldstone and brick foundations from the mill era may require repointing or stabilization work typically ranging from $2,000-$8,000 depending on the extent of deterioration. We provide free inspections and estimates for all Fitchburg properties."
   - question: "Why do older Fitchburg homes have so many foundation problems?"
     answer: "Fitchburg's industrial heyday from the 1880s through the 1940s produced dense neighborhoods of worker housing built on fieldstone and brick foundations. The Nashua River valley's clay-heavy soils retain moisture and exert seasonal pressure against these aging walls, while lime-based mortars used in that era gradually deteriorate from over a century of freeze-thaw cycling. Many of these foundations have never been professionally repaired despite decades of progressive deterioration."
   - question: "Do you work on all foundation types found in Fitchburg?"

@@ -29,7 +29,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Fall River?"
-    answer: "Foundation repair in Fall River typically ranges from $800 to $1,200 for crack injection. Many Fall River homes have historic granite or fieldstone foundations that may require additional mortar repair. We offer free estimates for all Fall River properties."
+    answer: "Foundation repair in Fall River typically ranges from $800 to $1,300 for crack injection. Many Fall River homes have historic granite or fieldstone foundations that may require additional mortar repair. We offer free estimates for all Fall River properties."
   - question: "Can you repair granite block foundations in Fall River?"
     answer: "Yes, we specialize in the granite block foundations common throughout Fall River's mill-era neighborhoods. These substantial foundations require specific techniques for repointing mortar joints and addressing water infiltration while preserving their structural integrity."
   - question: "Why do Fall River homes have water in their basements?"

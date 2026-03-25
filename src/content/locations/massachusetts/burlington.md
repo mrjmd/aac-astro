@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Burlington?"
-    answer: "Foundation crack repair in Burlington typically costs $800-$1,200 per crack. Most Burlington homes have poured concrete foundations from the 1950s-70s that respond well to injection repair. We provide free on-site estimates for all Burlington properties."
+    answer: "Foundation crack repair in Burlington typically costs $800-$1,300 per crack. Most Burlington homes have poured concrete foundations from the 1950s-70s that respond well to injection repair. We provide free on-site estimates for all Burlington properties."
   - question: "What causes foundation cracks in Burlington homes?"
     answer: "Burlington's post-war homes were built on glacial till soils that expand and contract with seasonal moisture changes. After 50-70 years, the concrete naturally develops stress cracks at weak points like corners, window wells, and pipe penetrations. New England's freeze-thaw cycles accelerate this process, turning hairline cracks into water entry points."
   - question: "Do you service homes near Burlington Mall and Route 128?"

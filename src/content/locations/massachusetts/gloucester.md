@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Gloucester?"
-    answer: "Foundation repair costs in Gloucester vary depending on the foundation type and scope of damage. Crack injection for poured concrete runs $800-$1,200 per crack. Gloucester's older fieldstone and granite foundations may require repointing or stabilization work that typically ranges from $2,000-$8,000 depending on the extent of deterioration. We provide free inspections and detailed estimates for every Gloucester property."
+    answer: "Foundation repair costs in Gloucester vary depending on the foundation type and scope of damage. Crack injection for poured concrete runs $800-$1,300 per crack. Gloucester's older fieldstone and granite foundations may require repointing or stabilization work that typically ranges from $2,000-$8,000 depending on the extent of deterioration. We provide free inspections and detailed estimates for every Gloucester property."
   - question: "How does salt air affect Gloucester foundations?"
     answer: "Gloucester's position on Cape Ann exposes foundations to salt-laden moisture that accelerates mortar deterioration in fieldstone and granite foundations. Salt crystallization within mortar joints causes expansion and spalling, gradually loosening stones and opening pathways for water infiltration. Historic homes near the harbor and along the coastline in East Gloucester and Magnolia are especially vulnerable to this cumulative damage."
   - question: "Can you repair fieldstone foundations in Gloucester's historic homes?"

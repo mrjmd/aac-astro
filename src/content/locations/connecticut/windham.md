@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Windham?"
-    answer: "Foundation crack repair in Windham typically ranges from $800-$1,200 per crack for poured concrete foundations. Windham's older housing stock means some homes have fieldstone or brick foundations that may require different approaches. We provide free consultations and honest assessments for every foundation type."
+    answer: "Foundation crack repair in Windham typically ranges from $800-$1,300 per crack for poured concrete foundations. Windham's older housing stock means some homes have fieldstone or brick foundations that may require different approaches. We provide free consultations and honest assessments for every foundation type."
   - question: "Why do Willimantic homes have so many foundation problems?"
     answer: "Willimantic sits at the confluence of the Willimantic and Natchaug rivers, where decades of flooding have deposited clay-rich alluvial soils. These soils retain moisture and expand under pressure, stressing foundation walls. Many homes also date to the mill era of the late 1800s and early 1900s, meaning their foundations have endured over a century of Connecticut's freeze-thaw cycles."
   - question: "Can you repair fieldstone foundations in Windham's historic homes?"

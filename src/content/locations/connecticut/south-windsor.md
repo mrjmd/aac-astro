@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in South Windsor?"
-    answer: "Foundation crack repair in South Windsor typically costs $800-$1,200 per crack. Homes in the Wapping and Avery Heights areas often develop cracks from the clay-heavy floodplain soils. We provide free consultations and honest pricing with no hidden fees."
+    answer: "Foundation crack repair in South Windsor typically costs $800-$1,300 per crack. Homes in the Wapping and Avery Heights areas often develop cracks from the clay-heavy floodplain soils. We provide free consultations and honest pricing with no hidden fees."
   - question: "How does South Windsor's river floodplain affect foundations?"
     answer: "South Windsor sits on the Connecticut River floodplain, where alluvial clay soils expand and contract dramatically with seasonal moisture changes. This movement puts lateral pressure on foundation walls, especially in the lower-elevation neighborhoods near Pleasant Valley and Rye Street. Timely crack repair prevents water intrusion during high water table periods."
   - question: "Are 1960s-1980s South Windsor homes prone to foundation problems?"

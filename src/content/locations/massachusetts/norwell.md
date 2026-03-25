@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Norwell?"
-    answer: "Foundation crack injection in Norwell typically costs $800 to $1,200. Norwell's mix of fieldstone and poured concrete foundations means repair approaches vary. Fieldstone repointing may cost more due to the specialized masonry work required. We provide free estimates for all Norwell properties."
+    answer: "Foundation crack injection in Norwell typically costs $800 to $1,300. Norwell's mix of fieldstone and poured concrete foundations means repair approaches vary. Fieldstone repointing may cost more due to the specialized masonry work required. We provide free estimates for all Norwell properties."
   - question: "Why do Norwell's older homes have fieldstone foundation problems?"
     answer: "Many of Norwell's pre-1940 homes were built on fieldstone foundations using lime-based mortar that deteriorates over decades. The North River watershed's high water table keeps these foundations constantly exposed to moisture, accelerating mortar breakdown and allowing water to seep between stones. Seasonal frost heave further displaces individual stones."
   - question: "Do you handle well water drainage issues affecting foundations in Norwell?"

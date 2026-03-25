@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Hanover?"
-    answer: "Foundation crack injection in Hanover typically costs $800 to $1,200 per crack. Hanover's predominantly poured concrete and concrete block foundations from the 1960s-1980s growth era respond well to modern injection techniques. We provide free on-site estimates for all Hanover homes."
+    answer: "Foundation crack injection in Hanover typically costs $800 to $1,300 per crack. Hanover's predominantly poured concrete and concrete block foundations from the 1960s-1980s growth era respond well to modern injection techniques. We provide free on-site estimates for all Hanover homes."
   - question: "What causes foundation problems along the Route 3 corridor in Hanover?"
     answer: "The Route 3 corridor through Hanover was developed rapidly during the 1960s-1980s, often on glacial till with variable drainage. The Indian Head River and its tributaries create pockets of saturated soil that drive water pressure against foundations. Freeze-thaw cycling further stresses concrete that is now 40-60 years old."
   - question: "Do you repair foundations in newer Hanover subdivisions?"

@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Pawtucket?"
-    answer: "Foundation crack repair in Pawtucket typically costs $800-$1,200 per crack. Many Pawtucket homes have older fieldstone or brick foundations that may need specialized mortar repair alongside crack injection. We provide free assessments with no obligation."
+    answer: "Foundation crack repair in Pawtucket typically costs $800-$1,300 per crack. Many Pawtucket homes have older fieldstone or brick foundations that may need specialized mortar repair alongside crack injection. We provide free assessments with no obligation."
   - question: "Why are Pawtucket foundations prone to cracking?"
     answer: "Pawtucket was one of America's first industrial cities, and much of its housing dates to the late 1800s and early 1900s. These older foundations were built with fieldstone and brick, materials that deteriorate over time. The Blackstone River's influence on local water tables adds hydrostatic pressure that worsens existing cracks."
   - question: "Can you work on foundations in Pawtucket's older mill housing?"

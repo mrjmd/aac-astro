@@ -27,7 +27,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Lynn?"
-    answer: "Foundation repair in Lynn typically costs between $800 and $1,200 for crack injection, depending on the foundation type and damage extent. Lynn's diverse housing stock means foundation types vary widely, from fieldstone in older areas to concrete block in mid-century neighborhoods. We offer free estimates for all Lynn properties."
+    answer: "Foundation repair in Lynn typically costs between $800 and $1,300 for crack injection, depending on the foundation type and damage extent. Lynn's diverse housing stock means foundation types vary widely, from fieldstone in older areas to concrete block in mid-century neighborhoods. We offer free estimates for all Lynn properties."
   - question: "Why do older Lynn homes have so many basement water problems?"
     answer: "Lynn's dense industrial-era housing was built rapidly during the city's shoe manufacturing boom, and many foundations from that period used fieldstone or brick with lime-based mortars that have deteriorated over more than a century. The city's coastal location means the water table is generally high, and many neighborhoods sit on clay soils that retain moisture and direct it toward foundation walls."
   - question: "Do you service the Diamond District and waterfront areas of Lynn?"

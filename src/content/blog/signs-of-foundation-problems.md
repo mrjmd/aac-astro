@@ -37,7 +37,7 @@ Cracks are the most obvious sign of foundation problems, but not all cracks are 
 
 **When to worry:** Wider than 1/4 inch, growing over time, or allowing water into your basement. Even hairline cracks that let water in should be addressed — water infiltration leads to mold, efflorescence, and further deterioration.
 
-**What to do:** For leaking vertical cracks, [professional crack injection](/services/foundation-crack-injection) fills the entire crack through all 8-10 inches of concrete from inside to outside with flexible polyurethane injected at 100 PSI. This is a permanent fix that typically costs $800-$1,200 per crack.
+**What to do:** For leaking vertical cracks, [professional crack injection](/services/foundation-crack-injection) fills the entire crack through all 8-10 inches of concrete from inside to outside with flexible polyurethane injected at 100 PSI. This is a permanent fix that typically costs $800-$1,300 per crack.
 
 ### Horizontal Cracks
 
@@ -117,7 +117,7 @@ Living in Connecticut or Massachusetts means your foundation deals with a frost 
 
 ## When NOT to Ignore Foundation Warning Signs
 
-Some homeowners live with foundation problems for years, telling themselves "it's just settling." Here is what waiting costs: a single crack injection at $800-$1,200 today can become a $6,000-$15,000 wall stabilization job if left through multiple freeze-thaw seasons. The crack does not heal itself — every winter in New England's glacial till and clay-heavy soil makes it worse. If you see any of the signs on this list, at minimum get a [free professional assessment](/services/free-foundation-consultations) to understand what you are dealing with.
+Some homeowners live with foundation problems for years, telling themselves "it's just settling." Here is what waiting costs: a single crack injection at $800-$1,300 today can become a $6,000-$15,000 wall stabilization job if left through multiple freeze-thaw seasons. The crack does not heal itself — every winter in New England's glacial till and clay-heavy soil makes it worse. If you see any of the signs on this list, at minimum get a [free professional assessment](/services/free-foundation-consultations) to understand what you are dealing with.
 
 ## How to Monitor Your Foundation
 

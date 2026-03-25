@@ -81,7 +81,7 @@ Once you know where moisture is entering, the fix is usually straightforward.
 
 ### Foundation Crack Injection
 
-For cracks in poured concrete walls, [foundation crack injection](/services/foundation-crack-injection) is the gold standard. We inject expanding polyurethane or epoxy at up to 100 PSI directly into the crack, sealing it from the inside out through the full 8-10 inches of concrete wall thickness. At $800-$1,200 per crack, the repair stops water at the source and comes with a lifetime warranty. Most crack injections take a few hours and cost a fraction of what you will spend on dehumidifier electricity over the years.
+For cracks in poured concrete walls, [foundation crack injection](/services/foundation-crack-injection) is the gold standard. We inject expanding polyurethane or epoxy at up to 100 PSI directly into the crack, sealing it from the inside out through the full 8-10 inches of concrete wall thickness. At $800-$1,300 per crack, the repair stops water at the source and comes with a lifetime warranty. Most crack injections take a few hours and cost a fraction of what you will spend on dehumidifier electricity over the years.
 
 ### Bulkhead Repair and Bulkhead Sealant
 
@@ -109,7 +109,7 @@ The key question is whether your dehumidifier is supplementing a dry basement or
 
 A quality dehumidifier costs $250 to $400 upfront. Running it year-round costs $300 to $700 annually in electricity. Over ten years, that is $3,000 to $7,000 in operating costs alone, plus one or two replacement units.
 
-A typical [foundation crack injection](/services/foundation-crack-injection) costs $800-$1,200 — significantly less than that lifetime dehumidifier expense — and comes with a warranty that lasts as long as you own the home. The math is not close.
+A typical [foundation crack injection](/services/foundation-crack-injection) costs $800-$1,300 — significantly less than that lifetime dehumidifier expense — and comes with a warranty that lasts as long as you own the home. The math is not close.
 
 Not sure where your moisture is coming from? Text us a photo for assessment at [617-668-1677](sms:617-668-1677) or [860-573-8760](sms:860-573-8760). We can often identify the source from a photo alone.
 

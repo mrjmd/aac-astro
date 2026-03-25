@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Dover?"
-    answer: "Foundation crack repair in Dover typically costs $800-$1,200 per crack. Homes near the Cochecho River or in older parts of downtown may require extra assessment due to elevated water tables. We offer free inspections for all Dover homeowners."
+    answer: "Foundation crack repair in Dover typically costs $800-$1,300 per crack. Homes near the Cochecho River or in older parts of downtown may require extra assessment due to elevated water tables. We offer free inspections for all Dover homeowners."
   - question: "Why are Dover basements so prone to flooding?"
     answer: "Dover sits at the confluence of the Cochecho and Bellamy Rivers, which raises the water table significantly in many neighborhoods. During spring snowmelt and heavy rains, hydrostatic pressure builds against foundation walls and forces water through even hairline cracks. Addressing cracks early prevents recurring basement flooding."
   - question: "Do you serve the entire Dover and Tri-Cities area?"

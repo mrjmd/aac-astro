@@ -33,7 +33,7 @@ Let's start with the numbers, because they frame everything else.
 
 | Approach | Typical Cost Range | Timeline |
 |----------|-------------------|----------|
-| Crack injection (per crack) | $800 - $1,200 | Hours |
+| Crack injection (per crack) | $800 - $1,300 | Hours |
 | Carbon fiber reinforcement | $3,000 - $8,000 | 1 day |
 | Wall stabilization (anchors/beams) | $6,000 - $15,000 | 1-3 days |
 | Full foundation replacement | $30,000 - $100,000+ | 3-8 weeks |

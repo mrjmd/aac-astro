@@ -75,7 +75,7 @@ Gutters clogged with spring pollen and seeds dump water right next to your found
 
 If you know about existing cracks, summer is the time to track them. Mark the ends of any cracks with a pencil line and date it. Check monthly. If a crack grows past your mark, it is active and should be evaluated before winter.
 
-New cracks that appear during summer drought often indicate soil shrinkage settlement. These should be inspected — a typical crack injection runs $800-$1,200 with a lifetime warranty if repair is needed. Not every crack is a crisis, but new cracks deserve professional assessment to determine if they are cosmetic or structural.
+New cracks that appear during summer drought often indicate soil shrinkage settlement. These should be inspected — a typical crack injection runs $800-$1,300 with a lifetime warranty if repair is needed. Not every crack is a crisis, but new cracks deserve professional assessment to determine if they are cosmetic or structural.
 
 ### When NOT to Worry About Summer Cracks
 

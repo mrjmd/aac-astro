@@ -3,14 +3,10 @@ import Icon from './Icon.astro';
 import { reviewCount } from '../utils/reviews';
 ---
 
-<section class="relative min-h-screen flex items-center pt-28 md:pt-32 pb-12 md:pb-20 overflow-hidden bg-white">
+<section class="relative min-h-screen flex items-center pt-20 md:pt-32 pb-6 md:pb-20 overflow-hidden bg-white">
   <div class="max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-2 gap-12 items-center relative z-10">
     <div class="text-left [container-type:inline-size]">
-      <div class="inline-flex items-center gap-2 px-4 py-2 bg-aac-yellow/20 text-aac-dark rounded-full text-[10px] font-black uppercase tracking-widest mb-8">
-        <Icon name="ShieldCheck" size={14} class="text-aac-blue" /> Lifetime Guarantee
-      </div>
-
-      <h1 class="font-display font-black tracking-tighter text-aac-dark leading-[0.85] mb-8">
+      <h1 class="font-display font-black tracking-tighter text-aac-dark leading-[0.85] mb-6 md:mb-8">
         <span class="block sm:hidden text-[10.2vw] whitespace-nowrap">WE SEAL CRACKS &</span>
         <span class="block sm:hidden text-[9.4vw] whitespace-nowrap"><span class="text-aac-blue">SECURE</span> YOUR HOME</span>
         <span class="hidden sm:block">
@@ -19,11 +15,11 @@ import { reviewCount } from '../utils/reviews';
         </span>
       </h1>
 
-      <p class="text-lg font-bold text-zinc-500 max-w-lg mb-12 leading-relaxed">
+      <p class="text-lg font-bold text-zinc-500 max-w-lg mb-6 md:mb-12 leading-relaxed">
         Speak directly with a <span class="text-aac-dark font-black border-b-4 border-aac-yellow">foundation expert</span> right now. We provide durable solutions and quotes within&nbsp;minutes.
       </p>
 
-      <div class="flex flex-col sm:flex-row items-center gap-8">
+      <div class="flex flex-col sm:flex-row items-center gap-4 md:gap-8">
         <button
           class="open-modal bg-aac-yellow text-aac-dark px-10 py-6 rounded-2xl font-black text-xl uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(26,26,26,1)] border-4 border-aac-dark flex items-center justify-center gap-3 group"
         >

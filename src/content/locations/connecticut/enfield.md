@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Enfield?"
-    answer: "Foundation crack repair in Enfield typically costs $800-$1,200 per crack. Enfield's housing from the 1960s-1980s building era has poured concrete foundations that respond excellently to our injection process. We provide free assessments and transparent pricing."
+    answer: "Foundation crack repair in Enfield typically costs $800-$1,300 per crack. Enfield's housing from the 1960s-1980s building era has poured concrete foundations that respond excellently to our injection process. We provide free assessments and transparent pricing."
   - question: "Why do Enfield homes develop foundation cracks?"
     answer: "Enfield straddles the Connecticut River valley where sandy, loamy soils meet the clay deposits of the Hartford basin. Seasonal moisture changes cause these soils to shift, and the northern location means deeper frost penetration and more aggressive freeze-thaw cycles than towns further south. Both factors stress foundations over time."
   - question: "Do you serve both Enfield and Thompsonville?"

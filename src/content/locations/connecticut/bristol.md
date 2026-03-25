@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Bristol?"
-    answer: "Foundation crack repair in Bristol typically ranges from $800-$1,200 per crack. Bristol's predominantly post-war housing stock means most foundations are poured concrete, which is ideal for our injection repair process. We provide free consultations and transparent quotes."
+    answer: "Foundation crack repair in Bristol typically ranges from $800-$1,300 per crack. Bristol's predominantly post-war housing stock means most foundations are poured concrete, which is ideal for our injection repair process. We provide free consultations and transparent quotes."
   - question: "Are Bristol homes prone to foundation water issues?"
     answer: "Yes, particularly in lower-lying areas near the Pequabuck River and in Forestville. Bristol's terrain creates natural drainage patterns that direct groundwater toward many home foundations. Spring snowmelt and heavy rains are the most common times we see calls from Bristol homeowners about wet basements."
   - question: "Can you fix bulkhead leaks in Bristol homes?"

@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Kennebunk?"
-    answer: "Foundation crack repair in Kennebunk typically costs $800-$1,200 per crack. Historic homes with fieldstone foundations may require specialized techniques that we are fully equipped to provide. We offer free on-site assessments with straightforward pricing."
+    answer: "Foundation crack repair in Kennebunk typically costs $800-$1,300 per crack. Historic homes with fieldstone foundations may require specialized techniques that we are fully equipped to provide. We offer free on-site assessments with straightforward pricing."
   - question: "Are Kennebunk's historic homes at greater risk for foundation issues?"
     answer: "Many of Kennebunk's finest homes date to the shipbuilding era of the 1800s and rest on fieldstone or brick foundations. These materials are inherently more porous than modern concrete and have endured nearly two centuries of Maine winters. The mortar between stones deteriorates over time, allowing water to seep through during spring snowmelt and heavy rains."
   - question: "How does the Kennebunk River affect nearby foundations?"

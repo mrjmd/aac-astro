@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Groton?"
-    answer: "Foundation crack repair in Groton typically ranges from $800-$1,200 per crack depending on severity and access. Most Groton homes have mid-century poured concrete foundations that respond very well to injection repair. We provide free consultations and transparent pricing."
+    answer: "Foundation crack repair in Groton typically ranges from $800-$1,300 per crack depending on severity and access. Most Groton homes have mid-century poured concrete foundations that respond very well to injection repair. We provide free consultations and transparent pricing."
   - question: "Do Groton's coastal conditions cause more foundation issues?"
     answer: "Coastal Groton homes face higher moisture exposure than inland properties. The combination of elevated water tables near the shoreline and persistent humidity creates more hydrostatic pressure against foundation walls. This makes timely crack repair critical to prevent water infiltration and potential mold issues."
   - question: "Do you serve Mystic and Noank in Groton?"

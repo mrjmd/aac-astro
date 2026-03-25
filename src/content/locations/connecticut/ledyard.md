@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Ledyard?"
-    answer: "Foundation crack repair in Ledyard typically ranges from $800-$1,200 per crack depending on severity and access. Most Ledyard homes have poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
+    answer: "Foundation crack repair in Ledyard typically ranges from $800-$1,300 per crack depending on severity and access. Most Ledyard homes have poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
   - question: "Why are foundation cracks common in the Gales Ferry area?"
     answer: "Gales Ferry and the Thames River corridor sit on marine clay deposits left by post-glacial flooding. These clays expand when wet and shrink when dry, creating cyclical pressure against foundation walls. The proximity to the Thames also keeps the water table high, increasing hydrostatic pressure—especially in spring and during heavy rain events."
   - question: "Does military housing in Ledyard have foundation issues?"

@@ -63,7 +63,7 @@ March through May is our busiest period. Here's why:
 - Frozen ground thaws unevenly, creating differential settlement
 - Sump pumps that ran all winter finally give up
 
-If you notice water in basement after rain or snowmelt, spring is when you'll find out. The good news? A crack that leaks in spring is a crack we can fix permanently with [foundation crack injection](/services/foundation-crack-injection) at $800-$1,200 per crack, injected at approximately 100 PSI through the full 8-10 inches of concrete.
+If you notice water in basement after rain or snowmelt, spring is when you'll find out. The good news? A crack that leaks in spring is a crack we can fix permanently with [foundation crack injection](/services/foundation-crack-injection) at $800-$1,300 per crack, injected at approximately 100 PSI through the full 8-10 inches of concrete.
 
 ### Summer: The Hidden Damage Season
 

@@ -104,7 +104,7 @@ Here's something we see regularly: homeowners assume water on the basement floor
 
 Before assuming you have a floor crack problem, check your walls carefully during the next rain. Look for wet streaks, water stains at specific points, or dampness along the cove joint where wall meets floor.
 
-If the water enters through wall cracks, that's a much simpler fix. Wall crack injection typically costs $800-$1,200 per crack and carries a lifetime guarantee. That's a far better outcome than installing a drainage system.
+If the water enters through wall cracks, that's a much simpler fix. Wall crack injection typically costs $800-$1,300 per crack and carries a lifetime guarantee. That's a far better outcome than installing a drainage system.
 
 ## Get an Honest Assessment
 

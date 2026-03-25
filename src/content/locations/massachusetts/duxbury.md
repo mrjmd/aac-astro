@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Duxbury?"
-    answer: "Foundation crack injection in Duxbury typically costs $800 to $1,200. Larger homes on estate lots may have more extensive foundation perimeters. Fieldstone foundations in older Duxbury properties may require specialized repointing. We provide free estimates for all Duxbury homes."
+    answer: "Foundation crack injection in Duxbury typically costs $800 to $1,300. Larger homes on estate lots may have more extensive foundation perimeters. Fieldstone foundations in older Duxbury properties may require specialized repointing. We provide free estimates for all Duxbury homes."
   - question: "How do Duxbury's sandy glacial soils affect foundations?"
     answer: "Duxbury sits on glacial outwash deposits—predominantly sandy, well-drained soils. While good for drainage, these sandy soils can shift and settle over time, particularly where homes were built on filled or regraded lots. Coastal areas near Duxbury Bay face additional challenges from salt air exposure and storm-driven water table fluctuations."
   - question: "Do you repair historic fieldstone foundations in Duxbury?"

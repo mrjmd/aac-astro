@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Canterbury?"
-    answer: "Foundation crack repair in Canterbury typically ranges from $800-$1,200 per crack depending on severity and access. Most mid-century Canterbury homes have poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
+    answer: "Foundation crack repair in Canterbury typically ranges from $800-$1,300 per crack depending on severity and access. Most mid-century Canterbury homes have poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
   - question: "How does the Quinebaug River affect Canterbury foundations?"
     answer: "The Quinebaug River and its tributary streams create a high water table through much of Canterbury, particularly along the South Canterbury and Plainfield Road corridors. Spring snowmelt raises water levels rapidly, pushing groundwater against basement walls. Homes on larger rural lots with septic systems can also see localized drainage issues that compound natural groundwater pressure."
   - question: "Do Canterbury's older farmstead foundations need special treatment?"

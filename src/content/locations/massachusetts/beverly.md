@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Beverly?"
-    answer: "Foundation repair in Beverly typically costs between $800 and $1,200 for crack injection, depending on the foundation type and extent of damage. Coastal properties in Beverly Farms or along the harbor may require additional waterproofing considerations. We offer free estimates for all Beverly homeowners."
+    answer: "Foundation repair in Beverly typically costs between $800 and $1,300 for crack injection, depending on the foundation type and extent of damage. Coastal properties in Beverly Farms or along the harbor may require additional waterproofing considerations. We offer free estimates for all Beverly homeowners."
   - question: "Are Beverly's coastal homes at higher risk for foundation problems?"
     answer: "Yes, Beverly's extensive coastline means many homes face elevated water tables and salt air exposure that accelerate foundation wear. Properties in Beverly Farms, along the harbor, and in Ryal Side deal with tidal influences on groundwater levels, and the corrosive effects of salt moisture on both concrete and masonry foundations over time."
   - question: "Do you work on older foundations in Beverly Farms?"

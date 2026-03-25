@@ -22,7 +22,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Chelmsford?"
-    answer: "Foundation crack injection in Chelmsford typically costs $800 to $1,200 per crack. Most Chelmsford homes have poured concrete or concrete block foundations from the 1960s through 1980s that respond well to modern injection techniques. We provide free estimates for all Chelmsford homeowners."
+    answer: "Foundation crack injection in Chelmsford typically costs $800 to $1,300 per crack. Most Chelmsford homes have poured concrete or concrete block foundations from the 1960s through 1980s that respond well to modern injection techniques. We provide free estimates for all Chelmsford homeowners."
   - question: "What causes foundation cracks in Chelmsford's newer homes?"
     answer: "Even homes built in the 1970s and 1980s develop foundation cracks over time. Chelmsford's glacial till soils contain clay pockets that expand and contract seasonally, placing lateral stress on basement walls. The freeze-thaw cycling typical of the Merrimack Valley works concrete cracks wider each winter, and homes near the Stony Brook or Robin Hood pond areas contend with elevated groundwater that increases hydrostatic pressure."
   - question: "Do you serve both North Chelmsford and the Center?"

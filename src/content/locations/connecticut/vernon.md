@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Vernon?"
-    answer: "Foundation crack repair in Vernon typically ranges from $800-$1,200 per crack depending on severity and access. Most Vernon homes have mid-century poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
+    answer: "Foundation crack repair in Vernon typically ranges from $800-$1,300 per crack depending on severity and access. Most Vernon homes have mid-century poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
   - question: "Why do Vernon homes develop foundation cracks?"
     answer: "Vernon sits in the Hockanum River valley where clay-rich soils expand and contract with seasonal moisture changes. The freeze-thaw cycles in Connecticut's winters put additional stress on foundations. Homes in the Rockville section, which has older housing stock from the mill era, tend to see these issues earlier than newer construction."
   - question: "Do you serve the Rockville section of Vernon?"

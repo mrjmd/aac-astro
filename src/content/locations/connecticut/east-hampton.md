@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in East Hampton?"
-    answer: "Foundation crack repair in East Hampton typically costs $800-$1,200 per crack. Whether your home is near Lake Pocotopaug or up on Hog Hill, we provide free on-site consultations with clear pricing and no hidden fees."
+    answer: "Foundation crack repair in East Hampton typically costs $800-$1,300 per crack. Whether your home is near Lake Pocotopaug or up on Hog Hill, we provide free on-site consultations with clear pricing and no hidden fees."
   - question: "Do homes near Lake Pocotopaug have more foundation problems?"
     answer: "Homes around Lake Pocotopaug—the largest natural lake in Connecticut—often face elevated water table conditions that increase hydrostatic pressure against basement walls. The lake's influence on surrounding soil moisture extends well beyond the immediate shoreline, and seasonal water level changes create cyclical stress on foundations throughout the Lake Pocotopaug neighborhood."
   - question: "Why are East Hampton's mid-century homes cracking now?"

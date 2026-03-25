@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Biddeford?"
-    answer: "Foundation crack repair in Biddeford typically costs $800-$1,200 per crack. The city's older mill-era housing often has fieldstone or brick foundations that benefit from our specialized injection techniques. We offer free assessments and upfront pricing."
+    answer: "Foundation crack repair in Biddeford typically costs $800-$1,300 per crack. The city's older mill-era housing often has fieldstone or brick foundations that benefit from our specialized injection techniques. We offer free assessments and upfront pricing."
   - question: "Why do so many Biddeford homes have wet basements?"
     answer: "Biddeford was built along the Saco River, and many neighborhoods sit on flood-prone land with high water tables. The city's older housing stock features foundation types like fieldstone and brick that are more porous than modern concrete. Combined with Maine's heavy spring snowmelt and frequent Nor'easters, these factors create persistent basement moisture problems throughout the city."
   - question: "Can you repair fieldstone foundations in Biddeford's historic district?"

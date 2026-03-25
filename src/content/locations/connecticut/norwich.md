@@ -28,7 +28,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Norwich?"
-    answer: "Foundation crack repair in Norwich typically ranges from $800-$1,200 per crack depending on severity and access. Many Norwich homes have poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
+    answer: "Foundation crack repair in Norwich typically ranges from $800-$1,300 per crack depending on severity and access. Many Norwich homes have poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
   - question: "Why do Norwich homes have foundation problems?"
     answer: "Norwich sits at the confluence of the Thames, Yantic, and Shetucket rivers. The clay-rich soils in the river valley retain moisture and expand and contract significantly with seasonal changes. Combined with the age of many Norwich homes dating to the mill-town era, these conditions create ideal circumstances for foundation cracking."
   - question: "What about fieldstone foundations in Norwich?"

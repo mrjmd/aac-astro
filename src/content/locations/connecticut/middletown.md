@@ -29,7 +29,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Middletown?"
-    answer: "Foundation crack repair in Middletown typically ranges from $800-$1,200 per crack. Middletown's mix of older and mid-century homes means we see a variety of foundation conditions. We always start with a free consultation to give you an accurate quote."
+    answer: "Foundation crack repair in Middletown typically ranges from $800-$1,300 per crack. Middletown's mix of older and mid-century homes means we see a variety of foundation conditions. We always start with a free consultation to give you an accurate quote."
   - question: "Are Middletown homes near the river more at risk?"
     answer: "Homes along the Connecticut River corridor, particularly in Maromas and lower Middletown, do face higher water tables and more moisture exposure. However, foundation cracks are common throughout the city—homes on the Highland and South Farms areas experience cracking from normal settlement and freeze-thaw cycles just as frequently."
   - question: "What about historic foundations in Middletown?"

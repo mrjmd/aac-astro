@@ -86,7 +86,7 @@ Unlike southern New England, Maine foundations can remain frozen for weeks at a 
 
 ## Common Problems We See in Portland-Area Homes
 
-**Crack injection is our most common service here.** Vertical and diagonal cracks widened by freeze-thaw are straightforward [crack injection](/services/foundation-crack-injection) candidates at $800-$1,200 per crack — injected at approximately 100 PSI through the full 8-10 inches of concrete — backed with a lifetime warranty.
+**Crack injection is our most common service here.** Vertical and diagonal cracks widened by freeze-thaw are straightforward [crack injection](/services/foundation-crack-injection) candidates at $800-$1,300 per crack — injected at approximately 100 PSI through the full 8-10 inches of concrete — backed with a lifetime warranty.
 
 **Wall cracks from lateral frost pressure.** Horizontal cracks indicate the wall is being pushed inward. [Wall crack repair](/services/wall-crack-repair) and [carbon fiber reinforcement](/services/carbon-fiber-stitches) (also called carbon fiber staples) at $200-$300 per stitch can stabilize these walls without excavation.
 

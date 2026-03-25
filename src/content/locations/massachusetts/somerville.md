@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Somerville?"
-    answer: "Foundation repair in Somerville typically ranges from $800 to $1,200 for crack injection, depending on the foundation type and severity. Somerville's older triple-deckers and Victorian homes often have fieldstone or brick foundations that may require specialized techniques. We provide free estimates for all Somerville properties."
+    answer: "Foundation repair in Somerville typically ranges from $800 to $1,300 for crack injection, depending on the foundation type and severity. Somerville's older triple-deckers and Victorian homes often have fieldstone or brick foundations that may require specialized techniques. We provide free estimates for all Somerville properties."
   - question: "Why do Somerville triple-deckers have so many foundation issues?"
     answer: "Somerville's iconic triple-deckers were built rapidly in the late 1800s and early 1900s to house the city's growing workforce. Many sit on shallow foundations with minimal waterproofing, and over a century of freeze-thaw cycles has taken a significant toll. The dense urban lots also limit natural drainage, increasing hydrostatic pressure against foundation walls."
   - question: "Can you work on foundations during Somerville's busy construction season?"

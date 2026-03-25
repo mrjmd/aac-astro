@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Meriden?"
-    answer: "Foundation crack repair in Meriden typically costs $800-$1,200 per crack. Many Meriden homes from the 1940s-1960s era have poured concrete foundations that respond very well to injection repair. We provide free consultations with honest, itemized quotes."
+    answer: "Foundation crack repair in Meriden typically costs $800-$1,300 per crack. Many Meriden homes from the 1940s-1960s era have poured concrete foundations that respond very well to injection repair. We provide free consultations with honest, itemized quotes."
   - question: "What causes foundation cracks in Meriden homes?"
     answer: "Meriden sits in the central Connecticut valley between two trap rock ridges. The valley floor soils—a mix of alluvial deposits and clay—expand and contract seasonally, putting steady pressure on foundation walls. Combined with our freeze-thaw cycles, this creates conditions that cause concrete to crack over time."
   - question: "Do you serve all neighborhoods in Meriden?"

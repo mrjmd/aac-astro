@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Westbrook?"
-    answer: "Foundation crack repair in Westbrook typically costs $800-$1,200 per crack. Many older homes in the mill districts have fieldstone foundations that need specialized repair. We provide free assessments and straightforward pricing for all Westbrook homeowners."
+    answer: "Foundation crack repair in Westbrook typically costs $800-$1,300 per crack. Many older homes in the mill districts have fieldstone foundations that need specialized repair. We provide free assessments and straightforward pricing for all Westbrook homeowners."
   - question: "How does the Presumpscot River affect Westbrook foundations?"
     answer: "The Presumpscot River runs directly through Westbrook, and homes near the river deal with consistently high water tables and saturated soils. During spring snowmelt, river levels rise and groundwater pushes against basement walls with significant force. Homes in the Cumberland Mills and downtown areas are particularly susceptible to hydrostatic pressure damage."
   - question: "Are the old mill worker homes in Westbrook prone to foundation issues?"

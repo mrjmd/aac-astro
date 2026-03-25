@@ -52,7 +52,7 @@ This is the strategic question, and the answer depends on the specific situation
 
 ### When to Fix Before Listing
 
-**The repair is affordable relative to the home's value.** A crack injection at $800-$1,200 per crack on a $400,000 home is an obvious fix. It removes an objection before it arises, and the repair cost is negligible compared to the potential price impact of leaving it unaddressed.
+**The repair is affordable relative to the home's value.** A crack injection at $800-$1,300 per crack on a $400,000 home is an obvious fix. It removes an objection before it arises, and the repair cost is negligible compared to the potential price impact of leaving it unaddressed.
 
 **The issue would alarm a typical buyer.** Active water seepage, visible wet spots, white powder on basement walls (efflorescence), or a musty smell in the basement will spook buyers and inspectors alike. Fixing these issues before showings begin means buyers see a dry, well-maintained basement instead of a problem.
 
@@ -124,7 +124,7 @@ The agents we work with most frequently share a common approach: address issues 
 
 **Ignoring it and hoping nobody notices.** Inspectors will find it. And the discovery during inspection is always worse than the disclosure upfront.
 
-**DIY repairs before selling.** We understand the impulse, but a caulk-and-paint repair on a foundation crack does not fool a competent inspector. Worse, it suggests the seller was trying to hide something. Professional crack injection at $800-$1,200 per crack — with documentation and a lifetime transferable warranty — is the only approach that helps.
+**DIY repairs before selling.** We understand the impulse, but a caulk-and-paint repair on a foundation crack does not fool a competent inspector. Worse, it suggests the seller was trying to hide something. Professional crack injection at $800-$1,300 per crack — with documentation and a lifetime transferable warranty — is the only approach that helps.
 
 **Over-estimating the impact.** Some sellers assume foundation issues will tank their sale. In reality, the vast majority of foundation problems in New England homes are minor and affordable to fix. Do not let anxiety about the issue prevent you from addressing it rationally.
 

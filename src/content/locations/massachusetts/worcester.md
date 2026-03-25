@@ -30,7 +30,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Worcester?"
-    answer: "Foundation repair in Worcester typically ranges from $800 to $1,200 for crack injection. Worcester's older homes with fieldstone foundations may require specialized mortar repair in addition to crack injection. Contact us for a free assessment of your Worcester property."
+    answer: "Foundation repair in Worcester typically ranges from $800 to $1,300 for crack injection. Worcester's older homes with fieldstone foundations may require specialized mortar repair in addition to crack injection. Contact us for a free assessment of your Worcester property."
   - question: "Why do Worcester's older homes have foundation problems?"
     answer: "Worcester's three-deckers and Victorian homes were built over a century ago, often with fieldstone or brick foundations. These materials deteriorate over time, and the city's dramatic temperature swings accelerate the process. The hilly terrain also creates unique drainage challenges."
   - question: "Can you repair fieldstone foundations in Worcester?"

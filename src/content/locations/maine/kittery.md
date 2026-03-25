@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Kittery?"
-    answer: "Foundation crack repair in Kittery typically costs $800-$1,200 per crack. Coastal properties may require additional waterproofing measures due to the marine environment. We provide free assessments and honest pricing for every Kittery homeowner."
+    answer: "Foundation crack repair in Kittery typically costs $800-$1,300 per crack. Coastal properties may require additional waterproofing measures due to the marine environment. We provide free assessments and honest pricing for every Kittery homeowner."
   - question: "How does marine clay affect foundations in Kittery?"
     answer: "Kittery sits on marine clay deposits left behind by ancient sea levels, and this soil type is particularly problematic for foundations. Marine clay expands significantly when wet and shrinks when it dries, creating a constant cycle of movement that stresses foundation walls. This soil movement is a primary cause of the diagonal and stair-step cracks we frequently repair in Kittery homes."
   - question: "Do salt air and coastal storms damage Kittery foundations?"

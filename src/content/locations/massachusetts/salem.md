@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Salem?"
-    answer: "Foundation repair in Salem typically ranges from $800 to $1,200 for crack injection, depending on foundation type and condition. Salem's many historic homes often have fieldstone or brick foundations that may require specialized approaches. We provide free estimates for all Salem properties."
+    answer: "Foundation repair in Salem typically ranges from $800 to $1,300 for crack injection, depending on foundation type and condition. Salem's many historic homes often have fieldstone or brick foundations that may require specialized approaches. We provide free estimates for all Salem properties."
   - question: "Do you work on historic homes in Salem's McIntire District?"
     answer: "Yes, we have extensive experience with the Federal and Colonial-era foundations found throughout Salem's historic districts. Our repair techniques are designed to preserve the integrity of fieldstone and brick foundations while effectively stopping water infiltration. We understand the importance of maintaining Salem's irreplaceable architectural heritage."
   - question: "Why are Salem basements so damp near the waterfront?"

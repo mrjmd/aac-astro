@@ -31,7 +31,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Brockton?"
-    answer: "Foundation repair in Brockton typically ranges from $800 to $1,200 for crack injection. The city's mix of post-war concrete and older fieldstone foundations means repair approaches vary. We provide free estimates for all Brockton properties."
+    answer: "Foundation repair in Brockton typically ranges from $800 to $1,300 for crack injection. The city's mix of post-war concrete and older fieldstone foundations means repair approaches vary. We provide free estimates for all Brockton properties."
   - question: "Why do Brockton homes develop foundation cracks?"
     answer: "Brockton's clay-heavy soils expand and contract significantly with moisture changes, putting stress on foundations. Many homes built during the city's mid-century growth period used concrete that's now reaching its expected lifespan, and older industrial areas may have unstable fill beneath foundations."
   - question: "Do you service all Brockton neighborhoods?"

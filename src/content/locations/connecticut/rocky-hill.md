@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Rocky Hill?"
-    answer: "Foundation crack repair in Rocky Hill typically costs $800-$1,200 per crack. Rocky Hill's predominantly mid-century housing stock means most foundations are poured concrete—ideal for our injection repair method. Free consultations with transparent, no-pressure pricing."
+    answer: "Foundation crack repair in Rocky Hill typically costs $800-$1,300 per crack. Rocky Hill's predominantly mid-century housing stock means most foundations are poured concrete—ideal for our injection repair method. Free consultations with transparent, no-pressure pricing."
   - question: "Does the Connecticut River raise Rocky Hill's water table?"
     answer: "Yes. Rocky Hill stretches along the western bank of the Connecticut River, and the Great Meadow area in particular sits on low-lying river terrace soils with a seasonally high water table. Spring snowmelt and heavy rains push groundwater levels up, increasing hydrostatic pressure against basement walls. Homes closer to the river and in the Dividend neighborhood experience this most acutely."
   - question: "Why are 1950s-1970s Rocky Hill homes developing cracks now?"

@@ -109,7 +109,7 @@ These warrant a professional evaluation. We offer [free foundation consultations
 
 ## Now Go Enjoy Your Turkey
 
-You just did something that 90% of homeowners never do: you actually looked at your foundation. That five minutes of attention could save you thousands of dollars by catching problems early. Most [foundation repairs](/blog/foundation-repair-cost-guide-2026) cost $800-$1,200 per crack — a fraction of what people fear — especially when caught before freeze-thaw cycles have a chance to worsen them.
+You just did something that 90% of homeowners never do: you actually looked at your foundation. That five minutes of attention could save you thousands of dollars by catching problems early. Most [foundation repairs](/blog/foundation-repair-cost-guide-2026) cost $800-$1,300 per crack — a fraction of what people fear — especially when caught before freeze-thaw cycles have a chance to worsen them.
 
 Not sure if what you found is concerning? Text us a photo for assessment at [860-573-8760](sms:860-573-8760) (CT) or [617-668-1677](sms:617-668-1677) (MA). We can often tell you whether it needs attention from a photo alone.
 

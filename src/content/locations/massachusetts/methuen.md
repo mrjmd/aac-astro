@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Methuen?"
-    answer: "Foundation crack injection in Methuen typically costs $800 to $1,200 per crack for poured concrete walls. Older fieldstone foundations in downtown and the Loop neighborhoods may require mortar repointing at varying costs depending on wall size. We always provide a free estimate before starting work."
+    answer: "Foundation crack injection in Methuen typically costs $800 to $1,300 per crack for poured concrete walls. Older fieldstone foundations in downtown and the Loop neighborhoods may require mortar repointing at varying costs depending on wall size. We always provide a free estimate before starting work."
   - question: "How do the Merrimack and Spicket Rivers affect Methuen foundations?"
     answer: "Methuen sits between two rivers — the Merrimack along its southern border and the Spicket flowing through the city center. Both rivers raise the water table across large portions of the city, and homes in the Pleasant Valley and Marsh Corner areas are especially susceptible to groundwater-driven basement moisture. Spring snowmelt from southern New Hampshire amplifies the problem as both rivers swell."
   - question: "Are Methuen homes near the New Hampshire border different from those downtown?"

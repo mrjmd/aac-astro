@@ -70,7 +70,7 @@ More common in Braintree than in many neighboring towns, likely related to the v
 
 The most common crack type across all of Braintree's post-war housing stock. Concrete shrinks as it cures and as it ages, creating vertical cracks that are structurally harmless but can admit water.
 
-In Braintree, these cracks tend to leak during spring thaw and heavy rain — homeowners often report water in basement after rain — due to the elevated water table in many neighborhoods. [Foundation crack injection](/services/foundation-crack-injection) at $800-$1,200 per crack seals them permanently through the full 8-10 inches of concrete.
+In Braintree, these cracks tend to leak during spring thaw and heavy rain — homeowners often report water in basement after rain — due to the elevated water table in many neighborhoods. [Foundation crack injection](/services/foundation-crack-injection) at $800-$1,300 per crack seals them permanently through the full 8-10 inches of concrete.
 
 ### Block Foundation Deterioration
 

@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Dennis?"
-    answer: "Foundation crack repair in Dennis typically costs $800-$1,200 per crack. South-side properties in Dennis Port and West Dennis exposed to Nantucket Sound salt air may need enhanced marine-grade materials. We provide free estimates for all five Dennis villages."
+    answer: "Foundation crack repair in Dennis typically costs $800-$1,300 per crack. South-side properties in Dennis Port and West Dennis exposed to Nantucket Sound salt air may need enhanced marine-grade materials. We provide free estimates for all five Dennis villages."
   - question: "Do bayside and oceanside Dennis homes face different foundation problems?"
     answer: "Yes, significantly. Bayside homes in East Dennis and Dennis Center contend with Cape Cod Bay's cooler temperatures, steeper tidal range, and north-facing storm exposure from nor'easters. Oceanside properties in Dennis Port and West Dennis face Nantucket Sound's warmer, saltier water and southern hurricane exposure. Both sides deal with sandy soils and high water tables, but the specific moisture and wind patterns differ enough to affect how foundations deteriorate."
   - question: "Why do Dennis basements smell musty even without visible leaks?"

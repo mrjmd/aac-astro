@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Kingston?"
-    answer: "Foundation crack injection in Kingston typically costs $800 to $1,200. Kingston's poured concrete and concrete block foundations from the 1960s-1980s are well-suited to modern injection techniques. We provide free on-site estimates for all Kingston properties."
+    answer: "Foundation crack injection in Kingston typically costs $800 to $1,300. Kingston's poured concrete and concrete block foundations from the 1960s-1980s are well-suited to modern injection techniques. We provide free on-site estimates for all Kingston properties."
   - question: "How does the Jones River affect Kingston foundations?"
     answer: "The Jones River and its tributaries, including Silver Lake's outlet, maintain elevated groundwater across much of Kingston. Properties along the river corridor and in low-lying areas near Indian Pond face persistent hydrostatic pressure against foundation walls, particularly during spring snowmelt when the river system is at its highest."
   - question: "Do you service homes near Kingston's lakes and ponds?"

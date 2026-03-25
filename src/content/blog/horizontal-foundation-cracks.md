@@ -107,7 +107,7 @@ The injection fills the entire crack path — from the interior surface through 
 1. **Seals out water** completely
 2. **Restores structural continuity** to the wall
 
-A single crack injection typically costs $800-$1,200, depending on length and severity.
+A single crack injection typically costs $800-$1,300, depending on length and severity.
 
 ### Wall Anchors or Beams (Severe Cases)
 

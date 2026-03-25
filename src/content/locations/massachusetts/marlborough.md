@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Marlborough?"
-    answer: "Foundation crack injection in Marlborough typically costs $800-$1,200 per crack. Older fieldstone foundations in the downtown area may require mortar repointing and stabilization, quoted individually based on scope. We provide free on-site consultations for all Marlborough homes."
+    answer: "Foundation crack injection in Marlborough typically costs $800-$1,300 per crack. Older fieldstone foundations in the downtown area may require mortar repointing and stabilization, quoted individually based on scope. We provide free on-site consultations for all Marlborough homes."
   - question: "Why do Marlborough homes have foundation issues?"
     answer: "Marlborough's terrain includes significant elevation changes and glacial deposits that create variable soil conditions. Homes built during the city's rapid suburban growth along the I-495 corridor often sit on disturbed or filled soils, while older downtown properties have fieldstone foundations affected by centuries of moisture exposure and mortar deterioration."
   - question: "Can you repair old fieldstone foundations in downtown Marlborough?"

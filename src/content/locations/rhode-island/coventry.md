@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Coventry?"
-    answer: "Foundation crack repair in Coventry typically costs $800-$1,200 per crack. Most Coventry homes have poured concrete or block foundations that respond very well to our injection repair methods. We offer free assessments with clear, upfront pricing."
+    answer: "Foundation crack repair in Coventry typically costs $800-$1,300 per crack. Most Coventry homes have poured concrete or block foundations that respond very well to our injection repair methods. We offer free assessments with clear, upfront pricing."
   - question: "What causes foundation cracks in Coventry homes?"
     answer: "Coventry's inland location in western Rhode Island means homes experience more extreme temperature swings than coastal communities. The freeze-thaw cycle is particularly harsh here, causing concrete to expand and contract repeatedly. Rocky glacial soils can also create uneven settling that stresses foundations."
   - question: "Do you serve rural areas of Coventry?"

@@ -75,7 +75,7 @@ Small areas where the concrete surface is flaking or deteriorating.
 
 If water is coming through a crack — even occasionally, such as water in your basement after rain — DIY surface treatments won't work. Here's why:
 
-Surface sealers only address the visible crack. Water entering your foundation travels through the entire wall thickness (8-10 inches of concrete). [Professional crack injection](/services/foundation-crack-injection) at 100 PSI fills the complete crack path from inside to outside for $800-$1,200 per crack with a lifetime guarantee.
+Surface sealers only address the visible crack. Water entering your foundation travels through the entire wall thickness (8-10 inches of concrete). [Professional crack injection](/services/foundation-crack-injection) at 100 PSI fills the complete crack path from inside to outside for $800-$1,300 per crack with a lifetime guarantee.
 
 **DIY risk:** Surface sealing — including [spray-on products like Flex Seal](/blog/flex-seal-basement-cracks/) — can trap water inside the wall, leading to freeze-thaw damage in New England's clay-heavy soil and glacial till conditions, creating larger cracks and accelerating deterioration.
 
@@ -145,7 +145,7 @@ Home improvement stores sell injection kits for foundation cracks. Here's our ho
 | Rigid epoxy only | Flexible urethane or structural epoxy |
 | Surface preparation limited | Complete crack preparation |
 | No warranty | Lifetime guarantee |
-| Cost: $75-$200 per kit | Cost: $800-$1,200 per crack |
+| Cost: $75-$200 per kit | Cost: $800-$1,300 per crack |
 
 ## Our Approach: Honest Assessment First
 

@@ -26,7 +26,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Taunton?"
-    answer: "Foundation crack repair in Taunton typically costs $800-$1,200 per crack. Older fieldstone foundations in Weir Village and Whittenton may require mortar restoration at additional cost. We provide free consultations and honest quotes."
+    answer: "Foundation crack repair in Taunton typically costs $800-$1,300 per crack. Older fieldstone foundations in Weir Village and Whittenton may require mortar restoration at additional cost. We provide free consultations and honest quotes."
   - question: "How does the Taunton River affect local foundations?"
     answer: "The Taunton River and its tributaries raise the water table throughout much of the city, particularly in low-lying neighborhoods like Weir Village and East Taunton. Seasonal flooding events increase hydrostatic pressure against foundation walls, making crack sealing and drainage management essential for homes in these areas."
   - question: "Can you repair fieldstone foundations in older Taunton homes?"

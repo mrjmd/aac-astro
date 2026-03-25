@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Warwick?"
-    answer: "Foundation crack repair in Warwick typically costs $800-$1,200 per crack. Warwick's predominantly poured concrete and block foundations respond very well to our injection repair methods. We provide free on-site assessments with transparent, upfront pricing."
+    answer: "Foundation crack repair in Warwick typically costs $800-$1,300 per crack. Warwick's predominantly poured concrete and block foundations respond very well to our injection repair methods. We provide free on-site assessments with transparent, upfront pricing."
   - question: "Does Warwick's coastal location affect foundations?"
     answer: "Yes, Warwick's extensive shoreline along Narragansett Bay means many homes face elevated moisture levels and salt air exposure. The high water table near the coast increases hydrostatic pressure against foundation walls, and salt-laden air can accelerate concrete deterioration over time."
   - question: "Do you serve all Warwick neighborhoods?"

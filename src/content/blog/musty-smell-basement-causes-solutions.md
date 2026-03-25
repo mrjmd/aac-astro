@@ -42,7 +42,7 @@ The question is not "why does my basement smell musty?" The question is "where i
 
 **What is happening:** Water from saturated soil — often clay-heavy glacial till that holds moisture against the foundation — is entering through cracks in your foundation walls. Even hairline cracks can admit enough moisture to feed mold growth. The water does not have to be pooling on the floor — moisture wicking through a crack and evaporating on the interior surface is enough.
 
-**The fix:** [Foundation crack injection](/services/foundation-crack-injection) at $800-$1,200 per crack seals the crack from inside to outside at approximately 100 PSI, filling the full 8-10 inches of wall thickness. No water entry, no moisture, no mold food, no smell.
+**The fix:** [Foundation crack injection](/services/foundation-crack-injection) at $800-$1,300 per crack seals the crack from inside to outside at approximately 100 PSI, filling the full 8-10 inches of wall thickness. No water entry, no moisture, no mold food, no smell.
 
 This is the cause we see most often in New England basements. Our freeze-thaw cycles crack foundations, and cracked foundations let in water. It is a predictable cycle. For more on identifying crack-related problems, see [signs of foundation problems](/blog/signs-of-foundation-problems).
 

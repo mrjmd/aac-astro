@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Southington?"
-    answer: "Foundation crack repair in Southington typically ranges from $800-$1,200 per crack depending on severity and access. Most Southington homes have newer poured concrete foundations that respond very well to injection repair. We provide free consultations and transparent pricing."
+    answer: "Foundation crack repair in Southington typically ranges from $800-$1,300 per crack depending on severity and access. Most Southington homes have newer poured concrete foundations that respond very well to injection repair. We provide free consultations and transparent pricing."
   - question: "Why do newer Southington homes still get cracks?"
     answer: "Even well-built homes experience foundation cracking over time. Concrete naturally develops shrinkage cracks as it cures, and decades of Connecticut's freeze-thaw cycles and seasonal soil movement cause these cracks to grow. Southington's mix of clay and glacial soils adds to the stress on foundations throughout the town."
   - question: "Do you work in Plantsville and Milldale?"

@@ -37,7 +37,7 @@ These ranges reflect what our Quincy-area customers typically pay:
 
 | Repair Type | Typical Cost Range | Average |
 |---|---|---|
-| Single crack injection | $800 – $1,200 | $1,000 |
+| Single crack injection | $800 – $1,300 | $1,000 |
 | Multiple crack injection (2-4 cracks) | $800 – $2,500 | $1,500 |
 | Carbon fiber stitching (per strap) | $800 – $1,500 | $1,100 |
 | Wall crack repair with reinforcement | $1,500 – $4,000 | $2,500 |
@@ -74,7 +74,7 @@ Rather than abstract numbers, here are scenarios we see regularly.
 
 **What it looks like:** One vertical crack in a poured concrete wall, actively leaking during rain or high water table events.
 
-**Typical Quincy cost:** $800 to $1,200
+**Typical Quincy cost:** $800 to $1,300
 
 **What is included:** Polyurethane injection to seal the crack permanently, with a lifetime warranty. This is our most common repair in Quincy. Most of the [foundation crack injection](/services/foundation-crack-injection) work we do falls in this range.
 

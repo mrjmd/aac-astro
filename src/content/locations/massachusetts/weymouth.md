@@ -27,7 +27,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Weymouth?"
-    answer: "Foundation repair in Weymouth typically ranges from $800 to $1,200 for crack injection, depending on the crack size and foundation type. Homes in coastal areas like North Weymouth or Wessagusset may have additional moisture-related concerns that can influence the repair approach. We provide free estimates for all Weymouth properties."
+    answer: "Foundation repair in Weymouth typically ranges from $800 to $1,300 for crack injection, depending on the crack size and foundation type. Homes in coastal areas like North Weymouth or Wessagusset may have additional moisture-related concerns that can influence the repair approach. We provide free estimates for all Weymouth properties."
   - question: "Why do homes near the former South Weymouth Naval Air Station have foundation problems?"
     answer: "The South Weymouth area was developed rapidly after the naval base era, and many homes were built on land with varied soil compositions. Fill material used during development can settle unevenly over decades, placing stress on foundations. Combined with the area's relatively high water table, these conditions create persistent moisture and cracking challenges."
   - question: "Are Weymouth's coastal homes more prone to foundation issues?"

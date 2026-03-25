@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Braintree?"
-    answer: "Foundation crack repair in Braintree typically costs $800-$1,200 per crack using professional injection methods. Most homes in town have poured concrete or concrete block foundations from the post-war building era that respond well to epoxy and polyurethane injection. We provide free on-site estimates for all Braintree properties."
+    answer: "Foundation crack repair in Braintree typically costs $800-$1,300 per crack using professional injection methods. Most homes in town have poured concrete or concrete block foundations from the post-war building era that respond well to epoxy and polyurethane injection. We provide free on-site estimates for all Braintree properties."
   - question: "Why do Braintree foundations crack near the Monatiquot River?"
     answer: "The Monatiquot River and its tributaries create elevated water tables across much of Braintree, particularly in the Pond Plain and South Braintree areas. Glacial clay deposits along the river corridor retain moisture and expand during wet seasons, exerting hydrostatic pressure against basement walls. This recurring pressure cycle causes even well-built concrete foundations to develop cracks over time."
   - question: "Do you service all neighborhoods in Braintree?"

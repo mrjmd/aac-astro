@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Holbrook?"
-    answer: "Foundation crack repair in Holbrook typically ranges from $800 to $1,200 for injection repair. Holbrook's compact lots and older concrete block foundations are common repair targets. We provide free on-site estimates for all Holbrook homeowners."
+    answer: "Foundation crack repair in Holbrook typically ranges from $800 to $1,300 for injection repair. Holbrook's compact lots and older concrete block foundations are common repair targets. We provide free on-site estimates for all Holbrook homeowners."
   - question: "How does the Cochato River affect foundations in Holbrook?"
     answer: "The Cochato River and its tributaries create elevated groundwater levels throughout Holbrook, particularly in the low-lying central areas. Homes built on the small lots typical of post-war Holbrook often have minimal setback from drainage features, and the persistent moisture drives hydrostatic pressure against basement walls year-round, accelerating crack formation and water infiltration."
   - question: "Are Holbrook's small-lot homes at greater risk for foundation problems?"

@@ -32,11 +32,11 @@ Our team inspected the property and determined the crack posed no structural ris
 
 ## The Solution: Crack Injection Through Finished Walls
 
-The repair employed our [foundation crack injection](/services/foundation-crack-injection) method, injecting polyurethane resin at 100 PSI through the full 8-10 inches of concrete from inside to outside. The typical cost for a single crack injection is $800-$1,200, and the homeowner appreciated our reasonable pricing and lifetime guarantee — if the repaired crack ever leaked again, they wouldn't pay a penny for repairs.
+The repair employed our [foundation crack injection](/services/foundation-crack-injection) method, injecting polyurethane resin at 100 PSI through the full 8-10 inches of concrete from inside to outside. The typical cost for a single crack injection is $800-$1,300, and the homeowner appreciated our reasonable pricing and lifetime guarantee — if the repaired crack ever leaked again, they wouldn't pay a penny for repairs.
 
 ## When NOT to Finish a Basement Without Fixing Cracks First
 
-This case highlights a critical lesson: never finish a basement without first inspecting and repairing all foundation cracks. Water in your basement after rain will find any existing crack, and once that crack is hidden behind drywall or paneling, the damage compounds silently — mold grows, wood framing rots, and what would have been a $800-$1,200 repair becomes thousands in water damage restoration.
+This case highlights a critical lesson: never finish a basement without first inspecting and repairing all foundation cracks. Water in your basement after rain will find any existing crack, and once that crack is hidden behind drywall or paneling, the damage compounds silently — mold grows, wood framing rots, and what would have been a $800-$1,300 repair becomes thousands in water damage restoration.
 
 ## Peace of Mind
 

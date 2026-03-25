@@ -96,7 +96,7 @@ How you handle snow in the last weeks of winter directly affects your foundation
 
 If your inspection reveals cracks that need attention, the ideal repair window is late winter to early spring -- before heavy rains arrive.
 
-[Foundation crack injection](/services/foundation-crack-injection) ($800-$1,200 per crack) can be done year-round, including during cold weather. [Wall crack repair](/services/wall-crack-repair) and [carbon fiber staples (stitches)](/services/carbon-fiber-stitches) are similarly season-independent. The advantage of repairing before thaw is simple: you seal the crack before the water arrives.
+[Foundation crack injection](/services/foundation-crack-injection) ($800-$1,300 per crack) can be done year-round, including during cold weather. [Wall crack repair](/services/wall-crack-repair) and [carbon fiber staples (stitches)](/services/carbon-fiber-stitches) are similarly season-independent. The advantage of repairing before thaw is simple: you seal the crack before the water arrives.
 
 Waiting until after the damage is not the end of the world -- we repair mid-leak all the time. But the water that came through before the repair may have already caused mold or damaged belongings.
 

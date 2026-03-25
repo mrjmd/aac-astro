@@ -27,7 +27,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in New Bedford?"
-    answer: "Foundation repair in New Bedford typically costs between $800 and $1,200 for crack injection. The city's historic homes often have granite or fieldstone foundations requiring specialized repair techniques. Free estimates available for all New Bedford properties."
+    answer: "Foundation repair in New Bedford typically costs between $800 and $1,300 for crack injection. The city's historic homes often have granite or fieldstone foundations requiring specialized repair techniques. Free estimates available for all New Bedford properties."
   - question: "Why do New Bedford's historic homes have foundation problems?"
     answer: "New Bedford's whaling-era prosperity produced substantial homes built to last—but even the finest 19th-century construction needs attention after 150 years. Mortar deteriorates, drainage systems fail, and the city's proximity to the harbor creates persistent moisture challenges."
   - question: "Do you work in New Bedford's historic district?"

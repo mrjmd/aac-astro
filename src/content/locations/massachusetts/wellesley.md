@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Wellesley?"
-    answer: "Foundation crack repair in Wellesley typically costs $800-$1,200 per crack. Older fieldstone and brick foundations found in many Wellesley homes may require additional stabilization work, quoted on a per-project basis. We provide free consultations and honest quotes."
+    answer: "Foundation crack repair in Wellesley typically costs $800-$1,300 per crack. Older fieldstone and brick foundations found in many Wellesley homes may require additional stabilization work, quoted on a per-project basis. We provide free consultations and honest quotes."
   - question: "How do you handle foundation repair on Wellesley's older estate homes?"
     answer: "Many Wellesley homes built in the 1920s-1940s feature fieldstone or brick foundations that require specialized restoration techniques. We use historically compatible mortars and stabilization methods that preserve the home's structural character while delivering modern waterproofing performance."
   - question: "Will foundation problems affect my Wellesley home's resale value?"

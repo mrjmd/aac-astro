@@ -26,7 +26,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Randolph?"
-    answer: "Foundation crack repair in Randolph typically ranges from $800 to $1,200 for injection repair. Post-war concrete block and poured foundations each require specific repair methods. We provide free on-site estimates for all Randolph homes."
+    answer: "Foundation crack repair in Randolph typically ranges from $800 to $1,300 for injection repair. Post-war concrete block and poured foundations each require specific repair methods. We provide free on-site estimates for all Randolph homes."
   - question: "Why are clay soils a problem for Randolph foundations?"
     answer: "The clay-rich soils around the Blue Hills region expand when saturated and shrink during dry periods, creating cyclical pressure against foundation walls. Randolph's post-war homes were often built on minimally prepared clay subgrades, making them especially vulnerable to lateral soil pressure and hydrostatic water intrusion."
   - question: "How quickly can you respond to a foundation issue in Randolph?"

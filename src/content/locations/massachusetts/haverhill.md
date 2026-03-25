@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Haverhill?"
-    answer: "Foundation repair in Haverhill typically ranges from $800 to $1,200 for crack injection, depending on the foundation type and severity of damage. Haverhill's mix of older downtown buildings and mid-century suburban homes means repair approaches vary by location. We provide free estimates for all Haverhill properties."
+    answer: "Foundation repair in Haverhill typically ranges from $800 to $1,300 for crack injection, depending on the foundation type and severity of damage. Haverhill's mix of older downtown buildings and mid-century suburban homes means repair approaches vary by location. We provide free estimates for all Haverhill properties."
   - question: "How does the Merrimack River affect Haverhill foundations?"
     answer: "The Merrimack River runs directly through Haverhill, and homes in riverside neighborhoods like Bradford, Riverside, and the downtown area experience elevated water tables that fluctuate with river levels. Heavy rain and spring snowmelt raise the river and surrounding groundwater simultaneously, creating seasonal surges of hydrostatic pressure against foundations in low-lying areas."
   - question: "Are older Haverhill homes near downtown prone to foundation issues?"

@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Leominster?"
-    answer: "Foundation crack repair in Leominster typically costs $800-$1,200 per crack using professional injection methods. Most mid-century homes in town have poured concrete or concrete block foundations that respond well to epoxy and polyurethane injection. Older fieldstone foundations in historic neighborhoods may require repointing at higher costs. We provide free on-site estimates for all Leominster properties."
+    answer: "Foundation crack repair in Leominster typically costs $800-$1,300 per crack using professional injection methods. Most mid-century homes in town have poured concrete or concrete block foundations that respond well to epoxy and polyurethane injection. Older fieldstone foundations in historic neighborhoods may require repointing at higher costs. We provide free on-site estimates for all Leominster properties."
   - question: "What causes foundation problems in Leominster's clay soils?"
     answer: "Leominster sits on clay-heavy glacial deposits that expand significantly when wet and shrink as they dry. This seasonal volume change exerts lateral pressure against basement walls during wet periods and allows settlement during dry spells. Properties near Monoosnock Brook and in lower-lying areas like Gates Crossing face compounded issues from a high water table that keeps these clay soils saturated for months at a time."
   - question: "Do you repair foundations in all Leominster neighborhoods?"

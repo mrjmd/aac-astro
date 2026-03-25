@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Andover?"
-    answer: "Crack injection on poured concrete foundations in Andover costs $800 to $1,200 per crack. Fieldstone foundation work in the older village areas runs higher depending on wall condition and the extent of mortar deterioration. We provide free on-site estimates for every Andover property."
+    answer: "Crack injection on poured concrete foundations in Andover costs $800 to $1,300 per crack. Fieldstone foundation work in the older village areas runs higher depending on wall condition and the extent of mortar deterioration. We provide free on-site estimates for every Andover property."
   - question: "Do the older homes near Andover Center have different foundation issues?"
     answer: "Yes, the village center and Ballardvale area contain homes dating to the 1800s with fieldstone or rubble foundations that face different challenges than mid-century concrete. These foundations lose mortar over time, allowing water to seep between stones and causing sections to shift. We use specialized repointing and stabilization methods designed for these historic wall types."
   - question: "How does the Shawsheen River affect foundations in Andover?"

@@ -26,7 +26,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in West Hartford?"
-    answer: "Foundation crack repair in West Hartford typically costs $800-$1,200 per crack. West Hartford's well-maintained housing stock often means catching cracks early, when repairs are most straightforward and affordable."
+    answer: "Foundation crack repair in West Hartford typically costs $800-$1,300 per crack. West Hartford's well-maintained housing stock often means catching cracks early, when repairs are most straightforward and affordable."
   - question: "Are West Hartford's older homes more prone to foundation cracks?"
     answer: "West Hartford has many homes from the 1920s-1960s, an era when quality construction was standard. While age does bring normal settlement cracking, these foundations are generally sound. Most cracks we repair are maintenance issues, not structural concerns."
   - question: "How long does a typical foundation repair take in West Hartford?"

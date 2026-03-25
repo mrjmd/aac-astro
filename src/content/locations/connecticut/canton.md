@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Canton?"
-    answer: "Foundation crack repair in Canton typically costs $800-$1,200 per crack for poured concrete foundations. Canton's hilly terrain and older housing stock mean we see a wide range of foundation conditions. We offer free consultations and straightforward pricing—no surprises."
+    answer: "Foundation crack repair in Canton typically costs $800-$1,300 per crack for poured concrete foundations. Canton's hilly terrain and older housing stock mean we see a wide range of foundation conditions. We offer free consultations and straightforward pricing—no surprises."
   - question: "Why do Canton's hillside homes develop foundation cracks?"
     answer: "Canton's hilly terrain means many homes are built into slopes, with one or more foundation walls partially or fully exposed to earth. Water flows downhill through the glacial till and collects against these walls, creating persistent hydrostatic pressure. The Farmington River valley's seasonal flooding and freeze-thaw cycles compound the problem, making Canton foundations particularly vulnerable to cracking and water infiltration."
   - question: "Can you work on older foundations in Collinsville?"

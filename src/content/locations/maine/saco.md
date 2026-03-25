@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Saco?"
-    answer: "Foundation crack repair in Saco typically costs $800-$1,200 per crack. Properties near the Saco River or coast may have more complex moisture issues that we address during the repair. We always provide free assessments and transparent pricing."
+    answer: "Foundation crack repair in Saco typically costs $800-$1,300 per crack. Properties near the Saco River or coast may have more complex moisture issues that we address during the repair. We always provide free assessments and transparent pricing."
   - question: "Does flooding along the Saco River damage home foundations?"
     answer: "The Saco River regularly floods during spring snowmelt, and homes in low-lying areas experience repeated cycles of water pressure against their foundations. Even homes that do not flood above floor level can suffer from hydrostatic pressure that forces water through basement wall cracks. Over time, this repeated stress widens existing cracks and creates new ones."
   - question: "Are Camp Ellis homes at higher risk for foundation problems?"

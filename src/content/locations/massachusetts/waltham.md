@@ -26,7 +26,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Waltham?"
-    answer: "Foundation crack repair in Waltham typically costs $800-$1,200 per crack. Older brick foundations in Waltham Center and South Waltham may require additional mortar restoration work. We provide free consultations and honest quotes."
+    answer: "Foundation crack repair in Waltham typically costs $800-$1,300 per crack. Older brick foundations in Waltham Center and South Waltham may require additional mortar restoration work. We provide free consultations and honest quotes."
   - question: "Do Waltham's older industrial-era homes have unique foundation issues?"
     answer: "Yes, many Waltham homes built during the city's industrial heyday feature brick and early concrete foundations that used construction methods now considered outdated. These foundations often lack modern waterproofing and can develop mortar deterioration, efflorescence, and structural settling. We specialize in restoring these older foundation systems."
   - question: "How does the Charles River affect Waltham foundations?"

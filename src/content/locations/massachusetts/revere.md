@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Revere?"
-    answer: "Foundation crack injection in Revere typically costs $800 to $1,200 per crack. Homes in coastal flood zones or with salt-damaged concrete may require additional waterproofing measures. We provide free on-site estimates so you know the full scope before any work starts."
+    answer: "Foundation crack injection in Revere typically costs $800 to $1,300 per crack. Homes in coastal flood zones or with salt-damaged concrete may require additional waterproofing measures. We provide free on-site estimates so you know the full scope before any work starts."
   - question: "Does salt air from Revere Beach damage foundations?"
     answer: "Yes, salt air accelerates concrete deterioration through a process called chloride intrusion, which corrodes the steel reinforcement inside poured concrete and causes spalling and cracking. Homes in the Beachmont, Point of Pines, and Revere Beach neighborhoods are particularly affected. We use marine-grade repair materials designed to withstand ongoing salt exposure in coastal environments."
   - question: "Are Revere homes in flood zones at higher risk for foundation damage?"

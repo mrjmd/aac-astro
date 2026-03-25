@@ -132,7 +132,7 @@ Many hairline vertical cracks, especially in poured foundations less than 20 yea
 
 ### "This Needs Repair but Is Not Urgent"
 
-Cracks leaking intermittently, showing efflorescence, or wider than 1/8 inch need attention — but you have time to schedule it. We will explain the repair method ([crack injection](/services/foundation-crack-injection) at $800-$1,200 per crack for most wall cracks) and give you a clear quote. See our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) for detailed pricing.
+Cracks leaking intermittently, showing efflorescence, or wider than 1/8 inch need attention — but you have time to schedule it. We will explain the repair method ([crack injection](/services/foundation-crack-injection) at $800-$1,300 per crack for most wall cracks) and give you a clear quote. See our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) for detailed pricing.
 
 ### "This Needs Repair Soon"
 

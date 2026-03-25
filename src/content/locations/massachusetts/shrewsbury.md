@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Shrewsbury?"
-    answer: "Foundation crack repair in Shrewsbury typically costs $800-$1,200 per crack. Most Shrewsbury homes have poured concrete or block foundations from the 1960s-1980s that respond well to standard injection repair. We provide free consultations and honest quotes."
+    answer: "Foundation crack repair in Shrewsbury typically costs $800-$1,300 per crack. Most Shrewsbury homes have poured concrete or block foundations from the 1960s-1980s that respond well to standard injection repair. We provide free consultations and honest quotes."
   - question: "Do homes near Lake Quinsigamond have more basement water issues?"
     answer: "Properties in the Lake Quinsigamond area and along Edgemere face consistently higher water tables that increase hydrostatic pressure on foundations. This makes basement seepage through cracks and cold joints more common than in other parts of Shrewsbury. Professional waterproofing and crack sealing are highly recommended for lakeside homes."
   - question: "Why is my Shrewsbury foundation cracking if my home is only 40-50 years old?"

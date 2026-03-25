@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Natick?"
-    answer: "Foundation crack repair in Natick typically costs $800-$1,200 per crack. Homes near Lake Cochituate or in low-lying areas of South Natick may need additional waterproofing measures. We provide free consultations and honest quotes."
+    answer: "Foundation crack repair in Natick typically costs $800-$1,300 per crack. Homes near Lake Cochituate or in low-lying areas of South Natick may need additional waterproofing measures. We provide free consultations and honest quotes."
   - question: "Do homes near Lake Cochituate have more foundation problems?"
     answer: "Yes, properties near Lake Cochituate and along the Charles River corridor in South Natick face higher water tables that increase hydrostatic pressure on foundations. This leads to more frequent basement seepage and wall cracks. We recommend proactive waterproofing for homes in these areas."
   - question: "What causes foundation cracks in Natick's postwar homes?"

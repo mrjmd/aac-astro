@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Scituate?"
-    answer: "Foundation crack repair in Scituate typically costs $800-$1,200 per crack. Coastal homes often require specialized waterproofing materials due to salt air exposure, which can affect pricing. We provide free consultations and honest quotes."
+    answer: "Foundation crack repair in Scituate typically costs $800-$1,300 per crack. Coastal homes often require specialized waterproofing materials due to salt air exposure, which can affect pricing. We provide free consultations and honest quotes."
   - question: "Does salt air damage foundations in Scituate?"
     answer: "Yes, Scituate's oceanfront location means salt-laden air accelerates concrete deterioration and steel reinforcement corrosion. Homes in Scituate Harbor and Humarock are especially vulnerable. We use marine-grade sealants designed to withstand coastal conditions."
   - question: "Are Scituate homes near the hurricane barrier at higher risk for foundation problems?"

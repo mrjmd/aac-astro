@@ -26,7 +26,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Glastonbury?"
-    answer: "Foundation crack repair in Glastonbury typically costs $800-$1,200 per crack. Given the higher home values in Glastonbury, protecting your foundation is an investment that pays for itself many times over at resale. We provide free consultations and honest assessments."
+    answer: "Foundation crack repair in Glastonbury typically costs $800-$1,300 per crack. Given the higher home values in Glastonbury, protecting your foundation is an investment that pays for itself many times over at resale. We provide free consultations and honest assessments."
   - question: "Why do Glastonbury homes get foundation cracks?"
     answer: "Despite being relatively newer construction compared to surrounding towns, Glastonbury homes still develop foundation cracks from Connecticut's aggressive freeze-thaw cycles. The town's varied terrain—from the river valley to the Minnechaug ridge—means soil conditions vary significantly, and all foundations eventually experience some cracking."
   - question: "Will foundation repair affect my Glastonbury home's resale value?"

@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Needham?"
-    answer: "Foundation crack repair in Needham typically costs $800-$1,200 per crack. Homes in Charles River Village and other low-lying areas may benefit from additional waterproofing, which we quote after inspection. We provide free consultations and honest quotes."
+    answer: "Foundation crack repair in Needham typically costs $800-$1,300 per crack. Homes in Charles River Village and other low-lying areas may benefit from additional waterproofing, which we quote after inspection. We provide free consultations and honest quotes."
   - question: "Why do Needham homes near the Charles River have wet basements?"
     answer: "Properties in Charles River Village and the lower elevations of Needham sit close to the river's flood plain, where the water table remains high year-round. This creates constant hydrostatic pressure that forces moisture through foundation cracks and joints. Proper crack sealing combined with drainage management resolves most issues."
   - question: "Are postwar block foundations in Needham prone to problems?"

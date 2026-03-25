@@ -97,7 +97,7 @@ When you call Attack A Crack for an urgent situation, here is what happens:
 
 **Assessment first.** We figure out exactly what is going on before we touch anything. This usually takes 15-30 minutes and involves examining the crack, the water flow, the exterior conditions, and the overall wall condition. With thousands of projects across New England, we have seen virtually every scenario.
 
-**For actively leaking cracks,** we use [foundation crack injection](/services/foundation-crack-injection) — injecting polyurethane resin at 100 PSI directly into the crack through the full 8-10 inches of concrete, which reacts with water to form a flexible, permanent waterproof seal. Most crack injection repairs cost $800-$1,200 per crack with a lifetime guarantee.
+**For actively leaking cracks,** we use [foundation crack injection](/services/foundation-crack-injection) — injecting polyurethane resin at 100 PSI directly into the crack through the full 8-10 inches of concrete, which reacts with water to form a flexible, permanent waterproof seal. Most crack injection repairs cost $800-$1,300 per crack with a lifetime guarantee.
 
 **For structural concerns like bowing walls,** the solution may involve [carbon fiber staples (stitches)](/services/carbon-fiber-stitches) at $200-$300 per stitch or steel reinforcement. We will be straight with you about what it requires — we do not upsell structural work when injection will do, and we do not downplay structural issues to make a cheaper sale.
 

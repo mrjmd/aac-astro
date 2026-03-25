@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Somerset?"
-    answer: "Foundation crack repair in Somerset typically costs $800-$1,200 per crack using professional injection methods. Most homes in town have poured concrete or concrete block foundations from the mid-century building period that respond well to epoxy and polyurethane injection. We provide free on-site estimates for all Somerset properties."
+    answer: "Foundation crack repair in Somerset typically costs $800-$1,300 per crack using professional injection methods. Most homes in town have poured concrete or concrete block foundations from the mid-century building period that respond well to epoxy and polyurethane injection. We provide free on-site estimates for all Somerset properties."
   - question: "Why are high water tables a problem for Somerset foundations?"
     answer: "Somerset sits along the Taunton River estuary where tidal influence keeps groundwater levels elevated year-round, especially in the Riverside and Brayton Point neighborhoods. This persistent hydrostatic pressure pushes water against basement walls through cracks, cold joints, and deteriorating mortar in block foundations. Seasonal flooding events compound the problem by saturating soils that already drain poorly due to the area's clay and silt composition."
   - question: "Do you service all areas of Somerset?"

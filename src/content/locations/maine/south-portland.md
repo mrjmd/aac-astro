@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in South Portland?"
-    answer: "Foundation crack repair in South Portland typically costs $800-$1,200 per crack. Homes near the waterfront often have additional moisture concerns that we address during the repair process. We provide free on-site assessments with honest, transparent pricing."
+    answer: "Foundation crack repair in South Portland typically costs $800-$1,300 per crack. Homes near the waterfront often have additional moisture concerns that we address during the repair process. We provide free on-site assessments with honest, transparent pricing."
   - question: "Are South Portland homes near the coast more at risk?"
     answer: "Yes, homes in waterfront neighborhoods like Willard Beach and Pleasantdale face elevated risks from high water tables, salt air exposure, and storm surge moisture. These conditions accelerate concrete deterioration and can cause cracks to form more quickly than in inland areas. Regular foundation inspections are especially important for coastal properties."
   - question: "Can you fix a cracked basement floor in South Portland?"

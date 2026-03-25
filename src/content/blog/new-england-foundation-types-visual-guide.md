@@ -32,7 +32,7 @@ The most common foundation type in New England by a wide margin. If your home wa
 
 **Common problems:** Poured concrete cracks — that is physics, not a defect. Vertical or slightly diagonal cracks from shrinkage and settlement are the most common and most straightforward to repair. Horizontal cracks indicate lateral soil pressure and need prompt attention.
 
-**Repair approach:** The easiest foundation type to fix. Cracks can be sealed permanently with [foundation crack injection](/services/foundation-crack-injection) at $800-$1,200 per crack, filling the crack from front to back with epoxy or polyurethane resin at approximately 100 PSI. See our [poured concrete foundation repair guide](/blog/poured-concrete-foundation-repair) for the full picture.
+**Repair approach:** The easiest foundation type to fix. Cracks can be sealed permanently with [foundation crack injection](/services/foundation-crack-injection) at $800-$1,300 per crack, filling the crack from front to back with epoxy or polyurethane resin at approximately 100 PSI. See our [poured concrete foundation repair guide](/blog/poured-concrete-foundation-repair) for the full picture.
 
 ## Cinderblock / CMU (1930s-1970s)
 

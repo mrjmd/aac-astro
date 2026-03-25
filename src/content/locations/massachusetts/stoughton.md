@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Stoughton?"
-    answer: "Crack injection for poured concrete foundations in Stoughton typically costs $800 to $1,200 per crack. Block foundation repairs vary based on the extent of mortar deterioration and any structural bowing. We provide free on-site estimates for every Stoughton homeowner."
+    answer: "Crack injection for poured concrete foundations in Stoughton typically costs $800 to $1,300 per crack. Block foundation repairs vary based on the extent of mortar deterioration and any structural bowing. We provide free on-site estimates for every Stoughton homeowner."
   - question: "What soil conditions cause foundation problems in Stoughton?"
     answer: "Stoughton's glacial geology includes pockets of clay till mixed with sandy outwash, creating uneven soil behavior across the town. Clay areas expand when wet and contract when dry, generating cyclical lateral pressure on basement walls. The Stoughton Brook corridor and low-lying areas near Ames Pond maintain elevated groundwater that adds hydrostatic pressure, pushing water through cracks in aging concrete and block foundations."
   - question: "Are Stoughton's 1950s-era homes at higher risk?"

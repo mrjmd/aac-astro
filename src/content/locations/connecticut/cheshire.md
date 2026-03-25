@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Cheshire?"
-    answer: "Foundation crack repair in Cheshire typically ranges from $800-$1,200 per crack depending on severity and access. Most Cheshire homes have poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
+    answer: "Foundation crack repair in Cheshire typically ranges from $800-$1,300 per crack depending on severity and access. Most Cheshire homes have poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
   - question: "What causes foundation issues in Cheshire?"
     answer: "Cheshire's varied terrain—ranging from low-lying areas near linear trail to hilltop neighborhoods—creates different drainage patterns that stress foundations in different ways. Clay and glacial soils throughout the town expand and contract seasonally, and Connecticut's freeze-thaw cycles widen cracks over time."
   - question: "Does Cheshire's terrain affect foundations differently?"

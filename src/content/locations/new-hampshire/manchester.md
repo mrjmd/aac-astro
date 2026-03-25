@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Manchester?"
-    answer: "Foundation crack repair in Manchester typically ranges from $800-$1,200 per crack. Older homes near the mill district with fieldstone foundations may require specialized techniques. We offer free on-site assessments for all Manchester properties with no obligation."
+    answer: "Foundation crack repair in Manchester typically ranges from $800-$1,300 per crack. Older homes near the mill district with fieldstone foundations may require specialized techniques. We offer free on-site assessments for all Manchester properties with no obligation."
   - question: "Are Manchester's older mill-area homes more prone to foundation issues?"
     answer: "Yes, the homes built around Manchester's historic mill district often have older fieldstone or block foundations that are more susceptible to water infiltration and structural settling. The Merrimack River proximity also raises the water table in these neighborhoods, increasing hydrostatic pressure against basement walls year-round."
   - question: "How deep do foundations need to be in Manchester, NH?"

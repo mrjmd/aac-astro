@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Bristol?"
-    answer: "Foundation crack repair in Bristol typically costs $800-$1,200 per crack. Bristol's mix of historic and mid-century homes means foundation types vary, and we tailor our approach to each. We provide free on-site evaluations with honest, upfront pricing."
+    answer: "Foundation crack repair in Bristol typically costs $800-$1,300 per crack. Bristol's mix of historic and mid-century homes means foundation types vary, and we tailor our approach to each. We provide free on-site evaluations with honest, upfront pricing."
   - question: "Does Bristol's coastal location cause foundation problems?"
     answer: "Yes, Bristol is surrounded by water on three sides, with Narragansett Bay to the west and Mount Hope Bay to the east. This creates consistently high water tables that push groundwater against foundation walls. Salt air also gradually deteriorates concrete and mortar in exposed foundations."
   - question: "Can you repair stone foundations in Bristol's older homes?"

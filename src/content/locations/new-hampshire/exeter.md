@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Exeter?"
-    answer: "Foundation crack repair in Exeter typically costs $800-$1,200 per crack for poured concrete foundations. Historic fieldstone or brick foundations in the downtown area may require specialized assessment. We provide free evaluations and transparent pricing for all Exeter properties."
+    answer: "Foundation crack repair in Exeter typically costs $800-$1,300 per crack for poured concrete foundations. Historic fieldstone or brick foundations in the downtown area may require specialized assessment. We provide free evaluations and transparent pricing for all Exeter properties."
   - question: "Can you repair historic foundations near downtown Exeter?"
     answer: "Yes, Exeter has some of New Hampshire's finest historic homes, many dating to the 18th and 19th centuries with original fieldstone or brick foundations. We use specialized techniques to seal and stabilize these foundations without compromising their historic character. Our methods are effective on mortar joints, stone walls, and old brick alike."
   - question: "Does the Exeter River affect nearby foundations?"

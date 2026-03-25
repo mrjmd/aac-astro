@@ -26,7 +26,7 @@ faqs:
   - question: "Is Flex Seal safe to use indoors in a basement?"
     answer: "Flex Seal products require adequate ventilation during application. In an enclosed basement with limited airflow, the fumes can be significant. Always open windows or use fans when applying any spray sealant product indoors."
   - question: "What is better than Flex Seal for basement cracks?"
-    answer: "Professional crack injection using polyurethane or epoxy resin is the proven fix for leaking basement cracks. The resin is injected under pressure through the full 8-10 inch wall thickness, chemically bonds to the concrete, and creates a permanent seal. It costs $800-$1,200 per crack but comes with a lifetime guarantee — unlike Flex Seal which needs repeated reapplication."
+    answer: "Professional crack injection using polyurethane or epoxy resin is the proven fix for leaking basement cracks. The resin is injected under pressure through the full 8-10 inch wall thickness, chemically bonds to the concrete, and creates a permanent seal. It costs $800-$1,300 per crack but comes with a lifetime guarantee — unlike Flex Seal which needs repeated reapplication."
   - question: "Will Flex Seal on a basement crack affect a home inspection?"
     answer: "Yes. Home inspectors flag visible Flex Seal patches on foundation cracks as evidence of unresolved water infiltration. A DIY surface repair can raise concerns during a home sale and may result in the buyer requiring professional repair as a condition of closing."
 ---
@@ -108,7 +108,7 @@ Professional [crack injection](/services/foundation-crack-injection) fills the e
 - **Resists hydrostatic pressure** — the cured resin fills the entire void, leaving no pathway for water regardless of soil pressure
 - **One-time repair** — a properly injected crack does not reopen. We back every repair with a lifetime guarantee.
 
-The cost difference is real — a can of Flex Seal is $15, while professional crack injection runs $800 to $1,200 per crack. But the Flex Seal approach means buying multiple cans, reapplying every few months, and watching the crack get worse. The injection is a one-time permanent repair.
+The cost difference is real — a can of Flex Seal is $15, while professional crack injection runs $800 to $1,300 per crack. But the Flex Seal approach means buying multiple cans, reapplying every few months, and watching the crack get worse. The injection is a one-time permanent repair.
 
 ## The Honest Bottom Line
 

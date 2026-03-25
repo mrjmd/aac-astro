@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Londonderry?"
-    answer: "Foundation crack repair in Londonderry typically costs $800-$1,200 per crack. Since most Londonderry homes are relatively newer construction from the 1980s-2000s with poured concrete foundations, repairs are usually straightforward. We provide free estimates with no obligation."
+    answer: "Foundation crack repair in Londonderry typically costs $800-$1,300 per crack. Since most Londonderry homes are relatively newer construction from the 1980s-2000s with poured concrete foundations, repairs are usually straightforward. We provide free estimates with no obligation."
   - question: "Why do newer Londonderry homes still get foundation cracks?"
     answer: "Even homes built in the 1990s and 2000s develop foundation cracks in New Hampshire's climate. The deep frost line of 4-5 feet, combined with Londonderry's mix of clay soils and granite ledge, creates constant stress on foundation walls. Concrete naturally shrinks as it cures, and these shrinkage cracks become entry points for water that worsens damage through freeze-thaw cycling."
   - question: "Can foundation cracks affect my Londonderry home's resale value?"

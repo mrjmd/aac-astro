@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in York?"
-    answer: "Foundation crack repair in York typically costs $800-$1,200 per crack. Older homes in York Village and harbor-area properties may have specialized needs that we are well-equipped to handle. We offer free assessments and clear, honest pricing."
+    answer: "Foundation crack repair in York typically costs $800-$1,300 per crack. Older homes in York Village and harbor-area properties may have specialized needs that we are well-equipped to handle. We offer free assessments and clear, honest pricing."
   - question: "Why are York's coastal properties especially vulnerable to foundation damage?"
     answer: "York's coastal neighborhoods at York Beach, York Harbor, and Cape Neddick are exposed to direct ocean weather including Nor'easters, salt spray, and tidal moisture fluctuations. The marine clay soils common along the coast expand and contract with moisture changes, placing cyclic stress on foundation walls. These combined forces can crack foundations much faster than in sheltered inland locations."
   - question: "Can you work on foundations in York's historic district?"

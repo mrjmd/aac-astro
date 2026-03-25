@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Attleboro?"
-    answer: "Crack injection in Attleboro's poured concrete foundations runs $800 to $1,200 per crack. Older fieldstone foundations near the downtown industrial district may require more extensive mortar and stabilization work. We provide free inspections and detailed estimates for every Attleboro homeowner."
+    answer: "Crack injection in Attleboro's poured concrete foundations runs $800 to $1,300 per crack. Older fieldstone foundations near the downtown industrial district may require more extensive mortar and stabilization work. We provide free inspections and detailed estimates for every Attleboro homeowner."
   - question: "How does the Ten Mile River affect Attleboro foundations?"
     answer: "The Ten Mile River and its tributaries flow through much of Attleboro, keeping groundwater elevated in neighborhoods along the river corridor including Hebronville and parts of South Attleboro. Seasonal flooding events raise hydrostatic pressure against basement walls, and the silty river valley soils retain moisture longer than the sandier upland areas. Homes near the river benefit from proactive waterproofing and foundation monitoring."
   - question: "Do Attleboro's old industrial-era buildings have special foundation needs?"

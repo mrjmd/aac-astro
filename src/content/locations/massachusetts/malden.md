@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Malden?"
-    answer: "Standard crack injection in poured concrete foundations costs $800 to $1,200 per crack in Malden. Fieldstone and brick foundation repairs are priced based on the wall area and deterioration level, which we assess during a free on-site inspection. Many Malden homes require mortar repointing rather than injection due to their age."
+    answer: "Standard crack injection in poured concrete foundations costs $800 to $1,300 per crack in Malden. Fieldstone and brick foundation repairs are priced based on the wall area and deterioration level, which we assess during a free on-site inspection. Many Malden homes require mortar repointing rather than injection due to their age."
   - question: "Why do so many Malden basements have water problems?"
     answer: "Malden's housing density and early 1900s construction create a perfect storm for basement moisture. The city's tightly packed lots concentrate stormwater runoff, while original foundation drainage systems have long since clogged or collapsed. Glacial clay soils beneath much of Malden hold water against basement walls, and the fieldstone and brick foundations common throughout the city were built without modern waterproofing membranes."
   - question: "Do you work in the Maplewood and Linden neighborhoods?"

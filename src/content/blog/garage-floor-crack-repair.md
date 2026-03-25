@@ -66,7 +66,7 @@ For cosmetic cracks — hairlines, stable surface cracks, cracks inside control 
 
 **Active settlement or heaving:** If slab sections are sinking, rising, or tilting, the problem is beneath the slab. Professional options include mudjacking (pumping slurry beneath the slab) or polyurethane foam injection to lift settled sections and fill voids.
 
-**Cracks connecting to foundation walls:** If a garage floor crack extends into a foundation wall, you may have a foundation issue. This is especially true if the wall crack shows widening or water intrusion — the foundation crack needs [assessment and potential injection](/services/foundation-crack-injection) ($800-$1,200 per crack). For structural cracks, [carbon fiber stitches](/services/carbon-fiber-stitches) (also known as carbon fiber staples) at $200-$300 per stitch can prevent further movement. See our guide on [signs of foundation problems](/blog/signs-of-foundation-problems).
+**Cracks connecting to foundation walls:** If a garage floor crack extends into a foundation wall, you may have a foundation issue. This is especially true if the wall crack shows widening or water intrusion — the foundation crack needs [assessment and potential injection](/services/foundation-crack-injection) ($800-$1,300 per crack). For structural cracks, [carbon fiber stitches](/services/carbon-fiber-stitches) (also known as carbon fiber staples) at $200-$300 per stitch can prevent further movement. See our guide on [signs of foundation problems](/blog/signs-of-foundation-problems).
 
 **Widespread deterioration:** If the slab is crumbling or badly heaved in multiple spots, a new slab may be most cost-effective. Typically $3,000 to $6,000 for a two-car garage.
 

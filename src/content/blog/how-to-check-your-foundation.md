@@ -44,7 +44,7 @@ Your home's foundation is the backbone of its structural integrity. If it's comp
 - **Hairline cracks:** Generally safe but warrant monitoring — seal before winter to prevent freeze-thaw widening
 - **Stair-step cracks:** May signal foundation movement with wall bulging, common in block/CMU foundations
 - **Horizontal cracks:** Most serious; indicate lateral soil pressure from clay-heavy soil or hydrostatic pressure — may require [carbon fiber straps](/services/carbon-fiber-stitches) to prevent further bowing
-- **Vertical cracks:** Common shrinkage cracks, but [professional crack injection](/services/foundation-crack-injection) ($800-$1,200 per crack) is needed if they leak or widen beyond 1/4 inch
+- **Vertical cracks:** Common shrinkage cracks, but [professional crack injection](/services/foundation-crack-injection) ($800-$1,300 per crack) is needed if they leak or widen beyond 1/4 inch
 
 ## Structural Support and Basement Moisture Checks
 

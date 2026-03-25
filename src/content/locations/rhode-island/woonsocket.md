@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Woonsocket?"
-    answer: "Foundation crack repair in Woonsocket typically costs $800-$1,200 per crack. Woonsocket's older fieldstone and brick foundations may require additional mortar work alongside crack sealing. We provide free estimates at every Woonsocket property."
+    answer: "Foundation crack repair in Woonsocket typically costs $800-$1,300 per crack. Woonsocket's older fieldstone and brick foundations may require additional mortar work alongside crack sealing. We provide free estimates at every Woonsocket property."
   - question: "Why do Woonsocket homes have so many foundation issues?"
     answer: "Woonsocket grew rapidly as a mill town in the late 1800s, and much of the housing was built quickly to accommodate factory workers. These homes feature shallow fieldstone foundations that were adequate for their era but struggle with modern water management. The Blackstone River's presence also raises local water tables significantly."
   - question: "Do you handle flood-related foundation damage in Woonsocket?"

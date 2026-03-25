@@ -26,7 +26,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Sandwich?"
-    answer: "Standard crack injection in Sandwich costs $800-$1,200 per crack. Historic homes with fieldstone foundations may require repointing and specialized drainage work that ranges higher. We provide free inspections and honest estimates for every foundation type in Sandwich."
+    answer: "Standard crack injection in Sandwich costs $800-$1,300 per crack. Historic homes with fieldstone foundations may require repointing and specialized drainage work that ranges higher. We provide free inspections and honest estimates for every foundation type in Sandwich."
   - question: "Do historic Sandwich homes have unique foundation problems?"
     answer: "Yes. As Cape Cod's oldest town, settled in 1637, Sandwich has homes with fieldstone and rubble foundations that predate modern building codes. These foundations lack waterproof membranes and proper footings, making them prone to shifting, mortar deterioration, and persistent dampness. Modern repair techniques can stabilize and waterproof these structures without compromising their historic character."
   - question: "Does the Cape Cod Canal affect foundations in Sandwich?"

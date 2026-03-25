@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Peabody?"
-    answer: "Foundation repair in Peabody typically ranges from $800 to $1,200 for crack injection, depending on the foundation type and crack severity. Concrete block foundations, which are common in Peabody's mid-century neighborhoods, may require a different approach than poured concrete. We provide free estimates for all Peabody properties."
+    answer: "Foundation repair in Peabody typically ranges from $800 to $1,300 for crack injection, depending on the foundation type and crack severity. Concrete block foundations, which are common in Peabody's mid-century neighborhoods, may require a different approach than poured concrete. We provide free estimates for all Peabody properties."
   - question: "Do Peabody's former industrial areas affect home foundations?"
     answer: "Peabody's history as a leather tanning center left behind varied soil conditions in certain neighborhoods. Former industrial sites were sometimes filled or regraded before residential development, and this fill material can settle unevenly over decades, stressing foundations. Homes in the Leather District and near downtown may experience more settlement-related cracking than those in West Peabody's more stable soils."
   - question: "Why are concrete block basements common in Peabody?"

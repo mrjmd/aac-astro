@@ -27,7 +27,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Milton?"
-    answer: "Foundation repair in Milton typically costs between $800 and $1,200 for crack injection, depending on foundation type and crack severity. Milton's mix of older fieldstone and mid-century poured concrete foundations means repair approaches vary by neighborhood and home age. We offer free estimates for all Milton properties."
+    answer: "Foundation repair in Milton typically costs between $800 and $1,300 for crack injection, depending on foundation type and crack severity. Milton's mix of older fieldstone and mid-century poured concrete foundations means repair approaches vary by neighborhood and home age. We offer free estimates for all Milton properties."
   - question: "How does the Blue Hills area affect Milton foundations?"
     answer: "The Blue Hills Reservation creates unique drainage patterns that influence foundations throughout Milton. Homes at higher elevations experience rapid water runoff during storms that can pool against foundations, while properties in lower-lying areas near the Neponset River deal with elevated water tables. The glacial till soils common near the hills also retain significant moisture."
   - question: "Do you repair fieldstone foundations in Milton's older homes?"

@@ -28,7 +28,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Plymouth?"
-    answer: "Foundation repair in Plymouth typically costs between $800 and $1,200 for crack injection. Coastal properties may require additional waterproofing measures due to higher water tables and salt air exposure. Free estimates for all Plymouth residents."
+    answer: "Foundation repair in Plymouth typically costs between $800 and $1,300 for crack injection. Coastal properties may require additional waterproofing measures due to higher water tables and salt air exposure. Free estimates for all Plymouth residents."
   - question: "Do coastal Plymouth homes need special foundation care?"
     answer: "Yes, homes in Manomet, White Horse Beach, and other coastal areas face additional challenges from salt air, high water tables, and sandy soils. These conditions can accelerate concrete deterioration and create persistent moisture problems that require specialized waterproofing approaches."
   - question: "Why do Plymouth basements flood?"

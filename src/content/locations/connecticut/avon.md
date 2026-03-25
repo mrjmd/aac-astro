@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Avon?"
-    answer: "Foundation crack repair in Avon typically costs $800-$1,200 per crack. Given Avon's higher home values, a warrantied repair is a smart investment that protects your equity and satisfies home inspection requirements. We offer free consultations with transparent pricing."
+    answer: "Foundation crack repair in Avon typically costs $800-$1,300 per crack. Given Avon's higher home values, a warrantied repair is a smart investment that protects your equity and satisfies home inspection requirements. We offer free consultations with transparent pricing."
   - question: "Does Avon Mountain's terrain cause foundation problems?"
     answer: "Yes. Avon's position along the Talcott Mountain ridgeline means many homes are built on sloped lots with varying soil depths over traprock bedrock. Water flows downhill through glacial till and collects against uphill foundation walls, creating hydrostatic pressure that drives cracks and water intrusion. Homes along the ridge on Nod Road and Old Farms are particularly susceptible."
   - question: "Are Avon's 1970s-1980s colonials at risk for foundation cracks?"

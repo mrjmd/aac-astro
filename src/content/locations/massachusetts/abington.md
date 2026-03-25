@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Abington?"
-    answer: "Foundation crack injection in Abington typically costs $800 to $1,200 per crack. Abington's post-war homes predominantly feature poured concrete and concrete block foundations that respond well to modern repair methods. We provide free on-site estimates for all Abington homeowners."
+    answer: "Foundation crack injection in Abington typically costs $800 to $1,300 per crack. Abington's post-war homes predominantly feature poured concrete and concrete block foundations that respond well to modern repair methods. We provide free on-site estimates for all Abington homeowners."
   - question: "How does the Shumatuscacant River affect Abington foundations?"
     answer: "The Shumatuscacant River and its tributaries raise the water table throughout central and southern Abington. Homes built near the river corridor experience higher hydrostatic pressure against foundation walls, especially during spring snowmelt and heavy rains. This sustained moisture drives water through cracks and mortar joints in foundations that were built with limited waterproofing."
   - question: "Do you service the Island Grove and Coleman Park areas?"

@@ -27,7 +27,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Wethersfield?"
-    answer: "Foundation crack repair in Wethersfield typically ranges from $800-$1,200 per crack depending on severity and access. Wethersfield's mix of older and mid-century homes means we see a variety of foundation types, all of which respond well to our repair methods. Free consultations with transparent pricing."
+    answer: "Foundation crack repair in Wethersfield typically ranges from $800-$1,300 per crack depending on severity and access. Wethersfield's mix of older and mid-century homes means we see a variety of foundation types, all of which respond well to our repair methods. Free consultations with transparent pricing."
   - question: "Do Wethersfield's historic homes have special foundation needs?"
     answer: "Old Wethersfield is one of Connecticut's oldest neighborhoods, with homes dating to the 17th and 18th centuries. In Connecticut, we primarily repair poured concrete foundations using injection methods. If you have a fieldstone or brick foundation, text us photos and we'll let you know honestly whether it's something we can help with — or point you in the right direction."
   - question: "Does the Connecticut River affect Wethersfield foundations?"

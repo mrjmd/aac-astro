@@ -110,7 +110,7 @@ Our [spring inspection walkthrough](/blog/spring-foundation-inspection-walkthrou
 
 ## What to Do About It
 
-Most South Shore foundation problems fall into the fixable category. [Foundation crack injection](/services/foundation-crack-injection) at $800-$1,200 per crack solves the majority of water intrusion issues we see. For walls showing structural stress, carbon fiber staples (also called carbon fiber stitches) at $200-$300 per stitch prevent further movement. [Wall crack repair](/services/wall-crack-repair) addresses more significant structural concerns. And a proper assessment identifies exactly what you are dealing with before any money changes hands.
+Most South Shore foundation problems fall into the fixable category. [Foundation crack injection](/services/foundation-crack-injection) at $800-$1,300 per crack solves the majority of water intrusion issues we see. For walls showing structural stress, carbon fiber staples (also called carbon fiber stitches) at $200-$300 per stitch prevent further movement. [Wall crack repair](/services/wall-crack-repair) addresses more significant structural concerns. And a proper assessment identifies exactly what you are dealing with before any money changes hands.
 
 ### When NOT to Panic About South Shore Cracks
 

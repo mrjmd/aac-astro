@@ -22,7 +22,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Rochester?"
-    answer: "Foundation crack repair in Rochester typically costs $800-$1,200 per crack. Block foundation repairs in the Gonic area may differ from poured concrete repairs common in newer sections. We provide free assessments with detailed, upfront pricing."
+    answer: "Foundation crack repair in Rochester typically costs $800-$1,300 per crack. Block foundation repairs in the Gonic area may differ from poured concrete repairs common in newer sections. We provide free assessments with detailed, upfront pricing."
   - question: "What causes foundation cracks in Rochester, NH?"
     answer: "Rochester's combination of clay-heavy soils, deep frost lines, and seasonal moisture fluctuations creates the perfect conditions for foundation cracking. The city's inland position means temperatures swing more dramatically than the coast, amplifying freeze-thaw stress on concrete. Homes built during Rochester's growth period in the 1960s-1970s are now reaching the age where original foundation walls show wear."
   - question: "Can you fix a leaking basement in Rochester?"

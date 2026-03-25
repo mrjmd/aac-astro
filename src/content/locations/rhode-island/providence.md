@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Providence?"
-    answer: "Foundation crack repair in Providence typically costs $800-$1,200 per crack, depending on the size and foundation type. Many Providence homes have fieldstone or brick foundations that may require specialized repair techniques. We provide free assessments and transparent pricing."
+    answer: "Foundation crack repair in Providence typically costs $800-$1,300 per crack, depending on the size and foundation type. Many Providence homes have fieldstone or brick foundations that may require specialized repair techniques. We provide free assessments and transparent pricing."
   - question: "Why do older Providence homes have so many foundation cracks?"
     answer: "Providence has some of the oldest housing stock in the country, with many homes dating to the 1800s. The combination of aging fieldstone foundations, the high water table near the Providence and Woonasquatucket Rivers, and decades of freeze-thaw cycles creates conditions that lead to cracking and water infiltration."
   - question: "Do you repair fieldstone foundations in Providence?"

@@ -87,7 +87,7 @@ Before you hire anyone, ask these questions. The answers will tell you a lot.
 
 Foundation repair pricing varies by repair type, scope, and region. Here are general ranges for New England:
 
-**Crack injection (single crack, poured concrete):** $800-$1,200 per crack for standard injection through the full 8-10 inches of concrete. Multi-crack jobs $800-$2,500.
+**Crack injection (single crack, poured concrete):** $800-$1,300 per crack for standard injection through the full 8-10 inches of concrete. Multi-crack jobs $800-$2,500.
 
 **Carbon fiber staples/stitches (per stitch):** $200-$300 per carbon fiber stitch for crack bridging. Full wall reinforcement with straps runs $800-$1,500 per strap.
 

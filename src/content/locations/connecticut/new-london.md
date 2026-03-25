@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in New London?"
-    answer: "Foundation crack repair in New London typically ranges from $800-$1,200 per crack depending on severity and access. Coastal homes may see slightly different challenges due to moisture exposure, but our injection methods are equally effective. We provide free consultations with transparent pricing."
+    answer: "Foundation crack repair in New London typically ranges from $800-$1,300 per crack depending on severity and access. Coastal homes may see slightly different challenges due to moisture exposure, but our injection methods are equally effective. We provide free consultations with transparent pricing."
   - question: "Does New London's coastal location affect foundations?"
     answer: "Yes. New London's proximity to Long Island Sound means higher water tables and more persistent moisture around foundations. Salt air can also accelerate deterioration of exposed concrete. These factors make timely crack repair especially important to prevent water infiltration and further damage."
   - question: "What about historic foundations in New London?"

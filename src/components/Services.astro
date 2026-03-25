@@ -33,11 +33,11 @@ const services = [
 ];
 ---
 
-<section id="services" data-animate class="py-16 md:py-24 bg-aac-dark text-white relative overflow-hidden">
+<section id="services" data-animate class="py-10 md:py-24 bg-aac-dark text-white relative overflow-hidden">
   <div class="max-w-7xl mx-auto px-6 relative z-10">
-    <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 md:mb-20 gap-8">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-20 gap-6 md:gap-8">
       <div class="max-w-2xl">
-        <p class="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-400 mb-6">
+        <p class="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-400 mb-4 md:mb-6">
           <Icon name="Wrench" size={14} /> WHAT WE DO
         </p>
         <h2 class="text-4xl lg:text-7xl font-display font-black tracking-tighter leading-none">
@@ -45,14 +45,14 @@ const services = [
           <span class="text-aac-blue">Repair Solutions</span>
         </h2>
       </div>
-      <a href="/services" class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all">
+      <a href="/services" class="hidden md:inline-block bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all">
         VIEW ALL SOLUTIONS
       </a>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      {services.map((service) => (
-        <div class="group bg-white/5 backdrop-blur-sm p-6 rounded-[32px] border border-white/10 hover:bg-white/10 transition-all flex flex-col h-full">
+      {services.map((service, i) => (
+        <div class={`group bg-white/5 backdrop-blur-sm p-6 rounded-[32px] border border-white/10 hover:bg-white/10 transition-all flex flex-col h-full ${i >= 2 ? 'hidden md:flex' : ''}`}>
           <div class="relative aspect-video rounded-2xl overflow-hidden mb-6 bg-zinc-800 border border-white/5">
             <img
               src={service.img}
@@ -75,6 +75,12 @@ const services = [
           </a>
         </div>
       ))}
+    </div>
+
+    <div class="mt-8 text-center md:hidden">
+      <a href="/services" class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] inline-block">
+        VIEW ALL SOLUTIONS
+      </a>
     </div>
   </div>
 </section>

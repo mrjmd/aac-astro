@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Bethany?"
-    answer: "Foundation crack repair in Bethany typically ranges from $800-$1,200 per crack depending on severity and access. Most Bethany homes have poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
+    answer: "Foundation crack repair in Bethany typically ranges from $800-$1,300 per crack depending on severity and access. Most Bethany homes have poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
   - question: "How does Bethany's rocky terrain affect foundations?"
     answer: "Bethany sits on some of the hilliest, most ledge-heavy terrain in New Haven County. Shallow bedrock forces water to flow laterally along rock surfaces rather than draining downward, concentrating hydrostatic pressure against foundation walls. Homes on well water are especially susceptible because the same rocky soil that limits drainage also channels groundwater unpredictably."
   - question: "Do older Bethany homes need different foundation repairs?"

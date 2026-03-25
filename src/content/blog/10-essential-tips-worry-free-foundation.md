@@ -23,7 +23,7 @@ A strong foundation is key to maintaining your home's stability and value. Preve
 
 ## 1. Seal Foundation Cracks Before They Spread
 
-Address hairline fractures in concrete by cleaning and filling them with epoxy or concrete repair products. For cracks that are leaking or wider than a hairline, [professional crack injection](/services/foundation-crack-injection) ($800-$1,200 per crack) prevents water seepage and further deterioration. Every unfilled crack becomes a pathway for water in your basement after rain, and each freeze-thaw cycle widens it further.
+Address hairline fractures in concrete by cleaning and filling them with epoxy or concrete repair products. For cracks that are leaking or wider than a hairline, [professional crack injection](/services/foundation-crack-injection) ($800-$1,300 per crack) prevents water seepage and further deterioration. Every unfilled crack becomes a pathway for water in your basement after rain, and each freeze-thaw cycle widens it further.
 
 ## 2. Maintain Consistent Moisture Levels
 
@@ -63,7 +63,7 @@ Look for mold, mildew, or moisture in basements, crawl spaces, and around founda
 
 ## When NOT to Wait on Foundation Repair
 
-Some foundation issues demand immediate attention. Never delay if you see horizontal cracks (they indicate wall bowing from lateral soil pressure), active water flowing through a crack, or basement floor cracks leaking water. These problems worsen with every freeze-thaw cycle and every rainstorm. A $800-$1,200 crack injection today prevents a $6,000+ wall stabilization tomorrow.
+Some foundation issues demand immediate attention. Never delay if you see horizontal cracks (they indicate wall bowing from lateral soil pressure), active water flowing through a crack, or basement floor cracks leaking water. These problems worsen with every freeze-thaw cycle and every rainstorm. A $800-$1,300 crack injection today prevents a $6,000+ wall stabilization tomorrow.
 
 ## Get a Professional Assessment
 

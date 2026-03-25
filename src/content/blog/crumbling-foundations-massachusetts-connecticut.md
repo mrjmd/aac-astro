@@ -30,7 +30,7 @@ The same issue has now emerged in Massachusetts, beginning in the central region
 
 ## Why Pyrrhotite Foundation Damage Is So Catastrophic
 
-Pyrrhotite-induced damage cannot be reversed. Unlike normal freeze-thaw cycle cracking that can be repaired with [crack injection](/services/foundation-crack-injection) ($800-$1,200 per crack), pyrrhotite-affected foundations require complete replacement through a process of lifting the home and rebuilding the foundation, costing between $150,000 to $250,000 or more. Understanding the difference between cement and concrete matters here: it is the aggregate (stone) in the concrete, not the cement binder, that contains pyrrhotite. See our [foundation repair vs replacement guide](/blog/foundation-repair-vs-replacement) for more on when full replacement is truly necessary.
+Pyrrhotite-induced damage cannot be reversed. Unlike normal freeze-thaw cycle cracking that can be repaired with [crack injection](/services/foundation-crack-injection) ($800-$1,300 per crack), pyrrhotite-affected foundations require complete replacement through a process of lifting the home and rebuilding the foundation, costing between $150,000 to $250,000 or more. Understanding the difference between cement and concrete matters here: it is the aggregate (stone) in the concrete, not the cement binder, that contains pyrrhotite. See our [foundation repair vs replacement guide](/blog/foundation-repair-vs-replacement) for more on when full replacement is truly necessary.
 
 <img src="/images/blog/crumbling-foundations-map-2024.jpg" alt="Map of pyrrhotite-affected towns in Massachusetts and Connecticut as of August 2024" width="1256" height="813" loading="lazy" />
 

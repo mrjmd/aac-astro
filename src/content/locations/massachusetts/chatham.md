@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Chatham?"
-    answer: "Foundation crack repair in Chatham typically costs $800-$1,200 per crack. Older fieldstone foundations common in Chatham Center may require repointing and comprehensive waterproofing that ranges higher. We provide free inspections for all Chatham properties."
+    answer: "Foundation crack repair in Chatham typically costs $800-$1,300 per crack. Older fieldstone foundations common in Chatham Center may require repointing and comprehensive waterproofing that ranges higher. We provide free inspections for all Chatham properties."
   - question: "Does coastal erosion in Chatham threaten foundations?"
     answer: "Chatham experiences some of the most aggressive coastal erosion on the East Coast, with the outer beach and barrier islands constantly reshaping. While erosion primarily threatens shoreline properties, the changing coastline alters groundwater flow patterns and salt intrusion zones that affect foundations well inland. Homes in South Chatham and along Stage Harbor are particularly exposed to shifting drainage conditions."
   - question: "Are Chatham's older foundations at greater risk than newer ones?"

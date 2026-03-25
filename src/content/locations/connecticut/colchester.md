@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Colchester?"
-    answer: "Foundation crack repair in Colchester typically ranges from $800-$1,200 per crack depending on severity and access. Most Colchester homes have poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
+    answer: "Foundation crack repair in Colchester typically ranges from $800-$1,300 per crack depending on severity and access. Most Colchester homes have poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
   - question: "What causes foundation cracks in Colchester homes?"
     answer: "Colchester's terrain ranges from the Jeremy River lowlands to rolling hills in Westchester and North Colchester. The varied topography creates different drainage patterns—river-area homes face higher water tables, while hilltop homes deal with concentrated runoff. Connecticut's freeze-thaw cycles widen cracks in both scenarios over time."
   - question: "Is Attack A Crack local to the Colchester area?"

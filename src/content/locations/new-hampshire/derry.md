@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Derry?"
-    answer: "Foundation crack repair in Derry typically costs $800-$1,200 per crack. Most Derry homes have poured concrete foundations from the suburban building boom of the 1970s-1990s. We provide free on-site assessments and firm pricing before any work begins."
+    answer: "Foundation crack repair in Derry typically costs $800-$1,300 per crack. Most Derry homes have poured concrete foundations from the suburban building boom of the 1970s-1990s. We provide free on-site assessments and firm pricing before any work begins."
   - question: "Does Derry's granite bedrock affect foundations?"
     answer: "Yes, Derry sits in the Granite State's characteristically rocky terrain, with bedrock often close to the surface. Homes built on or near ledge can experience unique settling patterns because the foundation bears partly on rock and partly on soil. This differential settlement can create stress cracks that require professional repair."
   - question: "When should I repair a foundation crack in my Derry home?"

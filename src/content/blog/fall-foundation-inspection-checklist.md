@@ -91,7 +91,7 @@ After the rain, check your basement for new moisture. Water appearing during rai
 - Fix grading problems with topsoil
 
 ### Fix This Month
-- Seal visible cracks — for a permanent fix, [professional injection](/services/foundation-crack-injection) ($800-$1,200 per crack) is the way to go
+- Seal visible cracks — for a permanent fix, [professional injection](/services/foundation-crack-injection) ($800-$1,300 per crack) is the way to go
 - Repair leaky bulkhead seals with proper bulkhead sealant
 - Test and service the sump pump
 - Seal rim joist gaps

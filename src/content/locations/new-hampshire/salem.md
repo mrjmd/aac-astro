@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Salem, NH?"
-    answer: "Foundation crack repair in Salem typically costs $800-$1,200 per crack. Most Salem homes have poured concrete foundations from the 1970s-1990s that respond well to injection repair. We offer free assessments with no obligation for all Salem homeowners."
+    answer: "Foundation crack repair in Salem typically costs $800-$1,300 per crack. Most Salem homes have poured concrete foundations from the 1970s-1990s that respond well to injection repair. We offer free assessments with no obligation for all Salem homeowners."
   - question: "Why are foundation cracks common in Salem, NH?"
     answer: "Salem experienced rapid suburban growth from the 1970s through 1990s, and many foundations from that era are now 30-50 years old and showing stress cracks. The town's variable soils, ranging from sandy deposits near Canobie Lake to ledge outcrops in North Salem, create uneven settling conditions. Combined with New Hampshire's severe freeze-thaw cycles, this leads to widespread cracking."
   - question: "Is Salem, NH foundation repair different from Salem, MA?"

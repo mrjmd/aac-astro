@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in North Kingstown?"
-    answer: "Foundation crack repair in North Kingstown typically costs $800-$1,200 per crack. Most homes in the area have poured concrete or block foundations that are well-suited to our injection repair methods. Contact us for a free assessment and exact pricing."
+    answer: "Foundation crack repair in North Kingstown typically costs $800-$1,300 per crack. Most homes in the area have poured concrete or block foundations that are well-suited to our injection repair methods. Contact us for a free assessment and exact pricing."
   - question: "Are homes near Wickford Harbor at greater risk for foundation issues?"
     answer: "Yes, homes in the Wickford village area and along the bay shoreline face higher water tables due to their proximity to Narragansett Bay. This increases hydrostatic pressure on basement walls and makes even small foundation cracks more likely to leak. Our repairs are designed to withstand this ongoing moisture pressure."
   - question: "What soil conditions affect foundations in North Kingstown?"

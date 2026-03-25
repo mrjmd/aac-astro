@@ -50,7 +50,7 @@ Move south from Providence into Warwick and Cranston, and the housing stock chan
 
 ### Poured Concrete Issues
 
-Poured concrete foundations from this era are generally solid, but they crack. They always crack. Concrete shrinks as it cures, and that shrinkage creates cracks through the full 8-10 inches of concrete, usually vertical or diagonal, often near corners and window wells. Most of these are cosmetic and can be sealed with [foundation crack injection](/services/foundation-crack-injection) at $800-$1,200 per crack, but some indicate more serious settling.
+Poured concrete foundations from this era are generally solid, but they crack. They always crack. Concrete shrinks as it cures, and that shrinkage creates cracks through the full 8-10 inches of concrete, usually vertical or diagonal, often near corners and window wells. Most of these are cosmetic and can be sealed with [foundation crack injection](/services/foundation-crack-injection) at $800-$1,300 per crack, but some indicate more serious settling.
 
 ### Concrete Block Foundations
 
@@ -100,6 +100,6 @@ If you own a home in Rhode Island, here is our honest advice after three decades
 
 Attack A Crack serves all of Rhode Island, from Woonsocket to Westerly. We have been repairing foundations in the Ocean State for over three decades, and we understand the specific challenges that RI geology, climate, and housing stock create.
 
-Most foundation repairs in Rhode Island are more affordable than homeowners expect — crack injection runs $800-$1,200 per crack, and bulkhead repair with professional bulkhead sealant typically costs $1,800-$2,500. For honest pricing context, check our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026).
+Most foundation repairs in Rhode Island are more affordable than homeowners expect — crack injection runs $800-$1,300 per crack, and bulkhead repair with professional bulkhead sealant typically costs $1,800-$2,500. For honest pricing context, check our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026).
 
 Ready to find out what is going on with your foundation? Text us a photo for assessment or call us at [860-573-8760](sms:860-573-8760) to schedule a [free consultation](/services/free-foundation-consultations). We will give you straight answers — even if that answer is "your foundation is fine, stop worrying."

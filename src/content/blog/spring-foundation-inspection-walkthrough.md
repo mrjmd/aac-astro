@@ -130,7 +130,7 @@ Mark these with chalk or pencil, take dated photos, and check them at least twic
 - Multiple doors sticking, new drywall cracks, or sloping floors
 - Persistent musty smell with visible moisture
 
-Red items do not necessarily mean expensive repairs. Many turn out to be straightforward [crack injection](/services/foundation-crack-injection) fixes at $800-$1,200 per crack. Some are cosmetic. A few need [wall repair](/services/wall-crack-repair) or [carbon fiber staples (stitches)](/services/carbon-fiber-stitches). The only way to know is to have it looked at.
+Red items do not necessarily mean expensive repairs. Many turn out to be straightforward [crack injection](/services/foundation-crack-injection) fixes at $800-$1,300 per crack. Some are cosmetic. A few need [wall repair](/services/wall-crack-repair) or [carbon fiber staples (stitches)](/services/carbon-fiber-stitches). The only way to know is to have it looked at.
 
 ## When to Call Us
 

@@ -26,7 +26,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Marshfield?"
-    answer: "Foundation repair in Marshfield typically costs between $800 and $1,200 for crack injection, depending on the foundation type and extent of water intrusion. Coastal properties in Brant Rock, Green Harbor, and Ocean Bluff often face more persistent moisture conditions that may influence the repair approach. We offer free estimates for all Marshfield homeowners."
+    answer: "Foundation repair in Marshfield typically costs between $800 and $1,300 for crack injection, depending on the foundation type and extent of water intrusion. Coastal properties in Brant Rock, Green Harbor, and Ocean Bluff often face more persistent moisture conditions that may influence the repair approach. We offer free estimates for all Marshfield homeowners."
   - question: "Are Marshfield beach community foundations at higher risk?"
     answer: "Yes, homes in Brant Rock, Green Harbor, and Ocean Bluff sit in some of the South Shore's most challenging foundation environments. The water table in these coastal neighborhoods can be just a few feet below grade, and nor'easters and storm surges temporarily raise it even higher. Salt content in the soil and groundwater also accelerates concrete deterioration over time."
   - question: "How do Marshfield's flood zones affect foundation repair?"

@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Pembroke?"
-    answer: "Foundation crack injection in Pembroke typically costs $800 to $1,200 per crack. Pembroke's poured concrete and concrete block foundations from the suburban growth era respond well to modern injection methods. We offer free on-site estimates for all Pembroke homes."
+    answer: "Foundation crack injection in Pembroke typically costs $800 to $1,300 per crack. Pembroke's poured concrete and concrete block foundations from the suburban growth era respond well to modern injection methods. We offer free on-site estimates for all Pembroke homes."
   - question: "Do cranberry bog areas cause foundation problems in Pembroke?"
     answer: "Yes. Pembroke's cranberry bog terrain features organic peat soils and a persistently high water table. Homes built near former or active bog areas can experience uneven settlement as organic soils compress, and the saturated ground creates constant hydrostatic pressure against foundation walls. These conditions require targeted repair and waterproofing solutions."
   - question: "How does the North River affect Pembroke foundations?"

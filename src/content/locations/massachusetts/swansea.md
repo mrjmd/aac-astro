@@ -22,7 +22,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Swansea?"
-    answer: "Foundation crack repair in Swansea typically costs $800-$1,200 per crack using professional injection methods. The town's predominantly poured concrete and concrete block foundations from the 1950s-70s respond well to epoxy and polyurethane injection. We provide free on-site estimates for all Swansea properties."
+    answer: "Foundation crack repair in Swansea typically costs $800-$1,300 per crack using professional injection methods. The town's predominantly poured concrete and concrete block foundations from the 1950s-70s respond well to epoxy and polyurethane injection. We provide free on-site estimates for all Swansea properties."
   - question: "What soil conditions cause foundation problems in Swansea?"
     answer: "Swansea's landscape was shaped by glacial deposits and the Palmer River watershed, leaving clay-heavy alluvial soils that retain water and swell during wet seasons. Properties near Gardners Neck and along the Palmer River floodplain face especially high water tables. This persistent soil moisture creates hydrostatic pressure against basement walls, gradually widening cracks and forcing water through cold joints in concrete foundations."
   - question: "Do you repair foundations throughout Swansea?"

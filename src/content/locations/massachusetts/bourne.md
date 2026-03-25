@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Bourne?"
-    answer: "Foundation crack repair in Bourne typically costs $800-$1,200 per crack. Properties near the canal or along Buzzards Bay may need enhanced waterproofing due to tidal groundwater influence. We offer free estimates for all Bourne homeowners."
+    answer: "Foundation crack repair in Bourne typically costs $800-$1,300 per crack. Properties near the canal or along Buzzards Bay may need enhanced waterproofing due to tidal groundwater influence. We offer free estimates for all Bourne homeowners."
   - question: "How does the Cape Cod Canal affect foundations in Bourne?"
     answer: "The canal bisects Bourne and fundamentally alters local groundwater dynamics. Tidal changes in the canal cause water table fluctuations in nearby neighborhoods like Buzzards Bay and Sagamore Beach, creating cyclical hydrostatic pressure against foundations. This repeated loading and unloading accelerates crack formation and can push water through joints that stay dry in inland locations."
   - question: "Do former military housing areas in Bourne have foundation issues?"

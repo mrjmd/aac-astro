@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Mashpee?"
-    answer: "Foundation crack repair in Mashpee typically costs $800-$1,200 per crack. Homes in planned communities like New Seabury may have slab-on-grade construction that requires different repair approaches. We provide free assessments for all Mashpee foundation types."
+    answer: "Foundation crack repair in Mashpee typically costs $800-$1,300 per crack. Homes in planned communities like New Seabury may have slab-on-grade construction that requires different repair approaches. We provide free assessments for all Mashpee foundation types."
   - question: "Why do newer Mashpee homes still develop foundation problems?"
     answer: "Mashpee's 1970s-1990s construction boom placed homes on sandy glacial soils that can settle unevenly over time, especially where builders cleared pine forest and disturbed the natural soil structure. Even homes built to modern codes experience cracking as the sandy substrate compacts and shifts under foundation loads, particularly during drought-to-rain cycles that change soil moisture dramatically."
   - question: "Does the high water table in Mashpee affect foundations near ponds and rivers?"

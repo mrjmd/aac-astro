@@ -26,7 +26,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Boston?"
-    answer: "Foundation repair in Boston typically ranges from $800 to $1,200 for crack injection, depending on the crack size and foundation type. Historic brownstone repairs may require specialized techniques that can affect pricing. We provide free estimates for all Boston properties."
+    answer: "Foundation repair in Boston typically ranges from $800 to $1,300 for crack injection, depending on the crack size and foundation type. Historic brownstone repairs may require specialized techniques that can affect pricing. We provide free estimates for all Boston properties."
   - question: "Why do Boston homes have so many foundation problems?"
     answer: "Boston's older housing stock, combined with the region's freeze-thaw cycles and clay-rich soil, creates ideal conditions for foundation cracking. Many homes also sit on filled land or near the water table, increasing hydrostatic pressure on foundations."
   - question: "Do you work on historic Boston properties?"

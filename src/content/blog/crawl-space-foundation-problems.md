@@ -90,7 +90,7 @@ The right approach depends on what you are dealing with. Here are the main strat
 
 ### Foundation Wall Crack Repair ($800+ Per Crack)
 
-Cracks in crawl space foundation walls can be repaired with [injection techniques](/services/foundation-crack-injection) similar to those used in full basements — approximately 100 PSI injection through the full wall thickness. The access is tighter, but the repair is equally effective and equally permanent at $800-$1,200 per crack. Sealing cracks stops water entry at the source.
+Cracks in crawl space foundation walls can be repaired with [injection techniques](/services/foundation-crack-injection) similar to those used in full basements — approximately 100 PSI injection through the full wall thickness. The access is tighter, but the repair is equally effective and equally permanent at $800-$1,300 per crack. Sealing cracks stops water entry at the source.
 
 For cracks showing structural movement, [carbon fiber stitches](/services/carbon-fiber-stitches) (also called carbon fiber staples) at $200-$300 per stitch can reinforce the wall and prevent further displacement.
 

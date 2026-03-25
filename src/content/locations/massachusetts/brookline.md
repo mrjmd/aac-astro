@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Brookline?"
-    answer: "Foundation repair in Brookline typically costs between $800 and $1,200 for crack injection, depending on foundation type and condition. Brookline's historic estates and grand homes may have larger or more complex foundations that can affect the scope of work. We offer free estimates for all Brookline properties."
+    answer: "Foundation repair in Brookline typically costs between $800 and $1,300 for crack injection, depending on foundation type and condition. Brookline's historic estates and grand homes may have larger or more complex foundations that can affect the scope of work. We offer free estimates for all Brookline properties."
   - question: "Do you work on Brookline's historic estate foundations?"
     answer: "Yes, we specialize in the fieldstone, brick, and early poured concrete foundations found throughout Brookline's historic neighborhoods. Many homes near Coolidge Corner and along the town's grand boulevards have foundations dating to the early 1900s that require careful, preservation-minded repair techniques."
   - question: "Why are Brookline basements prone to moisture problems?"

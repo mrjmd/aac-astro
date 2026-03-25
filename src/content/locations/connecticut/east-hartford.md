@@ -26,7 +26,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in East Hartford?"
-    answer: "Foundation crack repair in East Hartford typically costs $800-$1,200 per crack. Many East Hartford homes from the 1940s-1960s have foundations that are particularly responsive to injection repair. We always start with a free assessment to give you an honest, no-obligation quote."
+    answer: "Foundation crack repair in East Hartford typically costs $800-$1,300 per crack. Many East Hartford homes from the 1940s-1960s have foundations that are particularly responsive to injection repair. We always start with a free assessment to give you an honest, no-obligation quote."
   - question: "What makes East Hartford foundations vulnerable to cracking?"
     answer: "East Hartford sits on the Connecticut River floodplain, with alluvial soils that retain moisture and shift seasonally. Homes in the Silver Lane and South Meadows areas are especially affected by high water tables. The post-war construction era also used thinner concrete walls than modern standards, making them more susceptible to cracking."
   - question: "Do you repair foundations near the Connecticut River?"

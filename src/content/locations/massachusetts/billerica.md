@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Billerica?"
-    answer: "Crack injection repairs in Billerica typically run $800 to $1,200 per crack. Billerica's poured concrete and block foundations from the suburban expansion era respond well to modern repair methods. We provide free on-site estimates so you know the cost before we start."
+    answer: "Crack injection repairs in Billerica typically run $800 to $1,300 per crack. Billerica's poured concrete and block foundations from the suburban expansion era respond well to modern repair methods. We provide free on-site estimates so you know the cost before we start."
   - question: "How does the Concord River affect Billerica foundations?"
     answer: "The Concord River flows through North Billerica and influences groundwater levels across a wide area of town. Homes near the river corridor and Nuttings Lake experience persistently high water tables that push moisture through foundation cracks and block joints. Spring flooding events can temporarily raise hydrostatic pressure enough to force water through previously dry areas of the basement."
   - question: "Are 1970s foundations in Billerica at risk?"

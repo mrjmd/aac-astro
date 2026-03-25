@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Foxborough?"
-    answer: "Foundation crack repair in Foxborough typically costs $800-$1,200 per crack using professional injection methods. The town's predominantly poured concrete foundations from the 1960s-80s respond well to epoxy and polyurethane injection. We provide free on-site estimates for all Foxborough properties."
+    answer: "Foundation crack repair in Foxborough typically costs $800-$1,300 per crack using professional injection methods. The town's predominantly poured concrete foundations from the 1960s-80s respond well to epoxy and polyurethane injection. We provide free on-site estimates for all Foxborough properties."
   - question: "What causes foundation problems in Foxborough homes?"
     answer: "Foxborough sits near the headwaters of the Neponset River where clay-heavy glacial soils expand and contract with seasonal moisture changes. Homes built during the suburban growth decades often have foundations that have now reached the age where concrete naturally develops stress cracks from decades of freeze-thaw cycling."
   - question: "Do you repair foundations in all Foxborough neighborhoods?"

@@ -28,7 +28,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Lawrence?"
-    answer: "Foundation crack repair in Lawrence typically costs $800-$1,200 per crack. Multi-family properties and older brick or fieldstone foundations common in Lawrence may require additional restoration work, which we quote after a thorough inspection. We provide free consultations and honest quotes."
+    answer: "Foundation crack repair in Lawrence typically costs $800-$1,300 per crack. Multi-family properties and older brick or fieldstone foundations common in Lawrence may require additional restoration work, which we quote after a thorough inspection. We provide free consultations and honest quotes."
   - question: "Can you work on multi-family and triple-decker foundations in Lawrence?"
     answer: "Absolutely. Lawrence has one of the highest concentrations of multi-family housing in Massachusetts, and we regularly repair foundations on triple-deckers, duplexes, and apartment buildings. We coordinate with property owners and tenants to minimize disruption while delivering thorough, lasting repairs."
   - question: "Why do so many Lawrence homes have foundation problems?"

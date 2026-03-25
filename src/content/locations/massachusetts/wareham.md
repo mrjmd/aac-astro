@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Wareham?"
-    answer: "Foundation crack injection in Wareham runs $800 to $1,200 per crack for standard poured concrete repairs. Homes in coastal areas like Onset may require additional waterproofing measures due to salt exposure and high water tables. We offer free on-site estimates for all Wareham homeowners."
+    answer: "Foundation crack injection in Wareham runs $800 to $1,300 per crack for standard poured concrete repairs. Homes in coastal areas like Onset may require additional waterproofing measures due to salt exposure and high water tables. We offer free on-site estimates for all Wareham homeowners."
   - question: "How do Wareham's sandy soils affect foundations?"
     answer: "Wareham sits on sandy glacial outwash deposits that drain quickly but provide less lateral support for foundation walls than clay-based soils. This can lead to settlement issues, especially where foundations were built on poorly compacted fill. Sandy soils also allow groundwater to move freely, and the high water table near Buzzards Bay and the Wareham River means basement walls face persistent hydrostatic pressure from below."
   - question: "Do coastal homes in Onset need different foundation repair?"

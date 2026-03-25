@@ -27,7 +27,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in New Haven?"
-    answer: "Foundation crack repair in New Haven typically costs $800-$1,200 per crack. We primarily repair poured concrete foundations using injection methods. Free consultations with transparent pricing."
+    answer: "Foundation crack repair in New Haven typically costs $800-$1,300 per crack. We primarily repair poured concrete foundations using injection methods. Free consultations with transparent pricing."
   - question: "What causes foundation problems in New Haven?"
     answer: "New Haven's location along Long Island Sound means high water tables and coastal clay soils that shift seasonally. These conditions, combined with freeze-thaw cycles, put constant pressure on foundations and cause cracking over time."
   - question: "What about older or historic foundations in New Haven?"

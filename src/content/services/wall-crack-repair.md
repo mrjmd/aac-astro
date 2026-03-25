@@ -14,7 +14,7 @@ faqs:
   - question: "Is wall crack repair messy?"
     answer: "No. Our injection process is clean and contained. We protect your floors and clean up completely before we leave."
   - question: "How much does wall crack repair cost in New England?"
-    answer: "Costs vary based on crack length and complexity, but most repairs range from $800-$1,200 per crack. Larger structural cracks requiring carbon fiber reinforcement may run higher. We provide free consultations and honest, itemized quotes with no hidden fees."
+    answer: "Costs vary based on crack length and complexity, but most repairs range from $800-$1,300 per crack. Larger structural cracks requiring carbon fiber reinforcement may run higher. We provide free consultations and honest, itemized quotes with no hidden fees."
   - question: "Is it cement or concrete — does it matter for repair?"
     answer: "Most homeowners say 'cement' when they mean 'concrete.' Cement is an ingredient in concrete (like flour in bread). Your foundation is poured concrete, and our injection repairs work by bonding directly to the concrete matrix. Whether you search for cement crack repair or concrete crack repair, the fix is the same proven injection process."
 relatedServices:
@@ -41,7 +41,7 @@ steps:
 
 **Basement wall crack repair** is the process of permanently sealing cracks in poured concrete or block foundation walls using high-pressure resin injection. Epoxy restores structural strength while polyurethane foam creates a flexible, waterproof seal — both methods fill the crack through the full wall thickness without excavation.
 
-**Most wall crack repairs cost $800–$1,200 per crack**, with structural cracks requiring carbon fiber reinforcement running higher. If you see water stains, white powder (efflorescence), or active leaking in your basement, a foundation crack is the likely cause. We inject flexible urethane or structural epoxy at 100 PSI to fill the crack through the full wall thickness — no excavation, no exterior digging. Every repair includes a lifetime guarantee.
+**Most wall crack repairs cost $800–$1,300 per crack**, with structural cracks requiring carbon fiber reinforcement running higher. If you see water stains, white powder (efflorescence), or active leaking in your basement, a foundation crack is the likely cause. We inject flexible urethane or structural epoxy at 100 PSI to fill the crack through the full wall thickness — no excavation, no exterior digging. Every repair includes a lifetime guarantee.
 
 Call [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) for a free assessment.
 
@@ -96,7 +96,7 @@ Many homeowners search for "cement crack repair" or "cement foundation repair" w
 ### Types of Foundation Wall Cracks
 
 **Vertical Cracks**
-The most common type — usually caused by concrete shrinkage or minor settling. Typically non-structural but still allow water infiltration. Most vertical cracks cost **$800-$1,200** to repair with injection.
+The most common type — usually caused by concrete shrinkage or minor settling. Typically non-structural but still allow water infiltration. Most vertical cracks cost **$800-$1,300** to repair with injection.
 
 **Horizontal Cracks**
 The most serious type — indicate lateral soil pressure pushing against the wall. Horizontal cracks with bowing require immediate attention and often need carbon fiber staples or straps for stabilization in addition to injection.

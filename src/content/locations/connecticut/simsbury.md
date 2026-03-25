@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Simsbury?"
-    answer: "Foundation crack repair in Simsbury typically costs $800-$1,200 per crack for poured concrete foundations. Simsbury's mix of newer subdivisions and historic homes in Weatogue and Tariffville means we see a range of foundation types. We provide free consultations with clear, honest pricing."
+    answer: "Foundation crack repair in Simsbury typically costs $800-$1,300 per crack for poured concrete foundations. Simsbury's mix of newer subdivisions and historic homes in Weatogue and Tariffville means we see a range of foundation types. We provide free consultations with clear, honest pricing."
   - question: "How does the Farmington River affect Simsbury foundations?"
     answer: "The Farmington River runs through the heart of Simsbury, and its floodplain soils—layers of sand, silt, and clay—hold and release moisture seasonally. Homes in Weatogue and along the river corridor experience higher water tables during spring runoff, which increases hydrostatic pressure against foundation walls. The Tariffville gorge area has particularly variable soil conditions where the river cuts through traprock."
   - question: "Do older Simsbury homes in the center need special foundation work?"

@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Newport?"
-    answer: "Foundation crack repair in Newport typically costs $800-$1,200 per crack. Newport's historic properties with fieldstone or brick foundations may require specialized masonry techniques that can affect pricing. We provide free evaluations at any Newport property."
+    answer: "Foundation crack repair in Newport typically costs $800-$1,300 per crack. Newport's historic properties with fieldstone or brick foundations may require specialized masonry techniques that can affect pricing. We provide free evaluations at any Newport property."
   - question: "Does Newport's coastal environment damage foundations?"
     answer: "Yes, Newport's oceanfront location exposes foundations to salt air, elevated humidity, and coastal groundwater. Salt crystallization within concrete pores causes spalling and surface deterioration over time. The high water table near the harbor and along the coast also increases hydrostatic pressure against foundation walls."
   - question: "Can you repair foundations in Newport's historic district?"

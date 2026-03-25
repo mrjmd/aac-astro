@@ -82,7 +82,7 @@ North Weymouth sits between the Fore River and the Back River, making it essenti
 
 The number one issue. Vertical cracks from concrete shrinkage are nearly universal in Weymouth homes of this age. Most are not structurally concerning, but many admit water — and with Weymouth's high water table, even hairline cracks can become significant water entry points.
 
-Our [foundation crack injection](/services/foundation-crack-injection) service seals these cracks through the full 8-10 inches of concrete from inside to outside with flexible polyurethane injected at up to 100 PSI, accommodating the minor movement all foundations experience. Most single-crack injections in Weymouth cost $800-$1,200 with a lifetime warranty. For more on evaluating crack severity, see [vertical vs. horizontal foundation cracks](/blog/vertical-vs-horizontal-foundation-cracks).
+Our [foundation crack injection](/services/foundation-crack-injection) service seals these cracks through the full 8-10 inches of concrete from inside to outside with flexible polyurethane injected at up to 100 PSI, accommodating the minor movement all foundations experience. Most single-crack injections in Weymouth cost $800-$1,300 with a lifetime warranty. For more on evaluating crack severity, see [vertical vs. horizontal foundation cracks](/blog/vertical-vs-horizontal-foundation-cracks).
 
 ### Bulkhead Leaks
 

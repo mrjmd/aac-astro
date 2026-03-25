@@ -27,7 +27,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Rockland?"
-    answer: "Foundation crack repair in Rockland typically ranges from $800 to $1,200 for crack injection. Rockland's older housing stock includes concrete block, poured concrete, and some fieldstone foundations, each requiring specific approaches. We provide free estimates for all Rockland properties."
+    answer: "Foundation crack repair in Rockland typically ranges from $800 to $1,300 for crack injection. Rockland's older housing stock includes concrete block, poured concrete, and some fieldstone foundations, each requiring specific approaches. We provide free estimates for all Rockland properties."
   - question: "Why do older Rockland homes have so many foundation issues?"
     answer: "Rockland's housing stock dates heavily from the 1940s-1960s, meaning most foundations are 60-80+ years old. The town's former industrial areas along French's Stream were built on variable fill, and the clay soils common throughout the area exert seasonal pressure on aging basement walls. Concrete block foundations from this era are particularly prone to mortar joint deterioration and water infiltration."
   - question: "Can you repair fieldstone foundations in Rockland?"

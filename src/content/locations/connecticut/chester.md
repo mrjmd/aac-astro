@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Chester?"
-    answer: "Foundation crack repair in Chester typically costs $800-$1,200 per crack for poured concrete foundations. Chester's older housing stock includes many fieldstone and brick foundations—text us photos of your situation and we'll give you an honest assessment of whether our methods are the right fit."
+    answer: "Foundation crack repair in Chester typically costs $800-$1,300 per crack for poured concrete foundations. Chester's older housing stock includes many fieldstone and brick foundations—text us photos of your situation and we'll give you an honest assessment of whether our methods are the right fit."
   - question: "Are Chester's older homes more vulnerable to foundation problems?"
     answer: "Chester's housing stock is among the oldest in the region, with many homes dating to the late 1800s and early 1900s. Older fieldstone and brick foundations were built without modern waterproofing or footings, making them particularly susceptible to water infiltration and shifting from Connecticut's freeze-thaw cycles and the Connecticut River's influence on local water tables."
   - question: "Does the Connecticut River affect Chester foundations?"

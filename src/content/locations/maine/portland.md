@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Portland?"
-    answer: "Foundation crack repair in Portland typically costs $800-$1,200 per crack. Many peninsula homes have fieldstone or brick foundations that require specialized techniques. We provide free assessments and transparent pricing for every project."
+    answer: "Foundation crack repair in Portland typically costs $800-$1,300 per crack. Many peninsula homes have fieldstone or brick foundations that require specialized techniques. We provide free assessments and transparent pricing for every project."
   - question: "Why do so many Portland homes have foundation problems?"
     answer: "Portland's housing stock dates back to the 1800s, and many foundations were built with fieldstone or brick that deteriorates over time. The city's coastal location brings salt air, Nor'easters, and high moisture from Casco Bay, all of which accelerate foundation wear. Maine's extreme freeze-thaw cycles push frost more than five feet deep, creating tremendous pressure on aging walls."
   - question: "Do you repair fieldstone foundations in Portland's West End?"

@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Whitman?"
-    answer: "Foundation crack repair in Whitman typically costs $800 to $1,200 for injection repair. Whitman's older concrete block and poured concrete foundations often need targeted crack injection and waterproofing. We provide free estimates for every Whitman property."
+    answer: "Foundation crack repair in Whitman typically costs $800 to $1,300 for injection repair. Whitman's older concrete block and poured concrete foundations often need targeted crack injection and waterproofing. We provide free estimates for every Whitman property."
   - question: "Why are Whitman's older homes especially prone to foundation cracks?"
     answer: "Whitman's housing stock dates heavily from the 1940s-1960s, when the town transitioned from shoe manufacturing to a residential community. Many homes were built on former industrial lots with variable fill, and the Shumatuscacant River basin keeps soils consistently moist. Concrete and block foundations of this vintage have endured 60-80 years of freeze-thaw cycling and soil pressure."
   - question: "Do you work on foundations near the cranberry bogs in Whitman?"

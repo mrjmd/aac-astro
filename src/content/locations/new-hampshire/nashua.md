@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Nashua?"
-    answer: "Foundation crack repair in Nashua typically costs $800-$1,200 per crack, depending on severity and accessibility. Many homes in the Crown Hill and Tree Streets neighborhoods have poured concrete foundations from the 1960s-1980s that are now showing stress cracks. We provide free assessments and transparent pricing for all Nashua properties."
+    answer: "Foundation crack repair in Nashua typically costs $800-$1,300 per crack, depending on severity and accessibility. Many homes in the Crown Hill and Tree Streets neighborhoods have poured concrete foundations from the 1960s-1980s that are now showing stress cracks. We provide free assessments and transparent pricing for all Nashua properties."
   - question: "Why do Nashua foundations crack so often?"
     answer: "Nashua sits in the Merrimack River valley where clay-heavy soils retain moisture and expand during freeze-thaw cycles. With New Hampshire's frost line reaching 4-5 feet deep, foundations endure extreme pressure each winter. The city's rapid suburban growth in the 1960s-1980s also means many homes were built quickly, sometimes with thinner foundation walls."
   - question: "Do you repair both old and new foundations in Nashua?"

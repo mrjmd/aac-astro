@@ -23,7 +23,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Salem?"
-    answer: "Foundation crack repair in Salem typically ranges from $800-$1,200 per crack depending on severity and access. Most Salem homes have poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
+    answer: "Foundation crack repair in Salem typically ranges from $800-$1,300 per crack depending on severity and access. Most Salem homes have poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
   - question: "Do homes near Gardner Lake have more foundation issues?"
     answer: "Homes in the Gardner Lake area do face elevated foundation risk. The lake and surrounding wetlands keep the local water table high, and the glacial soils in this part of Salem drain inconsistently—sandy deposits allow rapid water movement while clay pockets trap moisture against foundations. Seasonal lake-level fluctuations add another variable that affects nearby basements."
   - question: "How quickly can Attack A Crack reach Salem?"

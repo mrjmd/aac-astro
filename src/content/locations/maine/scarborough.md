@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Scarborough?"
-    answer: "Foundation crack repair in Scarborough typically costs $800-$1,200 per crack. Homes near the coast or the Scarborough Marsh may require additional moisture management. We provide free estimates and honest pricing on every project."
+    answer: "Foundation crack repair in Scarborough typically costs $800-$1,300 per crack. Homes near the coast or the Scarborough Marsh may require additional moisture management. We provide free estimates and honest pricing on every project."
   - question: "Does the Scarborough Marsh affect home foundations nearby?"
     answer: "Yes, the Scarborough Marsh and its tributaries raise the water table significantly in surrounding neighborhoods. Homes near Dunstan, Pine Point, and along the marsh edges often experience persistent basement moisture and hydrostatic pressure on foundation walls. Sealing cracks with professional-grade materials is essential for these properties."
   - question: "Should I worry about foundation cracks in my newer Scarborough home?"

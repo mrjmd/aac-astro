@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Dedham?"
-    answer: "Foundation crack repair in Dedham typically ranges from $800 to $1,200 per crack for injection work. Dedham's mix of post-war poured concrete and older fieldstone foundations means repair methods vary by neighborhood and era. We provide free on-site estimates for every Dedham homeowner."
+    answer: "Foundation crack repair in Dedham typically ranges from $800 to $1,300 per crack for injection work. Dedham's mix of post-war poured concrete and older fieldstone foundations means repair methods vary by neighborhood and era. We provide free on-site estimates for every Dedham homeowner."
   - question: "How do the Neponset River and Mother Brook affect Dedham foundations?"
     answer: "Mother Brook, the oldest man-made canal in the United States, and the Neponset River both elevate the water table across large sections of Dedham. Homes near these waterways experience higher hydrostatic pressure year-round, driving moisture through foundation cracks and deteriorating mortar joints. Spring snowmelt and prolonged rain events intensify the problem considerably."
   - question: "Do older fieldstone foundations in Dedham Square need special repair?"

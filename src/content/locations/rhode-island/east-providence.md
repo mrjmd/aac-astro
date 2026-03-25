@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in East Providence?"
-    answer: "Foundation crack repair in East Providence typically costs $800-$1,200 per crack. Homes near the waterfront may have additional moisture-related issues that we can assess during a free on-site evaluation. Our pricing is transparent with no hidden fees."
+    answer: "Foundation crack repair in East Providence typically costs $800-$1,300 per crack. Homes near the waterfront may have additional moisture-related issues that we can assess during a free on-site evaluation. Our pricing is transparent with no hidden fees."
   - question: "Are East Providence waterfront homes at higher risk for foundation problems?"
     answer: "Yes, East Providence sits between the Providence River and Narragansett Bay, creating elevated water tables throughout the city. Homes in Riverside and along the Seekonk River face particularly high groundwater pressure, which forces water through foundation cracks and joints."
   - question: "What foundation types are most common in East Providence?"

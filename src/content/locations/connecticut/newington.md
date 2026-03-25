@@ -25,7 +25,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Newington?"
-    answer: "Foundation crack repair in Newington typically ranges from $800-$1,200 per crack depending on severity and access. Most Newington homes have mid-century poured concrete foundations that are ideal candidates for injection repair. We provide free consultations and transparent pricing."
+    answer: "Foundation crack repair in Newington typically ranges from $800-$1,300 per crack depending on severity and access. Most Newington homes have mid-century poured concrete foundations that are ideal candidates for injection repair. We provide free consultations and transparent pricing."
   - question: "Why are mid-century Newington homes prone to cracks?"
     answer: "Many Newington homes were built during the post-war suburban boom of the 1950s-1970s. Concrete formulations and construction practices of that era, combined with 50-70 years of Connecticut's freeze-thaw cycles and seasonal soil movement, naturally lead to crack formation. These cracks are typically not structural concerns but do allow water infiltration."
   - question: "Do you offer free estimates in Newington?"

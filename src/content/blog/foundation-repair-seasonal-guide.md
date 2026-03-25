@@ -127,7 +127,7 @@ Most homeowners assume foundation repair can't be done in winter. **That's wrong
 - Concrete pours (for exterior work) require above-freezing conditions
 - Access around the home may be restricted by snow
 
-**Best for:** [Crack injection](/services/foundation-crack-injection) at $800-$1,200 per crack (interior work, unaffected by weather), [bulkhead sealant injection](/services/leaky-bulkhead-repair) at $1,800-$2,500 (winter conditions actually enhance the bulkhead sealant repair)
+**Best for:** [Crack injection](/services/foundation-crack-injection) at $800-$1,300 per crack (interior work, unaffected by weather), [bulkhead sealant injection](/services/leaky-bulkhead-repair) at $1,800-$2,500 (winter conditions actually enhance the bulkhead sealant repair)
 
 ## The Real Answer: Don't Wait
 
@@ -137,7 +137,7 @@ Every season that passes without repair:
 
 - **Cracks widen**: Water infiltration, freeze-thaw cycles, and ongoing soil pressure make cracks grow
 - **Water damage accumulates**: Mold, efflorescence, rust on steel reinforcement, deteriorating wood framing
-- **Costs increase**: A single crack injection at $800–$1,200 today can become a $6,000–$15,000 wall stabilization job if left for years
+- **Costs increase**: A single crack injection at $800–$1,300 today can become a $6,000–$15,000 wall stabilization job if left for years
 - **Structural risk grows**: What starts as a cosmetic crack can become a structural problem
 
 I've seen homeowners wait years for "the right time" and end up paying three to five times what the original repair would have cost. The crack doesn't care what month it is — it just keeps getting worse.
@@ -176,7 +176,7 @@ Yes. Interior foundation repairs — including crack injection and bulkhead seal
 
 ### What is the cheapest time of year for foundation repair?
 
-Foundation repair pricing doesn't change by season — at least not at reputable companies. What does change is cost over time: a $800–$1,200 crack repair today can become a $6,000+ wall stabilization if left untreated through multiple freeze-thaw seasons. The cheapest time is always now.
+Foundation repair pricing doesn't change by season — at least not at reputable companies. What does change is cost over time: a $800–$1,300 crack repair today can become a $6,000+ wall stabilization if left untreated through multiple freeze-thaw seasons. The cheapest time is always now.
 
 ### Should I wait until a crack stops leaking to repair it?
 

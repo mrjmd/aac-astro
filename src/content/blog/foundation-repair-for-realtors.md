@@ -40,7 +40,7 @@ Here's a translation guide for the most common findings:
 
 **What it means:** Cracks with water stains, mineral deposits (efflorescence), or active moisture.
 
-**Severity: Moderate — but very fixable.** Water is entering through the crack, which is a legitimate maintenance item. However, [foundation crack injection](/services/foundation-crack-injection) is a routine repair that typically costs $800-$1,200 per crack and comes with a lifetime warranty.
+**Severity: Moderate — but very fixable.** Water is entering through the crack, which is a legitimate maintenance item. However, [foundation crack injection](/services/foundation-crack-injection) is a routine repair that typically costs $800-$1,300 per crack and comes with a lifetime warranty.
 
 **Your talking point:** "Water intrusion through foundation cracks is one of the most common and most routinely repaired issues in New England homes. A single crack injection is typically under $1,200 and carries a lifetime transferable warranty."
 

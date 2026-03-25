@@ -31,7 +31,7 @@ Let's break down every option, what it costs, and — most importantly — which
 
 | Solution | Typical Cost | Best For |
 |----------|-------------|----------|
-| Crack injection | $800 - $1,200 per crack | Water entering through visible cracks |
+| Crack injection | $800 - $1,300 per crack | Water entering through visible cracks |
 | Sump pump installation | $800 - $2,000 | Managing groundwater in low spots |
 | Interior French drain | $3,000 - $8,000 | Widespread seepage along walls |
 | Vapor barrier | $1,500 - $4,000 | Moisture control in crawl spaces |
@@ -40,7 +40,7 @@ Let's break down every option, what it costs, and — most importantly — which
 
 These are 2026 estimates for the New England market — Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine. Your actual costs depend on factors we will cover below.
 
-## Option 1: Crack Injection ($800 - $1,200 Per Crack)
+## Option 1: Crack Injection ($800 - $1,300 Per Crack)
 
 Here is a secret the waterproofing industry would prefer you not know: **most basement water problems come through cracks, and cracks can be sealed individually.**
 
@@ -66,7 +66,7 @@ For a deeper dive on this topic, our guide on [basement waterproofing vs. founda
 
 A sump pump does not stop water from entering your basement. Let's be clear about that. It manages water that has already arrived by collecting it in a pit and pumping it away from your foundation.
 
-**Basic pedestal pump:** $800 - $1,200. Gets the job done but sits above the pit, runs louder, and has a shorter lifespan.
+**Basic pedestal pump:** $800 - $1,300. Gets the job done but sits above the pit, runs louder, and has a shorter lifespan.
 
 **Submersible pump:** $1,200 - $2,000. Sits inside the pit, runs quieter, handles more volume, lasts longer. This is what we recommend for most New England homes.
 
@@ -176,7 +176,7 @@ This means timing matters. Fall is ideal for waterproofing work — after the su
 
 Most New England homeowners with basement water issues need a solution in the $800 - $3,000 range, not the $15,000 - $30,000 range. The key is accurate diagnosis.
 
-If water enters through identifiable cracks, crack injection at $800 - $1,200 per crack is your most cost-effective solution. If the problem is more widespread, interior drainage with a sump pump in the $3,000 - $8,000 range handles most situations.
+If water enters through identifiable cracks, crack injection at $800 - $1,300 per crack is your most cost-effective solution. If the problem is more widespread, interior drainage with a sump pump in the $3,000 - $8,000 range handles most situations.
 
 Exterior waterproofing has its place, but it should be the last resort — not the first recommendation.
 

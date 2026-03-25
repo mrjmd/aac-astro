@@ -43,7 +43,7 @@ steps:
 
 **Foundation crack injection** is a repair method where epoxy or polyurethane resin is injected under high pressure into a concrete foundation crack, filling it completely from the interior surface through to the exterior soil. It permanently seals the crack against water infiltration and restores structural integrity — no exterior excavation required.
 
-**Foundation crack injection costs $800–$1,200 per crack** and is the only repair method that fills a crack through the full wall thickness — from interior surface to exterior soil. If you're seeing water after rain, white mineral deposits, or a musty basement smell, a crack is letting groundwater in. Our high-pressure injection process seals it permanently with flexible urethane or structural epoxy, and every repair is backed by a lifetime guarantee.
+**Foundation crack injection costs $800–$1,300 per crack** and is the only repair method that fills a crack through the full wall thickness — from interior surface to exterior soil. If you're seeing water after rain, white mineral deposits, or a musty basement smell, a crack is letting groundwater in. Our high-pressure injection process seals it permanently with flexible urethane or structural epoxy, and every repair is backed by a lifetime guarantee.
 
 Call [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) for a free assessment.
 
@@ -130,7 +130,7 @@ Some cracks benefit from both materials — structural epoxy resin for strength 
 
 ## What Crack Injection Costs
 
-Most foundation crack injection repairs cost **$800-$1,200 per crack**, depending on length, accessibility, and material required. This is a fraction of the cost of exterior excavation ($3,000-$8,000+) and provides a superior seal. Every repair includes our lifetime guarantee.
+Most foundation crack injection repairs cost **$800-$1,300 per crack**, depending on length, accessibility, and material required. This is a fraction of the cost of exterior excavation ($3,000-$8,000+) and provides a superior seal. Every repair includes our lifetime guarantee.
 
 ## When Injection Isn't the Answer
 

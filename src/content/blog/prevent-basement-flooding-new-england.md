@@ -132,7 +132,7 @@ Compare that to prevention costs:
 - Grading correction: $0 - $500
 - Gutter cleaning (twice yearly): $200 - $400
 - Downspout extensions: $50 - $150
-- Crack injection: $800 - $1,200 per crack
+- Crack injection: $800 - $1,300 per crack
 - Sump pump maintenance: $150 - $300 per year
 
 Prevention is cheaper by an order of magnitude. Every time.

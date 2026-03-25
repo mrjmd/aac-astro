@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Portsmouth?"
-    answer: "Foundation crack repair in Portsmouth typically costs $800-$1,200 per crack. Historic homes with fieldstone or brick foundations may require additional assessment to determine the best repair approach. We provide free evaluations for all Portsmouth properties."
+    answer: "Foundation crack repair in Portsmouth typically costs $800-$1,300 per crack. Historic homes with fieldstone or brick foundations may require additional assessment to determine the best repair approach. We provide free evaluations for all Portsmouth properties."
   - question: "Does salt air damage foundations in Portsmouth?"
     answer: "Yes, Portsmouth's coastal location exposes foundations to salt-laden moisture that accelerates concrete deterioration and corrodes steel reinforcement. The combination of salt air, high humidity, and sandy coastal soils creates conditions that stress foundations faster than inland areas. We recommend early crack repair to prevent salt infiltration from compounding the damage."
   - question: "Can you repair historic fieldstone foundations in Portsmouth?"

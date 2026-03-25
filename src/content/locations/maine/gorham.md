@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Gorham?"
-    answer: "Foundation crack repair in Gorham typically costs $800-$1,200 per crack. Many homes in Gorham sit on ledge or glacial till soils that create unique drainage challenges. We provide free on-site assessments with transparent pricing."
+    answer: "Foundation crack repair in Gorham typically costs $800-$1,300 per crack. Many homes in Gorham sit on ledge or glacial till soils that create unique drainage challenges. We provide free on-site assessments with transparent pricing."
   - question: "Does building on granite ledge cause foundation problems in Gorham?"
     answer: "Yes, many Gorham homes are built on or near granite ledge, which prevents water from draining naturally downward. Instead, water flows laterally along the ledge surface and collects against foundation walls. This concentrated water pressure is a leading cause of basement cracks and leaks in the Gorham area, especially during spring snowmelt."
   - question: "When is the best time to repair foundation cracks in Gorham?"

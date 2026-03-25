@@ -22,7 +22,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Hampton?"
-    answer: "Foundation crack repair in Hampton typically costs $800-$1,200 per crack. Coastal homes may require moisture-resistant materials suited for the seacoast environment. We offer free foundation assessments for all Hampton homeowners."
+    answer: "Foundation crack repair in Hampton typically costs $800-$1,300 per crack. Coastal homes may require moisture-resistant materials suited for the seacoast environment. We offer free foundation assessments for all Hampton homeowners."
   - question: "Does coastal flooding affect Hampton foundations?"
     answer: "Yes, Hampton's coastal location exposes foundations to challenges that inland homes never face. Storm surge, tidal fluctuations, and a naturally high water table keep basement walls under persistent moisture pressure. Sandy coastal soils also drain quickly but can shift and settle, creating additional stress on foundation walls over time."
   - question: "Should I be worried about salt damage to my Hampton foundation?"

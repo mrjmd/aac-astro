@@ -24,7 +24,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in Lebanon?"
-    answer: "Foundation crack repair in Lebanon typically ranges from $800-$1,200 per crack depending on severity and access. Most mid-century Lebanon homes have poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
+    answer: "Foundation crack repair in Lebanon typically ranges from $800-$1,300 per crack depending on severity and access. Most mid-century Lebanon homes have poured concrete foundations that respond well to injection repair. We provide free consultations and transparent pricing."
   - question: "What soil conditions cause foundation problems in Lebanon?"
     answer: "Lebanon sits on glacial terrain where retreating ice sheets left behind a mix of clay, sand, and gravel at varying depths. The town's agricultural land indicates clay-rich topsoil that retains moisture, while subsurface layers drain inconsistently. This uneven moisture profile creates differential pressure on basement walls, and Connecticut's freeze-thaw cycles widen cracks that form over time."
   - question: "Are foundations near Lebanon Green more at risk?"

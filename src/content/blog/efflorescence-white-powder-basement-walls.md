@@ -126,7 +126,7 @@ Before calling anyone, walk around the outside of your house after a rain and ch
 
 You'd be amazed how often we visit a home with basement moisture problems and find a disconnected downspout dumping roof water right against the foundation. Free fix.
 
-### Step 2: Seal Foundation Cracks ($800-$1,200 Per Crack)
+### Step 2: Seal Foundation Cracks ($800-$1,300 Per Crack)
 
 If efflorescence is following a crack, that crack needs to be sealed from the inside out. Our [foundation crack injection](/services/foundation-crack-injection) process injects material at approximately 100 PSI, filling the crack through the full 8-10 inches of wall thickness, stopping water at its source. For cracks showing structural movement, we may combine injection with [carbon fiber reinforcement](/services/carbon-fiber-stitches) (also called carbon fiber staples) at $200-$300 per stitch.
 

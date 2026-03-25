@@ -27,7 +27,7 @@ nearbyCities:
 phoneNumber: "860-573-8760"
 faqs:
   - question: "How much does foundation repair cost in New Britain?"
-    answer: "Foundation crack repair in New Britain typically costs $800-$1,200 per crack. New Britain's older housing stock often has multiple cracks that can be repaired in a single visit. We provide free assessments and honest quotes with no hidden fees."
+    answer: "Foundation crack repair in New Britain typically costs $800-$1,300 per crack. New Britain's older housing stock often has multiple cracks that can be repaired in a single visit. We provide free assessments and honest quotes with no hidden fees."
   - question: "Why are foundation problems common in New Britain homes?"
     answer: "New Britain's industrial-era housing boom from the 1920s through 1960s means many homes have foundations nearing or exceeding their expected lifespan. The city's clay and till soils expand and contract with moisture changes, and decades of freeze-thaw cycles take their toll on both poured concrete and block foundations."
   - question: "What about block and fieldstone foundations in New Britain?"

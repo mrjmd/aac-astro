@@ -103,7 +103,7 @@ Diagonal cracks at 45 degrees radiating from window and door corners indicate sh
 
 Any crack in your foundation wider than a quarter inch indicates significant movement. At this width, the crack is also likely allowing water infiltration, which accelerates further damage.
 
-**What to do:** [Professional crack injection](/services/foundation-crack-injection) at 100 PSI fills and seals the crack permanently through the full 8-10 inches of concrete wall. For wider cracks with structural implications, [carbon fiber staples (stitches)](/services/carbon-fiber-stitches) at $200-$300 per stitch may be needed. A typical crack repair runs $800-$1,200. See our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) for complete pricing.
+**What to do:** [Professional crack injection](/services/foundation-crack-injection) at 100 PSI fills and seals the crack permanently through the full 8-10 inches of concrete wall. For wider cracks with structural implications, [carbon fiber staples (stitches)](/services/carbon-fiber-stitches) at $200-$300 per stitch may be needed. A typical crack repair runs $800-$1,300. See our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) for complete pricing.
 
 ## Why Waiting Makes It Worse
 

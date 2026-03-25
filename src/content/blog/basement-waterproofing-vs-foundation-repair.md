@@ -36,7 +36,7 @@ But here's what the waterproofing industry doesn't want you to know: **many base
 - [Basement floor cracks leaking water](/blog/basement-floor-cracks-leaking/)
 - Single or multiple entry points you can identify
 
-**Typical cost:** $800-$1,200 per crack (significant multi-crack discounts available)
+**Typical cost:** $800-$1,300 per crack (significant multi-crack discounts available)
 
 ### Basement Waterproofing Systems (Interior Drainage)
 

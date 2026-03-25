@@ -27,7 +27,7 @@ nearbyCities:
 phoneNumber: "617-668-1677"
 faqs:
   - question: "How much does foundation repair cost in Hingham?"
-    answer: "Foundation crack repair in Hingham typically costs $800-$1,200 per crack. Older fieldstone and brick foundations common in Hingham Center may require mortar repointing and specialized stabilization, which we quote individually. We provide free consultations and honest quotes."
+    answer: "Foundation crack repair in Hingham typically costs $800-$1,300 per crack. Older fieldstone and brick foundations common in Hingham Center may require mortar repointing and specialized stabilization, which we quote individually. We provide free consultations and honest quotes."
   - question: "Can you repair fieldstone foundations in Hingham's historic homes?"
     answer: "Absolutely. Many Hingham homes predate modern construction and feature fieldstone or brick foundations that require careful restoration. We use historically appropriate materials and techniques that stabilize the structure without compromising the home's character or historic designation."
   - question: "Why do Hingham homes near the harbor have more foundation issues?"
