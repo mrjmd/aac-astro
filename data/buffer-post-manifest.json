@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-03-10T19:27:11.774Z",
+  "lastRun": "2026-03-25T01:48:14.718Z",
   "channelId": "69aa1ae63f3b94a1211df5f1",
   "posts": {
     "randolph-crack-injection-2025-06": {
@@ -76,6 +76,56 @@
     "hingham-crack-injection-2025-06": {
       "bufferPostId": "69b0708ff6cf99f382e97c0b",
       "scheduledAt": "2026-03-24T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "worcester-crack-injection-2025-07": {
+      "bufferPostId": "69c33ed650cd25c19e0ce609",
+      "scheduledAt": "2026-03-25T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "quincy-crack-injection-2025-08": {
+      "bufferPostId": "69c33ed750cd25c19e0ce62f",
+      "scheduledAt": "2026-03-26T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "norwell-crack-injection-2025-10": {
+      "bufferPostId": "69c33ed8d86d5be7603ce16e",
+      "scheduledAt": "2026-03-27T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "newton-crack-injection-2025-04": {
+      "bufferPostId": "69c33ed8d86d5be7603ce194",
+      "scheduledAt": "2026-03-30T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "boston-crack-injection-2025-09": {
+      "bufferPostId": "69c33ed950cd25c19e0ce67b",
+      "scheduledAt": "2026-03-31T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "dedham-crack-injection-2025-12": {
+      "bufferPostId": "69c33edad86d5be7603ce1ba",
+      "scheduledAt": "2026-04-01T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "burlington-sewer-conduit-2025-06": {
+      "bufferPostId": "69c33edad86d5be7603ce1e0",
+      "scheduledAt": "2026-04-02T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "plymouth-crack-injection-2025-12": {
+      "bufferPostId": "69c33edb50cd25c19e0ce6c7",
+      "scheduledAt": "2026-04-03T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "malden-fieldstone-repair-2025-05": {
+      "bufferPostId": "69c33edc50cd25c19e0ce6ed",
+      "scheduledAt": "2026-04-06T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "dedham-crack-injection-2025-09": {
+      "bufferPostId": "69c33eded86d5be7603ce206",
+      "scheduledAt": "2026-04-07T14:00:00.000Z",
       "status": "scheduled"
     }
   }

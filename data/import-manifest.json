@@ -284,7 +284,7 @@
       "serviceType": "crack-injection",
       "date": "2025-04-11",
       "importedAt": "2026-03-05T18:52:49.894Z",
-      "publishedToGBP": false,
+      "publishedToGBP": true,
       "photoFileIds": [
         "1Apdj3QB6XHsk6rchOE2LB4fLW9eG3xJm",
         "1B9bYDu4AQQCsX9l85xDP-8pxj9TQI37x",
@@ -478,7 +478,7 @@
       "serviceType": "sewer-conduit",
       "date": "2025-06-09",
       "importedAt": "2026-03-05T18:56:23.708Z",
-      "publishedToGBP": false,
+      "publishedToGBP": true,
       "photoFileIds": [
         "1-n3Dbq0tlra6Qf2FPh5Ren13LegykVih",
         "1Ykvb-8XH--1oXJEBvcwmouLqk4a4Lyk4"
@@ -713,7 +713,7 @@
       "serviceType": "crack-injection",
       "date": "2025-07-15",
       "importedAt": "2026-03-05T19:02:22.521Z",
-      "publishedToGBP": false,
+      "publishedToGBP": true,
       "photoFileIds": [
         "12HyEczjHkgcUufhoeEQajE5Jr-elW2Pd",
         "16D8-EruU93R_DGmUXlJ8_DIteLBRSxZY",
@@ -943,7 +943,7 @@
       "serviceType": "crack-injection",
       "date": "2025-08-18",
       "importedAt": "2026-03-05T19:15:05.916Z",
-      "publishedToGBP": false,
+      "publishedToGBP": true,
       "photoFileIds": [
         "10NQDRH48dMbrkQJVhfh-BP7cMAepX0eT",
         "1IBG6z8E5EvWRJS0Qm_9F_3crOil6JL8o",
@@ -1018,7 +1018,7 @@
       "serviceType": "crack-injection",
       "date": "2025-09-05",
       "importedAt": "2026-03-05T19:16:13.750Z",
-      "publishedToGBP": false,
+      "publishedToGBP": true,
       "photoFileIds": [
         "1oFqED-GL_EEX-OjEdoDXani9Rbm9WeFX"
       ],
@@ -1103,7 +1103,7 @@
       "serviceType": "crack-injection",
       "date": "2025-09-19",
       "importedAt": "2026-03-05T19:18:11.262Z",
-      "publishedToGBP": false,
+      "publishedToGBP": true,
       "photoFileIds": [
         "12VkyV3_TQwR0LFjfI64j89n2qG_wCgqH",
         "13ExnDbXVvGs0HLESG7MY-i8G8zJ-FZ0u",
@@ -1242,7 +1242,7 @@
       "serviceType": "crack-injection",
       "date": "2025-10-24",
       "importedAt": "2026-03-05T19:21:45.139Z",
-      "publishedToGBP": false,
+      "publishedToGBP": true,
       "photoFileIds": [
         "10-KcFe_nASzPNN7c69jYXpN-MPDF8Sxs",
         "1GA3jcmWIYpiEY9_nrdujXkdrM13-cKMK",
@@ -1384,7 +1384,7 @@
       "serviceType": "crack-injection",
       "date": "2025-12-12",
       "importedAt": "2026-03-05T19:23:54.887Z",
-      "publishedToGBP": false,
+      "publishedToGBP": true,
       "photoFileIds": [
         "14MGzn4yFWPGVbncEA4iFnK-939PvLgFa"
       ],

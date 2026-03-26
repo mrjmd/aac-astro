@@ -8,6 +8,8 @@ coverage/
 !.env.example
 .claude/screenshots/
 .vercel
+.astro/
+public/images/blog/.archive/
 scripts/.credentials/
 data/reports/
 

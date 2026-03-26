@@ -193,10 +193,14 @@ if (breadcrumbSchema) {
 				<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
 				<link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
 				<script async src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}></script>
-				<script is:inline define:vars={{ GA4_ID, GOOGLE_ADS_MA_ID }}>
+				<script is:inline define:vars={{ GA4_ID, GOOGLE_ADS_MA_ID, pageType }}>
 					window.dataLayer = window.dataLayer || [];
 					window.gtag = function(){dataLayer.push(arguments);};
 					gtag('js', new Date());
+					gtag('set', { page_type: pageType || 'unknown' });
+					// Capture GA4 client ID as a custom dimension for journey reconstruction
+					var gaMatch = document.cookie.match(/_ga=GA\d+\.\d+\.(\d+\.\d+)/);
+					if (gaMatch) gtag('set', { client_id: gaMatch[1] });
 					gtag('config', GA4_ID);
 					if (GOOGLE_ADS_MA_ID) gtag('config', GOOGLE_ADS_MA_ID);
 					// TODO: Uncomment when CT Google Ads account is linked to MCC
@@ -213,10 +217,11 @@ if (breadcrumbSchema) {
 						var MA_NUMBER = '6176681677';
 
 						function inferClickLocation(el) {
-							if (el.closest('nav')) return 'navbar';
-							if (el.closest('footer')) return 'footer';
+							if (el.closest('[data-sticky-cta]')) return 'sticky_cta';
 							if (el.closest('[data-modal]')) return 'modal';
 							if (el.closest('[data-hero]')) return 'hero';
+							if (el.closest('nav')) return 'navbar';
+							if (el.closest('footer')) return 'footer';
 							return 'inline';
 						}
 
@@ -277,6 +282,99 @@ if (breadcrumbSchema) {
 				{ threshold: 0.1 }
 			);
 			document.querySelectorAll('[data-animate]').forEach((el) => observer.observe(el));
+
+		// --- Engagement tracking (scroll depth, blog read-complete, video play/complete) ---
+		if (typeof window.gtag === 'function') {
+			const pt = document.body.dataset.pageType || 'unknown';
+			const pp = window.location.pathname;
+
+			// 1. Scroll depth on all pages (25/50/75/100%)
+			{
+				const scrollMarkers = [25, 50, 75, 100];
+				const scrollFired: Record<number, boolean> = {};
+				window.addEventListener('scroll', () => {
+					const scrollPct = Math.round((window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100);
+					for (const mark of scrollMarkers) {
+						if (scrollPct >= mark && !scrollFired[mark]) {
+							scrollFired[mark] = true;
+							window.gtag('event', 'scroll_depth', {
+								depth: mark + '%',
+								page_type: pt,
+								page_path: pp,
+							});
+						}
+					}
+				}, { passive: true });
+			}
+
+			// 2. Blog read-complete (fires when reader reaches end of article)
+			if (pt === 'blog') {
+				const article = document.querySelector('article.prose');
+				if (article) {
+					const readObserver = new IntersectionObserver((entries) => {
+						if (entries[0].isIntersecting) {
+							const slug = pp.replace(/^\/blog\//, '').replace(/\/$/, '');
+							window.gtag('event', 'blog_read_complete', {
+								post_slug: slug,
+								page_path: pp,
+							});
+							readObserver.disconnect();
+						}
+					}, { threshold: 0.1 });
+					const lastChild = article.lastElementChild;
+					if (lastChild) readObserver.observe(lastChild);
+				}
+			}
+
+			// 3. Video play/complete tracking via YouTube iframe API
+			const ytIframes = document.querySelectorAll<HTMLIFrameElement>('iframe[src*="youtube.com/embed"]');
+			if (ytIframes.length > 0) {
+				ytIframes.forEach((iframe) => {
+					const src = iframe.getAttribute('src');
+					if (src && !src.includes('enablejsapi')) {
+						iframe.setAttribute('src', src + (src.includes('?') ? '&' : '?') + 'enablejsapi=1&origin=' + window.location.origin);
+					}
+				});
+
+				const ytScript = document.createElement('script');
+				ytScript.src = 'https://www.youtube.com/iframe_api';
+				document.head.appendChild(ytScript);
+
+				(window as any).onYouTubeIframeAPIReady = () => {
+					ytIframes.forEach((iframe) => {
+						const videoSrc = iframe.getAttribute('src') || '';
+						const videoIdMatch = videoSrc.match(/embed\/([^?&]+)/);
+						const videoId = videoIdMatch ? videoIdMatch[1] : 'unknown';
+						const videoTitle = iframe.getAttribute('title') || 'unknown';
+
+						new (window as any).YT.Player(iframe, {
+							events: {
+								onStateChange: (event: any) => {
+									if (event.data === (window as any).YT.PlayerState.PLAYING) {
+										if (!(iframe as any)._aacPlayed) {
+											(iframe as any)._aacPlayed = true;
+											window.gtag('event', 'video_play', {
+												video_id: videoId,
+												video_title: videoTitle,
+												page_path: pp,
+												page_type: pt,
+											});
+										}
+									} else if (event.data === (window as any).YT.PlayerState.ENDED) {
+										window.gtag('event', 'video_complete', {
+											video_id: videoId,
+											video_title: videoTitle,
+											page_path: pp,
+											page_type: pt,
+										});
+									}
+								}
+							}
+						});
+					});
+				};
+			}
+		}
 		</script>
 	</body>
 </html>

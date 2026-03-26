@@ -34,7 +34,9 @@
     "ads:bids": "node scripts/google-ads-bids.js",
     "audit:master": "node scripts/master-audit.js",
     "report:bridge": "node scripts/search-to-conversion.js",
-    "report:benchmark": "node scripts/seasonal-benchmark.js"
+    "report:benchmark": "node scripts/seasonal-benchmark.js",
+    "report:health": "node scripts/analytics-health-check.js",
+    "report:journeys": "node scripts/conversion-journeys.js"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",

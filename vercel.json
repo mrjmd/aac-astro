@@ -2,6 +2,12 @@
   "github": {
     "enabled": false
   },
+  "crons": [
+    {
+      "path": "/api/analytics-health",
+      "schedule": "0 9 * * *"
+    }
+  ],
   "rewrites": [
     {
       "source": "/.netlify/:path*",
