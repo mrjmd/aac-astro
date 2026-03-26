@@ -105,7 +105,7 @@ For help identifying crack patterns associated with bowing, our guide on [vertic
 
 **Cost range:** $3,000 - $8,000 depending on the number of straps and wall size. Our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) has more detail.
 
-Carbon fiber reinforcement is our specialty and covers the majority of bowing wall situations we encounter. For cases requiring other methods, we can recommend trusted contractors who specialize in those approaches.
+Carbon fiber reinforcement is our specialty and covers the majority of bowing wall situations we encounter. For a detailed breakdown of costs and how straps work, see our [carbon fiber straps guide](/blog/carbon-fiber-straps-bowing-walls). For cases requiring other methods, we can recommend trusted contractors who specialize in those approaches.
 
 ### Other Repair Methods We May Recommend
 

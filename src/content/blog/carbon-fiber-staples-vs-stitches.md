@@ -63,7 +63,7 @@ Where a staple bridges a single crack, a strap reinforces an entire wall against
 
 **When to use straps:** Your wall has a [horizontal crack](/blog/horizontal-foundation-cracks) and is visibly bowing inward. The wall below the crack line is deflecting into the basement. This is a structural problem — not just a crack — and it requires full-wall stabilization.
 
-For walls with significant bowing, carbon fiber straps provide full-wall stabilization — ask us about the best approach for your situation.
+For walls with significant bowing, [carbon fiber straps](/blog/carbon-fiber-straps-bowing-walls) provide full-wall stabilization — ask us about the best approach for your situation.
 
 ## The Decision Guide
 

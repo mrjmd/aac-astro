@@ -87,8 +87,7 @@ Why does this happen? A few reasons:
 
 **Conservative approach.** There is a defensible argument that a comprehensive system is more thorough. And sometimes that is genuinely true. But "more thorough" should not mean spending ten times more when the problem is localized.
 
-<!-- TODO: When french-drain-vs-crack-injection is published, add link back here:
-We have written about a similar comparison in our [French drain vs. crack injection guide](/blog/french-drain-vs-crack-injection), which covers the indoor drainage system question in more detail. -->
+We have written about a similar comparison in our [French drain vs. crack injection guide](/blog/french-drain-vs-crack-injection), which covers the indoor drainage system question in more detail.
 
 ## When You Need Both
 

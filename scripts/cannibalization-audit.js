@@ -28,7 +28,7 @@ const GSC_SITE = 'https://www.attackacrack.com';
 const args = process.argv.slice(2);
 const daysIdx = args.indexOf('--days');
 const minImpIdx = args.indexOf('--min-impressions');
-const DAYS = daysIdx !== -1 ? parseInt(args[daysIdx + 1], 10) : 90;
+const DAYS = daysIdx !== -1 ? parseInt(args[daysIdx + 1], 10) : 30;
 const MIN_IMPRESSIONS = minImpIdx !== -1 ? parseInt(args[minImpIdx + 1], 10) : 5;
 
 const STATE_DIRS = ['connecticut', 'massachusetts', 'rhode-island', 'new-hampshire', 'maine'];

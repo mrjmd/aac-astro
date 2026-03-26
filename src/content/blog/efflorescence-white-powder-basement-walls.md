@@ -138,7 +138,7 @@ If your efflorescence is widespread — covering large areas without following s
 
 - **Interior drainage systems** to collect water at the cove joint and direct it to a sump pump
 - **Exterior waterproofing membrane** applied to the outside of the foundation wall
-- **French drain installation** to redirect groundwater away from the foundation
+- **[French drain installation](/blog/french-drain-vs-crack-injection)** to redirect groundwater away from the foundation
 
 These are bigger projects, but they solve the problem permanently rather than chasing individual symptoms.
 

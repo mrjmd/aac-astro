@@ -59,7 +59,7 @@ Detect and address plumbing leaks early—they contribute to foundation damage o
 
 ## 10. Check for Mold & Moisture
 
-Look for mold, mildew, or moisture in basements, crawl spaces, and around foundation walls. A musty smell in your basement or white powder on basement walls (efflorescence) signals foundation problems requiring prompt attention.
+Look for mold, mildew, or moisture in basements, [crawl spaces](/blog/crawl-space-foundation-problems/), and around foundation walls. A musty smell in your basement or white powder on basement walls (efflorescence) signals foundation problems requiring prompt attention.
 
 ## When NOT to Wait on Foundation Repair
 

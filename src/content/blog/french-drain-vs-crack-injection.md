@@ -7,8 +7,8 @@ publishDate: 2026-03-06
 author: "Matt Davis"
 category: "guides"
 tags: ["French drain", "crack injection", "wet basement", "waterproofing", "comparison"]
-heroImage: "/images/projects/plymouth-crack-injection-2025-01-before.jpg"
-heroImageAlt: "French Drain vs. Crack Injection: Two Solutions for Two Different Problems"
+heroImage: "/images/blog/french-drain-vs-injection-ports-crosssection.jpg"
+heroImageAlt: "Side-by-side comparison of an interior French drain with perforated pipe and gravel versus a clean concrete wall after crack injection"
 draft: false
 relatedServices:
   - "foundation-crack-injection"
@@ -53,7 +53,7 @@ Crack injection seals a specific crack in a poured concrete foundation wall. The
 
 ## The Cost Comparison Is Not Even Close
 
-If you have a single crack leaking and someone quotes you a $12,000 French drain, you are potentially paying ten times more than necessary. A French drain for general water management? Money well spent. A French drain to fix a single crack leak? That is using a fire hose to water a houseplant.
+If you have a single crack leaking and someone quotes you a $12,000 French drain, you are potentially paying ten times more than necessary. A French drain for general water management? Money well spent. A French drain to fix a single crack leak? That is using a fire hose to water a houseplant. Our [basement waterproofing cost guide](/blog/basement-waterproofing-cost-guide) has the full price breakdown for every approach.
 
 ## Why Some Contractors Push French Drains
 

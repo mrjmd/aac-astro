@@ -3,13 +3,13 @@ title: "How to Choose a Foundation Repair Contractor (Without Getting Scammed)"
 metaTitle: "Choose a Foundation Repair Contractor"
 metaDescription: "Avoid foundation repair scams with this honest contractor selection guide. Learn what to ask, red flags to watch for, and why we share this openly."
 excerpt: "Choosing the wrong foundation repair contractor can cost you thousands. Here are the questions to ask, red flags to spot, and what honest pricing looks like."
-publishDate: 2026-06-02
+publishDate: 2026-03-02
 author: "Matt Davis"
 category: "guides"
 tags: ["contractor selection", "scam prevention", "foundation repair", "hiring guide"]
-heroImage: "/images/projects/scituate-crack-injection-2025-07-before.jpg"
-heroImageAlt: "How to Choose a Foundation Repair Contractor (Without Getting Scammed)"
-draft: true
+heroImage: "/images/blog/foundation-contractor-greeting-homeowner.jpg"
+heroImageAlt: "Foundation repair contractor greeting a homeowner at their front door with work van in the driveway"
+draft: false
 
 relatedServices:
   - "free-foundation-consultations"
@@ -55,7 +55,7 @@ This is non-negotiable. In both Massachusetts and Connecticut, contractors must 
 
 **Massachusetts:** Home improvement contractors must be registered with the Office of Consumer Affairs and Business Regulation. Check the [state's contractor registry](https://www.mass.gov/home-improvement-contractor-program).
 
-**Connecticut:** Home improvement contractors must be registered with the Department of Consumer Protection. A registration number (HIC.XXXXXXX) should be on all contracts and advertising.
+**Connecticut:** Home improvement contractors must be registered with the Department of Consumer Protection. Check the [CT contractor license lookup](https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx). A registration number (HIC.XXXXXXX) should be on all contracts and advertising.
 
 If a contractor cannot provide their license number and proof of insurance, walk away. Period.
 
@@ -73,15 +73,13 @@ Before you hire anyone, ask these questions. The answers will tell you a lot.
 
 5. **What does your warranty cover, specifically?** Get the written warranty terms before signing anything. Ask about exclusions, transferability, and what "warranty service" actually looks like if you need it.
 
-6. **Can you provide references from recent local jobs?** Recent matters (companies change over time) and local matters (they should have experience with your type of foundation and soil conditions).
+6. **Are you licensed, insured, and bonded?** Ask for the actual license number and insurance certificate. Verify them independently.
 
-7. **Are you licensed, insured, and bonded?** Ask for the actual license number and insurance certificate. Verify them independently.
+7. **Will you provide a written itemized quote?** The quote should detail the scope of work, materials, timeline, warranty terms, and payment schedule. If the contractor resists putting it in writing, that tells you everything.
 
-8. **Will you provide a written contract?** The contract should detail the scope of work, materials, timeline, warranty terms, and payment schedule. If the contractor resists putting it in writing, that tells you everything.
+8. **What happens if the repair does not work?** This is the question that separates honest contractors from the rest. A good contractor will explain their warranty process. A bad one will get uncomfortable.
 
-9. **What happens if the repair does not work?** This is the question that separates honest contractors from the rest. A good contractor will explain their warranty process. A bad one will get uncomfortable.
-
-10. **Do you subcontract this work?** You want to know who is actually doing the repair. Subcontracted work is not inherently bad, but you should know who is responsible for quality and warranty.
+9. **Do you subcontract this work?** You want to know who is actually doing the repair. Subcontracted work is not inherently bad, but you should know who is responsible for quality and warranty.
 
 ## What Fair Pricing Looks Like
 
@@ -123,11 +121,7 @@ The most trustworthy thing a contractor can do is tell you that your problem doe
 
 ### They Explain, Not Just Sell
 
-A good contractor educates you about your problem. They show you the crack, explain what caused it, describe what is happening inside the wall where you cannot see, and connect the diagnosis to the proposed solution. You should leave the consultation feeling like you understand your situation, not just that you have been told what to buy.
-
-### They Document Everything
-
-Written estimates, detailed contracts, warranty certificates, completion reports. Professional foundation repair is a documented process, not a handshake deal.
+A good contractor educates you about your problem. They show you the crack, explain what caused it, describe what is happening inside the wall where you cannot see, and connect the diagnosis to the proposed solution. After a consultation, you should feel like you understand your situation, not just that you have been told what to buy.
 
 ### They Have Been Around and Will Be Around
 
@@ -159,13 +153,13 @@ We wrote this guide knowing that it sets a standard we have to meet ourselves. H
 
 **Experience:** Decades of experience in New England foundation repair.
 
-**Licensing:** Fully licensed and insured in every state we serve (CT, MA, RI, NH, ME).
+**Licensing:** Fully licensed and insured.
 
 **Warranty:** Lifetime transferable warranty on crack injection repairs, in writing, with clear terms.
 
-**No pressure:** Our consultations are conducted by experts who diagnose problems and give honest advice, not pressure tactics.
+**No pressure:** Our consultations start with your photos — we diagnose problems and give honest advice, not pressure tactics.
 
-**Free consultations:** We offer [free foundation consultations](/services/free-foundation-consultations) with no obligation. We tell you what we see, what it costs, and let you decide on your own timeline.
+**Free consultations:** We offer [free foundation consultations](/services/free-foundation-consultations) with no obligation. Text us photos and we will tell you what we see, what it costs, and let you decide on your own timeline.
 
 **Honest assessments:** We regularly tell homeowners that their foundation does not need repair. We refer work to other specialists when the problem is outside our scope, such as [sump pump installation](/blog/sump-pump-vs-crack-injection) or comprehensive waterproofing systems.
 
@@ -181,4 +175,4 @@ Choosing a foundation repair contractor comes down to three things: competence, 
 
 Ask the questions in this guide. Verify the answers. Get multiple opinions. And trust your instincts when something feels off.
 
-If you would like to include us in your evaluation, text us photos for a free assessment at [617-668-1677](sms:617-668-1677) (Massachusetts) or [860-573-8760](sms:860-573-8760) (Connecticut). We are happy to be one of the contractors you compare. We are confident in how that comparison turns out.
+If you would like to include us in your evaluation, text us photos for a free assessment at [617-668-1677](sms:617-668-1677) (Massachusetts) or [860-573-8760](sms:860-573-8760) (Connecticut). We are happy to be one of the contractors you compare and confident in how that comparison will turn out.

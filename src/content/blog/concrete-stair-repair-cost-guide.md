@@ -7,8 +7,8 @@ publishDate: 2026-02-28
 author: "Matt Davis"
 category: "cost-guides"
 tags: ["concrete stairs", "stair repair", "cost guide", "Massachusetts", "safety"]
-heroImage: "/images/projects/hanover-concrete-repair-2025-06-before.jpg"
-heroImageAlt: "Concrete Stair Repair: Safety, Costs, and What to Expect in 2026"
+heroImage: "/images/blog/cracked-concrete-stairs-frost-damage.jpg"
+heroImageAlt: "Crumbling concrete front steps with freeze-thaw cracks and exposed aggregate at a New England home"
 draft: false
 targetLocation: Massachusetts
 relatedServices:
@@ -47,7 +47,7 @@ This is the obvious one. A single chipped edge on one step is a quick repair. Fi
 
 ### Access and Location
 
-Front entry stairs with clear access from the driveway? Straightforward. Basement bulkhead stairs with narrow access and no room for a mixing truck? More labor-intensive. Side-entry stairs against a retaining wall? That wall needs to be protected during the work. Access affects labor time, and labor is the biggest component of most stair repairs.
+Front entry stairs with clear access from the driveway? Straightforward. Basement bulkhead stairs with narrow access? More labor-intensive. Side-entry stairs against a retaining wall? That wall needs to be protected during the work. Access affects labor time, and labor is the biggest component of most stair repairs.
 
 Speaking of bulkhead stairs, if your bulkhead itself is also showing problems, our [bulkhead repair cost guide](/blog/bulkhead-repair-cost-guide-2026) covers that related topic.
 
@@ -57,11 +57,7 @@ Simple straight runs are the easiest to repair. L-shaped stairs, curved stairs, 
 
 ### Railing Integration
 
-If your stairs have metal railings set into the concrete (as opposed to surface-mounted), any stair repair needs to account for the railing posts. Sometimes posts need to be temporarily removed and reset, or new post anchors need to be installed. This adds $100-$300 per post to the project.
-
-### Material and Finish
-
-A basic gray concrete repair is the most affordable option. If you want the repair to match an existing stamped, colored, or exposed-aggregate finish, expect to pay a premium for the materials and the skill required to blend the new work with the old.
+If your stairs have metal railings set into the concrete (as opposed to surface-mounted), any stair repair needs to account for the railing posts. Sometimes posts need to be temporarily removed and reset, or new post anchors need to be installed. This may add $100-$300 per post to the project.
 
 ### Code Requirements
 
@@ -94,19 +90,21 @@ Severely deteriorated stairs can be cited by building inspectors, particularly d
 
 Concrete stair damage doesn't stabilize — it gets worse. Every freeze-thaw cycle wedges cracks wider, every rain drives more water deeper into the concrete, and every use applies load to a weakening structure. A $300 patch job today can prevent a $4,000 replacement next year.
 
-## Repair Methods
+## Types of Concrete Stair Repair
 
-Here's what we actually do when we fix concrete stairs, ranked from least to most invasive:
+There are several approaches to fixing concrete stairs, depending on the type and severity of the damage. Here's what's available:
 
-### Patching and Resurfacing
+### Patching and Resurfacing (What We Do)
 
-**What it is:** Applying a bonded cementitious overlay to damaged areas, restoring the step profile and surface.
+**What it is:** Applying a bonded cementitious overlay to damaged areas, restoring the step profile and surface. This is our specialty at Attack A Crack.
 
 **When it's appropriate:** Surface deterioration, small chips and spalls, cosmetic damage without structural compromise. The underlying concrete needs to be sound — patching over crumbling concrete is throwing money away.
 
-**Process:** We clean the damaged area down to sound concrete, apply a bonding agent, build up the repair with polymer-modified concrete or mortar, and finish the surface to match. Repairs need 48-72 hours of cure time before full use.
+**Process:** We clean the damaged area down to sound concrete, apply a bonding agent, build up the repair with polymer-modified concrete or mortar, and finish the surface to match. Repairs need 24 to 48 hours of cure time for full use.
 
-**Durability:** 5-15 years depending on exposure and maintenance. Proper sealing extends the life significantly.
+**Durability:** 5-15 years depending on exposure and maintenance.
+
+If your stairs need more than resurfacing, we'll tell you honestly and help guide you to the right solution — including referring you to a trusted partner if the job calls for one of the methods below.
 
 ### Mudjacking / Foam Leveling
 
@@ -161,14 +159,13 @@ For the broader repair-vs-replace decision for other concrete surfaces, our [dri
 
 ## Timeline Expectations
 
-Here's what the typical concrete stair repair project looks like from call to completion:
+Here's what the typical concrete stair resurfacing project looks like from text to completion:
 
-- **Assessment:** 1-3 business days to schedule, about 30 minutes on site
-- **Estimate delivery:** Same day or next business day
-- **Scheduling the work:** 1-3 weeks depending on season (spring and fall are busiest)
-- **Repair work:** Most patches and resurfacing complete in one day. Partial or full replacements may take 2-3 days.
-- **Cure time:** 24-48 hours for foot traffic, 7 days for full strength, 28 days for complete cure
-- **Sealing:** Applied after full cure for maximum protection
+- **Quote:** Text us photos and we can typically get you a quote the same day.
+- **Scheduling:** Once approved, we get you on the schedule right away. Depending on the season, we book out one to three weeks.
+- **The work:** Most resurfacing repairs are a half-day or single-day job.
+- **Cure time:** 24-48 hours for foot traffic, 7 days for full strength, 28 days for complete cure.
+- **Sealant:** We use a premium mix that doesn't require a separate sealant. For an optional premium sealant coating, that would be applied after a full cure.
 
 ### Seasonal Considerations
 
@@ -178,14 +175,10 @@ If your stairs are a safety hazard during winter months, temporary measures (non
 
 ## Getting a Quote
 
-If your Massachusetts concrete stairs need attention — whether it's a minor patch or a complete rebuild — we offer [free consultations](/services/free-foundation-consultations) that include:
+The fastest way to get started is to text us a few photos of your stairs. We can usually give you an honest assessment and a quote the same day — no on-site visit needed for most resurfacing jobs. Just snap a few shots showing the damage from different angles.
 
-- On-site assessment of all damaged areas
-- Honest recommendation: repair, partial replacement, or full replacement
-- Written estimate with itemized costs
-- Timeline for the work
-- Warranty information
+We'll tell you straight: if it's a simple resurfacing, we'll handle it. If your stairs need more than what we do — partial replacement, full rebuild — we'll let you know and point you to a trusted partner who can help.
 
-No pressure, no upselling. If your stairs just need a $20 bag of patching compound and some elbow grease, we'll tell you that. If they need professional repair, we'll tell you exactly what's involved and what it costs.
+No pressure, no upselling. If your stairs just need a $20 bag of patching compound and some elbow grease, we'll tell you that.
 
-Call our Massachusetts office at [617-668-1677](sms:617-668-1677) or text us a photo of your stairs for an initial assessment. We serve the greater Boston area, South Shore, MetroWest, Worcester area, and throughout the Commonwealth. Your stairs have been crumbling long enough — let's fix them before someone gets hurt.
+Text photos to [617-668-1677](sms:617-668-1677). Concrete stair repair is available through our Massachusetts operations — we serve the greater Boston area, South Shore, MetroWest, Worcester area, and throughout the Commonwealth. Your stairs have been crumbling long enough — let's fix them before someone gets hurt.

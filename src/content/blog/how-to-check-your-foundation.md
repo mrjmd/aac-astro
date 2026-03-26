@@ -48,7 +48,7 @@ Your home's foundation is the backbone of its structural integrity. If it's comp
 
 ## Structural Support and Basement Moisture Checks
 
-- Inspect basement or crawl space posts for moist or rotting wood
+- Inspect basement or [crawl space](/blog/crawl-space-foundation-problems/) posts for moist or rotting wood
 - Monitor for standing water indicating drainage complications — basement floor cracks leaking water signal hydrostatic pressure
 - Address moisture damage through gutter cleaning and drainage installation
 - Check for a persistent musty smell in your basement, which often indicates hidden water intrusion through foundation cracks
