@@ -60,8 +60,6 @@ const canonicalUrl = canonical.startsWith('http') ? canonical : new URL(canonica
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalUrl} />
 
-<!-- hreflang (Local SEO B7) -->
-<link rel="alternate" hreflang="en-us" href={canonicalUrl} />
 
 <!-- Geo Tags (Local SEO B1) -->
 {geoRegion && <meta name="geo.region" content={geoRegion} />}
