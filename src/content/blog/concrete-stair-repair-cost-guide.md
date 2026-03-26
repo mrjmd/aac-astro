@@ -3,13 +3,13 @@ title: "Concrete Stair Repair: Safety, Costs, and What to Expect in 2026"
 metaTitle: "Concrete Stair Repair Cost Guide"
 metaDescription: "Concrete stair repair costs in Massachusetts range from a few hundred to several thousand dollars. Learn what affects pricing and when repair beats replacement."
 excerpt: "Crumbling concrete stairs are a safety hazard and a code violation. Here is what repair costs, what affects the price, and when full replacement is the answer."
-publishDate: 2026-08-04
+publishDate: 2026-02-28
 author: "Matt Davis"
 category: "cost-guides"
 tags: ["concrete stairs", "stair repair", "cost guide", "Massachusetts", "safety"]
 heroImage: "/images/projects/hanover-concrete-repair-2025-06-before.jpg"
 heroImageAlt: "Concrete Stair Repair: Safety, Costs, and What to Expect in 2026"
-draft: true
+draft: false
 targetLocation: Massachusetts
 relatedServices:
   - "free-foundation-consultations"
@@ -35,7 +35,7 @@ Let's start with the numbers. Here's what concrete stair repair typically costs 
 
 These are 2026 estimates for the Massachusetts market, which runs slightly above national averages due to higher labor costs and the shorter construction season. Your actual cost will depend on the specific factors below.
 
-For context on how stair repair fits into the broader picture of concrete work, see our [Massachusetts concrete repair guide](/blog/massachusetts-concrete-repair-guide).
+For context on how stair repair fits into the broader picture of concrete work, see our [concrete repair services](/concrete-repair/).
 
 ## What Affects the Price
 

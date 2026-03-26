@@ -36,7 +36,9 @@
     "report:bridge": "node scripts/search-to-conversion.js",
     "report:benchmark": "node scripts/seasonal-benchmark.js",
     "report:health": "node scripts/analytics-health-check.js",
-    "report:journeys": "node scripts/conversion-journeys.js"
+    "report:journeys": "node scripts/conversion-journeys.js",
+    "report:weekly": "node scripts/weekly-report.js",
+    "report:monthly": "node scripts/monthly-report.js"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",

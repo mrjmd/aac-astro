@@ -3,13 +3,13 @@ title: "French Drain vs. Crack Injection: Two Solutions for Two Different Proble
 metaTitle: "French Drain vs Crack Injection"
 metaDescription: "French drains and crack injection solve different basement water problems. Learn which solution your home needs and when you might need both for dry basement."
 excerpt: "A French drain and crack injection are completely different solutions for completely different problems. Here is how to figure out which one your basement needs."
-publishDate: 2026-08-18
+publishDate: 2026-03-06
 author: "Matt Davis"
 category: "guides"
 tags: ["French drain", "crack injection", "wet basement", "waterproofing", "comparison"]
 heroImage: "/images/projects/plymouth-crack-injection-2025-01-before.jpg"
 heroImageAlt: "French Drain vs. Crack Injection: Two Solutions for Two Different Problems"
-draft: true
+draft: false
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"
@@ -47,7 +47,7 @@ Crack injection seals a specific crack in a poured concrete foundation wall. The
 - Mineral deposits (efflorescence) trace a line down from a crack
 - The problem is worst during heavy rain, not seasonal water table changes
 
-**How it works:** Small ports are installed along the crack, then epoxy or polyurethane resin is injected under pressure, filling the crack through the full wall thickness. It takes a few hours, involves no jackhammering, and you can use the basement the same day. See our walkthrough of [what foundation repair actually looks like](/blog/what-does-foundation-repair-look-like).
+**How it works:** Small ports are installed along the crack, then epoxy or polyurethane resin is injected under pressure, filling the crack through the full wall thickness. It takes a few hours, involves no jackhammering, and you can use the basement the same day. See our [recent projects](/projects/) for examples of what this looks like.
 
 **Cost:** Between $800 and $1,300 per crack. Most homeowners spend under $1,000. Our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) covers the full range.
 
