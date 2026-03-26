@@ -4,7 +4,7 @@ metaTitle: "Selling a House with Foundation Issues MA"
 metaDescription: "Selling a Massachusetts home with foundation problems? Learn MA disclosure laws, how issues affect sale price, and why pre-sale repair often pays for itself."
 excerpt: "Foundation issues do not have to kill your home sale in Massachusetts. Here is what the law requires, how repairs affect your price, and the smartest approach for sellers."
 publishDate: 2026-10-27
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["selling home", "foundation issues", "Massachusetts", "disclosure", "real estate", "home value"]
 heroImage: "/images/projects/hingham-crack-injection-2025-06-before.jpg"

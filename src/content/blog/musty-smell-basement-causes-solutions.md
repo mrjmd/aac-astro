@@ -3,13 +3,13 @@ title: "Musty Smell in Your Basement? Causes, Solutions, and When to Worry"
 metaTitle: "Musty Smell in Basement: Causes & Fixes"
 metaDescription: "That musty basement smell is not just unpleasant — it could signal foundation cracks, mold, or water intrusion. Learn what causes it and how to fix it for good."
 excerpt: "A musty basement smell is your home telling you something is wrong. Here is how to identify the cause, fix it, and know when the smell points to a foundation problem."
-publishDate: 2026-06-02
-author: "Attack A Crack"
+publishDate: 2026-03-16
+author: "Matt Davis"
 category: "guides"
 tags: ["musty basement", "basement smell", "mold", "moisture", "water intrusion", "basement humidity"]
-heroImage: "/images/projects/walpole-crack-injection-2025-02-before.jpg"
-heroImageAlt: "Musty Smell in Your Basement? Causes, Solutions, and When to Worry"
-draft: true
+heroImage: "/images/blog/damp-basement-moisture-musty-smell.jpg"
+heroImageAlt: "View down basement stairs into a damp, musty basement with moisture staining and hazy air"
+draft: false
 
 relatedServices:
   - "foundation-crack-injection"

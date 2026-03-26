@@ -4,7 +4,7 @@ metaTitle: "Foundation Repair in Weymouth MA"
 metaDescription: "Weymouth MA homes face unique foundation challenges from coastal proximity and high water tables. Learn what South Shore homeowners need to know."
 excerpt: "Weymouth sits right on the South Shore coast, and its foundations feel every bit of it. Here is what Weymouth homeowners should know about their foundation risks."
 publishDate: 2026-08-18
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["Weymouth", "South Shore", "Massachusetts", "foundation repair", "coastal foundations", "water table"]
 heroImage: "/images/projects/weymouth-crack-injection-2025-07-2-before.jpg"

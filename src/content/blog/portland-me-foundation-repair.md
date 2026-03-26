@@ -4,7 +4,7 @@ metaTitle: "Portland ME Foundation Repair Guide"
 metaDescription: "Portland and southern Maine homes face extreme winter conditions and coastal exposure. Learn about foundation challenges in Maine's coastal communities."
 excerpt: "Maine winters test every foundation. Here is what Portland-area homeowners should know about coastal exposure, extreme cold, and keeping your foundation intact."
 publishDate: 2026-12-08
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["Portland", "Maine", "coastal foundation", "winter", "foundation repair"]
 heroImage: "/images/projects/boston-crack-injection-2025-07-before.jpg"

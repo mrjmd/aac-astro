@@ -4,7 +4,7 @@ metaTitle: "Massachusetts Concrete Repair Guide"
 metaDescription: "Complete guide to concrete driveway, patio, and pool deck repair in Massachusetts. Learn about repair methods, costs, and when replacement is smarter."
 excerpt: "Massachusetts weather destroys concrete surfaces. Here is your complete guide to repairing driveways, patios, pool decks, and walkways — and when to call a pro."
 publishDate: 2026-06-30
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["concrete repair", "Massachusetts", "driveway repair", "patio repair", "pool deck"]
 heroImage: "/images/projects/lexington-crack-injection-2025-10-after.jpg"

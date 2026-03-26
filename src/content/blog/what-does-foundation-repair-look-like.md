@@ -4,7 +4,7 @@ metaTitle: "Foundation Repair Photo Walkthrough"
 metaDescription: "Ever wonder what foundation repair actually looks like? Step-by-step photo walkthrough of a real crack injection job from start to finish."
 excerpt: "Most homeowners have never seen a foundation repair in progress. Here is a complete photo walkthrough of a real job, from assessment to finished repair."
 publishDate: 2026-09-15
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "case-studies"
 tags: ["photo walkthrough", "repair process", "before and after", "crack injection"]
 heroImage: "/images/projects/abington-crack-injection-2025-03-before.jpg"

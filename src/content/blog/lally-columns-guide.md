@@ -4,7 +4,7 @@ metaTitle: "Lally Columns: Replacement Guide"
 metaDescription: "Lally columns support your home's main beam. Learn the signs of failure, when replacement is needed, and why adjustable columns are only a temporary fix."
 excerpt: "Lally columns hold up your house. If they are rusted, leaning, or buckling, your floors and framing are at risk. Here is what every New England homeowner needs to know."
 publishDate: 2026-02-14
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["lally columns", "basement support", "structural repair", "column replacement", "New England homes"]
 heroImage: "/images/blog/lally-columns-guide.jpg"

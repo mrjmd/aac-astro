@@ -4,7 +4,7 @@ metaTitle: "Year-End Foundation Maintenance"
 metaDescription: "Close out the year with this foundation-focused maintenance checklist. Review what you found this year, plan spring repairs, and set up monitoring."
 excerpt: "The year is ending. Here is how to document what you have noticed about your foundation, plan any needed repairs for spring, and start the new year prepared."
 publishDate: 2026-12-15
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "maintenance-tips"
 tags: ["year-end maintenance", "annual review", "foundation planning", "new year"]
 heroImage: "/images/projects/east-sandwich-crack-injection-2026-02-before.jpg"

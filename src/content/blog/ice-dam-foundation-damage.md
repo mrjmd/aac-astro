@@ -4,7 +4,7 @@ metaTitle: "Ice Dams and Foundation Damage Guide"
 metaDescription: "Ice dams cause hidden foundation damage by saturating soil around your home. Learn the roof-to-basement pathway and how to protect your New England foundation."
 excerpt: "Ice dams do more than damage your roof. Learn how ice buildup can crack your foundation, cause water intrusion, and what New England homeowners should watch for."
 publishDate: 2025-05-12
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "maintenance-tips"
 tags: ["ice dams", "winter damage", "foundation cracks", "water intrusion"]
 heroImage: "/images/blog/ice-dam-roof-water-foundation-damage.jpg"

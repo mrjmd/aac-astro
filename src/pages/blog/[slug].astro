@@ -245,7 +245,9 @@ const schemas = [articleSchema, faqSchema, ...videoSchemas].filter(Boolean);
 							<p class="text-zinc-600 leading-relaxed">
 								{post.data.author === "Luc Richard"
 									? "Founder of Attack A Crack with over 20 years of foundation repair experience in New England. Luc believes in honest assessments and standing behind every repair with a lifetime guarantee."
-									: "Managing Partner at Attack A Crack, leading Massachusetts operations. Matt brings technical expertise and a commitment to customer satisfaction to every project."}
+									: post.data.author === "Matt Davis"
+									? "Managing Partner at Attack A Crack, leading Massachusetts operations. Matt brings technical expertise and a commitment to customer satisfaction to every project."
+									: "Attack A Crack provides expert foundation repair across New England. With over 20 years of experience, our team delivers honest assessments and backs every repair with a lifetime guarantee."}
 							</p>
 						</div>
 					</div>

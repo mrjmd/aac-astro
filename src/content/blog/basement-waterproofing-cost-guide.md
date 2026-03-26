@@ -4,7 +4,7 @@ metaTitle: "Basement Waterproofing Cost Guide 2026"
 metaDescription: "Complete breakdown of basement waterproofing costs in New England. Interior drainage, sump pumps, crack injection, and exterior solutions compared."
 excerpt: "Basement waterproofing costs range from $800 to $30,000 depending on what you actually need. Here is an honest breakdown of every option and what it costs in New England."
 publishDate: 2026-04-28
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "cost-guides"
 tags: ["basement waterproofing cost", "waterproofing", "New England", "cost guide", "basement moisture"]
 heroImage: "/images/projects/quincy-crack-injection-2025-04-before.jpg"

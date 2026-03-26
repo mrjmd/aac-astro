@@ -4,7 +4,7 @@ metaTitle: "South Shore Foundation Problems"
 metaDescription: "South Shore MA homes face unique foundation challenges from coastal soil, high water tables, and older housing stock. Learn what to watch for in your area."
 excerpt: "From Quincy to Plymouth, South Shore homes face foundation challenges you will not find inland. Learn why coastal soil, water tables, and housing age matter."
 publishDate: 2026-03-23
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["south shore", "Massachusetts", "coastal foundations", "water table", "foundation repair"]
 heroImage: "/images/blog/south-shore-foundation-problems.jpg"

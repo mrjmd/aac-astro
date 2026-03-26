@@ -4,7 +4,7 @@ metaTitle: "Garage Floor Crack Repair Guide"
 metaDescription: "Garage floor cracks in New England are common but fixable. Learn what causes them, which types are serious, and how to repair them permanently."
 excerpt: "That crack in your garage floor might be cosmetic or it might be a sign of something bigger. Here is how to tell the difference and what to do about it."
 publishDate: 2026-08-25
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["garage floor", "concrete cracks", "floor repair", "settlement"]
 heroImage: "/images/projects/lexington-crack-injection-2025-10-before.jpg"

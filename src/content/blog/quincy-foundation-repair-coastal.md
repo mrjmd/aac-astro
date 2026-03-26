@@ -4,7 +4,7 @@ metaTitle: "Quincy MA Foundation Repair Guide"
 metaDescription: "Quincy MA homes face unique coastal foundation challenges. Learn about water intrusion, high water tables, and expert repair solutions from our local team."
 excerpt: "Our Quincy headquarters means we know these foundations better than anyone. Here is what makes coastal South Shore homes different and how we fix them."
 publishDate: 2026-05-26
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["Quincy", "coastal foundation", "water intrusion", "South Shore", "Massachusetts"]
 heroImage: "/images/projects/danvers-crack-injection-2025-07-before.jpg"

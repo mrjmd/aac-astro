@@ -4,7 +4,7 @@ metaTitle: "Brick Foundation Repair Guide for NE"
 metaDescription: "Brick foundations in older New England homes need specialized repair. Learn about mortar repointing, structural issues, and when professional help is needed."
 excerpt: "If your New England home was built between 1800 and 1930, you might have a brick foundation. Here is what to watch for and how these foundations are repaired."
 publishDate: 2026-09-08
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "foundation-types"
 tags: ["brick foundation", "old homes", "mortar repointing", "New England", "historic"]
 heroImage: "/images/projects/dedham-crack-injection-2025-12-before.jpg"

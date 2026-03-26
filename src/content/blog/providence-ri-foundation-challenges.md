@@ -4,7 +4,7 @@ metaTitle: "Rhode Island Foundation Repair"
 metaDescription: "Rhode Island homes face unique foundation challenges from coastal proximity, aging housing stock, and varied soil. Expert repair guide for RI homeowners."
 excerpt: "From Providence's historic homes to Warwick's coastal properties, Rhode Island foundations have their own set of challenges. Here is what RI homeowners should know."
 publishDate: 2026-10-20
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["Rhode Island", "Providence", "Warwick", "coastal foundations", "foundation repair"]
 heroImage: "/images/projects/braintree-crack-injection-2025-07-before.jpg"

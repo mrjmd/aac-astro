@@ -4,7 +4,7 @@ metaTitle: "15-Minute Spring Foundation Inspection"
 metaDescription: "Walk through your foundation in 15 minutes this spring. A step-by-step guide to checking walls, floors, and drainage before water intrusion starts."
 excerpt: "A quick 15-minute walkthrough can catch foundation problems before they become expensive. Here is exactly what to look for this spring, room by room."
 publishDate: 2026-03-24
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "maintenance-tips"
 tags: ["foundation inspection", "spring maintenance", "DIY inspection", "homeowner guide"]
 heroImage: "/images/blog/spring-foundation-inspection-exterior.jpg"

@@ -4,7 +4,7 @@ metaTitle: "Patio Crack Repair: Fix vs Replace"
 metaDescription: "Cracked patio in New England? Learn when repair is the smart choice vs. full replacement, plus DIY options and professional repair costs for concrete patios."
 excerpt: "Not every patio crack needs a full replacement. Here is how to tell whether your cracked patio needs a simple repair, professional help, or a fresh pour."
 publishDate: 2026-07-14
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["patio repair", "concrete cracks", "patio replacement", "outdoor concrete"]
 heroImage: "/images/projects/quincy-crack-injection-2025-04-after.jpg"

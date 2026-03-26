@@ -4,7 +4,7 @@ metaTitle: "New England Foundation Types Guide"
 metaDescription: "Identify your foundation type with this visual guide covering poured concrete, fieldstone, cinderblock, brick, and rubble stone common in New England."
 excerpt: "Not sure what kind of foundation you have? This visual guide covers every type common in New England homes, from 1700s fieldstone to modern poured concrete."
 publishDate: 2026-08-11
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["foundation types", "New England homes", "identification", "visual guide"]
 heroImage: "/images/projects/weymouth-crack-injection-2025-07-before.jpg"

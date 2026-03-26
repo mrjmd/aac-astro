@@ -4,7 +4,7 @@ metaTitle: "Efflorescence on Basement Walls"
 metaDescription: "White powder or crystalline deposits on your basement walls is efflorescence — a sign of moisture moving through concrete. Learn what it means and what to do."
 excerpt: "That white, chalky substance on your basement walls has a name: efflorescence. It is not mold, but it is telling you something important about your foundation."
 publishDate: 2026-03-10
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["efflorescence", "white powder", "basement walls", "moisture", "foundation"]
 heroImage: "/images/blog/efflorescence-white-powder-basement-walls.jpg"
@@ -41,7 +41,7 @@ No. Efflorescence itself is completely harmless. You can touch it, brush it off,
 - **Mold growth.** The damp conditions that produce efflorescence are the same conditions mold loves.
 - **Structural deterioration.** Persistent water movement through concrete can slowly erode the material, especially in older walls with high lime content.
 - **Rebar corrosion.** If your poured concrete walls have steel reinforcement, moisture reaching the rebar can cause it to rust and expand, cracking the concrete from within.
-- **Indoor humidity problems.** All that moisture evaporating into your basement raises humidity levels, which affects everything stored down there and can impact your whole house.
+- **[Indoor humidity problems](/blog/basement-humidity-control-guide/).** All that moisture evaporating into your basement raises humidity levels, which affects everything stored down there and can impact your whole house.
 
 Treating efflorescence without addressing the moisture source is like wiping fog off a window without fixing the leak. You'll be wiping again next week.
 

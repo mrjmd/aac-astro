@@ -4,7 +4,7 @@ metaTitle: "Sump Pump vs Crack Injection Guide"
 metaDescription: "Sump pump or crack injection? Learn which solution actually fixes your wet basement problem and when you need both. Honest comparison from experts."
 excerpt: "A sump pump and crack injection solve completely different problems. Here is how to figure out which one you actually need — and when the answer is both."
 publishDate: 2026-03-22
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["sump pump", "crack injection", "wet basement", "waterproofing", "comparison"]
 heroImage: "/images/blog/sump-pump-vs-crack-injection.jpg"
@@ -140,7 +140,7 @@ Ask yourself these questions:
 
 **Does water appear even during dry periods?** This suggests groundwater or water table issues that require a pump-based solution.
 
-**Does your basement smell damp but you never see standing water?** This could be vapor transmission through concrete, which neither injection nor a sump pump solves. A dehumidifier and moisture management approach may be more appropriate.
+**Does your basement smell damp but you never see standing water?** This could be vapor transmission through concrete, which neither injection nor a sump pump solves. A [dehumidifier and moisture management approach](/blog/basement-humidity-control-guide/) may be more appropriate.
 
 ## The Bottom Line
 

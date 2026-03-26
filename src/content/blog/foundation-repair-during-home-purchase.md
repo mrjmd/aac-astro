@@ -4,7 +4,7 @@ metaTitle: "Foundation Issues When Buying a Home"
 metaDescription: "Found foundation problems during a home inspection? Learn what is a deal-breaker, what is easily fixable, and how to negotiate repairs before closing."
 excerpt: "The home inspector found foundation cracks. Before you panic or walk away, here is what those findings actually mean and how to handle them during negotiation."
 publishDate: 2026-04-14
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["home buying", "inspection findings", "foundation issues", "negotiation", "real estate"]
 heroImage: "/images/projects/lenox-crack-injection-2025-04-before.jpg"

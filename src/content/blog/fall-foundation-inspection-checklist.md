@@ -4,7 +4,7 @@ metaTitle: "Fall Foundation Inspection Checklist"
 metaDescription: "Inspect your foundation this fall before winter hits. Complete checklist for New England homeowners covering cracks, drainage, bulkheads, and winterization."
 excerpt: "Winter is coming for your foundation. This fall inspection checklist helps you catch cracks, drainage problems, and weak spots before the first freeze hits."
 publishDate: 2026-09-29
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "maintenance-tips"
 tags: ["fall inspection", "winterization", "seasonal checklist", "foundation maintenance"]
 heroImage: "/images/projects/hull-crack-injection-2025-07-before.jpg"

@@ -4,7 +4,7 @@ metaTitle: "Does Flex Seal Work on Basement Cracks?"
 metaDescription: "Flex Seal won't fix a leaking basement crack — here's why, plus what actually works. Covers Flex Seal Liquid, Spray, and Tape on foundation walls."
 excerpt: "Flex Seal seems like a quick fix for a wet basement. Here is why it fails on foundation cracks, when surface sealants are actually fine, and what works instead."
 publishDate: 2026-02-26
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["flex seal", "DIY repair", "basement cracks", "crack injection", "basement waterproofing"]
 heroImage: "/images/blog/flex-seal-basement-cracks.jpg"

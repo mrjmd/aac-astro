@@ -4,7 +4,7 @@ metaTitle: "Crawl Space Foundation Problems"
 metaDescription: "Crawl space foundations in New England face unique moisture, pest, and structural challenges. Learn the warning signs and repair options from local experts."
 excerpt: "Crawl spaces are the forgotten foundation. If you have one, here is what can go wrong, what the warning signs look like, and when it is time to call for help."
 publishDate: 2026-04-21
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["crawl space", "foundation problems", "moisture", "New England homes"]
 heroImage: "/images/projects/easton-crack-injection-2025-08-before.jpg"

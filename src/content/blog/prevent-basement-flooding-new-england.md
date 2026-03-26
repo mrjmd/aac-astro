@@ -3,13 +3,13 @@ title: "How to Prevent Basement Flooding in New England: A Seasonal Guide"
 metaTitle: "Prevent Basement Flooding in New England"
 metaDescription: "Protect your New England basement from flooding with this seasonal prevention guide. Covers grading, gutters, sump pumps, crack sealing, and drainage tips."
 excerpt: "Basement flooding is not inevitable in New England — it just feels that way. Here is a seasonal prevention plan that addresses the real causes before water arrives."
-publishDate: 2026-07-28
-author: "Attack A Crack"
+publishDate: 2026-03-19
+author: "Matt Davis"
 category: "maintenance-tips"
 tags: ["basement flooding", "flood prevention", "New England", "seasonal maintenance", "drainage", "gutters"]
-heroImage: "/images/projects/boston-crack-injection-2025-10-before.jpg"
-heroImageAlt: "How to Prevent Basement Flooding in New England: A Seasonal Guide"
-draft: true
+heroImage: "/images/blog/dry-protected-basement-sump-pump.jpg"
+heroImageAlt: "Basement with water seeping through foundation wall and sump pump showing flooding prevention"
+draft: false
 
 relatedServices:
   - "foundation-crack-injection"
@@ -56,15 +56,15 @@ Spring is when most New England basement flooding occurs. The combination of sno
 
 ### March - April Checklist
 
-**Test your sump pump.** Pour a bucket of water into the sump pit and verify the pump activates, moves the water, and the discharge line is clear. Test the battery backup too. Do this before you need it, not during the first storm.
-
-**Check the discharge line.** Sump pump discharge lines that exit the house can freeze over winter. A frozen discharge line means a pump that runs but cannot actually remove water. Make sure the line is clear and flowing freely.
-
 **Inspect the foundation from outside.** Walk the perimeter of your house. Look for new cracks, settling near the foundation, areas where grading has reversed, and any damage from winter.
 
 **Clear window wells.** Debris accumulates in window wells over winter. Blocked wells trap water against your basement windows. Clean them out and verify the drains (if present) are clear.
 
 **Inspect the bulkhead.** Check seals, look for new rust or cracks, and verify the drain at the base of the bulkhead stairs is not clogged. Our guide on [leaky bulkhead repair](/services/leaky-bulkhead-repair) covers what to look for.
+
+**Test your sump pump (if you have one).** Pour a bucket of water into the sump pit and verify the pump activates, moves the water, and the discharge line is clear. Test the battery backup too. Do this before you need it, not during the first storm.
+
+**Check the discharge line.** If you have a sump pump, the discharge line that exits the house can freeze over winter. A frozen discharge line means a pump that runs but cannot actually remove water. Make sure the line is clear and flowing freely.
 
 ### The Spring Thaw Problem
 

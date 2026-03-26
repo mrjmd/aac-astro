@@ -4,7 +4,7 @@ metaTitle: "Poured Concrete Foundation Repair"
 metaDescription: "Poured concrete is the most common foundation type in New England. Learn about typical crack patterns, repair methods, and when to worry about your foundation."
 excerpt: "If your home was built after 1940, you probably have a poured concrete foundation. Here is what cracks mean, how we fix them, and when to actually worry."
 publishDate: 2026-06-16
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "foundation-types"
 tags: ["poured concrete", "foundation types", "crack patterns", "New England homes"]
 heroImage: "/images/projects/quincy-crack-injection-2025-08-after.jpg"

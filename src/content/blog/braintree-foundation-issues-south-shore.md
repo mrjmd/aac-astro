@@ -4,7 +4,7 @@ metaTitle: "Braintree MA Foundation Issues Guide"
 metaDescription: "Braintree MA homes face foundation problems from fill material and South Shore water tables. Learn what to watch for in your Braintree home."
 excerpt: "Braintree sits at the gateway to the South Shore with a unique mix of foundation challenges. Here is what Braintree homeowners need to know about their foundations."
 publishDate: 2026-09-01
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["Braintree", "South Shore", "Massachusetts", "foundation repair", "fill material", "foundation problems"]
 heroImage: "/images/projects/canton-crack-injection-2025-08-before.jpg"

@@ -4,7 +4,7 @@ metaTitle: "Thanksgiving Basement Inspection Tips"
 metaDescription: "Heading to the basement for Thanksgiving supplies? Take 5 minutes to check these foundation warning signs while you are already down there."
 excerpt: "You are already going down to the basement for the folding chairs. Take five extra minutes to check these five things that could save you thousands."
 publishDate: 2026-11-24
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "maintenance-tips"
 tags: ["Thanksgiving", "quick inspection", "basement check", "seasonal", "holiday"]
 heroImage: "/images/projects/scituate-crack-injection-2026-02-before.jpg"

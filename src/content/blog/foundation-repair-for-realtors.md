@@ -4,7 +4,7 @@ metaTitle: "Foundation Repair for Realtors"
 metaDescription: "A realtor's guide to foundation inspection findings. Learn what common issues mean, which are deal-breakers, and how to keep transactions on track."
 excerpt: "When a home inspection flags foundation issues, deals can fall apart fast. Here is what those findings actually mean and how to keep your transaction moving."
 publishDate: 2026-07-21
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["realtors", "home inspection", "foundation issues", "real estate", "transaction"]
 heroImage: "/images/projects/marblehead-crack-injection-2025-06-before.jpg"

@@ -4,7 +4,7 @@ metaTitle: "Foundation Repair Myths Debunked"
 metaDescription: "The internet is full of bad foundation repair advice. We debunk the most common myths with decades of hands-on experience fixing New England foundations."
 excerpt: "After decades of fixing foundations, we have heard every myth. Here are the biggest misconceptions about foundation repair and what is actually true."
 publishDate: 2026-12-22
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["myths", "misconceptions", "foundation repair", "fact vs fiction"]
 heroImage: "/images/projects/milton-crack-injection-2025-10-before.jpg"

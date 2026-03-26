@@ -4,7 +4,7 @@ metaTitle: "Foundation Repair for Home Sellers"
 metaDescription: "Selling a home with foundation issues? Learn what to disclose, when to repair before listing, and how a lifetime warranty transfers to the new owner."
 excerpt: "Thinking about selling a home with foundation cracks? Here is what you legally need to disclose, when pre-sale repair pays off, and how warranties transfer."
 publishDate: 2026-05-19
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["home selling", "disclosure", "real estate", "foundation repair", "warranty transfer"]
 heroImage: "/images/projects/medford-crack-injection-2025-04-before.jpg"

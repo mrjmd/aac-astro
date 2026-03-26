@@ -4,7 +4,7 @@ metaTitle: "Fix Foundation Cracks Before Winter"
 metaDescription: "Repairing foundation cracks before winter prevents freeze-thaw damage and costly spring repairs. Learn why fall is the ideal time for foundation work."
 excerpt: "That foundation crack you have been watching all summer? Fix it before winter. Here is why freeze-thaw cycles make small cracks into big problems overnight."
 publishDate: 2026-10-06
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "maintenance-tips"
 tags: ["winter preparation", "freeze-thaw", "crack repair timing", "seasonal"]
 heroImage: "/images/projects/kingston-crack-injection-2025-06-before.jpg"

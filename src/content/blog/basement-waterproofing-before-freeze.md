@@ -4,7 +4,7 @@ metaTitle: "Basement Waterproofing Before Winter"
 metaDescription: "Waterproof your basement before the first freeze with this New England guide. Covers crack sealing, drainage, humidity control, and professional options."
 excerpt: "The first hard freeze is your deadline. Here is everything New England homeowners should do to waterproof their basement before winter, from DIY to professional."
 publishDate: 2026-10-13
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "maintenance-tips"
 tags: ["basement waterproofing", "winterization", "freeze protection", "water intrusion"]
 heroImage: "/images/projects/rockland-crack-injection-2025-08-before.jpg"

@@ -21,7 +21,7 @@ heroImage: "/images/blog/basement-foundation-warning-signs.jpg"
 heroImageAlt: "Basement wall showing visible foundation warning signs and cracks"
 ---
 
-Most foundation problems don't announce themselves with a dramatic crack or a flooded basement. They creep in slowly — a door that sticks a little more each winter, a hairline crack that grows a quarter inch per year, a musty smell that wasn't there before.
+Most foundation problems don't announce themselves with a dramatic crack or a flooded basement. They creep in slowly — a door that sticks a little more each winter, a hairline crack that grows a quarter inch per year, a [musty smell that wasn't there before](/blog/musty-smell-basement-causes-solutions/).
 
 I'm Matt Davis, and I've inspected hundreds of foundations across Massachusetts. The homeowners who catch problems early save thousands. Here are the signs to watch for and when each one is normal versus concerning.
 

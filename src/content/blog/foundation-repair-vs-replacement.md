@@ -4,7 +4,7 @@ metaTitle: "Foundation Repair vs Replacement Guide"
 metaDescription: "Foundation repair costs $1,000 to $15,000. Replacement costs $30,000 to $100,000 or more. Learn when repair is enough and when replacement is truly necessary."
 excerpt: "Foundation repair handles 95% of situations. Replacement is rare, expensive, and usually unnecessary. Here is how to know which one your home actually needs."
 publishDate: 2026-01-10
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["foundation repair", "foundation replacement", "structural repair", "cost comparison", "structural engineer"]
 heroImage: "/images/projects/newton-crack-injection-2025-04-before.jpg"

@@ -4,7 +4,7 @@ metaTitle: "French Drain vs Crack Injection"
 metaDescription: "French drains and crack injection solve different basement water problems. Learn which solution your home needs and when you might need both for dry basement."
 excerpt: "A French drain and crack injection are completely different solutions for completely different problems. Here is how to figure out which one your basement needs."
 publishDate: 2026-08-18
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["French drain", "crack injection", "wet basement", "waterproofing", "comparison"]
 heroImage: "/images/projects/plymouth-crack-injection-2025-01-before.jpg"

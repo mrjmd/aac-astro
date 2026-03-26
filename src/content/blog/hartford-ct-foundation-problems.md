@@ -4,7 +4,7 @@ metaTitle: "Hartford CT Foundation Repair Guide"
 metaDescription: "Hartford and CT River Valley homes face unique foundation challenges from clay soil, flood plains, and aging housing stock. Expert repair guide."
 excerpt: "The Connecticut River Valley has its own set of foundation problems. Here is what Hartford-area homeowners should know about clay soil, flooding, and aging homes."
 publishDate: 2026-06-23
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["Hartford", "Connecticut", "River Valley", "clay soil", "foundation repair"]
 heroImage: "/images/projects/randolph-crack-injection-2025-02-before.jpg"

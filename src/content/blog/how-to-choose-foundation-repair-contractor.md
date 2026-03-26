@@ -4,7 +4,7 @@ metaTitle: "Choose a Foundation Repair Contractor"
 metaDescription: "Avoid foundation repair scams with this honest contractor selection guide. Learn what to ask, red flags to watch for, and why we share this openly."
 excerpt: "Choosing the wrong foundation repair contractor can cost you thousands. Here are the questions to ask, red flags to spot, and what honest pricing looks like."
 publishDate: 2026-06-02
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "guides"
 tags: ["contractor selection", "scam prevention", "foundation repair", "hiring guide"]
 heroImage: "/images/projects/scituate-crack-injection-2025-07-before.jpg"

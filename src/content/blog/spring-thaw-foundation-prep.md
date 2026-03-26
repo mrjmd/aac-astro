@@ -4,7 +4,7 @@ metaTitle: "Spring Thaw Foundation Prep for New England"
 metaDescription: "Spring thaw is the most dangerous season for New England foundations. Use this checklist to prepare your home before snowmelt causes cracks and water intrusion."
 excerpt: "Spring thaw is the most dangerous time for New England foundations. Use this checklist to catch cracks, drainage problems, and water intrusion before they worsen."
 publishDate: 2025-06-16
-author: "Attack A Crack"
+author: "Matt Davis"
 category: "maintenance-tips"
 tags: ["spring thaw", "foundation inspection", "seasonal maintenance", "water intrusion"]
 heroImage: "/images/blog/spring-thaw-snowmelt-near-foundation.jpg"
@@ -59,7 +59,7 @@ You do not need to be a contractor to prepare your home. Here are ten things you
 
 **8. Check the floor-wall joint.** The cove joint where floor meets wall is a common entry point. Look for staining, dampness, or mineral deposits along this line.
 
-**9. Sniff test.** A musty smell in your basement that was not present in the fall means moisture is getting in somewhere. Combined with white powder on basement walls (efflorescence), this is a reliable indicator of active water intrusion through foundation cracks.
+**9. Sniff test.** A [musty smell in your basement](/blog/musty-smell-basement-causes-solutions/) that was not present in the fall means moisture is getting in somewhere. Combined with white powder on basement walls (efflorescence), this is a reliable indicator of active water intrusion through foundation cracks.
 
 **10. Check doors and windows above.** Sticking doors or new gaps in frames can indicate foundation movement.
 
