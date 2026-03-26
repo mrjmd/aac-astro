@@ -144,7 +144,6 @@ A proper assessment includes visual inspection of all walls, measurement of disp
 
 Horizontal foundation cracks are serious, but they're also repairable — especially when caught early. With thousands of projects across New England (see our [before/after project photos](/projects)), we have repaired horizontal cracks in every severity. If you're seeing horizontal cracking in your New England home, don't wait for the next freeze-thaw season to make it worse.
 
-**Connecticut:** [860-573-8760](tel:860-573-8760)
-**Massachusetts:** [617-668-1677](tel:617-668-1677)
+**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)
 
 Text us a photo of your crack and we'll give you an honest preliminary assessment before we ever set foot in your basement.

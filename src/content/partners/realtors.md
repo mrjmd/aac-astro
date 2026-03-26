@@ -82,5 +82,4 @@ In Massachusetts, we also offer professional concrete resurfacing for driveways,
 
 Add Attack A Crack to your trusted vendor list. Schedule a [free foundation consultation](/services/free-foundation-consultations) and when foundation questions arise, you'll have a reliable partner ready to help close the deal.
 
-**Connecticut:** [860-573-8760](tel:860-573-8760)
-**Massachusetts:** [617-668-1677](tel:617-668-1677)
+**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)

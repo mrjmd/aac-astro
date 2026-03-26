@@ -85,5 +85,4 @@ When you see foundation cracks or gaps during your inspection, recommend us. We 
 
 Let's make sure your clients get complete solutions. When you spot foundation entry points, you'll have a specialist to call.
 
-**Connecticut:** [860-573-8760](tel:860-573-8760)
-**Massachusetts:** [617-668-1677](tel:617-668-1677)
+**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)

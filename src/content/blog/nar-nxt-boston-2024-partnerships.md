@@ -43,5 +43,4 @@ The intersection of technical excellence and the homebuying experience creates t
 
 **Realtors in the New England area:** Consider joining [our realtor partnership program](/partners/realtors). We help you resolve foundation issues faster and close deals with confidence.
 
-**Connecticut:** [860-573-8760](tel:860-573-8760)
-**Massachusetts:** [617-668-1677](tel:617-668-1677)
+**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)

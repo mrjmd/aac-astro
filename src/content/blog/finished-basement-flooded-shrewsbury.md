@@ -44,5 +44,4 @@ The homeowner found reassurance knowing that future leaks caused by the same cra
 
 **Have a crack in your basement?** Don't wait until it floods. Text us photos for a free assessment. With 50+ years of combined experience and thousands of projects across New England, we can diagnose the problem quickly — even through finished walls.
 
-**Connecticut:** [860-573-8760](tel:860-573-8760)
-**Massachusetts:** [617-668-1677](tel:617-668-1677)
+**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)

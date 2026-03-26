@@ -72,5 +72,4 @@ Ideally, cracks are sealed before mold work begins. This prevents new moisture f
 
 Contact us to discuss how we can create a referral relationship that serves your clients and ours.
 
-**Connecticut:** [860-573-8760](tel:860-573-8760)
-**Massachusetts:** [617-668-1677](tel:617-668-1677)
+**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)

@@ -62,5 +62,4 @@ Attack A Crack specializes in diagnosing crumbling foundation issues and offers 
 
 If you're concerned about your foundation, text us a photo for a preliminary assessment or contact us for a [free evaluation](/services/free-foundation-consultations):
 
-**Massachusetts:** [617-668-1677](tel:617-668-1677)
-**Connecticut:** [860-573-8760](tel:860-573-8760)
+**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)

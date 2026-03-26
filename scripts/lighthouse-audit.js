@@ -18,7 +18,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const PROJECT_ROOT = join(__dirname, '..');
 
-const BASE_URL = 'https://aac-astro.vercel.app';
+const BASE_URL = 'https://www.attackacrack.com';
 const RUNS_PER_PAGE = 3;
 const OUTPUT_FILE = join(PROJECT_ROOT, '.lighthouse-audit-results.json');
 

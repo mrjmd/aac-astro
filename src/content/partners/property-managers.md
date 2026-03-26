@@ -92,5 +92,4 @@ In Massachusetts, we also offer professional concrete resurfacing for driveways,
 
 Let's discuss your property management needs. Start with a [free foundation consultation](/services/free-foundation-consultations) and we'll create a plan that fits your portfolio and budget.
 
-**Connecticut:** [860-573-8760](tel:860-573-8760)
-**Massachusetts:** [617-668-1677](tel:617-668-1677)
+**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)

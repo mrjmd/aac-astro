@@ -135,7 +135,6 @@ Contact a foundation specialist if you notice:
 
 At Attack A Crack, our assessments are completely free. Text us photos and we will explain what we see and give you honest recommendations — including telling you when you don't need repair.
 
-**Connecticut:** [860-573-8760](tel:860-573-8760)
-**Massachusetts:** [617-668-1677](tel:617-668-1677)
+**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)
 
 Many homeowners get the answer they need from photos alone.

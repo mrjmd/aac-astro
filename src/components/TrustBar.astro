@@ -54,20 +54,20 @@ if (isMA) {
           <div class="h-10 md:h-12 flex flex-col items-center justify-center">
             {badge.scope === 'both' ? (
               <>
-                <a href="https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx" target="_blank" rel="noopener noreferrer" class="text-[9px] md:text-[10px] font-black text-aac-dark/70 hover:text-aac-dark transition-colors tracking-wide">
+                <a href="https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx" target="_blank" rel="noopener noreferrer" class="text-[9px] md:text-[10px] font-black text-aac-dark hover:text-aac-dark/80 transition-colors tracking-wide inline-flex items-center min-h-[28px]">
                   CT HIC #0629164
                 </a>
-                <a href="https://contractorhub.mass.gov/s/hic-contractor-search" target="_blank" rel="noopener noreferrer" class="text-[9px] md:text-[10px] font-black text-aac-dark/70 hover:text-aac-dark transition-colors tracking-wide">
+                <a href="https://contractorhub.mass.gov/s/hic-contractor-search" target="_blank" rel="noopener noreferrer" class="text-[9px] md:text-[10px] font-black text-aac-dark hover:text-aac-dark/80 transition-colors tracking-wide inline-flex items-center min-h-[28px]">
                   MA HIC #214356
                 </a>
               </>
             ) : (
-              <a href="https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx" target="_blank" rel="noopener noreferrer" class="text-[10px] md:text-xs font-black text-aac-dark/70 hover:text-aac-dark transition-colors tracking-wide">
+              <a href="https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx" target="_blank" rel="noopener noreferrer" class="text-[10px] md:text-xs font-black text-aac-dark hover:text-aac-dark/80 transition-colors tracking-wide inline-flex items-center min-h-[28px]">
                 CT HIC #0629164
               </a>
             )}
           </div>
-          <span class="text-[10px] md:text-xs font-black uppercase tracking-widest text-aac-dark/50 text-center">
+          <span class="text-[10px] md:text-xs font-black uppercase tracking-widest text-aac-dark text-center">
             Licensed Contractor
           </span>
         </div>
@@ -76,7 +76,7 @@ if (isMA) {
            class="flex flex-col items-center gap-1.5 group">
           <img src={badge.src} alt={badge.alt} loading="eager" width="48" height="48"
                class="h-10 md:h-12 w-auto object-contain" />
-          <span class="text-[10px] md:text-xs font-black uppercase tracking-widest text-aac-dark/50 text-center">
+          <span class="text-[10px] md:text-xs font-black uppercase tracking-widest text-aac-dark text-center">
             {badge.name}
           </span>
         </a>
