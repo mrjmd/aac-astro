@@ -41,7 +41,7 @@ steps:
 
 **Carbon fiber stitches** (also called carbon fiber staples) are high-strength carbon fiber strips embedded in structural epoxy and installed across foundation cracks to prevent further movement. They bridge both sides of the crack, distributing stress across a wider area and permanently stabilizing the wall — without excavation or steel beams.
 
-**Carbon fiber stitches cost $200–$300 per stitch** and provide permanent structural reinforcement for foundation cracks that show movement or stress. If your wall has cracks wider than 1/4 inch, stair-step patterns, or signs of bowing, stitches lock both sides together and prevent further movement. For walls with significant bowing, full [carbon fiber straps for bowing walls](/blog/carbon-fiber-straps-bowing-walls) may be the better solution. Every carbon fiber repair includes our lifetime guarantee — the material itself will outlast your home.
+**Carbon fiber stitches cost $200–$300 per stitch** and provide permanent structural reinforcement for foundation cracks that show movement or stress. If your wall has cracks wider than 1/4 inch, stair-step patterns, or signs of bowing, stitches lock both sides together and prevent further movement. For walls with significant bowing, full carbon fiber straps may be the better solution. Every carbon fiber repair includes our lifetime guarantee — the material itself will outlast your home.
 
 Call [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) for a free structural assessment.
 
@@ -134,7 +134,7 @@ If your crack doesn't need carbon fiber, we'll tell you. Most residential cracks
 ### Applications Beyond Cracks
 
 Carbon fiber reinforcement can also be used for:
-- **Bowing wall stabilization**: Full [carbon fiber straps for bowing walls](/blog/carbon-fiber-straps-bowing-walls) resist lateral soil pressure and provide permanent wall stabilization without excavation
+- **Bowing wall stabilization**: Full carbon fiber straps resist lateral soil pressure and provide permanent wall stabilization without excavation
 - **Beam wrapping**: Strengthening wooden beams and lally columns
 - **Slab reinforcement**: Adding strength to concrete floors with carbon fiber grids
 - **Preventive strengthening**: Reinforcing older foundations before problems develop

@@ -16,7 +16,6 @@ relatedServices:
   - "carbon-fiber-stitches"
   - "free-foundation-consultations"
 relatedPosts:
-  - "carbon-fiber-straps-bowing-walls"
   - "vertical-vs-horizontal-foundation-cracks"
   - "signs-of-foundation-problems"
 ---

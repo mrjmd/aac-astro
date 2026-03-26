@@ -16,8 +16,9 @@
     "validate:links": "node scripts/validate-links.js",
     "validate:uniqueness": "node scripts/validate-uniqueness.js",
     "validate:sitemap": "node scripts/validate-sitemap.js",
+    "validate:draft-links": "node scripts/validate-draft-links.js",
     "audit:images": "node scripts/audit-image-diversity.js",
-    "validate": "npm run build && npm run validate:schema && npm run check:images && npm run check:seo && npm run check:a11y && npm run validate:links && npm run validate:uniqueness && npm run validate:sitemap",
+    "validate": "npm run build && npm run validate:schema && npm run check:images && npm run check:seo && npm run check:a11y && npm run validate:links && npm run validate:draft-links && npm run validate:uniqueness && npm run validate:sitemap",
     "screenshot": "node scripts/screenshot.js",
     "import:calendar": "node scripts/import-calendar-projects.js",
     "post:gbp": "node scripts/batch-post-gbp.js",
@@ -31,7 +32,9 @@
     "ads:negatives": "node scripts/google-ads-negatives.js",
     "ads:keywords": "node scripts/google-ads-keywords.js",
     "ads:bids": "node scripts/google-ads-bids.js",
-    "audit:master": "node scripts/master-audit.js"
+    "audit:master": "node scripts/master-audit.js",
+    "report:bridge": "node scripts/search-to-conversion.js",
+    "report:benchmark": "node scripts/seasonal-benchmark.js"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",

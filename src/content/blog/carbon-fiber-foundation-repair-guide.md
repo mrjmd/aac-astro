@@ -16,7 +16,6 @@ relatedServices:
   - "wall-crack-repair"
   - "foundation-crack-injection"
 relatedPosts:
-  - "carbon-fiber-straps-bowing-walls"
   - "horizontal-foundation-cracks"
   - "bowing-basement-walls-causes-repair"
 ---

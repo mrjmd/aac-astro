@@ -12,7 +12,6 @@ heroImageAlt: "Carbon fiber staples bridging stair-step cracks on a block founda
 featured: false
 relatedPosts:
   - "carbon-fiber-foundation-repair-guide"
-  - "carbon-fiber-straps-bowing-walls"
   - "bowing-basement-walls-causes-repair"
 relatedServices:
   - "carbon-fiber-stitches"
@@ -64,7 +63,7 @@ Where a staple bridges a single crack, a strap reinforces an entire wall against
 
 **When to use straps:** Your wall has a [horizontal crack](/blog/horizontal-foundation-cracks) and is visibly bowing inward. The wall below the crack line is deflecting into the basement. This is a structural problem — not just a crack — and it requires full-wall stabilization.
 
-For a deep dive on straps specifically, see our complete guide on [carbon fiber straps for bowing walls](/blog/carbon-fiber-straps-bowing-walls).
+For walls with significant bowing, carbon fiber straps provide full-wall stabilization — ask us about the best approach for your situation.
 
 ## The Decision Guide
 

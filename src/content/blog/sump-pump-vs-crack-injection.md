@@ -140,7 +140,7 @@ Ask yourself these questions:
 
 **Does water appear even during dry periods?** This suggests groundwater or water table issues that require a pump-based solution.
 
-**Does your basement smell damp but you never see standing water?** This could be vapor transmission through concrete, which neither injection nor a sump pump solves. A [dehumidifier and moisture management approach](/blog/basement-humidity-control-guide) may be more appropriate.
+**Does your basement smell damp but you never see standing water?** This could be vapor transmission through concrete, which neither injection nor a sump pump solves. A dehumidifier and moisture management approach may be more appropriate.
 
 ## The Bottom Line
 

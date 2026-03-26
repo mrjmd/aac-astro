@@ -9,7 +9,6 @@ category: "guides"
 tags: ["horizontal cracks", "foundation cracks", "bowing walls", "carbon fiber", "structural repair"]
 featured: false
 relatedPosts:
-  - "carbon-fiber-straps-bowing-walls"
   - "vertical-vs-horizontal-foundation-cracks"
   - "signs-of-foundation-problems"
 relatedServices:
