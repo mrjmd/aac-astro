@@ -266,6 +266,46 @@
       "permanent": true
     },
     {
+      "source": "/concrete-crack-injection/",
+      "destination": "/services/foundation-crack-injection",
+      "permanent": true
+    },
+    {
+      "source": "/google_reviews/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/home-seller/",
+      "destination": "/partners/realtors",
+      "permanent": true
+    },
+    {
+      "source": "/lifetime-guarantee/",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy/",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/pyrrhotite-in-concrete/",
+      "destination": "/blog/crumbling-foundations-massachusetts-connecticut",
+      "permanent": true
+    },
+    {
+      "source": "/real-estate/",
+      "destination": "/partners/realtors",
+      "permanent": true
+    },
+    {
+      "source": "/write-a-review/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/blog/blog-post-title-two-5d578",
       "destination": "/blog/nar-nxt-boston-2024-partnerships",
       "permanent": true
