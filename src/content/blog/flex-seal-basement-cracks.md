@@ -31,7 +31,11 @@ faqs:
     answer: "Yes. Home inspectors flag visible Flex Seal patches on foundation cracks as evidence of unresolved water infiltration. A DIY surface repair can raise concerns during a home sale and may result in the buyer requiring professional repair as a condition of closing."
 ---
 
+<div class="bg-zinc-100 border-l-4 border-aac-blue rounded-r-lg p-6 mb-8">
+
 **No, Flex Seal does not work on basement cracks.** Flex Seal is a rubberized surface coating that cannot resist the hydrostatic pressure pushing water through a foundation wall. It may slow a drip for a few weeks, but the water finds its way behind or through the seal every time. Professional [crack injection](/services/foundation-crack-injection) — which fills the entire crack through the full wall thickness under pressure — is the permanent fix.
+
+</div>
 
 You have a crack in your basement wall. Water seeps through when it rains. You search online for a quick fix and every other result mentions Flex Seal — the rubberized spray sealant you have seen advertised on TV sealing buckets, gutters, and even boats.
 

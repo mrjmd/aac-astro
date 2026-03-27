@@ -7,8 +7,8 @@ publishDate: 2025-04-30
 author: "Luc Richard"
 category: "guides"
 tags: ["bulkhead repair", "basement waterproofing", "water damage", "bulkhead sealant", "Bilco doors", "bulkhead leak"]
-heroImage: "/images/projects/groveland-bulkhead-repair-2025-08-before.jpg"
-heroImageAlt: "Leaking bulkhead door frame showing gap between concrete and frame in Groveland"
+heroImage: "/images/blog/bulkhead-stairwell-leaking-cold-joint.jpg"
+heroImageAlt: "Looking down bulkhead stairs with water pooling at the bottom step where the precast unit meets the foundation wall"
 relatedPosts:
   - "bulkhead-repair-cost-guide-2026"
   - "water-in-basement-after-rain"
