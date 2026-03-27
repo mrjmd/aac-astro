@@ -185,7 +185,7 @@ function toVideoObjectSchema(video: VideoEntry): VideoObjectSchema {
     "name": video.name,
     "description": video.description,
     "thumbnailUrl": `https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`,
-    "uploadDate": video.uploadDate,
+    "uploadDate": video.uploadDate.includes("T") ? video.uploadDate : `${video.uploadDate}T00:00:00-04:00`,
     "contentUrl": `https://www.youtube.com/shorts/${video.id}`,
     "embedUrl": `https://www.youtube.com/embed/${video.id}`,
   };

@@ -18,18 +18,18 @@ Prioritized by SEMrush keyword gap data (March 2026), search volume, competitive
 - [x] `efflorescence-white-powder-basement-walls.md` — 18,100/mo panic search. Published Mar 10.
 - [x] `sump-pump-vs-crack-injection.md` — comparison content. Published.
 - [x] `south-shore-foundation-problems.md` — Zone 1 fortress content. Published.
-- [ ] `prevent-basement-flooding-new-england.md` — 18,100 + 14,800/mo ("flooded basement" + "basement flooding"). Spring thaw is NOW. Only Groundworks ranks nationally.
-- [ ] `basement-humidity-control-guide.md` — 40,500/mo cluster ("dehumidifier for basement"). Highest raw volume of any draft. Spring moisture spike. Needs depth check.
-- [ ] `musty-smell-basement-causes-solutions.md` — panic search. Spring dampness trigger. High intent.
-- [ ] `crawl-space-foundation-problems.md` — 18,100/mo. CrackX ranks #2; we have zero presence. Territory grab. Needs depth check vs CrackX.
-- [ ] `basement-waterproofing-cost-guide.md` — 5,400/mo, KD 22. Bottom-of-funnel cost intent. No local competitor.
+- [x] `prevent-basement-flooding-new-england.md` — 18,100 + 14,800/mo. Published Mar 19. AI hero image, spring checklist reordered per Matt's review.
+- [x] `basement-humidity-control-guide.md` — 40,500/mo cluster. Published Mar 13. AI hero image.
+- [x] `musty-smell-basement-causes-solutions.md` — panic search. Published Mar 16. AI hero image.
+- [x] `crawl-space-foundation-problems.md` — 18,100/mo. Published Mar 4. Semantic upgrade: cost table, 7 FAQs with schema, expanded encapsulation/vapor barrier/dehumidifier sections, DIY vs pro (~1,740→3,000 words). AI hero image.
+- [x] `basement-waterproofing-cost-guide.md` — 5,400/mo. Published Mar 8. Semantic upgrade: cost-by-size table, signs section, foundation type section, 6 FAQs with schema (~1,700→3,000 words). AI hero image.
 
 **Tier 2 — Publish ASAP (strong opportunity, less time-pressure):**
 
-- [ ] `carbon-fiber-straps-bowing-walls.md` — dedicated straps guide with full semantic audit (March 24, 2026). Fills real gap in carbon fiber cluster.
-- [ ] `french-drain-vs-crack-injection.md` — comparison content converts well. No local competitor has this.
-- [ ] `how-to-choose-foundation-repair-contractor.md` — 9,900/mo cluster. Educational E-E-A-T trust builder.
-- [ ] `concrete-stair-repair-cost-guide.md` — 2,900/mo. A-1 ranks #50; easy to outrank with dedicated guide.
+- [x] `carbon-fiber-straps-bowing-walls.md` — Published Mar 11. Added tree roots/drainage as causes, MA-only (no CT number). AI hero image.
+- [x] `french-drain-vs-crack-injection.md` — Published Mar 6. AI hero image.
+- [x] `how-to-choose-foundation-repair-contractor.md` — 9,900/mo. Published Mar 2. CT license lookup link added, process language fixed. AI hero image.
+- [x] `concrete-stair-repair-cost-guide.md` — 2,900/mo. Published Feb 28. Reframed repair methods, fixed timeline/process, MA-only. AI hero image.
 
 ### 2026 Content Calendar: 1 Post/Week, Every Week (Claude writes, Matt reviews in batches)
 
@@ -103,7 +103,7 @@ Video is the #1 E-E-A-T signal for home services. 30 seconds of before/after is 
 - [x] 18 YouTube Shorts embedded across about, services hub, 5 service pages, 4 blog posts, and What We Don't Do
 - [x] VideoObject schema on all 13 pages with video embeds via `src/utils/video.ts` helper
 - [x] Right-float layout with text wrap on all markdown-embedded videos
-- [ ] Shoot homepage intro video (highest-value E-E-A-T signal — no competitor has this)
+- [x] Shoot homepage intro video — company overview video embedded in hero (March 25, 2026). VideoObject schema live.
 - [ ] Shoot Flex Seal debunk video (49,500/mo keyword cluster — highest-value SEO video)
 - [ ] Shoot CT state hub video, MA state hub video, concrete repair walkthrough
 - [ ] Post videos to both GBP listings
@@ -122,8 +122,8 @@ This is the single biggest gap vs. competitors. A-1 has BBB links, CrackX has 49
 - [ ] Present findings to Matt with clear ROI recommendations
 
 **Step 2 — Free/earned backlink opportunities (no pay-to-play):**
-- [ ] **BBB** — ensure profile links back to attackacrack.com (already submitted)
-- [ ] **Chamber of Commerce** — submit to CT and MA chapters (membership fee, but real .org dofollow links)
+- [x] **BBB** — accredited, profile links back to attackacrack.com
+- [x] **Chamber of Commerce** — Quincy Chamber joined; more chapters planned
 - [ ] **Partner reciprocal links** — ask realtors/inspectors in partner network to link back
 - [ ] **Supplier/manufacturer directories** — get listed on Polygem, Sika "find an installer" pages
 - [ ] **ASHI membership directory** — already a member, ensure link is active
@@ -170,24 +170,37 @@ GBP controls 50%+ of local search results. Both locations need full optimization
 
 ## Analytics & Conversion Tracking (see `docs/ANALYTICS-PLAN.md`)
 
-**Phase 1 is P0 — do this before anything else in Week 2.**
+**Phases 1-2 complete.** Full implementation archived to `docs/archive/ANALYTICS-PHASES-1-2-COMPLETED.md`.
 
-Google Ads are running on both CT and MA accounts with zero conversion tracking. We're spending blind.
-
-- [x] **Add Google Ads conversion tags** (MA account) to `Layout.astro` — done March 23, 2026
-- [x] **Add phone/text click tracking** via event delegation script — tracks CT vs MA independently
-- [x] **Mark conversions in GA4** (`phone_call_click`, `text_message_click`)
-- [x] **Link GA4 to both Google Ads accounts**
-- [x] Phase 2 (code): `data-page-type` on all 30 page templates, LocationModal `text_photos_modal_open` event, partner form `partner_form_submit` event — March 24, 2026
-- [x] Phase 2 (admin): Custom dimensions created in GA4 (page_type, phone_region, click_location) — March 25, 2026
-- [x] Phase 3 (partial): GA4 Explorations built (Content ROI, City Performance, CT vs MA, Conversion Funnels), GSC linked to GA4 — March 25, 2026
-- [ ] Phase 3 (remaining): UTM templates, call forwarding, monthly reporting cadence
-- [ ] Phase 4: Evaluate call tracking service, remarketing audiences, enhanced conversions
-- [x] **Set up Google Ads API access** — adwords scope + developer token active
-- [x] **Run Google Ads waste audit** (MA account) — via `scripts/master-audit.js`
-- [x] **Implement negative keyword lists** from waste audit — competitor brands monitored, not adding negatives yet per Matt's decision
-- [x] **Audit campaign structure + landing pages** — 60 city ad groups with city-specific landing pages created March 24
+**Phase 3 — Content Intelligence (ACTIVE):**
+- [x] GA4 Explorations built (Content ROI, City Performance, CT vs MA, Conversion Funnels)
+- [x] GSC linked to GA4
+- [x] Google Ads conversion tracking (MA account, imports from GA4)
+- [x] GBP UTM links on both listings — done March 25, 2026
+- [x] Data-driven attribution — already default on all GA4 properties
+- [ ] First monthly report (after April 7)
 - [ ] Set up monthly Google Ads analysis cadence
+
+**Phase 4 — Engagement Intelligence (zero perf impact except Clarity):**
+- [x] Scroll depth tracking on city pages — implemented March 25, 2026
+- [x] Blog read-complete tracking — implemented March 25, 2026
+- [x] Video play/complete tracking (play + complete events) — implemented March 25, 2026
+- [ ] Microsoft Clarity on city pages only (2-4 week data sprint, then remove)
+
+**Phase 5 — Automated API Scripts (all server-side, zero client impact):**
+- [x] Google Ads report, negatives, assets scripts — built March 24
+- [x] GA4 + GSC report scripts — built March 24
+- [x] Search-to-Conversion bridge script (`npm run report:bridge`) — built March 25, uses click-share probabilistic model with confidence scores
+- [x] Seasonal benchmarking script (`npm run report:benchmark`) — built March 25
+- [ ] Content decay alert script
+- [ ] Landing page performance script (see `docs/GOOGLE-ADS-STRATEGY.md`)
+- [ ] Competitor auction insights script (see `docs/GOOGLE-ADS-STRATEGY.md`)
+
+**Phase 6 — Strategic:**
+- [ ] Quo VoIP integration — pull call logs, match to web sessions (replaces call forwarding)
+- [ ] OCI: GCLID capture → Pipedrive → upload job revenue to Google Ads (full architecture in `docs/GOOGLE-ADS-STRATEGY.md`)
+- [ ] Remarketing audiences in GA4
+- [ ] Vercel custom events (ad-blocker backup)
 
 ## City Page Conversion Optimization (plan archived to `docs/archive/`)
 
@@ -247,7 +260,7 @@ Execution plan for maximizing SERP coverage — schema upgrades, featured snippe
 - [x] **Ranking: Gap posts** — Internal links added from related published posts to boost authority
 - [x] **Snippets: Featured snippet prep** — "What is X?" definitions on 6 service pages, cost comparison tables on both published cost guides
 - [ ] **Entity: NAP consistency audit** — Verify identical info across BBB, ASHI, GBAR, chambers, Google Maps, Yelp
-- [ ] **Backlinks: Directory verification** — Confirm all org memberships have active backlinks to attackacrack.com
+- [x] **Backlinks: Directory verification** — BBB accreditation live, Quincy Chamber of Commerce joined
 - [ ] **Backlinks: Google Guaranteed** — Apply for Local Services Ads (green checkmark in SERP)
 
 ## Trust Badges & Credentials (plan archived to `docs/archive/`)
@@ -260,12 +273,12 @@ Execution plan for maximizing SERP coverage — schema upgrades, featured snippe
 
 The bulkhead service page got a full Frase-style semantic audit (March 24) — grew from 1,800 to 2,500 words, added 6 new content sections, 2 FAQs. Same treatment needed for the other 5 service pages + homepage.
 
-- [ ] **Foundation crack injection** — audit against top 5 ranking competitors for "foundation crack repair near me" (pos 4, 390/mo)
-- [ ] **Carbon fiber stitches** — audit against competitors for "carbon fiber foundation repair" (pos 16, 10/mo)
-- [ ] **Wall crack repair** — audit against competitors for "basement wall crack repair"
-- [ ] **Basement floor repair** — audit against competitors for "basement floor crack repair" (3,600/mo cluster)
-- [ ] **Sewer/conduit repair** — check if page is competitive (niche service)
-- [ ] **Homepage** — competitive SEO analysis against A-1, CrackX, Groundworks across content depth, schema, keyword targeting, internal linking, CTA structure
+- [x] **All 6 service pages** — summary/deep-dive restructure, semantic term additions (hydrostatic pressure, freeze-thaw, radon, stair-step cracks, structural epoxy, post-repair care), video repositioning, link hover fix — March 25, 2026
+- [x] **Homepage** — "Why Choose Us" section (6-point grid), "Why New England Homes Crack" educational content, hero video embed, VideoObject schema — March 25, 2026
+- [x] **Phone number audit** — all 113 content files converted to clickable tel:/sms: links, call modal for generic pages, phone number rules added to CLAUDE.md — March 25, 2026
+- [x] **Blog authorship fix** — all 47 posts changed from `author: "Attack A Crack"` to `author: "Matt Davis"`. Blog template updated to handle Matt Davis, Luc Richard, and fallback bios — March 26, 2026
+- [x] **Internal linking pass** — 12 new cross-links added across published posts connecting new spring content cluster (humidity, musty smell, flooding, crawl space, waterproofing cost, french drain, carbon fiber straps, contractor guide) — March 26, 2026
+- [x] **Process language audit** — fixed on-site assessment language in 3 posts to lead with "text us a photo" instead of implying in-person visits — March 26, 2026
 
 Only make changes where there's clear evidence of ranking opportunity. Don't add content just for word count.
 
@@ -280,14 +293,7 @@ Only make changes where there's clear evidence of ranking opportunity. Don't add
 
 ## Luc's Professional Info (E-E-A-T — Matt)
 
-Every piece of credential info strengthens Google's trust signal for AAC.
-
-- [ ] Certifications and training
-- [ ] Years in foundation repair specifically
-- [ ] Professional memberships or associations
-- [ ] LinkedIn profile URL
-- [ ] Awards, press mentions, speaking engagements
-- [ ] Justin La Fontaine's title/role and tenure
+- [x] All available credential info collected and applied — complete as of March 25, 2026
 
 ## Visual QA (Matt)
 
@@ -301,13 +307,13 @@ Every piece of credential info strengthens Google's trust signal for AAC.
 - [ ] PAA targeting in blog content
 - [ ] Monitor competitor moves (see `docs/SEO-STRATEGY-2026.md` Part 23)
 - [ ] WordPress-era URL audit (hunt old 2022 URLs for 301 redirects)
-- [ ] Panic cluster Frase audits ("water in basement after rain", "musty smell", "white powder")
+- [ ] Panic cluster Frase audits ("water in basement after rain") — musty smell and white powder posts now published with cross-links
 
 ## Content Gaps Identified
 
 - [ ] **Spring foundation inspection walkthrough** (HIGH PRIORITY — it's spring now) — draft exists at `spring-foundation-inspection-walkthrough.md`. When published, link back from `south-shore-foundation-problems.md`.
 - [ ] **Quincy coastal foundation repair guide** — draft exists at `quincy-foundation-repair-coastal.md`. When published, link back from `south-shore-foundation-problems.md`.
-- [x] **Carbon fiber straps blog article** — `carbon-fiber-straps-bowing-walls.md` drafted March 24, 2026 with full semantic audit against top competitors (carbonfibersupport.com, guardianfoundationrepair.com, acculevel.com). ~1,700 words, 5 FAQs, cost tables, installation steps, straps-vs-anchors-vs-I-beams comparison. Draft ready for Matt's review. When published, link back from horizontal cracks article and bowing walls article.
+- [x] **Carbon fiber straps blog article** — `carbon-fiber-straps-bowing-walls.md` published March 11 (backdated). Full semantic audit, 5 FAQs, cost tables, straps-vs-anchors-vs-I-beams comparison. Internal links added from bowing walls article, carbon fiber staples article, and horizontal cracks article.
 - [ ] **Foundation repair for home sellers** — draft exists at `foundation-repair-home-sellers.md`. When published, re-add links from `foundation-repair-warranty-guide.md` (transferability section) and add to its relatedPosts. Also re-add link from `selling-house-foundation-issues-ma.md` (draft).
 - [ ] **Stone/fieldstone foundation repair guide** — draft exists at `stone-foundation-repair-guide.md`. When published, re-add links from `how-we-diagnose-foundation-problems.md` (foundation type section) and `south-shore-foundation-problems.md` (fieldstone section). Also re-add links from drafts: `poured-concrete-foundation-repair.md`, `hartford-ct-foundation-problems.md`, `new-england-foundation-types-visual-guide.md`.
 - [ ] **Underpinning repair blog article** — Currently a negative keyword in Google Ads (we don't offer this service). Future blog post could educate on the topic + position AAC for related foundation work. When a post exists, re-evaluate as an ad keyword.
