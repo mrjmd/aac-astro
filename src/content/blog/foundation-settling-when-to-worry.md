@@ -49,6 +49,19 @@ When a home is built, it sits on soil that was either undisturbed or compacted d
 
 If your home is 10+ years old and these minor signs haven't changed, you're looking at normal settling that ran its course long ago.
 
+## When Foundation Settling Is a Problem
+
+You should worry about foundation settling when you see any of these signs:
+
+- **Cracks that keep growing** — normal settling cracks form and stop. If yours are widening over months, that's active movement.
+- **Doors or windows that progressively stick** — getting worse season over season, not just seasonally swelling.
+- **Floors sloping more than 1/4 inch over 10 feet** — noticeable unevenness you can feel when walking.
+- **Stair-step cracks in block or brick foundations** — these follow mortar joints and indicate differential movement.
+- **Cracks wider than 1/4 inch** — especially horizontal cracks, which signal lateral soil pressure, not just settling.
+- **Water intrusion through new cracks** — settling that opens pathways for water is compounding the problem.
+
+If your home is older than 10 years and you're seeing *new* or *worsening* signs, that's not "just settling" anymore — it's a structural issue that gets more expensive to fix the longer you wait.
+
 ## What Is Abnormal Settling?
 
 Abnormal settling — also called differential settlement — happens when different parts of your foundation settle at different rates. This creates uneven forces that crack foundations, distort frames, and cause progressive structural damage.

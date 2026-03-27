@@ -22,7 +22,9 @@ Take a breath. What you're looking at is almost certainly efflorescence, and whi
 
 ## What Is White Powder on Basement Walls?
 
-Efflorescence is the fancy name for that white powder on basement walls. Here's what's happening:
+Efflorescence is a white, chalky, or crystalline deposit that forms on basement walls when water moves through concrete and evaporates on the interior surface, leaving dissolved mineral salts behind. It is not mold and is not harmful in itself, but it is a reliable indicator that moisture is actively migrating through your foundation — which can lead to mold growth, structural deterioration, and ongoing humidity problems if the source is not addressed.
+
+Here's the process in detail:
 
 1. Water enters your concrete wall from the outside — through the soil, through cracks, or through the concrete's natural porosity.
 2. As the water moves through the concrete, it dissolves mineral salts (primarily calcium carbonate, sodium sulfate, and potassium sulfate) that are naturally present in concrete and morite.

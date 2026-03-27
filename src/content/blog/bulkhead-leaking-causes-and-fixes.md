@@ -61,16 +61,19 @@ When water appears in your bulkhead, most people assume the door seal is bad. Th
 
 **Why it fails:** If the leak is at the bulkhead-to-foundation joint, a new door won't help. You'll spend thousands on a new bulkhead and still have the same leak.
 
-## The Solution: Professional Bulkhead Sealant Injection
+## How to Fix a Leaky Bulkhead
 
-Our [bulkhead leak repair](/services/leaky-bulkhead-repair) method addresses the root cause — the failed bulkhead sealant and rubber gasket at the cold joint — from the inside out. This works for Bilco doors and all other bulkhead brands.
+Here is how to permanently fix a leaking bulkhead door in New England:
 
-### How It Works
+1. **Identify the leak source** — Check the cold joint (where the bulkhead meets the foundation wall), not just the door. The cold joint is the source in the vast majority of cases.
+2. **Skip the surface fixes** — Caulk, hydraulic cement, and tar all fail within 1-2 years because they only seal the surface and cannot handle freeze-thaw movement.
+3. **Remove the failed gasket or sealant** — Clean out any deteriorated rubber gasket or old bulkhead sealant from the cold joint.
+4. **Install injection ports** — Place ports strategically along the cold joint between the bulkhead and foundation wall.
+5. **Inject flexible urethane foam** — The foam expands to fill every void in the cold joint, reaching from the interior to the soil side.
+6. **Check the anchor bolts** — The four bolts holding the bulkhead to the foundation are often overlooked leak sources. Seal these penetrations too.
+7. **Improve exterior drainage** — Ensure the ground slopes away from the bulkhead opening and the door drain is clear.
 
-1. **Remove failed material**: We clean out any deteriorated rubber gasket or old bulkhead sealant
-2. **Install injection ports**: Strategic placement along the cold joint between bulkhead and foundation
-3. **Inject flexible urethane**: Our specialized foam expands to fill every void in the cold joint
-4. **Seal completely**: The urethane reaches from interior to soil, sealing the entire joint — typically $1,800-$2,500
+The professional version of this repair (steps 3-6) is our [bulkhead leak repair](/services/leaky-bulkhead-repair) service, which works for Bilco doors and all other bulkhead brands. Typical cost: $1,800-$2,500 with a lifetime guarantee.
 
 ### Why Injection Works
 
