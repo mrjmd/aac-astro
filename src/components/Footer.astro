@@ -40,9 +40,16 @@ const MA_NUMBER = phoneMA;
           <span class="block text-sm font-black">{MA_NUMBER}</span>
         </a>
         <p class="text-[10px] text-zinc-600 font-bold mt-8 tracking-wide">
-          Licensed Home Improvement Contractor:
-          <a href="https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx" target="_blank" rel="noopener noreferrer" class="hover:text-aac-blue transition-colors inline-flex items-center min-h-[28px]">CT #0629164</a> |
-          <a href="https://contractorhub.mass.gov/s/hic-contractor-search" target="_blank" rel="noopener noreferrer" class="hover:text-aac-blue transition-colors inline-flex items-center min-h-[28px]">MA #214356</a>
+          <span class="geo-phone-both" style="--geo-display: inline">Licensed Home Improvement Contractor:
+            <a href="https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx" target="_blank" rel="noopener noreferrer" class="hover:text-aac-blue transition-colors inline-flex items-center min-h-[28px]">CT #0629164</a> |
+            <a href="https://contractorhub.mass.gov/s/hic-contractor-search" target="_blank" rel="noopener noreferrer" class="hover:text-aac-blue transition-colors inline-flex items-center min-h-[28px]">MA #214356</a>
+          </span>
+          <span class="geo-phone-ct" style="--geo-display: inline">Licensed Home Improvement Contractor:
+            <a href="https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx" target="_blank" rel="noopener noreferrer" class="hover:text-aac-blue transition-colors inline-flex items-center min-h-[28px]">CT #0629164</a>
+          </span>
+          <span class="geo-phone-ma" style="--geo-display: inline">Licensed Home Improvement Contractor:
+            <a href="https://contractorhub.mass.gov/s/hic-contractor-search" target="_blank" rel="noopener noreferrer" class="hover:text-aac-blue transition-colors inline-flex items-center min-h-[28px]">MA #214356</a>
+          </span>
         </p>
         <div class="flex items-center gap-4 mt-4">
           <a href="https://www.facebook.com/attackacrack" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-aac-blue transition-colors" aria-label="Facebook">
@@ -127,11 +134,19 @@ const MA_NUMBER = phoneMA;
       <div class="flex items-center gap-8">
         <a href="/privacy" class="text-zinc-500 hover:text-aac-blue text-[10px] font-black uppercase tracking-widest transition-colors inline-flex items-center min-h-12">Privacy Policy</a>
         <a href="/terms" class="text-zinc-500 hover:text-aac-blue text-[10px] font-black uppercase tracking-widest transition-colors inline-flex items-center min-h-12">Terms of Service</a>
-        <a href={googleReviewsUrlCT} target="_blank" class="text-aac-blue hover:underline text-[10px] font-black uppercase tracking-widest transition-colors flex items-center gap-2 min-h-12">
-          CT Google Reviews <Icon name="ExternalLink" size={12} />
+        <span class="geo-phone-both" style="--geo-display: contents">
+          <a href={googleReviewsUrlCT} target="_blank" class="text-aac-blue hover:underline text-[10px] font-black uppercase tracking-widest transition-colors flex items-center gap-2 min-h-12">
+            CT Google Reviews <Icon name="ExternalLink" size={12} />
+          </a>
+          <a href={googleReviewsUrlMA} target="_blank" class="text-aac-blue hover:underline text-[10px] font-black uppercase tracking-widest transition-colors flex items-center gap-2 min-h-12">
+            MA Google Reviews <Icon name="ExternalLink" size={12} />
+          </a>
+        </span>
+        <a href={googleReviewsUrlCT} target="_blank" class="geo-phone-ct text-aac-blue hover:underline text-[10px] font-black uppercase tracking-widest transition-colors items-center gap-2 min-h-12" style="--geo-display: flex">
+          Google Reviews <Icon name="ExternalLink" size={12} />
         </a>
-        <a href={googleReviewsUrlMA} target="_blank" class="text-aac-blue hover:underline text-[10px] font-black uppercase tracking-widest transition-colors flex items-center gap-2 min-h-12">
-          MA Google Reviews <Icon name="ExternalLink" size={12} />
+        <a href={googleReviewsUrlMA} target="_blank" class="geo-phone-ma text-aac-blue hover:underline text-[10px] font-black uppercase tracking-widest transition-colors items-center gap-2 min-h-12" style="--geo-display: flex">
+          Google Reviews <Icon name="ExternalLink" size={12} />
         </a>
       </div>
     </div>

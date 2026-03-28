@@ -6,7 +6,7 @@ import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
-import { reviewCount } from '../../utils/reviews';
+import { reviewCountCT, reviewCountMA } from '../../utils/reviews';
 import { phoneCT, phoneCTHref, phoneMA, phoneMAHref } from '../../utils/contact';
 import GeoCtaButton from '../../components/GeoCtaButton.astro';
 
@@ -88,7 +88,11 @@ const pageSchema = {
 							<p class="text-sm font-bold text-zinc-600">Across New England</p>
 						</div>
 						<div class="bg-white p-8 rounded-2xl border-4 border-aac-dark shadow-[8px_8px_0px_0px_rgba(26,26,26,1)]">
-							<p class="text-5xl font-black text-aac-blue mb-2">{reviewCount}+</p>
+							<p class="text-5xl font-black text-aac-blue mb-2">
+							<span class="geo-phone-both" style="--geo-display: inline">{reviewCountCT}+</span>
+							<span class="geo-phone-ct" style="--geo-display: inline">{reviewCountCT}+</span>
+							<span class="geo-phone-ma" style="--geo-display: inline">{reviewCountMA}+</span>
+						</p>
 							<p class="text-sm font-bold text-zinc-600">5-Star Reviews</p>
 						</div>
 					</div>

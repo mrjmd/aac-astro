@@ -1,7 +1,7 @@
 ---
 import Icon from './Icon.astro';
 import YouTubeFacade from './YouTubeFacade.astro';
-import { reviewCount } from '../utils/reviews';
+import { reviewCountCT, reviewCountMA, googleReviewsUrlCT, googleReviewsUrlMA } from '../utils/reviews';
 import { phoneCT, phoneMA } from '../utils/contact';
 ---
 
@@ -44,7 +44,9 @@ import { phoneCT, phoneMA } from '../utils/contact';
           <div class="flex items-center gap-1 mb-1">
             {[...Array(5)].map(() => <Icon name="Star" size={16} class="fill-aac-yellow text-aac-dark" />)}
           </div>
-          <p class="text-[10px] font-black uppercase tracking-widest text-zinc-500">{reviewCount}+ Excellent CT Reviews</p>
+          <a href={googleReviewsUrlCT} target="_blank" rel="noopener noreferrer" class="geo-phone-both text-[10px] font-black uppercase tracking-widest text-zinc-500 hover:text-aac-blue transition-colors" style="--geo-display: block">{reviewCountCT}+ Excellent CT Reviews</a>
+          <a href={googleReviewsUrlCT} target="_blank" rel="noopener noreferrer" class="geo-phone-ct text-[10px] font-black uppercase tracking-widest text-zinc-500 hover:text-aac-blue transition-colors" style="--geo-display: block">{reviewCountCT}+ Excellent Reviews</a>
+          <a href={googleReviewsUrlMA} target="_blank" rel="noopener noreferrer" class="geo-phone-ma text-[10px] font-black uppercase tracking-widest text-zinc-500 hover:text-aac-blue transition-colors" style="--geo-display: block">{reviewCountMA}+ Excellent Reviews</a>
         </div>
       </div>
     </div>

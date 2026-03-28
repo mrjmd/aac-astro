@@ -1,6 +1,6 @@
 ---
 import Icon from './Icon.astro';
-import { reviewCount } from '../utils/reviews';
+import { reviewCountCT, reviewCountMA, googleReviewsUrlCT, googleReviewsUrlMA } from '../utils/reviews';
 import { phoneCT, phoneMA } from '../utils/contact';
 
 const CT_NUMBER = phoneCT;
@@ -31,7 +31,9 @@ const { currentPage = 'home' } = Astro.props;
       </div>
       <div class="flex flex-col gap-1 items-end md:flex-row md:gap-8">
         <span class="flex items-center gap-2 uppercase"><Icon name="ShieldCheck" size={12} class="text-aac-yellow" /> Lifetime Guarantee</span>
-        <span class="flex items-center gap-2 uppercase"><Icon name="Star" size={12} class="text-aac-yellow" /> {reviewCount}+ CT Reviews</span>
+        <a href={googleReviewsUrlCT} target="_blank" rel="noopener noreferrer" class="geo-phone-both flex items-center gap-2 uppercase hover:text-aac-yellow transition-colors" style="--geo-display: flex"><Icon name="Star" size={12} class="text-aac-yellow" /> {reviewCountCT}+ CT Reviews</a>
+        <a href={googleReviewsUrlCT} target="_blank" rel="noopener noreferrer" class="geo-phone-ct flex items-center gap-2 uppercase hover:text-aac-yellow transition-colors" style="--geo-display: flex"><Icon name="Star" size={12} class="text-aac-yellow" /> {reviewCountCT}+ Reviews</a>
+        <a href={googleReviewsUrlMA} target="_blank" rel="noopener noreferrer" class="geo-phone-ma flex items-center gap-2 uppercase hover:text-aac-yellow transition-colors" style="--geo-display: flex"><Icon name="Star" size={12} class="text-aac-yellow" /> {reviewCountMA}+ Reviews</a>
       </div>
     </div>
   </div>

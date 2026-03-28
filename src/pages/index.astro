@@ -10,7 +10,7 @@ import HomeFaq from '../components/HomeFaq.astro';
 import Icon from '../components/Icon.astro';
 import GeoCtaButton from '../components/GeoCtaButton.astro';
 import TestimonialCard from '../components/TestimonialCard.astro';
-import { reviewCount, googleReviewsUrlCT, googleReviewsUrlMA, aggregateRatingSchema } from '../utils/reviews';
+import { reviewCount, reviewCountCT, reviewCountMA, googleReviewsUrlCT, googleReviewsUrlMA, aggregateRatingSchema } from '../utils/reviews';
 import { phoneCT, phoneMA, addressCT } from '../utils/contact';
 import { getFeatured } from '../utils/testimonials';
 import { homeFaqs, getFaqSchema } from '../utils/faqs';
@@ -114,14 +114,28 @@ const MA_NUMBER = phoneMA;
 				{[
 					{ num: "20+", desc: "Years in Business" },
 					{ num: "∞", desc: "Lifetime Guarantee" },
-					{ num: `${reviewCount}+`, desc: "5-Star Reviews" },
-					{ num: "Free", desc: "Every Diagnosis" }
 				].map((stat) => (
 					<div class="flex items-center gap-4 lg:justify-start justify-center">
 						<span class="text-4xl font-black text-aac-dark tracking-tighter leading-none">{stat.num}</span>
 						<span class="text-sm font-black uppercase tracking-widest text-aac-dark/70 leading-tight">{stat.desc}</span>
 					</div>
 				))}
+				<a href={googleReviewsUrlCT} target="_blank" rel="noopener noreferrer" class="geo-phone-both flex items-center gap-4 lg:justify-start justify-center hover:opacity-80 transition-opacity" style="--geo-display: flex">
+					<span class="text-4xl font-black text-aac-dark tracking-tighter leading-none">{reviewCountCT}+</span>
+					<span class="text-sm font-black uppercase tracking-widest text-aac-dark/70 leading-tight">5-Star CT Reviews</span>
+				</a>
+				<a href={googleReviewsUrlCT} target="_blank" rel="noopener noreferrer" class="geo-phone-ct flex items-center gap-4 lg:justify-start justify-center hover:opacity-80 transition-opacity" style="--geo-display: flex">
+					<span class="text-4xl font-black text-aac-dark tracking-tighter leading-none">{reviewCountCT}+</span>
+					<span class="text-sm font-black uppercase tracking-widest text-aac-dark/70 leading-tight">5-Star Reviews</span>
+				</a>
+				<a href={googleReviewsUrlMA} target="_blank" rel="noopener noreferrer" class="geo-phone-ma flex items-center gap-4 lg:justify-start justify-center hover:opacity-80 transition-opacity" style="--geo-display: flex">
+					<span class="text-4xl font-black text-aac-dark tracking-tighter leading-none">{reviewCountMA}+</span>
+					<span class="text-sm font-black uppercase tracking-widest text-aac-dark/70 leading-tight">5-Star Reviews</span>
+				</a>
+				<div class="flex items-center gap-4 lg:justify-start justify-center">
+					<span class="text-4xl font-black text-aac-dark tracking-tighter leading-none">Free</span>
+					<span class="text-sm font-black uppercase tracking-widest text-aac-dark/70 leading-tight">Every Diagnosis</span>
+				</div>
 			</div>
 		</div>
 
@@ -215,11 +229,19 @@ const MA_NUMBER = phoneMA;
 							<span class="font-black text-aac-dark text-sm">5.0 Rating on Google</span>
 						</div>
 						<div class="flex flex-col gap-3">
-							<a href={googleReviewsUrlCT} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 py-2 text-[10px] font-black uppercase tracking-widest text-aac-blue hover:text-aac-dark transition-colors">
-								Read All CT Reviews <Icon name="ExternalLink" size={12} />
+							<span class="geo-phone-both" style="--geo-display: contents">
+								<a href={googleReviewsUrlCT} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 py-2 text-[10px] font-black uppercase tracking-widest text-aac-blue hover:text-aac-dark transition-colors">
+									Read All CT Reviews <Icon name="ExternalLink" size={12} />
+								</a>
+								<a href={googleReviewsUrlMA} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 py-2 text-[10px] font-black uppercase tracking-widest text-aac-blue hover:text-aac-dark transition-colors">
+									Read All MA Reviews <Icon name="ExternalLink" size={12} />
+								</a>
+							</span>
+							<a href={googleReviewsUrlCT} target="_blank" rel="noopener noreferrer" class="geo-phone-ct items-center gap-2 py-2 text-[10px] font-black uppercase tracking-widest text-aac-blue hover:text-aac-dark transition-colors" style="--geo-display: inline-flex">
+								Read All Reviews <Icon name="ExternalLink" size={12} />
 							</a>
-							<a href={googleReviewsUrlMA} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 py-2 text-[10px] font-black uppercase tracking-widest text-aac-blue hover:text-aac-dark transition-colors">
-								Read All MA Reviews <Icon name="ExternalLink" size={12} />
+							<a href={googleReviewsUrlMA} target="_blank" rel="noopener noreferrer" class="geo-phone-ma items-center gap-2 py-2 text-[10px] font-black uppercase tracking-widest text-aac-blue hover:text-aac-dark transition-colors" style="--geo-display: inline-flex">
+								Read All Reviews <Icon name="ExternalLink" size={12} />
 							</a>
 						</div>
 					</div>

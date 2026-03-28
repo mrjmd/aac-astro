@@ -54,10 +54,18 @@ if (isMA) {
           <div class="h-10 md:h-12 flex flex-col items-center justify-center">
             {badge.scope === 'both' ? (
               <>
-                <a href="https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx" target="_blank" rel="noopener noreferrer" class="text-[9px] md:text-[10px] font-black text-aac-dark hover:text-aac-dark/80 transition-colors tracking-wide inline-flex items-center min-h-[28px]">
+                <span class="geo-phone-both" style="--geo-display: contents">
+                  <a href="https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx" target="_blank" rel="noopener noreferrer" class="text-[9px] md:text-[10px] font-black text-aac-dark hover:text-aac-dark/80 transition-colors tracking-wide inline-flex items-center min-h-[28px]">
+                    CT HIC #0629164
+                  </a>
+                  <a href="https://contractorhub.mass.gov/s/hic-contractor-search" target="_blank" rel="noopener noreferrer" class="text-[9px] md:text-[10px] font-black text-aac-dark hover:text-aac-dark/80 transition-colors tracking-wide inline-flex items-center min-h-[28px]">
+                    MA HIC #214356
+                  </a>
+                </span>
+                <a href="https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx" target="_blank" rel="noopener noreferrer" class="geo-phone-ct text-[9px] md:text-[10px] font-black text-aac-dark hover:text-aac-dark/80 transition-colors tracking-wide items-center min-h-[28px]" style="--geo-display: inline-flex">
                   CT HIC #0629164
                 </a>
-                <a href="https://contractorhub.mass.gov/s/hic-contractor-search" target="_blank" rel="noopener noreferrer" class="text-[9px] md:text-[10px] font-black text-aac-dark hover:text-aac-dark/80 transition-colors tracking-wide inline-flex items-center min-h-[28px]">
+                <a href="https://contractorhub.mass.gov/s/hic-contractor-search" target="_blank" rel="noopener noreferrer" class="geo-phone-ma text-[9px] md:text-[10px] font-black text-aac-dark hover:text-aac-dark/80 transition-colors tracking-wide items-center min-h-[28px]" style="--geo-display: inline-flex">
                   MA HIC #214356
                 </a>
               </>
