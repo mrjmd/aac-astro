@@ -53,6 +53,8 @@ export default function rehypeYouTubeFacade() {
             tagName: 'img',
             properties: {
               src: `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`,
+              srcset: `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg 480w, https://i.ytimg.com/vi/${videoId}/sddefault.jpg 640w, https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg 1280w`,
+              sizes: '(max-width: 640px) 100vw, 640px',
               alt: title,
               className: ['w-full', 'h-full', 'object-cover', 'opacity-80', 'group-hover:opacity-100', 'transition-opacity'],
               loading: 'lazy',
