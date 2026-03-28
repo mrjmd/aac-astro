@@ -203,7 +203,7 @@ const schemas = [articleSchema, faqSchema, ...videoSchemas].filter(Boolean);
 					<img
 						src={webpSrc(post.data.heroImage)}
 						srcset={projectSrcset(post.data.heroImage)}
-						sizes="(max-width: 1024px) 100vw, 1024px"
+						sizes="(max-width: 768px) 100vw, 1024px"
 						alt={post.data.heroImageAlt || post.data.title}
 						class="w-full aspect-[2/1] object-cover"
 						width="1200"

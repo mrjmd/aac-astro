@@ -1,5 +1,6 @@
 ---
 import Icon from './Icon.astro';
+import YouTubeFacade from './YouTubeFacade.astro';
 import { reviewCount } from '../utils/reviews';
 ---
 
@@ -39,16 +40,10 @@ import { reviewCount } from '../utils/reviews';
 
     <div class="relative">
       <div class="rounded-[48px] overflow-hidden border-8 border-white shadow-[24px_24px_60px_-15px_rgba(0,0,0,0.1)]">
-        <div class="relative w-full" style="padding-bottom:56.25%">
-          <iframe
-            src="https://www.youtube.com/embed/IXrQmjHXLVg?rel=0"
-            title="Attack A Crack Foundation Repair — Company Overview"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            loading="eager"
-            class="absolute inset-0 w-full h-full border-0"
-          ></iframe>
-        </div>
+        <YouTubeFacade
+          videoId="IXrQmjHXLVg"
+          title="Attack A Crack Foundation Repair — Company Overview"
+        />
       </div>
 
       <!-- 15-Minute Quote Badge -->

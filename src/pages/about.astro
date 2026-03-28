@@ -6,6 +6,7 @@ import Footer from '../components/Footer.astro';
 import LocationModal from '../components/LocationModal.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import Icon from '../components/Icon.astro';
+import YouTubeFacade from '../components/YouTubeFacade.astro';
 import TrustBar from '../components/TrustBar.astro';
 import TestimonialCard from '../components/TestimonialCard.astro';
 import { reviewCount } from '../utils/reviews';
@@ -138,15 +139,14 @@ const aboutSchema = [
 						</div>
 					</div>
 					<div class="flex justify-center">
-						<div class="aspect-[9/16] max-h-[500px] w-auto rounded-[32px] overflow-hidden border-8 border-white shadow-2xl bg-zinc-900">
-							<iframe
-								src="https://www.youtube.com/embed/bxcldptZcFI"
+						<div class="w-auto rounded-[32px] overflow-hidden border-8 border-white shadow-2xl">
+							<YouTubeFacade
+								videoId="bxcldptZcFI"
 								title="Luc Richard: A lifetime in concrete — Attack A Crack Foundation Repair"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen
-								loading="lazy"
-								class="w-[108%] h-[108%] -mt-[4%] -ml-[4%]"
-							></iframe>
+								aspect="9/16"
+								maxHeight="500px"
+								iframeStyle="width:108%;height:108%;margin-top:-4%;margin-left:-4%;"
+							/>
 						</div>
 					</div>
 				</div>
@@ -219,15 +219,14 @@ const aboutSchema = [
 						</p>
 					</div>
 					<div class="flex justify-center">
-						<div class="aspect-[9/16] max-h-[450px] w-auto rounded-[24px] overflow-hidden border-4 border-white shadow-xl bg-zinc-900">
-							<iframe
-								src="https://www.youtube.com/embed/lquOoplN6qY"
+						<div class="w-auto rounded-[24px] overflow-hidden border-4 border-white shadow-xl">
+							<YouTubeFacade
+								videoId="lquOoplN6qY"
 								title="Attack A Crack team: family-owned foundation repair in New England"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen
-								loading="lazy"
-								class="w-[108%] h-[108%] -mt-[4%] -ml-[4%]"
-							></iframe>
+								aspect="9/16"
+								maxHeight="450px"
+								iframeStyle="width:108%;height:108%;margin-top:-4%;margin-left:-4%;"
+							/>
 						</div>
 					</div>
 				</div>

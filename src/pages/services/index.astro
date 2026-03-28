@@ -6,6 +6,7 @@ import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
+import YouTubeFacade from '../../components/YouTubeFacade.astro';
 import { isPublished } from '../../utils/blog';
 import { phoneCT, phoneCTHref, phoneMA, phoneMAHref } from '../../utils/contact';
 import { webpSrc, projectSrcset } from '../../utils/image';
@@ -106,15 +107,14 @@ const servicesSchema = {
 						</p>
 					</div>
 					<div class="flex justify-center">
-						<div class="aspect-[9/16] max-h-[450px] w-auto rounded-[24px] overflow-hidden border-4 border-zinc-100 shadow-xl bg-zinc-900">
-							<iframe
-								src="https://www.youtube.com/embed/NMgOgA6yGMs"
+						<div class="w-auto rounded-[24px] overflow-hidden border-4 border-zinc-100 shadow-xl">
+							<YouTubeFacade
+								videoId="NMgOgA6yGMs"
 								title="Why our repair method is better at every step — Attack A Crack"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen
-								loading="lazy"
-								class="w-[108%] h-[108%] -mt-[4%] -ml-[4%]"
-							></iframe>
+								aspect="9/16"
+								maxHeight="450px"
+								iframeStyle="width:108%;height:108%;margin-top:-4%;margin-left:-4%;"
+							/>
 						</div>
 					</div>
 				</div>
