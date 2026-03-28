@@ -175,4 +175,4 @@ Choosing a foundation repair contractor comes down to three things: competence, 
 
 Ask the questions in this guide. Verify the answers. Get multiple opinions. And trust your instincts when something feels off.
 
-If you would like to include us in your evaluation, text us photos for a free assessment at [617-668-1677](sms:617-668-1677) (Massachusetts) or [860-573-8760](sms:860-573-8760) (Connecticut). We are happy to be one of the contractors you compare and confident in how that comparison will turn out.
+If you would like to include us in your evaluation, text us photos for a free assessment. We are happy to be one of the contractors you compare and confident in how that comparison will turn out. [860-573-8760](sms:860-573-8760) (CT) | [617-668-1677](sms:617-668-1677) (MA)

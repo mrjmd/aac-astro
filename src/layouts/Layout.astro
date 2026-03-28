@@ -164,6 +164,7 @@ if (breadcrumbSchema) {
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+		<script is:inline>(function(){var m=document.cookie.match(/(?:^|; )geo_region=(\w+)/);if(m)document.documentElement.classList.add('geo-'+m[1])})()</script>
 		<meta name="theme-color" content="#1a1a1a" />
 		<link rel="icon" type="image/png" href="/favicon.png" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -206,6 +207,16 @@ if (breadcrumbSchema) {
 					// TODO: Uncomment when CT Google Ads account is linked to MCC
 					// if (GOOGLE_ADS_CT_ID) gtag('config', GOOGLE_ADS_CT_ID);
 
+					// Geo-personalization tracking
+					var geoRegion = (document.cookie.match(/(?:^|; )geo_region=(\w+)/) || [])[1] || 'none';
+					if (geoRegion !== 'none') {
+						gtag('event', 'geo_personalized', {
+							geo_region: geoRegion,
+							page_path: window.location.pathname,
+							page_type: pageType || 'unknown',
+						});
+					}
+
 					// Phone/text click tracking — fires GA4 events (conversions imported into Google Ads via GA4 link)
 					document.addEventListener('click', function(e) {
 						var link = e.target.closest('a');
@@ -235,6 +246,7 @@ if (breadcrumbSchema) {
 								click_location: inferClickLocation(link),
 								page_path: window.location.pathname,
 								page_type: document.body.dataset.pageType || 'unknown',
+								geo_detected: geoRegion,
 							});
 
 						} else if (href.indexOf('sms:') === 0) {
@@ -247,6 +259,7 @@ if (breadcrumbSchema) {
 								click_location: inferClickLocation(link),
 								page_path: window.location.pathname,
 								page_type: document.body.dataset.pageType || 'unknown',
+								geo_detected: geoRegion,
 							});
 						}
 					});

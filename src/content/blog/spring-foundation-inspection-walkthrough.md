@@ -138,6 +138,7 @@ If your walkthrough turned up any red items -- or yellow items that have worsene
 
 Attack A Crack offers [free foundation consultations](/services/free-foundation-consultations) across Connecticut, Massachusetts, Rhode Island, New Hampshire, and Maine. We will do a thorough version of what you just did, plus we bring the experience of thousands of inspections to put your findings in context. No charge, no obligation, no pressure.
 
-Call us at [860-573-8760](tel:860-573-8760) in Connecticut or [617-668-1677](tel:617-668-1677) in Massachusetts.
+Call us today.
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)
 
 That 15 minutes you just spent in your basement? It might be the most valuable quarter hour you invest in your home all year. Set a reminder to do it again in six months.

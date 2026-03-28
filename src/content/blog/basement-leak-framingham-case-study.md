@@ -58,4 +58,4 @@ Professional foundation crack repair doesn't require dry conditions. Whether you
 
 **Have an actively leaking crack?** Don't wait — text us photos for a free assessment. With thousands of projects across New England, we have repaired cracks in every condition imaginable.
 
-**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)

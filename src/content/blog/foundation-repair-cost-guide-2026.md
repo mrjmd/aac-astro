@@ -197,6 +197,6 @@ Don't let cost delay a repair that only gets more expensive with time. We offer 
 
 Ready to find out exactly what your foundation repair will cost? Contact us for a free, no-pressure assessment:
 
-**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)
 
 Or text us photos of your foundation concerns for a quick preliminary estimate.

@@ -99,4 +99,4 @@ Too many waterproofing companies sell comprehensive systems to homeowners who ne
 
 Our approach: diagnose the specific problem, apply the specific solution, do not sell what is not needed. Sometimes that means we tell you to buy a bag of topsoil. Sometimes we inject a crack and you never think about it again. Sometimes we refer you to someone else.
 
-[Schedule a free consultation](/services/free-foundation-consultations) and we will tell you exactly what your basement needs — no more, no less. Call [860-573-8760](tel:860-573-8760) in Connecticut or [617-668-1677](tel:617-668-1677) in Massachusetts. The first hard freeze does not wait for you to get around to it.
+[Schedule a free consultation](/services/free-foundation-consultations) and we will tell you exactly what your basement needs — no more, no less. The first hard freeze does not wait for you to get around to it. [860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)

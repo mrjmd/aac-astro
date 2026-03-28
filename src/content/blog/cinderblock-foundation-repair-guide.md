@@ -134,6 +134,6 @@ We repair cinderblock foundations throughout New England, including areas where 
 
 If your cinderblock foundation shows signs of stress, contact us for a free evaluation:
 
-**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)
 
 Text us a photo for a quick preliminary assessment, or call to schedule. With 50+ years of combined experience and thousands of projects across New England, we'll assess the severity, explain your options, and provide honest recommendations. See our [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) for complete pricing details.

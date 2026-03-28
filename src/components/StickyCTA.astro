@@ -15,6 +15,7 @@
  * Generic pages (home, services, blog, about) get neither — both buttons open modals.
  */
 import Icon from './Icon.astro';
+import { phoneCT, phoneMA } from '../utils/contact';
 
 interface Props {
   phoneHref?: string;
@@ -40,14 +41,22 @@ const { phoneHref, smsHref } = Astro.props;
           <Icon name="Phone" size={14} />
           Call Now
         </a>
-      ) : (
+      ) : (<Fragment>
         <button
-          class="open-call-modal bg-aac-yellow text-aac-dark px-6 py-2 rounded-full font-black uppercase tracking-widest text-[10px] inline-flex items-center gap-2 active:scale-95 transition-transform"
+          class="open-call-modal geo-modal-trigger bg-aac-yellow text-aac-dark px-6 py-2 rounded-full font-black uppercase tracking-widest text-[10px] inline-flex items-center gap-2 active:scale-95 transition-transform"
         >
           <Icon name="Phone" size={14} />
           Call Now
         </button>
-      )}
+        <a href={`tel:${phoneCT}`} class="geo-direct-action geo-phone-ct bg-aac-yellow text-aac-dark px-6 py-2 rounded-full font-black uppercase tracking-widest text-[10px] items-center gap-2 active:scale-95 transition-transform" style="--geo-display: inline-flex">
+          <Icon name="Phone" size={14} />
+          Call Now
+        </a>
+        <a href={`tel:${phoneMA}`} class="geo-direct-action geo-phone-ma bg-aac-yellow text-aac-dark px-6 py-2 rounded-full font-black uppercase tracking-widest text-[10px] items-center gap-2 active:scale-95 transition-transform" style="--geo-display: inline-flex">
+          <Icon name="Phone" size={14} />
+          Call Now
+        </a>
+      </Fragment>)}
       {smsHref ? (
         <a
           href={smsHref}
@@ -56,14 +65,22 @@ const { phoneHref, smsHref } = Astro.props;
           <Icon name="MessageSquare" size={14} />
           Text Photos
         </a>
-      ) : (
+      ) : (<Fragment>
         <button
-          class="open-modal bg-white/10 text-white px-6 py-2 rounded-full font-black uppercase tracking-widest text-[10px] border border-white/20 inline-flex items-center gap-2 active:scale-95 transition-transform"
+          class="open-modal geo-modal-trigger bg-white/10 text-white px-6 py-2 rounded-full font-black uppercase tracking-widest text-[10px] border border-white/20 inline-flex items-center gap-2 active:scale-95 transition-transform"
         >
           <Icon name="MessageSquare" size={14} />
           Text Photos
         </button>
-      )}
+        <a href={`sms:${phoneCT}`} class="geo-direct-action geo-phone-ct bg-white/10 text-white px-6 py-2 rounded-full font-black uppercase tracking-widest text-[10px] border border-white/20 items-center gap-2 active:scale-95 transition-transform" style="--geo-display: inline-flex">
+          <Icon name="MessageSquare" size={14} />
+          Text Photos
+        </a>
+        <a href={`sms:${phoneMA}`} class="geo-direct-action geo-phone-ma bg-white/10 text-white px-6 py-2 rounded-full font-black uppercase tracking-widest text-[10px] border border-white/20 items-center gap-2 active:scale-95 transition-transform" style="--geo-display: inline-flex">
+          <Icon name="MessageSquare" size={14} />
+          Text Photos
+        </a>
+      </Fragment>)}
     </div>
   </div>
 </nav>

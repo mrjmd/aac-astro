@@ -155,4 +155,5 @@ A reputable company will answer all of these questions without hesitation.
 
 A foundation repair warranty is not just a piece of paper — it is the company telling you how much they believe in their own work. Short warranties and narrow exclusions say "we hope this works." A lifetime transferable warranty says "we know this works."
 
-**Want to learn more about our approach?** Call us at [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) for a [free consultation](/services/free-foundation-consultations). We will inspect your foundation, explain what it needs, provide a written quote, and walk you through our warranty in detail. The [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) covers pricing if you want to research before calling.
+**Want to learn more about our approach?** Call us for a [free consultation](/services/free-foundation-consultations). We will inspect your foundation, explain what it needs, provide a written quote, and walk you through our warranty in detail. The [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) covers pricing if you want to research before calling.
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)

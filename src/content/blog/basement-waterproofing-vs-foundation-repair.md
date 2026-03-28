@@ -152,4 +152,4 @@ Our consultations are free. We'll tell you honestly whether crack repair will so
 
 Contact us for a free evaluation of your basement water issues. We'll tell you exactly what you need—even if the answer is "nothing."
 
-**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)

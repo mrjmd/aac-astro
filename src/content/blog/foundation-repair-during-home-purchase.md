@@ -145,4 +145,4 @@ Do not let a foundation inspection finding derail a home purchase without gettin
 
 Get a specialist assessment. Get real numbers. Then make a decision based on facts, not fear. We have helped thousands of New England homebuyers navigate this exact situation, and the vast majority end up buying the home and living happily in it with a repaired foundation and a lifetime warranty in the filing cabinet.
 
-Text us a photo for assessment or call us at [617-668-1677](sms:617-668-1677) (Massachusetts) or [860-573-8760](sms:860-573-8760) (Connecticut). With 50+ years of combined experience, we can often give you a preliminary read from a photo alone.
+Text us a photo for assessment — with 50+ years of combined experience, we can often give you a preliminary read from a photo alone. [860-573-8760](sms:860-573-8760) (CT) | [617-668-1677](sms:617-668-1677) (MA)

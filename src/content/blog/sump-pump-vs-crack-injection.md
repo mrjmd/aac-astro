@@ -145,4 +145,4 @@ Ask yourself these questions:
 
 A sump pump is not better than crack injection. Crack injection is not better than a sump pump. They are different tools for different problems, and the right choice depends entirely on an accurate diagnosis of your specific situation.
 
-If you are unsure which solution fits your situation, text us a photo for assessment or call for a free consultation. We will identify the source, recommend the right fix, and if that fix is not something we do, we will point you to someone who does. Call [617-668-1677](sms:617-668-1677) (Massachusetts) or [860-573-8760](sms:860-573-8760) (Connecticut) to schedule.
+If you are unsure which solution fits your situation, text us a photo for assessment or call for a free consultation. We will identify the source, recommend the right fix, and if that fix is not something we do, we will point you to someone who does. [860-573-8760](sms:860-573-8760) (CT) | [617-668-1677](sms:617-668-1677) (MA)

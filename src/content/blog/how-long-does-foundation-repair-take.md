@@ -156,4 +156,4 @@ For the vast majority of homeowners, foundation repair is a same-day event. You 
 
 The 50+ years of combined experience matter here. A crew that has done thousands of crack injections works efficiently because there is no guesswork. We know what we are looking at, we know the right approach, and we execute it cleanly.
 
-**Wondering what your foundation needs?** Text us a photo for a free assessment at [860-573-8760](sms:860-573-8760) (CT) or [617-668-1677](sms:617-668-1677) (MA). We can usually tell you what the repair involves, how long it takes, and what it costs from your photos. The [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) is a good starting point if you want to come prepared.
+**Wondering what your foundation needs?** Text us a photo for a free assessment — we can usually tell you what the repair involves, how long it takes, and what it costs from your photos. The [foundation repair cost guide](/blog/foundation-repair-cost-guide-2026) is a good starting point if you want to come prepared. [860-573-8760](sms:860-573-8760) (CT) | [617-668-1677](sms:617-668-1677) (MA)

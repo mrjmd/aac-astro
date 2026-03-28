@@ -139,6 +139,6 @@ Concerned about the cost? We offer flexible monthly [payment plans through Affir
 
 Not sure what your bulkhead needs? With 50+ years of combined experience and thousands of projects completed, we'll examine it for free, diagnose the leak source, and give you an honest recommendation.
 
-**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)
 
 Text us photos of your bulkhead for a quick preliminary assessment.

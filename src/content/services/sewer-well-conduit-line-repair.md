@@ -41,7 +41,8 @@ steps:
 
 **Pipe penetration sealing costs $650–$1,000 per penetration** and permanently stops water from entering your basement around sewer lines, well pipes, electrical conduits, and other utility lines. If you see water stains, dripping, or efflorescence around any pipe entering your foundation, the original seal has failed. Our flexible urethane injection works even on actively leaking penetrations — no excavation, no waiting for dry weather. Every repair includes a lifetime guarantee.
 
-Call [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) for a free assessment.
+Call for a free assessment.
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)
 
 ---
 

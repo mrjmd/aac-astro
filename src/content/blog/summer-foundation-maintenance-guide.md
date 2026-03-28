@@ -127,6 +127,6 @@ The best time to repair foundation cracks is before winter, not during it. If yo
 
 Schedule an inspection in September or October. This gives you time to complete repairs before the ground freezes and the spring thaw brings water pressure against your foundation.
 
-We offer [free foundation assessments](/services/free-foundation-consultations) year-round. Text us a photo for assessment at [617-668-1677](sms:617-668-1677) or call [860-573-8760](sms:860-573-8760). We will evaluate your foundation, tell you what needs attention now, and what can wait — honestly.
+We offer [free foundation assessments](/services/free-foundation-consultations) year-round. Text us a photo for assessment — we will evaluate your foundation, tell you what needs attention now, and what can wait, honestly. [860-573-8760](sms:860-573-8760) (CT) | [617-668-1677](sms:617-668-1677) (MA)
 
 Summer is the cheapest time to prevent foundation problems. A few hours of maintenance now saves thousands in repair costs later.

@@ -50,4 +50,4 @@ The client gained permanent protection against water seeping into her basement, 
 
 **Have a leaky bulkhead?** Text us a photo for a free assessment — we can often tell from a photo whether you need bulkhead sealant injection or a full replacement. Check out our [complete guide to bulkhead leak causes and fixes](/blog/bulkhead-leaking-causes-and-fixes) for more on why DIY caulk fails and professional injection works.
 
-**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)

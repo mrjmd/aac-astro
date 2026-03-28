@@ -326,7 +326,7 @@ const aboutSchema = [
 				<p class="text-xl text-zinc-300 mb-10">
 					Get a free consultation — text us photos or call for honest expert advice on your foundation.
 				</p>
-				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+				<div class="geo-phone-both flex flex-col sm:flex-row gap-4 justify-center" style="--geo-display: flex">
 					<a href={phoneCTHref} class="bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white inline-flex items-center justify-center gap-3">
 						<Icon name="Phone" size={24} />
 						CT: {phoneCT}
@@ -336,6 +336,14 @@ const aboutSchema = [
 						MA: {phoneMA}
 					</a>
 				</div>
+				<a href={phoneCTHref} class="geo-phone-ct bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white inline-flex items-center justify-center gap-3" style="--geo-display: inline-flex">
+					<Icon name="Phone" size={24} />
+					Call: {phoneCT}
+				</a>
+				<a href={phoneMAHref} class="geo-phone-ma bg-aac-blue text-white px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] inline-flex items-center justify-center gap-3" style="--geo-display: inline-flex">
+					<Icon name="Phone" size={24} />
+					Call: {phoneMA}
+				</a>
 			</div>
 		</section>
 	</main>

@@ -10,6 +10,7 @@ import { isPublished } from '../../utils/blog';
 import { SERVICE_SLUG_MAP } from '../../utils/projects';
 import { phoneCT, phoneMA } from '../../utils/contact';
 import { webpSrc, projectSrcset } from '../../utils/image';
+import GeoCtaButton from '../../components/GeoCtaButton.astro';
 
 export async function getStaticPaths() {
 	const projects = await getCollection('projects', ({ data }) => data.published);
@@ -459,10 +460,10 @@ const projectSchema = {
 					Get a free consultation with our experts. We'll assess your situation and give you honest advice — no pressure, just expert guidance.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">
-					<button class="open-modal bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
+					<GeoCtaButton class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
 						<Icon name="MessageSquare" size={20} />
 						Text Us Photos
-					</button>
+					</GeoCtaButton>
 					<a href={`tel:${phoneNumber}`} class="bg-white/10 text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
 						<Icon name="Phone" size={20} />
 						{phoneNumber}

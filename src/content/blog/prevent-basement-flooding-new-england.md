@@ -139,6 +139,6 @@ Prevention is cheaper by an order of magnitude. Every time.
 
 ## Take Action Before the Next Storm
 
-If your basement has flooded before, or if you have noticed warning signs — dampness, musty smells, efflorescence, visible cracks — do not wait for the next storm to confirm the problem. Call us at [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA). Our free consultations identify the specific vulnerabilities in your foundation so you can address them on your schedule, not during an emergency.
+If your basement has flooded before, or if you have noticed warning signs — dampness, musty smells, efflorescence, visible cracks — do not wait for the next storm to confirm the problem. Our free consultations identify the specific vulnerabilities in your foundation so you can address them on your schedule, not during an emergency. [860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)
 
 A dry basement is not luck. It is maintenance, preparation, and timely repairs. New England will keep testing your foundation — make sure your foundation is ready.

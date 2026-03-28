@@ -110,4 +110,4 @@ At Attack A Crack, we offer [free foundation consultations](/services/free-found
 
 Here is our honest take after decades of foundation work: most ice dam-related foundation cracks are very fixable with [crack injection](/services/foundation-crack-injection) or [wall crack repair](/services/wall-crack-repair). The key is addressing them before another winter makes them worse. That freeze-thaw cycle does not take years off. It takes seasons.
 
-If you have had ice dams this winter and something in the basement looks different, give us a call. Connecticut homeowners can reach us at [860-573-8760](tel:860-573-8760), and Massachusetts residents at [617-668-1677](tel:617-668-1677). We would rather tell you it is nothing than have you find a waterfall in your basement next January.
+If you have had ice dams this winter and something in the basement looks different, give us a call. We would rather tell you it is nothing than have you find a waterfall in your basement next January. [860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)

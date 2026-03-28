@@ -180,6 +180,6 @@ If all answers are "no," monitoring and minor DIY sealing may be sufficient.
 
 That's what free consultations are for. We'll look at your situation and give you honest advice—even if that advice is "you don't need us."
 
-**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)
 
 Text us a photo for assessment and we'll respond with initial guidance. With 50+ years of combined experience and thousands of projects across New England, many homeowners get the answer they need from a photo alone.

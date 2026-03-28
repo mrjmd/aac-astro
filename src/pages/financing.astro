@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import LocationModal from '../components/LocationModal.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import Icon from '../components/Icon.astro';
+import GeoCtaButton from '../components/GeoCtaButton.astro';
 import HomeFaq from '../components/HomeFaq.astro';
 import { phoneCT, phoneMA } from '../utils/contact';
 import { getFaqSchema } from '../utils/faqs';
@@ -280,9 +281,9 @@ const pageSchema = [
 					<a href="/services/free-foundation-consultations" class="bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all border-2 border-aac-dark inline-flex items-center justify-center gap-2">
 						<Icon name="Phone" size={18} /> Get a Free Quote
 					</a>
-					<button class="open-modal bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+					<GeoCtaButton class="bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
 						<Icon name="MessageSquare" size={18} /> Text Us Photos
-					</button>
+					</GeoCtaButton>
 				</div>
 			</div>
 		</section>

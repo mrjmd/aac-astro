@@ -137,6 +137,6 @@ When professional repair is genuinely needed, we explain why and provide a clear
 
 Ready for honest answers about your foundation? Text us photos of your concerns:
 
-**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)
 
 Most homeowners get expert guidance the same day — no appointment needed.

@@ -68,6 +68,28 @@
   }
 }
 
+/* Geo-personalization: show/hide phone numbers and CTAs based on detected state.
+   The blocking <script> in Layout.astro sets .geo-ct or .geo-ma on <html>.
+   Elements use --geo-display CSS var for their context-appropriate display type. */
+
+/* Default: single-region elements hidden, fallback elements visible */
+.geo-phone-ct, .geo-phone-ma { display: none !important; }
+.geo-direct-action { display: none !important; }
+
+/* CT detected: show CT, hide MA and "both" variants + modal triggers */
+.geo-ct .geo-phone-ct { display: var(--geo-display, flex) !important; }
+.geo-ct .geo-direct-action.geo-phone-ct { display: var(--geo-display, inline-flex) !important; }
+.geo-ct .geo-phone-ma,
+.geo-ct .geo-phone-both,
+.geo-ct .geo-modal-trigger { display: none !important; }
+
+/* MA detected: show MA, hide CT and "both" variants + modal triggers */
+.geo-ma .geo-phone-ma { display: var(--geo-display, flex) !important; }
+.geo-ma .geo-direct-action.geo-phone-ma { display: var(--geo-display, inline-flex) !important; }
+.geo-ma .geo-phone-ct,
+.geo-ma .geo-phone-both,
+.geo-ma .geo-modal-trigger { display: none !important; }
+
 @layer utilities {
   .no-scrollbar::-webkit-scrollbar {
     display: none;

@@ -1,0 +1,34 @@
+---
+/**
+ * GeoCtaButton — renders a modal trigger button (fallback) plus direct
+ * SMS/tel links for geo-detected visitors, all with identical styling.
+ *
+ * Usage:
+ *   <GeoCtaButton class="bg-aac-yellow ..." mode="text">
+ *     <Icon name="MessageSquare" size={20} />
+ *     Text Photos
+ *   </GeoCtaButton>
+ */
+import { phoneCT, phoneMA } from '../utils/contact';
+
+interface Props {
+  /** Pass-through CSS classes applied to all three elements */
+  class?: string;
+  /** "text" = sms: links, "call" = tel: links */
+  mode?: 'text' | 'call';
+}
+
+const { class: className = '', mode = 'text' } = Astro.props;
+const protocol = mode === 'call' ? 'tel' : 'sms';
+const modalClass = mode === 'call' ? 'open-call-modal' : 'open-modal';
+---
+
+<button class:list={[modalClass, 'geo-modal-trigger', className]}>
+  <slot />
+</button>
+<a href={`${protocol}:${phoneCT}`} class:list={['geo-direct-action', 'geo-phone-ct', className]} style="--geo-display: inline-flex">
+  <slot />
+</a>
+<a href={`${protocol}:${phoneMA}`} class:list={['geo-direct-action', 'geo-phone-ma', className]} style="--geo-display: inline-flex">
+  <slot />
+</a>

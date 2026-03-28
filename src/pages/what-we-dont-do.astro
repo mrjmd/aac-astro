@@ -6,6 +6,7 @@ import Footer from '../components/Footer.astro';
 import LocationModal from '../components/LocationModal.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import Icon from '../components/Icon.astro';
+import GeoCtaButton from '../components/GeoCtaButton.astro';
 import { phoneMA, phoneMAHref } from '../utils/contact';
 import { getVideoSchemas } from '../utils/video';
 
@@ -177,10 +178,10 @@ const pageSchema = [
 						<Icon name="Phone" size={20} />
 						{phoneMA}
 					</a>
-					<button class="open-modal bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+					<GeoCtaButton class="bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
 						<Icon name="MessageSquare" size={20} />
 						Send a Message
-					</button>
+					</GeoCtaButton>
 				</div>
 				<p class="text-zinc-300 mt-8 text-sm">
 					<Icon name="MapPin" size={14} class="inline mr-1" />

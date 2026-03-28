@@ -81,4 +81,4 @@ If your bulkhead is leaking — especially if you notice water in your basement 
 
 For a detailed cost breakdown, see our [bulkhead repair cost guide](/blog/bulkhead-repair-cost-guide-2026). Or text us a photo for assessment — we can often identify the failed seal point from a photo. You can also schedule a [free consultation](/services/free-foundation-consultations) and we will assess all three seal points in person and tell you exactly what needs to be fixed. Learn more about our [professional bulkhead repair service](/services/leaky-bulkhead-repair/).
 
-**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)

@@ -2,6 +2,7 @@
 import Icon from './Icon.astro';
 import YouTubeFacade from './YouTubeFacade.astro';
 import { reviewCount } from '../utils/reviews';
+import { phoneCT, phoneMA } from '../utils/contact';
 ---
 
 <section data-hero class="relative min-h-screen flex items-center pt-20 md:pt-32 pb-6 md:pb-20 overflow-hidden bg-white">
@@ -22,12 +23,22 @@ import { reviewCount } from '../utils/reviews';
 
       <div class="flex flex-col sm:flex-row items-center gap-4 md:gap-8">
         <button
-          class="open-modal bg-aac-yellow text-aac-dark px-10 py-6 rounded-2xl font-black text-xl uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(26,26,26,1)] border-4 border-aac-dark flex items-center justify-center gap-3 group"
+          class="open-modal geo-modal-trigger bg-aac-yellow text-aac-dark px-10 py-6 rounded-2xl font-black text-xl uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(26,26,26,1)] border-4 border-aac-dark flex items-center justify-center gap-3 group"
         >
           <Icon name="MessageSquare" size={24} />
           Text Photos
           <Icon name="ArrowRight" size={24} class="group-hover:translate-x-2 transition-transform" />
         </button>
+        <a href={`sms:${phoneCT}`} class="geo-direct-action geo-phone-ct bg-aac-yellow text-aac-dark px-10 py-6 rounded-2xl font-black text-xl uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(26,26,26,1)] border-4 border-aac-dark items-center justify-center gap-3 group" style="--geo-display: flex">
+          <Icon name="MessageSquare" size={24} />
+          Text Photos
+          <Icon name="ArrowRight" size={24} class="group-hover:translate-x-2 transition-transform" />
+        </a>
+        <a href={`sms:${phoneMA}`} class="geo-direct-action geo-phone-ma bg-aac-yellow text-aac-dark px-10 py-6 rounded-2xl font-black text-xl uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(26,26,26,1)] border-4 border-aac-dark items-center justify-center gap-3 group" style="--geo-display: flex">
+          <Icon name="MessageSquare" size={24} />
+          Text Photos
+          <Icon name="ArrowRight" size={24} class="group-hover:translate-x-2 transition-transform" />
+        </a>
 
         <div class="flex flex-col items-center sm:items-start">
           <div class="flex items-center gap-1 mb-1">

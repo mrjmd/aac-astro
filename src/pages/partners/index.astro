@@ -7,7 +7,8 @@ import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
 import { reviewCount } from '../../utils/reviews';
-import { phoneMA, phoneMAHref } from '../../utils/contact';
+import { phoneCT, phoneCTHref, phoneMA, phoneMAHref } from '../../utils/contact';
+import GeoCtaButton from '../../components/GeoCtaButton.astro';
 
 // Get all partners sorted by order
 const partners = (await getCollection('partners', ({ data }) => !data.draft)).sort((a, b) => a.data.order - b.data.order);
@@ -53,14 +54,22 @@ const pageSchema = {
 						</p>
 
 						<div class="flex flex-wrap gap-4">
-							<a href={phoneMAHref} class="bg-aac-dark text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
+							<a href={phoneMAHref} class="geo-phone-both bg-aac-dark text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2" style="--geo-display: inline-flex">
 								<Icon name="Phone" size={16} />
 								Call {phoneMA}
 							</a>
-							<button class="open-modal bg-white text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark hover:bg-aac-dark hover:text-white transition-all inline-flex items-center gap-2">
+							<a href={phoneCTHref} class="geo-phone-ct bg-aac-dark text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2" style="--geo-display: inline-flex">
+								<Icon name="Phone" size={16} />
+								Call {phoneCT}
+							</a>
+							<a href={phoneMAHref} class="geo-phone-ma bg-aac-dark text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2" style="--geo-display: inline-flex">
+								<Icon name="Phone" size={16} />
+								Call {phoneMA}
+							</a>
+							<GeoCtaButton class="bg-white text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark hover:bg-aac-dark hover:text-white transition-all inline-flex items-center gap-2">
 								<Icon name="MessageSquare" size={16} />
 								Let's Talk
-							</button>
+							</GeoCtaButton>
 						</div>
 					</div>
 
@@ -197,14 +206,22 @@ const pageSchema = {
 							Join our network of New England professionals who trust Attack A Crack for their foundation needs.
 						</p>
 						<div class="flex flex-col sm:flex-row gap-4 justify-center">
-							<a href={phoneMAHref} class="bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
+							<a href={phoneMAHref} class="geo-phone-both bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark" style="--geo-display: inline-flex">
 								<Icon name="Phone" size={20} />
 								{phoneMA}
 							</a>
-							<button class="open-modal bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+							<a href={phoneCTHref} class="geo-phone-ct bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark" style="--geo-display: inline-flex">
+								<Icon name="Phone" size={20} />
+								{phoneCT}
+							</a>
+							<a href={phoneMAHref} class="geo-phone-ma bg-aac-yellow text-aac-dark px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark" style="--geo-display: inline-flex">
+								<Icon name="Phone" size={20} />
+								{phoneMA}
+							</a>
+							<GeoCtaButton class="bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
 								<Icon name="MessageSquare" size={20} />
 								Let's Talk
-							</button>
+							</GeoCtaButton>
 						</div>
 						<p class="text-zinc-300 mt-8 text-sm">
 							<Icon name="MapPin" size={14} class="inline mr-1" />

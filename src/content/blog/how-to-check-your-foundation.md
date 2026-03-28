@@ -74,4 +74,4 @@ While monitoring hairline cracks is appropriate for homeowners, never attempt to
 
 If you notice any of these warning signs, contact Attack A Crack for a [free foundation consultation](/services/free-foundation-consultations). With thousands of projects across New England, we can assess your situation quickly. Text us a photo for a quick assessment — addressing issues early can prevent costly foundation replacements.
 
-**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)

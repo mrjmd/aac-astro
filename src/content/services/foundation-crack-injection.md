@@ -45,7 +45,8 @@ steps:
 
 **Foundation crack injection costs $800–$1,300 per crack** and is the only repair method that fills a crack through the full wall thickness — from interior surface to exterior soil. If you're seeing water after rain, white mineral deposits, or a musty basement smell, a crack is letting groundwater in. Our high-pressure injection process seals it permanently with flexible urethane or structural epoxy, and every repair is backed by a lifetime guarantee.
 
-Call [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) for a free assessment.
+Call for a free assessment.
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)
 
 ---
 

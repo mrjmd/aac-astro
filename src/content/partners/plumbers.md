@@ -72,4 +72,4 @@ Cracks in basement slabs that allow water to seep up from below, especially duri
 
 Next time you're in a basement and spot a crack or leak, know you have a trusted partner to call.
 
-**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)

@@ -43,7 +43,8 @@ steps:
 
 **Most wall crack repairs cost $800–$1,300 per crack**, with structural cracks requiring carbon fiber reinforcement running higher. If you see water stains, white powder (efflorescence), or active leaking in your basement, a foundation crack is the likely cause. We inject flexible urethane or structural epoxy at 100 PSI to fill the crack through the full wall thickness — no excavation, no exterior digging. Every repair includes a lifetime guarantee.
 
-Call [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) for a free assessment.
+Call for a free assessment.
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)
 
 ---
 
@@ -141,7 +142,8 @@ After your wall crack is repaired, a few simple steps will protect the seal and 
 
 - **Control basement humidity** — keep humidity below 60% using a dehumidifier if needed. High humidity causes condensation on walls, which can mask new leaks and promote mold growth.
 - **Ensure adequate ventilation** — stagnant basement air traps moisture. Open vents or run a fan periodically, especially in summer.
-- **Inspect repaired cracks annually** — check for any new cracking adjacent to the repair, fresh efflorescence, or moisture. If you notice anything, call [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) — warranty callbacks are free.
+- **Inspect repaired cracks annually** — check for any new cracking adjacent to the repair, fresh efflorescence, or moisture. If you notice anything, call us — warranty callbacks are free.
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)
 
 ### The Attack A Crack Advantage
 

@@ -21,7 +21,7 @@ const MA_NUMBER = phoneMA;
         <p class="text-zinc-500 text-sm font-bold leading-relaxed mb-8 max-w-sm">
           New England's trusted family-owned foundation repair contractor for over 20 years.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4">
+        <div class="geo-phone-both flex flex-col sm:flex-row gap-4" style="--geo-display: flex">
           <a href={`tel:${CT_NUMBER}`} class="bg-aac-yellow text-aac-dark px-6 py-3 rounded-xl border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(26,26,26,1)] hover:translate-y-[-2px] transition-all text-center flex-1">
             <span class="block text-[9px] font-black uppercase tracking-widest">Connecticut</span>
             <span class="block text-sm font-black">{CT_NUMBER}</span>
@@ -31,6 +31,14 @@ const MA_NUMBER = phoneMA;
             <span class="block text-sm font-black">{MA_NUMBER}</span>
           </a>
         </div>
+        <a href={`tel:${CT_NUMBER}`} class="geo-phone-ct bg-aac-yellow text-aac-dark px-6 py-4 rounded-xl border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(26,26,26,1)] hover:translate-y-[-2px] transition-all text-center" style="--geo-display: block">
+          <span class="block text-[9px] font-black uppercase tracking-widest">Call Now</span>
+          <span class="block text-sm font-black">{CT_NUMBER}</span>
+        </a>
+        <a href={`tel:${MA_NUMBER}`} class="geo-phone-ma bg-aac-blue text-white px-6 py-4 rounded-xl border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(26,26,26,1)] hover:translate-y-[-2px] transition-all text-center" style="--geo-display: block">
+          <span class="block text-[9px] font-black uppercase tracking-widest">Call Now</span>
+          <span class="block text-sm font-black">{MA_NUMBER}</span>
+        </a>
         <p class="text-[10px] text-zinc-600 font-bold mt-8 tracking-wide">
           Licensed Home Improvement Contractor:
           <a href="https://www.elicense.ct.gov/Lookup/LicenseLookup.aspx" target="_blank" rel="noopener noreferrer" class="hover:text-aac-blue transition-colors inline-flex items-center min-h-[28px]">CT #0629164</a> |

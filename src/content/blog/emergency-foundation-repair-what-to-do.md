@@ -117,7 +117,8 @@ Once the active water is managed, take these steps:
 
 ## We Pick Up the Phone
 
-If you are dealing with a foundation emergency in Connecticut, call us at [860-573-8760](tel:860-573-8760). In Massachusetts, call [617-668-1677](tel:617-668-1677). We serve all of New England -- CT, MA, RI, NH, and ME.
+If you are dealing with a foundation emergency, call us. We serve all of New England — CT, MA, RI, NH, and ME.
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)
 
 We have been the "something is happening in my basement and I do not know what to do" call for thousands of homeowners across the region. We will give you an honest answer, even if that answer is "put a towel down and call us Monday."
 

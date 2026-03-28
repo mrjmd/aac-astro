@@ -43,7 +43,8 @@ steps:
 
 **Carbon fiber stitches cost $200–$300 per stitch** and provide permanent structural reinforcement for foundation cracks that show movement or stress. If your wall has cracks wider than 1/4 inch, stair-step patterns, or signs of bowing, stitches lock both sides together and prevent further movement. For walls with significant bowing, full carbon fiber straps may be the better solution. Every carbon fiber repair includes our lifetime guarantee — the material itself will outlast your home.
 
-Call [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) for a free structural assessment.
+Call for a free structural assessment.
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)
 
 ---
 
@@ -149,7 +150,8 @@ After carbon fiber stitches are installed, periodic monitoring helps confirm the
 - **Look for fresh efflorescence** — new white mineral deposits near the repair may indicate water is finding a new pathway
 - **Monitor doors and windows** — sticking or misalignment in nearby frames can signal ongoing foundation movement
 
-If anything changes, call [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) — warranty callbacks are always free.
+If anything changes, call us — warranty callbacks are always free.
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)
 
 ### The Attack A Crack Carbon Fiber Advantage
 

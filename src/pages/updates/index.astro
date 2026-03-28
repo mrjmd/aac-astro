@@ -6,6 +6,7 @@ import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
+import GeoCtaButton from '../../components/GeoCtaButton.astro';
 import { isPublished } from '../../utils/blog';
 import { webpSrc, projectSrcset } from '../../utils/image';
 
@@ -259,10 +260,10 @@ const projectTotalPages = Math.ceil(allProjects.length / PROJECTS_PER_PAGE);
 					Get a free assessment from our experts.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">
-					<button class="open-modal bg-aac-dark text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2">
+					<GeoCtaButton class="bg-aac-dark text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2">
 						<Icon name="MessageSquare" size={20} />
 						Text Us Photos
-					</button>
+					</GeoCtaButton>
 					<a href="/services/free-foundation-consultations" class="bg-white text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-sm hover:translate-y-[-2px] transition-all inline-flex items-center justify-center gap-2 border-2 border-aac-dark">
 						Free Consultation
 					</a>

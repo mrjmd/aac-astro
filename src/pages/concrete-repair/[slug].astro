@@ -6,6 +6,7 @@ import Footer from '../../components/Footer.astro';
 import LocationModal from '../../components/LocationModal.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
+import GeoCtaButton from '../../components/GeoCtaButton.astro';
 import ProjectCards from '../../components/ProjectCards.astro';
 import { getByService as getProjectsByService, SERVICE_SLUG_MAP } from '../../utils/projects';
 import { getBlogForService } from '../../utils/blog-linking';
@@ -196,10 +197,10 @@ const schemas = [businessSchema, serviceSchema, howToSchema, faqSchema].filter(B
 								<Icon name="Phone" size={16} />
 								Call {phoneMA}
 							</a>
-							<button class="open-modal bg-white/5 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/30 hover:bg-white/15 transition-all inline-flex items-center gap-2">
+							<GeoCtaButton class="bg-white/5 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border border-white/30 hover:bg-white/15 transition-all inline-flex items-center gap-2">
 								<Icon name="MessageSquare" size={16} />
 								Get Free Quote
-							</button>
+							</GeoCtaButton>
 						</div>
 					</div>
 
@@ -413,10 +414,10 @@ const schemas = [businessSchema, serviceSchema, howToSchema, faqSchema].filter(B
 						<Icon name="Phone" size={20} />
 						{phoneMA}
 					</a>
-					<button class="open-modal bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
+					<GeoCtaButton class="bg-white/10 text-white px-10 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-2">
 						<Icon name="MessageSquare" size={20} />
 						Text Photos
-					</button>
+					</GeoCtaButton>
 				</div>
 				<p class="text-zinc-300 mt-8 text-sm">
 					<Icon name="MapPin" size={14} class="inline mr-1" />

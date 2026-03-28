@@ -145,4 +145,4 @@ For anything on that last list, the [DIY approach](/blog/diy-vs-professional-fou
 
 A poured concrete foundation is a solid investment — literally. Most of the cracks you'll encounter are normal, repairable, and nothing to panic about. The key is getting them assessed correctly and repaired with the right method the first time.
 
-Want to know what your specific crack needs? Give us a call for a [free consultation](/services/free-foundation-consultations). We'll give you an honest assessment, a clear repair plan, and no pressure. CT homeowners: [860-573-8760](tel:860-573-8760). MA homeowners: [617-668-1677](tel:617-668-1677). We've been doing this for over three decades, and we've yet to meet a poured concrete crack we couldn't handle.
+Want to know what your specific crack needs? Give us a call for a [free consultation](/services/free-foundation-consultations). We'll give you an honest assessment, a clear repair plan, and no pressure. We've been doing this for over three decades, and we've yet to meet a poured concrete crack we couldn't handle. [860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)

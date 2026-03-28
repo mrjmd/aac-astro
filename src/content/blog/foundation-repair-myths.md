@@ -97,4 +97,5 @@ This is the most expensive myth on the list. A crack that costs $700 today can c
 
 Foundation problems do not get better on their own. They slowly get worse, and the repair cost grows with them.
 
-Go look at your basement. Take some photos. And if anything concerns you, call us at [860-573-8760](tel:860-573-8760) (CT) or [617-668-1677](tel:617-668-1677) (MA) for a [free consultation](/services/free-foundation-consultations). We have been doing this for decades, and we will give you honest answers — even if that answer is "you are fine, stop worrying."
+Go look at your basement. Take some photos. And if anything concerns you, call us for a [free consultation](/services/free-foundation-consultations). We have been doing this for decades, and we will give you honest answers — even if that answer is "you are fine, stop worrying."
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)

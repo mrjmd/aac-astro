@@ -8,6 +8,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Icon from '../../components/Icon.astro';
 import ServiceAreaMap from '../../components/ServiceAreaMap.astro';
 import { reviewCount } from '../../utils/reviews';
+import GeoCtaButton from '../../components/GeoCtaButton.astro';
 import { phoneCT, phoneCTHref, phoneMA, phoneMAHref } from '../../utils/contact';
 
 // Get all locations
@@ -166,7 +167,7 @@ const areaSchema = {
               </div>
             </div>
 
-            <div class="flex flex-wrap gap-4">
+            <div class="geo-phone-both flex flex-wrap gap-4" style="--geo-display: flex">
               <a href={phoneCTHref} class="bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2">
                 <Icon name="Phone" size={16} />
                 CT: {phoneCT}
@@ -176,6 +177,14 @@ const areaSchema = {
                 MA: {phoneMA}
               </a>
             </div>
+            <a href={phoneCTHref} class="geo-phone-ct bg-aac-yellow text-aac-dark px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2" style="--geo-display: inline-flex">
+              <Icon name="Phone" size={16} />
+              Call: {phoneCT}
+            </a>
+            <a href={phoneMAHref} class="geo-phone-ma bg-aac-blue text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] border-2 border-aac-dark shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] hover:translate-y-[-2px] transition-all inline-flex items-center gap-2" style="--geo-display: inline-flex">
+              <Icon name="Phone" size={16} />
+              Call: {phoneMA}
+            </a>
           </div>
 
           <div class="relative">
@@ -322,10 +331,10 @@ const areaSchema = {
           Not sure what's wrong with your foundation? Text us photos for a free assessment—completely free, no obligation. Most issues can be diagnosed from photos alone.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <button class="open-modal bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white inline-flex items-center justify-center gap-3">
+          <GeoCtaButton class="bg-aac-yellow text-aac-dark px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:translate-y-[-4px] transition-all shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] border-4 border-white inline-flex items-center justify-center gap-3">
             <Icon name="MessageSquare" size={24} />
             Text Us Photos
-          </button>
+          </GeoCtaButton>
           <a href="/services/free-foundation-consultations" class="bg-white/10 backdrop-blur-sm text-white px-12 py-6 rounded-2xl font-black text-lg uppercase tracking-widest hover:bg-white/20 transition-all border border-white/20 inline-flex items-center justify-center gap-3">
             <Icon name="Info" size={24} />
             Free Consultation Info

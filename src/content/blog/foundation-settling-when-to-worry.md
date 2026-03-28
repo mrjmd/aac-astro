@@ -153,6 +153,6 @@ If you have a finished basement, this matters enormously. A crack injection that
 
 Some settling is normal. Some is the beginning of an expensive problem. The difference isn't always obvious — which is why professional evaluation matters. Caught early, most settling-related problems are quick and affordable to fix. Ignored for years, they become major projects.
 
-**Connecticut:** [860-573-8760](tel:860-573-8760) | **Massachusetts:** [617-668-1677](tel:617-668-1677)
+[860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)
 
 Text us a photo for assessment and we'll give you an honest preliminary read. If it looks like normal settling, we'll tell you that — and save you the worry.
