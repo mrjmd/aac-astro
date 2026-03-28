@@ -40,7 +40,8 @@
     "alert:decay": "node scripts/content-decay-alert.js",
     "audit:cannibalization": "node scripts/cannibalization-audit.js",
     "report:weekly": "node scripts/weekly-report.js",
-    "report:monthly": "node scripts/monthly-report.js"
+    "report:monthly": "node scripts/monthly-report.js",
+    "track:positions": "node scripts/track-positions.js"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",
@@ -59,8 +60,10 @@
     "@types/node": "^22.14.0",
     "@vercel/node": "^5.6.15",
     "axe-core": "^4.9.0",
+    "chrome-launcher": "^1.2.1",
     "googleapis": "^171.4.0",
     "jsdom": "^24.0.0",
+    "lighthouse": "^13.0.3",
     "sharp": "^0.34.5",
     "tailwindcss": "^4.2.1",
     "typescript": "~5.8.2",

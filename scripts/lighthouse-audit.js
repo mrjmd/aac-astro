@@ -10,7 +10,7 @@
 
 import lighthouse from 'lighthouse';
 import * as chromeLauncher from 'chrome-launcher';
-import { writeFileSync } from 'node:fs';
+import { writeFileSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -22,24 +22,71 @@ const BASE_URL = 'https://www.attackacrack.com';
 const RUNS_PER_PAGE = 3;
 const OUTPUT_FILE = join(PROJECT_ROOT, '.lighthouse-audit-results.json');
 
-const PAGES = [
+/** Fixed pages that are always audited. */
+const FIXED_PAGES = [
   '/',
   '/about',
   '/services',
-  '/services/foundation-crack-injection',
   '/concrete-repair',
-  '/concrete-repair/walkway-stairway',
   '/blog',
-  '/blog/signs-of-foundation-problems',
   '/connecticut',
-  '/connecticut/hartford',
   '/massachusetts',
-  '/massachusetts/boston',
   '/projects',
-  '/partners/realtors',
   '/locations',
   '/updates',
 ];
+
+/**
+ * Slug pools — one random page is picked from each pool per run.
+ * Patterns match sitemap paths (without trailing slash).
+ */
+const SLUG_POOLS = [
+  { label: 'service detail',         pattern: /^\/services\/[^/]+$/ },
+  { label: 'concrete-repair detail', pattern: /^\/concrete-repair\/[^/]+$/ },
+  { label: 'blog post',              pattern: /^\/blog\/[^/]+$/, exclude: /^\/blog\/category\// },
+  { label: 'CT city',                pattern: /^\/connecticut\/[^/]+$/ },
+  { label: 'MA city',                pattern: /^\/massachusetts\/[^/]+$/, exclude: /trusted-partners/ },
+  { label: 'RI city',                pattern: /^\/rhode-island\/[^/]+$/ },
+  { label: 'NH city',                pattern: /^\/new-hampshire\/[^/]+$/ },
+  { label: 'ME city',                pattern: /^\/maine\/[^/]+$/ },
+  { label: 'project detail',         pattern: /^\/projects\/[^/]+$/ },
+  { label: 'partner page',           pattern: /^\/partners\/[^/]+$/, exclude: /\/(capture|qr)$/ },
+];
+
+function pickRandom(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+/** Parse sitemap.xml from dist/ and return all paths (no trailing slash). */
+function parseSitemapPaths() {
+  const sitemapPath = join(PROJECT_ROOT, 'dist', 'sitemap-0.xml');
+  const xml = readFileSync(sitemapPath, 'utf-8');
+  const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
+  return urls.map(u => {
+    const path = new URL(u).pathname;
+    return path.endsWith('/') && path !== '/' ? path.slice(0, -1) : path;
+  });
+}
+
+/** Build the page list: fixed pages + one random pick per slug pool. */
+function buildPageList() {
+  const allPaths = parseSitemapPaths();
+  const pages = [...FIXED_PAGES];
+
+  for (const pool of SLUG_POOLS) {
+    const candidates = allPaths.filter(p =>
+      pool.pattern.test(p) && (!pool.exclude || !pool.exclude.test(p))
+    );
+    if (candidates.length === 0) {
+      console.warn(`  ⚠ No candidates for "${pool.label}" pool`);
+      continue;
+    }
+    const pick = pickRandom(candidates);
+    pages.push(pick);
+  }
+
+  return pages;
+}
 
 const CATEGORY_IDS = ['performance', 'accessibility', 'best-practices', 'seo'];
 
@@ -212,6 +259,9 @@ async function runLighthouseOnPage(url, port) {
 
 async function main() {
   console.log('');
+  console.log('  Building page list from sitemap...');
+  const PAGES = buildPageList();
+
   console.log('  Launching headless Chrome...');
 
   const chrome = await chromeLauncher.launch({

@@ -5,7 +5,7 @@
  */
 
 const HAS_WEBP = (s: string) => s.startsWith('/images/') && s.endsWith('.jpg');
-const HAS_SRCSET = (s: string) => (s.startsWith('/images/projects/') || s.startsWith('/images/blog/')) && s.endsWith('.jpg');
+const HAS_SRCSET = (s: string) => s.startsWith('/images/') && s.endsWith('.jpg');
 
 /** Convert a .jpg path to its optimized .webp equivalent. */
 export function webpSrc(src: string): string {

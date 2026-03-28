@@ -15,7 +15,7 @@ import { readdir, stat } from 'fs/promises';
 import { join, parse } from 'path';
 import sharp from 'sharp';
 
-const IMAGE_DIRS = ['public/images/projects', 'public/images/blog'];
+const IMAGE_DIRS = ['public/images/projects', 'public/images/blog', 'public/images'];
 const QUALITY = 82;
 const SIZES = [
   { suffix: '-400w', width: 400 },
