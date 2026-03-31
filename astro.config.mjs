@@ -11,6 +11,7 @@ export default defineConfig({
     rehypePlugins: [rehypeRaw, rehypeResponsiveImages, rehypeYouTubeFacade, rehypeGeoPhones],
   },
   site: 'https://www.attackacrack.com', // Use the production domain for SEO
+  trailingSlash: 'always',
   integrations: [sitemap({
     filter: (page) =>
       !(/\/\d+\/?$/.test(page)) &&

@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://attackacrack.com/sitemap-index.xml
+Sitemap: https://www.attackacrack.com/sitemap-index.xml
 
 User-agent: GPTBot
 Allow: /
