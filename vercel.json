@@ -52,6 +52,26 @@
       "permanent": true
     },
     {
+      "source": "/about-us",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/sales",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/team",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/services/walkway-stairway",
+      "destination": "/concrete-repair/walkway-stairway",
+      "permanent": true
+    },
+    {
       "source": "/foundation-types",
       "destination": "/blog/category/foundation-types",
       "permanent": true
