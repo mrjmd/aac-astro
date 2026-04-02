@@ -186,7 +186,7 @@ import '../../styles/global.css';
             partner: partner || 'none',
           };
           var gclid = localStorage.getItem('gclid');
-          if (gclid) formParams.gclid = gclid;
+          if (gclid) formParams.ad_click_id = gclid;
           window.gtag('event', 'partner_form_submit', formParams);
         }
       } catch (err: any) {

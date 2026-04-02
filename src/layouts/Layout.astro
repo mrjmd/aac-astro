@@ -247,7 +247,7 @@ if (breadcrumbSchema) {
 					}
 
 					function fireClickEvent(eventName, params) {
-						if (storedGclid) params.gclid = storedGclid;
+						if (storedGclid) params.ad_click_id = storedGclid;
 
 						if (ga4Ready) {
 							gtag('event', eventName, params);
