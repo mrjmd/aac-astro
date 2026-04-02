@@ -181,10 +181,13 @@ import '../../styles/global.css';
 
         // Analytics: track partner form submission
         if (typeof window.gtag === 'function') {
-          window.gtag('event', 'partner_form_submit', {
+          var formParams: Record<string, string> = {
             referrer: ref || 'direct',
             partner: partner || 'none',
-          });
+          };
+          var gclid = localStorage.getItem('gclid');
+          if (gclid) formParams.gclid = gclid;
+          window.gtag('event', 'partner_form_submit', formParams);
         }
       } catch (err: any) {
         errorEl.textContent = err.message || 'Something went wrong. Please try again.';

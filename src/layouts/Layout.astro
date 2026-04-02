@@ -199,13 +199,24 @@ if (breadcrumbSchema) {
 					window.gtag = function(){dataLayer.push(arguments);};
 					gtag('js', new Date());
 					gtag('set', { page_type: pageType || 'unknown' });
-					// Capture GA4 client ID as a custom dimension for journey reconstruction
-					var gaMatch = document.cookie.match(/_ga=GA\d+\.\d+\.(\d+\.\d+)/);
-					if (gaMatch) gtag('set', { client_id: gaMatch[1] });
 					gtag('config', GA4_ID);
+					// Capture GA4 client ID as a custom dimension for journey reconstruction
+					// Uses gtag get API (fires after config initializes, so client_id exists)
+					gtag('get', GA4_ID, 'client_id', function(cid) {
+						if (cid) gtag('set', { client_id: cid });
+					});
 					if (GOOGLE_ADS_MA_ID) gtag('config', GOOGLE_ADS_MA_ID);
 					// TODO: Uncomment when CT Google Ads account is linked to MCC
 					// if (GOOGLE_ADS_CT_ID) gtag('config', GOOGLE_ADS_CT_ID);
+
+					// GCLID capture — store Google Ads click ID for offline conversion imports
+					var gclidParam = new URLSearchParams(window.location.search).get('gclid');
+					if (gclidParam) {
+						localStorage.setItem('gclid', gclidParam);
+						localStorage.setItem('gclid_at', new Date().toISOString());
+						localStorage.setItem('gclid_landing', window.location.pathname);
+					}
+					var storedGclid = localStorage.getItem('gclid') || '';
 
 					// Geo-personalization tracking
 					var geoRegion = (document.cookie.match(/(?:^|; )geo_region=(\w+)/) || [])[1] || 'none';
@@ -240,27 +251,31 @@ if (breadcrumbSchema) {
 							var number = href.replace('tel:', '').replace(/\D/g, '');
 							var region = number.indexOf(CT_NUMBER) !== -1 ? 'CT' : 'MA';
 
-							gtag('event', 'phone_call_click', {
+							var callParams = {
 								phone_region: region,
 								phone_number: number,
 								click_location: inferClickLocation(link),
 								page_path: window.location.pathname,
 								page_type: document.body.dataset.pageType || 'unknown',
 								geo_detected: geoRegion,
-							});
+							};
+							if (storedGclid) callParams.gclid = storedGclid;
+							gtag('event', 'phone_call_click', callParams);
 
 						} else if (href.indexOf('sms:') === 0) {
 							var smsNumber = href.replace(/sms:[+]?/, '').replace(/\D/g, '');
 							var smsRegion = smsNumber.indexOf(CT_NUMBER) !== -1 ? 'CT' : 'MA';
 
-							gtag('event', 'text_message_click', {
+							var textParams = {
 								phone_region: smsRegion,
 								phone_number: smsNumber,
 								click_location: inferClickLocation(link),
 								page_path: window.location.pathname,
 								page_type: document.body.dataset.pageType || 'unknown',
 								geo_detected: geoRegion,
-							});
+							};
+							if (storedGclid) textParams.gclid = storedGclid;
+							gtag('event', 'text_message_click', textParams);
 						}
 					});
 				</script>

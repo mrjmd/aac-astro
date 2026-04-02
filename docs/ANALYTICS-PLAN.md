@@ -1,364 +1,100 @@
 # Analytics & Conversion Tracking Plan
 
-> **Status:** Planning complete, not yet implemented
-> **Created:** March 22, 2026
-> **Context:** Site launched March 21, 2026 at www.attackacrack.com
+> **Status:** Phases 1-2 complete. Phase 3 active. Phases 4-6 planned.
+> **Created:** March 22, 2026 | **Last updated:** March 26, 2026
+> **Completed work:** Archived to `docs/archive/ANALYTICS-PHASES-1-2-COMPLETED.md`
 
-## Why
+## The Questions This Plan Answers
 
-Google Ads are running for both the CT and MA branches but there is **no conversion tracking on the website**. We're spending blind. Meanwhile, the site's primary conversion actions (phone calls and text messages to two different branch numbers) are completely unmeasured. We need to know: which pages drive leads, which ad campaigns generate actual calls, and whether our content investment (80 city pages, 40 blog posts) is paying off.
+1. **Are my Google Ads making money or losing money?** → Phase 1 (DONE)
+2. **Which content pages actually generate phone calls?** → Phase 2 (DONE)
+3. **Should I invest in more city pages, more blog posts, or more ad spend?** → Phase 3 (ACTIVE)
+4. **Are users actually engaging with our content?** → Phase 4 (NEXT)
+5. **Can we automate the analysis so Claude does the math?** → Phase 5 (PLANNED)
+6. **Can we close the loop from ad click to signed job?** → Phase 6 (STRATEGIC)
 
-## Current State
+## Two Branches, Two Numbers
 
-| Tracking | Status | Notes |
-|----------|--------|-------|
-| Google Analytics 4 | Pageviews only | No custom events, no conversions defined |
-| Vercel Speed Insights | Active | Core Web Vitals auto-tracked |
-| Vercel Analytics | Active | Page views, no custom events |
-| Google Ads (CT account) | Running, no conversion tag | Spending blind |
-| Google Ads (MA account) | Running, no conversion tag | Spending blind |
-| Phone call tracking | None | Regular numbers shown directly |
-| Text message tracking | None | `sms:` links untracked |
-| Partner referral tracking | Working | `ref` param → Pipedrive |
-| UTM parameters | None (except partner `ref`) | No campaign attribution |
-| Google Search Console | Verified | Sitemap submitted, not linked to GA4 |
-| SEO meta/schema/OG | Comprehensive | All pages properly tagged |
-
-## The Three Questions This Plan Answers
-
-1. **Are my Google Ads making money or losing money?** (Phase 1)
-2. **Which content pages actually generate phone calls?** (Phase 2)
-3. **Should I invest in more city pages, more blog posts, or more ad spend?** (Phase 3)
-
----
-
-## Two Branches, Two Numbers, Independent Tracking
-
-The site serves two branches with separate phone numbers for calling and texting:
 - **Connecticut:** 860-573-8760
 - **Massachusetts:** 617-668-1677
 
-Every analytics event must capture which branch number was clicked. This enables:
-- Per-branch lead counting (how many CT calls vs MA calls from the website?)
-- Per-branch Google Ads ROI (CT ad spend vs CT conversions, MA ad spend vs MA conversions)
-- Per-branch content ROI (do CT city pages drive CT calls? Do MA city pages drive MA calls?)
-
-The two branches also have **separate Google Ads accounts**, each needing its own conversion tracking tag. The gtag.js approach handles this natively with two config lines.
+Every event captures which branch. Separate Google Ads accounts per branch. Quo VoIP handles both lines.
 
 ---
 
-## Phase 1: Stop Spending Blind (Week 1) — CRITICAL
+## Completed: Phases 1-2
 
-### 1.1 Add Google Ads Conversion Tags
+Full details archived. Summary of what's live:
 
-Since gtag.js is already loaded for GA4, adding Google Ads tracking is minimal. Add two new environment variables and two additional config lines.
-
-**New env vars:**
-- `PUBLIC_GOOGLE_ADS_CT_ID` (format: `AW-XXXXXXXXX`)
-- `PUBLIC_GOOGLE_ADS_MA_ID` (format: `AW-YYYYYYYYY`)
-
-**In `src/layouts/Layout.astro`, the existing gtag block (lines 146-152) becomes:**
-
-```javascript
-gtag('config', GA4_ID);
-gtag('config', GOOGLE_ADS_CT_ID);  // CT branch
-gtag('config', GOOGLE_ADS_MA_ID);  // MA branch
-```
-
-**Effort:** 30 min code + 30 min in each Google Ads admin
-**Impact:** Google Ads can finally optimize bidding for both branches
-
-### 1.2 Add Phone/Text Click Tracking via Event Delegation
-
-A single script in `Layout.astro` catches all `tel:` and `sms:` link clicks across the entire site. No individual component changes needed.
-
-```javascript
-document.addEventListener('click', (e) => {
-  const link = e.target.closest('a');
-  if (!link) return;
-
-  const href = link.getAttribute('href');
-  if (!href) return;
-
-  // Determine which branch based on the number
-  const CT_NUMBER = '8605738760';
-  const MA_NUMBER = '6176681677';
-
-  if (href.startsWith('tel:')) {
-    const number = href.replace('tel:', '').replace(/\D/g, '');
-    const region = number.includes(CT_NUMBER) ? 'CT' : 'MA';
-    const adsId = region === 'CT' ? GOOGLE_ADS_CT_ID : GOOGLE_ADS_MA_ID;
-
-    // GA4 event
-    gtag('event', 'phone_call_click', {
-      phone_region: region,
-      phone_number: number,
-      click_location: inferClickLocation(link),
-      page_path: window.location.pathname,
-      page_type: document.body.dataset.pageType || 'unknown'
-    });
-
-    // Google Ads conversion (routed to correct branch account)
-    gtag('event', 'conversion', {
-      send_to: adsId + '/PHONE_CONVERSION_LABEL',
-      value: 500,
-      currency: 'USD'
-    });
-
-  } else if (href.startsWith('sms:')) {
-    const number = href.replace(/sms:[+]?/,'').replace(/\D/g,'');
-    const region = number.includes(CT_NUMBER) ? 'CT' : 'MA';
-    const adsId = region === 'CT' ? GOOGLE_ADS_CT_ID : GOOGLE_ADS_MA_ID;
-
-    gtag('event', 'text_message_click', {
-      phone_region: region,
-      phone_number: number,
-      page_path: window.location.pathname,
-      page_type: document.body.dataset.pageType || 'unknown'
-    });
-
-    gtag('event', 'conversion', {
-      send_to: adsId + '/TEXT_CONVERSION_LABEL',
-      value: 500,
-      currency: 'USD'
-    });
-  }
-});
-
-function inferClickLocation(link) {
-  if (link.closest('nav')) return 'navbar';
-  if (link.closest('footer')) return 'footer';
-  if (link.closest('[data-modal]')) return 'modal';
-  if (link.closest('[data-hero]')) return 'hero';
-  return 'inline';
-}
-```
-
-This single script covers all current and future tel:/sms: links. No changes to Navbar, Footer, LocationModal, or city page templates.
-
-**Effort:** 1-2 hours
-**Impact:** Can finally count leads from the website, per branch
-
-### 1.3 Define Conversion Actions in Google Ads
-
-In each Google Ads account (CT and MA), create conversion actions:
-
-| Conversion Action | Category | Value | Count |
-|---|---|---|---|
-| Phone Call from Website | Phone call lead | $500 | One (per click) |
-| Text Message from Website | Submit lead form | $500 | One |
-
-Each conversion action generates a unique conversion label (e.g., `AbCdEf123`) used in the `send_to` parameter above.
-
-### 1.4 Mark Conversions in GA4
-
-In GA4 Admin → Events, mark as conversions:
-- `phone_call_click`
-- `text_message_click`
-
-### 1.5 Link GA4 to Both Google Ads Accounts
-
-In GA4 Admin → Product links → Google Ads links:
-- Link to CT Google Ads account
-- Link to MA Google Ads account
-- Enable auto-tagging in both Google Ads accounts (appends `gclid` to URLs)
-
-### Files Changed in Phase 1
-
-| File | Change |
-|------|--------|
-| `src/layouts/Layout.astro` | Add Google Ads config lines + click tracking event delegation script |
-| `.env` / `.env.example` | Add `PUBLIC_GOOGLE_ADS_CT_ID`, `PUBLIC_GOOGLE_ADS_MA_ID` |
+- [x] GA4 + Google Ads MA conversion tracking
+- [x] Phone/text click tracking (event delegation in Layout.astro)
+- [x] LocationModal + partner form events
+- [x] Page type classification (`data-page-type` on all 30 templates)
+- [x] Custom dimensions in GA4 (page_type, phone_region, click_location)
+- [x] GA4 linked to Google Ads MA + Google Search Console
+- [x] GA4 Explorations built (Content ROI, City Performance, CT vs MA, Conversion Funnels)
 
 ---
 
-## Phase 2: Attribution Foundation
+## Phase 3: Content Intelligence (ACTIVE)
 
-### Code Changes — DONE (March 24, 2026)
+### 3.1 GA4 Explorations — DONE
 
-These are all live in the codebase:
+Four explorations built in GA4 (see archive for step-by-step setup):
+1. **Content ROI** — which pages drive phone_call_click events
+2. **City Page Performance** — city pages filtered by sessions + call clicks
+3. **CT vs MA** — branch performance comparison
+4. **Conversion Funnels** — direct funnel (4A) + modal-assisted funnel (4B)
 
-- [x] **LocationModal tracking** — `text_photos_modal_open` event fires when the "Text Photos" modal opens (`src/components/LocationModal.astro`)
-- [x] **Partner form tracking** — `partner_form_submit` event fires on successful form submission, includes `referrer` and `partner` params (`src/pages/partners/capture.astro`)
-- [x] **Page type classification** — `data-page-type` attribute on `<body>` across all 30 page templates. Values: `home`, `city`, `service`, `blog`, `hub`, `about`, `partner`, `project`, `legal`, `other`
-- [x] **Phone/text events include page_type** — both `phone_call_click` and `text_message_click` now send `page_type` parameter
+### 3.2 Link Google Search Console to GA4 — DONE
 
-### Admin Tasks — Matt's To-Do List
+GSC linked. Query → landing page → conversion data flowing.
 
-#### 2.1 Create Custom Dimensions in GA4
+### 3.3 Google Ads Conversion Tracking — DONE
 
-These tell GA4 to recognize the event parameters already being sent from the site.
+GA4 events imported as conversion actions in MA Google Ads account. CT pending MCC link.
 
-1. Go to **GA4** → click the **gear icon** (Admin) bottom-left → **Custom definitions** → **Custom dimensions**
-2. Click **"Create custom dimension"**
-3. Create three dimensions, one at a time:
+### 3.4 Data-Driven Attribution Model
 
-| Step | Dimension name | Scope | Event parameter (type exactly) |
-|------|---------------|-------|-------------------------------|
-| First | Page Type | Event | `page_type` |
-| Second | Phone Region | Event | `phone_region` |
-| Third | Click Location | Event | `click_location` |
+- [x] **Data-driven attribution** — already the default on all GA4 properties (Google removed the toggle; data-driven is now the only multi-touch option).
 
-For each:
-- Click "Create custom dimension"
-- **Dimension name**: e.g., "Page Type"
-- **Scope**: select "Event"
-- **Event parameter**: type the exact string from the table (`page_type`, not "Page Type" — it's case-sensitive and must match what the code sends)
-- **Description**: optional, add if you want
-- Click **Save**
+### 3.5 UTM Parameter Templates
 
-Data starts flowing immediately for new events. No backfill for historical events.
+- [x] **GBP UTM links** — done March 25, 2026. GBP traffic now attributable via `utm_medium=gbp`.
 
-#### 2.2 Enable Google Ads Call Forwarding (Paid Traffic Only)
+**GBP Website Links (set these in each GBP listing):**
 
-Google provides forwarding numbers for visitors who arrived via Google Ads:
-- Visitor clicks ad → lands on site → Google replaces phone number with tracking number
-- Call is recorded with duration, answered status
-- Calls over 60 seconds count as conversions
-- Only applies to Google Ads traffic; organic visitors see the real number
+| Listing | URL |
+|---------|-----|
+| CT GBP | `https://www.attackacrack.com/connecticut/?utm_source=google&utm_medium=gbp&utm_campaign=ct-branch&utm_content=website-button` |
+| MA GBP | `https://www.attackacrack.com/massachusetts/?utm_source=google&utm_medium=gbp&utm_campaign=ma-branch&utm_content=website-button` |
 
-Set up in each Google Ads account:
-- Enable "Website call conversions"
-- Add the phone snippet (auto-detects and replaces numbers on the page)
-- Configure for both CT and MA numbers
+**GBP Post Links (unique per post):**
 
-#### 2.3 UTM Parameter Templates
+```
+https://www.attackacrack.com/[page]/?utm_source=google&utm_medium=gbp&utm_campaign=[ct-or-ma]-branch&utm_content=[post-topic]
+```
 
-**Standard conventions (always lowercase, hyphens not spaces):**
+**Full UTM Convention Table (always lowercase, hyphens not spaces):**
 
-| Channel | utm_source | utm_medium | utm_campaign |
-|---------|-----------|-----------|-------------|
-| Google Ads Search | google | cpc | {campaign_name} |
-| Google Ads Display | google | display | {campaign_name} |
-| Facebook Organic | facebook | social | {post_topic} |
-| Facebook Ads | facebook | paid_social | {campaign_name} |
-| Email Newsletter | newsletter | email | {send_date} |
-| Partner Referral | partner | referral | {partner_slug} |
-| Google Business Profile | google | gbp | {post_type} |
-| Print Flyer / QR Code | flyer | print | {campaign} |
+| Channel | utm_source | utm_medium | utm_campaign | utm_content |
+|---------|-----------|-----------|-------------|-------------|
+| Google Ads Search | google | cpc | {campaign_name} | {adgroupid} |
+| Google Business Profile | google | gbp | {branch}-branch | {post-topic or button} |
+| Facebook Organic | facebook | social | {post_topic} | |
+| Facebook Ads | facebook | paid_social | {campaign_name} | |
+| Email Newsletter | newsletter | email | {send_date} | |
+| Partner Referral | partner | referral | {partner_slug} | |
+| Print Flyer / QR Code | flyer | print | {campaign} | |
 
-**Google Ads campaign URLs use ValueTrack:**
+**Google Ads ValueTrack (auto-applied):**
 ```
 {lpurl}?utm_source=google&utm_medium=cpc&utm_campaign={campaignid}&utm_content={adgroupid}&utm_term={keyword}
 ```
 
----
+### 3.6 Monthly Reporting Cadence
 
-## Phase 3: Content Intelligence — Step-by-Step Walkthrough
-
-### 3.1 Build GA4 Explorations
-
-Explorations are custom dashboards in GA4. They live under the **Explore** tab (left sidebar, looks like a squiggly line icon).
-
-#### Exploration 1: Content ROI — "Which pages drive leads?"
-
-1. Go to **GA4** → **Explore** (left sidebar) → click the **"+"** button → choose **"Free form"**
-2. Name it **"Content ROI"** (click the title at the top)
-3. In the left panel under **Variables**:
-   - **Dimensions**: click the "+" next to Dimensions → search for "Page path and screen class" → check it → click **Import**
-   - **Metrics**: click the "+" next to Metrics → search for and import these three: **Sessions**, **Event count**, **Active users**
-4. In the middle **Tab Settings** panel:
-   - **Rows**: drag "Page path and screen class" into the Rows area
-   - **Values**: drag "Event count" into the Values area
-5. **Now the key part — filtering to phone_call_click events:**
-   - In the left **Variables** panel, click "+" next to **Dimensions** → search for **"Event name"** → import it
-   - In **Tab Settings**, find the **Filters** section at the bottom
-   - Click "Drop or select dimension or metric" → select **"Event name"**
-   - Set the condition to **"exactly matches"** → type **`phone_call_click`**
-   - Click **Apply**
-6. Now the table shows event counts filtered to only phone call clicks, broken down by page path
-7. Sort by Event count (click the column header) to see which pages generate the most calls
-
-**To see text clicks too:** Duplicate the tab (right-click the tab at the top → Duplicate), change the filter to `text_message_click`. Or change the filter to "matches regex" → `phone_call_click|text_message_click` to see both combined.
-
-**To add a "total sessions" column for context:** Add a second tab with no event name filter, showing Sessions by page path. This lets you calculate conversion rate (clicks ÷ sessions) manually, or compare side by side.
-
-**Pro tip:** Once built, click the three dots on the exploration → "Share" to make it visible to other GA4 users on the account.
-
-#### Exploration 2: City Page Performance — "Are city pages worth it?"
-
-1. **Explore** → **"+"** → **"Free form"** → name it **"City Page Performance"**
-2. **Dimensions**: import "Page path and screen class" and "Page Type" (your custom dimension — it may take a few hours to appear after creation)
-3. **Metrics**: import "Sessions" and "Event count"
-4. **Tab Settings**:
-   - **Rows**: Page path and screen class
-   - **Values**: Sessions, Event count
-   - **Filters**: Add two filters:
-     - Filter 1: "Page Type" exactly matches `city`
-     - Filter 2: "Event name" exactly matches `phone_call_click` (for the event count column)
-5. This shows only city pages with their session counts and phone click counts
-
-#### Exploration 3: CT vs MA Branch Performance
-
-1. **Explore** → **"+"** → **"Free form"** → name it **"CT vs MA"**
-2. **Dimensions**: import "Phone Region" (your custom dimension)
-3. **Metrics**: import "Event count"
-4. **Tab Settings**:
-   - **Rows**: Phone Region
-   - **Values**: Event count
-   - **Filters**: "Event name" matches regex `phone_call_click|text_message_click`
-5. You'll see two rows: CT and MA, with the total lead clicks for each
-
-#### Exploration 4A: Direct Conversion Funnel — "What % of visitors convert?"
-
-Most conversions happen via direct tel:/sms: links (in blog CTAs, city page hero, sticky CTA on state pages) — NOT through the modal. This funnel captures all conversions.
-
-1. **Explore** → **"+"** → choose **"Funnel exploration"** (not Free form)
-2. Name it **"Direct Conversion Funnel"**
-3. Click **"Steps"** in the Tab Settings panel, then **pencil icon** to edit steps:
-   - **Step 1**: Name: "Page Visit" → Condition: Event name = `session_start`
-   - **Step 2**: Name: "Called or Texted" → Condition: Event name matches regex `phone_call_click|text_message_click`
-   - Click **Apply**
-4. **Breakdown** (optional): drag "Page Type" into the Breakdown area to compare conversion rates by page type (city vs blog vs service vs home)
-5. The funnel shows: X% of all visitors converted to a phone call or text
-
-This is the primary conversion funnel — it tells you overall conversion rate and which page types convert best.
-
-#### Exploration 4B: Modal-Assisted Funnel — "Does the modal help or hurt?"
-
-On generic pages (home, services, about, non-geo blog), visitors must go through the location modal to call or text. This funnel specifically tracks that path.
-
-1. **Explore** → **"+"** → choose **"Funnel exploration"**
-2. Name it **"Modal-Assisted Funnel"**
-3. **Steps**:
-   - **Step 1**: Name: "Page Visit" → Condition: Event name = `session_start`
-   - **Step 2**: Name: "Opened Modal" → Condition: Event name matches regex `text_photos_modal_open|call_modal_open`
-   - **Step 3**: Name: "Called or Texted" → Condition: Event name matches regex `phone_call_click|text_message_click`
-   - Click **Apply**
-4. **Breakdown**: drag "Page Type" into the Breakdown area
-
-This tells you: of people who opened the modal, what % followed through? If the drop-off between modal open and conversion is high, the modal design might need work. Compare the modal open rate on generic pages (Funnel 4B step 2) vs the direct conversion rate on state pages (Funnel 4A) to see if the modal adds friction.
-
-### 3.2 Link Google Search Console to GA4
-
-This connects your search query data to your conversion data. The payoff: "someone searched 'foundation repair quincy' → landed on /massachusetts/quincy/ → called us."
-
-1. Go to **GA4** → **Admin** (gear icon) → scroll down to **Product links** → **Search Console links**
-2. Click **"Link"**
-3. Click **"Choose accounts"** → select your Search Console property (`www.attackacrack.com`) → click **Confirm**
-4. Click **"Next"** → select your web data stream (should be your only one) → click **Next**
-5. Click **"Submit"**
-
-**If you don't see your Search Console property:** Make sure the same Google account has admin access to both GA4 and Search Console. You verified GSC during launch, so this should just work.
-
-Data takes 24-48 hours to start flowing. Once connected, a new **"Search Console"** section appears under GA4 → Reports → Acquisition. You'll see:
-- Queries: what people searched
-- Google organic search traffic: which pages got clicks from Google
-- Combined with your conversion events: which search queries actually led to calls
-
-### 3.3 Google Ads Conversion Tracking
-
-~~**DONE (March 25, 2026).**~~ Conversions are imported from GA4 into Google Ads — no manual conversion labels needed in the code.
-
-**What was set up:**
-- In the MA Google Ads account, imported `phone_call_click` and `text_message_click` GA4 events as conversion actions
-- "Phone Call from Website" — Phone call lead, $300 default value
-- "Text Message from Website" — Submit lead form, $300 default value
-- Google Ads attributes conversions only from its own ad clicks (no cross-account contamination)
-
-**For CT Google Ads account:** Same process once the CT account is linked to MCC. Import the same two GA4 events — each account will only see conversions from its own traffic.
-
-### 3.4 Monthly Reporting Template
+- [ ] **First monthly report** — pull after April 7 (2 full weeks of Phase 1 data)
 
 | Metric | CT Branch | MA Branch | Total |
 |--------|-----------|-----------|-------|
@@ -374,123 +110,260 @@ Data takes 24-48 hours to start flowing. Once connected, a new **"Search Console
 
 ---
 
-## Phase 4: Advanced (Month 3+)
+## Phase 4: Engagement Intelligence
 
-### 4.1 Evaluate Call Tracking Service
+**All items are zero-performance-impact** unless noted. These piggyback on existing gtag.js and IntersectionObserver — no new script loads, no new third-party requests. See performance assessment at the end of this doc.
 
-After 2-3 months of data from Phases 1-3, evaluate whether a dedicated call tracking service (CallRail ~$45-95/mo, WhatConverts ~$30-100/mo) is worth it.
+### 4.1 Scroll Depth on All Pages
 
-**What a call tracking service adds beyond Google's forwarding:**
-- Tracks ALL calls (organic, direct, referral — not just Google Ads)
-- Call recordings for quality assessment
-- Call duration thresholds (distinguish real leads from hangups)
-- Text message tracking with trackable SMS numbers
-- Per-page, per-source attribution for every call
-- Direct Pipedrive integration
+- [x] Track scroll milestones: 25%, 50%, 75%, 100% — implemented March 25, 2026
+- [x] Expanded to all pages (was city-only) — March 26, 2026
+- **Why:** Understand how far visitors scroll on every page type. Filter by `page_type` in GA4 to compare engagement across city pages, blog posts, service pages, etc.
+- **Implementation:** IntersectionObserver on 4 marker elements, ~15 lines inline JS
+- **Performance impact:** Zero — 4 lightweight observers, fire-and-forget gtag calls
 
-**Decision criteria:** If you're spending $500+/mo on Google Ads, a $50/mo call tracking service pays for itself by identifying which campaigns actually generate qualified calls vs. noise.
+```javascript
+// Fires: scroll_depth { depth: "25%|50%|75%|100%", page_type, page_path }
+```
 
-### 4.2 Vercel Analytics Custom Events
+### 4.2 Blog Read-Complete Tracking
 
-Add duplicate events via Vercel's `track()` function as a cookie-free backup:
-- `phone_click` and `text_click` mirror GA4 events
-- Not affected by ad blockers that target Google's scripts
-- Provides a second data source for conversion counting
-
-### 4.3 Blog Engagement Tracking
+- [x] Fire `blog_read_complete` when visitor reaches end of article — implemented March 25, 2026
+- **Why:** Which posts are actually being read vs bounced? Informs content investment decisions.
+- **Implementation:** IntersectionObserver on end-of-article marker, ~8 lines inline JS
+- **Performance impact:** Zero — 1 observer on 1 element
 
 ```
 Event: blog_read_complete
-Parameters:
-  post_slug, category, estimated_read_time
+Parameters: post_slug, category, page_path
 ```
 
-Use IntersectionObserver on a marker element at the end of blog content.
+### 4.3 Video Play/Complete Tracking
 
-### 4.4 Google Ads Enhanced Conversions
+- [x] Track `video_play` and `video_complete` on YouTube embeds — implemented March 25, 2026
+- **Why:** Validate whether the 18 embedded videos are worth the load cost. Do video watchers convert at higher rates?
+- **Implementation:** YouTube iframe API event listeners. Videos are all <40s Shorts — no milestone percentages needed, just play + complete.
+- **Performance impact:** Zero — YouTube iframe is already loaded on video pages. Adding 2 event listeners per embed.
 
-Improves conversion measurement accuracy by passing hashed user data:
-- Partner form submissions can pass hashed email/phone for better matching
-- Enable in Google Ads → Goals → Settings → Enhanced Conversions
+```
+Event: video_play    { video_id, video_title, page_path, page_type }
+Event: video_complete { video_id, video_title, page_path, page_type }
+```
 
-### 4.5 Remarketing Audiences
+### 4.4 Page Speed vs Conversion Correlation — DROPPED
 
-Create GA4 audiences for Google Ads remarketing:
-- "Visited service page but didn't convert" (show them ads)
-- "Visited city page in CT" (target with CT-specific ads)
-- "Opened text-photos modal but didn't text" (high intent, didn't complete)
+Dropped March 30, 2026. Site is uniformly fast (Astro static, sub-1s LCP). Not enough variance to produce actionable insights.
+
+### 4.5 Microsoft Clarity (Conditional — Heatmaps)
+
+- [x] Install Clarity on city pages only for 2-4 week data sprint, then remove — installed March 2026, ID: w2bnacndl9
+- **Why:** See where users click on city pages. Are they engaging with project galleries and before/after photos, or scrolling straight to the CTA?
+- **Implementation:** Conditional script tag in Layout.astro, only loads when `pageType === 'city'`
+- **Performance impact:** +22KB gzipped JS (67% increase on current 33KB total), continuous MutationObserver + scroll recording. **Not permanent.** Install, collect data, remove.
 
 ---
 
-## Google Search Console — What to Monitor
+## Phase 5: Automated Reporting & API Scripts
 
-### Weekly (15 min)
+All server-side Node.js. **Zero client-side performance impact.**
 
-- **Performance → Search results:** Sort by impressions. Which queries is the site appearing for? Filter by page to see which city pages get impressions.
-- **Top pages by clicks:** Which pages drive the most organic traffic?
-- **Low CTR, high impressions:** Pages that rank but don't get clicked may need better title tags or meta descriptions.
+Existing infrastructure: Google OAuth2 with adwords + analytics.readonly + webmasters.readonly scopes. Developer token active on MCC. Scripts in `scripts/`.
 
-### Monthly (30 min)
+### 5.1 Search-to-Conversion Bridge Script
 
-- **Index coverage:** How many pages indexed vs submitted? Watch for:
-  - "Discovered — currently not indexed" (especially new city pages)
-  - "Crawled — currently not indexed" (may indicate thin content)
-- **Core Web Vitals:** Real-user CWV data. Compare with Vercel Speed Insights.
-- **Links report:** Who links to you? Internal link structure healthy?
-- **Search query growth:** Which queries gained impressions week-over-week?
+- [x] **`scripts/search-to-conversion.js`** — built March 25, 2026. Run via `npm run report:bridge`
+- Uses click-share probabilistic model: estimates per-query conversions based on each query's share of a page's organic clicks
+- Outputs HTML report (`data/reports/search-to-conversion.html`) + JSON
+- Three views: estimated query conversions (with confidence scores), top search queries (pure GSC), page conversion ranking (actual GA4)
+- All conversions broken out by CT/MA calls and texts
+- Run: `npm run report:bridge` or `npm run report:bridge -- --days 14`
 
-### During City Page Expansion
+### 5.2 Seasonal Benchmarking Script
 
-As 41 new MA cities and 16 new CT cities are added:
-- Monitor index coverage weekly — are new pages getting indexed?
-- Watch for cannibalization: two city pages ranking for the same query
-- Use GSC "Compare" to see if new pages gain traction over time
+- [x] **`scripts/seasonal-benchmark.js`** — built March 25, 2026. Run via `npm run report:benchmark`
+- Monthly snapshot: sessions, users, calls/texts by CT/MA, conversion rate, traffic sources, device breakdown
+- Appends to running `data/reports/seasonal-benchmarks.json`, generates HTML trend report with bar charts
+- Run: `npm run report:benchmark -- --month 2026-03` (end of each month)
+
+### 5.3 Analytics Health Check
+
+- [x] **`scripts/analytics-health-check.js`** — built March 26, 2026. Run via `npm run report:health`
+- Queries GA4 Data API to verify all 8 custom events and 7 custom dimensions are flowing correctly
+- Checks for: missing events, `(not set)` dimension values, broken dimensions, page_type coverage gaps
+- Outputs HTML dashboard (`data/reports/analytics-health.html`) + JSON
+- Run: `npm run report:health` (default 7 days) or `npm run report:health -- --days 1`
+
+**Vercel cron:** `api/analytics-health.ts` runs daily at 9am UTC (5am ET). Configured in `vercel.json`.
+
+**Env vars required on Vercel:** `GOOGLE_OAUTH_CLIENT_ID`, `GOOGLE_OAUTH_CLIENT_SECRET`, `GOOGLE_OAUTH_REFRESH_TOKEN`, `CRON_SECRET`
+
+**Optional:** `HEALTH_ALERT_WEBHOOK` — Slack-compatible webhook for alerts
+
+#### March 26 Health Check Findings & Fixes
+
+First health check run revealed:
+1. **`data-hero` and `data-modal` attributes missing from DOM** — click location detection for hero and modal was silently broken, all clicks reported as `inline`. Fixed by adding `data-hero` to Hero.astro and `data-modal` to LocationModal.astro.
+2. **Sticky CTA clicks misattributed as `navbar`** — StickyCTA is a `<nav>` element, so all mobile sticky bar clicks were lumped with header nav. Added `data-sticky-cta` attribute and new `sticky_cta` click location value.
+3. **`page_type` missing from 97% of sessions** — was only sent with custom events, not with `page_view`. Fixed by adding `gtag('set', { page_type })` before `gtag('config')` so it attaches to all events.
+4. **Scroll depth limited to city pages** — expanded to all pages.
+
+### 5.4 Automated Analytics Fix Pipeline (PLANNED)
+
+**Goal:** When the daily health check finds issues, Claude Code automatically investigates and opens a PR with a fix. Matt gets notified via GitHub email.
+
+**Architecture (two-step, async):**
+
+```
+Step 1: Vercel cron (daily, 5am ET)
+  └─ Runs analytics health check via GA4 API
+  └─ Issues found? → Creates GitHub Issue with label "analytics-health"
+     (Issue body contains: which events broke, which dimensions, event counts, error details)
+  └─ No issues? → Silent success, logged in Vercel function logs
+
+Step 2: Claude Code remote trigger (daily, 5:30am ET)
+  └─ Checks for open GitHub Issues labeled "analytics-health"
+  └─ No issues? → Exits cleanly
+  └─ Issue found? →
+     1. Reads issue body for context
+     2. Reads src/layouts/Layout.astro, components, and tracking code
+     3. Investigates root cause (missing attrs, broken selectors, race conditions, etc.)
+     4. Writes fix + runs npm run validate
+     5. Opens PR referencing the issue
+     6. If not code-fixable (GA4 admin config, low traffic): comments on issue with manual steps
+```
+
+**Why two steps:** Vercel has Google OAuth credentials for querying GA4. Claude's remote agent has the codebase and can write code. GitHub Issues bridge the two — Vercel writes the diagnosis, Claude reads it and acts.
+
+**Prerequisites:**
+- [ ] Connect GitHub to Claude Code remote agents (`/web-setup` or install Claude GitHub App)
+- [ ] Set `GITHUB_TOKEN` env var on Vercel (for creating issues via GitHub API)
+- [ ] Create Claude remote trigger with `analytics-health-fix` prompt
+- [ ] Set Google OAuth env vars on Vercel (for health check API calls)
+- [ ] Test end-to-end: manually trigger health check → verify issue created → verify Claude opens PR
+
+**Notification flow:** GitHub → email notification for new PR. The PR *is* the alert, and it comes with the fix attached.
+
+### 5.5 Conversion Journey Analytics
+
+- [x] **`scripts/conversion-journeys.js`** — built March 26, 2026. Run via `npm run report:journeys`
+- Analyzes conversion patterns across landing pages, channels, devices, click locations, and new vs returning visitors
+- Computes **Signal Significance**: data-derived conversion lift per page, channel, device, and visitor type (no hardcoded weights)
+- Landing page performance table with per-page conversion rates
+- Run: `npm run report:journeys` (default 30 days) or `npm run report:journeys -- --days 90`
+
+**Client ID custom dimension (added March 26):** The GA4 Data API doesn't expose `userPseudoId`, but we capture the GA4 client ID from the `_ga` cookie and send it as a user-scoped custom dimension `client_id`. Registered in GA4 Admin March 26.
+
+**Per-user journey reconstruction (upgraded March 27):** Script now queries `customUser:client_id` to reconstruct individual journeys. New analyses: multi-session converter timelines, days-to-convert distribution, micro-conversion overlap (actual converter percentages), near-converters (high-intent non-converters), and channel assist/source shift patterns. Graceful fallback: if client_id data is all "(not set)", falls back to aggregate analysis with a note. Use `--skip-user-journeys` flag to skip per-user queries entirely. As of March 27, client_id data is still propagating in GA4 — re-run in 24-48 hours for full per-user analysis.
+
+**First run findings (March 26, 2026):**
+- 17 conversions, 1.85% conversion rate across 919 users
+- /partners landing page: 11.9x conversion lift (referral visitors highly qualified)
+- Referral traffic: 8.8x lift overall
+- Mobile: 1.7x lift over desktop
+- New vs returning nearly even (suggests multi-session journeys matter)
+
+### 5.6 Content Decay Alert Script
+
+- [ ] **`scripts/content-decay-alert.js`** — flags posts losing position
+- **Why:** Once you rank for "flex-seal-basement-cracks" (49,500/mo cluster), competitors will try to out-content you. An automated alert when a high-value post drops from #1 to #4 lets you refresh before losing traffic.
+- Data source: GSC API (positions by query over time)
+- Output: "Needs attention" list — posts that dropped 3+ positions in the last 2 weeks
+- Run: weekly
+
+### 5.6 GA4 + GSC Reporting Scripts (existing)
+
+Already built:
+- `scripts/ga4-report.js` — page performance, conversions, traffic sources, device breakdown
+- `scripts/gsc-report.js` — queries, pages, query-page combos, sitemap status
+- `scripts/google-ads-report.js` — campaigns, search terms, keywords, geo, impression share
+
+Additional scripts planned → see `docs/GOOGLE-ADS-STRATEGY.md`:
+- Landing page performance script (Ads API)
+- Competitor auction insights script (Ads API)
 
 ---
 
-## Vercel Analytics — Role in the Stack
+## Phase 6: Strategic / Advanced
 
-| Use Case | Use Vercel | Use GA4 |
-|----------|-----------|---------|
-| Core Web Vitals (LCP, CLS, INP) | Yes | No |
-| Real-time page views | Yes (simpler) | Yes |
-| Custom events / conversions | Backup | Primary |
-| Source/medium attribution | Basic | Full |
-| Privacy-friendly (no cookies) | Yes | No |
-| Performance regression alerts | Yes | No |
+### 6.1 Quo VoIP Integration — Call Quality Intelligence
 
-**Action items:**
-- Keep Vercel Speed Insights for CWV monitoring
-- Set up Vercel Alerts (dashboard → Speed Insights → Alerts) for CWV degradation
-- Monitor LCP < 2.5s, CLS < 0.1, INP < 200ms weekly
+**The preferred approach to call tracking. No forwarding numbers. Real numbers stay on the site.**
 
----
+Matt's VoIP provider (Quo) has an API. Instead of Google forwarding numbers or CallRail, we pull call data directly from Quo and correlate it with web sessions.
 
-## Conversion Funnel Definition
+**Architecture: `scripts/quo-call-report.js`**
 
-### Macro-conversions (actual leads)
-1. **Phone call** — visitor taps a `tel:` link
-2. **Text message** — visitor taps an `sms:` link (the "Text Photos" flow)
-3. **Partner form submission** — partner-referred lead submits capture form
-
-### Micro-conversions (engagement signals)
-1. **Location modal open** — clicked "Text Photos," saw state selection
-2. **Multi-page session** — viewed 3+ pages (research/consideration)
-3. **Service page view** — visited a specific service page from any entry point
-4. **Blog post read complete** — scrolled to end of article
-5. **Google Reviews click** — clicked external link to reviews (social proof)
-
-### Funnel
+1. Pull call logs from Quo API for CT (860) and MA (617) numbers
+   - Data needed: timestamp, caller number, duration, answered/unanswered, which line
+2. Pull GA4 sessions via GA4 Data API for the same time window
+   - Data needed: session start time, landing page, source/medium, page_type, tel: click events
+3. Match calls to sessions using timestamp correlation (call within ~5 min of tel: click event)
+4. Output: JSON/CSV
 
 ```
-AWARENESS           INTEREST            CONSIDERATION        CONVERSION
-(Found the site)    (Engaged)           (Evaluating)         (Contacted us)
-
-Organic search  →   Read blog post  →   Viewed service   →   Phone call
-Google Ads      →   Viewed city     →   Opened modal     →   Text message
-Referral        →   Scrolled 50%+   →   Checked reviews  →   Form submit
-Direct          →   Viewed 2+ pages →   Return visit     →
+Example output:
+Call: 2:14pm, 4m30s, answered, MA line
+→ Session: /massachusetts/quincy/ at 2:12pm via google/cpc
+→ Search query (GSC): "foundation repair quincy ma"
+→ Verdict: Qualified lead from Google Ads
 ```
+
+**Advantages over forwarding numbers (Google Ads call forwarding):**
+- Real numbers stay on the site — trust signal for local business
+- Works for ALL traffic (organic, direct, referral — not just Ads)
+- No per-minute costs, no third-party dependency
+- Call duration + answered status = lead quality signal
+
+**Advantages over CallRail ($45-95/mo):**
+- No monthly cost
+- No number swapping
+- Same core data: duration, answered, timestamp
+
+**Limitations:**
+- Can't attribute calls without a website visit (e.g., someone sees the truck, calls directly)
+- Matching is probabilistic (timestamp-based), not deterministic
+- CallRail remains a fallback if Quo data proves insufficient
+
+**Next step:** Matt to provide Quo API docs (endpoints, auth, available fields, rate limits).
+
+### 6.2 Offline Conversion Imports (OCI)
+
+**Full architecture documented in `docs/GOOGLE-ADS-STRATEGY.md`.** Summary:
+
+Tell Google Ads which clicks became paying jobs. Google optimizes bidding to find more people like your actual $5K customers.
+
+```
+CAPTURE: Visitor clicks Ad → lands with ?gclid=abc123
+STORE:   Site JS saves gclid to localStorage
+PASS:    gclid included in GA4 conversion event params
+CRM:     Matt creates Pipedrive deal, gclid stored in custom field
+CLOSE:   Job completed, deal marked won with revenue
+UPLOAD:  Monthly script uploads gclid + revenue to Google Ads API
+LEARN:   Google optimizes bidding for revenue, not just clicks
+```
+
+**Prerequisites:** Pipedrive API access (have it), Google Ads API (have it), ~30 conversions/month for statistical significance. Build when volume justifies — likely Month 3-4.
+
+### 6.3 Remarketing Audiences
+
+- [ ] Create GA4 audiences for Google Ads retargeting:
+  - "Visited service page but didn't convert" → show ads
+  - "Visited city page in CT" → CT-specific ads
+  - "Opened modal but didn't text" → high intent, didn't complete
+- Needs 2+ weeks of conversion data. Build in April.
+
+### 6.4 Enhanced Conversions
+
+- [ ] Enable in Google Ads (Goals → Settings → Enhanced Conversions)
+- Partner form can pass hashed email/phone for better matching
+- Low effort, moderate improvement in conversion measurement accuracy
+
+### 6.6 Vercel Custom Events (Ad-Blocker Backup)
+
+- [ ] Duplicate phone/text events via Vercel's `track()` function
+- Cookie-free, not blocked by ad blockers targeting Google scripts
+- ~30% of users block GA4 — this provides a second conversion count
+- Implementation: add `track('phone_click', { region })` alongside existing gtag calls
 
 ---
 
@@ -501,157 +374,239 @@ Direct          →   Viewed 2+ pages →   Return visit     →
 - Vercel Analytics: Traffic spikes or drops?
 
 ### Weekly (15 min)
-- Total leads: phone_call_click + text_message_click, broken out by CT vs MA
+- Total leads: phone_call_click + text_message_click, by CT vs MA
 - Conversion rate: conversions / sessions
 - Top 5 landing pages by conversions
 - Google Ads spend vs. conversions per branch
-- Mobile vs. desktop split (foundation repair is heavily mobile)
+- Mobile vs. desktop split
 
 ### Monthly (30 min)
-- Content ROI table (city pages vs blog posts vs service pages — sessions, conversions, conv rate)
+- Content ROI table (city vs blog vs service — sessions, conversions, rate)
 - GSC: Index coverage, query growth, CWV
-- Google Ads: Search terms report (wasted spend on irrelevant queries?)
+- Google Ads: Search terms report
 - Vercel Speed Insights: CWV trends
+- Seasonal benchmark snapshot (Phase 5.2)
 
-### Anomalies to Watch
-- **Sudden traffic drop:** Check GSC for manual actions or indexing issues
-- **Conversion rate drop with stable traffic:** Phone numbers broken? Modal broken? Deploy broke something?
-- **Traffic spike with zero conversions:** Bot traffic
-- **Google Ads CPC spike:** Competitor entered market or seasonal shift
-- **City pages with high GSC impressions, zero clicks:** Title/description not matching search intent
+### Anomaly Response Playbook
 
----
-
-## Technical Implementation Notes
-
-### Files Requiring Code Changes
-
-| File | Change | Phase |
-|------|--------|-------|
-| `src/layouts/Layout.astro` | Add Google Ads config (2 accounts) + click tracking script | 1 |
-| `.env` / `.env.example` | Add `PUBLIC_GOOGLE_ADS_CT_ID`, `PUBLIC_GOOGLE_ADS_MA_ID` | 1 |
-| `src/components/LocationModal.astro` | Add gtag call in `openModal()` | 2 |
-| `src/pages/partners/capture.astro` | Add gtag call on successful submit | 2 |
-| Page templates (`src/pages/`) | Add `data-page-type` to body | 3 |
-
-### External Dashboard Configuration (no code changes)
-
-| Platform | Action | Phase |
-|----------|--------|-------|
-| GA4 Admin | Enhanced Measurement: verify all toggles on | 1 |
-| GA4 Admin | Mark `phone_call_click` and `text_message_click` as conversions | 1 |
-| GA4 Admin | Link to CT Google Ads account | 1 |
-| GA4 Admin | Link to MA Google Ads account | 1 |
-| Google Ads (CT) | Create phone + text conversion actions | 1 |
-| Google Ads (MA) | Create phone + text conversion actions | 1 |
-| Google Ads (both) | Enable auto-tagging | 1 |
-| GA4 Admin | Create custom dimensions (page_type, phone_region, click_location) | 2 |
-| Google Ads (both) | Enable website call forwarding | 2 |
-| GA4 Admin | Link to Google Search Console | 3 |
-| Vercel Dashboard | Set up Speed Insights alerts | 2 |
-| Google Ads (both) | Enable Enhanced Conversions | 4 |
-
-### Validation Pipeline Impact
-
-Analytics scripts are client-side JavaScript — they don't affect the build or validation pipeline (`npm run validate`). However:
-- New env vars need to be added to Vercel's environment settings (for both production and preview)
-- Test the build locally before deploying: `npm run validate`
-- Verify events fire correctly using GA4 DebugView (GA4 Admin → DebugView) or Chrome's Tag Assistant
-
-### Privacy
-
-The privacy policy at `/src/pages/privacy.astro` already discloses cookies and Google Analytics. Adding Google Ads tracking is covered under this existing disclosure. No cookie consent banner is needed for a US-only local service business under current law. If call tracking with recordings is added later, update the privacy policy to mention call recording.
+| Signal | Likely Cause | Action |
+|--------|-------------|--------|
+| Sudden traffic drop | GSC manual action, indexing issue, deploy broke sitemap | Check GSC Coverage, check Vercel deploy log, check sitemap.xml |
+| Conversion rate drop, stable traffic | Phone number broken, modal broken, tracking code broken | Test tel:/sms: links manually, check GA4 Realtime events |
+| Traffic spike + zero conversions | Bot traffic | Check GA4 → Tech → Browser for unusual user agents |
+| Google Ads CPC spike | Competitor entered market, seasonal surge | Check Auction Insights, review search terms for new competitors |
+| City page high impressions, zero clicks | Title/description mismatch with search intent | Rewrite meta title + description, check GSC CTR data |
+| High-value post position drop | Competitor published competing content | Refresh content (Phase 5.3 alert), check GSC for new competitor URLs |
 
 ---
 
-## API Access: Connecting Claude Code to Google Ads, GA4, and Search Console
+## Google Search Console — Monitoring Cadence
 
-### Why API Access Matters
+### Weekly (15 min)
+- Performance → Search results: sort by impressions, filter by page
+- Top pages by clicks: which pages drive organic traffic?
+- Low CTR + high impressions: title/description not working
 
-Beyond implementing tracking, Claude Code can **actively analyze your data** — auditing Google Ads spend, identifying keyword waste, cross-referencing search queries with conversion data, and generating actionable reports. This requires API access to query the data directly.
-
-### Existing Google OAuth Infrastructure
-
-The project already has Google OAuth2 configured for the Calendar and Drive APIs:
-- **Client ID/Secret:** Stored locally + as GitHub secrets (`GOOGLE_OAUTH_CLIENT_ID`, `GOOGLE_OAUTH_CLIENT_SECRET`)
-- **Refresh token:** `GOOGLE_OAUTH_REFRESH_TOKEN`
-- **Current scopes:** `calendar.readonly`, `drive.readonly`
-- **Auth code:** `scripts/lib/project-import-core.js` (reusable `authorize()` function)
-
-The same OAuth client can be reused for all Google APIs — just add new scopes and re-authorize once.
-
-### New API Scopes Needed
-
-| API | Scope | What It Enables |
-|-----|-------|-----------------|
-| Google Ads | `https://www.googleapis.com/auth/adwords` | Query campaign/keyword/search term data, audit spend |
-| GA4 Data API | `https://www.googleapis.com/auth/analytics.readonly` | Query sessions, events, conversions, user paths |
-| Search Console | `https://www.googleapis.com/auth/webmasters.readonly` | Query search queries, impressions, clicks, index coverage |
-
-### Setup Steps
-
-**Step 1: Google Ads Developer Token (one-time)**
-- In Google Ads → Tools & Settings → API Center → Apply for a developer token
-- Read-only access (Standard tier) is typically approved quickly
-- Needed for both CT and MA accounts
-- If accounts are under an MCC (Manager account), the token goes on the MCC
-
-**Step 2: Add Scopes to OAuth Client (5 minutes)**
-- In Google Cloud Console → APIs & Services → Library → Enable:
-  - Google Ads API
-  - Google Analytics Data API
-  - Google Search Console API
-- Update the `SCOPES` array in `scripts/lib/project-import-core.js` (or create a separate auth module for analytics)
-
-**Step 3: Re-authorize (5 minutes)**
-- Run the OAuth flow once locally to get a new refresh token covering all scopes
-- Update the `GOOGLE_OAUTH_REFRESH_TOKEN` secret
-
-**Step 4: Create Query Scripts**
-- `scripts/google-ads-report.js` — pulls campaign, keyword, search term, and geographic data
-- `scripts/ga4-report.js` — pulls session, event, and conversion data
-- `scripts/gsc-report.js` — pulls query, page, and index coverage data
-- Output goes to `data/` directory as JSON for Claude Code to read and analyze
-
-### Script vs. MCP Server
-
-**Start with scripts:** Claude runs `node scripts/google-ads-report.js --last-30-days` via bash, reads the output file, and analyzes. Works immediately, minimal setup.
-
-**Graduate to MCP later:** An MCP server wraps the APIs as tools Claude can call directly (e.g., `google_ads_query({ sql: "SELECT ..." })`). Better for interactive analysis sessions but more setup. Build this when the script approach feels slow.
-
-### What Claude Code Can Analyze With Access
-
-| Analysis | API Source | Value |
-|----------|-----------|-------|
-| **Waste audit** — irrelevant search terms burning budget | Google Ads | Save 15-30% of ad spend |
-| **Keyword performance** — which keywords convert | Google Ads + GA4 | Optimize bids |
-| **Geographic targeting** — clicks by city/zip | Google Ads | Tighten geo-targeting |
-| **Landing page alignment** — which pages get ad traffic | Google Ads | Route to city pages |
-| **Search query gaps** — queries with impressions but no page | GSC | New content opportunities |
-| **Index coverage** — are new city pages indexed? | GSC | Expansion monitoring |
-| **Content ROI** — which pages drive conversions | GA4 | Investment decisions |
-| **CT vs MA comparison** — branch performance | All three | Resource allocation |
-
-### Full Google Ads Strategy
-
-See `docs/GOOGLE-ADS-STRATEGY.md` for the complete deep-dive framework: waste audit, keyword strategy, competitive analysis, landing page optimization, bid strategy, and ongoing management playbook.
+### Monthly (30 min)
+- Index coverage: pages indexed vs submitted
+- Core Web Vitals: real-user CWV data
+- Links report: who links to us?
+- Query growth: week-over-week impression trends
 
 ---
 
-## Implementation Priority Summary
+## Vercel Analytics — Role in the Stack
 
-| Priority | What | Effort | Impact |
-|----------|------|--------|--------|
-| **P0** | Google Ads conversion tags (both accounts) | 1 hour | Stop spending blind |
-| **P0** | Phone/text click tracking (event delegation) | 2 hours | Count leads |
-| **P0** | Mark conversions in GA4 + link to Ads | 30 min | Enable reporting |
-| **P1** | LocationModal + form submit events | 1 hour | Funnel visibility |
-| **P1** | Custom dimensions in GA4 | 15 min | Better segmentation |
-| **P1** | Google Ads call forwarding | 1 hour | Track paid call duration |
-| **P1** | UTM templates | 1 hour | Consistent attribution |
-| **P2** | Page type classification | 2 hours | Content ROI analysis |
-| **P2** | GA4 Explorations + reports | 3 hours | Dashboards |
-| **P2** | Link GSC to GA4 | 10 min | Query → conversion analysis |
-| **P3** | Call tracking service evaluation | 1 hour | Full call attribution |
-| **P3** | Vercel custom events (backup) | 1 hour | Ad-blocker resilience |
-| **P3** | Remarketing audiences | 2 hours | Retarget high-intent visitors |
+| Use Case | Use Vercel | Use GA4 |
+|----------|-----------|---------|
+| Core Web Vitals (LCP, CLS, INP) | Yes | No |
+| Real-time page views | Yes (simpler) | Yes |
+| Custom events / conversions | Backup (Phase 6.5) | Primary |
+| Source/medium attribution | Basic | Full |
+| Privacy-friendly (no cookies) | Yes | No |
+| Performance regression alerts | Yes | No |
+
+---
+
+## Performance Impact Assessment
+
+### Current Client-Side JS (~33KB total, all async)
+- gtag.js (~28KB) — GA4 + Google Ads
+- Vercel Analytics (~1KB) — cookie-free
+- Vercel Speed Insights (~3KB) — Web Vitals
+- Inline scripts (~1KB) — click tracking, IntersectionObserver animations
+
+### Phase 4 Additions
+
+| Item | New JS | New Requests | LCP Impact | Verdict |
+|------|--------|-------------|-----------|---------|
+| Scroll depth | ~15 lines inline | 0 | None | Zero concern |
+| Blog read-complete | ~8 lines inline | 0 | None | Zero concern |
+| Video play/complete | ~10 lines inline | 0 (YouTube already loaded) | None | Zero concern |
+| Page speed analysis | 0 (server-side) | 0 | None | Zero concern |
+| **Clarity** | **+22KB gzipped** | 1 load + continuous beacons | None (async) | **Only item with real cost — temporary install only** |
+
+**Cumulative (without Clarity):** ~40 lines of inline JS, zero new script loads, zero new requests. Invisible to performance metrics.
+
+**With Clarity (temporary):** +22KB JS, +continuous beacons. Passes all Lighthouse thresholds but adds meaningful background CPU. Install on city pages only for 2-4 weeks, then remove.
+
+### Phase 5-6 Additions
+All server-side Node.js scripts. Zero client impact.
+
+---
+
+## Phase 7: Unified Analytics Dashboard
+
+### The Problem
+
+As of March 26, 2026, we have 9 separate report scripts, GA4 explorations, and a Vercel cron — but no single place to go for a cohesive view. The experience is fragmented:
+- Some data is in GA4 (real-time, explorations)
+- Some is local HTML reports that must be manually run (`npm run report:*`)
+- No historical continuity — reports show a snapshot, not a trend
+- No automatic updates — you have to remember to run things
+- Can't access reports from your phone or another computer
+
+### The Vision
+
+One always-up-to-date dashboard accessible from any browser that shows:
+- **Health status** at a glance (events flowing? anything broken?)
+- **This week vs last week** (leads, sessions, conversion rate, with trend arrows)
+- **Position tracking over time** with trend lines (not point-in-time snapshots)
+- **Conversion journeys** (once client_id data is flowing)
+- **Signal significance** (which pages/actions drive conversions)
+- **Content decay alerts** (sustained ranking drops, not daily noise)
+- **Cannibalization warnings** (when they become relevant)
+- Launch date (March 21) as a visible inflection point on all time-series charts
+
+### Architecture Direction
+
+**This should be a separate project, not part of the website repo.**
+
+Reasons:
+- The site is live and being vibe-coded. Adding a full interactive dashboard app increases risk of accidental breakage.
+- Separation of concerns: the site serves customers, the dashboard serves Matt. Different audiences, different release cadence, different risk tolerance.
+- The dashboard needs a database, interactive UI framework, and cron jobs — different stack concerns than a static Astro site.
+- The data collection scripts (in this repo) remain the data layer. The dashboard project reads from their APIs or stored output.
+
+**Likely architecture: Separate Vercel project**
+- Its own repo, its own deploy, its own URL (e.g., `analytics.attackacrack.com` or a separate Vercel project URL)
+- Interactive frontend (React/Next.js, or Astro with client-side islands) with date range filters, clickable drill-downs, user ID lookup
+- Backend: Vercel serverless functions + Supabase (free tier) or Vercel KV for time-series storage
+- Daily cron pulls from GA4 + GSC APIs and stores snapshots in the DB
+- Auth: simple password gate or Vercel auth
+
+**Crawl → Walk → Run:**
+1. **Crawl (now):** Keep using the npm scripts in this repo for data collection. They work. Position tracker backfill is next.
+2. **Walk (April):** New repo with dashboard MVP — health status, weekly performance, position trend charts with launch date marker. Read from GA4/GSC APIs directly.
+3. **Run (May+):** Full interactive dashboard — date range pickers, per-query drill-down, user journey timelines (once client_id data is rich), cannibalization alerts, content decay trends. All auto-updating.
+
+**Open design questions (for next planning session):**
+- Stack choice: Next.js (most ecosystem support for dashboards) vs Astro + React islands (lighter)?
+- DB: Supabase (Postgres, free tier, SQL) vs Vercel KV (simpler, key-value) vs Turso (SQLite edge)?
+- How much real-time vs daily snapshots? (Daily is probably fine for a local business)
+- Should the existing npm scripts push data to the dashboard DB, or should the dashboard pull directly from APIs?
+- Mobile experience: how often will Matt check this from a phone vs laptop?
+
+### Position Tracking (Sub-feature — builds in this repo, feeds the dashboard)
+
+The core of the "trend over time" capability. Built March 27, 2026.
+
+**`scripts/track-positions.js`** — Position snapshot collector — BUILT
+
+- [x] Pulls daily positions from GSC API for top queries + pages (GSC stores 16 months of daily data)
+- [x] **Backfill mode:** `npm run track:positions -- --backfill --since 2026-02-01` — pulls daily data retroactively. Initial backfill done: 17,567 rows across 52 days (Feb 1 – Mar 24).
+- [x] **Daily mode:** `npm run track:positions` — appends latest available day to the running history
+- [x] **Report-only mode:** `npm run track:positions -- --report` — regenerate HTML from existing data, no API calls
+- [x] **Top-N filter:** `npm run track:positions -- --top 50` — limit to top N queries by impressions
+- [x] Stores in `data/reports/position-history.json` (running time-series)
+- [x] Each entry: `{ date, query, page, position, impressions, clicks, ctr }`
+
+**Trend detection (implemented):**
+- 7-day rolling average per query+page combo to smooth daily noise
+- Flags decay when rolling average rises 3+ positions across 3+ consecutive data points
+- Flags improvement when rolling average drops 3+ positions sustained
+- March 21 launch as inflection point — categories: improved_since_launch, declined_since_launch, declining_pre_launch, new_post_launch, stable
+
+**Report output** (`data/reports/position-trends.html`):
+- Inline SVG sparklines per query with dashed launch-date marker
+- Color-coded: green (improving), red (declining), gray (stable)
+- Sectioned tables: "Improved since launch," "Declined since launch," "New rankings post-launch"
+- Summary cards: total tracked, improved, declined, new, trending up/down
+
+**Initial backfill findings (March 27, 2026):**
+- 1,347 query+page combos tracked
+- 112 improved since launch, 85 declined, 55 new post-launch
+- Top improver: "basement foundation repair near me" → position 1
+- Top decliner by impressions: "concrete foundation repair" → position 29 (3,675 imp)
+
+**Schedule:** Run 3x/week (Mon/Wed/Fri) via local cron or Vercel cron. The backfill only needs to run once.
+
+### How the Pieces Connect
+
+```
+THIS REPO (aac-astro)              DASHBOARD REPO (new, separate)
+├── scripts/track-positions.js     ├── app/ (interactive UI)
+├── scripts/report-*.js            ├── api/ (cron jobs, data ingestion)
+├── scripts/alert-*.js             ├── db/ (time-series storage)
+├── scripts/audit-*.js             └── pulls from GA4/GSC APIs directly
+├── data/reports/*.json
+└── Data collection layer          └── Presentation + interaction layer
+```
+
+The npm scripts in this repo continue to work standalone for quick local checks. The dashboard project is the "real" interface for ongoing monitoring.
+
+### Implementation Phases
+
+1. **Phase 7.1: Position tracking + backfill (this repo)** — DONE March 27. 17,567 rows, 52 days backfilled, 1,347 query+page combos tracked.
+2. **Phase 7.2: Dashboard project kickoff (new repo)** — Scaffold the project, choose stack, set up DB, build the data ingestion cron. Map out the full UI before building.
+3. **Phase 7.3: Dashboard MVP** — Health status + weekly performance + position trend charts with launch marker. Interactive date range picker. Accessible via URL.
+4. **Phase 7.4: Full dashboard** — Per-user journey timelines, cannibalization view, content decay trends, conversion breakdown with filters, mobile-friendly.
+
+---
+
+## API Access (Reference)
+
+OAuth2 configured. All three APIs active:
+
+| API | Scope | Scripts |
+|-----|-------|---------|
+| Google Ads | `auth/adwords` | `google-ads-report.js`, `google-ads-negatives.js`, `google-ads-assets.js` |
+| GA4 Data | `auth/analytics.readonly` | `ga4-report.js` |
+| Search Console | `auth/webmasters.readonly` | `gsc-report.js` |
+
+MCC: `944-839-2141` | MA Ads: `468-360-7368` | CT Ads: pending MCC link
+
+See `docs/GOOGLE-ADS-STRATEGY.md` for full API setup, scripts, and analysis workflows.
+
+---
+
+## Implementation Priority
+
+| Priority | Item | Effort | Who | Phase |
+|----------|------|--------|-----|-------|
+| ~~Done~~ | ~~GBP UTM links on both listings~~ | ~~10 min~~ | ~~Matt~~ | ~~3~~ |
+| **Do now** | Switch to data-driven attribution | 5 min | Matt | 3 |
+| ~~Done~~ | ~~Scroll depth tracking (all pages)~~ | ~~30 min~~ | ~~Claude~~ | ~~4~~ |
+| ~~Done~~ | ~~Blog read-complete tracking~~ | ~~30 min~~ | ~~Claude~~ | ~~4~~ |
+| ~~Done~~ | ~~Video play/complete tracking~~ | ~~1 hr~~ | ~~Claude~~ | ~~4~~ |
+| ~~Done~~ | ~~Search-to-Conversion bridge script~~ | ~~3-4 hrs~~ | ~~Claude~~ | ~~5~~ |
+| ~~Done~~ | ~~Seasonal benchmark baseline~~ | ~~1 hr~~ | ~~Claude~~ | ~~5~~ |
+| ~~Done~~ | ~~Analytics health check script + Vercel cron~~ | ~~2 hrs~~ | ~~Claude~~ | ~~5~~ |
+| ~~Done~~ | ~~Conversion journey analytics script~~ | ~~3 hrs~~ | ~~Claude~~ | ~~5~~ |
+| ~~Done~~ | ~~Register `client_id` custom dimension in GA4 Admin~~ | ~~2 min~~ | ~~Matt~~ | ~~5~~ |
+| ~~Done~~ | ~~Weekly + monthly dashboard scripts~~ | ~~2 hrs~~ | ~~Claude~~ | ~~5~~ |
+| ~~Done~~ | ~~Content decay alert script~~ | ~~1 hr~~ | ~~Claude~~ | ~~5~~ |
+| ~~Done~~ | ~~Cannibalization audit script~~ | ~~2 hrs~~ | ~~Claude~~ | ~~5~~ |
+| ~~Done~~ | ~~Upgrade journey script with per-user reconstruction~~ | ~~2 hrs~~ | ~~Claude~~ | ~~5~~ |
+| ~~Done~~ | ~~Position tracker + backfill (Feb 1 → present)~~ | ~~3 hrs~~ | ~~Claude~~ | ~~7~~ |
+| **Next** | Unified dashboard architecture decision | Discussion | Matt + Claude | 7 |
+| **Next** | Remarketing audiences in GA4 | 30 min | Matt | 6 |
+| **Next** | Automated fix pipeline (Claude remote trigger) | 1 hr | Matt + Claude | 5 |
+| **April** | Dashboard MVP (health + performance + position trends) | 4-6 hrs | Claude | 7 |
+| **April** | First monthly report | 30 min | Matt + Claude | 3 |
+| **April** | Clarity install (city pages, 2-4 weeks) | 15 min | Claude | 4 |
+| **May** | Full dashboard (all tabs, all data sources) | 6-8 hrs | Claude | 7 |
+| **May** | Quo API integration | 3-4 hrs | Claude | 6 |
+| **Month 3-4** | OCI / GCLID pipeline | 4-6 hrs | Claude + Matt | 6 |
+| **When ready** | Vercel custom events (backup) | 1 hr | Claude | 6 |
+| **When ready** | Enhanced conversions | 30 min | Matt | 6 |
