@@ -200,11 +200,6 @@ if (breadcrumbSchema) {
 					gtag('js', new Date());
 					gtag('set', { page_type: pageType || 'unknown' });
 					gtag('config', GA4_ID);
-					// Capture GA4 client ID as a custom dimension for journey reconstruction
-					// Uses gtag get API (fires after config initializes, so client_id exists)
-					gtag('get', GA4_ID, 'client_id', function(cid) {
-						if (cid) gtag('set', { client_id: cid });
-					});
 					if (GOOGLE_ADS_MA_ID) gtag('config', GOOGLE_ADS_MA_ID);
 					// TODO: Uncomment when CT Google Ads account is linked to MCC
 					// if (GOOGLE_ADS_CT_ID) gtag('config', GOOGLE_ADS_CT_ID);
@@ -228,54 +223,79 @@ if (breadcrumbSchema) {
 						});
 					}
 
+					// GA4 ready gate — wait for gtag.js to fully initialize before
+					// registering click handlers. Without this, clicks that fire before
+					// gtag processes the config produce sessions with (not set) source/medium
+					// because the page_view hasn't established session context yet.
+					var ga4Ready = false;
+					gtag('get', GA4_ID, 'client_id', function(cid) {
+						ga4Ready = true;
+						if (cid) gtag('set', { client_id: cid });
+					});
+
 					// Phone/text click tracking — fires GA4 events (conversions imported into Google Ads via GA4 link)
+					var CT_NUMBER = '8605738760';
+					var MA_NUMBER = '6176681677';
+
+					function inferClickLocation(el) {
+						if (el.closest('[data-sticky-cta]')) return 'sticky_cta';
+						if (el.closest('[data-modal]')) return 'modal';
+						if (el.closest('[data-hero]')) return 'hero';
+						if (el.closest('nav')) return 'navbar';
+						if (el.closest('footer')) return 'footer';
+						return 'inline';
+					}
+
+					function fireClickEvent(eventName, params) {
+						if (storedGclid) params.gclid = storedGclid;
+
+						if (ga4Ready) {
+							gtag('event', eventName, params);
+						} else {
+							// GA4 not ready yet — wait up to 3s, then fire anyway
+							// (better to log with partial data than lose the conversion)
+							var attempts = 0;
+							var poll = setInterval(function() {
+								attempts++;
+								if (ga4Ready || attempts >= 30) {
+									clearInterval(poll);
+									gtag('event', eventName, params);
+								}
+							}, 100);
+						}
+					}
+
 					document.addEventListener('click', function(e) {
 						var link = e.target.closest('a');
 						if (!link) return;
 						var href = link.getAttribute('href');
 						if (!href) return;
 
-						var CT_NUMBER = '8605738760';
-						var MA_NUMBER = '6176681677';
-
-						function inferClickLocation(el) {
-							if (el.closest('[data-sticky-cta]')) return 'sticky_cta';
-							if (el.closest('[data-modal]')) return 'modal';
-							if (el.closest('[data-hero]')) return 'hero';
-							if (el.closest('nav')) return 'navbar';
-							if (el.closest('footer')) return 'footer';
-							return 'inline';
-						}
-
 						if (href.indexOf('tel:') === 0) {
 							var number = href.replace('tel:', '').replace(/\D/g, '');
 							var region = number.indexOf(CT_NUMBER) !== -1 ? 'CT' : 'MA';
 
-							var callParams = {
+							fireClickEvent('phone_call_click', {
 								phone_region: region,
 								phone_number: number,
 								click_location: inferClickLocation(link),
 								page_path: window.location.pathname,
 								page_type: document.body.dataset.pageType || 'unknown',
 								geo_detected: geoRegion,
-							};
-							if (storedGclid) callParams.gclid = storedGclid;
-							gtag('event', 'phone_call_click', callParams);
+							});
 
 						} else if (href.indexOf('sms:') === 0) {
 							var smsNumber = href.replace(/sms:[+]?/, '').replace(/\D/g, '');
 							var smsRegion = smsNumber.indexOf(CT_NUMBER) !== -1 ? 'CT' : 'MA';
 
-							var textParams = {
+							fireClickEvent('text_message_click', {
 								phone_region: smsRegion,
 								phone_number: smsNumber,
 								click_location: inferClickLocation(link),
 								page_path: window.location.pathname,
 								page_type: document.body.dataset.pageType || 'unknown',
 								geo_detected: geoRegion,
-							};
-							if (storedGclid) textParams.gclid = storedGclid;
-							gtag('event', 'text_message_click', textParams);
+							});
 						}
 					});
 				</script>
