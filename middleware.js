@@ -10,8 +10,17 @@ import { next } from '@vercel/edge';
 
 const STATE_TO_REGION = { CT: 'ct', MA: 'ma', RI: 'ma', NH: 'ma', ME: 'ma' };
 
+// Countries with no legitimate traffic — block bot farms
+const BLOCKED_COUNTRIES = new Set(['SG']);
+
 export default function middleware(request) {
   const country = request.headers.get('x-vercel-ip-country');
+
+  // Block known bot-farm countries (returns 403, no page render, no GA4 hit)
+  if (country && BLOCKED_COUNTRIES.has(country)) {
+    return new Response('Forbidden', { status: 403 });
+  }
+
   const region = request.headers.get('x-vercel-ip-country-region');
   const geoRegion = (country === 'US' && region) ? STATE_TO_REGION[region] : null;
 
