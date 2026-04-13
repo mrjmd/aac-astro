@@ -27,8 +27,18 @@
       "permanent": true
     },
     {
+      "source": "/wall-crack-repair/",
+      "destination": "/services/wall-crack-repair/",
+      "permanent": true
+    },
+    {
       "source": "/leaky-bulkhead-repair",
       "destination": "/services/leaky-bulkhead-repair",
+      "permanent": true
+    },
+    {
+      "source": "/leaky-bulkhead-repair/",
+      "destination": "/services/leaky-bulkhead-repair/",
       "permanent": true
     },
     {
@@ -37,8 +47,18 @@
       "permanent": true
     },
     {
+      "source": "/sewer-well-conduit-line-repair/",
+      "destination": "/services/sewer-well-conduit-line-repair/",
+      "permanent": true
+    },
+    {
       "source": "/foundation-crack-injection",
       "destination": "/services/foundation-crack-injection",
+      "permanent": true
+    },
+    {
+      "source": "/foundation-crack-injection/",
+      "destination": "/services/foundation-crack-injection/",
       "permanent": true
     },
     {
@@ -47,8 +67,18 @@
       "permanent": true
     },
     {
+      "source": "/carbon-fiber-stitches/",
+      "destination": "/services/carbon-fiber-stitches/",
+      "permanent": true
+    },
+    {
       "source": "/free-foundation-consultations",
       "destination": "/services/free-foundation-consultations",
+      "permanent": true
+    },
+    {
+      "source": "/free-foundation-consultations/",
+      "destination": "/services/free-foundation-consultations/",
       "permanent": true
     },
     {
@@ -57,7 +87,17 @@
       "permanent": true
     },
     {
+      "source": "/about-us/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
       "source": "/sales",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/sales/",
       "destination": "/",
       "permanent": true
     },
@@ -67,8 +107,18 @@
       "permanent": true
     },
     {
+      "source": "/team/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
       "source": "/services/walkway-stairway",
       "destination": "/concrete-repair/walkway-stairway",
+      "permanent": true
+    },
+    {
+      "source": "/services/walkway-stairway/",
+      "destination": "/concrete-repair/walkway-stairway/",
       "permanent": true
     },
     {
@@ -77,8 +127,18 @@
       "permanent": true
     },
     {
+      "source": "/foundation-types/",
+      "destination": "/blog/category/foundation-types/",
+      "permanent": true
+    },
+    {
       "source": "/foundation-types/fieldstone",
       "destination": "/blog/fieldstone-foundation-repair-guide",
+      "permanent": true
+    },
+    {
+      "source": "/foundation-types/fieldstone/",
+      "destination": "/blog/fieldstone-foundation-repair-guide/",
       "permanent": true
     },
     {
@@ -87,7 +147,17 @@
       "permanent": true
     },
     {
+      "source": "/foundation-types/cinderblock/",
+      "destination": "/blog/cinderblock-foundation-repair-guide/",
+      "permanent": true
+    },
+    {
       "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/home/",
       "destination": "/",
       "permanent": true
     },
@@ -97,8 +167,18 @@
       "permanent": true
     },
     {
+      "source": "/partners/general-contractors/",
+      "destination": "/partners/contractors/",
+      "permanent": true
+    },
+    {
       "source": "/trusted-partners",
       "destination": "/massachusetts/trusted-partners",
+      "permanent": true
+    },
+    {
+      "source": "/trusted-partners/",
+      "destination": "/massachusetts/trusted-partners/",
       "permanent": true
     },
     {
@@ -107,8 +187,18 @@
       "permanent": true
     },
     {
+      "source": "/blog/vertical-vs-horizontal-foundation-cracks-when-to-hit-the-panic-button/",
+      "destination": "/blog/vertical-vs-horizontal-foundation-cracks/",
+      "permanent": true
+    },
+    {
       "source": "/blog/the-2026-foundation-repair-cost-guide-what-ma-amp-ct-homeowners-should-expect",
       "destination": "/blog/foundation-repair-cost-guide-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-2026-foundation-repair-cost-guide-what-ma-amp-ct-homeowners-should-expect/",
+      "destination": "/blog/foundation-repair-cost-guide-2026/",
       "permanent": true
     },
     {
@@ -117,8 +207,18 @@
       "permanent": true
     },
     {
+      "source": "/blog/why-your-bulkhead-door-might-be-leaking-and-how-to-fix-it-for-good/",
+      "destination": "/blog/bulkhead-leaking-causes-and-fixes/",
+      "permanent": true
+    },
+    {
       "source": "/blog/basement-leak-nightmare-how-we-stopped-an-active-crack-leak-in-framingham",
       "destination": "/blog/basement-leak-framingham-case-study",
+      "permanent": true
+    },
+    {
+      "source": "/blog/basement-leak-nightmare-how-we-stopped-an-active-crack-leak-in-framingham/",
+      "destination": "/blog/basement-leak-framingham-case-study/",
       "permanent": true
     },
     {
@@ -127,8 +227,18 @@
       "permanent": true
     },
     {
+      "source": "/blog/10-essential-tips-for-a-worry-free-foundation/",
+      "destination": "/blog/10-essential-tips-worry-free-foundation/",
+      "permanent": true
+    },
+    {
       "source": "/blog/leaky-bulkhead-in-wilmington",
       "destination": "/blog/leaky-bulkhead-wilmington-repair",
+      "permanent": true
+    },
+    {
+      "source": "/blog/leaky-bulkhead-in-wilmington/",
+      "destination": "/blog/leaky-bulkhead-wilmington-repair/",
       "permanent": true
     },
     {
@@ -137,8 +247,18 @@
       "permanent": true
     },
     {
+      "source": "/blog/crumbling-foundations-in-massachusetts-and-connecticut/",
+      "destination": "/blog/crumbling-foundations-massachusetts-connecticut/",
+      "permanent": true
+    },
+    {
       "source": "/blog/finished-basement-flooded-in-shrewsbury",
       "destination": "/blog/finished-basement-flooded-shrewsbury",
+      "permanent": true
+    },
+    {
+      "source": "/blog/finished-basement-flooded-in-shrewsbury/",
+      "destination": "/blog/finished-basement-flooded-shrewsbury/",
       "permanent": true
     },
     {
@@ -147,8 +267,18 @@
       "permanent": true
     },
     {
+      "source": "/blog/nar-nxt-2024-real-estate-conference/",
+      "destination": "/blog/nar-nxt-boston-2024-partnerships/",
+      "permanent": true
+    },
+    {
       "source": "/blog/how-to-check-your-foundation-for-problems",
       "destination": "/blog/how-to-check-your-foundation",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-check-your-foundation-for-problems/",
+      "destination": "/blog/how-to-check-your-foundation/",
       "permanent": true
     },
     {
@@ -157,13 +287,28 @@
       "permanent": true
     },
     {
+      "source": "/blog/winter-home-maintenance-cold-prep/",
+      "destination": "/blog/winter-home-maintenance-checklist/",
+      "permanent": true
+    },
+    {
       "source": "/blog/ashi-home-inspectors-new-england-conference-2024",
       "destination": "/blog/ashi-new-england-conference-2024",
       "permanent": true
     },
     {
+      "source": "/blog/ashi-home-inspectors-new-england-conference-2024/",
+      "destination": "/blog/ashi-new-england-conference-2024/",
+      "permanent": true
+    },
+    {
       "source": "/store",
       "destination": "/massachusetts/trusted-partners",
+      "permanent": true
+    },
+    {
+      "source": "/store/",
+      "destination": "/massachusetts/trusted-partners/",
       "permanent": true
     },
     {
@@ -177,8 +322,18 @@
       "permanent": true
     },
     {
+      "source": "/home-maintenance-and-winter-prep-checklist/",
+      "destination": "/blog/winter-home-maintenance-checklist/",
+      "permanent": true
+    },
+    {
       "source": "/10-fast-tips-for-a-worry-free-foundation",
       "destination": "/blog/10-essential-tips-worry-free-foundation",
+      "permanent": true
+    },
+    {
+      "source": "/10-fast-tips-for-a-worry-free-foundation/",
+      "destination": "/blog/10-essential-tips-worry-free-foundation/",
       "permanent": true
     },
     {
@@ -187,8 +342,18 @@
       "permanent": true
     },
     {
+      "source": "/your-homes-foundation-may-be-compromised/",
+      "destination": "/blog/how-to-check-your-foundation/",
+      "permanent": true
+    },
+    {
       "source": "/concrete-foundation-crack-repair-ct",
       "destination": "/connecticut",
+      "permanent": true
+    },
+    {
+      "source": "/concrete-foundation-crack-repair-ct/",
+      "destination": "/connecticut/",
       "permanent": true
     },
     {
@@ -197,8 +362,18 @@
       "permanent": true
     },
     {
+      "source": "/sewer-and-well-line-injection/",
+      "destination": "/services/sewer-well-conduit-line-repair/",
+      "permanent": true
+    },
+    {
       "source": "/tips",
       "destination": "/updates",
+      "permanent": true
+    },
+    {
+      "source": "/tips/",
+      "destination": "/updates/",
       "permanent": true
     },
     {
@@ -207,8 +382,18 @@
       "permanent": true
     },
     {
+      "source": "/concrete-foundation-tips/",
+      "destination": "/updates/",
+      "permanent": true
+    },
+    {
       "source": "/lifetime-guarantee",
       "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/lifetime-guarantee/",
+      "destination": "/about/",
       "permanent": true
     },
     {
@@ -217,8 +402,18 @@
       "permanent": true
     },
     {
+      "source": "/pyrrhotite-in-concrete/",
+      "destination": "/blog/crumbling-foundations-massachusetts-connecticut/",
+      "permanent": true
+    },
+    {
       "source": "/preparing-your-home-for-the-winter-chill",
       "destination": "/blog/winter-home-maintenance-checklist",
+      "permanent": true
+    },
+    {
+      "source": "/preparing-your-home-for-the-winter-chill/",
+      "destination": "/blog/winter-home-maintenance-checklist/",
       "permanent": true
     },
     {
@@ -227,8 +422,18 @@
       "permanent": true
     },
     {
+      "source": "/real-estate/",
+      "destination": "/partners/realtors/",
+      "permanent": true
+    },
+    {
       "source": "/referrals",
       "destination": "/partners",
+      "permanent": true
+    },
+    {
+      "source": "/referrals/",
+      "destination": "/partners/",
       "permanent": true
     },
     {
@@ -237,8 +442,18 @@
       "permanent": true
     },
     {
+      "source": "/realtors-and-inspectors/",
+      "destination": "/partners/realtors/",
+      "permanent": true
+    },
+    {
       "source": "/home-seller",
       "destination": "/partners/realtors",
+      "permanent": true
+    },
+    {
+      "source": "/home-seller/",
+      "destination": "/partners/realtors/",
       "permanent": true
     },
     {
@@ -247,8 +462,18 @@
       "permanent": true
     },
     {
+      "source": "/free-inspection/",
+      "destination": "/services/free-foundation-consultations/",
+      "permanent": true
+    },
+    {
       "source": "/home-buyer",
       "destination": "/partners/realtors",
+      "permanent": true
+    },
+    {
+      "source": "/home-buyer/",
+      "destination": "/partners/realtors/",
       "permanent": true
     },
     {
@@ -257,7 +482,17 @@
       "permanent": true
     },
     {
+      "source": "/concrete-crack-injection/",
+      "destination": "/services/foundation-crack-injection/",
+      "permanent": true
+    },
+    {
       "source": "/write-a-review",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/write-a-review/",
       "destination": "/",
       "permanent": true
     },
@@ -267,7 +502,17 @@
       "permanent": true
     },
     {
+      "source": "/privacy-policy/",
+      "destination": "/privacy/",
+      "permanent": true
+    },
+    {
       "source": "/dmca",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/dmca/",
       "destination": "/",
       "permanent": true
     },
@@ -282,47 +527,17 @@
       "permanent": true
     },
     {
+      "source": "/contest_rules/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/google_reviews",
       "destination": "/",
       "permanent": true
     },
     {
-      "source": "/concrete-crack-injection/",
-      "destination": "/services/foundation-crack-injection",
-      "permanent": true
-    },
-    {
       "source": "/google_reviews/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/home-seller/",
-      "destination": "/partners/realtors",
-      "permanent": true
-    },
-    {
-      "source": "/lifetime-guarantee/",
-      "destination": "/about",
-      "permanent": true
-    },
-    {
-      "source": "/privacy-policy/",
-      "destination": "/privacy",
-      "permanent": true
-    },
-    {
-      "source": "/pyrrhotite-in-concrete/",
-      "destination": "/blog/crumbling-foundations-massachusetts-connecticut",
-      "permanent": true
-    },
-    {
-      "source": "/real-estate/",
-      "destination": "/partners/realtors",
-      "permanent": true
-    },
-    {
-      "source": "/write-a-review/",
       "destination": "/",
       "permanent": true
     },
@@ -332,12 +547,27 @@
       "permanent": true
     },
     {
+      "source": "/blog/blog-post-title-two-5d578/",
+      "destination": "/blog/nar-nxt-boston-2024-partnerships/",
+      "permanent": true
+    },
+    {
       "source": "/cart",
       "destination": "/massachusetts/trusted-partners",
       "permanent": true
     },
     {
+      "source": "/cart/",
+      "destination": "/massachusetts/trusted-partners/",
+      "permanent": true
+    },
+    {
       "source": "/contact",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/contact/",
       "destination": "/",
       "permanent": true
     },
@@ -347,7 +577,17 @@
       "permanent": true
     },
     {
+      "source": "/contact-us/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/get-in-touch",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/get-in-touch/",
       "destination": "/",
       "permanent": true
     },
@@ -357,8 +597,18 @@
       "permanent": true
     },
     {
+      "source": "/trusted-partners-1/",
+      "destination": "/massachusetts/trusted-partners/",
+      "permanent": true
+    },
+    {
       "source": "/tos",
       "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/tos/",
+      "destination": "/terms/",
       "permanent": true
     },
     {
@@ -372,8 +622,18 @@
       "permanent": true
     },
     {
+      "source": "/pyrrhotite/",
+      "destination": "/blog/crumbling-foundations-massachusetts-connecticut/",
+      "permanent": true
+    },
+    {
       "source": "/foundation-crack-repair",
       "destination": "/services/foundation-crack-injection",
+      "permanent": true
+    },
+    {
+      "source": "/foundation-crack-repair/",
+      "destination": "/services/foundation-crack-injection/",
       "permanent": true
     },
     {
@@ -387,7 +647,17 @@
       "permanent": true
     },
     {
+      "source": "/reviews/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/angies-list",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/angies-list/",
       "destination": "/",
       "permanent": true
     },
@@ -397,12 +667,27 @@
       "permanent": true
     },
     {
+      "source": "/request-a-quote/",
+      "destination": "/services/free-foundation-consultations/",
+      "permanent": true
+    },
+    {
       "source": "/request-quote",
       "destination": "/services/free-foundation-consultations",
       "permanent": true
     },
     {
+      "source": "/request-quote/",
+      "destination": "/services/free-foundation-consultations/",
+      "permanent": true
+    },
+    {
       "source": "/home-1",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/home-1/",
       "destination": "/",
       "permanent": true
     },
@@ -412,13 +697,28 @@
       "permanent": true
     },
     {
+      "source": "/home-3/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/about-1",
       "destination": "/about",
       "permanent": true
     },
     {
+      "source": "/about-1/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
       "source": "/massachusetts-1",
       "destination": "/massachusetts",
+      "permanent": true
+    },
+    {
+      "source": "/massachusetts-1/",
+      "destination": "/massachusetts/",
       "permanent": true
     }
   ],
