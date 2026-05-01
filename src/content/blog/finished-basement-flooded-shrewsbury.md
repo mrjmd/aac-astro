@@ -14,7 +14,7 @@ targetLocation: "Shrewsbury, MA"
 relatedPosts:
   - "basement-leak-framingham-case-study"
   - "leaky-bulkhead-wilmington-repair"
-  - "basement-floor-cracks-leaking"
+  - "basement-floor-crack-repair-guide"
 relatedServices:
   - "foundation-crack-injection"
   - "wall-crack-repair"

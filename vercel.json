@@ -212,6 +212,16 @@
       "permanent": true
     },
     {
+      "source": "/blog/basement-floor-cracks-leaking",
+      "destination": "/blog/basement-floor-crack-repair-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/basement-floor-cracks-leaking/",
+      "destination": "/blog/basement-floor-crack-repair-guide/",
+      "permanent": true
+    },
+    {
       "source": "/blog/basement-leak-nightmare-how-we-stopped-an-active-crack-leak-in-framingham",
       "destination": "/blog/basement-leak-framingham-case-study",
       "permanent": true

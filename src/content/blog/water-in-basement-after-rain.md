@@ -9,7 +9,7 @@ category: "guides"
 tags: ["water in basement", "rain leaks", "foundation cracks", "bulkhead leaks", "basement waterproofing"]
 featured: false
 relatedPosts:
-  - "basement-floor-cracks-leaking"
+  - "basement-floor-crack-repair-guide"
   - "bulkhead-leaking-causes-and-fixes"
   - "basement-waterproofing-vs-foundation-repair"
 relatedServices:

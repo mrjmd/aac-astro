@@ -11,7 +11,7 @@ heroImage: "/images/projects/marshfield-crack-injection-2026-01-before.jpg"
 heroImageAlt: "Foundation crack with water infiltration before repair in Marshfield"
 relatedPosts:
   - "water-in-basement-after-rain"
-  - "basement-floor-cracks-leaking"
+  - "basement-floor-crack-repair-guide"
   - "diy-vs-professional-foundation-repair"
 relatedServices:
   - "foundation-crack-injection"
@@ -33,7 +33,7 @@ But here's what the waterproofing industry doesn't want you to know: **many base
 - Water in basement after rain entering through visible cracks in walls
 - Leaks at [bulkhead connections](/services/leaky-bulkhead-repair)
 - Water around pipe penetrations ($650-$1,000 per pipe seal)
-- [Basement floor cracks leaking water](/blog/basement-floor-cracks-leaking/)
+- [Basement floor cracks leaking water](/blog/basement-floor-crack-repair-guide/)
 - Single or multiple entry points you can identify
 
 **Typical cost:** $800-$1,300 per crack (significant multi-crack discounts available)
@@ -72,7 +72,7 @@ But here's what the waterproofing industry doesn't want you to know: **many base
 
 2. **High water table**: If your basement is below the water table during wet seasons, you're fighting constant pressure.
 
-3. **Water comes up through the floor**: [Floor seepage](/blog/basement-floor-cracks-leaking/) indicates hydrostatic pressure from below.
+3. **Water comes up through the floor**: [Floor seepage](/blog/basement-floor-crack-repair-guide/) indicates hydrostatic pressure from below.
 
 4. **Chronically damp basement**: Persistent humidity even without visible water entry.
 
