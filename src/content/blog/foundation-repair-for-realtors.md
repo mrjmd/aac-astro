@@ -3,13 +3,16 @@ title: "Foundation Repair for Realtors: What Your Home Inspector Found"
 metaTitle: "Foundation Repair for Realtors"
 metaDescription: "A realtor's guide to foundation inspection findings. Learn what common issues mean, which are deal-breakers, and how to keep transactions on track."
 excerpt: "When a home inspection flags foundation issues, deals can fall apart fast. Here is what those findings actually mean and how to keep your transaction moving."
-publishDate: 2026-07-21
+publishDate: 2026-05-11
 author: "Matt Davis"
 category: "guides"
 tags: ["realtors", "home inspection", "foundation issues", "real estate", "transaction"]
-heroImage: "/images/projects/marblehead-crack-injection-2025-06-before.jpg"
-heroImageAlt: "Foundation Repair for Realtors: What Your Home Inspector Found"
-draft: true
+heroImage: "/images/blog/realtor-foundation-inspection.jpg"
+heroImageAlt: "Real estate agent showing a young buyer couple a foundation crack during a home inspection in a basement"
+
+relatedPosts:
+  - "foundation-repair-cost-guide-2026"
+  - "efflorescence-white-powder-basement-walls"
 
 relatedServices:
   - "free-foundation-consultations"
@@ -94,7 +97,7 @@ When a deal is in play, timing matters. We prioritize realtor referrals because 
 
 We provide a written assessment that includes:
 
-- **What we found.** Plain-language description of the condition, with photos.
+- **What we found.** Plain-language description of the condition.
 - **What it means.** Honest evaluation of severity — is it cosmetic, maintenance, or structural?
 - **What it needs.** Specific repair recommendations with methods explained.
 - **What it costs.** Written estimate with line items. No surprises.
@@ -114,13 +117,13 @@ Every repair we perform comes with a lifetime transferable warranty. This is a s
 
 **For sellers:** A repaired crack with a transferable warranty transforms a potential deal-killer into a non-issue. "Yes, there was a crack. It was professionally repaired with a lifetime warranty that transfers to you." That's a strong position.
 
-**For buyers:** You're getting a repair that's been done right, backed by a company that's been in business for over three decades, with a warranty that covers you for as long as you own the home. That's better than buying a home with an unaddressed crack and hoping it doesn't get worse.
+**For buyers:** You're getting a repair that's been done right, backed by a company that's been in business for more than 20 years, with a warranty that covers you for as long as you own the home. That's better than buying a home with an unaddressed crack and hoping it doesn't get worse.
 
 **For agents on both sides:** The warranty provides documentation that satisfies lenders, insurers, and attorneys. It removes the foundation from the negotiation table and lets everyone focus on closing.
 
 ### How the Transfer Works
 
-The warranty transfers automatically with the sale of the property. The new homeowner simply contacts us with their information, and the warranty coverage continues. No fees, no inspections, no paperwork hoops.
+The warranty is attached to the property address, not to the owner. Nothing needs to happen at the sale — no fees, no paperwork, no transfer process. If the new homeowner ever has a warranty issue down the line, they just call us and we look up the warranty by the address of the home.
 
 ## Scenarios You'll Encounter
 
@@ -155,6 +158,8 @@ We work with hundreds of real estate professionals across Connecticut, Massachus
 - **Respond quickly.** Real estate runs on timelines. We respect them.
 - **Be honest.** Every time. About severity, about costs, about timelines. If we tell your client something needs repair, it needs repair. If we say it's fine, it's fine.
 
+For more on how we work specifically with real estate professionals — priority scheduling, vendor-list onboarding, and what to expect when you send a client our way — see our [realtor partner page](/partners/realtors).
+
 If you'd like to discuss how we can support your transactions, or if you have a deal right now with a foundation question, give us a call. You can also schedule through our [free consultation page](/services/free-foundation-consultations) — just mention you're a real estate professional and we'll prioritize accordingly. [860-573-8760](tel:860-573-8760) (CT) | [617-668-1677](tel:617-668-1677) (MA)
 
-We've been helping agents keep deals on track for over three decades. Your clients' foundations are in good hands.
+We've been helping agents keep deals on track for more than 20 years. Your clients' foundations are in good hands.
