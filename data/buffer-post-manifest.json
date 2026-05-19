@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-03-25T01:48:14.718Z",
+  "lastRun": "2026-05-19T17:44:08.048Z",
   "channelId": "69aa1ae63f3b94a1211df5f1",
   "posts": {
     "randolph-crack-injection-2025-06": {
@@ -126,6 +126,56 @@
     "dedham-crack-injection-2025-09": {
       "bufferPostId": "69c33eded86d5be7603ce206",
       "scheduledAt": "2026-04-07T14:00:00.000Z",
+      "status": "scheduled"
+    },
+    "newington-crack-injection-2026-02": {
+      "bufferPostId": "6a0ca162715412f2ccb73784",
+      "scheduledAt": "2026-05-19T18:00:00Z",
+      "status": "scheduled"
+    },
+    "randolph-crack-injection-2025-05": {
+      "bufferPostId": "6a0ca162715412f2ccb737a7",
+      "scheduledAt": "2026-05-20T15:00:00.000Z",
+      "status": "scheduled"
+    },
+    "kingston-bulkhead-repair-2025-06": {
+      "bufferPostId": "6a0ca163652e0ccce14fcfd1",
+      "scheduledAt": "2026-05-22T15:00:00.000Z",
+      "status": "scheduled"
+    },
+    "hanover-crack-injection-2025-06": {
+      "bufferPostId": "6a0ca164715412f2ccb737d4",
+      "scheduledAt": "2026-05-25T15:00:00.000Z",
+      "status": "scheduled"
+    },
+    "weymouth-crack-injection-2025-07-2": {
+      "bufferPostId": "6a0ca164652e0ccce14fd000",
+      "scheduledAt": "2026-05-27T15:00:00.000Z",
+      "status": "scheduled"
+    },
+    "boston-wall-crack-repair-2025-09": {
+      "bufferPostId": "6a0ca165652e0ccce14fd038",
+      "scheduledAt": "2026-05-29T15:00:00.000Z",
+      "status": "scheduled"
+    },
+    "rockland-wall-crack-repair-2025-02": {
+      "bufferPostId": "6a0ca165715412f2ccb7381a",
+      "scheduledAt": "2026-06-01T15:00:00.000Z",
+      "status": "scheduled"
+    },
+    "medford-crack-injection-2025-04": {
+      "bufferPostId": "6a0ca166715412f2ccb73842",
+      "scheduledAt": "2026-06-03T15:00:00.000Z",
+      "status": "scheduled"
+    },
+    "south-yarmouth-concrete-repair-2026-03": {
+      "bufferPostId": "6a0ca167652e0ccce14fd0a7",
+      "scheduledAt": "2026-06-05T15:00:00.000Z",
+      "status": "scheduled"
+    },
+    "quincy-crack-injection-2025-04": {
+      "bufferPostId": "6a0ca167652e0ccce14fd0ca",
+      "scheduledAt": "2026-06-08T15:00:00.000Z",
       "status": "scheduled"
     }
   }

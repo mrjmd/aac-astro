@@ -35,6 +35,15 @@ function getArgValue(flag) {
 const START_DATE = getArgValue('--start-date');
 const LIMIT = getArgValue('--limit') ? parseInt(getArgValue('--limit')) : null;
 const CHANNEL_ID = getArgValue('--channel-id') || process.env.BUFFER_CHANNEL_ID;
+const DAYS_ARG = getArgValue('--days'); // e.g. "mon,wed,fri" — defaults to weekdays
+const HOUR_UTC_ARG = getArgValue('--hour-utc'); // integer UTC hour, default 14 (9 AM ET during DST is 13 UTC — but legacy default is 14)
+const FIRST_SLOT = getArgValue('--first-slot'); // ISO 8601 override for slot 0
+
+const DAY_NAMES = { sun: 0, mon: 1, tue: 2, wed: 3, thu: 4, fri: 5, sat: 6 };
+const ALLOWED_DAYS = DAYS_ARG
+  ? new Set(DAYS_ARG.split(',').map(d => DAY_NAMES[d.trim().toLowerCase()]).filter(n => n !== undefined))
+  : new Set([1, 2, 3, 4, 5]);
+const HOUR_UTC = HOUR_UTC_ARG !== null ? parseInt(HOUR_UTC_ARG, 10) : 14;
 
 // ---------------------------------------------------------------------------
 // Paths
@@ -220,21 +229,24 @@ function interleaveProjects(projects) {
  * @param {number} count - Number of slots to fill
  * @param {Set<string>} occupiedDates - Set of YYYY-MM-DD strings to skip
  */
-function generateSchedule(startDate, count, occupiedDates = new Set()) {
+function generateSchedule(startDate, count, occupiedDates = new Set(), opts = {}) {
+  const { allowedDays = new Set([1, 2, 3, 4, 5]), hourUtc = 14, firstSlot = null } = opts;
   const dates = [];
-  const current = new Date(startDate + 'T14:00:00Z'); // 9 AM ET = 14:00 UTC
+  const occupied = new Set(occupiedDates);
 
-  // Advance to next weekday if starting on weekend
-  while (current.getUTCDay() === 0 || current.getUTCDay() === 6) {
-    current.setUTCDate(current.getUTCDate() + 1);
+  if (firstSlot) {
+    dates.push(firstSlot);
+    occupied.add(new Date(firstSlot).toISOString().slice(0, 10));
   }
 
-  // Safety: don't scan more than 180 days out
+  const hh = String(hourUtc).padStart(2, '0');
+  const current = new Date(`${startDate}T${hh}:00:00Z`);
+
   let maxDays = 180;
   while (dates.length < count && maxDays-- > 0) {
     const day = current.getUTCDay();
     const dateStr = current.toISOString().slice(0, 10);
-    if (day >= 1 && day <= 5 && !occupiedDates.has(dateStr)) {
+    if (allowedDays.has(day) && !occupied.has(dateStr)) {
       dates.push(current.toISOString());
     }
     current.setUTCDate(current.getUTCDate() + 1);
@@ -351,7 +363,11 @@ async function main() {
   const toSchedule = LIMIT ? ordered.slice(0, LIMIT) : ordered;
 
   // Generate schedule (skips occupied dates)
-  const schedule = generateSchedule(startDate, toSchedule.length, occupiedDates);
+  const schedule = generateSchedule(startDate, toSchedule.length, occupiedDates, {
+    allowedDays: ALLOWED_DAYS,
+    hourUtc: HOUR_UTC,
+    firstSlot: FIRST_SLOT,
+  });
 
   // Preview
   console.log(`  📅 Scheduling ${toSchedule.length} posts, ${startDate} through ${schedule[schedule.length - 1]?.slice(0, 10)}\n`);

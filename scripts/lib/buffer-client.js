@@ -192,10 +192,10 @@ export async function createPost({ token, channelId, text, imageUrl, scheduledAt
     variables.dueAt = scheduledAt;
   }
 
-  let assetsBlock = '';
+  let assetsBlock = ', assets: []';
   if (imageUrl) {
     variableDefs += ', $imageUrl: String!';
-    assetsBlock = ', assets: { images: [{ url: $imageUrl }] }';
+    assetsBlock = ', assets: [{ image: { url: $imageUrl } }]';
     variables.imageUrl = imageUrl;
   }
 
