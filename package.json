@@ -23,6 +23,7 @@
     "import:calendar": "node scripts/import-calendar-projects.js",
     "post:gbp": "node scripts/batch-post-gbp.js",
     "post:buffer": "node scripts/buffer-post-projects.js",
+    "edit:buffer": "node scripts/buffer-edit-post.js",
     "optimize:images": "node scripts/optimize-images.js",
     "report:ads": "node scripts/google-ads-report.js",
     "report:ga4": "node scripts/ga4-report.js",
@@ -41,7 +42,8 @@
     "audit:cannibalization": "node scripts/cannibalization-audit.js",
     "report:weekly": "node scripts/weekly-report.js",
     "report:monthly": "node scripts/monthly-report.js",
-    "track:positions": "node scripts/track-positions.js"
+    "track:positions": "node scripts/track-positions.js",
+    "check:da": "node scripts/check-da.js"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",

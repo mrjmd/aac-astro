@@ -228,6 +228,78 @@ export async function createPost({ token, channelId, text, imageUrl, scheduledAt
 }
 
 /**
+ * Edit an existing Buffer post.
+ *
+ * Only fields you pass are changed — omit a field to leave it untouched.
+ * Required by the API: id, schedulingType, mode (the helper defaults the
+ * latter two to match createPost's `automatic` / `customScheduled`).
+ *
+ * @param {Object} options
+ * @param {string} options.token - Buffer API token
+ * @param {string} options.postId - Buffer post ID
+ * @param {string} [options.text] - New post text
+ * @param {string|null} [options.imageUrl] - New image URL. Pass empty string or null to remove the image.
+ * @param {string} [options.scheduledAt] - New ISO 8601 timestamp
+ * @param {string} [options.linkUrl] - New "Learn More" CTA link (GBP). Updates metadata block.
+ * @returns {Promise<{id: string, text: string, dueAt: string}>} Updated post
+ */
+export async function editPost({ token, postId, text, imageUrl, scheduledAt, linkUrl }) {
+  const variableDefs = ['$id: PostId!'];
+  const inputFields = ['id: $id', 'schedulingType: automatic', 'mode: customScheduled'];
+  const variables = { id: postId };
+
+  if (text !== undefined) {
+    variableDefs.push('$text: String!');
+    inputFields.push('text: $text');
+    variables.text = text;
+  }
+
+  if (scheduledAt !== undefined) {
+    variableDefs.push('$dueAt: DateTime');
+    inputFields.push('dueAt: $dueAt');
+    variables.dueAt = scheduledAt;
+  }
+
+  if (imageUrl !== undefined) {
+    if (imageUrl) {
+      variableDefs.push('$imageUrl: String!');
+      inputFields.push('assets: [{ image: { url: $imageUrl } }]');
+      variables.imageUrl = imageUrl;
+    } else {
+      inputFields.push('assets: []');
+    }
+  }
+
+  if (linkUrl !== undefined) {
+    variableDefs.push('$linkUrl: String');
+    inputFields.push(`metadata: {
+      google: {
+        type: whats_new,
+        detailsWhatsNew: { button: learn_more, link: $linkUrl }
+      }
+    }`);
+    variables.linkUrl = linkUrl;
+  }
+
+  const query = `
+    mutation EditPost(${variableDefs.join(', ')}) {
+      editPost(input: { ${inputFields.join(', ')} }) {
+        ... on PostActionSuccess { post { id text dueAt } }
+        ... on MutationError { message }
+      }
+    }
+  `;
+
+  const data = await graphql(token, query, variables);
+
+  if (data.editPost.message) {
+    throw new Error(`Buffer post edit failed: ${data.editPost.message}`);
+  }
+
+  return data.editPost.post;
+}
+
+/**
  * Get all scheduled posts for a channel.
  * Returns array of { id, text, dueAt }.
  */
