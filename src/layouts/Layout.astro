@@ -246,6 +246,14 @@ if (breadcrumbSchema) {
 						return 'inline';
 					}
 
+					// 4-char code with no look-alike characters (no 0/O, 1/I/L).
+					function newRefCode() {
+						var chars = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
+						var code = '';
+						for (var i = 0; i < 4; i++) code += chars[Math.floor(Math.random() * chars.length)];
+						return code;
+					}
+
 					function fireClickEvent(eventName, params) {
 						if (storedGclid) params.ad_click_id = storedGclid;
 
@@ -285,17 +293,28 @@ if (breadcrumbSchema) {
 							});
 
 						} else if (href.indexOf('sms:') === 0) {
-							var smsNumber = href.replace(/sms:[+]?/, '').replace(/\D/g, '');
+							var smsNumber = href.split('?')[0].replace(/sms:[+]?/, '').replace(/\D/g, '');
 							var smsRegion = smsNumber.indexOf(CT_NUMBER) !== -1 ? 'CT' : 'MA';
-
-							fireClickEvent('text_message_click', {
+							var smsParams = {
 								phone_region: smsRegion,
 								phone_number: smsNumber,
 								click_location: inferClickLocation(link),
 								page_path: window.location.pathname,
 								page_type: document.body.dataset.pageType || 'unknown',
 								geo_detected: geoRegion,
-							});
+							};
+
+							// MA only: prefill the text with a ref code so the inbound
+							// message ties back to this tap (and its gclid) exactly.
+							// Set before navigation; `?&body=` works on iOS and Android.
+							if (smsRegion === 'MA') {
+								var refCode = newRefCode();
+								smsParams.ref_code = refCode;
+								link.setAttribute('href', 'sms:+1' + MA_NUMBER + '?&body=' +
+									encodeURIComponent("Hi Attack A Crack, I'd like a free quote. (Ref: " + refCode + ')'));
+							}
+
+							fireClickEvent('text_message_click', smsParams);
 						}
 					});
 				</script>
